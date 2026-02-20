@@ -2,4 +2,5 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages hello-gaurix)
   #:use-module (gaurix packages localsend-bin)
-  #:export (hello-gaurix localsend-bin))
+  #:use-module (gaurix packages aider-chat)
+  #:export (hello-gaurix localsend-bin aider-chat))
