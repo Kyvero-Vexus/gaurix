@@ -1,0 +1,96 @@
+#+TITLE: Gaurix MCP Adoption Checklist
+#+STARTUP: overview
+
+* Goal
+Adopt MCP capabilities in phases to improve AUR→Guix packaging throughput, reliability, and auditability.
+
+* Phase 1 — Core execution (Immediate)
+** TODO Terminal/Command MCP (sandboxed)
+- [ ] Can run `guix build -L guix <pkg>` reliably
+- [ ] Can run `guix lint` and capture output
+- [ ] Can run deterministic package test commands per iteration
+- [ ] Guardrails: deny destructive host actions by default
+- Acceptance:
+  - One full package iteration can be completed (draft→build→result) without manual shell intervention.
+
+** TODO Filesystem MCP
+- [ ] Create/modify `guix/gaurix/packages/*.scm`
+- [ ] Update `guix/gaurix/packages.scm` exports
+- [ ] Update `todo_*_packages.org` statuses (TODO/IN_PROGRESS/DONE/FAILED)
+- [ ] Write iteration notes under `docs/` or `reports/`
+- Acceptance:
+  - Package files and TODO statuses can be updated safely and reproducibly by workflow.
+
+** TODO Git MCP
+- [ ] Create atomic commits per package iteration
+- [ ] Enforce commit message template for package changes
+- [ ] Show diff summary before push
+- [ ] Push only after successful build checks
+- Acceptance:
+  - Every DONE package has a single traceable commit chain and clean diff.
+
+** TODO HTTP/Fetch MCP
+- [ ] Fetch AUR PKGBUILD via official AUR git endpoints
+- [ ] Fetch upstream release metadata/checksums from source URLs
+- [ ] Avoid scraping rendered pages
+- [ ] Respect caching and retry/backoff
+- Acceptance:
+  - Source URL/hash provenance is recorded for each packaged item.
+
+* Phase 2 — Hardening (Near-term)
+** TODO Structured Data MCP (SQLite/KV)
+- [ ] Track package state machine: TODO/IN_PROGRESS/DONE/FAILED
+- [ ] Record attempts, last error, cooldown/retry policy
+- [ ] Prevent repeated attempts on FAILED unless explicitly reset
+- [ ] Store timestamps and responsible run IDs
+- Acceptance:
+  - Loop can resume after interruption without losing state.
+
+** TODO Artifact/Log MCP
+- [ ] Persist build logs per package attempt
+- [ ] Persist important command outputs (hash checks, lint/build)
+- [ ] Link log artifact IDs in TODO entries or issue tracker
+- Acceptance:
+  - Any failed package has retrievable evidence explaining failure.
+
+** TODO Scheduler/Jobs MCP (optional if cron remains sufficient)
+- [ ] Run 3-hour loop task with explicit run records
+- [ ] Auto-stop when no TODO candidates remain
+- [ ] Alert on repeated failure thresholds
+- Acceptance:
+  - Packaging loop is autonomous and auditable without manual polling.
+
+* Phase 3 — Scale and collaboration (Later)
+** TODO GitLab MCP
+- [ ] Open issue automatically for FAILED packages
+- [ ] Create merge requests for batched package additions
+- [ ] Post build/test evidence to MRs/issues
+- [ ] Apply labels (`packaging`, `failed`, `needs-review`)
+- Acceptance:
+  - External project tracking reflects local workflow state.
+
+** TODO Docs/Search MCP
+- [ ] Index Guix manual + nonguix docs + local repo docs
+- [ ] Retrieve style/policy examples for package patterns
+- [ ] Suggest best-fit templates before package drafting
+- Acceptance:
+  - Reduced policy drift and fewer review cycles per package.
+
+** TODO Container/VM MCP (optional)
+- [ ] Run package builds in isolated environment
+- [ ] Compare host vs isolated build outcomes
+- [ ] Use isolated build as pre-merge quality gate
+- Acceptance:
+  - Build reproducibility confidence improves for merged packages.
+
+* Cross-cutting guardrails
+- [ ] Never push package changes unless build checks pass
+- [ ] Mark package FAILED after repeated non-progress attempts
+- [ ] Do not retry FAILED without explicit human instruction
+- [ ] Prefer official AUR APIs/metadata/git over scraping
+- [ ] Keep AI-generated disclaimer visible in repo metadata and README
+
+* Definition of Done (for MCP rollout)
+- [ ] Phase 1 fully complete and used in at least 3 successful package iterations
+- [ ] Phase 2 complete with persistent state+logs used in production loop
+- [ ] Optional Phase 3 items adopted based on demonstrated need
