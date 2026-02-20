@@ -36,3 +36,11 @@ Copy/edit `channels.scm`, then:
 ```bash
 guix pull -C channels.scm
 ```
+
+## AUR metadata cache (official, non-scraping)
+
+- Refresh cache: `scripts/update-aur-cache.sh`
+- Search cache: `scripts/search-aur-cache.py <query> --limit 20`
+- Cache files live in: `data/aur-cache/`
+
+This uses AUR's official metadata dump (`packages-meta-ext-v1.json.gz`) to reduce repeated network load.
