@@ -44,3 +44,4 @@ guix pull -C channels.scm
 - Cache files live in: `data/aur-cache/`
 
 This uses AUR's official metadata dump (`packages-meta-ext-v1.json.gz`) to reduce repeated network load.
+- Pick next package from TODO org files using cache: `scripts/select-next-package-from-todos.py`
