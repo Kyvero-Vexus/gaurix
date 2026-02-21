@@ -1,10 +1,15 @@
 #!/usr/bin/env python3
+import argparse
 import json
 import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE = ROOT / "data" / "aur-cache" / "packages-meta-ext-v1.json"
+
+ap = argparse.ArgumentParser(description="Select next package from todo org files")
+ap.add_argument("--glob", default="todo_*_packages.org", help="Glob pattern for todo org files")
+args = ap.parse_args()
 
 if not CACHE.exists():
     raise SystemExit("Missing AUR cache. Run scripts/update-aur-cache.sh first.")
@@ -13,7 +18,7 @@ with CACHE.open("r", encoding="utf-8") as f:
     aur = {p.get("Name"): p for p in json.load(f)}
 
 candidates = []
-for org in ROOT.glob("todo_*_packages.org"):
+for org in ROOT.glob(args.glob):
     text = org.read_text(encoding="utf-8")
     blocks = re.split(r"(?=^\*\* )", text, flags=re.M)
     for b in blocks:
