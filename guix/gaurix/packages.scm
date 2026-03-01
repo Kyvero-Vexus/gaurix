@@ -9,5 +9,6 @@
   #:use-module (gaurix packages sunshine)
   #:use-module (gaurix packages sunshine-bin)
   #:use-module (gaurix packages fluxer-bin)
+  #:use-module (gaurix packages comfyui-cuda)
   #:export (hello-gaurix localsend-bin aider-chat lmstudio-bin
-            llama-cpp-cuda visual-studio-code-bin sunshine sunshine-bin fluxer-bin))
+            llama-cpp-cuda visual-studio-code-bin sunshine sunshine-bin fluxer-bin comfyui-cuda))
