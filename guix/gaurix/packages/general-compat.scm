@@ -7,9 +7,11 @@
   #:use-module (gnu packages video)
   #:use-module (gnu packages rust-apps)
   #:use-module (gnu packages haskell-apps)
+  #:use-module (gnu packages xorg)
   #:use-module ((gnu packages tls) #:prefix gnu:)
   #:export (gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
-            yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin))
+            yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin
+            xlibre-xserver xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets))
 
 (define-public gtk2
   (package
@@ -66,3 +68,30 @@
   (package
     (inherit shellcheck)
     (name "shellcheck-bin")))
+
+
+(define-public xlibre-xserver
+  (package
+    (inherit xorg-server)
+    (name "xlibre-xserver")))
+
+(define-public xlibre-xserver-xvfb
+  (package
+    (inherit xorg-server)
+    (name "xlibre-xserver-xvfb")))
+
+(define-public qt5-remoteobjects
+  (package
+    (inherit qtremoteobjects)
+    (name "qt5-remoteobjects")))
+
+(define-public qt5-webchannel
+  (package
+    (inherit qtwebchannel)
+    (name "qt5-webchannel")))
+
+(define-public qt5-websockets
+  (package
+    (inherit qtwebsockets)
+    (name "qt5-websockets")))
+
