@@ -4,8 +4,12 @@
   #:use-module (gnu packages admin)
   #:use-module (gnu packages qt)
   #:use-module (gnu packages python)
+  #:use-module (gnu packages video)
+  #:use-module (gnu packages rust-apps)
+  #:use-module (gnu packages haskell-apps)
   #:use-module ((gnu packages tls) #:prefix gnu:)
-  #:export (gtk2 gnu-netcat qt5-webengine python312 openssl-1.1))
+  #:export (gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
+            yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin))
 
 (define-public gtk2
   (package
@@ -31,3 +35,34 @@
   (package
     (inherit gnu:openssl-1.1)
     (name "openssl-1.1")))
+
+(define-public yt-dlp-git
+  (package
+    (inherit yt-dlp)
+    (name "yt-dlp-git")))
+
+(define-public ripgrep-git
+  (package
+    (inherit ripgrep)
+    (name "ripgrep-git")))
+
+(define-public fd-git
+  (package
+    (inherit fd)
+    (name "fd-git")))
+
+(define-public eza-git
+  (package
+    (inherit eza)
+    (name "eza-git")))
+
+(define-public zoxide-git
+  (package
+    (inherit zoxide)
+    (name "zoxide-git")))
+
+
+(define-public shellcheck-bin
+  (package
+    (inherit shellcheck)
+    (name "shellcheck-bin")))
