@@ -1,6 +1,10 @@
 (define-module (gaurix packages general-compat)
   #:use-module (guix packages)
   #:use-module (gnu packages gtk)
+  #:use-module (gnu packages shells)
+  #:use-module (gnu packages libidn)
+  #:use-module (gnu packages ncurses)
+  #:use-module (gnu packages vim)
   #:use-module (gnu packages admin)
   #:use-module (gnu packages qt)
   #:use-module (gnu packages python)
@@ -11,7 +15,8 @@
   #:use-module ((gnu packages tls) #:prefix gnu:)
   #:export (gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
             yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin
-            xlibre-xserver xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets))
+            xlibre-xserver xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets
+            dashbinsh libidn11 ncurses5-compat-libs neovim-symlinks neovim-git lib32-libidn11))
 
 (define-public gtk2
   (package
@@ -95,3 +100,32 @@
     (inherit qtwebsockets)
     (name "qt5-websockets")))
 
+(define-public dashbinsh
+  (package
+    (inherit dash)
+    (name "dashbinsh")))
+
+(define-public libidn11
+  (package
+    (inherit libidn)
+    (name "libidn11")))
+
+(define-public ncurses5-compat-libs
+  (package
+    (inherit ncurses)
+    (name "ncurses5-compat-libs")))
+
+(define-public neovim-symlinks
+  (package
+    (inherit neovim)
+    (name "neovim-symlinks")))
+
+(define-public neovim-git
+  (package
+    (inherit neovim)
+    (name "neovim-git")))
+
+(define-public lib32-libidn11
+  (package
+    (inherit libidn11)
+    (name "lib32-libidn11")))

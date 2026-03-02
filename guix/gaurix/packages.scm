@@ -15,4 +15,5 @@
             llama-cpp-cuda visual-studio-code-bin sunshine sunshine-bin fluxer-bin comfyui-cuda
             gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
             yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin
-            xlibre-xserver xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets))
+            xlibre-xserver xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets
+            dashbinsh libidn11 ncurses5-compat-libs neovim-symlinks neovim-git lib32-libidn11))
