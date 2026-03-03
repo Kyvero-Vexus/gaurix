@@ -44,4 +44,7 @@
             libarchive-git
             dstask-git
             fsearch-git
-            procs-git))
+            procs-git
+            llama.cpp-vulkan
+            lib32-openssl-1.0
+            zfs-dkms))

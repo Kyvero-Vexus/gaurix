@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages llama-cpp-cuda)
   #:use-module (guix packages)
   #:use-module (gnu packages gtk)
   #:use-module (gnu packages shells)
@@ -17,6 +18,7 @@
   #:use-module (gnu packages gnome)
   #:use-module (gnu packages image)
   #:use-module (gnu packages backup)
+  #:use-module (gnu packages file-systems)
   #:use-module (gnu packages compton)
   #:use-module (gnu packages engineering)
   #:use-module (gnu packages games)
@@ -61,7 +63,10 @@
             libarchive-git
             dstask-git
             fsearch-git
-            procs-git))
+            procs-git
+            zfs-dkms
+            lib32-openssl-1.0
+            llama.cpp-vulkan))
 
 (define-public gtk2
   (package
@@ -357,3 +362,20 @@
     (inherit procs)
     (name "procs-git")))
 
+
+
+(define-public zfs-dkms
+  (package
+    (inherit zfs)
+    (name "zfs-dkms")))
+
+(define-public lib32-openssl-1.0
+  (package
+    (inherit openssl-1.0)
+    (name "lib32-openssl-1.0")))
+
+(define-public llama.cpp-vulkan
+  (package
+    (inherit llama-cpp-cuda)
+    (name "llama.cpp-vulkan")
+    (synopsis "Port of Facebook's LLaMA model in C/C++ (Vulkan compatibility alias)")))
