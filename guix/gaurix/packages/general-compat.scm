@@ -24,7 +24,8 @@
             python313
             botan2
             piper-tts
-            libjpeg6-turbo))
+            libjpeg6-turbo
+            lib32-gtk2 openssl-1.0))
 
 (define-public gtk2
   (package
@@ -188,3 +189,14 @@
     (inherit python-next)
     (name "python313")))
 
+
+
+(define-public lib32-gtk2
+  (package
+    (inherit gtk2)
+    (name "lib32-gtk2")))
+
+(define-public openssl-1.0
+  (package
+    (inherit openssl-1.1)
+    (name "openssl-1.0")))

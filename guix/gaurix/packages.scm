@@ -20,6 +20,7 @@
             dashbinsh libidn11 ncurses5-compat-libs neovim-symlinks neovim-git lib32-libidn11
             gtk-engine-murrine
             python313
+            lib32-gtk2 openssl-1.0
             botan2
             piper-tts
             libjpeg6-turbo
