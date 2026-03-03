@@ -12,6 +12,7 @@
   #:use-module (gnu packages video)
   #:use-module (gnu packages rust-apps)
   #:use-module (gnu packages haskell-apps)
+  #:use-module (gnu packages haskell-xyz)
   #:use-module (gnu packages xorg)
   #:use-module ((gnu packages tls) #:prefix gnu:)
   #:use-module (gnu packages crypto)
@@ -34,6 +35,15 @@
   #:use-module (gnu packages task-management)
   #:use-module (gnu packages web-browsers)
   #:use-module (gnu packages wm)
+  #:use-module (gnu packages python-xyz)
+  #:use-module (gnu packages ebook)
+  #:use-module (gnu packages graphics)
+  #:use-module (gnu packages music)
+  #:use-module (gnu packages docker)
+  #:use-module (gnu packages zig)
+  #:use-module (gnu packages solidity)
+  #:use-module (gnu packages check)
+  #:use-module (gnu packages audio)
   #:export (gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
             yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin
             xlibre-xserver xlibre-xserver-bootstrap xlibre-xserver-xnest xlibre-xserver-xephyr xlibre-xserver-devel xlibre-xserver-common xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets
@@ -66,7 +76,24 @@
             procs-git
             zfs-dkms
             lib32-openssl-1.0
-            llama.cpp-vulkan))
+            llama.cpp-vulkan
+            python-valkey-git
+            calibre-bin
+            pandoc-bin
+            beads-bin
+            blender-bin
+            musescore-bin
+            docker-compose-bin
+            pnmixer-bin
+            xremap-x11-bin
+            cura-bin
+            zig-bin
+            solidity-bin
+            openshot-bin
+            sd-git
+            snitch-bin
+            meshlab-bin
+            cava-git))
 
 (define-public gtk2
   (package
@@ -379,3 +406,89 @@
     (inherit llama-cpp-cuda)
     (name "llama.cpp-vulkan")
     (synopsis "Port of Facebook's LLaMA model in C/C++ (Vulkan compatibility alias)")))
+
+
+(define-public python-valkey-git
+  (package
+    (inherit python-valkey)
+    (name "python-valkey-git")))
+
+(define-public calibre-bin
+  (package
+    (inherit calibre)
+    (name "calibre-bin")))
+
+(define-public pandoc-bin
+  (package
+    (inherit pandoc)
+    (name "pandoc-bin")))
+
+(define-public beads-bin
+  (package
+    (inherit beads)
+    (name "beads-bin")))
+
+(define-public blender-bin
+  (package
+    (inherit blender)
+    (name "blender-bin")))
+
+(define-public musescore-bin
+  (package
+    (inherit musescore)
+    (name "musescore-bin")))
+
+(define-public docker-compose-bin
+  (package
+    (inherit docker-compose)
+    (name "docker-compose-bin")))
+
+(define-public pnmixer-bin
+  (package
+    (inherit pnmixer)
+    (name "pnmixer-bin")))
+
+(define-public xremap-x11-bin
+  (package
+    (inherit xremap-x11)
+    (name "xremap-x11-bin")))
+
+(define-public cura-bin
+  (package
+    (inherit cura)
+    (name "cura-bin")))
+
+(define-public zig-bin
+  (package
+    (inherit zig)
+    (name "zig-bin")))
+
+(define-public solidity-bin
+  (package
+    (inherit solidity)
+    (name "solidity-bin")))
+
+(define-public openshot-bin
+  (package
+    (inherit openshot)
+    (name "openshot-bin")))
+
+(define-public sd-git
+  (package
+    (inherit sd)
+    (name "sd-git")))
+
+(define-public snitch-bin
+  (package
+    (inherit snitch)
+    (name "snitch-bin")))
+
+(define-public meshlab-bin
+  (package
+    (inherit meshlab)
+    (name "meshlab-bin")))
+
+(define-public cava-git
+  (package
+    (inherit cava)
+    (name "cava-git")))

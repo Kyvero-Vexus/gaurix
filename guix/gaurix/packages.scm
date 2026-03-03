@@ -47,4 +47,21 @@
             procs-git
             llama.cpp-vulkan
             lib32-openssl-1.0
-            zfs-dkms))
+            zfs-dkms
+            python-valkey-git
+            calibre-bin
+            pandoc-bin
+            beads-bin
+            blender-bin
+            musescore-bin
+            docker-compose-bin
+            pnmixer-bin
+            xremap-x11-bin
+            cura-bin
+            zig-bin
+            solidity-bin
+            openshot-bin
+            sd-git
+            snitch-bin
+            meshlab-bin
+            cava-git))
