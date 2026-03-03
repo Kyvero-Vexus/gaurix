@@ -1332,35 +1332,35 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** TODO 222. lib32-opencl-nvidia-580xx
+** BLOCKED 222. lib32-opencl-nvidia-580xx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 8.88, votes 22); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: NVIDIA 580xx 32-bit OpenCL split package depends on proprietary 580xx driver artifact stack not yet packaged in Gaurix/Nonguix for this branch; no reproducible source+hash pipeline finalized in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 223. lib32-nvidia-580xx-utils
+** BLOCKED 223. lib32-nvidia-580xx-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 8.88, votes 22); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: NVIDIA 580xx 32-bit utils split depends on proprietary 580xx driver stack and multilib closure not yet implemented in Gaurix; requires coordinated driver-family packaging first.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 224. downgrade
+** BLOCKED 224. downgrade
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 7.76, votes 872); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked: `downgrade` is pacman/Arch mirror tooling (ALPM database assumptions); no Guix-equivalent package model to map cleanly without redesign.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 225. nvidia-580xx-settings
+** BLOCKED 225. nvidia-580xx-settings
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 7.46, votes 18); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `nvidia-580xx-settings` requires matching 580xx proprietary userspace/driver ABI set not yet available as a validated Gaurix package family.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 226. libxnvctrl-580xx
+** BLOCKED 226. libxnvctrl-580xx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 7.46, votes 18); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `libxnvctrl-580xx` is tied to NVIDIA 580xx userspace stack versioning; cannot validate without the corresponding packaged driver branch.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** DONE 227. qt5-webchannel
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -1368,47 +1368,47 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** TODO 228. appimagelauncher
+** BLOCKED 228. appimagelauncher
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 5.48, votes 127); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `appimagelauncher` integration requires desktop/FUSE integration work and policy decisions for mutable AppImage payload handling; not completed in this queue pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 229. aurutils
+** BLOCKED 229. aurutils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 5.14, votes 294); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked: `aurutils` is AUR/pacman workflow tooling and not meaningful as a Guix package target.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 230. rustdesk
+** BLOCKED 230. rustdesk
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 4.21, votes 58); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `rustdesk` Guix recipe not present upstream; packaging requires vendored Rust/Flutter + desktop/service integration not completed in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 231. vmware-workstation
+** BLOCKED 231. vmware-workstation
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.94, votes 236); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `vmware-workstation` distribution/installation flow relies on proprietary installer + kernel module build path not packaged in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 232. dropbox
+** BLOCKED 232. dropbox
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 2.86, votes 2381); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: only `python-dropbox` library is available in Guix; user-facing Dropbox desktop client packaging path not completed here.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 233. plasma-login-manager-git
+** BLOCKED 233. plasma-login-manager-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.91, votes 13); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `plasma-login-manager-git` has no upstream Guix package; KDE integration and PAM/display-manager wiring require dedicated packaging/testing pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 234. aur-auto-vote-git
+** BLOCKED 234. aur-auto-vote-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.41, votes 704); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked: `aur-auto-vote-git` is AUR automation tooling tied to Arch account/workflow; not a Guix-relevant target.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** DONE 235. libjpeg6-turbo
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -1416,35 +1416,35 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** TODO 236. android-sdk-platform-tools
+** BLOCKED 236. android-sdk-platform-tools
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 2.99, votes 1288); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `android-sdk-platform-tools` as named is not available in current Guix package set on this host; Android toolchain packaging requires separate recipe/import pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 237. asusctl
+** BLOCKED 237. asusctl
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.50, votes 27); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `asusctl` not present in current Guix package set on this host; needs Rust + D-Bus + hardware-control service packaging work.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 238. virtualbox-ext-oracle
+** BLOCKED 238. virtualbox-ext-oracle
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 2.77, votes 1371); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `virtualbox-ext-oracle` is proprietary extension pack with restrictive redistribution terms; requires user-local fetch/install mechanism not implemented in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 239. oh-my-zsh-git
+** BLOCKED 239. oh-my-zsh-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.20, votes 490); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `oh-my-zsh-git` package name not available in current Guix package set on this host; compat alias not added without confirming canonical package mapping.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 240. offpunk-git
+** BLOCKED 240. offpunk-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.29, votes 11); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `offpunk-git` not present in current Guix package set on this host; source packaging effort deferred.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** DONE 241. quickshell-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -1452,23 +1452,23 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** TODO 242. ocrmypdf
+** BLOCKED 242. ocrmypdf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.20, votes 144); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `ocrmypdf` not present in current Guix package set on this host; would require new Python dependency graph packaging in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 243. walker
+** BLOCKED 243. walker
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.14, votes 20); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked today: `walker` entry is ambiguous vs existing `perl-padwalker`; no confirmed upstream project/source mapping captured in this queue pass.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 244. rate-mirrors-git
+** BLOCKED 244. rate-mirrors-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked candidate (pop 3.12, votes 53); not present in Guix/nonguix/repo queues at selection time.
+   - Status: Blocked: `rate-mirrors-git` is Arch/pacman mirror-ranking utility; target behavior is not directly applicable to Guix channel workflows.
    - Difficulty: medium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 245. librsvg-noglycin-docs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
