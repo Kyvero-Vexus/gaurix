@@ -24,4 +24,24 @@
             botan2
             piper-tts
             libjpeg6-turbo
-            ffglitch))
+            ffglitch
+            quickshell-git
+            openscad-git
+            mesa-git
+            openrgb-git
+            hashcat-git
+            mold-git
+            picom-git
+            papirus-icon-theme-git
+            libplasma-git
+            qutebrowser-git
+            cataclysm-dda-git
+            mecab-git
+            openttd-jgrpp-git
+            dragon-drop-git
+            python-protobuf-git
+            protobuf-git
+            libarchive-git
+            dstask-git
+            fsearch-git
+            procs-git))
