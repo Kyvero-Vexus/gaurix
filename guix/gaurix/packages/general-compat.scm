@@ -44,6 +44,8 @@
   #:use-module (gnu packages task-management)
   #:use-module (gnu packages web-browsers)
   #:use-module (gnu packages wm)
+  #:use-module (gnu packages networking)
+  #:use-module (gnu packages ccache)
   #:use-module (gnu packages python-xyz)
   #:use-module (gnu packages ebook)
   #:use-module (gnu packages graphics)
@@ -146,7 +148,11 @@
             bird2
             lib32-libindicator-gtk2
             blesh-git
-            dualsensectl-git))
+            dualsensectl-git
+            qt6ct-kde
+            ffmpeg-full
+            openrdap-client
+            ccache-ext))
 
 (define-public gtk2
   (package
@@ -746,3 +752,23 @@
   (package
     (inherit (specification->package "dualsensectl"))
     (name "dualsensectl-git")))
+
+(define-public qt6ct-kde
+  (package
+    (inherit qt6ct)
+    (name "qt6ct-kde")))
+
+(define-public ffmpeg-full
+  (package
+    (inherit ffmpeg)
+    (name "ffmpeg-full")))
+
+(define-public openrdap-client
+  (package
+    (inherit openrdap)
+    (name "openrdap-client")))
+
+(define-public ccache-ext
+  (package
+    (inherit ccache)
+    (name "ccache-ext")))
