@@ -73,4 +73,8 @@
             qt6-avif-image-plugin
             woff2-space-grotesk
             woff-space-grotesk
-            ))
+            
+            qt5-avif-image-plugin
+            otf-space-grotesk
+            freerdp2
+            icoextract))

@@ -1,6 +1,7 @@
 (define-module (gaurix packages general-compat)
   #:use-module (gaurix packages llama-cpp-cuda)
   #:use-module (gnu packages freedesktop)
+  #:use-module (gnu packages rdesktop)
   #:use-module (gnu packages i2p)
   #:use-module (gnu packages sync)
   #:use-module (gaurix packages fluxer-bin)
@@ -113,7 +114,11 @@
             qt6-avif-image-plugin
             woff2-space-grotesk
             woff-space-grotesk
-            ))
+            
+            qt5-avif-image-plugin
+            otf-space-grotesk
+            freerdp2
+            icoextract))
 
 (define-public gtk2
   (package
@@ -584,3 +589,27 @@
   (package
     (inherit font-space-grotesk)
     (name "woff-space-grotesk")))
+
+
+(define-public qt5-avif-image-plugin
+  (package
+    (inherit qtimageformats)
+    (name "qt5-avif-image-plugin")))
+
+
+(define-public otf-space-grotesk
+  (package
+    (inherit font-space-grotesk)
+    (name "otf-space-grotesk")))
+
+
+(define-public freerdp2
+  (package
+    (inherit freerdp)
+    (name "freerdp2")))
+
+
+(define-public icoextract
+  (package
+    (inherit icoutils)
+    (name "icoextract")))
