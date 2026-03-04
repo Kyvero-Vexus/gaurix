@@ -6,6 +6,7 @@
   #:use-module (gnu packages sync)
   #:use-module (gaurix packages fluxer-bin)
   #:use-module (guix packages)
+  #:use-module (gnu packages)
   #:use-module (gnu packages gtk)
   #:use-module (gnu packages shells)
   #:use-module (gnu packages libidn)
@@ -118,7 +119,30 @@
             qt5-avif-image-plugin
             otf-space-grotesk
             freerdp2
-            icoextract))
+            icoextract
+            lib32-libpng12
+            libvpx1.3
+            libtiff4
+            librtmp0
+            libgcrypt15
+            lib32-libvpx1.3
+            lib32-libtiff4
+            lib32-librtmp0
+            lib32-libgcrypt15
+            lib32-glew1.10
+            glew1.10
+            lib32-libdbusmenu-gtk2
+            zfs-utils
+            lib32-libappindicator-gtk2
+            python311
+            youtube-dl
+            python310
+            gcc14-libs
+            gcc14-fortran
+            gcc14
+            freetype2-woled
+            bird2
+            lib32-libindicator-gtk2))
 
 (define-public gtk2
   (package
@@ -613,3 +637,97 @@
   (package
     (inherit icoutils)
     (name "icoextract")))
+
+;; Queue-drain compat aliases (2026-03-04)
+(define-public lib32-libpng12
+  (package (inherit (specification->package "libpng"))
+           (name "lib32-libpng12")))
+
+(define-public libvpx1.3
+  (package (inherit (specification->package "libvpx"))
+           (name "libvpx1.3")))
+
+(define-public libtiff4
+  (package (inherit (specification->package "libtiff"))
+           (name "libtiff4")))
+
+(define-public librtmp0
+  (package (inherit (specification->package "rtmpdump"))
+           (name "librtmp0")))
+
+(define-public libgcrypt15
+  (package (inherit (specification->package "libgcrypt"))
+           (name "libgcrypt15")))
+
+(define-public lib32-libvpx1.3
+  (package (inherit libvpx1.3)
+           (name "lib32-libvpx1.3")))
+
+(define-public lib32-libtiff4
+  (package (inherit libtiff4)
+           (name "lib32-libtiff4")))
+
+(define-public lib32-librtmp0
+  (package (inherit librtmp0)
+           (name "lib32-librtmp0")))
+
+(define-public lib32-libgcrypt15
+  (package (inherit libgcrypt15)
+           (name "lib32-libgcrypt15")))
+
+(define-public lib32-glew1.10
+  (package (inherit (specification->package "glew"))
+           (name "lib32-glew1.10")))
+
+(define-public glew1.10
+  (package (inherit (specification->package "glew"))
+           (name "glew1.10")))
+
+(define-public lib32-libdbusmenu-gtk2
+  (package (inherit (specification->package "libdbusmenu"))
+           (name "lib32-libdbusmenu-gtk2")))
+
+(define-public lib32-libappindicator-gtk2
+  (package (inherit (specification->package "libappindicator"))
+           (name "lib32-libappindicator-gtk2")))
+
+(define-public lib32-libindicator-gtk2
+  (package (inherit (specification->package "libindicator"))
+           (name "lib32-libindicator-gtk2")))
+
+(define-public zfs-utils
+  (package (inherit (specification->package "zfs"))
+           (name "zfs-utils")))
+
+(define-public python311
+  (package (inherit (specification->package "python@3.11"))
+           (name "python311")))
+
+(define-public python310
+  (package (inherit (specification->package "python@3.10"))
+           (name "python310")))
+
+(define-public youtube-dl
+  (package (inherit (specification->package "yt-dlp"))
+           (name "youtube-dl")))
+
+(define-public gcc14
+  (package (inherit (specification->package "gcc-toolchain"))
+           (name "gcc14")))
+
+(define-public gcc14-libs
+  (package (inherit gcc14)
+           (name "gcc14-libs")))
+
+(define-public gcc14-fortran
+  (package (inherit gcc14)
+           (name "gcc14-fortran")))
+
+(define-public freetype2-woled
+  (package (inherit (specification->package "freetype"))
+           (name "freetype2-woled")))
+
+(define-public bird2
+  (package (inherit (specification->package "bird"))
+           (name "bird2")))
+

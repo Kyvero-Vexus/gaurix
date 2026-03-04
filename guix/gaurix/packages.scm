@@ -77,4 +77,27 @@
             qt5-avif-image-plugin
             otf-space-grotesk
             freerdp2
-            icoextract))
+            icoextract
+            lib32-libpng12
+            libvpx1.3
+            libtiff4
+            librtmp0
+            libgcrypt15
+            lib32-libvpx1.3
+            lib32-libtiff4
+            lib32-librtmp0
+            lib32-libgcrypt15
+            lib32-glew1.10
+            glew1.10
+            lib32-libdbusmenu-gtk2
+            zfs-utils
+            lib32-libappindicator-gtk2
+            python311
+            youtube-dl
+            python310
+            gcc14-libs
+            gcc14-fortran
+            gcc14
+            freetype2-woled
+            bird2
+            lib32-libindicator-gtk2))
