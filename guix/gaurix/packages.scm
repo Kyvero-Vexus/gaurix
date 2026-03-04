@@ -102,4 +102,8 @@
             bird2
             lib32-libindicator-gtk2
             blesh-git
-            dualsensectl-git))
+            dualsensectl-git
+            qt6ct-kde
+            ffmpeg-full
+            openrdap-client
+            ccache-ext))
