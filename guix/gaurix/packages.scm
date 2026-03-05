@@ -144,6 +144,7 @@
             qt6ct-kde
             ffmpeg-full
             openrdap-client
+            rclone-browser
             kwin-effects-geometry-change
             kwin-effect-rounded-corners-git
             evolution-tray-git
