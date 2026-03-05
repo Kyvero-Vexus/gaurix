@@ -12,16 +12,48 @@
   #:use-module (gaurix packages comfyui-cuda)
   #:use-module (gaurix packages general-compat)
   #:use-module (gaurix packages ffglitch)
-  #:export (hello-gaurix localsend-bin aider-chat lmstudio-bin
-            llama-cpp-cuda visual-studio-code-bin sunshine sunshine-bin fluxer-bin comfyui-cuda
-            gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
-            yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin
-            xlibre-xserver xlibre-xserver-bootstrap xlibre-xserver-common xlibre-xserver-devel xlibre-xserver-xephyr xlibre-xserver-xnest xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets
-            dashbinsh libidn11 ncurses5-compat-libs neovim-symlinks neovim-git lib32-libidn11
+  #:export (hello-gaurix
+            localsend-bin
+            aider-chat
+            lmstudio-bin
+            llama-cpp-cuda
+            visual-studio-code-bin
+            sunshine
+            sunshine-bin
+            fluxer-bin
+            comfyui-cuda
+            gtk2
+            gnu-netcat
+            qt5-webengine
+            python312
+            openssl-1.1
+            yt-dlp-git
+            ripgrep-git
+            fd-git
+            eza-git
+            zoxide-git
+            shellcheck-bin
+            xlibre-xserver
+            xlibre-xserver-bootstrap
+            xlibre-xserver-common
+            xlibre-xserver-devel
+            xlibre-xserver-xephyr
+            xlibre-xserver-xnest
+            xlibre-xserver-xvfb
+            qt5-remoteobjects
+            qt5-webchannel
+            qt5-websockets
+            dashbinsh
+            libidn11
+            ncurses5-compat-libs
+            neovim-symlinks
+            neovim-git
+            lib32-libidn11
             gtk-engine-murrine
             gtkspell
             python313
-            lib32-gtk2 openssl-1.0
+            lib32-gtk2
+            openssl-1.0
             botan2
             piper-tts
             libjpeg6-turbo
@@ -66,15 +98,20 @@
             snitch-bin
             meshlab-bin
             cava-git
-            onedrive-abraunegg i2p fluxer-git
-            arc-solid-gtk-theme arc-gtk-theme libindicator-gtk2
-            libdbusmenu-gtk2 lib32-libjpeg6-turbo lib32-openssl-1.1
+            onedrive-abraunegg
+            i2p
+            fluxer-git
+            arc-solid-gtk-theme
+            arc-gtk-theme
+            libindicator-gtk2
+            libdbusmenu-gtk2
+            lib32-libjpeg6-turbo
+            lib32-openssl-1.1
             librsvg-noglycin-docs
             librsvg-noglycin
             qt6-avif-image-plugin
             woff2-space-grotesk
             woff-space-grotesk
-            
             qt5-avif-image-plugin
             otf-space-grotesk
             freerdp2
@@ -107,4 +144,23 @@
             qt6ct-kde
             ffmpeg-full
             openrdap-client
-            ccache-ext))
+            kwin-effects-geometry-change
+            kwin-effect-rounded-corners-git
+            evolution-tray-git
+            piper-voices-en-us
+            libadwaita-without-adwaita
+            pulseaudio-ctl
+            ares-emu
+            libwacom-surface
+            xpadneo-dkms-git
+            pidgin-mini
+            kwin-effects-glass-git
+            gtkmm-docs
+            breeze-plus
+            blender-benchmark
+            ibus-bamboo
+            librewolf-allow-dark
+            gimp-devel
+            alacritty-themes
+            josm-latest
+            gforth-docs))

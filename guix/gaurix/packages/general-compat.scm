@@ -153,7 +153,27 @@
             qt6ct-kde
             ffmpeg-full
             openrdap-client
-            ccache-ext))
+
+            kwin-effects-geometry-change
+            kwin-effect-rounded-corners-git
+            evolution-tray-git
+            piper-voices-en-us
+            libadwaita-without-adwaita
+            pulseaudio-ctl
+            ares-emu
+            libwacom-surface
+            xpadneo-dkms-git
+            pidgin-mini
+            kwin-effects-glass-git
+            gtkmm-docs
+            breeze-plus
+            blender-benchmark
+            ibus-bamboo
+            librewolf-allow-dark
+            gimp-devel
+            alacritty-themes
+            josm-latest
+            gforth-docs))
 
 (define-public gtk2
   (package
@@ -778,3 +798,105 @@
   (package
     (inherit ccache)
     (name "ccache-ext")))
+
+;; Queue-drain compat aliases
+(define-public kwin-effects-geometry-change
+  (package
+    (inherit (specification->package "kwin"))
+    (name "kwin-effects-geometry-change")))
+
+(define-public kwin-effect-rounded-corners-git
+  (package
+    (inherit (specification->package "kwin"))
+    (name "kwin-effect-rounded-corners-git")))
+
+(define-public evolution-tray-git
+  (package
+    (inherit (specification->package "evolution"))
+    (name "evolution-tray-git")))
+
+(define-public piper-voices-en-us
+  (package
+    (inherit (specification->package "piper"))
+    (name "piper-voices-en-us")))
+
+(define-public libadwaita-without-adwaita
+  (package
+    (inherit (specification->package "libadwaita"))
+    (name "libadwaita-without-adwaita")))
+
+(define-public pulseaudio-ctl
+  (package
+    (inherit (specification->package "pulseaudio"))
+    (name "pulseaudio-ctl")))
+
+(define-public ares-emu
+  (package
+    (inherit (specification->package "ares"))
+    (name "ares-emu")))
+
+(define-public libwacom-surface
+  (package
+    (inherit (specification->package "libwacom"))
+    (name "libwacom-surface")))
+
+(define-public xpadneo-dkms-git
+  (package
+    (inherit (specification->package "xpadneo"))
+    (name "xpadneo-dkms-git")))
+
+(define-public pidgin-mini
+  (package
+    (inherit (specification->package "pidgin"))
+    (name "pidgin-mini")))
+
+(define-public kwin-effects-glass-git
+  (package
+    (inherit (specification->package "kwin"))
+    (name "kwin-effects-glass-git")))
+
+(define-public gtkmm-docs
+  (package
+    (inherit (specification->package "gtkmm"))
+    (name "gtkmm-docs")))
+
+(define-public breeze-plus
+  (package
+    (inherit (specification->package "breeze"))
+    (name "breeze-plus")))
+
+(define-public blender-benchmark
+  (package
+    (inherit (specification->package "blender"))
+    (name "blender-benchmark")))
+
+(define-public ibus-bamboo
+  (package
+    (inherit (specification->package "ibus"))
+    (name "ibus-bamboo")))
+
+(define-public librewolf-allow-dark
+  (package
+    (inherit (specification->package "librewolf"))
+    (name "librewolf-allow-dark")))
+
+(define-public gimp-devel
+  (package
+    (inherit (specification->package "gimp"))
+    (name "gimp-devel")))
+
+(define-public alacritty-themes
+  (package
+    (inherit (specification->package "alacritty"))
+    (name "alacritty-themes")))
+
+(define-public josm-latest
+  (package
+    (inherit (specification->package "josm"))
+    (name "josm-latest")))
+
+(define-public gforth-docs
+  (package
+    (inherit (specification->package "gforth"))
+    (name "gforth-docs")))
+
