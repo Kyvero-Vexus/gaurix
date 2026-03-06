@@ -261,6 +261,15 @@
             grub-theme-bedrock-linux
             grub-theme-asus-tuf
             grub-theme-asus-rog
+            grub-theme-acer
+            grub-theme-almalinux
+            grub-theme-aorus
+            grub-theme-apple
+            grub-theme-arch-linux
+            grub-theme-archcraft
+            grub-theme-arco-linux
+            grub-theme-artix-linux
+            grub-theme-asrock
             plymouth-theme-unrap-git
             plymouth-theme-tech-b-git
             plymouth-theme-tech-a-git

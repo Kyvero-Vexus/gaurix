@@ -250,6 +250,15 @@
             grub-theme-huawei
             grub-theme-hp-victus
             grub-theme-hp-omen
+            grub-theme-asrock
+            grub-theme-artix-linux
+            grub-theme-arco-linux
+            grub-theme-archcraft
+            grub-theme-arch-linux
+            grub-theme-apple
+            grub-theme-aorus
+            grub-theme-almalinux
+            grub-theme-acer
             grub-theme-hp
             grub-theme-gigabyte
             grub-theme-gentoo
@@ -1354,6 +1363,67 @@
     (inherit grub)
     (name "grub-theme-asus-rog")))
 
+
+
+
+(define-public grub-theme-asus
+  (package
+    (inherit grub)
+    (name "grub-theme-asus")))
+
+
+(define-public grub-theme-asrock
+  (package
+    (inherit grub)
+    (name "grub-theme-asrock")))
+
+
+(define-public grub-theme-artix-linux
+  (package
+    (inherit grub)
+    (name "grub-theme-artix-linux")))
+
+
+(define-public grub-theme-arco-linux
+  (package
+    (inherit grub)
+    (name "grub-theme-arco-linux")))
+
+
+(define-public grub-theme-archcraft
+  (package
+    (inherit grub)
+    (name "grub-theme-archcraft")))
+
+
+(define-public grub-theme-arch-linux
+  (package
+    (inherit grub)
+    (name "grub-theme-arch-linux")))
+
+
+(define-public grub-theme-apple
+  (package
+    (inherit grub)
+    (name "grub-theme-apple")))
+
+
+(define-public grub-theme-aorus
+  (package
+    (inherit grub)
+    (name "grub-theme-aorus")))
+
+
+(define-public grub-theme-almalinux
+  (package
+    (inherit grub)
+    (name "grub-theme-almalinux")))
+
+
+(define-public grub-theme-acer
+  (package
+    (inherit grub)
+    (name "grub-theme-acer")))
 
 (define-public grub-theme-hp
   (package
