@@ -13,7 +13,8 @@
   #:use-module (gaurix packages general-compat)
   #:use-module (gaurix packages ffglitch)
   #:use-module (gaurix packages python-compat)
-  #:export (hello-gaurix
+  #:use-module (gaurix packages plymouth-themes-compat)
+  #:export (
             localsend-bin
             aider-chat
             lmstudio-bin
@@ -238,4 +239,25 @@
             grub-theme-centos
             grub-theme-bedrock-linux
             grub-theme-asus-tuf
-            grub-theme-asus-rog))
+            grub-theme-asus-rog
+            plymouth-theme-unrap-git
+            plymouth-theme-tech-b-git
+            plymouth-theme-tech-a-git
+            plymouth-theme-target-git
+            plymouth-theme-target-2-git
+            plymouth-theme-square-hud-git
+            plymouth-theme-square-git
+            plymouth-theme-splash-git
+            plymouth-theme-spinner-alt-git
+            plymouth-theme-spin-git
+            plymouth-theme-sphere-git
+            plymouth-theme-sliced-git
+            plymouth-theme-seal-git
+            plymouth-theme-seal-3-git
+            plymouth-theme-seal-2-git
+            plymouth-theme-rog-git
+            plymouth-theme-rog-2-git
+            plymouth-theme-rings-git
+            plymouth-theme-rings-2-git
+            plymouth-theme-red-loader-git
+            ))
