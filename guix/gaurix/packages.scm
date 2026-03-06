@@ -218,4 +218,24 @@
             grub-theme-kubuntu
             grub-theme-kingston
             grub-theme-kde-neon
-            grub-theme-huawei))
+            grub-theme-huawei
+            grub-theme-hp-victus
+            grub-theme-hp-omen
+            grub-theme-hp
+            grub-theme-gigabyte
+            grub-theme-gentoo
+            grub-theme-garuda
+            grub-theme-fujitsu
+            grub-theme-freebsd
+            grub-theme-framework
+            grub-theme-fedora
+            grub-theme-endeavouros
+            grub-theme-elementaryos
+            grub-theme-dell
+            grub-theme-deepin
+            grub-theme-debian
+            grub-theme-chromeos
+            grub-theme-centos
+            grub-theme-bedrock-linux
+            grub-theme-asus-tuf
+            grub-theme-asus-rog))

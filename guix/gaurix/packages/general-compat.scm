@@ -58,17 +58,41 @@
   #:use-module (gnu packages check)
   #:use-module (gnu packages audio)
   #:use-module (gnu packages bootloaders)
-  #:export (gtk2 gnu-netcat qt5-webengine python312 openssl-1.1
-            yt-dlp-git ripgrep-git fd-git eza-git zoxide-git shellcheck-bin
-            xlibre-xserver xlibre-xserver-bootstrap xlibre-xserver-xnest xlibre-xserver-xephyr xlibre-xserver-devel xlibre-xserver-common xlibre-xserver-xvfb qt5-remoteobjects qt5-webchannel qt5-websockets
-            dashbinsh libidn11 ncurses5-compat-libs neovim-symlinks neovim-git lib32-libidn11
+  #:export (gtk2
+            gnu-netcat
+            qt5-webengine
+            python312
+            openssl-1.1
+            yt-dlp-git
+            ripgrep-git
+            fd-git
+            eza-git
+            zoxide-git
+            shellcheck-bin
+            xlibre-xserver
+            xlibre-xserver-bootstrap
+            xlibre-xserver-xnest
+            xlibre-xserver-xephyr
+            xlibre-xserver-devel
+            xlibre-xserver-common
+            xlibre-xserver-xvfb
+            qt5-remoteobjects
+            qt5-webchannel
+            qt5-websockets
+            dashbinsh
+            libidn11
+            ncurses5-compat-libs
+            neovim-symlinks
+            neovim-git
+            lib32-libidn11
             gtk-engine-murrine
             gtkspell
             python313
             botan2
             piper-tts
             libjpeg6-turbo
-            lib32-gtk2 openssl-1.0
+            lib32-gtk2
+            openssl-1.0
             quickshell-git
             openscad-git
             mesa-git
@@ -123,7 +147,6 @@
             qt6-avif-image-plugin
             woff2-space-grotesk
             woff-space-grotesk
-            
             qt5-avif-image-plugin
             otf-space-grotesk
             freerdp2
@@ -157,7 +180,6 @@
             ffmpeg-full
             openrdap-client
             rclone-browser
-
             kwin-effects-geometry-change
             kwin-effect-rounded-corners-git
             evolution-tray-git
@@ -225,7 +247,27 @@
             grub-theme-kubuntu
             grub-theme-kingston
             grub-theme-kde-neon
-            grub-theme-huawei))
+            grub-theme-huawei
+            grub-theme-hp-victus
+            grub-theme-hp-omen
+            grub-theme-hp
+            grub-theme-gigabyte
+            grub-theme-gentoo
+            grub-theme-garuda
+            grub-theme-fujitsu
+            grub-theme-freebsd
+            grub-theme-framework
+            grub-theme-fedora
+            grub-theme-endeavouros
+            grub-theme-elementaryos
+            grub-theme-dell
+            grub-theme-deepin
+            grub-theme-debian
+            grub-theme-chromeos
+            grub-theme-centos
+            grub-theme-bedrock-linux
+            grub-theme-asus-tuf
+            grub-theme-asus-rog))
 
 (define-public gtk2
   (package
@@ -1197,3 +1239,123 @@
   (package
     (inherit grub)
     (name "grub-theme-huawei")))
+
+
+(define-public grub-theme-hp-victus
+  (package
+    (inherit grub)
+    (name "grub-theme-hp-victus")))
+
+
+(define-public grub-theme-hp-omen
+  (package
+    (inherit grub)
+    (name "grub-theme-hp-omen")))
+
+
+(define-public grub-theme-gigabyte
+  (package
+    (inherit grub)
+    (name "grub-theme-gigabyte")))
+
+
+(define-public grub-theme-gentoo
+  (package
+    (inherit grub)
+    (name "grub-theme-gentoo")))
+
+
+(define-public grub-theme-garuda
+  (package
+    (inherit grub)
+    (name "grub-theme-garuda")))
+
+
+(define-public grub-theme-fujitsu
+  (package
+    (inherit grub)
+    (name "grub-theme-fujitsu")))
+
+
+(define-public grub-theme-freebsd
+  (package
+    (inherit grub)
+    (name "grub-theme-freebsd")))
+
+
+(define-public grub-theme-framework
+  (package
+    (inherit grub)
+    (name "grub-theme-framework")))
+
+
+(define-public grub-theme-fedora
+  (package
+    (inherit grub)
+    (name "grub-theme-fedora")))
+
+
+(define-public grub-theme-endeavouros
+  (package
+    (inherit grub)
+    (name "grub-theme-endeavouros")))
+
+
+(define-public grub-theme-elementaryos
+  (package
+    (inherit grub)
+    (name "grub-theme-elementaryos")))
+
+
+(define-public grub-theme-dell
+  (package
+    (inherit grub)
+    (name "grub-theme-dell")))
+
+
+(define-public grub-theme-deepin
+  (package
+    (inherit grub)
+    (name "grub-theme-deepin")))
+
+
+(define-public grub-theme-debian
+  (package
+    (inherit grub)
+    (name "grub-theme-debian")))
+
+
+(define-public grub-theme-chromeos
+  (package
+    (inherit grub)
+    (name "grub-theme-chromeos")))
+
+
+(define-public grub-theme-centos
+  (package
+    (inherit grub)
+    (name "grub-theme-centos")))
+
+
+(define-public grub-theme-bedrock-linux
+  (package
+    (inherit grub)
+    (name "grub-theme-bedrock-linux")))
+
+
+(define-public grub-theme-asus-tuf
+  (package
+    (inherit grub)
+    (name "grub-theme-asus-tuf")))
+
+
+(define-public grub-theme-asus-rog
+  (package
+    (inherit grub)
+    (name "grub-theme-asus-rog")))
+
+
+(define-public grub-theme-hp
+  (package
+    (inherit grub)
+    (name "grub-theme-hp")))
