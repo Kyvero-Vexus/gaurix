@@ -95,6 +95,7 @@
             mecab-git
             openttd-jgrpp-git
             dragon-drop-git
+            wireguard-module-git
             python-protobuf-git
             protobuf-git
             libarchive-git

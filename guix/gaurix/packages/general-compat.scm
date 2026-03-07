@@ -45,6 +45,7 @@
   #:use-module (gnu packages web-browsers)
   #:use-module (gnu packages wm)
   #:use-module (gnu packages networking)
+  #:use-module (gnu packages vpn)
   #:use-module (gnu packages ccache)
   #:use-module (gnu packages python-xyz)
   #:use-module (gnu packages machine-learning)
@@ -132,6 +133,7 @@
             mecab-git
             openttd-jgrpp-git
             dragon-drop-git
+            wireguard-module-git
             python-protobuf-git
             protobuf-git
             libarchive-git
@@ -567,6 +569,12 @@
   (package
     (inherit dragon-drop)
     (name "dragon-drop-git")))
+
+
+(define-public wireguard-module-git
+  (package
+    (inherit wireguard-linux-compat)
+    (name "wireguard-module-git")))
 
 
 (define-public python-protobuf-git
