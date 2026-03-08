@@ -7,7 +7,9 @@
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages python-build)
   #:use-module (gnu packages python-xyz)
-  #:export (beautysh lieer qtile-extras protontricks-git rivalcfg))
+  #:use-module (gnu packages xml)
+  #:export (beautysh lieer qtile-extras protontricks-git rivalcfg
+            python-fpdf2))
 
 (define-public beautysh
   (package
@@ -88,3 +90,22 @@
     (synopsis "Configure SteelSeries mice")
     (description "rivalcfg configures supported SteelSeries gaming mice.")
     (license license:gpl3+)))
+
+(define-public python-fpdf2
+  (package
+    (name "python-fpdf2")
+    (version "2.8.7")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (pypi-uri "fpdf2" version))
+       (sha256
+        (base32 "1yapvrza3w3askik8v4rz0zghf9nl8v5lxpvf6ib0ylwbbpcqq3h"))))
+    (build-system pyproject-build-system)
+    (propagated-inputs (list python-defusedxml python-fonttools python-pillow))
+    (native-inputs (list python-setuptools python-wheel))
+    (home-page "https://py-pdf.github.io/fpdf2/")
+    (synopsis "Simple and fast PDF generation for Python")
+    (description "fpdf2 provides a Python library to generate PDF documents.")
+    (license license:lgpl3+)))
+
