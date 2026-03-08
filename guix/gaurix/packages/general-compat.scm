@@ -308,7 +308,9 @@
             calibre-web
             llama.cpp-cuda
             f3-qt
-            hydra-launcher-bin))
+            hydra-launcher-bin
+            got-vcs
+))
 
 (define-public gtk2
   (package
@@ -1589,3 +1591,12 @@
   (package
     (inherit hydra)
     (name "hydra-launcher-bin")))
+
+
+;;; Queue drain aliases (2026-03-08 package 5)
+
+(define-public got-vcs
+  (package
+    (inherit (specification->package "got"))
+    (name "got-vcs")))
+

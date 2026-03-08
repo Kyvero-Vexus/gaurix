@@ -324,4 +324,6 @@
             calibre-web
             llama.cpp-cuda
             f3-qt
-            hydra-launcher-bin))
+            hydra-launcher-bin
+            got-vcs
+))
