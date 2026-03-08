@@ -322,4 +322,6 @@
             plymouth-theme-red-loader-git
             
             calibre-web
-            llama.cpp-cuda))
+            llama.cpp-cuda
+            f3-qt
+            hydra-launcher-bin))

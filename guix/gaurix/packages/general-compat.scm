@@ -55,6 +55,7 @@
   #:use-module (gnu packages music)
   #:use-module (gnu packages messaging)
   #:use-module (gnu packages docker)
+  #:use-module (gnu packages disk)
   #:use-module (gnu packages zig)
   #:use-module (gnu packages solidity)
   #:use-module (gnu packages check)
@@ -305,7 +306,9 @@
             grub-theme-asus-tuf
             grub-theme-asus-rog
             calibre-web
-            llama.cpp-cuda))
+            llama.cpp-cuda
+            f3-qt
+            hydra-launcher-bin))
 
 (define-public gtk2
   (package
@@ -1575,3 +1578,14 @@
   (package
     (inherit llama-cpp-cuda)
     (name "llama.cpp-cuda")))
+
+
+(define-public f3-qt
+  (package
+    (inherit f3)
+    (name "f3-qt")))
+
+(define-public hydra-launcher-bin
+  (package
+    (inherit hydra)
+    (name "hydra-launcher-bin")))
