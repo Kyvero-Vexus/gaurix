@@ -16,6 +16,7 @@
   #:use-module (gaurix packages python-queue-20260306)
   #:use-module (gaurix packages python-queue-20260307)
   #:use-module (gaurix packages plymouth-themes-compat)
+  #:use-module (gaurix packages queue-20260308)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -258,6 +259,11 @@
             grub-theme-lubuntu
             grub-theme-linux-mint
             grub-theme-linux-lite
+            beautysh
+            lieer
+            qtile-extras
+            protontricks-git
+            rivalcfg
             grub-theme-lg
             grub-theme-lenovo
             grub-theme-legion
