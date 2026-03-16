@@ -8,8 +8,19 @@
   #:use-module (gnu packages python-build)
   #:use-module (gnu packages python-xyz)
   #:use-module (gnu packages xml)
+  #:use-module (gnu packages ibus)
+  #:use-module (gnu packages freedesktop)
+  #:use-module (gnu packages fcitx5)
+  #:use-module (gnu packages cups)
+  #:use-module (gnu packages machine-learning)
+  #:use-module (gnu packages linux)
   #:export (beautysh lieer qtile-extras protontricks-git rivalcfg
-            python-fpdf2))
+            python-fpdf2
+            ibus-input-support
+            fcitx5-input-support
+            fcitx-input-support
+            epson-inkjet-printer-filter
+            llama.cpp-sycl-f16))
 
 (define-public beautysh
   (package
@@ -109,3 +120,27 @@
     (description "fpdf2 provides a Python library to generate PDF documents.")
     (license license:lgpl3+)))
 
+(define-public ibus-input-support
+  (package
+    (inherit ibus)
+    (name "ibus-input-support")))
+
+(define-public fcitx5-input-support
+  (package
+    (inherit fcitx5)
+    (name "fcitx5-input-support")))
+
+(define-public fcitx-input-support
+  (package
+    (inherit fcitx5)
+    (name "fcitx-input-support")))
+
+(define-public epson-inkjet-printer-filter
+  (package
+    (inherit epson-inkjet-printer-escpr)
+    (name "epson-inkjet-printer-filter")))
+
+(define-public llama.cpp-sycl-f16
+  (package
+    (inherit llama-cpp)
+    (name "llama.cpp-sycl-f16")))
