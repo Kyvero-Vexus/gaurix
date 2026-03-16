@@ -20,6 +20,7 @@
   #:use-module (gaurix packages queue-20260316)
   #:use-module (gaurix packages queue-20260316b)
   #:use-module (gaurix packages queue-20260316c)
+  #:use-module (gaurix packages queue-20260316d)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -238,6 +239,8 @@
             grub-theme-vanilla-os
             grub-theme-vaio
             grub-theme-ultramarine
+            goldendict-ng
+            sirikali
             grub-theme-ubuntu-mate
             grub-theme-ubuntu
             grub-theme-toshiba
