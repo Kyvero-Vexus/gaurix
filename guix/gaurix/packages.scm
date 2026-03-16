@@ -19,6 +19,7 @@
   #:use-module (gaurix packages queue-20260308)
   #:use-module (gaurix packages queue-20260316)
   #:use-module (gaurix packages queue-20260316b)
+  #:use-module (gaurix packages queue-20260316c)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -349,6 +350,18 @@
             brlaser
             qview
             perl-moose
+            librepcb
+            imhex
+            dosbox-staging
+            pcsx2
+            newsraft
+            hotspot
+            wl-color-picker
+            gconf
+            vkbasalt
+            lyx
+            oneko
+            libselinux
             autofs
             swaylock-effects
             qsstv
