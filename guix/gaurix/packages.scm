@@ -17,6 +17,7 @@
   #:use-module (gaurix packages python-queue-20260307)
   #:use-module (gaurix packages plymouth-themes-compat)
   #:use-module (gaurix packages queue-20260308)
+  #:use-module (gaurix packages queue-20260316)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -326,4 +327,24 @@
             f3-qt
             hydra-launcher-bin
             got-vcs
+            plasma-mobile
+            wlogout
+            units
+            neofetch
+            ausweisapp
+            rasdaemon
+            http-parser
+            gallery-dl
+            fritzing
+            slade
+            fsearch
+            archivemount
+            asdf-vm
+            melonds
+            xorgxrdp
+            klassy
+            python-pathvalidate
+            espanso-x11
+            brlaser
+            qview
 ))
