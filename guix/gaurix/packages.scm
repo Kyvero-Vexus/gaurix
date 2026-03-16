@@ -18,6 +18,7 @@
   #:use-module (gaurix packages plymouth-themes-compat)
   #:use-module (gaurix packages queue-20260308)
   #:use-module (gaurix packages queue-20260316)
+  #:use-module (gaurix packages queue-20260316b)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -347,4 +348,24 @@
             espanso-x11
             brlaser
             qview
+            perl-moose
+            autofs
+            swaylock-effects
+            qsstv
+            freedoom
+            qdirstat
+            bindfs
+            cbonsai
+            jmtpfs
+            sioyek
+            vagrant
+            xsane
+            mcomix
+            shntool
+            f3
+            metis
+            nomacs
+            hw-probe
+            dragon-drop
+            librewolf
 ))
