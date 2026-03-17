@@ -21,6 +21,7 @@
   #:use-module (gaurix packages queue-20260316b)
   #:use-module (gaurix packages queue-20260316c)
   #:use-module (gaurix packages queue-20260316d)
+  #:use-module (gaurix packages queue-20260317)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -179,6 +180,26 @@
             kwin-effect-rounded-corners-git
             evolution-tray-git
             piper-voices-en-us
+            tuios-bin
+            llmfit-bin
+            dumber-browser-bin
+            jcode-bin
+            kl-bin
+            lazyllama-bin
+            lore-bin
+            tpack-bin
+            wander-bin
+            credit-bin
+            setwall-bin
+            eqonomize-bin
+            symfony-cli-bin
+            mcat-bin
+            rate-mirrors-bin
+            wayscriber-bin
+            ookla-speedtest-bin
+            vm-curator-bin
+            pixelorama-bin
+            qbz-bin
             libadwaita-without-adwaita
             pulseaudio-ctl
             ares-emu
