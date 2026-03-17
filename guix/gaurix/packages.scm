@@ -22,6 +22,7 @@
   #:use-module (gaurix packages queue-20260316c)
   #:use-module (gaurix packages queue-20260316d)
   #:use-module (gaurix packages queue-20260317)
+  #:use-module (gaurix packages queue-20260317e)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -200,6 +201,9 @@
             vm-curator-bin
             pixelorama-bin
             qbz-bin
+            aws-sam-cli-bin
+            ludusavi-bin
+            lazydocker-bin
             libadwaita-without-adwaita
             pulseaudio-ctl
             ares-emu
