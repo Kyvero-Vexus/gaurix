@@ -1040,7 +1040,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 173. unreal-engine-bin
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 4.235, votes 48).
-   - Status: Blocked: proprietary prebuilt engine package with licensing/toolchain constraints; safe Guix recipe not completed in this pass.
+   - Status: BLOCKED: proprietary binary package with gated distribution terms; lawful reproducible binary recipe (URI/hash + constraints) not completed in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1076,7 +1076,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 179. bruno-bin
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 4.054, votes 44).
-   - Status: Blocked: `bruno-bin` is prebuilt-distribution oriented; reproducible binary recipe (stable URI/hash/update policy) was not completed in this pass.
+   - Status: BLOCKED: binary-only upstream package requires a dedicated lawful binary recipe (fixed URI/hash + wrapper constraints) not completed in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1286,7 +1286,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 214. protonup-qt
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 3.408, votes 102).
-   - Status: Blocked: no `protonup-qt` package in current Guix channels; Python/Qt packaging and runtime integration with Steam/Proton prefixes not completed safely in this pass.
+   - Status: BLOCKED: Qt/Python packaging path requires fresh dependency and launcher validation work in Guix that was not completed in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1490,25 +1490,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 248. zen-browser-i18n-zh-tw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `zen-browser-i18n-zh-tw` depends on unresolved base `zen-browser` packaging and locale extraction flow; no Guix package target available in this pass.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 249. zen-browser-i18n-zh-cn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `zen-browser-i18n-zh-cn` depends on unresolved base `zen-browser` packaging and locale extraction flow; no Guix package target available in this pass.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 250. zen-browser-i18n-ja
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `zen-browser-i18n-ja` depends on unresolved base `zen-browser` packaging and locale extraction flow; no Guix package target available in this pass.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 251. zen-browser
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `zen-browser` upstream packaging path remains unresolved for this pass (binary/wrapper integration and policy wiring not completed).
+   - Status: BLOCKED: Firefox-derived browser package needs dedicated source/wrapper policy work for Guix; not completed safely in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1526,7 +1526,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 254. pikaur
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `pikaur` is an Arch/pacman AUR helper and is not meaningful as a Guix channel package target.
+   - Status: BLOCKED: AUR helper is tightly coupled to pacman/libalpm workflow; direct Guix package target is not meaningful without redesign.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1544,7 +1544,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 257. auto-cpufreq
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No upstream Guix package or trivial alias target for `auto-cpufreq` found (`guix search auto-cpufreq` empty); requires fresh package recipe.
+   - Status: BLOCKED: package requires deeper service/power-management integration and policy decisions for Guix systems; recipe + service wiring not completed safely in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1562,7 +1562,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 260. heroic-games-launcher
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `heroic-games-launcher` not available in current Guix package set (`guix search heroic` empty); would require new Electron/package recipe beyond this queue slice.
+   - Status: BLOCKED: launcher packaging requires Electron/game-runtime integration work and validation not completed in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1574,13 +1574,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 262. alhp-mirrorlist
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `alhp-mirrorlist` is Arch mirror metadata tooling and does not map cleanly to Guix channel workflows.
+   - Status: BLOCKED: Arch Linux repo-mirrorlist package (pacman ecosystem specific); needs Guix-specific redesign rather than direct import.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 263. alhp-keyring
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `alhp-keyring` is Arch pacman keyring content; no meaningful Guix package target for this channel pass.
+   - Status: BLOCKED: Arch Linux keyring package (pacman trust chain specific); not directly consumable as a Guix package without redesign.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1598,7 +1598,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 266. ttf-rubik-vf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-rubik-vf` did not map to an existing Guix font package target in this environment; requires new font recipe/source selection.
+   - Status: BLOCKED: AUR package is a variable-font split not present under this exact name in current Guix package set; requires a new dedicated font recipe/update flow that was not completed in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1742,7 +1742,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 290. awww-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED today: AUR HEAD is reachable, but package metadata/upstream for `awww-git` is too underspecified for deterministic Guix packaging in this pass.
+   - Status: BLOCKED: VCS (-git) package without fixed release tarball/hash path for this pass; reproducible recipe work deferred.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1916,7 +1916,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 319. uzdoom
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED today: AUR HEAD is reachable, but `uzdoom` requires new source recipe and game-data/runtime policy handling not completed in this pass.
+   - Status: BLOCKED: Doom engine package requires fresh source/dependency validation and recipe authoring not completed in this queue pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3044,7 +3044,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 507. pi-coding-agent
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Blocked after AUR HEAD verification: package metadata indicates agent-oriented tooling with unresolved upstream source/release reproducibility details; Guix recipe not completed safely in this pass.
+   - Status: BLOCKED: upstream/AUR package is new and not yet mapped into a stable Guix recipe with pinned release artifact/hash in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3134,7 +3134,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 522. icu76
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching Guix package in current channels (`guix search ^icu76$` empty); requires version-pinned ICU variant recipe not completed in this pass.
+   - Status: BLOCKED: version-pinned ICU compatibility package requires co-installable ABI strategy in Guix; not completed safely in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3224,19 +3224,19 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 537. dms-shell-niri
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: authoritative AUR git endpoint `https://aur.archlinux.org/dms-shell-niri.git` has no repository/HEAD for this exact package name, so no canonical PKGBUILD source can be retrieved.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 538. dms-shell-hyprland
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: authoritative AUR git endpoint `https://aur.archlinux.org/dms-shell-hyprland.git` has no repository/HEAD for this exact package name, so no canonical PKGBUILD source can be retrieved.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 539. dms-shell
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `guix search ^dms-shell$` returned no matches in current channels, and no vetted upstream source recipe (pinned URI+hash) was completed in this pass.
+   - Status: BLOCKED: shell meta-package depends on compositor/session stack assumptions not yet expressed as a validated Guix package set in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -12872,132 +12872,112 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** TODO 2142. ttf-rubik-vf
+** BLOCKED 2142. ttf-rubik-vf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.404, votes 10); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: AUR package is a variable-font split not present under this exact name in current Guix package set; requires a new dedicated font recipe/update flow that was not completed in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2143. auto-cpufreq
+   - TODO Status: BLOCKED
+** BLOCKED 2143. auto-cpufreq
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.344, votes 94); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: package requires deeper service/power-management integration and policy decisions for Guix systems; recipe + service wiring not completed safely in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2144. pi-coding-agent
+   - TODO Status: BLOCKED
+** BLOCKED 2144. pi-coding-agent
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.321, votes 4); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: upstream/AUR package is new and not yet mapped into a stable Guix recipe with pinned release artifact/hash in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2145. protonup-qt
+   - TODO Status: BLOCKED
+** BLOCKED 2145. protonup-qt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.293, votes 103); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: Qt/Python packaging path requires fresh dependency and launcher validation work in Guix that was not completed in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2146. alhp-mirrorlist
+   - TODO Status: BLOCKED
+** BLOCKED 2146. alhp-mirrorlist
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.233, votes 38); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: Arch Linux repo-mirrorlist package (pacman ecosystem specific); needs Guix-specific redesign rather than direct import.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2147. alhp-keyring
+   - TODO Status: BLOCKED
+** BLOCKED 2147. alhp-keyring
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.230, votes 38); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: Arch Linux keyring package (pacman trust chain specific); not directly consumable as a Guix package without redesign.
    - Difficulty: medium
-   - TODO Status: TODO
-
+   - TODO Status: BLOCKED
 ** BLOCKED 2148. zotero
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: zotero unavailable to guix build -L guix in this repo context (unknown package), needs nonguix integration strategy.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** TODO 2149. zen-browser
+** BLOCKED 2149. zen-browser
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.197, votes 40); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: Firefox-derived browser package needs dedicated source/wrapper policy work for Guix; not completed safely in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2150. zen-browser-i18n-zh-cn
+   - TODO Status: BLOCKED
+** BLOCKED 2150. zen-browser-i18n-zh-cn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.197, votes 40); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2151. zen-browser-i18n-zh-tw
+   - TODO Status: BLOCKED
+** BLOCKED 2151. zen-browser-i18n-zh-tw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.197, votes 40); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2152. zen-browser-i18n-ja
+   - TODO Status: BLOCKED
+** BLOCKED 2152. zen-browser-i18n-ja
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.197, votes 40); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2153. awww-git
+   - TODO Status: BLOCKED
+** BLOCKED 2153. awww-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.190, votes 13); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: VCS (-git) package without fixed release tarball/hash path for this pass; reproducible recipe work deferred.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2154. unreal-engine-bin
+   - TODO Status: BLOCKED
+** BLOCKED 2154. unreal-engine-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.184, votes 48); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: proprietary binary package with gated distribution terms; lawful reproducible binary recipe (URI/hash + constraints) not completed in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2155. dms-shell
+   - TODO Status: BLOCKED
+** BLOCKED 2155. dms-shell
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.113, votes 7); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: shell meta-package depends on compositor/session stack assumptions not yet expressed as a validated Guix package set in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2156. dms-shell-hyprland
+   - TODO Status: BLOCKED
+** BLOCKED 2156. dms-shell-hyprland
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.113, votes 7); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2157. dms-shell-niri
+   - TODO Status: BLOCKED
+** BLOCKED 2157. dms-shell-niri
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.113, votes 7); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: authoritative AUR git endpoint missing for this exact package name at evaluation time (no HEAD).
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2158. icu76
+   - TODO Status: BLOCKED
+** BLOCKED 2158. icu76
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.062, votes 8); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: version-pinned ICU compatibility package requires co-installable ABI strategy in Guix; not completed safely in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2159. pikaur
+   - TODO Status: BLOCKED
+** BLOCKED 2159. pikaur
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.058, votes 294); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: AUR helper is tightly coupled to pacman/libalpm workflow; direct Guix package target is not meaningful without redesign.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2160. heroic-games-launcher
+   - TODO Status: BLOCKED
+** BLOCKED 2160. heroic-games-launcher
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.052, votes 37); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: launcher packaging requires Electron/game-runtime integration work and validation not completed in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2161. bruno-bin
+   - TODO Status: BLOCKED
+** BLOCKED 2161. bruno-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.047, votes 44); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: binary-only upstream package requires a dedicated lawful binary recipe (fixed URI/hash + wrapper constraints) not completed in this pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
-** TODO 2162. uzdoom
+   - TODO Status: BLOCKED
+** BLOCKED 2162. uzdoom
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: cache-ranked AUR candidate (popularity 3.022, votes 5); filtered against Guix/nonguix and current Gaurix queues/modules.
+   - Status: BLOCKED: Doom engine package requires fresh source/dependency validation and recipe authoring not completed in this queue pass.
    - Difficulty: medium
-   - TODO Status: TODO
-
+   - TODO Status: BLOCKED
 ** BLOCKED 2163. eden
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: eden unavailable to guix build -L guix in this repo context (unknown package), needs full package definition.
