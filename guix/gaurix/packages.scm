@@ -27,9 +27,11 @@
   #:use-module (gaurix packages queue-20260318f)
   #:use-module (gaurix packages queue-20260318g)
   #:use-module (gaurix packages queue-20260318h)
+  #:use-module (gaurix packages queue-20260318i)
   #:export (
             qt5ct-kde
             linux-mainline
+            linux-mainline-headers
             hyprwayland-scanner-git
             hyprland-protocols-git
             easyeffects-git
