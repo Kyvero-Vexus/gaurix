@@ -356,7 +356,6 @@
             plymouth-theme-rings-git
             plymouth-theme-rings-2-git
             plymouth-theme-red-loader-git
-            
             calibre-web
             llama.cpp-cuda
             f3-qt
@@ -414,4 +413,6 @@
             hw-probe
             dragon-drop
             librewolf
-))
+            papirus-folders
+            ttf-twemoji
+            ))

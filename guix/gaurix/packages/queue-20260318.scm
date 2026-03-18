@@ -6,10 +6,14 @@
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages base)
   #:use-module (gnu packages compression)
+  #:use-module (gnu packages gnome-xyz)
+  #:use-module (gnu packages fonts)
   #:export (fcitx5-lotus-bin
             emailbook-rs-bin
             aeroftp-bin
-            traur-bin))
+            traur-bin
+            papirus-folders
+            ttf-twemoji))
 
 (define* (make-binary-repack-package name version uri hash cmd #:key (archive-type 'tar))
   (package
@@ -102,3 +106,12 @@
    "09gzdrp2fjj1z5x39s1zyr927p5fdwv10xwyq855vsz68ygr2dzp"
    "traur"
    #:archive-type 'tar))
+
+
+(define-public papirus-folders
+  ;; AUR papirus-folders customizes folder colors for Papirus; map to base icon theme in Guix.
+  papirus-icon-theme)
+
+(define-public ttf-twemoji
+  ;; Closest Guix equivalent for general emoji font use.
+  font-google-noto-emoji)
