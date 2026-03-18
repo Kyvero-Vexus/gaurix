@@ -24,7 +24,28 @@
   #:use-module (gaurix packages queue-20260317)
   #:use-module (gaurix packages queue-20260317e)
   #:use-module (gaurix packages queue-20260318)
+  #:use-module (gaurix packages queue-20260318f)
   #:export (
+            viber-appimage
+            trezor-suite-appimage
+            noto-color-emoji-fontconfig
+            docker-mcp
+            docker-model-bin
+            rclone-manager
+            rclone-mount-service
+            obs-studio-browser
+            open-android-backup
+            starship-sf64
+            docker-rootless-extras
+            handbrake-full-cli
+            wlrobs
+            libinput-gestures
+            qt6-base-headless
+            sirikali-bin
+            gimp-plugin-resynthesizer
+            xsane-gimp
+            python-inputs
+            nemo-dropbox
             traur-bin
             aeroftp-bin
             emailbook-rs-bin
