@@ -20,7 +20,9 @@
             gimp-plugin-resynthesizer
             xsane-gimp
             python-inputs
-            nemo-dropbox))
+            nemo-dropbox
+            librewolf-bin
+            ungoogled-chromium-bin))
 
 (define (compat-alias alias target)
   (package
@@ -86,3 +88,9 @@
 
 (define-public nemo-dropbox
   (compat-alias "nemo-dropbox" "nemo"))
+
+(define-public librewolf-bin
+  (compat-alias "librewolf-bin" "librewolf"))
+
+(define-public ungoogled-chromium-bin
+  (compat-alias "ungoogled-chromium-bin" "ungoogled-chromium"))

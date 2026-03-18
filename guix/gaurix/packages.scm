@@ -258,6 +258,8 @@
             python-pyamdgpuinfo
             python-torrequest
             python-lsp-tree-sitter
+            ungoogled-chromium-bin
+            librewolf-bin
             python-python-ffmpeg
             python-markitdown
             python-hwdata
