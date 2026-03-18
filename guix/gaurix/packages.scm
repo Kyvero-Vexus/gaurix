@@ -28,6 +28,7 @@
   #:use-module (gaurix packages queue-20260318g)
   #:use-module (gaurix packages queue-20260318h)
   #:use-module (gaurix packages queue-20260318i)
+  #:use-module (gaurix packages queue-20260318j)
   #:export (
             qt5ct-kde
             linux-mainline
