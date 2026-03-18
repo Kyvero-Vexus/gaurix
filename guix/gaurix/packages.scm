@@ -23,7 +23,12 @@
   #:use-module (gaurix packages queue-20260316d)
   #:use-module (gaurix packages queue-20260317)
   #:use-module (gaurix packages queue-20260317e)
+  #:use-module (gaurix packages queue-20260318)
   #:export (
+            traur-bin
+            aeroftp-bin
+            emailbook-rs-bin
+            fcitx5-lotus-bin
             waybar-claude-usage
             waybar-codex-usage
             waybar-logitech-battery
