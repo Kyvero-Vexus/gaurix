@@ -26,6 +26,7 @@
   #:use-module (gaurix packages queue-20260318)
   #:use-module (gaurix packages queue-20260318f)
   #:use-module (gaurix packages queue-20260318g)
+  #:use-module (gaurix packages queue-20260318h)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -38,6 +39,11 @@
             radicle-desktop
             joycond-git
             unordered_dense-git
+            linux-mkopec-git-headers
+            linux-mkopec-git
+            wvkbd-deskintl
+            linux-bsb-headers
+            linux-bsb
             viber-appimage
             trezor-suite-appimage
             noto-color-emoji-fontconfig
