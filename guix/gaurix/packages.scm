@@ -25,7 +25,19 @@
   #:use-module (gaurix packages queue-20260317e)
   #:use-module (gaurix packages queue-20260318)
   #:use-module (gaurix packages queue-20260318f)
+  #:use-module (gaurix packages queue-20260318g)
   #:export (
+            qt5ct-kde
+            linux-mainline
+            hyprwayland-scanner-git
+            hyprland-protocols-git
+            easyeffects-git
+            gp-saml-gui-git
+            hyprlang-git
+            hyprutils-git
+            radicle-desktop
+            joycond-git
+            unordered_dense-git
             viber-appimage
             trezor-suite-appimage
             noto-color-emoji-fontconfig
