@@ -30,6 +30,7 @@
   #:use-module (gaurix packages queue-20260318i)
   #:use-module (gaurix packages queue-20260318j)
   #:use-module (gaurix packages queue-20260319)
+  #:use-module (gaurix packages queue-20260319k)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -258,6 +259,11 @@
             ludusavi-bin
             lazydocker-bin
             libadwaita-without-adwaita
+            icu76
+            gdk-pixbuf2-noglycin-docs
+            gdk-pixbuf2-noglycin
+            niri-wip-git
+            wine32
             pulseaudio-ctl
             ares-emu
             ares-emu-git
