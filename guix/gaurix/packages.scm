@@ -72,6 +72,9 @@
             aeroftp-bin
             emailbook-rs-bin
             openssl-static
+            audacity-plugins
+            sunshine-beta-bin
+            powder-toy
             evince-no-gnome
             fcitx5-lotus-bin
             waybar-claude-usage
