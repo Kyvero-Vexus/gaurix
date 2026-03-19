@@ -29,6 +29,7 @@
   #:use-module (gaurix packages queue-20260318h)
   #:use-module (gaurix packages queue-20260318i)
   #:use-module (gaurix packages queue-20260318j)
+  #:use-module (gaurix packages queue-20260319)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -70,6 +71,8 @@
             traur-bin
             aeroftp-bin
             emailbook-rs-bin
+            openssl-static
+            evince-no-gnome
             fcitx5-lotus-bin
             waybar-claude-usage
             waybar-codex-usage
