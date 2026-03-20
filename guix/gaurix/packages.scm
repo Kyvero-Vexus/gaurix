@@ -31,6 +31,7 @@
   #:use-module (gaurix packages queue-20260318j)
   #:use-module (gaurix packages queue-20260319)
   #:use-module (gaurix packages queue-20260319k)
+  #:use-module (gaurix packages queue-20260320p100)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -471,4 +472,8 @@
             librewolf
             papirus-folders
             ttf-twemoji
+            xpadneo-dkms
+            cmatrix-git
+            mksh-bin
+            xdg-desktop-portal-hyprland-git
             ))
