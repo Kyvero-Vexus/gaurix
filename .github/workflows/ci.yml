@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  repo-sanity:
+    name: repo-sanity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify required repository files
+        run: |
+          set -euo pipefail
+          test -f README.md
+          test -f SECURITY.md
+          test -f channels.scm
+          test -d guix
+          test -d tests
+
+      - name: Basic formatting guard
+        run: |
+          set -euo pipefail
+          if grep -RIn $'\t' README.md SECURITY.md channels.scm; then
+            echo "Tabs found in key docs/config files; expected spaces."
+            exit 1
+          fi
