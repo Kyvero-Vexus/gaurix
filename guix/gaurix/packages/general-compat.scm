@@ -310,7 +310,78 @@
             f3-qt
             hydra-launcher-bin
             got-vcs
-            stoken-git
+            stoken-git            lib32-opencore-amr
+            obs-vkcapture-git
+            lib32-obs-vkcapture-git
+            mangohud-git
+            lib32-soundtouch
+            radicle-cli
+            radicle-cli-git
+            lib32-libplacebo
+            python-croniter-git
+            matugen-bin
+            protoc-gen-go-grpc-bin
+            imhex-bin
+            dwarfs-bin
+            xremap-wlroots-bin
+            swift-bin
+            neovim-nightly-bin
+            dumbpipe-bin
+            bibata-cursor-theme-bin
+            moonlight-qt-mainline-git
+            klassy-bin
+            stellarium-qt5-bin
+            chrony-git
+            emacs-yasnippet-git
+            emacs-evil-org-git
+            emacs-evil-collection-git
+            xsane-git
+            carla-git
+            obs-shaderfilter-git
+            river-git
+            binwalk-git
+            flightgear-appimage
+            zrythm-git
+            musikcube-bin
+            pcsx2-latest-bin
+            speedcrunch-git
+            xwayland-satellite-git
+            noisetorch-bin
+            rkdeveloptool-git
+            windowmaker-git
+            gnunet-git
+            xcompmgr-git
+            lib32-miniupnpc
+            libei-git
+            kanata-bin
+            qbittorrent-git
+            freecad-git
+            nerd-dictation-git
+            monado-git
+            qgis-git
+            surf-git
+            bigbagkbdtrixxkb-git
+            khal-git
+            kbdd-git
+            bombadillo-git
+            py-spy-bin
+            ginkgo-cli
+            rust-git
+            prjtrellis-git
+            celestia-qt6-git
+            vkbasalt-cli
+            cmake-git
+            pay-respects-bin
+            go-chroma-bin
+            spacefm-bin
+            coccinelle-git
+            wget2-git
+            kirigami-addons-git
+            opendoas-git
+            discover-git
+            xdg-desktop-portal-kde-git
+            kuserfeedback-git
+
 ))
 
 (define-public gtk2
@@ -1605,3 +1676,145 @@
   (package
     (inherit stoken)
     (name "stoken-git")))
+
+(define-public lib32-opencore-amr opencore-amr)
+
+(define-public obs-vkcapture-git obs-vkcapture)
+
+(define-public lib32-obs-vkcapture-git obs-vkcapture)
+
+(define-public mangohud-git mangohud)
+
+(define-public lib32-soundtouch soundtouch)
+
+(define-public radicle-cli radicle)
+
+(define-public radicle-cli-git radicle)
+
+(define-public lib32-libplacebo libplacebo)
+
+(define-public python-croniter-git python-croniter)
+
+(define-public matugen-bin matugen)
+
+(define-public protoc-gen-go-grpc-bin protoc-gen-go-grpc)
+
+(define-public imhex-bin imhex)
+
+(define-public dwarfs-bin dwarfs)
+
+(define-public xremap-wlroots-bin xremap-wlroots)
+
+(define-public swift-bin swift)
+
+(define-public neovim-nightly-bin neovim)
+
+(define-public dumbpipe-bin dumbpipe)
+
+(define-public bibata-cursor-theme-bin bibata-cursor-theme)
+
+(define-public moonlight-qt-mainline-git moonlight-qt)
+
+(define-public klassy-bin klassy)
+
+(define-public stellarium-qt5-bin stellarium)
+
+(define-public chrony-git chrony)
+
+(define-public emacs-yasnippet-git emacs-yasnippet)
+
+(define-public emacs-evil-org-git emacs-evil-org)
+
+(define-public emacs-evil-collection-git emacs-evil-collection)
+
+(define-public xsane-git xsane)
+
+(define-public carla-git carla)
+
+(define-public obs-shaderfilter-git obs-shaderfilter)
+
+(define-public river-git river)
+
+(define-public binwalk-git binwalk)
+
+(define-public flightgear-appimage flightgear)
+
+(define-public zrythm-git zrythm)
+
+(define-public musikcube-bin musikcube)
+
+(define-public pcsx2-latest-bin pcsx2)
+
+(define-public speedcrunch-git speedcrunch)
+
+(define-public xwayland-satellite-git xwayland-satellite)
+
+(define-public noisetorch-bin noisetorch)
+
+(define-public rkdeveloptool-git rkdeveloptool)
+
+(define-public windowmaker-git windowmaker)
+
+(define-public gnunet-git gnunet)
+
+(define-public xcompmgr-git xcompmgr)
+
+(define-public lib32-miniupnpc miniupnpc)
+
+(define-public libei-git libei)
+
+(define-public kanata-bin kanata)
+
+(define-public qbittorrent-git qbittorrent)
+
+(define-public freecad-git freecad)
+
+(define-public nerd-dictation-git nerd-dictation)
+
+(define-public monado-git monado)
+
+(define-public qgis-git qgis)
+
+(define-public surf-git surf)
+
+(define-public bigbagkbdtrixxkb-git bigbagkbdtrixxkb)
+
+(define-public khal-git khal)
+
+(define-public kbdd-git kbdd)
+
+(define-public bombadillo-git bombadillo)
+
+(define-public py-spy-bin py-spy)
+
+(define-public ginkgo-cli ginkgo)
+
+(define-public rust-git rust)
+
+(define-public prjtrellis-git prjtrellis)
+
+(define-public celestia-qt6-git celestia)
+
+(define-public vkbasalt-cli vkbasalt)
+
+(define-public cmake-git cmake)
+
+(define-public pay-respects-bin pay-respects)
+
+(define-public go-chroma-bin go-chroma)
+
+(define-public spacefm-bin spacefm)
+
+(define-public coccinelle-git coccinelle)
+
+(define-public wget2-git wget2)
+
+(define-public kirigami-addons-git kirigami-addons)
+
+(define-public opendoas-git opendoas)
+
+(define-public discover-git discover)
+
+(define-public xdg-desktop-portal-kde-git xdg-desktop-portal-kde)
+
+(define-public kuserfeedback-git kuserfeedback)

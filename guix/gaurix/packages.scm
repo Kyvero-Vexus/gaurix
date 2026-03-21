@@ -487,5 +487,76 @@
             xpadneo-dkms
             cmatrix-git
             mksh-bin
-            xdg-desktop-portal-hyprland-git
+            xdg-desktop-portal-hyprland-git            lib32-opencore-amr
+            obs-vkcapture-git
+            lib32-obs-vkcapture-git
+            mangohud-git
+            lib32-soundtouch
+            radicle-cli
+            radicle-cli-git
+            lib32-libplacebo
+            python-croniter-git
+            matugen-bin
+            protoc-gen-go-grpc-bin
+            imhex-bin
+            dwarfs-bin
+            xremap-wlroots-bin
+            swift-bin
+            neovim-nightly-bin
+            dumbpipe-bin
+            bibata-cursor-theme-bin
+            moonlight-qt-mainline-git
+            klassy-bin
+            stellarium-qt5-bin
+            chrony-git
+            emacs-yasnippet-git
+            emacs-evil-org-git
+            emacs-evil-collection-git
+            xsane-git
+            carla-git
+            obs-shaderfilter-git
+            river-git
+            binwalk-git
+            flightgear-appimage
+            zrythm-git
+            musikcube-bin
+            pcsx2-latest-bin
+            speedcrunch-git
+            xwayland-satellite-git
+            noisetorch-bin
+            rkdeveloptool-git
+            windowmaker-git
+            gnunet-git
+            xcompmgr-git
+            lib32-miniupnpc
+            libei-git
+            kanata-bin
+            qbittorrent-git
+            freecad-git
+            nerd-dictation-git
+            monado-git
+            qgis-git
+            surf-git
+            bigbagkbdtrixxkb-git
+            khal-git
+            kbdd-git
+            bombadillo-git
+            py-spy-bin
+            ginkgo-cli
+            rust-git
+            prjtrellis-git
+            celestia-qt6-git
+            vkbasalt-cli
+            cmake-git
+            pay-respects-bin
+            go-chroma-bin
+            spacefm-bin
+            coccinelle-git
+            wget2-git
+            kirigami-addons-git
+            opendoas-git
+            discover-git
+            xdg-desktop-portal-kde-git
+            kuserfeedback-git
+
             ))
