@@ -310,6 +310,7 @@
             f3-qt
             hydra-launcher-bin
             got-vcs
+            stoken-git
 ))
 
 (define-public gtk2
@@ -1600,3 +1601,7 @@
     (inherit (specification->package "got"))
     (name "got-vcs")))
 
+(define-public stoken-git
+  (package
+    (inherit stoken)
+    (name "stoken-git")))
