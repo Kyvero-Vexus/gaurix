@@ -32,6 +32,7 @@
   #:use-module (gaurix packages queue-20260319)
   #:use-module (gaurix packages queue-20260319k)
   #:use-module (gaurix packages queue-20260320p100)
+  #:use-module (gaurix packages queue-20260321p100)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -258,6 +259,17 @@
             qbz-bin
             aws-sam-cli-bin
             ludusavi-bin
+            ioquake3-git
+            lyx-bin
+            plasma-mobile-git
+            gromit-mpx-git
+            rofi-calc-git
+            bcachefs-tools-git
+            pokerth-bin
+            wlrctl-git
+            matterbridge-git
+            tabbed-git
+            peek-bin
             lazydocker-bin
             libadwaita-without-adwaita
             icu76
