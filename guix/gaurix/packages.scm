@@ -33,6 +33,7 @@
   #:use-module (gaurix packages queue-20260319k)
   #:use-module (gaurix packages queue-20260320p100)
   #:use-module (gaurix packages queue-20260321p100)
+  #:use-module (gaurix packages queue-20260322p100)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -559,4 +560,5 @@
             xdg-desktop-portal-kde-git
             kuserfeedback-git
 
+            f3-git
             ))
