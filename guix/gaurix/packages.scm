@@ -34,6 +34,8 @@
   #:use-module (gaurix packages queue-20260320p100)
   #:use-module (gaurix packages queue-20260321p100)
   #:use-module (gaurix packages queue-20260322p100)
+  #:use-module (gaurix packages queue-20260322p100i)
+  #:use-module (gaurix packages queue-20260322p100i-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
