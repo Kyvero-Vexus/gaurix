@@ -40,6 +40,8 @@
   #:use-module (gaurix packages queue-20260323p100-blocked-notes)
   #:use-module (gaurix packages queue-20260323p100b)
   #:use-module (gaurix packages queue-20260323p100b-blocked-notes)
+  #:use-module (gaurix packages queue-20260323p100c)
+  #:use-module (gaurix packages queue-20260323p100c-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -631,4 +633,34 @@
             autokey-gtk
             autokey-qt
             lkrg-dkms
+            ;; queue-20260323p100c exports (aliases)
+            stellarium-lite
+            libffi-static
+            kf6-servicemenus-imagetools
+            atari-bowling
+            atari-combat
+            atari-adventure
+            atari-space-invaders
+            refind-theme-metro-git
+            atari-breakout
+            youtube-dl-git
+            plymouth-theme-cachyos-bgrt
+            cmake-language-server-git
+            lxpanel-gtk2
+            kickoff
+            fastcompmgr-dev
+            libpurple-carbons
+            libpurple-carbons-git
+            purple-gnome-keyring
+            fastcompmgr
+            pidgin-libnotify-notify-osd
+            sunshine-git
+            gnome-kiosk
+            libxml2-meson-git
+            sdl3-noibus-git
+            waybar-minimal-git
+            dbus-nosystemd-git
+            pidgin-gnutls
+            libpurple-gnutls
+            finch-gnutls
             ))
