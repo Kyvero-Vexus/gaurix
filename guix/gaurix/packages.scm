@@ -38,6 +38,8 @@
   #:use-module (gaurix packages queue-20260322p100i-blocked-notes)
   #:use-module (gaurix packages queue-20260323p100)
   #:use-module (gaurix packages queue-20260323p100-blocked-notes)
+  #:use-module (gaurix packages queue-20260323p100b)
+  #:use-module (gaurix packages queue-20260323p100b-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -574,4 +576,59 @@
             doas-sudo-shim
             python-ffmpeg-progress-yield
             mono-tools
+            ;; queue-20260323p100b exports
+            grub-theme-tela-white-ultrawide-git
+            grub-theme-tela-white-ultrawide2k-git
+            grub-theme-tela-whitesur-1080p-git
+            grub-theme-tela-whitesur-2k-git
+            grub-theme-tela-whitesur-4k-git
+            grub-theme-tela-whitesur-ultrawide-git
+            grub-theme-tela-whitesur-ultrawide2k-git
+            grub-theme-vimix-color-1080p-git
+            grub-theme-vimix-color-2k-git
+            grub-theme-vimix-color-4k-git
+            grub-theme-vimix-color-ultrawide-git
+            grub-theme-vimix-color-ultrawide2k-git
+            grub-theme-vimix-white-1080p-git
+            grub-theme-vimix-white-2k-git
+            grub-theme-vimix-white-4k-git
+            grub-theme-vimix-white-ultrawide-git
+            grub-theme-vimix-white-ultrawide2k-git
+            grub-theme-vimix-whitesur-1080p-git
+            grub-theme-vimix-whitesur-2k-git
+            grub-theme-vimix-whitesur-4k-git
+            grub-theme-vimix-whitesur-ultrawide-git
+            grub-theme-vimix-whitesur-ultrawide2k-git
+            grub-theme-stylish-color-1080p-git
+            grub-theme-stylish-color-2k-git
+            grub-theme-stylish-color-4k-git
+            grub-theme-stylish-color-ultrawide-git
+            grub-theme-stylish-color-ultrawide2k-git
+            grub-theme-stylish-white-1080p-git
+            grub-theme-stylish-white-2k-git
+            grub-theme-stylish-white-4k-git
+            grub-theme-stylish-white-ultrawide-git
+            grub-theme-stylish-white-ultrawide2k-git
+            grub-theme-stylish-whitesur-1080p-git
+            grub-theme-stylish-whitesur-2k-git
+            grub-theme-stylish-whitesur-4k-git
+            grub-theme-stylish-whitesur-ultrawide-git
+            grub-theme-stylish-whitesur-ultrawide2k-git
+            grub-theme-whitesur-color-1080p-git
+            grub-theme-whitesur-color-2k-git
+            grub-theme-whitesur-color-4k-git
+            grub-theme-whitesur-white-1080p-git
+            grub-theme-whitesur-white-2k-git
+            grub-theme-whitesur-white-4k-git
+            grub-theme-whitesur-whitesur-1080p-git
+            grub-theme-whitesur-whitesur-2k-git
+            grub-theme-whitesur-whitesur-4k-git
+            kodi-standalone-service
+            gnunet-gtk
+            webkitgtk-6.0-devel
+            webkitgtk-6.0-docs-devel
+            autokey-common
+            autokey-gtk
+            autokey-qt
+            lkrg-dkms
             ))
