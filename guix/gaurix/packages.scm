@@ -42,6 +42,8 @@
   #:use-module (gaurix packages queue-20260323p100b-blocked-notes)
   #:use-module (gaurix packages queue-20260323p100c)
   #:use-module (gaurix packages queue-20260323p100c-blocked-notes)
+  #:use-module (gaurix packages queue-20260323p100d)
+  #:use-module (gaurix packages queue-20260323p100d-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -663,4 +665,40 @@
             pidgin-gnutls
             libpurple-gnutls
             finch-gnutls
+            ;; queue-20260323p100d exports (aliases)
+            clion-eap-jre
+            clion-eap-cmake
+            clion-eap-gdb
+            clion-eap-lldb
+            python-dictlearn
+            lua-curl
+            lua51-curl
+            lua52-curl
+            lua53-curl
+            heirloom-ex-vi-git
+            python-reorder-python-imports
+            ceres-solver-cuda
+            php-swoole
+            zl-equalizer-vst3
+            zl-equalizer-lv2
+            zl-equalizer
+            zl-splitter-vst3
+            zl-splitter-lv2
+            zl-splitter
+            zl-compressor-vst3
+            zl-compressor-lv2
+            zl-compressor
+            python-pyseq
+            riscv32-elf-newlib
+            riscv32-elf-gcc
+            sc-git
+            openscad-nopscadlib-git
+            openscad-ldraw
+            python-tree-sitter-requirements
+            python-yacl
+            python-can-ada-git
+            yt-dlp-git
+            gst-pipeline-studio
+            wait4tailscale
+            fuzzel-pass
             ))
