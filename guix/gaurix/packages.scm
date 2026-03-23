@@ -36,6 +36,8 @@
   #:use-module (gaurix packages queue-20260322p100)
   #:use-module (gaurix packages queue-20260322p100i)
   #:use-module (gaurix packages queue-20260322p100i-blocked-notes)
+  #:use-module (gaurix packages queue-20260323p100)
+  #:use-module (gaurix packages queue-20260323p100-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -563,4 +565,13 @@
             kuserfeedback-git
 
             f3-git
+            openctm-tools
+            pidgin-hg
+            llvm-git
+            llvm-ocaml-git
+            fakeroot-tcp
+            jre8
+            doas-sudo-shim
+            python-ffmpeg-progress-yield
+            mono-tools
             ))
