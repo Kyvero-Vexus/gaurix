@@ -44,6 +44,8 @@
   #:use-module (gaurix packages queue-20260323p100c-blocked-notes)
   #:use-module (gaurix packages queue-20260323p100d)
   #:use-module (gaurix packages queue-20260323p100d-blocked-notes)
+  #:use-module (gaurix packages queue-20260324p100)
+  #:use-module (gaurix packages queue-20260324p100-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -701,4 +703,29 @@
             gst-pipeline-studio
             wait4tailscale
             fuzzel-pass
+            ;; queue-20260324p100 exports (aliases)
+            drawpile-client
+            drawpile-server
+            drawpile-tools
+            apriltag
+            python-apriltag
+            or-tools
+            qbittorrent-nox-git
+            resticprofile
+            usbguard-notifier
+            libexif-gtk
+            magic-enum-cpp
+            cava-visualizer
+            iwd-nosystemd-git
+            httpfs2-2gbplus
+            wormhole-rs
+            wl-gammarelay-rs
+            topgrade-bin
+            crunch
+            outfieldr
+            xmousepasteblock-git
+            somo
+            transgender
+            apollo-git
+            cavalier
             ))
