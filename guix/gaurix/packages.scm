@@ -48,6 +48,8 @@
   #:use-module (gaurix packages queue-20260324p100-blocked-notes)
   #:use-module (gaurix packages queue-20260324p100b)
   #:use-module (gaurix packages queue-20260324p100b-blocked-notes)
+  #:use-module (gaurix packages queue-20260324p100c)
+  #:use-module (gaurix packages queue-20260324p100c-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -831,4 +833,111 @@
             reticulum-meshchat-bin
             godot-preview-bin
             texlive-acrotex
+            ;; queue-20260324p100c exports
+            llama-cpp-cuda-git
+            ros2-git
+            ros2-arch-deps
+            alacritty-use-theme-gnome-darkmode
+            bitwig-control-panel
+            ttf-atkinson-hyperlegible-nerd
+            logiops
+            goplaying-git
+            pano-scrobbler-bin
+            dred
+            zignal-git
+            e-imzo-manager
+            e-imzo
+            libreoffice-extension-grammalecte-fr
+            portablemc
+            kotlin-native-bin
+            trickle-bandwidth
+            systemd-swap
+            immersed
+            perl-data-password-zxcvbn
+            ttf-fira-go
+            zgen-git
+            yamlfix
+            tungsten
+            tuxclocker
+            tigervnc-viewer
+            upliftpowerplay
+            pamix
+            terraformer-bin
+            unregistry
+            buuf-icon-theme
+            gruvbox-dark-gtk
+            gruvbox-dark-icons-gtk
+            dmenu-emoji
+            mkinitcpio-tzpfms
+            stardust-xr-flatland
+            stardust-xr-gravity
+            stardust-xr-magnetar
+            stardust-xr-non-spatial-input
+            stardust-xr-protostar
+            stardust-xr-server
+            stardust-xr-telescope
+            notify-send-sh
+            sliver-bin
+            stardust-xr-atmosphere
+            stardust-xr-black-hole
+            stardust-xr-comet
+            freac-bin
+            python-maison
+            python-ruyaml
+            nodemcu-tool
+            pam-u2f-git
+            powerupp-git
+            kubeshark-bin
+            jdk21-graalvm-bin
+            lazybeads-git
+            drawterm-9front-git
+            mrboom
+            sdbus-cpp-nosystemd-git
+            deskreen
+            deadd-notification-center-bin
+            aws-nuke-bin
+            ci-toolbox-bin
+            pass-cli-bin
+            krr
+            amdgpu-clocks-git
+            git-brunch-bin
+            just-the-browser-git
+            nzbhydra2-bin
+            webappcontainer
+            memtui-bin
+            goplaying-bin
+            authselect
+            todds
+            candy-icons-git
+            brother-mfc-9330cdw
+            butter-launcher-bin
+            lazyactions-bin
+            flashprint
+            filecentipede-bin
+            mmdr-bin
+            python-twisterl
+            vane
+            foxicons-theme
+            virtnbdbackup
+            sweet-folders-icons-git
+            nodenv-node-build
+            axe-bin
+            blue-recorder-git
+            vigaphone-bin
+            plymouth-theme-hexagon-alt-gruvbox
+            threedstool
+            ps3libraries
+            goful-bin
+            lidm-systemd
+            libcryptui
+            jaq-bin
+            kibo-appimage
+            otf-ibm-plex-git
+            ttf-ibm-plex-git
+            woff2-ibm-plex-git
+            emby-server-beta
+            brightness-slider-git
+            tsql-bin
+            gbdk-2020
+            wleave
             ))
