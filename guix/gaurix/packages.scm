@@ -46,6 +46,8 @@
   #:use-module (gaurix packages queue-20260323p100d-blocked-notes)
   #:use-module (gaurix packages queue-20260324p100)
   #:use-module (gaurix packages queue-20260324p100-blocked-notes)
+  #:use-module (gaurix packages queue-20260324p100b)
+  #:use-module (gaurix packages queue-20260324p100b-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -728,4 +730,105 @@
             transgender
             apollo-git
             cavalier
+            ;; queue-20260324p100b exports
+            neoarch-git
+            stm32cubemx
+            fish-lsp-git
+            streamcontroller
+            godot-cpp
+            pokeget
+            qmmp-plugin-pack
+            coolerdash-git
+            screenpipe-bin
+            boca
+            smooth
+            commafeed-h2
+            commafeed-postgresql
+            commafeed-mysql
+            commafeed-mariadb
+            immich-machine-learning
+            flclashx-bin
+            wsdd-native
+            httptoolkit-bin
+            vesta
+            prjtrellis-db-git
+            bisq-bin
+            windterm-bin
+            hypryou-greeter
+            snx-rs
+            nodejs-fast-cli
+            thorium-browser-bin
+            yay-git
+            sysc-greet
+            brscan-skey
+            limine-dracut-support
+            quran-companion
+            gvisor-bin
+            suil-optgui
+            httpx-bin
+            gigabyte-laptop-wmi-dkms-git
+            qogir-gtk-theme
+            monado-vulkan-layers-git
+            chordpro-cli
+            electron30-bin
+            janet-lang-bin
+            serpro-signer
+            ros2-humble
+            my-femboy-roommate-bin
+            lrcget-bin
+            surrealdb-bin
+            brisk-bin
+            mint-y-icons
+            chromium-bypass-paywalls-clean
+            frpc
+            frps
+            declaro-git
+            ps3-disc-dumper-bin
+            kumono-bin
+            nextpnr-ice40-nightly
+            manim
+            gelly
+            tmux-plugin-manager
+            keyman
+            python-pythondialog
+            perl-crypt-argon2
+            beekeeper-studio
+            wireguard-vanity-keygen
+            python-sysv-ipc
+            networkd-dispatcher
+            sshpilot-bin
+            mint-x-icons
+            xmlada
+            libgpr
+            gprbuild
+            gprtools
+            gprname
+            clock-tui
+            quantumlauncher-bin
+            yubikey-agent
+            sonarr
+            ps-mem
+            wireguard-dkms
+            gotify-tray-cpp
+            sourcegit
+            silverbullet
+            jellyfin-rpc-bin
+            tera
+            kas
+            termora-bin
+            p7zip-zstd
+            mandelbulber2
+            gohome-bin
+            mt7902-bluetooth-dkms-git
+            whisparr-eros
+            expandrive-bin
+            git-standup
+            mago-bin
+            addwater
+            fftw-amd
+            phantomjs-git
+            dotr-bin
+            reticulum-meshchat-bin
+            godot-preview-bin
+            texlive-acrotex
             ))
