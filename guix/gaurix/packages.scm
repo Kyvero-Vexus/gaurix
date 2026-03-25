@@ -58,6 +58,8 @@
   #:use-module (gaurix packages queue-20260325p100b-blocked-notes)
   #:use-module (gaurix packages queue-20260325p100c)
   #:use-module (gaurix packages queue-20260325p100c-blocked-notes)
+  #:use-module (gaurix packages queue-20260325p100d)
+  #:use-module (gaurix packages queue-20260325p100d-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1149,4 +1151,105 @@
             qtwebflix-git
             yt-dlg
             mkvextract-gtk
+            ;; queue-20260325p100d exports (aliases + stubs)
+            kotlin-language-server
+            shimmer-wallpapers
+            gtkhash
+            xbindkeys-config-gtk2
+            bsdiff
+            kquickimageeditor5
+            qt5-webview
+            sc
+            blocky-bin
+            tut
+            gcolor2
+            breeze-hacked-cursor-theme-git
+            modemmanager-qt5
+            lyricsfinder
+            libreoffice-extension-apso
+            khtml
+            efibooteditor-qt5
+            efibooteditor
+            zsh-you-should-use
+            grub2-theme-archxion
+            bwidget
+            gpth-bin
+            python-gdbgui
+            markdown-editor
+            mystiq
+            subsurface-appimage
+            firefox-extension-privacybadger
+            pidgin-extprefs
+            remmina-plugin-rdesktop
+            freetuxtv
+            oh-my-zsh-powerline-theme-git
+            joy2key
+            bullet-train-oh-my-zsh-theme-git
+            gnome-shell-extension-dash-to-panel-git
+            suru-plus-git
+            themix-gui-git
+            themix-theme-oomox-git
+            themix-plugin-base16-git
+            themix-icons-numix-git
+            vim-systemd
+            themix-import-images-git
+            themix-icons-suru-plus-git
+            themix-icons-suru-plus-aspromauros-git
+            themix-icons-papirus-git
+            themix-icons-gnome-colors-git
+            themix-icons-archdroid-git
+            themix-export-spotify-git
+            themix-theme-materia-git
+            pkgbuild-assistant
+            gede
+            grub-reboot-picker
+            xdg-launch
+            googlemaps
+            bdinfo-git
+            aacs-keydb
+            vim-pkgbuild-git
+            scnlib
+            pacnews-neovim-git
+            kapp
+            hotshots-git
+            grub-imageboot
+            git-mr
+            bomberclone
+            ytui-music-git
+            ymp-bin
+            wem
+            ttypr-bin
+            tokenicode-bin
+            seadrive-cli
+            saul-bin
+            python-pytest-archon
+            plann
+            pencil-dev-appimage
+            ocr4linux-git
+            mpwall
+            libsmbios-git
+            keifu-bin
+            kdnssd5
+            dredge-bin
+            dinky
+            cursor-ide
+            coomer-bin
+            akeyshually-bin
+            gpk-bin
+            blogr-bin
+            charliecloud
+            wl-mpris-idle-inhibit
+            systemd-suspend-modules
+            python-pysmart
+            renamemytvseries-gtk-bin
+            openhue-cli
+            feedr-bin
+            boscaceoil-blue-bin
+            crier-bin
+            reqable-bin
+            cliamp-bin
+            ferrishot-bin
+            sysbox-ce
+            noto-fonts-cjk-fontconfig
+            webtorrent-bittorrent-tracker
             ))
