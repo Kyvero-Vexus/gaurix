@@ -54,6 +54,8 @@
   #:use-module (gaurix packages queue-20260324p100d-blocked-notes)
   #:use-module (gaurix packages queue-20260325p100)
   #:use-module (gaurix packages queue-20260325p100-blocked-notes)
+  #:use-module (gaurix packages queue-20260325p100b)
+  #:use-module (gaurix packages queue-20260325p100b-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -944,4 +946,105 @@
             tsql-bin
             gbdk-2020
             wleave
+            ;; queue-20260325p100b exports (aliases + stubs)
+            janet-lang
+            dump1090-fa-git
+            svt-av1-hdr-git
+            fcitx5-pinyin-custom-pinyin-dictionary
+            mod_wsgi
+            google-crc32c
+            rsyslog-openrc
+            litecoin-qt
+            wget2-no-docs
+            transg-tui-git
+            electron29-bin
+            kabi-git
+            activate-linux
+            glee
+            diffnav-bin
+            hdfview-bin
+            corrscope
+            gotop
+            smpq
+            spotify-dev
+            querycat-bin
+            detect-it-easy-bin
+            bulky
+            stack-bin
+            yash
+            freetype2-qdoled-aw3225qf
+            reshade-steam-proton-git
+            python-plyer
+            jlc-assistant
+            etcd
+            mods-bin
+            tuckr-git
+            whatsie
+            gruvbox-icon-theme-git
+            gruvbox-gtk-theme-git
+            codetantra-sea
+            jitsi-meet
+            komet
+            emergency-alerts
+            gowatch
+            dause
+            elyprismlauncher
+            zvm-bin
+            python-seapie
+            jdk17-graalvm-ee-bin
+            python-boolshit
+            rustle-bin
+            goreleaser-pro-bin
+            ppd-cpu-boost
+            oranglauncher-bin
+            kmozillahelper
+            proslenkey
+            aimp-skin-m5
+            aimp-skin-soot
+            cmdfy
+            cosmic-ext-applet-minimon-git
+            scmd-bin
+            cosmic-ext-applet-privacy-indicator-git
+            sngrep
+            crab-bin
+            journal-brief
+            nodejs-node-pre-gyp
+            hyproled-git
+            affine-bin
+            go-live-server-bin
+            amazon-workspaces-bin
+            wayvr-actions-bin
+            runapp-git
+            stmcufinder
+            python-pylibsrtp
+            otf-kopub
+            otf-kopubworld
+            python-aiortc
+            yaac
+            asn-git
+            bleur
+            ue4cli-git
+            flipclock
+            cleanupdate-git
+            fcitx5-skin-material
+            google-compute-engine-oslogin
+            repeater-bin
+            google-compute-engine
+            rg-sens-git
+            zur
+            hyde
+            kyanos-bin
+            canvas-downloader
+            canvas-downloader-bin
+            simmusic-git
+            sudo-mcp
+            cinnamon-styles-artwork
+            itchio-dlagent
+            pyupgrade
+            bcmr-bin
+            ferrite
+            ttf-shanggu
+            python-panel
+            hacki
+            buf-git
             ))
