@@ -56,6 +56,8 @@
   #:use-module (gaurix packages queue-20260325p100-blocked-notes)
   #:use-module (gaurix packages queue-20260325p100b)
   #:use-module (gaurix packages queue-20260325p100b-blocked-notes)
+  #:use-module (gaurix packages queue-20260325p100c)
+  #:use-module (gaurix packages queue-20260325p100c-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1047,4 +1049,104 @@
             python-panel
             hacki
             buf-git
+            ;; queue-20260325p100c exports (aliases + stubs)
+            imgui-full
+            kactivities-stats5
+            kpeople5
+            kfilemetadata5
+            kirigami-addons5
+            sdl2-pango-compat
+            minipro-git
+            prison5
+            xwayland-run-git
+            linux-libre-lts
+            linux-libre-lts-headers
+            phonon-qt5-gstreamer
+            python-holoviews
+            arch-check
+            python-hvplot
+            webos-dev-manager-bin
+            beekeeper-studio-git
+            shutsentry
+            dynocsv
+            ollama-proxy
+            prometheus-apcupsd-exporter
+            finitodo
+            nbfc
+            p7zip-natspec
+            avvie-git
+            pmtiles
+            ampcode
+            python-zenlib-git
+            betacraft-launcher-git
+            kwin-effect-rounded-corners-x11-git
+            kwin-effects-better-blur-dx-x11-git
+            spotiflac-bin
+            agent-cli
+            libasciichat
+            nerd-fonts-sf-mono
+            terminal-ai
+            python-manimgl
+            clojure-lsp-bin
+            python-ghlang
+            libvhdi-git
+            arturo
+            rip-go-bin
+            xorg-xinit-git
+            proton-drive-sync-bin
+            rocm-gfx110x-bin
+            linux-libre-lts-docs
+            python-telegram-send
+            stax
+            crossplane
+            p86box-roms-git
+            p86box-git
+            iamroot
+            qr-backup
+            huelectron-bin
+            domake
+            domake-docker-make
+            domake-linux-amd64
+            domake-linux-arm64
+            domake-linux-arm
+            domake-linux-ppc64le
+            domake-linux-riscv64
+            domake-linux-s390x
+            dosh
+            dosh-docker-shell
+            dosh-linux-amd64
+            dosh-linux-arm64
+            dosh-linux-arm
+            dosh-linux-ppc64le
+            dosh-linux-riscv64
+            dosh-linux-s390x
+            dosh-posh
+            dosh-cqfd
+            dosh-docker-cqfd
+            aria2tui
+            sound-theme-smooth
+            mongotimer
+            qt5-datavis3d
+            grub2-theme-preview
+            svg-term-cli
+            nvidia-prime-rtd3pm
+            hid-tmff2-dkms-git
+            gozen-bin
+            chromium-widevine
+            xfce-theme-cobibird
+            gnome-icon-theme
+            libelectron
+            webcamoid
+            kemoticons
+            compiler-rt15
+            lutris-wine-meta
+            grub2-theme-archlinux
+            netflix
+            electron-castlab-bin
+            scmccid
+            downlords-faf-client
+            pyradio
+            qtwebflix-git
+            yt-dlg
+            mkvextract-gtk
             ))
