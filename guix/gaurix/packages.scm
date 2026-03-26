@@ -60,6 +60,8 @@
   #:use-module (gaurix packages queue-20260325p100c-blocked-notes)
   #:use-module (gaurix packages queue-20260325p100d)
   #:use-module (gaurix packages queue-20260325p100d-blocked-notes)
+  #:use-module (gaurix packages queue-20260325p100e)
+  #:use-module (gaurix packages queue-20260325p100e-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1252,4 +1254,85 @@
             sysbox-ce
             noto-fonts-cjk-fontconfig
             webtorrent-bittorrent-tracker
+            ;; queue-20260325p100e exports (stubs)
+            linux-clear-cjktty-zfs-headers
+            linux-clear-cjktty-zfs
+            clightd
+            libmodule
+            mas
+            wrkflw-bin
+            iwmenu-bin
+            pwmenu-bin
+            bzmenu-bin
+            claude-code-seccomp
+            ferris-scan-bin
+            gram-editor-bin
+            bapctools-git
+            sabiql-bin
+            podserv-b-git
+            netwatch-tui
+            synergy3-bin
+            q5k-usb-udev
+            qpdf-zopfli
+            swhook
+            libavif-noglycin
+            libheif-noglycin
+            libjxl-noglycin-doc
+            libjxl-noglycin
+            op-cache-git
+            console2svg-bin
+            szsol-rs
+            arch-remaster
+            pixora-icons-git
+            udiskr
+            comp-scan-bin
+            tilem-gtk3-git
+            r47-bin
+            docx-you-want
+            c47-bin
+            wo-bin
+            cliamp
+            oken-bin
+            lazytail-bin
+            funzzy-bin
+            framework-control-bin
+            baremetal-compiler-rt
+            dpibreak
+            lobster
+            dpibreak-git
+            uac-polkit-agent-git
+            mezzotone-bin
+            ipmctl-git
+            python-aiohttp-jinja2
+            pricehist
+            fish-session
+            workz-bin
+            omp-manager-bin
+            tmux-plugin-panel-bin
+            spinwheel-pipewire
+            compendium
+            pandoc-crossref-bin
+            boomer-git
+            mkinitcpio-firmware
+            qxmledit
+            tufw-git
+            adbfs-rootless-git
+            dafny-bin
+            weylus-bin
+            zerx-lab-fluxdown-bin
+            bililive-recorder-bin
+            lenovo-print-driver-lj2400-m7400-bin
+            nodejs-knit
+            fw-fanctrl-rs-git
+            aerothemeplasma-desktop-x11-git
+            aeroshell-workspace-git
+            aeroshell-libplasma-git
+            aeroshell-kwin-components-git
+            keks-meet-server
+            jellything-git
+            hurrycurry-server
+            gnix
+            mkbrr-gui-bin
+            wireview-linux
+            chough-bin
             ))
