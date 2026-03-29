@@ -1,508 +1,407 @@
-;;; Blocked notes for queue-20260329p100daily queue drain (2026-03-29, entries 5526-5625).
+;;; Blocked notes for queue-20260329p100daily queue drain (2026-03-29, entries 5726-5825).
 (define-module (gaurix packages queue-20260329p100daily-blocked-notes)
   #:export (queue-20260329p100daily-blocked-notes))
 
 (define queue-20260329p100daily-blocked-notes
   (list
-
-  '(codexbar NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n codexbar"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(logibar NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n logibar"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(claudebar NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n claudebar"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(plezy-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n plezy-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(listpick NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n listpick"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(high-voltage-ring NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n high-voltage-ring"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(nexus-client-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n nexus-client-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(ocudu-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n ocudu-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(jitsi-videobridge NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n jitsi-videobridge"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(jitsi-meet-turnserver NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n jitsi-meet-turnserver"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(jicofo NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n jicofo"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(nexus-client NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n nexus-client"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python315 NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python315"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(vesktop-wayafknext-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n vesktop-wayafknext-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(tonkeeper-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n tonkeeper-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(libtrash NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n libtrash"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(termide-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n termide-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(go-prism-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n go-prism-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(go-prism NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n go-prism"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(moderncsv-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n moderncsv-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(ionosctl-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n ionosctl-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(ionosctl NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n ionosctl"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(dirsearch NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n dirsearch"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(libxml2-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n libxml2-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-tf2onnx NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-tf2onnx"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-transitions NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-transitions"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(rowheel NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n rowheel"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-transitions-gui NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-transitions-gui"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(fhc-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n fhc-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(grabc NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n grabc"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(rovr NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n rovr"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(system-tools-backends NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n system-tools-backends"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(mousetrap NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n mousetrap"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(liboobs NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n liboobs"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(fonts-meta-base NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n fonts-meta-base"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(mill-global NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n mill-global"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-pyhocon NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-pyhocon"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-neo4j NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-neo4j"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-pyjson5 NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-pyjson5"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(uuid NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n uuid"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(proton-drive-sync-prerelease-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n proton-drive-sync-prerelease-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(bigedit NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n bigedit"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(astra NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n astra"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(fw-fanctrl NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n fw-fanctrl"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(asus-5606-fan-state NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n asus-5606-fan-state"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(phiola-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n phiola-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-myvaillant NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-myvaillant"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(vitals NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n vitals"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(enumctl-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n enumctl-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(qo-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n qo-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(kitty-bitmap NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n kitty-bitmap"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(motion-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n motion-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(python-pandas-docs NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n python-pandas-docs"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(ghk-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n ghk-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(crosvm-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n crosvm-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(lore-cli-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n lore-cli-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(vex-tui-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n vex-tui-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(data-peek-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n data-peek-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(vcsi NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n vcsi"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(rclonefzf NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n rclonefzf"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(greenlight-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n greenlight-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(melonds-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n melonds-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(keystore-explorer-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n keystore-explorer-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(neovim-remote NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n neovim-remote"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(crossover NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n crossover"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(ntfsprogs-plus-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n ntfsprogs-plus-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(kftui-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n kftui-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(itch-setup-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n itch-setup-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-wallpaper-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-wallpaper-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-rimless-normal-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-rimless-normal-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-rimless-normal-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-rimless-normal-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-rimless-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-rimless-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-rimless-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-rimless-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-normal-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-normal-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-normal-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-normal-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-rimless-normal-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-rimless-normal-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-rimless-normal-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-rimless-normal-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-rimless-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-rimless-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-rimless-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-rimless-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-normal-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-normal-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-normal-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-normal-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-nord-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-nord-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-rimless-normal-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-rimless-normal-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-rimless-normal-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-rimless-normal-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-rimless-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-rimless-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-rimless-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-rimless-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-normal-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-normal-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-normal-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-normal-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(graphite-gtk-theme-black-compact-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n graphite-gtk-theme-black-compact-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(srtodo-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n srtodo-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(vibe-audio-visualizer-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n vibe-audio-visualizer-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(tkginstaller-git NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n tkginstaller-git"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(ignition-startup NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n ignition-startup"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(hypruler-bin NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n hypruler-bin"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(hypruler NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n hypruler"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  '(mqtt-explorer NEEDS_RECIPE_DESIGN
-    "cmd: guix build -L guix -n mqtt-explorer"
-    "detail: placeholder stub added in queue-20260329p100daily; source/hash/build-system not finalized in this pass"
-    "next: complete recipe draft, pin source URI+sha256, then run guix lint/build")
-
-  ))
+  '(mcp-router-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n mcp-router-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(keepassxc-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n keepassxc-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(antares-sql-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n antares-sql-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(pcbdraw NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n pcbdraw"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(brother-mfc-l3770cdw NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n brother-mfc-l3770cdw"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(gnome-shell-extension-tiling-assistant NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n gnome-shell-extension-tiling-assistant"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(aegisub-arch1t3cht-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n aegisub-arch1t3cht-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(soh-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n soh-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(godot-beta-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n godot-beta-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(music-presence-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n music-presence-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(spotdl NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n spotdl"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(dockcheck NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n dockcheck"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hayase-desktop-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hayase-desktop-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(scream-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n scream-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-per-window-layout NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-per-window-layout"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(rslsync NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n rslsync"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(mysql-clients NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n mysql-clients"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(libmysqlclient NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n libmysqlclient"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(osaka-simulator NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n osaka-simulator"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-xtra-dispatchers NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-xtra-dispatchers"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-hyprwinwrap NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-hyprwinwrap"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-hyprtrails NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-hyprtrails"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-hyprscrolling NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-hyprscrolling"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-hyprfocus NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-hyprfocus"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-hyprexpo NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-hyprexpo"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-hyprbars NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-hyprbars"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-csgo-vulkan-fix NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-csgo-vulkan-fix"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(hyprland-plugin-borders-plus-plus NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n hyprland-plugin-borders-plus-plus"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(plasma6-applets-resources-monitor NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n plasma6-applets-resources-monitor"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(goat-cli NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n goat-cli"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(rose-pine-hyprcursor NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n rose-pine-hyprcursor"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(passless-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n passless-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-tool NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-tool"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-target-web NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-target-web"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-target-linux NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-target-linux"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-target-android NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-target-android"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-intellij-patch NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-intellij-patch"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-gradle NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-gradle"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-devel NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-devel"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-common NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-common"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-sky-engine-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-sky-engine-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-material-fonts-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-material-fonts-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-gradle-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-gradle-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-engine-web-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-engine-web-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-engine-linux-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-engine-linux-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-engine-common-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-engine-common-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-engine-android-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-engine-android-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter-artifacts-dart-google-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter-artifacts-dart-google-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(flutter NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n flutter"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(outfieldr-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n outfieldr-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(plasma6-applets-panel-spacer-extended NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n plasma6-applets-panel-spacer-extended"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(mcpelauncher-ui NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n mcpelauncher-ui"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(abcde-musicbrainz-meta NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n abcde-musicbrainz-meta"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(mcpelauncher-linux NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n mcpelauncher-linux"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(lib32-mcpelauncher-linux NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n lib32-mcpelauncher-linux"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(grimaur-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n grimaur-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(goverlay-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n goverlay-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(c-lolcat NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n c-lolcat"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(lx-music-desktop-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n lx-music-desktop-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(perccli NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n perccli"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(qqc2-desktop-style-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n qqc2-desktop-style-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(celt NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n celt"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(goocanvas2 NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n goocanvas2"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(sabnzbd NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n sabnzbd"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(fontpreview NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n fontpreview"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(arronax NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n arronax"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(watt-toolkit-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n watt-toolkit-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(goxlr-utility NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n goxlr-utility"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(winecx NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n winecx"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(nvidia-340xx-settings NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n nvidia-340xx-settings"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(libxnvctrl-340xx NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n libxnvctrl-340xx"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(rescrobbled-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n rescrobbled-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(gnome-shell-extension-pop-shell-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n gnome-shell-extension-pop-shell-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(gnome-shell-extension-wallpaper-slideshow NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n gnome-shell-extension-wallpaper-slideshow"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(pam_rssh NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n pam_rssh"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(godot-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n godot-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(linux-router NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n linux-router"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(vulkanscenegraph NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n vulkanscenegraph"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(mathematica NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n mathematica"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(ttf-gelasio-variable NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n ttf-gelasio-variable"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(ttf-gelasio NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n ttf-gelasio"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(xlibre-input-wacom NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n xlibre-input-wacom"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(xlibre-input-evdev NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n xlibre-input-evdev"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(audiveris NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n audiveris"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(xivlauncher NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n xivlauncher"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(roleboi-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n roleboi-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(alephone-phoenix NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n alephone-phoenix"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(steam-cloud-file-manager-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n steam-cloud-file-manager-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(indicator-sysmonitor-budgie-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n indicator-sysmonitor-budgie-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(indicator-sysmonitor-appindicator-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n indicator-sysmonitor-appindicator-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(airrohr-firmware-flasher-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n airrohr-firmware-flasher-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(funchook NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n funchook"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(dimensions-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n dimensions-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(intel-ipu6-camera-hal-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n intel-ipu6-camera-hal-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(icamerasrc-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n icamerasrc-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(intel-ipu6-dkms-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n intel-ipu6-dkms-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(intel-ipu6-camera-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n intel-ipu6-camera-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(js-util-bin NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n js-util-bin"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(intel-vision-drivers-dkms-git NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n intel-vision-drivers-dkms-git"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+  '(fastero NEEDS_RECIPE_DESIGN
+    "cmd: guix build -L guix -n fastero"
+    "detail: recipe-attempt stub added in queue-20260329p100daily; source/hash/build-system unresolved in this pass"
+    "next: complete Guix recipe (source URI + sha256 + build-system + inputs), then run guix lint/build")
+))
