@@ -66,6 +66,8 @@
   #:use-module (gaurix packages queue-20260329p100-blocked-notes)
   #:use-module (gaurix packages queue-20260329p100daily)
   #:use-module (gaurix packages queue-20260329p100daily-blocked-notes)
+  #:use-module (gaurix packages queue-20260329p100daily2-blocked-notes)
+  #:use-module (gaurix packages queue-20260329p100daily2)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -591,7 +593,6 @@
             discover-git
             xdg-desktop-portal-kde-git
             kuserfeedback-git
-
             f3-git
             openctm-tools
             pidgin-hg
@@ -1538,4 +1539,104 @@
             hypruler-bin
             hypruler
             mqtt-explorer
+            lib32-libxxf86dga
+            mf-cli
+            leakdice-rust-git
+            gimp-plugin-gmic-git
+            gomu
+            ps7_libps2000
+            ps7_libps2000a
+            ps7_libps4000
+            ps7_libps3000a
+            ps7_libps3000
+            ps7_libps5000a
+            ps7_libps5000
+            ps7_libps4000a
+            ps7_libps6000
+            ps7_libusbtc08
+            ps7_libps6000a
+            ps7_libpicoipp
+            anime-games-launcher-bin
+            tqftpserv-git
+            dare-devil
+            project-monalisa-git
+            pixel-fx-companion-app
+            jiq-ai-bin
+            seqtui-git
+            seqtui
+            seqtui-bin
+            sakura-frp
+            git-spice-bin
+            mvw
+            ttf-fraunces-variable
+            ttf-fraunces
+            otf-fraunces
+            lunarvim-git
+            orla-bin
+            ripcord-arch-libs
+            polybar-git
+            bitbake-vim
+            bitbake
+            greetd-qtgreet
+            bitbox-wallet-app-rpm
+            go-mtpfs-git
+            python-iterfzf
+            checkmake-bin
+            green-recorder
+            gpt4all-chat-git
+            green-recorder-git
+            grub-shusher-git
+            gonic
+            gr-limesdr-git
+            gr-ieee802-11-git
+            gr-foo-git
+            gnome-x11-gesture-daemon
+            gr-lora_sdr-git
+            gpu-screen-recorder-ui-git
+            gpu-screen-recorder-notification-git
+            gpu-screen-recorder-gtk-git
+            gpu-screen-recorder-git
+            googerteller-git
+            gnome-shell-extension-ubuntu-dock-git
+            armorpaint-git
+            gnome-shell-extension-top-bar-organizer
+            gnome-shell-extension-space-bar-git
+            gnome-shell-extension-logo-menu
+            python-indexed-gzip
+            qogir-cursor-theme
+            grove-bin
+            janet-lang-git
+            chess-native
+            fts
+            roxybrowser-bin
+            electronwmd-bin
+            piper-voices-ru-ru
+            todo-bin
+            macchina-git
+            git-delete-merged-branches
+            rtodo-bin
+            tauno-serial-plotter-bin
+            scx-openrc
+            jump-bin
+            pyghmi
+            biu-tauri-bin
+            interspec-bin
+            nvchecker-git
+            virtualbmc
+            catnap
+            skyterm
+            pterodactyl-wings
+            rtrlib
+            nhaccuatui
+            needle-cli
+            icloudpd
+            iceweasel
+            python-rich-rst
+            supersayer
+            python-cyclopts
+            woff2-annotation-mono-variable
+            woff2-annotation-mono
+            ttf-annotation-mono-variable
+            ttf-annotation-mono
+            otf-annotation-mono
             ))
