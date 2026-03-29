@@ -68,6 +68,8 @@
   #:use-module (gaurix packages queue-20260329p100daily-blocked-notes)
   #:use-module (gaurix packages queue-20260329p100daily2-blocked-notes)
   #:use-module (gaurix packages queue-20260329p100daily2)
+  #:use-module (gaurix packages queue-20260329p100daily3-blocked-notes)
+  #:use-module (gaurix packages queue-20260329p100daily3)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1639,4 +1641,104 @@
             ttf-annotation-mono-variable
             ttf-annotation-mono
             otf-annotation-mono
-            ))
+                        cnijfilter2-g3010
+            openterface_qt-git
+            python-unitypy-git
+            python-fmod-tookit-git
+            pick
+            python-pyproject-patcher
+            python-inplace
+            lrclibfetch
+            kraiser
+            vlc-plugin-lua-git
+            vlc-git
+            crepe-bin
+            pianoteq
+            proton-cachyos-launcher
+            alacritty-use-theme-git
+            maki-cli
+            vscodium-insiders-git
+            vscodium-all-marketplace
+            geant4
+            dab-cli
+            lbn
+            googledot-cursor-theme
+            rpi-imager-latest
+            lazymake-bin
+            cewe-fotowelt
+            ttf-lxgw-wenkai-screen
+            steamvr-openhmd-git
+            zeek
+            dwmbar-git
+            tsync
+            hyprshell-bin
+            uefi-manager
+            maclean-git
+            tlp-rdw-systemd
+            xtool
+            dupster
+            faint
+            dstl
+            snd-hda-macbookpro-dkms-git
+            stayfree-desktop
+            libminizinc
+            ftnn-desktop
+            oxlint-bin
+            heidisql-qt6
+            cheminot
+            oxfmt-bin
+            visual-studio-code-electron-bin
+            kohighlights
+            rsenv
+            greetd-tuigreet-git
+            questpatcher-bin
+            check-nwc-health
+            samsung_magician-consumer-ssd
+            gpa-git
+            wpa_supplicant_gui
+            oblivion-desktop-git
+            lib32-freearc-bin
+            tauon-music-box-git
+            termirs
+            roleboi
+            moo
+            nikki-editor
+            antu-icon-theme-git
+            immuarch-verity-git
+            immuarch-utils-git
+            immuarch-core-git
+            litellm-ollama
+            mousse-git
+            python-types-waitress
+            python-types-mock
+            paisa-bin
+            ps7_libpicocv
+            xavs
+            android_translation_layer
+            rice-switcher
+            rutoken-plugin
+            shine
+            fastmail
+            pass-ln
+            snap-pac-grub
+            tosu-overlay
+            sneemok
+            tutanota-desktop
+            wemeet-wayland-screenshare-git
+            gosplugin
+            bluevein-bin
+            catbox
+            hyprland-guiutils-git
+            pinit
+            fnox-bin
+            lensfun-git
+            xlibre-video-voodoo
+            mangojuice-bin
+            git-cola
+            libldap24
+            sedutil
+            geekbench
+            msodbcsql
+            freetype2-qdoled
+            fladder-bin
+))
