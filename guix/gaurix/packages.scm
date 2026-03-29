@@ -62,6 +62,8 @@
   #:use-module (gaurix packages queue-20260325p100d-blocked-notes)
   #:use-module (gaurix packages queue-20260325p100e)
   #:use-module (gaurix packages queue-20260325p100e-blocked-notes)
+  #:use-module (gaurix packages queue-20260329p100)
+  #:use-module (gaurix packages queue-20260329p100-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1335,4 +1337,103 @@
             mkbrr-gui-bin
             wireview-linux
             chough-bin
+            yay
+            paru
+            aur-sync-vote
+            brave-bin
+            zen-browser-bin
+            nvidia-580xx-utils
+            opencl-nvidia-580xx
+            nvidia-580xx-dkms
+            antigravity
+            google-chrome
+            helium-browser-bin
+            ventoy-bin
+            octopi
+            betterbird-bin
+            heroic-games-launcher-bin
+            noctalia-shell
+            hytale-launcher-bin
+            downgrade
+            vscodium-bin
+            appimagelauncher
+            dms-shell-bin
+            yay-bin
+            spotify
+            millennium
+            millennium-debug
+            qt-sudo
+            zoom
+            claude-code
+            rustdesk-bin
+            ttf-ms-fonts
+            vesktop-bin
+            mullvad-vpn-bin
+            mullvad-vpn-daemon-bin
+            lib32-nvidia-580xx-utils
+            lib32-opencl-nvidia-580xx
+            arch-update
+            opencode-bin
+            winboat-bin
+            nvidia-580xx-settings
+            libxnvctrl-580xx
+            aurvote-utils
+            localsend
+            aurutils
+            onlyoffice-bin
+            systemd-liberated-git
+            systemd-liberated-libs-git
+            systemd-liberated-resolvconf-git
+            systemd-liberated-sysvcompat-git
+            systemd-liberated-tests-git
+            systemd-liberated-ukify-git
+            vmware-workstation
+            zapzap
+            mullvad-browser-bin
+            jellyfin-desktop
+            vesktop
+            electron40-bin
+            jetbrains-toolbox
+            prefixer
+            polychromatic
+            freetube-bin
+            fresh-editor-bin
+            noctalia-qs
+            zotero-bin
+            ttf-ms-win11-auto
+            ttf-ms-win11-auto-japanese
+            ttf-ms-win11-auto-korean
+            ttf-ms-win11-auto-sea
+            ttf-ms-win11-auto-thai
+            ttf-ms-win11-auto-zh_cn
+            ttf-ms-win11-auto-zh_tw
+            ttf-ms-win11-auto-other
+            bottles
+            proton-pass-bin
+            cursor-bin
+            faugus-launcher
+            android-studio
+            minecraft-launcher
+            arduino-ide-bin
+            rustdesk
+            paru-bin
+            anytype-bin
+            traur
+            floorp-bin
+            pinta
+            informant
+            plasmazones-bin
+            xnviewmp
+            spicetify-cli
+            voxtype
+            davinci-resolve
+            protonup-qt
+            freefilesync
+            freesmlauncher
+            yandex-music
+            steamcmd
+            slack-desktop
+            mangowm
+            rider
+            mediatek-mt7927-dkms
             ))
