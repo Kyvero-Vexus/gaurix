@@ -105,7 +105,107 @@
             hypruler-bin
             hypruler
             mqtt-explorer
-            ))
+                        btrfs-desktop-notification-git
+            autofirma
+            gpgfrontend
+            playtorrio-bin
+            wine-gaming-dependencies
+            libfprint-cs9711-git
+            waydroid-image-gapps
+            linux-enable-ir-emitter
+            plymouth-theme-mikuboot-git
+            aura
+            libre-trainsim-bin
+            netpad-vnext-bin
+            smpeg0
+            graphite-cursor-theme-git
+            python-aioice
+            scolorpicker-legacy
+            ttf-symbola
+            otf-symbola
+            ttf-heuristica
+            logviewer-bin
+            wazuh-agent
+            python-zxing-cpp
+            php84-zip
+            php84-xsl
+            php84-xmlwriter
+            php84-xmlreader
+            php84-xml
+            php84-tokenizer
+            php84-tidy
+            php84-sysvshm
+            php84-sysvsem
+            php84-sysvmsg
+            php84-sqlite
+            php84-sodium
+            php84-sockets
+            php84-soap
+            php84-snmp
+            php84-simplexml
+            php84-shmop
+            php84-pspell
+            php84-posix
+            php84-phpdbg
+            php84-phar
+            php84-pgsql
+            php84-pecl
+            php84-pear
+            php84-pdo
+            php84-pcntl
+            php84-openssl
+            php84-opcache
+            php84-odbc
+            php84-mysql
+            php84-mbstring
+            php84-litespeed
+            php84-ldap
+            php84-intl
+            php84-imap
+            php84-iconv
+            php84-gmp
+            php84-gettext
+            php84-gd
+            php84-ftp
+            php84-fpm
+            php84-firebird
+            php84-fileinfo
+            php84-ffi
+            php84-exif
+            php84-enchant
+            php84-embed
+            php84-dom
+            php84-dblib
+            php84-dba
+            php84-curl
+            php84-ctype
+            php84-cli
+            php84-cgi
+            php84-calendar
+            php84-bz2
+            php84-bcmath
+            php84-apache
+            php84
+            ttf-unifont
+            ttf-google-sans-code-vf
+            ttf-google-sans-code-nf
+            mongodb-compass-bin
+            vulkan-amdgpu-pro
+            lib32-vulkan-amdgpu-pro
+            lib32-amdgpu-pro-oglp
+            amf-amdgpu-pro
+            amdgpu-pro-oglp
+            pyload-ng
+            thorium-reader
+            omnissa-horizon-usb
+            omnissa-horizon-serialport-client
+            omnissa-horizon-scanner-client
+            omnissa-horizon-html5mmr
+            omnissa-horizon-file-association
+            omnissa-horizon-client-next
+            omnissa-horizon-client
+            ttf-ubuntu-sans-mono
+))
 
 ;;; ── NEEDS_RECIPE_DESIGN stubs ────────────────────────────────────────
 
@@ -809,3 +909,885 @@
   ;; Next: draft full Guix package (source/hash/build-system/inputs), then run lint+build.
   (package (inherit zoxide) (name "mqtt-explorer")))
 
+
+
+(define-public btrfs-desktop-notification-git
+  ;; Queue item 5626 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.268923, votes=5); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "btrfs-desktop-notification-git")))
+
+
+(define-public autofirma
+  ;; Queue item 5627 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.268883, votes=50); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "autofirma")))
+
+
+(define-public gpgfrontend
+  ;; Queue item 5628 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.268723, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "gpgfrontend")))
+
+
+(define-public playtorrio-bin
+  ;; Queue item 5629 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.268700, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "playtorrio-bin")))
+
+
+(define-public wine-gaming-dependencies
+  ;; Queue item 5630 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.268648, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "wine-gaming-dependencies")))
+
+
+(define-public libfprint-cs9711-git
+  ;; Queue item 5631 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.267393, votes=5); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "libfprint-cs9711-git")))
+
+
+(define-public waydroid-image-gapps
+  ;; Queue item 5632 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.265870, votes=18); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "waydroid-image-gapps")))
+
+
+(define-public linux-enable-ir-emitter
+  ;; Queue item 5633 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.265182, votes=12); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "linux-enable-ir-emitter")))
+
+
+(define-public plymouth-theme-mikuboot-git
+  ;; Queue item 5634 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.264536, votes=3); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "plymouth-theme-mikuboot-git")))
+
+
+(define-public aura
+  ;; Queue item 5635 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.264215, votes=173); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "aura")))
+
+
+(define-public libre-trainsim-bin
+  ;; Queue item 5636 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.264061, votes=3); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "libre-trainsim-bin")))
+
+
+(define-public netpad-vnext-bin
+  ;; Queue item 5637 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.263833, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "netpad-vnext-bin")))
+
+
+(define-public smpeg0
+  ;; Queue item 5638 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.263594, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "smpeg0")))
+
+
+(define-public graphite-cursor-theme-git
+  ;; Queue item 5639 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.263527, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "graphite-cursor-theme-git")))
+
+
+(define-public python-aioice
+  ;; Queue item 5640 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.262372, votes=1); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "python-aioice")))
+
+
+(define-public scolorpicker-legacy
+  ;; Queue item 5641 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261772, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "scolorpicker-legacy")))
+
+
+(define-public ttf-symbola
+  ;; Queue item 5642 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261627, votes=104); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "ttf-symbola")))
+
+
+(define-public otf-symbola
+  ;; Queue item 5643 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261627, votes=104); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "otf-symbola")))
+
+
+(define-public ttf-heuristica
+  ;; Queue item 5644 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261596, votes=71); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "ttf-heuristica")))
+
+
+(define-public logviewer-bin
+  ;; Queue item 5645 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261555, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "logviewer-bin")))
+
+
+(define-public wazuh-agent
+  ;; Queue item 5646 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261047, votes=11); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "wazuh-agent")))
+
+
+(define-public python-zxing-cpp
+  ;; Queue item 5647 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.261018, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "python-zxing-cpp")))
+
+
+(define-public php84-zip
+  ;; Queue item 5648 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-zip")))
+
+
+(define-public php84-xsl
+  ;; Queue item 5649 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-xsl")))
+
+
+(define-public php84-xmlwriter
+  ;; Queue item 5650 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-xmlwriter")))
+
+
+(define-public php84-xmlreader
+  ;; Queue item 5651 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-xmlreader")))
+
+
+(define-public php84-xml
+  ;; Queue item 5652 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-xml")))
+
+
+(define-public php84-tokenizer
+  ;; Queue item 5653 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-tokenizer")))
+
+
+(define-public php84-tidy
+  ;; Queue item 5654 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-tidy")))
+
+
+(define-public php84-sysvshm
+  ;; Queue item 5655 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-sysvshm")))
+
+
+(define-public php84-sysvsem
+  ;; Queue item 5656 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-sysvsem")))
+
+
+(define-public php84-sysvmsg
+  ;; Queue item 5657 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-sysvmsg")))
+
+
+(define-public php84-sqlite
+  ;; Queue item 5658 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-sqlite")))
+
+
+(define-public php84-sodium
+  ;; Queue item 5659 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-sodium")))
+
+
+(define-public php84-sockets
+  ;; Queue item 5660 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-sockets")))
+
+
+(define-public php84-soap
+  ;; Queue item 5661 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-soap")))
+
+
+(define-public php84-snmp
+  ;; Queue item 5662 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-snmp")))
+
+
+(define-public php84-simplexml
+  ;; Queue item 5663 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-simplexml")))
+
+
+(define-public php84-shmop
+  ;; Queue item 5664 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-shmop")))
+
+
+(define-public php84-pspell
+  ;; Queue item 5665 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-pspell")))
+
+
+(define-public php84-posix
+  ;; Queue item 5666 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-posix")))
+
+
+(define-public php84-phpdbg
+  ;; Queue item 5667 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-phpdbg")))
+
+
+(define-public php84-phar
+  ;; Queue item 5668 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-phar")))
+
+
+(define-public php84-pgsql
+  ;; Queue item 5669 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-pgsql")))
+
+
+(define-public php84-pecl
+  ;; Queue item 5670 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-pecl")))
+
+
+(define-public php84-pear
+  ;; Queue item 5671 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-pear")))
+
+
+(define-public php84-pdo
+  ;; Queue item 5672 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-pdo")))
+
+
+(define-public php84-pcntl
+  ;; Queue item 5673 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-pcntl")))
+
+
+(define-public php84-openssl
+  ;; Queue item 5674 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-openssl")))
+
+
+(define-public php84-opcache
+  ;; Queue item 5675 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-opcache")))
+
+
+(define-public php84-odbc
+  ;; Queue item 5676 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-odbc")))
+
+
+(define-public php84-mysql
+  ;; Queue item 5677 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-mysql")))
+
+
+(define-public php84-mbstring
+  ;; Queue item 5678 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-mbstring")))
+
+
+(define-public php84-litespeed
+  ;; Queue item 5679 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-litespeed")))
+
+
+(define-public php84-ldap
+  ;; Queue item 5680 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-ldap")))
+
+
+(define-public php84-intl
+  ;; Queue item 5681 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-intl")))
+
+
+(define-public php84-imap
+  ;; Queue item 5682 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-imap")))
+
+
+(define-public php84-iconv
+  ;; Queue item 5683 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-iconv")))
+
+
+(define-public php84-gmp
+  ;; Queue item 5684 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-gmp")))
+
+
+(define-public php84-gettext
+  ;; Queue item 5685 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-gettext")))
+
+
+(define-public php84-gd
+  ;; Queue item 5686 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-gd")))
+
+
+(define-public php84-ftp
+  ;; Queue item 5687 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-ftp")))
+
+
+(define-public php84-fpm
+  ;; Queue item 5688 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-fpm")))
+
+
+(define-public php84-firebird
+  ;; Queue item 5689 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-firebird")))
+
+
+(define-public php84-fileinfo
+  ;; Queue item 5690 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-fileinfo")))
+
+
+(define-public php84-ffi
+  ;; Queue item 5691 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-ffi")))
+
+
+(define-public php84-exif
+  ;; Queue item 5692 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-exif")))
+
+
+(define-public php84-enchant
+  ;; Queue item 5693 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-enchant")))
+
+
+(define-public php84-embed
+  ;; Queue item 5694 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-embed")))
+
+
+(define-public php84-dom
+  ;; Queue item 5695 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-dom")))
+
+
+(define-public php84-dblib
+  ;; Queue item 5696 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-dblib")))
+
+
+(define-public php84-dba
+  ;; Queue item 5697 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-dba")))
+
+
+(define-public php84-curl
+  ;; Queue item 5698 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-curl")))
+
+
+(define-public php84-ctype
+  ;; Queue item 5699 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-ctype")))
+
+
+(define-public php84-cli
+  ;; Queue item 5700 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-cli")))
+
+
+(define-public php84-cgi
+  ;; Queue item 5701 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-cgi")))
+
+
+(define-public php84-calendar
+  ;; Queue item 5702 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-calendar")))
+
+
+(define-public php84-bz2
+  ;; Queue item 5703 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-bz2")))
+
+
+(define-public php84-bcmath
+  ;; Queue item 5704 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-bcmath")))
+
+
+(define-public php84-apache
+  ;; Queue item 5705 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260484, votes=4); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "php84-apache")))
+
+
+(define-public ttf-unifont
+  ;; Queue item 5707 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260419, votes=125); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "ttf-unifont")))
+
+
+(define-public ttf-google-sans-code-vf
+  ;; Queue item 5708 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.260336, votes=3); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "ttf-google-sans-code-vf")))
+
+
+(define-public ttf-google-sans-code-nf
+  ;; Queue item 5709 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.258936, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "ttf-google-sans-code-nf")))
+
+
+(define-public mongodb-compass-bin
+  ;; Queue item 5710 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.258735, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "mongodb-compass-bin")))
+
+
+(define-public vulkan-amdgpu-pro
+  ;; Queue item 5711 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257924, votes=127); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "vulkan-amdgpu-pro")))
+
+
+(define-public lib32-vulkan-amdgpu-pro
+  ;; Queue item 5712 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257924, votes=127); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "lib32-vulkan-amdgpu-pro")))
+
+
+(define-public lib32-amdgpu-pro-oglp
+  ;; Queue item 5713 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257924, votes=127); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "lib32-amdgpu-pro-oglp")))
+
+
+(define-public amf-amdgpu-pro
+  ;; Queue item 5714 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257924, votes=127); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "amf-amdgpu-pro")))
+
+
+(define-public amdgpu-pro-oglp
+  ;; Queue item 5715 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257924, votes=127); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "amdgpu-pro-oglp")))
+
+
+(define-public pyload-ng
+  ;; Queue item 5716 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257924, votes=7); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "pyload-ng")))
+
+
+(define-public thorium-reader
+  ;; Queue item 5717 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257642, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "thorium-reader")))
+
+
+(define-public omnissa-horizon-usb
+  ;; Queue item 5718 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257150, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "omnissa-horizon-usb")))
+
+
+(define-public omnissa-horizon-serialport-client
+  ;; Queue item 5719 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257150, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "omnissa-horizon-serialport-client")))
+
+
+(define-public omnissa-horizon-scanner-client
+  ;; Queue item 5720 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257150, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "omnissa-horizon-scanner-client")))
+
+
+(define-public omnissa-horizon-html5mmr
+  ;; Queue item 5721 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257150, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "omnissa-horizon-html5mmr")))
+
+
+(define-public omnissa-horizon-file-association
+  ;; Queue item 5722 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257150, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "omnissa-horizon-file-association")))
+
+
+(define-public omnissa-horizon-client-next
+  ;; Queue item 5723 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.257150, votes=9); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "omnissa-horizon-client-next")))
+
+
+(define-public ttf-ubuntu-sans-mono
+  ;; Queue item 5725 from todo_general_packages.org.
+  ;; Source List: data/aur-cache/packages-meta-ext-v1.json
+  ;; Prior status: TODO: Added from local AUR cache (pop=0.256955, votes=2); pending packaging triage.
+  ;; NEEDS_RECIPE_DESIGN: initial recipe attempt recorded in this queue pass.
+  ;; Next: draft full Guix package (source/hash/build-system/inputs), then run guix lint/build.
+  (package (inherit zoxide) (name "ttf-ubuntu-sans-mono")))
