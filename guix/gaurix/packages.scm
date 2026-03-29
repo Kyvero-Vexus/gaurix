@@ -70,6 +70,8 @@
   #:use-module (gaurix packages queue-20260329p100daily2)
   #:use-module (gaurix packages queue-20260329p100daily3-blocked-notes)
   #:use-module (gaurix packages queue-20260329p100daily3)
+  #:use-module (gaurix packages queue-20260329p100daily4-blocked-notes)
+  #:use-module (gaurix packages queue-20260329p100daily4)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1741,4 +1743,104 @@
             msodbcsql
             freetype2-qdoled
             fladder-bin
+            tramp
+            r-quick-share
+            cosmic-greeter-git
+            tic80-pro-git
+            spotube
+            illogical-updots
+            xlibre-input-void
+            python-nspektr
+            mint-themes
+            paper-muncher-git
+            sshm-bin
+            xlibre-video-vesa
+            rocm-clang-ocl
+            dim-screen
+            ffmpeg-amd-full
+            peerflix
+            mozc-ut-full-common
+            ibus-mozc-ut-full
+            fcitx5-mozc-ut-full
+            emacs-mozc-ut-full
+            juliaup
+            mozillavpn
+            betterbird-fr-bin
+            aider-chat-venv
+            lceda-pro
+            vapoursynth-plugin-vsakarin-git
+            driverctl
+            python-simple-term-menu
+            freeoffice
+            naps2-bin
+            xlibre-video-fbdev
+            xlibre-video-ati
+            xlibre-input-synaptics
+            xlibre-input-vmmouse
+            xlibre-input-libinput-git
+            xlibre-video-intel
+            xlibre-video-qxl
+            librepods-git
+            falcond-profiles
+            mkinitcpio-sd-zfs
+            neohtop-bin
+            lwm-legacy
+            bigpemu-bin
+            waybar-git
+            openscq30-gui
+            openscq30-cli
+            i915-sriov-dkms
+            pixelserv-tls
+            ffmpeg-libfdk_aac
+            v2ray-geoip-custom
+            ytsubconverter-bin
+            lotion
+            python-syncedlyrics
+            ik-llama.cpp-cuda
+            qt6-wasm
+            electron32
+            davs2
+            cnrdrvcups-lb-bin
+            kwin-scripts-krohnkite
+            xcaddy-bin
+            shaka-packager-git
+            mssql-tools
+            atl-gui-git
+            kernel-chktaint
+            xavs2
+            uavs3d-git
+            opencv2
+            python-fastmcp
+            art_standalone
+            dissent-bin
+            netcoredbg-bin
+            nextdns-bin
+            nordvpn-gui
+            obs-plugin-browser
+            xeve
+            xevd
+            dmscripts-git
+            systemd-cleanup-pacman-hook
+            check-broken-packages-pacman-hook-git
+            intermodal-bin
+            carbonyl-bin
+            scopehal-apps-git
+            curseforge-appimage
+            windows-10-cursor
+            quirc
+            cromite-bin
+            vapoursynth-plugin-resize2-git
+            miniconda3
+            knime-desktop
+            menulibre
+            wealthfolio-bin
+            mssql-server
+            keyguard
+            speedtest-go
+            linphone-desktop-call-edition
+            pipeline-gtk
+            linux-cachyos-bore-headers
+            linux-cachyos-bore
+            arch-updater
+            libvpx1.10
 ))
