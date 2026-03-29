@@ -64,6 +64,8 @@
   #:use-module (gaurix packages queue-20260325p100e-blocked-notes)
   #:use-module (gaurix packages queue-20260329p100)
   #:use-module (gaurix packages queue-20260329p100-blocked-notes)
+  #:use-module (gaurix packages queue-20260329p100daily)
+  #:use-module (gaurix packages queue-20260329p100daily-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1436,4 +1438,104 @@
             mangowm
             rider
             mediatek-mt7927-dkms
+            codexbar
+            logibar
+            claudebar
+            plezy-git
+            listpick
+            high-voltage-ring
+            nexus-client-git
+            ocudu-git
+            jitsi-videobridge
+            jitsi-meet-turnserver
+            jicofo
+            nexus-client
+            python315
+            vesktop-wayafknext-bin
+            tonkeeper-bin
+            libtrash
+            termide-bin
+            go-prism-git
+            go-prism
+            moderncsv-bin
+            ionosctl-bin
+            ionosctl
+            dirsearch
+            libxml2-git
+            python-tf2onnx
+            python-transitions
+            rowheel
+            python-transitions-gui
+            fhc-bin
+            grabc
+            rovr
+            system-tools-backends
+            mousetrap
+            liboobs
+            fonts-meta-base
+            mill-global
+            python-pyhocon
+            python-neo4j
+            python-pyjson5
+            uuid
+            proton-drive-sync-prerelease-bin
+            bigedit
+            astra
+            fw-fanctrl
+            asus-5606-fan-state
+            phiola-bin
+            python-myvaillant
+            vitals
+            enumctl-bin
+            qo-bin
+            kitty-bitmap
+            motion-git
+            python-pandas-docs
+            ghk-bin
+            crosvm-git
+            lore-cli-bin
+            vex-tui-bin
+            data-peek-bin
+            vcsi
+            rclonefzf
+            greenlight-bin
+            melonds-bin
+            keystore-explorer-bin
+            neovim-remote
+            crossover
+            ntfsprogs-plus-git
+            kftui-bin
+            itch-setup-bin
+            graphite-gtk-theme-wallpaper-git
+            graphite-gtk-theme-rimless-normal-git
+            graphite-gtk-theme-rimless-normal-compact-git
+            graphite-gtk-theme-rimless-git
+            graphite-gtk-theme-rimless-compact-git
+            graphite-gtk-theme-normal-git
+            graphite-gtk-theme-normal-compact-git
+            graphite-gtk-theme-nord-rimless-normal-git
+            graphite-gtk-theme-nord-rimless-normal-compact-git
+            graphite-gtk-theme-nord-rimless-git
+            graphite-gtk-theme-nord-rimless-compact-git
+            graphite-gtk-theme-nord-normal-git
+            graphite-gtk-theme-nord-normal-compact-git
+            graphite-gtk-theme-nord-git
+            graphite-gtk-theme-nord-compact-git
+            graphite-gtk-theme-git
+            graphite-gtk-theme-compact-git
+            graphite-gtk-theme-black-rimless-normal-git
+            graphite-gtk-theme-black-rimless-normal-compact-git
+            graphite-gtk-theme-black-rimless-git
+            graphite-gtk-theme-black-rimless-compact-git
+            graphite-gtk-theme-black-normal-git
+            graphite-gtk-theme-black-normal-compact-git
+            graphite-gtk-theme-black-git
+            graphite-gtk-theme-black-compact-git
+            srtodo-git
+            vibe-audio-visualizer-git
+            tkginstaller-git
+            ignition-startup
+            hypruler-bin
+            hypruler
+            mqtt-explorer
             ))
