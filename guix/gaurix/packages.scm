@@ -79,6 +79,7 @@
   #:use-module (gaurix packages queue-20260330p100daily3)
   #:use-module (gaurix packages queue-20260330p100daily4)
   #:use-module (gaurix packages queue-20260330p100daily4-blocked-notes)
+  #:use-module (gaurix packages queue-20260330p100daily5)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -218,6 +219,104 @@
             python-valkey-git
             calibre-bin
             pandoc-bin
+            spek-x-git
+            apkeditor-git
+            servo-nightly-bin
+            flow-control
+            y-cruncher
+            try-cli-bin
+            otoclone
+            smart-units
+            sidef
+            sysc-greet-hyprland
+            twintaillauncher
+            pgyvisitor
+            python-buildozer
+            python-async-cron
+            python-cron-lite
+            chokidar-cli
+            cjsh
+            concurrently
+            rawdog
+            blindpaste
+            autosuspend
+            zfsnap
+            tui-banner-bin
+            cornelli-bin
+            hexecute
+            x86-64-level
+            jotit-bin
+            wlcrosshair
+            myctl
+            mytm
+            gorae-bin
+            python-termgraph
+            tuack-ng-bin
+            perl-crypt-pbkdf2
+            xosview2
+            autohand-cli
+            python-futurist
+            hexcore-link
+            circle-to-search
+            vkd3d-proton-mingw
+            keybase-bin
+            lazydocker-ng-bin
+            oyo
+            godots-git
+            sniffert
+            godots-bin
+            shellp
+            deno-stable-bin
+            sb-bin
+            ferp
+            gpbkdf2
+            fussr
+            fit
+            gitswitcher
+            roton-bin
+            trbbfi-git
+            metetch
+            jail-git
+            rocm-gfx120x-bin
+            deadlock-modmanager-bin
+            aegisub-dependency-control
+            mrunner
+            stonks-dashboard
+            oberon-risc-emu-git
+            ngsolve-git
+            pdsh-genders
+            appimagemanager
+            r5valkyrie-launcher-bin
+            certbot-dns-infomaniak
+            ddhx
+            ytdl
+            mkfromtree
+            morsify
+            hamr
+            docker-compose-systemd-unit
+            ekphos
+            bilihud-git
+            deeploy-bin
+            gdb-common-git
+            dolphie
+            zfxtop-bin
+            dwu
+            python-myloginpath
+            key-mon
+            justevery-code-bin
+            golazo-bin
+            rime-wanxiang-gram-zh-hans
+            lazydlp-bin
+            prometheus-zfs-exporter
+            hyprshutdown-git
+            riff-client
+            oomd
+            gotatun
+            libgotatun
+            csvtable
+            hdas
+            lazytyper-bin
+            godots
             beads-bin
             blender-bin
             musescore-bin
