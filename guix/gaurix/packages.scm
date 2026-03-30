@@ -80,6 +80,8 @@
   #:use-module (gaurix packages queue-20260330p100daily4)
   #:use-module (gaurix packages queue-20260330p100daily4-blocked-notes)
   #:use-module (gaurix packages queue-20260330p100daily5)
+  #:use-module (gaurix packages queue-20260330p100daily6)
+  #:use-module (gaurix packages queue-20260330p100daily6-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2350,4 +2352,105 @@
             libadwaita-yaru-demos-git
             mangojuice
             queue-20260330p100daily4-blocked-notes
+            rustmius
+            alsi
+            nm-iwd-cloud-setup
+            networkmanager-iwd
+            libnm-iwd
+            flent
+            plasticscm-client-core
+            plasticscm-client-gui
+            angular-cli
+            gst-thumbnailers
+            void-mod-manager-git
+            custom-ime
+            python-snakeviz
+            jan-appimage
+            waifu
+            vinegar
+            cwc
+            vencord-installer-bin
+            gnome-shell-extension-arch-update
+            smile
+            nautilus-dropbox
+            dracut-sshd-git
+            flow-control-bin
+            gnome-shell-extension-alphabetical-grid-extension
+            hyprpwcenter-git
+            simple-http-server-bin
+            bpftune-git
+            liquibase
+            alltray
+            readpe
+            hunspell-uk
+            obs-backgroundremoval-git
+            btrfs-du
+            qemu-headless-git
+            qemu-headless-arch-extra-git
+            qemu-guest-agent-git
+            qemu-block-iscsi-git
+            qemu-block-gluster-git
+            qemu-arch-extra-git
+            aqemu-qt6-git
+            ayugram-desktop-git
+            vital-synth
+            fastcompmgr-git
+            cutekit-git
+            kasmvncserver-bin
+            eigenwallet-bin
+            gmsh-docs
+            svp-bin
+            gdsdecomp-bin
+            ente-auth
+            motrix
+            evil-winrm-py
+            en_se
+            xpipe
+            proton-cachyos
+            carl-calendar
+            jdk11-graalvm-bin
+            dotnet-install
+            openzl
+            openlens-bin
+            serioussam-vk
+            cubyz-bin
+            2s2h
+            uzdoom-appimage
+            otf-myna
+            python-pystun3
+            gitbutler-bin
+            theia-bin
+            archiveweb.page-appimage
+            zfs-dkms-staging-git
+            chromium-ffmpeg
+            via-bin
+            nodejs-mapscii
+            kvantum-theme-gruvbox-git
+            wireguard-gui-bin
+            slsa-verifier
+            filebrowser
+            ladybug-bin
+            ttf-harmonyos-sans
+            plasma6-runners-emojirunner
+            dict-freedict-rus-eng
+            netease-cloud-music
+            arm-linux-gnueabi-gcc
+            pacman-git
+            prismlauncher-offline
+            maa-cli
+            geph5-client
+            jitterbugpair-bin
+            px_ptop
+            spotx-git
+            zoneminder
+            jdsystemmonitor
+            brother-hl-l3220cdw
+            delta-patcher
+            firedragon
+            sqlite-utils
+            yaycache
+            wasabi-wallet-bin
+            aur-check-updates
+            ca-certificates-russian-root
+            queue-20260330p100daily6-blocked-notes
 ))
