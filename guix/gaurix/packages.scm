@@ -72,6 +72,8 @@
   #:use-module (gaurix packages queue-20260329p100daily3)
   #:use-module (gaurix packages queue-20260329p100daily4-blocked-notes)
   #:use-module (gaurix packages queue-20260329p100daily4)
+  #:use-module (gaurix packages queue-20260330p100daily-blocked-notes)
+  #:use-module (gaurix packages queue-20260330p100daily)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1843,4 +1845,104 @@
             linux-cachyos-bore
             arch-updater
             libvpx1.10
+            anythingllm-appimage
+            jackett-bin
+            signal-export
+            jhentai-bin
+            fotocx
+            wtp-bin
+            nvidia-powerd-dinit
+            codecrafters-bin
+            mmtui
+            python-dbzero-git
+            try-rs
+            chhsich-nerd-font
+            owlry-plugin-bookmarks
+            owlry-plugin-filesearch
+            owlry-plugin-emoji
+            owlry-plugin-clipboard
+            owlry-plugin-calculator
+            hanuchi
+            owlry-plugin-ssh
+            owlry-plugin-scripts
+            owlry-plugin-pomodoro
+            owlry-plugin-media
+            owlry-plugin-websearch
+            owlry-plugin-weather
+            owlry-plugin-systemd
+            owlry-plugin-system
+            owlry-rune
+            owlry-lua
+            crossmacro
+            go-mitmproxy-bin
+            go-mitmproxy
+            wattage
+            reboot-to-windows
+            obinskit
+            xlibre-xorgxrdp
+            xlibre-xorgxrdp-glamor
+            autofirma-bin
+            netpala
+            bluepala
+            xlibre-video-sisusb
+            xlibre-video-vmware
+            xlibre-xserver-xvfb-git
+            xlibre-xserver-xnest-git
+            xlibre-xserver-xephyr-git
+            xlibre-xserver-git
+            xlibre-xserver-devel-git
+            xlibre-xserver-common-git
+            xlibre-xserver-bootstrap-git
+            tresorit
+            bayesian-ssh-bin
+            lettuceai-bin
+            lic-cli
+            ktfmt
+            ttf-menomonia
+            whis
+            bb_launcher
+            fbreader-appimage
+            vsgxchange
+            evsieve
+            ttf-lxgw-fasmart-gothic
+            nsis
+            rgrc
+            idntag
+            luhncheck
+            gluhncheck
+            ps3-disc-dumper
+            pdeath
+            setpgrp
+            zig-waybar-contrib
+            hulios-git
+            zig-waybar-contrib-beta-bin
+            furtherance-bin
+            rlr
+            fontpreview-git
+            git-rediff
+            editorconfiger-bin
+            seekr-bin
+            porymap5
+            makeenv
+            yoyo
+            lib32-lapacke
+            lib32-lapack
+            lib32-cblas
+            lib32-blas
+            sat
+            rusk
+            mintcommon
+            vimix-gtk-themes-git
+            tiny-media-manager
+            lib32-libvpx1.10
+            owlry-meta-widgets
+            owlry-meta-tools
+            owlry-meta-full
+            owlry-meta-essentials
+            pyznap
+            scrotty
+            footfetch-git
+            psrecord
+            relink
+            python-pdbufr
 ))
