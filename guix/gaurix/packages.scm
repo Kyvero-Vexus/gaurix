@@ -74,6 +74,8 @@
   #:use-module (gaurix packages queue-20260329p100daily4)
   #:use-module (gaurix packages queue-20260330p100daily-blocked-notes)
   #:use-module (gaurix packages queue-20260330p100daily)
+  #:use-module (gaurix packages queue-20260330p100daily2)
+  #:use-module (gaurix packages queue-20260330p100daily2-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -1945,4 +1947,105 @@
             psrecord
             relink
             python-pdbufr
+            python-findlibs
+            python-eccodes
+            passcheck
+            wl-kaomoji
+            sleep-until
+            python-influxdb-client
+            mingw-w64-cahute
+            cahute-git
+            mingw-w64-cahute-git
+            vtchs
+            timeprefix
+            xray-oci-git
+            yapi-bin
+            nanokvm-usb-appimage
+            runa
+            openshot-git
+            cloudflare-speed-cli-bin
+            srm
+            schedctl
+            cudnn9.10-cuda12.9
+            openterfaceqt-appimage
+            wlroots0.19-hidpi-xprop
+            teevee
+            an-anime-game-launcher
+            gcsfuse
+            fcitx5-chinese-addons-git
+            ocaml-cryptokit
+            ocaml-curl
+            ocamlfuse
+            python-face_recognition_models
+            ocaml-ppx_let
+            ocaml-ppx_here
+            tiny_httpd
+            ocaml-iostream
+            ocaml-compiler-libs-repackaged
+            python-pillow-simd-git
+            vfio-kvm
+            sleepy-launcher
+            cppo
+            tinygo-bin
+            python-pybufrkit
+            lavacli
+            lianpkg-bin
+            ironbar-script-net-bin
+            ovpn-status-git
+            catbox-git
+            python-conda
+            mullvad-socks-bin
+            ovpn-status
+            mullvad-socks-git
+            mullvad-socks
+            seija
+            gnome-shell-extension-run-or-raise
+            presto-bin
+            leap-bin
+            waybar-crypto
+            finamp
+            libutf8proc2
+            vapoursynth-plugin-fmtconv
+            pipes.c
+            vapoursynth-plugin-vsengine-git
+            python-jetpytools
+            appa
+            riftbar-git
+            bleachbit-admin
+            lazykiq-bin
+            pdate-cli
+            html2data-bin
+            quick-aliases
+            athas-bin
+            ffhuman-bin
+            cmdcreate-git
+            oddmu-git
+            sais
+            vis-cli
+            gnome-shell-extension-panel-date-format
+            zram-openrc
+            linux-zen-git-headers
+            linux-zen-git
+            godot-blender-exporter-git
+            newbie-bin
+            termilyon
+            bms-shell-niri
+            bms-shell-hyprland
+            bms-shell
+            python-fastexcel
+            prox
+            iris-bin
+            codegrab-bin
+            repos-bin
+            eilmeldung-bin
+            gittorrent
+            ghcup-hs-bin
+            clvk-git
+            globalprotect-openconnect-git
+            typeracer-bin
+            xq
+            pango-design-suite-bin
+            tonkeeper-wallet-bin
+            boosteroid
+            queue-20260330p100daily2-blocked-notes
 ))
