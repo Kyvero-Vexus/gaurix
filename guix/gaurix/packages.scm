@@ -76,6 +76,7 @@
   #:use-module (gaurix packages queue-20260330p100daily)
   #:use-module (gaurix packages queue-20260330p100daily2)
   #:use-module (gaurix packages queue-20260330p100daily2-blocked-notes)
+  #:use-module (gaurix packages queue-20260330p100daily3)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2048,4 +2049,104 @@
             tonkeeper-wallet-bin
             boosteroid
             queue-20260330p100daily2-blocked-notes
+            bridge-utils
+            gradia
+            icecast
+            hexchat
+            ani-cli
+            simplescreenrecorder
+            clutter-gtk
+            clutter
+            cogl
+            libgnome-keyring
+            obs-pipewire-audio-capture
+            epson-inkjet-printer-escpr
+            gtkmm
+            xrdp
+            arc-icon-theme
+            pidgin
+            cpdf
+            wallust
+            forgejo-cli
+            konsave
+            yubikey-manager-qt
+            libchamplain
+            xfdashboard
+            libbdplus
+            rr
+            fonts-tlwg
+            t1lib
+            python-torchaudio
+            gtk-engines
+            espanso-wayland
+            clutter-gst
+            cpp-httplib
+            icecat
+            patool
+            stockfish
+            fldigi
+            nncp
+            libglade
+            cheese
+            qpdfview
+            libdigidocpp
+            tilix
+            minipro
+            cable
+            python-opentelemetry-api
+            python-opentelemetry-sdk
+            python-opentelemetry-semantic-conventions
+            python-opentelemetry-test-utils
+            qucs-s
+            tracy
+            python-srsly
+            flrig
+            ansifilter
+            libart-lgpl
+            libgnomecanvas
+            python-xdoctest
+            libvisual
+            ryzenadj
+            sc-im
+            include-what-you-use
+            lagrange
+            asunder
+            vpn-slice
+            xautolock
+            megacmd
+            spectre-meltdown-checker
+            pdfposter
+            lc0
+            python-types-docutils
+            kjs
+            jed
+            python-pypdf2
+            ucl
+            sdlpop
+            libgnomecanvasmm
+            poezio
+            perl-test-checkdeps
+            dcadec
+            cambalache
+            youtube-viewer
+            deutex
+            python-slixmpp
+            perl-future
+            faba-icon-theme
+            perl-struct-dumb
+            gapless
+            rmlint
+            gnome-shell-extension-gsconnect
+            nudoku
+            crispy-doom
+            openshot
+            python-inquirer
+            perl-finance-quote
+            perl-chi
+            emacs-cider
+            emacs-clojure-mode
+            decker
+            perl-plack
+            perl-getopt-long-descriptive
+            perl-string-rewriteprefix
 ))
