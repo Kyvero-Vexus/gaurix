@@ -77,6 +77,8 @@
   #:use-module (gaurix packages queue-20260330p100daily2)
   #:use-module (gaurix packages queue-20260330p100daily2-blocked-notes)
   #:use-module (gaurix packages queue-20260330p100daily3)
+  #:use-module (gaurix packages queue-20260330p100daily4)
+  #:use-module (gaurix packages queue-20260330p100daily4-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2149,4 +2151,104 @@
             perl-plack
             perl-getopt-long-descriptive
             perl-string-rewriteprefix
+            gslapper
+            vivaldi-snapshot-ffmpeg-codecs
+            gcc13-libs
+            gcc13-fortran
+            gcc13
+            xivlauncher-bin
+            kwin-minimize2tray-git
+            gnome-themes-extra-gtk2
+            gamescope-session-steam-git
+            irnix
+            passkeez
+            coppwr-bin
+            krop
+            browseros-bin
+            linux-tachyon-headers
+            linux-tachyon
+            android-emulator
+            cartero
+            ibus-avro
+            spot-client
+            archarchive
+            ulaa-browser
+            ttf-google-sans
+            git-prompt.zsh
+            term39-bin
+            carapace
+            nucleus-gtk4-git
+            unigine-superposition
+            hyprtoolkit-git
+            python-m3u8
+            gtk-chtheme
+            snowflake-pt-client-bin
+            ttf-go
+            plasma6-applets-arch-update-notifier
+            retoswap
+            dotnet-targeting-pack-9.0-bin
+            dotnet-sdk-9.0-bin
+            dotnet-runtime-9.0-bin
+            aspnet-targeting-pack-9.0-bin
+            aspnet-runtime-9.0-bin
+            zeptofetch
+            mitogen
+            kairo
+            python-llm
+            chainner-bin
+            geminidesk
+            archlinux-themes-sddm
+            mpc-qt-bin
+            kwin-effect-rounded-corners
+            ffmpeg7.1
+            amd-vulkan-prefixes
+            nvim-treesitter-parsers-main-git
+            clevo-drivers-dkms-git
+            tosu
+            nextcloud-talk-desktop-bin
+            openocd-esp32
+            hid-sony-panic-fix-dkms
+            imagescan
+            eww-git
+            boost-65-compat-libs
+            boost-65-compat
+            bisq2
+            tabby-bin
+            vectorchord-bin
+            maa-assistant-arknights-cuda
+            maa-assistant-arknights
+            soundfont-sgm
+            dimland-git
+            ogdf-docs
+            ogdf
+            trashy
+            qobuz-player-git
+            k0sctl-bin
+            sgdboop
+            moneymanagerex
+            ik-llama.cpp-vulkan
+            catppuccin-obs-theme-git
+            terrascan
+            pkgbrowser
+            xemu
+            backblaze-b2-bin
+            fooyin-kode54-plugins-git
+            terrascan-bin
+            spotify-player-gstreamer
+            ezytdl-bin
+            vorbisgain
+            python-pyocd
+            wkhtmltopdf
+            fooyin-plugin-libvgm-git
+            ayaan
+            gabutdm
+            trojita-qt5-git
+            make-your-choice
+            symp
+            kbd-tapper
+            libadwaita-yaru-git
+            libadwaita-yaru-docs-git
+            libadwaita-yaru-demos-git
+            mangojuice
+            queue-20260330p100daily4-blocked-notes
 ))
