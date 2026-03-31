@@ -90,6 +90,7 @@
   #:use-module (gaurix packages queue-20260331p100daily-blocked-notes)
   #:use-module (gaurix packages queue-20260331p100daily2)
   #:use-module (gaurix packages queue-20260331p100daily2-blocked-notes)
+  #:use-module (gaurix packages queue-20260331p100daily3)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2461,4 +2462,104 @@
             aur-check-updates
             ca-certificates-russian-root
             queue-20260330p100daily6-blocked-notes
+            lazarus-gtk3-git
+            lazarus-qt6-git
+            audacious-gtk3
+            klassy-qt5-git
+            qbittorrent-cli
+            kvantum-qt5-git
+            autotrace
+            fasttext
+            monado
+            st
+            redis
+            gtkglext
+            zile
+            fdroidserver
+            gnucobol
+            python-pulsectl
+            gtk
+            glib
+            sdl2
+            pass-tomb
+            gnunet
+            xmenu
+            proot
+            smem
+            cachefilesd
+            mcrl2
+            python-pymc
+            rdiff-backup
+            drawpile
+            freeimage
+            python-pytest-runner
+            pup
+            friction
+            dstask
+            fava
+            python-angr
+            greybird-gtk-theme
+            pijul
+            mp3info
+            python-m2crypto
+            perl-set-object
+            xkb-switch
+            protoc-gen-go
+            imppg
+            python-flask-httpauth
+            feedgnuplot
+            pfetch
+            poweralertd
+            faudio
+            xwayland-run
+            gtypist
+            clementine
+            libsepol
+            kanata
+            mysql
+            vkquake
+            abcde
+            iocaine
+            python-nbt
+            instead
+            clustershell
+            pgloader
+            qdmr
+            stepmania
+            iwgtk
+            gromit-mpx
+            tuxguitar
+            satdump
+            python-click-default-group
+            coccinelle
+            python-async-timeout
+            grass
+            gpredict
+            flightgear
+            openhmd
+            wl-clipboard-x11
+            python-stdnum
+            gojq
+            ocaml-sqlite3
+            ocaml-extlib
+            ocaml-ounit
+            ocaml-lwt
+            ocaml-react
+            ocaml-easy-format
+            ocaml-biniou
+            ocaml-yojson
+            ocaml-ppxlib
+            wiggle
+            vo-amrwbenc
+            catgirl
+            python-pymsgbox
+            meshoptimizer
+            xremap-kde
+            xssproxy
+            camlidl
+            ptouch-print
+            ptpython
+            leafpad
+            dualsensectl
+            steghide
 ))
