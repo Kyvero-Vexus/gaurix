@@ -95,6 +95,8 @@
   #:use-module (gaurix packages queue-20260331p100daily4-blocked-notes)
   #:use-module (gaurix packages queue-20260331p100daily5)
   #:use-module (gaurix packages queue-20260331p100daily5-blocked-notes)
+  #:use-module (gaurix packages queue-20260331p100daily6)
+  #:use-module (gaurix packages queue-20260331p100daily6-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -218,6 +220,26 @@
             libplasma-git
             qutebrowser-git
             cataclysm-dda-git
+            perl-test-future-io-impl
+            perl-test-metrics-any
+            perl-xs-parse-sublike
+            perl-universal-require
+            python-lazr-restfulclient
+            python-cucumber-tag-expressions
+            notmuch-addrlookup-c
+            python-rich-argparse
+            vulkan-memory-allocator
+            python-sentencepiece
+            python-cached-property
+            gnome-shell-extension-burn-my-windows
+            python-spacy-loggers
+            qbittorrent-enhanced
+            python-terminaltexteffects
+            python-inotify-simple
+            git-credential-oauth
+            python-imageio-ffmpeg
+            gnome-shell-extension-dash-to-dock
+            gnome-shell-extension-clipboard-indicator
             mecab-git
             openttd-jgrpp-git
             dragon-drop-git
@@ -2570,4 +2592,5 @@
             networkmanager-dispatcher-chrony
             matcha-gtk-theme
             queue-20260331p100daily5-blocked-notes
+            queue-20260331p100daily6-blocked-notes
 ))
