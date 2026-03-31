@@ -93,6 +93,8 @@
   #:use-module (gaurix packages queue-20260331p100daily3)
   #:use-module (gaurix packages queue-20260331p100daily4)
   #:use-module (gaurix packages queue-20260331p100daily4-blocked-notes)
+  #:use-module (gaurix packages queue-20260331p100daily5)
+  #:use-module (gaurix packages queue-20260331p100daily5-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2565,4 +2567,7 @@
             dualsensectl
             steghide
             queue-20260331p100daily4-blocked-notes
+            networkmanager-dispatcher-chrony
+            matcha-gtk-theme
+            queue-20260331p100daily5-blocked-notes
 ))
