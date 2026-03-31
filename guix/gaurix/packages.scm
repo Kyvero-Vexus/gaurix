@@ -91,6 +91,8 @@
   #:use-module (gaurix packages queue-20260331p100daily2)
   #:use-module (gaurix packages queue-20260331p100daily2-blocked-notes)
   #:use-module (gaurix packages queue-20260331p100daily3)
+  #:use-module (gaurix packages queue-20260331p100daily4)
+  #:use-module (gaurix packages queue-20260331p100daily4-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2562,4 +2564,5 @@
             leafpad
             dualsensectl
             steghide
+            queue-20260331p100daily4-blocked-notes
 ))
