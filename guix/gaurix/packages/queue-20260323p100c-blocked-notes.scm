@@ -73,7 +73,7 @@
   '(ani-rss NEEDS_RECIPE_DESIGN "No Guix ani-rss; RSS aggregator for anime; unclear upstream language; Next: investigate AUR PKGBUILD, locate upstream repo, draft recipe")
   '(lazylibrarian-git NEEDS_RECIPE_DESIGN "No Guix lazylibrarian; source https://gitlab.com/lazylibrarian/LazyLibrarian; Python web app; Next: pin git commit, draft python recipe")
   '(outline-client-appimage NEEDS_RECIPE_DESIGN "No Guix outline-client; Jigsaw/Google VPN AppImage at https://getoutline.org/; Electron binary; needs AppImage wrapper with patchelf; Next: fetch AppImage, compute hash, draft binary recipe")
-  '(monika-after-story-bin NEEDS_RECIPE_DESIGN "No Guix monika-after-story; DDLC mod Ren\'Py binary at https://monikaafterstory.com/releases.html; LICENSE_REVIEW_NEEDED for DDLC base assets; Next: fetch binary, draft binary recipe, review license compatibility")
+  '(monika-after-story-bin NEEDS_RECIPE_DESIGN "No Guix monika-after-story; DDLC mod Ren'Py binary at https://monikaafterstory.com/releases.html; LICENSE_REVIEW_NEEDED for DDLC base assets; Next: fetch binary, draft binary recipe, review license compatibility")
   '(sdbus-cpp-basu-git NEEDS_RECIPE_DESIGN "No Guix sdbus-cpp-basu; sdbus-cpp with basu sd-bus at https://github.com/Kistler-Group/sdbus-cpp; C++ cmake + elogind/basu dep; Next: fetch source, draft cmake recipe")
   '(clion-eap NEEDS_RECIPE_DESIGN "No Guix clion; proprietary JetBrains CLion EAP at https://www.jetbrains.com/clion/nextversion/; LICENSE_REVIEW_NEEDED for JetBrains EAP EULA; needs binary wrapper with JVM + patchelf; Next: fetch EAP tarball, compute hash, draft binary recipe")
   ))
