@@ -14,6 +14,10 @@
   #:use-module (gnu packages ncurses)
   #:use-module (gnu packages vim)
   #:use-module (gnu packages admin)
+#:use-module (gnu packages forth)
+#:use-module (gnu packages pulseaudio)
+#:use-module (gnu packages bittorrent)
+#:use-module (gnu packages xdisorg)
   #:use-module (gnu packages qt)
   #:use-module (gnu packages python)
   #:use-module (gnu packages video)
@@ -230,6 +234,11 @@
             josm-latest
             gforth-docs
             trezor-udev
+            gforth
+            tofi
+            tremc
+            autojump
+            apulse
             xlibre-input-libinput
             torchvision-rocm
             python-torchvision-rocm

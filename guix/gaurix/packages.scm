@@ -615,6 +615,11 @@
             python-argdispatch
             python-steam
             trezor-udev
+            gforth
+            tofi
+            tremc
+            autojump
+            apulse
             xlibre-input-libinput
             torchvision-rocm
             python-torchvision-rocm
