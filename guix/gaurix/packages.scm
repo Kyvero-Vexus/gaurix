@@ -103,6 +103,8 @@
   #:use-module (gaurix packages queue-20260401p100daily2-blocked-notes)
   #:use-module (gaurix packages queue-20260401p100daily3)
   #:use-module (gaurix packages queue-20260401p100daily3-blocked-notes)
+  #:use-module (gaurix packages queue-20260401p100daily4)
+  #:use-module (gaurix packages queue-20260401p100daily4-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2603,5 +2605,7 @@
             queue-20260401p100daily2-blocked-notes
             queue-20260401p100daily2
             queue-20260401p100daily3-blocked-notes
+            queue-20260401p100daily4
+            queue-20260401p100daily4-blocked-notes
             queue-20260401p100daily3
 ))
