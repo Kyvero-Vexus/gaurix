@@ -109,6 +109,8 @@
   #:use-module (gaurix packages queue-20260401p100daily5-blocked-notes)
   #:use-module (gaurix packages queue-20260401p100daily6)
   #:use-module (gaurix packages queue-20260401p100daily6-blocked-notes)
+  #:use-module (gaurix packages queue-20260401p100daily7-blocked-notes)
+  #:use-module (gaurix packages queue-20260401p100daily7)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2725,4 +2727,6 @@
             wolfssl-all
             jdk22-openjdk
             jdk25-openjdk-wakefield
+            queue-20260401p100daily7
+            queue-20260401p100daily7-blocked-notes
 ))
