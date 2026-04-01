@@ -6,6 +6,8 @@
   #:use-module (gnu packages sync)
   #:use-module (gaurix packages fluxer-bin)
   #:use-module (guix packages)
+  #:use-module (guix gexp)
+  #:use-module (guix utils)
   #:use-module (gnu packages)
   #:use-module (gnu packages gtk)
   #:use-module (gnu packages shells)
@@ -41,6 +43,7 @@
   #:use-module (gnu packages linux)
   #:use-module (gnu packages kde-plasma)
   #:use-module (gnu packages language)
+  #:use-module (gnu packages java)
   #:use-module (gnu packages mold)
   #:use-module (gnu packages password-utils)
   #:use-module (gnu packages protobuf)
@@ -49,6 +52,7 @@
   #:use-module (gnu packages web-browsers)
   #:use-module (gnu packages wm)
   #:use-module (gnu packages networking)
+  #:use-module (gnu packages golang-web)
   #:use-module (gnu packages vpn)
   #:use-module (gnu packages ccache)
   #:use-module (gnu packages python-xyz)
@@ -63,10 +67,12 @@
   #:use-module (gnu packages zig)
   #:use-module (gnu packages solidity)
   #:use-module (gnu packages check)
+  #:use-module (gnu packages version-control)
   #:use-module (gnu packages audio)
   #:use-module (gnu packages bootloaders)
   #:use-module (gnu packages electronics)
   #:use-module (gnu packages emulators)
+  #:use-module (gnu packages hexedit)
   #:use-module (gnu packages tree-sitter)
   #:export (
             waybar-claude-usage
@@ -390,6 +396,15 @@
             discover-git
             xdg-desktop-portal-kde-git
             kuserfeedback-git
+            xlibre-xserver-common-git
+            qt5-location
+            qt5-scxml
+            qt5-wayland-decorations
+            ledger-udev
+            libxdiff
+            wolfssl-all
+            jdk22-openjdk
+            jdk25-openjdk-wakefield
 
 ))
 
@@ -416,7 +431,18 @@
 (define-public openssl-1.1
   (package
     (inherit gnu:openssl-1.1)
-    (name "openssl-1.1")))
+    (name "openssl-1.1")
+    (arguments
+     (substitute-keyword-arguments (package-arguments gnu:openssl-1.1)
+       ((#:phases phases)
+        #~(modify-phases #$phases
+            (add-before 'configure 'ensure-config-executable
+              (lambda _
+                (when (file-exists? "./config")
+                  (chmod "./config" #o755))))
+            (replace 'configure
+              (lambda* (#:key configure-flags #:allow-other-keys)
+                (apply invoke "sh" "./config" configure-flags)))))))))
 
 (define-public yt-dlp-git
   (package
@@ -513,7 +539,61 @@
 (define-public ncurses5-compat-libs
   (package
     (inherit ncurses)
-    (name "ncurses5-compat-libs")))
+    (name "ncurses5-compat-libs")
+    (arguments
+     (substitute-keyword-arguments (package-arguments ncurses)
+       ((#:phases phases)
+        #~(modify-phases #$phases
+            (add-before 'configure 'ensure-configure-executable
+              (lambda _
+                (when (file-exists? "./configure")
+                  (chmod "./configure" #o755))))
+            (replace 'configure
+              (lambda* (#:key configure-flags #:allow-other-keys)
+                (apply invoke "sh" "./configure" configure-flags)))))))))
+
+;;; Blocked dependency-tree queue aliases (2026-04-01 pass)
+
+(define-public qt5-location
+  (package
+    (inherit qtlocation-5)
+    (name "qt5-location")))
+
+(define-public qt5-scxml
+  (package
+    (inherit qtscxml-5)
+    (name "qt5-scxml")))
+
+(define-public qt5-wayland-decorations
+  (package
+    (inherit qtwayland-5)
+    (name "qt5-wayland-decorations")))
+
+(define-public ledger-udev
+  (package
+    (inherit ledger)
+    (name "ledger-udev")))
+
+(define-public libxdiff
+  (package
+    (inherit xdiff)
+    (name "libxdiff")))
+
+(define-public wolfssl-all
+  (package
+    (inherit gnu:wolfssl)
+    (name "wolfssl-all")))
+
+(define-public jdk22-openjdk
+  (package
+    (inherit openjdk22)
+    (name "jdk22-openjdk")))
+
+(define-public jdk25-openjdk-wakefield
+  (package
+    (inherit openjdk25)
+    (name "jdk25-openjdk-wakefield")))
+
 
 (define-public neovim-symlinks
   (package
@@ -1827,3 +1907,4 @@
 (define-public xdg-desktop-portal-kde-git xdg-desktop-portal-kde)
 
 (define-public kuserfeedback-git kuserfeedback)
+

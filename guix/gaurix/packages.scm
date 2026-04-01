@@ -2715,4 +2715,12 @@
             queue-20260401p100daily4
             queue-20260401p100daily4-blocked-notes
             queue-20260401p100daily3
+            qt5-location
+            qt5-scxml
+            qt5-wayland-decorations
+            ledger-udev
+            libxdiff
+            wolfssl-all
+            jdk22-openjdk
+            jdk25-openjdk-wakefield
 ))
