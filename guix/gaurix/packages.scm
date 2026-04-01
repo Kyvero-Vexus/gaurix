@@ -97,6 +97,8 @@
   #:use-module (gaurix packages queue-20260331p100daily5-blocked-notes)
   #:use-module (gaurix packages queue-20260331p100daily6)
   #:use-module (gaurix packages queue-20260331p100daily6-blocked-notes)
+  #:use-module (gaurix packages queue-20260401p100daily)
+  #:use-module (gaurix packages queue-20260401p100daily-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -2593,4 +2595,5 @@
             matcha-gtk-theme
             queue-20260331p100daily5-blocked-notes
             queue-20260331p100daily6-blocked-notes
+            queue-20260401p100daily-blocked-notes
 ))
