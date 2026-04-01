@@ -105,6 +105,8 @@
   #:use-module (gaurix packages queue-20260401p100daily3-blocked-notes)
   #:use-module (gaurix packages queue-20260401p100daily4)
   #:use-module (gaurix packages queue-20260401p100daily4-blocked-notes)
+  #:use-module (gaurix packages queue-20260401p100daily5)
+  #:use-module (gaurix packages queue-20260401p100daily5-blocked-notes)
   #:export (
             qt5ct-kde
             linux-mainline
@@ -472,6 +474,106 @@
             ares-emu-git
             libwacom-surface
             xpadneo-dkms-git
+            grepcidr
+            android-messages-desktop-bin
+            spack
+            resin-pro
+            wasm-language-tools
+            persepolis-git
+            python-kajson
+            tug-bin
+            c001apk-flutter-git
+            eovpn
+            garden-bin
+            romvault
+            stfed
+            ruby-kaitai-struct
+            bdf
+            scorecard-bin
+            python-textualeffects
+            r-tidyjson
+            r-vip
+            r-widyr
+            motd
+            buttery-bin
+            chandler-bin
+            python-deepl
+            bashhound-ce-git
+            natscli-bin
+            obamify-git
+            r-r-matlab
+            r-r-rsp
+            gnome-shell-extension-media-controls
+            gosimac-bin
+            cargo-visualize-bin
+            r-mcmcse
+            r-inflection
+            python-ensurepath
+            r-ggquiver
+            r-finetune
+            dbmodel-qt4
+            nitchrevived-bin
+            r-dice
+            webull-desktop
+            statifier
+            orphanrm
+            all
+            python-thinc-bin-8-3-2
+            python-fleep
+            wsl-open
+            fastrace
+            python-audible
+            python-audible-cli
+            libuev-docs
+            pixiecore-git
+            coccigrep
+            openwrt-devel
+            mattercontrol
+            libnest2d
+            daylight-bin
+            mkdocs-macros-plugin
+            ndeftool
+            doxx-git
+            kaitai-struct-compiler
+            kaitai-struct-visualizer
+            moribito
+            cura-resources-materials
+            gcc10
+            gcc10-libs
+            gcc10-fortran
+            gnutls3-8-9
+            bibtex-tidy
+            billtracker
+            visual-paradigm
+            jarl-bin
+            modbustools-git
+            kalker-bin
+            nmp-settings-bin
+            git-who-bin
+            junction-git
+            cloudmonkey
+            regina-rexx
+            regina-rexx-doc
+            savestate
+            stardrop-bin
+            python-hydrus
+            dsp56300-emulator-clap
+            dsp56300-emulator-lv2
+            dsp56300-emulator-vst3
+            kv-bin
+            android-messages-desktop
+            asix-ax99100
+            rofi-search-git
+            plymouth-theme-arch-ascii
+            plymouth-theme-pedro-raccoon
+            plymouth-theme-psx
+            echomind
+            proton-pass-git
+            yrba-git
+            libtas
+            system76-keyboard-configurator-git
+            crycco-bin
+            quakespasm-spiked-git
             pidgin-mini
             kwin-effects-glass-git
             gtkmm-docs
