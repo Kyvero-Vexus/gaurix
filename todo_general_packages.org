@@ -314,13 +314,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 52. tailscale
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/tailscale.git` (HEAD reachable at evaluation time).
-   - Status: Attempted in 2026-03-20 queue-drain batch; not safely completable in this pass without custom packaging/rework beyond batch limits.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show tailscale` -> package not found; A2 candidate normalization tried tailscale, headscale; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 53. zerotier-one
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/zerotier-one.git` (HEAD reachable at evaluation time).
-   - Status: Attempted in 2026-03-20 queue-drain batch; not safely completable in this pass without custom packaging/rework beyond batch limits.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show zerotier-one` -> package not found; A2 candidate normalization tried zerotier-one, zerotier; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -344,7 +344,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 57. waydroid
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/waydroid.git` (HEAD reachable at evaluation time).
-   - Status: Attempted in 2026-03-20 queue-drain batch; not safely completable in this pass without custom packaging/rework beyond batch limits.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show waydroid` -> package not found; A2 candidate normalization tried waydroid, anbox; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -374,7 +374,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 62. hyprshot
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/hyprshot.git` (HEAD reachable at evaluation time).
-   - Status: Attempted in 2026-03-20 queue-drain batch; not safely completable in this pass without custom packaging/rework beyond batch limits.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show hyprshot` -> package not found; A2 candidate normalization tried hyprshot; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -512,7 +512,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 85. openssl-1.1
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 8.725, votes 11).
-   - Status: Added Gaurix compatibility alias in `guix/gaurix/packages/general-compat.scm`, but build currently fails at configure (`./config`: Permission denied in Guix builder for openssl-1.1.1u).
+   - Status: BLOCKED: BUILD_FAILURE_CONFIGURE | A1 exact alias check: `guix build -L guix -n openssl-1.1` succeeds; A2 configure strategy update (chmod + invoke via `sh ./config`) still fails with exit 127 in full build (`guix build -L guix openssl-1.1`); A3 upstream source triage confirms openssl-1.1.1u in AUR/Guix but sandbox configure path remains failing, keeping blocked pending deeper phase patching.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -734,7 +734,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 122. pilowlava-font-common
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED today: authoritative AUR git endpoint `pilowlava-font-common.git` has no repository/HEAD for this exact package name.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show pilowlava-font-common` -> package not found; A2 candidate normalization tried pilowlava-font-common, pilowlava-font; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://events.ccc.de/congress/2024/infos/styleguide.html.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -812,7 +812,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 135. fooyin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `guix build -L guix -n fooyin` reports unknown package in current channels; requires a new Gaurix recipe (source URI/hash/build-system) to proceed.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show fooyin` -> package not found; A2 candidate normalization tried fooyin; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[qt6-base, alsa-lib, taglib, ffmpeg, ...] url=https://www.fooyin.org/.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1070,7 +1070,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 178. upd72020x-fw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED after validation: AUR HEAD 8a8f7fd8f600705c39277cf095777c5b22605855 exists, but package is firmware blob repack flow with unclear redistribution constraints and no Guix-ready fixed-output source path completed in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show upd72020x-fw` -> package not found; A2 candidate normalization tried upd72020x-fw; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/denisandroid/uPD72020x-Firmware.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1154,7 +1154,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 192. elephant
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED after validation: AUR HEAD d0bce0778496366c79602eef08d2e76d430b5ed1 exists, but upstream Elephant meta package/dependency mapping is incomplete for deterministic Guix packaging in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show elephant` -> package not found; A2 candidate normalization tried elephant; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/abenz1267/elephant.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1184,7 +1184,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 197. xone-dongle-firmware
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED after validation: AUR HEAD reachable, but package is firmware blob delivery for Xone dongle; deterministic redistributable firmware source/legal verification not completed in this pass.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show xone-dongle-firmware` -> package not found; A2 candidate normalization tried xone-dongle-firmware; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://support.xbox.com/en-US/help/hardware-network/browse.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1322,7 +1322,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 220. wl-screenrec
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: requires a fresh Guix package recipe and dependency packaging work; not safely completable within this queue-drain run window.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show wl-screenrec` -> package not found; A2 candidate normalization tried wl-screenrec; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[ffmpeg, libva-driver, gcc-libs, glibc] url=https://github.com/russelltg/wl-screenrec.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1472,7 +1472,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 245. mozc
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `mozc` requires substantial IME build/integration work (ibus/fcitx dictionaries/tooling) not completed safely in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show mozc` -> package not found; A2 candidate normalization tried mozc, fcitx5-mozc, ibus-mozc; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[qt6-base] url=https://github.com/google/mozc.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1526,7 +1526,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 254. xrizer-common
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: authoritative AUR git endpoint `https://aur.archlinux.org/xrizer-common.git` has no repository/HEAD for this exact package name, so no canonical PKGBUILD source can be retrieved.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show xrizer-common` -> package not found; A2 candidate normalization tried xrizer-common, xrizer; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/Supreeeme/xrizer.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1682,7 +1682,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 280. c++utilities
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching Guix package in current channels (`guix search ^c++utilities$` empty) and no pinned upstream release/hashes were prepared safely in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show c++utilities` -> package not found; A2 candidate normalization tried c++utilities; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc, libstdc++, libgcc] url=https://github.com/Martchus/cpp-utilities.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2336,7 +2336,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 389. ncurses5-compat-libs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Added Gaurix compatibility alias in `guix/gaurix/packages/general-compat.scm`, but full build currently fails in configure phase (`./configure: Permission denied`) when validating `./scripts/build-and-lint-package.sh ncurses5-compat-libs`.
+   - Status: BLOCKED: BUILD_FAILURE_CONFIGURE | A1 exact alias check: `guix build -L guix -n ncurses5-compat-libs` succeeds; A2 configure strategy update (chmod + invoke via `sh ./configure`) still fails full build with configure exit 1; A3 source/dependency triage confirms compatibility target exists but requires additional phase/flag adjustments before unblocking.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2744,7 +2744,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 457. linux-lqx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching package in current Guix channels (`guix search ^linux-lqx$` empty); custom kernel variant recipe not authored in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show linux-lqx` -> package not found; A2 candidate normalization tried linux-lqx; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[coreutils, kmod, initramfs] url=https://liquorix.net/.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2798,7 +2798,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 466. wayfire
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching package in current Guix channels (`guix search ^wayfire$` empty); compositor recipe not completed in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show wayfire` -> package not found; A2 candidate normalization tried wayfire; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[cairo, pango, wf-config>=0.10.0, libjpeg, ...] url=https://wayfire.org.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2852,7 +2852,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 475. localepurge
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no exact Guix package match for `localepurge` in active channels (`guix search '^localepurge$'` empty); requires new recipe with pinned source/hash.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show localepurge` -> package not found; A2 candidate normalization tried localepurge, locales; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=http://packages.debian.org/source/sid/localepurge.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3928,7 +3928,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 651. samsung-unified-driver-common
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No corresponding package found in current Guix set (verified with `guix search`/`guix package -A`) and no existing Gaurix recipe for this entry; requires manual upstream-source packaging (source URI, hash, build/install phases) before validation.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show samsung-unified-driver-common` -> package not found; A2 candidate normalization tried samsung-unified-driver-common, samsung-unified-driver; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=http://www.samsung.com.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -4966,7 +4966,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 824. stardust-xr-solar-sailer
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Blocked this pass: no existing Guix package match discovered and authoritative package recipe/source mapping + full Guix packaging/validation not completed today.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show stardust-xr-solar-sailer` -> package not found; A2 candidate normalization tried stardust-xr-solar-sailer; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/StardustXR/solar-sailer.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5662,7 +5662,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 940. circle-flags
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `circle-flags` source asset set/license metadata needs audit before redistribution; package creation deferred.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show circle-flags` -> package not found; A2 candidate normalization tried circle-flags; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/linuxmint/circle-flags.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5728,7 +5728,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 951. ledger-udev
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ledger-udev` requires audited udev rules installation path and hardware-permission validation; package not completed in this pass.
+   - Status: BLOCKED: BUILD_TIMEOUT | A1 exact upstream lookup failed (`guix show ledger-udev` not found); A2 alias attempt to `ledger` now resolves (`guix build -L guix -n ledger-udev`); A3 full build attempt timed out in C++ compile (`guix build -L guix ledger-udev`), so kept blocked pending timeout-safe build tuning.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5920,7 +5920,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 983. openvino
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but openvino requires large multi-component toolchain packaging (runtime/dev/plugins) and hardware-target validation not completed in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show openvino` -> package not found; A2 candidate normalization tried openvino, oneapi; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc, libgcc, libstdc++, onetbb, ...] url=https://docs.openvino.ai/.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -6592,7 +6592,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1095. xapp-thumbnailers-common
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: xapp-thumbnailers-common requires split xapp thumbnailer packaging not available in current channels.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show xapp-thumbnailers-common` -> package not found; A2 candidate normalization tried xapp-thumbnailers-common, xapp-thumbnailers, xapp; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[gdk-pixbuf2, python-gobject, python-pillow, xapp] url=https://github.com/linuxmint/xapp-thumbnailers.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -7084,13 +7084,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1177. ghostty-terminfo-nightly-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `guix build -L guix -n ghostty-terminfo-nightly-bin` does not resolve in current channels, and no completed Gaurix package recipe (source URI/hash + build/wrapper phases) was produced in this queue pass.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show ghostty-terminfo-nightly-bin` -> package not found; A2 candidate normalization tried ghostty-terminfo-nightly-bin, ghostty-terminfo-nightly; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/ghostty-org/ghostty.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1178. ghostty-shell-integration-nightly-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `guix build -L guix -n ghostty-shell-integration-nightly-bin` does not resolve in current channels, and no completed Gaurix package recipe (source URI/hash + build/wrapper phases) was produced in this queue pass.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show ghostty-shell-integration-nightly-bin` -> package not found; A2 candidate normalization tried ghostty-shell-integration-nightly-bin, ghostty-shell-integration-nightly; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/ghostty-org/ghostty.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -7630,7 +7630,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1268. dotnet-targeting-pack-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted in 2026-03-17 queue drain; Authoritative AUR git endpoint has no repository/HEAD for dotnet-targeting-pack-bin at evaluation time, so canonical source retrieval failed.
+   - Status: BLOCKED: NEEDS_DOTNET_PACKAGING | A1 exact upstream lookup: `guix show dotnet-targeting-pack-bin` -> package not found; A2 candidate normalization tried dotnet-targeting-pack-bin, dotnet-targeting-pack, dotnet, dotnet-sdk, dotnet-runtime; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://www.microsoft.com/net/core.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -7642,7 +7642,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1270. dotnet-runtime-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted in 2026-03-17 queue drain; AUR recipe uses installer script/remote feed for dotnet-runtime-bin and reproducible pinned binary derivation was not completed in this pass.
+   - Status: BLOCKED: NEEDS_DOTNET_PACKAGING | A1 exact upstream lookup: `guix show dotnet-runtime-bin` -> package not found; A2 candidate normalization tried dotnet-runtime-bin, dotnet-runtime, dotnet, dotnet-sdk; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[dotnet-host>=10.0.5, gcc-libs, glibc, icu, ...] url=https://www.microsoft.com/net/core.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9052,7 +9052,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1505. zmusic
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no matching package `zmusic` in current Guix channels (`guix search '^zmusic$'` empty); adding a new recipe with pinned source/hash was not safely completed in this queue pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show zmusic` -> package not found; A2 candidate normalization tried zmusic; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[alsa-lib, libsndfile, mpg123] url=https://github.com/ZDoom/ZMusic.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9107,7 +9107,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 ** BLOCKED 1515. ollama-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no matching package `ollama-bin` in current Guix channels (`guix search '^ollama-bin$'` empty), and creating a new pinned-source recipe was not safely completed in this queue pass.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show ollama-bin` -> package not found; A2 candidate normalization tried ollama-bin, ollama; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc, gcc-libs] url=https://github.com/ollama/ollama.
    - Difficulty: medium
    - TODO Status: BLOCKED
 ** BLOCKED 1516. octoberctl-bin
@@ -9251,7 +9251,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1541. archlinux-java-run
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `archlinux-java-run` is Arch-specific launcher logic tied to pacman/Arch layouts; no meaningful Guix package equivalent.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show archlinux-java-run` -> package not found; A2 candidate normalization tried archlinux-java-run; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[bash, java-runtime-common] url=https://github.com/michaellass/archlinux-java-run.
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -9605,7 +9605,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1600. pgadmin4-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no `pgadmin4` package exists in current Guix channel set at validation time; requires a substantial new Python/web packaging stack.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show pgadmin4-server` -> package not found; A2 candidate normalization tried pgadmin4-server, pgadmin4; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[postgresql-libs, krb5, python-dbus] url=https://www.pgadmin.org/.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -10187,7 +10187,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1697. ddccontrol-db-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: `ddccontrol-db-git` requires VCS snapshot packaging and ddccontrol stack integration not completed in this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show ddccontrol-db-git` -> package not found; A2 candidate normalization tried ddccontrol-db-git, ddccontrol-db; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/ddccontrol/ddccontrol-db.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -10433,7 +10433,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1738. web-eid-native
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `web-eid-native` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show web-eid-native` -> package not found; A2 candidate normalization tried web-eid-native, web-eid; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[pcsclite, ccid, openssl, qt6-base, ...] url=https://www.id.ee/.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11401,7 +11401,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1900. wd719x-firmware
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `wd719x-firmware` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show wd719x-firmware` -> package not found; A2 candidate normalization tried wd719x-firmware; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/mijailr/wd719x-firmware.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11491,7 +11491,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1915. sonic-win
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching package in current Guix channels for this candidate during this pass (`guix package -A`/`guix search`), and creating a fresh recipe from upstream/AUR source with pinned hash was not completed today.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show sonic-win` -> package not found; A2 candidate normalization tried sonic-win; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[aurorae, breeze, gcc-libs, glibc, ...] url=https://github.com/Sonic-DE/sonic-win.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11515,7 +11515,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1919. ttf-material-symbols-variable-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching package in current Guix channels for this candidate during this pass (`guix package -A`/`guix search`), and creating a fresh recipe from upstream/AUR source with pinned hash was not completed today.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show ttf-material-symbols-variable-git` -> package not found; A2 candidate normalization tried ttf-material-symbols-variable-git, ttf-material-symbols-variable; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/google/material-design-icons.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11749,7 +11749,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1958. logmein-hamachi
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `logmein-hamachi` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show logmein-hamachi` -> package not found; A2 candidate normalization tried logmein-hamachi; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://www.vpn.net/linux.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11809,7 +11809,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1968. foobar2000
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `foobar2000` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show foobar2000` -> package not found; A2 candidate normalization tried foobar2000; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[wine, desktop-file-utils] url=https://www.foobar2000.org.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11845,7 +11845,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1974. bcompare
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `bcompare` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show bcompare` -> package not found; A2 candidate normalization tried bcompare; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[qt6-base] url=https://www.scootersoftware.com.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -12132,13 +12132,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 2022. yay
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `yay` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show yay` -> package not found; A2 candidate normalization tried yay; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260329p100.scm:112 (inherits zoxide placeholder); AUR triage deps=[pacman>6.1, git] url=https://github.com/Jguer/yay.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 2023. paru
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `paru` in this pass; deferred for dedicated packaging work.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show paru` -> package not found; A2 candidate normalization tried paru; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260329p100.scm:119 (inherits zoxide placeholder); AUR triage deps=[git, pacman, libalpm.so>=14] url=https://github.com/morganamilo/paru.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14005,7 +14005,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2334. osu-mime
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show osu-mime` -> package not found; A2 candidate normalization tried osu-mime; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[xdg-utils, shared-mime-info, desktop-file-utils] url=/cgit/aur.git/snapshot/osu-mime.tar.gz.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14107,7 +14107,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2351. nvidia-utils-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show nvidia-utils-beta` -> package not found; A2 candidate normalization tried nvidia-utils-beta, nvidia-utils; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[bash, egl-gbm, egl-wayland, egl-wayland2, ...] url=https://www.nvidia.com/.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14275,7 +14275,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2379. rvgl-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show rvgl-bin` -> package not found; A2 candidate normalization tried rvgl-bin, rvgl; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[sdl2, sdl2_image, openal, enet, ...] url=https://rvgl.org.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14431,7 +14431,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2405. rom-properties
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show rom-properties` -> package not found; A2 candidate normalization tried rom-properties; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[curl, fmt, gcc-libs, glibc, ...] url=https://github.com/GerbilSoft/rom-properties.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14897,11 +14897,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 2483. libxdiff
+** DONE 2483. libxdiff
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No direct upstream Guix package match by canonical-name mapping; requires custom package recipe/research.
+   - Status: DONE: validated compatibility alias in guix/gaurix/packages/general-compat.scm -> xdiff; verified with `guix lint -L guix libxdiff` and `guix build -L guix libxdiff`.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 2484. megit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -16003,7 +16003,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2667. verify-lib
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Attempted in 2026-03-20 queue-drain batch; no direct Guix package match from naming heuristics; requires custom recipe research/implementation.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show verify-lib` -> package not found; A2 candidate normalization tried verify-lib; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc] url=https://gitlab.com/fkzys/verify-lib.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16069,7 +16069,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2678. wolfssl-all
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Attempted in 2026-03-20 queue-drain batch; no direct Guix package match from naming heuristics; requires custom recipe research/implementation.
+   - Status: BLOCKED: BUILD_FAILURE_BOOTSTRAP | A1 exact upstream lookup failed (`guix show wolfssl-all` not found); A2 alias attempt to `wolfssl` resolves (`guix build -L guix -n wolfssl-all`); A3 full build fails at bootstrap (`./autogen.sh` exit 127), kept blocked pending bootstrap phase fix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -18775,7 +18775,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3129. vscodium-translucent
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show vscodium-translucent -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show vscodium-translucent` -> package not found; A2 candidate normalization tried vscodium-translucent; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[fontconfig, libxtst, gtk3, cairo, ...] url=https://github.com/VSCodium/vscodium.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18787,7 +18787,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3131. openbangla-keyboard-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show openbangla-keyboard-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show openbangla-keyboard-git` -> package not found; A2 candidate normalization tried openbangla-keyboard-git, openbangla-keyboard; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[qt5-base, openbangla-im=2.0.0.r78.gaddbd4e, hicolor-icon-theme, zstd] url=https://openbangla.github.io.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19045,7 +19045,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3174. llvm-libs-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show llvm-libs-minimal-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show llvm-libs-minimal-git` -> package not found; A2 candidate normalization tried llvm-libs-minimal-git, llvm-libs-minimal; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[gcc-libs, zlib, libffi, libedit, ...] url=https://llvm.org/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19715,12 +19715,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3286. jdk25-openjdk-wakefield
+** DONE 3286. jdk25-openjdk-wakefield
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `git ls-remote --heads https://aur.archlinux.org/jdk25-openjdk-wakefield.git` failed (unreachable); `guix show -L guix jdk25-openjdk-wakefield` not found; next: verify upstream URL or mirror and retry.
+   - Status: DONE: validated compatibility alias in guix/gaurix/packages/general-compat.scm -> openjdk25; verified with `guix lint -L guix jdk25-openjdk-wakefield` and `guix build -L guix -n jdk25-openjdk-wakefield`.
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** BLOCKED 3287. jre25-openjdk-wakefield
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FETCH_FAILED: `git ls-remote --heads https://aur.archlinux.org/jre25-openjdk-wakefield.git` failed (unreachable); `guix show -L guix jre25-openjdk-wakefield` not found; next: verify upstream URL or mirror and retry.
@@ -20065,7 +20065,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3344. radicle-node
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show radicle-node` -> package not found; A2 candidate normalization tried radicle-node; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc, libgcc, zlib, git, ...] url=https://radicle.xyz.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20275,7 +20275,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3379. element-web-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show element-web-git => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show element-web-git` -> package not found; A2 candidate normalization tried element-web-git, element-web; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/vector-im/element-web.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21445,7 +21445,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3574. elephant-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh elephant-bin` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show elephant-bin` -> package not found; A2 candidate normalization tried elephant-bin, elephant; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc] url=https://github.com/abenz1267/elephant.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23267,11 +23267,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3878. qt5-scxml
+** DONE 3878. qt5-scxml
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh qt5-scxml` succeeded (AUR rev 576984f5046519d52f6aa05e5fa60fbb6b954a5c; source=(kde-$_pkgfqn::git+https://invent.kde.org/qt/qt/$_pkgfqn#commit=$_commit)). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: validated compatibility alias in guix/gaurix/packages/general-compat.scm -> qtscxml-5; verified with `guix lint -L guix qt5-scxml` and `guix build -L guix qt5-scxml`.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3879. ngrok
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -23293,7 +23293,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3882. python-inquirerpy
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh python-inquirerpy` succeeded (AUR rev 107d83d759c008ba0576a9e135d0b7106890f711; source=("https://files.pythonhosted.org/packages/source/${_module::1}/$_module/$_module-$pkgver.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-inquirerpy` -> package not found; A2 candidate normalization tried python-inquirerpy, inquirerpy, python-inquirer; closest upstream candidate `python-inquirer` found but not packaging-equivalent; A3 repo scan found no package definition for this name; AUR triage deps=[python, python-pfzy, python-prompt_toolkit] url=https://github.com/kazhala/InquirerPy.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24179,11 +24179,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4030. jdk22-openjdk
+** DONE 4030. jdk22-openjdk
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh jdk22-openjdk` failed (hint: | hint: 	git branch -m <name> | cp: cannot stat '/tmp/tmp.PUlmOJD384/jdk22-openjdk/PKGBUILD': No such file or directory). Next: verify AUR endpoint/package rename and retry fetch.
+   - Status: DONE: validated compatibility alias in guix/gaurix/packages/general-compat.scm -> openjdk22; verified with `guix lint -L guix jdk22-openjdk` and `guix build -L guix -n jdk22-openjdk`.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4031. openjdk22-src
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24373,7 +24373,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4062. lianwalld-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh lianwalld-bin` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n lianwalld-bin` after adding module/export.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show lianwalld-bin` -> package not found; A2 candidate normalization tried lianwalld-bin, lianwalld; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[awww, mpvpaper] url=https://github.com/Yueosa/lianwall.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24739,7 +24739,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4123. redhat-fonts
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show redhat-fonts rc=1; No direct Guix equivalent found via quick candidate search. Next: Draft full recipe (source/build-system/inputs) and validate with guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show redhat-fonts` -> package not found; A2 candidate normalization tried redhat-fonts; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://www.redhat.com.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24787,7 +24787,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4131. clash-geoip
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show clash-geoip rc=1; No direct Guix equivalent found via quick candidate search. Next: Draft full recipe (source/build-system/inputs) and validate with guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show clash-geoip` -> package not found; A2 candidate normalization tried clash-geoip; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/Loyalsoldier/geoip.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -25009,7 +25009,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4168. keychron-link-udev
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — no Guix equivalent; no cached PKGBUILD. Next: draft udev-rules recipe from AUR.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show keychron-link-udev` -> package not found; A2 candidate normalization tried keychron-link-udev; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=/cgit/aur.git/snapshot/keychron-link-udev.tar.gz.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -25117,7 +25117,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4186. heidisql
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Windows SQL GUI under Wine; proprietary. Next: draft wine-wrapped binary recipe from AUR PKGBUILD source URL.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show heidisql` -> package not found; A2 candidate normalization tried heidisql; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=http://www.heidisql.com/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -25975,7 +25975,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4329. python-munge
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep python-munge: no match; needs python-build-system recipe from PyPI
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-munge` -> package not found; A2 candidate normalization tried python-munge, munge; closest upstream candidate `munge` found but not packaging-equivalent; A3 repo scan found no package definition for this name; AUR triage deps=[python-requests, python-click] url=https://github.com/20c/munge.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -27433,7 +27433,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4572. java-service-wrapper
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: LICENSE_REVIEW_NEEDED: Tanuki Software Java Service Wrapper at https://wrapper.tanukisoftware.com/; proprietary binary; LICENSE_REVIEW_NEEDED for EULA terms; Next: review license, fetch binary, draft recipe
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show java-service-wrapper` -> package not found; A2 candidate normalization tried java-service-wrapper; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://wrapper.tanukisoftware.com/doc/english/introduction.html.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -28021,7 +28021,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4670. apriltag
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Visual fiducial robotics library v3.4.5; BSD-2; cmake. Source: https://github.com/AprilRobotics/apriltag. Next: draft cmake-build-system recipe; no Guix apriltag found.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show apriltag` -> package not found; A2 candidate normalization tried apriltag; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100.scm:64 but it does not currently unblock the package; AUR triage deps=[none] url=https://april.eecs.umich.edu/software/apriltag.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -28699,7 +28699,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4783. xmlada
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN: Ada/gprbuild recipe; circular dep challenge with gprbuild bootstrap; staged build required]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show xmlada` -> package not found; A2 candidate normalization tried xmlada; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100b.scm:684 but it does not currently unblock the package; AUR triage deps=[none] url=https://github.com/AdaCore/xmlada.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -28933,7 +28933,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4822. ros2-arch-deps
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Arch-specific meta-dep concept not applicable on Guix; stub in queue-20260324p100c.scm.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show ros2-arch-deps` -> package not found; A2 candidate normalization tried ros2-arch-deps; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100c.scm:153 but it does not currently unblock the package; AUR triage deps=[asio, bullet, cmake, curl, ...] url=https://docs.ros.org/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29149,13 +29149,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4858. stardust-xr-flatland
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Stardust XR Rust/wlroots surface; https://github.com/StardustXR/flatland; stub added.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show stardust-xr-flatland` -> package not found; A2 candidate normalization tried stardust-xr-flatland; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100c.scm:398 but it does not currently unblock the package; AUR triage deps=[none] url=https://github.com/StardustXR/flatland.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 4859. stardust-xr-gravity
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Stardust XR Rust; https://github.com/StardustXR/gravity; stub added.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show stardust-xr-gravity` -> package not found; A2 candidate normalization tried stardust-xr-gravity; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100c.scm:406 but it does not currently unblock the package; AUR triage deps=[none] url=https://github.com/StardustXR/gravity.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29173,7 +29173,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4862. stardust-xr-protostar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Stardust XR Rust app launcher; stub added.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show stardust-xr-protostar` -> package not found; A2 candidate normalization tried stardust-xr-protostar; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100c.scm:425 but it does not currently unblock the package; AUR triage deps=[none] url=https://github.com/StardustXR/protostar.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29209,7 +29209,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4868. stardust-xr-black-hole
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Stardust XR window destructor; stub added.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show stardust-xr-black-hole` -> package not found; A2 candidate normalization tried stardust-xr-black-hole; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100c.scm:465 but it does not currently unblock the package; AUR triage deps=[none] url=https://github.com/StardustXR/black-hole.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30097,7 +30097,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5016. ps3-env
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — PS3 environment setup; draft trivial recipe with profile env vars; Source: https://github.com/ps3dev/ps3toolchain. Stub exported in queue-20260324p100d.scm.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show ps3-env` -> package not found; A2 candidate normalization tried ps3-env; no equivalent upstream package; A3 repo scan found alias in guix/gaurix/packages/queue-20260324p100d.scm:871 but it does not currently unblock the package; AUR triage deps=[none] url=https://github.com/ps3dev/ps3toolchain.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30937,7 +30937,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5156. python-plyer
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: python-build-system; fetch from PyPI plyer 2.1.0, compute sha256; Source: https://pypi.org/project/plyer/
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-plyer` -> package not found; A2 candidate normalization tried python-plyer, plyer, python-pyglet; closest upstream candidate `python-pyglet` found but not packaging-equivalent; A3 repo scan found stub in guix/gaurix/packages/queue-20260325p100b.scm:313 (inherits zoxide placeholder); AUR triage deps=[python] url=https://github.com/kivy/plyer.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31789,7 +31789,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5298. dosh
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Docker shell wrapper; shell script v8.0; Docker runtime dep.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show dosh` -> package not found; A2 candidate normalization tried dosh; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260325p100c.scm:538 (inherits zoxide placeholder); AUR triage deps=[bash, docker] url=https://github.com/gportay/dosh.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31951,7 +31951,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5325. libelectron
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Shared Electron runtime libs; binary extraction; complex multi-output recipe.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show libelectron` -> package not found; A2 candidate normalization tried libelectron; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260325p100c.scm:679 (inherits zoxide placeholder); AUR triage deps=[npm, git, icu] url=https://gitlab.com/linuxbombay/libelectron/libelectron.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32029,7 +32029,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5338. electron-castlab-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Castlabs Electron with Widevine; binary; castlabs/electron-releases v32.x.
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show electron-castlab-bin` -> package not found; A2 candidate normalization tried electron-castlab-bin, electron-castlab; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260325p100c.scm:728 (inherits zoxide placeholder); AUR triage deps=[c-ares, gcc-libs, glibc, gtk3, ...] url=https://github.com/castlabs/electron-releases.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -36787,7 +36787,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 ** BLOCKED 6172. xlibre-xserver-common-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n xlibre-xserver-common-git | detail: recipe-attempt stub added in queue-20260330p100daily; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
+   - Status: BLOCKED: NEEDS_XLIBRE_COMPAT_ALIAS | A1 exact upstream lookup: `guix show xlibre-xserver-common-git` -> package not found; A2 candidate normalization tried xlibre-xserver-common-git, xlibre-xserver, xlibre-xserver-common, xorg-server; closest upstream candidate `xorg-server` found but not packaging-equivalent; A3 repo scan found stub in guix/gaurix/packages/queue-20260330p100daily.scm:386 (inherits zoxide placeholder); AUR triage deps=[xkeyboard-config, xorg-setxkbmap, xorg-xkbcomp] url=https://github.com/x11libre/xserver.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 ** BLOCKED 6173. xlibre-xserver-bootstrap-git
@@ -36972,7 +36972,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 ** BLOCKED 6209. lib32-blas
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n lib32-blas | detail: recipe-attempt stub added in queue-20260330p100daily; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show lib32-blas` -> package not found; A2 candidate normalization tried lib32-blas; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260330p100daily.scm:608 (inherits zoxide placeholder); AUR triage deps=[lib32-gcc-libs, blas] url=https://www.netlib.org/lapack.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 ** BLOCKED 6210. sat
@@ -37560,7 +37560,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
 ** BLOCKED 6310. bms-shell
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n bms-shell | detail: recipe-attempt stub added in queue-20260330p100daily2; source/hash/build-system unresolved in this pass | next: draft full Guix recipe from upstream source and validate with guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show bms-shell` -> package not found; A2 candidate normalization tried bms-shell; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260330p100daily2.scm:614 (inherits zoxide placeholder); AUR triage deps=[dgop, inter-font, quickshell, ttf-fira-code, ...] url=https://github.com/Heroblaze2310/bms-shell.
    - TODO Status: BLOCKED
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Difficulty: unknown
@@ -37657,9 +37657,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6326. gslapper
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show gslapper` -> package not found; A2 candidate normalization tried gslapper; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily4.scm:105 but it does not currently unblock the package; AUR triage deps=[gstreamer, gst-plugins-base, gst-plugins-good, gst-plugins-bad, ...] url=https://github.com/Nomadcxx/gSlapper.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6327. vivaldi-snapshot-ffmpeg-codecs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -37825,15 +37825,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6354. hyprtoolkit-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show hyprtoolkit-git` -> package not found; A2 candidate normalization tried hyprtoolkit-git, hyprtoolkit; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily4.scm:189 but it does not currently unblock the package; AUR triage deps=[aquamarine-git, egl-gbm, iniparser, hyprgraphics-git, ...] url=https://github.com/hyprwm/hyprtoolkit.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6355. python-m3u8
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-m3u8` -> package not found; A2 candidate normalization tried python-m3u8, m3u8, python-m3u8-parser; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily4.scm:192 but it does not currently unblock the package; AUR triage deps=[python-iso8601] url=https://github.com/globocom/m3u8.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6356. gtk-chtheme
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -37867,9 +37867,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6361. dotnet-targeting-pack-9.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: NEEDS_DOTNET_PACKAGING | A1 exact upstream lookup: `guix show dotnet-targeting-pack-9.0-bin` -> package not found; A2 candidate normalization tried dotnet-targeting-pack-9.0-bin, dotnet-targeting-pack, dotnet, dotnet-sdk, dotnet-runtime; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily4.scm:210 but it does not currently unblock the package; AUR triage deps=[netstandard-targeting-pack] url=https://dotnet.microsoft.com.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6362. dotnet-sdk-9.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -37879,9 +37879,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6363. dotnet-runtime-9.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: NEEDS_DOTNET_PACKAGING | A1 exact upstream lookup: `guix show dotnet-runtime-9.0-bin` -> package not found; A2 candidate normalization tried dotnet-runtime-9.0-bin, dotnet-runtime, dotnet, dotnet-sdk; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily4.scm:216 but it does not currently unblock the package; AUR triage deps=[dotnet-host>=9.0.14.sdk312, gcc-libs, glibc, icu, ...] url=https://dotnet.microsoft.com.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6364. aspnet-targeting-pack-9.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -39493,7 +39493,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6632. sqlite-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n sqlite-utils | detail: error: specification->package: unbound variable (global module-load failure while evaluating existing queue modules) | next: repair failing queue modules, then re-run guix build -L guix -n sqlite-utils
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show sqlite-utils` -> package not found; A2 candidate normalization tried sqlite-utils; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily6.scm:391 but it does not currently unblock the package; AUR triage deps=[python-sqlite-fts4, python-click, python-click-default-group, python-tabulate, ...] url=https://sqlite-utils.datasette.io/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39601,7 +39601,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6650. python-condense-json
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n python-condense-json | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: repair queue module import/runtime error around specification->package; rerun guix build/lint
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-condense-json` -> package not found; A2 candidate normalization tried python-condense-json, condense-json; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily7.scm:145 but it does not currently unblock the package; AUR triage deps=[none] url=https://pypi.org/project/condense-json/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39823,7 +39823,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6687. python-litex
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n python-litex | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: repair queue module import/runtime error around specification->package; rerun guix build/lint
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-litex` -> package not found; A2 candidate normalization tried python-litex, litex; no equivalent upstream package; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily7.scm:247 but it does not currently unblock the package; AUR triage deps=[python-migen, python-pyserial, python-requests, python-pythondata-software-compiler_rt] url=https://github.com/enjoy-digital/litex.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39865,7 +39865,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6694. python-art
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n python-art | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: repair queue module import/runtime error around specification->package; rerun guix build/lint
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-art` -> package not found; A2 candidate normalization tried python-art, art, python-rich; closest upstream candidate `python-rich` found but not packaging-equivalent; A3 repo scan found recipe in guix/gaurix/packages/queue-20260330p100daily7.scm:268 but it does not currently unblock the package; AUR triage deps=[python] url=https://github.com/sepandhaghighi/art/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -40180,10 +40180,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6746. dotnet-targeting-pack-7.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dotnet-targeting-pack-7.0-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: BLOCKED: NEEDS_DOTNET_PACKAGING | A1 exact upstream lookup: `guix show dotnet-targeting-pack-7.0-bin` -> package not found; A2 candidate normalization tried dotnet-targeting-pack-7.0-bin, dotnet-targeting-pack, dotnet, dotnet-sdk, dotnet-runtime; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[netstandard-targeting-pack] url=https://www.microsoft.com/net/core.
    - Next: draft new recipe module for dotnet-targeting-pack-7.0-bin (source+hash+build-system), then rerun guix build -L guix -n dotnet-targeting-pack-7.0-bin
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6747. dotnet-sdk-7.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -40194,10 +40194,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6748. dotnet-runtime-7.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dotnet-runtime-7.0-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: BLOCKED: NEEDS_DOTNET_PACKAGING | A1 exact upstream lookup: `guix show dotnet-runtime-7.0-bin` -> package not found; A2 candidate normalization tried dotnet-runtime-7.0-bin, dotnet-runtime, dotnet, dotnet-sdk; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[dotnet-host>=7.0.20, gcc-libs, glibc, icu, ...] url=https://www.microsoft.com/net/core.
    - Next: draft new recipe module for dotnet-runtime-7.0-bin (source+hash+build-system), then rerun guix build -L guix -n dotnet-runtime-7.0-bin
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6749. aspnet-targeting-pack-7.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -40763,10 +40763,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6831. python-aiocache
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-aiocache | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-aiocache` -> package not found; A2 candidate normalization tried python-aiocache, aiocache, python-cachetools; closest upstream candidate `python-cachetools` found but not packaging-equivalent; A3 repo scan found no package definition for this name; AUR triage deps=[python] url=https://github.com/argaen/aiocache.
    - Next: draft new recipe module for tabaur (source+hash+build-system), then rerun guix build -L guix -n tabaur
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6832. osdlyrics
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -42010,7 +42010,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 7037. noto-fonts-emoji-blob
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n noto-fonts-emoji-blob | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show noto-fonts-emoji-blob` -> package not found; A2 candidate normalization tried noto-fonts-emoji-blob; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/C1710/blobmoji/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -43186,7 +43186,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 7233. libfmod
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n libfmod | detail: error: specification->package: unbound variable; hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust recipe, then rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show libfmod` -> package not found; A2 candidate normalization tried libfmod; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=http://www.fmod.org/.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -43805,10 +43805,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=1.0000, votes=1; Python bindings for llama.cpp
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-llama-cpp-vulkan | detail: (gnu packages golang-web)'? | guix build: error: python-llama-cpp-vulkan: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
-** BLOCKED 7349. qt5-location
+** DONE 7349. qt5-location
    - Note: AUR popularity=1.0000, votes=1; Provides access to position, satellite and area monitoring classes
-   - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n qt5-location | detail: (gnu packages golang-web)'? | guix build: error: qt5-location: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
+   - TODO Status: DONE
+   - Status: DONE: validated compatibility alias in guix/gaurix/packages/general-compat.scm -> qtlocation-5; verified with `guix lint -L guix qt5-location` and `guix build -L guix -n qt5-location`.
 ** BLOCKED 7350. shelly-bin
    - Note: AUR popularity=1.0000, votes=1; Shelly: A Modern Arch Package Manager (prebuilt binary)
    - TODO Status: FAILED
@@ -44122,8 +44122,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n plasma6-applets-separator-git | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 ** BLOCKED 7415. python-aiolimiter
    - Note: AUR popularity=0.1872, votes=6; An efficient implementation of a rate limiter for asyncio
-  - TODO Status: BLOCKED
-  - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-aiolimiter | detail: guix build: error: python-aiolimiter: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_PYTHON_RECIPE | A1 exact upstream lookup: `guix show python-aiolimiter` -> package not found; A2 candidate normalization tried python-aiolimiter, aiolimiter, python-anyio; closest upstream candidate `python-anyio` found but not packaging-equivalent; A3 repo scan found no package definition for this name; AUR triage deps=[python] url=https://github.com/mjpieters/aiolimiter.
 
 ** BLOCKED 7416. rmpc-auto-theme-git
    - Note: AUR popularity=0.1810, votes=1; Dynamic theme generator for rmpc music player using K-means color extraction
@@ -44163,8 +44163,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 7422. genders
    - Note: AUR popularity=0.1807, votes=3; Static cluster configuration database used for cluster configuration management.
-  - TODO Status: BLOCKED
-  - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dbeaver-ce-jre-bin | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show genders` -> package not found; A2 candidate normalization tried genders; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/chaos/genders.
 
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n shim-signed | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
@@ -44233,10 +44233,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n finalmouse-cli | detail: guix build: error: finalmouse-cli: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
-** BLOCKED 7434. qt5-wayland-decorations
+** DONE 7434. qt5-wayland-decorations
    - Note: AUR popularity=0.1794, votes=13; Provides APIs for Wayland - using QAdwaitaDecorations
-  - TODO Status: BLOCKED
-  - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n sfxr-qt-bin | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
+   - TODO Status: DONE
+   - Status: DONE: validated compatibility alias in guix/gaurix/packages/general-compat.scm -> qtwayland-5; verified with `guix lint -L guix qt5-wayland-decorations` and `guix build -L guix qt5-wayland-decorations`.
 
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n qadwaitadecorations-qt5 | detail: guix build: error: qadwaitadecorations-qt5: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
@@ -46956,8 +46956,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n texlive-installer | detail: placeholder stub added in guix/gaurix/packages/queue-20260401p100daily2.scm (source/hash/build-system not finalized) | next: draft full recipe and run guix lint/build
    - TODO Status: BLOCKED
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n texlive-installer | error: package recipe drafting not completed this pass | next: finalize source URI/hash/inputs and validate
-** FAILED 8014. acestream-engine
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n acestream-engine | detail: placeholder stub added in guix/gaurix/packages/queue-20260401p100daily2.scm (source/hash/build-system not finalized) | next: draft full recipe and run guix lint/build
+** BLOCKED 8014. acestream-engine
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show acestream-engine` -> package not found; A2 candidate normalization tried acestream-engine; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260401p100daily2.scm:524 (inherits zoxide placeholder); AUR triage deps=[python310] url=https://acestream.org.
    - TODO Status: BLOCKED
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n acestream-engine | error: package recipe drafting not completed this pass | next: finalize source URI/hash/inputs and validate
 
@@ -47375,7 +47375,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 8014. acestream-engine
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n acestream-engine | detail: placeholder queue recipe stub only (source/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: BINARY_ONLY_UPSTREAM | A1 exact upstream lookup: `guix show acestream-engine` -> package not found; A2 candidate normalization tried acestream-engine; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260401p100daily2.scm:524 (inherits zoxide placeholder); AUR triage deps=[python310] url=https://acestream.org.
    - Note: AUR popularity=0.0995, votes=133; Ace Stream engine
    - TODO Status: BLOCKED
 
@@ -62918,16 +62918,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 11311. yay
+** BLOCKED 11311. yay
    - AUR votes: 2537, popularity: 47.1488
    - Note: Yet another yogurt. Pacman wrapper and AUR helper written in go.
-   - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n yay | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
-** FAILED 11312. paru
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show yay` -> package not found; A2 candidate normalization tried yay; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260329p100.scm:112 (inherits zoxide placeholder); AUR triage deps=[pacman>6.1, git] url=https://github.com/Jguer/yay.
+** BLOCKED 11312. paru
    - AUR votes: 1172, popularity: 39.4491
    - Note: Feature packed AUR helper
-   - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n paru | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show paru` -> package not found; A2 candidate normalization tried paru; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260329p100.scm:119 (inherits zoxide placeholder); AUR triage deps=[git, pacman, libalpm.so>=14] url=https://github.com/morganamilo/paru.
 ** FAILED 11313. aur-sync-vote
    - AUR votes: 58, popularity: 27.2547
    - Note: Syncing votes with the currently installed AUR packages
@@ -63103,11 +63103,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The AI coding agent built for the terminal.
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n opencode-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
-** FAILED 11348. openssl-1.1
+** BLOCKED 11348. openssl-1.1
    - AUR votes: 13, popularity: 6.5676
    - Note: The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
-   - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n openssl-1.1 | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: BUILD_FAILURE_CONFIGURE | A1 exact alias check: `guix build -L guix -n openssl-1.1` succeeds; A2 configure strategy update (chmod + invoke via `sh ./config`) still fails with exit 127 in full build (`guix build -L guix openssl-1.1`); A3 upstream source triage confirms openssl-1.1.1u in AUR/Guix but sandbox configure path remains failing, keeping blocked pending deeper phase patching.
 ** FAILED 11349. winboat-bin
    - AUR votes: 27, popularity: 6.2931
    - Note: Run Windows apps on Linux with seamless integration
