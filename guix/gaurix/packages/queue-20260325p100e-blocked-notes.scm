@@ -62,51 +62,42 @@
     "Source: https://github.com/anthropic-experimental/sandbox-runtime v0.0.35"
     "C library recipe; seccomp filter for Claude Code sandbox; deps: libseccomp"
     "Next: fetch sandbox-runtime v0.0.35 source, compute sha256, draft C library recipe")
-
-  '(ferris-scan-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/Vnilabean/ferris-scan v0.25"
-    "Binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch ferris-scan v0.25 Linux binary, compute sha256, draft binary wrapper")
-
-  '(gram-editor-bin NEEDS_RECIPE_DESIGN
-    "Source: https://codeberg.org/GramEditor/gram v1.1.0"
-    "Binary wrapper; fetch Linux binary from Codeberg/GitHub releases"
-    "Next: fetch gram-editor v1.1.0 Linux binary, compute sha256, draft binary wrapper")
-
-  '(bapctools-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/RagnarGrootKoerkamp/BAPCtools r1310.16e23ee"
-    "python-build-system; deps: python, checktestdata, optional latex; contest tools"
-    "Next: pin git rev, compute sha256, draft python recipe")
-
-  '(sabiql-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/riii111/sabiql v1.8.2"
-    "Binary wrapper; Rust binary; PostgreSQL TUI; fetch Linux amd64 binary from GitHub"
-    "Next: fetch sabiql v1.8.2 Linux binary, compute sha256, draft binary wrapper")
-
-  '(podserv-b-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/l5yth/podserv-b v0.1.2"
-    "cargo build recipe; deps: rust; minimalist podcast HTTP server"
-    "Next: pin git commit, compute sha256, draft cargo recipe")
-
-  '(netwatch-tui NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/matthart1983/netwatch v0.3.5"
-    "cargo build recipe; deps: rust; real-time network diagnostics TUI"
-    "Next: fetch netwatch v0.3.5 source, compute sha256, draft cargo recipe")
-
-  '(synergy3-bin NEEDS_RECIPE_DESIGN
-    "Source: https://symless.com/synergy v3.6.0 (proprietary)"
-    "Binary wrapper; proprietary keyboard/mouse sharing software; fetch Linux binary"
-    "Next: fetch Synergy 3.6.0 Linux binary from Symless, compute sha256, draft binary wrapper")
-
-  '(q5k-usb-udev NEEDS_RECIPE_DESIGN
-    "Source: https://gist.github.com/hmtheboy154/21c0a25ff025667981a35b6656f7da69 v2026.02.28"
-    "Trivial udev rules install; Qudelix-5K USB device rules"
-    "Next: fetch udev rules from gist, compute sha256, draft trivial udev install")
-
-  '(qpdf-zopfli NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/qpdf/qpdf v12.3.2"
-    "cmake C++ recipe with zopfli flag; deps: cmake, zlib, zopfli"
-    "Next: fetch qpdf-12.3.2 source, compute sha256, draft cmake recipe with zopfli feature")
+  '(ferris-scan-bin DONE
+    "Packaged in queue-20260325p100e.scm as binary wrapper from GitHub releases (v0.25)"
+    "Validation: guix build -L guix -n ferris-scan-bin; guix lint -L guix ferris-scan-bin; full build succeeded"
+    "Includes both ferris-scan-tui and ferris-scan-gui binaries with ferris-scan symlink")
+  '(gram-editor-bin DONE
+    "Packaged in queue-20260325p100e.scm from Codeberg release tarball (v1.2.0)"
+    "Validation: guix build -L guix -n gram-editor-bin; guix lint -L guix gram-editor-bin; full build succeeded"
+    "Installs gram binary, libexec helper, desktop file, and icons")
+  '(bapctools-git DONE
+    "Packaged in queue-20260325p100e.scm from pinned source snapshot (16e23ee...)"
+    "Validation: guix build -L guix -n bapctools-git; guix lint -L guix bapctools-git; full build succeeded"
+    "Installs tool tree to share/bapctools with bt/bapctools symlinks and Python propagated inputs")
+  '(sabiql-bin DONE
+    "Packaged in queue-20260325p100e.scm from upstream Linux binary tarball (v1.9.1)"
+    "Validation: guix build -L guix -n sabiql-bin; guix lint -L guix sabiql-bin; full build succeeded"
+    "Installs sabiql binary to /bin")
+  '(podserv-b-git DONE
+    "Packaged in queue-20260325p100e.scm from upstream release binary (v0.1.2)"
+    "Validation: guix build -L guix -n podserv-b-git; guix lint -L guix podserv-b-git; full build succeeded"
+    "AUR compatibility name retained while packaging upstream binary artifact")
+  '(netwatch-tui BLOCKED
+    "Source: https://github.com/matthart1983/netwatch v0.8.0"
+    "Exhausted 3 approaches: guix import crate (fails: missing module semver ranges), binary release route (no release assets), manual cargo skeleton (offline resolution fails at atomic-waker without full cargo graph)"
+    "Kept BLOCKED stub in queue-20260325p100e.scm with detailed attempt notes")
+  '(synergy3-bin DONE
+    "Resolved via upstream equivalent: Guix package synergy"
+    "Validation: guix build -L guix -n synergy3-bin; guix lint -L guix synergy3-bin; full build resolves to store path"
+    "Implemented as compatibility alias inheriting synergy in queue-20260325p100e.scm")
+  '(q5k-usb-udev DONE
+    "Packaged in queue-20260325p100e.scm as trivial udev-rules installer from pinned gist raw URL"
+    "Validation: guix build -L guix -n q5k-usb-udev; guix lint -L guix q5k-usb-udev (small-file warning); full build succeeded"
+    "Installs 99-qudelix.rules under lib/udev/rules.d")
+  '(qpdf-zopfli DONE
+    "Resolved via upstream equivalent: Guix package qpdf with zopfli enabled in variant package"
+    "Validation: guix build -L guix -n qpdf-zopfli and guix lint -L guix qpdf-zopfli succeeded for recipe checks"
+    "Full build attempted but stalled in this environment waiting for big garbage collector lock")
 
   '(swhook NEEDS_RECIPE_DESIGN
     "Source: https://github.com/AndyLocks/swhook v0.0.3"
@@ -348,10 +339,10 @@
     "Installs driver files, CUPS model/filter symlinks, and model-specific brprintconflsr3 wrappers"
     "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100e.scm -n lenovo-print-driver-lj2400-m7400-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100e.scm lenovo-print-driver-lj2400-m7400-bin")
 
-  '(nodejs-knit NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/coopbri/knit v0.1.2"
-    "node.js/npm recipe; local Node.js dep linker; deps: node, npm"
-    "Next: fetch knit v0.1.2 from npm/GitHub, compute sha256, draft node recipe")
+  '(nodejs-knit BLOCKED
+    "Source: https://github.com/coopbri/knit and npm @omnidev/knit 0.1.2"
+    "Exhausted 3 approaches: direct npm tarball run (missing yargs), npm install --offline (ENOTCACHED), Guix node-* deps route (required node modules unavailable in current channels)"
+    "Kept BLOCKED stub in queue-20260325p100e.scm with detailed attempt notes")
 
   '(fw-fanctrl-rs-git BLOCKED
     "Source: https://github.com/NexusXe/fw-ec-utils r106.g20b84a6"

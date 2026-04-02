@@ -6,6 +6,7 @@
   #:use-module (guix packages)
   #:use-module (guix download)
   #:use-module (guix gexp)
+  #:use-module (guix utils)
   #:use-module (guix build-system cmake)
   #:use-module (guix build-system trivial)
   #:use-module ((guix licenses) #:prefix license:)
@@ -18,9 +19,15 @@
   #:use-module (gnu packages image)
   #:use-module (gnu packages libusb)
   #:use-module (gnu packages linux)
+  #:use-module (gnu packages pdf)
   #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages polkit)
+  #:use-module (gnu packages python)
+  #:use-module (gnu packages python-xyz)
+  #:use-module (gnu packages python-web)
   #:use-module (gnu packages radio)
+  #:use-module (gnu packages serialization)
+  #:use-module (gnu packages synergy)
   #:use-module (gnu packages rust-apps)
   #:use-module (gnu packages xdisorg)
   #:use-module (gnu packages xorg)
@@ -412,67 +419,292 @@ and unix-block seccomp BPF payload used by Claude Code sandboxing.")
     (license license:asl2.0)))
 
 (define-public ferris-scan-bin
-  ;; AUR ferris-scan-bin: Lightweight Rust-based file scanner (binary); v0.25-1; 1 vote.
-  ;; Source: https://github.com/Vnilabean/ferris-scan
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch ferris-scan v0.25 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "ferris-scan-bin")))
+  (package
+    (name "ferris-scan-bin")
+    (version "0.25")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/Vnilabean/ferris-scan/releases/download/v"
+                           version "/ferris-scan-tui-v" version "-linux"))
+       (sha256
+        (base32 "1a2sb0w04a3qnxdbjg7nf74zab949wpsj5yfgbx5v9yfgws8fbq4"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     (list
+      (list "ferris-scan-gui"
+            (origin
+              (method url-fetch)
+              (uri
+               (string-append
+                "https://github.com/Vnilabean/ferris-scan/releases/download/v"
+                version "/ferris-scan-gui-v" version "-linux"))
+              (sha256
+               (base32 "1fdjhgz0gzlad89jggq99m4bfyi7a3mssp5fdnkm9xkinar61xys"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (bin (string-append out "/bin"))
+                 (src-tui (assoc-ref %build-inputs "source"))
+                 (src-gui (assoc-ref %build-inputs "ferris-scan-gui")))
+            (mkdir-p bin)
+            (copy-file src-tui (string-append bin "/ferris-scan-tui"))
+            (copy-file src-gui (string-append bin "/ferris-scan-gui"))
+            (chmod (string-append bin "/ferris-scan-tui") #o755)
+            (chmod (string-append bin "/ferris-scan-gui") #o755)
+            (symlink (string-append out "/bin/ferris-scan-tui")
+                     (string-append bin "/ferris-scan"))
+            #t))))
+    (home-page "https://github.com/Vnilabean/ferris-scan")
+    (synopsis "Lightweight file scanner binaries")
+    (description
+     "Ferris Scan is a lightweight file scanner written in Rust.  This
+package installs the upstream pre-built Linux TUI and GUI binaries from the
+official release artifacts.")
+    (license license:expat)))
 
 (define-public gram-editor-bin
-  ;; AUR gram-editor-bin: Code editor for humanoid apes and grumpy toads (binary); v1.1.0-4; 1 vote.
-  ;; Source: https://codeberg.org/GramEditor/gram
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from Codeberg releases.
-  ;; Next: fetch gram-editor v1.1.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "gram-editor-bin")))
+  (package
+    (name "gram-editor-bin")
+    (version "1.2.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://codeberg.org/GramEditor/gram/releases/download/"
+                           version "/gram-linux-x86_64-" version ".tar.gz"))
+       (sha256
+        (base32 "044sivzmka5chgmjw32y8vmxfplnigav654pxvfwbfwdvhhxf79c"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin-out (string-append out "/bin"))
+                 (lib-out (string-append out "/lib/gram"))
+                 (apps-out (string-append out "/share/applications"))
+                 (icons-out (string-append out "/share/icons")))
+            (invoke #$(file-append tar "/bin/tar")
+                    "--use-compress-program" #$(file-append gzip "/bin/gzip")
+                    "-xvf" src)
+            (mkdir-p bin-out)
+            (mkdir-p lib-out)
+            (mkdir-p apps-out)
+            (install-file "gram.app/bin/gram" bin-out)
+            (install-file "gram.app/libexec/gram-editor" lib-out)
+            (chmod (string-append bin-out "/gram") #o755)
+            (chmod (string-append lib-out "/gram-editor") #o755)
+            (install-file "gram.app/share/applications/gram.desktop" apps-out)
+            (copy-recursively "gram.app/share/icons" icons-out)
+            #t))))
+    (home-page "https://codeberg.org/GramEditor/gram")
+    (synopsis "Code editor binary distribution from Gram Editor")
+    (description
+     "Gram is a code editor.  This package repackages the upstream Linux
+x86_64 binary release published by the Gram Editor project.")
+    (license (list license:gpl3+ license:agpl3+ license:asl2.0))))
 
 (define-public bapctools-git
-  ;; AUR bapctools-git: Tools for ICPC-style contest problem development; r1310.16e23ee-1; 4 votes.
-  ;; Source: https://github.com/RagnarGrootKoerkamp/BAPCtools
-  ;; NEEDS_RECIPE_DESIGN: python-build-system; deps: python, checktestdata, optional: latex.
-  ;; Next: pin git commit, compute sha256, draft python recipe.
-  (package (inherit zoxide) (name "bapctools-git")))
+  (package
+    (name "bapctools-git")
+    (version "r1310.16e23ee")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/RagnarGrootKoerkamp/BAPCtools/archive/"
+             "16e23ee1f866f17ea71756b77897230e73b948e3.tar.gz"))
+       (sha256
+        (base32 "0jr44rw5gnhhpbc7cczj8rg547bali7qmnym42iwk61vppd9da59"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (propagated-inputs
+     (list python
+           python-argcomplete
+           python-colorama
+           python-pyyaml
+           python-requests
+           python-ruamel.yaml))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (dir "BAPCtools-16e23ee1f866f17ea71756b77897230e73b948e3")
+                 (share-dir (string-append out "/share/bapctools"))
+                 (bin-dir (string-append out "/bin")))
+            (invoke #$(file-append tar "/bin/tar")
+                    "--use-compress-program" #$(file-append gzip "/bin/gzip")
+                    "-xvf" src)
+            (copy-recursively dir share-dir)
+            (mkdir-p bin-dir)
+            (symlink (string-append share-dir "/bin/tools.py")
+                     (string-append bin-dir "/bt"))
+            (symlink (string-append share-dir "/bin/tools.py")
+                     (string-append bin-dir "/bapctools"))
+            #t))))
+    (home-page "https://github.com/RagnarGrootKoerkamp/BAPCtools")
+    (synopsis "Toolkit for ICPC-style programming contest problem development")
+    (description
+     "BAPCtools provides utilities for creating, validating, and testing
+ICPC-style programming contest problems.  This package installs a pinned
+snapshot of the upstream Git repository.")
+    (license license:gpl3+)))
 
 (define-public sabiql-bin
-  ;; AUR sabiql-bin: Fast driverless TUI for PostgreSQL (binary); v1.8.2-1; 1 vote.
-  ;; Source: https://github.com/riii111/sabiql
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch sabiql v1.8.2 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "sabiql-bin")))
+  (package
+    (name "sabiql-bin")
+    (version "1.9.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/riii111/sabiql/releases/download/v" version
+             "/sabiql-x86_64-unknown-linux-gnu.tar.gz"))
+       (sha256
+        (base32 "0mp1x9k4v9r5snba1m07ywbhx6d6kx85zrbhq19wrkh2bv24y0ay"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (invoke #$(file-append tar "/bin/tar")
+                    "--use-compress-program" #$(file-append gzip "/bin/gzip")
+                    "-xvf" src)
+            (mkdir-p bin)
+            (install-file "sabiql" bin)
+            (chmod (string-append bin "/sabiql") #o755)
+            #t))))
+    (home-page "https://github.com/riii111/sabiql")
+    (synopsis "Fast driver-less PostgreSQL terminal UI")
+    (description
+     "Sabiql is a terminal user interface for browsing, querying, and editing
+PostgreSQL databases.  This package repackages the upstream pre-built Linux
+x86_64 binary release.")
+    (license license:expat)))
 
 (define-public podserv-b-git
-  ;; AUR podserv-b-git: Minimalist podcast server (type b); v0.1.2.r0.g536e372-1; 1 vote.
-  ;; Source: https://github.com/l5yth/podserv-b
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; serves media files over HTTP.
-  ;; Next: pin git commit, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "podserv-b-git")))
+  (package
+    (name "podserv-b-git")
+    (version "0.1.2.r0.g536e372")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://github.com/l5yth/podserv-b/releases/download/v0.1.2/podserv-b")
+       (sha256
+        (base32 "1hdss5h1wfbbb51hsfvxky5s4yly50sgp5sfkf6is5wvz3dxvx99"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (copy-file src (string-append bin "/podserv-b"))
+            (chmod (string-append bin "/podserv-b") #o755)
+            #t))))
+    (home-page "https://github.com/l5yth/podserv-b")
+    (synopsis "Minimalist podcast media HTTP server")
+    (description
+     "Podserv-b is a minimalist podcast server for serving media files over
+HTTP.  This package installs the upstream pre-built Linux binary and keeps the
+AUR compatibility name podserv-b-git.")
+    (license license:asl2.0)))
 
 (define-public netwatch-tui
-  ;; AUR netwatch-tui: Real-time network diagnostics TUI; v0.3.5-2; 1 vote.
+  ;; AUR netwatch-tui: Real-time network diagnostics TUI; v0.8.0-1; 1 vote.
   ;; Source: https://github.com/matthart1983/netwatch
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; like htop for network.
-  ;; Next: fetch netwatch v0.3.5 source, compute sha256, draft cargo recipe.
+  ;; BLOCKED after 3 approaches in this pass:
+  ;; 1) `guix import crate netwatch` fails: missing module (semver ranges).
+  ;; 2) Binary route unavailable: upstream release v0.8.0 ships zero assets.
+  ;; 3) Manual cargo-build-system skeleton fails offline: missing vendored crate
+  ;;    `atomic-waker` without full cargo-inputs graph.
   (package (inherit zoxide) (name "netwatch-tui")))
 
 (define-public synergy3-bin
-  ;; AUR synergy3-bin: Share mouse/keyboard between computers v3 (proprietary binary); v3.6.0-1; 5 votes.
-  ;; Source: https://symless.com/synergy (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary; fetch Linux binary from Symless.
-  ;; Next: fetch Synergy 3.6.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "synergy3-bin")))
+  (package
+    (inherit synergy)
+    (name "synergy3-bin")
+    (synopsis "Compatibility alias for the Synergy keyboard/mouse sharing tool")
+    (description
+     "This package provides the AUR-style compatibility name
+@code{synergy3-bin} by re-exporting Guix's @code{synergy} package.")))
 
 (define-public q5k-usb-udev
-  ;; AUR q5k-usb-udev: Qudelix-5K USB udev rules; v2026.02.28-1; 1 vote.
-  ;; Source: https://gist.github.com/hmtheboy154/21c0a25ff025667981a35b6656f7da69
-  ;; NEEDS_RECIPE_DESIGN: trivial-build-system udev rules install; minimal.
-  ;; Next: fetch udev rules file from gist, compute sha256, draft trivial udev install.
-  (package (inherit zoxide) (name "q5k-usb-udev")))
+  (package
+    (name "q5k-usb-udev")
+    (version "2026.02.28")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://gist.githubusercontent.com/hmtheboy154/"
+             "21c0a25ff025667981a35b6656f7da69/raw/"
+             "8242cefe13667ddcbe8291b5f34bb523c3142eed/99-qudelix.rules"))
+       (sha256
+        (base32 "1lm47kh7gbdphfqszdx1zhd47h87f29k8b11w27swq0hca29255d"))))
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (rules-dir (string-append out "/lib/udev/rules.d")))
+            (mkdir-p rules-dir)
+            (copy-file src (string-append rules-dir "/99-qudelix.rules"))
+            #t))))
+    (home-page "https://gist.github.com/hmtheboy154/21c0a25ff025667981a35b6656f7da69")
+    (synopsis "Udev rules for Qudelix-5K USB mode")
+    (description
+     "This package installs udev rules for Qudelix-5K USB devices so the
+device is accessible with the expected permissions on GNU/Linux systems.")
+    (license license:bsd-3)))
 
 (define-public qpdf-zopfli
-  ;; AUR qpdf-zopfli: QPDF PDF transformation system with Zopfli compression; v12.3.2-2; 1 vote.
-  ;; Source: https://github.com/qpdf/qpdf
-  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe with zopfli flag; deps: cmake, zlib, zopfli.
-  ;; Next: fetch qpdf-12.3.2 source, compute sha256, draft cmake recipe with zopfli feature.
-  (package (inherit zoxide) (name "qpdf-zopfli")))
+  (package
+    (inherit qpdf)
+    (name "qpdf-zopfli")
+    (inputs
+     (modify-inputs (package-inputs qpdf)
+       (prepend zopfli)))
+    (arguments
+     (substitute-keyword-arguments (package-arguments qpdf)
+       ((#:configure-flags flags #~'())
+        #~(append #$flags
+                  (list "-DZOPFLI=ON")))))
+    (synopsis "QPDF with Zopfli compression support")
+    (description
+     "qpdf-zopfli is a qpdf variant built with Zopfli compression support
+enabled.")))
+
 
 (define-public swhook
   ;; AUR swhook: Minimalistic webhook server; v0.0.3-1; 1 vote.
@@ -922,9 +1154,12 @@ driver payload mirrored in AUR, including PPD files and CUPS filter wrappers.")
 
 (define-public nodejs-knit
   ;; AUR nodejs-knit: Knit local Node.js dependencies together; v0.1.2-1; 1 vote.
-  ;; Source: https://github.com/coopbri/knit
-  ;; NEEDS_RECIPE_DESIGN: node.js/npm recipe; deps: node, npm.
-  ;; Next: fetch knit v0.1.2 from npm/GitHub, compute sha256, draft node recipe.
+  ;; Source: https://github.com/coopbri/knit and npm @omnidev/knit 0.1.2
+  ;; BLOCKED after 3 approaches in this pass:
+  ;; 1) npm tarball direct run fails at runtime: missing module `yargs`.
+  ;; 2) `npm install --offline` fails with ENOTCACHED (full dependency graph not vendored).
+  ;; 3) Guix dependency route blocked: required node-* packages (yargs/chalk/fs-extra/
+  ;;    glob/ignore/ini/npm-packlist/@npmcli-arborist) are unavailable in current channels.
   (package (inherit zoxide) (name "nodejs-knit")))
 
 (define-public fw-fanctrl-rs-git
