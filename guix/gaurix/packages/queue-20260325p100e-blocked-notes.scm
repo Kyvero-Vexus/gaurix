@@ -9,15 +9,19 @@
 
   ;; ── All 80 NEEDS_RECIPE_DESIGN ────────────────────────────────────────
 
-  '(linux-clear-cjktty-zfs-headers NEEDS_RECIPE_DESIGN
-    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon v6.18.1"
-    "Custom kernel with Clear+ZFS+CJK TTY patches; multi-source patch set"
-    "Next: fetch kernel source + patches, compute sha256 set, draft linux-build-system recipe")
+  '(linux-clear-cjktty-zfs-headers BLOCKED
+    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon (AUR linux-clear-cjktty-zfs-headers)"
+    "Attempt 1: checked AUR linux-clear-cjktty-zfs-headers git repo; no standalone packaging content available"
+    "Attempt 2: inspected linux-clear-cjktty-zfs PKGBUILD split package; -headers artifacts are emitted from one monolithic kernel build"
+    "Attempt 3: cloned Linux-Tachyon upstream; repository is patchset/scripts only (no kernel tree), with submodule-driven tooling"
+    "Blocked pending full linux-build-system port of the Tachyon+ZFS+CJK stack")
 
-  '(linux-clear-cjktty-zfs NEEDS_RECIPE_DESIGN
-    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon v6.18.1"
-    "Custom kernel with Clear+ZFS+CJK TTY patches; paired with -headers variant"
-    "Next: fetch kernel source + patch set, compute sha256s, draft linux-build-system recipe")
+  '(linux-clear-cjktty-zfs BLOCKED
+    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon (AUR linux-clear-cjktty-zfs)"
+    "Attempt 1: surveyed upstream Guix equivalents (linux-libre/linux-libre-headers); no clear+zfs+cjktty equivalent exists"
+    "Attempt 2: inspected AUR PKGBUILD; recipe expects large multi-file patch stack and integrated ZFS kernel build path"
+    "Attempt 3: cloned Linux-Tachyon upstream; patchset repository requires extra scripting/submodules and does not directly map to current queue recipe style"
+    "Blocked pending a dedicated kernel packaging pass (linux-build-system + patch orchestration)")
 
   '(clightd NEEDS_RECIPE_DESIGN
     "Source: https://github.com/FedeDP/Clightd v5.9"
@@ -349,10 +353,12 @@
     "node.js/npm recipe; local Node.js dep linker; deps: node, npm"
     "Next: fetch knit v0.1.2 from npm/GitHub, compute sha256, draft node recipe")
 
-  '(fw-fanctrl-rs-git NEEDS_RECIPE_DESIGN
+  '(fw-fanctrl-rs-git BLOCKED
     "Source: https://github.com/NexusXe/fw-ec-utils r106.g20b84a6"
-    "cargo build recipe; Framework Laptop EC fan daemon; deps: rust, udev"
-    "Next: pin git rev, compute sha256, draft cargo recipe with EC/udev rules")
+    "Attempt 1: git-fetch + cargo-build-system prototype; checkout failed in build environment (git config access failure on /etc/gitconfig)"
+    "Attempt 2: url-fetch tarball + cargo-build-system with package/workspace chdir and gexp flags; builder expansion failed (#<gexp ...> in generated builder)"
+    "Attempt 3: url-fetch tarball + quoted cargo flags/manifest-path; cargo phase argument evaluation failed (wrong type to apply), still not producing a reliable workspace build"
+    "Blocked pending a stable cargo packaging strategy for this workspace (and feature gating around unstable plugin-hash path)")
 
   '(aerothemeplasma-desktop-x11-git NEEDS_RECIPE_DESIGN
     "Source: https://github.com/aeroshell-desktop/aerothemeplasma r662.ra70f432"
