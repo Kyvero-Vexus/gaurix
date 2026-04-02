@@ -1,5 +1,5 @@
 ;;; Queue drain 2026-03-25 pass-e (packages 5446-5525, 80 new entries).
-;;; All 80 are NEEDS_RECIPE_DESIGN stubs; no Guix upstream aliases found.
+;;; Initially all 80 were NEEDS_RECIPE_DESIGN stubs; selected entries are now packaged.
 ;;; Note: entries 5348/5353/5363/5426/5430-5445 (20 items) were already stubbed
 ;;;       in queue-20260325p100d.scm and are marked BLOCKED in the org queue.
 (define-module (gaurix packages queue-20260325p100e)
@@ -12,6 +12,7 @@
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages assembly)
   #:use-module (gnu packages base)
+  #:use-module (gnu packages bash)
   #:use-module (gnu packages compression)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages glib)
@@ -709,65 +710,198 @@ enabled.")))
 (define-public swhook
   ;; AUR swhook: Minimalistic webhook server; v0.0.3-1; 1 vote.
   ;; Source: https://github.com/AndyLocks/swhook
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust.
-  ;; Next: fetch swhook v0.0.3 source, compute sha256, draft cargo recipe.
+  ;; BLOCKED: upstream ships source-only Rust releases (no prebuilt binaries)
+  ;; and packaging from source requires a non-trivial cargo dependency graph.
   (package (inherit zoxide) (name "swhook")))
 
 (define-public libavif-noglycin
   ;; AUR libavif-noglycin: libavif for gdk-pixbuf2-noglycin variant; v1.3.0-5; 1 vote.
-  ;; Source: https://github.com/AOMediaCodec/libavif
-  ;; NEEDS_RECIPE_DESIGN: cmake C recipe variant; requires noglycin gdk-pixbuf2 dep.
-  ;; Next: fetch libavif-1.3.0 source, compute sha256, draft cmake recipe with noglycin dep.
-  (package (inherit zoxide) (name "libavif-noglycin")))
+  ;; Maps to Guix libavif (gnu/packages/image.scm).
+  (package
+    (inherit libavif)
+    (name "libavif-noglycin")
+    (synopsis "Compatibility package name for libavif")
+    (description
+     "Compatibility package that provides @code{libavif} under the AUR-style
+package name @code{libavif-noglycin}.")))
 
 (define-public libheif-noglycin
   ;; AUR libheif-noglycin: libheif for gdk-pixbuf2-noglycin variant; v1.21.2-2; 1 vote.
-  ;; Source: https://github.com/strukturag/libheif
-  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe variant; requires noglycin gdk-pixbuf2 dep.
-  ;; Next: fetch libheif-1.21.2 source, compute sha256, draft cmake recipe with noglycin dep.
-  (package (inherit zoxide) (name "libheif-noglycin")))
-
-(define-public libjxl-noglycin-doc
-  ;; AUR libjxl-noglycin-doc: JPEG XL reference docs for noglycin variant; v0.11.2-2; 1 vote.
-  ;; Source: https://jpeg.org/jpegxl/
-  ;; NEEDS_RECIPE_DESIGN: cmake docs subpackage; dep: libjxl-noglycin.
-  ;; Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake docs-only recipe.
-  (package (inherit zoxide) (name "libjxl-noglycin-doc")))
+  ;; Maps to Guix libheif (gnu/packages/image.scm).
+  (package
+    (inherit libheif)
+    (name "libheif-noglycin")
+    (synopsis "Compatibility package name for libheif")
+    (description
+     "Compatibility package that provides @code{libheif} under the AUR-style
+package name @code{libheif-noglycin}.")))
 
 (define-public libjxl-noglycin
   ;; AUR libjxl-noglycin: JPEG XL for gdk-pixbuf2-noglycin variant; v0.11.2-2; 1 vote.
-  ;; Source: https://jpeg.org/jpegxl/
-  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe variant; deps: brotli, highway; noglycin gdk-pixbuf2.
-  ;; Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake recipe with noglycin dep.
-  (package (inherit zoxide) (name "libjxl-noglycin")))
+  ;; Maps to Guix libjxl (gnu/packages/image.scm).
+  (package
+    (inherit libjxl)
+    (name "libjxl-noglycin")
+    (synopsis "Compatibility package name for libjxl")
+    (description
+     "Compatibility package that provides @code{libjxl} under the AUR-style
+package name @code{libjxl-noglycin}.")))
+
+(define-public libjxl-noglycin-doc
+  ;; AUR libjxl-noglycin-doc: JPEG XL docs variant for gdk-pixbuf2-noglycin; v0.11.2-2.
+  ;; Guix does not split libjxl docs into a separate output package.
+  (package
+    (inherit libjxl-noglycin)
+    (name "libjxl-noglycin-doc")
+    (synopsis "Compatibility package name for libjxl documentation variant")
+    (description
+     "Compatibility package that provides @code{libjxl} under the AUR-style
+package name @code{libjxl-noglycin-doc}.  Guix does not split libjxl
+documentation into a standalone docs package.")))
 
 (define-public op-cache-git
   ;; AUR op-cache-git: Caching proxy for 1Password CLI op read; v0-1; 1 vote.
   ;; Source: https://github.com/crmne/op-cache
-  ;; NEEDS_RECIPE_DESIGN: cargo or Go recipe; deps: 1password-cli.
-  ;; Next: pin git commit, compute sha256, determine build system, draft recipe.
+  ;; BLOCKED: upstream is an unpublished Rust git branch with no release assets;
+  ;; packaging from source requires a generated cargo dependency graph.
   (package (inherit zoxide) (name "op-cache-git")))
 
 (define-public console2svg-bin
-  ;; AUR console2svg-bin: Convert terminal output to SVG images (binary); v0.6.4-2; 1 vote.
-  ;; Source: https://github.com/arika0093/console2svg
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from GitHub releases.
-  ;; Next: fetch console2svg v0.6.4 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "console2svg-bin")))
+  ;; AUR console2svg-bin: Convert terminal output to SVG images (binary); v0.6.5-1.
+  (package
+    (name "console2svg-bin")
+    (version "0.6.5")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://github.com/arika0093/console2svg/releases/download/v"
+         version
+         "/console2svg-linux-x64"))
+       (sha256
+        (base32 "0cwbq60zw4dx5gg2xkd5qny22yg9cjkyfrcnznl4rmkicxas8mal"))))
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin"))
+                 (target (string-append bin "/console2svg")))
+            (mkdir-p bin)
+            (copy-file src target)
+            (chmod target #o755)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/arika0093/console2svg")
+    (synopsis "Convert terminal output to SVG")
+    (description
+     "Console2svg converts terminal output streams into SVG images suitable
+for documentation and sharing.")
+    (license license:asl2.0)))
 
 (define-public szsol-rs
-  ;; AUR szsol-rs: Solitaire card game from SHENZHEN I/O with TUI; v1.0.1-1; 1 vote.
-  ;; Source: https://github.com/ghoker143/szsol-rs
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, crossterm or similar TUI crate.
-  ;; Next: fetch szsol-rs v1.0.1 source, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "szsol-rs")))
+  ;; AUR szsol-rs: Solitaire card game from SHENZHEN I/O with TUI; v1.0.1-1.
+  (package
+    (name "szsol-rs")
+    (version "1.0.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://github.com/ghoker143/szsol-rs/releases/download/v"
+         version
+         "/szsol-rs-x86_64-unknown-linux-gnu.tar.xz"))
+       (sha256
+        (base32 "1mdmrlzw9w5sslrqmijk36aid19rhzv3x60fbj394ykixi1v6g5a"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/szsol-rs"))
+                 (licenses (string-append out "/share/licenses/szsol-rs"))
+                 (extract-dir "szsol-rs-x86_64-unknown-linux-gnu"))
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" src)
+            (mkdir-p bin)
+            (install-file (string-append extract-dir "/szsol-rs") bin)
+            (chmod (string-append bin "/szsol-rs") #o755)
+            (mkdir-p doc)
+            (install-file (string-append extract-dir "/README.MD") doc)
+            (mkdir-p licenses)
+            (install-file (string-append extract-dir "/LICENSE") licenses)))))
+    (home-page "https://github.com/ghoker143/szsol-rs")
+    (synopsis "Solitaire card game from SHENZHEN I/O")
+    (description
+     "Szsol-rs is a terminal-based solitaire card game inspired by
+SHENZHEN I/O.")
+    (license license:expat)))
 
 (define-public arch-remaster
-  ;; AUR arch-remaster: Tools for remastering Arch Linux live systems; v26.02.1-1; 1 vote.
-  ;; Source: https://github.com/AdrianTM/arch-remaster
-  ;; NEEDS_RECIPE_DESIGN: shell script recipe; deps: squashfs-tools, xorriso, grub.
-  ;; Next: fetch arch-remaster 26.02.1 source, compute sha256, draft trivial script install.
-  (package (inherit zoxide) (name "arch-remaster")))
+  ;; AUR arch-remaster: Tools for remastering Arch Linux live systems; v26.02.1-1.
+  (package
+    (name "arch-remaster")
+    (version "26.02.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        "https://github.com/AdrianTM/arch-remaster/archive/refs/tags/26.02.1.tar.gz")
+       (file-name (string-append name "-" version ".tar.gz"))
+       (sha256
+        (base32 "11xmq1vygbnflwzankxmpdvdwjpdamx892188d7njark92dp47jy"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (bin-dir (string-append out "/bin"))
+                 (man1-dir (string-append out "/share/man/man1"))
+                 (work (string-append (getcwd) "/work"))
+                 (top (string-append work "/arch-remaster-26.02.1"))
+                 (bash (string-append #$bash-minimal "/bin/bash")))
+            (mkdir-p work)
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src "-C" work)
+            (mkdir-p bin-dir)
+            (install-file (string-append top "/live-remaster") bin-dir)
+            (install-file (string-append top "/update-cow-space") bin-dir)
+            (for-each
+             (lambda (script)
+               (chmod script #o755)
+               (substitute* script
+                 (("^#!/bin/bash")
+                  (string-append "#!" bash))))
+             (list (string-append bin-dir "/live-remaster")
+                   (string-append bin-dir "/update-cow-space")))
+            (mkdir-p man1-dir)
+            (install-file (string-append top "/live-remaster.1") man1-dir)
+            (install-file (string-append top "/update-cow-space.1") man1-dir)))))
+    (home-page "https://github.com/AdrianTM/arch-remaster")
+    (synopsis "Tools for remastering Arch Linux live systems")
+    (description
+     "arch-remaster provides shell tools to remaster Arch Linux live systems
+and to update live USB copy-on-write boot parameters.")
+    (license license:gpl3+)))
 
 (define-public pixora-icons-git
   ;; AUR pixora-icons-git: 16-bit pixel icon theme for Linux desktops (git); r264.gf5604c1-1; 1 vote.
@@ -1172,15 +1306,15 @@ driver payload mirrored in AUR, including PPD files and CUPS filter wrappers.")
 (define-public aerothemeplasma-desktop-x11-git
   ;; AUR aerothemeplasma-desktop-x11-git: X11 session for AeroThemePlasma; r662.ra70f432-1; 1 vote.
   ;; Source: https://github.com/aeroshell-desktop/aerothemeplasma
-  ;; NEEDS_RECIPE_DESIGN: cmake/kpackage recipe; deps: KDE Plasma 6, AeroShell components.
-  ;; Next: pin git commit, compute sha256, draft cmake KDE Plasma recipe.
+  ;; BLOCKED: current upstream requires an AeroShell-specific patched Plasma stack
+  ;; (aeroshell-workspace/libplasma/kwin-components) not packaged in Guix.
   (package (inherit zoxide) (name "aerothemeplasma-desktop-x11-git")))
 
 (define-public aeroshell-workspace-git
   ;; AUR aeroshell-workspace-git: Desktop components for AeroShell-based desktops (git); r2dff129-1; 1 vote.
   ;; Source: https://github.com/aeroshell-desktop/aeroshell-workspace
-  ;; NEEDS_RECIPE_DESIGN: cmake/kpackage recipe; deps: KDE Plasma 6, kwin.
-  ;; Next: pin git commit, compute sha256, draft cmake KDE recipe.
+  ;; BLOCKED: CMake build depends on LibNotificationManager/KSysGuard/Plasma APIs
+  ;; tied to AeroShell patches not available in current Guix channels.
   (package (inherit zoxide) (name "aeroshell-workspace-git")))
 
 (define-public aeroshell-libplasma-git

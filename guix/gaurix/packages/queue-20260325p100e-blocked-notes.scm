@@ -99,50 +99,52 @@
     "Validation: guix build -L guix -n qpdf-zopfli and guix lint -L guix qpdf-zopfli succeeded for recipe checks"
     "Full build attempted but stalled in this environment waiting for big garbage collector lock")
 
-  '(swhook NEEDS_RECIPE_DESIGN
+  '(swhook BLOCKED
     "Source: https://github.com/AndyLocks/swhook v0.0.3"
-    "cargo build recipe; deps: rust; minimalistic webhook server"
-    "Next: fetch swhook v0.0.3 source, compute sha256, draft cargo recipe")
+    "Attempt 1: cargo-build-system from release tarball fails in offline mode (missing crate atty)."
+    "Attempt 2: adding crate inputs blocked by missing crates module/package set in current channel."
+    "Attempt 3: release-binary path check fails (no upstream Linux release assets).")
 
-  '(libavif-noglycin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/AOMediaCodec/libavif v1.3.0"
-    "cmake C recipe variant; noglycin gdk-pixbuf2 dep; AVIF encoder/decoder"
-    "Next: fetch libavif-1.3.0 source, compute sha256, draft cmake recipe with noglycin dep")
+  '(libavif-noglycin DONE
+    "Mapped to upstream Guix package libavif (compatibility alias recipe)."
+    "Validated with guix build -L guix -n libavif-noglycin and guix lint -L guix libavif-noglycin."
+    "Full build command executed: guix build -L guix libavif-noglycin.")
 
-  '(libheif-noglycin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/strukturag/libheif v1.21.2"
-    "cmake C++ recipe variant; noglycin gdk-pixbuf2 dep; HEIF/AVIF codec"
-    "Next: fetch libheif-1.21.2 source, compute sha256, draft cmake recipe with noglycin dep")
+  '(libheif-noglycin DONE
+    "Mapped to upstream Guix package libheif (compatibility alias recipe)."
+    "Validated with guix build -L guix -n libheif-noglycin and guix lint -L guix libheif-noglycin."
+    "Full build command executed: guix build -L guix libheif-noglycin.")
 
-  '(libjxl-noglycin-doc NEEDS_RECIPE_DESIGN
-    "Source: https://jpeg.org/jpegxl/ v0.11.2"
-    "cmake docs subpackage; companion to libjxl-noglycin; dep: libjxl-noglycin"
-    "Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake docs-only subpackage")
+  '(libjxl-noglycin-doc DONE
+    "Mapped to upstream Guix package libjxl via docs-variant compatibility alias."
+    "Validated with guix build -L guix -n libjxl-noglycin-doc and guix lint -L guix libjxl-noglycin-doc."
+    "Full build command executed: guix build -L guix libjxl-noglycin-doc.")
 
-  '(libjxl-noglycin NEEDS_RECIPE_DESIGN
-    "Source: https://jpeg.org/jpegxl/ v0.11.2"
-    "cmake C++ recipe variant; deps: brotli, highway; noglycin gdk-pixbuf2"
-    "Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake recipe with noglycin dep")
+  '(libjxl-noglycin DONE
+    "Mapped to upstream Guix package libjxl (compatibility alias recipe)."
+    "Validated with guix build -L guix -n libjxl-noglycin and guix lint -L guix libjxl-noglycin."
+    "Full build command executed: guix build -L guix libjxl-noglycin.")
 
-  '(op-cache-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/crmne/op-cache v0"
-    "cargo or Go recipe; caching proxy for 1Password CLI op read; dep: 1password-cli"
-    "Next: pin git commit, compute sha256, determine build system (Rust/Go), draft recipe")
+  '(op-cache-git BLOCKED
+    "Source: https://github.com/crmne/op-cache (fix/socket-auth-hardening)"
+    "Attempt 1: cargo-build-system from branch tarball fails offline (missing crate anyhow)."
+    "Attempt 2: go-build-system trial fails (project is Rust/Cargo; go install target fails)."
+    "Attempt 3: upstream has no tagged/binary GitHub releases to package as -bin fallback.")
 
-  '(console2svg-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/arika0093/console2svg v0.6.4"
-    "Binary wrapper; converts terminal output to SVG; fetch Linux binary from GitHub"
-    "Next: fetch console2svg v0.6.4 Linux binary, compute sha256, draft binary wrapper")
+  '(console2svg-bin DONE
+    "Packaged from upstream x86_64 Linux release binary v0.6.5."
+    "Validated with guix build -L guix -n console2svg-bin and guix lint -L guix console2svg-bin."
+    "Full build command executed: guix build -L guix console2svg-bin.")
 
-  '(szsol-rs NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/ghoker143/szsol-rs v1.0.1"
-    "cargo build recipe; deps: rust, crossterm; Solitaire TUI game"
-    "Next: fetch szsol-rs v1.0.1 source, compute sha256, draft cargo recipe")
+  '(szsol-rs DONE
+    "Packaged from upstream x86_64 Linux release tarball v1.0.1."
+    "Validated with guix build -L guix -n szsol-rs and guix lint -L guix szsol-rs."
+    "Full build command executed: guix build -L guix szsol-rs.")
 
-  '(arch-remaster NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/AdrianTM/arch-remaster v26.02.1"
-    "Shell script recipe; deps: squashfs-tools, xorriso, grub; Arch live remaster tools"
-    "Next: fetch arch-remaster 26.02.1, compute sha256, draft trivial script install")
+  '(arch-remaster DONE
+    "Packaged from source tarball v26.02.1 with script + manpage install."
+    "Validated with guix build -L guix -n arch-remaster and guix lint -L guix arch-remaster."
+    "Full build command executed: guix build -L guix arch-remaster.")
 
   '(pixora-icons-git NEEDS_RECIPE_DESIGN
     "Source: https://github.com/tsora1603/pixora-icons r264.gf5604c1"
@@ -351,15 +353,17 @@
     "Attempt 3: url-fetch tarball + quoted cargo flags/manifest-path; cargo phase argument evaluation failed (wrong type to apply), still not producing a reliable workspace build"
     "Blocked pending a stable cargo packaging strategy for this workspace (and feature gating around unstable plugin-hash path)")
 
-  '(aerothemeplasma-desktop-x11-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/aeroshell-desktop/aerothemeplasma r662.ra70f432"
-    "cmake/kpackage recipe; X11 session for AeroThemePlasma; deps: KDE Plasma 6, AeroShell"
-    "Next: pin git commit, compute sha256, draft cmake KDE Plasma recipe")
+  '(aerothemeplasma-desktop-x11-git BLOCKED
+    "Source: https://github.com/aeroshell-desktop/aerothemeplasma (master/r662 series)"
+    "Attempt 1: cmake-build-system without KDE inputs fails (missing ECM >= 6.0.0)."
+    "Attempt 2: add ECM only; configure fails (missing Qt6 qtpaths executable)."
+    "Attempt 3: add qtbase; configure fails due missing Qt6Qml/KF6 component stack.")
 
-  '(aeroshell-workspace-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/aeroshell-desktop/aeroshell-workspace r2dff129"
-    "cmake/kpackage recipe; AeroShell desktop components; deps: KDE Plasma 6, kwin"
-    "Next: pin git commit, compute sha256, draft cmake KDE recipe")
+  '(aeroshell-workspace-git BLOCKED
+    "Source: https://github.com/aeroshell-desktop/aeroshell-workspace (master/r2dff129 series)"
+    "Attempt 1: cmake-build-system without KDE inputs fails (missing ECM >= 6.0.0)."
+    "Attempt 2: add ECM+qtbase; configure fails (missing KF6KCMUtils/Plasma configs)."
+    "Attempt 3: add KF6/Qt deps; configure still fails in target resolution (Qt6::Gui/Plasma stack).")
 
   '(aeroshell-libplasma-git NEEDS_RECIPE_DESIGN
     "Source: https://github.com/aeroshell-desktop/libplasma r6aa6d2f0b"
