@@ -431,50 +431,10 @@
     "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
     "Next: fetch glazepkg v0.3.6 Linux binary, compute sha256, draft binary wrapper")
 
-  '(blogr-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/bahdotsh/blogr v0.4.1"
-    "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch blogr v0.4.1 Linux binary, compute sha256, draft binary wrapper")
-
-  '(charliecloud NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/hpc/charliecloud v0.43"
-    "Autotools C recipe; deps: python, squashfs-tools, libfuse3"
-    "Next: fetch charliecloud-0.43.tar.gz, compute sha256, draft autotools recipe")
-
   '(wl-mpris-idle-inhibit NEEDS_RECIPE_DESIGN
     "Source: https://github.com/sameer/wl-mpris-idle-inhibit v0.1.8"
-    "cargo build recipe; deps: rust, dbus"
-    "Next: fetch v0.1.8 source, compute sha256, draft cargo recipe")
-
-  '(systemd-suspend-modules NEEDS_RECIPE_DESIGN
-    "Source: AUR PKGBUILD sources (shell scripts) v1.2"
-    "Trivial systemd service + config install"
-    "Next: fetch AUR PKGBUILD sources, compute sha256, draft trivial install")
-
-  '(python-pysmart NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/freenas/py-SMART v1.4.2"
-    "python-build-system; deps: smartmontools, python"
-    "Next: fetch py-SMART 1.4.2 from PyPI/GitHub, compute sha256, draft python recipe")
-
-  '(renamemytvseries-gtk-bin NEEDS_RECIPE_DESIGN
-    "Source: https://www.tweaking4all.com/home-theatre/rename-my-tv-series-v2/ v2.3.12 (proprietary)"
-    "Binary wrapper; proprietary; fetch Linux binary from vendor"
-    "Next: fetch Rename My TV Series v2 Linux binary, compute sha256, draft binary wrapper")
-
-  '(openhue-cli NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/openhue/openhue-cli v0.23"
-    "Binary wrapper (Go binary); fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch openhue-cli v0.23 Linux binary, compute sha256, draft binary wrapper")
-
-  '(feedr-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/bahdotsh/feedr v0.5.0"
-    "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch feedr v0.5.0 Linux binary, compute sha256, draft binary wrapper")
-
-  '(boscaceoil-blue-bin NEEDS_RECIPE_DESIGN
-    "Source: https://yurisizov.itch.io/boscaceoil-blue v3.1.2 (Godot binary)"
-    "Binary wrapper; fetch Linux binary from itch.io/GitHub releases"
-    "Next: fetch boscaceoil-blue v3.1.2 Linux binary, compute sha256, draft binary wrapper")
+    "Blocked in this pass after 4 attempts: offline cargo fails on git deps, required rust crate specs unavailable, crate import lockfile path crashes, and upstream release has no binary assets"
+    "Next: package/update required Rust crate graph (including git-sourced deps), then retry cargo-build-system recipe")
 
   '(crier-bin NEEDS_RECIPE_DESIGN
     "Source: https://github.com/skorotkiewicz/crier v0.2.3"

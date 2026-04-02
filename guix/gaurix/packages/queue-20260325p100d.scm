@@ -6,8 +6,23 @@
 ;;;   kdnssd5:            gnu/packages/kde-frameworks.scm (kdnssd 6.19.0)
 (define-module (gaurix packages queue-20260325p100d)
   #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix gexp)
+  #:use-module (guix build-system gnu)
+  #:use-module (guix build-system pyproject)
+  #:use-module (guix build-system trivial)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages admin)
+  #:use-module (gnu packages bash)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages compression)
   #:use-module (gnu packages kde-frameworks)
   #:use-module (gnu packages kde-graphics)
+  #:use-module (gnu packages linux)
+  #:use-module (gnu packages pkg-config)
+  #:use-module (gnu packages python)
+  #:use-module (gnu packages python-build)
+  #:use-module (gnu packages python-xyz)
   #:use-module (gnu packages rust-apps)
   #:use-module (gnu packages synergy)
   #:export (
@@ -700,67 +715,335 @@
   (package (inherit zoxide) (name "gpk-bin")))
 
 (define-public blogr-bin
-  ;; AUR blogr-bin: blogr static site generator binary; v0.4.1-1; 1 vote.
-  ;; Source: https://github.com/bahdotsh/blogr
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch blogr v0.4.1 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "blogr-bin")))
+  (package
+    (name "blogr-bin")
+    (version "0.5.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/bahdotsh/blogr/releases/download/v"
+                           version "/blogr-linux-x86_64.tar.gz"))
+       (sha256
+        (base32 "0hmp0s8mjikxb1jz715y5c0lnh4mqxn1nzav9mrm2zgy0fz1wfhn"))))
+    (build-system trivial-build-system)
+    (native-inputs (list gzip tar))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (install-file "blogr" (string-append out "/bin"))
+            (chmod (string-append out "/bin/blogr") #o755)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/bahdotsh/blogr")
+    (synopsis "Terminal-based static site generator")
+    (description
+     "Blogr is a terminal-oriented static site generator distributed by upstream
+as a pre-built x86_64 Linux binary.")
+    (license license:expat)))
 
 (define-public charliecloud
-  ;; AUR charliecloud: Lightweight user-defined software stacks for HPC; v0.43-1; 2 votes.
-  ;; Source: https://charliecloud.io/ (GitHub: hpc/charliecloud)
-  ;; NEEDS_RECIPE_DESIGN: autotools C recipe; deps: python, squashfs-tools, libfuse3.
-  ;; Next: fetch charliecloud-0.43.tar.gz from GitHub, compute sha256, draft autotools recipe.
-  (package (inherit zoxide) (name "charliecloud")))
+  (package
+    (name "charliecloud")
+    (version "0.38")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/hpc/charliecloud/releases/download/v"
+                           version "/charliecloud-" version ".tar.gz"))
+       (sha256
+        (base32 "0ylv881jm4ch85aw247s36d6qisjmjx1nmjwzmjrrnzlgzancdqs"))))
+    (build-system gnu-build-system)
+    (arguments
+     (list
+      #:tests? #f                      ;integration tests expect privileged container features
+      #:configure-flags
+      #~(list "--disable-html"
+              "--disable-man"
+              "--with-json=no"
+              "--with-libsquashfuse=no"
+              (string-append "--with-python="
+                             (search-input-file %build-inputs "/bin/python3")))
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'install 'remove-unreadable-fixtures
+            (lambda* (#:key outputs #:allow-other-keys)
+              (let* ((out (assoc-ref outputs "out"))
+                     (fixtures (string-append out "/libexec/charliecloud/fixtures"))
+                     (sotest (string-append out "/libexec/charliecloud/sotest")))
+                (when (file-exists? fixtures)
+                  (delete-file-recursively fixtures))
+                (when (file-exists? sotest)
+                  (delete-file-recursively sotest))))))))
+    (inputs (list python))
+    (native-inputs (list pkg-config))
+    (home-page "https://charliecloud.io")
+    (synopsis "Unprivileged user-space container runtime for HPC")
+    (description
+     "Charliecloud provides unprivileged container tools intended for
+high-performance computing environments.")
+    (license license:asl2.0)))
 
 (define-public wl-mpris-idle-inhibit
-  ;; AUR wl-mpris-idle-inhibit: Inhibit Wayland idle while MPRIS plays; v0.1.8-1; 2 votes.
-  ;; Source: https://github.com/sameer/wl-mpris-idle-inhibit
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, dbus.
-  ;; Next: fetch wl-mpris-idle-inhibit v0.1.8 from GitHub, compute sha256, draft cargo recipe.
+  ;; BLOCKED after repeated attempts in this pass.
+  ;; 1) Temporary cargo-build-system recipe fails offline because Cargo.toml pins
+  ;;    git dependencies (mpris-rs, wayland-rs) and cargo cannot fetch them.
+  ;; 2) Tried swapping to packaged Rust crates by specification
+  ;;    (rust-mpris-2, rust-wayland-client-0.30, rust-wayland-protocols-0.30);
+  ;;    these crate package specs are currently unavailable in this environment.
+  ;; 3) Tried `guix import crate --lockfile Cargo.lock`; current Guix crashes with
+  ;;    a stat #f error for this path, so cargo-inputs were not auto-generated.
+  ;; 4) Checked upstream GitHub releases for binary fallback; tag 0.1.8 has zero assets.
+  ;; Next: package required Rust crate graph (including git-sourced deps), then retry.
   (package (inherit zoxide) (name "wl-mpris-idle-inhibit")))
 
 (define-public systemd-suspend-modules
-  ;; AUR systemd-suspend-modules: Hook to modprobe/rmmod modules on suspend/resume; v1.2-1; 17 votes.
-  ;; Source: https://aur.archlinux.org/packages/systemd-suspend-modules (shell scripts)
-  ;; NEEDS_RECIPE_DESIGN: trivial-build-system systemd service + config install.
-  ;; Next: fetch AUR PKGBUILD sources (shell scripts), compute sha256, draft trivial install.
-  (package (inherit zoxide) (name "systemd-suspend-modules")))
+  (package
+    (name "systemd-suspend-modules")
+    (version "1.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://aur.archlinux.org/cgit/aur.git/plain/suspend-modules?h=systemd-suspend-modules")
+       (file-name "suspend-modules")
+       (sha256
+        (base32 "0rwfs40hfd403y0wx3y8isn96jz72mf0s86hprrk9xjybbmg4iyq"))))
+    (build-system trivial-build-system)
+    (inputs (list bash-minimal kmod))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bash (search-input-file %build-inputs "/bin/bash"))
+                 (modprobe (search-input-file %build-inputs "/bin/modprobe"))
+                 (script "suspend-modules"))
+            (copy-file src script)
+            (substitute* script
+              (("#!/bin/bash") (string-append "#!" bash))
+              (("modprobe") modprobe))
+            (install-file script (string-append out "/lib/systemd/system-sleep"))
+            (chmod (string-append out "/lib/systemd/system-sleep/suspend-modules") #o755)
+            (mkdir-p (string-append out "/etc"))
+            (call-with-output-file (string-append out "/etc/suspend-modules.conf")
+              (lambda (port)
+                (display "" port)))))))
+    (home-page "https://aur.archlinux.org/packages/systemd-suspend-modules")
+    (synopsis "Reload kernel modules on suspend and resume")
+    (description
+     "This package installs a systemd sleep hook that removes configured kernel
+modules before suspend and re-loads them after resume.")
+    (license license:gpl2+)))
 
 (define-public python-pysmart
-  ;; AUR python-pysmart: Python S.M.A.R.T. disk library (FreeNAS fork); v1:1.4.2-1; 4 votes.
-  ;; Source: https://github.com/freenas/py-SMART
-  ;; NEEDS_RECIPE_DESIGN: python-build-system; deps: smartmontools, python.
-  ;; Next: fetch py-SMART 1.4.2 from PyPI/GitHub, compute sha256, draft python recipe.
-  (package (inherit zoxide) (name "python-pysmart")))
+  (package
+    (name "python-pysmart")
+    (version "1.4.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://files.pythonhosted.org/packages/5c/88/883d67a628b6342562eb18dd832f4ee266f07a175058c5dd3170fb7950b2/pysmart-1.4.2.tar.gz")
+       (sha256
+        (base32 "115wiafcp8l0dmxxzhr478qryqgjz056d8c6cf39b5fq5xp8v1wq"))))
+    (build-system pyproject-build-system)
+    (arguments (list #:tests? #f))
+    (native-inputs
+     (list python-setuptools
+           python-setuptools-scm))
+    (inputs (list smartmontools))
+    (propagated-inputs
+     (list python-chardet
+           python-humanfriendly))
+    (home-page "https://github.com/truenas/py-SMART")
+    (synopsis "Python wrapper for smartctl")
+    (description
+     "PySMART provides a Python interface to smartctl from smartmontools for
+querying S.M.A.R.T. information from storage devices.")
+    (license license:lgpl2.1+)))
 
 (define-public renamemytvseries-gtk-bin
-  ;; AUR renamemytvseries-gtk-bin: Rename My TV Series v2 GTK binary; v2.3.12-1; 1 vote.
-  ;; Source: https://www.tweaking4all.com/home-theatre/rename-my-tv-series-v2/ (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary; fetch Linux binary, compute sha256.
-  ;; Next: fetch Rename My TV Series v2 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "renamemytvseries-gtk-bin")))
+  (package
+    (name "renamemytvseries-gtk-bin")
+    (version "2.3.12")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://www.tweaking4all.com/downloads/video/"
+                           "RenameMyTVSeries-" version "-GTK-Linux-x64-shared-ffmpeg.tar.xz"))
+       (sha256
+        (base32 "137vq4p2g7amik57bn8nfc7ap0f8dw2f4swqnlfp7s7f71frci54"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (desktop (string-append out "/share/applications/renamemytvseries.desktop")))
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" src)
+            (install-file "RenameMyTVSeries" (string-append out "/bin"))
+            (chmod (string-append out "/bin/RenameMyTVSeries") #o755)
+            (for-each
+             (lambda (size)
+               (let ((dir (string-append out "/share/icons/hicolor/" size "x" size "/apps")))
+                 (mkdir-p dir)
+                 (copy-file (string-append "icons/" size "x" size ".png")
+                            (string-append dir "/renamemytvseries.png"))))
+             '("16" "32" "64" "128" "256" "512"))
+            (mkdir-p (string-append out "/share/applications"))
+            (copy-file "RenameMyTVSeries.desktop" desktop)
+            (substitute* desktop
+              (("Exec=.*") "Exec=RenameMyTVSeries")
+              (("Icon=.*") "Icon=renamemytvseries")
+              (("NoDisplay=true\n") ""))
+            (when (file-exists? "rmtv.ttf")
+              (mkdir-p (string-append out "/share/fonts/truetype"))
+              (copy-file "rmtv.ttf" (string-append out "/share/fonts/truetype/rmtv.ttf")))))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://www.tweaking4all.com/home-theatre/rename-my-tv-series-v2/")
+    (synopsis "Rename TV series episodes with metadata lookups")
+    (description
+     "Rename My TV Series is an upstream pre-built GTK application for renaming
+TV episode files.")
+    (license (license:non-copyleft
+              "https://www.tweaking4all.com/license/"
+              "Proprietary binary redistribution terms by upstream"))))
 
 (define-public openhue-cli
-  ;; AUR openhue-cli: OpenHue Philips Hue CLI tool; v0.23-1; 1 vote.
-  ;; Source: https://www.openhue.io/cli/openhue-cli (GitHub: openhue/openhue-cli)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper (Go binary); fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch openhue-cli v0.23 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "openhue-cli")))
+  (package
+    (name "openhue-cli")
+    (version "0.23")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/openhue/openhue-cli/releases/download/"
+                           version "/openhue_Linux_x86_64.tar.gz"))
+       (sha256
+        (base32 "1xh2z3k0z6njg5zlx12jdcakm1qcs6wg049cxq74hijrbnn7hb3q"))))
+    (build-system trivial-build-system)
+    (native-inputs (list gzip tar))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (install-file "openhue" (string-append out "/bin"))
+            (chmod (string-append out "/bin/openhue") #o755)
+            (mkdir-p (string-append out "/share/doc/openhue-cli"))
+            (install-file "README.md" (string-append out "/share/doc/openhue-cli"))
+            (mkdir-p (string-append out "/share/licenses/openhue-cli"))
+            (install-file "LICENSE" (string-append out "/share/licenses/openhue-cli"))))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://www.openhue.io/cli/openhue-cli")
+    (synopsis "Command-line interface for Philips Hue")
+    (description
+     "OpenHue CLI is a command-line client for interacting with Philips Hue
+smart lighting systems.")
+    (license license:asl2.0)))
 
 (define-public feedr-bin
-  ;; AUR feedr-bin: feedr RSS reader binary; v0.5.0-1; 1 vote.
-  ;; Source: https://github.com/bahdotsh/feedr
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch feedr v0.5.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "feedr-bin")))
+  (package
+    (name "feedr-bin")
+    (version "0.7.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/bahdotsh/feedr/releases/download/v"
+                           version "/feedr-linux-x86_64"))
+       (sha256
+        (base32 "12lq9hqv67cbry40zcsd3l6s2q9jf0wdgczahiknqxpamnnyy83p"))))
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (target (string-append out "/bin/feedr")))
+            (mkdir-p (string-append out "/bin"))
+            (copy-file src target)
+            (chmod target #o755)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/bahdotsh/feedr")
+    (synopsis "Terminal RSS and Atom feed reader")
+    (description
+     "Feedr is a terminal-based RSS/Atom feed reader distributed by upstream
+as a pre-built x86_64 Linux binary.")
+    (license license:expat)))
 
 (define-public boscaceoil-blue-bin
-  ;; AUR boscaceoil-blue-bin: Bosca Ceoil Blue music sequencer binary; v3.1.2-1; 1 vote.
-  ;; Source: https://yurisizov.itch.io/boscaceoil-blue (Godot binary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from itch.io/GitHub releases.
-  ;; Next: fetch boscaceoil-blue v3.1.2 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "boscaceoil-blue-bin")))
+  (package
+    (name "boscaceoil-blue-bin")
+    (version "3.1.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/YuriSizov/boscaceoil-blue/releases/download/"
+                           version "-stable/boscaceoil-blue-linux-x86_64.zip"))
+       (sha256
+        (base32 "0pb5vh6fyc3fkmvcblnyhb0zapsa4fg6p65s8pzznn8d3n7lwiy2"))))
+    (build-system trivial-build-system)
+    (native-inputs (list unzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (opt (string-append out "/opt/boscaceoil-blue-bin"))
+                 (bin (string-append out "/bin")))
+            (invoke unzip src)
+            (mkdir-p opt)
+            (install-file "boscaceoil-blue-linux-x86_64/boscaceoil-blue.x86_64" opt)
+            (install-file "boscaceoil-blue-linux-x86_64/libgdsion.linux.template_release.x86_64.so" opt)
+            (rename-file (string-append opt "/boscaceoil-blue.x86_64")
+                         (string-append opt "/boscaceoil-blue"))
+            (chmod (string-append opt "/boscaceoil-blue") #o755)
+            (mkdir-p bin)
+            (symlink (string-append opt "/boscaceoil-blue")
+                     (string-append bin "/boscaceoil-blue"))
+            (mkdir-p (string-append out "/share/applications"))
+            (call-with-output-file (string-append out "/share/applications/boscaceoil-blue.desktop")
+              (lambda (port)
+                (display "[Desktop Entry]\n" port)
+                (display "Name=Bosca Ceoil Blue\n" port)
+                (display "Comment=Simple and beginner-friendly app for making music\n" port)
+                (display "Exec=boscaceoil-blue\n" port)
+                (display "Terminal=false\n" port)
+                (display "Type=Application\n" port)
+                (display "Categories=AudioVideo;Audio;\n" port)))))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/YuriSizov/boscaceoil-blue")
+    (synopsis "Beginner-friendly music sequencer")
+    (description
+     "Bosca Ceoil Blue is a lightweight and beginner-friendly music sequencer.
+This package repackages the upstream pre-built x86_64 Linux binary release.")
+    (license license:expat)))
 
 (define-public crier-bin
   ;; AUR crier-bin: crier feed reader binary; v0.2.3-1; 1 vote.
