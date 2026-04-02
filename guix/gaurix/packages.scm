@@ -113,6 +113,8 @@
   #:use-module (gaurix packages queue-20260401p100daily7)
   #:use-module (gaurix packages queue-20260401p100daily8)
   #:use-module (gaurix packages queue-20260402p100daily)
+  #:use-module (gaurix packages queue-20260402p100daily2)
+  #:use-module (gaurix packages queue-20260402p100daily2-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -214,6 +216,106 @@
             python-launchpadlib
             python-wadllib
             python-lazr-uri
+            hyprwire-git
+            obs-branch-output
+            scryer-prolog
+            firefox-esr
+            zulip-desktop-bin
+            projectm-git
+            hcxtools-git
+            firefox-bin
+            exercism-bin
+            v4l-utils-git
+            icewm-git
+            qimgv-git
+            dia-git
+            yamagi-quake2-git
+            mu-git
+            zathura-git
+            python-customtkinter
+            espanso-x11-bin
+            tuxpaint-git
+            otf-fira-go
+            ttf-victor-mono
+            lib2geom-git
+            otf-ibm-plex
+            google-chrome-beta
+            hyprland-qt-support-git
+            apertium
+            libquicktime
+            python-telethon
+            python-progress
+            gnome-mime-data
+            gamin
+            libcroco
+            libunique
+            extremetuxracer
+            esmtp
+            transcode
+            giblib
+            pipemixer
+            sipcalc
+            xnec2c-git
+            meshlab
+            openjpeg
+            cmst
+            libfastjson
+            liblogging
+            libestr
+            python-yattag
+            obs-multi-rtmp
+            libeb
+            bcc-git
+            sfizz-git
+            clementine-git
+            libyang
+            python-blake3
+            himitsu
+            dexed-git
+            mpv-git
+            kanata-git
+            sioyek-git
+            compiledb
+            python-selenium
+            wlroots-git
+            python-clickgen
+            grayjay
+            foot-git
+            gallery-dl-bin
+            python-einops
+            otf-openmoji
+            yambar-wayland
+            mksh
+            avldrums-lv2-git
+            leela-zero
+            ttf-lxgw-wenkai
+            qdl
+            xcb-proto-git
+            apfs-fuse-git
+            pngcheck
+            openmw-git
+            hypridle-git
+            obs-vkcapture
+            desmume-git
+            f3d-bin
+            lisgd
+            plib
+            pipe-viewer-git
+            ansilove
+            python-ezdxf
+            fuzzylite
+            emacs-lucid
+            qbe-git
+            lziprecover
+            bitlbee
+            abook
+            labwc-git
+            gophernicus-git
+            vlang
+            ttf-oswald
+            git-extras
+            zotero
+            eden-git
             dsd-git
             hcxtools-git
             hcxdumptool-git
