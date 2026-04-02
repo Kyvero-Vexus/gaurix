@@ -4,6 +4,12 @@
 ;;;       in queue-20260325p100d.scm and are marked BLOCKED in the org queue.
 (define-module (gaurix packages queue-20260325p100e)
   #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix gexp)
+  #:use-module (guix build-system trivial)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages compression)
   #:use-module (gnu packages rust-apps)
   #:export (
             linux-clear-cjktty-zfs-headers
@@ -546,18 +552,128 @@
   (package (inherit zoxide) (name "zerx-lab-fluxdown-bin")))
 
 (define-public bililive-recorder-bin
-  ;; AUR bililive-recorder-bin: BiliBili live stream recorder (binary); v2.17.3-1; 1 vote.
-  ;; Source: https://github.com/Bililive/BililiveRecorder
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; .NET self-contained binary; fetch Linux x64 release.
-  ;; Next: fetch BililiveRecorder 2.17.3 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "bililive-recorder-bin")))
+  (package
+    (name "bililive-recorder-bin")
+    (version "2.17.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/Bililive/BililiveRecorder/releases/download/v"
+             version
+             "/BililiveRecorder-CLI-linux-x64.zip"))
+       (sha256
+        (base32 "1lw4i01zjpnglrv6sbz3q357mjfap1z2218pr0r7lx7m5qml21dw"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list unzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (work (string-append (getcwd) "/unpack"))
+                 (lib (string-append out "/lib/bililive-recorder"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p work)
+            (invoke unzip "-q" src "-d" work)
+            (mkdir-p lib)
+            (copy-recursively work lib)
+            (mkdir-p bin)
+            (symlink (string-append lib "/BililiveRecorder.Cli")
+                     (string-append bin "/BililiveRecorder.Cli"))
+            #t))))
+    (home-page "https://github.com/Bililive/BililiveRecorder")
+    (synopsis "Bilibili live stream recorder")
+    (description
+     "Bililive Recorder captures and stores livestreams from Bilibili.  This
+package repackages the upstream x86_64 CLI binary release.")
+    (license license:gpl3)))
 
 (define-public lenovo-print-driver-lj2400-m7400-bin
-  ;; AUR lenovo-print-driver-lj2400-m7400-bin: Lenovo LJ2400/M7400 printer driver (proprietary binary); v5.0.3-1; 1 vote.
-  ;; Source: https://www.lenovo.com (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary printer driver; fetch Linux binary from Lenovo.
-  ;; Next: fetch Lenovo LJ2400/M7400 Linux driver binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "lenovo-print-driver-lj2400-m7400-bin")))
+  (package
+    (name "lenovo-print-driver-lj2400-m7400-bin")
+    (version "5.0.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://aur.archlinux.org/cgit/aur.git/plain/"
+         "drive-service_signed_com.lenovo.lenovoprints_5.0.3-2_amd64.deb"
+         "?h=lenovo-print-driver-lj2400-m7400-bin&id="
+         "2ea87abde555df0367b9453b34e4885223bc7790"))
+       (file-name "lenovo-print-driver-lj2400-m7400-bin-5.0.3.deb")
+       (sha256
+        (base32 "13wsmva0frgmg1naimik9majn5mg75z8vbzj6j7i2lqs063l5nhp"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list binutils tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (ar (search-input-file %build-inputs "/bin/ar"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (driver-root (string-append out "/opt/lenovo/com.lenovo.lenovoprints"))
+                 (lpd-root (string-append driver-root "/bin/lpd"))
+                 (license-dir (string-append out "/share/licenses/lenovo-print-driver-lj2400-m7400-bin"))
+                 (cups-model-dir (string-append out "/share/cups/model"))
+                 (cups-filter-dir (string-append out "/lib/cups/filter"))
+                 (bin-dir (string-append out "/bin"))
+                 (models '("LJ2405D" "LJ2605D" "LJ2405" "LJ2400Pro" "M7405D"
+                           "M7605D" "M7400Pro" "M7450FPro" "M7655DHF" "M7400W"
+                           "M7405DW" "M7605DW" "M7625DWA" "M7626DNA" "M7628DNA"
+                           "M7685DXF" "M7686DXF" "LJ2680DN" "M7680D" "M7460"
+                           "M7480" "M7690DNA" "M7490DNF" "M7675DXF" "M7455DNF"
+                           "M7615DNA" "LJ2655DN")))
+            (invoke ar "x" src)
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" "data.tar.xz")
+            (copy-recursively "opt" (string-append out "/opt"))
+            (mkdir-p cups-model-dir)
+            (copy-recursively "usr/share/cups/model" cups-model-dir)
+            (mkdir-p license-dir)
+            (copy-file (string-append driver-root "/bin/LICENSE_ENG.txt")
+                       (string-append license-dir "/LICENSE_ENG.txt"))
+            (copy-file (string-append driver-root "/bin/LICENSE_CHN.txt")
+                       (string-append license-dir "/LICENSE_CHN.txt"))
+            (symlink (string-append lpd-root "/x86_64/rawtobr3")
+                     (string-append lpd-root "/rawtobr3"))
+            (symlink (string-append lpd-root "/x86_64/brprintconflsr3")
+                     (string-append lpd-root "/brprintconflsr3"))
+            (mkdir-p cups-filter-dir)
+            (for-each
+             (lambda (model)
+               (symlink (string-append driver-root "/bin/cupswrapper/lpdwrapper")
+                        (string-append cups-filter-dir "/lenovo_" model)))
+             models)
+            (mkdir-p bin-dir)
+            (for-each
+             (lambda (model)
+               (let ((wrapper (string-append bin-dir "/brprintconflsr3_" model)))
+                 (call-with-output-file wrapper
+                   (lambda (port)
+                     (format port
+                             "#!/bin/sh~%exec \"~a/bin/lpd/brprintconflsr3\" -P ~a \"$@\"~%"
+                             driver-root model)))
+                 (chmod wrapper #o755)))
+             models)
+            #t))))
+    (home-page "https://aur.archlinux.org/packages/lenovo-print-driver-lj2400-m7400-bin")
+    (synopsis "Lenovo LJ2400 and M7400 series printer driver payload")
+    (description
+     "This package repackages the Lenovo LJ2400/M7400 proprietary Debian
+driver payload mirrored in AUR, including PPD files and CUPS filter wrappers.")
+    (license (license:non-copyleft "https://www.lenovo.com/us/en/legal/"))))
 
 (define-public nodejs-knit
   ;; AUR nodejs-knit: Knit local Node.js dependencies together; v0.1.2-1; 1 vote.

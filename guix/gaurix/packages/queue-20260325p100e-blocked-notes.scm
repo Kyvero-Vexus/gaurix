@@ -334,15 +334,15 @@
     "Binary wrapper; Rust binary; multi-protocol download manager; fetch Linux amd64"
     "Next: fetch FluxDown v0.1.31 Linux binary, compute sha256, draft binary wrapper")
 
-  '(bililive-recorder-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/Bililive/BililiveRecorder v2.17.3"
-    "Binary wrapper; .NET self-contained binary; BiliBili live recorder; fetch Linux x64"
-    "Next: fetch BililiveRecorder 2.17.3 Linux binary, compute sha256, draft binary wrapper")
+  '(bililive-recorder-bin DONE
+    "Implemented trivial-build-system repack for BililiveRecorder CLI v2.17.3"
+    "Installs upstream x86_64 zip payload under /lib with executable symlink in /bin"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100e.scm -n bililive-recorder-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100e.scm bililive-recorder-bin")
 
-  '(lenovo-print-driver-lj2400-m7400-bin NEEDS_RECIPE_DESIGN
-    "Source: https://www.lenovo.com v5.0.3 (proprietary)"
-    "Binary wrapper; proprietary Lenovo printer driver; fetch Linux binary from Lenovo"
-    "Next: fetch Lenovo LJ2400/M7400 Linux driver binary, compute sha256, draft binary wrapper")
+  '(lenovo-print-driver-lj2400-m7400-bin DONE
+    "Implemented proprietary Debian payload repack from AUR-pinned blob at commit 2ea87abde555df0367b9453b34e4885223bc7790"
+    "Installs driver files, CUPS model/filter symlinks, and model-specific brprintconflsr3 wrappers"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100e.scm -n lenovo-print-driver-lj2400-m7400-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100e.scm lenovo-print-driver-lj2400-m7400-bin")
 
   '(nodejs-knit NEEDS_RECIPE_DESIGN
     "Source: https://github.com/coopbri/knit v0.1.2"

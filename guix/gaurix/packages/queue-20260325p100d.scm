@@ -16,6 +16,7 @@
   #:use-module (gnu packages bash)
   #:use-module (gnu packages base)
   #:use-module (gnu packages compression)
+  #:use-module (gnu packages fonts)
   #:use-module (gnu packages kde-frameworks)
   #:use-module (gnu packages kde-graphics)
   #:use-module (gnu packages linux)
@@ -1046,50 +1047,298 @@ This package repackages the upstream pre-built x86_64 Linux binary release.")
     (license license:expat)))
 
 (define-public crier-bin
-  ;; AUR crier-bin: crier feed reader binary; v0.2.3-1; 1 vote.
-  ;; Source: https://github.com/skorotkiewicz/crier
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch crier v0.2.3 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "crier-bin")))
+  (package
+    (name "crier-bin")
+    (version "0.2.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/skorotkiewicz/crier/releases/download/"
+                           version
+                           "/crier-linux-x86_64.tar.gz"))
+       (sha256
+        (base32 "0b204py1nf70fw5zdbn4xdcfj659d5v27bsglrn704qjib62ghhl"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (string-append (assoc-ref %build-inputs "tar") "/bin/tar"))
+                 (gzip (string-append (assoc-ref %build-inputs "gzip") "/bin/gzip"))
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/crier-bin"))
+                 (lic (string-append out "/share/licenses/crier-bin")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (mkdir-p bin)
+            (install-file "crier" bin)
+            (chmod (string-append bin "/crier") #o755)
+            (mkdir-p doc)
+            (install-file "README.md" doc)
+            (mkdir-p lic)
+            (install-file "LICENSE" lic)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/skorotkiewicz/crier")
+    (synopsis "Push notification CLI for LAN and MQTT")
+    (description
+     "Crier is a command-line push notification tool that can deliver messages
+over local TCP or across networks via MQTT.")
+    (license license:expat)))
 
 (define-public reqable-bin
-  ;; AUR reqable-bin: Reqable API debugging tool binary; v3.0.39-1; 3 votes.
-  ;; Source: https://reqable.com (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary; fetch Linux binary, compute sha256.
-  ;; Next: fetch Reqable v3.0.39 Linux AppImage/binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "reqable-bin")))
+  (package
+    (name "reqable-bin")
+    (version "3.0.40")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/reqable/reqable-app/releases/download/"
+                           version
+                           "/reqable-app-linux-x86_64.deb"))
+       (sha256
+        (base32 "0cigqr2xxszwhfavk0xkcim6dfh5bjzb1fs74jchr0b38a9cbmkm"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list bash-minimal binutils tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (ar (search-input-file %build-inputs "/bin/ar"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (bash (search-input-file %build-inputs "/bin/bash"))
+                 (app-dir (string-append out "/lib/reqable"))
+                 (bin-dir (string-append out "/bin"))
+                 (apps-dir (string-append out "/share/applications"))
+                 (icons-dir (string-append out "/share/icons"))
+                 (pixmaps-dir (string-append out "/share/pixmaps"))
+                 (wrapper (string-append bin-dir "/reqable")))
+            (invoke ar "x" src)
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" "data.tar.xz")
+            (mkdir-p app-dir)
+            (copy-recursively "usr/share/reqable" app-dir)
+            (chmod (string-append app-dir "/reqable") #o755)
+            (mkdir-p bin-dir)
+            (call-with-output-file wrapper
+              (lambda (port)
+                (format port
+                        "#!~a~%export LD_LIBRARY_PATH=\"~a/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}\"~%exec \"~a/reqable\" \"$@\"~%"
+                        bash app-dir app-dir)))
+            (chmod wrapper #o755)
+            (mkdir-p apps-dir)
+            (copy-file "usr/share/applications/reqable.desktop"
+                       (string-append apps-dir "/reqable.desktop"))
+            (substitute* (string-append apps-dir "/reqable.desktop")
+              (("^Exec=.*") "Exec=reqable\n"))
+            (copy-recursively "usr/share/icons" icons-dir)
+            (mkdir-p pixmaps-dir)
+            (copy-file "usr/share/pixmaps/reqable.png"
+                       (string-append pixmaps-dir "/reqable.png"))
+            #t))))
+    (home-page "https://reqable.com")
+    (synopsis "Cross-platform HTTP development and debugging tool")
+    (description
+     "Reqable is a professional cross-platform HTTP development and debugging
+tool with support for HTTP/1, HTTP/2, and HTTP/3 workflows.")
+    (license (license:non-copyleft "https://reqable.com/en-US/terms/"))))
 
 (define-public cliamp-bin
-  ;; AUR cliamp-bin: cliamp CLI music player binary; v1.27.2-1; 1 vote.
-  ;; Source: https://github.com/bjarneo/cliamp
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Node.js packaged binary; fetch Linux release.
-  ;; Next: fetch cliamp v1.27.2 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "cliamp-bin")))
+  (package
+    (name "cliamp-bin")
+    (version "1.31.7")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/bjarneo/cliamp/releases/download/v"
+                           version
+                           "/cliamp-linux-amd64"))
+       (sha256
+        (base32 "1iy4xya7fli6cdr0cznb0bklcy8bqqgmw3x2iiyyjmzi6c6w2yj7"))))
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin"))
+                 (target (string-append bin "/cliamp")))
+            (mkdir-p bin)
+            (copy-file src target)
+            (chmod target #o755)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/bjarneo/cliamp")
+    (synopsis "Retro terminal music player")
+    (description
+     "Cliamp is a terminal music player inspired by Winamp-era interfaces,
+with support for local media and streaming workflows.")
+    (license license:expat)))
 
 (define-public ferrishot-bin
-  ;; AUR ferrishot-bin: ferrishot screenshot tool binary; v0.2.0-2; 1 vote.
-  ;; Source: https://github.com/nik-rev/ferrishot
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch ferrishot v0.2.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "ferrishot-bin")))
+  (package
+    (name "ferrishot-bin")
+    (version "0.2.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/nik-rev/ferrishot/releases/download/v"
+             version
+             "/ferrishot-x86_64-unknown-linux-gnu.tar.xz"))
+       (sha256
+        (base32 "06r4glglzilbvrwgf5xw2r12l7v32zvni5avk20phgm0xkdgpgml"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (string-append (assoc-ref %build-inputs "tar") "/bin/tar"))
+                 (xz (string-append (assoc-ref %build-inputs "xz") "/bin/xz"))
+                 (root "ferrishot-x86_64-unknown-linux-gnu")
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/ferrishot-bin"))
+                 (lic (string-append out "/share/licenses/ferrishot-bin")))
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" src)
+            (mkdir-p bin)
+            (install-file (string-append root "/ferrishot") bin)
+            (chmod (string-append bin "/ferrishot") #o755)
+            (mkdir-p doc)
+            (install-file (string-append root "/README.md") doc)
+            (install-file (string-append root "/CHANGELOG.md") doc)
+            (mkdir-p lic)
+            (install-file (string-append root "/LICENSE-MIT") lic)
+            (install-file (string-append root "/LICENSE-APACHE") lic)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/nik-rev/ferrishot")
+    (synopsis "Rust screenshot utility")
+    (description
+     "Ferrishot is a lightweight screenshot tool written in Rust.")
+    (license (list license:expat license:asl2.0))))
 
 (define-public sysbox-ce
-  ;; AUR sysbox-ce: Sysbox container runtime (Community Edition); v2:0.6.7-2; 1 vote.
-  ;; Source: https://github.com/nestybox/sysbox
-  ;; NEEDS_RECIPE_DESIGN: Go binary recipe; complex kernel/sysfs integration; needs kernel modules.
-  ;; Next: fetch sysbox 0.6.7 source, compute sha256, draft go-build-system recipe.
-  (package (inherit zoxide) (name "sysbox-ce")))
+  (package
+    (name "sysbox-ce")
+    (version "0.6.7")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/nestybox/sysbox/releases/download/v"
+             version
+             "/sysbox-ce_"
+             version
+             ".linux_amd64.deb"))
+       (sha256
+        (base32 "0bhpai2zckybw6cpy6vfiw91d5ci807a633fy6njqn8rbag3ib5p"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list binutils tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (ar (search-input-file %build-inputs "/bin/ar"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (bin-dir (string-append out "/bin"))
+                 (systemd-dir (string-append out "/lib/systemd/system"))
+                 (sysctl-dir (string-append out "/lib/sysctl.d"))
+                 (doc-dir (string-append out "/share/doc/sysbox-ce")))
+            (invoke ar "x" src)
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" "data.tar.xz")
+            (mkdir-p bin-dir)
+            (for-each
+             (lambda (prog)
+               (copy-file (string-append "usr/bin/" prog)
+                          (string-append bin-dir "/" prog))
+               (chmod (string-append bin-dir "/" prog) #o755))
+             '("sysbox-fs" "sysbox-mgr" "sysbox-runc"))
+            (mkdir-p systemd-dir)
+            (copy-file "lib/systemd/system/sysbox.service"
+                       (string-append systemd-dir "/sysbox.service"))
+            (copy-file "lib/systemd/system/sysbox-fs.service"
+                       (string-append systemd-dir "/sysbox-fs.service"))
+            (copy-file "lib/systemd/system/sysbox-mgr.service"
+                       (string-append systemd-dir "/sysbox-mgr.service"))
+            (mkdir-p sysctl-dir)
+            (copy-file "lib/sysctl.d/99-sysbox-sysctl.conf"
+                       (string-append sysctl-dir "/99-sysbox-sysctl.conf"))
+            (mkdir-p doc-dir)
+            (copy-file "usr/share/doc/sysbox-ce/changelog.gz"
+                       (string-append doc-dir "/changelog.gz"))
+            (copy-file "usr/share/doc/sysbox-ce/copyright"
+                       (string-append doc-dir "/copyright"))
+            #t))))
+    (home-page "https://github.com/nestybox/sysbox")
+    (synopsis "Container runtime with VM-like isolation")
+    (description
+     "Sysbox is a container runtime that enables running workloads such as
+systemd, Docker, and Kubernetes inside containers with stronger isolation.")
+    (license license:asl2.0)))
 
 (define-public noto-fonts-cjk-fontconfig
-  ;; AUR noto-fonts-cjk-fontconfig: Fontconfig config for Noto CJK fonts; v1-1; 1 vote.
-  ;; Source: https://aur.archlinux.org/packages/noto-fonts-cjk-fontconfig (config file only)
-  ;; NEEDS_RECIPE_DESIGN: trivial-build-system fontconfig rule install; dep: noto-cjk fonts.
-  ;; Next: fetch config file from AUR PKGBUILD, compute sha256, draft trivial fontconfig install.
-  (package (inherit zoxide) (name "noto-fonts-cjk-fontconfig")))
+  (package
+    (name "noto-fonts-cjk-fontconfig")
+    (version "1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        "https://aur.archlinux.org/cgit/aur.git/plain/70-noto-cjk.conf?h=noto-fonts-cjk-fontconfig&id=db44f4a89b1ad5ea35d0d73cc1e60bc8359e07bc")
+       (file-name "70-noto-cjk.conf")
+       (sha256
+        (base32 "013akzrzl3jqjkmwn8jij6lqf361mdf74gpdyd5h1lh5hk85162h"))))
+    (build-system trivial-build-system)
+    (propagated-inputs
+     (list font-google-noto-sans-cjk
+           font-google-noto-serif-cjk))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (conf-avail (string-append out "/share/fontconfig/conf.avail"))
+                 (conf-default (string-append out "/share/fontconfig/conf.default"))
+                 (target (string-append conf-avail "/70-noto-cjk.conf"))
+                 (link (string-append conf-default "/70-noto-cjk.conf")))
+            (mkdir-p conf-avail)
+            (copy-file (assoc-ref %build-inputs "source") target)
+            (mkdir-p conf-default)
+            (symlink target link)
+            #t))))
+    (home-page "https://aur.archlinux.org/packages/noto-fonts-cjk-fontconfig")
+    (synopsis "Fontconfig rules to append Noto CJK families by locale")
+    (description
+     "This package installs a Fontconfig snippet that appends locale-specific
+Noto CJK font families when generic Noto Sans, Serif, and Sans Mono families
+are requested.")
+    (license license:gpl3+)))
 
 (define-public webtorrent-bittorrent-tracker
   ;; AUR webtorrent-bittorrent-tracker: WebTorrent BitTorrent tracker server; v11.2.2-1; 4 votes.
   ;; Source: https://github.com/webtorrent/bittorrent-tracker
-  ;; NEEDS_RECIPE_DESIGN: node.js npm recipe; deps: node, npm.
-  ;; Next: fetch bittorrent-tracker 11.2.2 from npm/GitHub, compute sha256, draft node recipe.
+  ;; BLOCKED_AFTER_ATTEMPTS: unresolved npm dependency stack in Guix (see blocked notes).
+  ;; Next: package missing node dependencies or vendor a fully bundled offline tarball.
   (package (inherit zoxide) (name "webtorrent-bittorrent-tracker")))

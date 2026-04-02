@@ -436,39 +436,39 @@
     "Blocked in this pass after 4 attempts: offline cargo fails on git deps, required rust crate specs unavailable, crate import lockfile path crashes, and upstream release has no binary assets"
     "Next: package/update required Rust crate graph (including git-sourced deps), then retry cargo-build-system recipe")
 
-  '(crier-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/skorotkiewicz/crier v0.2.3"
-    "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch crier v0.2.3 Linux binary, compute sha256, draft binary wrapper")
+  '(crier-bin DONE
+    "Implemented trivial-build-system binary recipe from GitHub release v0.2.3"
+    "Installed crier executable plus README and LICENSE from release tarball"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n crier-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm crier-bin")
 
-  '(reqable-bin NEEDS_RECIPE_DESIGN
-    "Source: https://reqable.com v3.0.39 (proprietary)"
-    "Binary wrapper; proprietary; fetch Linux AppImage/binary"
-    "Next: fetch Reqable v3.0.39 Linux binary, compute sha256, draft binary wrapper")
+  '(reqable-bin DONE
+    "Implemented proprietary .deb repack from Reqable GitHub release v3.0.40"
+    "Installs app payload under /lib/reqable with launcher and desktop/icon assets"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n reqable-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm reqable-bin")
 
-  '(cliamp-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/bjarneo/cliamp v1.27.2"
-    "Binary wrapper; Node.js packaged binary; fetch Linux release"
-    "Next: fetch cliamp v1.27.2 Linux binary, compute sha256, draft binary wrapper")
+  '(cliamp-bin DONE
+    "Implemented trivial binary package from upstream cliamp v1.31.7 Linux amd64 release"
+    "Direct install of prebuilt cliamp executable into $out/bin"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n cliamp-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm cliamp-bin")
 
-  '(ferrishot-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/nik-rev/ferrishot v0.2.0"
-    "Binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch ferrishot v0.2.0 Linux binary, compute sha256, draft binary wrapper")
+  '(ferrishot-bin DONE
+    "Implemented trivial-build-system package from ferrishot v0.2.0 x86_64 tarball"
+    "Installs binary and bundled README/CHANGELOG/license files"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n ferrishot-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm ferrishot-bin")
 
-  '(sysbox-ce NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/nestybox/sysbox v0.6.7"
-    "Go binary recipe; complex kernel/sysfs integration; needs kernel module handling"
-    "Next: fetch sysbox 0.6.7 source, compute sha256, draft go-build-system recipe")
+  '(sysbox-ce DONE
+    "Implemented binary .deb repack from upstream sysbox-ce v0.6.7 release"
+    "Installs sysbox-fs/sysbox-mgr/sysbox-runc plus bundled systemd and sysctl files"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n sysbox-ce; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm sysbox-ce")
 
-  '(noto-fonts-cjk-fontconfig NEEDS_RECIPE_DESIGN
-    "Source: AUR PKGBUILD (fontconfig config file) v1-1"
-    "Trivial fontconfig rule install; dep: noto-cjk fonts"
-    "Next: fetch config file from AUR PKGBUILD, compute sha256, draft trivial install")
+  '(noto-fonts-cjk-fontconfig DONE
+    "Implemented trivial fontconfig package from pinned AUR 70-noto-cjk.conf"
+    "Installs conf.avail snippet and conf.default symlink; propagates Noto CJK font packages"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n noto-fonts-cjk-fontconfig; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm noto-fonts-cjk-fontconfig")
 
-  '(webtorrent-bittorrent-tracker NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/webtorrent/bittorrent-tracker v11.2.2"
-    "node.js npm recipe; deps: node, npm"
-    "Next: fetch bittorrent-tracker 11.2.2 from npm/GitHub, compute sha256, draft node recipe")
+  '(webtorrent-bittorrent-tracker BLOCKED
+    "Attempt 1: upstream/equivalent survey via guix search and repo grep found no existing Guix/Gaurix package to alias"
+    "Attempt 2: dependency closure check showed most runtime deps missing in Guix (e.g., node-bencode, node-ws, node-socks, node-run-parallel)"
+    "Attempt 3: offline npm install of bittorrent-tracker-11.2.2.tgz failed ENOTCACHED (@thaunknown/simple-peer); GitHub release has no bundled binary assets")
 
   ))
