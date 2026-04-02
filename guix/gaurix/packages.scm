@@ -115,6 +115,8 @@
   #:use-module (gaurix packages queue-20260402p100daily)
   #:use-module (gaurix packages queue-20260402p100daily2)
   #:use-module (gaurix packages queue-20260402p100daily2-blocked-notes)
+  #:use-module (gaurix packages queue-20260402p100daily3)
+  #:use-module (gaurix packages queue-20260402p100daily3-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3064,4 +3066,6 @@
             quakespasm
             quickjs
             queue-20260401p100daily7-blocked-notes
+            queue-20260402p100daily3
+            queue-20260402p100daily3-blocked-notes
 ))
