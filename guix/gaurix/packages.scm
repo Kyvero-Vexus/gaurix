@@ -118,6 +118,8 @@
   #:use-module (gaurix packages queue-20260402p100daily3)
   #:use-module (gaurix packages queue-20260402p100daily3-blocked-notes)
   #:use-module (gaurix packages queue-20260402p100daily4)
+  #:use-module (gaurix packages queue-20260402p100daily5)
+  #:use-module (gaurix packages queue-20260402p100daily5-blocked-notes)
   #:use-module (gaurix packages queue-20260402p100daily4-blocked-notes)
   #:export (
             ttf-amiri
@@ -3170,4 +3172,105 @@
             zathura-ps-git
             obs-multi-rtmp-git
             orange-bin
+            akonadi-notes
+            codeberg-cli-git
+            skim-git
+            qtractor-git
+            mimalloc-git
+            python-whenever-git
+            ncdu-git
+            zathura-cb-git
+            imgui-git
+            dump1090-git
+            pcc-git
+            tree-sitter-cli-git
+            beancount-git
+            corectrl-git
+            kirc-git
+            brlaser-git
+            otf-takao
+            hyprpicker-git
+            xfce4-i3-workspaces-plugin-git
+            otf-bravura
+            zynaddsubfx-git
+            yoshimi-git
+            autotrace-git
+            ckb-next-git
+            emacs-exwm-git
+            emacs-xelb-git
+            stumpwm-git
+            wabt-git
+            sway-git
+            redis-bin
+            tmux-git
+            electrum-appimage
+            vim-git
+            frei0r-plugins-git
+            armagetronad-git
+            swaybg-git
+            swaylock-git
+            swayimg-git
+            ppsspp-git
+            ytfzf-git
+            supercollider-git
+            flycast-bin
+            sdrangel-bin
+            dwl-git
+            libnftnl-git
+            geany-git
+            scenefx-git
+            emacs-lsp-booster-git
+            rakudo-bin
+            clipit-git
+            satdump-git
+            libbacktrace-git
+            tlpui-git
+            ttf-scientifica
+            strawberry-git
+            valkey-git
+            jed-git
+            python2-bin
+            julia-bin
+            firejail-git
+            nyxt-git
+            libmegapixels-git
+            audacious-git
+            iptables-git
+            texmacs-guile3-git
+            poop-bin
+            hyprsunset-git
+            aerc-git
+            agate-bin
+            kiwix-desktop-git
+            goawk-bin
+            manuskript-git
+            ttf-orbitron
+            mblaze-git
+            scron-git
+            flux-git
+            ghex-git
+            gtypist-git
+            retroarch-git
+            jj-bin
+            tor-git
+            f2fs-tools-git
+            tree-sitter-ruby-git
+            fastfetch-git
+            hledger-web-bin
+            xorgproto-git
+            wayland-protocols-git
+            autojump-git
+            grim-git
+            wlopm-git
+            udevil-git
+            fakeroot-git
+            wayland-git
+            wl-clipboard-git
+            swayidle-git
+            swappy-git
+            zenity-git
+            wlr-protocols-git
+            ttf-plemoljp-bin
+            slurp-git
+            queue-20260402p100daily5-blocked-notes
 ))
