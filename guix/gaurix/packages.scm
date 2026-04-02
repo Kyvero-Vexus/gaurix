@@ -117,6 +117,8 @@
   #:use-module (gaurix packages queue-20260402p100daily2-blocked-notes)
   #:use-module (gaurix packages queue-20260402p100daily3)
   #:use-module (gaurix packages queue-20260402p100daily3-blocked-notes)
+  #:use-module (gaurix packages queue-20260402p100daily4)
+  #:use-module (gaurix packages queue-20260402p100daily4-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3068,4 +3070,104 @@
             queue-20260401p100daily7-blocked-notes
             queue-20260402p100daily3
             queue-20260402p100daily3-blocked-notes
+            zotero-beta-bin
+            radicle-cli-bin
+            time-desktop-bin
+            savvy-cli-bin
+            src-cli-bin
+            ttf-bqn386-git
+            libtree-bin
+            libjxl-git
+            cyrus-sasl-xoauth2-git
+            moonlight-qt-git
+            alsa-scarlett-gui-git
+            icestorm-git
+            glibc-git
+            nats-server-bin
+            gperf-git
+            m4-git
+            drill-bin
+            lmms-git
+            cling-bin
+            daemonize-git
+            rr-bin
+            obs-pipewire-audio-capture-bin
+            skia-git
+            vlang-bin
+            alacritty-git
+            mpc-git
+            hyperfine-git
+            openconnect-git
+            flamegraph-git
+            dex-git
+            cbqn-git
+            runitor-bin
+            hare-git
+            make-git
+            plymouth-git
+            redumper-bin
+            asciinema-agg-bin
+            easyrpg-player-git
+            aircrack-ng-git
+            okteta-git
+            buku-git
+            kitty-git
+            mpvpaper-git
+            gnulib-git
+            dbus-git
+            plocate-git
+            tascam-gtk-git
+            rebar3-git
+            jamesdsp-git
+            bluez-git
+            libcpuid-git
+            sddm-git
+            python-fenics-ufl-git
+            senpai-git
+            metamath-git
+            vulkan-headers-git
+            helvum-git
+            miniaudio-git
+            cyanrip-git
+            oniguruma-git
+            showmethekey-git
+            petsc-git
+            flycast-git
+            zig-git
+            mbake-git
+            mpd-git
+            winetricks-git
+            swayfx-git
+            ifuse-git
+            freeorion-git
+            zulip-desktop
+            deluge-git
+            ttfautohint-git
+            kubo-git
+            ttf-aporetic
+            goldendict-ng-git
+            libuv-git
+            pipemixer-git
+            opus-git
+            ninja-git
+            mepo-git
+            marco-git
+            anarch-bin
+            scc-bin
+            amule-git
+            ardour-git
+            otf-intel-one-mono
+            ttf-intel-one-mono
+            woff-intel-one-mono
+            hyprmag-git
+            blackbox-terminal-git
+            gallery-dl-git
+            moonlight-qt-bin
+            zeal-git
+            zathura-pdf-poppler-git
+            arc-icon-theme-git
+            zathura-djvu-git
+            zathura-ps-git
+            obs-multi-rtmp-git
+            orange-bin
 ))
