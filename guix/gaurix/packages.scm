@@ -130,6 +130,8 @@
   #:use-module (gaurix packages queue-20260403p100daily4-blocked-notes)
   #:use-module (gaurix packages queue-20260403p100daily6)
   #:use-module (gaurix packages queue-20260403p100daily6-blocked-notes)
+  #:use-module (gaurix packages queue-20260403p100daily7)
+  #:use-module (gaurix packages queue-20260403p100daily7-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -238,6 +240,8 @@
             zulip-desktop-bin
             projectm-git
             hcxtools-git
+            queue-20260403p100daily7-recipe-drafts
+            queue-20260403p100daily7-blocked-notes
             python-pptx
             firefox-bin
             exercism-bin
