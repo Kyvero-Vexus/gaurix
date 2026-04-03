@@ -124,6 +124,8 @@
   #:use-module (gaurix packages queue-20260402p100daily4-blocked-notes)
   #:use-module (gaurix packages queue-20260403p100daily2)
   #:use-module (gaurix packages queue-20260403p100daily2-blocked-notes)
+  #:use-module (gaurix packages queue-20260403p100daily3)
+  #:use-module (gaurix packages queue-20260403p100daily3-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -331,14 +333,11 @@
             exercism-bin
             simdutf-git
             v4l-utils-git
-            wleave-git
             icewm-git
             openrct2-git
             qimgv-git
             tenacity-git
-            mindustry-server-bin
             midori-bin
-            juliaup-bin
             celestia-bin
             dia-git
             dstask-bin
@@ -347,11 +346,9 @@
             mu-git
             corosync-git
             zathura-git
-            freefilesync-bin
             espanso-x11-bin
             radicle-bin
             tuxpaint-git
-            cachyos-ananicy-rules-git
             ttf-victor-mono
             syncthing-bin
             lib2geom-git
@@ -3344,4 +3341,14 @@
             nextpnr-git
             ttf-iosevka-term
             queue-20260403p100daily2-blocked-notes
+            rtl_433-git
+            sdl_pango
+            klassy-qt5
+            keepassxc-qt6
+            ocaml-ppx_expect
+            qcustomplot-qt6
+            kseexpr-qt6-git
+            buku_run-git
+            otf-oswald
+            queue-20260403p100daily3-blocked-notes
 ))
