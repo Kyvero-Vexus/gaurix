@@ -4671,6 +4671,36 @@
             xrdp
             xremap-kde
             xremap-kde-bin
+<<<<<<< HEAD
+=======
+            nextpnr-git
+            ttf-iosevka-term
+            queue-20260403p100daily2-blocked-notes
+            rtl_433-git
+            sdl_pango
+            klassy-qt5
+            keepassxc-qt6
+            ocaml-ppx_expect
+            qcustomplot-qt6
+            kseexpr-qt6-git
+            buku_run-git
+            otf-oswald
+            queue-20260403p100daily3-blocked-notes
+            waydroid-image-gapps
+            teleport-client-bin
+            ttf-gentium-basic
+            auth0-bin
+            rtimelog
+            rtimelogger
+            python-javalang
+            ocr-fonts
+            terraform-bin
+            ttf-aptos
+            porty-bin
+            repacman2
+            launcherx-bin
+            httm-bin
+>>>>>>> a4a1570 (feat: integrate cron 5a2fb251 recipe pass)
             apidash-bin
             base64-converter
             buku_run-git

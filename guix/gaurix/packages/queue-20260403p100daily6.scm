@@ -106,7 +106,7 @@ dependency on the pacman executable.")
     (build-system trivial-build-system)
     (supported-systems '("x86_64-linux"))
     (native-inputs
-     (list unzip
+     (list `("unzip" ,unzip)
            `("launcherx-desktop"
              ,(origin
                 (method url-fetch)
@@ -428,7 +428,7 @@ providers.  This package repackages the upstream Linux x86_64 binary release.")
         (base32 "0mdl83vmh2mvlhdvxzf2awyj0shsk6awss74b3rr466hm2w352r8"))))
     (build-system trivial-build-system)
     (native-inputs
-     (list unzip
+     (list `("unzip" ,unzip)
            `("license-file"
              ,(origin
                 (method url-fetch)
