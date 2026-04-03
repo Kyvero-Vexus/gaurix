@@ -1,633 +1,6525 @@
 # Gaurix Blocked Package Dependency Tree
 
-- Generated (UTC): 2026-04-01T09:11:43.549570+00:00
-- Blocked packages: 6086
+- Generated (UTC): 2026-04-02T20:20:23.776099+00:00
+- Blocked package entries: 6379
+- Unique blocked packages: 6375
+- Note: Queue computed on unique BLOCKED package names; duplicate todo entries retained in todo file and listed per package in duplicate_entry_numbers.
 
 ## Priority Rule
 Ordered by: blocked_dep_count asc, reverse_dep_count desc, total_dep_count asc, package name asc.
 
 ## Priority Queue (top 100 at run start)
 1. `elephant-bin` — blocked-deps=0, revdeps=23, total-deps=1
-2. `dosh` — blocked-deps=0, revdeps=10, total-deps=2
-3. `openssl-1.1` — blocked-deps=0, revdeps=9, total-deps=1
-4. `xapp-thumbnailers-common` — blocked-deps=0, revdeps=9, total-deps=4
-5. `python-litex` — blocked-deps=0, revdeps=8, total-deps=4
-6. `bcompare` — blocked-deps=0, revdeps=7, total-deps=1
-7. `rvgl-bin` — blocked-deps=0, revdeps=7, total-deps=5
-8. `archlinux-java-run` — blocked-deps=0, revdeps=6, total-deps=2
-9. `nvidia-utils-beta` — blocked-deps=0, revdeps=6, total-deps=11
-10. `yay` — blocked-deps=0, revdeps=5, total-deps=2
-11. `c++utilities` — blocked-deps=0, revdeps=5, total-deps=3
-12. `xlibre-xserver-common-git` — blocked-deps=0, revdeps=5, total-deps=3
-13. `xrizer-common` — blocked-deps=0, revdeps=4, total-deps=0
-14. `python-munge` — blocked-deps=0, revdeps=4, total-deps=2
-15. `sqlite-utils` — blocked-deps=0, revdeps=4, total-deps=6
-16. `pilowlava-font-common` — blocked-deps=0, revdeps=3, total-deps=0
-17. `python-condense-json` — blocked-deps=0, revdeps=3, total-deps=0
-18. `xmlada` — blocked-deps=0, revdeps=3, total-deps=0
-19. `python-m3u8` — blocked-deps=0, revdeps=3, total-deps=1
-20. `qt5-location` — blocked-deps=0, revdeps=3, total-deps=1
-21. `ollama-bin` — blocked-deps=0, revdeps=3, total-deps=2
-22. `zmusic` — blocked-deps=0, revdeps=3, total-deps=3
-23. `openvino` — blocked-deps=0, revdeps=3, total-deps=6
-24. `wayfire` — blocked-deps=0, revdeps=3, total-deps=7
-25. `llvm-libs-minimal-git` — blocked-deps=0, revdeps=3, total-deps=8
-26. `hyprtoolkit-git` — blocked-deps=0, revdeps=3, total-deps=12
-27. `dotnet-targeting-pack-bin` — blocked-deps=0, revdeps=2, total-deps=0
-28. `hyprshot` — blocked-deps=0, revdeps=2, total-deps=0
-29. `logmein-hamachi` — blocked-deps=0, revdeps=2, total-deps=0
-30. `ps3-env` — blocked-deps=0, revdeps=2, total-deps=0
-31. `samsung-unified-driver-common` — blocked-deps=0, revdeps=2, total-deps=0
-32. `xone-dongle-firmware` — blocked-deps=0, revdeps=2, total-deps=0
-33. `dotnet-targeting-pack-7.0-bin` — blocked-deps=0, revdeps=2, total-deps=1
-34. `dotnet-targeting-pack-9.0-bin` — blocked-deps=0, revdeps=2, total-deps=1
-35. `ledger-udev` — blocked-deps=0, revdeps=2, total-deps=1
-36. `mozc` — blocked-deps=0, revdeps=2, total-deps=1
-37. `python-aiocache` — blocked-deps=0, revdeps=2, total-deps=1
-38. `python-aiolimiter` — blocked-deps=0, revdeps=2, total-deps=1
-39. `python-art` — blocked-deps=0, revdeps=2, total-deps=1
-40. `python-plyer` — blocked-deps=0, revdeps=2, total-deps=1
-41. `qt5-scxml` — blocked-deps=0, revdeps=2, total-deps=1
-42. `verify-lib` — blocked-deps=0, revdeps=2, total-deps=1
-43. `foobar2000` — blocked-deps=0, revdeps=2, total-deps=2
-44. `lianwalld-bin` — blocked-deps=0, revdeps=2, total-deps=2
-45. `lib32-blas` — blocked-deps=0, revdeps=2, total-deps=2
-46. `qt5-wayland-decorations` — blocked-deps=0, revdeps=2, total-deps=2
-47. `libelectron` — blocked-deps=0, revdeps=2, total-deps=3
-48. `linux-lqx` — blocked-deps=0, revdeps=2, total-deps=3
-49. `ncurses5-compat-libs` — blocked-deps=0, revdeps=2, total-deps=3
-50. `osu-mime` — blocked-deps=0, revdeps=2, total-deps=3
-51. `paru` — blocked-deps=0, revdeps=2, total-deps=3
-52. `pgadmin4-server` — blocked-deps=0, revdeps=2, total-deps=3
-53. `python-inquirerpy` — blocked-deps=0, revdeps=2, total-deps=3
-54. `openbangla-keyboard-git` — blocked-deps=0, revdeps=2, total-deps=4
-55. `wl-screenrec` — blocked-deps=0, revdeps=2, total-deps=4
-56. `gslapper` — blocked-deps=0, revdeps=2, total-deps=5
-57. `bms-shell` — blocked-deps=0, revdeps=2, total-deps=6
-58. `web-eid-native` — blocked-deps=0, revdeps=2, total-deps=6
-59. `dotnet-runtime-bin` — blocked-deps=0, revdeps=2, total-deps=7
-60. `fooyin` — blocked-deps=0, revdeps=2, total-deps=7
-61. `radicle-node` — blocked-deps=0, revdeps=2, total-deps=7
-62. `dotnet-runtime-7.0-bin` — blocked-deps=0, revdeps=2, total-deps=8
-63. `dotnet-runtime-9.0-bin` — blocked-deps=0, revdeps=2, total-deps=8
-64. `electron-castlab-bin` — blocked-deps=0, revdeps=2, total-deps=9
-65. `vscodium-translucent` — blocked-deps=0, revdeps=2, total-deps=10
-66. `rom-properties` — blocked-deps=0, revdeps=2, total-deps=12
-67. `jdk22-openjdk` — blocked-deps=0, revdeps=2, total-deps=19
-68. `jdk25-openjdk-wakefield` — blocked-deps=0, revdeps=2, total-deps=21
-69. `ros2-arch-deps` — blocked-deps=0, revdeps=2, total-deps=44
-70. `sonic-win` — blocked-deps=0, revdeps=2, total-deps=55
-71. `apriltag` — blocked-deps=0, revdeps=1, total-deps=0
-72. `circle-flags` — blocked-deps=0, revdeps=1, total-deps=0
-73. `clash-geoip` — blocked-deps=0, revdeps=1, total-deps=0
-74. `ddccontrol-db-git` — blocked-deps=0, revdeps=1, total-deps=0
-75. `element-web-git` — blocked-deps=0, revdeps=1, total-deps=0
-76. `elephant` — blocked-deps=0, revdeps=1, total-deps=0
-77. `genders` — blocked-deps=0, revdeps=1, total-deps=0
-78. `ghostty-shell-integration-nightly-bin` — blocked-deps=0, revdeps=1, total-deps=0
-79. `ghostty-terminfo-nightly-bin` — blocked-deps=0, revdeps=1, total-deps=0
-80. `heidisql` — blocked-deps=0, revdeps=1, total-deps=0
-81. `java-service-wrapper` — blocked-deps=0, revdeps=1, total-deps=0
-82. `keychron-link-udev` — blocked-deps=0, revdeps=1, total-deps=0
-83. `libfmod` — blocked-deps=0, revdeps=1, total-deps=0
-84. `libxdiff` — blocked-deps=0, revdeps=1, total-deps=0
-85. `localepurge` — blocked-deps=0, revdeps=1, total-deps=0
-86. `noto-fonts-emoji-blob` — blocked-deps=0, revdeps=1, total-deps=0
-87. `redhat-fonts` — blocked-deps=0, revdeps=1, total-deps=0
-88. `stardust-xr-black-hole` — blocked-deps=0, revdeps=1, total-deps=0
-89. `stardust-xr-flatland` — blocked-deps=0, revdeps=1, total-deps=0
-90. `stardust-xr-gravity` — blocked-deps=0, revdeps=1, total-deps=0
-91. `stardust-xr-protostar` — blocked-deps=0, revdeps=1, total-deps=0
-92. `stardust-xr-solar-sailer` — blocked-deps=0, revdeps=1, total-deps=0
+2. `html2markdown` — blocked-deps=0, revdeps=12, total-deps=3
+3. `openssl-1.1` — blocked-deps=0, revdeps=10, total-deps=2; duplicate-entries=85,11348
+4. `dosh` — blocked-deps=0, revdeps=10, total-deps=5
+5. `xapp-thumbnailers-common` — blocked-deps=0, revdeps=9, total-deps=5
+6. `httpfs2-2gbplus` — blocked-deps=0, revdeps=8, total-deps=4
+7. `python-litex` — blocked-deps=0, revdeps=8, total-deps=9
+8. `qt5-doc` — blocked-deps=0, revdeps=8, total-deps=15
+9. `bcompare` — blocked-deps=0, revdeps=7, total-deps=2
+10. `rvgl-bin` — blocked-deps=0, revdeps=7, total-deps=7
+11. `nvidia-utils-beta` — blocked-deps=0, revdeps=7, total-deps=11
+12. `auto-auto-complete` — blocked-deps=0, revdeps=6, total-deps=1
+13. `archlinux-java-run` — blocked-deps=0, revdeps=6, total-deps=2
+14. `python-opencensus` — blocked-deps=0, revdeps=6, total-deps=4
+15. `yay` — blocked-deps=0, revdeps=5, total-deps=3; duplicate-entries=2022,11311
+16. `c++utilities` — blocked-deps=0, revdeps=5, total-deps=6
+17. `xlibre-xserver-common-git` — blocked-deps=0, revdeps=5, total-deps=32
+18. `jdk25-graalvm-bin` — blocked-deps=0, revdeps=4, total-deps=3
+19. `cpp-jwt` — blocked-deps=0, revdeps=4, total-deps=4
+20. `python-art` — blocked-deps=0, revdeps=4, total-deps=5
+21. `python-munge` — blocked-deps=0, revdeps=4, total-deps=7
+22. `xrizer-common` — blocked-deps=0, revdeps=4, total-deps=9
+23. `sqlite-utils` — blocked-deps=0, revdeps=4, total-deps=11
+24. `ollama-bin` — blocked-deps=0, revdeps=3, total-deps=2
+25. `plasma-wayland-protocols-povd` — blocked-deps=0, revdeps=3, total-deps=2
+26. `ncurses5-compat-libs` — blocked-deps=0, revdeps=3, total-deps=3
+27. `python-condense-json` — blocked-deps=0, revdeps=3, total-deps=5
+28. `zmusic` — blocked-deps=0, revdeps=3, total-deps=5
+29. `python-m3u8` — blocked-deps=0, revdeps=3, total-deps=8
+30. `python312` — blocked-deps=0, revdeps=3, total-deps=12
+31. `llvm-libs-minimal-git` — blocked-deps=0, revdeps=3, total-deps=14
+32. `hyprtoolkit-git` — blocked-deps=0, revdeps=3, total-deps=15
+33. `wayfire` — blocked-deps=0, revdeps=3, total-deps=15
+34. `pgadmin4-server` — blocked-deps=0, revdeps=3, total-deps=16
+35. `python-sse-starlette` — blocked-deps=0, revdeps=3, total-deps=16
+36. `openvino` — blocked-deps=0, revdeps=3, total-deps=18
+37. `dotnet-targeting-pack-bin` — blocked-deps=0, revdeps=2, total-deps=0
+38. `hyprshot` — blocked-deps=0, revdeps=2, total-deps=0
+39. `logmein-hamachi` — blocked-deps=0, revdeps=2, total-deps=0
+40. `ps3-env` — blocked-deps=0, revdeps=2, total-deps=0
+41. `samsung-unified-driver-common` — blocked-deps=0, revdeps=2, total-deps=0
+42. `dotnet-targeting-pack-7.0-bin` — blocked-deps=0, revdeps=2, total-deps=1
+43. `dotnet-targeting-pack-9.0-bin` — blocked-deps=0, revdeps=2, total-deps=1
+44. `ledger-udev` — blocked-deps=0, revdeps=2, total-deps=1
+45. `lianwalld-bin` — blocked-deps=0, revdeps=2, total-deps=2
+46. `python-aiocache` — blocked-deps=0, revdeps=2, total-deps=2
+47. `python-plyer` — blocked-deps=0, revdeps=2, total-deps=2
+48. `qtilitools` — blocked-deps=0, revdeps=2, total-deps=2
+49. `xone-dongle-firmware` — blocked-deps=0, revdeps=2, total-deps=2
+50. `gtk-sharp-2` — blocked-deps=0, revdeps=2, total-deps=3
+51. `verify-lib` — blocked-deps=0, revdeps=2, total-deps=3
+52. `foobar2000` — blocked-deps=0, revdeps=2, total-deps=4
+53. `libelectron` — blocked-deps=0, revdeps=2, total-deps=4
+54. `libuvc` — blocked-deps=0, revdeps=2, total-deps=4
+55. `mozc` — blocked-deps=0, revdeps=2, total-deps=4
+56. `paru` — blocked-deps=0, revdeps=2, total-deps=4; duplicate-entries=2023,11312
+57. `qt5-connectivity` — blocked-deps=0, revdeps=2, total-deps=4
+58. `lib32-blas` — blocked-deps=0, revdeps=2, total-deps=5
+59. `osu-mime` — blocked-deps=0, revdeps=2, total-deps=5
+60. `python-aiolimiter` — blocked-deps=0, revdeps=2, total-deps=5
+61. `bms-shell` — blocked-deps=0, revdeps=2, total-deps=7
+62. `dotnet-runtime-bin` — blocked-deps=0, revdeps=2, total-deps=7
+63. `python-inquirerpy` — blocked-deps=0, revdeps=2, total-deps=7
+64. `dotnet-runtime-7.0-bin` — blocked-deps=0, revdeps=2, total-deps=8
+65. `dotnet-runtime-9.0-bin` — blocked-deps=0, revdeps=2, total-deps=8
+66. `gslapper` — blocked-deps=0, revdeps=2, total-deps=8
+67. `python-uv-dynamic-versioning` — blocked-deps=0, revdeps=2, total-deps=8
+68. `wl-screenrec` — blocked-deps=0, revdeps=2, total-deps=8
+69. `electron-castlab-bin` — blocked-deps=0, revdeps=2, total-deps=9
+70. `openbangla-keyboard-git` — blocked-deps=0, revdeps=2, total-deps=9
+71. `radicle-node` — blocked-deps=0, revdeps=2, total-deps=9
+72. `web-eid-native` — blocked-deps=0, revdeps=2, total-deps=10
+73. `qmc2-common-git` — blocked-deps=0, revdeps=2, total-deps=11
+74. `lgogdownloader` — blocked-deps=0, revdeps=2, total-deps=12
+75. `python-mistralai` — blocked-deps=0, revdeps=2, total-deps=14
+76. `linux-lqx` — blocked-deps=0, revdeps=2, total-deps=17
+77. `fooyin` — blocked-deps=0, revdeps=2, total-deps=20
+78. `vscodium-translucent` — blocked-deps=0, revdeps=2, total-deps=21
+79. `rom-properties` — blocked-deps=0, revdeps=2, total-deps=31
+80. `ros2-arch-deps` — blocked-deps=0, revdeps=2, total-deps=44
+81. `sonic-win` — blocked-deps=0, revdeps=2, total-deps=61
+82. `cachyos-ananicy-rules` — blocked-deps=0, revdeps=1, total-deps=0
+83. `circle-flags` — blocked-deps=0, revdeps=1, total-deps=0
+84. `clash-geoip` — blocked-deps=0, revdeps=1, total-deps=0
+85. `genders` — blocked-deps=0, revdeps=1, total-deps=0
+86. `ghostty-shell-integration-nightly-bin` — blocked-deps=0, revdeps=1, total-deps=0
+87. `ghostty-terminfo-nightly-bin` — blocked-deps=0, revdeps=1, total-deps=0
+88. `keychron-link-udev` — blocked-deps=0, revdeps=1, total-deps=0
+89. `libfmod` — blocked-deps=0, revdeps=1, total-deps=0
+90. `localepurge` — blocked-deps=0, revdeps=1, total-deps=0
+91. `noto-fonts-emoji-blob` — blocked-deps=0, revdeps=1, total-deps=0
+92. `redhat-fonts` — blocked-deps=0, revdeps=1, total-deps=0
 93. `tailscale` — blocked-deps=0, revdeps=1, total-deps=0
 94. `ttf-material-symbols-variable-git` — blocked-deps=0, revdeps=1, total-deps=0
 95. `upd72020x-fw` — blocked-deps=0, revdeps=1, total-deps=0
 96. `waydroid` — blocked-deps=0, revdeps=1, total-deps=0
-97. `wd719x-firmware` — blocked-deps=0, revdeps=1, total-deps=0
-98. `wolfssl-all` — blocked-deps=0, revdeps=1, total-deps=0
-99. `zerotier-one` — blocked-deps=0, revdeps=1, total-deps=0
-100. `acestream-engine` — blocked-deps=0, revdeps=1, total-deps=1
+97. `zerotier-one` — blocked-deps=0, revdeps=1, total-deps=0
+98. `arduino-ctags` — blocked-deps=0, revdeps=1, total-deps=1
+99. `asroot` — blocked-deps=0, revdeps=1, total-deps=1
+100. `brscan4` — blocked-deps=0, revdeps=1, total-deps=1
 
 ## Top 20 Snapshot
 - 1. `elephant-bin` (blocked=0, rev=23, total=1)
-- 2. `dosh` (blocked=0, rev=10, total=2)
-- 3. `openssl-1.1` (blocked=0, rev=9, total=1)
-- 4. `xapp-thumbnailers-common` (blocked=0, rev=9, total=4)
-- 5. `python-litex` (blocked=0, rev=8, total=4)
-- 6. `bcompare` (blocked=0, rev=7, total=1)
-- 7. `rvgl-bin` (blocked=0, rev=7, total=5)
-- 8. `archlinux-java-run` (blocked=0, rev=6, total=2)
-- 9. `nvidia-utils-beta` (blocked=0, rev=6, total=11)
-- 10. `yay` (blocked=0, rev=5, total=2)
-- 11. `c++utilities` (blocked=0, rev=5, total=3)
-- 12. `xlibre-xserver-common-git` (blocked=0, rev=5, total=3)
-- 13. `xrizer-common` (blocked=0, rev=4, total=0)
-- 14. `python-munge` (blocked=0, rev=4, total=2)
-- 15. `sqlite-utils` (blocked=0, rev=4, total=6)
-- 16. `pilowlava-font-common` (blocked=0, rev=3, total=0)
-- 17. `python-condense-json` (blocked=0, rev=3, total=0)
-- 18. `xmlada` (blocked=0, rev=3, total=0)
-- 19. `python-m3u8` (blocked=0, rev=3, total=1)
-- 20. `qt5-location` (blocked=0, rev=3, total=1)
-
-## Node Details (top 100)
-### `elephant-bin`
-- blocked deps (0): _none_
-- direct deps (1): `glibc`
-- required by blocked (23): `elephant-1password-bin`, `elephant-all-bin`, `elephant-archlinuxpkgs-bin`, `elephant-bitwarden-bin`, `elephant-bluetooth-bin`, `elephant-bookmarks-bin`, `elephant-calc-bin`, `elephant-clipboard-bin`, `elephant-desktopapplications-bin`, `elephant-dnfpackages-bin`, `elephant-files-bin`, `elephant-menus-bin`, `elephant-niriactions-bin`, `elephant-nirisessions-bin`, `elephant-providerlist-bin`, `elephant-runner-bin`, `elephant-snippets-bin`, `elephant-symbols-bin`, `elephant-todo-bin`, `elephant-unicode-bin`, `elephant-websearch-bin`, `elephant-windows-bin`, `elephant-wireplumber-bin`
-
-### `dosh`
-- blocked deps (0): _none_
-- direct deps (2): `bash`, `docker`
-- required by blocked (10): `domake`, `dosh-cqfd`, `dosh-docker-shell`, `dosh-linux-amd64`, `dosh-linux-arm`, `dosh-linux-arm64`, `dosh-linux-ppc64le`, `dosh-linux-riscv64`, `dosh-linux-s390x`, `dosh-posh`
-
-### `openssl-1.1`
-- blocked deps (0): _none_
-- direct deps (1): `glibc`
-- required by blocked (9): `amazon-workspaces-bin`, `dell-command-configure`, `en-croissant-bin`, `freac-bin`, `powerpanel`, `qfinderpro-bin`, `runescape-launcher`, `solar2d-git`, `wiznoteplus-bin`
-
-### `xapp-thumbnailers-common`
-- blocked deps (0): _none_
-- direct deps (4): `gdk-pixbuf2`, `python-gobject`, `python-pillow`, `xapp`
-- required by blocked (9): `xapp-aiff-thumbnailer`, `xapp-appimage-thumbnailer`, `xapp-epub-thumbnailer`, `xapp-gimp-thumbnailer`, `xapp-jxl-thumbnailer`, `xapp-mp3-thumbnailer`, `xapp-ora-thumbnailer`, `xapp-raw-thumbnailer`, `xapp-vorbiscomment-thumbnailer`
-
-### `python-litex`
-- blocked deps (0): _none_
-- direct deps (4): `python-migen`, `python-pyserial`, `python-pythondata-software-compiler_rt`, `python-requests`
-- required by blocked (8): `python-litedram`, `python-liteeth`, `python-liteiclink`, `python-litejesd204b`, `python-litepcie`, `python-litesata`, `python-litescope`, `python-litesdcard`
-
-### `bcompare`
-- blocked deps (0): _none_
-- direct deps (1): `qt6-base`
-- required by blocked (7): `bcompare-cinnamon`, `bcompare-kde4`, `bcompare-kde5`, `bcompare-kde6`, `bcompare-mate`, `bcompare-nautilus`, `bcompare-thunar`
-
-### `rvgl-bin`
-- blocked deps (0): _none_
-- direct deps (5): `enet`, `libunistring`, `openal`, `sdl2`, `sdl2_image`
-- required by blocked (7): `rvgl-dcpack`, `rvgl-io-cars`, `rvgl-io-loadlevel`, `rvgl-io-music`, `rvgl-io-skins-bonus`, `rvgl-io-soundtrack`, `rvgl-io-tracks`
-
-### `archlinux-java-run`
-- blocked deps (0): _none_
-- direct deps (2): `bash`, `java-runtime-common`
-- required by blocked (6): `audiorelay`, `jabref`, `openhab5`, `pdfsam`, `stm32cubemx`, `tvbrowser`
-
-### `nvidia-utils-beta`
-- blocked deps (0): _none_
-- direct deps (11): `bash`, `egl-gbm`, `egl-wayland`, `egl-wayland2`, `egl-x11`, `glibc`, `libgcc`, `libglvnd`, `libx11`, `libxext`, `openssl`
-- required by blocked (6): `lib32-nvidia-utils-beta`, `nvidia-beta`, `nvidia-beta-dkms`, `nvidia-open-beta`, `nvidia-open-beta-dkms`, `nvidia-settings-beta`
-
-### `yay`
-- blocked deps (0): _none_
-- direct deps (2): `git`, `pacman`
-- required by blocked (5): `paczf-yay`, `portage-manifest`, `spm-arch`, `yap-bin`, `yay-sys-tray-git`
-
-### `c++utilities`
-- blocked deps (0): _none_
-- direct deps (3): `glibc`, `libgcc`, `libstdc++`
-- required by blocked (5): `qtutilities-qt6`, `syncthingtray`, `syncthingtray-qt6`, `tageditor-cli`, `tagparser`
-
-### `xlibre-xserver-common-git`
-- blocked deps (0): _none_
-- direct deps (3): `xkeyboard-config`, `xorg-setxkbmap`, `xorg-xkbcomp`
-- required by blocked (5): `xlibre-xserver-bootstrap-git`, `xlibre-xserver-git`, `xlibre-xserver-xephyr-git`, `xlibre-xserver-xnest-git`, `xlibre-xserver-xvfb-git`
-
-### `xrizer-common`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (4): `lib32-xrizer`, `lib32-xrizer-git`, `xrizer`, `xrizer-git`
-
-### `python-munge`
-- blocked deps (0): _none_
-- direct deps (2): `python-click`, `python-requests`
-- required by blocked (4): `python-confu`, `python-pluginmgr`, `python-vodka`, `vaping`
-
-### `sqlite-utils`
-- blocked deps (0): _none_
-- direct deps (6): `python-click`, `python-click-default-group`, `python-dateutil`, `python-pluggy`, `python-sqlite-fts4`, `python-tabulate`
-- required by blocked (4): `llm`, `llm-git`, `python-llm`, `python-sqlite-migrate`
-
-### `pilowlava-font-common`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (3): `otf-pilowlava`, `woff-pilowlava`, `woff2-pilowlava`
-
-### `python-condense-json`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (3): `llm`, `llm-git`, `python-llm`
-
-### `xmlada`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (3): `gprname`, `gprtools`, `libgpr`
-
-### `python-m3u8`
-- blocked deps (0): _none_
-- direct deps (1): `python-iso8601`
-- required by blocked (3): `cyberdropdownloader`, `streamrip`, `tidal-dl-ng`
-
-### `qt5-location`
-- blocked deps (0): _none_
-- direct deps (1): `qt5-declarative`
-- required by blocked (3): `harbour-amazfish-git`, `qt5-webkit`, `xnviewmp-system-libs`
-
-### `ollama-bin`
-- blocked deps (0): _none_
-- direct deps (2): `gcc-libs`, `glibc`
-- required by blocked (3): `ollama-cuda12-bin`, `ollama-cuda13-bin`, `ollama-vulkan-bin`
-
-### `zmusic`
-- blocked deps (0): _none_
-- direct deps (3): `alsa-lib`, `libsndfile`, `mpg123`
-- required by blocked (3): `gzdoom`, `raze`, `uzdoom`
-
-### `openvino`
-- blocked deps (0): _none_
-- direct deps (6): `glibc`, `libgcc`, `libstdc++`, `onetbb`, `pugixml`, `snappy`
-- required by blocked (3): `openvino-intel-gpu-plugin`, `openvino-intel-npu-plugin`, `python-openvino`
-
-### `wayfire`
-- blocked deps (0): _none_
-- direct deps (7): `cairo`, `libinput`, `libjpeg`, `pango`, `wf-config`, `wlroots0.19`, `yyjson`
-- required by blocked (3): `wayfire-plugins-extra`, `wcm`, `wf-shell`
-
-### `llvm-libs-minimal-git`
-- blocked deps (0): _none_
-- direct deps (8): `gcc-libs`, `glibc`, `libedit`, `libffi`, `libxml2`, `ncurses`, `zlib`, `zstd`
-- required by blocked (3): `clang-libs-minimal-git`, `clang-minimal-git`, `llvm-minimal-git`
-
-### `hyprtoolkit-git`
-- blocked deps (0): _none_
-- direct deps (12): `aquamarine-git`, `egl-gbm`, `hyprgraphics-git`, `hyprlang-git`, `hyprutils-git`, `hyprwayland-scanner-git`, `iniparser`, `libdrm`, `libxkbcommon`, `pango`, `pixman`, `wayland`
-- required by blocked (3): `hyprlauncher-git`, `hyprpwcenter-git`, `hyprshutdown-git`
-
-### `dotnet-targeting-pack-bin`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (2): `aspnet-targeting-pack-bin`, `dotnet-sdk-bin`
-
-### `hyprshot`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (2): `hypryou`, `sleex-git`
-
-### `logmein-hamachi`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (2): `haguichi`, `hanuchi`
-
-### `ps3-env`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (2): `ps3-psl1ght`, `ps3toolchain`
-
-### `samsung-unified-driver-common`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (2): `samsung-unified-driver-printer`, `samsung-unified-driver-scanner`
-
-### `xone-dongle-firmware`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (2): `xone-dkms`, `xone-dkms-git`
-
-### `dotnet-targeting-pack-7.0-bin`
-- blocked deps (0): _none_
-- direct deps (1): `netstandard-targeting-pack`
-- required by blocked (2): `aspnet-targeting-pack-7.0-bin`, `dotnet-sdk-7.0-bin`
-
-### `dotnet-targeting-pack-9.0-bin`
-- blocked deps (0): _none_
-- direct deps (1): `netstandard-targeting-pack`
-- required by blocked (2): `aspnet-targeting-pack-9.0-bin`, `dotnet-sdk-9.0-bin`
-
-### `ledger-udev`
-- blocked deps (0): _none_
-- direct deps (1): `udev`
-- required by blocked (2): `ledger-live`, `ledger-live-bin`
-
-### `mozc`
-- blocked deps (0): _none_
-- direct deps (1): `qt6-base`
-- required by blocked (2): `emacs-mozc`, `fcitx5-mozc-ut`
-
-### `python-aiocache`
-- blocked deps (0): _none_
-- direct deps (1): `python`
-- required by blocked (2): `immich-machine-learning`, `open-webui-no-venv`
-
-### `python-aiolimiter`
-- blocked deps (0): _none_
-- direct deps (1): `python`
-- required by blocked (2): `cyberdropdownloader`, `streamrip`
-
-### `python-art`
-- blocked deps (0): _none_
-- direct deps (1): `python`
-- required by blocked (2): `mytimer`, `python-clox`
-
-### `python-plyer`
-- blocked deps (0): _none_
-- direct deps (1): `python`
-- required by blocked (2): `clipcascade-bin`, `viu-media`
-
-### `qt5-scxml`
-- blocked deps (0): _none_
-- direct deps (1): `qt5-declarative`
-- required by blocked (2): `pyside2`, `qxmledit`
-
-### `verify-lib`
-- blocked deps (0): _none_
-- direct deps (1): `glibc`
-- required by blocked (2): `atomic-upgrade`, `gitpkg`
-
-### `foobar2000`
-- blocked deps (0): _none_
-- direct deps (2): `desktop-file-utils`, `wine`
-- required by blocked (2): `foobar2000-component-beefweb-bin`, `foobar2000-component-openlyrics-bin`
-
-### `lianwalld-bin`
-- blocked deps (0): _none_
-- direct deps (2): `awww`, `mpvpaper`
-- required by blocked (2): `lianwall-bin`, `lianwall-gui-bin`
-
-### `lib32-blas`
-- blocked deps (0): _none_
-- direct deps (2): `blas`, `lib32-gcc-libs`
-- required by blocked (2): `lib32-cblas`, `lib32-lapack`
-
-### `qt5-wayland-decorations`
-- blocked deps (0): _none_
-- direct deps (2): `libxcomposite`, `qt5-declarative`
-- required by blocked (2): `qadwaitadecorations-qt5`, `qwhitesurgtkdecorations-qt5`
-
-### `libelectron`
-- blocked deps (0): _none_
-- direct deps (3): `git`, `icu`, `npm`
-- required by blocked (2): `crunchyroll`, `netflix`
-
-### `linux-lqx`
-- blocked deps (0): _none_
-- direct deps (3): `coreutils`, `initramfs`, `kmod`
-- required by blocked (2): `linux-lqx-docs`, `linux-lqx-headers`
-
-### `ncurses5-compat-libs`
-- blocked deps (0): _none_
-- direct deps (3): `gcc-libs`, `glibc`, `sh`
-- required by blocked (2): `local-by-flywheel-bin`, `stm32cubeide`
-
-### `osu-mime`
-- blocked deps (0): _none_
-- direct deps (3): `desktop-file-utils`, `shared-mime-info`, `xdg-utils`
-- required by blocked (2): `osu-lazer-bin`, `osu-lazer-tachyon-bin`
-
-### `paru`
-- blocked deps (0): _none_
-- direct deps (3): `git`, `libalpm.so`, `pacman`
-- required by blocked (2): `aurscan-git`, `paruse`
-
-### `pgadmin4-server`
-- blocked deps (0): _none_
-- direct deps (3): `krb5`, `postgresql-libs`, `python-dbus`
-- required by blocked (2): `pgadmin4`, `pgadmin4-desktop-bin`
-
-### `python-inquirerpy`
-- blocked deps (0): _none_
-- direct deps (3): `python`, `python-pfzy`, `python-prompt_toolkit`
-- required by blocked (2): `cyberdropdownloader`, `viu-media`
-
-### `openbangla-keyboard-git`
-- blocked deps (0): _none_
-- direct deps (4): `hicolor-icon-theme`, `openbangla-im`, `qt5-base`, `zstd`
-- required by blocked (2): `fcitx5-openbangla-git`, `ibus-openbangla-git`
-
-### `wl-screenrec`
-- blocked deps (0): _none_
-- direct deps (4): `ffmpeg`, `gcc-libs`, `glibc`, `libva-driver`
-- required by blocked (2): `hyprgrab-git`, `roton-bin`
-
-### `gslapper`
-- blocked deps (0): _none_
-- direct deps (5): `gst-plugins-bad`, `gst-plugins-base`, `gst-plugins-good`, `gstreamer`, `wayland`
-- required by blocked (2): `sysc-greet`, `sysc-greet-hyprland`
-
-### `bms-shell`
-- blocked deps (0): _none_
-- direct deps (6): `bms-shell-compositor`, `dgop`, `inter-font`, `quickshell`, `ttf-fira-code`, `ttf-material-symbols-variable`
-- required by blocked (2): `bms-shell-hyprland`, `bms-shell-niri`
-
-### `web-eid-native`
-- blocked deps (0): _none_
-- direct deps (6): `ccid`, `hicolor-icon-theme`, `openssl`, `pcsclite`, `qt6-base`, `qt6-svg`
-- required by blocked (2): `web-eid-chrome`, `web-eid-firefox`
-
-### `dotnet-runtime-bin`
-- blocked deps (0): _none_
-- direct deps (7): `dotnet-host`, `gcc-libs`, `glibc`, `icu`, `libunwind`, `openssl`, `zlib`
-- required by blocked (2): `aspnet-runtime-bin`, `dotnet-sdk-bin`
-
-### `fooyin`
-- blocked deps (0): _none_
-- direct deps (7): `alsa-lib`, `ffmpeg`, `kdsingleapplication`, `libvgm-git`, `qcoro`, `qt6-base`, `taglib`
-- required by blocked (2): `fooyin-kode54-plugins-git`, `fooyin-plugin-libvgm-git`
-
-### `radicle-node`
-- blocked deps (0): _none_
-- direct deps (7): `git`, `glibc`, `libgcc`, `libgit2`, `libgit2.so`, `openssh`, `zlib`
-- required by blocked (2): `radicle-httpd`, `radicle-httpd-git`
-
-### `dotnet-runtime-7.0-bin`
-- blocked deps (0): _none_
-- direct deps (8): `dotnet-host`, `gcc-libs`, `glibc`, `icu`, `libgssapi_krb5.so`, `libunwind`, `openssl`, `zlib`
-- required by blocked (2): `aspnet-runtime-7.0-bin`, `dotnet-sdk-7.0-bin`
-
-### `dotnet-runtime-9.0-bin`
-- blocked deps (0): _none_
-- direct deps (8): `dotnet-host`, `gcc-libs`, `glibc`, `icu`, `krb5`, `libunwind`, `openssl`, `zlib`
-- required by blocked (2): `aspnet-runtime-9.0-bin`, `dotnet-sdk-9.0-bin`
-
-### `electron-castlab-bin`
-- blocked deps (0): _none_
-- direct deps (9): `c-ares`, `gcc-libs`, `glibc`, `gtk3`, `libevent`, `libffi`, `libpulse`, `nss`, `zlib`
-- required by blocked (2): `crunchyroll`, `netflix`
-
-### `vscodium-translucent`
-- blocked deps (0): _none_
-- direct deps (10): `alsa-lib`, `cairo`, `fontconfig`, `glibc`, `gtk3`, `libnotify`, `libxkbfile`, `libxss`, `libxtst`, `nss`
-- required by blocked (2): `vscodium-translucent-features`, `vscodium-translucent-marketplace`
-
-### `rom-properties`
-- blocked deps (0): _none_
-- direct deps (12): `curl`, `fmt`, `gcc-libs`, `glibc`, `libjpeg-turbo`, `libpng`, `libseccomp`, `lz4`, `lzo`, `nettle`, `tinyxml2`, `zlib`
-- required by blocked (2): `rom-properties-gtk`, `rom-properties-kde`
-
-### `jdk22-openjdk`
-- blocked deps (0): _none_
-- direct deps (19): `ca-certificates-utils`, `freetype2`, `gcc-libs`, `glibc`, `harfbuzz`, `hicolor-icon-theme`, `java-environment-common`, `java-runtime-common`, `lcms2`, `libelf`, `libfreetype.so`, `libgif.so`, `libharfbuzz.so`, `libjpeg-turbo`, `libjpeg.so`, `liblcms2.so`, `libnet`, `libpng`, `nss`
-- required by blocked (2): `openjdk22-doc`, `openjdk22-src`
-
-### `jdk25-openjdk-wakefield`
-- blocked deps (0): _none_
-- direct deps (21): `ca-certificates-utils`, `freetype2`, `gcc-libs`, `glibc`, `harfbuzz`, `hicolor-icon-theme`, `java-environment-common`, `java-runtime-common`, `lcms2`, `libelf`, `libfreetype.so`, `libgif.so`, `libharfbuzz.so`, `libjpeg-turbo`, `libjpeg.so`, `liblcms2.so`, `libnet`, `libpng`, `nss`, `wayland`, `wayland-protocols`
-- required by blocked (2): `openjdk25-doc-wakefield`, `openjdk25-src-wakefield`
-
-### `ros2-arch-deps`
-- blocked deps (0): _none_
-- direct deps (44): `asio`, `bullet`, `cmake`, `curl`, `eigen`, `git`, `glew`, `glu`, `hdf5`, `libxaw`, `libxrandr`, `log4cxx`, `opencv`, `openssl`, `poco`, `procps-ng`, `python`, `python-argcomplete`, `python-bloom`, `python-build`, `python-colcon-cd`, `python-colcon-common-extensions`, `python-cryptography`, `python-installer`, `python-lark-parser`, `python-netifaces`, `python-notify2`, `python-numpy`, `python-pyqt5`, `python-pyqt5-sip`, `python-pytest-repeat`, `python-pytest-rerunfailures`, `python-pytest-runner`, `python-pyyaml`, `python-rosinstall-generator`, `python-setuptools`, `python-vcstool`, `python-wheel`, `qt5-base`, `qt5-svg`, `sip`, `tinyxml2`, `vtk`, `wget`
-- required by blocked (2): `ros2-git`, `ros2-humble`
-
-### `sonic-win`
-- blocked deps (0): _none_
-- direct deps (55): `aurorae`, `breeze`, `gcc-libs`, `glibc`, `kauth`, `kcmutils`, `kcolorscheme`, `kconfig`, `kcoreaddons`, `kcrash`, `kdeclarative`, `kdecoration`, `kglobalaccel`, `kglobalacceld`, `kguiaddons`, `ki18n`, `kirigami`, `kitemmodels`, `knewstuff`, `knotifications`, `kpackage`, `kquickcharts`, `kscreenlocker`, `kservice`, `ksvg`, `kwidgetsaddons`, `kwindowsystem`, `kxmlgui`, `lcms2`, `libcanberra`, `libdisplay-info`, `libdrm`, `libepoxy`, `libplasma`, `libqaccessibilityclient-qt6`, `libx11`, `libxcb`, `libxi`, `libxkbcommon`, `libxkbcommon-x11`, `mesa`, `plasma-activities`, `plasma-x11-session`, `qt6-5compat`, `qt6-base`, `qt6-declarative`, `qt6-sensors`, `qt6-svg`, `qt6-tools`, `qt6-wayland`, `systemd-libs`, `wayland`, `xcb-util-cursor`, `xcb-util-keysyms`, `xcb-util-wm`
-- required by blocked (2): `sonic-desktop-interface`, `sonic-workspace`
-
-### `apriltag`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `python-apriltag`
-
-### `circle-flags`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `hypnotix`
-
-### `clash-geoip`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `mihomo`
-
-### `ddccontrol-db-git`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `ddccontrol`
-
-### `element-web-git`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `element-desktop-git`
-
-### `elephant`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `walker-bin`
-
-### `genders`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `pdsh-genders`
-
-### `ghostty-shell-integration-nightly-bin`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `ghostty-nightly-bin`
-
-### `ghostty-terminfo-nightly-bin`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `ghostty-nightly-bin`
-
-### `heidisql`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `heidisql-qt6-git`
-
-### `java-service-wrapper`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `i2p-bin`
-
-### `keychron-link-udev`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `keychron-q3-max-udev`
-
-### `libfmod`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `unrealtournament`
-
-### `libxdiff`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `php-xdiff`
-
-### `localepurge`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `localepurge-hook`
-
-### `noto-fonts-emoji-blob`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `blobmoji-fontconfig`
-
-### `redhat-fonts`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `sddm-silent-theme-git`
-
-### `stardust-xr-black-hole`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `stardust-xr-telescope`
-
-### `stardust-xr-flatland`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `stardust-xr-telescope`
-
-### `stardust-xr-gravity`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `stardust-xr-telescope`
-
-### `stardust-xr-protostar`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `stardust-xr-telescope`
-
-### `stardust-xr-solar-sailer`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `stardust-xr-telescope`
-
-### `tailscale`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `ktailctl`
-
-### `ttf-material-symbols-variable-git`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `hypryou`
-
-### `upd72020x-fw`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `mkinitcpio-firmware`
-
-### `waydroid`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `waydroid-dinit`
-
-### `wd719x-firmware`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `mkinitcpio-firmware`
-
-### `wolfssl-all`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `m33mu-git`
-
-### `zerotier-one`
-- blocked deps (0): _none_
-- direct deps (0): _none_
-- required by blocked (1): `mkinitcpio-zerotier`
-
-### `acestream-engine`
-- blocked deps (0): _none_
-- direct deps (1): `python310`
-- required by blocked (1): `aceplay-bin`
-
+- 2. `html2markdown` (blocked=0, rev=12, total=3)
+- 3. `openssl-1.1` (blocked=0, rev=10, total=2)
+- 4. `dosh` (blocked=0, rev=10, total=5)
+- 5. `xapp-thumbnailers-common` (blocked=0, rev=9, total=5)
+- 6. `httpfs2-2gbplus` (blocked=0, rev=8, total=4)
+- 7. `python-litex` (blocked=0, rev=8, total=9)
+- 8. `qt5-doc` (blocked=0, rev=8, total=15)
+- 9. `bcompare` (blocked=0, rev=7, total=2)
+- 10. `rvgl-bin` (blocked=0, rev=7, total=7)
+- 11. `nvidia-utils-beta` (blocked=0, rev=7, total=11)
+- 12. `auto-auto-complete` (blocked=0, rev=6, total=1)
+- 13. `archlinux-java-run` (blocked=0, rev=6, total=2)
+- 14. `python-opencensus` (blocked=0, rev=6, total=4)
+- 15. `yay` (blocked=0, rev=5, total=3)
+- 16. `c++utilities` (blocked=0, rev=5, total=6)
+- 17. `xlibre-xserver-common-git` (blocked=0, rev=5, total=32)
+- 18. `jdk25-graalvm-bin` (blocked=0, rev=4, total=3)
+- 19. `cpp-jwt` (blocked=0, rev=4, total=4)
+- 20. `python-art` (blocked=0, rev=4, total=5)
+
+## Worker Chunk Map
+- w01: elephant-bin, html2markdown, openssl-1.1, dosh, xapp-thumbnailers-common, httpfs2-2gbplus, python-litex, qt5-doc, bcompare, rvgl-bin
+- w02: nvidia-utils-beta, auto-auto-complete, archlinux-java-run, python-opencensus, yay, c++utilities, xlibre-xserver-common-git, jdk25-graalvm-bin, cpp-jwt, python-art
+- w03: python-munge, xrizer-common, sqlite-utils, ollama-bin, plasma-wayland-protocols-povd, ncurses5-compat-libs, python-condense-json, zmusic, python-m3u8, python312
+- w04: llvm-libs-minimal-git, hyprtoolkit-git, wayfire, pgadmin4-server, python-sse-starlette, openvino, dotnet-targeting-pack-bin, hyprshot, logmein-hamachi, ps3-env
+- w05: samsung-unified-driver-common, dotnet-targeting-pack-7.0-bin, dotnet-targeting-pack-9.0-bin, ledger-udev, lianwalld-bin, python-aiocache, python-plyer, qtilitools, xone-dongle-firmware, gtk-sharp-2
+- w06: verify-lib, foobar2000, libelectron, libuvc, mozc, paru, qt5-connectivity, lib32-blas, osu-mime, python-aiolimiter
+- w07: bms-shell, dotnet-runtime-bin, python-inquirerpy, dotnet-runtime-7.0-bin, dotnet-runtime-9.0-bin, gslapper, python-uv-dynamic-versioning, wl-screenrec, electron-castlab-bin, openbangla-keyboard-git
+- w08: radicle-node, web-eid-native, qmc2-common-git, lgogdownloader, python-mistralai, linux-lqx, fooyin, vscodium-translucent, rom-properties, ros2-arch-deps
+- w09: sonic-win, cachyos-ananicy-rules, circle-flags, clash-geoip, genders, ghostty-shell-integration-nightly-bin, ghostty-terminfo-nightly-bin, keychron-link-udev, libfmod, localepurge
+- w10: noto-fonts-emoji-blob, redhat-fonts, tailscale, ttf-material-symbols-variable-git, upd72020x-fw, waydroid, zerotier-one, arduino-ctags, asroot, brscan4
+
+## Queue Detail (all unique blocked packages)
+
+| Queue | Num | Package | Blocked deps | Reverse deps | Total deps | Duplicate entries | Direct blocked deps |
+|---:|---:|---|---:|---:|---:|---|---|
+| 1 | 3574 | `elephant-bin` | 0 | 23 | 1 | 3574 | — |
+| 2 | 241 | `html2markdown` | 0 | 12 | 3 | 241 | — |
+| 3 | 85 | `openssl-1.1` | 0 | 10 | 2 | 85, 11348 | — |
+| 4 | 5298 | `dosh` | 0 | 10 | 5 | 5298 | — |
+| 5 | 1095 | `xapp-thumbnailers-common` | 0 | 9 | 5 | 1095 | — |
+| 6 | 4702 | `httpfs2-2gbplus` | 0 | 8 | 4 | 4702 | — |
+| 7 | 6687 | `python-litex` | 0 | 8 | 9 | 6687 | — |
+| 8 | 370 | `qt5-doc` | 0 | 8 | 15 | 370 | — |
+| 9 | 1974 | `bcompare` | 0 | 7 | 2 | 1974 | — |
+| 10 | 2379 | `rvgl-bin` | 0 | 7 | 7 | 2379 | — |
+| 11 | 2351 | `nvidia-utils-beta` | 0 | 7 | 11 | 2351 | — |
+| 12 | 7413 | `auto-auto-complete` | 0 | 6 | 1 | 7413 | — |
+| 13 | 1541 | `archlinux-java-run` | 0 | 6 | 2 | 1541 | — |
+| 14 | 2845 | `python-opencensus` | 0 | 6 | 4 | 2845 | — |
+| 15 | 2022 | `yay` | 0 | 5 | 3 | 2022, 11311 | — |
+| 16 | 280 | `c++utilities` | 0 | 5 | 6 | 280 | — |
+| 17 | 6172 | `xlibre-xserver-common-git` | 0 | 5 | 32 | 6172 | — |
+| 18 | 4553 | `jdk25-graalvm-bin` | 0 | 4 | 3 | 4553 | — |
+| 19 | 7321 | `cpp-jwt` | 0 | 4 | 4 | 7321 | — |
+| 20 | 6694 | `python-art` | 0 | 4 | 5 | 6694 | — |
+| 21 | 4329 | `python-munge` | 0 | 4 | 7 | 4329 | — |
+| 22 | 254 | `xrizer-common` | 0 | 4 | 9 | 254 | — |
+| 23 | 6632 | `sqlite-utils` | 0 | 4 | 11 | 6632 | — |
+| 24 | 1515 | `ollama-bin` | 0 | 3 | 2 | 1515 | — |
+| 25 | 2889 | `plasma-wayland-protocols-povd` | 0 | 3 | 2 | 2889 | — |
+| 26 | 389 | `ncurses5-compat-libs` | 0 | 3 | 3 | 389 | — |
+| 27 | 6650 | `python-condense-json` | 0 | 3 | 5 | 6650 | — |
+| 28 | 1505 | `zmusic` | 0 | 3 | 5 | 1505 | — |
+| 29 | 6355 | `python-m3u8` | 0 | 3 | 8 | 6355 | — |
+| 30 | 89 | `python312` | 0 | 3 | 12 | 89 | — |
+| 31 | 3174 | `llvm-libs-minimal-git` | 0 | 3 | 14 | 3174 | — |
+| 32 | 6354 | `hyprtoolkit-git` | 0 | 3 | 15 | 6354 | — |
+| 33 | 466 | `wayfire` | 0 | 3 | 15 | 466 | — |
+| 34 | 1600 | `pgadmin4-server` | 0 | 3 | 16 | 1600 | — |
+| 35 | 1072 | `python-sse-starlette` | 0 | 3 | 16 | 1072 | — |
+| 36 | 983 | `openvino` | 0 | 3 | 18 | 983 | — |
+| 37 | 1268 | `dotnet-targeting-pack-bin` | 0 | 2 | 0 | 1268 | — |
+| 38 | 62 | `hyprshot` | 0 | 2 | 0 | 62 | — |
+| 39 | 1958 | `logmein-hamachi` | 0 | 2 | 0 | 1958 | — |
+| 40 | 5016 | `ps3-env` | 0 | 2 | 0 | 5016 | — |
+| 41 | 651 | `samsung-unified-driver-common` | 0 | 2 | 0 | 651 | — |
+| 42 | 6746 | `dotnet-targeting-pack-7.0-bin` | 0 | 2 | 1 | 6746 | — |
+| 43 | 6361 | `dotnet-targeting-pack-9.0-bin` | 0 | 2 | 1 | 6361 | — |
+| 44 | 951 | `ledger-udev` | 0 | 2 | 1 | 951 | — |
+| 45 | 4062 | `lianwalld-bin` | 0 | 2 | 2 | 4062 | — |
+| 46 | 6831 | `python-aiocache` | 0 | 2 | 2 | 6831 | — |
+| 47 | 5156 | `python-plyer` | 0 | 2 | 2 | 5156 | — |
+| 48 | 3827 | `qtilitools` | 0 | 2 | 2 | 3827 | — |
+| 49 | 197 | `xone-dongle-firmware` | 0 | 2 | 2 | 197 | — |
+| 50 | 285 | `gtk-sharp-2` | 0 | 2 | 3 | 285 | — |
+| 51 | 2667 | `verify-lib` | 0 | 2 | 3 | 2667 | — |
+| 52 | 1968 | `foobar2000` | 0 | 2 | 4 | 1968 | — |
+| 53 | 5325 | `libelectron` | 0 | 2 | 4 | 5325 | — |
+| 54 | 1718 | `libuvc` | 0 | 2 | 4 | 1718 | — |
+| 55 | 245 | `mozc` | 0 | 2 | 4 | 245 | — |
+| 56 | 2023 | `paru` | 0 | 2 | 4 | 2023, 11312 | — |
+| 57 | 5039 | `qt5-connectivity` | 0 | 2 | 4 | 5039 | — |
+| 58 | 6209 | `lib32-blas` | 0 | 2 | 5 | 6209 | — |
+| 59 | 2334 | `osu-mime` | 0 | 2 | 5 | 2334 | — |
+| 60 | 7415 | `python-aiolimiter` | 0 | 2 | 5 | 7415 | — |
+| 61 | 6310 | `bms-shell` | 0 | 2 | 7 | 6310 | — |
+| 62 | 1270 | `dotnet-runtime-bin` | 0 | 2 | 7 | 1270 | — |
+| 63 | 3882 | `python-inquirerpy` | 0 | 2 | 7 | 3882 | — |
+| 64 | 6748 | `dotnet-runtime-7.0-bin` | 0 | 2 | 8 | 6748 | — |
+| 65 | 6363 | `dotnet-runtime-9.0-bin` | 0 | 2 | 8 | 6363 | — |
+| 66 | 6326 | `gslapper` | 0 | 2 | 8 | 6326 | — |
+| 67 | 2740 | `python-uv-dynamic-versioning` | 0 | 2 | 8 | 2740 | — |
+| 68 | 220 | `wl-screenrec` | 0 | 2 | 8 | 220 | — |
+| 69 | 5338 | `electron-castlab-bin` | 0 | 2 | 9 | 5338 | — |
+| 70 | 3131 | `openbangla-keyboard-git` | 0 | 2 | 9 | 3131 | — |
+| 71 | 3344 | `radicle-node` | 0 | 2 | 9 | 3344 | — |
+| 72 | 1738 | `web-eid-native` | 0 | 2 | 10 | 1738 | — |
+| 73 | 8305 | `qmc2-common-git` | 0 | 2 | 11 | 8305 | — |
+| 74 | 1274 | `lgogdownloader` | 0 | 2 | 12 | 1274 | — |
+| 75 | 2123 | `python-mistralai` | 0 | 2 | 14 | 2123 | — |
+| 76 | 457 | `linux-lqx` | 0 | 2 | 17 | 457 | — |
+| 77 | 135 | `fooyin` | 0 | 2 | 20 | 135 | — |
+| 78 | 3129 | `vscodium-translucent` | 0 | 2 | 21 | 3129 | — |
+| 79 | 2405 | `rom-properties` | 0 | 2 | 31 | 2405 | — |
+| 80 | 4822 | `ros2-arch-deps` | 0 | 2 | 44 | 4822 | — |
+| 81 | 1915 | `sonic-win` | 0 | 2 | 61 | 1915 | — |
+| 82 | 5049 | `cachyos-ananicy-rules` | 0 | 1 | 0 | 5049 | — |
+| 83 | 940 | `circle-flags` | 0 | 1 | 0 | 940 | — |
+| 84 | 4131 | `clash-geoip` | 0 | 1 | 0 | 4131 | — |
+| 85 | 7422 | `genders` | 0 | 1 | 0 | 7422 | — |
+| 86 | 1178 | `ghostty-shell-integration-nightly-bin` | 0 | 1 | 0 | 1178 | — |
+| 87 | 1177 | `ghostty-terminfo-nightly-bin` | 0 | 1 | 0 | 1177 | — |
+| 88 | 4168 | `keychron-link-udev` | 0 | 1 | 0 | 4168 | — |
+| 89 | 7233 | `libfmod` | 0 | 1 | 0 | 7233 | — |
+| 90 | 475 | `localepurge` | 0 | 1 | 0 | 475 | — |
+| 91 | 7037 | `noto-fonts-emoji-blob` | 0 | 1 | 0 | 7037 | — |
+| 92 | 4123 | `redhat-fonts` | 0 | 1 | 0 | 4123 | — |
+| 93 | 52 | `tailscale` | 0 | 1 | 0 | 52 | — |
+| 94 | 1919 | `ttf-material-symbols-variable-git` | 0 | 1 | 0 | 1919 | — |
+| 95 | 178 | `upd72020x-fw` | 0 | 1 | 0 | 178 | — |
+| 96 | 57 | `waydroid` | 0 | 1 | 0 | 57 | — |
+| 97 | 53 | `zerotier-one` | 0 | 1 | 0 | 53 | — |
+| 98 | 222 | `arduino-ctags` | 0 | 1 | 1 | 222 | — |
+| 99 | 3730 | `asroot` | 0 | 1 | 1 | 3730 | — |
+| 100 | 394 | `brscan4` | 0 | 1 | 1 | 394 | — |
+| 101 | 4242 | `deb2targz` | 0 | 1 | 1 | 4242 | — |
+| 102 | 192 | `elephant` | 0 | 1 | 1 | 192 | — |
+| 103 | 8079 | `grepcidr` | 0 | 1 | 1 | 8079 | — |
+| 104 | 8217 | `kaitai-struct-compiler` | 0 | 1 | 1 | 8217 | — |
+| 105 | 1043 | `libjodycode` | 0 | 1 | 1 | 1043 | — |
+| 106 | 4865 | `notify-send.sh` | 0 | 1 | 1 | 4865 | — |
+| 107 | 8581 | `ruby-http-2` | 0 | 1 | 1 | 8581 | — |
+| 108 | 7609 | `scala3` | 0 | 1 | 1 | 7609 | — |
+| 109 | 3313 | `tuxedo-drivers-dkms` | 0 | 1 | 1 | 3313 | — |
+| 110 | 1900 | `wd719x-firmware` | 0 | 1 | 1 | 1900 | — |
+| 111 | 8014 | `acestream-engine` | 0 | 1 | 2 | 8014, 8014 | — |
+| 112 | 7456 | `alice3-bin` | 0 | 1 | 2 | 7456 | — |
+| 113 | 4670 | `apriltag` | 0 | 1 | 2 | 4670 | — |
+| 114 | 5366 | `bwidget` | 0 | 1 | 2 | 5366 | — |
+| 115 | 4186 | `heidisql` | 0 | 1 | 2 | 4186 | — |
+| 116 | 4572 | `java-service-wrapper` | 0 | 1 | 2 | 4572 | — |
+| 117 | 967 | `jre25-temurin` | 0 | 1 | 2 | 967 | — |
+| 118 | 2372 | `lib32-l-smash` | 0 | 1 | 2 | 2372 | — |
+| 119 | 5449 | `libmodule` | 0 | 1 | 2 | 5449 | — |
+| 120 | 3184 | `libticables` | 0 | 1 | 2 | 3184 | — |
+| 121 | 3183 | `libtifiles` | 0 | 1 | 2 | 3183 | — |
+| 122 | 3597 | `makepkg-git-lfs-proto` | 0 | 1 | 2 | 3597 | — |
+| 123 | 4763 | `mint-y-icons` | 0 | 1 | 2 | 4763 | — |
+| 124 | 6212 | `mintcommon` | 0 | 1 | 2 | 6212 | — |
+| 125 | 2096 | `new-lg4ff-dkms-git` | 0 | 1 | 2 | 2096 | — |
+| 126 | 4111 | `numix-icon-theme-git` | 0 | 1 | 2 | 4111 | — |
+| 127 | 7800 | `otf-misans` | 0 | 1 | 2 | 7800 | — |
+| 128 | 7802 | `otf-misans-arabic` | 0 | 1 | 2 | 7802 | — |
+| 129 | 7803 | `otf-misans-devanagari` | 0 | 1 | 2 | 7803 | — |
+| 130 | 7804 | `otf-misans-gujarati` | 0 | 1 | 2 | 7804 | — |
+| 131 | 7805 | `otf-misans-gurmukhi` | 0 | 1 | 2 | 7805 | — |
+| 132 | 7806 | `otf-misans-khmer` | 0 | 1 | 2 | 7806 | — |
+| 133 | 7807 | `otf-misans-l3` | 0 | 1 | 2 | 7807 | — |
+| 134 | 7801 | `otf-misans-lao` | 0 | 1 | 2 | 7801 | — |
+| 135 | 7808 | `otf-misans-latin` | 0 | 1 | 2 | 7808 | — |
+| 136 | 7809 | `otf-misans-myanmar` | 0 | 1 | 2 | 7809 | — |
+| 137 | 7810 | `otf-misans-tc` | 0 | 1 | 2 | 7810 | — |
+| 138 | 7811 | `otf-misans-thai` | 0 | 1 | 2 | 7811 | — |
+| 139 | 7812 | `otf-misans-tibetan` | 0 | 1 | 2 | 7812 | — |
+| 140 | 139 | `piper-voices-common` | 0 | 1 | 2 | 139 | — |
+| 141 | 4779 | `python-sysv_ipc` | 0 | 1 | 2 | 4779 | — |
+| 142 | 8168 | `ruby-kaitai-struct` | 0 | 1 | 2 | 8168 | — |
+| 143 | 1768 | `sac-core` | 0 | 1 | 2 | 1768 | — |
+| 144 | 7647 | `sh-elf-binutils` | 0 | 1 | 2 | 7647 | — |
+| 145 | 4868 | `stardust-xr-black-hole` | 0 | 1 | 2 | 4868 | — |
+| 146 | 4858 | `stardust-xr-flatland` | 0 | 1 | 2 | 4858 | — |
+| 147 | 4859 | `stardust-xr-gravity` | 0 | 1 | 2 | 4859 | — |
+| 148 | 4862 | `stardust-xr-protostar` | 0 | 1 | 2 | 4862 | — |
+| 149 | 824 | `stardust-xr-solar-sailer` | 0 | 1 | 2 | 824 | — |
+| 150 | 7787 | `ttf-misans` | 0 | 1 | 2 | 7787 | — |
+| 151 | 7789 | `ttf-misans-arabic` | 0 | 1 | 2 | 7789 | — |
+| 152 | 7790 | `ttf-misans-devanagari` | 0 | 1 | 2 | 7790 | — |
+| 153 | 7791 | `ttf-misans-gujarati` | 0 | 1 | 2 | 7791 | — |
+| 154 | 7792 | `ttf-misans-gurmukhi` | 0 | 1 | 2 | 7792 | — |
+| 155 | 7793 | `ttf-misans-khmer` | 0 | 1 | 2 | 7793 | — |
+| 156 | 7794 | `ttf-misans-l3` | 0 | 1 | 2 | 7794 | — |
+| 157 | 7788 | `ttf-misans-lao` | 0 | 1 | 2 | 7788 | — |
+| 158 | 7795 | `ttf-misans-latin` | 0 | 1 | 2 | 7795 | — |
+| 159 | 7796 | `ttf-misans-myanmar` | 0 | 1 | 2 | 7796 | — |
+| 160 | 7797 | `ttf-misans-tc` | 0 | 1 | 2 | 7797 | — |
+| 161 | 7798 | `ttf-misans-thai` | 0 | 1 | 2 | 7798 | — |
+| 162 | 7799 | `ttf-misans-tibetan` | 0 | 1 | 2 | 7799 | — |
+| 163 | 7358 | `vapoursynth-plugin-vszip` | 0 | 1 | 2 | 7358 | — |
+| 164 | 7813 | `woff-misans` | 0 | 1 | 2 | 7813 | — |
+| 165 | 7815 | `woff-misans-arabic` | 0 | 1 | 2 | 7815 | — |
+| 166 | 7816 | `woff-misans-devanagari` | 0 | 1 | 2 | 7816 | — |
+| 167 | 7817 | `woff-misans-gujarati` | 0 | 1 | 2 | 7817 | — |
+| 168 | 7818 | `woff-misans-gurmukhi` | 0 | 1 | 2 | 7818 | — |
+| 169 | 7819 | `woff-misans-khmer` | 0 | 1 | 2 | 7819 | — |
+| 170 | 7820 | `woff-misans-l3` | 0 | 1 | 2 | 7820 | — |
+| 171 | 7814 | `woff-misans-lao` | 0 | 1 | 2 | 7814 | — |
+| 172 | 7821 | `woff-misans-latin` | 0 | 1 | 2 | 7821 | — |
+| 173 | 7822 | `woff-misans-myanmar` | 0 | 1 | 2 | 7822 | — |
+| 174 | 7823 | `woff-misans-tc` | 0 | 1 | 2 | 7823 | — |
+| 175 | 7824 | `woff-misans-thai` | 0 | 1 | 2 | 7824 | — |
+| 176 | 7825 | `woff-misans-tibetan` | 0 | 1 | 2 | 7825 | — |
+| 177 | 7826 | `woff2-misans` | 0 | 1 | 2 | 7826 | — |
+| 178 | 7828 | `woff2-misans-arabic` | 0 | 1 | 2 | 7828 | — |
+| 179 | 7829 | `woff2-misans-devanagari` | 0 | 1 | 2 | 7829 | — |
+| 180 | 7827 | `woff2-misans-lao` | 0 | 1 | 2 | 7827 | — |
+| 181 | 1716 | `aml1` | 0 | 1 | 3 | 1716 | — |
+| 182 | 991 | `android-sdk-build-tools` | 0 | 1 | 3 | 991 | — |
+| 183 | 8048 | `cmake-format` | 0 | 1 | 3 | 8048 | — |
+| 184 | 1713 | `coolercontrold-bin` | 0 | 1 | 3 | 1713 | — |
+| 185 | 501 | `depot-tools-git` | 0 | 1 | 3 | 501 | — |
+| 186 | 4832 | `e-imzo` | 0 | 1 | 3 | 4832 | — |
+| 187 | 3667 | `ggml-sycl-f16-git` | 0 | 1 | 3 | 3667 | — |
+| 188 | 7660 | `jameica` | 0 | 1 | 3 | 7660 | — |
+| 189 | 231 | `libsodium-1.0.18` | 0 | 1 | 3 | 231 | — |
+| 190 | 4782 | `mint-x-icons` | 0 | 1 | 3 | 4782 | — |
+| 191 | 7730 | `nceplibs-ip` | 0 | 1 | 3 | 7730 | — |
+| 192 | 556 | `nohang` | 0 | 1 | 3 | 556 | — |
+| 193 | 2399 | `nvidia-390xx-utils` | 0 | 1 | 3 | 2399 | — |
+| 194 | 2326 | `nvidia-470xx-utils` | 0 | 1 | 3 | 2326 | — |
+| 195 | 6259 | `ocaml-iostream` | 0 | 1 | 3 | 6259 | — |
+| 196 | 6827 | `python-easydict` | 0 | 1 | 3 | 6827 | — |
+| 197 | 6984 | `python-get-video-properties` | 0 | 1 | 3 | 6984 | — |
+| 198 | 6287 | `python-jetpytools` | 0 | 1 | 3 | 6287 | — |
+| 199 | 2622 | `python-py-radix` | 0 | 1 | 3 | 2622 | — |
+| 200 | 5047 | `qt5-quick3d` | 0 | 1 | 3 | 5047 | — |
+| 201 | 6610 | `slsa-verifier` | 0 | 1 | 3 | 6610 | — |
+| 202 | 7244 | `subtitles-contact-sheet-qt-cli` | 0 | 1 | 3 | 7244 | — |
+| 203 | 2678 | `wolfssl-all` | 0 | 1 | 3 | 2678 | — |
+| 204 | 287 | `cnmatrix` | 0 | 1 | 4 | 287 | — |
+| 205 | 5284 | `crossplane` | 0 | 1 | 4 | 5284 | — |
+| 206 | 5222 | `google-compute-engine-oslogin` | 0 | 1 | 4 | 5222 | — |
+| 207 | 640 | `iscan` | 0 | 1 | 4 | 640 | — |
+| 208 | 4027 | `libxeddsa` | 0 | 1 | 4 | 4027 | — |
+| 209 | 1518 | `llama.cpp` | 0 | 1 | 4 | 1518 | — |
+| 210 | 4224 | `nanoflann` | 0 | 1 | 4 | 4224 | — |
+| 211 | 2028 | `nvidia-580xx-utils` | 0 | 1 | 4 | 2028 | — |
+| 212 | 546 | `nvidia-vulkan-utils` | 0 | 1 | 4 | 546 | — |
+| 213 | 1486 | `paru-git` | 0 | 1 | 4 | 1486 | — |
+| 214 | 142 | `presage` | 0 | 1 | 4 | 142 | — |
+| 215 | 4091 | `python-lifx-async` | 0 | 1 | 4 | 4091 | — |
+| 216 | 3650 | `python-openrgb` | 0 | 1 | 4 | 3650 | — |
+| 217 | 4089 | `python-stupidartnet` | 0 | 1 | 4 | 4089 | — |
+| 218 | 4326 | `python-tmpl` | 0 | 1 | 4 | 4326 | — |
+| 219 | 4939 | `tzpfms` | 0 | 1 | 4 | 4939 | — |
+| 220 | 8036 | `updpkgsrcs` | 0 | 1 | 4 | 8036 | — |
+| 221 | 4471 | `zectl` | 0 | 1 | 4 | 4471 | — |
+| 222 | 5027 | `zsa-keymapp-bin` | 0 | 1 | 4 | 5027 | — |
+| 223 | 299 | `app2unit` | 0 | 1 | 5 | 299 | — |
+| 224 | 5321 | `chromium-widevine` | 0 | 1 | 5 | 5321 | — |
+| 225 | 1697 | `ddccontrol-db-git` | 0 | 1 | 5 | 1697 | — |
+| 226 | 1966 | `eww` | 0 | 1 | 5 | 1966 | — |
+| 227 | 5330 | `gnome-icon-theme-symbolic` | 0 | 1 | 5 | 5330 | — |
+| 228 | 710 | `kanidm-unixd-clients` | 0 | 1 | 5 | 710 | — |
+| 229 | 2366 | `lib32-libvmaf` | 0 | 1 | 5 | 2366 | — |
+| 230 | 6257 | `ocaml-ppx_here` | 0 | 1 | 5 | 6257 | — |
+| 231 | 424 | `opencl-amd` | 0 | 1 | 5 | 424 | — |
+| 232 | 4231 | `openmesh` | 0 | 1 | 5 | 4231 | — |
+| 233 | 4090 | `python-aubio-ledfx` | 0 | 1 | 5 | 4090 | — |
+| 234 | 4541 | `python-bencoding` | 0 | 1 | 5 | 4541 | — |
+| 235 | 674 | `python-emoji-country-flag` | 0 | 1 | 5 | 674 | — |
+| 236 | 4374 | `python-graphyte` | 0 | 1 | 5 | 4374 | — |
+| 237 | 8560 | `python-loro` | 0 | 1 | 5 | 8560 | — |
+| 238 | 7055 | `python-proglog` | 0 | 1 | 5 | 7055 | — |
+| 239 | 3799 | `python-valve-parsers` | 0 | 1 | 5 | 3799 | — |
+| 240 | 8298 | `python-wassima` | 0 | 1 | 5 | 8298 | — |
+| 241 | 7766 | `sleuthkit-java` | 0 | 1 | 5 | 7766 | — |
+| 242 | 2665 | `undr` | 0 | 1 | 5 | 2665 | — |
+| 243 | 63 | `grimblast-git` | 0 | 1 | 6 | 63 | — |
+| 244 | 712 | `kanidm-clients` | 0 | 1 | 6 | 712 | — |
+| 245 | 711 | `kanidm-server` | 0 | 1 | 6 | 711 | — |
+| 246 | 4973 | `memoria-daemon` | 0 | 1 | 6 | 4973 | — |
+| 247 | 7729 | `nceplibs-g2c` | 0 | 1 | 6 | 7729 | — |
+| 248 | 418 | `phonon-qt5` | 0 | 1 | 6 | 418 | — |
+| 249 | 6830 | `python-aiohttp-sse-client` | 0 | 1 | 6 | 6830 | — |
+| 250 | 3818 | `python-cinemagoer` | 0 | 1 | 6 | 3818 | — |
+| 251 | 8189 | `python-ensurepath` | 0 | 1 | 6 | 8189 | — |
+| 252 | 7447 | `python-myjdapi` | 0 | 1 | 6 | 7447 | — |
+| 253 | 6445 | `python-myloginpath` | 0 | 1 | 6 | 6445 | — |
+| 254 | 4372 | `python-pid` | 0 | 1 | 6 | 4372 | — |
+| 255 | 8017 | `python-pybeam` | 0 | 1 | 6 | 8017 | — |
+| 256 | 6824 | `python-simsimd` | 0 | 1 | 6 | 6824 | — |
+| 257 | 7444 | `python-stringzilla` | 0 | 1 | 6 | 7444 | — |
+| 258 | 4848 | `upliftpowerplay` | 0 | 1 | 6 | 4848 | — |
+| 259 | 6647 | `easytier-cli` | 0 | 1 | 7 | 6647 | — |
+| 260 | 6646 | `easytier-core` | 0 | 1 | 7 | 6646 | — |
+| 261 | 6645 | `easytier-web` | 0 | 1 | 7 | 6645 | — |
+| 262 | 443 | `envycontrol` | 0 | 1 | 7 | 443 | — |
+| 263 | 4183 | `git-credential-manager` | 0 | 1 | 7 | 4183 | — |
+| 264 | 3791 | `libgksu` | 0 | 1 | 7 | 3791 | — |
+| 265 | 1075 | `openobex` | 0 | 1 | 7 | 1075 | — |
+| 266 | 2138 | `python-agent-client-protocol` | 0 | 1 | 7 | 2138 | — |
+| 267 | 6985 | `python-asyncprawcore` | 0 | 1 | 7 | 6985 | — |
+| 268 | 6226 | `python-findlibs` | 0 | 1 | 7 | 6226 | — |
+| 269 | 6822 | `python-ftfy` | 0 | 1 | 7 | 6822 | — |
+| 270 | 8161 | `python-kajson` | 0 | 1 | 7 | 8161 | — |
+| 271 | 3346 | `python-markovify` | 0 | 1 | 7 | 3346 | — |
+| 272 | 5208 | `python-pylibsrtp` | 0 | 1 | 7 | 5208 | — |
+| 273 | 4325 | `python-pytest-filedata` | 0 | 1 | 7 | 4325 | — |
+| 274 | 4088 | `python-samplerate-ledfx` | 0 | 1 | 7 | 4088 | — |
+| 275 | 2317 | `python-textual-fspicker` | 0 | 1 | 7 | 2317 | — |
+| 276 | 4504 | `cctag` | 0 | 1 | 8 | 4504 | — |
+| 277 | 7698 | `cryptomator` | 0 | 1 | 8 | 7698 | — |
+| 278 | 4531 | `feather-tk` | 0 | 1 | 8 | 4531 | — |
+| 279 | 8222 | `gcc10-libs` | 0 | 1 | 8 | 8222 | — |
+| 280 | 8364 | `libastal-wireplumber-git` | 0 | 1 | 8 | 8364 | — |
+| 281 | 3450 | `msdfgen` | 0 | 1 | 8 | 3450 | — |
+| 282 | 6540 | `plasticscm-client-core` | 0 | 1 | 8 | 6540 | — |
+| 283 | 3941 | `python-eyed3` | 0 | 1 | 8 | 3941 | — |
+| 284 | 7662 | `python-frida` | 0 | 1 | 8 | 7662 | — |
+| 285 | 3433 | `python-google-ai-generativelanguage` | 0 | 1 | 8 | 3433 | — |
+| 286 | 2620 | `python-inquirer-textual` | 0 | 1 | 8 | 2620 | — |
+| 287 | 3311 | `shiboken2` | 0 | 1 | 8 | 3311 | — |
+| 288 | 4724 | `smooth` | 0 | 1 | 8 | 4724 | — |
+| 289 | 4861 | `stardust-xr-non-spatial-input` | 0 | 1 | 8 | 4861 | — |
+| 290 | 427 | `zensical` | 0 | 1 | 8 | 427 | — |
+| 291 | 210 | `backintime-cli` | 0 | 1 | 9 | 210 | — |
+| 292 | 2449 | `ivpn` | 0 | 1 | 9 | 2449 | — |
+| 293 | 2431 | `lib32-bluez-libs` | 0 | 1 | 9 | 2431 | — |
+| 294 | 677 | `libnautilus-extension-typeahead` | 0 | 1 | 9 | 677 | — |
+| 295 | 4362 | `libsurvive` | 0 | 1 | 9 | 4362 | — |
+| 296 | 6503 | `myctl` | 0 | 1 | 9 | 6503 | — |
+| 297 | 3908 | `protobuf-21` | 0 | 1 | 9 | 3908 | — |
+| 298 | 4580 | `python-mpris_server` | 0 | 1 | 9 | 4580 | — |
+| 299 | 4863 | `stardust-xr-server` | 0 | 1 | 9 | 4863 | — |
+| 300 | 2720 | `upscayl-ncnn` | 0 | 1 | 9 | 2720 | — |
+| 301 | 7234 | `lovr` | 0 | 1 | 10 | 7234 | — |
+| 302 | 2039 | `spotify` | 0 | 1 | 10 | 2039 | — |
+| 303 | 789 | `android-sdk` | 0 | 1 | 11 | 789 | — |
+| 304 | 8556 | `dpt-rp1-py` | 0 | 1 | 11 | 8556 | — |
+| 305 | 3703 | `dyalog-bin` | 0 | 1 | 11 | 3703 | — |
+| 306 | 3379 | `element-web-git` | 0 | 1 | 11 | 3379 | — |
+| 307 | 296 | `epsonscan2` | 0 | 1 | 11 | 296 | — |
+| 308 | 454 | `llama.cpp-hip` | 0 | 1 | 11 | 454 | — |
+| 309 | 4871 | `python-maison` | 0 | 1 | 11 | 4871 | — |
+| 310 | 7207 | `setools` | 0 | 1 | 11 | 7207 | — |
+| 311 | 6525 | `sidef` | 0 | 1 | 11 | 6525 | — |
+| 312 | 3470 | `credentialsd` | 0 | 1 | 12 | 3470 | — |
+| 313 | 1921 | `oversteer` | 0 | 1 | 12 | 1921 | — |
+| 314 | 8204 | `python-audible` | 0 | 1 | 12 | 8204 | — |
+| 315 | 3961 | `python-glean-parser` | 0 | 1 | 12 | 3961 | — |
+| 316 | 4905 | `python-twisterl` | 0 | 1 | 12 | 4905 | — |
+| 317 | 4566 | `radiotray-ng` | 0 | 1 | 13 | 4566 | — |
+| 318 | 387 | `xviewer` | 0 | 1 | 13 | 387 | — |
+| 319 | 6643 | `libpamac-full` | 0 | 1 | 14 | 6643 | — |
+| 320 | 144 | `maliit-framework` | 0 | 1 | 14 | 144 | — |
+| 321 | 5239 | `python-panel` | 0 | 1 | 14 | 5239 | — |
+| 322 | 8320 | `python-polyfactory` | 0 | 1 | 14 | 8320 | — |
+| 323 | 6328 | `gcc13-libs` | 0 | 1 | 15 | 6328 | — |
+| 324 | 6424 | `libadwaita-yaru-git` | 0 | 1 | 15 | 6424 | — |
+| 325 | 6825 | `python-rapidocr` | 0 | 1 | 15 | 6825 | — |
+| 326 | 7034 | `snapx` | 0 | 1 | 15 | 7034 | — |
+| 327 | 2739 | `ktextaddons5` | 0 | 1 | 16 | 2739 | — |
+| 328 | 1755 | `linux-cachyos-lts` | 0 | 1 | 16 | 1755 | — |
+| 329 | 7025 | `tensorrt` | 0 | 1 | 16 | 7025 | — |
+| 330 | 7009 | `backintime-cli-git` | 0 | 1 | 17 | 7009 | — |
+| 331 | 3846 | `litellm` | 0 | 1 | 17 | 3846 | — |
+| 332 | 7261 | `portable` | 0 | 1 | 17 | 7261 | — |
+| 333 | 842 | `protonmail-bridge-free-core` | 0 | 1 | 17 | 842 | — |
+| 334 | 8297 | `python-urllib3-future` | 0 | 1 | 17 | 8297 | — |
+| 335 | 8351 | `angle` | 0 | 1 | 18 | 8351 | — |
+| 336 | 754 | `mupen64plus-git` | 0 | 1 | 18 | 754 | — |
+| 337 | 1070 | `linux-cachyos` | 0 | 1 | 19 | 1070 | — |
+| 338 | 2773 | `input-leap-headless-git` | 0 | 1 | 22 | 2773 | — |
+| 339 | 5099 | `libpamac-aur` | 0 | 1 | 22 | 5099 | — |
+| 340 | 872 | `opera-gx-stable` | 0 | 1 | 27 | 872 | — |
+| 341 | 7020 | `dragengine` | 0 | 1 | 34 | 7020 | — |
+| 342 | 1282 | `wechat-bin` | 0 | 1 | 34 | 1282 | — |
+| 343 | 6640 | `amdonly-gaming-opencl-rusticl-mesa-git` | 0 | 1 | 36 | 6640 | — |
+| 344 | 6641 | `amdonly-gaming-mesa-git` | 0 | 1 | 37 | 6641 | — |
+| 345 | 6638 | `amdonly-gaming-vulkan-radeon-git` | 0 | 1 | 37 | 6638 | — |
+| 346 | 6639 | `amdonly-gaming-vulkan-mesa-layers-git` | 0 | 1 | 38 | 6639 | — |
+| 347 | 6538 | `libnm-iwd` | 0 | 1 | 39 | 6538 | — |
+| 348 | 939 | `qt6-base-hifps` | 0 | 1 | 61 | 939 | — |
+| 349 | 6567 | `qemu-headless-git` | 0 | 1 | 83 | 6567 | — |
+| 350 | 6376 | `ffmpeg7.1` | 0 | 1 | 105 | 6376 | — |
+| 351 | 2694 | `86box-roms` | 0 | 0 | 0 | 2694 | — |
+| 352 | 7016 | `abacusai-bin` | 0 | 0 | 0 | 7016 | — |
+| 353 | 3100 | `adbfs-rootless-git [NEEDS_RECIPE_DESIGN: guix show adbfs-rootless failed (package not found in current channels); next: draft standalone recipe for adbfs-rootless-git in future pass]` | 0 | 0 | 0 | 3100 | — |
+| 354 | 4156 | `adguardvpn-cli-bin` | 0 | 0 | 0 | 4156 | — |
+| 355 | 3054 | `aeroshell-kwin-components-git [NEEDS_RECIPE_DESIGN: guix show aeroshell-kwin-components failed (package not found in current channels); next: draft standalone recipe for aeroshell-kwin-components-git in future pass]` | 0 | 0 | 0 | 3054 | — |
+| 356 | 3053 | `aeroshell-libplasma-git [NEEDS_RECIPE_DESIGN: guix show aeroshell-libplasma failed (package not found in current channels); next: draft standalone recipe for aeroshell-libplasma-git in future pass]` | 0 | 0 | 0 | 3053 | — |
+| 357 | 3051 | `aeroshell-workspace-git [NEEDS_RECIPE_DESIGN: guix show aeroshell-workspace failed (package not found in current channels); next: draft standalone recipe for aeroshell-workspace-git in future pass]` | 0 | 0 | 0 | 3051 | — |
+| 358 | 3050 | `aerothemeplasma-desktop-x11-git [NEEDS_RECIPE_DESIGN: guix show aerothemeplasma-desktop-x11 failed (package not found in current channels); next: draft standalone recipe for aerothemeplasma-desktop-x11-git in future pass]` | 0 | 0 | 0 | 3050 | — |
+| 359 | 6791 | `afx-bin` | 0 | 0 | 0 | 6791 | — |
+| 360 | 4370 | `aggregate` | 0 | 0 | 0 | 4370 | — |
+| 361 | 3675 | `ahab-bin` | 0 | 0 | 0 | 3675 | — |
+| 362 | 2868 | `aic-bin` | 0 | 0 | 0 | 2868 | — |
+| 363 | 6049 | `aider-chat-venv   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6049 | — |
+| 364 | 1539 | `airwindows-consolidated-bin` | 0 | 0 | 0 | 1539 | — |
+| 365 | 3726 | `alarm` | 0 | 0 | 0 | 3726 | — |
+| 366 | 1433 | `ali-instance-cli-bin` | 0 | 0 | 0 | 1433 | — |
+| 367 | 7547 | `amalgo-bin` | 0 | 0 | 0 | 7547 | — |
+| 368 | 6757 | `ambit-bin` | 0 | 0 | 0 | 6757 | — |
+| 369 | 6377 | `amd-vulkan-prefixes` | 0 | 0 | 0 | 6377 | — |
+| 370 | 58 | `anbox-git` | 0 | 0 | 0 | 58 | — |
+| 371 | 7180 | `ansisvg-bin` | 0 | 0 | 0 | 7180 | — |
+| 372 | 3641 | `apipost-bin` | 0 | 0 | 0 | 3641 | — |
+| 373 | 4685 | `apple_cursor` | 0 | 0 | 0 | 4685 | — |
+| 374 | 4678 | `arad-fonts` | 0 | 0 | 0 | 4678 | — |
+| 375 | 3052 | `arch-remaster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for arch-remaster; next: determine upstream source + build system for arch-remaster]` | 0 | 0 | 0 | 3052 | — |
+| 376 | 6124 | `arch-updater   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6124 | — |
+| 377 | 6346 | `archarchive` | 0 | 0 | 0 | 6346 | — |
+| 378 | 1993 | `archlinux-artwork` | 0 | 0 | 0 | 1993 | — |
+| 379 | 3492 | `argo-bin` | 0 | 0 | 0 | 3492 | — |
+| 380 | 6094 | `art_standalone   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6094 | — |
+| 381 | 4560 | `artisan-roaster-scope` | 0 | 0 | 0 | 4560 | — |
+| 382 | 450 | `ascii-chat` | 0 | 0 | 0 | 450 | — |
+| 383 | 2915 | `assh-bin` | 0 | 0 | 0 | 2915 | — |
+| 384 | 6088 | `atl-gui-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6088 | — |
+| 385 | 7194 | `audacity4-alpha` | 0 | 0 | 0 | 7194 | — |
+| 386 | 3880 | `audiobookshelf` | 0 | 0 | 0 | 3880 | — |
+| 387 | 7960 | `auth0-bin` | 0 | 0 | 0 | 7960 | — |
+| 388 | 7066 | `authelia-bin` | 0 | 0 | 0 | 7066 | — |
+| 389 | 3635 | `auto-mcs-bin` | 0 | 0 | 0 | 3635 | — |
+| 390 | 4885 | `aws-nuke-bin` | 0 | 0 | 0 | 4885 | — |
+| 391 | 3683 | `azd-cli` | 0 | 0 | 0 | 3683 | — |
+| 392 | 7618 | `bab-bin` | 0 | 0 | 0 | 7618 | — |
+| 393 | 6409 | `backblaze-b2-bin` | 0 | 0 | 0 | 6409 | — |
+| 394 | 3034 | `bapctools-git [NEEDS_RECIPE_DESIGN: guix show bapctools failed (package not found in current channels); next: draft standalone recipe for bapctools-git in future pass]` | 0 | 0 | 0 | 3034 | — |
+| 395 | 3073 | `baremetal-compiler-rt [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for baremetal-compiler-rt; next: determine upstream source + build system for baremetal-compiler-rt]` | 0 | 0 | 0 | 3073 | — |
+| 396 | 1312 | `bat-asus-battery-bin` | 0 | 0 | 0 | 1312 | — |
+| 397 | 2880 | `batctl-tui-bin` | 0 | 0 | 0 | 2880 | — |
+| 398 | 1430 | `batdoc-bin` | 0 | 0 | 0 | 1430 | — |
+| 399 | 5236 | `bcmr-bin` | 0 | 0 | 0 | 5236 | — |
+| 400 | 3858 | `beatmapexporter-bin` | 0 | 0 | 0 | 3858 | — |
+| 401 | 5072 | `bento-bin` | 0 | 0 | 0 | 5072 | — |
+| 402 | 3638 | `beszel-agent-bin` | 0 | 0 | 0 | 3638 | — |
+| 403 | 6048 | `betterbird-fr-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6048 | — |
+| 404 | 1137 | `bfind` | 0 | 0 | 0 | 1137 | — |
+| 405 | 6068 | `bigpemu-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6068 | — |
+| 406 | 5511 | `bililive-recorder-bin` | 0 | 0 | 0 | 5511 | — |
+| 407 | 3014 | `bililive-recorder-bin [NEEDS_RECIPE_DESIGN: guix show bililive-recorder failed (package not found in current channels); next: draft standalone recipe for bililive-recorder-bin in future pass]` | 0 | 0 | 0 | 3014 | — |
+| 408 | 1296 | `bin-cpuflags-x86-bin` | 0 | 0 | 0 | 1296 | — |
+| 409 | 2964 | `binco-bin` | 0 | 0 | 0 | 2964 | — |
+| 410 | 2819 | `bine-bin` | 0 | 0 | 0 | 2819 | — |
+| 411 | 22 | `bitwarden-cli-bin` | 0 | 0 | 0 | 22 | — |
+| 412 | 6514 | `blindpaste` | 0 | 0 | 0 | 6514 | — |
+| 413 | 5354 | `blocky-bin` | 0 | 0 | 0 | 5354 | — |
+| 414 | 3003 | `blogr-bin [NEEDS_RECIPE_DESIGN: guix show blogr failed (package not found in current channels); next: draft standalone recipe for blogr-bin in future pass]` | 0 | 0 | 0 | 3003 | — |
+| 415 | 1199 | `bookokrat-bin` | 0 | 0 | 0 | 1199 | — |
+| 416 | 3095 | `boomer-git [NEEDS_RECIPE_DESIGN: guix show boomer failed (package not found in current channels); next: draft standalone recipe for boomer-git in future pass]` | 0 | 0 | 0 | 3095 | — |
+| 417 | 5438 | `boscaceoil-blue-bin` | 0 | 0 | 0 | 5438 | — |
+| 418 | 3011 | `boscaceoil-blue-bin [NEEDS_RECIPE_DESIGN: guix show boscaceoil-blue failed (package not found in current channels); next: draft standalone recipe for boscaceoil-blue-bin in future pass]` | 0 | 0 | 0 | 3011 | — |
+| 419 | 3179 | `broadcom-bt-firmware` | 0 | 0 | 0 | 3179 | — |
+| 420 | 8601 | `brother-lpr-drivers-common` | 0 | 0 | 0 | 8601 | — |
+| 421 | 4744 | `brscan-skey` | 0 | 0 | 0 | 4744 | — |
+| 422 | 1736 | `btdu-bin` | 0 | 0 | 0 | 1736 | — |
+| 423 | 3725 | `bus` | 0 | 0 | 0 | 3725 | — |
+| 424 | 4900 | `butter-launcher-bin` | 0 | 0 | 0 | 4900 | — |
+| 425 | 3607 | `byedpi-bin` | 0 | 0 | 0 | 3607 | — |
+| 426 | 3028 | `bzmenu-bin [NEEDS_RECIPE_DESIGN: guix show bzmenu failed (package not found in current channels); next: draft standalone recipe for bzmenu-bin in future pass]` | 0 | 0 | 0 | 3028 | — |
+| 427 | 3064 | `c47-bin [NEEDS_RECIPE_DESIGN: guix show c47 failed (package not found in current channels); next: draft standalone recipe for c47-bin in future pass]` | 0 | 0 | 0 | 3064 | — |
+| 428 | 3428 | `ca0132-tools-git` | 0 | 0 | 0 | 3428 | — |
+| 429 | 7593 | `caddy-naiveproxy-bin` | 0 | 0 | 0 | 7593 | — |
+| 430 | 1568 | `cagent-bin` | 0 | 0 | 0 | 1568 | — |
+| 431 | 7772 | `capa-bin` | 0 | 0 | 0 | 7772 | — |
+| 432 | 2103 | `carapace-bin` | 0 | 0 | 0 | 2103 | — |
+| 433 | 6106 | `carbonyl-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6106 | — |
+| 434 | 4145 | `catbox-bin` | 0 | 0 | 0 | 4145 | — |
+| 435 | 7045 | `catppuccin-cursors-frappe` | 0 | 0 | 0 | 7045 | — |
+| 436 | 3781 | `catppuccin-cursors-latte` | 0 | 0 | 0 | 3781 | — |
+| 437 | 2411 | `catppuccin-cursors-macchiato` | 0 | 0 | 0 | 2411 | — |
+| 438 | 214 | `catppuccin-cursors-mocha` | 0 | 0 | 0 | 214 | — |
+| 439 | 2320 | `catppuccin-gtk-theme-macchiato` | 0 | 0 | 0 | 2320 | — |
+| 440 | 2104 | `catppuccin-gtk-theme-mocha` | 0 | 0 | 0 | 2104 | — |
+| 441 | 1428 | `catwalk-bin` | 0 | 0 | 0 | 1428 | — |
+| 442 | 8542 | `cdirip` | 0 | 0 | 0 | 8542 | — |
+| 443 | 3004 | `charliecloud [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for charliecloud; next: determine upstream source + build system for charliecloud]` | 0 | 0 | 0 | 3004 | — |
+| 444 | 6104 | `check-broken-packages-pacman-hook-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6104 | — |
+| 445 | 1089 | `chess-merida` | 0 | 0 | 0 | 1089 | — |
+| 446 | 3836 | `chexquest3-wad` | 0 | 0 | 0 | 3836 | — |
+| 447 | 1426 | `chibi-cli-bin` | 0 | 0 | 0 | 1426 | — |
+| 448 | 348 | `chkrootkit` | 0 | 0 | 0 | 348 | — |
+| 449 | 1732 | `chkufsd-bin` | 0 | 0 | 0 | 1732 | — |
+| 450 | 7385 | `chmod-cli-bin` | 0 | 0 | 0 | 7385 | — |
+| 451 | 3080 | `chough-bin [NEEDS_RECIPE_DESIGN: guix show chough failed (package not found in current channels); next: draft standalone recipe for chough-bin in future pass]` | 0 | 0 | 0 | 3080 | — |
+| 452 | 3835 | `chromium-extension-web-store` | 0 | 0 | 0 | 3835 | — |
+| 453 | 757 | `chromium-gost` | 0 | 0 | 0 | 757 | — |
+| 454 | 2534 | `claude-agent-acp-bin` | 0 | 0 | 0 | 2534 | — |
+| 455 | 5455 | `claude-code-seccomp` | 0 | 0 | 0 | 5455 | — |
+| 456 | 3030 | `claude-code-seccomp [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for claude-code-seccomp; next: determine upstream source + build system for claude-code-seccomp]` | 0 | 0 | 0 | 3030 | — |
+| 457 | 3096 | `claudebar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for claudebar; next: determine upstream source + build system for claudebar]` | 0 | 0 | 0 | 3096 | — |
+| 458 | 3972 | `cli-proxy-api-bin` | 0 | 0 | 0 | 3972 | — |
+| 459 | 3068 | `cliamp [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for cliamp; next: determine upstream source + build system for cliamp]` | 0 | 0 | 0 | 3068 | — |
+| 460 | 3015 | `cliamp-bin [NEEDS_RECIPE_DESIGN: guix show cliamp failed (package not found in current channels); next: draft standalone recipe for cliamp-bin in future pass]` | 0 | 0 | 0 | 3015 | — |
+| 461 | 3023 | `clightd [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for clightd; next: determine upstream source + build system for clightd]` | 0 | 0 | 0 | 3023 | — |
+| 462 | 6242 | `cloudflare-speed-cli-bin` | 0 | 0 | 0 | 6242 | — |
+| 463 | 6083 | `cnrdrvcups-lb-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6083 | — |
+| 464 | 6133 | `codecrafters-bin` | 0 | 0 | 0 | 6133 | — |
+| 465 | 6314 | `codegrab-bin` | 0 | 0 | 0 | 6314 | — |
+| 466 | 7002 | `codeql` | 0 | 0 | 0 | 7002 | — |
+| 467 | 7299 | `coder-bin` | 0 | 0 | 0 | 7299 | — |
+| 468 | 1423 | `codes-bin` | 0 | 0 | 0 | 1423 | — |
+| 469 | 1490 | `codex-desktop-bin` | 0 | 0 | 0 | 1490 | — |
+| 470 | 3093 | `codexbar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for codexbar; next: determine upstream source + build system for codexbar]` | 0 | 0 | 0 | 3093 | — |
+| 471 | 3061 | `comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]` | 0 | 0 | 0 | 3061 | — |
+| 472 | 3090 | `compendium [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for compendium; next: determine upstream source + build system for compendium]` | 0 | 0 | 0 | 3090 | — |
+| 473 | 2956 | `compressonator-cli-bin` | 0 | 0 | 0 | 2956 | — |
+| 474 | 3048 | `console2svg-bin [NEEDS_RECIPE_DESIGN: guix show console2svg failed (package not found in current channels); next: draft standalone recipe for console2svg-bin in future pass]` | 0 | 0 | 0 | 3048 | — |
+| 475 | 7572 | `convcommitlint-bin` | 0 | 0 | 0 | 7572 | — |
+| 476 | 6028 | `cosmic-greeter-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6028 | — |
+| 477 | 4621 | `cosmocc-bin` | 0 | 0 | 0 | 4621 | — |
+| 478 | 3506 | `couik-bin` | 0 | 0 | 0 | 3506 | — |
+| 479 | 5195 | `crab-bin` | 0 | 0 | 0 | 5195 | — |
+| 480 | 3012 | `crier-bin [NEEDS_RECIPE_DESIGN: guix show crier failed (package not found in current channels); next: draft standalone recipe for crier-bin in future pass]` | 0 | 0 | 0 | 3012 | — |
+| 481 | 6111 | `cromite-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6111 | — |
+| 482 | 3280 | `crql-anina` | 0 | 0 | 0 | 3280 | — |
+| 483 | 3265 | `crql-locd` | 0 | 0 | 0 | 3265 | — |
+| 484 | 2316 | `crtui-bin` | 0 | 0 | 0 | 2316 | — |
+| 485 | 4662 | `crunch` | 0 | 0 | 0 | 4662 | — |
+| 486 | 5073 | `crush-bin` | 0 | 0 | 0 | 5073 | — |
+| 487 | 8257 | `crycco-bin` | 0 | 0 | 0 | 8257 | — |
+| 488 | 1421 | `cs-bin` | 0 | 0 | 0 | 1421 | — |
+| 489 | 3300 | `csvi-bin` | 0 | 0 | 0 | 3300 | — |
+| 490 | 6596 | `cubyz-bin` | 0 | 0 | 0 | 6596 | — |
+| 491 | 1228 | `cull-bin` | 0 | 0 | 0 | 1228 | — |
+| 492 | 3958 | `culmus` | 0 | 0 | 0 | 3958 | — |
+| 493 | 8220 | `cura-resources-materials` | 0 | 0 | 0 | 8220 | — |
+| 494 | 6108 | `curseforge-appimage   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6108 | — |
+| 495 | 5426 | `cursor-ide` | 0 | 0 | 0 | 5426 | — |
+| 496 | 2537 | `cursor-ide-bin` | 0 | 0 | 0 | 2537 | — |
+| 497 | 3101 | `dafny-bin [NEEDS_RECIPE_DESIGN: guix show dafny failed (package not found in current channels); next: draft standalone recipe for dafny-bin in future pass]` | 0 | 0 | 0 | 3101 | — |
+| 498 | 6082 | `davs2   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6082 | — |
+| 499 | 8212 | `daylight-bin` | 0 | 0 | 0 | 8212 | — |
+| 500 | 15 | `dbeaver` | 0 | 0 | 0 | 15 | — |
+| 501 | 4596 | `decomp-toolkit-bin` | 0 | 0 | 0 | 4596 | — |
+| 502 | 5141 | `diffnav-bin` | 0 | 0 | 0 | 5141 | — |
+| 503 | 6039 | `dim-screen   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6039 | — |
+| 504 | 7644 | `discli` | 0 | 0 | 0 | 7644 | — |
+| 505 | 6823 | `discord-rpc-extension-bin` | 0 | 0 | 0 | 6823 | — |
+| 506 | 6095 | `dissent-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6095 | — |
+| 507 | 2541 | `diz-bin` | 0 | 0 | 0 | 2541 | — |
+| 508 | 4856 | `dmenu-emoji` | 0 | 0 | 0 | 4856 | — |
+| 509 | 6102 | `dmscripts-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6102 | — |
+| 510 | 7070 | `dnscontrol-bin` | 0 | 0 | 0 | 7070 | — |
+| 511 | 6663 | `docker-credential-secretservice-bin` | 0 | 0 | 0 | 6663 | — |
+| 512 | 7449 | `docker-scout` | 0 | 0 | 0 | 7449 | — |
+| 513 | 3066 | `docx-you-want [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for docx-you-want; next: determine upstream source + build system for docx-you-want]` | 0 | 0 | 0 | 3066 | — |
+| 514 | 4502 | `dol-bin` | 0 | 0 | 0 | 4502 | — |
+| 515 | 1278 | `doltgresql-bin` | 0 | 0 | 0 | 1278 | — |
+| 516 | 3533 | `dotstate-bin` | 0 | 0 | 0 | 3533 | — |
+| 517 | 3075 | `dpibreak [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for dpibreak; next: determine upstream source + build system for dpibreak]` | 0 | 0 | 0 | 3075 | — |
+| 518 | 3077 | `dpibreak-git [NEEDS_RECIPE_DESIGN: guix show dpibreak failed (package not found in current channels); next: draft standalone recipe for dpibreak-git in future pass]` | 0 | 0 | 0 | 3077 | — |
+| 519 | 6052 | `driverctl   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6052 | — |
+| 520 | 1307 | `dsearch-bin` | 0 | 0 | 0 | 1307 | — |
+| 521 | 7672 | `ebgaramond-otf` | 0 | 0 | 0 | 7672 | — |
+| 522 | 6201 | `editorconfiger-bin` | 0 | 0 | 0 | 6201 | — |
+| 523 | 6316 | `eilmeldung-bin` | 0 | 0 | 0 | 6316 | — |
+| 524 | 7247 | `eldiron-bin` | 0 | 0 | 0 | 7247 | — |
+| 525 | 1416 | `electerm-live-bin` | 0 | 0 | 0 | 1416 | — |
+| 526 | 6081 | `electron32   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6081 | — |
+| 527 | 43 | `element-desktop` | 0 | 0 | 0 | 43 | — |
+| 528 | 3915 | `elm-bin` | 0 | 0 | 0 | 3915 | — |
+| 529 | 6045 | `emacs-mozc-ut-full   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6045 | — |
+| 530 | 5103 | `empty` | 0 | 0 | 0 | 5103 | — |
+| 531 | 6587 | `en_se` | 0 | 0 | 0 | 6587 | — |
+| 532 | 3111 | `endcord` | 0 | 0 | 0 | 3111 | — |
+| 533 | 2548 | `engram-bin` | 0 | 0 | 0 | 2548 | — |
+| 534 | 1414 | `enseal-bin` | 0 | 0 | 0 | 1414 | — |
+| 535 | 4950 | `envdiff-bin` | 0 | 0 | 0 | 4950 | — |
+| 536 | 6745 | `envhub-bin` | 0 | 0 | 0 | 6745 | — |
+| 537 | 4392 | `envy-bin` | 0 | 0 | 0 | 4392 | — |
+| 538 | 2354 | `epub2txt` | 0 | 0 | 0 | 2354 | — |
+| 539 | 3806 | `equicord-installer-bin` | 0 | 0 | 0 | 3806 | — |
+| 540 | 1412 | `etcdotica-bin` | 0 | 0 | 0 | 1412 | — |
+| 541 | 1143 | `exec-as` | 0 | 0 | 0 | 1143 | — |
+| 542 | 6064 | `falcond-profiles   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6064 | — |
+| 543 | 6044 | `fcitx5-mozc-ut-full   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6044 | — |
+| 544 | 7881 | `fcitx5-pinyin-starrail` | 0 | 0 | 0 | 7881 | — |
+| 545 | 2856 | `fdformat` | 0 | 0 | 0 | 2856 | — |
+| 546 | 5124 | `featherwallet-bin` | 0 | 0 | 0 | 5124 | — |
+| 547 | 3009 | `feedr-bin [NEEDS_RECIPE_DESIGN: guix show feedr failed (package not found in current channels); next: draft standalone recipe for feedr-bin in future pass]` | 0 | 0 | 0 | 3009 | — |
+| 548 | 3032 | `ferris-scan-bin [NEEDS_RECIPE_DESIGN: guix show ferris-scan failed (package not found in current channels); next: draft standalone recipe for ferris-scan-bin in future pass]` | 0 | 0 | 0 | 3032 | — |
+| 549 | 5442 | `ferrishot-bin` | 0 | 0 | 0 | 5442 | — |
+| 550 | 3017 | `ferrishot-bin [NEEDS_RECIPE_DESIGN: guix show ferrishot failed (package not found in current channels); next: draft standalone recipe for ferrishot-bin in future pass]` | 0 | 0 | 0 | 3017 | — |
+| 551 | 6040 | `ffmpeg-amd-full   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6040 | — |
+| 552 | 6074 | `ffmpeg-libfdk_aac   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6074 | — |
+| 553 | 8046 | `ficsit-cli-bin` | 0 | 0 | 0 | 8046 | — |
+| 554 | 1246 | `figma-agent-linux-bin` | 0 | 0 | 0 | 1246 | — |
+| 555 | 3084 | `fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]` | 0 | 0 | 0 | 3084 | — |
+| 556 | 3485 | `fishnet-bin` | 0 | 0 | 0 | 3485 | — |
+| 557 | 7674 | `flat-remix-gtk` | 0 | 0 | 0 | 7674 | — |
+| 558 | 6556 | `flow-control-bin` | 0 | 0 | 0 | 6556 | — |
+| 559 | 3420 | `fluxdown-bin` | 0 | 0 | 0 | 3420 | — |
+| 560 | 1109 | `fmtools` | 0 | 0 | 0 | 1109 | — |
+| 561 | 7264 | `fnm-bin` | 0 | 0 | 0 | 7264 | — |
+| 562 | 8533 | `fondu` | 0 | 0 | 0 | 8533 | — |
+| 563 | 7717 | `foundryvtt` | 0 | 0 | 0 | 7717 | — |
+| 564 | 4907 | `foxicons-theme` | 0 | 0 | 0 | 4907 | — |
+| 565 | 3072 | `framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]` | 0 | 0 | 0 | 3072 | — |
+| 566 | 2556 | `frankenphp-bin` | 0 | 0 | 0 | 2556 | — |
+| 567 | 6054 | `freeoffice   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6054 | — |
+| 568 | 3887 | `freeze-bin` | 0 | 0 | 0 | 3887 | — |
+| 569 | 3071 | `funzzy-bin [NEEDS_RECIPE_DESIGN: guix show funzzy failed (package not found in current channels); next: draft standalone recipe for funzzy-bin in future pass]` | 0 | 0 | 0 | 3071 | — |
+| 570 | 6197 | `furtherance-bin` | 0 | 0 | 0 | 6197 | — |
+| 571 | 1508 | `futhark-bin` | 0 | 0 | 0 | 1508 | — |
+| 572 | 3031 | `fw-fanctrl-rs-git [NEEDS_RECIPE_DESIGN: guix show fw-fanctrl-rs failed (package not found in current channels); next: draft standalone recipe for fw-fanctrl-rs-git in future pass]` | 0 | 0 | 0 | 3031 | — |
+| 573 | 8558 | `gama-platform-jdk` | 0 | 0 | 0 | 8558 | — |
+| 574 | 1465 | `gdscript-formatter-bin` | 0 | 0 | 0 | 1465 | — |
+| 575 | 6583 | `gdsdecomp-bin` | 0 | 0 | 0 | 6583 | — |
+| 576 | 7731 | `gdu-bin` | 0 | 0 | 0 | 7731 | — |
+| 577 | 2560 | `gh-aw-bin` | 0 | 0 | 0 | 2560 | — |
+| 578 | 3501 | `gh-enhance-bin` | 0 | 0 | 0 | 3501 | — |
+| 579 | 6318 | `ghcup-hs-bin` | 0 | 0 | 0 | 6318 | — |
+| 580 | 4890 | `git-brunch-bin` | 0 | 0 | 0 | 4890 | — |
+| 581 | 7241 | `git-scope-bin` | 0 | 0 | 0 | 7241 | — |
+| 582 | 8232 | `git-who-bin` | 0 | 0 | 0 | 8232 | — |
+| 583 | 3293 | `gito-bin` | 0 | 0 | 0 | 3293 | — |
+| 584 | 3278 | `gitopolis-bin` | 0 | 0 | 0 | 3278 | — |
+| 585 | 4046 | `gitprompt-bin` | 0 | 0 | 0 | 4046 | — |
+| 586 | 2563 | `gittop-tui-bin` | 0 | 0 | 0 | 2563 | — |
+| 587 | 2564 | `glazepkg-bin` | 0 | 0 | 0 | 2564 | — |
+| 588 | 3055 | `gnix [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for gnix; next: determine upstream source + build system for gnix]` | 0 | 0 | 0 | 3055 | — |
+| 589 | 3467 | `gnuclad` | 0 | 0 | 0 | 3467 | — |
+| 590 | 5200 | `go-live-server-bin` | 0 | 0 | 0 | 5200 | — |
+| 591 | 5028 | `go-prism-bin` | 0 | 0 | 0 | 5028 | — |
+| 592 | 2566 | `godshell-bin` | 0 | 0 | 0 | 2566 | — |
+| 593 | 1408 | `gofarsi-live-bin` | 0 | 0 | 0 | 1408 | — |
+| 594 | 4917 | `goful-bin` | 0 | 0 | 0 | 4917 | — |
+| 595 | 4806 | `gohome-bin` | 0 | 0 | 0 | 4806 | — |
+| 596 | 1407 | `golem-bin` | 0 | 0 | 0 | 1407 | — |
+| 597 | 2687 | `gonzo-bin` | 0 | 0 | 0 | 2687 | — |
+| 598 | 5181 | `goreleaser-pro-bin` | 0 | 0 | 0 | 5181 | — |
+| 599 | 8185 | `gosimac-bin` | 0 | 0 | 0 | 8185 | — |
+| 600 | 4035 | `goxe-bin` | 0 | 0 | 0 | 4035 | — |
+| 601 | 5320 | `gozen-bin` | 0 | 0 | 0 | 5320 | — |
+| 602 | 5429 | `gpk-bin` | 0 | 0 | 0 | 5429 | — |
+| 603 | 5367 | `gpth-bin` | 0 | 0 | 0 | 5367 | — |
+| 604 | 2916 | `grabchars-bin` | 0 | 0 | 0 | 2916 | — |
+| 605 | 3033 | `gram-editor-bin [NEEDS_RECIPE_DESIGN: guix show gram-editor failed (package not found in current channels); next: draft standalone recipe for gram-editor-bin in future pass]` | 0 | 0 | 0 | 3033 | — |
+| 606 | 3600 | `grpcurl-bin` | 0 | 0 | 0 | 3600 | — |
+| 607 | 4853 | `gruvbox-dark-gtk` | 0 | 0 | 0 | 4853 | — |
+| 608 | 4854 | `gruvbox-dark-icons-gtk` | 0 | 0 | 0 | 4854 | — |
+| 609 | 4065 | `gryph-bin` | 0 | 0 | 0 | 4065 | — |
+| 610 | 6543 | `gst-thumbnailers` | 0 | 0 | 0 | 6543 | — |
+| 611 | 8275 | `gup-bin` | 0 | 0 | 0 | 8275 | — |
+| 612 | 4747 | `gvisor-bin` | 0 | 0 | 0 | 4747 | — |
+| 613 | 8259 | `gyr-bin` | 0 | 0 | 0 | 8259 | — |
+| 614 | 8625 | `hadolint-bin` | 0 | 0 | 0 | 8625 | — |
+| 615 | 7665 | `happ-desktop` | 0 | 0 | 0 | 7665 | — |
+| 616 | 2937 | `hazkey-zenzai-model` | 0 | 0 | 0 | 2937 | — |
+| 617 | 7235 | `hbuilderx-alpha-bin` | 0 | 0 | 0 | 7235 | — |
+| 618 | 5142 | `hdfview-bin` | 0 | 0 | 0 | 5142 | — |
+| 619 | 6293 | `html2data-bin` | 0 | 0 | 0 | 6293 | — |
+| 620 | 3405 | `htmltest-bin` | 0 | 0 | 0 | 3405 | — |
+| 621 | 4732 | `httptoolkit-bin` | 0 | 0 | 0 | 4732 | — |
+| 622 | 4749 | `httpx-bin` | 0 | 0 | 0 | 4749 | — |
+| 623 | 3356 | `hubstaff` | 0 | 0 | 0 | 3356 | — |
+| 624 | 2568 | `hulak-bin` | 0 | 0 | 0 | 2568 | — |
+| 625 | 3170 | `hunspell-sk` | 0 | 0 | 0 | 3170 | — |
+| 626 | 3056 | `hurrycurry-server [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for hurrycurry-server; next: determine upstream source + build system for hurrycurry-server]` | 0 | 0 | 0 | 3056 | — |
+| 627 | 1263 | `hylauncher-bin` | 0 | 0 | 0 | 1263 | — |
+| 628 | 1531 | `hyperfluent-grub-theme-arch` | 0 | 0 | 0 | 1531 | — |
+| 629 | 7410 | `hyprdynamicmonitors-bin` | 0 | 0 | 0 | 7410 | — |
+| 630 | 6072 | `i915-sriov-dkms   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6072 | — |
+| 631 | 6043 | `ibus-mozc-ut-full   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6043 | — |
+| 632 | 6079 | `ik-llama.cpp-cuda   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6079 | — |
+| 633 | 6031 | `illogical-updots   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6031 | — |
+| 634 | 6105 | `intermodal-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6105 | — |
+| 635 | 3081 | `ipmctl-git [NEEDS_RECIPE_DESIGN: guix show ipmctl failed (package not found in current channels); next: draft standalone recipe for ipmctl-git in future pass]` | 0 | 0 | 0 | 3081 | — |
+| 636 | 6269 | `ironbar-script-net-bin` | 0 | 0 | 0 | 6269 | — |
+| 637 | 3903 | `iventoy-bin` | 0 | 0 | 0 | 3903 | — |
+| 638 | 3027 | `iwmenu-bin [NEEDS_RECIPE_DESIGN: guix show iwmenu failed (package not found in current channels); next: draft standalone recipe for iwmenu-bin in future pass]` | 0 | 0 | 0 | 3027 | — |
+| 639 | 3057 | `jellything-git [NEEDS_RECIPE_DESIGN: guix show jellything failed (package not found in current channels); next: draft standalone recipe for jellything-git in future pass]` | 0 | 0 | 0 | 3057 | — |
+| 640 | 1255 | `joplin-bin` | 0 | 0 | 0 | 1255 | — |
+| 641 | 6506 | `jotit-bin` | 0 | 0 | 0 | 6506 | — |
+| 642 | 3938 | `jsongrep-bin` | 0 | 0 | 0 | 3938 | — |
+| 643 | 6046 | `juliaup   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6046 | — |
+| 644 | 4891 | `just-the-browser-git` | 0 | 0 | 0 | 4891 | — |
+| 645 | 6443 | `justevery-code-bin` | 0 | 0 | 0 | 6443 | — |
+| 646 | 6401 | `k0sctl-bin` | 0 | 0 | 0 | 6401 | — |
+| 647 | 3774 | `kairo-bin` | 0 | 0 | 0 | 3774 | — |
+| 648 | 8230 | `kalker-bin` | 0 | 0 | 0 | 8230 | — |
+| 649 | 3738 | `katana-mk2-fxfloorboard-bin` | 0 | 0 | 0 | 3738 | — |
+| 650 | 3058 | `keks-meet-server [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for keks-meet-server; next: determine upstream source + build system for keks-meet-server]` | 0 | 0 | 0 | 3058 | — |
+| 651 | 6089 | `kernel-chktaint   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6089 | — |
+| 652 | 6118 | `keyguard   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6118 | — |
+| 653 | 7188 | `kloak-git` | 0 | 0 | 0 | 7188 | — |
+| 654 | 6114 | `knime-desktop   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6114 | — |
+| 655 | 2810 | `komodo-periphery-git` | 0 | 0 | 0 | 2810 | — |
+| 656 | 319 | `konform-multi-account-containers-lite` | 0 | 0 | 0 | 319 | — |
+| 657 | 4115 | `kopia-bin` | 0 | 0 | 0 | 4115 | — |
+| 658 | 4108 | `kopia-ui-bin` | 0 | 0 | 0 | 4108 | — |
+| 659 | 6696 | `krux-installer-bin` | 0 | 0 | 0 | 6696 | — |
+| 660 | 3546 | `kubefwd-bin` | 0 | 0 | 0 | 3546 | — |
+| 661 | 4877 | `kubeshark-bin` | 0 | 0 | 0 | 4877 | — |
+| 662 | 4769 | `kumono-bin` | 0 | 0 | 0 | 4769 | — |
+| 663 | 8244 | `kv-bin` | 0 | 0 | 0 | 8244 | — |
+| 664 | 6084 | `kwin-scripts-krohnkite   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6084 | — |
+| 665 | 5228 | `kyanos-bin` | 0 | 0 | 0 | 5228 | — |
+| 666 | 6612 | `ladybug-bin` | 0 | 0 | 0 | 6612 | — |
+| 667 | 2913 | `languagetool-ngrams-es` | 0 | 0 | 0 | 2913 | — |
+| 668 | 2579 | `lattice-bin` | 0 | 0 | 0 | 2579 | — |
+| 669 | 3223 | `lavat-git` | 0 | 0 | 0 | 3223 | — |
+| 670 | 4901 | `lazyactions-bin` | 0 | 0 | 0 | 4901 | — |
+| 671 | 4136 | `lazydns-bin` | 0 | 0 | 0 | 4136 | — |
+| 672 | 6490 | `lazydocker-ng-bin` | 0 | 0 | 0 | 6490 | — |
+| 673 | 2580 | `lazyjira-bin` | 0 | 0 | 0 | 2580 | — |
+| 674 | 6291 | `lazykiq-bin` | 0 | 0 | 0 | 6291 | — |
+| 675 | 3070 | `lazytail-bin [NEEDS_RECIPE_DESIGN: guix show lazytail failed (package not found in current channels); next: draft standalone recipe for lazytail-bin in future pass]` | 0 | 0 | 0 | 3070 | — |
+| 676 | 6050 | `lceda-pro   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6050 | — |
+| 677 | 3016 | `lenovo-print-driver-lj2400-m7400-bin [NEEDS_RECIPE_DESIGN: guix show lenovo-print-driver-lj2400-m7400 failed (package not found in current channels); next: draft standalone recipe for lenovo-print-driver-lj2400-m7400-bin in future pass]` | 0 | 0 | 0 | 3016 | — |
+| 678 | 3652 | `lian-bin` | 0 | 0 | 0 | 3652 | — |
+| 679 | 3043 | `libavif-noglycin [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libavif-noglycin; next: determine upstream source + build system for libavif-noglycin]` | 0 | 0 | 0 | 3043 | — |
+| 680 | 3605 | `libdeep_filter_ladspa-bin` | 0 | 0 | 0 | 3605 | — |
+| 681 | 3044 | `libheif-noglycin [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libheif-noglycin; next: determine upstream source + build system for libheif-noglycin]` | 0 | 0 | 0 | 3044 | — |
+| 682 | 3045 | `libjxl-noglycin [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libjxl-noglycin; next: determine upstream source + build system for libjxl-noglycin]` | 0 | 0 | 0 | 3045 | — |
+| 683 | 3046 | `libjxl-noglycin-doc [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libjxl-noglycin-doc; next: determine upstream source + build system for libjxl-noglycin-doc]` | 0 | 0 | 0 | 3046 | — |
+| 684 | 3024 | `libmodule [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libmodule; next: determine upstream source + build system for libmodule]` | 0 | 0 | 0 | 3024 | — |
+| 685 | 6063 | `librepods-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6063 | — |
+| 686 | 7696 | `librespeed-cli-bin` | 0 | 0 | 0 | 7696 | — |
+| 687 | 3407 | `librewolf-extension-keepassxc-browser` | 0 | 0 | 0 | 3407 | — |
+| 688 | 6125 | `libvpx1.10   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6125 | — |
+| 689 | 4918 | `lidm-systemd` | 0 | 0 | 0 | 4918 | — |
+| 690 | 4085 | `lidm-systemd-git` | 0 | 0 | 0 | 4085 | — |
+| 691 | 6120 | `linphone-desktop-call-edition   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6120 | — |
+| 692 | 6123 | `linux-cachyos-bore   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6123 | — |
+| 693 | 6122 | `linux-cachyos-bore-headers   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6122 | — |
+| 694 | 3021 | `linux-clear-cjktty-zfs [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for linux-clear-cjktty-zfs; next: determine upstream source + build system for linux-clear-cjktty-zfs]` | 0 | 0 | 0 | 3021 | — |
+| 695 | 3022 | `linux-clear-cjktty-zfs-headers [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for linux-clear-cjktty-zfs-headers; next: determine upstream source + build system for linux-clear-cjktty-zfs-headers]` | 0 | 0 | 0 | 3022 | — |
+| 696 | 7510 | `linux6.19.8.arch1-1-bin` | 0 | 0 | 0 | 7510 | — |
+| 697 | 7512 | `linux6.19.8.arch1-1-docs-bin` | 0 | 0 | 0 | 7512 | — |
+| 698 | 7511 | `linux6.19.8.arch1-1-headers-bin` | 0 | 0 | 0 | 7511 | — |
+| 699 | 7723 | `llama-swap-bin` | 0 | 0 | 0 | 7723 | — |
+| 700 | 2911 | `llog-bin` | 0 | 0 | 0 | 2911 | — |
+| 701 | 6692 | `lnko-bin` | 0 | 0 | 0 | 6692 | — |
+| 702 | 3076 | `lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]` | 0 | 0 | 0 | 3076 | — |
+| 703 | 2899 | `localias-bin` | 0 | 0 | 0 | 2899 | — |
+| 704 | 747 | `log2ram` | 0 | 0 | 0 | 747 | — |
+| 705 | 3094 | `logibar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for logibar; next: determine upstream source + build system for logibar]` | 0 | 0 | 0 | 3094 | — |
+| 706 | 2874 | `logmonster-bin` | 0 | 0 | 0 | 2874 | — |
+| 707 | 3692 | `lolcat++-bin` | 0 | 0 | 0 | 3692 | — |
+| 708 | 6077 | `lotion   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6077 | — |
+| 709 | 7262 | `lstr-bin` | 0 | 0 | 0 | 7262 | — |
+| 710 | 6067 | `lwm-legacy   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6067 | — |
+| 711 | 7649 | `lx-bin` | 0 | 0 | 0 | 7649 | — |
+| 712 | 6668 | `lzbench-bin` | 0 | 0 | 0 | 6668 | — |
+| 713 | 1285 | `magiskboot-bin` | 0 | 0 | 0 | 1285 | — |
+| 714 | 6204 | `makeenv` | 0 | 0 | 0 | 6204 | — |
+| 715 | 4644 | `mangcli-bin` | 0 | 0 | 0 | 4644 | — |
+| 716 | 687 | `mangowc-git` | 0 | 0 | 0 | 687 | — |
+| 717 | 5450 | `mas` | 0 | 0 | 0 | 5450 | — |
+| 718 | 3025 | `mas [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for mas; next: determine upstream source + build system for mas]` | 0 | 0 | 0 | 3025 | — |
+| 719 | 3666 | `matcha-client-bin` | 0 | 0 | 0 | 3666 | — |
+| 720 | 7622 | `mchose-a7-v2-pro-udev` | 0 | 0 | 0 | 7622 | — |
+| 721 | 6780 | `mcjoin` | 0 | 0 | 0 | 6780 | — |
+| 722 | 3665 | `mcp-cli-bin` | 0 | 0 | 0 | 3665 | — |
+| 723 | 1120 | `median` | 0 | 0 | 0 | 1120 | — |
+| 724 | 2484 | `megit` | 0 | 0 | 0 | 2484 | — |
+| 725 | 4894 | `memtui-bin` | 0 | 0 | 0 | 4894 | — |
+| 726 | 6115 | `menulibre   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6115 | — |
+| 727 | 2833 | `mercator-bin` | 0 | 0 | 0 | 2833 | — |
+| 728 | 6661 | `mercury-browser-sse4-bin` | 0 | 0 | 0 | 6661 | — |
+| 729 | 5492 | `mezzotone-bin` | 0 | 0 | 0 | 5492 | — |
+| 730 | 3079 | `mezzotone-bin [NEEDS_RECIPE_DESIGN: guix show mezzotone failed (package not found in current channels); next: draft standalone recipe for mezzotone-bin in future pass]` | 0 | 0 | 0 | 3079 | — |
+| 731 | 3410 | `migrate-bin` | 0 | 0 | 0 | 3410 | — |
+| 732 | 6113 | `miniconda3   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6113 | — |
+| 733 | 6034 | `mint-themes   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6034 | — |
+| 734 | 3062 | `mkbrr-gui-bin [NEEDS_RECIPE_DESIGN: guix show mkbrr-gui failed (package not found in current channels); next: draft standalone recipe for mkbrr-gui-bin in future pass]` | 0 | 0 | 0 | 3062 | — |
+| 735 | 3097 | `mkinitcpio-firmware [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for mkinitcpio-firmware; next: determine upstream source + build system for mkinitcpio-firmware]` | 0 | 0 | 0 | 3097 | — |
+| 736 | 6065 | `mkinitcpio-sd-zfs   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6065 | — |
+| 737 | 8322 | `mockoon-bin` | 0 | 0 | 0 | 8322 | — |
+| 738 | 5161 | `mods-bin` | 0 | 0 | 0 | 5161 | — |
+| 739 | 1086 | `mongoclock` | 0 | 0 | 0 | 1086 | — |
+| 740 | 5312 | `mongotimer` | 0 | 0 | 0 | 5312 | — |
+| 741 | 4206 | `monika-after-story` | 0 | 0 | 0 | 4206 | — |
+| 742 | 4482 | `monika-after-story-bin` | 0 | 0 | 0 | 4482 | — |
+| 743 | 8624 | `moor-bin` | 0 | 0 | 0 | 8624 | — |
+| 744 | 6042 | `mozc-ut-full-common   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6042 | — |
+| 745 | 6047 | `mozillavpn   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6047 | — |
+| 746 | 6768 | `mping` | 0 | 0 | 0 | 6768 | — |
+| 747 | 6117 | `mssql-server   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6117 | — |
+| 748 | 6087 | `mssql-tools   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6087 | — |
+| 749 | 6273 | `mullvad-socks-bin` | 0 | 0 | 0 | 6273 | — |
+| 750 | 4931 | `mxw-udev` | 0 | 0 | 0 | 4931 | — |
+| 751 | 4535 | `mynav-bin` | 0 | 0 | 0 | 4535 | — |
+| 752 | 4143 | `mythes-ru` | 0 | 0 | 0 | 4143 | — |
+| 753 | 6055 | `naps2-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6055 | — |
+| 754 | 8180 | `natscli-bin` | 0 | 0 | 0 | 8180 | — |
+| 755 | 7193 | `nav-cli` | 0 | 0 | 0 | 7193 | — |
+| 756 | 7996 | `navicat17-premium-en` | 0 | 0 | 0 | 7996 | — |
+| 757 | 3514 | `nekot-bin` | 0 | 0 | 0 | 3514 | — |
+| 758 | 6066 | `neohtop-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6066 | — |
+| 759 | 6096 | `netcoredbg-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6096 | — |
+| 760 | 4940 | `netscanner-bin` | 0 | 0 | 0 | 4940 | — |
+| 761 | 3038 | `netwatch-tui [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for netwatch-tui; next: determine upstream source + build system for netwatch-tui]` | 0 | 0 | 0 | 3038 | — |
+| 762 | 6383 | `nextcloud-talk-desktop-bin` | 0 | 0 | 0 | 6383 | — |
+| 763 | 6097 | `nextdns-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6097 | — |
+| 764 | 7536 | `nexttrace-bin` | 0 | 0 | 0 | 7536 | — |
+| 765 | 3879 | `ngrok` | 0 | 0 | 0 | 3879 | — |
+| 766 | 7498 | `ninjarmm-ncplayer` | 0 | 0 | 0 | 7498 | — |
+| 767 | 3934 | `ninvaders` | 0 | 0 | 0 | 3934 | — |
+| 768 | 3035 | `nodejs-knit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for nodejs-knit; next: determine upstream source + build system for nodejs-knit]` | 0 | 0 | 0 | 3035 | — |
+| 769 | 4910 | `nodenv-node-build` | 0 | 0 | 0 | 4910 | — |
+| 770 | 1198 | `nordvpn-bin` | 0 | 0 | 0 | 1198 | — |
+| 771 | 6098 | `nordvpn-gui   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6098 | — |
+| 772 | 1391 | `nordvpn-live-bin` | 0 | 0 | 0 | 1391 | — |
+| 773 | 3019 | `noto-fonts-cjk-fontconfig [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for noto-fonts-cjk-fontconfig; next: determine upstream source + build system for noto-fonts-cjk-fontconfig]` | 0 | 0 | 0 | 3019 | — |
+| 774 | 7764 | `notwaita-cursor-theme` | 0 | 0 | 0 | 7764 | — |
+| 775 | 4556 | `noxdir-bin` | 0 | 0 | 0 | 4556 | — |
+| 776 | 7529 | `nvidia-gpu-exporter-bin` | 0 | 0 | 0 | 7529 | — |
+| 777 | 5317 | `nvidia-prime-rtd3pm` | 0 | 0 | 0 | 5317 | — |
+| 778 | 548 | `nvidia-vulkan-dkms` | 0 | 0 | 0 | 548 | — |
+| 779 | 6099 | `obs-plugin-browser   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6099 | — |
+| 780 | 5 | `obsidian` | 0 | 0 | 0 | 5 | — |
+| 781 | 4000 | `obsidian-2-theme` | 0 | 0 | 0 | 4000 | — |
+| 782 | 8005 | `ocr-fonts` | 0 | 0 | 0 | 8005 | — |
+| 783 | 3198 | `official-gamecube-controller-adapter-rules` | 0 | 0 | 0 | 3198 | — |
+| 784 | 3069 | `oken-bin [NEEDS_RECIPE_DESIGN: guix show oken failed (package not found in current channels); next: draft standalone recipe for oken-bin in future pass]` | 0 | 0 | 0 | 3069 | — |
+| 785 | 2941 | `omnidotdev-cli-bin` | 0 | 0 | 0 | 2941 | — |
+| 786 | 2972 | `omnidotdev-eden-bin` | 0 | 0 | 0 | 2972 | — |
+| 787 | 3087 | `omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]` | 0 | 0 | 0 | 3087 | — |
+| 788 | 3047 | `op-cache-git [NEEDS_RECIPE_DESIGN: guix show op-cache failed (package not found in current channels); next: draft standalone recipe for op-cache-git in future pass]` | 0 | 0 | 0 | 3047 | — |
+| 789 | 1578 | `openai-codex-autoup-bin` | 0 | 0 | 0 | 1578 | — |
+| 790 | 229 | `openbao` | 0 | 0 | 0 | 229 | — |
+| 791 | 6092 | `opencv2   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6092 | — |
+| 792 | 3010 | `openhue-cli [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for openhue-cli; next: determine upstream source + build system for openhue-cli]` | 0 | 0 | 0 | 3010 | — |
+| 793 | 1503 | `openide-bin` | 0 | 0 | 0 | 1503 | — |
+| 794 | 3610 | `openlist-bin` | 0 | 0 | 0 | 3610 | — |
+| 795 | 3907 | `openscad-attachable-text3d` | 0 | 0 | 0 | 3907 | — |
+| 796 | 4684 | `openscad-bosl2-git` | 0 | 0 | 0 | 4684 | — |
+| 797 | 6071 | `openscq30-cli   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6071 | — |
+| 798 | 6070 | `openscq30-gui   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6070 | — |
+| 799 | 7448 | `orbit-bin` | 0 | 0 | 0 | 7448 | — |
+| 800 | 7023 | `orbolay-bin` | 0 | 0 | 0 | 7023 | — |
+| 801 | 2607 | `otel-weaver-bin` | 0 | 0 | 0 | 2607 | — |
+| 802 | 7230 | `otf-arsenal` | 0 | 0 | 0 | 7230 | — |
+| 803 | 4100 | `otf-atkinson-hyperlegible-next` | 0 | 0 | 0 | 4100 | — |
+| 804 | 4103 | `otf-atkinson-hyperlegible-next-mono` | 0 | 0 | 0 | 4103 | — |
+| 805 | 3221 | `otf-font-awesome-4` | 0 | 0 | 0 | 3221 | — |
+| 806 | 3235 | `otf-font-awesome-5` | 0 | 0 | 0 | 3235 | — |
+| 807 | 4038 | `otf-garamontio` | 0 | 0 | 0 | 4038 | — |
+| 808 | 4036 | `otf-garamontio-capo` | 0 | 0 | 0 | 4036 | — |
+| 809 | 4623 | `otf-geist` | 0 | 0 | 0 | 4623 | — |
+| 810 | 4626 | `otf-geist-mono` | 0 | 0 | 0 | 4626 | — |
+| 811 | 5209 | `otf-kopub` | 0 | 0 | 0 | 5209 | — |
+| 812 | 5210 | `otf-kopubworld` | 0 | 0 | 0 | 5210 | — |
+| 813 | 6599 | `otf-myna` | 0 | 0 | 0 | 6599 | — |
+| 814 | 2393 | `otf-tesla` | 0 | 0 | 0 | 2393 | — |
+| 815 | 8627 | `otf-unifont` | 0 | 0 | 0 | 8627 | — |
+| 816 | 3146 | `otf-xkcd-font` | 0 | 0 | 0 | 3146 | — |
+| 817 | 4256 | `ov-bin` | 0 | 0 | 0 | 4256 | — |
+| 818 | 4144 | `ovpn-status-bin` | 0 | 0 | 0 | 4144 | — |
+| 819 | 1385 | `ovrport-bin` | 0 | 0 | 0 | 1385 | — |
+| 820 | 6219 | `owlry-meta-essentials` | 0 | 0 | 0 | 6219 | — |
+| 821 | 6218 | `owlry-meta-full` | 0 | 0 | 0 | 6218 | — |
+| 822 | 6217 | `owlry-meta-tools` | 0 | 0 | 0 | 6217 | — |
+| 823 | 6216 | `owlry-meta-widgets` | 0 | 0 | 0 | 6216 | — |
+| 824 | 3664 | `oyasumi-bin` | 0 | 0 | 0 | 3664 | — |
+| 825 | 7762 | `p4merge-bin` | 0 | 0 | 0 | 7762 | — |
+| 826 | 3092 | `pandoc-crossref-bin [NEEDS_RECIPE_DESIGN: guix show pandoc-crossref failed (package not found in current channels); next: draft standalone recipe for pandoc-crossref-bin in future pass]` | 0 | 0 | 0 | 3092 | — |
+| 827 | 4223 | `pantum-driver` | 0 | 0 | 0 | 4223 | — |
+| 828 | 6035 | `paper-muncher-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6035 | — |
+| 829 | 3400 | `passwdqc-utils` | 0 | 0 | 0 | 3400 | — |
+| 830 | 7632 | `path-utils` | 0 | 0 | 0 | 7632 | — |
+| 831 | 6192 | `pdeath` | 0 | 0 | 0 | 6192 | — |
+| 832 | 6041 | `peerflix   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6041 | — |
+| 833 | 2996 | `pent-bin` | 0 | 0 | 0 | 2996 | — |
+| 834 | 6522 | `pgyvisitor` | 0 | 0 | 0 | 6522 | — |
+| 835 | 718 | `pi-hole-web` | 0 | 0 | 0 | 718 | — |
+| 836 | 7569 | `picsort-bin` | 0 | 0 | 0 | 7569 | — |
+| 837 | 8273 | `pingme-bin` | 0 | 0 | 0 | 8273 | — |
+| 838 | 6121 | `pipeline-gtk   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6121 | — |
+| 839 | 3243 | `pipewire-enable-bluez5` | 0 | 0 | 0 | 3243 | — |
+| 840 | 1294 | `pistol-bin` | 0 | 0 | 0 | 1294 | — |
+| 841 | 6073 | `pixelserv-tls   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6073 | — |
+| 842 | 3059 | `pixora-icons-git [NEEDS_RECIPE_DESIGN: guix show pixora-icons failed (package not found in current channels); next: draft standalone recipe for pixora-icons-git in future pass]` | 0 | 0 | 0 | 3059 | — |
+| 843 | 3697 | `pj-bin` | 0 | 0 | 0 | 3697 | — |
+| 844 | 3459 | `pkl-bin` | 0 | 0 | 0 | 3459 | — |
+| 845 | 4164 | `playit-bin` | 0 | 0 | 0 | 4164 | — |
+| 846 | 2780 | `plecs-standalone` | 0 | 0 | 0 | 2780 | — |
+| 847 | 4539 | `plenti-bin` | 0 | 0 | 0 | 4539 | — |
+| 848 | 27 | `plex-media-server` | 0 | 0 | 0 | 27 | — |
+| 849 | 642 | `plex-media-server-plexpass` | 0 | 0 | 0 | 642 | — |
+| 850 | 2615 | `plist-bin` | 0 | 0 | 0 | 2615 | — |
+| 851 | 4086 | `pmg-bin` | 0 | 0 | 0 | 4086 | — |
+| 852 | 5257 | `pmtiles` | 0 | 0 | 0 | 5257 | — |
+| 853 | 2749 | `podman-tui-bin` | 0 | 0 | 0 | 2749 | — |
+| 854 | 3037 | `podserv-b-git [NEEDS_RECIPE_DESIGN: guix show podserv-b failed (package not found in current channels); next: draft standalone recipe for podserv-b-git in future pass]` | 0 | 0 | 0 | 3037 | — |
+| 855 | 5031 | `posy-improved-cursors` | 0 | 0 | 0 | 5031 | — |
+| 856 | 2817 | `powerline-go-bin` | 0 | 0 | 0 | 2817 | — |
+| 857 | 3083 | `pricehist [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for pricehist; next: determine upstream source + build system for pricehist]` | 0 | 0 | 0 | 3083 | — |
+| 858 | 6759 | `projtlauncher` | 0 | 0 | 0 | 6759 | — |
+| 859 | 21 | `protonmail-bridge` | 0 | 0 | 0 | 21 | — |
+| 860 | 1625 | `protonup-rs-bin` | 0 | 0 | 0 | 1625 | — |
+| 861 | 3452 | `pv-migrate-bin` | 0 | 0 | 0 | 3452 | — |
+| 862 | 3029 | `pwmenu-bin [NEEDS_RECIPE_DESIGN: guix show pwmenu failed (package not found in current channels); next: draft standalone recipe for pwmenu-bin in future pass]` | 0 | 0 | 0 | 3029 | — |
+| 863 | 11 | `pycharm-professional` | 0 | 0 | 0 | 11 | — |
+| 864 | 3082 | `python-aiohttp-jinja2 [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-aiohttp-jinja2; next: determine upstream source + build system for python-aiohttp-jinja2]` | 0 | 0 | 0 | 3082 | — |
+| 865 | 3965 | `python-django-docs` | 0 | 0 | 0 | 3965 | — |
+| 866 | 6093 | `python-fastmcp   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6093 | — |
+| 867 | 6033 | `python-nspektr   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6033 | — |
+| 868 | 3007 | `python-pysmart [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-pysmart; next: determine upstream source + build system for python-pysmart]` | 0 | 0 | 0 | 3007 | — |
+| 869 | 6053 | `python-simple-term-menu   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6053 | — |
+| 870 | 6078 | `python-syncedlyrics   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6078 | — |
+| 871 | 3040 | `q5k-usb-udev [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for q5k-usb-udev; next: determine upstream source + build system for q5k-usb-udev]` | 0 | 0 | 0 | 3040 | — |
+| 872 | 3041 | `qpdf-zopfli [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for qpdf-zopfli; next: determine upstream source + build system for qpdf-zopfli]` | 0 | 0 | 0 | 3041 | — |
+| 873 | 6983 | `qqqa-bin` | 0 | 0 | 0 | 6983 | — |
+| 874 | 6080 | `qt6-wasm   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6080 | — |
+| 875 | 1187 | `qui-bin` | 0 | 0 | 0 | 1187 | — |
+| 876 | 6110 | `quirc   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6110 | — |
+| 877 | 3098 | `qxmledit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for qxmledit; next: determine upstream source + build system for qxmledit]` | 0 | 0 | 0 | 3098 | — |
+| 878 | 6027 | `r-quick-share   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6027 | — |
+| 879 | 3065 | `r47-bin [NEEDS_RECIPE_DESIGN: guix show r47 failed (package not found in current channels); next: draft standalone recipe for r47-bin in future pass]` | 0 | 0 | 0 | 3065 | — |
+| 880 | 7405 | `radicle-httpd-bin` | 0 | 0 | 0 | 7405 | — |
+| 881 | 7688 | `rbackup` | 0 | 0 | 0 | 7688 | — |
+| 882 | 2918 | `recall-bin` | 0 | 0 | 0 | 2918 | — |
+| 883 | 8554 | `reddix-bin` | 0 | 0 | 0 | 8554 | — |
+| 884 | 8236 | `regina-rexx-doc` | 0 | 0 | 0 | 8236 | — |
+| 885 | 3008 | `renamemytvseries-gtk-bin [NEEDS_RECIPE_DESIGN: guix show renamemytvseries-gtk failed (package not found in current channels); next: draft standalone recipe for renamemytvseries-gtk-bin in future pass]` | 0 | 0 | 0 | 3008 | — |
+| 886 | 2897 | `rep-bin` | 0 | 0 | 0 | 2897 | — |
+| 887 | 2629 | `repo-security-scanner-bin` | 0 | 0 | 0 | 2629 | — |
+| 888 | 3013 | `reqable-bin [NEEDS_RECIPE_DESIGN: guix show reqable failed (package not found in current channels); next: draft standalone recipe for reqable-bin in future pass]` | 0 | 0 | 0 | 3013 | — |
+| 889 | 4419 | `rexuiz-bin` | 0 | 0 | 0 | 4419 | — |
+| 890 | 3561 | `rgrc-bin` | 0 | 0 | 0 | 3561 | — |
+| 891 | 2044 | `rider` | 0 | 0 | 0 | 2044 | — |
+| 892 | 8626 | `rider-eap` | 0 | 0 | 0 | 8626 | — |
+| 893 | 6441 | `rime-wanxiang-gram-zh-hans` | 0 | 0 | 0 | 6441 | — |
+| 894 | 1626 | `rimsort-bin` | 0 | 0 | 0 | 1626 | — |
+| 895 | 1085 | `rinetd` | 0 | 0 | 0 | 1085 | — |
+| 896 | 4391 | `rjq-bin` | 0 | 0 | 0 | 4391 | — |
+| 897 | 3374 | `rockhopper-bin` | 0 | 0 | 0 | 3374 | — |
+| 898 | 6038 | `rocm-clang-ocl   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6038 | — |
+| 899 | 64 | `rofi-lbonn-wayland-git` | 0 | 0 | 0 | 64 | — |
+| 900 | 3770 | `rose-pine-cursor` | 0 | 0 | 0 | 3770 | — |
+| 901 | 8260 | `rres-bin` | 0 | 0 | 0 | 8260 | — |
+| 902 | 7977 | `rtimelog` | 0 | 0 | 0 | 7977 | — |
+| 903 | 7978 | `rtimelogger` | 0 | 0 | 0 | 7978 | — |
+| 904 | 8550 | `rust-docs` | 0 | 0 | 0 | 8550 | — |
+| 905 | 6698 | `rusticon-bin` | 0 | 0 | 0 | 6698 | — |
+| 906 | 4171 | `rustrover-eap-jre` | 0 | 0 | 0 | 4171 | — |
+| 907 | 3036 | `sabiql-bin [NEEDS_RECIPE_DESIGN: guix show sabiql failed (package not found in current channels); next: draft standalone recipe for sabiql-bin in future pass]` | 0 | 0 | 0 | 3036 | — |
+| 908 | 6107 | `scopehal-apps-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6107 | — |
+| 909 | 6700 | `sequin-bin` | 0 | 0 | 0 | 6700 | — |
+| 910 | 2977 | `seristack-bin` | 0 | 0 | 0 | 2977 | — |
+| 911 | 6193 | `setpgrp` | 0 | 0 | 0 | 6193 | — |
+| 912 | 3301 | `shadps4-qtlauncher-bin` | 0 | 0 | 0 | 3301 | — |
+| 913 | 8324 | `shaka-packager-bin` | 0 | 0 | 0 | 8324 | — |
+| 914 | 6086 | `shaka-packager-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6086 | — |
+| 915 | 7684 | `shc` | 0 | 0 | 0 | 7684 | — |
+| 916 | 1310 | `shellcheck-bin` | 0 | 0 | 0 | 1310 | — |
+| 917 | 7439 | `shim-signed` | 0 | 0 | 0 | 7439 | — |
+| 918 | 5247 | `shutsentry` | 0 | 0 | 0 | 5247 | — |
+| 919 | 41 | `signal-desktop-bin` | 0 | 0 | 0 | 41 | — |
+| 920 | 6559 | `simple-http-server-bin` | 0 | 0 | 0 | 6559 | — |
+| 921 | 351 | `slack` | 0 | 0 | 0 | 351 | — |
+| 922 | 2762 | `slackdump-bin` | 0 | 0 | 0 | 2762 | — |
+| 923 | 4077 | `sley-bin` | 0 | 0 | 0 | 4077 | — |
+| 924 | 1162 | `smb1r-bin` | 0 | 0 | 0 | 1162 | — |
+| 925 | 2423 | `snazy-bin` | 0 | 0 | 0 | 2423 | — |
+| 926 | 2698 | `snekstudio-bin` | 0 | 0 | 0 | 2698 | — |
+| 927 | 3629 | `snipaste` | 0 | 0 | 0 | 3629 | — |
+| 928 | 2640 | `sniplias-bin` | 0 | 0 | 0 | 2640 | — |
+| 929 | 3659 | `socialstreamninja-bin` | 0 | 0 | 0 | 3659 | — |
+| 930 | 4422 | `solv-bin` | 0 | 0 | 0 | 4422 | — |
+| 931 | 3422 | `sononym` | 0 | 0 | 0 | 3422 | — |
+| 932 | 5311 | `sound-theme-smooth` | 0 | 0 | 0 | 5311 | — |
+| 933 | 7745 | `soundfont-fatboy` | 0 | 0 | 0 | 7745 | — |
+| 934 | 6395 | `soundfont-sgm` | 0 | 0 | 0 | 6395 | — |
+| 935 | 6119 | `speedtest-go   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6119 | — |
+| 936 | 3089 | `spinwheel-pipewire [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for spinwheel-pipewire; next: determine upstream source + build system for spinwheel-pipewire]` | 0 | 0 | 0 | 3089 | — |
+| 937 | 6030 | `spotube   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6030 | — |
+| 938 | 3648 | `spout2pw-bin` | 0 | 0 | 0 | 3648 | — |
+| 939 | 4534 | `sq-bin` | 0 | 0 | 0 | 4534 | — |
+| 940 | 6685 | `sqd-bin` | 0 | 0 | 0 | 6685 | — |
+| 941 | 2825 | `sqlbless-bin` | 0 | 0 | 0 | 2825 | — |
+| 942 | 3307 | `sqlpage-bin` | 0 | 0 | 0 | 3307 | — |
+| 943 | 8264 | `sqly-bin` | 0 | 0 | 0 | 8264 | — |
+| 944 | 4418 | `square1-wad` | 0 | 0 | 0 | 4418 | — |
+| 945 | 2645 | `srwm-bin` | 0 | 0 | 0 | 2645 | — |
+| 946 | 8317 | `ssh2incus-bin` | 0 | 0 | 0 | 8317 | — |
+| 947 | 6036 | `sshm-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6036 | — |
+| 948 | 8605 | `steamguard-cli-bin` | 0 | 0 | 0 | 8605 | — |
+| 949 | 1467 | `steamvr-linux-fixes-layer-bin` | 0 | 0 | 0 | 1467 | — |
+| 950 | 4467 | `sticker-convert` | 0 | 0 | 0 | 4467 | — |
+| 951 | 7458 | `stil-bin` | 0 | 0 | 0 | 7458 | — |
+| 952 | 4054 | `stitchmd-bin` | 0 | 0 | 0 | 4054 | — |
+| 953 | 1254 | `stripe-cli-bin` | 0 | 0 | 0 | 1254 | — |
+| 954 | 4386 | `stto-bin` | 0 | 0 | 0 | 4386 | — |
+| 955 | 2878 | `subs2srs-git` | 0 | 0 | 0 | 2878 | — |
+| 956 | 3396 | `subs2srs-gtk3-git` | 0 | 0 | 0 | 3396 | — |
+| 957 | 3926 | `sudoku-simple` | 0 | 0 | 0 | 3926 | — |
+| 958 | 6754 | `suiup-bin` | 0 | 0 | 0 | 6754 | — |
+| 959 | 4432 | `superdb-bin` | 0 | 0 | 0 | 4432 | — |
+| 960 | 7010 | `superhtml-bin` | 0 | 0 | 0 | 7010 | — |
+| 961 | 2652 | `sway-easyshot-bin` | 0 | 0 | 0 | 2652 | — |
+| 962 | 3042 | `swhook [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for swhook; next: determine upstream source + build system for swhook]` | 0 | 0 | 0 | 3042 | — |
+| 963 | 3039 | `synergy3-bin [NEEDS_RECIPE_DESIGN: guix show synergy3 failed (package not found in current channels); next: draft standalone recipe for synergy3-bin in future pass]` | 0 | 0 | 0 | 3039 | — |
+| 964 | 3018 | `sysbox-ce [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for sysbox-ce; next: determine upstream source + build system for sysbox-ce]` | 0 | 0 | 0 | 3018 | — |
+| 965 | 6103 | `systemd-cleanup-pacman-hook   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6103 | — |
+| 966 | 3006 | `systemd-suspend-modules [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for systemd-suspend-modules; next: determine upstream source + build system for systemd-suspend-modules]` | 0 | 0 | 0 | 3006 | — |
+| 967 | 3049 | `szsol-rs [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for szsol-rs; next: determine upstream source + build system for szsol-rs]` | 0 | 0 | 0 | 3049 | — |
+| 968 | 7213 | `taierspeed-cli-bin` | 0 | 0 | 0 | 7213 | — |
+| 969 | 7563 | `tartrazine-bin` | 0 | 0 | 0 | 7563 | — |
+| 970 | 1238 | `taws-bin` | 0 | 0 | 0 | 1238 | — |
+| 971 | 7896 | `teleport-client-bin` | 0 | 0 | 0 | 7896 | — |
+| 972 | 2847 | `tennis-bin` | 0 | 0 | 0 | 2847 | — |
+| 973 | 6350 | `term39-bin` | 0 | 0 | 0 | 6350 | — |
+| 974 | 6701 | `termirs-bin` | 0 | 0 | 0 | 6701 | — |
+| 975 | 8011 | `terraform-bin` | 0 | 0 | 0 | 8011 | — |
+| 976 | 6411 | `terrascan-bin` | 0 | 0 | 0 | 6411 | — |
+| 977 | 6978 | `teseq` | 0 | 0 | 0 | 6978 | — |
+| 978 | 7548 | `tetrigo-bin` | 0 | 0 | 0 | 7548 | — |
+| 979 | 4367 | `tgcp-bin` | 0 | 0 | 0 | 4367 | — |
+| 980 | 3488 | `the_platinum_searcher-bin` | 0 | 0 | 0 | 3488 | — |
+| 981 | 6029 | `tic80-pro-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6029 | — |
+| 982 | 2985 | `tiki-bin` | 0 | 0 | 0 | 2985 | — |
+| 983 | 3063 | `tilem-gtk3-git [NEEDS_RECIPE_DESIGN: guix show tilem-gtk3 failed (package not found in current channels); next: draft standalone recipe for tilem-gtk3-git in future pass]` | 0 | 0 | 0 | 3063 | — |
+| 984 | 6236 | `timeprefix` | 0 | 0 | 0 | 6236 | — |
+| 985 | 3387 | `tinct-bin` | 0 | 0 | 0 | 3387 | — |
+| 986 | 4433 | `tmpo-bin` | 0 | 0 | 0 | 4433 | — |
+| 987 | 1368 | `tmq-bin` | 0 | 0 | 0 | 1368 | — |
+| 988 | 3088 | `tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]` | 0 | 0 | 0 | 3088 | — |
+| 989 | 4937 | `tock-bin` | 0 | 0 | 0 | 4937 | — |
+| 990 | 3944 | `togo-bin` | 0 | 0 | 0 | 3944 | — |
+| 991 | 3989 | `tome4-bin` | 0 | 0 | 0 | 3989 | — |
+| 992 | 7332 | `tonespace` | 0 | 0 | 0 | 7332 | — |
+| 993 | 4672 | `topgrade-bin` | 0 | 0 | 0 | 4672 | — |
+| 994 | 1184 | `tori-cli-bin` | 0 | 0 | 0 | 1184 | — |
+| 995 | 6382 | `tosu` | 0 | 0 | 0 | 6382 | — |
+| 996 | 6026 | `tramp   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6026 | — |
+| 997 | 4368 | `tredis-bin` | 0 | 0 | 0 | 4368 | — |
+| 998 | 3266 | `treekei-bin` | 0 | 0 | 0 | 3266 | — |
+| 999 | 3204 | `trolley-bin` | 0 | 0 | 0 | 3204 | — |
+| 1000 | 6528 | `try-cli-bin` | 0 | 0 | 0 | 6528 | — |
+| 1001 | 4648 | `try-rs-bin` | 0 | 0 | 0 | 4648 | — |
+| 1002 | 4927 | `tsql-bin` | 0 | 0 | 0 | 4927 | — |
+| 1003 | 8037 | `ttf-aptos` | 0 | 0 | 0 | 8037 | — |
+| 1004 | 4101 | `ttf-atkinson-hyperlegible-next` | 0 | 0 | 0 | 4101 | — |
+| 1005 | 4104 | `ttf-atkinson-hyperlegible-next-mono` | 0 | 0 | 0 | 4104 | — |
+| 1006 | 4105 | `ttf-atkinson-hyperlegible-next-mono-variable` | 0 | 0 | 0 | 4105 | — |
+| 1007 | 4102 | `ttf-atkinson-hyperlegible-next-variable` | 0 | 0 | 0 | 4102 | — |
+| 1008 | 3503 | `ttf-chocolate-classical-sans` | 0 | 0 | 0 | 3503 | — |
+| 1009 | 6682 | `ttf-comic-neue` | 0 | 0 | 0 | 6682 | — |
+| 1010 | 5113 | `ttf-courier-prime` | 0 | 0 | 0 | 5113 | — |
+| 1011 | 4841 | `ttf-fira-go` | 0 | 0 | 0 | 4841 | — |
+| 1012 | 3220 | `ttf-font-awesome-4` | 0 | 0 | 0 | 3220 | — |
+| 1013 | 3234 | `ttf-font-awesome-5` | 0 | 0 | 0 | 3234 | — |
+| 1014 | 4039 | `ttf-garamontio` | 0 | 0 | 0 | 4039 | — |
+| 1015 | 4037 | `ttf-garamontio-capo` | 0 | 0 | 0 | 4037 | — |
+| 1016 | 4040 | `ttf-garamontio-variable` | 0 | 0 | 0 | 4040 | — |
+| 1017 | 4624 | `ttf-geist` | 0 | 0 | 0 | 4624 | — |
+| 1018 | 4627 | `ttf-geist-mono` | 0 | 0 | 0 | 4627 | — |
+| 1019 | 4628 | `ttf-geist-mono-variable` | 0 | 0 | 0 | 4628 | — |
+| 1020 | 4625 | `ttf-geist-variable` | 0 | 0 | 0 | 4625 | — |
+| 1021 | 7959 | `ttf-gentium-basic` | 0 | 0 | 0 | 7959 | — |
+| 1022 | 6358 | `ttf-go` | 0 | 0 | 0 | 6358 | — |
+| 1023 | 6974 | `ttf-hackgen` | 0 | 0 | 0 | 6974 | — |
+| 1024 | 6613 | `ttf-harmonyos-sans` | 0 | 0 | 0 | 6613 | — |
+| 1025 | 7032 | `ttf-hellvetica` | 0 | 0 | 0 | 7032 | — |
+| 1026 | 3140 | `ttf-icomoon-feather` | 0 | 0 | 0 | 3140 | — |
+| 1027 | 7429 | `ttf-ioskeley-mono-unhinted` | 0 | 0 | 0 | 7429 | — |
+| 1028 | 364 | `ttf-joypixels` | 0 | 0 | 0 | 364 | — |
+| 1029 | 3391 | `ttf-kanjistrokeorders` | 0 | 0 | 0 | 3391 | — |
+| 1030 | 6185 | `ttf-lxgw-fasmart-gothic` | 0 | 0 | 0 | 6185 | — |
+| 1031 | 4404 | `ttf-lxgw-neo-xihei` | 0 | 0 | 0 | 4404 | — |
+| 1032 | 4257 | `ttf-lxgw-neo-xihei-plus` | 0 | 0 | 0 | 4257 | — |
+| 1033 | 4405 | `ttf-lxgw-neo-xihei-screen` | 0 | 0 | 0 | 4405 | — |
+| 1034 | 1920 | `ttf-material-icons-git` | 0 | 0 | 0 | 1920 | — |
+| 1035 | 2448 | `ttf-mononoki` | 0 | 0 | 0 | 2448 | — |
+| 1036 | 1608 | `ttf-ms-win10` | 0 | 0 | 0 | 1608 | — |
+| 1037 | 1609 | `ttf-ms-win10-japanese` | 0 | 0 | 0 | 1609 | — |
+| 1038 | 1610 | `ttf-ms-win10-korean` | 0 | 0 | 0 | 1610 | — |
+| 1039 | 1615 | `ttf-ms-win10-other` | 0 | 0 | 0 | 1615 | — |
+| 1040 | 1611 | `ttf-ms-win10-sea` | 0 | 0 | 0 | 1611 | — |
+| 1041 | 1612 | `ttf-ms-win10-thai` | 0 | 0 | 0 | 1612 | — |
+| 1042 | 1613 | `ttf-ms-win10-zh_cn` | 0 | 0 | 0 | 1613 | — |
+| 1043 | 1614 | `ttf-ms-win10-zh_tw` | 0 | 0 | 0 | 1614 | — |
+| 1044 | 704 | `ttf-ms-win11` | 0 | 0 | 0 | 704 | — |
+| 1045 | 703 | `ttf-ms-win11-japanese` | 0 | 0 | 0 | 703 | — |
+| 1046 | 702 | `ttf-ms-win11-korean` | 0 | 0 | 0 | 702 | — |
+| 1047 | 701 | `ttf-ms-win11-other` | 0 | 0 | 0 | 701 | — |
+| 1048 | 700 | `ttf-ms-win11-sea` | 0 | 0 | 0 | 700 | — |
+| 1049 | 699 | `ttf-ms-win11-thai` | 0 | 0 | 0 | 699 | — |
+| 1050 | 698 | `ttf-ms-win11-zh_cn` | 0 | 0 | 0 | 698 | — |
+| 1051 | 697 | `ttf-ms-win11-zh_tw` | 0 | 0 | 0 | 697 | — |
+| 1052 | 1498 | `ttf-noto-emoji-monochrome` | 0 | 0 | 0 | 1498 | — |
+| 1053 | 811 | `ttf-oxanium` | 0 | 0 | 0 | 811 | — |
+| 1054 | 3611 | `ttf-paratype` | 0 | 0 | 0 | 3611 | — |
+| 1055 | 3120 | `ttf-phosphor-icons` | 0 | 0 | 0 | 3120 | — |
+| 1056 | 3618 | `ttf-pt-astra-sans` | 0 | 0 | 0 | 3618 | — |
+| 1057 | 3619 | `ttf-pt-astra-serif` | 0 | 0 | 0 | 3619 | — |
+| 1058 | 3620 | `ttf-pt-mono` | 0 | 0 | 0 | 3620 | — |
+| 1059 | 3621 | `ttf-pt-root_ui` | 0 | 0 | 0 | 3621 | — |
+| 1060 | 3622 | `ttf-pt-sans` | 0 | 0 | 0 | 3622 | — |
+| 1061 | 3623 | `ttf-pt-serif` | 0 | 0 | 0 | 3623 | — |
+| 1062 | 2468 | `ttf-recursive` | 0 | 0 | 0 | 2468 | — |
+| 1063 | 750 | `ttf-roboto-flex` | 0 | 0 | 0 | 750 | — |
+| 1064 | 7716 | `ttf-segoe-ui-variable` | 0 | 0 | 0 | 7716 | — |
+| 1065 | 6817 | `ttf-selawik` | 0 | 0 | 0 | 6817 | — |
+| 1066 | 5238 | `ttf-shanggu` | 0 | 0 | 0 | 5238 | — |
+| 1067 | 2660 | `ttf-sipa-sarabun` | 0 | 0 | 0 | 2660 | — |
+| 1068 | 2661 | `ttf-sipa-sarabun-new` | 0 | 0 | 0 | 2661 | — |
+| 1069 | 309 | `ttf-twemoji-color` | 0 | 0 | 0 | 309 | — |
+| 1070 | 505 | `ttf-xenia` | 0 | 0 | 0 | 505 | — |
+| 1071 | 3147 | `ttf-xkcd-script-font` | 0 | 0 | 0 | 3147 | — |
+| 1072 | 3702 | `ttl-bin` | 0 | 0 | 0 | 3702 | — |
+| 1073 | 3507 | `ttylag-bin` | 0 | 0 | 0 | 3507 | — |
+| 1074 | 2808 | `tuco-bin` | 0 | 0 | 0 | 2808 | — |
+| 1075 | 5506 | `tufw-git` | 0 | 0 | 0 | 5506 | — |
+| 1076 | 3099 | `tufw-git [NEEDS_RECIPE_DESIGN: guix show tufw failed (package not found in current channels); next: draft standalone recipe for tufw-git in future pass]` | 0 | 0 | 0 | 3099 | — |
+| 1077 | 7366 | `tuicr-bin` | 0 | 0 | 0 | 7366 | — |
+| 1078 | 7602 | `tuios-web-bin` | 0 | 0 | 0 | 7602 | — |
+| 1079 | 1765 | `turso-bin` | 0 | 0 | 0 | 1765 | — |
+| 1080 | 2723 | `tuwunel-bin` | 0 | 0 | 0 | 2723 | — |
+| 1081 | 2664 | `tux` | 0 | 0 | 0 | 2664 | — |
+| 1082 | 7368 | `twitch-downloader-bin` | 0 | 0 | 0 | 7368 | — |
+| 1083 | 3078 | `uac-polkit-agent-git [NEEDS_RECIPE_DESIGN: guix show uac-polkit-agent failed (package not found in current channels); next: draft standalone recipe for uac-polkit-agent-git in future pass]` | 0 | 0 | 0 | 3078 | — |
+| 1084 | 6091 | `uavs3d-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6091 | — |
+| 1085 | 3060 | `udiskr [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for udiskr; next: determine upstream source + build system for udiskr]` | 0 | 0 | 0 | 3060 | — |
+| 1086 | 6347 | `ulaa-browser` | 0 | 0 | 0 | 6347 | — |
+| 1087 | 3306 | `upnote-appimage` | 0 | 0 | 0 | 3306 | — |
+| 1088 | 7211 | `v2ray-domain-list-custom` | 0 | 0 | 0 | 7211 | — |
+| 1089 | 6075 | `v2ray-geoip-custom   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6075 | — |
+| 1090 | 1207 | `v2rayn-bin` | 0 | 0 | 0 | 1207 | — |
+| 1091 | 6112 | `vapoursynth-plugin-resize2-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6112 | — |
+| 1092 | 6051 | `vapoursynth-plugin-vsakarin-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6051 | — |
+| 1093 | 6551 | `vencord-installer-bin` | 0 | 0 | 0 | 6551 | — |
+| 1094 | 1711 | `virtio-win` | 0 | 0 | 0 | 1711 | — |
+| 1095 | 2520 | `virtualhere-client` | 0 | 0 | 0 | 2520 | — |
+| 1096 | 23 | `vivaldi` | 0 | 0 | 0 | 23 | — |
+| 1097 | 24 | `vivaldi-ffmpeg-codecs` | 0 | 0 | 0 | 24 | — |
+| 1098 | 2671 | `voiden-appimage` | 0 | 0 | 0 | 2671 | — |
+| 1099 | 8603 | `vopono-bin` | 0 | 0 | 0 | 8603 | — |
+| 1100 | 3864 | `vr-lighthouse-bin` | 0 | 0 | 0 | 3864 | — |
+| 1101 | 6235 | `vtchs` | 0 | 0 | 0 | 6235 | — |
+| 1102 | 2991 | `wakadash-bin` | 0 | 0 | 0 | 2991 | — |
+| 1103 | 3002 | `watchtower-bin` | 0 | 0 | 0 | 3002 | — |
+| 1104 | 6069 | `waybar-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6069 | — |
+| 1105 | 61 | `waybar-hyprland-git` | 0 | 0 | 0 | 61 | — |
+| 1106 | 5056 | `waydroid-image` | 0 | 0 | 0 | 5056 | — |
+| 1107 | 3085 | `we-layerd-git [NEEDS_RECIPE_DESIGN: guix show we-layerd failed (package not found in current channels); next: draft standalone recipe for we-layerd-git in future pass]` | 0 | 0 | 0 | 3085 | — |
+| 1108 | 6116 | `wealthfolio-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6116 | — |
+| 1109 | 3316 | `weasis-bin` | 0 | 0 | 0 | 3316 | — |
+| 1110 | 3020 | `webtorrent-bittorrent-tracker [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for webtorrent-bittorrent-tracker; next: determine upstream source + build system for webtorrent-bittorrent-tracker]` | 0 | 0 | 0 | 3020 | — |
+| 1111 | 3512 | `webtunnel-client-bin` | 0 | 0 | 0 | 3512 | — |
+| 1112 | 3102 | `weylus-bin [NEEDS_RECIPE_DESIGN: guix show weylus failed (package not found in current channels); next: draft standalone recipe for weylus-bin in future pass]` | 0 | 0 | 0 | 3102 | — |
+| 1113 | 46 | `whatsapp-for-linux` | 0 | 0 | 0 | 46 | — |
+| 1114 | 1744 | `whisper.cpp-model-base.en` | 0 | 0 | 0 | 1744 | — |
+| 1115 | 4536 | `whosthere-bin` | 0 | 0 | 0 | 4536 | — |
+| 1116 | 1222 | `wifitui-bin` | 0 | 0 | 0 | 1222 | — |
+| 1117 | 6109 | `windows-10-cursor   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6109 | — |
+| 1118 | 6672 | `wine-ntsync-only` | 0 | 0 | 0 | 6672 | — |
+| 1119 | 3074 | `wireview-linux [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for wireview-linux; next: determine upstream source + build system for wireview-linux]` | 0 | 0 | 0 | 3074 | — |
+| 1120 | 1819 | `witr-bin` | 0 | 0 | 0 | 1819 | — |
+| 1121 | 3005 | `wl-mpris-idle-inhibit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for wl-mpris-idle-inhibit; next: determine upstream source + build system for wl-mpris-idle-inhibit]` | 0 | 0 | 0 | 3005 | — |
+| 1122 | 5481 | `wo-bin` | 0 | 0 | 0 | 5481 | — |
+| 1123 | 3067 | `wo-bin [NEEDS_RECIPE_DESIGN: guix show wo failed (package not found in current channels); next: draft standalone recipe for wo-bin in future pass]` | 0 | 0 | 0 | 3067 | — |
+| 1124 | 1918 | `woff2-material-symbols-variable-git` | 0 | 0 | 0 | 1918 | — |
+| 1125 | 3086 | `workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]` | 0 | 0 | 0 | 3086 | — |
+| 1126 | 6854 | `wormhole-william-bin` | 0 | 0 | 0 | 6854 | — |
+| 1127 | 3026 | `wrkflw-bin [NEEDS_RECIPE_DESIGN: guix show wrkflw failed (package not found in current channels); next: draft standalone recipe for wrkflw-bin in future pass]` | 0 | 0 | 0 | 3026 | — |
+| 1128 | 8202 | `wsl-open` | 0 | 0 | 0 | 8202 | — |
+| 1129 | 3154 | `wt-bin` | 0 | 0 | 0 | 3154 | — |
+| 1130 | 6090 | `xavs2   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6090 | — |
+| 1131 | 6085 | `xcaddy-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6085 | — |
+| 1132 | 3225 | `xcursor-borealis` | 0 | 0 | 0 | 3225 | — |
+| 1133 | 6723 | `xdump` | 0 | 0 | 0 | 6723 | — |
+| 1134 | 6101 | `xevd   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6101 | — |
+| 1135 | 6100 | `xeve   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6100 | — |
+| 1136 | 3686 | `xfr-bin` | 0 | 0 | 0 | 3686 | — |
+| 1137 | 8353 | `xiaomitool-v2` | 0 | 0 | 0 | 8353 | — |
+| 1138 | 7328 | `xilinx-u280-gen3x16-xdma-base` | 0 | 0 | 0 | 7328 | — |
+| 1139 | 6982 | `xleak-bin` | 0 | 0 | 0 | 6982 | — |
+| 1140 | 6060 | `xlibre-input-libinput-git   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6060 | — |
+| 1141 | 6058 | `xlibre-input-synaptics   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6058 | — |
+| 1142 | 6059 | `xlibre-input-vmmouse   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6059 | — |
+| 1143 | 6032 | `xlibre-input-void   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6032 | — |
+| 1144 | 6057 | `xlibre-video-ati   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6057 | — |
+| 1145 | 6056 | `xlibre-video-fbdev   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6056 | — |
+| 1146 | 6061 | `xlibre-video-intel   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6061 | — |
+| 1147 | 6062 | `xlibre-video-qxl   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6062 | — |
+| 1148 | 6037 | `xlibre-video-vesa   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6037 | — |
+| 1149 | 2072 | `xr-chaperone-git` | 0 | 0 | 0 | 2072 | — |
+| 1150 | 2680 | `xr-passthrough-layer-git` | 0 | 0 | 0 | 2680 | — |
+| 1151 | 7362 | `xremap-niri-bin` | 0 | 0 | 0 | 7362 | — |
+| 1152 | 3744 | `xtest` | 0 | 0 | 0 | 3744 | — |
+| 1153 | 6238 | `yapi-bin` | 0 | 0 | 0 | 6238 | — |
+| 1154 | 3091 | `yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]` | 0 | 0 | 0 | 3091 | — |
+| 1155 | 5410 | `ymp-bin` | 0 | 0 | 0 | 5410 | — |
+| 1156 | 26 | `youtube-music-bin` | 0 | 0 | 0 | 26 | — |
+| 1157 | 8310 | `youtubedr-bin` | 0 | 0 | 0 | 8310 | — |
+| 1158 | 6076 | `ytsubconverter-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json` | 0 | 0 | 0 | 6076 | — |
+| 1159 | 7470 | `zcfan` | 0 | 0 | 0 | 7470 | — |
+| 1160 | 4932 | `zenity-rs-bin` | 0 | 0 | 0 | 4932 | — |
+| 1161 | 38 | `zettlr` | 0 | 0 | 0 | 38 | — |
+| 1162 | 6447 | `zfxtop-bin` | 0 | 0 | 0 | 6447 | — |
+| 1163 | 6196 | `zig-waybar-contrib-beta-bin` | 0 | 0 | 0 | 6196 | — |
+| 1164 | 3534 | `zigmir-bin` | 0 | 0 | 0 | 3534 | — |
+| 1165 | 1726 | `010editor` | 0 | 0 | 1 | 1726 | — |
+| 1166 | 7484 | `7zip-docs` | 0 | 0 | 1 | 7484 | — |
+| 1167 | 5285 | `86box-roms-git` | 0 | 0 | 1 | 5285 | — |
+| 1168 | 5400 | `aacs-keydb` | 0 | 0 | 1 | 5400 | — |
+| 1169 | 777 | `acer-wmi-battery-dkms` | 0 | 0 | 1 | 777 | — |
+| 1170 | 7557 | `adaptagrams-git` | 0 | 0 | 1 | 7557 | — |
+| 1171 | 4205 | `adwaita-dark` | 0 | 0 | 1 | 4205 | — |
+| 1172 | 5199 | `affine-bin` | 0 | 0 | 1 | 5199 | — |
+| 1173 | 8044 | `agesafetch` | 0 | 0 | 1 | 8044 | — |
+| 1174 | 7713 | `aic8800d80-dkms` | 0 | 0 | 1 | 7713 | — |
+| 1175 | 5188 | `aimp-skin-m5` | 0 | 0 | 1 | 5188 | — |
+| 1176 | 5189 | `aimp-skin-soot` | 0 | 0 | 1 | 5189 | — |
+| 1177 | 6988 | `air-bin` | 0 | 0 | 1 | 6988 | — |
+| 1178 | 5428 | `akeyshually-bin` | 0 | 0 | 1 | 5428 | — |
+| 1179 | 772 | `algobox` | 0 | 0 | 1 | 772 | — |
+| 1180 | 8198 | `all` | 0 | 0 | 1 | 8198 | — |
+| 1181 | 6662 | `altair-bin` | 0 | 0 | 1 | 6662 | — |
+| 1182 | 6787 | `amazon-fonts` | 0 | 0 | 1 | 6787 | — |
+| 1183 | 3336 | `amdfand-bin` | 0 | 0 | 1 | 3336 | — |
+| 1184 | 1724 | `amok-exif-sorter` | 0 | 0 | 1 | 1724 | — |
+| 1185 | 3325 | `ancient-packages` | 0 | 0 | 1 | 3325 | — |
+| 1186 | 3798 | `android-apktool-bin` | 0 | 0 | 1 | 3798 | — |
+| 1187 | 6542 | `angular-cli` | 0 | 0 | 1 | 6542 | — |
+| 1188 | 4476 | `ani-rss` | 0 | 0 | 1 | 4476 | — |
+| 1189 | 7542 | `anyrun-provider` | 0 | 0 | 1 | 7542 | — |
+| 1190 | 6779 | `aoc-cli` | 0 | 0 | 1 | 6779 | — |
+| 1191 | 141 | `apple-fonts` | 0 | 0 | 1 | 141 | — |
+| 1192 | 4211 | `apprenticevr-bin` | 0 | 0 | 1 | 4211 | — |
+| 1193 | 935 | `arch-cache-cleaner-git` | 0 | 0 | 1 | 935 | — |
+| 1194 | 3902 | `arch-silence-grub-theme-git` | 0 | 0 | 1 | 3902 | — |
+| 1195 | 1002 | `archiso-systemd-boot` | 0 | 0 | 1 | 1002 | — |
+| 1196 | 6373 | `archlinux-themes-sddm` | 0 | 0 | 1 | 6373 | — |
+| 1197 | 5125 | `arkenfox-user.js` | 0 | 0 | 1 | 5125 | — |
+| 1198 | 411 | `ascii-moon` | 0 | 0 | 1 | 411 | — |
+| 1199 | 3178 | `asix-ax88179-dkms` | 0 | 0 | 1 | 3178 | — |
+| 1200 | 4093 | `aspire-cli` | 0 | 0 | 1 | 4093 | — |
+| 1201 | 3417 | `async-profiler-bin` | 0 | 0 | 1 | 3417 | — |
+| 1202 | 5110 | `audio-share-bin` | 0 | 0 | 1 | 5110 | — |
+| 1203 | 6162 | `autofirma-bin` | 0 | 0 | 1 | 6162 | — |
+| 1204 | 7338 | `avahi-static-services` | 0 | 0 | 1 | 7338 | — |
+| 1205 | 7288 | `aws-session-manager-plugin` | 0 | 0 | 1 | 7288 | — |
+| 1206 | 6795 | `baidunetdisk-electron` | 0 | 0 | 1 | 6795 | — |
+| 1207 | 8546 | `bambustudio-appimage` | 0 | 0 | 1 | 8546 | — |
+| 1208 | 4141 | `batz-converter` | 0 | 0 | 1 | 4141 | — |
+| 1209 | 7580 | `bettergruvbox-gtk-theme` | 0 | 0 | 1 | 7580 | — |
+| 1210 | 3127 | `bgb` | 0 | 0 | 1 | 3127 | — |
+| 1211 | 8341 | `bin2iso` | 0 | 0 | 1 | 8341 | — |
+| 1212 | 7990 | `bindiff` | 0 | 0 | 1 | 7990 | — |
+| 1213 | 4735 | `bisq-bin` | 0 | 0 | 1 | 4735 | — |
+| 1214 | 2528 | `blinkenlib` | 0 | 0 | 1 | 2528 | — |
+| 1215 | 2529 | `bluekeys-bin` | 0 | 0 | 1 | 2529 | — |
+| 1216 | 6164 | `bluepala` | 0 | 0 | 1 | 6164 | — |
+| 1217 | 4008 | `breeze-contrast-cursor-theme` | 0 | 0 | 1 | 4008 | — |
+| 1218 | 4631 | `brokefetch-git` | 0 | 0 | 1 | 4631 | — |
+| 1219 | 2497 | `brother-dcpj1140dw` | 0 | 0 | 1 | 2497 | — |
+| 1220 | 2776 | `brother-dcpl2640dw` | 0 | 0 | 1 | 2776 | — |
+| 1221 | 6629 | `brother-hl-l3220cdw` | 0 | 0 | 1 | 6629 | — |
+| 1222 | 4073 | `brother-hl2030` | 0 | 0 | 1 | 4073 | — |
+| 1223 | 7969 | `brother-mfc-9970cdw` | 0 | 0 | 1 | 7969 | — |
+| 1224 | 2498 | `brother-mfc6490cw-lpr` | 0 | 0 | 1 | 2498 | — |
+| 1225 | 6339 | `browseros-bin` | 0 | 0 | 1 | 6339 | — |
+| 1226 | 7668 | `browsh-bin` | 0 | 0 | 1 | 7668 | — |
+| 1227 | 3499 | `bsd-leave` | 0 | 0 | 1 | 3499 | — |
+| 1228 | 2775 | `bsky-cli-bin` | 0 | 0 | 1 | 2775 | — |
+| 1229 | 7011 | `btop-theme-catppuccin` | 0 | 0 | 1 | 7011 | — |
+| 1230 | 6566 | `btrfs-du` | 0 | 0 | 1 | 6566 | — |
+| 1231 | 3776 | `buck2-bin` | 0 | 0 | 1 | 3776 | — |
+| 1232 | 7390 | `burpsuite` | 0 | 0 | 1 | 7390 | — |
+| 1233 | 4852 | `buuf-icon-theme` | 0 | 0 | 1 | 4852 | — |
+| 1234 | 3415 | `bwlog` | 0 | 0 | 1 | 3415 | — |
+| 1235 | 279 | `byedpi` | 0 | 0 | 1 | 279 | — |
+| 1236 | 2757 | `c3c-bin` | 0 | 0 | 1 | 2757 | — |
+| 1237 | 6636 | `ca-certificates-russian-root` | 0 | 0 | 1 | 6636 | — |
+| 1238 | 7590 | `caches-manager` | 0 | 0 | 1 | 7590 | — |
+| 1239 | 4898 | `candy-icons-git` | 0 | 0 | 1 | 4898 | — |
+| 1240 | 5106 | `caprine-bin` | 0 | 0 | 1 | 5106 | — |
+| 1241 | 3252 | `catppuccin-fcitx5-git` | 0 | 0 | 1 | 3252 | — |
+| 1242 | 3614 | `catppuccin-qt5ct-git` | 0 | 0 | 1 | 3614 | — |
+| 1243 | 1781 | `ccat` | 0 | 0 | 1 | 1781 | — |
+| 1244 | 2532 | `ccd-nav` | 0 | 0 | 1 | 2532 | — |
+| 1245 | 6371 | `chainner-bin` | 0 | 0 | 1 | 6371 | — |
+| 1246 | 8006 | `checkstyle-bin` | 0 | 0 | 1 | 8006 | — |
+| 1247 | 3805 | `cherry-studio-bin` | 0 | 0 | 1 | 3805 | — |
+| 1248 | 4819 | `chimerax` | 0 | 0 | 1 | 4819 | — |
+| 1249 | 5525 | `chough-bin` | 0 | 0 | 1 | 5525 | — |
+| 1250 | 4764 | `chromium-bypass-paywalls-clean` | 0 | 0 | 1 | 4764 | — |
+| 1251 | 3253 | `claude-code-stable` | 0 | 0 | 1 | 3253 | — |
+| 1252 | 1160 | `claude-desktop-bin` | 0 | 0 | 1 | 1160 | — |
+| 1253 | 4789 | `clock-tui` | 0 | 0 | 1 | 4789 | — |
+| 1254 | 4545 | `cls` | 0 | 0 | 1 | 4545 | — |
+| 1255 | 3753 | `cmc-mod-manager-bin` | 0 | 0 | 1 | 3753 | — |
+| 1256 | 7004 | `cnote-bin` | 0 | 0 | 1 | 7004 | — |
+| 1257 | 731 | `colloid-cursors-git` | 0 | 0 | 1 | 731 | — |
+| 1258 | 7573 | `commitlint-go-bin` | 0 | 0 | 1 | 7573 | — |
+| 1259 | 1020 | `configuradorfnmt` | 0 | 0 | 1 | 1020 | — |
+| 1260 | 3351 | `connectiq-sdk-manager` | 0 | 0 | 1 | 3351 | — |
+| 1261 | 5471 | `console2svg-bin` | 0 | 0 | 1 | 5471 | — |
+| 1262 | 3823 | `converternow-bin` | 0 | 0 | 1 | 3823 | — |
+| 1263 | 7335 | `crandpass` | 0 | 0 | 1 | 7335 | — |
+| 1264 | 3711 | `crier` | 0 | 0 | 1 | 3711 | — |
+| 1265 | 4095 | `croaring` | 0 | 0 | 1 | 4095 | — |
+| 1266 | 1215 | `cryptomator-bin` | 0 | 0 | 1 | 1215 | — |
+| 1267 | 5008 | `cs-demo-manager-appimage` | 0 | 0 | 1 | 5008 | — |
+| 1268 | 7289 | `cs-script` | 0 | 0 | 1 | 7289 | — |
+| 1269 | 6245 | `cudnn9.10-cuda12.9` | 0 | 0 | 1 | 6245 | — |
+| 1270 | 4082 | `cvmfs-config-eessi` | 0 | 0 | 1 | 4082 | — |
+| 1271 | 464 | `cwalk` | 0 | 0 | 1 | 464 | — |
+| 1272 | 2493 | `d52` | 0 | 0 | 1 | 2493 | — |
+| 1273 | 5508 | `dafny-bin` | 0 | 0 | 1 | 5508 | — |
+| 1274 | 7778 | `dash-static-musl` | 0 | 0 | 1 | 7778 | — |
+| 1275 | 10 | `datagrip` | 0 | 0 | 1 | 10 | — |
+| 1276 | 4153 | `datagrip-jre` | 0 | 0 | 1 | 4153 | — |
+| 1277 | 4411 | `datui-bin` | 0 | 0 | 1 | 4411 | — |
+| 1278 | 7204 | `davinconv` | 0 | 0 | 1 | 7204 | — |
+| 1279 | 5120 | `dbgate-bin` | 0 | 0 | 1 | 5120 | — |
+| 1280 | 8192 | `dbmodel-qt4` | 0 | 0 | 1 | 8192 | — |
+| 1281 | 1045 | `ddcutil-service` | 0 | 0 | 1 | 1045 | — |
+| 1282 | 7651 | `dddvb-dkms` | 0 | 0 | 1 | 7651 | — |
+| 1283 | 1496 | `dealve` | 0 | 0 | 1 | 1496 | — |
+| 1284 | 6451 | `deeploy-bin` | 0 | 0 | 1 | 6451 | — |
+| 1285 | 6630 | `delta-patcher` | 0 | 0 | 1 | 6630 | — |
+| 1286 | 6483 | `deno-stable-bin` | 0 | 0 | 1 | 6483 | — |
+| 1287 | 1076 | `dict-foldoc` | 0 | 0 | 1 | 1076 | — |
+| 1288 | 6615 | `dict-freedict-rus-eng` | 0 | 0 | 1 | 6615 | — |
+| 1289 | 1036 | `dict-moby-thesaurus` | 0 | 0 | 1 | 1036 | — |
+| 1290 | 2746 | `dina-font` | 0 | 0 | 1 | 2746 | — |
+| 1291 | 5425 | `dinky` | 0 | 0 | 1 | 5425 | — |
+| 1292 | 7478 | `disktype` | 0 | 0 | 1 | 7478 | — |
+| 1293 | 3456 | `displaylink-connect` | 0 | 0 | 1 | 3456 | — |
+| 1294 | 7263 | `distro-grub-themes-arch` | 0 | 0 | 1 | 7263 | — |
+| 1295 | 2924 | `distrohelper` | 0 | 0 | 1 | 2924 | — |
+| 1296 | 2542 | `dmrgateway-git` | 0 | 0 | 1 | 2542 | — |
+| 1297 | 4132 | `dnslookup-bin` | 0 | 0 | 1 | 4132 | — |
+| 1298 | 3821 | `doas` | 0 | 0 | 1 | 3821 | — |
+| 1299 | 1420 | `docan-bin` | 0 | 0 | 1 | 1420 | — |
+| 1300 | 922 | `docan-unstable` | 0 | 0 | 1 | 922 | — |
+| 1301 | 7722 | `dopamine-bin` | 0 | 0 | 1 | 7722 | — |
+| 1302 | 4047 | `dopamine-official` | 0 | 0 | 1 | 4047 | — |
+| 1303 | 1280 | `doudou-bin` | 0 | 0 | 1 | 1280 | — |
+| 1304 | 921 | `doudou-unstable` | 0 | 0 | 1 | 921 | — |
+| 1305 | 6812 | `dpms-off-git` | 0 | 0 | 1 | 6812 | — |
+| 1306 | 5424 | `dredge-bin` | 0 | 0 | 1 | 5424 | — |
+| 1307 | 4408 | `dsw-bin` | 0 | 0 | 1 | 4408 | — |
+| 1308 | 3849 | `duckduckgo-chat-cli` | 0 | 0 | 1 | 3849 | — |
+| 1309 | 1742 | `duplicati-canary-bin` | 0 | 0 | 1 | 1742 | — |
+| 1310 | 1306 | `dxvk-bin` | 0 | 0 | 1 | 1306 | — |
+| 1311 | 5248 | `dynocsv` | 0 | 0 | 1 | 5248 | — |
+| 1312 | 2861 | `eask-cli-bin` | 0 | 0 | 1 | 2861 | — |
+| 1313 | 1417 | `easy-conflict-bin` | 0 | 0 | 1 | 1417 | — |
+| 1314 | 7736 | `eci-icc` | 0 | 0 | 1 | 7736 | — |
+| 1315 | 7069 | `elecwhat-bin` | 0 | 0 | 1 | 7069 | — |
+| 1316 | 2846 | `element-desktop-nightly-bin` | 0 | 0 | 1 | 2846 | — |
+| 1317 | 916 | `elephant-archlinuxpkgs` | 0 | 0 | 1 | 916 | — |
+| 1318 | 294 | `elephant-bluetooth` | 0 | 0 | 1 | 294 | — |
+| 1319 | 181 | `elephant-desktopapplications` | 0 | 0 | 1 | 181 | — |
+| 1320 | 913 | `elephant-dnfpackages` | 0 | 0 | 1 | 913 | — |
+| 1321 | 180 | `elephant-menus` | 0 | 0 | 1 | 180 | — |
+| 1322 | 271 | `elephant-providerlist` | 0 | 0 | 1 | 271 | — |
+| 1323 | 270 | `elephant-runner` | 0 | 0 | 1 | 270 | — |
+| 1324 | 269 | `elephant-symbols` | 0 | 0 | 1 | 269 | — |
+| 1325 | 268 | `elephant-todo` | 0 | 0 | 1 | 268 | — |
+| 1326 | 182 | `elephant-unicode` | 0 | 0 | 1 | 182 | — |
+| 1327 | 267 | `elephant-websearch` | 0 | 0 | 1 | 267 | — |
+| 1328 | 6708 | `envlens-bin` | 0 | 0 | 1 | 6708 | — |
+| 1329 | 3382 | `epub2pdf` | 0 | 0 | 1 | 3382 | — |
+| 1330 | 1287 | `equibop-bin` | 0 | 0 | 1 | 1287 | — |
+| 1331 | 989 | `evhz-git` | 0 | 0 | 1 | 989 | — |
+| 1332 | 4699 | `exodus` | 0 | 0 | 1 | 4699 | — |
+| 1333 | 7206 | `factory-cli-bin` | 0 | 0 | 1 | 7206 | — |
+| 1334 | 6836 | `fake-ms-fonts` | 0 | 0 | 1 | 6836 | — |
+| 1335 | 3395 | `fallout1-ce-game` | 0 | 0 | 1 | 3395 | — |
+| 1336 | 1031 | `fastbuild` | 0 | 0 | 1 | 1031 | — |
+| 1337 | 5221 | `fcitx5-skin-material` | 0 | 0 | 1 | 5221 | — |
+| 1338 | 7574 | `fcitx5-skin-ori-git` | 0 | 0 | 1 | 7574 | — |
+| 1339 | 7396 | `ffdash-bin` | 0 | 0 | 1 | 7396 | — |
+| 1340 | 7476 | `ffmpeg-audio-thumbnailer` | 0 | 0 | 1 | 7476 | — |
+| 1341 | 3108 | `ffsend-bin` | 0 | 0 | 1 | 3108 | — |
+| 1342 | 4010 | `fhtagn` | 0 | 0 | 1 | 4010 | — |
+| 1343 | 1136 | `file2key` | 0 | 0 | 1 | 1136 | — |
+| 1344 | 5082 | `filen-desktop-bin` | 0 | 0 | 1 | 5082 | — |
+| 1345 | 1180 | `finar-bin` | 0 | 0 | 1 | 1180 | — |
+| 1346 | 906 | `finar-unstable` | 0 | 0 | 1 | 906 | — |
+| 1347 | 3139 | `find-the-command` | 0 | 0 | 1 | 3139 | — |
+| 1348 | 4234 | `firefox-extension-arch-search` | 0 | 0 | 1 | 4234 | — |
+| 1349 | 1482 | `fish-pure-prompt` | 0 | 0 | 1 | 1482 | — |
+| 1350 | 2968 | `fixvr-git` | 0 | 0 | 1 | 2968 | — |
+| 1351 | 4902 | `flashprint` | 0 | 0 | 1 | 4902 | — |
+| 1352 | 6838 | `flogo` | 0 | 0 | 1 | 6838 | — |
+| 1353 | 6530 | `flow-control` | 0 | 0 | 1 | 6530 | — |
+| 1354 | 1247 | `flyctl-bin` | 0 | 0 | 1 | 1247 | — |
+| 1355 | 8300 | `folderhost-bin` | 0 | 0 | 1 | 8300 | — |
+| 1356 | 4007 | `fortune-mod-archer` | 0 | 0 | 1 | 4007 | — |
+| 1357 | 4002 | `fortune-mod-calvin` | 0 | 0 | 1 | 4002 | — |
+| 1358 | 4006 | `fortune-mod-discworld` | 0 | 0 | 1 | 4006 | — |
+| 1359 | 3826 | `fortune-mod-futurama` | 0 | 0 | 1 | 3826 | — |
+| 1360 | 4005 | `fortune-mod-hackers` | 0 | 0 | 1 | 4005 | — |
+| 1361 | 4004 | `fortune-mod-hitchhiker` | 0 | 0 | 1 | 4004 | — |
+| 1362 | 4003 | `fortune-mod-iasip` | 0 | 0 | 1 | 4003 | — |
+| 1363 | 3825 | `fortune-mod-matrix` | 0 | 0 | 1 | 3825 | — |
+| 1364 | 3867 | `fortune-mod-montypython` | 0 | 0 | 1 | 3867 | — |
+| 1365 | 3885 | `fortune-mod-portal-game` | 0 | 0 | 1 | 3885 | — |
+| 1366 | 8579 | `fox-flux-deluxe-patreon` | 0 | 0 | 1 | 8579 | — |
+| 1367 | 1074 | `free42` | 0 | 0 | 1 | 1074 | — |
+| 1368 | 4703 | `frpc-bin` | 0 | 0 | 1 | 4703 | — |
+| 1369 | 4704 | `frps-bin` | 0 | 0 | 1 | 4704 | — |
+| 1370 | 8569 | `fs` | 0 | 0 | 1 | 8569 | — |
+| 1371 | 7777 | `fswebcam` | 0 | 0 | 1 | 7777 | — |
+| 1372 | 4128 | `fuc-bin` | 0 | 0 | 1 | 4128 | — |
+| 1373 | 3651 | `fuzzel-dmenu-dropin` | 0 | 0 | 1 | 3651 | — |
+| 1374 | 7466 | `gaffer-bin` | 0 | 0 | 1 | 7466 | — |
+| 1375 | 905 | `geargrafx` | 0 | 0 | 1 | 905 | — |
+| 1376 | 3649 | `geforce-infinity-bin` | 0 | 0 | 1 | 3649 | — |
+| 1377 | 8563 | `gimp-plugin-bimp` | 0 | 0 | 1 | 8563 | — |
+| 1378 | 3215 | `git-koji-bin` | 0 | 0 | 1 | 3215 | — |
+| 1379 | 5407 | `git-mr` | 0 | 0 | 1 | 5407 | — |
+| 1380 | 3912 | `gitarbor-bin` | 0 | 0 | 1 | 3912 | — |
+| 1381 | 2462 | `gitflow-avh` | 0 | 0 | 1 | 2462 | — |
+| 1382 | 3788 | `gittop-bin` | 0 | 0 | 1 | 3788 | — |
+| 1383 | 2728 | `gnirehtet-bin` | 0 | 0 | 1 | 2728 | — |
+| 1384 | 5522 | `gnix` | 0 | 0 | 1 | 5522 | — |
+| 1385 | 3355 | `gnome-shell-extension-all-in-one-clipboard-bin` | 0 | 0 | 1 | 3355 | — |
+| 1386 | 6301 | `gnome-shell-extension-panel-date-format` | 0 | 0 | 1 | 6301 | — |
+| 1387 | 6278 | `gnome-shell-extension-run-or-raise` | 0 | 0 | 1 | 6278 | — |
+| 1388 | 6156 | `go-mitmproxy` | 0 | 0 | 1 | 6156 | — |
+| 1389 | 6155 | `go-mitmproxy-bin` | 0 | 0 | 1 | 6155 | — |
+| 1390 | 2982 | `goanime` | 0 | 0 | 1 | 2982 | — |
+| 1391 | 6486 | `godots-bin` | 0 | 0 | 1 | 6486 | — |
+| 1392 | 3408 | `gogitver-bin` | 0 | 0 | 1 | 3408 | — |
+| 1393 | 3386 | `gohan-bin` | 0 | 0 | 1 | 3386 | — |
+| 1394 | 13 | `goland` | 0 | 0 | 1 | 13 | — |
+| 1395 | 4187 | `goland-jre` | 0 | 0 | 1 | 4187 | — |
+| 1396 | 6442 | `golazo-bin` | 0 | 0 | 1 | 6442 | — |
+| 1397 | 1163 | `goofcord-bin` | 0 | 0 | 1 | 1163 | — |
+| 1398 | 8024 | `googler` | 0 | 0 | 1 | 8024 | — |
+| 1399 | 1188 | `goose-desktop-bin` | 0 | 0 | 1 | 1188 | — |
+| 1400 | 3598 | `gopac-bin` | 0 | 0 | 1 | 3598 | — |
+| 1401 | 4895 | `goplaying-bin` | 0 | 0 | 1 | 4895 | — |
+| 1402 | 2747 | `goto-ssh-bin` | 0 | 0 | 1 | 2747 | — |
+| 1403 | 7343 | `gowall-bin` | 0 | 0 | 1 | 7343 | — |
+| 1404 | 4588 | `goxe` | 0 | 0 | 1 | 4588 | — |
+| 1405 | 6480 | `gpbkdf2` | 0 | 0 | 1 | 6480 | — |
+| 1406 | 4548 | `grepai-bin` | 0 | 0 | 1 | 4548 | — |
+| 1407 | 4121 | `gridlock-bin` | 0 | 0 | 1 | 4121 | — |
+| 1408 | 2966 | `grub-theme-minegrub-world-selection-git` | 0 | 0 | 1 | 2966 | — |
+| 1409 | 5336 | `grub2-theme-archlinux` | 0 | 0 | 1 | 5336 | — |
+| 1410 | 5365 | `grub2-theme-archxion` | 0 | 0 | 1 | 5365 | — |
+| 1411 | 6356 | `gtk-chtheme` | 0 | 0 | 1 | 6356 | — |
+| 1412 | 4589 | `h2status` | 0 | 0 | 1 | 4589 | — |
+| 1413 | 1463 | `hachimi-world-bin` | 0 | 0 | 1 | 1463 | — |
+| 1414 | 4022 | `hadlink-bin` | 0 | 0 | 1 | 4022 | — |
+| 1415 | 3305 | `hammer-editor-bin` | 0 | 0 | 1 | 3305 | — |
+| 1416 | 4174 | `hardened-malloc-git` | 0 | 0 | 1 | 4174 | — |
+| 1417 | 8334 | `hayase-bin` | 0 | 0 | 1 | 8334 | — |
+| 1418 | 1727 | `hd-idle-go` | 0 | 0 | 1 | 1727 | — |
+| 1419 | 7971 | `heirloom-doctools` | 0 | 0 | 1 | 7971 | — |
+| 1420 | 3886 | `helixbinhx` | 0 | 0 | 1 | 3886 | — |
+| 1421 | 7459 | `heynote-bin` | 0 | 0 | 1 | 7459 | — |
+| 1422 | 6385 | `hid-sony-panic-fix-dkms` | 0 | 0 | 1 | 6385 | — |
+| 1423 | 4011 | `hla-bin` | 0 | 0 | 1 | 4011 | — |
+| 1424 | 4058 | `hosts-update` | 0 | 0 | 1 | 4058 | — |
+| 1425 | 8610 | `hpaper` | 0 | 0 | 1 | 8610 | — |
+| 1426 | 3975 | `huaweicloudmeeting-bin` | 0 | 0 | 1 | 3975 | — |
+| 1427 | 3349 | `hunspell-ar` | 0 | 0 | 1 | 3349 | — |
+| 1428 | 3353 | `hunspell-ja-git` | 0 | 0 | 1 | 3353 | — |
+| 1429 | 7769 | `hydrogen-drumkits` | 0 | 0 | 1 | 7769 | — |
+| 1430 | 7737 | `hyphen-ru` | 0 | 0 | 1 | 7737 | — |
+| 1431 | 7966 | `hyprland-workspaces-tui` | 0 | 0 | 1 | 7966 | — |
+| 1432 | 7017 | `hyprmon-bin` | 0 | 0 | 1 | 7017 | — |
+| 1433 | 3543 | `hytale-downloader-bin` | 0 | 0 | 1 | 3543 | — |
+| 1434 | 5078 | `icu69-bin` | 0 | 0 | 1 | 5078 | — |
+| 1435 | 7720 | `inkstitch` | 0 | 0 | 1 | 7720 | — |
+| 1436 | 900 | `intel-oneapi-basekit-2025` | 0 | 0 | 1 | 900 | — |
+| 1437 | 6833 | `ipatool` | 0 | 0 | 1 | 6833 | — |
+| 1438 | 645 | `iscan-data` | 0 | 0 | 1 | 645 | — |
+| 1439 | 1543 | `jdtls` | 0 | 0 | 1 | 1543 | — |
+| 1440 | 2573 | `jfq` | 0 | 0 | 1 | 2573 | — |
+| 1441 | 3899 | `jira-cli` | 0 | 0 | 1 | 3899 | — |
+| 1442 | 3537 | `jn-bin` | 0 | 0 | 1 | 3537 | — |
+| 1443 | 39 | `joplin-appimage` | 0 | 0 | 1 | 39 | — |
+| 1444 | 4562 | `katifetch` | 0 | 0 | 1 | 4562 | — |
+| 1445 | 5422 | `keifu-bin` | 0 | 0 | 1 | 5422 | — |
+| 1446 | 3357 | `kernel-alive` | 0 | 0 | 1 | 3357 | — |
+| 1447 | 213 | `kernel-install-for-dracut` | 0 | 0 | 1 | 213 | — |
+| 1448 | 1056 | `kernel-modules-hook-reflink` | 0 | 0 | 1 | 1056 | — |
+| 1449 | 4508 | `kfr` | 0 | 0 | 1 | 4508 | — |
+| 1450 | 4921 | `kibo-appimage` | 0 | 0 | 1 | 4921 | — |
+| 1451 | 1131 | `kickassembler` | 0 | 0 | 1 | 1131 | — |
+| 1452 | 2062 | `kilo-bin` | 0 | 0 | 1 | 2062 | — |
+| 1453 | 1400 | `klit-bin` | 0 | 0 | 1 | 1400 | — |
+| 1454 | 897 | `klit-unstable` | 0 | 0 | 1 | 897 | — |
+| 1455 | 3562 | `koboldcpp-bin` | 0 | 0 | 1 | 3562 | — |
+| 1456 | 4194 | `koboldcpp-cuda-bin` | 0 | 0 | 1 | 4194 | — |
+| 1457 | 6792 | `komga` | 0 | 0 | 1 | 6792 | — |
+| 1458 | 4629 | `koofr-desktop-bin` | 0 | 0 | 1 | 4629 | — |
+| 1459 | 1984 | `kora-icon-theme` | 0 | 0 | 1 | 1984 | — |
+| 1460 | 4835 | `kotlin-native-bin` | 0 | 0 | 1 | 4835 | — |
+| 1461 | 8325 | `ksql` | 0 | 0 | 1 | 8325 | — |
+| 1462 | 1519 | `kuva` | 0 | 0 | 1 | 1519 | — |
+| 1463 | 1049 | `kwin-scripts-dynamic-workspaces` | 0 | 0 | 1 | 1049 | — |
+| 1464 | 893 | `kwprocessor` | 0 | 0 | 1 | 893 | — |
+| 1465 | 2998 | `kyp-bin` | 0 | 0 | 1 | 2998 | — |
+| 1466 | 6440 | `lazydlp-bin` | 0 | 0 | 1 | 6440 | — |
+| 1467 | 4246 | `lazyjournal` | 0 | 0 | 1 | 4246 | — |
+| 1468 | 2753 | `leafview-bin` | 0 | 0 | 1 | 2753 | — |
+| 1469 | 6280 | `leap-bin` | 0 | 0 | 1 | 6280 | — |
+| 1470 | 2086 | `legacy-launcher-ely.by` | 0 | 0 | 1 | 2086 | — |
+| 1471 | 1540 | `lft` | 0 | 0 | 1 | 1540 | — |
+| 1472 | 6268 | `lianpkg-bin` | 0 | 0 | 1 | 6268 | — |
+| 1473 | 2584 | `lib32-zix` | 0 | 0 | 1 | 2584 | — |
+| 1474 | 7259 | `libelectron-electron-meta` | 0 | 0 | 1 | 7259 | — |
+| 1475 | 1483 | `libigloo` | 0 | 0 | 1 | 1483 | — |
+| 1476 | 7392 | `libklvanc` | 0 | 0 | 1 | 7392 | — |
+| 1477 | 1997 | `libowfat` | 0 | 0 | 1 | 1997 | — |
+| 1478 | 6971 | `libreoffice-dev-af` | 0 | 0 | 1 | 6971 | — |
+| 1479 | 6970 | `libreoffice-dev-am` | 0 | 0 | 1 | 6970 | — |
+| 1480 | 6969 | `libreoffice-dev-ar` | 0 | 0 | 1 | 6969 | — |
+| 1481 | 6968 | `libreoffice-dev-as` | 0 | 0 | 1 | 6968 | — |
+| 1482 | 6967 | `libreoffice-dev-ast` | 0 | 0 | 1 | 6967 | — |
+| 1483 | 6966 | `libreoffice-dev-be` | 0 | 0 | 1 | 6966 | — |
+| 1484 | 6965 | `libreoffice-dev-bg` | 0 | 0 | 1 | 6965 | — |
+| 1485 | 6964 | `libreoffice-dev-bn` | 0 | 0 | 1 | 6964 | — |
+| 1486 | 6963 | `libreoffice-dev-bn-in` | 0 | 0 | 1 | 6963 | — |
+| 1487 | 6962 | `libreoffice-dev-bo` | 0 | 0 | 1 | 6962 | — |
+| 1488 | 6961 | `libreoffice-dev-br` | 0 | 0 | 1 | 6961 | — |
+| 1489 | 6960 | `libreoffice-dev-brx` | 0 | 0 | 1 | 6960 | — |
+| 1490 | 6959 | `libreoffice-dev-bs` | 0 | 0 | 1 | 6959 | — |
+| 1491 | 6958 | `libreoffice-dev-ca` | 0 | 0 | 1 | 6958 | — |
+| 1492 | 6957 | `libreoffice-dev-ca-valencia` | 0 | 0 | 1 | 6957 | — |
+| 1493 | 6956 | `libreoffice-dev-cs` | 0 | 0 | 1 | 6956 | — |
+| 1494 | 6955 | `libreoffice-dev-cy` | 0 | 0 | 1 | 6955 | — |
+| 1495 | 6954 | `libreoffice-dev-da` | 0 | 0 | 1 | 6954 | — |
+| 1496 | 6953 | `libreoffice-dev-de` | 0 | 0 | 1 | 6953 | — |
+| 1497 | 6952 | `libreoffice-dev-dgo` | 0 | 0 | 1 | 6952 | — |
+| 1498 | 6951 | `libreoffice-dev-dsb` | 0 | 0 | 1 | 6951 | — |
+| 1499 | 6950 | `libreoffice-dev-dz` | 0 | 0 | 1 | 6950 | — |
+| 1500 | 6949 | `libreoffice-dev-el` | 0 | 0 | 1 | 6949 | — |
+| 1501 | 6948 | `libreoffice-dev-en-gb` | 0 | 0 | 1 | 6948 | — |
+| 1502 | 6947 | `libreoffice-dev-en-za` | 0 | 0 | 1 | 6947 | — |
+| 1503 | 6946 | `libreoffice-dev-eo` | 0 | 0 | 1 | 6946 | — |
+| 1504 | 6945 | `libreoffice-dev-es` | 0 | 0 | 1 | 6945 | — |
+| 1505 | 6944 | `libreoffice-dev-et` | 0 | 0 | 1 | 6944 | — |
+| 1506 | 6943 | `libreoffice-dev-eu` | 0 | 0 | 1 | 6943 | — |
+| 1507 | 6942 | `libreoffice-dev-fa` | 0 | 0 | 1 | 6942 | — |
+| 1508 | 6941 | `libreoffice-dev-fi` | 0 | 0 | 1 | 6941 | — |
+| 1509 | 6940 | `libreoffice-dev-fr` | 0 | 0 | 1 | 6940 | — |
+| 1510 | 6939 | `libreoffice-dev-fur` | 0 | 0 | 1 | 6939 | — |
+| 1511 | 6938 | `libreoffice-dev-fy` | 0 | 0 | 1 | 6938 | — |
+| 1512 | 6937 | `libreoffice-dev-ga` | 0 | 0 | 1 | 6937 | — |
+| 1513 | 6936 | `libreoffice-dev-gd` | 0 | 0 | 1 | 6936 | — |
+| 1514 | 6935 | `libreoffice-dev-gl` | 0 | 0 | 1 | 6935 | — |
+| 1515 | 7467 | `libreoffice-dev-gu` | 0 | 0 | 1 | 7467 | — |
+| 1516 | 6934 | `libreoffice-dev-gug` | 0 | 0 | 1 | 6934 | — |
+| 1517 | 6933 | `libreoffice-dev-he` | 0 | 0 | 1 | 6933 | — |
+| 1518 | 6932 | `libreoffice-dev-hi` | 0 | 0 | 1 | 6932 | — |
+| 1519 | 6931 | `libreoffice-dev-hr` | 0 | 0 | 1 | 6931 | — |
+| 1520 | 6930 | `libreoffice-dev-hsb` | 0 | 0 | 1 | 6930 | — |
+| 1521 | 6929 | `libreoffice-dev-hu` | 0 | 0 | 1 | 6929 | — |
+| 1522 | 6928 | `libreoffice-dev-id` | 0 | 0 | 1 | 6928 | — |
+| 1523 | 6927 | `libreoffice-dev-is` | 0 | 0 | 1 | 6927 | — |
+| 1524 | 6926 | `libreoffice-dev-it` | 0 | 0 | 1 | 6926 | — |
+| 1525 | 6925 | `libreoffice-dev-ja` | 0 | 0 | 1 | 6925 | — |
+| 1526 | 6924 | `libreoffice-dev-ka` | 0 | 0 | 1 | 6924 | — |
+| 1527 | 6923 | `libreoffice-dev-kab` | 0 | 0 | 1 | 6923 | — |
+| 1528 | 6922 | `libreoffice-dev-kk` | 0 | 0 | 1 | 6922 | — |
+| 1529 | 6921 | `libreoffice-dev-km` | 0 | 0 | 1 | 6921 | — |
+| 1530 | 6920 | `libreoffice-dev-kmr-latn` | 0 | 0 | 1 | 6920 | — |
+| 1531 | 6919 | `libreoffice-dev-kn` | 0 | 0 | 1 | 6919 | — |
+| 1532 | 6918 | `libreoffice-dev-ko` | 0 | 0 | 1 | 6918 | — |
+| 1533 | 6917 | `libreoffice-dev-kok` | 0 | 0 | 1 | 6917 | — |
+| 1534 | 6916 | `libreoffice-dev-ks` | 0 | 0 | 1 | 6916 | — |
+| 1535 | 6915 | `libreoffice-dev-lb` | 0 | 0 | 1 | 6915 | — |
+| 1536 | 6914 | `libreoffice-dev-lo` | 0 | 0 | 1 | 6914 | — |
+| 1537 | 6913 | `libreoffice-dev-lt` | 0 | 0 | 1 | 6913 | — |
+| 1538 | 6912 | `libreoffice-dev-lv` | 0 | 0 | 1 | 6912 | — |
+| 1539 | 6911 | `libreoffice-dev-mai` | 0 | 0 | 1 | 6911 | — |
+| 1540 | 6910 | `libreoffice-dev-mk` | 0 | 0 | 1 | 6910 | — |
+| 1541 | 6909 | `libreoffice-dev-ml` | 0 | 0 | 1 | 6909 | — |
+| 1542 | 6908 | `libreoffice-dev-mn` | 0 | 0 | 1 | 6908 | — |
+| 1543 | 6907 | `libreoffice-dev-mni` | 0 | 0 | 1 | 6907 | — |
+| 1544 | 7468 | `libreoffice-dev-mr` | 0 | 0 | 1 | 7468 | — |
+| 1545 | 6906 | `libreoffice-dev-my` | 0 | 0 | 1 | 6906 | — |
+| 1546 | 6905 | `libreoffice-dev-nb` | 0 | 0 | 1 | 6905 | — |
+| 1547 | 6904 | `libreoffice-dev-ne` | 0 | 0 | 1 | 6904 | — |
+| 1548 | 6903 | `libreoffice-dev-nl` | 0 | 0 | 1 | 6903 | — |
+| 1549 | 6902 | `libreoffice-dev-nn` | 0 | 0 | 1 | 6902 | — |
+| 1550 | 6901 | `libreoffice-dev-nr` | 0 | 0 | 1 | 6901 | — |
+| 1551 | 6900 | `libreoffice-dev-nso` | 0 | 0 | 1 | 6900 | — |
+| 1552 | 6899 | `libreoffice-dev-oc` | 0 | 0 | 1 | 6899 | — |
+| 1553 | 6898 | `libreoffice-dev-om` | 0 | 0 | 1 | 6898 | — |
+| 1554 | 6897 | `libreoffice-dev-or` | 0 | 0 | 1 | 6897 | — |
+| 1555 | 6896 | `libreoffice-dev-pa-in` | 0 | 0 | 1 | 6896 | — |
+| 1556 | 6895 | `libreoffice-dev-pl` | 0 | 0 | 1 | 6895 | — |
+| 1557 | 6894 | `libreoffice-dev-pt` | 0 | 0 | 1 | 6894 | — |
+| 1558 | 6893 | `libreoffice-dev-pt-br` | 0 | 0 | 1 | 6893 | — |
+| 1559 | 6892 | `libreoffice-dev-ro` | 0 | 0 | 1 | 6892 | — |
+| 1560 | 6891 | `libreoffice-dev-ru` | 0 | 0 | 1 | 6891 | — |
+| 1561 | 6890 | `libreoffice-dev-rw` | 0 | 0 | 1 | 6890 | — |
+| 1562 | 6889 | `libreoffice-dev-sa-in` | 0 | 0 | 1 | 6889 | — |
+| 1563 | 6888 | `libreoffice-dev-sat` | 0 | 0 | 1 | 6888 | — |
+| 1564 | 6887 | `libreoffice-dev-sd` | 0 | 0 | 1 | 6887 | — |
+| 1565 | 6886 | `libreoffice-dev-si` | 0 | 0 | 1 | 6886 | — |
+| 1566 | 6885 | `libreoffice-dev-sid` | 0 | 0 | 1 | 6885 | — |
+| 1567 | 6884 | `libreoffice-dev-sk` | 0 | 0 | 1 | 6884 | — |
+| 1568 | 6883 | `libreoffice-dev-sl` | 0 | 0 | 1 | 6883 | — |
+| 1569 | 6882 | `libreoffice-dev-sq` | 0 | 0 | 1 | 6882 | — |
+| 1570 | 6881 | `libreoffice-dev-sr` | 0 | 0 | 1 | 6881 | — |
+| 1571 | 6880 | `libreoffice-dev-sr-latn` | 0 | 0 | 1 | 6880 | — |
+| 1572 | 6879 | `libreoffice-dev-ss` | 0 | 0 | 1 | 6879 | — |
+| 1573 | 6878 | `libreoffice-dev-st` | 0 | 0 | 1 | 6878 | — |
+| 1574 | 6877 | `libreoffice-dev-sv` | 0 | 0 | 1 | 6877 | — |
+| 1575 | 6876 | `libreoffice-dev-sw-tz` | 0 | 0 | 1 | 6876 | — |
+| 1576 | 6875 | `libreoffice-dev-szl` | 0 | 0 | 1 | 6875 | — |
+| 1577 | 6874 | `libreoffice-dev-ta` | 0 | 0 | 1 | 6874 | — |
+| 1578 | 6873 | `libreoffice-dev-te` | 0 | 0 | 1 | 6873 | — |
+| 1579 | 6872 | `libreoffice-dev-tg` | 0 | 0 | 1 | 6872 | — |
+| 1580 | 6871 | `libreoffice-dev-th` | 0 | 0 | 1 | 6871 | — |
+| 1581 | 6870 | `libreoffice-dev-tn` | 0 | 0 | 1 | 6870 | — |
+| 1582 | 6869 | `libreoffice-dev-tr` | 0 | 0 | 1 | 6869 | — |
+| 1583 | 6868 | `libreoffice-dev-ts` | 0 | 0 | 1 | 6868 | — |
+| 1584 | 6867 | `libreoffice-dev-tt` | 0 | 0 | 1 | 6867 | — |
+| 1585 | 6866 | `libreoffice-dev-ug` | 0 | 0 | 1 | 6866 | — |
+| 1586 | 6865 | `libreoffice-dev-uk` | 0 | 0 | 1 | 6865 | — |
+| 1587 | 6864 | `libreoffice-dev-uz` | 0 | 0 | 1 | 6864 | — |
+| 1588 | 6863 | `libreoffice-dev-ve` | 0 | 0 | 1 | 6863 | — |
+| 1589 | 6862 | `libreoffice-dev-vec` | 0 | 0 | 1 | 6862 | — |
+| 1590 | 6861 | `libreoffice-dev-vi` | 0 | 0 | 1 | 6861 | — |
+| 1591 | 6860 | `libreoffice-dev-xh` | 0 | 0 | 1 | 6860 | — |
+| 1592 | 6859 | `libreoffice-dev-zh-cn` | 0 | 0 | 1 | 6859 | — |
+| 1593 | 6858 | `libreoffice-dev-zh-tw` | 0 | 0 | 1 | 6858 | — |
+| 1594 | 6857 | `libreoffice-dev-zu` | 0 | 0 | 1 | 6857 | — |
+| 1595 | 5360 | `libreoffice-extension-apso` | 0 | 0 | 1 | 5360 | — |
+| 1596 | 3248 | `libreoffice-impress-templates` | 0 | 0 | 1 | 3248 | — |
+| 1597 | 4092 | `libsmb2-git` | 0 | 0 | 1 | 4092 | — |
+| 1598 | 6283 | `libutf8proc2` | 0 | 0 | 1 | 6283 | — |
+| 1599 | 7775 | `likwid` | 0 | 0 | 1 | 7775 | — |
+| 1600 | 6994 | `linphone-desktop-appimage-stable` | 0 | 0 | 1 | 6994 | — |
+| 1601 | 6992 | `linphone-plugin-msx264` | 0 | 0 | 1 | 6992 | — |
+| 1602 | 7507 | `linux-versioned-bin` | 0 | 0 | 1 | 7507 | — |
+| 1603 | 7509 | `linux-versioned-docs-bin` | 0 | 0 | 1 | 7509 | — |
+| 1604 | 7508 | `linux-versioned-headers-bin` | 0 | 0 | 1 | 7508 | — |
+| 1605 | 6303 | `linux-zen-git-headers` | 0 | 0 | 1 | 6303 | — |
+| 1606 | 6845 | `locale-en-nl-git` | 0 | 0 | 1 | 6845 | — |
+| 1607 | 2902 | `logfmt-bin` | 0 | 0 | 1 | 2902 | — |
+| 1608 | 3444 | `lol` | 0 | 0 | 1 | 3444 | — |
+| 1609 | 2325 | `lssecret-git` | 0 | 0 | 1 | 2325 | — |
+| 1610 | 3109 | `lswt` | 0 | 0 | 1 | 3109 | — |
+| 1611 | 6189 | `luhncheck` | 0 | 0 | 1 | 6189 | — |
+| 1612 | 6659 | `makepkg-optimize` | 0 | 0 | 1 | 6659 | — |
+| 1613 | 4150 | `makepkg-optimize-mold` | 0 | 0 | 1 | 4150 | — |
+| 1614 | 7485 | `marmite` | 0 | 0 | 1 | 7485 | — |
+| 1615 | 4190 | `mars-mips` | 0 | 0 | 1 | 4190 | — |
+| 1616 | 2595 | `mc-dracula-theme` | 0 | 0 | 1 | 2595 | — |
+| 1617 | 3640 | `mcbash` | 0 | 0 | 1 | 3640 | — |
+| 1618 | 1996 | `mcrcon` | 0 | 0 | 1 | 1996 | — |
+| 1619 | 2748 | `mdns-scan` | 0 | 0 | 1 | 2748 | — |
+| 1620 | 473 | `mechrevo-drivers-dkms` | 0 | 0 | 1 | 473 | — |
+| 1621 | 2596 | `mehshell-bin` | 0 | 0 | 1 | 2596 | — |
+| 1622 | 3210 | `meta-package-manager-bin` | 0 | 0 | 1 | 3210 | — |
+| 1623 | 1603 | `min-browser-bin` | 0 | 0 | 1 | 1603 | — |
+| 1624 | 3364 | `minisforum-v3-pcie-aspm-config` | 0 | 0 | 1 | 3364 | — |
+| 1625 | 886 | `mkinitcpio-contactinfo` | 0 | 0 | 1 | 886 | — |
+| 1626 | 8534 | `mkinitcpio-encrypt-detached-header` | 0 | 0 | 1 | 8534 | — |
+| 1627 | 3116 | `mkinitcpio-tailscale` | 0 | 0 | 1 | 3116 | — |
+| 1628 | 7185 | `mkmm` | 0 | 0 | 1 | 7185 | — |
+| 1629 | 3390 | `mma` | 0 | 0 | 1 | 3390 | — |
+| 1630 | 4904 | `mmdr-bin` | 0 | 0 | 1 | 4904 | — |
+| 1631 | 1038 | `modern-beep` | 0 | 0 | 1 | 1038 | — |
+| 1632 | 2731 | `modsecurity-crs` | 0 | 0 | 1 | 2731 | — |
+| 1633 | 410 | `moltbot` | 0 | 0 | 1 | 410 | — |
+| 1634 | 8219 | `moribito` | 0 | 0 | 1 | 8219 | — |
+| 1635 | 4334 | `muffon-bin` | 0 | 0 | 1 | 4334 | — |
+| 1636 | 4957 | `muzi` | 0 | 0 | 1 | 4957 | — |
+| 1637 | 685 | `mycelium` | 0 | 0 | 1 | 685 | — |
+| 1638 | 3973 | `namefix-git` | 0 | 0 | 1 | 3973 | — |
+| 1639 | 8532 | `nautilus-konsole` | 0 | 0 | 1 | 8532 | — |
+| 1640 | 5122 | `naviterm-bin` | 0 | 0 | 1 | 5122 | — |
+| 1641 | 1182 | `netbird-bin` | 0 | 0 | 1 | 1182 | — |
+| 1642 | 974 | `netease-cloud-music-web-player` | 0 | 0 | 1 | 974 | — |
+| 1643 | 6163 | `netpala` | 0 | 0 | 1 | 6163 | — |
+| 1644 | 3860 | `netrc` | 0 | 0 | 1 | 3860 | — |
+| 1645 | 1393 | `nibble-bin` | 0 | 0 | 1 | 1393 | — |
+| 1646 | 3921 | `nim-git` | 0 | 0 | 1 | 3921 | — |
+| 1647 | 3922 | `nimble-git` | 0 | 0 | 1 | 3922 | — |
+| 1648 | 3924 | `nimpretty-git` | 0 | 0 | 1 | 3924 | — |
+| 1649 | 3923 | `nimsuggest-git` | 0 | 0 | 1 | 3923 | — |
+| 1650 | 8193 | `nitchrevived-bin` | 0 | 0 | 1 | 8193 | — |
+| 1651 | 2012 | `nitrux-icon-theme` | 0 | 0 | 1 | 2012 | — |
+| 1652 | 2382 | `nmcrcon-git` | 0 | 0 | 1 | 2382 | — |
+| 1653 | 882 | `nmsurf` | 0 | 0 | 1 | 882 | — |
+| 1654 | 3850 | `nnn-nerd` | 0 | 0 | 1 | 3850 | — |
+| 1655 | 3461 | `nonicons-doc-git` | 0 | 0 | 1 | 3461 | — |
+| 1656 | 3460 | `nonicons-license-git` | 0 | 0 | 1 | 3460 | — |
+| 1657 | 3529 | `nordic-darker-standard-buttons-theme-git` | 0 | 0 | 1 | 3529 | — |
+| 1658 | 2465 | `notable-bin` | 0 | 0 | 1 | 2465 | — |
+| 1659 | 2601 | `note-tui-bin` | 0 | 0 | 1 | 2601 | — |
+| 1660 | 5444 | `noto-fonts-cjk-fontconfig` | 0 | 0 | 1 | 5444 | — |
+| 1661 | 3540 | `npm-corepack` | 0 | 0 | 1 | 3540 | — |
+| 1662 | 7726 | `nsnake` | 0 | 0 | 1 | 7726 | — |
+| 1663 | 4139 | `numr` | 0 | 0 | 1 | 4139 | — |
+| 1664 | 547 | `nvidia-vulkan-open-dkms` | 0 | 0 | 1 | 547 | — |
+| 1665 | 1071 | `nvidia_oc` | 0 | 0 | 1 | 1071 | — |
+| 1666 | 2391 | `nvim-lazy` | 0 | 0 | 1 | 2391 | — |
+| 1667 | 1390 | `obs-livesplit-one-bin` | 0 | 0 | 1 | 1390 | — |
+| 1668 | 1516 | `octoberctl-bin` | 0 | 0 | 1 | 1516 | — |
+| 1669 | 1635 | `odin4-cli` | 0 | 0 | 1 | 1635 | — |
+| 1670 | 4698 | `odinls-bin` | 0 | 0 | 1 | 4698 | — |
+| 1671 | 8276 | `off-en` | 0 | 0 | 1 | 8276 | — |
+| 1672 | 1166 | `oh-my-posh-bin` | 0 | 0 | 1 | 1166 | — |
+| 1673 | 5250 | `ollama-proxy` | 0 | 0 | 1 | 5250 | — |
+| 1674 | 2793 | `omm-bin` | 0 | 0 | 1 | 2793 | — |
+| 1675 | 2942 | `omnidotdev-cli` | 0 | 0 | 1 | 2942 | — |
+| 1676 | 2971 | `omnidotdev-eden` | 0 | 0 | 1 | 2971 | — |
+| 1677 | 3366 | `onscripter-yuri-bin` | 0 | 0 | 1 | 3366 | — |
+| 1678 | 3480 | `oopz` | 0 | 0 | 1 | 3480 | — |
+| 1679 | 4445 | `open-in-native-client` | 0 | 0 | 1 | 4445 | — |
+| 1680 | 2400 | `opencl-nvidia-390xx` | 0 | 0 | 1 | 2400 | — |
+| 1681 | 2327 | `opencl-nvidia-470xx` | 0 | 0 | 1 | 2327 | — |
+| 1682 | 2029 | `opencl-nvidia-580xx` | 0 | 0 | 1 | 2029 | — |
+| 1683 | 2352 | `opencl-nvidia-beta` | 0 | 0 | 1 | 2352 | — |
+| 1684 | 545 | `opencl-nvidia-vulkan` | 0 | 0 | 1 | 545 | — |
+| 1685 | 2040 | `opencode-bin` | 0 | 0 | 1 | 2040 | — |
+| 1686 | 5436 | `openhue-cli` | 0 | 0 | 1 | 5436 | — |
+| 1687 | 3500 | `openmarch-bin` | 0 | 0 | 1 | 3500 | — |
+| 1688 | 2771 | `opennic-up` | 0 | 0 | 1 | 2771 | — |
+| 1689 | 1388 | `opentorrent-bin` | 0 | 0 | 1 | 1388 | — |
+| 1690 | 873 | `opentorrent-unstable` | 0 | 0 | 1 | 873 | — |
+| 1691 | 2314 | `opentubex-bin` | 0 | 0 | 1 | 2314 | — |
+| 1692 | 8197 | `orphanrm` | 0 | 0 | 1 | 8197 | — |
+| 1693 | 7181 | `os-prober-btrfs` | 0 | 0 | 1 | 7181 | — |
+| 1694 | 2554 | `otf-arundina` | 0 | 0 | 1 | 2554 | — |
+| 1695 | 7240 | `otf-monocraft` | 0 | 0 | 1 | 7240 | — |
+| 1696 | 3326 | `overdue` | 0 | 0 | 1 | 3326 | — |
+| 1697 | 6142 | `owlry-plugin-calculator` | 0 | 0 | 1 | 6142 | — |
+| 1698 | 6151 | `owlry-plugin-system` | 0 | 0 | 1 | 6151 | — |
+| 1699 | 421 | `paccache-hook` | 0 | 0 | 1 | 421 | — |
+| 1700 | 1990 | `pacgraph` | 0 | 0 | 1 | 1990 | — |
+| 1701 | 6848 | `pacman-mirrorup` | 0 | 0 | 1 | 6848 | — |
+| 1702 | 5092 | `pacolog` | 0 | 0 | 1 | 5092 | — |
+| 1703 | 2383 | `pacseek-bin` | 0 | 0 | 1 | 2383 | — |
+| 1704 | 6998 | `paip` | 0 | 0 | 1 | 6998 | — |
+| 1705 | 8555 | `panasonic-mfp` | 0 | 0 | 1 | 8555 | — |
+| 1706 | 5502 | `pandoc-crossref-bin` | 0 | 0 | 1 | 5502 | — |
+| 1707 | 4828 | `pano-scrobbler-bin` | 0 | 0 | 1 | 4828 | — |
+| 1708 | 368 | `pantum-universal-driver` | 0 | 0 | 1 | 368 | — |
+| 1709 | 660 | `par` | 0 | 0 | 1 | 660 | — |
+| 1710 | 357 | `par-git` | 0 | 0 | 1 | 357 | — |
+| 1711 | 1475 | `passkeyd` | 0 | 0 | 1 | 1475 | — |
+| 1712 | 7401 | `patchy-bin` | 0 | 0 | 1 | 7401 | — |
+| 1713 | 8280 | `pda` | 0 | 0 | 1 | 8280 | — |
+| 1714 | 3809 | `perl-file-keepass` | 0 | 0 | 1 | 3809 | — |
+| 1715 | 2450 | `perl-http-server-simple-psgi` | 0 | 0 | 1 | 2450 | — |
+| 1716 | 3399 | `perl-io-tiecombine` | 0 | 0 | 1 | 3399 | — |
+| 1717 | 5070 | `phantom-wallet-bin` | 0 | 0 | 1 | 5070 | — |
+| 1718 | 4537 | `phc-intel-dkms-stable` | 0 | 0 | 1 | 4537 | — |
+| 1719 | 3643 | `phoenix-arch` | 0 | 0 | 1 | 3643 | — |
+| 1720 | 8038 | `picotron` | 0 | 0 | 1 | 8038 | — |
+| 1721 | 3945 | `pigo-bin` | 0 | 0 | 1 | 3945 | — |
+| 1722 | 1689 | `pinchtab-bin` | 0 | 0 | 1 | 1689 | — |
+| 1723 | 3780 | `pipes-rs` | 0 | 0 | 1 | 3780 | — |
+| 1724 | 6285 | `pipes.c` | 0 | 0 | 1 | 6285 | — |
+| 1725 | 218 | `pipes.sh` | 0 | 0 | 1 | 218 | — |
+| 1726 | 7599 | `pipewire-openrc` | 0 | 0 | 1 | 7599 | — |
+| 1727 | 7600 | `pipewire-pulse-openrc` | 0 | 0 | 1 | 7600 | — |
+| 1728 | 1210 | `pkglog-elixir-bin` | 0 | 0 | 1 | 1210 | — |
+| 1729 | 769 | `plasma6-applets-window-title` | 0 | 0 | 1 | 769 | — |
+| 1730 | 692 | `plasma6-themes-fluent-git` | 0 | 0 | 1 | 692 | — |
+| 1731 | 1078 | `plus42` | 0 | 0 | 1 | 1078 | — |
+| 1732 | 7526 | `plymouth-i_use_arch_btw-git` | 0 | 0 | 1 | 7526 | — |
+| 1733 | 2501 | `plymouth-theme-abstract-ring-alt-git` | 0 | 0 | 1 | 2501 | — |
+| 1734 | 2500 | `plymouth-theme-abstract-ring-git` | 0 | 0 | 1 | 2500 | — |
+| 1735 | 2502 | `plymouth-theme-alienware-git` | 0 | 0 | 1 | 2502 | — |
+| 1736 | 2504 | `plymouth-theme-angular-alt-git` | 0 | 0 | 1 | 2504 | — |
+| 1737 | 2503 | `plymouth-theme-angular-git` | 0 | 0 | 1 | 2503 | — |
+| 1738 | 1690 | `plymouth-theme-arch-logo-symbol` | 0 | 0 | 1 | 1690 | — |
+| 1739 | 2505 | `plymouth-theme-black-hud-git` | 0 | 0 | 1 | 2505 | — |
+| 1740 | 2506 | `plymouth-theme-blockchain-git` | 0 | 0 | 1 | 2506 | — |
+| 1741 | 2508 | `plymouth-theme-circle-alt-git` | 0 | 0 | 1 | 2508 | — |
+| 1742 | 2509 | `plymouth-theme-circle-flow-git` | 0 | 0 | 1 | 2509 | — |
+| 1743 | 2507 | `plymouth-theme-circle-git` | 0 | 0 | 1 | 2507 | — |
+| 1744 | 2510 | `plymouth-theme-circle-hud-git` | 0 | 0 | 1 | 2510 | — |
+| 1745 | 2511 | `plymouth-theme-circuit-git` | 0 | 0 | 1 | 2511 | — |
+| 1746 | 2512 | `plymouth-theme-colorful-git` | 0 | 0 | 1 | 2512 | — |
+| 1747 | 2513 | `plymouth-theme-colorful-loop-git` | 0 | 0 | 1 | 2513 | — |
+| 1748 | 2514 | `plymouth-theme-colorful-sliced-git` | 0 | 0 | 1 | 2514 | — |
+| 1749 | 2515 | `plymouth-theme-connect-git` | 0 | 0 | 1 | 2515 | — |
+| 1750 | 2516 | `plymouth-theme-cross-hud-git` | 0 | 0 | 1 | 2516 | — |
+| 1751 | 2517 | `plymouth-theme-cubes-git` | 0 | 0 | 1 | 2517 | — |
+| 1752 | 2519 | `plymouth-theme-cuts-alt-git` | 0 | 0 | 1 | 2519 | — |
+| 1753 | 2518 | `plymouth-theme-cuts-git` | 0 | 0 | 1 | 2518 | — |
+| 1754 | 4914 | `plymouth-theme-hexagon-alt-gruvbox` | 0 | 0 | 1 | 4914 | — |
+| 1755 | 8250 | `plymouth-theme-pedro-raccoon` | 0 | 0 | 1 | 8250 | — |
+| 1756 | 8251 | `plymouth-theme-psx` | 0 | 0 | 1 | 8251 | — |
+| 1757 | 3542 | `pnpm-corepack` | 0 | 0 | 1 | 3542 | — |
+| 1758 | 2616 | `pocketenv` | 0 | 0 | 1 | 2616 | — |
+| 1759 | 4719 | `pokeget` | 0 | 0 | 1 | 4719 | — |
+| 1760 | 4449 | `pomo-bin` | 0 | 0 | 1 | 4449 | — |
+| 1761 | 8350 | `postgresql-jdbc` | 0 | 0 | 1 | 8350 | — |
+| 1762 | 4068 | `potato-c` | 0 | 0 | 1 | 4068 | — |
+| 1763 | 1628 | `powerofforreboot.efi` | 0 | 0 | 1 | 1628 | — |
+| 1764 | 6279 | `presto-bin` | 0 | 0 | 1 | 6279 | — |
+| 1765 | 4606 | `profile-sync-daemon-zen` | 0 | 0 | 1 | 4606 | — |
+| 1766 | 1910 | `projectlibre` | 0 | 0 | 1 | 1910 | — |
+| 1767 | 5276 | `proton-drive-sync-bin` | 0 | 0 | 1 | 5276 | — |
+| 1768 | 3317 | `protonhax` | 0 | 0 | 1 | 3317 | — |
+| 1769 | 2083 | `protonup-qt-bin` | 0 | 0 | 1 | 2083 | — |
+| 1770 | 8576 | `proxyman-git` | 0 | 0 | 1 | 8576 | — |
+| 1771 | 4793 | `ps_mem` | 0 | 0 | 1 | 4793 | — |
+| 1772 | 2469 | `psgrep` | 0 | 0 | 1 | 2469 | — |
+| 1773 | 4352 | `psiphonlinuxgui` | 0 | 0 | 1 | 4352 | — |
+| 1774 | 7048 | `pureref` | 0 | 0 | 1 | 7048 | — |
+| 1775 | 1381 | `puzzletea-bin` | 0 | 0 | 1 | 1381 | — |
+| 1776 | 4941 | `pwnat` | 0 | 0 | 1 | 4941 | — |
+| 1777 | 6624 | `px_ptop` | 0 | 0 | 1 | 6624 | — |
+| 1778 | 6255 | `python-face_recognition_models` | 0 | 0 | 1 | 6255 | — |
+| 1779 | 3474 | `python-htmlgenerator` | 0 | 0 | 1 | 3474 | — |
+| 1780 | 7988 | `python-javalang` | 0 | 0 | 1 | 7988 | — |
+| 1781 | 5463 | `q5k-usb-udev` | 0 | 0 | 1 | 5463 | — |
+| 1782 | 5149 | `querycat-bin` | 0 | 0 | 1 | 5149 | — |
+| 1783 | 4746 | `quran-companion` | 0 | 0 | 1 | 4746 | — |
+| 1784 | 363 | `r8125-dkms` | 0 | 0 | 1 | 363 | — |
+| 1785 | 7378 | `raffi-bin` | 0 | 0 | 1 | 7378 | — |
+| 1786 | 3393 | `rakubrew-bin` | 0 | 0 | 1 | 3393 | — |
+| 1787 | 832 | `ralph-tui` | 0 | 0 | 1 | 832 | — |
+| 1788 | 1989 | `rar` | 0 | 0 | 1 | 1989 | — |
+| 1789 | 7370 | `rcl-bin` | 0 | 0 | 1 | 7370 | — |
+| 1790 | 6315 | `repos-bin` | 0 | 0 | 1 | 6315 | — |
+| 1791 | 2489 | `responsively-bin` | 0 | 0 | 1 | 2489 | — |
+| 1792 | 3568 | `resterm-bin` | 0 | 0 | 1 | 3568 | — |
+| 1793 | 3913 | `restman-bin` | 0 | 0 | 1 | 3913 | — |
+| 1794 | 5273 | `rip-go-bin` | 0 | 0 | 1 | 5273 | — |
+| 1795 | 8166 | `romvault` | 0 | 0 | 1 | 8166 | — |
+| 1796 | 1375 | `rondo-bin` | 0 | 0 | 1 | 1375 | — |
+| 1797 | 4425 | `roundcubemail-plugin-chbox` | 0 | 0 | 1 | 4425 | — |
+| 1798 | 4423 | `roundcubemail-plugin-keyboard-shortcuts-ng` | 0 | 0 | 1 | 4423 | — |
+| 1799 | 4066 | `rpcapd` | 0 | 0 | 1 | 4066 | — |
+| 1800 | 2887 | `rtk-bin` | 0 | 0 | 1 | 2887 | — |
+| 1801 | 8557 | `rtl8761b-firmware` | 0 | 0 | 1 | 8557 | — |
+| 1802 | 2634 | `rtree` | 0 | 0 | 1 | 2634 | — |
+| 1803 | 3153 | `rubiks_cube` | 0 | 0 | 1 | 3153 | — |
+| 1804 | 3152 | `rubix` | 0 | 0 | 1 | 3152 | — |
+| 1805 | 3834 | `runa-bin` | 0 | 0 | 1 | 3834 | — |
+| 1806 | 313 | `runapp` | 0 | 0 | 1 | 313 | — |
+| 1807 | 5205 | `runapp-git` | 0 | 0 | 1 | 5205 | — |
+| 1808 | 5006 | `rustmission` | 0 | 0 | 1 | 5006 | — |
+| 1809 | 196 | `rustrover` | 0 | 0 | 1 | 196 | — |
+| 1810 | 4170 | `rustrover-eap` | 0 | 0 | 1 | 4170 | — |
+| 1811 | 195 | `rustrover-jre` | 0 | 0 | 1 | 195 | — |
+| 1812 | 7981 | `rzip` | 0 | 0 | 1 | 7981 | — |
+| 1813 | 2635 | `s3sync` | 0 | 0 | 1 | 2635 | — |
+| 1814 | 1946 | `safe-rm` | 0 | 0 | 1 | 1946 | — |
+| 1815 | 4639 | `saleae-logic2` | 0 | 0 | 1 | 4639 | — |
+| 1816 | 5415 | `saul-bin` | 0 | 0 | 1 | 5415 | — |
+| 1817 | 3427 | `saveshasum` | 0 | 0 | 1 | 3427 | — |
+| 1818 | 5353 | `sc` | 0 | 0 | 1 | 5353 | — |
+| 1819 | 3678 | `scantool-git` | 0 | 0 | 1 | 3678 | — |
+| 1820 | 3130 | `sdkman-bin` | 0 | 0 | 1 | 3130 | — |
+| 1821 | 6277 | `seija` | 0 | 0 | 1 | 6277 | — |
+| 1822 | 3760 | `serve_md` | 0 | 0 | 1 | 3760 | — |
+| 1823 | 8521 | `sfnt2woff-zopfli` | 0 | 0 | 1 | 8521 | — |
+| 1824 | 2420 | `shikai-theme` | 0 | 0 | 1 | 2420 | — |
+| 1825 | 5347 | `shimmer-wallpapers` | 0 | 0 | 1 | 5347 | — |
+| 1826 | 7482 | `shimmy-bin` | 0 | 0 | 1 | 7482 | — |
+| 1827 | 4099 | `shiori-reader` | 0 | 0 | 1 | 4099 | — |
+| 1828 | 7430 | `shstatus` | 0 | 0 | 1 | 7430 | — |
+| 1829 | 3881 | `simple-thumbnailer-stl` | 0 | 0 | 1 | 3881 | — |
+| 1830 | 4542 | `sizeof` | 0 | 0 | 1 | 4542 | — |
+| 1831 | 2920 | `skillshare` | 0 | 0 | 1 | 2920 | — |
+| 1832 | 4866 | `sliver-bin` | 0 | 0 | 1 | 4866 | — |
+| 1833 | 6357 | `snowflake-pt-client-bin` | 0 | 0 | 1 | 6357 | — |
+| 1834 | 5061 | `solflare-wallet-bin` | 0 | 0 | 1 | 5061 | — |
+| 1835 | 7286 | `spacestation14-launcher-bin` | 0 | 0 | 1 | 7286 | — |
+| 1836 | 3810 | `spek-rs-bin` | 0 | 0 | 1 | 3810 | — |
+| 1837 | 5263 | `spotiflac-bin` | 0 | 0 | 1 | 5263 | — |
+| 1838 | 3495 | `spredit` | 0 | 0 | 1 | 3495 | — |
+| 1839 | 2929 | `squix-bin` | 0 | 0 | 1 | 2929 | — |
+| 1840 | 6243 | `srm` | 0 | 0 | 1 | 6243 | — |
+| 1841 | 3334 | `ssacli-bin` | 0 | 0 | 1 | 3334 | — |
+| 1842 | 2979 | `sshconfig-lint-bin` | 0 | 0 | 1 | 2979 | — |
+| 1843 | 2066 | `standardnotes-bin` | 0 | 0 | 1 | 2066 | — |
+| 1844 | 5041 | `stash-bin` | 0 | 0 | 1 | 5041 | — |
+| 1845 | 5207 | `stmcufinder` | 0 | 0 | 1 | 5207 | — |
+| 1846 | 284 | `storcli` | 0 | 0 | 1 | 284 | — |
+| 1847 | 8564 | `sublime-merge` | 0 | 0 | 1 | 8564 | — |
+| 1848 | 5371 | `subsurface-appimage` | 0 | 0 | 1 | 5371 | — |
+| 1849 | 2650 | `subtui-bin` | 0 | 0 | 1 | 2650 | — |
+| 1850 | 1558 | `surge-bin` | 0 | 0 | 1 | 1558 | — |
+| 1851 | 4761 | `surrealdb-bin` | 0 | 0 | 1 | 4761 | — |
+| 1852 | 5380 | `suru-plus-git` | 0 | 0 | 1 | 5380 | — |
+| 1853 | 4935 | `sweep-bin` | 0 | 0 | 1 | 4935 | — |
+| 1854 | 4909 | `sweet-folders-icons-git` | 0 | 0 | 1 | 4909 | — |
+| 1855 | 3135 | `swhkd-bin` | 0 | 0 | 1 | 3135 | — |
+| 1856 | 2864 | `switchhosts-bin` | 0 | 0 | 1 | 2864 | — |
+| 1857 | 1584 | `systemd-boot-pacman-hook` | 0 | 0 | 1 | 1584 | — |
+| 1858 | 7018 | `systemd-numlockontty` | 0 | 0 | 1 | 7018 | — |
+| 1859 | 7445 | `systemd-oomd-defaults` | 0 | 0 | 1 | 7445 | — |
+| 1860 | 1766 | `tdarr` | 0 | 0 | 1 | 1766 | — |
+| 1861 | 3389 | `tdocker` | 0 | 0 | 1 | 3389 | — |
+| 1862 | 3104 | `telepresence2-bin` | 0 | 0 | 1 | 3104 | — |
+| 1863 | 1971 | `terraform-ls` | 0 | 0 | 1 | 1971 | — |
+| 1864 | 4850 | `terraformer-bin` | 0 | 0 | 1 | 4850 | — |
+| 1865 | 6406 | `terrascan` | 0 | 0 | 1 | 6406 | — |
+| 1866 | 992 | `tetrio-desktop` | 0 | 0 | 1 | 992 | — |
+| 1867 | 3838 | `tex-fmt` | 0 | 0 | 1 | 3838 | — |
+| 1868 | 3956 | `time-desktop-bin` | 0 | 0 | 1 | 3956 | — |
+| 1869 | 4643 | `timemap-bin` | 0 | 0 | 1 | 4643 | — |
+| 1870 | 988 | `timerrs` | 0 | 0 | 1 | 988 | — |
+| 1871 | 212 | `timeshift-autosnap` | 0 | 0 | 1 | 212 | — |
+| 1872 | 6214 | `tiny-media-manager` | 0 | 0 | 1 | 6214 | — |
+| 1873 | 6265 | `tinygo-bin` | 0 | 0 | 1 | 6265 | — |
+| 1874 | 2655 | `tkey-ssh-agent` | 0 | 0 | 1 | 2655 | — |
+| 1875 | 3734 | `tmodloader-bin` | 0 | 0 | 1 | 3734 | — |
+| 1876 | 3441 | `tnoodle-cli` | 0 | 0 | 1 | 3441 | — |
+| 1877 | 3442 | `tnoodle-wca` | 0 | 0 | 1 | 3442 | — |
+| 1878 | 4697 | `toipe` | 0 | 0 | 1 | 4697 | — |
+| 1879 | 499 | `tomb-kdf` | 0 | 0 | 1 | 499 | — |
+| 1880 | 3986 | `tome4-ashes_of_urhrok` | 0 | 0 | 1 | 3986 | — |
+| 1881 | 3987 | `tome4-embers_of_rage` | 0 | 0 | 1 | 3987 | — |
+| 1882 | 3988 | `tome4-forbidden_cults` | 0 | 0 | 1 | 3988 | — |
+| 1883 | 3990 | `tome4-zomnibus_addon` | 0 | 0 | 1 | 3990 | — |
+| 1884 | 6324 | `tonkeeper-wallet-bin` | 0 | 0 | 1 | 6324 | — |
+| 1885 | 4229 | `torrserver-bin` | 0 | 0 | 1 | 4229 | — |
+| 1886 | 7610 | `trakt-cli-bin` | 0 | 0 | 1 | 7610 | — |
+| 1887 | 1708 | `trashy-bin` | 0 | 0 | 1 | 1708 | — |
+| 1888 | 2658 | `treehouse-bin` | 0 | 0 | 1 | 2658 | — |
+| 1889 | 3954 | `triangle-bin` | 0 | 0 | 1 | 3954 | — |
+| 1890 | 7246 | `trid` | 0 | 0 | 1 | 7246 | — |
+| 1891 | 7209 | `trzsz` | 0 | 0 | 1 | 7209 | — |
+| 1892 | 2659 | `ts_query_ls` | 0 | 0 | 1 | 2659 | — |
+| 1893 | 2553 | `ttf-arundina` | 0 | 0 | 1 | 2553 | — |
+| 1894 | 3565 | `ttf-b612` | 0 | 0 | 1 | 3565 | — |
+| 1895 | 5131 | `ttf-comic-mono-git` | 0 | 0 | 1 | 5131 | — |
+| 1896 | 8561 | `ttf-fonts-gb-deepin` | 0 | 0 | 1 | 8561 | — |
+| 1897 | 6348 | `ttf-google-sans` | 0 | 0 | 1 | 6348 | — |
+| 1898 | 7310 | `ttf-juliamono` | 0 | 0 | 1 | 7310 | — |
+| 1899 | 4708 | `ttf-lxgw-wenkai-mono-nerd` | 0 | 0 | 1 | 4708 | — |
+| 1900 | 6665 | `ttf-monaspice-huhanme-nerd-font-bin` | 0 | 0 | 1 | 6665 | — |
+| 1901 | 1476 | `ttf-vt323` | 0 | 0 | 1 | 1476 | — |
+| 1902 | 4253 | `ttymidi` | 0 | 0 | 1 | 4253 | — |
+| 1903 | 4595 | `tuitube-bin` | 0 | 0 | 1 | 4595 | — |
+| 1904 | 2755 | `tun2socks` | 0 | 0 | 1 | 2755 | — |
+| 1905 | 7049 | `turtle-wow` | 0 | 0 | 1 | 7049 | — |
+| 1906 | 5355 | `tut` | 0 | 0 | 1 | 5355 | — |
+| 1907 | 2782 | `uber-apk-signer-bin` | 0 | 0 | 1 | 2782 | — |
+| 1908 | 3608 | `undertalemodtool-bin` | 0 | 0 | 1 | 3608 | — |
+| 1909 | 1529 | `universal-android-debloater-bin` | 0 | 0 | 1 | 1529 | — |
+| 1910 | 1779 | `unixbench` | 0 | 0 | 1 | 1779 | — |
+| 1911 | 7357 | `unraid-usb-creator-bin` | 0 | 0 | 1 | 7357 | — |
+| 1912 | 3518 | `unreal-tournament-data-archiveorg` | 0 | 0 | 1 | 3518 | — |
+| 1913 | 3520 | `unreal-tournament-data-steam` | 0 | 0 | 1 | 3520 | — |
+| 1914 | 971 | `update-grub` | 0 | 0 | 1 | 971 | — |
+| 1915 | 739 | `usenet_reborn-git` | 0 | 0 | 1 | 739 | — |
+| 1916 | 3517 | `ut2004-data-steam` | 0 | 0 | 1 | 3517 | — |
+| 1917 | 4977 | `utiliti` | 0 | 0 | 1 | 4977 | — |
+| 1918 | 4674 | `utools-bin` | 0 | 0 | 1 | 4674 | — |
+| 1919 | 1011 | `vanta-agent` | 0 | 0 | 1 | 1011 | — |
+| 1920 | 6284 | `vapoursynth-plugin-fmtconv` | 0 | 0 | 1 | 6284 | — |
+| 1921 | 3721 | `vatomic` | 0 | 0 | 1 | 3721 | — |
+| 1922 | 1435 | `vdhcoapp-bin` | 0 | 0 | 1 | 1435 | — |
+| 1923 | 8269 | `vermin-bin` | 0 | 0 | 1 | 8269 | — |
+| 1924 | 2668 | `vex-shell` | 0 | 0 | 1 | 2668 | — |
+| 1925 | 1308 | `vial-appimage` | 0 | 0 | 1 | 1308 | — |
+| 1926 | 3749 | `vibe-kanban-bin` | 0 | 0 | 1 | 3749 | — |
+| 1927 | 7751 | `vidoas` | 0 | 0 | 1 | 7751 | — |
+| 1928 | 2875 | `vimalender-bin` | 0 | 0 | 1 | 2875 | — |
+| 1929 | 7659 | `vimcdoc` | 0 | 0 | 1 | 7659 | — |
+| 1930 | 3169 | `vimcord` | 0 | 0 | 1 | 3169 | — |
+| 1931 | 3168 | `vimcord-git` | 0 | 0 | 1 | 3168 | — |
+| 1932 | 3206 | `vineflower-bin` | 0 | 0 | 1 | 3206 | — |
+| 1933 | 2670 | `vite-plus-bin` | 0 | 0 | 1 | 2670 | — |
+| 1934 | 8045 | `vkd3d-proton-bin` | 0 | 0 | 1 | 8045 | — |
+| 1935 | 4159 | `vlc-pause-click-plugin` | 0 | 0 | 1 | 4159 | — |
+| 1936 | 6414 | `vorbisgain` | 0 | 0 | 1 | 6414 | — |
+| 1937 | 3950 | `vr-lighthouse-git` | 0 | 0 | 1 | 3950 | — |
+| 1938 | 5081 | `vscodium-xdg-dir-patch` | 0 | 0 | 1 | 5081 | — |
+| 1939 | 2741 | `vt-cli-bin` | 0 | 0 | 1 | 2741 | — |
+| 1940 | 6977 | `wait4x-bin` | 0 | 0 | 1 | 6977 | — |
+| 1941 | 4070 | `wallchemy-bin` | 0 | 0 | 1 | 4070 | — |
+| 1942 | 7650 | `warcraftlogsuploader` | 0 | 0 | 1 | 7650 | — |
+| 1943 | 8159 | `wasm-language-tools` | 0 | 0 | 1 | 8159 | — |
+| 1944 | 4655 | `waves-bin` | 0 | 0 | 1 | 4655 | — |
+| 1945 | 6762 | `webapp-creator` | 0 | 0 | 1 | 6762 | — |
+| 1946 | 12 | `webstorm` | 0 | 0 | 1 | 12 | — |
+| 1947 | 1024 | `webstorm-jre` | 0 | 0 | 1 | 1024 | — |
+| 1948 | 7276 | `weiqihub` | 0 | 0 | 1 | 7276 | — |
+| 1949 | 662 | `whitesur-icon-theme` | 0 | 0 | 1 | 662 | — |
+| 1950 | 8287 | `wildfly` | 0 | 0 | 1 | 8287 | — |
+| 1951 | 3830 | `winbox3` | 0 | 0 | 1 | 3830 | — |
+| 1952 | 7490 | `wireproxy-awg-bin` | 0 | 0 | 1 | 7490 | — |
+| 1953 | 4707 | `wl-gammarelay-rs` | 0 | 0 | 1 | 4707 | — |
+| 1954 | 1257 | `wlctl-bin` | 0 | 0 | 1 | 1257 | — |
+| 1955 | 3549 | `worktrunk-bin` | 0 | 0 | 1 | 3549 | — |
+| 1956 | 8618 | `wps-office-mime` | 0 | 0 | 1 | 8618 | — |
+| 1957 | 3722 | `wtp` | 0 | 0 | 1 | 3722 | — |
+| 1958 | 6131 | `wtp-bin` | 0 | 0 | 1 | 6131 | — |
+| 1959 | 554 | `wttrbar` | 0 | 0 | 1 | 554 | — |
+| 1960 | 1048 | `wxedid` | 0 | 0 | 1 | 1048 | — |
+| 1961 | 1107 | `x86-manpages-git` | 0 | 0 | 1 | 1107 | — |
+| 1962 | 4517 | `xattrvi` | 0 | 0 | 1 | 4517 | — |
+| 1963 | 3715 | `xc-bin` | 0 | 0 | 1 | 3715 | — |
+| 1964 | 5323 | `xfce-theme-cobibird` | 0 | 0 | 1 | 5323 | — |
+| 1965 | 6322 | `xq` | 0 | 0 | 1 | 6322 | — |
+| 1966 | 2521 | `yana-bin` | 0 | 0 | 1 | 2521 | — |
+| 1967 | 3541 | `yarn-corepack` | 0 | 0 | 1 | 3541 | — |
+| 1968 | 2860 | `yasp-bin` | 0 | 0 | 1 | 2860 | — |
+| 1969 | 7759 | `ymuse-bin` | 0 | 0 | 1 | 7759 | — |
+| 1970 | 3192 | `youtube-music-desktop` | 0 | 0 | 1 | 3192 | — |
+| 1971 | 7464 | `ytdownloader-gui-bin` | 0 | 0 | 1 | 7464 | — |
+| 1972 | 7012 | `yumenikki-en` | 0 | 0 | 1 | 7012 | — |
+| 1973 | 6511 | `zfsnap` | 0 | 0 | 1 | 6511 | — |
+| 1974 | 800 | `zigmir` | 0 | 0 | 1 | 800 | — |
+| 1975 | 4041 | `zimfw` | 0 | 0 | 1 | 4041 | — |
+| 1976 | 2870 | `zmx-git` | 0 | 0 | 1 | 2870 | — |
+| 1977 | 2903 | `zookeeper` | 0 | 0 | 1 | 2903 | — |
+| 1978 | 5023 | `zpaqfranz-git` | 0 | 0 | 1 | 5023 | — |
+| 1979 | 4569 | `zps-bin` | 0 | 0 | 1 | 4569 | — |
+| 1980 | 6302 | `zram-openrc` | 0 | 0 | 1 | 6302 | — |
+| 1981 | 3910 | `zsh-nix-shell` | 0 | 0 | 1 | 3910 | — |
+| 1982 | 5176 | `zvm-bin` | 0 | 0 | 1 | 5176 | — |
+| 1983 | 2421 | `2048.c` | 0 | 0 | 2 | 2421 | — |
+| 1984 | 3299 | `7zip-zstd-bin` | 0 | 0 | 2 | 3299 | — |
+| 1985 | 2886 | `addrwatch` | 0 | 0 | 2 | 2886 | — |
+| 1986 | 1771 | `adebar` | 0 | 0 | 2 | 1771 | — |
+| 1987 | 4069 | `airctl-bin` | 0 | 0 | 2 | 4069 | — |
+| 1988 | 2092 | `airi-bin` | 0 | 0 | 2 | 2092 | — |
+| 1989 | 3905 | `alacritty-use-theme-with-redshift` | 0 | 0 | 2 | 3905 | — |
+| 1990 | 6535 | `alsi` | 0 | 0 | 2 | 6535 | — |
+| 1991 | 4889 | `amdgpu-clocks-git` | 0 | 0 | 2 | 4889 | — |
+| 1992 | 3981 | `andcli` | 0 | 0 | 2 | 3981 | — |
+| 1993 | 1627 | `android-sdk-cmdline-tools-latest` | 0 | 0 | 2 | 1627 | — |
+| 1994 | 2795 | `ani2xcursor-bin` | 0 | 0 | 2 | 2795 | — |
+| 1995 | 7239 | `antidot` | 0 | 0 | 2 | 7239 | — |
+| 1996 | 3320 | `anyrun` | 0 | 0 | 2 | 3320 | — |
+| 1997 | 7061 | `aocl-aocc` | 0 | 0 | 2 | 7061 | — |
+| 1998 | 7060 | `aocl-gcc` | 0 | 0 | 2 | 7060 | — |
+| 1999 | 5013 | `arch-cleaner` | 0 | 0 | 2 | 5013 | — |
+| 2000 | 7300 | `archium-bin` | 0 | 0 | 2 | 7300 | — |
+| 2001 | 1730 | `arrpc` | 0 | 0 | 2 | 1730 | — |
+| 2002 | 7699 | `ascii-image-converter` | 0 | 0 | 2 | 7699 | — |
+| 2003 | 3165 | `asciify` | 0 | 0 | 2 | 3165 | — |
+| 2004 | 6769 | `ast-grep-bin` | 0 | 0 | 2 | 6769 | — |
+| 2005 | 3845 | `auto-throttle` | 0 | 0 | 2 | 3845 | — |
+| 2006 | 2700 | `aws-cli-bin` | 0 | 0 | 2 | 2700 | — |
+| 2007 | 4911 | `axe-bin` | 0 | 0 | 2 | 4911 | — |
+| 2008 | 6418 | `ayaan` | 0 | 0 | 2 | 6418 | — |
+| 2009 | 1334 | `babashka-bin` | 0 | 0 | 2 | 1334 | — |
+| 2010 | 4972 | `barify` | 0 | 0 | 2 | 4972 | — |
+| 2011 | 7475 | `bash-complete-alias` | 0 | 0 | 2 | 7475 | — |
+| 2012 | 2914 | `bash-fuzzy-clock-git` | 0 | 0 | 2 | 2914 | — |
+| 2013 | 4096 | `bash-git-prompt` | 0 | 0 | 2 | 4096 | — |
+| 2014 | 2884 | `batctl-tui` | 0 | 0 | 2 | 2884 | — |
+| 2015 | 6175 | `bayesian-ssh-bin` | 0 | 0 | 2 | 6175 | — |
+| 2016 | 1506 | `bcachefs-kernel-dkms-git` | 0 | 0 | 2 | 1506 | — |
+| 2017 | 748 | `bcpp` | 0 | 0 | 2 | 748 | — |
+| 2018 | 8169 | `bdf` | 0 | 0 | 2 | 8169 | — |
+| 2019 | 5399 | `bdinfo-git` | 0 | 0 | 2 | 5399 | — |
+| 2020 | 2035 | `betterbird-bin` | 0 | 0 | 2 | 2035 | — |
+| 2021 | 5098 | `betterbird-es-bin` | 0 | 0 | 2 | 5098 | — |
+| 2022 | 1248 | `betterbird-ru-bin` | 0 | 0 | 2 | 1248 | — |
+| 2023 | 235 | `bfg` | 0 | 0 | 2 | 235 | — |
+| 2024 | 2988 | `bfree` | 0 | 0 | 2 | 2988 | — |
+| 2025 | 1481 | `bfree-bin` | 0 | 0 | 2 | 1481 | — |
+| 2026 | 943 | `bisq-cli` | 0 | 0 | 2 | 943 | — |
+| 2027 | 942 | `bisq-daemon` | 0 | 0 | 2 | 942 | — |
+| 2028 | 941 | `bisq-desktop` | 0 | 0 | 2 | 941 | — |
+| 2029 | 3745 | `blacklist-check` | 0 | 0 | 2 | 3745 | — |
+| 2030 | 5430 | `blogr-bin` | 0 | 0 | 2 | 5430 | — |
+| 2031 | 3323 | `breitbandmessung-bin` | 0 | 0 | 2 | 3323 | — |
+| 2032 | 7463 | `briar-desktop-bin` | 0 | 0 | 2 | 7463 | — |
+| 2033 | 1077 | `brogue-ce` | 0 | 0 | 2 | 1077 | — |
+| 2034 | 8602 | `brother-brgenml1` | 0 | 0 | 2 | 8602 | — |
+| 2035 | 3484 | `brother-dcpj132w` | 0 | 0 | 2 | 3484 | — |
+| 2036 | 3978 | `brother-hl1200` | 0 | 0 | 2 | 3978 | — |
+| 2037 | 2714 | `brother-mfc-l2710dw` | 0 | 0 | 2 | 2714 | — |
+| 2038 | 798 | `brother-ql1050` | 0 | 0 | 2 | 798 | — |
+| 2039 | 2852 | `browsers-bin` | 0 | 0 | 2 | 2852 | — |
+| 2040 | 2953 | `btrfsmaintenance-git` | 0 | 0 | 2 | 2953 | — |
+| 2041 | 7184 | `butter` | 0 | 0 | 2 | 7184 | — |
+| 2042 | 8176 | `buttery-bin` | 0 | 0 | 2 | 8176 | — |
+| 2043 | 2530 | `bwrap-common` | 0 | 0 | 2 | 2530 | — |
+| 2044 | 5454 | `bzmenu-bin` | 0 | 0 | 2 | 5454 | — |
+| 2045 | 2531 | `caddy-cloudflare-l4` | 0 | 0 | 2 | 2531 | — |
+| 2046 | 6995 | `caescript-bin` | 0 | 0 | 2 | 6995 | — |
+| 2047 | 5230 | `canvas-downloader-bin` | 0 | 0 | 2 | 5230 | — |
+| 2048 | 6351 | `carapace` | 0 | 0 | 2 | 6351 | — |
+| 2049 | 8186 | `cargo-visualize-bin` | 0 | 0 | 2 | 8186 | — |
+| 2050 | 4981 | `casdoor` | 0 | 0 | 2 | 4981 | — |
+| 2051 | 6405 | `catppuccin-obs-theme-git` | 0 | 0 | 2 | 6405 | — |
+| 2052 | 7238 | `catppuccinifier-cli-git` | 0 | 0 | 2 | 7238 | — |
+| 2053 | 2499 | `ccase` | 0 | 0 | 2 | 2499 | — |
+| 2054 | 4690 | `ccusage` | 0 | 0 | 2 | 4690 | — |
+| 2055 | 2473 | `cdebootstrap-static` | 0 | 0 | 2 | 2473 | — |
+| 2056 | 1427 | `certradar-cli-bin` | 0 | 0 | 2 | 1427 | — |
+| 2057 | 6653 | `cfspeedtest-bin` | 0 | 0 | 2 | 6653 | — |
+| 2058 | 8177 | `chandler-bin` | 0 | 0 | 2 | 8177 | — |
+| 2059 | 8592 | `charta-bin` | 0 | 0 | 2 | 8592 | — |
+| 2060 | 2850 | `checkupdates-notify` | 0 | 0 | 2 | 2850 | — |
+| 2061 | 3876 | `cherry-studio-electron-bin` | 0 | 0 | 2 | 3876 | — |
+| 2062 | 3262 | `cheshmak-bin` | 0 | 0 | 2 | 3262 | — |
+| 2063 | 2338 | `cisco-secure-client` | 0 | 0 | 2 | 2338 | — |
+| 2064 | 2533 | `claude-agent-acp` | 0 | 0 | 2 | 2533 | — |
+| 2065 | 6380 | `clevo-drivers-dkms-git` | 0 | 0 | 2 | 6380 | — |
+| 2066 | 4683 | `cli53` | 0 | 0 | 2 | 4683 | — |
+| 2067 | 1424 | `climp-bin` | 0 | 0 | 2 | 1424 | — |
+| 2068 | 2079 | `clion` | 0 | 0 | 2 | 2079 | — |
+| 2069 | 4489 | `clion-eap` | 0 | 0 | 2 | 4489 | — |
+| 2070 | 8027 | `clipvault-bin` | 0 | 0 | 2 | 8027 | — |
+| 2071 | 5269 | `clojure-lsp-bin` | 0 | 0 | 2 | 5269 | — |
+| 2072 | 1065 | `cmake-modules-webos-git` | 0 | 0 | 2 | 1065 | — |
+| 2073 | 5190 | `cmdfy` | 0 | 0 | 2 | 5190 | — |
+| 2074 | 3409 | `cmsis-svd-git` | 0 | 0 | 2 | 3409 | — |
+| 2075 | 4575 | `code-minimap-bin` | 0 | 0 | 2 | 4575 | — |
+| 2076 | 5476 | `comp-scan-bin` | 0 | 0 | 2 | 5476 | — |
+| 2077 | 4976 | `comrak-git` | 0 | 0 | 2 | 4976 | — |
+| 2078 | 5427 | `coomer-bin` | 0 | 0 | 2 | 5427 | — |
+| 2079 | 6509 | `cornelli-bin` | 0 | 0 | 2 | 6509 | — |
+| 2080 | 5439 | `crier-bin` | 0 | 0 | 2 | 5439 | — |
+| 2081 | 4383 | `critique` | 0 | 0 | 2 | 4383 | — |
+| 2082 | 4094 | `croaring-git` | 0 | 0 | 2 | 4094 | — |
+| 2083 | 7740 | `crush` | 0 | 0 | 2 | 7740 | — |
+| 2084 | 925 | `csharpier` | 0 | 0 | 2 | 925 | — |
+| 2085 | 797 | `cshatag` | 0 | 0 | 2 | 797 | — |
+| 2086 | 4549 | `cutieascii` | 0 | 0 | 2 | 4549 | — |
+| 2087 | 3928 | `cvbasic` | 0 | 0 | 2 | 3928 | — |
+| 2088 | 1351 | `czkawka-cli-bin` | 0 | 0 | 2 | 1351 | — |
+| 2089 | 7340 | `darya-bin` | 0 | 0 | 2 | 7340 | — |
+| 2090 | 1058 | `dasel` | 0 | 0 | 2 | 1058 | — |
+| 2091 | 4436 | `datafusion-cli` | 0 | 0 | 2 | 4436 | — |
+| 2092 | 465 | `davinci-ffmpeg-encoder-plugin` | 0 | 0 | 2 | 465 | — |
+| 2093 | 7031 | `davmail` | 0 | 0 | 2 | 7031 | — |
+| 2094 | 4113 | `dawn-writer-bin` | 0 | 0 | 2 | 4113 | — |
+| 2095 | 7398 | `dcli-arch-git` | 0 | 0 | 2 | 7398 | — |
+| 2096 | 2794 | `deadbranch-bin` | 0 | 0 | 2 | 2794 | — |
+| 2097 | 4884 | `deadd-notification-center-bin` | 0 | 0 | 2 | 4884 | — |
+| 2098 | 6763 | `ded` | 0 | 0 | 2 | 6763 | — |
+| 2099 | 360 | `deezer-enhanced` | 0 | 0 | 2 | 360 | — |
+| 2100 | 1723 | `devbox-bin` | 0 | 0 | 2 | 1723 | — |
+| 2101 | 1030 | `dict-gcide` | 0 | 0 | 2 | 1030 | — |
+| 2102 | 923 | `dinit-edit-git` | 0 | 0 | 2 | 923 | — |
+| 2103 | 3117 | `discord-chat-exporter-plus-cli` | 0 | 0 | 2 | 3117 | — |
+| 2104 | 453 | `discordo-git` | 0 | 0 | 2 | 453 | — |
+| 2105 | 6753 | `doasedit-nhk` | 0 | 0 | 2 | 6753 | — |
+| 2106 | 6456 | `docker-compose-systemd-unit` | 0 | 0 | 2 | 6456 | — |
+| 2107 | 2544 | `docker-model-plugin` | 0 | 0 | 2 | 2544 | — |
+| 2108 | 5479 | `docx-you-want` | 0 | 0 | 2 | 5479 | — |
+| 2109 | 1619 | `dolibarr` | 0 | 0 | 2 | 1619 | — |
+| 2110 | 3159 | `dora-bin` | 0 | 0 | 2 | 3159 | — |
+| 2111 | 7540 | `dosbox-pure-unleashed-bin` | 0 | 0 | 2 | 7540 | — |
+| 2112 | 1271 | `dotnet-host-bin` | 0 | 0 | 2 | 1271 | — |
+| 2113 | 6592 | `dotnet-install` | 0 | 0 | 2 | 6592 | — |
+| 2114 | 4815 | `dotr-bin` | 0 | 0 | 2 | 4815 | — |
+| 2115 | 4009 | `doublecmd-plugin-p7z-usr` | 0 | 0 | 2 | 4009 | — |
+| 2116 | 8216 | `doxx-git` | 0 | 0 | 2 | 8216 | — |
+| 2117 | 3985 | `dracula-icons-git` | 0 | 0 | 2 | 3985 | — |
+| 2118 | 7183 | `ds` | 0 | 0 | 2 | 7183 | — |
+| 2119 | 7582 | `dusage-bin` | 0 | 0 | 2 | 7582 | — |
+| 2120 | 1092 | `dust-git` | 0 | 0 | 2 | 1092 | — |
+| 2121 | 3388 | `dvdisaster-speed47-git` | 0 | 0 | 2 | 3388 | — |
+| 2122 | 1317 | `eden-bin` | 0 | 0 | 2 | 1317 | — |
+| 2123 | 1299 | `eden-nightly-bin` | 0 | 0 | 2 | 1299 | — |
+| 2124 | 2692 | `eden-preview-bin` | 0 | 0 | 2 | 2692 | — |
+| 2125 | 915 | `elephant-bitwarden` | 0 | 0 | 2 | 915 | — |
+| 2126 | 273 | `elephant-calc` | 0 | 0 | 2 | 273 | — |
+| 2127 | 272 | `elephant-files` | 0 | 0 | 2 | 272 | — |
+| 2128 | 912 | `elephant-niriactions` | 0 | 0 | 2 | 912 | — |
+| 2129 | 911 | `elephant-nirisessions` | 0 | 0 | 2 | 911 | — |
+| 2130 | 910 | `elephant-snippets` | 0 | 0 | 2 | 910 | — |
+| 2131 | 909 | `elephant-windows` | 0 | 0 | 2 | 909 | — |
+| 2132 | 4592 | `empiriqa-bin` | 0 | 0 | 2 | 4592 | — |
+| 2133 | 2088 | `ensu-bin` | 0 | 0 | 2 | 2088 | — |
+| 2134 | 2330 | `ente-desktop-bin` | 0 | 0 | 2 | 2330 | — |
+| 2135 | 1413 | `envtrace-bin` | 0 | 0 | 2 | 1413 | — |
+| 2136 | 756 | `eperiodique` | 0 | 0 | 2 | 756 | — |
+| 2137 | 8282 | `epub-thumbnailer-git` | 0 | 0 | 2 | 8282 | — |
+| 2138 | 4546 | `eso-addons-manager-bin` | 0 | 0 | 2 | 4546 | — |
+| 2139 | 8020 | `espionage` | 0 | 0 | 2 | 8020 | — |
+| 2140 | 5160 | `etcd` | 0 | 0 | 2 | 5160 | — |
+| 2141 | 2485 | `etckeeper-packages` | 0 | 0 | 2 | 2485 | — |
+| 2142 | 2099 | `ethtui-bin` | 0 | 0 | 2 | 2099 | — |
+| 2143 | 2549 | `etr-bin` | 0 | 0 | 2 | 2549 | — |
+| 2144 | 4235 | `extramaus` | 0 | 0 | 2 | 4235 | — |
+| 2145 | 6413 | `ezytdl-bin` | 0 | 0 | 2 | 6413 | — |
+| 2146 | 4577 | `fackr-bin` | 0 | 0 | 2 | 4577 | — |
+| 2147 | 7551 | `fake86-git` | 0 | 0 | 2 | 7551 | — |
+| 2148 | 4945 | `fakturama` | 0 | 0 | 2 | 4945 | — |
+| 2149 | 2550 | `fastfind-bin` | 0 | 0 | 2 | 2550 | — |
+| 2150 | 2851 | `faubox` | 0 | 0 | 2 | 2851 | — |
+| 2151 | 1062 | `fbctrl` | 0 | 0 | 2 | 1062 | — |
+| 2152 | 3304 | `fcitx5-hazkey-bin` | 0 | 0 | 2 | 3304 | — |
+| 2153 | 6814 | `fcitx5-pinyin-chinese-idiom` | 0 | 0 | 2 | 6814 | — |
+| 2154 | 1410 | `feedo-bin` | 0 | 0 | 2 | 1410 | — |
+| 2155 | 5456 | `ferris-scan-bin` | 0 | 0 | 2 | 5456 | — |
+| 2156 | 6296 | `ffhuman-bin` | 0 | 0 | 2 | 6296 | — |
+| 2157 | 8611 | `firebase-tools-bin` | 0 | 0 | 2 | 8611 | — |
+| 2158 | 5372 | `firefox-extension-privacybadger` | 0 | 0 | 2 | 5372 | — |
+| 2159 | 3203 | `fish-autopair` | 0 | 0 | 2 | 3203 | — |
+| 2160 | 1132 | `fishnet` | 0 | 0 | 2 | 1132 | — |
+| 2161 | 2551 | `fist-bin` | 0 | 0 | 2 | 2551 | — |
+| 2162 | 3508 | `fitui-bin` | 0 | 0 | 2 | 3508 | — |
+| 2163 | 4730 | `flclashx-bin` | 0 | 0 | 2 | 4730 | — |
+| 2164 | 8034 | `flow-control-git` | 0 | 0 | 2 | 8034 | — |
+| 2165 | 641 | `flyctl` | 0 | 0 | 2 | 641 | — |
+| 2166 | 7561 | `fmlib` | 0 | 0 | 2 | 7561 | — |
+| 2167 | 1409 | `folder-declutter-bin` | 0 | 0 | 2 | 1409 | — |
+| 2168 | 6764 | `fontviewer` | 0 | 0 | 2 | 6764 | — |
+| 2169 | 4001 | `fortune-mod-firefly` | 0 | 0 | 2 | 4001 | — |
+| 2170 | 5105 | `freetube-electron-bin` | 0 | 0 | 2 | 5105 | — |
+| 2171 | 4765 | `frpc` | 0 | 0 | 2 | 4765 | — |
+| 2172 | 4766 | `frps` | 0 | 0 | 2 | 4766 | — |
+| 2173 | 3716 | `fsid` | 0 | 0 | 2 | 3716 | — |
+| 2174 | 4574 | `fsign` | 0 | 0 | 2 | 4574 | — |
+| 2175 | 3250 | `fstabfmt` | 0 | 0 | 2 | 3250 | — |
+| 2176 | 544 | `ftr-site-config-git` | 0 | 0 | 2 | 544 | — |
+| 2177 | 8348 | `fuc` | 0 | 0 | 2 | 8348 | — |
+| 2178 | 6693 | `fuc-git` | 0 | 0 | 2 | 6693 | — |
+| 2179 | 3746 | `fujprog` | 0 | 0 | 2 | 3746 | — |
+| 2180 | 5485 | `funzzy-bin` | 0 | 0 | 2 | 5485 | — |
+| 2181 | 8165 | `garden-bin` | 0 | 0 | 2 | 8165 | — |
+| 2182 | 3927 | `gasm80` | 0 | 0 | 2 | 3927 | — |
+| 2183 | 3718 | `gasroot` | 0 | 0 | 2 | 3718 | — |
+| 2184 | 7387 | `gastown` | 0 | 0 | 2 | 7387 | — |
+| 2185 | 4928 | `gbdk-2020` | 0 | 0 | 2 | 4928 | — |
+| 2186 | 5356 | `gcolor2` | 0 | 0 | 2 | 5356 | — |
+| 2187 | 4772 | `gelly` | 0 | 0 | 2 | 4772 | — |
+| 2188 | 3757 | `geoclue-tz-bin` | 0 | 0 | 2 | 3757 | — |
+| 2189 | 6737 | `geteduroam-cli-bin` | 0 | 0 | 2 | 6737 | — |
+| 2190 | 7341 | `getnf-git` | 0 | 0 | 2 | 7341 | — |
+| 2191 | 4997 | `ghdl-gcc-git` | 0 | 0 | 2 | 4997 | — |
+| 2192 | 2561 | `ghgrab-bin` | 0 | 0 | 2 | 2561 | — |
+| 2193 | 2562 | `giff-bin` | 0 | 0 | 2 | 2562 | — |
+| 2194 | 4750 | `gigabyte-laptop-wmi-dkms-git` | 0 | 0 | 2 | 4750 | — |
+| 2195 | 6972 | `git-backdate-git` | 0 | 0 | 2 | 6972 | — |
+| 2196 | 7779 | `git-donkey` | 0 | 0 | 2 | 7779 | — |
+| 2197 | 6349 | `git-prompt.zsh` | 0 | 0 | 2 | 6349 | — |
+| 2198 | 3868 | `git-recursive` | 0 | 0 | 2 | 3868 | — |
+| 2199 | 6200 | `git-rediff` | 0 | 0 | 2 | 6200 | — |
+| 2200 | 4810 | `git-standup` | 0 | 0 | 2 | 4810 | — |
+| 2201 | 4544 | `git-switcher-bin` | 0 | 0 | 2 | 4544 | — |
+| 2202 | 6816 | `gitextensions` | 0 | 0 | 2 | 6816 | — |
+| 2203 | 8261 | `github-copilot-cli-legacy` | 0 | 0 | 2 | 8261 | — |
+| 2204 | 5025 | `gitnuro-bin` | 0 | 0 | 2 | 5025 | — |
+| 2205 | 2973 | `gitv-bin` | 0 | 0 | 2 | 2973 | — |
+| 2206 | 6190 | `gluhncheck` | 0 | 0 | 2 | 6190 | — |
+| 2207 | 7342 | `gmatrix` | 0 | 0 | 2 | 7342 | — |
+| 2208 | 2565 | `gnome-menu-editor-qt` | 0 | 0 | 2 | 2565 | — |
+| 2209 | 3754 | `gnome-randr-rust` | 0 | 0 | 2 | 3754 | — |
+| 2210 | 6557 | `gnome-shell-extension-alphabetical-grid-extension` | 0 | 0 | 2 | 6557 | — |
+| 2211 | 7269 | `gnome-shell-extension-just-perfection-desktop` | 0 | 0 | 2 | 7269 | — |
+| 2212 | 8184 | `gnome-shell-extension-media-controls` | 0 | 0 | 2 | 8184 | — |
+| 2213 | 7539 | `go-sendxmpp-git` | 0 | 0 | 2 | 7539 | — |
+| 2214 | 1638 | `go-sqlcmd` | 0 | 0 | 2 | 1638 | — |
+| 2215 | 3285 | `gochecker` | 0 | 0 | 2 | 3285 | — |
+| 2216 | 4220 | `gollama` | 0 | 0 | 2 | 4220 | — |
+| 2217 | 428 | `google-breakpad` | 0 | 0 | 2 | 428 | — |
+| 2218 | 4221 | `google-cloud-cli-gke-gcloud-auth-plugin` | 0 | 0 | 2 | 4221 | — |
+| 2219 | 2910 | `gopass-secret-service` | 0 | 0 | 2 | 2910 | — |
+| 2220 | 6501 | `gorae-bin` | 0 | 0 | 2 | 6501 | — |
+| 2221 | 5146 | `gotop` | 0 | 0 | 2 | 5146 | — |
+| 2222 | 5172 | `gowatch` | 0 | 0 | 2 | 5172 | — |
+| 2223 | 3740 | `grab-bin` | 0 | 0 | 2 | 3740 | — |
+| 2224 | 4269 | `grub-theme-tela-color-1080p-git` | 0 | 0 | 2 | 4269 | — |
+| 2225 | 4270 | `grub-theme-tela-color-2k-git` | 0 | 0 | 2 | 4270 | — |
+| 2226 | 4271 | `grub-theme-tela-color-4k-git` | 0 | 0 | 2 | 4271 | — |
+| 2227 | 4272 | `grub-theme-tela-color-ultrawide-git` | 0 | 0 | 2 | 4272 | — |
+| 2228 | 4273 | `grub-theme-tela-color-ultrawide2k-git` | 0 | 0 | 2 | 4273 | — |
+| 2229 | 4274 | `grub-theme-tela-white-1080p-git` | 0 | 0 | 2 | 4274 | — |
+| 2230 | 4275 | `grub-theme-tela-white-2k-git` | 0 | 0 | 2 | 4275 | — |
+| 2231 | 4276 | `grub-theme-tela-white-4k-git` | 0 | 0 | 2 | 4276 | — |
+| 2232 | 1904 | `gtk-nocsd-git` | 0 | 0 | 2 | 1904 | — |
+| 2233 | 4459 | `h2status-git` | 0 | 0 | 2 | 4459 | — |
+| 2234 | 1405 | `hazelnut-bin` | 0 | 0 | 2 | 1405 | — |
+| 2235 | 2691 | `helix-git` | 0 | 0 | 2 | 2691 | — |
+| 2236 | 2567 | `helix-steel-git` | 0 | 0 | 2 | 2567 | — |
+| 2237 | 2820 | `helixnotes-appimage-bin` | 0 | 0 | 2 | 2820 | — |
+| 2238 | 2034 | `heroic-games-launcher-bin` | 0 | 0 | 2 | 2034 | — |
+| 2239 | 3708 | `hfdownloader-git` | 0 | 0 | 2 | 3708 | — |
+| 2240 | 1291 | `hmcl-bin` | 0 | 0 | 2 | 1291 | — |
+| 2241 | 7504 | `homepage-git` | 0 | 0 | 2 | 7504 | — |
+| 2242 | 2965 | `hpsahba-git` | 0 | 0 | 2 | 2965 | — |
+| 2243 | 1502 | `hpuld` | 0 | 0 | 2 | 1502 | — |
+| 2244 | 5289 | `huelectron-bin` | 0 | 0 | 2 | 5289 | — |
+| 2245 | 1772 | `hurrycurry-client` | 0 | 0 | 2 | 1772 | — |
+| 2246 | 2894 | `hyprflow` | 0 | 0 | 2 | 2894 | — |
+| 2247 | 7965 | `hyprland-workspaces` | 0 | 0 | 2 | 7965 | — |
+| 2248 | 5014 | `hyprls` | 0 | 0 | 2 | 5014 | — |
+| 2249 | 993 | `hytale-updater` | 0 | 0 | 2 | 993 | — |
+| 2250 | 7625 | `i2c-nct6793-dkms-git` | 0 | 0 | 2 | 7625 | — |
+| 2251 | 5043 | `iamb` | 0 | 0 | 2 | 5043 | — |
+| 2252 | 3676 | `ibus-autostart-kimpanel` | 0 | 0 | 2 | 3676 | — |
+| 2253 | 1346 | `icann-rdap-bin` | 0 | 0 | 2 | 1346 | — |
+| 2254 | 5058 | `iloader-appimage` | 0 | 0 | 2 | 5058 | — |
+| 2255 | 4838 | `immersed` | 0 | 0 | 2 | 4838 | — |
+| 2256 | 1645 | `inkscape-bin` | 0 | 0 | 2 | 1645 | — |
+| 2257 | 295 | `inori` | 0 | 0 | 2 | 295 | — |
+| 2258 | 6803 | `inotify-info` | 0 | 0 | 2 | 6803 | — |
+| 2259 | 1128 | `intel-ucode-git` | 0 | 0 | 2 | 1128 | — |
+| 2260 | 8622 | `ipget` | 0 | 0 | 2 | 8622 | — |
+| 2261 | 1700 | `ipscan` | 0 | 0 | 2 | 1700 | — |
+| 2262 | 6313 | `iris-bin` | 0 | 0 | 2 | 6313 | — |
+| 2263 | 183 | `it87-dkms-git` | 0 | 0 | 2 | 183 | — |
+| 2264 | 6767 | `ithc-dkms-git` | 0 | 0 | 2 | 6767 | — |
+| 2265 | 5452 | `iwmenu-bin` | 0 | 0 | 2 | 5452 | — |
+| 2266 | 3281 | `jadwal-shalat` | 0 | 0 | 2 | 3281 | — |
+| 2267 | 2571 | `jasm-bin` | 0 | 0 | 2 | 2571 | — |
+| 2268 | 7760 | `jd-gui-bin` | 0 | 0 | 2 | 7760 | — |
+| 2269 | 2831 | `jdk-doc` | 0 | 0 | 2 | 2831 | — |
+| 2270 | 6591 | `jdk11-graalvm-bin` | 0 | 0 | 2 | 6591 | — |
+| 2271 | 5178 | `jdk17-graalvm-ee-bin` | 0 | 0 | 2 | 5178 | — |
+| 2272 | 6684 | `jdk19-graalvm-bin` | 0 | 0 | 2 | 6684 | — |
+| 2273 | 4878 | `jdk21-graalvm-bin` | 0 | 0 | 2 | 4878 | — |
+| 2274 | 3851 | `jdk21-graalvm-ee-bin` | 0 | 0 | 2 | 3851 | — |
+| 2275 | 6683 | `jdk8-graalvm-bin` | 0 | 0 | 2 | 6683 | — |
+| 2276 | 6129 | `jhentai-bin` | 0 | 0 | 2 | 6129 | — |
+| 2277 | 2954 | `jid` | 0 | 0 | 2 | 2954 | — |
+| 2278 | 6852 | `journald-broker` | 0 | 0 | 2 | 6852 | — |
+| 2279 | 5377 | `joy2key` | 0 | 0 | 2 | 5377 | — |
+| 2280 | 7006 | `jq-lite` | 0 | 0 | 2 | 7006 | — |
+| 2281 | 964 | `jre11-temurin` | 0 | 0 | 2 | 964 | — |
+| 2282 | 966 | `jre17-temurin` | 0 | 0 | 2 | 966 | — |
+| 2283 | 965 | `jre21-temurin` | 0 | 0 | 2 | 965 | — |
+| 2284 | 963 | `jre8-temurin` | 0 | 0 | 2 | 963 | — |
+| 2285 | 7267 | `kando-bin` | 0 | 0 | 2 | 7267 | — |
+| 2286 | 5404 | `kapp` | 0 | 0 | 2 | 5404 | — |
+| 2287 | 7657 | `karakeep-cli` | 0 | 0 | 2 | 7657 | — |
+| 2288 | 2576 | `kaval-bin` | 0 | 0 | 2 | 2576 | — |
+| 2289 | 7425 | `kdownload-bin` | 0 | 0 | 2 | 7425 | — |
+| 2290 | 1295 | `kdrive-bin` | 0 | 0 | 2 | 1295 | — |
+| 2291 | 8049 | `keepass-plugin-keechallenge` | 0 | 0 | 2 | 8049 | — |
+| 2292 | 5519 | `keks-meet-server` | 0 | 0 | 2 | 5519 | — |
+| 2293 | 898 | `kevedit` | 0 | 0 | 2 | 898 | — |
+| 2294 | 7689 | `kicad-library-espressif-git` | 0 | 0 | 2 | 7689 | — |
+| 2295 | 3870 | `kind` | 0 | 0 | 2 | 3870 | — |
+| 2296 | 2865 | `klein-bin` | 0 | 0 | 2 | 2865 | — |
+| 2297 | 4696 | `koboldcpp` | 0 | 0 | 2 | 4696 | — |
+| 2298 | 5346 | `kotlin-language-server` | 0 | 0 | 2 | 5346 | — |
+| 2299 | 896 | `krep-git` | 0 | 0 | 2 | 896 | — |
+| 2300 | 4888 | `krr` | 0 | 0 | 2 | 4888 | — |
+| 2301 | 4163 | `kstart` | 0 | 0 | 2 | 4163 | — |
+| 2302 | 6178 | `ktfmt` | 0 | 0 | 2 | 6178 | — |
+| 2303 | 488 | `kubecolor` | 0 | 0 | 2 | 488 | — |
+| 2304 | 4344 | `kubelogin` | 0 | 0 | 2 | 4344 | — |
+| 2305 | 470 | `kumono` | 0 | 0 | 2 | 470 | — |
+| 2306 | 4979 | `kumono-git` | 0 | 0 | 2 | 4979 | — |
+| 2307 | 3148 | `kuroko-git` | 0 | 0 | 2 | 3148 | — |
+| 2308 | 1538 | `kvantum-theme-catppuccin-git` | 0 | 0 | 2 | 1538 | — |
+| 2309 | 6608 | `kvantum-theme-gruvbox-git` | 0 | 0 | 2 | 6608 | — |
+| 2310 | 8326 | `kwebapp` | 0 | 0 | 2 | 8326 | — |
+| 2311 | 8026 | `lact-headless-bin` | 0 | 0 | 2 | 8026 | — |
+| 2312 | 763 | `larn` | 0 | 0 | 2 | 763 | — |
+| 2313 | 2581 | `lazyjira-git` | 0 | 0 | 2 | 2581 | — |
+| 2314 | 5484 | `lazytail-bin` | 0 | 0 | 2 | 5484 | — |
+| 2315 | 2769 | `lfe` | 0 | 0 | 2 | 2769 | — |
+| 2316 | 3481 | `lianpkg-gui-bin` | 0 | 0 | 2 | 3481 | — |
+| 2317 | 2433 | `lib32-a52dec` | 0 | 0 | 2 | 2433 | — |
+| 2318 | 549 | `lib32-opencl-nvidia-vulkan` | 0 | 0 | 2 | 549 | — |
+| 2319 | 7707 | `libiff-git` | 0 | 0 | 2 | 7707 | — |
+| 2320 | 4833 | `libreoffice-extension-grammalecte-fr` | 0 | 0 | 2 | 4833 | — |
+| 2321 | 7991 | `libreoffice-extension-h2orestart` | 0 | 0 | 2 | 7991 | — |
+| 2322 | 1970 | `libreoffice-extension-languagetool` | 0 | 0 | 2 | 1970 | — |
+| 2323 | 3338 | `libstdc++5-bin` | 0 | 0 | 2 | 3338 | — |
+| 2324 | 8543 | `libtrash-git` | 0 | 0 | 2 | 8543 | — |
+| 2325 | 366 | `lidm` | 0 | 0 | 2 | 366 | — |
+| 2326 | 3631 | `linux-xanmod-linux-bin-x64v3` | 0 | 0 | 2 | 3631 | — |
+| 2327 | 3632 | `linux-xanmod-linux-headers-bin-x64v3` | 0 | 0 | 2 | 3632 | — |
+| 2328 | 3624 | `linux-xanmod-lts-linux-bin-x64v3` | 0 | 0 | 2 | 3624 | — |
+| 2329 | 3625 | `linux-xanmod-lts-linux-headers-bin-x64v3` | 0 | 0 | 2 | 3625 | — |
+| 2330 | 6561 | `liquibase` | 0 | 0 | 2 | 6561 | — |
+| 2331 | 4616 | `litestream` | 0 | 0 | 2 | 4616 | — |
+| 2332 | 2589 | `logana-bin` | 0 | 0 | 2 | 2589 | — |
+| 2333 | 3275 | `loghew-bin` | 0 | 0 | 2 | 3275 | — |
+| 2334 | 1473 | `lsu-bin` | 0 | 0 | 2 | 1473 | — |
+| 2335 | 7196 | `luajit-clang-git` | 0 | 0 | 2 | 7196 | — |
+| 2336 | 4632 | `lunar-client` | 0 | 0 | 2 | 4632 | — |
+| 2337 | 1315 | `lunii-qt-bin` | 0 | 0 | 2 | 1315 | — |
+| 2338 | 7666 | `lyrebird-proxy` | 0 | 0 | 2 | 7666 | — |
+| 2339 | 2591 | `lyrics-git` | 0 | 0 | 2 | 2591 | — |
+| 2340 | 2592 | `lyse` | 0 | 0 | 2 | 2592 | — |
+| 2341 | 2455 | `magewell-pro-capture-dkms` | 0 | 0 | 2 | 2455 | — |
+| 2342 | 4811 | `mago-bin` | 0 | 0 | 2 | 4811 | — |
+| 2343 | 7393 | `makesure` | 0 | 0 | 2 | 7393 | — |
+| 2344 | 4043 | `mandb-ondemand` | 0 | 0 | 2 | 4043 | — |
+| 2345 | 7486 | `marmite-bin` | 0 | 0 | 2 | 7486 | — |
+| 2346 | 2885 | `matchmaker-bin` | 0 | 0 | 2 | 2885 | — |
+| 2347 | 3186 | `mcdu-bin` | 0 | 0 | 2 | 3186 | — |
+| 2348 | 2070 | `mdterm-bin` | 0 | 0 | 2 | 2070 | — |
+| 2349 | 2744 | `media-downloader` | 0 | 0 | 2 | 2744 | — |
+| 2350 | 426 | `mediamtx` | 0 | 0 | 2 | 426 | — |
+| 2351 | 3273 | `meteobar-bin` | 0 | 0 | 2 | 3273 | — |
+| 2352 | 888 | `mgit` | 0 | 0 | 2 | 888 | — |
+| 2353 | 3917 | `mingw-w64-libmicrohttpd` | 0 | 0 | 2 | 3917 | — |
+| 2354 | 3363 | `mingw-w64-zlib-ng` | 0 | 0 | 2 | 3363 | — |
+| 2355 | 6367 | `mitogen` | 0 | 0 | 2 | 6367 | — |
+| 2356 | 6459 | `mkfromtree` | 0 | 0 | 2 | 6459 | — |
+| 2357 | 414 | `mkinitcpio-archlogo` | 0 | 0 | 2 | 414 | — |
+| 2358 | 381 | `mkinitcpio-numlock` | 0 | 0 | 2 | 381 | — |
+| 2359 | 723 | `mkinitcpio-systemd-extras` | 0 | 0 | 2 | 723 | — |
+| 2360 | 2598 | `mod_maxminddb` | 0 | 0 | 2 | 2598 | — |
+| 2361 | 3658 | `models-bin` | 0 | 0 | 2 | 3658 | — |
+| 2362 | 5134 | `moekoemusic-bin` | 0 | 0 | 2 | 5134 | — |
+| 2363 | 5079 | `mongodb-tools-bin` | 0 | 0 | 2 | 5079 | — |
+| 2364 | 1618 | `mons` | 0 | 0 | 2 | 1618 | — |
+| 2365 | 7663 | `morewaita-icon-theme` | 0 | 0 | 2 | 7663 | — |
+| 2366 | 6458 | `morsify` | 0 | 0 | 2 | 6458 | — |
+| 2367 | 3669 | `most-snapshot` | 0 | 0 | 2 | 3669 | — |
+| 2368 | 8175 | `motd` | 0 | 0 | 2 | 8175 | — |
+| 2369 | 3103 | `mouse-actions-gui-bin` | 0 | 0 | 2 | 3103 | — |
+| 2370 | 1624 | `mp3rgain-bin` | 0 | 0 | 2 | 1624 | — |
+| 2371 | 707 | `mpv-thumbfast-git` | 0 | 0 | 2 | 707 | — |
+| 2372 | 688 | `mpv-uosc` | 0 | 0 | 2 | 688 | — |
+| 2373 | 5420 | `mpwall` | 0 | 0 | 2 | 5420 | — |
+| 2374 | 7494 | `msi-ec-dkms-git` | 0 | 0 | 2 | 7494 | — |
+| 2375 | 6276 | `mullvad-socks` | 0 | 0 | 2 | 6276 | — |
+| 2376 | 6275 | `mullvad-socks-git` | 0 | 0 | 2 | 6275 | — |
+| 2377 | 7578 | `musage-bin` | 0 | 0 | 2 | 7578 | — |
+| 2378 | 4759 | `my-femboy-roommate-bin` | 0 | 0 | 2 | 4759 | — |
+| 2379 | 6239 | `nanokvm-usb-appimage` | 0 | 0 | 2 | 6239 | — |
+| 2380 | 7516 | `nautilus-checksums` | 0 | 0 | 2 | 7516 | — |
+| 2381 | 4340 | `nb` | 0 | 0 | 2 | 4340 | — |
+| 2382 | 5254 | `nbfc` | 0 | 0 | 2 | 5254 | — |
+| 2383 | 1014 | `nbtexplorer` | 0 | 0 | 2 | 1014 | — |
+| 2384 | 1691 | `nct6687d-dkms-git` | 0 | 0 | 2 | 1691 | — |
+| 2385 | 8293 | `nemo-tags` | 0 | 0 | 2 | 8293 | — |
+| 2386 | 3951 | `neo4j-community-bin` | 0 | 0 | 2 | 3951 | — |
+| 2387 | 7592 | `neovim-man` | 0 | 0 | 2 | 7592 | — |
+| 2388 | 6990 | `neovim-plenary-git` | 0 | 0 | 2 | 6990 | — |
+| 2389 | 8309 | `neovim-suda-opt-git` | 0 | 0 | 2 | 8309 | — |
+| 2390 | 3992 | `neowofetch-git` | 0 | 0 | 2 | 3992 | — |
+| 2391 | 4015 | `netinfo` | 0 | 0 | 2 | 4015 | — |
+| 2392 | 1204 | `nettui-bin` | 0 | 0 | 2 | 1204 | — |
+| 2393 | 6849 | `networkd-broker` | 0 | 0 | 2 | 6849 | — |
+| 2394 | 6306 | `newbie-bin` | 0 | 0 | 2 | 6306 | — |
+| 2395 | 2832 | `nginx-mainline-mod-headers-more` | 0 | 0 | 2 | 2832 | — |
+| 2396 | 3925 | `nim-gdb-git` | 0 | 0 | 2 | 3925 | — |
+| 2397 | 883 | `nimbsh` | 0 | 0 | 2 | 883 | — |
+| 2398 | 3769 | `nnn-icons` | 0 | 0 | 2 | 3769 | — |
+| 2399 | 3438 | `nodejs-http-server` | 0 | 0 | 2 | 3438 | — |
+| 2400 | 5513 | `nodejs-knit` | 0 | 0 | 2 | 5513 | — |
+| 2401 | 3385 | `nodejs-markdown-toc` | 0 | 0 | 2 | 3385 | — |
+| 2402 | 4620 | `nosy-bin` | 0 | 0 | 2 | 4620 | — |
+| 2403 | 3911 | `novafetch` | 0 | 0 | 2 | 3911 | — |
+| 2404 | 260 | `nullfsvfs-dkms` | 0 | 0 | 2 | 260 | — |
+| 2405 | 2768 | `numr-bin` | 0 | 0 | 2 | 2768 | — |
+| 2406 | 6132 | `nvidia-powerd-dinit` | 0 | 0 | 2 | 6132 | — |
+| 2407 | 7212 | `nvim-ft-pkgbuild` | 0 | 0 | 2 | 7212 | — |
+| 2408 | 4892 | `nzbhydra2-bin` | 0 | 0 | 2 | 4892 | — |
+| 2409 | 2115 | `oauth2-proxy` | 0 | 0 | 2 | 2115 | — |
+| 2410 | 7192 | `obs-captions-plugin-bin` | 0 | 0 | 2 | 7192 | — |
+| 2411 | 1318 | `obs-plugin-input-overlay-bin` | 0 | 0 | 2 | 1318 | — |
+| 2412 | 7028 | `obsidian-appimage` | 0 | 0 | 2 | 7028 | — |
+| 2413 | 7182 | `odinls-git` | 0 | 0 | 2 | 7182 | — |
+| 2414 | 3689 | `odzip` | 0 | 0 | 2 | 3689 | — |
+| 2415 | 5483 | `oken-bin` | 0 | 0 | 2 | 5483 | — |
+| 2416 | 5498 | `omp-manager-bin` | 0 | 0 | 2 | 5498 | — |
+| 2417 | 420 | `openapv` | 0 | 0 | 2 | 420 | — |
+| 2418 | 3181 | `openaudible-bin` | 0 | 0 | 2 | 3181 | — |
+| 2419 | 2789 | `opencl-nvidia-535xx` | 0 | 0 | 2 | 2789 | — |
+| 2420 | 3367 | `opencl-vanity-gpg` | 0 | 0 | 2 | 3367 | — |
+| 2421 | 875 | `opencode-antigravity-auth` | 0 | 0 | 2 | 875 | — |
+| 2422 | 7333 | `opensc-p11-kit-module` | 0 | 0 | 2 | 7333 | — |
+| 2423 | 680 | `openseachest` | 0 | 0 | 2 | 680 | — |
+| 2424 | 6246 | `openterfaceqt-appimage` | 0 | 0 | 2 | 6246 | — |
+| 2425 | 7469 | `optiscaler-universal` | 0 | 0 | 2 | 7469 | — |
+| 2426 | 1386 | `optomizer` | 0 | 0 | 2 | 1386 | — |
+| 2427 | 2943 | `oracle-bin` | 0 | 0 | 2 | 2943 | — |
+| 2428 | 5183 | `oranglauncher-bin` | 0 | 0 | 2 | 5183 | — |
+| 2429 | 775 | `otf-apple-sf-pro` | 0 | 0 | 2 | 775 | — |
+| 2430 | 3785 | `otf-monocraft-git` | 0 | 0 | 2 | 3785 | — |
+| 2431 | 1041 | `otter-launcher` | 0 | 0 | 2 | 1041 | — |
+| 2432 | 4668 | `outfieldr` | 0 | 0 | 2 | 4668 | — |
+| 2433 | 4481 | `outline-client-appimage` | 0 | 0 | 2 | 4481 | — |
+| 2434 | 5114 | `ov` | 0 | 0 | 2 | 5114 | — |
+| 2435 | 8270 | `overmind-bin` | 0 | 0 | 2 | 8270 | — |
+| 2436 | 6274 | `ovpn-status` | 0 | 0 | 2 | 6274 | — |
+| 2437 | 6270 | `ovpn-status-git` | 0 | 0 | 2 | 6270 | — |
+| 2438 | 6153 | `owlry-lua` | 0 | 0 | 2 | 6153 | — |
+| 2439 | 6138 | `owlry-plugin-bookmarks` | 0 | 0 | 2 | 6138 | — |
+| 2440 | 6139 | `owlry-plugin-filesearch` | 0 | 0 | 2 | 6139 | — |
+| 2441 | 6146 | `owlry-plugin-pomodoro` | 0 | 0 | 2 | 6146 | — |
+| 2442 | 6145 | `owlry-plugin-scripts` | 0 | 0 | 2 | 6145 | — |
+| 2443 | 6149 | `owlry-plugin-weather` | 0 | 0 | 2 | 6149 | — |
+| 2444 | 6148 | `owlry-plugin-websearch` | 0 | 0 | 2 | 6148 | — |
+| 2445 | 6152 | `owlry-rune` | 0 | 0 | 2 | 6152 | — |
+| 2446 | 4034 | `oxid-git` | 0 | 0 | 2 | 4034 | — |
+| 2447 | 2840 | `oxmgr-bin` | 0 | 0 | 2 | 2840 | — |
+| 2448 | 184 | `pacfetch` | 0 | 0 | 2 | 184 | — |
+| 2449 | 4021 | `packwitch-manager-git` | 0 | 0 | 2 | 4021 | — |
+| 2450 | 4591 | `pacman-command-utils` | 0 | 0 | 2 | 4591 | — |
+| 2451 | 1987 | `pacman-hook-kernel-install` | 0 | 0 | 2 | 1987 | — |
+| 2452 | 6851 | `pacman-repo-stats` | 0 | 0 | 2 | 6851 | — |
+| 2453 | 5403 | `pacnews-neovim-git` | 0 | 0 | 2 | 5403 | — |
+| 2454 | 224 | `pacseek` | 0 | 0 | 2 | 224 | — |
+| 2455 | 7190 | `paket-bin` | 0 | 0 | 2 | 7190 | — |
+| 2456 | 2353 | `papirus-folders-catppuccin-git` | 0 | 0 | 2 | 2353 | — |
+| 2457 | 3443 | `par-fractal-bin` | 0 | 0 | 2 | 3443 | — |
+| 2458 | 6336 | `passkeez` | 0 | 0 | 2 | 6336 | — |
+| 2459 | 738 | `payload-dumper-go` | 0 | 0 | 2 | 738 | — |
+| 2460 | 8281 | `pda-git` | 0 | 0 | 2 | 8281 | — |
+| 2461 | 7250 | `pdf-over` | 0 | 0 | 2 | 7250 | — |
+| 2462 | 4126 | `peaclock` | 0 | 0 | 2 | 4126 | — |
+| 2463 | 3292 | `peergos` | 0 | 0 | 2 | 3292 | — |
+| 2464 | 1384 | `perch-bin` | 0 | 0 | 2 | 1384 | — |
+| 2465 | 4776 | `perl-crypt-argon2` | 0 | 0 | 2 | 4776 | — |
+| 2466 | 2926 | `perl-datetime-format-dateparse` | 0 | 0 | 2 | 2926 | — |
+| 2467 | 2495 | `perl-test-refcount` | 0 | 0 | 2 | 2495 | — |
+| 2468 | 4586 | `pgmq` | 0 | 0 | 2 | 4586 | — |
+| 2469 | 3767 | `phos` | 0 | 0 | 2 | 3767 | — |
+| 2470 | 1250 | `photoqt-extensions-bin` | 0 | 0 | 2 | 1250 | — |
+| 2471 | 8572 | `php-gearman` | 0 | 0 | 2 | 8572 | — |
+| 2472 | 2613 | `php-xdiff` | 0 | 0 | 2 | 2613 | — |
+| 2473 | 5126 | `phpstorm` | 0 | 0 | 2 | 5126 | — |
+| 2474 | 5127 | `phpstorm-jre` | 0 | 0 | 2 | 5127 | — |
+| 2475 | 7587 | `pipeview-bin` | 0 | 0 | 2 | 7587 | — |
+| 2476 | 5474 | `pixora-icons-git` | 0 | 0 | 2 | 5474 | — |
+| 2477 | 6850 | `pkgdu` | 0 | 0 | 2 | 6850 | — |
+| 2478 | 7472 | `pkhex-bin` | 0 | 0 | 2 | 7472 | — |
+| 2479 | 8609 | `plakar` | 0 | 0 | 2 | 8609 | — |
+| 2480 | 7427 | `plasma6-applets-separator-git` | 0 | 0 | 2 | 7427 | — |
+| 2481 | 6801 | `plasma6-applets-vutronmusic-lyrics` | 0 | 0 | 2 | 6801 | — |
+| 2482 | 3115 | `plasma6-wallpapers-blurredwallpaper-git` | 0 | 0 | 2 | 3115 | — |
+| 2483 | 865 | `playwright-cli` | 0 | 0 | 2 | 865 | — |
+| 2484 | 8249 | `plymouth-theme-arch-ascii` | 0 | 0 | 2 | 8249 | — |
+| 2485 | 7712 | `plymouth-theme-arch-darwin` | 0 | 0 | 2 | 7712 | — |
+| 2486 | 7692 | `plymouth-theme-ecorp-glitch` | 0 | 0 | 2 | 7692 | — |
+| 2487 | 5460 | `podserv-b-git` | 0 | 0 | 2 | 5460 | — |
+| 2488 | 6706 | `poi-bin` | 0 | 0 | 2 | 6706 | — |
+| 2489 | 1087 | `polyglot-winboard-git` | 0 | 0 | 2 | 1087 | — |
+| 2490 | 2824 | `pomo-cli` | 0 | 0 | 2 | 2824 | — |
+| 2491 | 7628 | `portage` | 0 | 0 | 2 | 7628 | — |
+| 2492 | 1193 | `powershell-bin` | 0 | 0 | 2 | 1193 | — |
+| 2493 | 2862 | `pqrs-bin` | 0 | 0 | 2 | 2862 | — |
+| 2494 | 1216 | `prek-bin` | 0 | 0 | 2 | 1216 | — |
+| 2495 | 7347 | `primer-bin` | 0 | 0 | 2 | 7347 | — |
+| 2496 | 844 | `princeprocessor-git` | 0 | 0 | 2 | 844 | — |
+| 2497 | 2754 | `privatebin` | 0 | 0 | 2 | 2754 | — |
+| 2498 | 3714 | `proc-bin` | 0 | 0 | 2 | 3714 | — |
+| 2499 | 4396 | `process-compose-git` | 0 | 0 | 2 | 4396 | — |
+| 2500 | 6439 | `prometheus-zfs-exporter` | 0 | 0 | 2 | 6439 | — |
+| 2501 | 4042 | `proton-pass-cli-bin` | 0 | 0 | 2 | 4042 | — |
+| 2502 | 6312 | `prox` | 0 | 0 | 2 | 6312 | — |
+| 2503 | 4617 | `pseint-bin` | 0 | 0 | 2 | 4617 | — |
+| 2504 | 1521 | `psn-bin` | 0 | 0 | 2 | 1521 | — |
+| 2505 | 3219 | `psn-git` | 0 | 0 | 2 | 3219 | — |
+| 2506 | 1656 | `pulsar-bin` | 0 | 0 | 2 | 1656 | — |
+| 2507 | 2619 | `pwsp-bin` | 0 | 0 | 2 | 2619 | — |
+| 2508 | 3947 | `pxz-git` | 0 | 0 | 2 | 3947 | — |
+| 2509 | 2402 | `pyenv-virtualenv` | 0 | 0 | 2 | 2402 | — |
+| 2510 | 7537 | `pyonji` | 0 | 0 | 2 | 7537 | — |
+| 2511 | 3246 | `python-anchor-kr-git` | 0 | 0 | 2 | 3246 | — |
+| 2512 | 6809 | `python-asynctest` | 0 | 0 | 2 | 6809 | — |
+| 2513 | 5111 | `python-fvs` | 0 | 0 | 2 | 5111 | — |
+| 2514 | 7297 | `python-sip4` | 0 | 0 | 2 | 7297 | — |
+| 2515 | 6657 | `python-slip10` | 0 | 0 | 2 | 6657 | — |
+| 2516 | 7293 | `python3-threaded_servers` | 0 | 0 | 2 | 7293 | — |
+| 2517 | 6220 | `pyznap` | 0 | 0 | 2 | 6220 | — |
+| 2518 | 7330 | `qemu-ovmf-secureboot` | 0 | 0 | 2 | 7330 | — |
+| 2519 | 833 | `qmd` | 0 | 0 | 2 | 833 | — |
+| 2520 | 5001 | `qoder-bin` | 0 | 0 | 2 | 5001 | — |
+| 2521 | 2452 | `qpxtool` | 0 | 0 | 2 | 2452 | — |
+| 2522 | 5352 | `qt5-webview` | 0 | 0 | 2 | 5352 | — |
+| 2523 | 4342 | `qt6-tools-desktop` | 0 | 0 | 2 | 4342 | — |
+| 2524 | 1569 | `qualcoder-bin` | 0 | 0 | 2 | 1569 | — |
+| 2525 | 4790 | `quantumlauncher-bin` | 0 | 0 | 2 | 4790 | — |
+| 2526 | 7645 | `quazaar` | 0 | 0 | 2 | 7645 | — |
+| 2527 | 6294 | `quick-aliases` | 0 | 0 | 2 | 6294 | — |
+| 2528 | 2803 | `quickshell-overview-git` | 0 | 0 | 2 | 2803 | — |
+| 2529 | 2109 | `qwen-code-bin` | 0 | 0 | 2 | 2109 | — |
+| 2530 | 8194 | `r-dice` | 0 | 0 | 2 | 8194 | — |
+| 2531 | 8190 | `r-ggquiver` | 0 | 0 | 2 | 8190 | — |
+| 2532 | 7964 | `rancher-desktop-bin` | 0 | 0 | 2 | 7964 | — |
+| 2533 | 7570 | `randompass-bin` | 0 | 0 | 2 | 7570 | — |
+| 2534 | 3862 | `rapidraw-bin` | 0 | 0 | 2 | 3862 | — |
+| 2535 | 5038 | `raptor-cage-bin` | 0 | 0 | 2 | 5038 | — |
+| 2536 | 8332 | `rbonsai` | 0 | 0 | 2 | 8332 | — |
+| 2537 | 6563 | `readpe` | 0 | 0 | 2 | 6563 | — |
+| 2538 | 3700 | `reef-tools` | 0 | 0 | 2 | 3700 | — |
+| 2539 | 7397 | `reflector-nomirrorlist` | 0 | 0 | 2 | 7397 | — |
+| 2540 | 2454 | `reflector-pacman-hook-git` | 0 | 0 | 2 | 2454 | — |
+| 2541 | 3195 | `relayfsd` | 0 | 0 | 2 | 3195 | — |
+| 2542 | 5435 | `renamemytvseries-gtk-bin` | 0 | 0 | 2 | 5435 | — |
+| 2543 | 5223 | `repeater-bin` | 0 | 0 | 2 | 5223 | — |
+| 2544 | 716 | `repomix` | 0 | 0 | 2 | 716 | — |
+| 2545 | 8158 | `resin-pro` | 0 | 0 | 2 | 8158 | — |
+| 2546 | 4607 | `responsively` | 0 | 0 | 2 | 4607 | — |
+| 2547 | 4816 | `reticulum-meshchat-bin` | 0 | 0 | 2 | 4816 | — |
+| 2548 | 7503 | `retroforth` | 0 | 0 | 2 | 7503 | — |
+| 2549 | 2412 | `rofi-emoji-git` | 0 | 0 | 2 | 2412 | — |
+| 2550 | 1376 | `rojo-bin` | 0 | 0 | 2 | 1376 | — |
+| 2551 | 8025 | `rollup` | 0 | 0 | 2 | 8025 | — |
+| 2552 | 2792 | `rosec-bin` | 0 | 0 | 2 | 2792 | — |
+| 2553 | 3900 | `rpatool-git` | 0 | 0 | 2 | 3900 | — |
+| 2554 | 4048 | `rt-bin` | 0 | 0 | 2 | 4048 | — |
+| 2555 | 4395 | `rtl8192eu-dkms` | 0 | 0 | 2 | 4395 | — |
+| 2556 | 3414 | `ruby-install` | 0 | 0 | 2 | 3414 | — |
+| 2557 | 6240 | `runa` | 0 | 0 | 2 | 6240 | — |
+| 2558 | 7522 | `runelite` | 0 | 0 | 2 | 7522 | — |
+| 2559 | 6211 | `rusk` | 0 | 0 | 2 | 6211 | — |
+| 2560 | 4458 | `rustfetch-git` | 0 | 0 | 2 | 4458 | — |
+| 2561 | 1047 | `rutoken-connect` | 0 | 0 | 2 | 1047 | — |
+| 2562 | 244 | `ryzen_smu-dkms-git` | 0 | 0 | 2 | 244 | — |
+| 2563 | 3145 | `sabiql` | 0 | 0 | 2 | 3145 | — |
+| 2564 | 5459 | `sabiql-bin` | 0 | 0 | 2 | 5459 | — |
+| 2565 | 2636 | `sakura-frp-launcher-bin` | 0 | 0 | 2 | 2636 | — |
+| 2566 | 8336 | `sanoid` | 0 | 0 | 2 | 8336 | — |
+| 2567 | 4567 | `sc-git` | 0 | 0 | 2 | 4567 | — |
+| 2568 | 5402 | `scnlib` | 0 | 0 | 2 | 5402 | — |
+| 2569 | 3690 | `scrapfetch-git` | 0 | 0 | 2 | 3690 | — |
+| 2570 | 7676 | `seatools` | 0 | 0 | 2 | 7676 | — |
+| 2571 | 6202 | `seekr-bin` | 0 | 0 | 2 | 6202 | — |
+| 2572 | 1256 | `sendme-bin` | 0 | 0 | 2 | 1256 | — |
+| 2573 | 3411 | `sentinelagent` | 0 | 0 | 2 | 3411 | — |
+| 2574 | 6531 | `servo-nightly-bin` | 0 | 0 | 2 | 6531 | — |
+| 2575 | 7620 | `sheet-git` | 0 | 0 | 2 | 7620 | — |
+| 2576 | 3376 | `shellforge` | 0 | 0 | 2 | 3376 | — |
+| 2577 | 6485 | `shellp` | 0 | 0 | 2 | 6485 | — |
+| 2578 | 5102 | `sherlock-launcher-bin` | 0 | 0 | 2 | 5102 | — |
+| 2579 | 1373 | `sherut-bin` | 0 | 0 | 2 | 1373 | — |
+| 2580 | 2927 | `shiori` | 0 | 0 | 2 | 2927 | — |
+| 2581 | 2882 | `siggy-bin` | 0 | 0 | 2 | 2882 | — |
+| 2582 | 4559 | `sigscan-bin` | 0 | 0 | 2 | 4559 | — |
+| 2583 | 4416 | `silverr-bin` | 0 | 0 | 2 | 4416 | — |
+| 2584 | 1168 | `sing-box-bin` | 0 | 0 | 2 | 1168 | — |
+| 2585 | 1122 | `slatec` | 0 | 0 | 2 | 1122 | — |
+| 2586 | 826 | `slimcc-git` | 0 | 0 | 2 | 826 | — |
+| 2587 | 2098 | `soteria-bin` | 0 | 0 | 2 | 2098 | — |
+| 2588 | 4619 | `sparta-plugins-bin` | 0 | 0 | 2 | 4619 | — |
+| 2589 | 1211 | `spicetify-marketplace-bin` | 0 | 0 | 2 | 1211 | — |
+| 2590 | 3569 | `spicetify-themes-git` | 0 | 0 | 2 | 3569 | — |
+| 2591 | 5500 | `spinwheel-pipewire` | 0 | 0 | 2 | 5500 | — |
+| 2592 | 3996 | `sshcommand` | 0 | 0 | 2 | 3996 | — |
+| 2593 | 8361 | `stabilitymatrix-bin` | 0 | 0 | 2 | 8361 | — |
+| 2594 | 5152 | `stack-bin` | 0 | 0 | 2 | 5152 | — |
+| 2595 | 2647 | `stalker-gamma-cli-bin` | 0 | 0 | 2 | 2647 | — |
+| 2596 | 4867 | `stardust-xr-atmosphere` | 0 | 0 | 2 | 4867 | — |
+| 2597 | 4869 | `stardust-xr-comet` | 0 | 0 | 2 | 4869 | — |
+| 2598 | 4860 | `stardust-xr-magnetar` | 0 | 0 | 2 | 4860 | — |
+| 2599 | 6720 | `strace-with-colors` | 0 | 0 | 2 | 6720 | — |
+| 2600 | 3530 | `stremio-enhanced-bin` | 0 | 0 | 2 | 3530 | — |
+| 2601 | 282 | `sublime-text-4` | 0 | 0 | 2 | 282 | — |
+| 2602 | 5232 | `sudo-mcp` | 0 | 0 | 2 | 5232 | — |
+| 2603 | 1185 | `superproductivity-bin` | 0 | 0 | 2 | 1185 | — |
+| 2604 | 3737 | `surge` | 0 | 0 | 2 | 3737 | — |
+| 2605 | 2763 | `suvadu-bin` | 0 | 0 | 2 | 2763 | — |
+| 2606 | 1371 | `swt-bin` | 0 | 0 | 2 | 1371 | — |
+| 2607 | 3128 | `sxcs` | 0 | 0 | 2 | 3128 | — |
+| 2608 | 6422 | `symp` | 0 | 0 | 2 | 6422 | — |
+| 2609 | 8032 | `sysinfo` | 0 | 0 | 2 | 8032 | — |
+| 2610 | 2787 | `system76-acpi-dkms` | 0 | 0 | 2 | 2787 | — |
+| 2611 | 2786 | `system76-io-dkms` | 0 | 0 | 2 | 2786 | — |
+| 2612 | 4138 | `systemd-cron` | 0 | 0 | 2 | 4138 | — |
+| 2613 | 975 | `systemd-manager-tui` | 0 | 0 | 2 | 975 | — |
+| 2614 | 5433 | `systemd-suspend-modules` | 0 | 0 | 2 | 5433 | — |
+| 2615 | 3759 | `task-manager` | 0 | 0 | 2 | 3759 | — |
+| 2616 | 2801 | `taskbook-bin` | 0 | 0 | 2 | 2801 | — |
+| 2617 | 2802 | `taskbook-server-bin` | 0 | 0 | 2 | 2802 | — |
+| 2618 | 6741 | `tclreadline` | 0 | 0 | 2 | 6741 | — |
+| 2619 | 6248 | `teevee` | 0 | 0 | 2 | 6248 | — |
+| 2620 | 4543 | `template` | 0 | 0 | 2 | 4543 | — |
+| 2621 | 2358 | `term39` | 0 | 0 | 2 | 2358 | — |
+| 2622 | 2907 | `termf1` | 0 | 0 | 2 | 2907 | — |
+| 2623 | 3472 | `termflix-bin` | 0 | 0 | 2 | 3472 | — |
+| 2624 | 2459 | `tetrio-plus-bin` | 0 | 0 | 2 | 2459 | — |
+| 2625 | 1186 | `tetro-tui-bin` | 0 | 0 | 2 | 1186 | — |
+| 2626 | 8013 | `texlive-installer` | 0 | 0 | 2 | 8013 | — |
+| 2627 | 4388 | `textern-native-messaging-host` | 0 | 0 | 2 | 4388 | — |
+| 2628 | 7317 | `tg-ws-proxy-cli` | 0 | 0 | 2 | 7317 | — |
+| 2629 | 1370 | `tickit-bin` | 0 | 0 | 2 | 1370 | — |
+| 2630 | 1369 | `tickit-sync-bin` | 0 | 0 | 2 | 1369 | — |
+| 2631 | 4573 | `tidewave-bin` | 0 | 0 | 2 | 4573 | — |
+| 2632 | 1670 | `timeshift-systemd-timer` | 0 | 0 | 2 | 1670 | — |
+| 2633 | 3191 | `timr` | 0 | 0 | 2 | 3191 | — |
+| 2634 | 765 | `tl866-updater-git` | 0 | 0 | 2 | 765 | — |
+| 2635 | 4450 | `tmmpr-bin` | 0 | 0 | 2 | 4450 | — |
+| 2636 | 2656 | `tmsu-bin` | 0 | 0 | 2 | 2656 | — |
+| 2637 | 5499 | `tmux-plugin-panel-bin` | 0 | 0 | 2 | 5499 | — |
+| 2638 | 3475 | `toad-ai` | 0 | 0 | 2 | 3475 | — |
+| 2639 | 1513 | `topgrade` | 0 | 0 | 2 | 1513 | — |
+| 2640 | 3150 | `tori-bin` | 0 | 0 | 2 | 3150 | — |
+| 2641 | 1770 | `tparted-bin` | 0 | 0 | 2 | 1770 | — |
+| 2642 | 4389 | `tradingview-bin-latest` | 0 | 0 | 2 | 4389 | — |
+| 2643 | 2879 | `transformers_ocr-git` | 0 | 0 | 2 | 2879 | — |
+| 2644 | 5135 | `transg-tui-git` | 0 | 0 | 2 | 5135 | — |
+| 2645 | 6399 | `trashy` | 0 | 0 | 2 | 6399 | — |
+| 2646 | 3861 | `trayer` | 0 | 0 | 2 | 3861 | — |
+| 2647 | 6975 | `tre-command` | 0 | 0 | 2 | 6975 | — |
+| 2648 | 4836 | `trickle` | 0 | 0 | 2 | 4836 | — |
+| 2649 | 1195 | `triliumnext-bin` | 0 | 0 | 2 | 1195 | — |
+| 2650 | 6179 | `ttf-menomonia` | 0 | 0 | 2 | 6179 | — |
+| 2651 | 3786 | `ttf-monocraft-git` | 0 | 0 | 2 | 3786 | — |
+| 2652 | 3462 | `ttf-nonicons-bin-git` | 0 | 0 | 2 | 3462 | — |
+| 2653 | 2496 | `ttf-profont-iix` | 0 | 0 | 2 | 2496 | — |
+| 2654 | 1777 | `ttf-tahoma` | 0 | 0 | 2 | 1777 | — |
+| 2655 | 510 | `tty-clock` | 0 | 0 | 2 | 510 | — |
+| 2656 | 5412 | `ttypr-bin` | 0 | 0 | 2 | 5412 | — |
+| 2657 | 6499 | `tuack-ng-bin` | 0 | 0 | 2 | 6499 | — |
+| 2658 | 5162 | `tuckr-git` | 0 | 0 | 2 | 5162 | — |
+| 2659 | 8162 | `tug-bin` | 0 | 0 | 2 | 8162 | — |
+| 2660 | 6510 | `tui-banner-bin` | 0 | 0 | 2 | 6510 | — |
+| 2661 | 810 | `turtlectl-git` | 0 | 0 | 2 | 810 | — |
+| 2662 | 2713 | `tuxedo-yt6801-dkms-git` | 0 | 0 | 2 | 2713 | — |
+| 2663 | 2781 | `tylax-bin` | 0 | 0 | 2 | 2781 | — |
+| 2664 | 6321 | `typeracer-bin` | 0 | 0 | 2 | 6321 | — |
+| 2665 | 5475 | `udiskr` | 0 | 0 | 2 | 5475 | — |
+| 2666 | 7007 | `uemacs-git` | 0 | 0 | 2 | 7007 | — |
+| 2667 | 7271 | `uftpd` | 0 | 0 | 2 | 7271 | — |
+| 2668 | 7473 | `uhubctl` | 0 | 0 | 2 | 7473 | — |
+| 2669 | 1054 | `unimatrix-git` | 0 | 0 | 2 | 1054 | — |
+| 2670 | 4851 | `unregistry` | 0 | 0 | 2 | 4851 | — |
+| 2671 | 3717 | `upi` | 0 | 0 | 2 | 3717 | — |
+| 2672 | 134 | `uptime-kuma` | 0 | 0 | 2 | 134 | — |
+| 2673 | 201 | `ut2004-data-archiveorg` | 0 | 0 | 2 | 201 | — |
+| 2674 | 3308 | `uutils-diffutils-bin` | 0 | 0 | 2 | 3308 | — |
+| 2675 | 2765 | `uxn2-git` | 0 | 0 | 2 | 2765 | — |
+| 2676 | 6598 | `uzdoom-appimage` | 0 | 0 | 2 | 6598 | — |
+| 2677 | 6392 | `vectorchord-bin` | 0 | 0 | 2 | 6392 | — |
+| 2678 | 7322 | `velocidrone` | 0 | 0 | 2 | 7322 | — |
+| 2679 | 8613 | `vercel` | 0 | 0 | 2 | 8613 | — |
+| 2680 | 809 | `verify-everything` | 0 | 0 | 2 | 809 | — |
+| 2681 | 2669 | `vex-shell-git` | 0 | 0 | 2 | 2669 | — |
+| 2682 | 3893 | `vfstool-git` | 0 | 0 | 2 | 3893 | — |
+| 2683 | 3430 | `vgx-bin` | 0 | 0 | 2 | 3430 | — |
+| 2684 | 4024 | `vhd2vl-git` | 0 | 0 | 2 | 4024 | — |
+| 2685 | 7667 | `vicinae-appimage-bin` | 0 | 0 | 2 | 7667 | — |
+| 2686 | 5401 | `vim-pkgbuild-git` | 0 | 0 | 2 | 5401 | — |
+| 2687 | 5385 | `vim-systemd` | 0 | 0 | 2 | 5385 | — |
+| 2688 | 6213 | `vimix-gtk-themes-git` | 0 | 0 | 2 | 6213 | — |
+| 2689 | 7693 | `vmware-host-modules-dkms-fix-git` | 0 | 0 | 2 | 7693 | — |
+| 2690 | 3998 | `vobcopy` | 0 | 0 | 2 | 3998 | — |
+| 2691 | 7053 | `vscode-langservers-extracted` | 0 | 0 | 2 | 7053 | — |
+| 2692 | 3761 | `vscodium-bin-marketplace` | 0 | 0 | 2 | 3761 | — |
+| 2693 | 423 | `vtsls` | 0 | 0 | 2 | 423 | — |
+| 2694 | 4071 | `wallchemy` | 0 | 0 | 2 | 4071 | — |
+| 2695 | 5009 | `wb32-dfu-updater_cli-git` | 0 | 0 | 2 | 5009 | — |
+| 2696 | 1192 | `weathr-bin` | 0 | 0 | 2 | 1192 | — |
+| 2697 | 1301 | `webcord-bin` | 0 | 0 | 2 | 1301 | — |
+| 2698 | 5245 | `webos-dev-manager-bin` | 0 | 0 | 2 | 5245 | — |
+| 2699 | 5411 | `wem` | 0 | 0 | 2 | 5411 | — |
+| 2700 | 436 | `whyis-git` | 0 | 0 | 2 | 436 | — |
+| 2701 | 2675 | `wiki-go` | 0 | 0 | 2 | 2675 | — |
+| 2702 | 2676 | `windsurf-next-marketplace` | 0 | 0 | 2 | 2676 | — |
+| 2703 | 4778 | `wireguard-vanity-keygen` | 0 | 0 | 2 | 4778 | — |
+| 2704 | 7601 | `wireplumber-openrc` | 0 | 0 | 2 | 7601 | — |
+| 2705 | 1873 | `witr` | 0 | 0 | 2 | 1873 | — |
+| 2706 | 6505 | `wlcrosshair` | 0 | 0 | 2 | 6505 | — |
+| 2707 | 6813 | `wlr-dpms-git` | 0 | 0 | 2 | 6813 | — |
+| 2708 | 3463 | `woff-nonicons-bin-git` | 0 | 0 | 2 | 3463 | — |
+| 2709 | 5497 | `workz-bin` | 0 | 0 | 2 | 5497 | — |
+| 2710 | 4688 | `wormhole-rs` | 0 | 0 | 2 | 4688 | — |
+| 2711 | 4673 | `wscat` | 0 | 0 | 2 | 4673 | — |
+| 2712 | 7046 | `wslu` | 0 | 0 | 2 | 7046 | — |
+| 2713 | 3118 | `wtq-bin` | 0 | 0 | 2 | 3118 | — |
+| 2714 | 1500 | `xc` | 0 | 0 | 2 | 1500 | — |
+| 2715 | 3224 | `xdg-autostart` | 0 | 0 | 2 | 3224 | — |
+| 2716 | 1672 | `xdg-ninja-git` | 0 | 0 | 2 | 1672 | — |
+| 2717 | 217 | `xdg-terminal-exec` | 0 | 0 | 2 | 217 | — |
+| 2718 | 1239 | `xdgctl` | 0 | 0 | 2 | 1239 | — |
+| 2719 | 1245 | `xenia-edge-bin` | 0 | 0 | 2 | 1245 | — |
+| 2720 | 1066 | `xfce-polkit` | 0 | 0 | 2 | 1066 | — |
+| 2721 | 2380 | `xkb-qwerty-fr` | 0 | 0 | 2 | 2380 | — |
+| 2722 | 7487 | `xpad-dkms-git` | 0 | 0 | 2 | 7487 | — |
+| 2723 | 489 | `xpad-noone-git` | 0 | 0 | 2 | 489 | — |
+| 2724 | 2679 | `xpeviewer-bin` | 0 | 0 | 2 | 2679 | — |
+| 2725 | 6237 | `xray-oci-git` | 0 | 0 | 2 | 6237 | — |
+| 2726 | 1154 | `xytz-bin` | 0 | 0 | 2 | 1154 | — |
+| 2727 | 5212 | `yaac` | 0 | 0 | 2 | 5212 | — |
+| 2728 | 2883 | `yabridge-tui` | 0 | 0 | 2 | 2883 | — |
+| 2729 | 2038 | `yay-bin` | 0 | 0 | 2 | 2038 | — |
+| 2730 | 3319 | `yed` | 0 | 0 | 2 | 3319 | — |
+| 2731 | 1528 | `yubico-authenticator-bin` | 0 | 0 | 2 | 1528 | — |
+| 2732 | 4608 | `zen-c` | 0 | 0 | 2 | 4608 | — |
+| 2733 | 8335 | `zenergy-dkms-git` | 0 | 0 | 2 | 8335 | — |
+| 2734 | 667 | `zenpower3-dkms` | 0 | 0 | 2 | 667 | — |
+| 2735 | 1671 | `zenpower3-dkms-git` | 0 | 0 | 2 | 1671 | — |
+| 2736 | 1605 | `zenpower5-dkms-git` | 0 | 0 | 2 | 1605 | — |
+| 2737 | 4842 | `zgen-git` | 0 | 0 | 2 | 4842 | — |
+| 2738 | 4830 | `zignal-git` | 0 | 0 | 2 | 4830 | — |
+| 2739 | 4365 | `zish` | 0 | 0 | 2 | 4365 | — |
+| 2740 | 7040 | `zls-bin` | 0 | 0 | 2 | 7040 | — |
+| 2741 | 3212 | `zscroll-git` | 0 | 0 | 2 | 3212 | — |
+| 2742 | 6726 | `zsh-system-clipboard-git` | 0 | 0 | 2 | 6726 | — |
+| 2743 | 5364 | `zsh-you-should-use` | 0 | 0 | 2 | 5364 | — |
+| 2744 | 960 | `zulu-jre11-fx` | 0 | 0 | 2 | 960 | — |
+| 2745 | 962 | `zulu-jre17-fx` | 0 | 0 | 2 | 962 | — |
+| 2746 | 3768 | `zulu-jre21-fx` | 0 | 0 | 2 | 3768 | — |
+| 2747 | 961 | `zulu-jre25-fx` | 0 | 0 | 2 | 961 | — |
+| 2748 | 954 | `zulu-jre8-fx` | 0 | 0 | 2 | 954 | — |
+| 2749 | 2952 | `zzz` | 0 | 0 | 2 | 2952 | — |
+| 2750 | 5507 | `adbfs-rootless-git` | 0 | 0 | 3 | 5507 | — |
+| 2751 | 4426 | `adwaita-dark-darose` | 0 | 0 | 3 | 4426 | — |
+| 2752 | 8536 | `agemo` | 0 | 0 | 3 | 8536 | — |
+| 2753 | 785 | `agisoft-metashape` | 0 | 0 | 3 | 785 | — |
+| 2754 | 7595 | `aim-bin` | 0 | 0 | 3 | 7595 | — |
+| 2755 | 4823 | `alacritty-use-theme-with-gnome-darkmode` | 0 | 0 | 3 | 4823 | — |
+| 2756 | 3936 | `alacritty-use-theme-with-redshift-git` | 0 | 0 | 3 | 3936 | — |
+| 2757 | 936 | `alarm-notify` | 0 | 0 | 3 | 936 | — |
+| 2758 | 6840 | `algodoo-wine` | 0 | 0 | 3 | 6840 | — |
+| 2759 | 6562 | `alltray` | 0 | 0 | 3 | 6562 | — |
+| 2760 | 8541 | `alpine-make-rootfs` | 0 | 0 | 3 | 8541 | — |
+| 2761 | 5258 | `ampcode` | 0 | 0 | 3 | 5258 | — |
+| 2762 | 8522 | `anamnesis` | 0 | 0 | 3 | 8522 | — |
+| 2763 | 8156 | `android-messages-desktop-bin` | 0 | 0 | 3 | 8156 | — |
+| 2764 | 2460 | `android-udev-git` | 0 | 0 | 3 | 2460 | — |
+| 2765 | 6126 | `anythingllm-appimage` | 0 | 0 | 3 | 6126 | — |
+| 2766 | 1524 | `anythingllm-desktop-bin` | 0 | 0 | 3 | 1524 | — |
+| 2767 | 4133 | `apache-tools` | 0 | 0 | 3 | 4133 | — |
+| 2768 | 6532 | `apkeditor-git` | 0 | 0 | 3 | 6532 | — |
+| 2769 | 1432 | `arch-upgrader` | 0 | 0 | 3 | 1432 | — |
+| 2770 | 6603 | `archiveweb.page-appimage` | 0 | 0 | 3 | 6603 | — |
+| 2771 | 5272 | `arturo` | 0 | 0 | 3 | 5272 | — |
+| 2772 | 5054 | `asciinema-agg` | 0 | 0 | 3 | 5054 | — |
+| 2773 | 3157 | `aseprite-bin` | 0 | 0 | 3 | 3157 | — |
+| 2774 | 7367 | `astro_modloader` | 0 | 0 | 3 | 7367 | — |
+| 2775 | 5123 | `asus-5606-fan-state-git` | 0 | 0 | 3 | 5123 | — |
+| 2776 | 8571 | `atlauncher` | 0 | 0 | 3 | 8571 | — |
+| 2777 | 4896 | `authselect` | 0 | 0 | 3 | 4896 | — |
+| 2778 | 7414 | `avalonia86` | 0 | 0 | 3 | 7414 | — |
+| 2779 | 3634 | `awsvpnclient` | 0 | 0 | 3 | 3634 | — |
+| 2780 | 6669 | `axl` | 0 | 0 | 3 | 6669 | — |
+| 2781 | 1197 | `azahar-appimage-wayland` | 0 | 0 | 3 | 1197 | — |
+| 2782 | 3710 | `bbdown-bin` | 0 | 0 | 3 | 3710 | — |
+| 2783 | 5260 | `betacraft-launcher-git` | 0 | 0 | 3 | 5260 | — |
+| 2784 | 8548 | `bhsh` | 0 | 0 | 3 | 8548 | — |
+| 2785 | 7242 | `bign-handheld-thumbnailer` | 0 | 0 | 3 | 7242 | — |
+| 2786 | 1350 | `bin-cpuflags-x86` | 0 | 0 | 3 | 1350 | — |
+| 2787 | 4980 | `bitwarden-systemd` | 0 | 0 | 3 | 4980 | — |
+| 2788 | 262 | `bitwig-studio` | 0 | 0 | 3 | 262 | — |
+| 2789 | 7682 | `bitwig-studio-earlyaccess` | 0 | 0 | 3 | 7682 | — |
+| 2790 | 2779 | `bitwig-theme-manager-bin` | 0 | 0 | 3 | 2779 | — |
+| 2791 | 7571 | `bluevein` | 0 | 0 | 3 | 7571 | — |
+| 2792 | 5408 | `bomberclone` | 0 | 0 | 3 | 5408 | — |
+| 2793 | 3742 | `borse` | 0 | 0 | 3 | 3742 | — |
+| 2794 | 3674 | `bridge-core-bin` | 0 | 0 | 3 | 3674 | — |
+| 2795 | 4926 | `brightness-slider-git` | 0 | 0 | 3 | 4926 | — |
+| 2796 | 3995 | `brother-mfc-j1010dw` | 0 | 0 | 3 | 3995 | — |
+| 2797 | 7556 | `brother-mfc-l3750cdw` | 0 | 0 | 3 | 7556 | — |
+| 2798 | 3877 | `brother-mfc-l8690cdw` | 0 | 0 | 3 | 3877 | — |
+| 2799 | 4712 | `browsh` | 0 | 0 | 3 | 4712 | — |
+| 2800 | 194 | `bs-manager-git` | 0 | 0 | 3 | 194 | — |
+| 2801 | 5350 | `bsdiff` | 0 | 0 | 3 | 5350 | — |
+| 2802 | 3274 | `btlescan` | 0 | 0 | 3 | 3274 | — |
+| 2803 | 3291 | `btlescan-bin` | 0 | 0 | 3 | 3291 | — |
+| 2804 | 442 | `btrfs-desktop-notification` | 0 | 0 | 3 | 442 | — |
+| 2805 | 7958 | `btrustbiss` | 0 | 0 | 3 | 7958 | — |
+| 2806 | 5241 | `buf-git` | 0 | 0 | 3 | 5241 | — |
+| 2807 | 5378 | `bullet-train-oh-my-zsh-theme-git` | 0 | 0 | 3 | 5378 | — |
+| 2808 | 3384 | `burpsuite-pro` | 0 | 0 | 3 | 3384 | — |
+| 2809 | 7327 | `camunda-modeler-bin` | 0 | 0 | 3 | 7327 | — |
+| 2810 | 3547 | `capacities-appimage` | 0 | 0 | 3 | 3547 | — |
+| 2811 | 47 | `caprine` | 0 | 0 | 3 | 47 | — |
+| 2812 | 7409 | `cargo-pkgbuild-git` | 0 | 0 | 3 | 7409 | — |
+| 2813 | 1200 | `cc-switch-bin` | 0 | 0 | 3 | 1200 | — |
+| 2814 | 6722 | `cexpl` | 0 | 0 | 3 | 6722 | — |
+| 2815 | 658 | `cfspeedtest` | 0 | 0 | 3 | 658 | — |
+| 2816 | 350 | `charles-bundled-java` | 0 | 0 | 3 | 350 | — |
+| 2817 | 6137 | `chhsich-nerd-font` | 0 | 0 | 3 | 6137 | — |
+| 2818 | 1425 | `chibi-cli-git` | 0 | 0 | 3 | 1425 | — |
+| 2819 | 6517 | `cjsh` | 0 | 0 | 3 | 6517 | — |
+| 2820 | 215 | `claude-cowork-service` | 0 | 0 | 3 | 215 | — |
+| 2821 | 2125 | `claude-desktop-appimage` | 0 | 0 | 3 | 2125 | — |
+| 2822 | 8314 | `clearine-git` | 0 | 0 | 3 | 8314 | — |
+| 2823 | 4169 | `clipboard-sync` | 0 | 0 | 3 | 4169 | — |
+| 2824 | 2339 | `clipvault` | 0 | 0 | 3 | 2339 | — |
+| 2825 | 760 | `clonehero-ptb` | 0 | 0 | 3 | 760 | — |
+| 2826 | 8234 | `cloudmonkey` | 0 | 0 | 3 | 8234 | — |
+| 2827 | 6297 | `cmdcreate-git` | 0 | 0 | 3 | 6297 | — |
+| 2828 | 1933 | `code-features` | 0 | 0 | 3 | 1933 | — |
+| 2829 | 732 | `colloid-catppuccin-theme-git` | 0 | 0 | 3 | 732 | — |
+| 2830 | 730 | `colloid-dracula-theme-git` | 0 | 0 | 3 | 730 | — |
+| 2831 | 729 | `colloid-everforest-theme-git` | 0 | 0 | 3 | 729 | — |
+| 2832 | 728 | `colloid-gruvbox-theme-git` | 0 | 0 | 3 | 728 | — |
+| 2833 | 727 | `colloid-icon-theme-git` | 0 | 0 | 3 | 727 | — |
+| 2834 | 726 | `colloid-nord-icon-theme-git` | 0 | 0 | 3 | 726 | — |
+| 2835 | 7419 | `commit-ai` | 0 | 0 | 3 | 7419 | — |
+| 2836 | 4369 | `compose` | 0 | 0 | 3 | 4369 | — |
+| 2837 | 6264 | `cppo` | 0 | 0 | 3 | 6264 | — |
+| 2838 | 3906 | `cpx-copy` | 0 | 0 | 3 | 3906 | — |
+| 2839 | 3653 | `crabdrop-bin` | 0 | 0 | 3 | 3653 | — |
+| 2840 | 6664 | `cryptomator-cli` | 0 | 0 | 3 | 6664 | — |
+| 2841 | 2361 | `crystal-dock-bin` | 0 | 0 | 3 | 2361 | — |
+| 2842 | 6432 | `csvtable` | 0 | 0 | 3 | 6432 | — |
+| 2843 | 4127 | `ctpv-git` | 0 | 0 | 3 | 4127 | — |
+| 2844 | 433 | `cuda-12.9` | 0 | 0 | 3 | 433 | — |
+| 2845 | 3871 | `cudatext-qt6-bin` | 0 | 0 | 3 | 3871 | — |
+| 2846 | 2347 | `curd` | 0 | 0 | 3 | 2347 | — |
+| 2847 | 7273 | `curlftpfs-ng` | 0 | 0 | 3 | 7273 | — |
+| 2848 | 403 | `customizepkg-git` | 0 | 0 | 3 | 403 | — |
+| 2849 | 1190 | `czkawka-gui-bin` | 0 | 0 | 3 | 1190 | — |
+| 2850 | 7438 | `dbeaver-ce-jre-bin` | 0 | 0 | 3 | 7438 | — |
+| 2851 | 7704 | `dbeaver-jvm-hook` | 0 | 0 | 3 | 7704 | — |
+| 2852 | 5071 | `dela` | 0 | 0 | 3 | 5071 | — |
+| 2853 | 3434 | `dethrace` | 0 | 0 | 3 | 3434 | — |
+| 2854 | 3251 | `devify` | 0 | 0 | 3 | 3251 | — |
+| 2855 | 6396 | `dimland-git` | 0 | 0 | 3 | 6396 | — |
+| 2856 | 2859 | `dingusppc-git` | 0 | 0 | 3 | 2859 | — |
+| 2857 | 3404 | `dn-famitracker-bin` | 0 | 0 | 3 | 3404 | — |
+| 2858 | 7727 | `dnscontrol` | 0 | 0 | 3 | 7727 | — |
+| 2859 | 434 | `docker-credential-secretservice` | 0 | 0 | 3 | 434 | — |
+| 2860 | 7236 | `dollarskip` | 0 | 0 | 3 | 7236 | — |
+| 2861 | 3735 | `dolphin-anty-bin` | 0 | 0 | 3 | 3735 | — |
+| 2862 | 1082 | `doomrunner` | 0 | 0 | 3 | 1082 | — |
+| 2863 | 3521 | `dotctl` | 0 | 0 | 3 | 3521 | — |
+| 2864 | 1009 | `dotool` | 0 | 0 | 3 | 1009 | — |
+| 2865 | 5488 | `dpibreak` | 0 | 0 | 3 | 5488 | — |
+| 2866 | 920 | `dput-ng` | 0 | 0 | 3 | 920 | — |
+| 2867 | 6555 | `dracut-sshd-git` | 0 | 0 | 3 | 6555 | — |
+| 2868 | 3294 | `ds360go-git` | 0 | 0 | 3 | 3294 | — |
+| 2869 | 2005 | `dynamips` | 0 | 0 | 3 | 2005 | — |
+| 2870 | 7431 | `ebsl` | 0 | 0 | 3 | 7431 | — |
+| 2871 | 8525 | `edex-ui-bin` | 0 | 0 | 3 | 8525 | — |
+| 2872 | 4983 | `ego` | 0 | 0 | 3 | 4983 | — |
+| 2873 | 6453 | `ekphos` | 0 | 0 | 3 | 6453 | — |
+| 2874 | 5087 | `elan-lean` | 0 | 0 | 3 | 5087 | — |
+| 2875 | 6796 | `electron11-bin` | 0 | 0 | 3 | 6796 | — |
+| 2876 | 4513 | `electron12-bin` | 0 | 0 | 3 | 4513 | — |
+| 2877 | 1493 | `electron28-bin` | 0 | 0 | 3 | 1493 | — |
+| 2878 | 5137 | `electron29-bin` | 0 | 0 | 3 | 5137 | — |
+| 2879 | 4755 | `electron30-bin` | 0 | 0 | 3 | 4755 | — |
+| 2880 | 3803 | `electron33-bin` | 0 | 0 | 3 | 3803 | — |
+| 2881 | 1286 | `electron37-bin` | 0 | 0 | 3 | 1286 | — |
+| 2882 | 7248 | `electrum-ltc-appimage` | 0 | 0 | 3 | 7248 | — |
+| 2883 | 914 | `elephant-bookmarks` | 0 | 0 | 3 | 914 | — |
+| 2884 | 179 | `elephant-clipboard` | 0 | 0 | 3 | 179 | — |
+| 2885 | 2547 | `ember` | 0 | 0 | 3 | 2547 | — |
+| 2886 | 1046 | `epson-inkjet-printer-201207w` | 0 | 0 | 3 | 1046 | — |
+| 2887 | 3755 | `ethtui` | 0 | 0 | 3 | 3755 | — |
+| 2888 | 691 | `evenmoreutils` | 0 | 0 | 3 | 691 | — |
+| 2889 | 6184 | `evsieve` | 0 | 0 | 3 | 6184 | — |
+| 2890 | 1037 | `fbpdf-git` | 0 | 0 | 3 | 1037 | — |
+| 2891 | 6182 | `fbreader-appimage` | 0 | 0 | 3 | 6182 | — |
+| 2892 | 4353 | `feb-git` | 0 | 0 | 3 | 4353 | — |
+| 2893 | 5437 | `feedr-bin` | 0 | 0 | 3 | 5437 | — |
+| 2894 | 314 | `feishin` | 0 | 0 | 3 | 314 | — |
+| 2895 | 2087 | `fetchdots` | 0 | 0 | 3 | 2087 | — |
+| 2896 | 8568 | `ffdec` | 0 | 0 | 3 | 8568 | — |
+| 2897 | 4813 | `fftw-amd` | 0 | 0 | 3 | 4813 | — |
+| 2898 | 34 | `figma-linux-bin` | 0 | 0 | 3 | 34 | — |
+| 2899 | 4380 | `file_clipper` | 0 | 0 | 3 | 4380 | — |
+| 2900 | 5252 | `finitodo` | 0 | 0 | 3 | 5252 | — |
+| 2901 | 1667 | `firefly-iii` | 0 | 0 | 3 | 1667 | — |
+| 2902 | 2841 | `firemark` | 0 | 0 | 3 | 2841 | — |
+| 2903 | 4944 | `firp` | 0 | 0 | 3 | 4944 | — |
+| 2904 | 2784 | `fish-hydro-git` | 0 | 0 | 3 | 2784 | — |
+| 2905 | 5496 | `fish-session` | 0 | 0 | 3 | 5496 | — |
+| 2906 | 6478 | `fit` | 0 | 0 | 3 | 6478 | — |
+| 2907 | 5219 | `flipclock` | 0 | 0 | 3 | 5219 | — |
+| 2908 | 8023 | `flite1` | 0 | 0 | 3 | 8023 | — |
+| 2909 | 2060 | `floorp-bin` | 0 | 0 | 3 | 2060 | — |
+| 2910 | 5036 | `folo-appimage` | 0 | 0 | 3 | 5036 | — |
+| 2911 | 5486 | `framework-control-bin` | 0 | 0 | 3 | 5486 | — |
+| 2912 | 1145 | `fsel` | 0 | 0 | 3 | 1145 | — |
+| 2913 | 7044 | `fstl` | 0 | 0 | 3 | 7044 | — |
+| 2914 | 6808 | `ftb-app-bin` | 0 | 0 | 3 | 6808 | — |
+| 2915 | 2128 | `galaxybudsclient-bin` | 0 | 0 | 3 | 2128 | — |
+| 2916 | 6334 | `gamescope-session-steam-git` | 0 | 0 | 3 | 6334 | — |
+| 2917 | 2011 | `gem2arch` | 0 | 0 | 3 | 2011 | — |
+| 2918 | 1617 | `gemini-cli-git` | 0 | 0 | 3 | 1617 | — |
+| 2919 | 6372 | `geminidesk` | 0 | 0 | 3 | 6372 | — |
+| 2920 | 6622 | `geph5-client` | 0 | 0 | 3 | 6622 | — |
+| 2921 | 391 | `ghdl` | 0 | 0 | 3 | 391 | — |
+| 2922 | 6601 | `gitbutler-bin` | 0 | 0 | 3 | 6601 | — |
+| 2923 | 2476 | `gitflow-bashcompletion-avh` | 0 | 0 | 3 | 2476 | — |
+| 2924 | 3681 | `github-account-switch-git` | 0 | 0 | 3 | 3681 | — |
+| 2925 | 7383 | `gitignore-downloader` | 0 | 0 | 3 | 7383 | — |
+| 2926 | 2974 | `gitversion-bin` | 0 | 0 | 3 | 2974 | — |
+| 2927 | 3948 | `glab-git` | 0 | 0 | 3 | 3948 | — |
+| 2928 | 5140 | `glee` | 0 | 0 | 3 | 5140 | — |
+| 2929 | 6552 | `gnome-shell-extension-arch-update` | 0 | 0 | 3 | 6552 | — |
+| 2930 | 6333 | `gnome-themes-extra-gtk2` | 0 | 0 | 3 | 6333 | — |
+| 2931 | 7629 | `go-boot` | 0 | 0 | 3 | 7629 | — |
+| 2932 | 1148 | `go-grip` | 0 | 0 | 3 | 1148 | — |
+| 2933 | 1147 | `go-grip-git` | 0 | 0 | 3 | 1147 | — |
+| 2934 | 6305 | `godot-blender-exporter-git` | 0 | 0 | 3 | 6305 | — |
+| 2935 | 4718 | `godot-cpp` | 0 | 0 | 3 | 4718 | — |
+| 2936 | 6428 | `godots` | 0 | 0 | 3 | 6428 | — |
+| 2937 | 277 | `gogcli` | 0 | 0 | 3 | 277 | — |
+| 2938 | 2919 | `gonzo` | 0 | 0 | 3 | 2919 | — |
+| 2939 | 5398 | `googlemaps` | 0 | 0 | 3 | 5398 | — |
+| 2940 | 1017 | `gopac` | 0 | 0 | 3 | 1017 | — |
+| 2941 | 4653 | `gopac-git` | 0 | 0 | 3 | 4653 | — |
+| 2942 | 4827 | `goplaying-git` | 0 | 0 | 3 | 4827 | — |
+| 2943 | 3691 | `gosuki` | 0 | 0 | 3 | 3691 | — |
+| 2944 | 6435 | `gotatun` | 0 | 0 | 3 | 6435 | — |
+| 2945 | 6799 | `graphite-cli` | 0 | 0 | 3 | 6799 | — |
+| 2946 | 1356 | `green-tunnel-bin` | 0 | 0 | 3 | 1356 | — |
+| 2947 | 5406 | `grub-imageboot` | 0 | 0 | 3 | 5406 | — |
+| 2948 | 5166 | `gruvbox-gtk-theme-git` | 0 | 0 | 3 | 5166 | — |
+| 2949 | 5165 | `gruvbox-icon-theme-git` | 0 | 0 | 3 | 5165 | — |
+| 2950 | 5059 | `hardened_malloc` | 0 | 0 | 3 | 5059 | — |
+| 2951 | 8316 | `harmonymusic` | 0 | 0 | 3 | 8316 | — |
+| 2952 | 6431 | `hdas` | 0 | 0 | 3 | 6431 | — |
+| 2953 | 1220 | `headlamp-bin` | 0 | 0 | 3 | 1220 | — |
+| 2954 | 310 | `hermes-pm` | 0 | 0 | 3 | 310 | — |
+| 2955 | 5318 | `hid-tmff2-dkms-git` | 0 | 0 | 3 | 5318 | — |
+| 2956 | 7680 | `hmcl` | 0 | 0 | 3 | 7680 | — |
+| 2957 | 4238 | `holyc-lang-git` | 0 | 0 | 3 | 4238 | — |
+| 2958 | 6991 | `httptap-bin` | 0 | 0 | 3 | 6991 | — |
+| 2959 | 6564 | `hunspell-uk` | 0 | 0 | 3 | 6564 | — |
+| 2960 | 2805 | `hypr-zoom` | 0 | 0 | 3 | 2805 | — |
+| 2961 | 4331 | `hyprlight` | 0 | 0 | 3 | 4331 | — |
+| 2962 | 5198 | `hyproled-git` | 0 | 0 | 3 | 5198 | — |
+| 2963 | 1548 | `hypryou-utils` | 0 | 0 | 3 | 1548 | — |
+| 2964 | 2806 | `i3bar-river` | 0 | 0 | 3 | 2806 | — |
+| 2965 | 6760 | `iamb-git` | 0 | 0 | 3 | 6760 | — |
+| 2966 | 4261 | `icann-rdap` | 0 | 0 | 3 | 4261 | — |
+| 2967 | 7974 | `imapgoose` | 0 | 0 | 3 | 7974 | — |
+| 2968 | 901 | `imx471-dkms-git` | 0 | 0 | 3 | 901 | — |
+| 2969 | 2464 | `indicator-session` | 0 | 0 | 3 | 2464 | — |
+| 2970 | 2063 | `intellij-idea-ultimate-edition` | 0 | 0 | 3 | 2063 | — |
+| 2971 | 1525 | `intiface-central-bin` | 0 | 0 | 3 | 1525 | — |
+| 2972 | 4125 | `invoiceninja` | 0 | 0 | 3 | 4125 | — |
+| 2973 | 4016 | `ipfs-desktop` | 0 | 0 | 3 | 4016 | — |
+| 2974 | 247 | `irfanview` | 0 | 0 | 3 | 247 | — |
+| 2975 | 6335 | `irnix` | 0 | 0 | 3 | 6335 | — |
+| 2976 | 555 | `iwmenu` | 0 | 0 | 3 | 555 | — |
+| 2977 | 4920 | `jaq-git` | 0 | 0 | 3 | 4920 | — |
+| 2978 | 8228 | `jarl-bin` | 0 | 0 | 3 | 8228 | — |
+| 2979 | 7549 | `jbofihe-git` | 0 | 0 | 3 | 7549 | — |
+| 2980 | 4555 | `jdk25-graalvm-ce-bin` | 0 | 0 | 3 | 4555 | — |
+| 2981 | 2572 | `jdk8-graalvm-ee-bin` | 0 | 0 | 3 | 2572 | — |
+| 2982 | 899 | `jdwp-mcp-git` | 0 | 0 | 3 | 899 | — |
+| 2983 | 4799 | `jellyfin-rpc-bin` | 0 | 0 | 3 | 4799 | — |
+| 2984 | 3564 | `jitsi-meet-desktop-bin` | 0 | 0 | 3 | 3564 | — |
+| 2985 | 6623 | `jitterbugpair-bin` | 0 | 0 | 3 | 6623 | — |
+| 2986 | 7003 | `jjui` | 0 | 0 | 3 | 7003 | — |
+| 2987 | 553 | `jlink-software-and-documentation` | 0 | 0 | 3 | 553 | — |
+| 2988 | 3839 | `jome` | 0 | 0 | 3 | 3839 | — |
+| 2989 | 8028 | `jre-jetbrains` | 0 | 0 | 3 | 8028 | — |
+| 2990 | 435 | `jrnlc` | 0 | 0 | 3 | 435 | — |
+| 2991 | 7697 | `kaizen-bin` | 0 | 0 | 3 | 7697 | — |
+| 2992 | 2717 | `kdiagram5` | 0 | 0 | 3 | 2717 | — |
+| 2993 | 1300 | `kdotool-bin` | 0 | 0 | 3 | 1300 | — |
+| 2994 | 3358 | `kernelsu-dkms` | 0 | 0 | 3 | 3358 | — |
+| 2995 | 3359 | `kimaki` | 0 | 0 | 3 | 3359 | — |
+| 2996 | 1576 | `kiro-cli` | 0 | 0 | 3 | 1576 | — |
+| 2997 | 1402 | `kittenspaceagency-bin` | 0 | 0 | 3 | 1402 | — |
+| 2998 | 2858 | `kluctl` | 0 | 0 | 3 | 2858 | — |
+| 2999 | 3381 | `konfigkoll` | 0 | 0 | 3 | 3381 | — |
+| 3000 | 4385 | `kopa` | 0 | 0 | 3 | 4385 | — |
+| 3001 | 1230 | `koreader-bin` | 0 | 0 | 3 | 1230 | — |
+| 3002 | 6675 | `kotlin-language-server-git` | 0 | 0 | 3 | 6675 | — |
+| 3003 | 3891 | `kwin-polonium` | 0 | 0 | 3 | 3891 | — |
+| 3004 | 978 | `kwin-scripts-krohnkite-git` | 0 | 0 | 3 | 978 | — |
+| 3005 | 7640 | `lattice-diamond` | 0 | 0 | 3 | 7640 | — |
+| 3006 | 4879 | `lazybeads-git` | 0 | 0 | 3 | 4879 | — |
+| 3007 | 2822 | `lazylpsolverlibs-git` | 0 | 0 | 3 | 2822 | — |
+| 3008 | 4381 | `lazynmap` | 0 | 0 | 3 | 4381 | — |
+| 3009 | 2417 | `lc0-network-lg` | 0 | 0 | 3 | 2417 | — |
+| 3010 | 2416 | `lc0-network-md` | 0 | 0 | 3 | 2416 | — |
+| 3011 | 2415 | `lc0-network-sm` | 0 | 0 | 3 | 2415 | — |
+| 3012 | 2418 | `lc0-network-xl` | 0 | 0 | 3 | 2418 | — |
+| 3013 | 4511 | `ledfx-cc-bin` | 0 | 0 | 3 | 4511 | — |
+| 3014 | 755 | `lesstif` | 0 | 0 | 3 | 755 | — |
+| 3015 | 2429 | `lib32-faac` | 0 | 0 | 3 | 2429 | — |
+| 3016 | 2368 | `lib32-gsm` | 0 | 0 | 3 | 2368 | — |
+| 3017 | 2367 | `lib32-lame` | 0 | 0 | 3 | 2367 | — |
+| 3018 | 2373 | `lib32-libnuma` | 0 | 0 | 3 | 2373 | — |
+| 3019 | 3628 | `libaribcaption` | 0 | 0 | 3 | 3628 | — |
+| 3020 | 4248 | `libdeep_filter_ladspa-git` | 0 | 0 | 3 | 4248 | — |
+| 3021 | 4247 | `libdf-git` | 0 | 0 | 3 | 4247 | — |
+| 3022 | 6434 | `libgotatun` | 0 | 0 | 3 | 6434 | — |
+| 3023 | 7708 | `libilbm-git` | 0 | 0 | 3 | 7708 | — |
+| 3024 | 507 | `libopenrazer` | 0 | 0 | 3 | 507 | — |
+| 3025 | 2404 | `librespeed-cli` | 0 | 0 | 3 | 2404 | — |
+| 3026 | 8589 | `libtatsu-git` | 0 | 0 | 3 | 8589 | — |
+| 3027 | 4084 | `lidm-git` | 0 | 0 | 3 | 4084 | — |
+| 3028 | 6973 | `linux-apfs-rw-dkms-git` | 0 | 0 | 3 | 6973 | — |
+| 3029 | 1232 | `linuxqq-appimage` | 0 | 0 | 3 | 1232 | — |
+| 3030 | 7636 | `liskvork` | 0 | 0 | 3 | 7636 | — |
+| 3031 | 8578 | `llama.cpp-vulkan-bin` | 0 | 0 | 3 | 8578 | — |
+| 3032 | 3258 | `llvm-cbe-git` | 0 | 0 | 3 | 3258 | — |
+| 3033 | 1747 | `local-ai` | 0 | 0 | 3 | 1747 | — |
+| 3034 | 4505 | `logiops-rs` | 0 | 0 | 3 | 4505 | — |
+| 3035 | 1953 | `logisim-evolution` | 0 | 0 | 3 | 1953 | — |
+| 3036 | 6997 | `logisim-evolution-bin` | 0 | 0 | 3 | 6997 | — |
+| 3037 | 3695 | `lolcat++` | 0 | 0 | 3 | 3695 | — |
+| 3038 | 3310 | `lolia-cli` | 0 | 0 | 3 | 3310 | — |
+| 3039 | 3790 | `lowfi` | 0 | 0 | 3 | 3790 | — |
+| 3040 | 4760 | `lrcget-bin` | 0 | 0 | 3 | 4760 | — |
+| 3041 | 1468 | `lsu-git` | 0 | 0 | 3 | 1468 | — |
+| 3042 | 2363 | `luckybackup` | 0 | 0 | 3 | 2363 | — |
+| 3043 | 1033 | `lvsk-calendar` | 0 | 0 | 3 | 1033 | — |
+| 3044 | 953 | `magicpodscore-git` | 0 | 0 | 3 | 953 | — |
+| 3045 | 6729 | `mailpit` | 0 | 0 | 3 | 6729 | — |
+| 3046 | 3331 | `marp-cli` | 0 | 0 | 3 | 3331 | — |
+| 3047 | 3196 | `mdviewer-git` | 0 | 0 | 3 | 3196 | — |
+| 3048 | 2377 | `mendeley-reference-manager` | 0 | 0 | 3 | 2377 | — |
+| 3049 | 3272 | `meteobar` | 0 | 0 | 3 | 3272 | — |
+| 3050 | 3748 | `mev-boost` | 0 | 0 | 3 | 3748 | — |
+| 3051 | 2770 | `mihomo-alpha-git` | 0 | 0 | 3 | 2770 | — |
+| 3052 | 2375 | `mindwtr-bin` | 0 | 0 | 3 | 2375 | — |
+| 3053 | 3943 | `mingw-w64-json-glib` | 0 | 0 | 3 | 3943 | — |
+| 3054 | 2374 | `minimon-applet-for-cosmic` | 0 | 0 | 3 | 2374 | — |
+| 3055 | 3766 | `minio` | 0 | 0 | 3 | 3766 | — |
+| 3056 | 8608 | `mips64-linux-gnu-glibc` | 0 | 0 | 3 | 8608 | — |
+| 3057 | 4207 | `miro-pdf-bin` | 0 | 0 | 3 | 4207 | — |
+| 3058 | 7585 | `misuzu-music-bin` | 0 | 0 | 3 | 7585 | — |
+| 3059 | 2980 | `mkinitcpio-wifi` | 0 | 0 | 3 | 2980 | — |
+| 3060 | 7607 | `mopidy-musicbox` | 0 | 0 | 3 | 7607 | — |
+| 3061 | 7420 | `motoc-git` | 0 | 0 | 3 | 7420 | — |
+| 3062 | 2854 | `mouse-debounce` | 0 | 0 | 3 | 2854 | — |
+| 3063 | 4952 | `mow-git` | 0 | 0 | 3 | 4952 | — |
+| 3064 | 6374 | `mpc-qt-bin` | 0 | 0 | 3 | 6374 | — |
+| 3065 | 4189 | `mpv-sponsorblock` | 0 | 0 | 3 | 4189 | — |
+| 3066 | 3160 | `mpvcut` | 0 | 0 | 3 | 3160 | — |
+| 3067 | 4807 | `mt7902-bluetooth-dkms-git` | 0 | 0 | 3 | 4807 | — |
+| 3068 | 3831 | `muse-sounds-manager-bin` | 0 | 0 | 3 | 3831 | — |
+| 3069 | 6744 | `music-player-bin` | 0 | 0 | 3 | 6744 | — |
+| 3070 | 3187 | `mved` | 0 | 0 | 3 | 3187 | — |
+| 3071 | 4951 | `mxw-git` | 0 | 0 | 3 | 4951 | — |
+| 3072 | 6778 | `nautilus-bluetooth` | 0 | 0 | 3 | 6778 | — |
+| 3073 | 4618 | `nautilus-code` | 0 | 0 | 3 | 4618 | — |
+| 3074 | 447 | `neo-matrix` | 0 | 0 | 3 | 447 | — |
+| 3075 | 246 | `nettui` | 0 | 0 | 3 | 246 | — |
+| 3076 | 5461 | `netwatch-tui` | 0 | 0 | 3 | 5461 | — |
+| 3077 | 2010 | `nginx-mainline-mod-brotli` | 0 | 0 | 3 | 2010 | — |
+| 3078 | 2745 | `nginx-mainline-mod-geoip2` | 0 | 0 | 3 | 2745 | — |
+| 3079 | 1392 | `nikode-bin` | 0 | 0 | 3 | 1392 | — |
+| 3080 | 2315 | `niri-sidebar-git` | 0 | 0 | 3 | 2315 | — |
+| 3081 | 4510 | `nirinit-git` | 0 | 0 | 3 | 4510 | — |
+| 3082 | 3817 | `nitrogen` | 0 | 0 | 3 | 3817 | — |
+| 3083 | 6607 | `nodejs-mapscii` | 0 | 0 | 3 | 6607 | — |
+| 3084 | 5197 | `nodejs-node-pre-gyp` | 0 | 0 | 3 | 5197 | — |
+| 3085 | 880 | `nodejs-ramadan-cli` | 0 | 0 | 3 | 880 | — |
+| 3086 | 4874 | `nodemcu-tool` | 0 | 0 | 3 | 4874 | — |
+| 3087 | 1151 | `nordvpn-gui-bin` | 0 | 0 | 3 | 1151 | — |
+| 3088 | 1574 | `notepadnext-bin` | 0 | 0 | 3 | 1574 | — |
+| 3089 | 4018 | `notify-complete` | 0 | 0 | 3 | 4018 | — |
+| 3090 | 3820 | `nucleus-cli` | 0 | 0 | 3 | 3820 | — |
+| 3091 | 8271 | `nuked-sc55` | 0 | 0 | 3 | 8271 | — |
+| 3092 | 2788 | `nvidia-535xx-utils` | 0 | 0 | 3 | 2788 | — |
+| 3093 | 5030 | `oama-bin` | 0 | 0 | 3 | 5030 | — |
+| 3094 | 6467 | `oberon-risc-emu-git` | 0 | 0 | 3 | 6467 | — |
+| 3095 | 4593 | `objdiff` | 0 | 0 | 3 | 4593 | — |
+| 3096 | 3244 | `obs-scrab` | 0 | 0 | 3 | 3244 | — |
+| 3097 | 1091 | `obs-wayland-hotkeys-git` | 0 | 0 | 3 | 1091 | — |
+| 3098 | 6260 | `ocaml-compiler-libs-repackaged` | 0 | 0 | 3 | 6260 | — |
+| 3099 | 8630 | `oh-my-posh` | 0 | 0 | 3 | 8630 | — |
+| 3100 | 5376 | `oh-my-zsh-powerline-theme-git` | 0 | 0 | 3 | 5376 | — |
+| 3101 | 1157 | `ollama-mlx-cuda13-bin` | 0 | 0 | 3 | 1157 | — |
+| 3102 | 2855 | `omarchy-vpn` | 0 | 0 | 3 | 2855 | — |
+| 3103 | 2857 | `omniget-bin` | 0 | 0 | 3 | 2857 | — |
+| 3104 | 1686 | `omniorb` | 0 | 0 | 3 | 1686 | — |
+| 3105 | 879 | `omnom-git` | 0 | 0 | 3 | 879 | — |
+| 3106 | 5470 | `op-cache-git` | 0 | 0 | 3 | 5470 | — |
+| 3107 | 8312 | `openbsd-netcat-tls` | 0 | 0 | 3 | 8312 | — |
+| 3108 | 876 | `openchamber` | 0 | 0 | 3 | 876 | — |
+| 3109 | 6594 | `openlens-bin` | 0 | 0 | 3 | 6594 | — |
+| 3110 | 8328 | `openradtool` | 0 | 0 | 3 | 8328 | — |
+| 3111 | 2948 | `openscq30-cli-bin` | 0 | 0 | 3 | 2948 | — |
+| 3112 | 1728 | `openutau` | 0 | 0 | 3 | 1728 | — |
+| 3113 | 6593 | `openzl` | 0 | 0 | 3 | 6593 | — |
+| 3114 | 3242 | `otf-texgyre-pagella-math` | 0 | 0 | 3 | 3242 | — |
+| 3115 | 444 | `otree` | 0 | 0 | 3 | 444 | — |
+| 3116 | 3898 | `ov-git` | 0 | 0 | 3 | 3898 | — |
+| 3117 | 7527 | `overskride-bin` | 0 | 0 | 3 | 7527 | — |
+| 3118 | 6147 | `owlry-plugin-media` | 0 | 0 | 3 | 6147 | — |
+| 3119 | 6144 | `owlry-plugin-ssh` | 0 | 0 | 3 | 6144 | — |
+| 3120 | 6150 | `owlry-plugin-systemd` | 0 | 0 | 3 | 6150 | — |
+| 3121 | 3271 | `oxygen-cursors-extra` | 0 | 0 | 3 | 3271 | — |
+| 3122 | 6489 | `oyo` | 0 | 0 | 3 | 6489 | — |
+| 3123 | 1551 | `packwiz-git` | 0 | 0 | 3 | 1551 | — |
+| 3124 | 2716 | `pam-ssh-agent` | 0 | 0 | 3 | 2716 | — |
+| 3125 | 8517 | `pawfetch-git` | 0 | 0 | 3 | 8517 | — |
+| 3126 | 252 | `pcloud-drive` | 0 | 0 | 3 | 252 | — |
+| 3127 | 1189 | `pear-desktop-bin` | 0 | 0 | 3 | 1189 | — |
+| 3128 | 2466 | `pencil-bin` | 0 | 0 | 3 | 2466 | — |
+| 3129 | 5418 | `pencil-dev-appimage` | 0 | 0 | 3 | 5418 | — |
+| 3130 | 1383 | `petbottle-bin` | 0 | 0 | 3 | 1383 | — |
+| 3131 | 2488 | `pgagent` | 0 | 0 | 3 | 2488 | — |
+| 3132 | 7407 | `pgdr` | 0 | 0 | 3 | 7407 | — |
+| 3133 | 5373 | `pidgin-extprefs` | 0 | 0 | 3 | 5373 | — |
+| 3134 | 3570 | `pidgin-libnotify` | 0 | 0 | 3 | 3570 | — |
+| 3135 | 1566 | `pince-bin` | 0 | 0 | 3 | 1566 | — |
+| 3136 | 7983 | `pipewire-module-xrdp` | 0 | 0 | 3 | 7983 | — |
+| 3137 | 6359 | `plasma6-applets-arch-update-notifier` | 0 | 0 | 3 | 6359 | — |
+| 3138 | 4375 | `pleaser` | 0 | 0 | 3 | 4375 | — |
+| 3139 | 5132 | `plexamp-appimage` | 0 | 0 | 3 | 5132 | — |
+| 3140 | 2461 | `pmount` | 0 | 0 | 3 | 2461 | — |
+| 3141 | 987 | `pokemmo` | 0 | 0 | 3 | 987 | — |
+| 3142 | 4140 | `portablemc-bin` | 0 | 0 | 3 | 4140 | — |
+| 3143 | 2951 | `poutine` | 0 | 0 | 3 | 2951 | — |
+| 3144 | 5182 | `ppd-cpu-boost` | 0 | 0 | 3 | 5182 | — |
+| 3145 | 1629 | `preload` | 0 | 0 | 3 | 1629 | — |
+| 3146 | 3964 | `preset` | 0 | 0 | 3 | 3964 | — |
+| 3147 | 4384 | `prex` | 0 | 0 | 3 | 4384 | — |
+| 3148 | 5251 | `prometheus-apcupsd-exporter` | 0 | 0 | 3 | 5251 | — |
+| 3149 | 684 | `promptfoo` | 0 | 0 | 3 | 684 | — |
+| 3150 | 5118 | `protonup-rs` | 0 | 0 | 3 | 5118 | — |
+| 3151 | 4768 | `ps3-disc-dumper-bin` | 0 | 0 | 3 | 4768 | — |
+| 3152 | 3731 | `pseint` | 0 | 0 | 3 | 3731 | — |
+| 3153 | 3999 | `pstate-frequency` | 0 | 0 | 3 | 3999 | — |
+| 3154 | 4354 | `ptui-bin` | 0 | 0 | 3 | 4354 | — |
+| 3155 | 3217 | `pulseaudio-control` | 0 | 0 | 3 | 3217 | — |
+| 3156 | 1146 | `punt` | 0 | 0 | 3 | 1146 | — |
+| 3157 | 4264 | `purple-gowhatsapp` | 0 | 0 | 3 | 4264 | — |
+| 3158 | 2618 | `pvetui` | 0 | 0 | 3 | 2618 | — |
+| 3159 | 5453 | `pwmenu-bin` | 0 | 0 | 3 | 5453 | — |
+| 3160 | 4165 | `python-bencode.py` | 0 | 0 | 3 | 4165 | — |
+| 3161 | 4393 | `python-funk` | 0 | 0 | 3 | 4393 | — |
+| 3162 | 7499 | `python-mariadb-connector` | 0 | 0 | 3 | 7499 | — |
+| 3163 | 3236 | `python-powerline-gitstatus` | 0 | 0 | 3 | 3236 | — |
+| 3164 | 4775 | `python-pythondialog` | 0 | 0 | 3 | 4775 | — |
+| 3165 | 543 | `python-steamgriddb` | 0 | 0 | 3 | 543 | — |
+| 3166 | 7575 | `python-zoekt-py-git` | 0 | 0 | 3 | 7575 | — |
+| 3167 | 7229 | `qbittorrent-clientblocker-git` | 0 | 0 | 3 | 7229 | — |
+| 3168 | 1378 | `qidi-studio-appimage` | 0 | 0 | 3 | 1378 | — |
+| 3169 | 4751 | `qogir-gtk-theme` | 0 | 0 | 3 | 4751 | — |
+| 3170 | 5313 | `qt5-datavis3d` | 0 | 0 | 3 | 5313 | — |
+| 3171 | 7947 | `quakewatch` | 0 | 0 | 3 | 7947 | — |
+| 3172 | 1761 | `r2modman-appimage` | 0 | 0 | 3 | 1761 | — |
+| 3173 | 6463 | `r5valkyrie-launcher-bin` | 0 | 0 | 3 | 6463 | — |
+| 3174 | 2627 | `r8127-dkms` | 0 | 0 | 3 | 2627 | — |
+| 3175 | 8573 | `radegast-ng` | 0 | 0 | 3 | 8573 | — |
+| 3176 | 2628 | `radii5-bin` | 0 | 0 | 3 | 2628 | — |
+| 3177 | 7948 | `ragnarwm` | 0 | 0 | 3 | 7948 | — |
+| 3178 | 7029 | `raindrop` | 0 | 0 | 3 | 7029 | — |
+| 3179 | 3439 | `rats-search-bin` | 0 | 0 | 3 | 3439 | — |
+| 3180 | 6158 | `reboot-to-windows` | 0 | 0 | 3 | 6158 | — |
+| 3181 | 4361 | `redu` | 0 | 0 | 3 | 4361 | — |
+| 3182 | 3699 | `reef` | 0 | 0 | 3 | 3699 | — |
+| 3183 | 133 | `reiserfsprogs` | 0 | 0 | 3 | 133 | — |
+| 3184 | 830 | `rename.pl` | 0 | 0 | 3 | 830 | — |
+| 3185 | 7047 | `resolute-bin` | 0 | 0 | 3 | 7047 | — |
+| 3186 | 6360 | `retoswap` | 0 | 0 | 3 | 6360 | — |
+| 3187 | 3679 | `rexit-git` | 0 | 0 | 3 | 3679 | — |
+| 3188 | 2631 | `rgx-cli-bin` | 0 | 0 | 3 | 2631 | — |
+| 3189 | 1305 | `riftbar-bin` | 0 | 0 | 3 | 1305 | — |
+| 3190 | 3704 | `rime-nushu` | 0 | 0 | 3 | 3704 | — |
+| 3191 | 7291 | `rimsort-git` | 0 | 0 | 3 | 7291 | — |
+| 3192 | 3771 | `rip-cli` | 0 | 0 | 3 | 3771 | — |
+| 3193 | 4394 | `ripsecrets` | 0 | 0 | 3 | 4394 | — |
+| 3194 | 7623 | `rivetui` | 0 | 0 | 3 | 7623 | — |
+| 3195 | 3413 | `rockbox-zig-bin` | 0 | 0 | 3 | 3413 | — |
+| 3196 | 7518 | `rockchip-mpp` | 0 | 0 | 3 | 7518 | — |
+| 3197 | 383 | `rtw88-dkms-git` | 0 | 0 | 3 | 383 | — |
+| 3198 | 4122 | `rtw89-dkms-git` | 0 | 0 | 3 | 4122 | — |
+| 3199 | 1293 | `ruffle-nightly-bin` | 0 | 0 | 3 | 1293 | — |
+| 3200 | 7022 | `run0-sudo-shim-git` | 0 | 0 | 3 | 7022 | — |
+| 3201 | 6699 | `rusticon` | 0 | 0 | 3 | 6699 | — |
+| 3202 | 5180 | `rustle-bin` | 0 | 0 | 3 | 5180 | — |
+| 3203 | 4399 | `ryelang-git` | 0 | 0 | 3 | 4399 | — |
+| 3204 | 3802 | `sacad` | 0 | 0 | 3 | 3802 | — |
+| 3205 | 6484 | `sb` | 0 | 0 | 3 | 6484 | — |
+| 3206 | 6482 | `sb-bin` | 0 | 0 | 3 | 6482 | — |
+| 3207 | 7781 | `scala-docs` | 0 | 0 | 3 | 7781 | — |
+| 3208 | 7782 | `scala-sources` | 0 | 0 | 3 | 7782 | — |
+| 3209 | 6244 | `schedctl` | 0 | 0 | 3 | 6244 | — |
+| 3210 | 4203 | `scrutiny` | 0 | 0 | 3 | 4203 | — |
+| 3211 | 4204 | `scrutiny-collector` | 0 | 0 | 3 | 4204 | — |
+| 3212 | 5414 | `seadrive-cli` | 0 | 0 | 3 | 5414 | — |
+| 3213 | 4687 | `selectdefaultapplication-git` | 0 | 0 | 3 | 4687 | — |
+| 3214 | 1135 | `setrixtui` | 0 | 0 | 3 | 1135 | — |
+| 3215 | 2978 | `shellman-bin` | 0 | 0 | 3 | 2978 | — |
+| 3216 | 7746 | `shiru-git` | 0 | 0 | 3 | 7746 | — |
+| 3217 | 2969 | `shopify-cli` | 0 | 0 | 3 | 2969 | — |
+| 3218 | 3377 | `sillytavern` | 0 | 0 | 3 | 3377 | — |
+| 3219 | 40 | `simplenote-electron-bin` | 0 | 0 | 3 | 40 | — |
+| 3220 | 1577 | `sing-box-ref1nd-git` | 0 | 0 | 3 | 1577 | — |
+| 3221 | 7296 | `sip4` | 0 | 0 | 3 | 7296 | — |
+| 3222 | 3162 | `sklauncher-bin` | 0 | 0 | 3 | 3162 | — |
+| 3223 | 7198 | `sle-suite-pro-git` | 0 | 0 | 3 | 7198 | — |
+| 3224 | 3296 | `smtk-obs-git` | 0 | 0 | 3 | 3296 | — |
+| 3225 | 3751 | `snapmaker-orca-appimage` | 0 | 0 | 3 | 3751 | — |
+| 3226 | 4634 | `somo` | 0 | 0 | 3 | 4634 | — |
+| 3227 | 6680 | `source2viewer-cli-bin` | 0 | 0 | 3 | 6680 | — |
+| 3228 | 2100 | `sourcegit-bin` | 0 | 0 | 3 | 2100 | — |
+| 3229 | 3719 | `spacebar-client-git` | 0 | 0 | 3 | 3719 | — |
+| 3230 | 1596 | `spotatui-bin` | 0 | 0 | 3 | 1596 | — |
+| 3231 | 1115 | `sqm-scripts` | 0 | 0 | 3 | 1115 | — |
+| 3232 | 3240 | `ssh3` | 0 | 0 | 3 | 3240 | — |
+| 3233 | 3241 | `ssh3-server` | 0 | 0 | 3 | 3241 | — |
+| 3234 | 1358 | `starc-appimage` | 0 | 0 | 3 | 1358 | — |
+| 3235 | 8239 | `stardrop-bin` | 0 | 0 | 3 | 8239 | — |
+| 3236 | 823 | `starsector-mod-manager-rust` | 0 | 0 | 3 | 823 | — |
+| 3237 | 7336 | `steamdepotdownloadergui-bin` | 0 | 0 | 3 | 7336 | — |
+| 3238 | 3524 | `steamfetch-bin` | 0 | 0 | 3 | 3524 | — |
+| 3239 | 8167 | `stfed` | 0 | 0 | 3 | 8167 | — |
+| 3240 | 7189 | `sticks-aur` | 0 | 0 | 3 | 7189 | — |
+| 3241 | 1461 | `stoat-desktop-bin` | 0 | 0 | 3 | 1461 | — |
+| 3242 | 820 | `strace-tui` | 0 | 0 | 3 | 820 | — |
+| 3243 | 1636 | `stringp` | 0 | 0 | 3 | 1636 | — |
+| 3244 | 819 | `structurizr` | 0 | 0 | 3 | 819 | — |
+| 3245 | 818 | `structurizr-git` | 0 | 0 | 3 | 818 | — |
+| 3246 | 4243 | `stylepak-git` | 0 | 0 | 3 | 4243 | — |
+| 3247 | 986 | `subtitleedit` | 0 | 0 | 3 | 986 | — |
+| 3248 | 7562 | `subtitleedit-cli-git` | 0 | 0 | 3 | 7562 | — |
+| 3249 | 3276 | `subtui-git` | 0 | 0 | 3 | 3276 | — |
+| 3250 | 816 | `supermodel` | 0 | 0 | 3 | 816 | — |
+| 3251 | 3772 | `supersonic-desktop-bin` | 0 | 0 | 3 | 3772 | — |
+| 3252 | 3957 | `suwayomi-server-bin` | 0 | 0 | 3 | 3957 | — |
+| 3253 | 5316 | `svg-term-cli` | 0 | 0 | 3 | 5316 | — |
+| 3254 | 4160 | `svt-jpeg-xs` | 0 | 0 | 3 | 4160 | — |
+| 3255 | 5465 | `swhook` | 0 | 0 | 3 | 5465 | — |
+| 3256 | 814 | `systemd-netns-git` | 0 | 0 | 3 | 814 | — |
+| 3257 | 5472 | `szsol-rs` | 0 | 0 | 3 | 5472 | — |
+| 3258 | 17 | `tableplus` | 0 | 0 | 3 | 17 | — |
+| 3259 | 5057 | `tacentview-bin` | 0 | 0 | 3 | 5057 | — |
+| 3260 | 6821 | `tapi-git` | 0 | 0 | 3 | 6821 | — |
+| 3261 | 7756 | `taskchampion-sync-server` | 0 | 0 | 3 | 7756 | — |
+| 3262 | 4209 | `taskwire-bin` | 0 | 0 | 3 | 4209 | — |
+| 3263 | 771 | `tcltls` | 0 | 0 | 3 | 771 | — |
+| 3264 | 4 | `teams-for-linux-bin` | 0 | 0 | 3 | 4 | — |
+| 3265 | 8279 | `tenere-bin` | 0 | 0 | 3 | 8279 | — |
+| 3266 | 4679 | `termframe-bin` | 0 | 0 | 3 | 4679 | — |
+| 3267 | 6307 | `termilyon` | 0 | 0 | 3 | 6307 | — |
+| 3268 | 3229 | `terminess-powerline-font-git` | 0 | 0 | 3 | 3229 | — |
+| 3269 | 6819 | `termtosvg` | 0 | 0 | 3 | 6819 | — |
+| 3270 | 392 | `terraria-server` | 0 | 0 | 3 | 392 | — |
+| 3271 | 2826 | `tg-ws-proxy-bin` | 0 | 0 | 3 | 2826 | — |
+| 3272 | 4647 | `tgpt-git` | 0 | 0 | 3 | 4647 | — |
+| 3273 | 2335 | `theclicker` | 0 | 0 | 3 | 2335 | — |
+| 3274 | 3402 | `thedude` | 0 | 0 | 3 | 3402 | — |
+| 3275 | 5386 | `themix-import-images-git` | 0 | 0 | 3 | 5386 | — |
+| 3276 | 2065 | `tidal-hifi-bin` | 0 | 0 | 3 | 2065 | — |
+| 3277 | 1936 | `todoist-appimage` | 0 | 0 | 3 | 1936 | — |
+| 3278 | 8620 | `topgrade-git` | 0 | 0 | 3 | 8620 | — |
+| 3279 | 4350 | `touchportal-appimage` | 0 | 0 | 3 | 4350 | — |
+| 3280 | 4636 | `transgender` | 0 | 0 | 3 | 4636 | — |
+| 3281 | 3230 | `transset-df` | 0 | 0 | 3 | 3230 | — |
+| 3282 | 6475 | `trbbfi-git` | 0 | 0 | 3 | 6475 | — |
+| 3283 | 3571 | `trezor-suite-bin` | 0 | 0 | 3 | 3571 | — |
+| 3284 | 7718 | `trickle-git` | 0 | 0 | 3 | 7718 | — |
+| 3285 | 6136 | `try-rs` | 0 | 0 | 3 | 6136 | — |
+| 3286 | 7355 | `tsm-bin` | 0 | 0 | 3 | 7355 | — |
+| 3287 | 500 | `ttf-vista-fonts` | 0 | 0 | 3 | 500 | — |
+| 3288 | 2663 | `ttune` | 0 | 0 | 3 | 2663 | — |
+| 3289 | 4845 | `tungsten` | 0 | 0 | 3 | 4845 | — |
+| 3290 | 7979 | `typeracer` | 0 | 0 | 3 | 7979 | — |
+| 3291 | 36 | `typora` | 0 | 0 | 3 | 36 | — |
+| 3292 | 5085 | `unciv-bin` | 0 | 0 | 3 | 5085 | — |
+| 3293 | 7266 | `unifi` | 0 | 0 | 3 | 7266 | — |
+| 3294 | 7543 | `urnetwork-provider-git` | 0 | 0 | 3 | 7543 | — |
+| 3295 | 1676 | `usb-tree-app-bin` | 0 | 0 | 3 | 1676 | — |
+| 3296 | 1181 | `vanta-bin` | 0 | 0 | 3 | 1181 | — |
+| 3297 | 7565 | `vapoursynth-plugin-vship-amd-git` | 0 | 0 | 3 | 7565 | — |
+| 3298 | 7403 | `vapoursynth-tools-genstubs-git` | 0 | 0 | 3 | 7403 | — |
+| 3299 | 6804 | `veracrypt-console-bin` | 0 | 0 | 3 | 6804 | — |
+| 3300 | 695 | `video-compare` | 0 | 0 | 3 | 695 | — |
+| 3301 | 7453 | `vim-wakatime-git` | 0 | 0 | 3 | 7453 | — |
+| 3302 | 4360 | `vintagestory-server` | 0 | 0 | 3 | 4360 | — |
+| 3303 | 8227 | `visual-paradigm` | 0 | 0 | 3 | 8227 | — |
+| 3304 | 6327 | `vivaldi-snapshot-ffmpeg-codecs` | 0 | 0 | 3 | 6327 | — |
+| 3305 | 2007 | `vpcs` | 0 | 0 | 3 | 2007 | — |
+| 3306 | 7652 | `vrk-mpollux-digisign-client` | 0 | 0 | 3 | 7652 | — |
+| 3307 | 3994 | `vrms-arch` | 0 | 0 | 3 | 3994 | — |
+| 3308 | 1737 | `vt-cli` | 0 | 0 | 3 | 1737 | — |
+| 3309 | 7220 | `vtf-thumbnailer-bin` | 0 | 0 | 3 | 7220 | — |
+| 3310 | 569 | `vvenc` | 0 | 0 | 3 | 569 | — |
+| 3311 | 6548 | `waifu` | 0 | 0 | 3 | 6548 | — |
+| 3312 | 808 | `wallrust` | 0 | 0 | 3 | 808 | — |
+| 3313 | 6634 | `wasabi-wallet-bin` | 0 | 0 | 3 | 6634 | — |
+| 3314 | 7985 | `wasmrun-bin` | 0 | 0 | 3 | 7985 | — |
+| 3315 | 7579 | `way-edges-bin` | 0 | 0 | 3 | 7579 | — |
+| 3316 | 8050 | `webcord` | 0 | 0 | 3 | 8050 | — |
+| 3317 | 4357 | `wg-netns` | 0 | 0 | 3 | 4357 | — |
+| 3318 | 437 | `whyis` | 0 | 0 | 3 | 437 | — |
+| 3319 | 2677 | `windsurf.vim-git` | 0 | 0 | 3 | 2677 | — |
+| 3320 | 3302 | `winestreamproxy` | 0 | 0 | 3 | 3302 | — |
+| 3321 | 4680 | `winscp` | 0 | 0 | 3 | 4680 | — |
+| 3322 | 7303 | `wl-clipboard-rs` | 0 | 0 | 3 | 7303 | — |
+| 3323 | 7989 | `wordlist-git` | 0 | 0 | 3 | 7989 | — |
+| 3324 | 7560 | `worldpainter` | 0 | 0 | 3 | 7560 | — |
+| 3325 | 4995 | `wowup` | 0 | 0 | 3 | 4995 | — |
+| 3326 | 4996 | `wowup-cf` | 0 | 0 | 3 | 4996 | — |
+| 3327 | 3918 | `wperf` | 0 | 0 | 3 | 3918 | — |
+| 3328 | 5451 | `wrkflw-bin` | 0 | 0 | 3 | 5451 | — |
+| 3329 | 7361 | `wttrbar-bin` | 0 | 0 | 3 | 7361 | — |
+| 3330 | 6507 | `x86-64-level` | 0 | 0 | 3 | 6507 | — |
+| 3331 | 5349 | `xbindkeys_config-gtk2` | 0 | 0 | 3 | 5349 | — |
+| 3332 | 3739 | `xcman` | 0 | 0 | 3 | 3739 | — |
+| 3333 | 1265 | `xdelta3-cross-gui-bin` | 0 | 0 | 3 | 1265 | — |
+| 3334 | 4578 | `xdgctl-git` | 0 | 0 | 3 | 4578 | — |
+| 3335 | 2798 | `xpytile-git` | 0 | 0 | 3 | 2798 | — |
+| 3336 | 779 | `xsos` | 0 | 0 | 3 | 779 | — |
+| 3337 | 7955 | `xterminal-bin` | 0 | 0 | 3 | 7955 | — |
+| 3338 | 3226 | `xwinwrap-0.9-bin` | 0 | 0 | 3 | 3226 | — |
+| 3339 | 944 | `yamtrack` | 0 | 0 | 3 | 944 | — |
+| 3340 | 5153 | `yash` | 0 | 0 | 3 | 5153 | — |
+| 3341 | 4742 | `yay-git` | 0 | 0 | 3 | 4742 | — |
+| 3342 | 6633 | `yaycache` | 0 | 0 | 3 | 6633 | — |
+| 3343 | 3792 | `ynote-desktop-bin` | 0 | 0 | 3 | 3792 | — |
+| 3344 | 2682 | `youtube-music-cli-bin` | 0 | 0 | 3 | 2682 | — |
+| 3345 | 6205 | `yoyo` | 0 | 0 | 3 | 6205 | — |
+| 3346 | 7972 | `ytify` | 0 | 0 | 3 | 7972 | — |
+| 3347 | 4791 | `yubikey-agent` | 0 | 0 | 3 | 4791 | — |
+| 3348 | 3812 | `zaread-git` | 0 | 0 | 3 | 3812 | — |
+| 3349 | 4978 | `zebar-bin` | 0 | 0 | 3 | 4978 | — |
+| 3350 | 8597 | `zen-adblocker-bin` | 0 | 0 | 3 | 8597 | — |
+| 3351 | 3321 | `zenmonitor3-git` | 0 | 0 | 3 | 3321 | — |
+| 3352 | 6366 | `zeptofetch` | 0 | 0 | 3 | 6366 | — |
+| 3353 | 3724 | `zerobrew-bin` | 0 | 0 | 3 | 3724 | — |
+| 3354 | 6604 | `zfs-dkms-staging-git` | 0 | 0 | 3 | 6604 | — |
+| 3355 | 3515 | `zgrab2` | 0 | 0 | 3 | 3515 | — |
+| 3356 | 6194 | `zig-waybar-contrib` | 0 | 0 | 3 | 6194 | — |
+| 3357 | 4540 | `zombie` | 0 | 0 | 3 | 4540 | — |
+| 3358 | 3228 | `zrepl-git` | 0 | 0 | 3 | 3228 | — |
+| 3359 | 5226 | `zur` | 0 | 0 | 3 | 5226 | — |
+| 3360 | 2045 | `1password` | 0 | 0 | 4 | 2045 | — |
+| 3361 | 6 | `1password-beta` | 0 | 0 | 4 | 6 | — |
+| 3362 | 4915 | `3dstool` | 0 | 0 | 4 | 4915 | — |
+| 3363 | 2112 | `7zkpxc` | 0 | 0 | 4 | 2112 | — |
+| 3364 | 2395 | `8bitdo-ultimate-controller-udev` | 0 | 0 | 4 | 2395 | — |
+| 3365 | 3333 | `adwaita-qt6-git` | 0 | 0 | 4 | 3333 | — |
+| 3366 | 6470 | `aegisub-dependency-control` | 0 | 0 | 4 | 6470 | — |
+| 3367 | 3937 | `alacritty-use-theme-with-gnome-darkmode-git` | 0 | 0 | 4 | 3937 | — |
+| 3368 | 7457 | `alice2-bin` | 0 | 0 | 4 | 7457 | — |
+| 3369 | 3164 | `alpemix-bin` | 0 | 0 | 4 | 3164 | — |
+| 3370 | 3552 | `amd-ucode-git` | 0 | 0 | 4 | 3552 | — |
+| 3371 | 8245 | `android-messages-desktop` | 0 | 0 | 4 | 8245 | — |
+| 3372 | 4251 | `ankama-launcher` | 0 | 0 | 4 | 4251 | — |
+| 3373 | 2523 | `ansinews` | 0 | 0 | 4 | 2523 | — |
+| 3374 | 2524 | `antiafk-rbx-sober` | 0 | 0 | 4 | 2524 | — |
+| 3375 | 1292 | `antigravity-tools-bin` | 0 | 0 | 4 | 1292 | — |
+| 3376 | 4455 | `apifox-appimage` | 0 | 0 | 4 | 4455 | — |
+| 3377 | 3639 | `apifox-bin` | 0 | 0 | 4 | 3639 | — |
+| 3378 | 745 | `apparmor.d` | 0 | 0 | 4 | 745 | — |
+| 3379 | 4147 | `apparmor.d-git` | 0 | 0 | 4 | 4147 | — |
+| 3380 | 744 | `apparmor.d.enforced` | 0 | 0 | 4 | 744 | — |
+| 3381 | 1431 | `arch-upgrader-git` | 0 | 0 | 4 | 1431 | — |
+| 3382 | 3696 | `archforge-git` | 0 | 0 | 4 | 3696 | — |
+| 3383 | 7301 | `archium` | 0 | 0 | 4 | 7301 | — |
+| 3384 | 1544 | `arduino-avr-core` | 0 | 0 | 4 | 1544 | — |
+| 3385 | 2527 | `astrbot-git` | 0 | 0 | 4 | 2527 | — |
+| 3386 | 8299 | `aur-check-updates-bin` | 0 | 0 | 4 | 8299 | — |
+| 3387 | 498 | `aurvote-utils-git` | 0 | 0 | 4 | 498 | — |
+| 3388 | 2750 | `autoaspm-git` | 0 | 0 | 4 | 2750 | — |
+| 3389 | 1760 | `avbroot` | 0 | 0 | 4 | 1760 | — |
+| 3390 | 1240 | `banjorecomp-bin` | 0 | 0 | 4 | 1240 | — |
+| 3391 | 3654 | `battinfo-git` | 0 | 0 | 4 | 3654 | — |
+| 3392 | 16 | `beekeeper-studio-bin` | 0 | 0 | 4 | 16 | — |
+| 3393 | 2064 | `beeper-v4-bin` | 0 | 0 | 4 | 2064 | — |
+| 3394 | 8225 | `bibtex-tidy` | 0 | 0 | 4 | 8225 | — |
+| 3395 | 3257 | `biglybt` | 0 | 0 | 4 | 3257 | — |
+| 3396 | 1712 | `bilibili-bin` | 0 | 0 | 4 | 1712 | — |
+| 3397 | 6390 | `bisq2` | 0 | 0 | 4 | 6390 | — |
+| 3398 | 3256 | `bitwarden-rofi-git` | 0 | 0 | 4 | 3256 | — |
+| 3399 | 6290 | `bleachbit-admin` | 0 | 0 | 4 | 6290 | — |
+| 3400 | 7749 | `bluetuith` | 0 | 0 | 4 | 7749 | — |
+| 3401 | 3205 | `bluetuith-git` | 0 | 0 | 4 | 3205 | — |
+| 3402 | 3627 | `boxbuddy` | 0 | 0 | 4 | 3627 | — |
+| 3403 | 5357 | `breeze-hacked-cursor-theme-git` | 0 | 0 | 4 | 5357 | — |
+| 3404 | 3694 | `bsky-electron-git` | 0 | 0 | 4 | 3694 | — |
+| 3405 | 2877 | `btrfs-file-history-git` | 0 | 0 | 4 | 2877 | — |
+| 3406 | 4106 | `caddy-he` | 0 | 0 | 4 | 4106 | — |
+| 3407 | 5229 | `canvas-downloader` | 0 | 0 | 4 | 5229 | — |
+| 3408 | 6590 | `carl-calendar` | 0 | 0 | 4 | 6590 | — |
+| 3409 | 1429 | `castblock-git` | 0 | 0 | 4 | 1429 | — |
+| 3410 | 6271 | `catbox-git` | 0 | 0 | 4 | 6271 | — |
+| 3411 | 4098 | `cato-client-bin` | 0 | 0 | 4 | 4098 | — |
+| 3412 | 2073 | `ccraw` | 0 | 0 | 4 | 2073 | — |
+| 3413 | 8562 | `chameleos-git` | 0 | 0 | 4 | 8562 | — |
+| 3414 | 6518 | `chokidar-cli` | 0 | 0 | 4 | 6518 | — |
+| 3415 | 5026 | `clang-include-graph-bin` | 0 | 0 | 4 | 5026 | — |
+| 3416 | 8002 | `clash-verge-rev-autobuild-bin` | 0 | 0 | 4 | 8002 | — |
+| 3417 | 3732 | `clipsync-git` | 0 | 0 | 4 | 3732 | — |
+| 3418 | 5167 | `codetantra-sea` | 0 | 0 | 4 | 5167 | — |
+| 3419 | 5501 | `compendium` | 0 | 0 | 4 | 5501 | — |
+| 3420 | 6516 | `concurrently` | 0 | 0 | 4 | 6516 | — |
+| 3421 | 7497 | `connect-tunnel` | 0 | 0 | 4 | 7497 | — |
+| 3422 | 3671 | `continuwuity-bin` | 0 | 0 | 4 | 3671 | — |
+| 3423 | 6772 | `cosmic-ext-applet-logomenu-git` | 0 | 0 | 4 | 6772 | — |
+| 3424 | 926 | `cowtotext` | 0 | 0 | 4 | 926 | — |
+| 3425 | 2799 | `crc-bin` | 0 | 0 | 4 | 2799 | — |
+| 3426 | 4390 | `css-inline` | 0 | 0 | 4 | 4390 | — |
+| 3427 | 4249 | `deepfilternet-demos-git` | 0 | 0 | 4 | 4249 | — |
+| 3428 | 5150 | `detect-it-easy-bin` | 0 | 0 | 4 | 5150 | — |
+| 3429 | 4017 | `dev-janitor-bin` | 0 | 0 | 4 | 4017 | — |
+| 3430 | 2540 | `devtunnel-cli-bin` | 0 | 0 | 4 | 2540 | — |
+| 3431 | 3114 | `dingtalk-bin` | 0 | 0 | 4 | 3114 | — |
+| 3432 | 2090 | `discord_arch_electron` | 0 | 0 | 4 | 2090 | — |
+| 3433 | 3254 | `docx2tex` | 0 | 0 | 4 | 3254 | — |
+| 3434 | 3476 | `dodo-bin` | 0 | 0 | 4 | 3476 | — |
+| 3435 | 7337 | `doppler-cli` | 0 | 0 | 4 | 7337 | — |
+| 3436 | 6793 | `doublecmd-admin` | 0 | 0 | 4 | 6793 | — |
+| 3437 | 5490 | `dpibreak-git` | 0 | 0 | 4 | 5490 | — |
+| 3438 | 33 | `drawio-desktop-bin` | 0 | 0 | 4 | 33 | — |
+| 3439 | 1419 | `drawio-live-bin` | 0 | 0 | 4 | 1419 | — |
+| 3440 | 2545 | `ds5-edge-relay` | 0 | 0 | 4 | 2545 | — |
+| 3441 | 2898 | `easy-switcher-git` | 0 | 0 | 4 | 2898 | — |
+| 3442 | 2546 | `easyeffects-bundy01-presets` | 0 | 0 | 4 | 2546 | — |
+| 3443 | 7957 | `ect` | 0 | 0 | 4 | 7957 | — |
+| 3444 | 1283 | `elide-bin` | 0 | 0 | 4 | 1283 | — |
+| 3445 | 4012 | `enyo-launcher` | 0 | 0 | 4 | 4012 | — |
+| 3446 | 4547 | `eso-addons-manager` | 0 | 0 | 4 | 4547 | — |
+| 3447 | 3398 | `eve-ng-integration` | 0 | 0 | 4 | 3398 | — |
+| 3448 | 669 | `execstack` | 0 | 0 | 4 | 669 | — |
+| 3449 | 4943 | `fackr` | 0 | 0 | 4 | 4943 | — |
+| 3450 | 5053 | `fan2go-git` | 0 | 0 | 4 | 5053 | — |
+| 3451 | 8284 | `fastchess` | 0 | 0 | 4 | 8284 | — |
+| 3452 | 8203 | `fastrace` | 0 | 0 | 4 | 8203 | — |
+| 3453 | 7256 | `fchat-horizon-bin` | 0 | 0 | 4 | 7256 | — |
+| 3454 | 7897 | `fcitx5-meta` | 0 | 0 | 4 | 7897 | — |
+| 3455 | 1606 | `feishu-bin` | 0 | 0 | 4 | 1606 | — |
+| 3456 | 7984 | `feluda-bin` | 0 | 0 | 4 | 7984 | — |
+| 3457 | 6658 | `fennel-ls` | 0 | 0 | 4 | 6658 | — |
+| 3458 | 7014 | `ffqueue-git` | 0 | 0 | 4 | 7014 | — |
+| 3459 | 3599 | `ffstudio-bin` | 0 | 0 | 4 | 3599 | — |
+| 3460 | 448 | `ffvship` | 0 | 0 | 4 | 448 | — |
+| 3461 | 4903 | `filecentipede-bin` | 0 | 0 | 4 | 4903 | — |
+| 3462 | 7433 | `finalmouse-cli` | 0 | 0 | 4 | 7433 | — |
+| 3463 | 4716 | `fish-lsp-git` | 0 | 0 | 4 | 4716 | — |
+| 3464 | 3548 | `flclash-bin` | 0 | 0 | 4 | 3548 | — |
+| 3465 | 4692 | `flexo` | 0 | 0 | 4 | 4692 | — |
+| 3466 | 6834 | `foobard-git` | 0 | 0 | 4 | 6834 | — |
+| 3467 | 6222 | `footfetch-git` | 0 | 0 | 4 | 6222 | — |
+| 3468 | 7690 | `fortune-mod-off` | 0 | 0 | 4 | 7690 | — |
+| 3469 | 2555 | `fql` | 0 | 0 | 4 | 2555 | — |
+| 3470 | 48 | `franz` | 0 | 0 | 4 | 48 | — |
+| 3471 | 2110 | `freesmlauncher-bin` | 0 | 0 | 4 | 2110 | — |
+| 3472 | 1914 | `freetube` | 0 | 0 | 4 | 1914 | — |
+| 3473 | 4260 | `fulcrum` | 0 | 0 | 4 | 4260 | — |
+| 3474 | 248 | `fw16-kbd-uleds-git` | 0 | 0 | 4 | 248 | — |
+| 3475 | 1998 | `ganttproject` | 0 | 0 | 4 | 1998 | — |
+| 3476 | 796 | `gcn64tools-git` | 0 | 0 | 4 | 796 | — |
+| 3477 | 6250 | `gcsfuse` | 0 | 0 | 4 | 6250 | — |
+| 3478 | 6450 | `gdb-common-git` | 0 | 0 | 4 | 6450 | — |
+| 3479 | 2559 | `gf2` | 0 | 0 | 4 | 2559 | — |
+| 3480 | 3406 | `ghc9.12-bin` | 0 | 0 | 4 | 3406 | — |
+| 3481 | 4985 | `ghdl-yosys-plugin-git` | 0 | 0 | 4 | 4985 | — |
+| 3482 | 2712 | `gimp-plugin-batcher-git` | 0 | 0 | 4 | 2712 | — |
+| 3483 | 2696 | `gitfourchette-bin` | 0 | 0 | 4 | 2696 | — |
+| 3484 | 538 | `gitlab-ci-local` | 0 | 0 | 4 | 538 | — |
+| 3485 | 3297 | `gj-git` | 0 | 0 | 4 | 3297 | — |
+| 3486 | 5379 | `gnome-shell-extension-dash-to-panel-git` | 0 | 0 | 4 | 5379 | — |
+| 3487 | 4512 | `go-hass-agent` | 0 | 0 | 4 | 4512 | — |
+| 3488 | 6488 | `godots-git` | 0 | 0 | 4 | 6488 | — |
+| 3489 | 7381 | `goldwarden` | 0 | 0 | 4 | 7381 | — |
+| 3490 | 2843 | `gosh-fetch-bin` | 0 | 0 | 4 | 2843 | — |
+| 3491 | 2834 | `grimatrix-git` | 0 | 0 | 4 | 2834 | — |
+| 3492 | 903 | `guiless-bing-search` | 0 | 0 | 4 | 903 | — |
+| 3493 | 902 | `gummibbs` | 0 | 0 | 4 | 902 | — |
+| 3494 | 7743 | `haveno` | 0 | 0 | 4 | 7743 | — |
+| 3495 | 1623 | `headroom-bin` | 0 | 0 | 4 | 1623 | — |
+| 3496 | 7251 | `headsetstatus` | 0 | 0 | 4 | 7251 | — |
+| 3497 | 2849 | `headson` | 0 | 0 | 4 | 2849 | — |
+| 3498 | 6508 | `hexecute` | 0 | 0 | 4 | 6508 | — |
+| 3499 | 2785 | `histui-bin` | 0 | 0 | 4 | 2785 | — |
+| 3500 | 5405 | `hotshots-git` | 0 | 0 | 4 | 5405 | — |
+| 3501 | 6195 | `hulios-git` | 0 | 0 | 4 | 6195 | — |
+| 3502 | 5227 | `hyde` | 0 | 0 | 4 | 5227 | — |
+| 3503 | 1469 | `hyperheadset-git` | 0 | 0 | 4 | 1469 | — |
+| 3504 | 1127 | `hyprsnow` | 0 | 0 | 4 | 1127 | — |
+| 3505 | 2759 | `i3a` | 0 | 0 | 4 | 2759 | — |
+| 3506 | 2863 | `icebg-git` | 0 | 0 | 4 | 2863 | — |
+| 3507 | 7638 | `icon-git` | 0 | 0 | 4 | 7638 | — |
+| 3508 | 3136 | `icons-in-terminal-git` | 0 | 0 | 4 | 3136 | — |
+| 3509 | 3000 | `icu77` | 0 | 0 | 4 | 3000 | — |
+| 3510 | 9 | `insomnia-bin` | 0 | 0 | 4 | 9 | — |
+| 3511 | 1622 | `insomnium-bin` | 0 | 0 | 4 | 1622 | — |
+| 3512 | 3901 | `intermodal` | 0 | 0 | 4 | 3901 | — |
+| 3513 | 1118 | `isfree` | 0 | 0 | 4 | 1118 | — |
+| 3514 | 970 | `jack_mixer_cc` | 0 | 0 | 4 | 970 | — |
+| 3515 | 6127 | `jackett-bin` | 0 | 0 | 4 | 6127 | — |
+| 3516 | 6547 | `jan-appimage` | 0 | 0 | 4 | 6547 | — |
+| 3517 | 5168 | `jitsi-meet` | 0 | 0 | 4 | 5168 | — |
+| 3518 | 4568 | `jivexdv-bin` | 0 | 0 | 4 | 4568 | — |
+| 3519 | 1682 | `jpu-bin` | 0 | 0 | 4 | 1682 | — |
+| 3520 | 6369 | `kairo` | 0 | 0 | 4 | 6369 | — |
+| 3521 | 5074 | `kchmviewer` | 0 | 0 | 4 | 5074 | — |
+| 3522 | 5095 | `kdotool` | 0 | 0 | 4 | 5095 | — |
+| 3523 | 6491 | `keybase-bin` | 0 | 0 | 4 | 6491 | — |
+| 3524 | 3394 | `konfigkoll-git` | 0 | 0 | 4 | 3394 | — |
+| 3525 | 1932 | `kopia` | 0 | 0 | 4 | 1932 | — |
+| 3526 | 7635 | `kraftkit-git` | 0 | 0 | 4 | 7635 | — |
+| 3527 | 2821 | `ksteamtrayicon` | 0 | 0 | 4 | 2821 | — |
+| 3528 | 2955 | `ktxutils-git` | 0 | 0 | 4 | 2955 | — |
+| 3529 | 3490 | `kvm-configurator` | 0 | 0 | 4 | 3490 | — |
+| 3530 | 6375 | `kwin-effect-rounded-corners` | 0 | 0 | 4 | 6375 | — |
+| 3531 | 3971 | `ldtk-bin` | 0 | 0 | 4 | 3971 | — |
+| 3532 | 1729 | `legcord-git` | 0 | 0 | 4 | 1729 | — |
+| 3533 | 4351 | `lenovo-wwan-unlock` | 0 | 0 | 4 | 4351 | — |
+| 3534 | 2442 | `lib32-libfdk-aac` | 0 | 0 | 4 | 2442 | — |
+| 3535 | 6215 | `lib32-libvpx1.10` | 0 | 0 | 4 | 6215 | — |
+| 3536 | 2487 | `lib32-zvbi` | 0 | 0 | 4 | 2487 | — |
+| 3537 | 6736 | `libpamtpmpin` | 0 | 0 | 4 | 6736 | — |
+| 3538 | 5421 | `libsmbios-git` | 0 | 0 | 4 | 5421 | — |
+| 3539 | 4026 | `libxeddsa-git` | 0 | 0 | 4 | 4026 | — |
+| 3540 | 4193 | `linux-enable-ir-emitter-beta` | 0 | 0 | 4 | 4193 | — |
+| 3541 | 3550 | `linux-firmware-whence-git` | 0 | 0 | 4 | 3550 | — |
+| 3542 | 2869 | `llvm-libunwind` | 0 | 0 | 4 | 2869 | — |
+| 3543 | 8345 | `logisim-ita-bin` | 0 | 0 | 4 | 8345 | — |
+| 3544 | 3309 | `loliashizuku-bin` | 0 | 0 | 4 | 3309 | — |
+| 3545 | 1152 | `losslesscut-bin` | 0 | 0 | 4 | 1152 | — |
+| 3546 | 973 | `lotus-lang` | 0 | 0 | 4 | 973 | — |
+| 3547 | 3247 | `lsdesktopf` | 0 | 0 | 4 | 3247 | — |
+| 3548 | 8583 | `lspx-git` | 0 | 0 | 4 | 8583 | — |
+| 3549 | 2133 | `lucidglyph` | 0 | 0 | 4 | 2133 | — |
+| 3550 | 7408 | `lxqt-panel-tool-git` | 0 | 0 | 4 | 7408 | — |
+| 3551 | 7418 | `magika` | 0 | 0 | 4 | 7418 | — |
+| 3552 | 1223 | `mailspring-bin` | 0 | 0 | 4 | 1223 | — |
+| 3553 | 6421 | `make-your-choice` | 0 | 0 | 4 | 6421 | — |
+| 3554 | 4600 | `manga-tui` | 0 | 0 | 4 | 4600 | — |
+| 3555 | 2995 | `mangayomi-linux` | 0 | 0 | 4 | 2995 | — |
+| 3556 | 8580 | `mari0-git` | 0 | 0 | 4 | 8580 | — |
+| 3557 | 361 | `matlab-mpm` | 0 | 0 | 4 | 361 | — |
+| 3558 | 8606 | `mindustry` | 0 | 0 | 4 | 8606 | — |
+| 3559 | 8607 | `mindustry-server` | 0 | 0 | 4 | 8607 | — |
+| 3560 | 7544 | `minisystool` | 0 | 0 | 4 | 7544 | — |
+| 3561 | 1019 | `mommy-git` | 0 | 0 | 4 | 1019 | — |
+| 3562 | 1510 | `mozc-ut` | 0 | 0 | 4 | 1510 | — |
+| 3563 | 6469 | `mrunner` | 0 | 0 | 4 | 6469 | — |
+| 3564 | 2764 | `mtk-uartboot-rs` | 0 | 0 | 4 | 2764 | — |
+| 3565 | 2823 | `multibg-wayland` | 0 | 0 | 4 | 2823 | — |
+| 3566 | 2052 | `muon_decoder` | 0 | 0 | 4 | 2052 | — |
+| 3567 | 1780 | `myxer-git` | 0 | 0 | 4 | 1780 | — |
+| 3568 | 1491 | `nacrypt` | 0 | 0 | 4 | 1491 | — |
+| 3569 | 3167 | `nanoclaw-git` | 0 | 0 | 4 | 3167 | — |
+| 3570 | 3779 | `nanocoder` | 0 | 0 | 4 | 3779 | — |
+| 3571 | 7195 | `natmap` | 0 | 0 | 4 | 7195 | — |
+| 3572 | 6676 | `natmap-git` | 0 | 0 | 4 | 6676 | — |
+| 3573 | 884 | `ncmpcpp-album-cover-git` | 0 | 0 | 4 | 884 | — |
+| 3574 | 8214 | `ndeftool` | 0 | 0 | 4 | 8214 | — |
+| 3575 | 566 | `neoleo` | 0 | 0 | 4 | 566 | — |
+| 3576 | 1534 | `nerd-fonts-apple` | 0 | 0 | 4 | 1534 | — |
+| 3577 | 1226 | `netbird-ui-bin` | 0 | 0 | 4 | 1226 | — |
+| 3578 | 1258 | `nexusmods-app-bin` | 0 | 0 | 4 | 1258 | — |
+| 3579 | 2752 | `nginx-mainline-mod-zstd` | 0 | 0 | 4 | 2752 | — |
+| 3580 | 6670 | `nginx-mod-zstd` | 0 | 0 | 4 | 6670 | — |
+| 3581 | 7231 | `ngrrram-git` | 0 | 0 | 4 | 7231 | — |
+| 3582 | 7254 | `niri-settings-git` | 0 | 0 | 4 | 7254 | — |
+| 3583 | 7325 | `nodejs-nativefier` | 0 | 0 | 4 | 7325 | — |
+| 3584 | 4219 | `nodejs-node-red` | 0 | 0 | 4 | 4219 | — |
+| 3585 | 8584 | `nonraid-git` | 0 | 0 | 4 | 8584 | — |
+| 3586 | 1784 | `nutstore` | 0 | 0 | 4 | 1784 | — |
+| 3587 | 8333 | `nvchad-git` | 0 | 0 | 4 | 8333 | — |
+| 3588 | 2602 | `nve` | 0 | 0 | 4 | 2602 | — |
+| 3589 | 7709 | `nvidia-340xx` | 0 | 0 | 4 | 7709 | — |
+| 3590 | 2790 | `nvidia-535xx-dkms` | 0 | 0 | 4 | 2790 | — |
+| 3591 | 4332 | `nvimpager` | 0 | 0 | 4 | 4332 | — |
+| 3592 | 4439 | `nwdiag` | 0 | 0 | 4 | 4439 | — |
+| 3593 | 2324 | `obs-pwvideo` | 0 | 0 | 4 | 2324 | — |
+| 3594 | 3245 | `obs-vnc` | 0 | 0 | 4 | 3245 | — |
+| 3595 | 6298 | `oddmu-git` | 0 | 0 | 4 | 6298 | — |
+| 3596 | 6398 | `ogdf` | 0 | 0 | 4 | 6398 | — |
+| 3597 | 6397 | `ogdf-docs` | 0 | 0 | 4 | 6397 | — |
+| 3598 | 7216 | `ollamacode` | 0 | 0 | 4 | 7216 | — |
+| 3599 | 4953 | `onionspray` | 0 | 0 | 4 | 4953 | — |
+| 3600 | 2604 | `oniri` | 0 | 0 | 4 | 2604 | — |
+| 3601 | 472 | `oniux` | 0 | 0 | 4 | 472 | — |
+| 3602 | 878 | `onset` | 0 | 0 | 4 | 878 | — |
+| 3603 | 7776 | `opencollada` | 0 | 0 | 4 | 7776 | — |
+| 3604 | 3531 | `openlinkhub-bin` | 0 | 0 | 4 | 3531 | — |
+| 3605 | 2949 | `openscq30-gui-bin` | 0 | 0 | 4 | 2949 | — |
+| 3606 | 2313 | `opentubex-git` | 0 | 0 | 4 | 2313 | — |
+| 3607 | 3863 | `opentyrian2000` | 0 | 0 | 4 | 3863 | — |
+| 3608 | 1530 | `oscgoesbrrr` | 0 | 0 | 4 | 1530 | — |
+| 3609 | 4948 | `otf-font-awesome-pro` | 0 | 0 | 4 | 4948 | — |
+| 3610 | 6527 | `otoclone` | 0 | 0 | 4 | 6527 | — |
+| 3611 | 6141 | `owlry-plugin-clipboard` | 0 | 0 | 4 | 6141 | — |
+| 3612 | 6140 | `owlry-plugin-emoji` | 0 | 0 | 4 | 6140 | — |
+| 3613 | 3939 | `oxicord-bin` | 0 | 0 | 4 | 3939 | — |
+| 3614 | 3318 | `p7zip-gui` | 0 | 0 | 4 | 3318 | — |
+| 3615 | 2783 | `pacfetch-bin` | 0 | 0 | 4 | 2783 | — |
+| 3616 | 7541 | `pacmate` | 0 | 0 | 4 | 7541 | — |
+| 3617 | 3502 | `pacviz` | 0 | 0 | 4 | 3502 | — |
+| 3618 | 4475 | `pam-luks-keyring-unlock` | 0 | 0 | 4 | 4475 | — |
+| 3619 | 2743 | `panoply` | 0 | 0 | 4 | 2743 | — |
+| 3620 | 4949 | `parui` | 0 | 0 | 4 | 4949 | — |
+| 3621 | 7402 | `patchy` | 0 | 0 | 4 | 7402 | — |
+| 3622 | 8294 | `pawlette` | 0 | 0 | 4 | 8294 | — |
+| 3623 | 8295 | `pawlette-git` | 0 | 0 | 4 | 8295 | — |
+| 3624 | 209 | `perl-cpan-uploader` | 0 | 0 | 4 | 209 | — |
+| 3625 | 3949 | `pexip-infinity-connect-bin` | 0 | 0 | 4 | 3949 | — |
+| 3626 | 1526 | `photoqt-extensions` | 0 | 0 | 4 | 1526 | — |
+| 3627 | 8272 | `picotool-git` | 0 | 0 | 4 | 8272 | — |
+| 3628 | 1633 | `pie` | 0 | 0 | 4 | 1633 | — |
+| 3629 | 8207 | `pixiecore-git` | 0 | 0 | 4 | 8207 | — |
+| 3630 | 6407 | `pkgbrowser` | 0 | 0 | 4 | 6407 | — |
+| 3631 | 5394 | `pkgbuild-assistant` | 0 | 0 | 4 | 5394 | — |
+| 3632 | 7386 | `pkl` | 0 | 0 | 4 | 7386 | — |
+| 3633 | 200 | `pmt-git` | 0 | 0 | 4 | 200 | — |
+| 3634 | 3112 | `podman-tui` | 0 | 0 | 4 | 3112 | — |
+| 3635 | 4834 | `portablemc` | 0 | 0 | 4 | 4834 | — |
+| 3636 | 6203 | `porymap5` | 0 | 0 | 4 | 6203 | — |
+| 3637 | 8524 | `poweriso-gui` | 0 | 0 | 4 | 8524 | — |
+| 3638 | 1202 | `proton-mail-bin` | 0 | 0 | 4 | 1202 | — |
+| 3639 | 1233 | `prowlarr-bin` | 0 | 0 | 4 | 1233 | — |
+| 3640 | 6191 | `ps3-disc-dumper` | 0 | 0 | 4 | 6191 | — |
+| 3641 | 7691 | `pug` | 0 | 0 | 4 | 7691 | — |
+| 3642 | 8240 | `python-hydrus` | 0 | 0 | 4 | 8240 | — |
+| 3643 | 329 | `python-setuptools-reproducible` | 0 | 0 | 4 | 329 | — |
+| 3644 | 4052 | `python-zftools` | 0 | 0 | 4 | 4052 | — |
+| 3645 | 6844 | `python-zxing-cpp-bin` | 0 | 0 | 4 | 6844 | — |
+| 3646 | 1302 | `qqmusic-bin` | 0 | 0 | 4 | 1302 | — |
+| 3647 | 7732 | `qt5-gamepad` | 0 | 0 | 4 | 7732 | — |
+| 3648 | 4148 | `qui` | 0 | 0 | 4 | 4148 | — |
+| 3649 | 1377 | `quickshell-greetd` | 0 | 0 | 4 | 1377 | — |
+| 3650 | 6686 | `r-jmvcore` | 0 | 0 | 4 | 6686 | — |
+| 3651 | 5033 | `r-quick-share-bin` | 0 | 0 | 4 | 5033 | — |
+| 3652 | 8182 | `r-r.matlab` | 0 | 0 | 4 | 8182 | — |
+| 3653 | 221 | `r2modman` | 0 | 0 | 4 | 221 | — |
+| 3654 | 2121 | `radarr-bin` | 0 | 0 | 4 | 2121 | — |
+| 3655 | 3370 | `radicle-explorer` | 0 | 0 | 4 | 3370 | — |
+| 3656 | 3372 | `radicle-explorer-git` | 0 | 0 | 4 | 3372 | — |
+| 3657 | 4212 | `rdrview-git` | 0 | 0 | 4 | 4212 | — |
+| 3658 | 1702 | `reboot-arch-btw` | 0 | 0 | 4 | 1702 | — |
+| 3659 | 2312 | `recaf-git` | 0 | 0 | 4 | 2312 | — |
+| 3660 | 1347 | `redisinsight-bin` | 0 | 0 | 4 | 1347 | — |
+| 3661 | 1758 | `reshade-shaders-git` | 0 | 0 | 4 | 1758 | — |
+| 3662 | 5155 | `reshade-steam-proton-git` | 0 | 0 | 4 | 5155 | — |
+| 3663 | 4635 | `resticprofile` | 0 | 0 | 4 | 4635 | — |
+| 3664 | 6187 | `rgrc` | 0 | 0 | 4 | 6187 | — |
+| 3665 | 2630 | `rgx-cli` | 0 | 0 | 4 | 2630 | — |
+| 3666 | 3209 | `river-bedload-git` | 0 | 0 | 4 | 3209 | — |
+| 3667 | 3149 | `river-bsp-layout` | 0 | 0 | 4 | 3149 | — |
+| 3668 | 6667 | `rkik-git` | 0 | 0 | 4 | 6667 | — |
+| 3669 | 4435 | `rocm-nightly-gfx110x-bin` | 0 | 0 | 4 | 4435 | — |
+| 3670 | 1260 | `rocm-nightly-gfx1151-bin` | 0 | 0 | 4 | 1260 | — |
+| 3671 | 1205 | `rootchat-bin` | 0 | 0 | 4 | 1205 | — |
+| 3672 | 3875 | `rtl8821ce-dkms-git` | 0 | 0 | 4 | 3875 | — |
+| 3673 | 4228 | `ruby-neovim` | 0 | 0 | 4 | 4228 | — |
+| 3674 | 304 | `rustdesk-server` | 0 | 0 | 4 | 304 | — |
+| 3675 | 6697 | `rusticon-git` | 0 | 0 | 4 | 6697 | — |
+| 3676 | 3660 | `rustwhy-git` | 0 | 0 | 4 | 3660 | — |
+| 3677 | 386 | `samrewritten-git` | 0 | 0 | 4 | 386 | — |
+| 3678 | 7780 | `scala` | 0 | 0 | 4 | 7780 | — |
+| 3679 | 5339 | `scmccid` | 0 | 0 | 4 | 5339 | — |
+| 3680 | 7588 | `sddm-eucalyptus-drop` | 0 | 0 | 4 | 7588 | — |
+| 3681 | 5094 | `seanime` | 0 | 0 | 4 | 5094 | — |
+| 3682 | 4757 | `serpro-signer` | 0 | 0 | 4 | 4757 | — |
+| 3683 | 7455 | `sfxr-qt-bin` | 0 | 0 | 4 | 7455 | — |
+| 3684 | 6402 | `sgdboop` | 0 | 0 | 4 | 6402 | — |
+| 3685 | 5005 | `shinobi-git` | 0 | 0 | 4 | 5005 | — |
+| 3686 | 1214 | `sidequest-bin` | 0 | 0 | 4 | 1214 | — |
+| 3687 | 4797 | `silverbullet` | 0 | 0 | 4 | 4797 | — |
+| 3688 | 5231 | `simmusic-git` | 0 | 0 | 4 | 5231 | — |
+| 3689 | 8574 | `simple2d` | 0 | 0 | 4 | 8574 | — |
+| 3690 | 2077 | `siomon` | 0 | 0 | 4 | 2077 | — |
+| 3691 | 5147 | `smpq` | 0 | 0 | 4 | 5147 | — |
+| 3692 | 3560 | `sonarr-bin` | 0 | 0 | 4 | 3560 | — |
+| 3693 | 825 | `sound_themer` | 0 | 0 | 4 | 825 | — |
+| 3694 | 3857 | `spflashtool-bin` | 0 | 0 | 4 | 3857 | — |
+| 3695 | 3935 | `spflashtool5-bin` | 0 | 0 | 4 | 3935 | — |
+| 3696 | 1601 | `spotatui` | 0 | 0 | 4 | 1601 | — |
+| 3697 | 6625 | `spotx-git` | 0 | 0 | 4 | 6625 | — |
+| 3698 | 2649 | `steamvr-linux-fixes-layer-git` | 0 | 0 | 4 | 2649 | — |
+| 3699 | 6468 | `stonks-dashboard` | 0 | 0 | 4 | 6468 | — |
+| 3700 | 3513 | `struct-bin` | 0 | 0 | 4 | 3513 | — |
+| 3701 | 4748 | `suil-optgui` | 0 | 0 | 4 | 4748 | — |
+| 3702 | 1063 | `supergfxctl` | 0 | 0 | 4 | 1063 | — |
+| 3703 | 308 | `surfshark-client` | 0 | 0 | 4 | 308 | — |
+| 3704 | 3782 | `swiftly-bin` | 0 | 0 | 4 | 3782 | — |
+| 3705 | 8565 | `sylpheed-beta-iconmod` | 0 | 0 | 4 | 8565 | — |
+| 3706 | 3263 | `syncovery-bin` | 0 | 0 | 4 | 3263 | — |
+| 3707 | 2688 | `system76-power` | 0 | 0 | 4 | 2688 | — |
+| 3708 | 7380 | `systemd-cron-next-git` | 0 | 0 | 4 | 7380 | — |
+| 3709 | 6843 | `tabaur` | 0 | 0 | 4 | 6843 | — |
+| 3710 | 4594 | `tabularis-bin` | 0 | 0 | 4 | 4594 | — |
+| 3711 | 6818 | `terminalimageviewer` | 0 | 0 | 4 | 6818 | — |
+| 3712 | 1235 | `termix-bin` | 0 | 0 | 4 | 1235 | — |
+| 3713 | 5381 | `themix-gui-git` | 0 | 0 | 4 | 5381 | — |
+| 3714 | 5391 | `themix-icons-archdroid-git` | 0 | 0 | 4 | 5391 | — |
+| 3715 | 5389 | `themix-icons-papirus-git` | 0 | 0 | 4 | 5389 | — |
+| 3716 | 5388 | `themix-icons-suru-plus-aspromauros-git` | 0 | 0 | 4 | 5388 | — |
+| 3717 | 5387 | `themix-icons-suru-plus-git` | 0 | 0 | 4 | 5387 | — |
+| 3718 | 5383 | `themix-plugin-base16-git` | 0 | 0 | 4 | 5383 | — |
+| 3719 | 1597 | `thunderbird-esr-bin` | 0 | 0 | 4 | 1597 | — |
+| 3720 | 664 | `ticket` | 0 | 0 | 4 | 664 | — |
+| 3721 | 2797 | `tirith-bin` | 0 | 0 | 4 | 2797 | — |
+| 3722 | 1013 | `tixati` | 0 | 0 | 4 | 1013 | — |
+| 3723 | 7306 | `tlp-rdw-git` | 0 | 0 | 4 | 7306 | — |
+| 3724 | 2657 | `totray` | 0 | 0 | 4 | 2657 | — |
+| 3725 | 4137 | `trayscale` | 0 | 0 | 4 | 4137 | — |
+| 3726 | 12435 | `tree-sitter-javascript-git` | 0 | 0 | 4 | 12435 | — |
+| 3727 | 6174 | `tresorit` | 0 | 0 | 4 | 6174 | — |
+| 3728 | 3680 | `tuack-ng-git` | 0 | 0 | 4 | 3680 | — |
+| 3729 | 1365 | `tuipaper` | 0 | 0 | 4 | 1365 | — |
+| 3730 | 3335 | `tuxboot` | 0 | 0 | 4 | 3335 | — |
+| 3731 | 8518 | `ty-git` | 0 | 0 | 4 | 8518 | — |
+| 3732 | 4448 | `udever-git` | 0 | 0 | 4 | 4448 | — |
+| 3733 | 7205 | `uiua-bin` | 0 | 0 | 4 | 7205 | — |
+| 3734 | 2666 | `unrot` | 0 | 0 | 4 | 2666 | — |
+| 3735 | 1750 | `upscayl-appimage` | 0 | 0 | 4 | 1750 | — |
+| 3736 | 2944 | `uptater-bin` | 0 | 0 | 4 | 2944 | — |
+| 3737 | 1550 | `usbtop` | 0 | 0 | 4 | 1550 | — |
+| 3738 | 7643 | `uutils-findutils` | 0 | 0 | 4 | 7643 | — |
+| 3739 | 6286 | `vapoursynth-plugin-vsengine-git` | 0 | 0 | 4 | 6286 | — |
+| 3740 | 1707 | `velero` | 0 | 0 | 4 | 1707 | — |
+| 3741 | 3491 | `velo-bin` | 0 | 0 | 4 | 3491 | — |
+| 3742 | 45 | `viber` | 0 | 0 | 4 | 45 | — |
+| 3743 | 3143 | `videocut` | 0 | 0 | 4 | 3143 | — |
+| 3744 | 1121 | `vimcat` | 0 | 0 | 4 | 1121 | — |
+| 3745 | 3859 | `vintagestory-unstable` | 0 | 0 | 4 | 3859 | — |
+| 3746 | 2816 | `vlc-bittorrent` | 0 | 0 | 4 | 2816 | — |
+| 3747 | 7626 | `voc-git` | 0 | 0 | 4 | 7626 | — |
+| 3748 | 4660 | `voxtype-bin` | 0 | 0 | 4 | 4660 | — |
+| 3749 | 1552 | `vrc-get` | 0 | 0 | 4 | 1552 | — |
+| 3750 | 7360 | `vswaybar-studio` | 0 | 0 | 4 | 7360 | — |
+| 3751 | 7612 | `vvdec` | 0 | 0 | 4 | 7612 | — |
+| 3752 | 2673 | `wait-port` | 0 | 0 | 4 | 2673 | — |
+| 3753 | 7637 | `waveloggate-git` | 0 | 0 | 4 | 7637 | — |
+| 3754 | 3378 | `wayland-push-to-talk-fix-git` | 0 | 0 | 4 | 3378 | — |
+| 3755 | 7605 | `wayvibes-git` | 0 | 0 | 4 | 7605 | — |
+| 3756 | 2674 | `weathery` | 0 | 0 | 4 | 2674 | — |
+| 3757 | 804 | `weathr` | 0 | 0 | 4 | 804 | — |
+| 3758 | 5445 | `webtorrent-bittorrent-tracker` | 0 | 0 | 4 | 5445 | — |
+| 3759 | 8195 | `webull-desktop` | 0 | 0 | 4 | 8195 | — |
+| 3760 | 3822 | `wootility` | 0 | 0 | 4 | 3822 | — |
+| 3761 | 3940 | `wooting-bg-service` | 0 | 0 | 4 | 3940 | — |
+| 3762 | 2939 | `wstui` | 0 | 0 | 4 | 2939 | — |
+| 3763 | 7733 | `wstunnel` | 0 | 0 | 4 | 7733 | — |
+| 3764 | 4116 | `x11-mouse-funnel` | 0 | 0 | 4 | 4116 | — |
+| 3765 | 2082 | `x3dctl` | 0 | 0 | 4 | 2082 | — |
+| 3766 | 2761 | `xdg-desktop-portal-gtk4-git` | 0 | 0 | 4 | 2761 | — |
+| 3767 | 5397 | `xdg-launch` | 0 | 0 | 4 | 5397 | — |
+| 3768 | 3345 | `xdg-su` | 0 | 0 | 4 | 3345 | — |
+| 3769 | 5115 | `xlibre-video-dummy` | 0 | 0 | 4 | 5115 | — |
+| 3770 | 6165 | `xlibre-video-sisusb` | 0 | 0 | 4 | 6165 | — |
+| 3771 | 8313 | `xmount` | 0 | 0 | 4 | 8313 | — |
+| 3772 | 1903 | `xray` | 0 | 0 | 4 | 1903 | — |
+| 3773 | 4565 | `xtatusbar` | 0 | 0 | 4 | 4565 | — |
+| 3774 | 6529 | `y-cruncher` | 0 | 0 | 4 | 6529 | — |
+| 3775 | 2392 | `yacreader-bin` | 0 | 0 | 4 | 2392 | — |
+| 3776 | 230 | `yandex-disk` | 0 | 0 | 4 | 230 | — |
+| 3777 | 7479 | `yarr` | 0 | 0 | 4 | 7479 | — |
+| 3778 | 7671 | `youtube-dl-gui` | 0 | 0 | 4 | 7671 | — |
+| 3779 | 7483 | `youtube-tui-full-bin` | 0 | 0 | 4 | 7483 | — |
+| 3780 | 803 | `youtui-player` | 0 | 0 | 4 | 803 | — |
+| 3781 | 1362 | `ytcui-bin` | 0 | 0 | 4 | 1362 | — |
+| 3782 | 6460 | `ytdl` | 0 | 0 | 4 | 6460 | — |
+| 3783 | 6742 | `yup-bin` | 0 | 0 | 4 | 6742 | — |
+| 3784 | 3840 | `zalo-macos` | 0 | 0 | 4 | 3840 | — |
+| 3785 | 3764 | `zeitfetch` | 0 | 0 | 4 | 3764 | — |
+| 3786 | 7747 | `zfs-linux` | 0 | 0 | 4 | 7747 | — |
+| 3787 | 7748 | `zfs-linux-headers` | 0 | 0 | 4 | 7748 | — |
+| 3788 | 4947 | `zmkbatx` | 0 | 0 | 4 | 4947 | — |
+| 3789 | 1734 | `zsh-theme-powerlevel10k` | 0 | 0 | 4 | 1734 | — |
+| 3790 | 4456 | `3dstool-git` | 0 | 0 | 5 | 4456 | — |
+| 3791 | 5255 | `7zip-natspec` | 0 | 0 | 5 | 5255 | — |
+| 3792 | 7654 | `ab-av1` | 0 | 0 | 5 | 7654 | — |
+| 3793 | 6666 | `ad` | 0 | 0 | 5 | 6666 | — |
+| 3794 | 3332 | `adwaita-qt5-git` | 0 | 0 | 5 | 3332 | — |
+| 3795 | 1709 | `aionui-bin` | 0 | 0 | 5 | 1709 | — |
+| 3796 | 7292 | `alchitry-labs-bin` | 0 | 0 | 5 | 7292 | — |
+| 3797 | 2043 | `android-studio` | 0 | 0 | 5 | 2043 | — |
+| 3798 | 6288 | `appa` | 0 | 0 | 5 | 6288 | — |
+| 3799 | 4210 | `appanvil-git` | 0 | 0 | 5 | 4210 | — |
+| 3800 | 2126 | `appflowy-bin` | 0 | 0 | 5 | 2126 | — |
+| 3801 | 5243 | `arch-check` | 0 | 0 | 5 | 5243 | — |
+| 3802 | 5473 | `arch-remaster` | 0 | 0 | 5 | 5473 | — |
+| 3803 | 3419 | `archforge` | 0 | 0 | 5 | 3419 | — |
+| 3804 | 6617 | `arm-linux-gnueabi-gcc` | 0 | 0 | 5 | 6617 | — |
+| 3805 | 6635 | `aur-check-updates` | 0 | 0 | 5 | 6635 | — |
+| 3806 | 4155 | `aura-bin` | 0 | 0 | 5 | 4155 | — |
+| 3807 | 6496 | `autohand-cli` | 0 | 0 | 5 | 6496 | — |
+| 3808 | 696 | `avaloniailspy` | 0 | 0 | 5 | 696 | — |
+| 3809 | 4195 | `baidunetdisk-bin` | 0 | 0 | 5 | 4195 | — |
+| 3810 | 4185 | `basedpyright` | 0 | 0 | 5 | 4185 | — |
+| 3811 | 4402 | `basedpyright-git` | 0 | 0 | 5 | 4402 | — |
+| 3812 | 1683 | `beads-git` | 0 | 0 | 5 | 1683 | — |
+| 3813 | 8226 | `billtracker` | 0 | 0 | 5 | 8226 | — |
+| 3814 | 2075 | `blogtato` | 0 | 0 | 5 | 2075 | — |
+| 3815 | 7199 | `bombsquad` | 0 | 0 | 5 | 7199 | — |
+| 3816 | 931 | `booklore` | 0 | 0 | 5 | 931 | — |
+| 3817 | 2095 | `brave-beta-bin` | 0 | 0 | 5 | 2095 | — |
+| 3818 | 2025 | `brave-bin` | 0 | 0 | 5 | 2025 | — |
+| 3819 | 1436 | `brave-nightly-bin` | 0 | 0 | 5 | 1436 | — |
+| 3820 | 2697 | `btdu` | 0 | 0 | 5 | 2697 | — |
+| 3821 | 7364 | `buildcache` | 0 | 0 | 5 | 7364 | — |
+| 3822 | 6989 | `c_formatter_42` | 0 | 0 | 5 | 6989 | — |
+| 3823 | 6233 | `cahute-git` | 0 | 0 | 5 | 6233 | — |
+| 3824 | 2013 | `calculix-ccx` | 0 | 0 | 5 | 2013 | — |
+| 3825 | 7268 | `calf-no-gui` | 0 | 0 | 5 | 7268 | — |
+| 3826 | 930 | `cat-browser-git` | 0 | 0 | 5 | 930 | — |
+| 3827 | 3974 | `catapult-bin` | 0 | 0 | 5 | 3974 | — |
+| 3828 | 2456 | `cdogs` | 0 | 0 | 5 | 2456 | — |
+| 3829 | 2711 | `chezetc` | 0 | 0 | 5 | 2711 | — |
+| 3830 | 2848 | `chezetc-git` | 0 | 0 | 5 | 2848 | — |
+| 3831 | 6605 | `chromium-ffmpeg` | 0 | 0 | 5 | 6605 | — |
+| 3832 | 6493 | `circle-to-search` | 0 | 0 | 5 | 6493 | — |
+| 3833 | 3283 | `claude-cowork-linux` | 0 | 0 | 5 | 3283 | — |
+| 3834 | 1583 | `clean-chroot-manager` | 0 | 0 | 5 | 1583 | — |
+| 3835 | 7412 | `clipgrab` | 0 | 0 | 5 | 7412 | — |
+| 3836 | 1972 | `cnijfilter2` | 0 | 0 | 5 | 1972 | — |
+| 3837 | 4966 | `cockpit-pacman` | 0 | 0 | 5 | 4966 | — |
+| 3838 | 927 | `connman-resolvconf` | 0 | 0 | 5 | 927 | — |
+| 3839 | 7992 | `container2wasm-git` | 0 | 0 | 5 | 7992 | — |
+| 3840 | 5191 | `cosmic-ext-applet-minimon-git` | 0 | 0 | 5 | 5191 | — |
+| 3841 | 1110 | `crestic` | 0 | 0 | 5 | 1110 | — |
+| 3842 | 2901 | `cryptmount-git` | 0 | 0 | 5 | 2901 | — |
+| 3843 | 3354 | `cyx` | 0 | 0 | 5 | 3354 | — |
+| 3844 | 3854 | `dae` | 0 | 0 | 5 | 3854 | — |
+| 3845 | 6461 | `ddhx` | 0 | 0 | 5 | 6461 | — |
+| 3846 | 7700 | `denaro` | 0 | 0 | 5 | 7700 | — |
+| 3847 | 2539 | `derg-clock-popup` | 0 | 0 | 5 | 2539 | — |
+| 3848 | 1991 | `discord-canary` | 0 | 0 | 5 | 1991 | — |
+| 3849 | 3545 | `distroav` | 0 | 0 | 5 | 3545 | — |
+| 3850 | 1790 | `dms-shell` | 0 | 0 | 5 | 1790 | — |
+| 3851 | 452 | `dms-shell-git` | 0 | 0 | 5 | 452 | — |
+| 3852 | 2543 | `dnspyex-wine-bin` | 0 | 0 | 5 | 2543 | — |
+| 3853 | 6986 | `dput` | 0 | 0 | 5 | 6986 | — |
+| 3854 | 4713 | `droidcam-obs-plugin` | 0 | 0 | 5 | 4713 | — |
+| 3855 | 917 | `dumber-browser-git` | 0 | 0 | 5 | 917 | — |
+| 3856 | 7742 | `easyeda-bin` | 0 | 0 | 5 | 7742 | — |
+| 3857 | 6580 | `eigenwallet-bin` | 0 | 0 | 5 | 6580 | — |
+| 3858 | 7631 | `eltclsh` | 0 | 0 | 5 | 7631 | — |
+| 3859 | 1027 | `equicord-hook` | 0 | 0 | 5 | 1027 | — |
+| 3860 | 2447 | `escrcpy-bin` | 0 | 0 | 5 | 2447 | — |
+| 3861 | 1725 | `expert-git` | 0 | 0 | 5 | 1725 | — |
+| 3862 | 2323 | `far2l-git` | 0 | 0 | 5 | 2323 | — |
+| 3863 | 3991 | `fdir` | 0 | 0 | 5 | 3991 | — |
+| 3864 | 7524 | `feluda` | 0 | 0 | 5 | 7524 | — |
+| 3865 | 6481 | `ferp` | 0 | 0 | 5 | 6481 | — |
+| 3866 | 3536 | `ferrite-bin` | 0 | 0 | 5 | 3536 | — |
+| 3867 | 3566 | `firefox-esr-bin` | 0 | 0 | 5 | 3566 | — |
+| 3868 | 6539 | `flent` | 0 | 0 | 5 | 6539 | — |
+| 3869 | 3352 | `fluidplug-git` | 0 | 0 | 5 | 3352 | — |
+| 3870 | 6199 | `fontpreview-git` | 0 | 0 | 5 | 6199 | — |
+| 3871 | 7428 | `fortty` | 0 | 0 | 5 | 7428 | — |
+| 3872 | 1983 | `freedm` | 0 | 0 | 5 | 1983 | — |
+| 3873 | 1064 | `furmark` | 0 | 0 | 5 | 1064 | — |
+| 3874 | 5514 | `fw-fanctrl-rs-git` | 0 | 0 | 5 | 5514 | — |
+| 3875 | 7596 | `gamepadla-polling` | 0 | 0 | 5 | 7596 | — |
+| 3876 | 7423 | `gashell` | 0 | 0 | 5 | 7423 | — |
+| 3877 | 5048 | `geteduroam-gui-bin` | 0 | 0 | 5 | 5048 | — |
+| 3878 | 2800 | `github-copilot-cli-bin` | 0 | 0 | 5 | 2800 | — |
+| 3879 | 6477 | `gitswitcher` | 0 | 0 | 5 | 6477 | — |
+| 3880 | 4064 | `goatdkernel` | 0 | 0 | 5 | 4064 | — |
+| 3881 | 7344 | `grimmory` | 0 | 0 | 5 | 7344 | — |
+| 3882 | 4412 | `happy-cli` | 0 | 0 | 5 | 4412 | — |
+| 3883 | 5521 | `hurrycurry-server` | 0 | 0 | 5 | 5521 | — |
+| 3884 | 5002 | `hyprland-preview-share-picker-git` | 0 | 0 | 5 | 5002 | — |
+| 3885 | 7653 | `hyprsysteminfo` | 0 | 0 | 5 | 7653 | — |
+| 3886 | 6344 | `ibus-avro` | 0 | 0 | 5 | 6344 | — |
+| 3887 | 7215 | `immich-cli` | 0 | 0 | 5 | 7215 | — |
+| 3888 | 6473 | `jail-git` | 0 | 0 | 5 | 6473 | — |
+| 3889 | 7721 | `java21-openjfx-bin` | 0 | 0 | 5 | 7721 | — |
+| 3890 | 4615 | `jellyfin-server-bin` | 0 | 0 | 5 | 4615 | — |
+| 3891 | 7421 | `kalibrate-rtl-git` | 0 | 0 | 5 | 7421 | — |
+| 3892 | 2575 | `kanzi-git` | 0 | 0 | 5 | 2575 | — |
+| 3893 | 8327 | `kcgi` | 0 | 0 | 5 | 8327 | — |
+| 3894 | 7324 | `kdesignerplugin` | 0 | 0 | 5 | 7324 | — |
+| 3895 | 7424 | `kdownload` | 0 | 0 | 5 | 7424 | — |
+| 3896 | 5084 | `kemulatornnmod-bin` | 0 | 0 | 5 | 5084 | — |
+| 3897 | 408 | `kf6-servicemenus-reimage` | 0 | 0 | 5 | 408 | — |
+| 3898 | 3706 | `konfyt` | 0 | 0 | 5 | 3706 | — |
+| 3899 | 4142 | `lazyworktree-bin` | 0 | 0 | 5 | 4142 | — |
+| 3900 | 6727 | `letmein` | 0 | 0 | 5 | 6727 | — |
+| 3901 | 2583 | `lib32-libdovi` | 0 | 0 | 5 | 2583 | — |
+| 3902 | 1759 | `lib32-libstdc++5` | 0 | 0 | 5 | 1759 | — |
+| 3903 | 1580 | `lib32-python311-bin` | 0 | 0 | 5 | 1580 | — |
+| 3904 | 2491 | `libkcapi` | 0 | 0 | 5 | 2491 | — |
+| 3905 | 7752 | `libloot` | 0 | 0 | 5 | 7752 | — |
+| 3906 | 8010 | `libresplit-git` | 0 | 0 | 5 | 8010 | — |
+| 3907 | 3361 | `libtar-twrp-git` | 0 | 0 | 5 | 3361 | — |
+| 3908 | 3315 | `libva-vdpau-driver` | 0 | 0 | 5 | 3315 | — |
+| 3909 | 3559 | `linux-firmware-bnx2x-git` | 0 | 0 | 5 | 3559 | — |
+| 3910 | 3551 | `linux-firmware-git` | 0 | 0 | 5 | 3551 | — |
+| 3911 | 3557 | `linux-firmware-liquidio-git` | 0 | 0 | 5 | 3557 | — |
+| 3912 | 3555 | `linux-firmware-marvell-git` | 0 | 0 | 5 | 3555 | — |
+| 3913 | 3554 | `linux-firmware-mellanox-git` | 0 | 0 | 5 | 3554 | — |
+| 3914 | 3553 | `linux-firmware-nfp-git` | 0 | 0 | 5 | 3553 | — |
+| 3915 | 3556 | `linux-firmware-qcom-git` | 0 | 0 | 5 | 3556 | — |
+| 3916 | 3558 | `linux-firmware-qlogic-git` | 0 | 0 | 5 | 3558 | — |
+| 3917 | 6304 | `linux-zen-git` | 0 | 0 | 5 | 6304 | — |
+| 3918 | 959 | `llmfit` | 0 | 0 | 5 | 959 | — |
+| 3919 | 7280 | `loginized` | 0 | 0 | 5 | 7280 | — |
+| 3920 | 1675 | `lsfg-vk-bin` | 0 | 0 | 5 | 1675 | — |
+| 3921 | 5359 | `lyricsfinder` | 0 | 0 | 5 | 5359 | — |
+| 3922 | 6621 | `maa-cli` | 0 | 0 | 5 | 6621 | — |
+| 3923 | 37 | `marktext-bin` | 0 | 0 | 5 | 37 | — |
+| 3924 | 1006 | `masterpdfeditor-free` | 0 | 0 | 5 | 1006 | — |
+| 3925 | 889 | `mdcat` | 0 | 0 | 5 | 889 | — |
+| 3926 | 8614 | `mendingwall` | 0 | 0 | 5 | 8614 | — |
+| 3927 | 6474 | `metetch` | 0 | 0 | 5 | 6474 | — |
+| 3928 | 2758 | `milton` | 0 | 0 | 5 | 2758 | — |
+| 3929 | 6232 | `mingw-w64-cahute` | 0 | 0 | 5 | 6232 | — |
+| 3930 | 6234 | `mingw-w64-cahute-git` | 0 | 0 | 5 | 6234 | — |
+| 3931 | 8340 | `miro-pdf` | 0 | 0 | 5 | 8340 | — |
+| 3932 | 4975 | `mistserver` | 0 | 0 | 5 | 4975 | — |
+| 3933 | 6134 | `mmtui` | 0 | 0 | 5 | 6134 | — |
+| 3934 | 4752 | `monado-vulkan-layers-git` | 0 | 0 | 5 | 4752 | — |
+| 3935 | 4881 | `mrboom` | 0 | 0 | 5 | 4881 | — |
+| 3936 | 1252 | `multios-usb-bin-git` | 0 | 0 | 5 | 1252 | — |
+| 3937 | 6999 | `nbb` | 0 | 0 | 5 | 6999 | — |
+| 3938 | 5116 | `nekoray-bin` | 0 | 0 | 5 | 5116 | — |
+| 3939 | 6616 | `netease-cloud-music` | 0 | 0 | 5 | 6616 | — |
+| 3940 | 4780 | `networkd-dispatcher` | 0 | 0 | 5 | 4780 | — |
+| 3941 | 2600 | `nightingale` | 0 | 0 | 5 | 2600 | — |
+| 3942 | 4579 | `nijiexpose-bin` | 0 | 0 | 5 | 4579 | — |
+| 3943 | 8598 | `nuclear-player-bin` | 0 | 0 | 5 | 8598 | — |
+| 3944 | 422 | `nvi-multibyte-git` | 0 | 0 | 5 | 422 | — |
+| 3945 | 7710 | `nvidia-340xx-dkms` | 0 | 0 | 5 | 7710 | — |
+| 3946 | 6378 | `nvim-treesitter-parsers-main-git` | 0 | 0 | 5 | 6378 | — |
+| 3947 | 8181 | `obamify-git` | 0 | 0 | 5 | 8181 | — |
+| 3948 | 7298 | `obnc` | 0 | 0 | 5 | 7298 | — |
+| 3949 | 6252 | `ocaml-cryptokit` | 0 | 0 | 5 | 6252 | — |
+| 3950 | 6253 | `ocaml-curl` | 0 | 0 | 5 | 6253 | — |
+| 3951 | 6254 | `ocamlfuse` | 0 | 0 | 5 | 6254 | — |
+| 3952 | 3458 | `omnidotdev-terminal-bin` | 0 | 0 | 5 | 3458 | — |
+| 3953 | 7369 | `omnissa-horizon-integrated-printing` | 0 | 0 | 5 | 7369 | — |
+| 3954 | 1015 | `onedrivegui` | 0 | 0 | 5 | 1015 | — |
+| 3955 | 2605 | `oniri-git` | 0 | 0 | 5 | 2605 | — |
+| 3956 | 877 | `onset-git` | 0 | 0 | 5 | 877 | — |
+| 3957 | 6436 | `oomd` | 0 | 0 | 5 | 6436 | — |
+| 3958 | 5086 | `open-tv-bin` | 0 | 0 | 5 | 5086 | — |
+| 3959 | 3142 | `openbangla-keyboard` | 0 | 0 | 5 | 3142 | — |
+| 3960 | 787 | `openrgb-plugin-effects-git` | 0 | 0 | 5 | 787 | — |
+| 3961 | 2463 | `opentyrian-git` | 0 | 0 | 5 | 2463 | — |
+| 3962 | 7606 | `openvino-bin` | 0 | 0 | 5 | 7606 | — |
+| 3963 | 4988 | `osspd` | 0 | 0 | 5 | 4988 | — |
+| 3964 | 1023 | `osu` | 0 | 0 | 5 | 1023 | — |
+| 3965 | 7249 | `osuboot-git` | 0 | 0 | 5 | 7249 | — |
+| 3966 | 4654 | `pacboost` | 0 | 0 | 5 | 4654 | — |
+| 3967 | 7426 | `pacboost-bin` | 0 | 0 | 5 | 7426 | — |
+| 3968 | 8566 | `pacfiles` | 0 | 0 | 5 | 8566 | — |
+| 3969 | 2608 | `pacselect-bin` | 0 | 0 | 5 | 2608 | — |
+| 3970 | 8042 | `pamac-tray-icon-plasma` | 0 | 0 | 5 | 8042 | — |
+| 3971 | 4849 | `pamix` | 0 | 0 | 5 | 4849 | — |
+| 3972 | 956 | `pear-desktop-git` | 0 | 0 | 5 | 956 | — |
+| 3973 | 2804 | `pear-desktop-noads-git` | 0 | 0 | 5 | 2804 | — |
+| 3974 | 7253 | `peazip-gtk2-bin` | 0 | 0 | 5 | 7253 | — |
+| 3975 | 3655 | `peel-git` | 0 | 0 | 5 | 3655 | — |
+| 3976 | 7019 | `perplexity` | 0 | 0 | 5 | 7019 | — |
+| 3977 | 481 | `phonon-qt6-mpv` | 0 | 0 | 5 | 481 | — |
+| 3978 | 5007 | `pineapple-midi-player` | 0 | 0 | 5 | 5007 | — |
+| 3979 | 867 | `pins-git` | 0 | 0 | 5 | 867 | — |
+| 3980 | 3852 | `pixieditor-bin` | 0 | 0 | 5 | 3852 | — |
+| 3981 | 5112 | `plasma6-wallpapers-smart-video-wallpaper-reborn` | 0 | 0 | 5 | 5112 | — |
+| 3982 | 6987 | `plex-mpv-shim` | 0 | 0 | 5 | 6987 | — |
+| 3983 | 3449 | `pm-utils` | 0 | 0 | 5 | 3449 | — |
+| 3984 | 6649 | `polyclipping` | 0 | 0 | 5 | 6649 | — |
+| 3985 | 8593 | `popsicle` | 0 | 0 | 5 | 8593 | — |
+| 3986 | 482 | `prek` | 0 | 0 | 5 | 482 | — |
+| 3987 | 2921 | `presshold` | 0 | 0 | 5 | 2921 | — |
+| 3988 | 5187 | `proslenkey` | 0 | 0 | 5 | 5187 | — |
+| 3989 | 841 | `proxybridge-git` | 0 | 0 | 5 | 841 | — |
+| 3990 | 2131 | `pwsp` | 0 | 0 | 5 | 2131 | — |
+| 3991 | 6704 | `python-art-git` | 0 | 0 | 5 | 6704 | — |
+| 3992 | 5179 | `python-boolshit` | 0 | 0 | 5 | 5179 | — |
+| 3993 | 6519 | `python-cron-lite` | 0 | 0 | 5 | 6519 | — |
+| 3994 | 6711 | `python-file-primitives` | 0 | 0 | 5 | 6711 | — |
+| 3995 | 8201 | `python-fleep` | 0 | 0 | 5 | 8201 | — |
+| 3996 | 4442 | `python-importmonkey` | 0 | 0 | 5 | 4442 | — |
+| 3997 | 2621 | `python-ldraw-to-scad` | 0 | 0 | 5 | 2621 | — |
+| 3998 | 2976 | `python-logfire-api` | 0 | 0 | 5 | 2976 | — |
+| 3999 | 3284 | `python-partial-json-parser-git` | 0 | 0 | 5 | 3284 | — |
+| 4000 | 8035 | `python-pipe` | 0 | 0 | 5 | 8035 | — |
+| 4001 | 4557 | `python-requirements-language-server` | 0 | 0 | 5 | 4557 | — |
+| 4002 | 3464 | `python-rofi-git` | 0 | 0 | 5 | 3464 | — |
+| 4003 | 7577 | `python-rtfunicode` | 0 | 0 | 5 | 7577 | — |
+| 4004 | 5177 | `python-seapie` | 0 | 0 | 5 | 5177 | — |
+| 4005 | 4650 | `python-xlsx2csv` | 0 | 0 | 5 | 4650 | — |
+| 4006 | 5259 | `python-zenlib-git` | 0 | 0 | 5 | 5259 | — |
+| 4007 | 8278 | `python-zipremove` | 0 | 0 | 5 | 8278 | — |
+| 4008 | 290 | `qobuz-player` | 0 | 0 | 5 | 290 | — |
+| 4009 | 6400 | `qobuz-player-git` | 0 | 0 | 5 | 6400 | — |
+| 4010 | 2389 | `qt5-heic-image-plugin` | 0 | 0 | 5 | 2389 | — |
+| 4011 | 2390 | `qt6-heic-image-plugin` | 0 | 0 | 5 | 2390 | — |
+| 4012 | 8188 | `r-inflection` | 0 | 0 | 5 | 8188 | — |
+| 4013 | 8187 | `r-mcmcse` | 0 | 0 | 5 | 8187 | — |
+| 4014 | 7305 | `radeon-gpu-profiler` | 0 | 0 | 5 | 7305 | — |
+| 4015 | 3312 | `rapidraw` | 0 | 0 | 5 | 3312 | — |
+| 4016 | 4349 | `rclone-ui-bin` | 0 | 0 | 5 | 4349 | — |
+| 4017 | 4213 | `rdrview` | 0 | 0 | 5 | 4213 | — |
+| 4018 | 3454 | `recaf` | 0 | 0 | 5 | 3454 | — |
+| 4019 | 5021 | `reddcoin-bin` | 0 | 0 | 5 | 5021 | — |
+| 4020 | 3932 | `reflector-rs` | 0 | 0 | 5 | 3932 | — |
+| 4021 | 4954 | `relax-player` | 0 | 0 | 5 | 4954 | — |
+| 4022 | 2947 | `releng-tool` | 0 | 0 | 5 | 2947 | — |
+| 4023 | 5374 | `remmina-plugin-rdesktop` | 0 | 0 | 5 | 5374 | — |
+| 4024 | 6660 | `rgain3` | 0 | 0 | 5 | 6660 | — |
+| 4025 | 2705 | `rime-ice-double-pinyin-abc-git` | 0 | 0 | 5 | 2705 | — |
+| 4026 | 2708 | `rime-ice-double-pinyin-flypy-git` | 0 | 0 | 5 | 2708 | — |
+| 4027 | 2704 | `rime-ice-double-pinyin-git` | 0 | 0 | 5 | 2704 | — |
+| 4028 | 2710 | `rime-ice-double-pinyin-jiajia-git` | 0 | 0 | 5 | 2710 | — |
+| 4029 | 2706 | `rime-ice-double-pinyin-mspy-git` | 0 | 0 | 5 | 2706 | — |
+| 4030 | 2707 | `rime-ice-double-pinyin-sogou-git` | 0 | 0 | 5 | 2707 | — |
+| 4031 | 2709 | `rime-ice-double-pinyin-ziguang-git` | 0 | 0 | 5 | 2709 | — |
+| 4032 | 2702 | `rime-ice-git` | 0 | 0 | 5 | 2702 | — |
+| 4033 | 2703 | `rime-ice-pinyin-git` | 0 | 0 | 5 | 2703 | — |
+| 4034 | 7416 | `rmpc-auto-theme-git` | 0 | 0 | 5 | 7416 | — |
+| 4035 | 2632 | `rmw-git` | 0 | 0 | 5 | 2632 | — |
+| 4036 | 3237 | `rofi-polkit-agent-git` | 0 | 0 | 5 | 3237 | — |
+| 4037 | 3238 | `rofimoji-git` | 0 | 0 | 5 | 3238 | — |
+| 4038 | 3853 | `rp++` | 0 | 0 | 5 | 3853 | — |
+| 4039 | 7304 | `rtl8852au-dkms-git` | 0 | 0 | 5 | 7304 | — |
+| 4040 | 6299 | `sais` | 0 | 0 | 5 | 6299 | — |
+| 4041 | 2134 | `scratch3` | 0 | 0 | 5 | 2134 | — |
+| 4042 | 4722 | `screenpipe-bin` | 0 | 0 | 5 | 4722 | — |
+| 4043 | 4614 | `sddm-theme-elegant-archlinux-git` | 0 | 0 | 5 | 4614 | — |
+| 4044 | 8346 | `simplex-chat-bin` | 0 | 0 | 5 | 8346 | — |
+| 4045 | 2053 | `slack-desktop` | 0 | 0 | 5 | 2053 | — |
+| 4046 | 2319 | `slack-electron` | 0 | 0 | 5 | 2319 | — |
+| 4047 | 4051 | `slime-git` | 0 | 0 | 5 | 4051 | — |
+| 4048 | 3342 | `slippi-launcher-bin` | 0 | 0 | 5 | 3342 | — |
+| 4049 | 6775 | `snoop` | 0 | 0 | 5 | 6775 | — |
+| 4050 | 286 | `soteria-git` | 0 | 0 | 5 | 286 | — |
+| 4051 | 4796 | `sourcegit` | 0 | 0 | 5 | 4796 | — |
+| 4052 | 3720 | `spacebar-git` | 0 | 0 | 5 | 3720 | — |
+| 4053 | 7706 | `spacecadetpinball-git` | 0 | 0 | 5 | 7706 | — |
+| 4054 | 8304 | `spacedrive-clean` | 0 | 0 | 5 | 8304 | — |
+| 4055 | 8157 | `spack` | 0 | 0 | 5 | 8157 | — |
+| 4056 | 1909 | `spotatui-git` | 0 | 0 | 5 | 1909 | — |
+| 4057 | 4217 | `stacer-git` | 0 | 0 | 5 | 4217 | — |
+| 4058 | 7506 | `staruml` | 0 | 0 | 5 | 7506 | — |
+| 4059 | 8196 | `statifier` | 0 | 0 | 5 | 8196 | — |
+| 4060 | 3977 | `stdexec-git` | 0 | 0 | 5 | 3977 | — |
+| 4061 | 822 | `steamfetch` | 0 | 0 | 5 | 822 | — |
+| 4062 | 5104 | `stm32cubeclt` | 0 | 0 | 5 | 5104 | — |
+| 4063 | 3896 | `streamlink-twitch-gui-bin` | 0 | 0 | 5 | 3896 | — |
+| 4064 | 3496 | `swaycons` | 0 | 0 | 5 | 3496 | — |
+| 4065 | 8256 | `system76-keyboard-configurator-git` | 0 | 0 | 5 | 8256 | — |
+| 4066 | 8623 | `systemd-timer-notify-git` | 0 | 0 | 5 | 8623 | — |
+| 4067 | 8268 | `tandoor-recipes` | 0 | 0 | 5 | 8268 | — |
+| 4068 | 18 | `teamviewer` | 0 | 0 | 5 | 18 | — |
+| 4069 | 7970 | `telegram-bot-api-git` | 0 | 0 | 5 | 7970 | — |
+| 4070 | 2981 | `teleport-client` | 0 | 0 | 5 | 2981 | — |
+| 4071 | 5384 | `themix-icons-numix-git` | 0 | 0 | 5 | 5384 | — |
+| 4072 | 7294 | `thinkfan-ui` | 0 | 0 | 5 | 7294 | — |
+| 4073 | 2975 | `tmuzika` | 0 | 0 | 5 | 2975 | — |
+| 4074 | 812 | `tray_mixer_plus` | 0 | 0 | 5 | 812 | — |
+| 4075 | 1183 | `tutanota-desktop-bin` | 0 | 0 | 5 | 1183 | — |
+| 4076 | 7221 | `ue4localizationstool-zenity` | 0 | 0 | 5 | 7221 | — |
+| 4077 | 3322 | `unigine-heaven` | 0 | 0 | 5 | 3322 | — |
+| 4078 | 362 | `universal-android-debloater` | 0 | 0 | 5 | 362 | — |
+| 4079 | 1191 | `unreal-tournament-bin` | 0 | 0 | 5 | 1191 | — |
+| 4080 | 7067 | `uutils-coreutils-git` | 0 | 0 | 5 | 7067 | — |
+| 4081 | 994 | `veeam` | 0 | 0 | 5 | 994 | — |
+| 4082 | 4444 | `vm-curator` | 0 | 0 | 5 | 4444 | — |
+| 4083 | 8308 | `volantes-cursors-git` | 0 | 0 | 5 | 8308 | — |
+| 4084 | 1695 | `vvv-bin` | 0 | 0 | 5 | 1695 | — |
+| 4085 | 6281 | `waybar-crypto` | 0 | 0 | 5 | 6281 | — |
+| 4086 | 7621 | `waybar-niri-taskbar` | 0 | 0 | 5 | 7621 | — |
+| 4087 | 4962 | `whatsdesk-bin` | 0 | 0 | 5 | 4962 | — |
+| 4088 | 5164 | `whatsie` | 0 | 0 | 5 | 5164 | — |
+| 4089 | 4434 | `wheelwizard` | 0 | 0 | 5 | 4434 | — |
+| 4090 | 6180 | `whis` | 0 | 0 | 5 | 6180 | — |
+| 4091 | 2410 | `win2xcur` | 0 | 0 | 5 | 2410 | — |
+| 4092 | 7283 | `wineasio` | 0 | 0 | 5 | 7283 | — |
+| 4093 | 3445 | `wingedit` | 0 | 0 | 5 | 3445 | — |
+| 4094 | 6229 | `wl-kaomoji` | 0 | 0 | 5 | 6229 | — |
+| 4095 | 5432 | `wl-mpris-idle-inhibit` | 0 | 0 | 5 | 5432 | — |
+| 4096 | 3968 | `x50ng` | 0 | 0 | 5 | 3968 | — |
+| 4097 | 6331 | `xivlauncher-bin` | 0 | 0 | 5 | 6331 | — |
+| 4098 | 1778 | `xmousepasteblock` | 0 | 0 | 5 | 1778 | — |
+| 4099 | 4669 | `xmousepasteblock-git` | 0 | 0 | 5 | 4669 | — |
+| 4100 | 6497 | `xosview2` | 0 | 0 | 5 | 6497 | — |
+| 4101 | 4218 | `yazi-git` | 0 | 0 | 5 | 4218 | — |
+| 4102 | 1517 | `youtube-chat-rs-git` | 0 | 0 | 5 | 1517 | — |
+| 4103 | 8254 | `yrba-git` | 0 | 0 | 5 | 8254 | — |
+| 4104 | 7460 | `ytdownloader` | 0 | 0 | 5 | 7460 | — |
+| 4105 | 5409 | `ytui-music-git` | 0 | 0 | 5 | 5409 | — |
+| 4106 | 4584 | `yufi` | 0 | 0 | 5 | 4584 | — |
+| 4107 | 6671 | `zelda3-git` | 0 | 0 | 5 | 6671 | — |
+| 4108 | 2048 | `zeroclaw` | 0 | 0 | 5 | 2048 | — |
+| 4109 | 2111 | `zsh-theme-powerlevel10k-git` | 0 | 0 | 5 | 2111 | — |
+| 4110 | 3511 | `adb-gui-kit-bin` | 0 | 0 | 6 | 3511 | — |
+| 4111 | 1632 | `alcom` | 0 | 0 | 6 | 1632 | — |
+| 4112 | 2419 | `ani-skip-git` | 0 | 0 | 6 | 2419 | — |
+| 4113 | 541 | `archey3` | 0 | 0 | 6 | 541 | — |
+| 4114 | 3207 | `astraeditor-bin` | 0 | 0 | 6 | 3207 | — |
+| 4115 | 6758 | `atari++` | 0 | 0 | 6 | 6758 | — |
+| 4116 | 1595 | `audirvana-studio` | 0 | 0 | 6 | 1595 | — |
+| 4117 | 1678 | `awakened-poe-trade-git` | 0 | 0 | 6 | 1678 | — |
+| 4118 | 5487 | `baremetal-compiler-rt` | 0 | 0 | 6 | 5487 | — |
+| 4119 | 4777 | `beekeeper-studio` | 0 | 0 | 6 | 4777 | — |
+| 4120 | 5503 | `boomer-git` | 0 | 0 | 6 | 5503 | — |
+| 4121 | 661 | `brisk` | 0 | 0 | 6 | 661 | — |
+| 4122 | 4762 | `brisk-bin` | 0 | 0 | 6 | 4762 | — |
+| 4123 | 7363 | `buildcache-git` | 0 | 0 | 6 | 7363 | — |
+| 4124 | 5151 | `bulky` | 0 | 0 | 6 | 5151 | — |
+| 4125 | 1060 | `bzmenu-git` | 0 | 0 | 6 | 1060 | — |
+| 4126 | 503 | `catgirldownloader` | 0 | 0 | 6 | 503 | — |
+| 4127 | 4886 | `ci-toolbox-bin` | 0 | 0 | 6 | 4886 | — |
+| 4128 | 2945 | `classicube-bin` | 0 | 0 | 6 | 2945 | — |
+| 4129 | 5220 | `cleanupdate-git` | 0 | 0 | 6 | 5220 | — |
+| 4130 | 2701 | `cloudflare-warp-nox-bin` | 0 | 0 | 6 | 2701 | — |
+| 4131 | 7050 | `cmdcreate` | 0 | 0 | 6 | 7050 | — |
+| 4132 | 3119 | `codename-goose` | 0 | 0 | 6 | 3119 | — |
+| 4133 | 3448 | `com.cassidyjames.butler` | 0 | 0 | 6 | 3448 | — |
+| 4134 | 5334 | `compiler-rt15` | 0 | 0 | 6 | 5334 | — |
+| 4135 | 2068 | `coolercontrold` | 0 | 0 | 6 | 2068 | — |
+| 4136 | 5173 | `dause` | 0 | 0 | 6 | 5173 | — |
+| 4137 | 2538 | `ddcci-hotplugd` | 0 | 0 | 6 | 2538 | — |
+| 4138 | 3841 | `deezer` | 0 | 0 | 6 | 3841 | — |
+| 4139 | 3418 | `disk-spinner` | 0 | 0 | 6 | 3418 | — |
+| 4140 | 3756 | `dmenustatus-git` | 0 | 0 | 6 | 3756 | — |
+| 4141 | 3684 | `dooble-git` | 0 | 0 | 6 | 3684 | — |
+| 4142 | 4014 | `drl` | 0 | 0 | 6 | 4014 | — |
+| 4143 | 7993 | `dssat-csm-os-git` | 0 | 0 | 6 | 7993 | — |
+| 4144 | 8252 | `echomind` | 0 | 0 | 6 | 8252 | — |
+| 4145 | 407 | `eilmeldung` | 0 | 0 | 6 | 407 | — |
+| 4146 | 7488 | `equibop` | 0 | 0 | 6 | 7488 | — |
+| 4147 | 8570 | `escrotum-git` | 0 | 0 | 6 | 8570 | — |
+| 4148 | 6387 | `eww-git` | 0 | 0 | 6 | 6387 | — |
+| 4149 | 3339 | `ezstream` | 0 | 0 | 6 | 3339 | — |
+| 4150 | 2732 | `f1multiviewer-bin` | 0 | 0 | 6 | 2732 | — |
+| 4151 | 4267 | `fabric-server` | 0 | 0 | 6 | 4267 | — |
+| 4152 | 1743 | `factorio-space-age` | 0 | 0 | 6 | 1743 | — |
+| 4153 | 4963 | `faff` | 0 | 0 | 6 | 4963 | — |
+| 4154 | 1906 | `fastflix` | 0 | 0 | 6 | 1906 | — |
+| 4155 | 3828 | `fey` | 0 | 0 | 6 | 3828 | — |
+| 4156 | 4959 | `findmydeviceserver` | 0 | 0 | 6 | 4959 | — |
+| 4157 | 323 | `firedragon-multi-account-containers-lite` | 0 | 0 | 6 | 323 | — |
+| 4158 | 3773 | `firefox-beta-bin` | 0 | 0 | 6 | 3773 | — |
+| 4159 | 322 | `firefox-multi-account-containers-lite` | 0 | 0 | 6 | 322 | — |
+| 4160 | 321 | `floorp-multi-account-containers-lite` | 0 | 0 | 6 | 321 | — |
+| 4161 | 4063 | `foomuuri` | 0 | 0 | 6 | 4063 | — |
+| 4162 | 2376 | `forkgram-bin` | 0 | 0 | 6 | 2376 | — |
+| 4163 | 8274 | `fulcrum-git` | 0 | 0 | 6 | 8274 | — |
+| 4164 | 2936 | `gale` | 0 | 0 | 6 | 2936 | — |
+| 4165 | 7761 | `gazelle-tui` | 0 | 0 | 6 | 7761 | — |
+| 4166 | 2963 | `gonob` | 0 | 0 | 6 | 2963 | — |
+| 4167 | 307 | `goose-desktop` | 0 | 0 | 6 | 307 | — |
+| 4168 | 2734 | `gopeed-bin` | 0 | 0 | 6 | 2734 | — |
+| 4169 | 7035 | `gossip` | 0 | 0 | 6 | 7035 | — |
+| 4170 | 7287 | `grumpy-irc-git` | 0 | 0 | 6 | 7287 | — |
+| 4171 | 795 | `gsender` | 0 | 0 | 6 | 795 | — |
+| 4172 | 5069 | `gtk2-perl` | 0 | 0 | 6 | 5069 | — |
+| 4173 | 2867 | `heidisql-qt6-bin` | 0 | 0 | 6 | 2867 | — |
+| 4174 | 551 | `hplip-plugin` | 0 | 0 | 6 | 551 | — |
+| 4175 | 1264 | `hyprism-bin` | 0 | 0 | 6 | 1264 | — |
+| 4176 | 8003 | `hyprqt6engine-git` | 0 | 0 | 6 | 8003 | — |
+| 4177 | 320 | `icecat-multi-account-containers-lite` | 0 | 0 | 6 | 320 | — |
+| 4178 | 1025 | `imsprog` | 0 | 0 | 6 | 1025 | — |
+| 4179 | 7461 | `ins` | 0 | 0 | 6 | 7461 | — |
+| 4180 | 449 | `instaloader` | 0 | 0 | 6 | 449 | — |
+| 4181 | 5493 | `ipmctl-git` | 0 | 0 | 6 | 5493 | — |
+| 4182 | 1175 | `ironbar-bin` | 0 | 0 | 6 | 1175 | — |
+| 4183 | 1762 | `ironclad-rivet-bin` | 0 | 0 | 6 | 1762 | — |
+| 4184 | 1542 | `jamesdsp-pipewire-bin` | 0 | 0 | 6 | 1542 | — |
+| 4185 | 1514 | `jan-bin` | 0 | 0 | 6 | 1514 | — |
+| 4186 | 3270 | `jan-live-bin` | 0 | 0 | 6 | 3270 | — |
+| 4187 | 7987 | `java17-openjfx-bin` | 0 | 0 | 6 | 7987 | — |
+| 4188 | 2047 | `jdownloader2` | 0 | 0 | 6 | 2047 | — |
+| 4189 | 5157 | `jlc-assistant` | 0 | 0 | 6 | 5157 | — |
+| 4190 | 949 | `kapow` | 0 | 0 | 6 | 949 | — |
+| 4191 | 6423 | `kbd-tapper` | 0 | 0 | 6 | 6423 | — |
+| 4192 | 6444 | `key-mon` | 0 | 0 | 6 | 6444 | — |
+| 4193 | 5184 | `kmozillahelper` | 0 | 0 | 6 | 5184 | — |
+| 4194 | 894 | `krunner-spotify-enhanced-git` | 0 | 0 | 6 | 894 | — |
+| 4195 | 7664 | `ktx_software-git` | 0 | 0 | 6 | 7664 | — |
+| 4196 | 1764 | `labwc-tweaks-git` | 0 | 0 | 6 | 1764 | — |
+| 4197 | 7345 | `lapctl` | 0 | 0 | 6 | 7345 | — |
+| 4198 | 6430 | `lazytyper-bin` | 0 | 0 | 6 | 6430 | — |
+| 4199 | 4265 | `legendary` | 0 | 0 | 6 | 4265 | — |
+| 4200 | 1907 | `lektra-git` | 0 | 0 | 6 | 1907 | — |
+| 4201 | 5512 | `lenovo-print-driver-lj2400-m7400-bin` | 0 | 0 | 6 | 5512 | — |
+| 4202 | 2364 | `lib32-srt` | 0 | 0 | 6 | 2364 | — |
+| 4203 | 8343 | `libastal-io-git` | 0 | 0 | 6 | 8343 | — |
+| 4204 | 2813 | `libation` | 0 | 0 | 6 | 2813 | — |
+| 4205 | 1052 | `libipuz` | 0 | 0 | 6 | 1052 | — |
+| 4206 | 318 | `librewolf-multi-account-containers-lite` | 0 | 0 | 6 | 318 | — |
+| 4207 | 3606 | `libyang3` | 0 | 0 | 6 | 3606 | — |
+| 4208 | 8595 | `lidarr` | 0 | 0 | 6 | 8595 | — |
+| 4209 | 8022 | `lightdm-settings` | 0 | 0 | 6 | 8022 | — |
+| 4210 | 6702 | `lima` | 0 | 0 | 6 | 6702 | — |
+| 4211 | 891 | `limabean` | 0 | 0 | 6 | 891 | — |
+| 4212 | 890 | `limabean-harvest` | 0 | 0 | 6 | 890 | — |
+| 4213 | 8551 | `linapple-git` | 0 | 0 | 6 | 8551 | — |
+| 4214 | 1458 | `linux-wifi-hotspot` | 0 | 0 | 6 | 1458 | — |
+| 4215 | 7346 | `llama.cpp-opencl` | 0 | 0 | 6 | 7346 | — |
+| 4216 | 2895 | `lovr-playspace-bin` | 0 | 0 | 6 | 2895 | — |
+| 4217 | 689 | `lsplug` | 0 | 0 | 6 | 689 | — |
+| 4218 | 7655 | `lug-helper` | 0 | 0 | 6 | 7655 | — |
+| 4219 | 2311 | `m8mouse-git` | 0 | 0 | 6 | 2311 | — |
+| 4220 | 2818 | `maniadrive` | 0 | 0 | 6 | 2818 | — |
+| 4221 | 3362 | `manx-cli` | 0 | 0 | 6 | 3362 | — |
+| 4222 | 2597 | `mermark-editor` | 0 | 0 | 6 | 2597 | — |
+| 4223 | 1112 | `metar` | 0 | 0 | 6 | 1112 | — |
+| 4224 | 317 | `midori-multi-account-containers-lite` | 0 | 0 | 6 | 317 | — |
+| 4225 | 1029 | `minecraft-server` | 0 | 0 | 6 | 1029 | — |
+| 4226 | 440 | `mpc-qt` | 0 | 0 | 6 | 440 | — |
+| 4227 | 7695 | `mpc-qt-git` | 0 | 0 | 6 | 7695 | — |
+| 4228 | 2839 | `msigd-gui` | 0 | 0 | 6 | 2839 | — |
+| 4229 | 316 | `multi-account-containers-lite` | 0 | 0 | 6 | 316 | — |
+| 4230 | 1124 | `ncgopher-git` | 0 | 0 | 6 | 1124 | — |
+| 4231 | 2332 | `needrestart` | 0 | 0 | 6 | 2332 | — |
+| 4232 | 5266 | `nerd-fonts-sf-mono` | 0 | 0 | 6 | 5266 | — |
+| 4233 | 7589 | `nerdfonts-installer-bin` | 0 | 0 | 6 | 7589 | — |
+| 4234 | 4118 | `nicol` | 0 | 0 | 6 | 4118 | — |
+| 4235 | 8329 | `nrc` | 0 | 0 | 6 | 8329 | — |
+| 4236 | 3884 | `nsz-git` | 0 | 0 | 6 | 3884 | — |
+| 4237 | 2119 | `ntfsprogs-plus` | 0 | 0 | 6 | 2119 | — |
+| 4238 | 3919 | `nvimpager-git` | 0 | 0 | 6 | 3919 | — |
+| 4239 | 4214 | `openlinkhub-git` | 0 | 0 | 6 | 4214 | — |
+| 4240 | 186 | `opentabletdriver` | 0 | 0 | 6 | 186 | — |
+| 4241 | 3233 | `opentabletdriver-git` | 0 | 0 | 6 | 3233 | — |
+| 4242 | 8009 | `osslsigncode` | 0 | 0 | 6 | 8009 | — |
+| 4243 | 871 | `otranscribe` | 0 | 0 | 6 | 871 | — |
+| 4244 | 4397 | `ovn` | 0 | 0 | 6 | 4397 | — |
+| 4245 | 1494 | `oxicord` | 0 | 0 | 6 | 1494 | — |
+| 4246 | 3747 | `oxicord-git` | 0 | 0 | 6 | 3747 | — |
+| 4247 | 1209 | `pacman-static` | 0 | 0 | 6 | 1209 | — |
+| 4248 | 776 | `pam-python-git` | 0 | 0 | 6 | 776 | — |
+| 4249 | 3155 | `pdfmted-git` | 0 | 0 | 6 | 3155 | — |
+| 4250 | 1674 | `peazip` | 0 | 0 | 6 | 1674 | — |
+| 4251 | 6498 | `perl-crypt-pbkdf2` | 0 | 0 | 6 | 6498 | — |
+| 4252 | 4839 | `perl-data-password-zxcvbn` | 0 | 0 | 6 | 4839 | — |
+| 4253 | 2612 | `perl-future-io` | 0 | 0 | 6 | 2612 | — |
+| 4254 | 4333 | `pgadmin4-server-bin` | 0 | 0 | 6 | 4333 | — |
+| 4255 | 2101 | `picoscope7` | 0 | 0 | 6 | 2101 | — |
+| 4256 | 3663 | `pipewire-audio-idle-inhibit-git` | 0 | 0 | 6 | 3663 | — |
+| 4257 | 5010 | `pixelterm-c` | 0 | 0 | 6 | 5010 | — |
+| 4258 | 2722 | `pixelterm-c-bin` | 0 | 0 | 6 | 2722 | — |
+| 4259 | 1902 | `plasma6-applets-panel-colorizer` | 0 | 0 | 6 | 1902 | — |
+| 4260 | 6614 | `plasma6-runners-emojirunner` | 0 | 0 | 6 | 6614 | — |
+| 4261 | 3532 | `plasma6-wallpapers-smart-video-wallpaper-reborn-git` | 0 | 0 | 6 | 3532 | — |
+| 4262 | 4446 | `pnana` | 0 | 0 | 6 | 4446 | — |
+| 4263 | 8531 | `poppler-qt-lcd` | 0 | 0 | 6 | 8531 | — |
+| 4264 | 1079 | `procexp` | 0 | 0 | 6 | 1079 | — |
+| 4265 | 2102 | `proton-pass` | 0 | 0 | 6 | 2102 | — |
+| 4266 | 2999 | `proton-vpn-qt-app` | 0 | 0 | 6 | 2999 | — |
+| 4267 | 4677 | `prowlarr` | 0 | 0 | 6 | 4677 | — |
+| 4268 | 4019 | `puny-manager` | 0 | 0 | 6 | 4019 | — |
+| 4269 | 4166 | `purple-gowhatsapp-git` | 0 | 0 | 6 | 4166 | — |
+| 4270 | 3489 | `pwmenu-git` | 0 | 0 | 6 | 3489 | — |
+| 4271 | 6979 | `python-backports.shutil_which` | 0 | 0 | 6 | 6979 | — |
+| 4272 | 7042 | `python-barcode` | 0 | 0 | 6 | 7042 | — |
+| 4273 | 7218 | `python-dashing` | 0 | 0 | 6 | 7218 | — |
+| 4274 | 8178 | `python-deepl` | 0 | 0 | 6 | 8178 | — |
+| 4275 | 3144 | `python-discord` | 0 | 0 | 6 | 3144 | — |
+| 4276 | 7568 | `python-morfeus-ml` | 0 | 0 | 6 | 7568 | — |
+| 4277 | 2394 | `python-poetry-plugin-shell` | 0 | 0 | 6 | 2394 | — |
+| 4278 | 7374 | `python-portion` | 0 | 0 | 6 | 7374 | — |
+| 4279 | 6266 | `python-pybufrkit` | 0 | 0 | 6 | 6266 | — |
+| 4280 | 6600 | `python-pystun3` | 0 | 0 | 6 | 6600 | — |
+| 4281 | 5416 | `python-pytest-archon` | 0 | 0 | 6 | 5416 | — |
+| 4282 | 7525 | `python-rapidgzip` | 0 | 0 | 6 | 7525 | — |
+| 4283 | 10412 | `python-sphinx_design` | 0 | 0 | 6 | 10412 | — |
+| 4284 | 7432 | `python-ssh-lite` | 0 | 0 | 6 | 7432 | — |
+| 4285 | 8171 | `python-textualeffects` | 0 | 0 | 6 | 8171 | — |
+| 4286 | 7950 | `python-uploadserver` | 0 | 0 | 6 | 7950 | — |
+| 4287 | 8553 | `python-xxh` | 0 | 0 | 6 | 8553 | — |
+| 4288 | 5235 | `pyupgrade` | 0 | 0 | 6 | 5235 | — |
+| 4289 | 3693 | `qatlib` | 0 | 0 | 6 | 3693 | — |
+| 4290 | 7642 | `qcomix` | 0 | 0 | 6 | 7642 | — |
+| 4291 | 6800 | `qt-hearts` | 0 | 0 | 6 | 6800 | — |
+| 4292 | 8258 | `quakespasm-spiked-git` | 0 | 0 | 6 | 8258 | — |
+| 4293 | 3646 | `qwhitesurgtkdecorations-qt5` | 0 | 0 | 6 | 3646 | — |
+| 4294 | 3647 | `qwhitesurgtkdecorations-qt6` | 0 | 0 | 6 | 3647 | — |
+| 4295 | 5505 | `qxmledit` | 0 | 0 | 6 | 5505 | — |
+| 4296 | 8173 | `r-vip` | 0 | 0 | 6 | 8173 | — |
+| 4297 | 1001 | `raw-thumbnailer` | 0 | 0 | 6 | 1001 | — |
+| 4298 | 996 | `reflector-simple` | 0 | 0 | 6 | 996 | — |
+| 4299 | 8235 | `regina-rexx` | 0 | 0 | 6 | 8235 | — |
+| 4300 | 7675 | `ripes-bin` | 0 | 0 | 6 | 7675 | — |
+| 4301 | 5012 | `roboclaw-studio-git` | 0 | 0 | 6 | 5012 | — |
+| 4302 | 8360 | `rocwmma-gfx1103` | 0 | 0 | 6 | 8360 | — |
+| 4303 | 8247 | `rofi-search-git` | 0 | 0 | 6 | 8247 | — |
+| 4304 | 6210 | `sat` | 0 | 0 | 6 | 6210 | — |
+| 4305 | 828 | `scenarist` | 0 | 0 | 6 | 828 | — |
+| 4306 | 1466 | `scuisei-git` | 0 | 0 | 6 | 1466 | — |
+| 4307 | 2922 | `secfetch` | 0 | 0 | 6 | 2922 | — |
+| 4308 | 827 | `securecopy` | 0 | 0 | 6 | 827 | — |
+| 4309 | 3375 | `seemux-bin` | 0 | 0 | 6 | 3375 | — |
+| 4310 | 7030 | `serproid` | 0 | 0 | 6 | 7030 | — |
+| 4311 | 3466 | `shiru.lv2-git` | 0 | 0 | 6 | 3466 | — |
+| 4312 | 3670 | `signalbackup-tools-git` | 0 | 0 | 6 | 3670 | — |
+| 4313 | 6774 | `snapborg` | 0 | 0 | 6 | 6774 | — |
+| 4314 | 2446 | `snapper-tools` | 0 | 0 | 6 | 2446 | — |
+| 4315 | 5194 | `sngrep` | 0 | 0 | 6 | 5194 | — |
+| 4316 | 6487 | `sniffert` | 0 | 0 | 6 | 6487 | — |
+| 4317 | 4792 | `sonarr` | 0 | 0 | 6 | 4792 | — |
+| 4318 | 3892 | `sparrow-wallet` | 0 | 0 | 6 | 3892 | — |
+| 4319 | 6412 | `spotify-player-gstreamer` | 0 | 0 | 6 | 6412 | — |
+| 4320 | 2646 | `stacer` | 0 | 0 | 6 | 2646 | — |
+| 4321 | 1546 | `stacher7` | 0 | 0 | 6 | 1546 | — |
+| 4322 | 5065 | `stasis` | 0 | 0 | 6 | 5065 | — |
+| 4323 | 5283 | `stax` | 0 | 0 | 6 | 5283 | — |
+| 4324 | 2960 | `steamclip` | 0 | 0 | 6 | 2960 | — |
+| 4325 | 821 | `steamfetch-git` | 0 | 0 | 6 | 821 | — |
+| 4326 | 2362 | `still` | 0 | 0 | 6 | 2362 | — |
+| 4327 | 2651 | `supermario64-sm64ex-git` | 0 | 0 | 6 | 2651 | — |
+| 4328 | 1034 | `superseedr` | 0 | 0 | 6 | 1034 | — |
+| 4329 | 3426 | `swayidle-nologind` | 0 | 0 | 6 | 3426 | — |
+| 4330 | 3612 | `swaystatus` | 0 | 0 | 6 | 3612 | — |
+| 4331 | 1715 | `synology-assistant` | 0 | 0 | 6 | 1715 | — |
+| 4332 | 7597 | `sysd-manager-git` | 0 | 0 | 6 | 7597 | — |
+| 4333 | 3478 | `tanin-git` | 0 | 0 | 6 | 3478 | — |
+| 4334 | 2386 | `tatuin` | 0 | 0 | 6 | 2386 | — |
+| 4335 | 4196 | `telepresence2` | 0 | 0 | 6 | 4196 | — |
+| 4336 | 7352 | `terlang` | 0 | 0 | 6 | 7352 | — |
+| 4337 | 7678 | `termitype` | 0 | 0 | 6 | 7678 | — |
+| 4338 | 2827 | `tg-ws-proxy-git` | 0 | 0 | 6 | 2827 | — |
+| 4339 | 1785 | `thorium-reader-bin` | 0 | 0 | 6 | 1785 | — |
+| 4340 | 4236 | `tidal-hifi-git` | 0 | 0 | 6 | 4236 | — |
+| 4341 | 1061 | `tinc-pre` | 0 | 0 | 6 | 1061 | — |
+| 4342 | 4460 | `tlclient` | 0 | 0 | 6 | 4460 | — |
+| 4343 | 2990 | `tlescope-git` | 0 | 0 | 6 | 2990 | — |
+| 4344 | 7052 | `tosu-git` | 0 | 0 | 6 | 7052 | — |
+| 4345 | 1685 | `tradingview` | 0 | 0 | 6 | 1685 | — |
+| 4346 | 8539 | `trayclock` | 0 | 0 | 6 | 8539 | — |
+| 4347 | 7354 | `tsm` | 0 | 0 | 6 | 7354 | — |
+| 4348 | 3216 | `ttf-octicons` | 0 | 0 | 6 | 3216 | — |
+| 4349 | 1172 | `upscayl-bin` | 0 | 0 | 6 | 1172 | — |
+| 4350 | 984 | `urbackup2-client` | 0 | 0 | 6 | 984 | — |
+| 4351 | 542 | `uswsusp-git` | 0 | 0 | 6 | 542 | — |
+| 4352 | 4906 | `vane` | 0 | 0 | 6 | 4906 | — |
+| 4353 | 6797 | `veracrypt-git` | 0 | 0 | 6 | 6797 | — |
+| 4354 | 6805 | `veracrypt-inyourlanguage` | 0 | 0 | 6 | 6805 | — |
+| 4355 | 1437 | `vesktop` | 0 | 0 | 6 | 1437 | — |
+| 4356 | 736 | `vesktop-git` | 0 | 0 | 6 | 736 | — |
+| 4357 | 4733 | `vesta` | 0 | 0 | 6 | 4733 | — |
+| 4358 | 1153 | `vibe-bin` | 0 | 0 | 6 | 1153 | — |
+| 4359 | 2989 | `vibepanel-bin` | 0 | 0 | 6 | 2989 | — |
+| 4360 | 2481 | `vkdevicechooser` | 0 | 0 | 6 | 2481 | — |
+| 4361 | 7329 | `vstax` | 0 | 0 | 6 | 7329 | — |
+| 4362 | 1460 | `warp-terminal-bin` | 0 | 0 | 6 | 1460 | — |
+| 4363 | 1173 | `wechat-appimage` | 0 | 0 | 6 | 1173 | — |
+| 4364 | 770 | `whitebox-tools` | 0 | 0 | 6 | 770 | — |
+| 4365 | 6609 | `wireguard-gui-bin` | 0 | 0 | 6 | 6609 | — |
+| 4366 | 51 | `wireguard-ui` | 0 | 0 | 6 | 51 | — |
+| 4367 | 952 | `wireguird` | 0 | 0 | 6 | 952 | — |
+| 4368 | 6846 | `wl-gears-git` | 0 | 0 | 6 | 6846 | — |
+| 4369 | 4929 | `wleave` | 0 | 0 | 6 | 4929 | — |
+| 4370 | 3897 | `wlrobs-hg` | 0 | 0 | 6 | 3897 | — |
+| 4371 | 3222 | `wmutils-git` | 0 | 0 | 6 | 3222 | — |
+| 4372 | 8604 | `woeusb` | 0 | 0 | 6 | 8604 | — |
+| 4373 | 7492 | `xclicker` | 0 | 0 | 6 | 7492 | — |
+| 4374 | 7391 | `xlibre-video-nouveau` | 0 | 0 | 6 | 7391 | — |
+| 4375 | 400 | `xmcl-launcher` | 0 | 0 | 6 | 400 | — |
+| 4376 | 2378 | `youtube-tui` | 0 | 0 | 6 | 2378 | — |
+| 4377 | 4986 | `zelbar` | 0 | 0 | 6 | 4986 | — |
+| 4378 | 2751 | `64gram-desktop-bin` | 0 | 0 | 7 | 2751 | — |
+| 4379 | 7558 | `abuse-git` | 0 | 0 | 7 | 7558 | — |
+| 4380 | 4812 | `addwater` | 0 | 0 | 7 | 4812 | — |
+| 4381 | 297 | `adwsteamgtk` | 0 | 0 | 7 | 297 | — |
+| 4382 | 5515 | `aerothemeplasma-desktop-x11-git` | 0 | 0 | 7 | 5515 | — |
+| 4383 | 5093 | `agave` | 0 | 0 | 7 | 5093 | — |
+| 4384 | 8356 | `appmenu-glib-translator-git` | 0 | 0 | 7 | 8356 | — |
+| 4385 | 8530 | `athas` | 0 | 0 | 7 | 8530 | — |
+| 4386 | 2961 | `bapctools` | 0 | 0 | 7 | 2961 | — |
+| 4387 | 8179 | `bashhound-ce-git` | 0 | 0 | 7 | 8179 | — |
+| 4388 | 3125 | `bcachefs-dkms-git` | 0 | 0 | 7 | 3125 | — |
+| 4389 | 3952 | `betterspades` | 0 | 0 | 7 | 3952 | — |
+| 4390 | 3504 | `binauralplayer` | 0 | 0 | 7 | 3504 | — |
+| 4391 | 8619 | `bitrix24` | 0 | 0 | 7 | 8619 | — |
+| 4392 | 3642 | `bizhawk-bin` | 0 | 0 | 7 | 3642 | — |
+| 4393 | 5216 | `bleur` | 0 | 0 | 7 | 5216 | — |
+| 4394 | 3789 | `blueberry` | 0 | 0 | 7 | 3789 | — |
+| 4395 | 8545 | `bsdmainutils` | 0 | 0 | 7 | 8545 | — |
+| 4396 | 3662 | `carbonyl` | 0 | 0 | 7 | 3662 | — |
+| 4397 | 2085 | `certbot-dns-desec` | 0 | 0 | 7 | 2085 | — |
+| 4398 | 929 | `certbot-dns-pdns` | 0 | 0 | 7 | 929 | — |
+| 4399 | 3340 | `cevomapgen` | 0 | 0 | 7 | 3340 | — |
+| 4400 | 5482 | `cliamp` | 0 | 0 | 7 | 5482 | — |
+| 4401 | 3729 | `codelldb` | 0 | 0 | 7 | 3729 | — |
+| 4402 | 6337 | `coppwr-bin` | 0 | 0 | 7 | 6337 | — |
+| 4403 | 4622 | `deadlock-server-picker` | 0 | 0 | 7 | 4622 | — |
+| 4404 | 3866 | `discord-electron-openasar` | 0 | 0 | 7 | 3866 | — |
+| 4405 | 1703 | `doomseeker` | 0 | 0 | 7 | 1703 | — |
+| 4406 | 7980 | `dopamine` | 0 | 0 | 7 | 7980 | — |
+| 4407 | 240 | `dosr` | 0 | 0 | 7 | 240 | — |
+| 4408 | 4473 | `eddie-cli` | 0 | 0 | 7 | 4473 | — |
+| 4409 | 430 | `edmarketconnector` | 0 | 0 | 7 | 430 | — |
+| 4410 | 6577 | `fastcompmgr-git` | 0 | 0 | 7 | 6577 | — |
+| 4411 | 1570 | `fcitx5-im-emoji-picker-git` | 0 | 0 | 7 | 1570 | — |
+| 4412 | 5237 | `ferrite` | 0 | 0 | 7 | 5237 | — |
+| 4413 | 6611 | `filebrowser` | 0 | 0 | 7 | 6611 | — |
+| 4414 | 2772 | `firmware-manager` | 0 | 0 | 7 | 2772 | — |
+| 4415 | 2736 | `flare` | 0 | 0 | 7 | 2736 | — |
+| 4416 | 4233 | `flutter-bin` | 0 | 0 | 7 | 4233 | — |
+| 4417 | 6130 | `fotocx` | 0 | 0 | 7 | 6130 | — |
+| 4418 | 5029 | `freedownloadmanager-bin` | 0 | 0 | 7 | 5029 | — |
+| 4419 | 5375 | `freetuxtv` | 0 | 0 | 7 | 5375 | — |
+| 4420 | 2558 | `fuck` | 0 | 0 | 7 | 2558 | — |
+| 4421 | 3001 | `fzp-bin` | 0 | 0 | 7 | 3001 | — |
+| 4422 | 5395 | `gede` | 0 | 0 | 7 | 5395 | — |
+| 4423 | 4987 | `ghdl-llvm-git` | 0 | 0 | 7 | 4987 | — |
+| 4424 | 6815 | `git-review` | 0 | 0 | 7 | 6815 | — |
+| 4425 | 6317 | `gittorrent` | 0 | 0 | 7 | 6317 | — |
+| 4426 | 1297 | `glide-browser-bin` | 0 | 0 | 7 | 1297 | — |
+| 4427 | 7365 | `gnome-system-tools` | 0 | 0 | 7 | 7365 | — |
+| 4428 | 1142 | `goonget` | 0 | 0 | 7 | 1142 | — |
+| 4429 | 2733 | `gourou` | 0 | 0 | 7 | 2733 | — |
+| 4430 | 4576 | `gpmaster` | 0 | 0 | 7 | 4576 | — |
+| 4431 | 7967 | `hid-velocityone-multi-shift` | 0 | 0 | 7 | 7967 | — |
+| 4432 | 3672 | `hyprquickframe-git` | 0 | 0 | 7 | 3672 | — |
+| 4433 | 2569 | `hyprsnipper` | 0 | 0 | 7 | 2569 | — |
+| 4434 | 1571 | `ibus-im-emoji-picker-git` | 0 | 0 | 7 | 1571 | — |
+| 4435 | 2494 | `irccloud-bin` | 0 | 0 | 7 | 2494 | — |
+| 4436 | 4239 | `jan` | 0 | 0 | 7 | 4239 | — |
+| 4437 | 4398 | `jan-git` | 0 | 0 | 7 | 4398 | — |
+| 4438 | 5129 | `jdk-temurin` | 0 | 0 | 7 | 5129 | — |
+| 4439 | 8000 | `jdk21-temurin` | 0 | 0 | 7 | 8000 | — |
+| 4440 | 4801 | `kas` | 0 | 0 | 7 | 4801 | — |
+| 4441 | 3701 | `kclock-rs-bin` | 0 | 0 | 7 | 3701 | — |
+| 4442 | 7379 | `kdiff3-git` | 0 | 0 | 7 | 7379 | — |
+| 4443 | 2917 | `kishi-shell` | 0 | 0 | 7 | 2917 | — |
+| 4444 | 2475 | `klog` | 0 | 0 | 7 | 2475 | — |
+| 4445 | 5169 | `komet` | 0 | 0 | 7 | 5169 | — |
+| 4446 | 895 | `krita-ai-diffusion` | 0 | 0 | 7 | 895 | — |
+| 4447 | 5261 | `kwin-effect-rounded-corners-x11-git` | 0 | 0 | 7 | 5261 | — |
+| 4448 | 7375 | `larksuite-bin` | 0 | 0 | 7 | 7375 | — |
+| 4449 | 5046 | `lcevcdec` | 0 | 0 | 7 | 5046 | — |
+| 4450 | 2967 | `leshade-git` | 0 | 0 | 7 | 2967 | — |
+| 4451 | 2432 | `lib32-bluez-plugins` | 0 | 0 | 7 | 2432 | — |
+| 4452 | 2370 | `lib32-libbluray` | 0 | 0 | 7 | 2370 | — |
+| 4453 | 6425 | `libadwaita-yaru-docs-git` | 0 | 0 | 7 | 6425 | — |
+| 4454 | 5265 | `libasciichat` | 0 | 0 | 7 | 5265 | — |
+| 4455 | 8344 | `libastal-cava-git` | 0 | 0 | 7 | 8344 | — |
+| 4456 | 8362 | `libastal-hyprland-git` | 0 | 0 | 7 | 8362 | — |
+| 4457 | 8363 | `libastal-network-git` | 0 | 0 | 7 | 8363 | — |
+| 4458 | 4461 | `libpurple-lurch-git` | 0 | 0 | 7 | 4461 | — |
+| 4459 | 3883 | `libray` | 0 | 0 | 7 | 3883 | — |
+| 4460 | 2735 | `libreoffice-extension-writingtool` | 0 | 0 | 7 | 2735 | — |
+| 4461 | 283 | `libunity` | 0 | 0 | 7 | 283 | — |
+| 4462 | 276 | `limine-snapper-sync` | 0 | 0 | 7 | 276 | — |
+| 4463 | 4826 | `logiops` | 0 | 0 | 7 | 4826 | — |
+| 4464 | 4337 | `logiops-git` | 0 | 0 | 7 | 4337 | — |
+| 4465 | 5042 | `logseq-desktop` | 0 | 0 | 7 | 5042 | — |
+| 4466 | 4550 | `lumus` | 0 | 0 | 7 | 4550 | — |
+| 4467 | 3645 | `lyrionmusicserver` | 0 | 0 | 7 | 3645 | — |
+| 4468 | 6739 | `lzbench` | 0 | 0 | 7 | 6739 | — |
+| 4469 | 6394 | `maa-assistant-arknights` | 0 | 0 | 7 | 6394 | — |
+| 4470 | 6393 | `maa-assistant-arknights-cuda` | 0 | 0 | 7 | 6393 | — |
+| 4471 | 4804 | `mandelbulber2` | 0 | 0 | 7 | 4804 | — |
+| 4472 | 7982 | `marble-marcher-ce` | 0 | 0 | 7 | 7982 | — |
+| 4473 | 8001 | `maretf-bin` | 0 | 0 | 7 | 8001 | — |
+| 4474 | 419 | `masterpdfeditor` | 0 | 0 | 7 | 419 | — |
+| 4475 | 3895 | `mediainfo-gui-qt` | 0 | 0 | 7 | 3895 | — |
+| 4476 | 8290 | `meowrch-tools` | 0 | 0 | 7 | 8290 | — |
+| 4477 | 1008 | `mesen2-git` | 0 | 0 | 7 | 1008 | — |
+| 4478 | 5523 | `mkbrr-gui-bin` | 0 | 0 | 7 | 5523 | — |
+| 4479 | 5344 | `mkvextract-gtk` | 0 | 0 | 7 | 5344 | — |
+| 4480 | 3855 | `momw-tools-pack` | 0 | 0 | 7 | 3855 | — |
+| 4481 | 945 | `moodbar` | 0 | 0 | 7 | 945 | — |
+| 4482 | 6585 | `motrix` | 0 | 0 | 7 | 6585 | — |
+| 4483 | 4198 | `mousam` | 0 | 0 | 7 | 4198 | — |
+| 4484 | 4074 | `mpris-scrobbler` | 0 | 0 | 7 | 4074 | — |
+| 4485 | 3429 | `mx-samba-config` | 0 | 0 | 7 | 3429 | — |
+| 4486 | 2127 | `naps2` | 0 | 0 | 7 | 2127 | — |
+| 4487 | 6554 | `nautilus-dropbox` | 0 | 0 | 7 | 6554 | — |
+| 4488 | 4714 | `neoarch-git` | 0 | 0 | 7 | 4714 | — |
+| 4489 | 7744 | `nmgui` | 0 | 0 | 7 | 7744 | — |
+| 4490 | 3447 | `notejot` | 0 | 0 | 7 | 3447 | — |
+| 4491 | 2067 | `notion-app-electron` | 0 | 0 | 7 | 2067 | — |
+| 4492 | 6186 | `nsis` | 0 | 0 | 7 | 6186 | — |
+| 4493 | 3523 | `nucleus-shell` | 0 | 0 | 7 | 3523 | — |
+| 4494 | 1004 | `nut-monitor` | 0 | 0 | 7 | 1004 | — |
+| 4495 | 6565 | `obs-backgroundremoval-git` | 0 | 0 | 7 | 6565 | — |
+| 4496 | 1775 | `openarc` | 0 | 0 | 7 | 1775 | — |
+| 4497 | 788 | `openastro.org` | 0 | 0 | 7 | 788 | — |
+| 4498 | 3955 | `openclaw-git` | 0 | 0 | 7 | 3955 | — |
+| 4499 | 8585 | `openoffice-bin` | 0 | 0 | 7 | 8585 | — |
+| 4500 | 3966 | `opentaiko` | 0 | 0 | 7 | 3966 | — |
+| 4501 | 356 | `packet` | 0 | 0 | 7 | 356 | — |
+| 4502 | 6323 | `pango-design-suite-bin` | 0 | 0 | 7 | 6323 | — |
+| 4503 | 3440 | `par-term-bin` | 0 | 0 | 7 | 3440 | — |
+| 4504 | 1108 | `pdf.tocgen` | 0 | 0 | 7 | 1108 | — |
+| 4505 | 1164 | `peazip-qt-bin` | 0 | 0 | 7 | 1164 | — |
+| 4506 | 3455 | `pipette-desktop-bin` | 0 | 0 | 7 | 3455 | — |
+| 4507 | 293 | `pkglog` | 0 | 0 | 7 | 293 | — |
+| 4508 | 5022 | `plasma-ions-china-git` | 0 | 0 | 7 | 5022 | — |
+| 4509 | 1557 | `plasma6-runners-jetbrains-runner-git` | 0 | 0 | 7 | 1557 | — |
+| 4510 | 4992 | `playtimed` | 0 | 0 | 7 | 4992 | — |
+| 4511 | 7767 | `popcorntime` | 0 | 0 | 7 | 7767 | — |
+| 4512 | 2617 | `psysonic` | 0 | 0 | 7 | 2617 | — |
+| 4513 | 6781 | `pulsecontrol-git` | 0 | 0 | 7 | 6781 | — |
+| 4514 | 6520 | `python-async-cron` | 0 | 0 | 7 | 6520 | — |
+| 4515 | 6735 | `python-dirlay` | 0 | 0 | 7 | 6735 | — |
+| 4516 | 6717 | `python-dony` | 0 | 0 | 7 | 6717 | — |
+| 4517 | 2336 | `python-fangfrisch` | 0 | 0 | 7 | 2336 | — |
+| 4518 | 4609 | `python-ftputil` | 0 | 0 | 7 | 4609 | — |
+| 4519 | 7614 | `python-landlock` | 0 | 0 | 7 | 7614 | — |
+| 4520 | 3446 | `python-materialyoucolor3` | 0 | 0 | 7 | 3446 | — |
+| 4521 | 2838 | `python-mprisgovee` | 0 | 0 | 7 | 2838 | — |
+| 4522 | 6842 | `python-pyebsdindex` | 0 | 0 | 7 | 6842 | — |
+| 4523 | 8577 | `python-pygame-sdl2` | 0 | 0 | 7 | 8577 | — |
+| 4524 | 2842 | `python-pytricia-git` | 0 | 0 | 7 | 2842 | — |
+| 4525 | 5282 | `python-telegram-send` | 0 | 0 | 7 | 5282 | — |
+| 4526 | 6500 | `python-termgraph` | 0 | 0 | 7 | 6500 | — |
+| 4527 | 3707 | `python-textual-fspicker-git` | 0 | 0 | 7 | 3707 | — |
+| 4528 | 7000 | `python-upnpclient` | 0 | 0 | 7 | 7000 | — |
+| 4529 | 7576 | `python-user_agent` | 0 | 0 | 7 | 7576 | — |
+| 4530 | 2472 | `python-yappi` | 0 | 0 | 7 | 2472 | — |
+| 4531 | 8008 | `qdia` | 0 | 0 | 7 | 8008 | — |
+| 4532 | 5288 | `qr-backup` | 0 | 0 | 7 | 5288 | — |
+| 4533 | 3269 | `qtarcan-git` | 0 | 0 | 7 | 3269 | — |
+| 4534 | 4509 | `recorder` | 0 | 0 | 7 | 4509 | — |
+| 4535 | 3451 | `reminduck` | 0 | 0 | 7 | 3451 | — |
+| 4536 | 5440 | `reqable-bin` | 0 | 0 | 7 | 5440 | — |
+| 4537 | 6289 | `riftbar-git` | 0 | 0 | 7 | 6289 | — |
+| 4538 | 3572 | `ripdrag` | 0 | 0 | 7 | 3572 | — |
+| 4539 | 4409 | `river-creek` | 0 | 0 | 7 | 4409 | — |
+| 4540 | 6198 | `rlr` | 0 | 0 | 7 | 6198 | — |
+| 4541 | 3264 | `rtt-rstudio-technician` | 0 | 0 | 7 | 3264 | — |
+| 4542 | 7013 | `rua` | 0 | 0 | 7 | 7013 | — |
+| 4543 | 1489 | `saturn-launcher` | 0 | 0 | 7 | 1489 | — |
+| 4544 | 4078 | `scangearmp2-sane-git` | 0 | 0 | 7 | 4078 | — |
+| 4545 | 2699 | `scx-tools-git` | 0 | 0 | 7 | 2699 | — |
+| 4546 | 1559 | `serialplot-git` | 0 | 0 | 7 | 1559 | — |
+| 4547 | 990 | `shadowsocks-libev-static` | 0 | 0 | 7 | 990 | — |
+| 4548 | 1149 | `shorinclip-git` | 0 | 0 | 7 | 1149 | — |
+| 4549 | 7725 | `shpool` | 0 | 0 | 7 | 7725 | — |
+| 4550 | 3188 | `signal-cli` | 0 | 0 | 7 | 3188 | — |
+| 4551 | 1533 | `slack-desktop-wayland` | 0 | 0 | 7 | 1533 | — |
+| 4552 | 2642 | `sonic-screen-library` | 0 | 0 | 7 | 2642 | — |
+| 4553 | 1735 | `sonyheadphonesclient-bluetooth-bin` | 0 | 0 | 7 | 1735 | — |
+| 4554 | 6681 | `source2viewer-bin` | 0 | 0 | 7 | 6681 | — |
+| 4555 | 6533 | `spek-x-git` | 0 | 0 | 7 | 6533 | — |
+| 4556 | 5097 | `spotube-bin` | 0 | 0 | 7 | 5097 | — |
+| 4557 | 3425 | `sqlite-web` | 0 | 0 | 7 | 3425 | — |
+| 4558 | 250 | `stoat-desktop-git` | 0 | 0 | 7 | 250 | — |
+| 4559 | 4335 | `stremio-service-bin` | 0 | 0 | 7 | 4335 | — |
+| 4560 | 6582 | `svp-bin` | 0 | 0 | 7 | 6582 | — |
+| 4561 | 395 | `sysd-manager` | 0 | 0 | 7 | 395 | — |
+| 4562 | 4200 | `tacentview-git` | 0 | 0 | 7 | 4200 | — |
+| 4563 | 4454 | `telegram-tdlib-purple-git` | 0 | 0 | 7 | 4454 | — |
+| 4564 | 4800 | `tera` | 0 | 0 | 7 | 4800 | — |
+| 4565 | 5267 | `terminal-ai` | 0 | 0 | 7 | 5267 | — |
+| 4566 | 4598 | `terminal-fireworks` | 0 | 0 | 7 | 4598 | — |
+| 4567 | 4802 | `termora-bin` | 0 | 0 | 7 | 4802 | — |
+| 4568 | 5392 | `themix-export-spotify-git` | 0 | 0 | 7 | 5392 | — |
+| 4569 | 7307 | `tlp-pd-git` | 0 | 0 | 7 | 7307 | — |
+| 4570 | 3709 | `tomcat8` | 0 | 0 | 7 | 3709 | — |
+| 4571 | 813 | `tqsl` | 0 | 0 | 7 | 813 | — |
+| 4572 | 6733 | `trifold-git` | 0 | 0 | 7 | 6733 | — |
+| 4573 | 1366 | `ttime-bin` | 0 | 0 | 7 | 1366 | — |
+| 4574 | 5217 | `ue4cli-git` | 0 | 0 | 7 | 5217 | — |
+| 4575 | 6654 | `ufrii-print` | 0 | 0 | 7 | 6654 | — |
+| 4576 | 3563 | `ultimate-doom-builder-git` | 0 | 0 | 7 | 3563 | — |
+| 4577 | 8047 | `unetbootin` | 0 | 0 | 7 | 8047 | — |
+| 4578 | 2938 | `uptater` | 0 | 0 | 7 | 2938 | — |
+| 4579 | 7564 | `user-scanner` | 0 | 0 | 7 | 7564 | — |
+| 4580 | 6784 | `vaults` | 0 | 0 | 7 | 6784 | — |
+| 4581 | 6262 | `vfio-kvm` | 0 | 0 | 7 | 6262 | — |
+| 4582 | 8030 | `virt-v2v` | 0 | 0 | 7 | 8030 | — |
+| 4583 | 2777 | `voix` | 0 | 0 | 7 | 2777 | — |
+| 4584 | 3856 | `vrms-arch-git` | 0 | 0 | 7 | 3856 | — |
+| 4585 | 4453 | `wafw00f` | 0 | 0 | 7 | 4453 | — |
+| 4586 | 6157 | `wattage` | 0 | 0 | 7 | 6157 | — |
+| 4587 | 8018 | `waybar-updates` | 0 | 0 | 7 | 8018 | — |
+| 4588 | 4523 | `wayfarer-git` | 0 | 0 | 7 | 4523 | — |
+| 4589 | 4893 | `webappcontainer` | 0 | 0 | 7 | 4893 | — |
+| 4590 | 3967 | `whisper.cpp-vulkan` | 0 | 0 | 7 | 3967 | — |
+| 4591 | 4736 | `windterm-bin` | 0 | 0 | 7 | 4736 | — |
+| 4592 | 4731 | `wsdd-native` | 0 | 0 | 7 | 4731 | — |
+| 4593 | 1741 | `xampp` | 0 | 0 | 7 | 1741 | — |
+| 4594 | 564 | `xlibre-video-amdgpu` | 0 | 0 | 7 | 564 | — |
+| 4595 | 6160 | `xlibre-xorgxrdp` | 0 | 0 | 7 | 6160 | — |
+| 4596 | 3963 | `yt-beats` | 0 | 0 | 7 | 3963 | — |
+| 4597 | 7465 | `ytdownloader-gui` | 0 | 0 | 7 | 7465 | — |
+| 4598 | 3778 | `ab-download-manager` | 0 | 0 | 8 | 3778 | — |
+| 4599 | 714 | `aconfmgr-git` | 0 | 0 | 8 | 714 | — |
+| 4600 | 3979 | `aeth-git` | 0 | 0 | 8 | 3979 | — |
+| 4601 | 7389 | `anytype-alpha-bin` | 0 | 0 | 8 | 7389 | — |
+| 4602 | 6574 | `aqemu-qt6-git` | 0 | 0 | 8 | 6574 | — |
+| 4603 | 2526 | `armbian-imager-bin` | 0 | 0 | 8 | 2526 | — |
+| 4604 | 8246 | `asix-ax99100` | 0 | 0 | 8 | 8246 | — |
+| 4605 | 429 | `atostekid` | 0 | 0 | 8 | 429 | — |
+| 4606 | 2024 | `aur-sync-vote` | 0 | 0 | 8 | 2024 | — |
+| 4607 | 933 | `autopilot-rs` | 0 | 0 | 8 | 933 | — |
+| 4608 | 5256 | `avvie-git` | 0 | 0 | 8 | 5256 | — |
+| 4609 | 1789 | `awww-git` | 0 | 0 | 8 | 1789 | — |
+| 4610 | 1050 | `aylurs-gtk-shell` | 0 | 0 | 8 | 1050 | — |
+| 4611 | 476 | `balena-etcher` | 0 | 0 | 8 | 476 | — |
+| 4612 | 5458 | `bapctools-git` | 0 | 0 | 8 | 5458 | — |
+| 4613 | 8599 | `betterlockscreen` | 0 | 0 | 8 | 8599 | — |
+| 4614 | 2058 | `bitwarden-bin` | 0 | 0 | 8 | 2058 | — |
+| 4615 | 4912 | `blue-recorder-git` | 0 | 0 | 8 | 4912 | — |
+| 4616 | 7530 | `bluebubbles-bin` | 0 | 0 | 8 | 7530 | — |
+| 4617 | 3993 | `bs-manager-bin` | 0 | 0 | 8 | 3993 | — |
+| 4618 | 8163 | `c001apk-flutter-git` | 0 | 0 | 8 | 8163 | — |
+| 4619 | 6462 | `certbot-dns-infomaniak` | 0 | 0 | 8 | 6462 | — |
+| 4620 | 412 | `cfait` | 0 | 0 | 8 | 412 | — |
+| 4621 | 3872 | `chawan-git` | 0 | 0 | 8 | 3872 | — |
+| 4622 | 1522 | `cider` | 0 | 0 | 8 | 1522 | — |
+| 4623 | 5441 | `cliamp-bin` | 0 | 0 | 8 | 5441 | — |
+| 4624 | 7339 | `cnmplayer` | 0 | 0 | 8 | 7339 | — |
+| 4625 | 8208 | `coccigrep` | 0 | 0 | 8 | 8208 | — |
+| 4626 | 7754 | `continuwuity-git` | 0 | 0 | 8 | 7754 | — |
+| 4627 | 5193 | `cosmic-ext-applet-privacy-indicator-git` | 0 | 0 | 8 | 5193 | — |
+| 4628 | 2536 | `crosspipe-git` | 0 | 0 | 8 | 2536 | — |
+| 4629 | 4610 | `cupola-git` | 0 | 0 | 8 | 4610 | — |
+| 4630 | 4120 | `curseforge` | 0 | 0 | 8 | 4120 | — |
+| 4631 | 924 | `dae-kix-git` | 0 | 0 | 8 | 924 | — |
+| 4632 | 7546 | `deepchat-bin` | 0 | 0 | 8 | 7546 | — |
+| 4633 | 4955 | `dotbot` | 0 | 0 | 8 | 4955 | — |
+| 4634 | 567 | `dunelegacy` | 0 | 0 | 8 | 567 | — |
+| 4635 | 7773 | `edir` | 0 | 0 | 8 | 7773 | — |
+| 4636 | 5363 | `efibooteditor` | 0 | 0 | 8 | 5363 | — |
+| 4637 | 5362 | `efibooteditor-qt5` | 0 | 0 | 8 | 5362 | — |
+| 4638 | 3914 | `eprosima-fast-dds-monitor` | 0 | 0 | 8 | 3914 | — |
+| 4639 | 6586 | `evil-winrm-py` | 0 | 0 | 8 | 6586 | — |
+| 4640 | 7411 | `faircamp` | 0 | 0 | 8 | 7411 | — |
+| 4641 | 6282 | `finamp` | 0 | 0 | 8 | 6282 | — |
+| 4642 | 3775 | `firefox-beta-bin-all-localizations` | 0 | 0 | 8 | 3775 | — |
+| 4643 | 2684 | `flashpoint-launcher-bin` | 0 | 0 | 8 | 2684 | — |
+| 4644 | 1589 | `fluent-bit` | 0 | 0 | 8 | 1589 | — |
+| 4645 | 6479 | `fussr` | 0 | 0 | 8 | 6479 | — |
+| 4646 | 4023 | `gameoftrees` | 0 | 0 | 8 | 4023 | — |
+| 4647 | 3482 | `gb-studio-bin` | 0 | 0 | 8 | 3482 | — |
+| 4648 | 59 | `genymotion` | 0 | 0 | 8 | 59 | — |
+| 4649 | 997 | `ghostmirror` | 0 | 0 | 8 | 997 | — |
+| 4650 | 4571 | `git-incrypt-git` | 0 | 0 | 8 | 4571 | — |
+| 4651 | 1545 | `github-desktop-bin` | 0 | 0 | 8 | 1545 | — |
+| 4652 | 4135 | `goodvibes` | 0 | 0 | 8 | 4135 | — |
+| 4653 | 2032 | `google-chrome` | 0 | 0 | 8 | 2032 | — |
+| 4654 | 451 | `google-chrome-canary` | 0 | 0 | 8 | 451 | — |
+| 4655 | 1641 | `google-chrome-dev` | 0 | 0 | 8 | 1641 | — |
+| 4656 | 4795 | `gotify-tray-cpp` | 0 | 0 | 8 | 4795 | — |
+| 4657 | 5314 | `grub2-theme-preview` | 0 | 0 | 8 | 5314 | — |
+| 4658 | 8586 | `gzdoom-bin` | 0 | 0 | 8 | 8586 | — |
+| 4659 | 3787 | `helion` | 0 | 0 | 8 | 3787 | — |
+| 4660 | 3126 | `hererocks` | 0 | 0 | 8 | 3126 | — |
+| 4661 | 6494 | `hexcore-link` | 0 | 0 | 8 | 6494 | — |
+| 4662 | 2490 | `hobbits` | 0 | 0 | 8 | 2490 | — |
+| 4663 | 1316 | `hyprkcs-git` | 0 | 0 | 8 | 1316 | — |
+| 4664 | 7687 | `hyprland-autoname-workspaces-git` | 0 | 0 | 8 | 7687 | — |
+| 4665 | 7372 | `hyprshade` | 0 | 0 | 8 | 7372 | — |
+| 4666 | 7519 | `hyprshell` | 0 | 0 | 8 | 7519 | — |
+| 4667 | 1509 | `hyprshutdown` | 0 | 0 | 8 | 1509 | — |
+| 4668 | 509 | `hytale-f2p-git` | 0 | 0 | 8 | 509 | — |
+| 4669 | 2422 | `i2pd-tools-git` | 0 | 0 | 8 | 2422 | — |
+| 4670 | 31 | `insync` | 0 | 0 | 8 | 31 | — |
+| 4671 | 7594 | `intellij-idea-open-eap` | 0 | 0 | 8 | 7594 | — |
+| 4672 | 3816 | `java-openjdk-ea-bin` | 0 | 0 | 8 | 3816 | — |
+| 4673 | 5196 | `journal-brief` | 0 | 0 | 8 | 5196 | — |
+| 4674 | 8233 | `junction-git` | 0 | 0 | 8 | 8233 | — |
+| 4675 | 4693 | `karing-bin` | 0 | 0 | 8 | 4693 | — |
+| 4676 | 3431 | `keyleds` | 0 | 0 | 8 | 3431 | — |
+| 4677 | 2815 | `kio-s3` | 0 | 0 | 8 | 2815 | — |
+| 4678 | 768 | `kumir2-git` | 0 | 0 | 8 | 768 | — |
+| 4679 | 6267 | `lavacli` | 0 | 0 | 8 | 6267 | — |
+| 4680 | 2369 | `lib32-libass` | 0 | 0 | 8 | 2369 | — |
+| 4681 | 2478 | `lib32-libdav1d` | 0 | 0 | 8 | 2478 | — |
+| 4682 | 504 | `libggml` | 0 | 0 | 8 | 504 | — |
+| 4683 | 1039 | `libggml-git` | 0 | 0 | 8 | 1039 | — |
+| 4684 | 6177 | `lic-cli` | 0 | 0 | 8 | 6177 | — |
+| 4685 | 4745 | `limine-dracut-support` | 0 | 0 | 8 | 4745 | — |
+| 4686 | 1912 | `limine-mkinitcpio-hook` | 0 | 0 | 8 | 1912 | — |
+| 4687 | 1547 | `linuxqq` | 0 | 0 | 8 | 1547 | — |
+| 4688 | 1684 | `livebook` | 0 | 0 | 8 | 1684 | — |
+| 4689 | 4820 | `llama.cpp-cuda-git` | 0 | 0 | 8 | 4820 | — |
+| 4690 | 5489 | `lobster` | 0 | 0 | 8 | 5489 | — |
+| 4691 | 3479 | `loliashizuku-git` | 0 | 0 | 8 | 3479 | — |
+| 4692 | 1398 | `longbridge-bin` | 0 | 0 | 8 | 1398 | — |
+| 4693 | 5091 | `lyrus-git` | 0 | 0 | 8 | 5091 | — |
+| 4694 | 7371 | `material-kwin-decoration-git` | 0 | 0 | 8 | 7371 | — |
+| 4695 | 1355 | `mopidy-local` | 0 | 0 | 8 | 1355 | — |
+| 4696 | 6674 | `nako` | 0 | 0 | 8 | 6674 | — |
+| 4697 | 4638 | `noctalia-shell-git` | 0 | 0 | 8 | 4638 | — |
+| 4698 | 1763 | `notesnook` | 0 | 0 | 8 | 1763 | — |
+| 4699 | 6352 | `nucleus-gtk4-git` | 0 | 0 | 8 | 6352 | — |
+| 4700 | 6159 | `obinskit` | 0 | 0 | 8 | 6159 | — |
+| 4701 | 3920 | `odin-git` | 0 | 0 | 8 | 3920 | — |
+| 4702 | 2603 | `oh-my-pi-git` | 0 | 0 | 8 | 2603 | — |
+| 4703 | 4376 | `onlinefix-linux-launcher-bin` | 0 | 0 | 8 | 4376 | — |
+| 4704 | 874 | `openmeters-git` | 0 | 0 | 8 | 874 | — |
+| 4705 | 4371 | `openwork` | 0 | 0 | 8 | 4371 | — |
+| 4706 | 4188 | `overskride` | 0 | 0 | 8 | 4188 | — |
+| 4707 | 1554 | `pandora-launcher-bin` | 0 | 0 | 8 | 1554 | — |
+| 4708 | 19 | `parsec-bin` | 0 | 0 | 8 | 19 | — |
+| 4709 | 5089 | `passless` | 0 | 0 | 8 | 5089 | — |
+| 4710 | 3929 | `passwordsafe` | 0 | 0 | 8 | 3929 | — |
+| 4711 | 2610 | `pastevault` | 0 | 0 | 8 | 2610 | — |
+| 4712 | 3494 | `plasma-weather-plus` | 0 | 0 | 8 | 3494 | — |
+| 4713 | 4255 | `plasma5-wallpapers-dynamic` | 0 | 0 | 8 | 4255 | — |
+| 4714 | 5066 | `plasma6-applets-kurve` | 0 | 0 | 8 | 5066 | — |
+| 4715 | 972 | `plasma6-applets-kurve-git` | 0 | 0 | 8 | 972 | — |
+| 4716 | 705 | `plasma6-applets-thermal-monitor` | 0 | 0 | 8 | 705 | — |
+| 4717 | 438 | `plasma6-applets-thermal-monitor-git` | 0 | 0 | 8 | 438 | — |
+| 4718 | 7056 | `plasma6-applets-wunderground` | 0 | 0 | 8 | 7056 | — |
+| 4719 | 1722 | `pomotroid-bin` | 0 | 0 | 8 | 1722 | — |
+| 4720 | 7446 | `powershell` | 0 | 0 | 8 | 7446 | — |
+| 4721 | 4587 | `prospect-mail` | 0 | 0 | 8 | 4587 | — |
+| 4722 | 6223 | `psrecord` | 0 | 0 | 8 | 6223 | — |
+| 4723 | 1380 | `pyrite64-bin` | 0 | 0 | 8 | 1380 | — |
+| 4724 | 5494 | `python-aiohttp-jinja2` | 0 | 0 | 8 | 5494 | — |
+| 4725 | 7532 | `python-asyncer` | 0 | 0 | 8 | 7532 | — |
+| 4726 | 3392 | `python-calgebra-git` | 0 | 0 | 8 | 3392 | — |
+| 4727 | 2970 | `python-clickgen1` | 0 | 0 | 8 | 2970 | — |
+| 4728 | 4056 | `python-imagebackup` | 0 | 0 | 8 | 4056 | — |
+| 4729 | 6231 | `python-influxdb-client` | 0 | 0 | 8 | 6231 | — |
+| 4730 | 7750 | `python-langchain-openai` | 0 | 0 | 8 | 7750 | — |
+| 4731 | 6707 | `python-piou-git` | 0 | 0 | 8 | 6707 | — |
+| 4732 | 5037 | `python-pkb-client-git` | 0 | 0 | 8 | 5037 | — |
+| 4733 | 4611 | `python-pymatgen` | 0 | 0 | 8 | 4611 | — |
+| 4734 | 2623 | `python-rich-inquirer` | 0 | 0 | 8 | 2623 | — |
+| 4735 | 2625 | `python-scipy-doctest` | 0 | 0 | 8 | 2625 | — |
+| 4736 | 4401 | `python-west` | 0 | 0 | 8 | 4401 | — |
+| 4737 | 834 | `pz-mod-manager` | 0 | 0 | 8 | 834 | — |
+| 4738 | 7435 | `qadwaitadecorations-qt5` | 0 | 0 | 8 | 7435 | — |
+| 4739 | 7436 | `qadwaitadecorations-qt6` | 0 | 0 | 8 | 7436 | — |
+| 4740 | 3202 | `qt-web-extractor` | 0 | 0 | 8 | 3202 | — |
+| 4741 | 6743 | `questionary-cli` | 0 | 0 | 8 | 6743 | — |
+| 4742 | 7228 | `qvtfpp` | 0 | 0 | 8 | 7228 | — |
+| 4743 | 6515 | `rawdog` | 0 | 0 | 8 | 6515 | — |
+| 4744 | 829 | `rg-sens` | 0 | 0 | 8 | 829 | — |
+| 4745 | 5278 | `rocm-gfx110x-bin` | 0 | 0 | 8 | 5278 | — |
+| 4746 | 6472 | `rocm-gfx120x-bin` | 0 | 0 | 8 | 6472 | — |
+| 4747 | 8016 | `rofi-games` | 0 | 0 | 8 | 8016 | — |
+| 4748 | 3211 | `rofi-gpaste-git` | 0 | 0 | 8 | 3211 | — |
+| 4749 | 7774 | `ruby2.7` | 0 | 0 | 8 | 7774 | — |
+| 4750 | 486 | `ryujinx` | 0 | 0 | 8 | 486 | — |
+| 4751 | 4053 | `sage-numerical-backends-gurobi` | 0 | 0 | 8 | 4053 | — |
+| 4752 | 1488 | `saturn-launcher-gui` | 0 | 0 | 8 | 1488 | — |
+| 4753 | 8238 | `savestate` | 0 | 0 | 8 | 8238 | — |
+| 4754 | 4226 | `scopebuddy-git` | 0 | 0 | 8 | 4226 | — |
+| 4755 | 257 | `scrap-git` | 0 | 0 | 8 | 257 | — |
+| 4756 | 60 | `scrcpy-git` | 0 | 0 | 8 | 60 | — |
+| 4757 | 7702 | `si-edit-git` | 0 | 0 | 8 | 7702 | — |
+| 4758 | 7452 | `sideloader-bin` | 0 | 0 | 8 | 7452 | — |
+| 4759 | 3980 | `skyscraper-simulator` | 0 | 0 | 8 | 3980 | — |
+| 4760 | 6553 | `smile` | 0 | 0 | 8 | 6553 | — |
+| 4761 | 8519 | `soundux` | 0 | 0 | 8 | 8519 | — |
+| 4762 | 2644 | `speedtest-librespeed` | 0 | 0 | 8 | 2644 | — |
+| 4763 | 5121 | `stm32cubeprog` | 0 | 0 | 8 | 5121 | — |
+| 4764 | 4717 | `streamcontroller` | 0 | 0 | 8 | 4717 | — |
+| 4765 | 815 | `susops` | 0 | 0 | 8 | 815 | — |
+| 4766 | 7406 | `swaystatus-git` | 0 | 0 | 8 | 7406 | — |
+| 4767 | 5443 | `sysbox-ce` | 0 | 0 | 8 | 5443 | — |
+| 4768 | 2654 | `t3-code-git` | 0 | 0 | 8 | 2654 | — |
+| 4769 | 1581 | `tdrop-git` | 0 | 0 | 8 | 1581 | — |
+| 4770 | 7474 | `termux-language-server` | 0 | 0 | 8 | 7474 | — |
+| 4771 | 5390 | `themix-icons-gnome-colors-git` | 0 | 0 | 8 | 5390 | — |
+| 4772 | 7377 | `throne-git` | 0 | 0 | 8 | 7377 | — |
+| 4773 | 3327 | `tidal-hifi` | 0 | 0 | 8 | 3327 | — |
+| 4774 | 7353 | `tmplayer` | 0 | 0 | 8 | 7353 | — |
+| 4775 | 3535 | `tonelib-gfx-bin` | 0 | 0 | 8 | 3535 | — |
+| 4776 | 3295 | `tuistory` | 0 | 0 | 8 | 3295 | — |
+| 4777 | 6751 | `twmn-git` | 0 | 0 | 8 | 6751 | — |
+| 4778 | 946 | `v4l2loopback-dc-dkms` | 0 | 0 | 8 | 946 | — |
+| 4779 | 7559 | `vcard-studio-bin` | 0 | 0 | 8 | 7559 | — |
+| 4780 | 7274 | `vdhcoapp` | 0 | 0 | 8 | 7274 | — |
+| 4781 | 2993 | `vial-keychron-git` | 0 | 0 | 8 | 2993 | — |
+| 4782 | 4913 | `vigaphone-bin` | 0 | 0 | 8 | 4913 | — |
+| 4783 | 3933 | `vim-youcompleteme-git` | 0 | 0 | 8 | 3933 | — |
+| 4784 | 2333 | `vk-hdr-layer-kwin6-git` | 0 | 0 | 8 | 2333 | — |
+| 4785 | 3232 | `vscoq-language-server-git` | 0 | 0 | 8 | 3232 | — |
+| 4786 | 3134 | `warpd` | 0 | 0 | 8 | 3134 | — |
+| 4787 | 25 | `waterfox-bin` | 0 | 0 | 8 | 25 | — |
+| 4788 | 5051 | `wayback-x11` | 0 | 0 | 8 | 5051 | — |
+| 4789 | 7388 | `wayscriber-configurator` | 0 | 0 | 8 | 7388 | — |
+| 4790 | 3436 | `wezterm-nightly-bin` | 0 | 0 | 8 | 3436 | — |
+| 4791 | 4808 | `whisparr-eros` | 0 | 0 | 8 | 4808 | — |
+| 4792 | 5000 | `whisparr-eros-develop` | 0 | 0 | 8 | 5000 | — |
+| 4793 | 4109 | `win11-clipboard-history-bin` | 0 | 0 | 8 | 4109 | — |
+| 4794 | 7962 | `wired` | 0 | 0 | 8 | 7962 | — |
+| 4795 | 3208 | `wshowkeys-git` | 0 | 0 | 8 | 3208 | — |
+| 4796 | 1016 | `xdg-desktop-portal-luminous` | 0 | 0 | 8 | 1016 | — |
+| 4797 | 6166 | `xlibre-video-vmware` | 0 | 0 | 8 | 6166 | — |
+| 4798 | 5274 | `xorg-xinit-git` | 0 | 0 | 8 | 5274 | — |
+| 4799 | 3687 | `yauri` | 0 | 0 | 8 | 3687 | — |
+| 4800 | 568 | `ymir-emu` | 0 | 0 | 8 | 568 | — |
+| 4801 | 5343 | `yt-dlg` | 0 | 0 | 8 | 5343 | — |
+| 4802 | 7566 | `ytconverter` | 0 | 0 | 8 | 7566 | — |
+| 4803 | 6847 | `yup` | 0 | 0 | 8 | 6847 | — |
+| 4804 | 7277 | `zapret-git` | 0 | 0 | 8 | 7277 | — |
+| 4805 | 2940 | `zapret-gtk` | 0 | 0 | 8 | 2940 | — |
+| 4806 | 2030 | `zen-browser-bin` | 0 | 0 | 8 | 2030 | — |
+| 4807 | 1504 | `zen-twilight-bin` | 0 | 0 | 8 | 1504 | — |
+| 4808 | 3723 | `zerobrew-git` | 0 | 0 | 8 | 3723 | — |
+| 4809 | 4013 | `adom-noteye` | 0 | 0 | 9 | 4013 | — |
+| 4810 | 7471 | `aegnux` | 0 | 0 | 9 | 7471 | — |
+| 4811 | 3525 | `aeolus-next-clap-bin` | 0 | 0 | 9 | 3525 | — |
+| 4812 | 3526 | `aeolus-next-lv2-bin` | 0 | 0 | 9 | 3526 | — |
+| 4813 | 3527 | `aeolus-next-standalone-bin` | 0 | 0 | 9 | 3527 | — |
+| 4814 | 3528 | `aeolus-next-vst3-bin` | 0 | 0 | 9 | 3528 | — |
+| 4815 | 4107 | `affine` | 0 | 0 | 9 | 4107 | — |
+| 4816 | 2343 | `an-anime-game-launcher-bin` | 0 | 0 | 9 | 2343 | — |
+| 4817 | 2796 | `ani2xcursor` | 0 | 0 | 9 | 2796 | — |
+| 4818 | 799 | `apngasm` | 0 | 0 | 9 | 799 | — |
+| 4819 | 227 | `ashell` | 0 | 0 | 9 | 227 | — |
+| 4820 | 1681 | `aurman` | 0 | 0 | 9 | 1681 | — |
+| 4821 | 3397 | `automx2` | 0 | 0 | 9 | 3397 | — |
+| 4822 | 8021 | `aylurs-gtk-shell-git` | 0 | 0 | 9 | 8021 | — |
+| 4823 | 3661 | `bar_daemon` | 0 | 0 | 9 | 3661 | — |
+| 4824 | 5246 | `beekeeper-studio-git` | 0 | 0 | 9 | 5246 | — |
+| 4825 | 6560 | `bpftune-git` | 0 | 0 | 9 | 6560 | — |
+| 4826 | 3750 | `cachyos-service-manager` | 0 | 0 | 9 | 3750 | — |
+| 4827 | 3970 | `caire-bin` | 0 | 0 | 9 | 3970 | — |
+| 4828 | 1586 | `calcure` | 0 | 0 | 9 | 1586 | — |
+| 4829 | 7753 | `canon-pixma-g6000-complete` | 0 | 0 | 9 | 7753 | — |
+| 4830 | 7604 | `certbot-dns-porkbun` | 0 | 0 | 9 | 7604 | — |
+| 4831 | 928 | `cfait-git` | 0 | 0 | 9 | 928 | — |
+| 4832 | 4652 | `classisland` | 0 | 0 | 9 | 4652 | — |
+| 4833 | 7257 | `claude-desktop-native` | 0 | 0 | 9 | 7257 | — |
+| 4834 | 2054 | `cloudflare-warp-bin` | 0 | 0 | 9 | 2054 | — |
+| 4835 | 3249 | `conky-colors-git` | 0 | 0 | 9 | 3249 | — |
+| 4836 | 4721 | `coolerdash-git` | 0 | 0 | 9 | 4721 | — |
+| 4837 | 3677 | `crystal-nightly` | 0 | 0 | 9 | 3677 | — |
+| 4838 | 239 | `drawy` | 0 | 0 | 9 | 239 | — |
+| 4839 | 3260 | `dropdeck-git` | 0 | 0 | 9 | 3260 | — |
+| 4840 | 4417 | `duelsplus-bin` | 0 | 0 | 9 | 4417 | — |
+| 4841 | 404 | `eduke32` | 0 | 0 | 9 | 404 | — |
+| 4842 | 4936 | `embellish-git` | 0 | 0 | 9 | 4936 | — |
+| 4843 | 6655 | `emdash-bin` | 0 | 0 | 9 | 6655 | — |
+| 4844 | 7197 | `eml2pdf` | 0 | 0 | 9 | 7197 | — |
+| 4845 | 3498 | `fairy-stockfish` | 0 | 0 | 9 | 3498 | — |
+| 4846 | 3403 | `flowtime` | 0 | 0 | 9 | 3403 | — |
+| 4847 | 4346 | `forticlient` | 0 | 0 | 9 | 4346 | — |
+| 4848 | 4958 | `foxglove-bin` | 0 | 0 | 9 | 4958 | — |
+| 4849 | 7703 | `freeshow-bin` | 0 | 0 | 9 | 7703 | — |
+| 4850 | 7326 | `fw-fanctrl-git` | 0 | 0 | 9 | 7326 | — |
+| 4851 | 6419 | `gabutdm` | 0 | 0 | 9 | 6419 | — |
+| 4852 | 4998 | `ghdl-gcc` | 0 | 0 | 9 | 4998 | — |
+| 4853 | 1507 | `github-desktop-plus-bin` | 0 | 0 | 9 | 1507 | — |
+| 4854 | 3255 | `glava` | 0 | 0 | 9 | 3255 | — |
+| 4855 | 8031 | `gnome-monitor-config-git` | 0 | 0 | 9 | 8031 | — |
+| 4856 | 904 | `gpu-t` | 0 | 0 | 9 | 904 | — |
+| 4857 | 1406 | `gsender-bin` | 0 | 0 | 9 | 1406 | — |
+| 4858 | 3712 | `hardbore` | 0 | 0 | 9 | 3712 | — |
+| 4859 | 8043 | `hoppscotch-bin` | 0 | 0 | 9 | 8043 | — |
+| 4860 | 219 | `howdy-git` | 0 | 0 | 9 | 219 | — |
+| 4861 | 1756 | `huenicorn` | 0 | 0 | 9 | 1756 | — |
+| 4862 | 355 | `hypseus-singe` | 0 | 0 | 9 | 355 | — |
+| 4863 | 1113 | `hypseus-singe-git` | 0 | 0 | 9 | 1113 | — |
+| 4864 | 2037 | `hytale-launcher-bin` | 0 | 0 | 9 | 2037 | — |
+| 4865 | 5287 | `iamroot` | 0 | 0 | 9 | 5287 | — |
+| 4866 | 6404 | `ik-llama.cpp-vulkan` | 0 | 0 | 9 | 6404 | — |
+| 4867 | 7734 | `improve-imgsli` | 0 | 0 | 9 | 7734 | — |
+| 4868 | 7681 | `intel-compute-runtime-legacy` | 0 | 0 | 9 | 7681 | — |
+| 4869 | 1201 | `jackify-bin` | 0 | 0 | 9 | 1201 | — |
+| 4870 | 1360 | `jdk17-zulu-prime-bin` | 0 | 0 | 9 | 1360 | — |
+| 4871 | 5138 | `kabi-git` | 0 | 0 | 9 | 5138 | — |
+| 4872 | 1472 | `karukan` | 0 | 0 | 9 | 1472 | — |
+| 4873 | 8594 | `kerminal-bin` | 0 | 0 | 9 | 8594 | — |
+| 4874 | 4686 | `keymapper` | 0 | 0 | 9 | 4686 | — |
+| 4875 | 4146 | `keypunch-git` | 0 | 0 | 9 | 4146 | — |
+| 4876 | 6811 | `ksnip-git` | 0 | 0 | 9 | 6811 | — |
+| 4877 | 6332 | `kwin-minimize2tray-git` | 0 | 0 | 9 | 6332 | — |
+| 4878 | 8315 | `landrop-bin` | 0 | 0 | 9 | 8315 | — |
+| 4879 | 6176 | `lettuceai-bin` | 0 | 0 | 9 | 6176 | — |
+| 4880 | 2426 | `lib32-openjpeg2` | 0 | 0 | 9 | 2426 | — |
+| 4881 | 6691 | `libinput-nowacom-git` | 0 | 0 | 9 | 6691 | — |
+| 4882 | 8526 | `libretro-fbneo-git` | 0 | 0 | 9 | 8526 | — |
+| 4883 | 4597 | `libsurvive-git` | 0 | 0 | 9 | 4597 | — |
+| 4884 | 1040 | `linux-arctis-manager` | 0 | 0 | 9 | 1040 | — |
+| 4885 | 7515 | `linux-lts515-docs` | 0 | 0 | 9 | 7515 | — |
+| 4886 | 7514 | `linux-lts515-headers` | 0 | 0 | 9 | 7514 | — |
+| 4887 | 4192 | `livecaptions` | 0 | 0 | 9 | 4192 | — |
+| 4888 | 2590 | `logw2` | 0 | 0 | 9 | 2590 | — |
+| 4889 | 4431 | `lution` | 0 | 0 | 9 | 4431 | — |
+| 4890 | 7538 | `lycheeslicer` | 0 | 0 | 9 | 7538 | — |
+| 4891 | 2594 | `magicpodscore` | 0 | 0 | 9 | 2594 | — |
+| 4892 | 5369 | `markdown-editor` | 0 | 0 | 9 | 5369 | — |
+| 4893 | 1194 | `megasync-bin` | 0 | 0 | 9 | 1194 | — |
+| 4894 | 4112 | `microsoft-edge-beta-bin` | 0 | 0 | 9 | 4112 | — |
+| 4895 | 7295 | `microsoft-edge-dev-bin` | 0 | 0 | 9 | 7295 | — |
+| 4896 | 2059 | `microsoft-edge-stable-bin` | 0 | 0 | 9 | 2059 | — |
+| 4897 | 2719 | `mihomo-party-bin` | 0 | 0 | 9 | 2719 | — |
+| 4898 | 7683 | `mintmenu` | 0 | 0 | 9 | 7683 | — |
+| 4899 | 8213 | `mkdocs-macros-plugin` | 0 | 0 | 9 | 8213 | — |
+| 4900 | 2724 | `nchat` | 0 | 0 | 9 | 2724 | — |
+| 4901 | 7545 | `neovide-bin` | 0 | 0 | 9 | 7545 | — |
+| 4902 | 7191 | `netpeek` | 0 | 0 | 9 | 7191 | — |
+| 4903 | 881 | `node-llama-cpp` | 0 | 0 | 9 | 881 | — |
+| 4904 | 7027 | `obsidian-bin` | 0 | 0 | 9 | 7027 | — |
+| 4905 | 3457 | `omnidotdev-terminal` | 0 | 0 | 9 | 3457 | — |
+| 4906 | 2809 | `openai-codex-desktop` | 0 | 0 | 9 | 2809 | — |
+| 4907 | 6734 | `opensimh-git` | 0 | 0 | 9 | 6734 | — |
+| 4908 | 7281 | `opensnitch-ebpf-module-git` | 0 | 0 | 9 | 7281 | — |
+| 4909 | 1553 | `opentrack` | 0 | 0 | 9 | 1553 | — |
+| 4910 | 4675 | `or-tools` | 0 | 0 | 9 | 4675 | — |
+| 4911 | 4245 | `ori` | 0 | 0 | 9 | 4245 | — |
+| 4912 | 225 | `oscar` | 0 | 0 | 9 | 225 | — |
+| 4913 | 7450 | `otpgui` | 0 | 0 | 9 | 7450 | — |
+| 4914 | 2425 | `p3wm` | 0 | 0 | 9 | 2425 | — |
+| 4915 | 8019 | `pacsea-git` | 0 | 0 | 9 | 8019 | — |
+| 4916 | 4538 | `pairux-bin` | 0 | 0 | 9 | 4538 | — |
+| 4917 | 6292 | `pdate-cli` | 0 | 0 | 9 | 6292 | — |
+| 4918 | 4415 | `peertube-gtk-git` | 0 | 0 | 9 | 4415 | — |
+| 4919 | 249 | `pgadmin4-desktop-native` | 0 | 0 | 9 | 249 | — |
+| 4920 | 715 | `picosnitch` | 0 | 0 | 9 | 715 | — |
+| 4921 | 371 | `piliplus` | 0 | 0 | 9 | 371 | — |
+| 4922 | 3189 | `pip-tools` | 0 | 0 | 9 | 3189 | — |
+| 4923 | 3497 | `pixelorama-git` | 0 | 0 | 9 | 3497 | — |
+| 4924 | 3473 | `polymath` | 0 | 0 | 9 | 3473 | — |
+| 4925 | 5495 | `pricehist` | 0 | 0 | 9 | 5495 | — |
+| 4926 | 8253 | `proton-pass-git` | 0 | 0 | 9 | 8253 | — |
+| 4927 | 4664 | `ps3dec-git` | 0 | 0 | 9 | 4664 | — |
+| 4928 | 2742 | `python-bitwarden-sdk` | 0 | 0 | 9 | 2742 | — |
+| 4929 | 6135 | `python-dbzero-git` | 0 | 0 | 9 | 6135 | — |
+| 4930 | 6546 | `python-snakeviz` | 0 | 0 | 9 | 6546 | — |
+| 4931 | 193 | `python-uharfbuzz` | 0 | 0 | 9 | 193 | — |
+| 4932 | 1587 | `qman` | 0 | 0 | 9 | 1587 | — |
+| 4933 | 5464 | `qpdf-zopfli` | 0 | 0 | 9 | 5464 | — |
+| 4934 | 354 | `qtqr` | 0 | 0 | 9 | 354 | — |
+| 4935 | 8172 | `r-tidyjson` | 0 | 0 | 9 | 8172 | — |
+| 4936 | 3348 | `radicle-node-git` | 0 | 0 | 9 | 3348 | — |
+| 4937 | 5225 | `rg-sens-git` | 0 | 0 | 9 | 5225 | — |
+| 4938 | 1815 | `rsgain` | 0 | 0 | 9 | 1815 | — |
+| 4939 | 7517 | `ruby-digest-crc` | 0 | 0 | 9 | 7517 | — |
+| 4940 | 2872 | `s3man-bin` | 0 | 0 | 9 | 2872 | — |
+| 4941 | 1992 | `safeeyes` | 0 | 0 | 9 | 1992 | — |
+| 4942 | 2906 | `sonic-tte-git` | 0 | 0 | 9 | 2906 | — |
+| 4943 | 4710 | `spotify-1.1` | 0 | 0 | 9 | 4710 | — |
+| 4944 | 5462 | `synergy3-bin` | 0 | 0 | 9 | 5462 | — |
+| 4945 | 8262 | `systemd-pilot-bin` | 0 | 0 | 9 | 8262 | — |
+| 4946 | 8527 | `tabular-bin` | 0 | 0 | 9 | 8527 | — |
+| 4947 | 7755 | `tagger` | 0 | 0 | 9 | 7755 | — |
+| 4948 | 4599 | `terx-bin` | 0 | 0 | 9 | 4599 | — |
+| 4949 | 557 | `tidal-hifi-tidaluna` | 0 | 0 | 9 | 557 | — |
+| 4950 | 7968 | `tiptop-cli` | 0 | 0 | 9 | 7968 | — |
+| 4951 | 3218 | `translatelocally-git` | 0 | 0 | 9 | 3218 | — |
+| 4952 | 2074 | `tsenta-desktop-bin` | 0 | 0 | 9 | 2074 | — |
+| 4953 | 2662 | `tts-helper` | 0 | 0 | 9 | 2662 | — |
+| 4954 | 7624 | `ultimate-tic-tac-toe-git` | 0 | 0 | 9 | 7624 | — |
+| 4955 | 7451 | `usergrant-git` | 0 | 0 | 9 | 7451 | — |
+| 4956 | 6606 | `via-bin` | 0 | 0 | 9 | 6606 | — |
+| 4957 | 2994 | `vial-keychron-bin` | 0 | 0 | 9 | 2994 | — |
+| 4958 | 2767 | `vidcutter-git` | 0 | 0 | 9 | 2767 | — |
+| 4959 | 2760 | `vmlinux-to-elf` | 0 | 0 | 9 | 2760 | — |
+| 4960 | 2672 | `volt-desktop` | 0 | 0 | 9 | 2672 | — |
+| 4961 | 3811 | `vscodium-electron-bin` | 0 | 0 | 9 | 3811 | — |
+| 4962 | 5509 | `weylus-bin` | 0 | 0 | 9 | 5509 | — |
+| 4963 | 5524 | `wireview-linux` | 0 | 0 | 9 | 5524 | — |
+| 4964 | 3969 | `xerahs-git` | 0 | 0 | 9 | 3969 | — |
+| 4965 | 6161 | `xlibre-xorgxrdp-glamor` | 0 | 0 | 9 | 6161 | — |
+| 4966 | 233 | `xrizer-common-git` | 0 | 0 | 9 | 233 | — |
+| 4967 | 4152 | `xsane-gimp-git` | 0 | 0 | 9 | 4152 | — |
+| 4968 | 8549 | `yarc-launcher-bin` | 0 | 0 | 9 | 8549 | — |
+| 4969 | 6703 | `ytsurf` | 0 | 0 | 9 | 6703 | — |
+| 4970 | 1704 | `z-library-bin` | 0 | 0 | 9 | 1704 | — |
+| 4971 | 6981 | `zswap-cli-git` | 0 | 0 | 9 | 6981 | — |
+| 4972 | 3424 | `aeroshell-smodglow-x11-git` | 0 | 0 | 10 | 3424 | — |
+| 4973 | 4663 | `alt-sendme-bin` | 0 | 0 | 10 | 4663 | — |
+| 4974 | 4044 | `am` | 0 | 0 | 10 | 4044 | — |
+| 4975 | 2522 | `anime-games-launcher-git` | 0 | 0 | 10 | 2522 | — |
+| 4976 | 6464 | `appimagemanager` | 0 | 0 | 10 | 6464 | — |
+| 4977 | 7285 | `artemisrgb-git` | 0 | 0 | 10 | 7285 | — |
+| 4978 | 4824 | `bitwig-control-panel` | 0 | 0 | 10 | 4824 | — |
+| 4979 | 3416 | `booktab` | 0 | 0 | 10 | 3416 | — |
+| 4980 | 7741 | `bootc` | 0 | 0 | 10 | 7741 | — |
+| 4981 | 7001 | `bsg-diaspora-sa` | 0 | 0 | 10 | 7001 | — |
+| 4982 | 5480 | `c47-bin` | 0 | 0 | 10 | 5480 | — |
+| 4983 | 6343 | `cartero` | 0 | 0 | 10 | 6343 | — |
+| 4984 | 5431 | `charliecloud` | 0 | 0 | 10 | 5431 | — |
+| 4985 | 1051 | `chirp-next` | 0 | 0 | 10 | 1051 | — |
+| 4986 | 2359 | `cinny-desktop-bin` | 0 | 0 | 10 | 2359 | — |
+| 4987 | 678 | `clipse-gui` | 0 | 0 | 10 | 678 | — |
+| 4988 | 7591 | `collapseloader-git` | 0 | 0 | 10 | 7591 | — |
+| 4989 | 2535 | `creamlinux-installer-bin` | 0 | 0 | 10 | 2535 | — |
+| 4990 | 4130 | `crossover-overlay-bin` | 0 | 0 | 10 | 4130 | — |
+| 4991 | 6578 | `cutekit-git` | 0 | 0 | 10 | 6578 | — |
+| 4992 | 5133 | `dataflare-bin` | 0 | 0 | 10 | 5133 | — |
+| 4993 | 4767 | `declaro-git` | 0 | 0 | 10 | 4767 | — |
+| 4994 | 1057 | `dooble` | 0 | 0 | 10 | 1057 | — |
+| 4995 | 2384 | `dosbox-x` | 0 | 0 | 10 | 2384 | — |
+| 4996 | 8559 | `dpt-rp1-py-git` | 0 | 0 | 10 | 8559 | — |
+| 4997 | 5171 | `emergency-alerts` | 0 | 0 | 10 | 5171 | — |
+| 4998 | 390 | `equicord` | 0 | 0 | 10 | 390 | — |
+| 4999 | 4590 | `equicord-openasar` | 0 | 0 | 10 | 4590 | — |
+| 5000 | 1607 | `esp-idf` | 0 | 0 | 10 | 1607 | — |
+| 5001 | 4809 | `expandrive-bin` | 0 | 0 | 10 | 4809 | — |
+| 5002 | 2959 | `fastflowlm-git` | 0 | 0 | 10 | 2959 | — |
+| 5003 | 7567 | `firedragon-alpha-bin` | 0 | 0 | 10 | 7567 | — |
+| 5004 | 2118 | `firedragon-bin` | 0 | 0 | 10 | 2118 | — |
+| 5005 | 2552 | `fix-whitespace` | 0 | 0 | 10 | 2552 | — |
+| 5006 | 5154 | `freetype2-qdoled-aw3225qf` | 0 | 0 | 10 | 5154 | — |
+| 5007 | 3483 | `freetype2-qdoled-gen3` | 0 | 0 | 10 | 3483 | — |
+| 5008 | 7783 | `fzffm` | 0 | 0 | 10 | 7783 | — |
+| 5009 | 474 | `gdm-settings` | 0 | 0 | 10 | 474 | — |
+| 5010 | 3166 | `gemini-cli-live-bin` | 0 | 0 | 10 | 3166 | — |
+| 5011 | 2934 | `ghostship` | 0 | 0 | 10 | 2934 | — |
+| 5012 | 7384 | `git-wizard` | 0 | 0 | 10 | 7384 | — |
+| 5013 | 4817 | `godot-preview-bin` | 0 | 0 | 10 | 4817 | — |
+| 5014 | 3795 | `gradle8` | 0 | 0 | 10 | 3795 | — |
+| 5015 | 3796 | `gradle8-doc` | 0 | 0 | 10 | 3796 | — |
+| 5016 | 3797 | `gradle8-src` | 0 | 0 | 10 | 3797 | — |
+| 5017 | 1266 | `grayjay-bin` | 0 | 0 | 10 | 1266 | — |
+| 5018 | 5348 | `gtkhash` | 0 | 0 | 10 | 5348 | — |
+| 5019 | 5240 | `hacki` | 0 | 0 | 10 | 5240 | — |
+| 5020 | 2342 | `httpdirfs` | 0 | 0 | 10 | 2342 | — |
+| 5021 | 6188 | `idntag` | 0 | 0 | 10 | 6188 | — |
+| 5022 | 1284 | `iloader-bin` | 0 | 0 | 10 | 1284 | — |
+| 5023 | 8547 | `imsprog-git` | 0 | 0 | 10 | 8547 | — |
+| 5024 | 1227 | `input-remapper-bin` | 0 | 0 | 10 | 1227 | — |
+| 5025 | 228 | `ironbar-git` | 0 | 0 | 10 | 228 | — |
+| 5026 | 6628 | `jdsystemmonitor` | 0 | 0 | 10 | 6628 | — |
+| 5027 | 5520 | `jellything-git` | 0 | 0 | 10 | 5520 | — |
+| 5028 | 7711 | `kanri-bin` | 0 | 0 | 10 | 7711 | — |
+| 5029 | 7521 | `karp-git` | 0 | 0 | 10 | 7521 | — |
+| 5030 | 1721 | `koodo-reader-bin` | 0 | 0 | 10 | 1721 | — |
+| 5031 | 6338 | `krop` | 0 | 0 | 10 | 6338 | — |
+| 5032 | 2578 | `kwin-effects-better-blur-dx` | 0 | 0 | 10 | 2578 | — |
+| 5033 | 5262 | `kwin-effects-better-blur-dx-x11-git` | 0 | 0 | 10 | 5262 | — |
+| 5034 | 1026 | `libinput-epp` | 0 | 0 | 10 | 1026 | — |
+| 5035 | 7973 | `libinput-no-gestures` | 0 | 0 | 10 | 7973 | — |
+| 5036 | 8286 | `libpkcs11-fnmtdnie` | 0 | 0 | 10 | 8286 | — |
+| 5037 | 8255 | `libtas` | 0 | 0 | 10 | 8255 | — |
+| 5038 | 5271 | `libvhdi-git` | 0 | 0 | 10 | 5271 | — |
+| 5039 | 1348 | `linux-xanmod-bin` | 0 | 0 | 10 | 1348 | — |
+| 5040 | 7462 | `lldb-zig-git` | 0 | 0 | 10 | 7462 | — |
+| 5041 | 3889 | `llvm-bolt` | 0 | 0 | 10 | 3889 | — |
+| 5042 | 7217 | `marktext-tkaixiang-bin` | 0 | 0 | 10 | 7217 | — |
+| 5043 | 8359 | `mission-center-git` | 0 | 0 | 10 | 8359 | — |
+| 5044 | 3123 | `mkchromecast-git` | 0 | 0 | 10 | 3123 | — |
+| 5045 | 14 | `mongodb-compass` | 0 | 0 | 10 | 14 | — |
+| 5046 | 7232 | `monocoque` | 0 | 0 | 10 | 7232 | — |
+| 5047 | 4240 | `msvc-wine-git` | 0 | 0 | 10 | 4240 | — |
+| 5048 | 4250 | `mts-link-meetings` | 0 | 0 | 10 | 4250 | — |
+| 5049 | 3493 | `myapps` | 0 | 0 | 10 | 3493 | — |
+| 5050 | 5370 | `mystiq` | 0 | 0 | 10 | 5370 | — |
+| 5051 | 3110 | `nemu` | 0 | 0 | 10 | 3110 | — |
+| 5052 | 655 | `networkmanager-fortisslvpn` | 0 | 0 | 10 | 655 | — |
+| 5053 | 2909 | `omniget-git` | 0 | 0 | 10 | 2909 | — |
+| 5054 | 198 | `opencomposite-git` | 0 | 0 | 10 | 198 | — |
+| 5055 | 6384 | `openocd-esp32` | 0 | 0 | 10 | 6384 | — |
+| 5056 | 1243 | `orca-slicer-bin` | 0 | 0 | 10 | 1243 | — |
+| 5057 | 1349 | `owmods-gui-bin` | 0 | 0 | 10 | 1349 | — |
+| 5058 | 4984 | `pamac-flatpak` | 0 | 0 | 10 | 4984 | — |
+| 5059 | 2997 | `pave-git` | 0 | 0 | 10 | 2997 | — |
+| 5060 | 5076 | `pdf4qt-bin` | 0 | 0 | 10 | 5076 | — |
+| 5061 | 6752 | `pisek-git` | 0 | 0 | 10 | 6752 | — |
+| 5062 | 352 | `pixelorama` | 0 | 0 | 10 | 352 | — |
+| 5063 | 3106 | `plasma-settings` | 0 | 0 | 10 | 3106 | — |
+| 5064 | 2050 | `plasmazones-bin` | 0 | 0 | 10 | 2050 | — |
+| 5065 | 3873 | `portmaster-bin` | 0 | 0 | 10 | 3873 | — |
+| 5066 | 7784 | `preview` | 0 | 0 | 10 | 7784 | — |
+| 5067 | 6521 | `python-buildozer` | 0 | 0 | 10 | 6521 | — |
+| 5068 | 4075 | `python-diwire` | 0 | 0 | 10 | 4075 | — |
+| 5069 | 7210 | `python-pyrogram` | 0 | 0 | 10 | 7210 | — |
+| 5070 | 3113 | `python-soco` | 0 | 0 | 10 | 3113 | — |
+| 5071 | 836 | `python-torchao-rocm` | 0 | 0 | 10 | 836 | — |
+| 5072 | 2983 | `python-uncalled-for` | 0 | 0 | 10 | 2983 | — |
+| 5073 | 3151 | `python38` | 0 | 0 | 10 | 3151 | — |
+| 5074 | 7615 | `quarto-cli` | 0 | 0 | 10 | 7615 | — |
+| 5075 | 8174 | `r-widyr` | 0 | 0 | 10 | 8174 | — |
+| 5076 | 5478 | `r47-bin` | 0 | 0 | 10 | 5478 | — |
+| 5077 | 7 | `rambox-bin` | 0 | 0 | 10 | 7 | — |
+| 5078 | 3383 | `ratarmount-git` | 0 | 0 | 10 | 3383 | — |
+| 5079 | 3983 | `rbdoom3-bfg-git` | 0 | 0 | 10 | 3983 | — |
+| 5080 | 746 | `redisinsight` | 0 | 0 | 10 | 746 | — |
+| 5081 | 3801 | `reframe` | 0 | 0 | 10 | 3801 | — |
+| 5082 | 6725 | `renderdoc-bin` | 0 | 0 | 10 | 6725 | — |
+| 5083 | 6437 | `riff-client` | 0 | 0 | 10 | 6437 | — |
+| 5084 | 49 | `rustdesk-bin` | 0 | 0 | 10 | 49 | — |
+| 5085 | 1549 | `satisfactory-mod-manager` | 0 | 0 | 10 | 1549 | — |
+| 5086 | 4452 | `sayonara-player` | 0 | 0 | 10 | 4452 | — |
+| 5087 | 4882 | `sdbus-cpp-nosystemd-git` | 0 | 0 | 10 | 4882 | — |
+| 5088 | 6595 | `serioussam-vk` | 0 | 0 | 10 | 6595 | — |
+| 5089 | 1501 | `servo-bin` | 0 | 0 | 10 | 1501 | — |
+| 5090 | 7350 | `shelly-bin` | 0 | 0 | 10 | 7350 | — |
+| 5091 | 6128 | `signal-export` | 0 | 0 | 10 | 6128 | — |
+| 5092 | 2639 | `snip-tui` | 0 | 0 | 10 | 2639 | — |
+| 5093 | 2950 | `sone-bin` | 0 | 0 | 10 | 2950 | — |
+| 5094 | 7995 | `sot` | 0 | 0 | 10 | 7995 | — |
+| 5095 | 3842 | `sqlit` | 0 | 0 | 10 | 3842 | — |
+| 5096 | 559 | `streamcontroller-git` | 0 | 0 | 10 | 559 | — |
+| 5097 | 3199 | `sunder` | 0 | 0 | 10 | 3199 | — |
+| 5098 | 3465 | `sxhkhm-git` | 0 | 0 | 10 | 3465 | — |
+| 5099 | 8330 | `thrive-bin` | 0 | 0 | 10 | 8330 | — |
+| 5100 | 8285 | `thrive-launcher-bin` | 0 | 0 | 10 | 8285 | — |
+| 5101 | 302 | `ticktick` | 0 | 0 | 10 | 302 | — |
+| 5102 | 5413 | `tokenicode-bin` | 0 | 0 | 10 | 5413 | — |
+| 5103 | 4406 | `tonearm` | 0 | 0 | 10 | 4406 | — |
+| 5104 | 560 | `tonearm-git` | 0 | 0 | 10 | 560 | — |
+| 5105 | 1582 | `trizen` | 0 | 0 | 10 | 1582 | — |
+| 5106 | 4336 | `typhoon` | 0 | 0 | 10 | 4336 | — |
+| 5107 | 1213 | `vicinae-bin` | 0 | 0 | 10 | 1213 | — |
+| 5108 | 6492 | `vkd3d-proton-mingw` | 0 | 0 | 10 | 6492 | — |
+| 5109 | 2830 | `voxtype-cuda` | 0 | 0 | 10 | 2830 | — |
+| 5110 | 7603 | `wifiman-desktop` | 0 | 0 | 10 | 7603 | — |
+| 5111 | 7376 | `winboat` | 0 | 0 | 10 | 7376 | — |
+| 5112 | 263 | `wluma` | 0 | 0 | 10 | 263 | — |
+| 5113 | 720 | `x11docker` | 0 | 0 | 10 | 720 | — |
+| 5114 | 7186 | `x11docker-git` | 0 | 0 | 10 | 7186 | — |
+| 5115 | 2340 | `yacreader` | 0 | 0 | 10 | 2340 | — |
+| 5116 | 2341 | `yacreaderlibraryserver` | 0 | 0 | 10 | 2341 | — |
+| 5117 | 679 | `zerobrane-studio` | 0 | 0 | 10 | 679 | — |
+| 5118 | 5011 | `zhixin` | 0 | 0 | 10 | 5011 | — |
+| 5119 | 4020 | `zimage-ncnn-vulkan-git` | 0 | 0 | 10 | 4020 | — |
+| 5120 | 4440 | `actdiag` | 0 | 0 | 11 | 4440 | — |
+| 5121 | 2525 | `apiark-bin` | 0 | 0 | 11 | 2525 | — |
+| 5122 | 2957 | `appimage-builder-bin` | 0 | 0 | 11 | 2957 | — |
+| 5123 | 3617 | `aurto` | 0 | 0 | 11 | 3617 | — |
+| 5124 | 4527 | `blinky` | 0 | 0 | 11 | 4527 | — |
+| 5125 | 7399 | `cai` | 0 | 0 | 11 | 7399 | — |
+| 5126 | 8041 | `ccstudio` | 0 | 0 | 11 | 8041 | — |
+| 5127 | 3888 | `chiaki` | 0 | 0 | 11 | 3888 | — |
+| 5128 | 646 | `cnrdrvcups-lb` | 0 | 0 | 11 | 646 | — |
+| 5129 | 4080 | `codex-app-bin` | 0 | 0 | 11 | 4080 | — |
+| 5130 | 203 | `cpupower-gui` | 0 | 0 | 11 | 203 | — |
+| 5131 | 1352 | `dangerzone-bin` | 0 | 0 | 11 | 1352 | — |
+| 5132 | 1696 | `datarecovery` | 0 | 0 | 11 | 1696 | — |
+| 5133 | 4045 | `devpod-bin` | 0 | 0 | 11 | 4045 | — |
+| 5134 | 140 | `docker-desktop` | 0 | 0 | 11 | 140 | — |
+| 5135 | 4829 | `dred` | 0 | 0 | 11 | 4829 | — |
+| 5136 | 7994 | `dyad-git` | 0 | 0 | 11 | 7994 | — |
+| 5137 | 2413 | `easystroke` | 0 | 0 | 11 | 2413 | — |
+| 5138 | 8164 | `eovpn` | 0 | 0 | 11 | 8164 | — |
+| 5139 | 6705 | `eve-preview-manager` | 0 | 0 | 11 | 6705 | — |
+| 5140 | 4119 | `exifcleaner-bin` | 0 | 0 | 11 | 4119 | — |
+| 5141 | 6251 | `fcitx5-chinese-addons-git` | 0 | 0 | 11 | 6251 | — |
+| 5142 | 2726 | `fjordlauncher-bin` | 0 | 0 | 11 | 2726 | — |
+| 5143 | 8277 | `fsv3` | 0 | 0 | 11 | 8277 | — |
+| 5144 | 4407 | `ftb` | 0 | 0 | 11 | 4407 | — |
+| 5145 | 1562 | `gale-bin` | 0 | 0 | 11 | 1562 | — |
+| 5146 | 6732 | `gitbutler` | 0 | 0 | 11 | 6732 | — |
+| 5147 | 1994 | `gns3-gui` | 0 | 0 | 11 | 1994 | — |
+| 5148 | 3931 | `gns3-gui-2` | 0 | 0 | 11 | 3931 | — |
+| 5149 | 5396 | `grub-reboot-picker` | 0 | 0 | 11 | 5396 | — |
+| 5150 | 4563 | `gtk-meshtastic-client` | 0 | 0 | 11 | 4563 | — |
+| 5151 | 3765 | `gtkhash-thunar` | 0 | 0 | 11 | 3765 | — |
+| 5152 | 3522 | `haproxy-awslc` | 0 | 0 | 11 | 3522 | — |
+| 5153 | 1053 | `heroic-games-launcher-git` | 0 | 0 | 11 | 1053 | — |
+| 5154 | 2069 | `input-remapper-git` | 0 | 0 | 11 | 2069 | — |
+| 5155 | 778 | `invoiceninja-desktop` | 0 | 0 | 11 | 778 | — |
+| 5156 | 2931 | `jay` | 0 | 0 | 11 | 2931 | — |
+| 5157 | 4129 | `jellyfin-desktop-git` | 0 | 0 | 11 | 4129 | — |
+| 5158 | 28 | `jellyfin-media-player` | 0 | 0 | 11 | 28 | — |
+| 5159 | 647 | `kega-fusion` | 0 | 0 | 11 | 647 | — |
+| 5160 | 487 | `kime-git` | 0 | 0 | 11 | 487 | — |
+| 5161 | 4110 | `kwin-effects-better-blur-dx-git` | 0 | 0 | 11 | 4110 | — |
+| 5162 | 8338 | `libastal-4-git` | 0 | 0 | 11 | 8338 | — |
+| 5163 | 4564 | `linnote` | 0 | 0 | 11 | 4564 | — |
+| 5164 | 5446 | `linux-clear-cjktty-zfs-headers` | 0 | 0 | 11 | 5446 | — |
+| 5165 | 6340 | `linux-tachyon-headers` | 0 | 0 | 11 | 6340 | — |
+| 5166 | 2923 | `nativmix` | 0 | 0 | 11 | 2923 | — |
+| 5167 | 4157 | `notesnook-bin` | 0 | 0 | 11 | 4157 | — |
+| 5168 | 4197 | `nsight-graphics` | 0 | 0 | 11 | 4197 | — |
+| 5169 | 8629 | `nyan-doom` | 0 | 0 | 11 | 8629 | — |
+| 5170 | 2756 | `obs-tuna` | 0 | 0 | 11 | 2756 | — |
+| 5171 | 2033 | `octopi` | 0 | 0 | 11 | 2033 | — |
+| 5172 | 7041 | `open-hexagon-git` | 0 | 0 | 11 | 7041 | — |
+| 5173 | 8029 | `openssh-askpass` | 0 | 0 | 11 | 8029 | — |
+| 5174 | 2084 | `opera` | 0 | 0 | 11 | 2084 | — |
+| 5175 | 2791 | `pamac-classic-fixed` | 0 | 0 | 11 | 2791 | — |
+| 5176 | 275 | `pandora-launcher` | 0 | 0 | 11 | 275 | — |
+| 5177 | 3615 | `paru-static` | 0 | 0 | 11 | 3615 | — |
+| 5178 | 7373 | `pdx-unlimiter` | 0 | 0 | 11 | 7373 | — |
+| 5179 | 2683 | `pisek` | 0 | 0 | 11 | 2683 | — |
+| 5180 | 258 | `proxmox-backup-client` | 0 | 0 | 11 | 258 | — |
+| 5181 | 3837 | `puddletag` | 0 | 0 | 11 | 3837 | — |
+| 5182 | 4176 | `python-desktop-entry-lib` | 0 | 0 | 11 | 4176 | — |
+| 5183 | 3279 | `python-exa-py` | 0 | 0 | 11 | 3279 | — |
+| 5184 | 6495 | `python-futurist` | 0 | 0 | 11 | 6495 | — |
+| 5185 | 5434 | `python-pysmart` | 0 | 0 | 11 | 5434 | — |
+| 5186 | 2624 | `python-samplomatic` | 0 | 0 | 11 | 2624 | — |
+| 5187 | 8200 | `python-thinc-bin-8.3.2` | 0 | 0 | 11 | 8200 | — |
+| 5188 | 185 | `qdiskinfo` | 0 | 0 | 11 | 185 | — |
+| 5189 | 4134 | `rewaita` | 0 | 0 | 11 | 4134 | — |
+| 5190 | 8303 | `rift-bin` | 0 | 0 | 11 | 8303 | — |
+| 5191 | 950 | `ringracers` | 0 | 0 | 11 | 950 | — |
+| 5192 | 4076 | `semantic-diff` | 0 | 0 | 11 | 4076 | — |
+| 5193 | 998 | `solana` | 0 | 0 | 11 | 998 | — |
+| 5194 | 742 | `solo1` | 0 | 0 | 11 | 742 | — |
+| 5195 | 1169 | `spent-bin` | 0 | 0 | 11 | 1169 | — |
+| 5196 | 2451 | `squeezelite` | 0 | 0 | 11 | 2451 | — |
+| 5197 | 3314 | `steamtinkerlaunch` | 0 | 0 | 11 | 3314 | — |
+| 5198 | 6602 | `theia-bin` | 0 | 0 | 11 | 6602 | — |
+| 5199 | 5382 | `themix-theme-oomox-git` | 0 | 0 | 11 | 5382 | — |
+| 5200 | 6794 | `twig` | 0 | 0 | 11 | 6794 | — |
+| 5201 | 3794 | `twintaillauncher-bin` | 0 | 0 | 11 | 3794 | — |
+| 5202 | 2912 | `twitch-indicator` | 0 | 0 | 11 | 2912 | — |
+| 5203 | 251 | `vencord-installer` | 0 | 0 | 11 | 251 | — |
+| 5204 | 264 | `video2x-git` | 0 | 0 | 11 | 264 | — |
+| 5205 | 6300 | `vis-cli` | 0 | 0 | 11 | 6300 | — |
+| 5206 | 6576 | `vital-synth` | 0 | 0 | 11 | 6576 | — |
+| 5207 | 4706 | `vpkedit` | 0 | 0 | 11 | 4706 | — |
+| 5208 | 3824 | `wasistlos` | 0 | 0 | 11 | 3824 | — |
+| 5209 | 3161 | `wayland-static` | 0 | 0 | 11 | 3161 | — |
+| 5210 | 668 | `wayscriber` | 0 | 0 | 11 | 668 | — |
+| 5211 | 367 | `whatsit-git` | 0 | 0 | 11 | 367 | — |
+| 5212 | 3733 | `wiso-steuer-2026` | 0 | 0 | 11 | 3733 | — |
+| 5213 | 8535 | `xermius-bin` | 0 | 0 | 11 | 8535 | — |
+| 5214 | 2331 | `xnviewmp-system-libs` | 0 | 0 | 11 | 2331 | — |
+| 5215 | 7260 | `yandex-music-windows` | 0 | 0 | 11 | 7260 | — |
+| 5216 | 226 | `yt-dlp-git` | 0 | 0 | 11 | 226 | — |
+| 5217 | 6841 | `aaaaxy` | 0 | 0 | 12 | 6841 | — |
+| 5218 | 5139 | `activate-linux` | 0 | 0 | 12 | 5139 | — |
+| 5219 | 3728 | `alacritty-nox-git` | 0 | 0 | 12 | 3728 | — |
+| 5220 | 3261 | `android-tv-remote` | 0 | 0 | 12 | 3261 | — |
+| 5221 | 5310 | `aria2tui` | 0 | 0 | 12 | 5310 | — |
+| 5222 | 6295 | `athas-bin` | 0 | 0 | 12 | 6295 | — |
+| 5223 | 7489 | `aurdex` | 0 | 0 | 12 | 7489 | — |
+| 5224 | 4387 | `beekeeper-qt` | 0 | 0 | 12 | 4387 | — |
+| 5225 | 2114 | `boxflat-git` | 0 | 0 | 12 | 2114 | — |
+| 5226 | 7616 | `brickstore` | 0 | 0 | 12 | 7616 | — |
+| 5227 | 5062 | `cros-container-guest-tools-git` | 0 | 0 | 12 | 5062 | — |
+| 5228 | 919 | `dreamchess` | 0 | 0 | 12 | 919 | — |
+| 5229 | 947 | `droidcam` | 0 | 0 | 12 | 947 | — |
+| 5230 | 1911 | `dupeguru` | 0 | 0 | 12 | 1911 | — |
+| 5231 | 2107 | `dupeguru-git` | 0 | 0 | 12 | 2107 | — |
+| 5232 | 6446 | `dwu` | 0 | 0 | 12 | 6446 | — |
+| 5233 | 2089 | `eidklient-native` | 0 | 0 | 12 | 2089 | — |
+| 5234 | 3156 | `exaile-git` | 0 | 0 | 12 | 3156 | — |
+| 5235 | 3602 | `fcitx5-mozc-with-jp-dict` | 0 | 0 | 12 | 3602 | — |
+| 5236 | 7738 | `fingwit` | 0 | 0 | 12 | 7738 | — |
+| 5237 | 3469 | `flameget` | 0 | 0 | 12 | 3469 | — |
+| 5238 | 7976 | `futubull-desktop-bin` | 0 | 0 | 12 | 7976 | — |
+| 5239 | 353 | `gnome-shell-pomodoro` | 0 | 0 | 12 | 353 | — |
+| 5240 | 6457 | `hamr` | 0 | 0 | 12 | 6457 | — |
+| 5241 | 7440 | `hyprsettings-git` | 0 | 0 | 12 | 7440 | — |
+| 5242 | 3601 | `ibus-mozc-with-jp-dict` | 0 | 0 | 12 | 3601 | — |
+| 5243 | 4208 | `input-remapper` | 0 | 0 | 12 | 4208 | — |
+| 5244 | 1706 | `jay-git` | 0 | 0 | 12 | 1706 | — |
+| 5245 | 2689 | `jre` | 0 | 0 | 12 | 2689 | — |
+| 5246 | 3644 | `lazarus-gtk2` | 0 | 0 | 12 | 3644 | — |
+| 5247 | 1520 | `ldapvi` | 0 | 0 | 12 | 1520 | — |
+| 5248 | 2829 | `lib32-vkbasalt-redemp-git` | 0 | 0 | 12 | 2829 | — |
+| 5249 | 690 | `libastal-git` | 0 | 0 | 12 | 690 | — |
+| 5250 | 4919 | `libcryptui` | 0 | 0 | 12 | 4919 | — |
+| 5251 | 2586 | `linux-cjktty-headers` | 0 | 0 | 12 | 2586 | — |
+| 5252 | 7513 | `linux-lts515` | 0 | 0 | 12 | 7513 | — |
+| 5253 | 4263 | `linux-pf-headers` | 0 | 0 | 12 | 4263 | — |
+| 5254 | 3138 | `linux-xanmod-headers` | 0 | 0 | 12 | 3138 | — |
+| 5255 | 4338 | `m64py` | 0 | 0 | 12 | 4338 | — |
+| 5256 | 6427 | `mangojuice` | 0 | 0 | 12 | 6427 | — |
+| 5257 | 2080 | `micyou-bin` | 0 | 0 | 12 | 2080 | — |
+| 5258 | 1786 | `mujoco` | 0 | 0 | 12 | 1786 | — |
+| 5259 | 4097 | `nblood-git` | 0 | 0 | 12 | 4097 | — |
+| 5260 | 1710 | `nugget-doom` | 0 | 0 | 12 | 1710 | — |
+| 5261 | 4604 | `ollama-vulkan-git` | 0 | 0 | 12 | 4604 | — |
+| 5262 | 3365 | `oneclient-bin` | 0 | 0 | 12 | 3365 | — |
+| 5263 | 3829 | `orchids-bin` | 0 | 0 | 12 | 3829 | — |
+| 5264 | 8347 | `pacman-fancy-git` | 0 | 0 | 12 | 8347 | — |
+| 5265 | 469 | `pandora-launcher-git` | 0 | 0 | 12 | 469 | — |
+| 5266 | 460 | `penpot-frontend` | 0 | 0 | 12 | 460 | — |
+| 5267 | 5417 | `plann` | 0 | 0 | 12 | 5417 | — |
+| 5268 | 3193 | `plasma-dialer` | 0 | 0 | 12 | 3193 | — |
+| 5269 | 1536 | `pomodorolm-bin` | 0 | 0 | 12 | 1536 | — |
+| 5270 | 2116 | `pulse-visualizer-bin` | 0 | 0 | 12 | 2116 | — |
+| 5271 | 5341 | `pyradio` | 0 | 0 | 12 | 5341 | — |
+| 5272 | 6311 | `python-fastexcel` | 0 | 0 | 12 | 6311 | — |
+| 5273 | 3369 | `python-fastfeedparser-git` | 0 | 0 | 12 | 3369 | — |
+| 5274 | 5270 | `python-ghlang` | 0 | 0 | 12 | 5270 | — |
+| 5275 | 3267 | `qbit-manage-desktop-bin` | 0 | 0 | 12 | 3267 | — |
+| 5276 | 682 | `qimgv-qt6-kde-git` | 0 | 0 | 12 | 682 | — |
+| 5277 | 657 | `qlog-git` | 0 | 0 | 12 | 657 | — |
+| 5278 | 7015 | `qmc2` | 0 | 0 | 12 | 7015 | — |
+| 5279 | 2626 | `queryark-bin` | 0 | 0 | 12 | 2626 | — |
+| 5280 | 8191 | `r-finetune` | 0 | 0 | 12 | 8191 | — |
+| 5281 | 7187 | `rblx-silver-git` | 0 | 0 | 12 | 7187 | — |
+| 5282 | 7057 | `rmlint-shredder-git` | 0 | 0 | 12 | 7057 | — |
+| 5283 | 1827 | `rpcs3-bin` | 0 | 0 | 12 | 1827 | — |
+| 5284 | 4485 | `sdbus-cpp-basu-git` | 0 | 0 | 12 | 4485 | — |
+| 5285 | 311 | `shelly` | 0 | 0 | 12 | 311 | — |
+| 5286 | 7351 | `shelly-git` | 0 | 0 | 12 | 7351 | — |
+| 5287 | 2946 | `snmpb` | 0 | 0 | 12 | 2946 | — |
+| 5288 | 1000 | `splayer` | 0 | 0 | 12 | 1000 | — |
+| 5289 | 5148 | `spotify-dev` | 0 | 0 | 12 | 5148 | — |
+| 5290 | 3982 | `starcal` | 0 | 0 | 12 | 3982 | — |
+| 5291 | 1701 | `steamtinkerlaunch-git` | 0 | 0 | 12 | 1701 | — |
+| 5292 | 2653 | `sysex-controls` | 0 | 0 | 12 | 2653 | — |
+| 5293 | 4897 | `todds` | 0 | 0 | 12 | 4897 | — |
+| 5294 | 1913 | `tuwunel` | 0 | 0 | 12 | 1913 | — |
+| 5295 | 2881 | `tuwunel-git` | 0 | 0 | 12 | 2881 | — |
+| 5296 | 4846 | `tuxclocker` | 0 | 0 | 12 | 4846 | — |
+| 5297 | 3833 | `uzdoom-git` | 0 | 0 | 12 | 3833 | — |
+| 5298 | 7359 | `vbx-git` | 0 | 0 | 12 | 7359 | — |
+| 5299 | 6756 | `virt-install-git` | 0 | 0 | 12 | 6756 | — |
+| 5300 | 3865 | `vita3k-git` | 0 | 0 | 12 | 3865 | — |
+| 5301 | 2828 | `vkbasalt-redemp-git` | 0 | 0 | 12 | 2828 | — |
+| 5302 | 2135 | `vrcx` | 0 | 0 | 12 | 2135 | — |
+| 5303 | 7043 | `vs-launcher` | 0 | 0 | 12 | 7043 | — |
+| 5304 | 6183 | `vsgxchange` | 0 | 0 | 12 | 6183 | — |
+| 5305 | 671 | `waywall-working-git` | 0 | 0 | 12 | 671 | — |
+| 5306 | 1155 | `whph-bin` | 0 | 0 | 12 | 1155 | — |
+| 5307 | 1687 | `wiiudownloader` | 0 | 0 | 12 | 1687 | — |
+| 5308 | 1602 | `winbox` | 0 | 0 | 12 | 1602 | — |
+| 5309 | 1309 | `yaak-bin` | 0 | 0 | 12 | 1309 | — |
+| 5310 | 7442 | `2s2h-otr-exporter` | 0 | 0 | 13 | 7442 | — |
+| 5311 | 4167 | `ab-download-manager-bin` | 0 | 0 | 13 | 4167 | — |
+| 5312 | 3682 | `alix-git` | 0 | 0 | 13 | 3682 | — |
+| 5313 | 3107 | `archivebox` | 0 | 0 | 13 | 3107 | — |
+| 5314 | 6513 | `autosuspend` | 0 | 0 | 13 | 6513 | — |
+| 5315 | 4694 | `bifrost-bin` | 0 | 0 | 13 | 4694 | — |
+| 5316 | 4711 | `chitubox-free-bin` | 0 | 0 | 13 | 4711 | — |
+| 5317 | 2925 | `cockpit-tools` | 0 | 0 | 13 | 2925 | — |
+| 5318 | 199 | `cryptopro-csp-k1` | 0 | 0 | 13 | 199 | — |
+| 5319 | 6471 | `deadlock-modmanager-bin` | 0 | 0 | 13 | 6471 | — |
+| 5320 | 1964 | `eddie-ui` | 0 | 0 | 13 | 1964 | — |
+| 5321 | 3844 | `faugus-launcher-git` | 0 | 0 | 13 | 3844 | — |
+| 5322 | 1090 | `flaresolverr` | 0 | 0 | 13 | 1090 | — |
+| 5323 | 2695 | `gdown` | 0 | 0 | 13 | 2695 | — |
+| 5324 | 7072 | `gitfourchette` | 0 | 0 | 13 | 7072 | — |
+| 5325 | 266 | `google-earth-pro` | 0 | 0 | 13 | 266 | — |
+| 5326 | 3713 | `hardbore-bin` | 0 | 0 | 13 | 3713 | — |
+| 5327 | 8004 | `idplugclassic-ro-cei-bin` | 0 | 0 | 13 | 8004 | — |
+| 5328 | 2479 | `joycond-cemuhook-git` | 0 | 0 | 13 | 2479 | — |
+| 5329 | 3894 | `kate-discord-rpc-git` | 0 | 0 | 13 | 3894 | — |
+| 5330 | 2577 | `kitsune` | 0 | 0 | 13 | 2577 | — |
+| 5331 | 7975 | `kst` | 0 | 0 | 13 | 7975 | — |
+| 5332 | 3763 | `linux-g14-headers` | 0 | 0 | 13 | 3763 | — |
+| 5333 | 288 | `lsfg-vk-git` | 0 | 0 | 13 | 288 | — |
+| 5334 | 8615 | `mediawriter` | 0 | 0 | 13 | 8615 | — |
+| 5335 | 3741 | `music-assistant-desktop-bin` | 0 | 0 | 13 | 3741 | — |
+| 5336 | 4770 | `nextpnr-ice40-nightly` | 0 | 0 | 13 | 4770 | — |
+| 5337 | 4605 | `ollama-docs-git` | 0 | 0 | 13 | 4605 | — |
+| 5338 | 4601 | `ollama-git` | 0 | 0 | 13 | 4601 | — |
+| 5339 | 6730 | `onscripter-en-galladite27` | 0 | 0 | 13 | 6730 | — |
+| 5340 | 693 | `opencloud-desktop` | 0 | 0 | 13 | 693 | — |
+| 5341 | 7279 | `pacpush` | 0 | 0 | 13 | 7279 | — |
+| 5342 | 6642 | `palemoon` | 0 | 0 | 13 | 6642 | — |
+| 5343 | 4178 | `pam-fprint-grosshack` | 0 | 0 | 13 | 4178 | — |
+| 5344 | 7586 | `pastelock` | 0 | 0 | 13 | 7586 | — |
+| 5345 | 7501 | `path-of-building-community-git` | 0 | 0 | 13 | 7501 | — |
+| 5346 | 681 | `pix` | 0 | 0 | 13 | 681 | — |
+| 5347 | 7677 | `plasma-gamemode-git` | 0 | 0 | 13 | 7677 | — |
+| 5348 | 4656 | `python-withoutbg` | 0 | 0 | 13 | 4656 | — |
+| 5349 | 1567 | `retroshare` | 0 | 0 | 13 | 1567 | — |
+| 5350 | 7252 | `riseup-vpn` | 0 | 0 | 13 | 7252 | — |
+| 5351 | 1374 | `safe-discover` | 0 | 0 | 13 | 1374 | — |
+| 5352 | 3337 | `scratch3-bin` | 0 | 0 | 13 | 3337 | — |
+| 5353 | 44 | `session-desktop` | 0 | 0 | 13 | 44 | — |
+| 5354 | 2637 | `sherlock` | 0 | 0 | 13 | 2637 | — |
+| 5355 | 1532 | `sniptext` | 0 | 0 | 13 | 1532 | — |
+| 5356 | 4739 | `snx-rs` | 0 | 0 | 13 | 4739 | — |
+| 5357 | 2641 | `sone` | 0 | 0 | 13 | 2641 | — |
+| 5358 | 780 | `sos` | 0 | 0 | 13 | 780 | — |
+| 5359 | 2935 | `spaghettikart` | 0 | 0 | 13 | 2935 | — |
+| 5360 | 5067 | `stretchly-bin` | 0 | 0 | 13 | 5067 | — |
+| 5361 | 3200 | `sunder-bin` | 0 | 0 | 13 | 3200 | — |
+| 5362 | 817 | `superhuman` | 0 | 0 | 13 | 817 | — |
+| 5363 | 8288 | `swisstag-git` | 0 | 0 | 13 | 8288 | — |
+| 5364 | 409 | `tartube` | 0 | 0 | 13 | 409 | — |
+| 5365 | 3727 | `tchap-desktop` | 0 | 0 | 13 | 3727 | — |
+| 5366 | 6690 | `tdx-bin` | 0 | 0 | 13 | 6690 | — |
+| 5367 | 1219 | `the-honkers-railway-launcher-bin` | 0 | 0 | 13 | 1219 | — |
+| 5368 | 4741 | `thorium-browser-bin` | 0 | 0 | 13 | 4741 | — |
+| 5369 | 2984 | `tlescope-bin` | 0 | 0 | 13 | 2984 | — |
+| 5370 | 2055 | `tor-browser-bin` | 0 | 0 | 13 | 2055 | — |
+| 5371 | 2727 | `valhalla` | 0 | 0 | 13 | 2727 | — |
+| 5372 | 4908 | `virtnbdbackup` | 0 | 0 | 13 | 4908 | — |
+| 5373 | 1267 | `visual-studio-code-insiders-bin` | 0 | 0 | 13 | 1267 | — |
+| 5374 | 1364 | `visual-studio-code-live-bin` | 0 | 0 | 13 | 1364 | — |
+| 5375 | 4965 | `wallpicker` | 0 | 0 | 13 | 4965 | — |
+| 5376 | 6588 | `xpipe` | 0 | 0 | 13 | 6588 | — |
+| 5377 | 2681 | `ymir-emu-git` | 0 | 0 | 13 | 2681 | — |
+| 5378 | 2873 | `ytm-player` | 0 | 0 | 13 | 2873 | — |
+| 5379 | 801 | `ytm-player-git` | 0 | 0 | 13 | 801 | — |
+| 5380 | 7320 | `anycubicslicernext-bin` | 0 | 0 | 14 | 7320 | — |
+| 5381 | 1212 | `bambustudio-bin` | 0 | 0 | 14 | 1212 | — |
+| 5382 | 1495 | `bambustudio-nvidia-bin` | 0 | 0 | 14 | 1495 | — |
+| 5383 | 401 | `banjorecomp` | 0 | 0 | 14 | 401 | — |
+| 5384 | 3997 | `bilibili` | 0 | 0 | 14 | 3997 | — |
+| 5385 | 7290 | `chrome-remote-desktop` | 0 | 0 | 14 | 7290 | — |
+| 5386 | 6154 | `crossmacro` | 0 | 0 | 14 | 6154 | — |
+| 5387 | 6545 | `custom-ime` | 0 | 0 | 14 | 6545 | — |
+| 5388 | 719 | `czkawka-git` | 0 | 0 | 14 | 719 | — |
+| 5389 | 2933 | `discover-overlay-git` | 0 | 0 | 14 | 2933 | — |
+| 5390 | 3603 | `emacs-mozc-with-jp-dict` | 0 | 0 | 14 | 3603 | — |
+| 5391 | 2019 | `fluffychat` | 0 | 0 | 14 | 2019 | — |
+| 5392 | 2557 | `franklyn-bin-dev` | 0 | 0 | 14 | 2557 | — |
+| 5393 | 2388 | `freetype2-macos` | 0 | 0 | 14 | 2388 | — |
+| 5394 | 740 | `glfw-wayland-minecraft-cursorfix` | 0 | 0 | 14 | 740 | — |
+| 5395 | 3930 | `gns3-server-2` | 0 | 0 | 14 | 3930 | — |
+| 5396 | 1769 | `gpu-viewer` | 0 | 0 | 14 | 1769 | — |
+| 5397 | 5457 | `gram-editor-bin` | 0 | 0 | 14 | 5457 | — |
+| 5398 | 4083 | `guiman` | 0 | 0 | 14 | 4083 | — |
+| 5399 | 1288 | `handy-bin` | 0 | 0 | 14 | 1288 | — |
+| 5400 | 1537 | `iptvnator-bin` | 0 | 0 | 14 | 1537 | — |
+| 5401 | 2690 | `jdk` | 0 | 0 | 14 | 2690 | — |
+| 5402 | 397 | `keepassxc-qt6` | 0 | 0 | 14 | 397 | — |
+| 5403 | 5447 | `linux-clear-cjktty-zfs` | 0 | 0 | 14 | 5447 | — |
+| 5404 | 5281 | `linux-libre-lts-docs` | 0 | 0 | 14 | 5281 | — |
+| 5405 | 6341 | `linux-tachyon` | 0 | 0 | 14 | 6341 | — |
+| 5406 | 8229 | `modbustools-git` | 0 | 0 | 14 | 8229 | — |
+| 5407 | 1604 | `modrinth-app-bin` | 0 | 0 | 14 | 1604 | — |
+| 5408 | 656 | `mtkclient` | 0 | 0 | 14 | 656 | — |
+| 5409 | 2321 | `mtkclient-git` | 0 | 0 | 14 | 2321 | — |
+| 5410 | 1394 | `neomod-bin` | 0 | 0 | 14 | 1394 | — |
+| 5411 | 8231 | `nmp-settings-bin` | 0 | 0 | 14 | 8231 | — |
+| 5412 | 4603 | `ollama-cuda-git` | 0 | 0 | 14 | 4603 | — |
+| 5413 | 4602 | `ollama-rocm-git` | 0 | 0 | 14 | 4602 | — |
+| 5414 | 5096 | `orca-slicer-nightly-bin` | 0 | 0 | 14 | 5096 | — |
+| 5415 | 1560 | `pdf4qt` | 0 | 0 | 14 | 1560 | — |
+| 5416 | 8160 | `persepolis-git` | 0 | 0 | 14 | 8160 | — |
+| 5417 | 866 | `plasma6-applets-eventcalendar` | 0 | 0 | 14 | 866 | — |
+| 5418 | 8617 | `polymc` | 0 | 0 | 14 | 8617 | — |
+| 5419 | 4175 | `proton-authenticator` | 0 | 0 | 14 | 4175 | — |
+| 5420 | 2866 | `pulsemeeter-git` | 0 | 0 | 14 | 2866 | — |
+| 5421 | 8600 | `purevpn-gui` | 0 | 0 | 14 | 8600 | — |
+| 5422 | 7944 | `python-pdf2doi` | 0 | 0 | 14 | 7944 | — |
+| 5423 | 8039 | `python-pympress` | 0 | 0 | 14 | 8039 | — |
+| 5424 | 1225 | `r2modman-bin` | 0 | 0 | 14 | 1225 | — |
+| 5425 | 831 | `reform-tools` | 0 | 0 | 14 | 831 | — |
+| 5426 | 1093 | `songrec-git` | 0 | 0 | 14 | 1093 | — |
+| 5427 | 6345 | `spot-client` | 0 | 0 | 14 | 6345 | — |
+| 5428 | 8337 | `timg` | 0 | 0 | 14 | 8337 | — |
+| 5429 | 709 | `turtle` | 0 | 0 | 14 | 709 | — |
+| 5430 | 1598 | `wallpaper-engine-kde-plugin-git` | 0 | 0 | 14 | 1598 | — |
+| 5431 | 5064 | `welle.io` | 0 | 0 | 14 | 5064 | — |
+| 5432 | 301 | `woeusb-ng` | 0 | 0 | 14 | 301 | — |
+| 5433 | 2348 | `wps-office-365` | 0 | 0 | 14 | 2348 | — |
+| 5434 | 2350 | `wps-office-365-fonts` | 0 | 0 | 14 | 2350 | — |
+| 5435 | 2349 | `wps-office-365-xiezuo` | 0 | 0 | 14 | 2349 | — |
+| 5436 | 3227 | `xlibre-video-intel-bin` | 0 | 0 | 14 | 3227 | — |
+| 5437 | 2106 | `yabridgectl-wine10-git` | 0 | 0 | 14 | 2106 | — |
+| 5438 | 1655 | `zephyr-sdk` | 0 | 0 | 14 | 1655 | — |
+| 5439 | 6249 | `an-anime-game-launcher` | 0 | 0 | 15 | 6249 | — |
+| 5440 | 6433 | `backblaze-b2` | 0 | 0 | 15 | 6433 | — |
+| 5441 | 278 | `caffeine-ng` | 0 | 0 | 15 | 278 | — |
+| 5442 | 3185 | `caffeine-ng-git` | 0 | 0 | 15 | 3185 | — |
+| 5443 | 5145 | `corrscope` | 0 | 0 | 15 | 5145 | — |
+| 5444 | 4067 | `devpod-community-bin` | 0 | 0 | 15 | 4067 | — |
+| 5445 | 6710 | `dracut-git` | 0 | 0 | 15 | 6710 | — |
+| 5446 | 399 | `foldingathome` | 0 | 0 | 15 | 399 | — |
+| 5447 | 2474 | `freedv-gui` | 0 | 0 | 15 | 2474 | — |
+| 5448 | 3752 | `git-wd40` | 0 | 0 | 15 | 3752 | — |
+| 5449 | 4268 | `gittyup` | 0 | 0 | 15 | 4268 | — |
+| 5450 | 6581 | `gmsh-docs` | 0 | 0 | 15 | 6581 | — |
+| 5451 | 1028 | `graphite-editor-git` | 0 | 0 | 15 | 1028 | — |
+| 5452 | 7646 | `grub-blscfg` | 0 | 0 | 15 | 7646 | — |
+| 5453 | 7999 | `harmonoid-bin` | 0 | 0 | 15 | 7999 | — |
+| 5454 | 1875 | `home-assistant` | 0 | 0 | 15 | 1875 | — |
+| 5455 | 6802 | `krunner-symbols-git` | 0 | 0 | 15 | 6802 | — |
+| 5456 | 3758 | `lamco-rdp-server` | 0 | 0 | 15 | 3758 | — |
+| 5457 | 2582 | `lianli-linux-git` | 0 | 0 | 15 | 2582 | — |
+| 5458 | 4676 | `lib32-amdvlk` | 0 | 0 | 15 | 4676 | — |
+| 5459 | 2585 | `linux-cjktty` | 0 | 0 | 15 | 2585 | — |
+| 5460 | 4262 | `linux-pf` | 0 | 0 | 15 | 4262 | — |
+| 5461 | 3137 | `linux-xanmod` | 0 | 0 | 15 | 3137 | — |
+| 5462 | 1594 | `mangowm-git` | 0 | 0 | 15 | 1594 | — |
+| 5463 | 216 | `mesen` | 0 | 0 | 15 | 216 | — |
+| 5464 | 2778 | `meshiji` | 0 | 0 | 15 | 2778 | — |
+| 5465 | 4057 | `mingw-w64-gtk3` | 0 | 0 | 15 | 4057 | — |
+| 5466 | 2424 | `moc-pulse` | 0 | 0 | 15 | 2424 | — |
+| 5467 | 6403 | `moneymanagerex` | 0 | 0 | 15 | 6403 | — |
+| 5468 | 2599 | `motrix-next` | 0 | 0 | 15 | 2599 | — |
+| 5469 | 50 | `openvpn3` | 0 | 0 | 15 | 50 | — |
+| 5470 | 8209 | `openwrt-devel` | 0 | 0 | 15 | 8209 | — |
+| 5471 | 6695 | `pango-nothai-git` | 0 | 0 | 15 | 6695 | — |
+| 5472 | 3412 | `python-docling-core` | 0 | 0 | 15 | 3412 | — |
+| 5473 | 2766 | `python-dora-search` | 0 | 0 | 15 | 2766 | — |
+| 5474 | 494 | `regexxer` | 0 | 0 | 15 | 494 | — |
+| 5475 | 7735 | `rmg` | 0 | 0 | 15 | 7735 | — |
+| 5476 | 6263 | `sleepy-launcher` | 0 | 0 | 15 | 6263 | — |
+| 5477 | 4956 | `speak-to-ai` | 0 | 0 | 15 | 4956 | — |
+| 5478 | 7598 | `spotify-downloader` | 0 | 0 | 15 | 7598 | — |
+| 5479 | 7785 | `sshpilot-git` | 0 | 0 | 15 | 7785 | — |
+| 5480 | 4177 | `studio-one-7` | 0 | 0 | 15 | 4177 | — |
+| 5481 | 7555 | `tev` | 0 | 0 | 15 | 7555 | — |
+| 5482 | 3705 | `thorium-browser-avx-bin` | 0 | 0 | 15 | 3705 | — |
+| 5483 | 3613 | `thorium-browser-avx2-bin` | 0 | 0 | 15 | 3613 | — |
+| 5484 | 7382 | `xdg-desktop-portal-minimal-git` | 0 | 0 | 15 | 7382 | — |
+| 5485 | 2105 | `yabridge-wine10-git` | 0 | 0 | 15 | 2105 | — |
+| 5486 | 1279 | `albert-bin` | 0 | 0 | 16 | 1279 | — |
+| 5487 | 4637 | `amdvlk` | 0 | 0 | 16 | 4637 | — |
+| 5488 | 1673 | `archipelagomw-bin` | 0 | 0 | 16 | 1673 | — |
+| 5489 | 3190 | `astraeditor-git` | 0 | 0 | 16 | 3190 | — |
+| 5490 | 2730 | `barrier-headless` | 0 | 0 | 16 | 2730 | — |
+| 5491 | 1276 | `biu-bin` | 0 | 0 | 16 | 1276 | — |
+| 5492 | 3401 | `brewtarget` | 0 | 0 | 16 | 3401 | — |
+| 5493 | 4551 | `cake-wallet-bin` | 0 | 0 | 16 | 4551 | — |
+| 5494 | 4754 | `chordpro-cli` | 0 | 0 | 16 | 4754 | — |
+| 5495 | 6319 | `clvk-git` | 0 | 0 | 16 | 6319 | — |
+| 5496 | 6677 | `dracut-nosystemd-git` | 0 | 0 | 16 | 6677 | — |
+| 5497 | 3477 | `elyprismlauncher-bin` | 0 | 0 | 16 | 3477 | — |
+| 5498 | 908 | `fcitx5-lotus` | 0 | 0 | 16 | 908 | — |
+| 5499 | 907 | `fcitx5-lotus-git` | 0 | 0 | 16 | 907 | — |
+| 5500 | 2036 | `helium-browser-bin` | 0 | 0 | 16 | 2036 | — |
+| 5501 | 6856 | `kdenlive-release-git` | 0 | 0 | 16 | 6856 | — |
+| 5502 | 1860 | `klassy-qt5` | 0 | 0 | 16 | 1860 | — |
+| 5503 | 5466 | `libavif-noglycin` | 0 | 0 | 16 | 5466 | — |
+| 5504 | 3762 | `linux-g14` | 0 | 0 | 16 | 3762 | — |
+| 5505 | 2097 | `llama.cpp-aio` | 0 | 0 | 16 | 2097 | — |
+| 5506 | 5130 | `micromamba` | 0 | 0 | 16 | 5130 | — |
+| 5507 | 4503 | `netlogo` | 0 | 0 | 16 | 4503 | — |
+| 5508 | 484 | `normcap` | 0 | 0 | 16 | 484 | — |
+| 5509 | 8266 | `postgresql17-docs` | 0 | 0 | 16 | 8266 | — |
+| 5510 | 7491 | `python-eduvpn-client` | 0 | 0 | 16 | 7491 | — |
+| 5511 | 6724 | `python-ignis` | 0 | 0 | 16 | 6724 | — |
+| 5512 | 7275 | `python-magika` | 0 | 0 | 16 | 7275 | — |
+| 5513 | 1688 | `sherlock-git` | 0 | 0 | 16 | 1688 | — |
+| 5514 | 3510 | `shortwave-mpris-bin` | 0 | 0 | 16 | 3510 | — |
+| 5515 | 4781 | `sshpilot-bin` | 0 | 0 | 16 | 4781 | — |
+| 5516 | 1244 | `stacer-bin` | 0 | 0 | 16 | 1244 | — |
+| 5517 | 7024 | `tensorrt-cross-builder-libs` | 0 | 0 | 16 | 7024 | — |
+| 5518 | 485 | `the-honkers-railway-launcher` | 0 | 0 | 16 | 485 | — |
+| 5519 | 5393 | `themix-theme-materia-git` | 0 | 0 | 16 | 5393 | — |
+| 5520 | 5052 | `thonny` | 0 | 0 | 16 | 5052 | — |
+| 5521 | 6549 | `vinegar` | 0 | 0 | 16 | 6549 | — |
+| 5522 | 6544 | `void-mod-manager-git` | 0 | 0 | 16 | 6544 | — |
+| 5523 | 5204 | `wayvr-actions-bin` | 0 | 0 | 16 | 5204 | — |
+| 5524 | 35 | `wps-office` | 0 | 0 | 16 | 35 | — |
+| 5525 | 2356 | `xfce-winxp-tc-git` | 0 | 0 | 16 | 2356 | — |
+| 5526 | 1788 | `zotero` | 0 | 0 | 16 | 1788 | — |
+| 5527 | 2117 | `anydesk-legacy-bin` | 0 | 0 | 17 | 2117 | — |
+| 5528 | 2958 | `baballonia` | 0 | 0 | 17 | 2958 | — |
+| 5529 | 6181 | `bb_launcher` | 0 | 0 | 17 | 6181 | — |
+| 5530 | 1133 | `betterwallpaper-git` | 0 | 0 | 17 | 1133 | — |
+| 5531 | 237 | `c47` | 0 | 0 | 17 | 237 | — |
+| 5532 | 6320 | `globalprotect-openconnect-git` | 0 | 0 | 17 | 6320 | — |
+| 5533 | 188 | `high-tide` | 0 | 0 | 17 | 188 | — |
+| 5534 | 206 | `inputactions-kwin` | 0 | 0 | 17 | 206 | — |
+| 5535 | 491 | `karton` | 0 | 0 | 17 | 491 | — |
+| 5536 | 7038 | `kretro` | 0 | 0 | 17 | 7038 | — |
+| 5537 | 670 | `libastal-meta` | 0 | 0 | 17 | 670 | — |
+| 5538 | 5468 | `libjxl-noglycin-doc` | 0 | 0 | 17 | 5468 | — |
+| 5539 | 7270 | `libretro-lrps2-git` | 0 | 0 | 17 | 7270 | — |
+| 5540 | 2357 | `libwintc-git` | 0 | 0 | 17 | 2357 | — |
+| 5541 | 7201 | `linux-libre-hardened-docs` | 0 | 0 | 17 | 7201 | — |
+| 5542 | 7200 | `linux-libre-hardened-headers` | 0 | 0 | 17 | 7200 | — |
+| 5543 | 1067 | `linux-vfio-lts-headers` | 0 | 0 | 17 | 1067 | — |
+| 5544 | 5032 | `mastodon` | 0 | 0 | 17 | 5032 | — |
+| 5545 | 958 | `maszyna-git` | 0 | 0 | 17 | 958 | — |
+| 5546 | 4472 | `mov-watch` | 0 | 0 | 17 | 4472 | — |
+| 5547 | 4358 | `mstflint` | 0 | 0 | 17 | 4358 | — |
+| 5548 | 3509 | `neovim-later` | 0 | 0 | 17 | 3509 | — |
+| 5549 | 6466 | `ngsolve-git` | 0 | 0 | 17 | 6466 | — |
+| 5550 | 7997 | `ollama-for-amd` | 0 | 0 | 17 | 7997 | — |
+| 5551 | 6241 | `openshot-git` | 0 | 0 | 17 | 6241 | — |
+| 5552 | 6619 | `pacman-git` | 0 | 0 | 17 | 6619 | — |
+| 5553 | 8265 | `postgresql17-libs` | 0 | 0 | 17 | 8265 | — |
+| 5554 | 6620 | `prismlauncher-offline` | 0 | 0 | 17 | 6620 | — |
+| 5555 | 5024 | `project-monalisa` | 0 | 0 | 17 | 5024 | — |
+| 5556 | 236 | `r47` | 0 | 0 | 17 | 236 | — |
+| 5557 | 6534 | `rustmius` | 0 | 0 | 17 | 6534 | — |
+| 5558 | 2908 | `scx-scheds-git` | 0 | 0 | 17 | 2908 | — |
+| 5559 | 2046 | `stremio` | 0 | 0 | 17 | 2046 | — |
+| 5560 | 2091 | `turing-smart-screen-python` | 0 | 0 | 17 | 2091 | — |
+| 5561 | 5491 | `uac-polkit-agent-git` | 0 | 0 | 17 | 5491 | — |
+| 5562 | 1905 | `yandex-browser` | 0 | 0 | 17 | 1905 | — |
+| 5563 | 6325 | `boosteroid` | 0 | 0 | 18 | 6325 | — |
+| 5564 | 3214 | `bugwarrior-git` | 0 | 0 | 18 | 3214 | — |
+| 5565 | 4641 | `darkly` | 0 | 0 | 18 | 4641 | — |
+| 5566 | 7237 | `deezer-enhanced-git` | 0 | 0 | 18 | 7237 | — |
+| 5567 | 8241 | `dsp56300-emulator-clap` | 0 | 0 | 18 | 8241 | — |
+| 5568 | 8242 | `dsp56300-emulator-lv2` | 0 | 0 | 18 | 8242 | — |
+| 5569 | 8243 | `dsp56300-emulator-vst3` | 0 | 0 | 18 | 8243 | — |
+| 5570 | 8 | `ferdium-bin` | 0 | 0 | 18 | 8 | — |
+| 5571 | 1403 | `jre25-zulu-bin` | 0 | 0 | 18 | 1403 | — |
+| 5572 | 1593 | `linux-mainline-docs` | 0 | 0 | 18 | 1593 | — |
+| 5573 | 683 | `linuxqq-nt-bwrap` | 0 | 0 | 18 | 683 | — |
+| 5574 | 7272 | `mesonlsp` | 0 | 0 | 18 | 7272 | — |
+| 5575 | 8291 | `mewline` | 0 | 0 | 18 | 8291 | — |
+| 5576 | 8292 | `mewline-git` | 0 | 0 | 18 | 8292 | — |
+| 5577 | 7282 | `opensnitch-git` | 0 | 0 | 18 | 7282 | — |
+| 5578 | 2611 | `pencil-dev-bin` | 0 | 0 | 18 | 2611 | — |
+| 5579 | 3197 | `planarally-bin` | 0 | 0 | 18 | 3197 | — |
+| 5580 | 2614 | `plasmazones` | 0 | 0 | 18 | 2614 | — |
+| 5581 | 4158 | `proton-ge-custom-rtsp-bin` | 0 | 0 | 18 | 4158 | — |
+| 5582 | 5368 | `python-gdbgui` | 0 | 0 | 18 | 5368 | — |
+| 5583 | 4700 | `sshpilot` | 0 | 0 | 18 | 4700 | — |
+| 5584 | 6523 | `twintaillauncher` | 0 | 0 | 18 | 6523 | — |
+| 5585 | 2360 | `twintaillauncher-git` | 0 | 0 | 18 | 2360 | — |
+| 5586 | 8318 | `upower-nosystemd-git` | 0 | 0 | 18 | 8318 | — |
+| 5587 | 1967 | `vivaldi-snapshot` | 0 | 0 | 18 | 1967 | — |
+| 5588 | 724 | `waydroid-helper-git` | 0 | 0 | 18 | 724 | — |
+| 5589 | 6597 | `2s2h` | 0 | 0 | 19 | 6597 | — |
+| 5590 | 5516 | `aeroshell-workspace-git` | 0 | 0 | 19 | 5516 | — |
+| 5591 | 6342 | `android-emulator` | 0 | 0 | 19 | 6342 | — |
+| 5592 | 6452 | `bilihud-git` | 0 | 0 | 19 | 6452 | — |
+| 5593 | 1116 | `chwall` | 0 | 0 | 19 | 1116 | — |
+| 5594 | 2094 | `euphonica` | 0 | 0 | 19 | 2094 | — |
+| 5595 | 2453 | `fastx-desktop-client` | 0 | 0 | 19 | 2453 | — |
+| 5596 | 1005 | `gnome-terminal-transparency` | 0 | 0 | 19 | 1005 | — |
+| 5597 | 2385 | `high-tide-git` | 0 | 0 | 19 | 2385 | — |
+| 5598 | 1203 | `intune-portal-bin` | 0 | 0 | 19 | 1203 | — |
+| 5599 | 4049 | `invader-git` | 0 | 0 | 19 | 4049 | — |
+| 5600 | 4774 | `keyman` | 0 | 0 | 19 | 4774 | — |
+| 5601 | 191 | `linux-wallpaperengine-git` | 0 | 0 | 19 | 191 | — |
+| 5602 | 7331 | `mathics` | 0 | 0 | 19 | 7331 | — |
+| 5603 | 1217 | `microsoft-identity-broker-bin` | 0 | 0 | 19 | 1217 | — |
+| 5604 | 2606 | `open-vm-tools-git` | 0 | 0 | 19 | 2606 | — |
+| 5605 | 2814 | `paperless-ngx-venv` | 0 | 0 | 19 | 2814 | — |
+| 5606 | 3814 | `playdate-sdk` | 0 | 0 | 19 | 3814 | — |
+| 5607 | 8349 | `python-speechrecognition` | 0 | 0 | 19 | 8349 | — |
+| 5608 | 3239 | `scap-security-guide` | 0 | 0 | 19 | 3239 | — |
+| 5609 | 1773 | `unreal-engine` | 0 | 0 | 19 | 1773 | — |
+| 5610 | 1487 | `vortex-git` | 0 | 0 | 19 | 1487 | — |
+| 5611 | 1894 | `wezterm-git` | 0 | 0 | 19 | 1894 | — |
+| 5612 | 359 | `arduino-ide` | 0 | 0 | 20 | 359 | — |
+| 5613 | 7278 | `cozy-audiobooks` | 0 | 0 | 20 | 7278 | — |
+| 5614 | 6550 | `cwc` | 0 | 0 | 20 | 6550 | — |
+| 5615 | 3435 | `ddnet` | 0 | 0 | 20 | 3435 | — |
+| 5616 | 1231 | `elysia-bin` | 0 | 0 | 20 | 1231 | — |
+| 5617 | 7961 | `fbthrift` | 0 | 0 | 20 | 7961 | — |
+| 5618 | 4079 | `ids-ips-tool` | 0 | 0 | 20 | 4079 | — |
+| 5619 | 5469 | `libjxl-noglycin` | 0 | 0 | 20 | 5469 | — |
+| 5620 | 3874 | `libwireplumber-4.0-compat` | 0 | 0 | 20 | 3874 | — |
+| 5621 | 7202 | `linux-libre-hardened` | 0 | 0 | 20 | 7202 | — |
+| 5622 | 3172 | `linux-show-player` | 0 | 0 | 20 | 3172 | — |
+| 5623 | 1068 | `linux-vfio-lts` | 0 | 0 | 20 | 1068 | — |
+| 5624 | 6673 | `obs-streamfx-unstable` | 0 | 0 | 20 | 6673 | — |
+| 5625 | 686 | `openconnect-sso` | 0 | 0 | 20 | 686 | — |
+| 5626 | 8621 | `planify` | 0 | 0 | 20 | 8621 | — |
+| 5627 | 2071 | `plasma6-applets-appgrid` | 0 | 0 | 20 | 2071 | — |
+| 5628 | 8033 | `playonlinux` | 0 | 0 | 20 | 8033 | — |
+| 5629 | 1485 | `rootapp-bin` | 0 | 0 | 20 | 1485 | — |
+| 5630 | 1176 | `shutter-encoder-bin` | 0 | 0 | 20 | 1176 | — |
+| 5631 | 3783 | `subliminal` | 0 | 0 | 20 | 3783 | — |
+| 5632 | 6353 | `unigine-superposition` | 0 | 0 | 20 | 6353 | — |
+| 5633 | 6709 | `voxd-bin` | 0 | 0 | 20 | 6709 | — |
+| 5634 | 648 | `yubico-authenticator` | 0 | 0 | 20 | 648 | — |
+| 5635 | 3423 | `aeroshell-smod-git` | 0 | 0 | 21 | 3423 | — |
+| 5636 | 4149 | `airwindows-consolidated-git` | 0 | 0 | 21 | 4149 | — |
+| 5637 | 2403 | `amiberry` | 0 | 0 | 21 | 2403 | — |
+| 5638 | 291 | `cobang` | 0 | 0 | 21 | 291 | — |
+| 5639 | 459 | `frr` | 0 | 0 | 21 | 459 | — |
+| 5640 | 2124 | `gnome-network-displays` | 0 | 0 | 21 | 2124 | — |
+| 5641 | 6770 | `godot32` | 0 | 0 | 21 | 6770 | — |
+| 5642 | 1059 | `hardinfo2-git` | 0 | 0 | 21 | 1059 | — |
+| 5643 | 6996 | `jami-daemon-git` | 0 | 0 | 21 | 6996 | — |
+| 5644 | 1462 | `ladybird` | 0 | 0 | 21 | 1462 | — |
+| 5645 | 7203 | `norisk-client-launcher-nvidia` | 0 | 0 | 21 | 7203 | — |
+| 5646 | 3976 | `note-gen` | 0 | 0 | 21 | 3976 | — |
+| 5647 | 4114 | `obs-advanced-scene-switcher` | 0 | 0 | 21 | 4114 | — |
+| 5648 | 3194 | `openscap-git` | 0 | 0 | 21 | 3194 | — |
+| 5649 | 5100 | `parallel-launcher` | 0 | 0 | 21 | 5100 | — |
+| 5650 | 1249 | `photoqt-bin` | 0 | 0 | 21 | 1249 | — |
+| 5651 | 2905 | `printer-support` | 0 | 0 | 21 | 2905 | — |
+| 5652 | 205 | `prismlauncher-git` | 0 | 0 | 21 | 205 | — |
+| 5653 | 6272 | `python-conda` | 0 | 0 | 21 | 6272 | — |
+| 5654 | 6261 | `python-pillow-simd-git` | 0 | 0 | 21 | 6261 | — |
+| 5655 | 7395 | `sonic-silver-theme` | 0 | 0 | 21 | 7395 | — |
+| 5656 | 2648 | `steam-library-manager` | 0 | 0 | 21 | 2648 | — |
+| 5657 | 20 | `sunshine-bin` | 0 | 0 | 21 | 20 | — |
+| 5658 | 508 | `ventoy` | 0 | 0 | 21 | 508 | — |
+| 5659 | 5510 | `zerx-lab-fluxdown-bin` | 0 | 0 | 21 | 5510 | — |
+| 5660 | 1748 | `alvr` | 0 | 0 | 22 | 1748 | — |
+| 5661 | 2061 | `anydesk-bin` | 0 | 0 | 22 | 2061 | — |
+| 5662 | 2337 | `itch-bin` | 0 | 0 | 22 | 2337 | — |
+| 5663 | 7520 | `jacartauc` | 0 | 0 | 22 | 7520 | — |
+| 5664 | 2836 | `java11-openjfx-doc` | 0 | 0 | 22 | 2836 | — |
+| 5665 | 2837 | `java11-openjfx-src` | 0 | 0 | 22 | 2837 | — |
+| 5666 | 4339 | `lief` | 0 | 0 | 22 | 4339 | — |
+| 5667 | 3487 | `mateengine` | 0 | 0 | 22 | 3487 | — |
+| 5668 | 253 | `music-assistant-desktop` | 0 | 0 | 22 | 253 | — |
+| 5669 | 7505 | `svxlink` | 0 | 0 | 22 | 7505 | — |
+| 5670 | 4033 | `switchgen-git` | 0 | 0 | 22 | 4033 | — |
+| 5671 | 6391 | `tabby-bin` | 0 | 0 | 22 | 6391 | — |
+| 5672 | 480 | `vscodium` | 0 | 0 | 22 | 480 | — |
+| 5673 | 292 | `wayvr` | 0 | 0 | 22 | 292 | — |
+| 5674 | 7502 | `xplayer` | 0 | 0 | 22 | 7502 | — |
+| 5675 | 7284 | `bobcat-terminal` | 0 | 0 | 23 | 7284 | — |
+| 5676 | 3777 | `brow6el-git` | 0 | 0 | 23 | 3777 | — |
+| 5677 | 3505 | `chataigne-stable-bin` | 0 | 0 | 23 | 3505 | — |
+| 5678 | 7705 | `hydrus` | 0 | 0 | 23 | 7705 | — |
+| 5679 | 2835 | `java11-openjfx` | 0 | 0 | 23 | 2835 | — |
+| 5680 | 7583 | `loopi-bin` | 0 | 0 | 23 | 7583 | — |
+| 5681 | 2725 | `python-bump-my-version` | 0 | 0 | 23 | 2725 | — |
+| 5682 | 3698 | `valent` | 0 | 0 | 23 | 3698 | — |
+| 5683 | 6247 | `wlroots0.19-hidpi-xprop` | 0 | 0 | 23 | 6247 | — |
+| 5684 | 7417 | `zenkit` | 0 | 0 | 23 | 7417 | — |
+| 5685 | 7613 | `binaryninja-personal` | 0 | 0 | 24 | 7613 | — |
+| 5686 | 259 | `cemu` | 0 | 0 | 24 | 259 | — |
+| 5687 | 8567 | `crossdirstat-bin` | 0 | 0 | 24 | 8567 | — |
+| 5688 | 4252 | `exaile` | 0 | 0 | 24 | 4252 | — |
+| 5689 | 3819 | `fooyin-git` | 0 | 0 | 24 | 3819 | — |
+| 5690 | 8544 | `garlmap-bin` | 0 | 0 | 24 | 8544 | — |
+| 5691 | 98 | `grub-customizer` | 0 | 0 | 24 | 98 | — |
+| 5692 | 644 | `nekobox` | 0 | 0 | 24 | 644 | — |
+| 5693 | 643 | `nekobox-core` | 0 | 0 | 24 | 643 | — |
+| 5694 | 3959 | `openbuilds-control-bin` | 0 | 0 | 24 | 3959 | — |
+| 5695 | 8352 | `ttf-google-fonts-git` | 0 | 0 | 24 | 8352 | — |
+| 5696 | 5518 | `aeroshell-kwin-components-git` | 0 | 0 | 25 | 5518 | — |
+| 5697 | 3657 | `codenomad-bin` | 0 | 0 | 25 | 3657 | — |
+| 5698 | 1422 | `commet-bin` | 0 | 0 | 25 | 1422 | — |
+| 5699 | 458 | `davinci-resolve-studio` | 0 | 0 | 25 | 458 | — |
+| 5700 | 5175 | `elyprismlauncher` | 0 | 0 | 25 | 5175 | — |
+| 5701 | 6731 | `gundog` | 0 | 0 | 25 | 6731 | — |
+| 5702 | 5117 | `koala-clash-bin` | 0 | 0 | 25 | 5117 | — |
+| 5703 | 30 | `megasync` | 0 | 0 | 25 | 30 | — |
+| 5704 | 3960 | `openbuilds-control-git` | 0 | 0 | 25 | 3960 | — |
+| 5705 | 3656 | `opentoonz-git` | 0 | 0 | 25 | 3656 | — |
+| 5706 | 1714 | `organicmaps` | 0 | 0 | 25 | 1714 | — |
+| 5707 | 462 | `penpot` | 0 | 0 | 25 | 462 | — |
+| 5708 | 1134 | `shortwave-mpris-git` | 0 | 0 | 25 | 1134 | — |
+| 5709 | 208 | `valent-git` | 0 | 0 | 25 | 208 | — |
+| 5710 | 281 | `yaak` | 0 | 0 | 25 | 281 | — |
+| 5711 | 7619 | `advantagescope` | 0 | 0 | 26 | 7619 | — |
+| 5712 | 1304 | `blockbench-bin` | 0 | 0 | 26 | 1304 | — |
+| 5713 | 1995 | `gns3-server` | 0 | 0 | 26 | 1995 | — |
+| 5714 | 2078 | `logseq-desktop-bin` | 0 | 0 | 26 | 2078 | — |
+| 5715 | 7334 | `omnetpp` | 0 | 0 | 26 | 7334 | — |
+| 5716 | 4032 | `openjdk22-doc` | 0 | 0 | 26 | 4032 | — |
+| 5717 | 4031 | `openjdk22-src` | 0 | 0 | 26 | 4031 | — |
+| 5718 | 461 | `penpot-exporter` | 0 | 0 | 26 | 461 | — |
+| 5719 | 6415 | `python-pyocd` | 0 | 0 | 26 | 6415 | — |
+| 5720 | 1572 | `servo` | 0 | 0 | 26 | 1572 | — |
+| 5721 | 4162 | `syca` | 0 | 0 | 26 | 4162 | — |
+| 5722 | 2009 | `system76-driver` | 0 | 0 | 26 | 2009 | — |
+| 5723 | 4640 | `apollo-git` | 0 | 0 | 27 | 4640 | — |
+| 5724 | 1935 | `deadbeef` | 0 | 0 | 27 | 1935 | — |
+| 5725 | 4883 | `deskreen` | 0 | 0 | 27 | 4883 | — |
+| 5726 | 138 | `devtools-doas` | 0 | 0 | 27 | 138 | — |
+| 5727 | 7068 | `expressvpn` | 0 | 0 | 27 | 7068 | — |
+| 5728 | 7051 | `expressvpn-staging` | 0 | 0 | 27 | 7051 | — |
+| 5729 | 3848 | `fagram-bin` | 0 | 0 | 27 | 3848 | — |
+| 5730 | 6789 | `handbrake-cli-git` | 0 | 0 | 27 | 6789 | — |
+| 5731 | 5467 | `libheif-noglycin` | 0 | 0 | 27 | 5467 | — |
+| 5732 | 4181 | `llvm-libs-git` | 0 | 0 | 27 | 4181 | — |
+| 5733 | 1396 | `lutris-live-bin` | 0 | 0 | 27 | 1396 | — |
+| 5734 | 7071 | `materialgram-bin` | 0 | 0 | 27 | 7071 | — |
+| 5735 | 3904 | `openbuilds-control` | 0 | 0 | 27 | 3904 | — |
+| 5736 | 5068 | `plasma6-wallpapers-wallpaper-engine-git` | 0 | 0 | 27 | 5068 | — |
+| 5737 | 2056 | `postman-bin` | 0 | 0 | 27 | 2056 | — |
+| 5738 | 1382 | `postman-live-bin` | 0 | 0 | 27 | 1382 | — |
+| 5739 | 4355 | `sejda-desktop` | 0 | 0 | 27 | 4355 | — |
+| 5740 | 2049 | `t3code-bin` | 0 | 0 | 27 | 2049 | — |
+| 5741 | 5517 | `aeroshell-libplasma-git` | 0 | 0 | 28 | 5517 | — |
+| 5742 | 5264 | `agent-cli` | 0 | 0 | 28 | 5264 | — |
+| 5743 | 1901 | `aseprite` | 0 | 0 | 28 | 1901 | — |
+| 5744 | 6386 | `imagescan` | 0 | 0 | 28 | 6386 | — |
+| 5745 | 722 | `maestral` | 0 | 0 | 28 | 722 | — |
+| 5746 | 4059 | `parallels-client` | 0 | 0 | 28 | 4059 | — |
+| 5747 | 2633 | `rog-perf-tuner-git` | 0 | 0 | 28 | 2633 | — |
+| 5748 | 6776 | `shadps4` | 0 | 0 | 28 | 6776 | — |
+| 5749 | 3843 | `godot-mono-git` | 0 | 0 | 29 | 3843 | — |
+| 5750 | 7686 | `imageviewer` | 0 | 0 | 29 | 7686 | — |
+| 5751 | 5335 | `lutris-wine-meta` | 0 | 0 | 29 | 5335 | — |
+| 5752 | 3289 | `openjdk25-doc-wakefield` | 0 | 0 | 29 | 3289 | — |
+| 5753 | 3290 | `openjdk25-src-wakefield` | 0 | 0 | 29 | 3290 | — |
+| 5754 | 3437 | `rstudio-desktop` | 0 | 0 | 29 | 3437 | — |
+| 5755 | 2129 | `somewm-git` | 0 | 0 | 29 | 2129 | — |
+| 5756 | 7356 | `ungoogled-chromium-widevine-bin` | 0 | 0 | 29 | 7356 | — |
+| 5757 | 5034 | `86box` | 0 | 0 | 30 | 5034 | — |
+| 5758 | 358 | `bolt-launcher` | 0 | 0 | 30 | 358 | — |
+| 5759 | 4055 | `drkonqi-git` | 0 | 0 | 30 | 4055 | — |
+| 5760 | 7641 | `mimose-bin` | 0 | 0 | 30 | 7641 | — |
+| 5761 | 4982 | `proxyman-bin` | 0 | 0 | 30 | 4982 | — |
+| 5762 | 1165 | `trivalent-bin` | 0 | 0 | 30 | 1165 | — |
+| 5763 | 7404 | `waytermirror-git` | 0 | 0 | 30 | 7404 | — |
+| 5764 | 6171 | `xlibre-xserver-devel-git` | 0 | 0 | 30 | 6171 | — |
+| 5765 | 5286 | `86box-git` | 0 | 0 | 31 | 5286 | — |
+| 5766 | 1208 | `alma-desktop-bin` | 0 | 0 | 31 | 1208 | — |
+| 5767 | 7758 | `audacious-plugins-gtk3` | 0 | 0 | 31 | 7758 | — |
+| 5768 | 303 | `coccoc-browser-stable` | 0 | 0 | 31 | 303 | — |
+| 5769 | 4661 | `cosmic-session-git` | 0 | 0 | 31 | 4661 | — |
+| 5770 | 2108 | `flaresolverr-bin` | 0 | 0 | 31 | 2108 | — |
+| 5771 | 305 | `kiro-ide` | 0 | 0 | 31 | 305 | — |
+| 5772 | 4658 | `rpcs3-git` | 0 | 0 | 31 | 4658 | — |
+| 5773 | 207 | `waterfox` | 0 | 0 | 31 | 207 | — |
+| 5774 | 5004 | `02engine-bin` | 0 | 0 | 32 | 5004 | — |
+| 5775 | 2031 | `antigravity` | 0 | 0 | 32 | 2031 | — |
+| 5776 | 4028 | `jre22-openjdk-headless` | 0 | 0 | 32 | 4028 | — |
+| 5777 | 1167 | `plasticity-bin` | 0 | 0 | 32 | 1167 | — |
+| 5778 | 558 | `vcvrack` | 0 | 0 | 32 | 558 | — |
+| 5779 | 2986 | `gram-editor-git` | 0 | 0 | 33 | 2986 | — |
+| 5780 | 4029 | `jre22-openjdk` | 0 | 0 | 33 | 4029 | — |
+| 5781 | 2041 | `mullvad-browser-bin` | 0 | 0 | 33 | 2041 | — |
+| 5782 | 1579 | `seamonkey-bin` | 0 | 0 | 33 | 1579 | — |
+| 5783 | 2643 | `sonic-system-info` | 0 | 0 | 33 | 2643 | — |
+| 5784 | 3942 | `x2goserver` | 0 | 0 | 33 | 3942 | — |
+| 5785 | 1630 | `handbrake-full` | 0 | 0 | 34 | 1630 | — |
+| 5786 | 1073 | `idescriptor-git` | 0 | 0 | 34 | 1073 | — |
+| 5787 | 3688 | `konform-browser-bin` | 0 | 0 | 34 | 3688 | — |
+| 5788 | 187 | `onlyoffice` | 0 | 0 | 34 | 187 | — |
+| 5789 | 1012 | `sway-scroll` | 0 | 0 | 34 | 1012 | — |
+| 5790 | 7685 | `sway-scroll-git` | 0 | 0 | 34 | 7685 | — |
+| 5791 | 7739 | `cdesktopenv` | 0 | 0 | 35 | 7739 | — |
+| 5792 | 6631 | `firedragon` | 0 | 0 | 35 | 6631 | — |
+| 5793 | 7214 | `immich-server` | 0 | 0 | 35 | 7214 | — |
+| 5794 | 3288 | `jre25-openjdk-headless-wakefield` | 0 | 0 | 35 | 3288 | — |
+| 5795 | 6579 | `kasmvncserver-bin` | 0 | 0 | 35 | 6579 | — |
+| 5796 | 6651 | `mounriverstudio-bin` | 0 | 0 | 35 | 6651 | — |
+| 5797 | 5088 | `orca-slicer-git` | 0 | 0 | 35 | 5088 | — |
+| 5798 | 1787 | `papis-git` | 0 | 0 | 35 | 1787 | — |
+| 5799 | 5268 | `python-manimgl` | 0 | 0 | 35 | 5268 | — |
+| 5800 | 6408 | `xemu` | 0 | 0 | 35 | 6408 | — |
+| 5801 | 4925 | `emby-server-beta` | 0 | 0 | 36 | 4925 | — |
+| 5802 | 3287 | `jre25-openjdk-wakefield` | 0 | 0 | 36 | 3287 | — |
+| 5803 | 4771 | `manim` | 0 | 0 | 36 | 4771 | — |
+| 5804 | 8007 | `barmer-ecare-bin` | 0 | 0 | 37 | 8007 | — |
+| 5805 | 1792 | `eden` | 0 | 0 | 37 | 1792 | — |
+| 5806 | 6807 | `emacs-deco` | 0 | 0 | 37 | 6807 | — |
+| 5807 | 4477 | `lazylibrarian-git` | 0 | 0 | 37 | 4477 | — |
+| 5808 | 540 | `orca-slicer` | 0 | 0 | 37 | 540 | — |
+| 5809 | 6820 | `unofficial-homestuck-collection` | 0 | 0 | 37 | 6820 | — |
+| 5810 | 1171 | `etcher-bin` | 0 | 0 | 38 | 1171 | — |
+| 5811 | 382 | `portproton` | 0 | 0 | 38 | 382 | — |
+| 5812 | 4740 | `nodejs-fast-cli` | 0 | 0 | 39 | 4740 | — |
+| 5813 | 3946 | `scribus-svn` | 0 | 0 | 39 | 3946 | — |
+| 5814 | 6626 | `zoneminder` | 0 | 0 | 39 | 6626 | — |
+| 5815 | 6575 | `ayugram-desktop-git` | 0 | 0 | 40 | 6575 | — |
+| 5816 | 1719 | `forkgram` | 0 | 0 | 40 | 1719 | — |
+| 5817 | 957 | `miktex` | 0 | 0 | 40 | 957 | — |
+| 5818 | 2137 | `obs-studio-git` | 0 | 0 | 40 | 2137 | — |
+| 5819 | 6771 | `zoneminder-git` | 0 | 0 | 40 | 6771 | — |
+| 5820 | 2042 | `onlyoffice-bin` | 0 | 0 | 41 | 2042 | — |
+| 5821 | 4709 | `floorp` | 0 | 0 | 42 | 4709 | — |
+| 5822 | 4124 | `ultimatevocalremovergui-git` | 0 | 0 | 42 | 4124 | — |
+| 5823 | 5083 | `seamonkey` | 0 | 0 | 43 | 5083 | — |
+| 5824 | 1236 | `dwproton-bin` | 0 | 0 | 44 | 1236 | — |
+| 5825 | 2962 | `dwproton-signed-bin` | 0 | 0 | 44 | 2962 | — |
+| 5826 | 2807 | `python-vllm-rocm` | 0 | 0 | 44 | 2807 | — |
+| 5827 | 393 | `gopher64` | 0 | 0 | 45 | 393 | — |
+| 5828 | 2686 | `proton-cachyos-slr` | 0 | 0 | 45 | 2686 | — |
+| 5829 | 4154 | `wivrn-full-git` | 0 | 0 | 46 | 4154 | — |
+| 5830 | 388 | `virtualbox-kvm` | 0 | 0 | 47 | 388 | — |
+| 5831 | 3630 | `dooble-bin` | 0 | 0 | 49 | 3630 | — |
+| 5832 | 471 | `plex-desktop` | 0 | 0 | 50 | 471 | — |
+| 5833 | 5003 | `pmb887x-emu-git` | 0 | 0 | 50 | 5003 | — |
+| 5834 | 6688 | `imagemagick-full-doc` | 0 | 0 | 51 | 6688 | — |
+| 5835 | 4612 | `wps-office-365-edu` | 0 | 0 | 51 | 4612 | — |
+| 5836 | 4613 | `wps-office-365-edu-fonts` | 0 | 0 | 51 | 4613 | — |
+| 5837 | 7724 | `brave` | 0 | 0 | 52 | 7724 | — |
+| 5838 | 441 | `mullvad-browser` | 0 | 0 | 52 | 441 | — |
+| 5839 | 8311 | `flowfox` | 0 | 0 | 53 | 8311 | — |
+| 5840 | 1650 | `hyprland-git` | 0 | 0 | 53 | 1650 | — |
+| 5841 | 439 | `mpv-full` | 0 | 0 | 54 | 439 | — |
+| 5842 | 6637 | `mpv-full-git` | 0 | 0 | 55 | 6637 | — |
+| 5843 | 6689 | `imagemagick-full` | 0 | 0 | 56 | 6689 | — |
+| 5844 | 4438 | `zen-browser-git` | 0 | 0 | 56 | 4438 | — |
+| 5845 | 1470 | `aerothemeplasma-desktop-git` | 0 | 0 | 58 | 1470 | — |
+| 5846 | 5035 | `gnome-meta` | 0 | 0 | 58 | 5035 | — |
+| 5847 | 6572 | `qemu-block-gluster-git` | 0 | 0 | 60 | 6572 | — |
+| 5848 | 6571 | `qemu-block-iscsi-git` | 0 | 0 | 60 | 6571 | — |
+| 5849 | 6569 | `qemu-guest-agent-git` | 0 | 0 | 60 | 6569 | — |
+| 5850 | 467 | `obs-studio-tytan652` | 0 | 0 | 65 | 467 | — |
+| 5851 | 1917 | `obs-studio-liberty` | 0 | 0 | 67 | 1917 | — |
+| 5852 | 2113 | `positron-ide-devel-bin` | 0 | 0 | 74 | 2113 | — |
+| 5853 | 6573 | `qemu-arch-extra-git` | 0 | 0 | 76 | 6573 | — |
+| 5854 | 6644 | `mpv-build-git` | 0 | 0 | 119 | 6644 | — |
+| 5855 | 6589 | `proton-cachyos` | 0 | 0 | 169 | 6589 | — |
+| 5856 | 512 | `all-repository-fonts` | 0 | 0 | 187 | 512 | — |
+| 5857 | 5290 | `domake` | 1 | 7 | 5 | 5290 | dosh |
+| 5858 | 4695 | `qt5-webkit` | 1 | 4 | 32 | 4695 | qt5-doc |
+| 5859 | 4783 | `xmlada` | 1 | 3 | 2 | 4783 | gprbuild |
+| 5860 | 122 | `pilowlava-font-common` | 1 | 3 | 3 | 122 | html2markdown |
+| 5861 | 7454 | `python-sqlite-migrate` | 1 | 3 | 8 | 7454 | sqlite-utils |
+| 5862 | 4324 | `python-pluginmgr` | 1 | 2 | 9 | 4324 | python-munge |
+| 5863 | 3800 | `qtutilities-qt6` | 1 | 2 | 9 | 3800 | c++utilities |
+| 5864 | 3176 | `clang-libs-minimal-git` | 1 | 2 | 14 | 3176 | llvm-libs-minimal-git |
+| 5865 | 6330 | `gcc13` | 1 | 2 | 16 | 6330 | gcc13-libs |
+| 5866 | 1273 | `aspnet-runtime-bin` | 1 | 1 | 1 | 1273 | dotnet-runtime-bin |
+| 5867 | 1272 | `aspnet-targeting-pack-bin` | 1 | 1 | 1 | 1272 | dotnet-targeting-pack-bin |
+| 5868 | 7617 | `sh-elf-newlib` | 1 | 1 | 1 | 7617 | sh-elf-gcc |
+| 5869 | 8355 | `android-platform` | 1 | 1 | 2 | 8355 | android-sdk |
+| 5870 | 3586 | `elephant-archlinuxpkgs-bin` | 1 | 1 | 2 | 3586 | elephant-bin |
+| 5871 | 3587 | `elephant-bluetooth-bin` | 1 | 1 | 2 | 3587 | elephant-bin |
+| 5872 | 3583 | `elephant-desktopapplications-bin` | 1 | 1 | 2 | 3583 | elephant-bin |
+| 5873 | 3581 | `elephant-menus-bin` | 1 | 1 | 2 | 3581 | elephant-bin |
+| 5874 | 3580 | `elephant-providerlist-bin` | 1 | 1 | 2 | 3580 | elephant-bin |
+| 5875 | 3579 | `elephant-runner-bin` | 1 | 1 | 2 | 3579 | elephant-bin |
+| 5876 | 3578 | `elephant-symbols-bin` | 1 | 1 | 2 | 3578 | elephant-bin |
+| 5877 | 3577 | `elephant-todo-bin` | 1 | 1 | 2 | 3577 | elephant-bin |
+| 5878 | 3576 | `elephant-unicode-bin` | 1 | 1 | 2 | 3576 | elephant-bin |
+| 5879 | 3575 | `elephant-websearch-bin` | 1 | 1 | 2 | 3575 | elephant-bin |
+| 5880 | 7265 | `openhab5` | 1 | 1 | 2 | 7265 | archlinux-java-run |
+| 5881 | 8582 | `ruby-httpx` | 1 | 1 | 2 | 8582 | ruby-http-2 |
+| 5882 | 3595 | `elephant-bitwarden-bin` | 1 | 1 | 3 | 3595 | elephant-bin |
+| 5883 | 3585 | `elephant-calc-bin` | 1 | 1 | 3 | 3585 | elephant-bin |
+| 5884 | 3594 | `elephant-dnfpackages-bin` | 1 | 1 | 3 | 3594 | elephant-bin |
+| 5885 | 3582 | `elephant-files-bin` | 1 | 1 | 3 | 3582 | elephant-bin |
+| 5886 | 3590 | `elephant-niriactions-bin` | 1 | 1 | 3 | 3590 | elephant-bin |
+| 5887 | 3591 | `elephant-nirisessions-bin` | 1 | 1 | 3 | 3591 | elephant-bin |
+| 5888 | 3589 | `elephant-snippets-bin` | 1 | 1 | 3 | 3589 | elephant-bin |
+| 5889 | 3588 | `elephant-windows-bin` | 1 | 1 | 3 | 3588 | elephant-bin |
+| 5890 | 3596 | `elephant-wireplumber-bin` | 1 | 1 | 3 | 3596 | elephant-bin |
+| 5891 | 5234 | `itchio-dlagent` | 1 | 1 | 3 | 5234 | ruby-httpx |
+| 5892 | 650 | `samsung-unified-driver-printer` | 1 | 1 | 3 | 650 | samsung-unified-driver-common |
+| 5893 | 3890 | `arduino-builder` | 1 | 1 | 4 | 3890 | arduino-ctags |
+| 5894 | 3593 | `elephant-1password-bin` | 1 | 1 | 4 | 3593 | elephant-bin |
+| 5895 | 3592 | `elephant-bookmarks-bin` | 1 | 1 | 4 | 3592 | elephant-bin |
+| 5896 | 3584 | `elephant-clipboard-bin` | 1 | 1 | 4 | 3584 | elephant-bin |
+| 5897 | 649 | `samsung-unified-driver-scanner` | 1 | 1 | 4 | 649 | samsung-unified-driver-common |
+| 5898 | 5307 | `dosh-cqfd` | 1 | 1 | 5 | 5307 | dosh |
+| 5899 | 4373 | `python-confu` | 1 | 1 | 5 | 4373 | python-munge |
+| 5900 | 7074 | `tvbrowser` | 1 | 1 | 5 | 7074 | archlinux-java-run |
+| 5901 | 6388 | `boost-65-compat-libs` | 1 | 1 | 6 | 6388 | python312 |
+| 5902 | 7318 | `kdesu5` | 1 | 1 | 6 | 7318 | qt5-doc |
+| 5903 | 2738 | `kpimtextedit5` | 1 | 1 | 6 | 2738 | ktextaddons5 |
+| 5904 | 6207 | `lib32-lapack` | 1 | 1 | 6 | 6207 | lib32-blas |
+| 5905 | 5018 | `ps3-psl1ght` | 1 | 1 | 6 | 5018 | ps3-env |
+| 5906 | 4328 | `python-graphsrv` | 1 | 1 | 6 | 4328 | python-vodka |
+| 5907 | 5242 | `python-holoviews` | 1 | 1 | 6 | 5242 | python-panel |
+| 5908 | 2408 | `lib32-nvidia-utils-beta` | 1 | 1 | 7 | 2408 | nvidia-utils-beta |
+| 5909 | 8302 | `pgadmin4-web` | 1 | 1 | 7 | 8302 | pgadmin4-server |
+| 5910 | 1535 | `qtforkawesome-qt6` | 1 | 1 | 7 | 1535 | qtutilities-qt6 |
+| 5911 | 4447 | `clight` | 1 | 1 | 8 | 4447 | clightd |
+| 5912 | 2715 | `kcontacts5` | 1 | 1 | 8 | 2715 | qt5-doc |
+| 5913 | 2398 | `python-shiboken2` | 1 | 1 | 8 | 2398 | pyside2 |
+| 5914 | 8221 | `gcc10` | 1 | 1 | 9 | 8221 | gcc10-libs |
+| 5915 | 492 | `sonic-x11-session` | 1 | 1 | 9 | 492 | sonic-workspace |
+| 5916 | 7535 | `tagparser` | 1 | 1 | 9 | 7535 | c++utilities |
+| 5917 | 6227 | `python-eccodes` | 1 | 1 | 10 | 6227 | python-findlibs |
+| 5918 | 6828 | `python-albumentationsx` | 1 | 1 | 11 | 6828 | python-albucore |
+| 5919 | 6980 | `python-asyncpraw` | 1 | 1 | 11 | 6980 | python-asyncprawcore |
+| 5920 | 1699 | `ddccontrol` | 1 | 1 | 12 | 1699 | ddccontrol-db-git |
+| 5921 | 232 | `xrizer-git` | 1 | 1 | 12 | 232 | xrizer-common |
+| 5922 | 4532 | `tl-render` | 1 | 1 | 13 | 4532 | feather-tk |
+| 5923 | 432 | `wf-shell` | 1 | 1 | 13 | 432 | wayfire |
+| 5924 | 3637 | `libappindicator-gtk2` | 1 | 1 | 14 | 3637 | gtk-sharp-2 |
+| 5925 | 5448 | `clightd` | 1 | 1 | 15 | 5448 | libmodule |
+| 5926 | 5211 | `python-aiortc` | 1 | 1 | 15 | 5211 | python-pylibsrtp |
+| 5927 | 1330 | `python-google-generativeai` | 1 | 1 | 15 | 1330 | python-google-ai-generativelanguage |
+| 5928 | 5040 | `python-insightface` | 1 | 1 | 17 | 5040 | python-easydict |
+| 5929 | 932 | `backup-warden` | 1 | 1 | 20 | 932 | backup-warden |
+| 5930 | 6537 | `networkmanager-iwd` | 1 | 1 | 40 | 6537 | libnm-iwd |
+| 5931 | 2892 | `kwin-povd` | 1 | 1 | 67 | 2892 | plasma-wayland-protocols-povd |
+| 5932 | 3268 | `aceplay-bin` | 1 | 0 | 1 | 3268 | acestream-engine |
+| 5933 | 7005 | `alice-bin` | 1 | 0 | 1 | 7005 | alice3-bin |
+| 5934 | 7036 | `android-google-apis-playstore-x86-64-system-image` | 1 | 0 | 1 | 7036 | android-platform |
+| 5935 | 6750 | `aspnet-runtime-7.0-bin` | 1 | 0 | 1 | 6750 | dotnet-runtime-7.0-bin |
+| 5936 | 6365 | `aspnet-runtime-9.0-bin` | 1 | 0 | 1 | 6365 | dotnet-runtime-9.0-bin |
+| 5937 | 6749 | `aspnet-targeting-pack-7.0-bin` | 1 | 0 | 1 | 6749 | dotnet-targeting-pack-7.0-bin |
+| 5938 | 6364 | `aspnet-targeting-pack-9.0-bin` | 1 | 0 | 1 | 6364 | dotnet-targeting-pack-9.0-bin |
+| 5939 | 6839 | `blobmoji-fontconfig` | 1 | 0 | 1 | 6839 | noto-fonts-emoji-blob |
+| 5940 | 4725 | `commafeed-h2` | 1 | 0 | 1 | 4725 | jdk25-graalvm-bin |
+| 5941 | 4728 | `commafeed-mariadb` | 1 | 0 | 1 | 4728 | jdk25-graalvm-bin |
+| 5942 | 4727 | `commafeed-mysql` | 1 | 0 | 1 | 4727 | jdk25-graalvm-bin |
+| 5943 | 4726 | `commafeed-postgresql` | 1 | 0 | 1 | 4726 | jdk25-graalvm-bin |
+| 5944 | 1144 | `editasroot` | 1 | 0 | 1 | 1144 | asroot |
+| 5945 | 4403 | `envy-tui-bin` | 1 | 0 | 1 | 4403 | envycontrol |
+| 5946 | 6837 | `foobar2000-component-beefweb-bin` | 1 | 0 | 1 | 6837 | foobar2000 |
+| 5947 | 6835 | `foobar2000-component-openlyrics-bin` | 1 | 0 | 1 | 6835 | foobar2000 |
+| 5948 | 741 | `iscan-plugin-perfection-v330` | 1 | 0 | 1 | 741 | iscan |
+| 5949 | 7639 | `ivpn-dinit` | 1 | 0 | 1 | 7639 | ivpn |
+| 5950 | 6765 | `keychron-q3-max-udev` | 1 | 0 | 1 | 6765 | keychron-link-udev |
+| 5951 | 3916 | `lianwall-bin` | 1 | 0 | 1 | 3916 | lianwalld-bin |
+| 5952 | 1130 | `localepurge-hook` | 1 | 0 | 1 | 1130 | localepurge |
+| 5953 | 6502 | `mytm` | 1 | 0 | 1 | 6502 | myctl |
+| 5954 | 7715 | `openhab5-addons` | 1 | 0 | 1 | 7715 | openhab5 |
+| 5955 | 1387 | `opera-gx-stable-ffmpeg-codecs-bin` | 1 | 0 | 1 | 1387 | opera-gx-stable |
+| 5956 | 5192 | `scmd-bin` | 1 | 0 | 1 | 5192 | llama.cpp |
+| 5957 | 8170 | `scorecard-bin` | 1 | 0 | 1 | 8170 | slsa-verifier |
+| 5958 | 6526 | `smart-units` | 1 | 0 | 1 | 6526 | sidef |
+| 5959 | 8528 | `taskell-bin` | 1 | 0 | 1 | 8528 | ncurses5-compat-libs |
+| 5960 | 3298 | `yap-bin` | 1 | 0 | 1 | 3298 | yay |
+| 5961 | 4117 | `zectl-pacman-hook` | 1 | 0 | 1 | 4117 | zectl |
+| 5962 | 5055 | `adastra-bin` | 1 | 0 | 2 | 5055 | itchio-dlagent |
+| 5963 | 1980 | `bcompare-cinnamon` | 1 | 0 | 2 | 1980 | bcompare |
+| 5964 | 1977 | `bcompare-kde4` | 1 | 0 | 2 | 1977 | bcompare |
+| 5965 | 1975 | `bcompare-kde6` | 1 | 0 | 2 | 1975 | bcompare |
+| 5966 | 1981 | `bcompare-mate` | 1 | 0 | 2 | 1981 | bcompare |
+| 5967 | 1978 | `bcompare-nautilus` | 1 | 0 | 2 | 1978 | bcompare |
+| 5968 | 1979 | `bcompare-thunar` | 1 | 0 | 2 | 1979 | bcompare |
+| 5969 | 406 | `epsonscan2-non-free-plugin` | 1 | 0 | 2 | 406 | epsonscan2 |
+| 5970 | 3141 | `i2p-bin` | 1 | 0 | 2 | 3141 | java-service-wrapper |
+| 5971 | 8210 | `mattercontrol` | 1 | 0 | 2 | 8210 | gtk-sharp-2 |
+| 5972 | 4857 | `mkinitcpio-tzpfms` | 1 | 0 | 2 | 4857 | tzpfms |
+| 5973 | 885 | `mupen64plus-input-raphnetraw` | 1 | 0 | 2 | 885 | mupen64plus-git |
+| 5974 | 7581 | `nohang-openrc` | 1 | 0 | 2 | 7581 | nohang |
+| 5975 | 4266 | `numix-circle-icon-theme-git` | 1 | 0 | 2 | 4266 | numix-icon-theme-git |
+| 5976 | 1159 | `ollama-cuda12-bin` | 1 | 0 | 2 | 1159 | ollama-bin |
+| 5977 | 1158 | `ollama-cuda13-bin` | 1 | 0 | 2 | 1158 | ollama-bin |
+| 5978 | 4347 | `piper-voices-en-gb` | 1 | 0 | 2 | 4347 | piper-voices-common |
+| 5979 | 3736 | `pp` | 1 | 0 | 2 | 3736 | auto-auto-complete |
+| 5980 | 7222 | `rvgl-dcpack` | 1 | 0 | 2 | 7222 | rvgl-bin |
+| 5981 | 7227 | `rvgl-io-cars` | 1 | 0 | 2 | 7227 | rvgl-bin |
+| 5982 | 7224 | `rvgl-io-loadlevel` | 1 | 0 | 2 | 7224 | rvgl-bin |
+| 5983 | 7223 | `rvgl-io-music` | 1 | 0 | 2 | 7223 | rvgl-bin |
+| 5984 | 7226 | `rvgl-io-skins-bonus` | 1 | 0 | 2 | 7226 | rvgl-bin |
+| 5985 | 7225 | `rvgl-io-soundtrack` | 1 | 0 | 2 | 7225 | rvgl-bin |
+| 5986 | 7219 | `rvgl-io-tracks` | 1 | 0 | 2 | 7219 | rvgl-bin |
+| 5987 | 1767 | `sac-gui` | 1 | 0 | 2 | 1767 | sac-core |
+| 5988 | 7608 | `scala-dotty` | 1 | 0 | 2 | 7608 | scala3 |
+| 5989 | 2987 | `spm-arch` | 1 | 0 | 2 | 2987 | yay |
+| 5990 | 202 | `spotify-adblock` | 1 | 0 | 2 | 202 | spotify |
+| 5991 | 5477 | `tilem-gtk3-git` | 1 | 0 | 2 | 5477 | libticalcs |
+| 5992 | 3519 | `unreal-tournament-data-gog` | 1 | 0 | 2 | 3519 | lgogdownloader |
+| 5993 | 3516 | `ut2004-data-gog` | 1 | 0 | 2 | 3516 | lgogdownloader |
+| 5994 | 3282 | `vscodium-translucent-marketplace` | 1 | 0 | 2 | 3282 | vscodium-translucent |
+| 5995 | 4967 | `waydroid-dinit` | 1 | 0 | 2 | 4967 | waydroid |
+| 5996 | 1101 | `xapp-epub-thumbnailer` | 1 | 0 | 2 | 1101 | xapp-thumbnailers-common |
+| 5997 | 1100 | `xapp-gimp-thumbnailer` | 1 | 0 | 2 | 1100 | xapp-thumbnailers-common |
+| 5998 | 1097 | `xapp-ora-thumbnailer` | 1 | 0 | 2 | 1097 | xapp-thumbnailers-common |
+| 5999 | 128 | `38c3-style-assets` | 1 | 0 | 3 | 128 | html2markdown |
+| 6000 | 127 | `38c3-styleguide` | 1 | 0 | 3 | 127 | html2markdown |
+| 6001 | 126 | `38c3-styles-commoninfo` | 1 | 0 | 3 | 126 | html2markdown |
+| 6002 | 1471 | `archie` | 1 | 0 | 3 | 1471 | paru-git |
+| 6003 | 1976 | `bcompare-kde5` | 1 | 0 | 3 | 1976 | bcompare |
+| 6004 | 6309 | `bms-shell-hyprland` | 1 | 0 | 3 | 6309 | bms-shell |
+| 6005 | 6308 | `bms-shell-niri` | 1 | 0 | 3 | 6308 | bms-shell |
+| 6006 | 5340 | `downlords-faf-client` | 1 | 0 | 3 | 5340 | jre25-temurin |
+| 6007 | 6417 | `fooyin-plugin-libvgm-git` | 1 | 0 | 3 | 6417 | fooyin |
+| 6008 | 7584 | `gnatdoc` | 1 | 0 | 3 | 7584 | gprbuild |
+| 6009 | 5224 | `google-compute-engine` | 1 | 0 | 3 | 5224 | google-compute-engine-oslogin |
+| 6010 | 7661 | `hibiscus` | 1 | 0 | 3 | 7661 | jameica |
+| 6011 | 4738 | `hypryou-greeter` | 1 | 0 | 3 | 4738 | hypryou |
+| 6012 | 2812 | `jabref` | 1 | 0 | 3 | 2812 | archlinux-java-run |
+| 6013 | 1018 | `jdupes` | 1 | 0 | 3 | 1018 | libjodycode |
+| 6014 | 1150 | `llama.cpp-sycl-f16-git` | 1 | 0 | 3 | 1150 | ggml-sycl-f16-git |
+| 6015 | 204 | `mihomo` | 1 | 0 | 3 | 204 | clash-geoip |
+| 6016 | 794 | `mkinitcpio-zerotier` | 1 | 0 | 3 | 794 | zerotier-one |
+| 6017 | 2401 | `nvidia-390xx-dkms` | 1 | 0 | 3 | 2401 | nvidia-390xx-utils |
+| 6018 | 2328 | `nvidia-470xx-dkms` | 1 | 0 | 3 | 2328 | nvidia-470xx-utils |
+| 6019 | 2027 | `nvidia-580xx-dkms` | 1 | 0 | 3 | 2027 | nvidia-580xx-utils |
+| 6020 | 4681 | `nvidia-beta-dkms` | 1 | 0 | 3 | 4681 | nvidia-utils-beta |
+| 6021 | 123 | `otf-uncut-sans` | 1 | 0 | 3 | 123 | html2markdown |
+| 6022 | 2609 | `paczf-yay` | 1 | 0 | 3 | 2609 | yay |
+| 6023 | 1314 | `pgadmin4-desktop-bin` | 1 | 0 | 3 | 1314 | pgadmin4-server |
+| 6024 | 4814 | `phantomjs-git` | 1 | 0 | 3 | 4814 | qt5-webkit |
+| 6025 | 955 | `powerpanel` | 1 | 0 | 3 | 955 | openssl-1.1 |
+| 6026 | 4876 | `powerupp-git` | 1 | 0 | 3 | 4876 | upliftpowerplay |
+| 6027 | 4916 | `ps3libraries` | 1 | 0 | 3 | 4916 | ps3toolchain |
+| 6028 | 4671 | `python-apriltag` | 1 | 0 | 3 | 4671 | apriltag |
+| 6029 | 3673 | `ride-bin` | 1 | 0 | 3 | 3673 | dyalog-bin |
+| 6030 | 4715 | `stm32cubemx` | 1 | 0 | 3 | 4715 | archlinux-java-run |
+| 6031 | 3201 | `tilp` | 1 | 0 | 3 | 3201 | libticalcs |
+| 6032 | 121 | `ttf-space-mono` | 1 | 0 | 3 | 121 | html2markdown |
+| 6033 | 120 | `ttf-uncut-sans` | 1 | 0 | 3 | 120 | html2markdown |
+| 6034 | 3277 | `vscodium-translucent-features` | 1 | 0 | 3 | 3277 | vscodium-translucent |
+| 6035 | 117 | `woff-uncut-sans` | 1 | 0 | 3 | 117 | html2markdown |
+| 6036 | 114 | `woff2-uncut-sans` | 1 | 0 | 3 | 114 | html2markdown |
+| 6037 | 1102 | `xapp-aiff-thumbnailer` | 1 | 0 | 3 | 1102 | xapp-thumbnailers-common |
+| 6038 | 1099 | `xapp-jxl-thumbnailer` | 1 | 0 | 3 | 1099 | xapp-thumbnailers-common |
+| 6039 | 1096 | `xapp-raw-thumbnailer` | 1 | 0 | 3 | 1096 | xapp-thumbnailers-common |
+| 6040 | 1094 | `xapp-vorbiscomment-thumbnailer` | 1 | 0 | 3 | 1094 | xapp-thumbnailers-common |
+| 6041 | 189 | `xone-dkms` | 1 | 0 | 3 | 189 | xone-dongle-firmware |
+| 6042 | 56 | `xone-dkms-git` | 1 | 0 | 3 | 56 | xone-dongle-firmware |
+| 6043 | 1055 | `dell-command-configure` | 1 | 0 | 4 | 1055 | openssl-1.1 |
+| 6044 | 3847 | `gksu` | 1 | 0 | 4 | 3847 | libgksu |
+| 6045 | 2737 | `kidentitymanagement5` | 1 | 0 | 4 | 2737 | kpimtextedit5 |
+| 6046 | 4072 | `lianwall-gui-bin` | 1 | 0 | 4 | 4072 | lianwalld-bin |
+| 6047 | 550 | `lib32-nvidia-vulkan-utils` | 1 | 0 | 4 | 550 | nvidia-vulkan-utils |
+| 6048 | 2896 | `lovr-playspace-git` | 1 | 0 | 4 | 2896 | lovr |
+| 6049 | 887 | `minot` | 1 | 0 | 4 | 887 | zensical |
+| 6050 | 2344 | `nvidia-open-beta` | 1 | 0 | 4 | 2344 | nvidia-utils-beta |
+| 6051 | 2345 | `nvidia-open-beta-dkms` | 1 | 0 | 4 | 2345 | nvidia-utils-beta |
+| 6052 | 1156 | `ollama-vulkan-bin` | 1 | 0 | 4 | 1156 | ollama-bin |
+| 6053 | 1174 | `osu-lazer-bin` | 1 | 0 | 4 | 1174 | osu-mime |
+| 6054 | 2346 | `osu-lazer-tachyon-bin` | 1 | 0 | 4 | 2346 | osu-mime |
+| 6055 | 365 | `paruse` | 1 | 0 | 4 | 365 | paru |
+| 6056 | 6465 | `pdsh-genders` | 1 | 0 | 4 | 6465 | genders |
+| 6057 | 5342 | `qtwebflix-git` | 1 | 0 | 4 | 5342 | chromium-widevine |
+| 6058 | 4821 | `ros2-git` | 1 | 0 | 4 | 4821 | ros2-arch-deps |
+| 6059 | 6476 | `roton-bin` | 1 | 0 | 4 | 6476 | wl-screenrec |
+| 6060 | 4343 | `sddm-conf` | 1 | 0 | 4 | 4343 | qtilitools |
+| 6061 | 7243 | `subtitles-contact-sheet-qt-gui` | 1 | 0 | 4 | 7243 | subtitles-contact-sheet-qt-cli |
+| 6062 | 4837 | `systemd-swap` | 1 | 0 | 4 | 4837 | python-sysv_ipc |
+| 6063 | 3807 | `tuxedo-control-center-bin` | 1 | 0 | 4 | 3807 | tuxedo-drivers-dkms |
+| 6064 | 3743 | `xapp-appimage-thumbnailer` | 1 | 0 | 4 | 3743 | xapp-thumbnailers-common |
+| 6065 | 934 | `atomic-upgrade` | 1 | 0 | 5 | 934 | verify-lib |
+| 6066 | 7496 | `autopsy` | 1 | 0 | 5 | 7496 | sleuthkit-java |
+| 6067 | 4081 | `clight-gui-git` | 1 | 0 | 5 | 4081 | clight |
+| 6068 | 2051 | `coolercontrol-bin` | 1 | 0 | 5 | 2051 | coolercontrold-bin |
+| 6069 | 5291 | `domake-docker-make` | 1 | 0 | 5 | 5291 | domake |
+| 6070 | 5292 | `domake-linux-amd64` | 1 | 0 | 5 | 5292 | domake |
+| 6071 | 5294 | `domake-linux-arm` | 1 | 0 | 5 | 5294 | domake |
+| 6072 | 5293 | `domake-linux-arm64` | 1 | 0 | 5 | 5293 | domake |
+| 6073 | 5295 | `domake-linux-ppc64le` | 1 | 0 | 5 | 5295 | domake |
+| 6074 | 5296 | `domake-linux-riscv64` | 1 | 0 | 5 | 5296 | domake |
+| 6075 | 5297 | `domake-linux-s390x` | 1 | 0 | 5 | 5297 | domake |
+| 6076 | 5308 | `dosh-docker-cqfd` | 1 | 0 | 5 | 5308 | dosh-cqfd |
+| 6077 | 5299 | `dosh-docker-shell` | 1 | 0 | 5 | 5299 | dosh |
+| 6078 | 5300 | `dosh-linux-amd64` | 1 | 0 | 5 | 5300 | dosh |
+| 6079 | 5302 | `dosh-linux-arm` | 1 | 0 | 5 | 5302 | dosh |
+| 6080 | 5301 | `dosh-linux-arm64` | 1 | 0 | 5 | 5301 | dosh |
+| 6081 | 5303 | `dosh-linux-ppc64le` | 1 | 0 | 5 | 5303 | dosh |
+| 6082 | 5304 | `dosh-linux-riscv64` | 1 | 0 | 5 | 5304 | dosh |
+| 6083 | 5305 | `dosh-linux-s390x` | 1 | 0 | 5 | 5305 | dosh |
+| 6084 | 3609 | `emacs-mozc` | 1 | 0 | 5 | 3609 | mozc |
+| 6085 | 5324 | `gnome-icon-theme` | 1 | 0 | 5 | 5324 | gnome-icon-theme-symbolic |
+| 6086 | 2574 | `jwtd` | 1 | 0 | 5 | 2574 | undr |
+| 6087 | 7523 | `keepassxc-cryptomator` | 1 | 0 | 5 | 7523 | cryptomator |
+| 6088 | 7679 | `kplotting5` | 1 | 0 | 5 | 7679 | qt5-doc |
+| 6089 | 1218 | `ledger-live-bin` | 1 | 0 | 5 | 1218 | ledger-udev |
+| 6090 | 562 | `nvidia-beta` | 1 | 0 | 5 | 562 | nvidia-utils-beta |
+| 6091 | 968 | `opencl-amd-dev` | 1 | 0 | 5 | 968 | opencl-amd |
+| 6092 | 2853 | `portage-manifest` | 1 | 0 | 5 | 2853 | yay |
+| 6093 | 5244 | `python-hvplot` | 1 | 0 | 5 | 5244 | python-holoviews |
+| 6094 | 6230 | `sleep-until` | 1 | 0 | 5 | 6230 | auto-auto-complete |
+| 6095 | 7033 | `snapx-ui` | 1 | 0 | 5 | 7033 | snapx |
+| 6096 | 4743 | `sysc-greet` | 1 | 0 | 5 | 4743 | gslapper |
+| 6097 | 6524 | `sysc-greet-hyprland` | 1 | 0 | 5 | 6524 | gslapper |
+| 6098 | 7073 | `tvb-recorder` | 1 | 0 | 5 | 7073 | tvbrowser |
+| 6099 | 1740 | `web-eid-chrome` | 1 | 0 | 5 | 1740 | web-eid-native |
+| 6100 | 1739 | `web-eid-firefox` | 1 | 0 | 5 | 1739 | web-eid-native |
+| 6101 | 3213 | `wiznoteplus-bin` | 1 | 0 | 5 | 3213 | openssl-1.1 |
+| 6102 | 5101 | `zsa-kontroll` | 1 | 0 | 5 | 5101 | zsa-keymapp-bin |
+| 6103 | 937 | `aggregate6-git` | 1 | 0 | 6 | 937 | python-py-radix |
+| 6104 | 4227 | `aurscan-git` | 1 | 0 | 6 | 4227 | paru |
+| 6105 | 4723 | `boca` | 1 | 0 | 6 | 4723 | smooth |
+| 6106 | 2355 | `cmake-language-server` | 1 | 0 | 6 | 2355 | cmake-format |
+| 6107 | 5306 | `dosh-posh` | 1 | 0 | 6 | 5306 | dosh |
+| 6108 | 995 | `fcitx5-mozc-ut` | 1 | 0 | 6 | 995 | mozc |
+| 6109 | 4870 | `freac-bin` | 1 | 0 | 6 | 4870 | openssl-1.1 |
+| 6110 | 6143 | `hanuchi` | 1 | 0 | 6 | 6143 | logmein-hamachi |
+| 6111 | 5333 | `kemoticons` | 1 | 0 | 6 | 5333 | qt5-doc |
+| 6112 | 2685 | `kholidays5` | 1 | 0 | 6 | 2685 | qt5-doc |
+| 6113 | 5361 | `khtml` | 1 | 0 | 6 | 5361 | phonon-qt5 |
+| 6114 | 6208 | `lib32-cblas` | 1 | 0 | 6 | 6208 | lib32-blas |
+| 6115 | 6206 | `lib32-lapacke` | 1 | 0 | 6 | 6206 | lib32-lapack |
+| 6116 | 2365 | `lib32-vmaf` | 1 | 0 | 6 | 2365 | lib32-libvmaf |
+| 6117 | 2371 | `lib32-x264` | 1 | 0 | 6 | 2371 | lib32-l-smash |
+| 6118 | 7528 | `mealie` | 1 | 0 | 6 | 7528 | python312 |
+| 6119 | 6256 | `ocaml-ppx_let` | 1 | 0 | 6 | 6256 | ocaml-ppx_here |
+| 6120 | 3909 | `python-protobuf-21` | 1 | 0 | 6 | 3909 | protobuf-21 |
+| 6121 | 2888 | `python-pyborgeous` | 1 | 0 | 6 | 2888 | python-markovify |
+| 6122 | 6224 | `relink` | 1 | 0 | 6 | 6224 | auto-auto-complete |
+| 6123 | 7059 | `sddm-silent-theme-git` | 1 | 0 | 6 | 7059 | redhat-fonts |
+| 6124 | 7208 | `selinux-python` | 1 | 0 | 6 | 7208 | setools |
+| 6125 | 5075 | `stm32cubeide` | 1 | 0 | 6 | 5075 | ncurses5-compat-libs |
+| 6126 | 380 | `ttf-ms-win10-auto` | 1 | 0 | 6 | 380 | httpfs2-2gbplus |
+| 6127 | 379 | `ttf-ms-win10-auto-japanese` | 1 | 0 | 6 | 379 | httpfs2-2gbplus |
+| 6128 | 378 | `ttf-ms-win10-auto-korean` | 1 | 0 | 6 | 378 | httpfs2-2gbplus |
+| 6129 | 377 | `ttf-ms-win10-auto-other` | 1 | 0 | 6 | 377 | httpfs2-2gbplus |
+| 6130 | 376 | `ttf-ms-win10-auto-sea` | 1 | 0 | 6 | 376 | httpfs2-2gbplus |
+| 6131 | 375 | `ttf-ms-win10-auto-thai` | 1 | 0 | 6 | 375 | httpfs2-2gbplus |
+| 6132 | 374 | `ttf-ms-win10-auto-zh_cn` | 1 | 0 | 6 | 374 | httpfs2-2gbplus |
+| 6133 | 373 | `ttf-ms-win10-auto-zh_tw` | 1 | 0 | 6 | 373 | httpfs2-2gbplus |
+| 6134 | 4202 | `xviewer-plugins` | 1 | 0 | 6 | 4202 | xviewer |
+| 6135 | 1698 | `gddccontrol` | 1 | 0 | 7 | 1698 | ddccontrol |
+| 6136 | 3132 | `ibus-openbangla-git` | 1 | 0 | 7 | 3132 | openbangla-keyboard-git |
+| 6137 | 2570 | `inq` | 1 | 0 | 7 | 2570 | python-inquirer-textual |
+| 6138 | 4225 | `ledger-live` | 1 | 0 | 7 | 4225 | ledger-udev |
+| 6139 | 6228 | `passcheck` | 1 | 0 | 7 | 6228 | auto-auto-complete |
+| 6140 | 4330 | `pdfsam` | 1 | 0 | 7 | 4330 | archlinux-java-run |
+| 6141 | 8529 | `python-pyrgg` | 1 | 0 | 7 | 8529 | python-art |
+| 6142 | 4457 | `python-qiskit-gym` | 1 | 0 | 7 | 4457 | python-twisterl |
+| 6143 | 3432 | `sddm-conf-git` | 1 | 0 | 7 | 3432 | qtilitools |
+| 6144 | 6258 | `tiny_httpd` | 1 | 0 | 7 | 6258 | ocaml-iostream |
+| 6145 | 6416 | `wkhtmltopdf` | 1 | 0 | 7 | 6416 | qt5-webkit |
+| 6146 | 3133 | `fcitx5-openbangla-git` | 1 | 0 | 8 | 3133 | openbangla-keyboard-git |
+| 6147 | 8223 | `gcc10-fortran` | 1 | 0 | 8 | 8223 | gcc10 |
+| 6148 | 4184 | `git-credential-manager-extras` | 1 | 0 | 8 | 4184 | git-credential-manager |
+| 6149 | 2876 | `gitpkg` | 1 | 0 | 8 | 2876 | verify-lib |
+| 6150 | 552 | `haguichi` | 1 | 0 | 8 | 552 | logmein-hamachi |
+| 6151 | 6558 | `hyprpwcenter-git` | 1 | 0 | 8 | 6558 | hyprtoolkit-git |
+| 6152 | 6438 | `hyprshutdown-git` | 1 | 0 | 8 | 6438 | hyprtoolkit-git |
+| 6153 | 2593 | `m33mu-git` | 1 | 0 | 8 | 2593 | wolfssl-all |
+| 6154 | 4974 | `memoria-ui` | 1 | 0 | 8 | 4974 | memoria-daemon |
+| 6155 | 8289 | `meowrch-settings` | 1 | 0 | 8 | 8289 | cachyos-ananicy-rules |
+| 6156 | 6826 | `python-foobeef` | 1 | 0 | 8 | 6826 | python-aiohttp-sse-client |
+| 6157 | 8520 | `python-samila` | 1 | 0 | 8 | 8520 | python-art |
+| 6158 | 3371 | `radicle-httpd` | 1 | 0 | 8 | 3371 | radicle-node |
+| 6159 | 3373 | `radicle-httpd-git` | 1 | 0 | 8 | 3373 | radicle-node |
+| 6160 | 1035 | `unrealtournament` | 1 | 0 | 8 | 1035 | libfmod |
+| 6161 | 2130 | `walker-bin` | 1 | 0 | 8 | 2130 | elephant |
+| 6162 | 4843 | `yamlfix` | 1 | 0 | 8 | 4843 | python-maison |
+| 6163 | 4657 | `arduino` | 1 | 0 | 9 | 4657 | arduino-builder |
+| 6164 | 211 | `backintime` | 1 | 0 | 9 | 211 | backintime-cli |
+| 6165 | 8321 | `cocode` | 1 | 0 | 9 | 8321 | pipelex |
+| 6166 | 2932 | `dumbshot` | 1 | 0 | 9 | 2932 | eww |
+| 6167 | 306 | `gixy-next` | 1 | 0 | 9 | 306 | crossplane |
+| 6168 | 7319 | `local-by-flywheel-bin` | 1 | 0 | 9 | 7319 | ncurses5-compat-libs |
+| 6169 | 3453 | `msdf-atlas-gen` | 1 | 0 | 9 | 3453 | msdfgen |
+| 6170 | 7309 | `mytimer` | 1 | 0 | 9 | 7309 | python-art |
+| 6171 | 6541 | `plasticscm-client-gui` | 1 | 0 | 9 | 6541 | plasticscm-client-core |
+| 6172 | 6716 | `python-litedram` | 1 | 0 | 9 | 6716 | python-litex |
+| 6173 | 6713 | `python-liteeth` | 1 | 0 | 9 | 6713 | python-litex |
+| 6174 | 6719 | `python-liteiclink` | 1 | 0 | 9 | 6719 | python-litex |
+| 6175 | 6721 | `python-litejesd204b` | 1 | 0 | 9 | 6721 | python-litex |
+| 6176 | 6715 | `python-litepcie` | 1 | 0 | 9 | 6715 | python-litex |
+| 6177 | 6712 | `python-litesata` | 1 | 0 | 9 | 6712 | python-litex |
+| 6178 | 6714 | `python-litescope` | 1 | 0 | 9 | 6714 | python-litex |
+| 6179 | 6718 | `python-litesdcard` | 1 | 0 | 9 | 6718 | python-litex |
+| 6180 | 4025 | `python-xeddsa` | 1 | 0 | 9 | 4025 | libxeddsa |
+| 6181 | 315 | `whisper.cpp-hip` | 1 | 0 | 9 | 315 | llama.cpp-hip |
+| 6182 | 3259 | `yay-sys-tray-git` | 1 | 0 | 9 | 3259 | yay |
+| 6183 | 3471 | `firefox-extension-credentialsd` | 1 | 0 | 10 | 3471 | credentialsd |
+| 6184 | 948 | `gzdoom` | 1 | 0 | 10 | 948 | zmusic |
+| 6185 | 7400 | `mintsysadm` | 1 | 0 | 10 | 7400 | mintcommon |
+| 6186 | 1080 | `obexftp` | 1 | 0 | 10 | 1080 | openobex |
+| 6187 | 3636 | `pamac-all` | 1 | 0 | 10 | 3636 | libpamac-full |
+| 6188 | 2693 | `plasma-framework5` | 1 | 0 | 10 | 2693 | qt5-doc |
+| 6189 | 2397 | `pyside2-tools` | 1 | 0 | 10 | 2397 | pyside2 |
+| 6190 | 7054 | `python-moviepy` | 1 | 0 | 10 | 7054 | python-proglog |
+| 6191 | 6221 | `scrotty` | 1 | 0 | 10 | 6221 | auto-auto-complete |
+| 6192 | 1372 | `stratos-cli` | 1 | 0 | 10 | 1372 | python-google-generativeai |
+| 6193 | 1126 | `xpybar` | 1 | 0 | 10 | 1126 | auto-auto-complete |
+| 6194 | 5215 | `asn-git` | 1 | 0 | 11 | 5215 | grepcidr |
+| 6195 | 4705 | `casual-pre-loader-git` | 1 | 0 | 11 | 4705 | python-valve-parsers |
+| 6196 | 4831 | `e-imzo-manager` | 1 | 0 | 11 | 4831 | e-imzo |
+| 6197 | 2318 | `en-croissant-bin` | 1 | 0 | 11 | 2318 | openssl-1.1 |
+| 6198 | 6410 | `fooyin-kode54-plugins-git` | 1 | 0 | 11 | 6410 | fooyin |
+| 6199 | 7694 | `hyprlauncher-git` | 1 | 0 | 11 | 7694 | hyprtoolkit-git |
+| 6200 | 4529 | `kapowarr` | 1 | 0 | 11 | 4529 | python-bencoding |
+| 6201 | 6225 | `python-pdbufr` | 1 | 0 | 11 | 6225 | python-eccodes |
+| 6202 | 2928 | `wlvncc-git` | 1 | 0 | 11 | 2928 | aml1 |
+| 6203 | 5201 | `amazon-workspaces-bin` | 1 | 0 | 12 | 5201 | openssl-1.1 |
+| 6204 | 3869 | `audiorelay` | 1 | 0 | 12 | 3869 | archlinux-java-run |
+| 6205 | 3177 | `clang-opencl-headers-minimal-git` | 1 | 0 | 12 | 3177 | clang-libs-minimal-git |
+| 6206 | 7021 | `deigde` | 1 | 0 | 12 | 7021 | dragengine |
+| 6207 | 6584 | `ente-auth` | 1 | 0 | 12 | 6584 | libsodium-1.0.18 |
+| 6208 | 6656 | `hyprgrab-git` | 1 | 0 | 12 | 6656 | wl-screenrec |
+| 6209 | 256 | `lib32-xrizer` | 1 | 0 | 12 | 256 | xrizer-common |
+| 6210 | 234 | `lib32-xrizer-git` | 1 | 0 | 12 | 234 | xrizer-common |
+| 6211 | 6426 | `libadwaita-yaru-demos-git` | 1 | 0 | 12 | 6426 | libadwaita-yaru-git |
+| 6212 | 2811 | `nvidia-settings-beta` | 1 | 0 | 12 | 2811 | nvidia-utils-beta |
+| 6213 | 7872 | `python-clox` | 1 | 0 | 12 | 7872 | python-art |
+| 6214 | 3832 | `raze` | 1 | 0 | 12 | 3832 | zmusic |
+| 6215 | 663 | `solar2d-git` | 1 | 0 | 12 | 663 | openssl-1.1 |
+| 6216 | 255 | `xrizer` | 1 | 0 | 12 | 255 | xrizer-common |
+| 6217 | 4495 | `djv` | 1 | 0 | 13 | 4495 | tl-render |
+| 6218 | 3380 | `element-desktop-git` | 1 | 0 | 13 | 3380 | element-web-git |
+| 6219 | 2844 | `python-griffe` | 1 | 0 | 13 | 2844 | python-uv-dynamic-versioning |
+| 6220 | 6761 | `spacedrive-bin` | 1 | 0 | 13 | 6761 | ffmpeg7.1 |
+| 6221 | 6420 | `trojita-qt5-git` | 1 | 0 | 13 | 6420 | qt5-webkit |
+| 6222 | 2721 | `upscaler` | 1 | 0 | 13 | 2721 | upscayl-ncnn |
+| 6223 | 1791 | `uzdoom` | 1 | 0 | 13 | 1791 | zmusic |
+| 6224 | 483 | `wayfire-plugins-extra` | 1 | 0 | 13 | 483 | wayfire |
+| 6225 | 4930 | `heidisql-qt6-git` | 1 | 0 | 14 | 4930 | heidisql |
+| 6226 | 1754 | `linux-cachyos-lts-headers` | 1 | 0 | 14 | 1754 | linux-cachyos-lts |
+| 6227 | 8331 | `moulti` | 1 | 0 | 14 | 8331 | python-ensurepath |
+| 6228 | 3685 | `qfinderpro-bin` | 1 | 0 | 14 | 3685 | openssl-1.1 |
+| 6229 | 8306 | `qmc2-sdlmame-git` | 1 | 0 | 14 | 8306 | qmc2-common-git |
+| 6230 | 672 | `qrookie-vrp` | 1 | 0 | 14 | 672 | android-sdk-build-tools |
+| 6231 | 456 | `linux-lqx-docs` | 1 | 0 | 15 | 456 | linux-lqx |
+| 6232 | 455 | `linux-lqx-headers` | 1 | 0 | 15 | 455 | linux-lqx |
+| 6233 | 3173 | `llvm-minimal-git` | 1 | 0 | 15 | 3173 | llvm-libs-minimal-git |
+| 6234 | 8205 | `python-audible-cli` | 1 | 0 | 15 | 8205 | python-audible |
+| 6235 | 8307 | `qmc2-arcade-git` | 1 | 0 | 15 | 8307 | qmc2-common-git |
+| 6236 | 369 | `qt5-examples` | 1 | 0 | 15 | 369 | qt5-doc |
+| 6237 | 7670 | `runescape-launcher` | 1 | 0 | 15 | 7670 | openssl-1.1 |
+| 6238 | 3784 | `vapoursynth-preview` | 1 | 0 | 15 | 3784 | vapoursynth-plugin-vsjetpack |
+| 6239 | 7008 | `backintime-git` | 1 | 0 | 16 | 7008 | backintime-cli-git |
+| 6240 | 6329 | `gcc13-fortran` | 1 | 0 | 16 | 6329 | gcc13 |
+| 6241 | 4414 | `lib32-python` | 1 | 0 | 16 | 4414 | lib32-bluez-libs |
+| 6242 | 6832 | `osdlyrics` | 1 | 0 | 16 | 6832 | libappindicator-gtk2 |
+| 6243 | 1069 | `linux-cachyos-headers` | 1 | 0 | 17 | 1069 | linux-cachyos |
+| 6244 | 1281 | `pamac-aur` | 1 | 0 | 17 | 1281 | libpamac-aur |
+| 6245 | 5326 | `webcamoid` | 1 | 0 | 17 | 5326 | libuvc |
+| 6246 | 7394 | `objection` | 1 | 0 | 18 | 7394 | python-frida |
+| 6247 | 5419 | `ocr4linux-git` | 1 | 0 | 18 | 5419 | grimblast-git |
+| 6248 | 2139 | `python-opentelemetry-proto` | 1 | 0 | 18 | 2139 | python-opencensus |
+| 6249 | 7026 | `python-tensorrt` | 1 | 0 | 18 | 7026 | tensorrt |
+| 6250 | 938 | `qt6-xcb-private-headers-hifps` | 1 | 0 | 18 | 938 | qt6-base-hifps |
+| 6251 | 4507 | `meshroom` | 1 | 0 | 19 | 4507 | alice-vision |
+| 6252 | 3962 | `mozillavpn-git` | 1 | 0 | 19 | 3962 | python-glean-parser |
+| 6253 | 843 | `protonmail-bridge-free` | 1 | 0 | 19 | 843 | protonmail-bridge-free-core |
+| 6254 | 223 | `tooi-git` | 1 | 0 | 19 | 223 | python-textual-fspicker |
+| 6255 | 6448 | `dolphie` | 1 | 0 | 20 | 6448 | python-myloginpath |
+| 6256 | 982 | `openvino-intel-gpu-plugin` | 1 | 0 | 20 | 982 | openvino |
+| 6257 | 7348 | `python-llama-cpp-vulkan` | 1 | 0 | 20 | 7348 | python-sse-starlette |
+| 6258 | 2141 | `python-opentelemetry-propagator-b3` | 1 | 0 | 20 | 2141 | python-opencensus |
+| 6259 | 2140 | `python-opentelemetry-propagator-jaeger` | 1 | 0 | 20 | 2140 | python-opencensus |
+| 6260 | 29 | `syncthingtray` | 1 | 0 | 20 | 29 | c++utilities |
+| 6261 | 3804 | `tidal-dl-ng` | 1 | 0 | 20 | 3804 | python-m3u8 |
+| 6262 | 7998 | `cervisia` | 1 | 0 | 21 | 7998 | kdesu5 |
+| 6263 | 981 | `openvino-intel-npu-plugin` | 1 | 0 | 21 | 981 | openvino |
+| 6264 | 2143 | `python-opentelemetry-opencensus-shim` | 1 | 0 | 21 | 2143 | python-opencensus |
+| 6265 | 2142 | `python-opentelemetry-opentracing-shim` | 1 | 0 | 21 | 2142 | python-opencensus |
+| 6266 | 8040 | `goldendict` | 1 | 0 | 22 | 8040 | qt5-webkit |
+| 6267 | 8012 | `marimo` | 1 | 0 | 22 | 8012 | python-loro |
+| 6268 | 3953 | `python-llama-cpp-hip` | 1 | 0 | 22 | 3953 | python-sse-starlette |
+| 6269 | 2144 | `python-opentelemetry-exporter-zipkin-proto-http` | 1 | 0 | 22 | 2144 | python-opencensus |
+| 6270 | 980 | `python-openvino` | 1 | 0 | 22 | 980 | openvino |
+| 6271 | 1561 | `rpmlint` | 1 | 0 | 22 | 1561 | python-pybeam |
+| 6272 | 3815 | `varia` | 1 | 0 | 22 | 3815 | python-emoji-country-flag |
+| 6273 | 2774 | `input-leap-git` | 1 | 0 | 23 | 2774 | input-leap-headless-git |
+| 6274 | 477 | `ktailctl` | 1 | 0 | 23 | 477 | tailscale |
+| 6275 | 1783 | `0ad-data-git` | 1 | 0 | 24 | 1783 | makepkg-git-lfs-proto |
+| 6276 | 8358 | `caelestia-shell` | 1 | 0 | 24 | 8358 | app2unit |
+| 6277 | 999 | `envision-xr-git` | 1 | 0 | 25 | 999 | xrizer-git |
+| 6278 | 8263 | `linkserver` | 1 | 0 | 25 | 8263 | openssl-1.1 |
+| 6279 | 2407 | `rom-properties-kde` | 1 | 0 | 25 | 2407 | rom-properties |
+| 6280 | 2406 | `rom-properties-gtk` | 1 | 0 | 26 | 2406 | rom-properties |
+| 6281 | 1643 | `servo-git` | 1 | 0 | 27 | 1643 | depot-tools-git |
+| 6282 | 7302 | `gamescope-nvidia` | 1 | 0 | 32 | 7302 | updpkgsrcs |
+| 6283 | 676 | `nautilus-typeahead` | 1 | 0 | 34 | 676 | libnautilus-extension-typeahead |
+| 6284 | 415 | `newelle` | 1 | 0 | 34 | 415 | python-mcp |
+| 6285 | 1640 | `eden-git` | 1 | 0 | 36 | 1640 | cpp-jwt |
+| 6286 | 7064 | `lib32-amdonly-gaming-opencl-rusticl-mesa-git` | 1 | 0 | 36 | 7064 | amdonly-gaming-opencl-rusticl-mesa-git |
+| 6287 | 3171 | `eden-beta` | 1 | 0 | 37 | 3171 | cpp-jwt |
+| 6288 | 7065 | `lib32-amdonly-gaming-mesa-git` | 1 | 0 | 37 | 7065 | amdonly-gaming-mesa-git |
+| 6289 | 7063 | `lib32-amdonly-gaming-vulkan-mesa-layers-git` | 1 | 0 | 37 | 7063 | amdonly-gaming-vulkan-mesa-layers-git |
+| 6290 | 6169 | `xlibre-xserver-xephyr-git` | 1 | 0 | 37 | 6169 | xlibre-xserver-common-git |
+| 6291 | 6168 | `xlibre-xserver-xnest-git` | 1 | 0 | 37 | 6168 | xlibre-xserver-common-git |
+| 6292 | 3633 | `ladybird-git` | 1 | 0 | 38 | 3633 | angle |
+| 6293 | 7062 | `lib32-amdonly-gaming-vulkan-radeon-git` | 1 | 0 | 38 | 7062 | amdonly-gaming-vulkan-radeon-git |
+| 6294 | 6173 | `xlibre-xserver-bootstrap-git` | 1 | 0 | 39 | 6173 | xlibre-xserver-common-git |
+| 6295 | 6167 | `xlibre-xserver-xvfb-git` | 1 | 0 | 39 | 6167 | xlibre-xserver-common-git |
+| 6296 | 6536 | `nm-iwd-cloud-setup` | 1 | 0 | 40 | 6536 | networkmanager-iwd |
+| 6297 | 6170 | `xlibre-xserver-git` | 1 | 0 | 40 | 6170 | xlibre-xserver-common-git |
+| 6298 | 773 | `libretro-azahar-git` | 1 | 0 | 41 | 773 | cpp-jwt |
+| 6299 | 774 | `azahar-git` | 1 | 0 | 44 | 774 | cpp-jwt |
+| 6300 | 4651 | `linuxcnc` | 1 | 0 | 47 | 4651 | bwidget |
+| 6301 | 2093 | `aider-chat-docs` | 1 | 0 | 53 | 2093 | litellm |
+| 6302 | 2893 | `plasma-desktop-povd` | 1 | 0 | 75 | 2893 | plasma-workspace-povd |
+| 6303 | 6568 | `qemu-headless-arch-extra-git` | 1 | 0 | 76 | 6568 | qemu-headless-git |
+| 6304 | 2638 | `sleex-git` | 1 | 0 | 121 | 2638 | hyprshot |
+| 6305 | 4785 | `gprbuild` | 2 | 7 | 3 | 4785 | libgpr, gprbuild |
+| 6306 | 2136 | `python-mcp` | 2 | 3 | 34 | 2136 | python-sse-starlette, python-uv-dynamic-versioning |
+| 6307 | 3182 | `libticalcs` | 2 | 2 | 2 | 3182 | libticables, libtifiles |
+| 6308 | 4784 | `libgpr` | 2 | 2 | 3 | 4784 | xmlada, gprbuild |
+| 6309 | 2396 | `pyside2` | 2 | 2 | 25 | 2396 | python-shiboken2, shiboken2 |
+| 6310 | 2890 | `plasma-workspace-povd` | 2 | 2 | 105 | 2890 | kwin-povd, plasma-wayland-protocols-povd |
+| 6311 | 493 | `sonic-workspace` | 2 | 2 | 110 | 493 | sonic-win, sonic-x11-session |
+| 6312 | 4787 | `gprname` | 2 | 1 | 4 | 4787 | xmlada, gprbuild |
+| 6313 | 4786 | `gprtools` | 2 | 1 | 4 | 4786 | xmlada, gprbuild |
+| 6314 | 5015 | `ps3toolchain` | 2 | 1 | 6 | 5015 | ps3-env, ps3-psl1ght |
+| 6315 | 7648 | `sh-elf-gcc` | 2 | 1 | 6 | 7648 | sh-elf-binutils, sh-elf-newlib |
+| 6316 | 6829 | `python-albucore` | 2 | 1 | 8 | 6829 | python-simsimd, python-stringzilla |
+| 6317 | 694 | `vapoursynth-plugin-vsjetpack` | 2 | 1 | 10 | 694 | python-jetpytools, vapoursynth-plugin-vszip |
+| 6318 | 6362 | `dotnet-sdk-9.0-bin` | 2 | 0 | 2 | 6362 | dotnet-runtime-9.0-bin, dotnet-targeting-pack-9.0-bin |
+| 6319 | 652 | `samsung-unified-driver` | 2 | 0 | 2 | 652 | samsung-unified-driver-printer, samsung-unified-driver-scanner |
+| 6320 | 238 | `wechat` | 2 | 0 | 2 | 238 | wechat-bin, portable |
+| 6321 | 6389 | `boost-65-compat` | 2 | 0 | 3 | 6389 | boost-65-compat-libs, python312 |
+| 6322 | 5077 | `pgadmin4` | 2 | 0 | 3 | 5077 | pgadmin4-server, pgadmin4-web |
+| 6323 | 1098 | `xapp-mp3-thumbnailer` | 2 | 0 | 3 | 1098 | python-eyed3, xapp-thumbnailers-common |
+| 6324 | 8283 | `dpt-rp1-cups` | 2 | 0 | 4 | 8283 | dpt-rp1-py, notify-send.sh |
+| 6325 | 125 | `otf-pilowlava` | 2 | 0 | 4 | 125 | pilowlava-font-common, html2markdown |
+| 6326 | 119 | `woff-pilowlava` | 2 | 0 | 4 | 119 | pilowlava-font-common, html2markdown |
+| 6327 | 116 | `woff2-pilowlava` | 2 | 0 | 4 | 116 | pilowlava-font-common, html2markdown |
+| 6328 | 4899 | `brother-mfc-9330cdw` | 2 | 0 | 5 | 4899 | deb2targz, brscan4 |
+| 6329 | 6747 | `dotnet-sdk-7.0-bin` | 2 | 0 | 5 | 6747 | dotnet-runtime-7.0-bin, dotnet-targeting-pack-7.0-bin |
+| 6330 | 2409 | `lib32-opencl-nvidia-beta` | 2 | 0 | 5 | 2409 | lib32-nvidia-utils-beta, nvidia-utils-beta |
+| 6331 | 7728 | `wgrib2` | 2 | 0 | 5 | 7728 | nceplibs-ip, nceplibs-g2c |
+| 6332 | 8218 | `kaitai-struct-visualizer` | 2 | 0 | 6 | 8218 | kaitai-struct-compiler, ruby-kaitai-struct |
+| 6333 | 5337 | `netflix` | 2 | 0 | 6 | 5337 | electron-castlab-bin, libelectron |
+| 6334 | 5233 | `cinnamon-styles-artwork` | 2 | 0 | 7 | 5233 | mint-x-icons, mint-y-icons |
+| 6335 | 1123 | `crunchyroll` | 2 | 0 | 7 | 1123 | electron-castlab-bin, libelectron |
+| 6336 | 7550 | `tageditor-cli` | 2 | 0 | 7 | 7550 | c++utilities, tagparser |
+| 6337 | 2891 | `plasma-x11-session-povd` | 2 | 0 | 8 | 2891 | plasma-workspace-povd, plasma-wayland-protocols-povd |
+| 6338 | 4758 | `ros2-humble` | 2 | 0 | 8 | 4758 | ros2-arch-deps, gcc13 |
+| 6339 | 7437 | `wcm` | 2 | 0 | 8 | 7437 | wayfire, wf-shell |
+| 6340 | 8296 | `python-niquests` | 2 | 0 | 9 | 8296 | python-urllib3-future, python-wassima |
+| 6341 | 4583 | `radiotray-ng-mpris` | 2 | 0 | 9 | 4583 | python-mpris_server, radiotray-ng |
+| 6342 | 5504 | `mkinitcpio-firmware` | 2 | 0 | 10 | 5504 | upd72020x-fw, wd719x-firmware |
+| 6343 | 4934 | `python-pyqt5-extra-modules` | 2 | 0 | 10 | 4934 | qt5-connectivity, qt5-quick3d |
+| 6344 | 2904 | `simracing-essentials` | 2 | 0 | 10 | 2904 | oversteer, new-lg4ff-dkms-git |
+| 6345 | 143 | `maliit-keyboard` | 2 | 0 | 11 | 143 | maliit-framework, presage |
+| 6346 | 3486 | `harbour-amazfish-git` | 2 | 0 | 12 | 3486 | kcontacts5, qt5-connectivity |
+| 6347 | 398 | `hypnotix` | 2 | 0 | 13 | 398 | circle-flags, python-cinemagoer |
+| 6348 | 5060 | `viu-media` | 2 | 0 | 14 | 5060 | python-inquirerpy, python-plyer |
+| 6349 | 3175 | `clang-minimal-git` | 2 | 0 | 15 | 3175 | llvm-libs-minimal-git, clang-libs-minimal-git |
+| 6350 | 1234 | `clipcascade-bin` | 2 | 0 | 15 | 1234 | python-plyer, python-aiortc |
+| 6351 | 1179 | `ghostty-nightly-bin` | 2 | 0 | 18 | 1179 | ghostty-shell-integration-nightly-bin, ghostty-terminfo-nightly-bin |
+| 6352 | 5050 | `streamrip` | 2 | 0 | 23 | 5050 | python-aiolimiter, python-m3u8 |
+| 6353 | 2076 | `sonic-desktop-interface` | 2 | 0 | 74 | 2076 | sonic-win, sonic-workspace |
+| 6354 | 4327 | `python-vodka` | 3 | 2 | 8 | 4327 | python-munge, python-pluginmgr, python-tmpl |
+| 6355 | 4528 | `alice-vision` | 3 | 1 | 31 | 4528 | openmesh, cctag, nanoflann |
+| 6356 | 4216 | `hypryou` | 3 | 1 | 35 | 4216 | hyprshot, libastal-wireplumber-git, ttf-material-symbols-variable-git |
+| 6357 | 8323 | `pipelex` | 3 | 1 | 41 | 8323 | python-kajson, python-polyfactory, python-mistralai |
+| 6358 | 6648 | `easytier` | 3 | 0 | 8 | 6648 | easytier-core, easytier-cli, easytier-web |
+| 6359 | 713 | `kanidm` | 3 | 0 | 8 | 713 | kanidm-server, kanidm-clients, kanidm-unixd-clients |
+| 6360 | 6370 | `python-llm` | 3 | 0 | 17 | 6370 | python-condense-json, sqlite-utils, python-sqlite-migrate |
+| 6361 | 2587 | `llm` | 3 | 0 | 18 | 2587 | python-condense-json, sqlite-utils, python-sqlite-migrate |
+| 6362 | 2588 | `llm-git` | 3 | 0 | 18 | 2588 | python-condense-json, sqlite-utils, python-sqlite-migrate |
+| 6363 | 1916 | `syncthingtray-qt6` | 3 | 0 | 24 | 1916 | qtutilities-qt6, qtforkawesome-qt6, c++utilities |
+| 6364 | 4701 | `monado-doc` | 3 | 0 | 39 | 4701 | cnmatrix, libsurvive, libuvc |
+| 6365 | 653 | `mistral-vibe` | 3 | 0 | 41 | 653 | python-agent-client-protocol, python-mcp, python-mistralai |
+| 6366 | 3813 | `open-webui-no-venv` | 3 | 0 | 108 | 3813 | python-aiocache, python-ftfy, python-mcp |
+| 6367 | 4999 | `gprbuild-toolbox` | 4 | 0 | 4 | 4999 | gprbuild, gprtools, gprname, libgpr |
+| 6368 | 1269 | `dotnet-sdk-bin` | 4 | 0 | 6 | 1269 | dotnet-runtime-bin, dotnet-targeting-pack-bin, aspnet-runtime-bin, aspnet-targeting-pack-bin |
+| 6369 | 4729 | `immich-machine-learning` | 4 | 0 | 23 | 4729 | python-aiocache, python-insightface, python-rapidocr, python-albumentationsx |
+| 6370 | 4087 | `ledfx` | 5 | 0 | 34 | 4087 | python-aubio-ledfx, python-samplerate-ledfx, python-openrgb, python-lifx-async, python-stupidartnet |
+| 6371 | 7441 | `cyberdropdownloader` | 6 | 0 | 33 | 7441 | python-aiolimiter, python-asyncpraw, python-get-video-properties, python-inquirerpy, python-m3u8, python-myjdapi |
+| 6372 | 4864 | `stardust-xr-telescope` | 7 | 0 | 10 | 4864 | stardust-xr-server, stardust-xr-flatland, stardust-xr-gravity, stardust-xr-protostar, stardust-xr-black-hole, stardust-xr-non-spatial-input, stardust-xr-solar-sailer |
+| 6373 | 4323 | `vaping` | 8 | 0 | 22 | 4323 | python-pid, python-munge, python-confu, python-pluginmgr, python-pytest-filedata, python-graphsrv, python-graphyte, python-vodka |
+| 6374 | 3573 | `elephant-all-bin` | 23 | 0 | 23 | 3573 | elephant-bin, elephant-websearch-bin, elephant-unicode-bin, elephant-todo-bin, elephant-symbols-bin, elephant-runner-bin, elephant-providerlist-bin, elephant-menus-bin, elephant-files-bin, elephant-desktopapplications-bin, elephant-clipboard-bin, elephant-calc-bin, elephant-archlinuxpkgs-bin, elephant-bluetooth-bin, elephant-windows-bin, elephant-snippets-bin, elephant-niriactions-bin, elephant-nirisessions-bin, elephant-bookmarks-bin, elephant-1password-bin, elephant-dnfpackages-bin, elephant-bitwarden-bin, elephant-wireplumber-bin |
+| 6375 | 7786 | `misans` | 43 | 0 | 54 | 7786 | ttf-misans, ttf-misans-lao, ttf-misans-arabic, ttf-misans-devanagari, ttf-misans-gujarati, ttf-misans-gurmukhi, ttf-misans-khmer, ttf-misans-l3, ttf-misans-latin, ttf-misans-myanmar, ttf-misans-tc, ttf-misans-thai, ttf-misans-tibetan, otf-misans, otf-misans-lao, otf-misans-arabic, otf-misans-devanagari, otf-misans-gujarati, otf-misans-gurmukhi, otf-misans-khmer, otf-misans-l3, otf-misans-latin, otf-misans-myanmar, otf-misans-tc, otf-misans-thai, otf-misans-tibetan, woff-misans, woff-misans-lao, woff-misans-arabic, woff-misans-devanagari, woff-misans-gujarati, woff-misans-gurmukhi, woff-misans-khmer, woff-misans-l3, woff-misans-latin, woff-misans-myanmar, woff-misans-tc, woff-misans-thai, woff-misans-tibetan, woff2-misans, woff2-misans-lao, woff2-misans-arabic, woff2-misans-devanagari |

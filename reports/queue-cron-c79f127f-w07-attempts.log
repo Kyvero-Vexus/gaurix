@@ -1,0 +1,192 @@
+A1: Guix package survey for openbangla-keyboard-git and related names
+guix show: error: openbangla-keyboard-git: package not found
+name: texlive-latexbangla
+version: 2025.2
+outputs:
++ doc: documentation
++ out: everything else
+systems: x86_64-linux i686-linux
+dependencies: 
+location: gnu/packages/tex.scm:55170:2
+homepage: https://ctan.org/pkg/latexbangla
+license: LPPL 1.3+
+synopsis: Enhanced LaTeX integration for Bangla  
+description: This package simplifies the process of writing Bangla in LaTeX
++ and addresses most of the associated typesetting issues.  Its notable features
++ are:
++ 
++    * automated transition from Bangla to English and vice versa;
++ 
++    * patch for the unproportionate whitespace issue in popular Bangla fonts;
++ 
++    * full support for all the common commands and environments;
++ 
++    * Bangla numbering for page, section, chapter, footnotes, extending
++      Polyglossia's support.
++ 
++    * new `theorem', `problems', `example', `solution' and other environments,
++      all of which are in Bangla.
+relevance: 19
+
+name: texlive-bangla
+version: 2025.2
+outputs:
++ doc: documentation
++ out: everything else
+systems: x86_64-linux i686-linux
+dependencies: texlive-charissil@2025.2 texlive-doulossil@2025.2
+location: gnu/packages/tex.scm:5384:2
+homepage: https://ctan.org/pkg/bangla
+license: LPPL 1.3c, SIL OFL 1.1
+synopsis: Comprehensive Bangla LaTeX package  
+description: This package provides all the necessary LaTeX frontends for the
++ Bangla language and comes with some fonts of its own.
+relevance: 19
+
+name: texlive-bangtex
+version: 2025.2
+outputs:
++ doc: documentation
++ out: everything else
+systems: x86_64-linux i686-linux
+dependencies: texlive-metafont@2025.2
+location: gnu/packages/tex.scm:5462:2
+homepage: https://ctan.org/pkg/bangtex
+license: LPPL (any version)
+synopsis: Writing Bangla and Assamese with LaTeX  
+description: The bundle provides class files for writing Bangla and Assamese
++ with LaTeX, and Metafont sources for fonts.
+relevance: 5
+
+name: texlive-ebong
+version: 2025.2
+outputs:
++ doc: documentation
++ out: everything else
+systems: x86_64-linux i686-linux
+dependencies: python@3.11.14
+location: gnu/packages/tex.scm:46471:2
+homepage: https://ctan.org/pkg/ebong
+license: Public Domain
+synopsis: Utility for writing Bengali in Rapid Roman Format  
+description: This package provides a tool (preprocessor) for writing your
++ `pRaa-ne-r' ka-thaa in the Bengali language.  It allows one to write the text
++ in Rapid Roman Bangla and convert it to the BangTeX format by a Python
++ program.  All LaTeX markups are preserved in the target file.
+relevance: 2
+
+
+A2: AUR PKGBUILD analysis (cached copy)
+# Maintainer: Ahmad Hasan Mubashshir <ahmubashshir@gmail.com>
+# from: git
+
+pkgbase="openbangla-keyboard-git"
+pkgname=(
+    "$pkgbase"
+    "ibus-openbangla-git"
+    "fcitx5-openbangla-git"
+)
+pkgver=2.0.0.r107.gbe784f6
+pkgrel=1
+pkgdesc="An OpenSource, Unicode compliant Bengali Input Method"
+arch=('x86_64')
+url="https://openbangla.github.io"
+license=('GPL3')
+makedepends=('cmake' 'rust' 'git' 'ibus' 'fcitx5' 'qt5-base')
+optdepends=('ttf-indic-otf: fonts for Bangla and other Indic scripts'
+            'ttf-freebanglafont: miscellaneous fonts for Bangla script')
+source=(
+    "${pkgbase%*-git}::git+https://github.com/OpenBangla/OpenBangla-Keyboard#branch=develop"
+    "riti::git+https://github.com/OpenBangla/riti"
+)
+sha256sums=('SKIP'
+            'SKIP')
+pkgver()
+{
+    cd "$srcdir/${pkgbase%*-git}"
+    (
+        set -o pipefail
+        git describe --tags --long 2>/dev/null | sed 's/\([^-]*-g\)/r\1/;s/-/./g' ||
+        printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
+    )
+}
+
+prepare() {
+    cd "$srcdir/${pkgbase%*-git}"
+    git submodule init
+    git config submodule."src/engine/riti".url $srcdir/riti
+    git -c protocol.file.allow=always submodule update
+}
+
+build() {
+    if [[ -d build ]]; then rm -rf build; fi
+    cmake -B build -S "${pkgbase%*-git}" \
+        -DBIN_DIR:PATH=/usr/bin \
+        -DLIBEXECDIR:PATH="/usr/lib/$pkgname" \
+        -DCMAKE_BUILD_TYPE=None \
+        -DCMAKE_SKIP_INSTALL_RPATH=YES \
+        -DCMAKE_SKIP_RPATH=YES \
+        -DENABLE_FCITX=YES \
+        -DENABLE_IBUS=YES \
+        -DCMAKE_INSTALL_PREFIX="/usr"
+    make -C build
+}
+package_openbangla-keyboard-git() {
+    depends=('qt5-base' "openbangla-im=$pkgver" 'hicolor-icon-theme' 'zstd')
+    provides=("${pkgbase%*-git}=$pkgver")
+    conflicts=("${pkgbase%*-git}")
+
+    make -C build DESTDIR="$pkgdir" install
+    mv -t "$pkgdir/../" \
+            "$pkgdir/usr/lib" \
+            "$pkgdir/usr/share/ibus" \
+            "$pkgdir/usr/share/fcitx5"
+}
+
+package_ibus-openbangla-git () {
+    depends=('ibus' 'qt5-base' "$pkgbase=$pkgver")
+    conflicts=('ibus-openbangla')
+    install="ibus-openbangla.install"
+    provides=(
+        "ibus-openbangla=$pkgver"
+        "openbangla-im=$pkgver"
+    )
+
+    mkdir -p "$pkgdir/usr/"{lib,share}
+    mv "$pkgdir/../lib/openbangla-keyboard-git" "$pkgdir/usr/lib/ibus-openbangla-git"
+    mv "$pkgdir/usr/lib/ibus-openbangla-git/"ibus{-engine,}-openbangla
+    mv "$pkgdir/../ibus" "$pkgdir/usr/share/ibus"
+    sed -i '/<exec>/{s/\(openbangla\)-keyboard/ibus-\1/;s/-engine//;}' \
+        "$pkgdir/usr/share/ibus/component/openbangla.xml"
+}
+
+package_fcitx5-openbangla-git() {
+    depends=(
+        'fcitx5'
+        'gcc-libs'
+        "$pkgbase=$pkgver"
+    )
+    conflicts=('fcitx5-openbangla')
+    optdepends=(
+        'fcitx5-gtk: Fcitx5 Gtk support'
+        'fcitx5-configtool: Fcitx5 Configuration Utility'
+    )
+    install="fcitx5-openbangla.install"
+    provides=(
+        "fcitx5-openbangla=$pkgver"
+        "openbangla-im=$pkgver"
+    )
+
+    mkdir -p "$pkgdir/usr/"{lib,share}
+    mv "$pkgdir/../lib/fcitx5" "$pkgdir/usr/lib/fcitx5"
+    mv "$pkgdir/../fcitx5" "$pkgdir/usr/share/fcitx5"
+}
+
+A3: Upstream/submodule + split dependency chain probe
+[submodule "src/engine/riti"]
+	path = src/engine/riti
+	url = https://github.com/OpenBangla/riti.git
+	branch = master
+guix show: error: ibus-openbangla-git: package not found
+guix show: error: fcitx5-openbangla-git: package not found
+guix show: error: openbangla-keyboard: package not found

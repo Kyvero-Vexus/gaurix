@@ -122,6 +122,7 @@
   #:use-module (gaurix packages queue-20260402p100daily5-blocked-notes)
   #:use-module (gaurix packages queue-20260403p100daily)
   #:use-module (gaurix packages queue-20260402p100daily4-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-integrated)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3292,4 +3293,72 @@
             rot8-git
             star-bin
             queue-20260402p100daily5-blocked-notes
+            elephant-bin
+            html2markdown
+            xapp-thumbnailers-common
+            python-litex
+            qt5-doc
+            bcompare
+            rvgl-bin
+            auto-auto-complete
+            archlinux-java-run
+            python-opencensus
+            c++utilities
+            jdk25-graalvm-bin
+            cpp-jwt
+            python-art
+            python-munge
+            xrizer-common
+            ollama-bin
+            plasma-wayland-protocols-povd
+            python-condense-json
+            zmusic
+            llvm-libs-minimal-git
+            wayfire
+            python-sse-starlette
+            hyprshot
+            logmein-hamachi
+            ps3-env
+            dotnet-targeting-pack-7.0-bin
+            lianwalld-bin
+            python-aiocache
+            qtilitools
+            xone-dongle-firmware
+            verify-lib
+            libuvc
+            qt5-connectivity
+            osu-mime
+            python-aiolimiter
+            dotnet-runtime-bin
+            python-inquirerpy
+            dotnet-runtime-7.0-bin
+            python-uv-dynamic-versioning
+            wl-screenrec
+            radicle-node
+            web-eid-native
+            python-mistralai
+            sonic-win
+            cachyos-ananicy-rules
+            circle-flags
+            clash-geoip
+            genders
+            ghostty-shell-integration-nightly-bin
+            ghostty-terminfo-nightly-bin
+            keychron-link-udev
+            libfmod
+            localepurge
+            noto-fonts-emoji-blob
+            redhat-fonts
+            tailscale
+            ttf-material-symbols-variable-git
+            upd72020x-fw
+            zerotier-one
+            arduino-ctags
+            asroot
+            libenv
+            python-eval-type-backport
+            python-jsonpath
+            python-opencensus-context
+            python-pfzy
+            python-typing-inspection
 ))

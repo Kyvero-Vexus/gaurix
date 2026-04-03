@@ -1,0 +1,219 @@
+{
+  "run_id": "cron-c79f127f-77f8-4d2a-beb6-3c7cf8a9aaad",
+  "chunk_id": "w08",
+  "branch": "cron-c79f127f-w08",
+  "worktree": "/var/tmp/gaurix-cron-c79f127f/w08",
+  "module_file": "guix/gaurix/packages/cron-c79f127f-w08.scm",
+  "selected_packages": [
+    "radicle-node",
+    "web-eid-native",
+    "qmc2-common-git",
+    "lgogdownloader",
+    "python-mistralai",
+    "linux-lqx",
+    "fooyin",
+    "vscodium-translucent",
+    "rom-properties",
+    "ros2-arch-deps"
+  ],
+  "resolved_packages": [
+    {
+      "name": "radicle-node",
+      "status_line": "DONE radicle-node (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package implemented via inherit from upstream radicle."
+      }
+    },
+    {
+      "name": "web-eid-native",
+      "status_line": "DONE web-eid-native (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package implemented via inherit from upstream web-eid-host."
+      }
+    },
+    {
+      "name": "python-mistralai",
+      "status_line": "DONE python-mistralai 2.2.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Packaged from PyPI with propagated dependencies wired to existing plus newly added chunk-local Python packages."
+      }
+    }
+  ],
+  "dependency_packages": [
+    {
+      "name": "python-eval-type-backport",
+      "status_line": "DONE python-eval-type-backport 0.3.1 (dependency)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New pyproject package required by python-mistralai."
+      }
+    },
+    {
+      "name": "python-typing-inspection",
+      "status_line": "DONE python-typing-inspection 0.4.2 (dependency)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New pyproject package required by python-mistralai."
+      }
+    },
+    {
+      "name": "python-jsonpath",
+      "status_line": "DONE python-jsonpath 1.1.5 (dependency)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New pyproject package required by python-mistralai."
+      }
+    }
+  ],
+  "remaining_blockers": [
+    {
+      "name": "qmc2-common-git",
+      "reason_code": "AUR_RECIPE_MISSING",
+      "status_line": "BLOCKED qmc2-common-git: no usable upstream/Guix candidate and AUR repo lacks PKGBUILD",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show qmc2-common-git returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r '^qmc2|qmc2' returned no matching package candidates."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval: scripts/fetch-aur-pkgbuild.sh qmc2-common-git failed because the AUR git repository has no PKGBUILD/.SRCINFO content."
+        }
+      ]
+    },
+    {
+      "name": "lgogdownloader",
+      "reason_code": "RECIPE_NOT_IMPLEMENTED",
+      "status_line": "BLOCKED lgogdownloader: recipe design/implementation deferred",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show lgogdownloader returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r 'lgogdownloader|gogdownloader' found no candidates."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval succeeded; PKGBUILD (v3.18) confirms CMake recipe with boost/jsoncpp/tinyxml2/rhash/tidy deps that still need Guix mapping and packaging work."
+        }
+      ]
+    },
+    {
+      "name": "linux-lqx",
+      "reason_code": "KERNEL_VARIANT_RECIPE_PENDING",
+      "status_line": "BLOCKED linux-lqx: Liquorix kernel variant recipe not yet authored",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show linux-lqx returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r 'linux.*liquorix|liquorix|lqx' found no Liquorix variant package."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval succeeded; PKGBUILD shows a large custom kernel build/patch/config pipeline requiring a dedicated linux-libre-derived packaging pass."
+        }
+      ]
+    },
+    {
+      "name": "fooyin",
+      "reason_code": "MISSING_DEPENDENCY_CHAIN",
+      "status_line": "BLOCKED fooyin: missing dependency stack (qcoro/kdsingleapplication/libvgm-git)",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show fooyin returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r 'fooyin' found no candidate package."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval succeeded; PKGBUILD indicates a Qt6/CMake build that depends on packages not currently available in this Guix snapshot."
+        }
+      ]
+    },
+    {
+      "name": "vscodium-translucent",
+      "reason_code": "MISSING_BASELINE_PACKAGE",
+      "status_line": "BLOCKED vscodium-translucent: no baseline vscodium package in current Guix set",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show vscodium-translucent returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r 'vscodium|codium|vscode' found no baseline vscodium package."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval succeeded; PKGBUILD requires heavy git build and patch workflow on top of VSCodium sources plus Node/Rust bootstrap tooling."
+        }
+      ]
+    },
+    {
+      "name": "rom-properties",
+      "reason_code": "MULTI_OUTPUT_RECIPE_PENDING",
+      "status_line": "BLOCKED rom-properties: split GTK/KDE recipe not implemented",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show rom-properties returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r 'rom-properties|rom' found no direct package candidate."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval succeeded; PKGBUILD defines multi-output core/gtk/kde packages with broad KDE and GTK build dependencies that require explicit Guix mapping."
+        }
+      ]
+    },
+    {
+      "name": "ros2-arch-deps",
+      "reason_code": "ROS2_STACK_UNAVAILABLE",
+      "status_line": "BLOCKED ros2-arch-deps: Arch-specific ROS2 metapackage has no Guix ROS2 stack backing",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show ros2-arch-deps returned package not found."
+        },
+        {
+          "id": "A2",
+          "detail": "Guix candidate search: guix search -r 'ros2|ament|colcon|vcstool' returned no ROS2/ament/colcon candidates."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR retrieval succeeded; PKGBUILD is a meta dependency bundle targeting Arch package names and expects a broad ROS2 ecosystem not present here."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Blocked notes module written to guix/gaurix/packages/cron-c79f127f-w08-blocked-notes.scm.",
+    "Reused/adapted prior chunk08 package work and re-validated all carried-forward package expressions for this run.",
+    "Validation log: reports/queue-cron-c79f127f-w08-validation.log; attempt log: reports/queue-cron-c79f127f-w08-attempts.log.",
+    "Expression-based lint/build -n checks were used so shared guix/gaurix/packages.scm remained untouched as requested."
+  ],
+  "commit": "PENDING"
+}
