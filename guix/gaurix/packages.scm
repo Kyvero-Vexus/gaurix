@@ -122,6 +122,8 @@
   #:use-module (gaurix packages queue-20260402p100daily5-blocked-notes)
   #:use-module (gaurix packages queue-20260403p100daily)
   #:use-module (gaurix packages queue-20260402p100daily4-blocked-notes)
+  #:use-module (gaurix packages queue-20260403p100daily2)
+  #:use-module (gaurix packages queue-20260403p100daily2-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -460,7 +462,6 @@
             gtkspell
             python313
             lib32-gtk2
-            openssl-1.0
             botan2
             piper-tts
             libjpeg6-turbo
@@ -506,8 +507,6 @@
             dstask-git
             fsearch-git
             procs-git
-            llama.cpp-vulkan
-            lib32-openssl-1.0
             zfs-dkms
             python-valkey-git
             calibre-bin
@@ -632,7 +631,6 @@
             libindicator-gtk2
             libdbusmenu-gtk2
             lib32-libjpeg6-turbo
-            lib32-openssl-1.1
             librsvg-noglycin-docs
             librsvg-noglycin
             qt6-avif-image-plugin
@@ -643,16 +641,12 @@
             freerdp2
             icoextract
             lib32-libpng12
-            libvpx1.3
             libtiff4
             librtmp0
             libgcrypt15
-            lib32-libvpx1.3
             lib32-libtiff4
             lib32-librtmp0
             lib32-libgcrypt15
-            lib32-glew1.10
-            glew1.10
             lib32-libdbusmenu-gtk2
             zfs-utils
             lib32-libappindicator-gtk2
@@ -969,7 +963,6 @@
             plymouth-theme-rings-2-git
             plymouth-theme-red-loader-git
             calibre-web
-            llama.cpp-cuda
             f3-qt
             hydra-launcher-bin
             got-vcs
@@ -2962,11 +2955,9 @@
             queue-20260401p100daily4-blocked-notes
             queue-20260401p100daily3
             qt5-location
-            qt5-scxml
             qt5-wayland-decorations
             ledger-udev
             libxdiff
-            wolfssl-all
             jdk22-openjdk
             jdk25-openjdk-wakefield
             queue-20260401p100daily7
@@ -3292,4 +3283,65 @@
             rot8-git
             star-bin
             queue-20260402p100daily5-blocked-notes
+            adobe-base-14-fonts
+            ttf-meslo
+            python-httpx-sse
+            sov
+            fvwm3-git
+            python-stanza
+            parallel-hashmap
+            soapysdrplay3-git
+            arx-libertatis-git
+            file-roller-git
+            mpv-uosc-git
+            python-yapsy-git
+            grayjay-git
+            i3lock-fancy-git
+            emacs-git
+            libadwaita-git
+            catppuccin-whiskers-bin
+            zathura-pdf-mupdf-git
+            whois-git
+            scanbd-git
+            nwipe-git
+            telegram-desktop-git
+            adwaita-icon-theme-git
+            mousepad-git
+            electrum-git
+            deskflow-git
+            mupdf-git
+            gparted-git
+            hashlink-git
+            conky-git
+            jujutsu-git
+            thunar-git
+            openfortivpn-git
+            ddcui-git
+            crow-translate-git
+            thunar-volman-git
+            deja-dup-git
+            libavif-git
+            mmc-utils-git
+            wine-git
+            awesome-git
+            syncplay-git
+            xdg-desktop-portal-wlr-git
+            retroarch-joypad-autoconfig-git
+            nushell-git
+            speed-dreams-git
+            xbyak
+            clifm-bin
+            hydroxide-git
+            typstyle-git
+            fnlfmt-git
+            fennel-ls-git
+            mda-lv2-git
+            geos-git
+            dool-git
+            ericw-tools-git
+            cpdf-bin
+            xremap-kde-bin
+            nextpnr-git
+            ttf-iosevka-term
+            queue-20260403p100daily2-blocked-notes
 ))
