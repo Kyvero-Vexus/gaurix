@@ -3,6 +3,12 @@
 ;;; Status: recipe-attempt stubs with NEEDS_RECIPE_DESIGN blockers.
 (define-module (gaurix packages queue-20260329p100daily)
   #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix gexp)
+  #:use-module (guix build-system trivial)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages compression)
   #:use-module (gnu packages rust-apps)
   #:export (
             mcp-router-bin
@@ -105,6 +111,16 @@
             js-util-bin
             intel-vision-drivers-dkms-git
             fastero
+            moderncsv-bin
+            ionosctl-bin
+            fhc-bin
+            mill-global
+            qo-bin
+            python-pandas-docs
+            vex-tui-bin
+            greenlight-bin
+            kftui-bin
+            waydroid-image-gapps
 ))
 
 (define-public mcp-router-bin
@@ -706,3 +722,534 @@
   (package
     (inherit zoxide)
     (name "fastero")))
+
+;;; Queue entries 5545/5546/5554/5561/5575/5578/5582/5586/5592/5632.
+
+(define-public moderncsv-bin
+  (package
+    (name "moderncsv-bin")
+    (version "2.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://www.moderncsv.com/release/ModernCSV-Linux-v"
+             version ".tar.gz"))
+       (sha256
+        (base32 "06wv7130m2zjnwpc8sic2j92sw57wxvnbsrrid2nsrrddahj4wq1"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     `(("tar" ,tar)
+       ("gzip" ,gzip)
+       ("license-file"
+        ,(origin
+           (method url-fetch)
+           (uri "https://aur.archlinux.org/cgit/aur.git/plain/ModernCSV-LICENSE.md?h=moderncsv-bin")
+           (sha256
+            (base32 "1qc7mkm61f5lgq0g6bwipsws2b2gypwvlaq81lif518pmvavnsq1"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils)
+                  (ice-9 ftw)
+                  (srfi srfi-1))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils)
+                       (ice-9 ftw)
+                       (srfi srfi-1))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (license-file (assoc-ref %build-inputs "license-file"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (apps (string-append out "/share/applications"))
+                 (icons (string-append out "/share/icons/hicolor"))
+                 (doc (string-append out "/share/doc/moderncsv-bin"))
+                 (license-dir (string-append out "/share/licenses/moderncsv-bin"))
+                 (opt (string-append out "/opt/moderncsv"))
+                 (bin (string-append out "/bin")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (let* ((entries (scandir "." (lambda (n) (not (member n '("." ".."))))))
+                   (dir (find (lambda (n)
+                                (and (file-is-directory? n)
+                                     (string-prefix? "moderncsv" n)))
+                              entries)))
+              (unless dir
+                (error "could not locate extracted moderncsv directory"))
+              (mkdir-p opt)
+              (copy-recursively dir opt)
+              (mkdir-p bin)
+              (symlink (string-append opt "/moderncsv")
+                       (string-append bin "/moderncsv"))
+              (mkdir-p apps)
+              (copy-file (string-append opt "/moderncsv.desktop")
+                         (string-append apps "/moderncsv.desktop"))
+              (substitute* (string-append apps "/moderncsv.desktop")
+                (("Exec=.*") "Exec=moderncsv"))
+              (when (file-exists? (string-append opt "/icons/hicolor"))
+                (mkdir-p icons)
+                (copy-recursively (string-append opt "/icons/hicolor") icons))
+              (when (file-exists? (string-append opt "/README.md"))
+                (mkdir-p doc)
+                (copy-file (string-append opt "/README.md")
+                           (string-append doc "/README.md")))
+              (mkdir-p license-dir)
+              (copy-file license-file (string-append license-dir "/LICENSE.md"))
+              #t)))))
+    (home-page "https://www.moderncsv.com/")
+    (synopsis "Intuitive CSV file editor")
+    (description
+     "Modern CSV is an editor and viewer for CSV and other delimited text files.
+This package repackages the upstream prebuilt Linux binary release.")
+    (license (license:non-copyleft "https://www.moderncsv.com/"
+                                  "Upstream proprietary license"))))
+
+(define-public ionosctl-bin
+  (package
+    (name "ionosctl-bin")
+    (version "6.9.8")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/ionos-cloud/ionosctl/releases/download/v"
+             version "/ionosctl-" version "-linux-amd64.tar.gz"))
+       (sha256
+        (base32 "050jinhb5fmbgswwqkhjq1abg2nzh5xrw1yfbwvlyvsiql3d1lk6"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils)
+                  (ice-9 ftw))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils)
+                       (ice-9 ftw))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/ionosctl"))
+                 (license-dir (string-append out "/share/licenses/ionosctl-bin")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (mkdir-p bin)
+            (install-file "ionosctl" bin)
+            (chmod (string-append bin "/ionosctl") #o755)
+            (mkdir-p doc)
+            (when (file-exists? "docs")
+              (copy-recursively "docs" (string-append doc "/docs")))
+            (for-each
+             (lambda (name)
+               (when (file-exists? name)
+                 (copy-file name (string-append doc "/" name))))
+             '("README.md" "CHANGELOG.md" "summary.md"))
+            (when (file-exists? "LICENSE")
+              (mkdir-p license-dir)
+              (copy-file "LICENSE" (string-append license-dir "/LICENSE")))
+            #t))))
+    (home-page "https://github.com/ionos-cloud/ionosctl")
+    (synopsis "IONOS Cloud command-line client")
+    (description
+     "ionosctl is the command-line client for IONOS Cloud APIs.  This package
+installs the upstream prebuilt x86_64 Linux release.")
+    (license license:asl2.0)))
+
+(define-public fhc-bin
+  (package
+    (name "fhc-bin")
+    (version "0.9.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/Edu4rdSHL/fhc/releases/download/"
+             version "/fhc-linux-x64.zip"))
+       (sha256
+        (base32 "1nk6hk62rv7q37wdfhr8p802hgf7ac8c9m830qigzdji99h1l30q"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     `(("unzip" ,unzip)
+       ("readme"
+        ,(origin
+           (method url-fetch)
+           (uri (string-append
+                 "https://raw.githubusercontent.com/Edu4rdSHL/fhc/"
+                 version "/README.md"))
+           (sha256
+            (base32 "03s194adk4lwzp62fdn2pdsjsfs19na9qxfc9fblh0gr4mqwkpzy"))))
+       ("manpage"
+        ,(origin
+           (method url-fetch)
+           (uri (string-append
+                 "https://raw.githubusercontent.com/Edu4rdSHL/fhc/"
+                 version "/fhc.1"))
+           (sha256
+            (base32 "103fmldxc8b9zc39vgrqa7mnx4j7b15fqwf04aimfds7lyn8kdfr"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (readme (assoc-ref %build-inputs "readme"))
+                 (manpage (assoc-ref %build-inputs "manpage"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/fhc-bin"))
+                 (man1 (string-append out "/share/man/man1")))
+            (invoke unzip "-q" src)
+            (mkdir-p bin)
+            (install-file "fhc-linux" bin)
+            (rename-file (string-append bin "/fhc-linux")
+                         (string-append bin "/fhc"))
+            (chmod (string-append bin "/fhc") #o755)
+            (mkdir-p doc)
+            (copy-file readme (string-append doc "/README.md"))
+            (mkdir-p man1)
+            (copy-file manpage (string-append man1 "/fhc.1"))
+            #t))))
+    (home-page "https://github.com/Edu4rdSHL/fhc")
+    (synopsis "Fast HTTP checker")
+    (description
+     "FHC is a fast command-line HTTP checker.  This package installs the
+upstream prebuilt Linux x86_64 binary and accompanying documentation.")
+    (license license:gpl3+)))
+
+(define-public mill-global
+  (package
+    (name "mill-global")
+    (version "1.1.4")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://repo1.maven.org/maven2/com/lihaoyi/mill-dist/"
+             version "/mill-dist-" version "-mill.sh"))
+       (sha256
+        (base32 "17gb75hgll8dr7lvypwkb6kh00qd8if9daghxq8a7g0yw6flrz7j"))))
+    (build-system trivial-build-system)
+    (native-inputs
+     `(("completion"
+        ,(origin
+           (method url-fetch)
+           (uri "https://raw.githubusercontent.com/lefou/mill-bash-completion/dfd5ac9b8b0d08b0a22596e88f0f4b1d15abcfd4/mill.complete.sh")
+           (sha256
+            (base32 "1q0l29gml1xgc38mqkqb71qg9jw1vh55ihxvih8cih0waay3yadz"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (script (assoc-ref %build-inputs "source"))
+                 (completion (assoc-ref %build-inputs "completion"))
+                 (bin (string-append out "/bin"))
+                 (completions (string-append out "/share/bash-completion/completions")))
+            (mkdir-p bin)
+            (copy-file script (string-append bin "/mill"))
+            (chmod (string-append bin "/mill") #o755)
+            (mkdir-p completions)
+            (copy-file completion (string-append completions "/mill"))
+            (substitute* (string-append completions "/mill")
+              (("_split_longopt") "_comp__split_longopt"))
+            #t))))
+    (home-page "https://github.com/com-lihaoyi/mill")
+    (synopsis "Mill build tool global launcher")
+    (description
+     "Mill is a Scala and Java build tool.  This package installs the upstream
+launcher script for global use and bash completion definitions.")
+    (license license:expat)))
+
+(define-public qo-bin
+  (package
+    (name "qo-bin")
+    (version "0.4.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/kiki-ki/go-qo/releases/download/v"
+             version "/qo_" version "_linux_amd64.tar.gz"))
+       (sha256
+        (base32 "09f8cnv95lxvv2x657vli56yhk775b4fxyzgh547wvk5qsdz14hj"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/qo-bin"))
+                 (license-dir (string-append out "/share/licenses/qo-bin")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (mkdir-p bin)
+            (install-file "qo" bin)
+            (chmod (string-append bin "/qo") #o755)
+            (mkdir-p doc)
+            (when (file-exists? "README.md")
+              (copy-file "README.md" (string-append doc "/README.md")))
+            (when (file-exists? "LICENSE")
+              (mkdir-p license-dir)
+              (copy-file "LICENSE" (string-append license-dir "/LICENSE")))
+            #t))))
+    (home-page "https://github.com/kiki-ki/go-qo")
+    (synopsis "Minimal SQL-like TUI for tabular data")
+    (description
+     "qo is an interactive terminal user interface for querying JSON, CSV, and
+TSV files using SQL-like statements.  This package installs the upstream
+prebuilt Linux x86_64 binary release.")
+    (license license:expat)))
+
+(define-public python-pandas-docs
+  (package
+    (name "python-pandas-docs")
+    (version "2.2.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://pandas.pydata.org/pandas-docs/version/"
+             version "/pandas.zip"))
+       (sha256
+        (base32 "07lxzypfcksi4rql0sq6jsnd7lxv743k6pq1qbdkv017rxqz7dq2"))))
+    (build-system trivial-build-system)
+    (native-inputs (list unzip))
+    (arguments
+     (list
+      #:modules '((guix build utils)
+                  (ice-9 ftw)
+                  (srfi srfi-1))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils)
+                       (ice-9 ftw)
+                       (srfi srfi-1))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (target (string-append out "/share/doc/python-pandas/html")))
+            (invoke unzip "-q" src)
+            (mkdir-p target)
+            (for-each
+             (lambda (entry)
+               (if (file-is-directory? entry)
+                   (copy-recursively entry (string-append target "/" entry))
+                   (copy-file entry (string-append target "/" entry))))
+             (scandir "." (lambda (name) (not (member name '("." ".."))))))
+            #t))))
+    (home-page "https://pandas.pydata.org")
+    (synopsis "Offline HTML documentation for python-pandas")
+    (description
+     "This package installs the upstream generated HTML documentation for the
+Python pandas library.")
+    (license license:bsd-3)))
+
+(define-public vex-tui-bin
+  (package
+    (name "vex-tui-bin")
+    (version "2.0.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/CodeOne45/vex-tui/releases/download/v"
+             version "/vex-tui_" version "_linux_amd64.tar.gz"))
+       (sha256
+        (base32 "06gqzi38k7bjnjfdliba6r84rrwd7yrfrmbbyhp3f9l4s7sv56y7"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (bin (string-append out "/bin"))
+                 (license-dir (string-append out "/share/licenses/vex-tui-bin")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (mkdir-p bin)
+            (install-file "vex" bin)
+            (chmod (string-append bin "/vex") #o755)
+            (when (file-exists? "LICENSE")
+              (mkdir-p license-dir)
+              (copy-file "LICENSE" (string-append license-dir "/LICENSE")))
+            #t))))
+    (home-page "https://github.com/CodeOne45/vex-tui")
+    (synopsis "Terminal spreadsheet and CSV viewer")
+    (description
+     "Vex is a terminal-based viewer for CSV and spreadsheet files.  This
+package installs the upstream prebuilt Linux x86_64 binary.")
+    (license license:expat)))
+
+(define-public greenlight-bin
+  (package
+    (name "greenlight-bin")
+    (version "2.4.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/unknownskl/greenlight/releases/download/v"
+             version "/greenlight-desktop_" version "_amd64.deb"))
+       (sha256
+        (base32 "0qx71hgc1jd957b8c4lrgphrzynig5ba01swkldw24cm881rqsry"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     `(("binutils" ,binutils)
+       ("tar" ,tar)
+       ("xz" ,xz)
+       ("upstream-license"
+        ,(origin
+           (method url-fetch)
+           (uri "https://raw.githubusercontent.com/unknownskl/greenlight/main-v2/LICENSE")
+           (sha256
+            (base32 "1r3f47wm5c6mfhxi4lwgciswhj7bidc51jj3hbdb2dk33acgm42c"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (license-file (assoc-ref %build-inputs "upstream-license"))
+                 (ar (search-input-file %build-inputs "/bin/ar"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (apps (string-append out "/share/applications"))
+                 (bin (string-append out "/bin"))
+                 (opt (string-append out "/opt/Greenlight"))
+                 (icons (string-append out "/share/icons"))
+                 (license-dir (string-append out "/share/licenses/greenlight-bin")))
+            (invoke ar "x" src)
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" "data.tar.xz")
+            (mkdir-p opt)
+            (copy-recursively "./opt/Greenlight" opt)
+            (mkdir-p icons)
+            (copy-recursively "./usr/share/icons" icons)
+            (mkdir-p apps)
+            (copy-file "./usr/share/applications/greenlight-desktop.desktop"
+                       (string-append apps "/greenlight.desktop"))
+            (substitute* (string-append apps "/greenlight.desktop")
+              (("Exec=.*") "Exec=greenlight %U"))
+            (mkdir-p bin)
+            (symlink (string-append out "/opt/Greenlight/greenlight-desktop")
+                     (string-append bin "/greenlight"))
+            (mkdir-p license-dir)
+            (copy-file license-file (string-append license-dir "/LICENSE"))
+            #t))))
+    (home-page "https://github.com/unknownskl/greenlight")
+    (synopsis "Open source xCloud and Xbox game streaming client")
+    (description
+     "Greenlight is a desktop client for xCloud and Xbox home streaming.  This
+package repackages the upstream prebuilt Debian package for x86_64 Linux.")
+    (license license:expat)))
+
+(define-public kftui-bin
+  (package
+    (name "kftui-bin")
+    (version "0.27.28")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/hcavarsan/kftray/releases/download/v"
+             version "/kftui_linux_amd64"))
+       (sha256
+        (base32 "1j6x9764dk8xqajks8k29a76z9ybdlajyxfi4hd056mf479pw3qd"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (copy-file src (string-append bin "/kftui"))
+            (chmod (string-append bin "/kftui") #o755)
+            #t))))
+    (home-page "https://github.com/hcavarsan/kftray")
+    (synopsis "Kubectl port-forward manager TUI")
+    (description
+     "kftui is a terminal interface for managing kubectl port-forward sessions,
+including UDP and proxy workflows.  This package installs the upstream
+prebuilt Linux x86_64 binary.")
+    (license license:gpl3)))
+
+(define-public waydroid-image-gapps
+  (package
+    (name "waydroid-image-gapps")
+    (version "20.0_20260403")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        "https://sourceforge.net/projects/waydroid/files/images/system/lineage/waydroid_x86_64/lineage-20.0-20260403-GAPPS-waydroid_x86_64-system.zip")
+       (sha256
+        (base32 "18q836nd1knfsl8arc6my8dflx828px21w6x9fbb9c6igbfv46l1"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     `(("unzip" ,unzip)
+       ("vendor-image"
+        ,(origin
+           (method url-fetch)
+           (uri
+            "https://sourceforge.net/projects/waydroid/files/images/vendor/waydroid_x86_64/lineage-20.0-20260403-MAINLINE-waydroid_x86_64-vendor.zip")
+           (sha256
+            (base32 "0ss2ip3rmlr8zcm45ckh42n54ibah7yg55zhnhrgzd18kq6pxk14"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils)
+                  (ice-9 ftw)
+                  (srfi srfi-1))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils)
+                       (ice-9 ftw)
+                       (srfi srfi-1))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (system-zip (assoc-ref %build-inputs "source"))
+                 (vendor-zip (assoc-ref %build-inputs "vendor-image"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (target (string-append out "/share/waydroid-extra/images")))
+            (invoke unzip "-q" system-zip)
+            (invoke unzip "-q" vendor-zip)
+            (mkdir-p target)
+            (for-each
+             (lambda (img)
+               (install-file img target))
+             (find-files "." "\\.img$"))
+            #t))))
+    (home-page "https://github.com/waydroid")
+    (synopsis "Waydroid Android image bundle with Google Apps")
+    (description
+     "This package provides x86_64 Waydroid system and vendor images built with
+Google Apps.  It installs upstream image artifacts under
+@file{/share/waydroid-extra/images}.")
+    (license license:asl2.0)))
