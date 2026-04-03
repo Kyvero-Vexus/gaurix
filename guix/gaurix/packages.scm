@@ -120,6 +120,7 @@
   #:use-module (gaurix packages queue-20260402p100daily4)
   #:use-module (gaurix packages queue-20260402p100daily5)
   #:use-module (gaurix packages queue-20260402p100daily5-blocked-notes)
+  #:use-module (gaurix packages queue-20260403p100daily)
   #:use-module (gaurix packages queue-20260402p100daily4-blocked-notes)
   #:export (
             ttf-amiri
@@ -3272,5 +3273,23 @@
             wlr-protocols-git
             ttf-plemoljp-bin
             slurp-git
+            grimblast-git
+            inkscape-bin
+            hyprland-git
+            beads-git
+            ttf-mononoki
+            ttf-recursive
+            tmsu-bin
+            helix-git
+            elm-bin
+            nim-git
+            tome4-bin
+            ttf-comic-neue
+            wdisplays-git
+            qdmr-git
+            jitterentropy-rngd-git
+            python-pywal16-git
+            rot8-git
+            star-bin
             queue-20260402p100daily5-blocked-notes
 ))
