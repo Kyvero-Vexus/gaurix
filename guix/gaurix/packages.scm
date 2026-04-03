@@ -128,6 +128,8 @@
   #:use-module (gaurix packages queue-20260403p100daily3-blocked-notes)
   #:use-module (gaurix packages queue-20260403p100daily4)
   #:use-module (gaurix packages queue-20260403p100daily4-blocked-notes)
+  #:use-module (gaurix packages queue-20260403p100daily6)
+  #:use-module (gaurix packages queue-20260403p100daily6-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
