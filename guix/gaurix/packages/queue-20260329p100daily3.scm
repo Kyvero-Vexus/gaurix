@@ -3,6 +3,21 @@
 ;;; Status: recipe-attempt stubs with NEEDS_RECIPE_DESIGN blockers.
 (define-module (gaurix packages queue-20260329p100daily3)
   #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy)
+  #:use-module (guix build-system gnu)
+  #:use-module (guix build-system trivial)
+  #:use-module (guix gexp)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages autotools)
+  #:use-module (gnu packages bash)
+  #:use-module (gnu packages compression)
+  #:use-module (gnu packages freedesktop)
+  #:use-module (gnu packages glib)
+  #:use-module (gnu packages linux)
+  #:use-module (gnu packages ncurses)
+  #:use-module (gnu packages pkg-config)
+  #:use-module (gnu packages terminals)
   #:use-module (gnu packages rust-apps)
   #:export (
             cnijfilter2-g3010
@@ -131,10 +146,38 @@
     (name "python-fmod-tookit-git")))
 
 (define-public pick
-  ;; NEEDS_RECIPE_DESIGN queue stub for pick.
   (package
-    (inherit zoxide)
-    (name "pick")))
+    (name "pick")
+    (version "4.0.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/mptre/pick/releases/download/v"
+                           version "/pick-" version ".tar.gz"))
+       (sha256
+        (base32 "1jpd658sza1bnh6qz29mrnl636kp1c9chi01cdxpyk7xcvaqyxny"))))
+    (build-system gnu-build-system)
+    (inputs (list ncurses))
+    (arguments
+     (list
+      #:tests? #f
+      #:phases
+      #~(modify-phases %standard-phases
+          (replace 'configure
+            (lambda _
+              (setenv "PREFIX" #$output)
+              (invoke "./configure")))
+          (replace 'install
+            (lambda _
+              (invoke "make" "install")
+              (install-file "LICENSE"
+                            (string-append #$output "/share/licenses/pick")))))))
+    (home-page "https://github.com/mptre/pick")
+    (synopsis "Fuzzy search tool for the command line")
+    (description
+     "Pick is a command-line fuzzy finder that helps select and filter lines
+from text streams interactively.")
+    (license license:expat)))
 
 (define-public python-pyproject-patcher
   ;; NEEDS_RECIPE_DESIGN queue stub for python-pyproject-patcher.
@@ -245,10 +288,36 @@
     (name "rpi-imager-latest")))
 
 (define-public lazymake-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for lazymake-bin.
   (package
-    (inherit zoxide)
-    (name "lazymake-bin")))
+    (name "lazymake-bin")
+    (version "0.4.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/rshelekhov/lazymake/releases/download/v"
+             version "/lazymake_" version "_Linux_x86_64.tar.gz"))
+       (sha256
+        (base32 "0vckqa4p99wyiif4v1x4cjfj33sgfk8iwg480ikblgnbpjpkbn9g"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("lazymake" "bin/lazymake")
+          ("README.md" "share/doc/lazymake-bin/README.md")
+          ("LICENSE" "share/licenses/lazymake-bin/LICENSE"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'install 'make-executable
+            (lambda _
+              (chmod (string-append #$output "/bin/lazymake") #o755))))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/rshelekhov/lazymake")
+    (synopsis "Interactive terminal UI for Makefiles")
+    (description
+     "Lazymake is a terminal UI that helps you explore Makefile targets,
+inspect dependencies, and execute targets safely from an interactive interface.")
+    (license license:expat)))
 
 (define-public cewe-fotowelt
   ;; NEEDS_RECIPE_DESIGN queue stub for cewe-fotowelt.
@@ -257,10 +326,68 @@
     (name "cewe-fotowelt")))
 
 (define-public ttf-lxgw-wenkai-screen
-  ;; NEEDS_RECIPE_DESIGN queue stub for ttf-lxgw-wenkai-screen.
   (package
-    (inherit zoxide)
-    (name "ttf-lxgw-wenkai-screen")))
+    (name "ttf-lxgw-wenkai-screen")
+    (version "1.520")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v"
+             version "/LXGWWenKaiScreen.ttf"))
+       (sha256
+        (base32 "1vj1r92i4arapx24jy2lifn53q82bj7bzqynb2xfw1hrq0gya503"))))
+    (build-system trivial-build-system)
+    (native-inputs
+     (list
+      `("lxgw-wenkai-gb-screen"
+        ,(origin
+           (method url-fetch)
+           (uri (string-append
+                 "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v"
+                 version "/LXGWWenKaiGBScreen.ttf"))
+           (sha256
+            (base32 "029v03856wm6j9y7bdb7pw72prx706asjhvfpca4dbqkga3p7bbv"))))
+      `("lxgw-wenkai-mono-screen"
+        ,(origin
+           (method url-fetch)
+           (uri (string-append
+                 "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v"
+                 version "/LXGWWenKaiMonoScreen.ttf"))
+           (sha256
+            (base32 "1hn2cf2mq5yq1mhsr0yv3nynxxm2ynnfmwxrwnw6b2q6bkg9saw7"))))
+      `("lxgw-wenkai-mono-gb-screen"
+        ,(origin
+           (method url-fetch)
+           (uri (string-append
+                 "https://github.com/lxgw/LxgwWenKai-Screen/releases/download/v"
+                 version "/LXGWWenKaiMonoGBScreen.ttf"))
+           (sha256
+            (base32 "1vdyk75m6mj4xvc0337zas1yzgszqipkv08nmz0sdw5bv3bmgrsh"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let ((ttf-dir (string-append (assoc-ref %outputs "out")
+                                        "/share/fonts/truetype")))
+            (mkdir-p ttf-dir)
+            (for-each
+             (lambda (entry)
+               (copy-file (assoc-ref %build-inputs (car entry))
+                          (string-append ttf-dir "/" (cdr entry))))
+             '(("source" . "LXGWWenKaiScreen.ttf")
+               ("lxgw-wenkai-gb-screen" . "LXGWWenKaiGBScreen.ttf")
+               ("lxgw-wenkai-mono-screen" . "LXGWWenKaiMonoScreen.ttf")
+               ("lxgw-wenkai-mono-gb-screen" . "LXGWWenKaiMonoGBScreen.ttf")))
+            #t))))
+    (home-page "https://github.com/lxgw/LxgwWenKai-Screen")
+    (synopsis "LXGW WenKai Screen Chinese font family")
+    (description
+     "This package provides the LXGW WenKai Screen TrueType fonts, including
+regular and mono variants with both standard and GB glyph sets.")
+    (license license:silofl1.1)))
 
 (define-public steamvr-openhmd-git
   ;; NEEDS_RECIPE_DESIGN queue stub for steamvr-openhmd-git.
@@ -323,10 +450,57 @@
     (name "dupster")))
 
 (define-public faint
-  ;; NEEDS_RECIPE_DESIGN queue stub for faint.
   (package
-    (inherit zoxide)
-    (name "faint")))
+    (name "faint")
+    (version "1.2.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/salman-abedin/faint/archive/"
+                           version ".tar.gz"))
+       (file-name (string-append name "-" version ".tar.gz"))
+       (sha256
+        (base32 "1fv8xgz5dijl53yna7gpjnhgqp7kqw27lzxija4r831bpf29csi6"))))
+    (build-system gnu-build-system)
+    (inputs (list bash-minimal fzf))
+    (arguments
+     (list
+      #:tests? #f
+      #:phases
+      #~(modify-phases %standard-phases
+          (delete 'configure)
+          (delete 'build)
+          (add-before 'install 'patch-faintrc-loader
+            (lambda _
+              (substitute* "src/faint"
+                (("^\\. faintrc$")
+                 (string-append ". " #$output "/share/faint/faintrc")))))
+          (replace 'install
+            (lambda _
+              (let ((bin-dir (string-append #$output "/bin"))
+                    (share-dir (string-append #$output "/share"))
+                    (fzf-bin (string-append (assoc-ref %build-inputs "fzf") "/bin")))
+                (mkdir-p bin-dir)
+                (for-each
+                 (lambda (script)
+                   (install-file (string-append "src/" script) bin-dir)
+                   (chmod (string-append bin-dir "/" script) #o755))
+                 '("faint" "faint-bookmark" "faint-explore" "faint-fetch-config"
+                   "faint-operate"))
+                (wrap-program (string-append bin-dir "/faint")
+                  `("PATH" ":" prefix (,fzf-bin)))
+                (mkdir-p (string-append share-dir "/faint"))
+                (install-file "src/faintrc" (string-append share-dir "/faint"))
+                (mkdir-p (string-append share-dir "/doc/faint"))
+                (install-file "README.md" (string-append share-dir "/doc/faint"))
+                (mkdir-p (string-append share-dir "/licenses/faint"))
+                (install-file "LICENSE" (string-append share-dir "/licenses/faint"))))))))
+    (home-page "https://github.com/salman-abedin/faint")
+    (synopsis "Extensible terminal fuzzy file explorer")
+    (description
+     "Faint is an extensible shell-based fuzzy file explorer that integrates
+with fzf and supports bookmarks, filtering, and configurable key bindings.")
+    (license license:gpl2)))
 
 (define-public dstl
   ;; NEEDS_RECIPE_DESIGN queue stub for dstl.
@@ -359,10 +533,34 @@
     (name "ftnn-desktop")))
 
 (define-public oxlint-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for oxlint-bin.
   (package
-    (inherit zoxide)
-    (name "oxlint-bin")))
+    (name "oxlint-bin")
+    (version "1.58.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/oxc-project/oxc/releases/download/apps_v"
+             version "/oxlint-x86_64-unknown-linux-gnu.tar.gz"))
+       (sha256
+        (base32 "0d5r5mqfxy3kynjv6vx19zknvj0cwz0x0kj9g2ic5qfrknz0mh0m"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("oxlint-x86_64-unknown-linux-gnu" "bin/oxlint"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'install 'make-executable
+            (lambda _
+              (chmod (string-append #$output "/bin/oxlint") #o755))))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://oxc.rs")
+    (synopsis "High-performance JavaScript and TypeScript linter")
+    (description
+     "Oxlint is a JavaScript and TypeScript linter built on the Oxc compiler
+stack.  This package installs the prebuilt upstream Linux binary.")
+    (license license:expat)))
 
 (define-public heidisql-qt6
   ;; NEEDS_RECIPE_DESIGN queue stub for heidisql-qt6.
@@ -377,10 +575,34 @@
     (name "cheminot")))
 
 (define-public oxfmt-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for oxfmt-bin.
   (package
-    (inherit zoxide)
-    (name "oxfmt-bin")))
+    (name "oxfmt-bin")
+    (version "0.43.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append "https://github.com/oxc-project/oxc/releases/download/"
+                       "apps_v1.58.0/oxfmt-x86_64-unknown-linux-gnu.tar.gz"))
+       (sha256
+        (base32 "0cpc2bh5r6w5b4hxdkmsxc3vssanswks81ng9lazzm2ihd4xw9qz"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("oxfmt-x86_64-unknown-linux-gnu" "bin/oxfmt"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'install 'make-executable
+            (lambda _
+              (chmod (string-append #$output "/bin/oxfmt") #o755))))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://oxc.rs")
+    (synopsis "High-performance formatter for JavaScript code")
+    (description
+     "Oxfmt is a formatter from the Oxc project for JavaScript and related
+source formats.  This package installs the prebuilt upstream Linux binary.")
+    (license license:expat)))
 
 (define-public visual-studio-code-electron-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for visual-studio-code-electron-bin.
@@ -407,10 +629,54 @@
     (name "greetd-tuigreet-git")))
 
 (define-public questpatcher-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for questpatcher-bin.
   (package
-    (inherit zoxide)
-    (name "questpatcher-bin")))
+    (name "questpatcher-bin")
+    (version "2.10.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/Lauriethefish/QuestPatcher/releases/download/"
+             version "/QuestPatcher-ubuntu.zip"))
+       (sha256
+        (base32 "1c6pqgg2a143vvgw3rx5s8ky28jdqdn5vkycx83ngzvq5q17dycs"))))
+    (build-system trivial-build-system)
+    (native-inputs (list unzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (bin-dir (string-append out "/bin"))
+                 (license-dir (string-append out "/share/licenses/questpatcher-bin"))
+                 (desktop-dir (string-append out "/share/applications")))
+            (invoke unzip "-q" src)
+            (mkdir-p bin-dir)
+            (copy-file "QuestPatcher" (string-append bin-dir "/questpatcher"))
+            (chmod (string-append bin-dir "/questpatcher") #o755)
+            (mkdir-p license-dir)
+            (install-file "LICENSE.txt" license-dir)
+            (mkdir-p desktop-dir)
+            (call-with-output-file (string-append desktop-dir "/questpatcher.desktop")
+              (lambda (port)
+                (display "[Desktop Entry]\n" port)
+                (display "Type=Application\n" port)
+                (display "Name=QuestPatcher\n" port)
+                (display "Exec=questpatcher\n" port)
+                (display "Terminal=false\n" port)
+                (display "Categories=Utility;\n" port)))
+            #t))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/Lauriethefish/QuestPatcher")
+    (synopsis "IL2CPP modding utility for Oculus Quest apps")
+    (description
+     "QuestPatcher is a utility to patch and manage mods for Oculus Quest
+applications.  This package repackages the upstream prebuilt Linux binary.")
+    (license license:zlib)))
 
 (define-public check-nwc-health
   ;; NEEDS_RECIPE_DESIGN queue stub for check-nwc-health.
@@ -559,10 +825,38 @@
     (name "rutoken-plugin")))
 
 (define-public shine
-  ;; NEEDS_RECIPE_DESIGN queue stub for shine.
   (package
-    (inherit zoxide)
-    (name "shine")))
+    (name "shine")
+    (version "3.1.1-r59-gab5e352")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        "https://github.com/toots/shine/archive/ab5e3526b64af1a2eaa43aa6f441a7312e013519.tar.gz")
+       (file-name (string-append name "-" version ".tar.gz"))
+       (sha256
+        (base32 "1ppvhmid8yw49s6manwqw61xbqwpvhy270iqxdwp1xn0qx0pwbrc"))))
+    (build-system gnu-build-system)
+    (native-inputs (list autoconf automake libtool))
+    (arguments
+     (list
+      #:tests? #f
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'unpack 'relax-optimization-flags
+            (lambda _
+              (substitute* "Makefile.am"
+                (("-O2") ""))))
+          (add-before 'configure 'bootstrap
+            (lambda _
+              (invoke "libtoolize")
+              (invoke "autoreconf" "-vfi"))))))
+    (home-page "https://github.com/toots/shine")
+    (synopsis "Fast fixed-point MP3 encoder")
+    (description
+     "Shine is a fast fixed-point MP3 encoder implementation suitable for
+systems where floating-point support is limited or unavailable.")
+    (license license:lgpl2.0)))
 
 (define-public fastmail
   ;; NEEDS_RECIPE_DESIGN queue stub for fastmail.
@@ -613,10 +907,57 @@
     (name "gosplugin")))
 
 (define-public bluevein-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for bluevein-bin.
   (package
-    (inherit zoxide)
-    (name "bluevein-bin")))
+    (name "bluevein-bin")
+    (version "1.0.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/meowrch/BlueVein/releases/download/v"
+             version "/bluevein-linux-x86_64"))
+       (sha256
+        (base32 "10yxkzji0gy9axlwnk71nc9x8vj20456yl0bq5a4875xkyp07ljw"))))
+    (build-system trivial-build-system)
+    (inputs (list dbus))
+    (native-inputs
+     (list
+      `("bluevein-service"
+        ,(origin
+           (method url-fetch)
+           (uri (string-append
+                 "https://raw.githubusercontent.com/meowrch/BlueVein/v"
+                 version "/systemd/bluevein.service"))
+           (sha256
+            (base32 "1k7fmdgm21gns0mlf01844p5i2wifrdb5w67ipnp3faqg0387z6l"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (bin-dir (string-append out "/bin"))
+                 (service-dir (string-append out "/lib/systemd/system"))
+                 (service-file (string-append service-dir "/bluevein.service")))
+            (mkdir-p bin-dir)
+            (copy-file (assoc-ref %build-inputs "source")
+                       (string-append bin-dir "/bluevein"))
+            (chmod (string-append bin-dir "/bluevein") #o755)
+            (mkdir-p service-dir)
+            (copy-file (assoc-ref %build-inputs "bluevein-service") service-file)
+            (substitute* service-file
+              (("ExecStart=/usr/bin/bluevein")
+               (string-append "ExecStart=" out "/bin/bluevein")))
+            #t))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/meowrch/BlueVein")
+    (synopsis "Bluetooth dual-boot key synchronization service")
+    (description
+     "BlueVein synchronizes Bluetooth pairing keys between operating systems
+for dual-boot setups.  This package repackages the upstream Linux binary and
+its systemd service unit.")
+    (license license:gpl3)))
 
 (define-public catbox
   ;; NEEDS_RECIPE_DESIGN queue stub for catbox.
@@ -673,10 +1014,47 @@
     (name "libldap24")))
 
 (define-public sedutil
-  ;; NEEDS_RECIPE_DESIGN queue stub for sedutil.
   (package
-    (inherit zoxide)
-    (name "sedutil")))
+    (name "sedutil")
+    (version "1.49.13")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/Drive-Trust-Alliance/sedutil/archive/"
+                           version ".tar.gz"))
+       (file-name (string-append name "-" version ".tar.gz"))
+       (sha256
+        (base32 "0bag0b86di235ranhfv1yhrk9kxb7i2fpc2mffq62z0w6djk0s1j"))))
+    (build-system gnu-build-system)
+    (inputs (list elogind libnvme))
+    (native-inputs (list autoconf automake libtool pkg-config))
+    (arguments
+     (list
+      #:tests? #f
+      #:configure-flags
+      #~(list "--enable-silent-rules")
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'unpack 'relax-werror
+            (lambda _
+              (substitute* "Makefile.am"
+                (("-Werror") ""))))
+          (add-before 'configure 'bootstrap
+            (lambda _
+              (invoke "autoreconf" "-i")))
+          (add-before 'build 'set-version-script
+            (lambda _
+              (call-with-output-file "Customizations/linux/CLI/GitVersion.sh"
+                (lambda (port)
+                  (format port "#!/bin/sh~%echo '#define GIT_VERSION \"~a\"'~%"
+                          #$version)))
+              (chmod "Customizations/linux/CLI/GitVersion.sh" #o755))))))
+    (home-page "https://github.com/Drive-Trust-Alliance/sedutil")
+    (synopsis "TCG OPAL self-encrypting drive management tools")
+    (description
+     "Sedutil provides command-line tools to manage TCG OPAL self-encrypting
+drives, including authentication, locking, and pre-boot authorization support.")
+    (license license:gpl3)))
 
 (define-public geekbench
   ;; NEEDS_RECIPE_DESIGN queue stub for geekbench.
