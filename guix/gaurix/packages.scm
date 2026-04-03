@@ -4671,6 +4671,29 @@
             xrdp
             xremap-kde
             xremap-kde-bin
+            apidash-bin
+            base64-converter
+            buku_run-git
+            cdncheck-bin
+            chatgpt-bin
+            httm-bin
+            keepassxc-qt6
+            klassy-qt5
+            kseexpr-qt6-git
+            launcherx-bin
+            magic-cpp
+            nextpnr-git
+            ocaml-ppx_expect
+            otf-oswald
+            porty-bin
+            qcustomplot-qt6
+            queue-20260403p100daily2-blocked-notes
+            queue-20260403p100daily3-blocked-notes
+            repacman2
+            rtl_433-git
+            sdl_pango
+            ttf-bizter
+            ttf-iosevka-term
             xremap-wlroots-bin
             xremap-x11-bin
             xrizer-common
