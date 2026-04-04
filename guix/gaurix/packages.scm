@@ -151,6 +151,8 @@
   #:use-module (gaurix packages cron-5a2fb251-r5-w02)
   #:use-module (gaurix packages queue-20260404-daily3)
   #:use-module (gaurix packages queue-20260404-daily3-blocked-notes)
+  #:use-module (gaurix packages cron-ce7dd90b-daily3)
+  #:use-module (gaurix packages cron-ce7dd90b-daily3-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3602,18 +3604,118 @@ elephant-bin
             vesc-tool
             warp-cli
             waydroid
+            ai-pkg-bin
+            amdctl
+            arch-udev-usb-sync
+            chromedriver
+            cosmic-app-library-git
+            cosmic-applets-git
+            cosmic-bg-git
+            cosmic-comp-git
+            cosmic-files-git
+            cosmic-icons-git
+            cosmic-idle-git
+            cosmic-launcher-git
+            cosmic-notifications-git
+            cosmic-osd-git
+            cosmic-panel-git
+            cosmic-randr-git
+            cosmic-screenshot-git
+            cosmic-settings-daemon-git
+            cosmic-settings-git
+            cosmic-workspaces-git
+            dmg2img
+            docker-language-server
+            dolphin-emu-nogui-git
+            dolphin-emu-tool-git
+            edopro-bin
+            enpass-bin
+            eprosima-fast-dds
+            epson-inkjet-printer-201601w
+            equilux-theme
+            flashplayer-standalone
+            flat-remix
+            fluffychat-bin
+            fooyin-bin
+            gmrun
+            gnome-shell-extension-display-brightness-ddcutil-git
+            gnome-shell-extension-wintile-git
+            goradion-bin
+            gtk-update-icon-cache-git
+            gtk4-demos-git
+            gtk4-git
+            helm-synth
+            helm-synth-common
+            helm-synth-lv2
+            helm-synth-standalone
+            helm-synth-vst
+            hyprfreeze-git
+            hyprshot-git
+            iat
+            karere
+            kde-material-you-colors
+            lazysql-bin
+            lem-editor-git
+            liberica-jdk-full-bin
+            libfprint-2-tod1-synatudor-git
+            libstdc++5
+            logria
+            max-appimage
+            mdevctl
+            mozlz4
+            nteract
+            nvidia-550xx-dkms
+            nvidia-550xx-utils
+            obfs4proxy
+            pacaur
+            perfect-dark-git
+            php74-redis
+            pixieditor
+            pulse-secure
+            python-doi2bib3
+            python-lynxpresence
+            python-materialyoucolor
+            python-validity
+            python3-xcgf
+            python3-xcpf
+            qflipper-bin
+            recoil-engine-rc
+            rivalcfg-tray
+            scalar-desktop-bin
+            schedtoold
+            spek
+            srb2
+            talosctl-bin
+            textext
+            tibia
+            trackma
+            trueconf
+            trustedqsl
+            ttf-gabarito-git
+            ttf-genjyuu-gothic
+            ttf-meslo-nerd-font-powerlevel10k
+            typing-test
+            visual-paradigm-community
+            vivictpp
+            waveterm-bin
+            wayclip-cli
             wayfire
+            wiremix-git
             wreckfest2-wine-steam
+            wrye-bash
             wsjtx-improved-widescreen
+            wuming
             xapp-thumbnailers-common
             xboxdrv
             xcursor-simpleandsoft
             xevd
             xlibre-xserver-common-git
             xrizer-common
+            xwayland-satellite-nosystemd
             yandex-disk-indicator
             yesvgmap-bin
             yr-bin
+            zandronum
             zeptofetch-git
             zmate-bin
             zmusic
