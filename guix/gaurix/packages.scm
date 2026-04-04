@@ -3496,10 +3496,13 @@ elephant-bin
             evcolors
             factor
             flaresolverr
+            flat-remix
             flix-cli
             fluent-gtk-theme
             freedm
+            freelens-bin
             fsel-git
+            gitnr-bin
             gnome-icon-theme-symbolic
             gnu-apl
             google-chrome
@@ -3516,6 +3519,7 @@ elephant-bin
             jxplorer
             kew-git
             lamebar
+            lazysql-bin
             libhelium
             libklvanc
             libunity
@@ -3553,8 +3557,11 @@ elephant-bin
             pvw-bin
             python-art
             python-asyncinotify
+            python-circup
             python-condense-json
+            python-dnsdiag
             python-inquirerpy
+            python-logria
             python-m3u8
             python-munge
             python-odsexport
