@@ -138,6 +138,11 @@
   #:use-module (gaurix packages cron-5a2fb251-recipe-w01)
   #:use-module (gaurix packages cron-5a2fb251-recipe-w02)
   #:use-module (gaurix packages cron-5a2fb251-recipe-w03)
+  #:use-module (gaurix packages cron-c79f127f-r8-w01)
+  #:use-module (gaurix packages cron-c79f127f-r8-w02)
+  #:use-module (gaurix packages cron-c79f127f-r8-w03)
+  #:use-module (gaurix packages cron-c79f127f-r8-w04)
+  #:use-module (gaurix packages cron-c79f127f-r8-w05)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3451,4 +3456,50 @@ elephant-bin
             llama.cpp-cuda
             elephant
             pilowlava-font-common
+            ;; r8 blocked-tree pass exports
+            openssl-1.1
+            doas
+            gnome-icon-theme-symbolic
+            qt5-doc
+            paru
+            archlinux-java-run
+            html2markdown
+            httpdirfs
+            auto-auto-complete
+            xapp-thumbnailers-common
+            xlibre-xserver-common-git
+            python-art
+            python-munge
+            sqlite-utils
+            xrizer-common
+            flaresolverr
+            chexquest3-wad
+            square1-wad
+            tailscale
+            davs2
+            python-plyer
+            python-condense-json
+            python-m3u8
+            verify-lib
+            freedm
+            zmusic
+            mint-x-icons
+            dotool
+            libunity
+            python-pfzy
+            python-inquirerpy
+            python-sse-starlette
+            python-uv-dynamic-versioning
+            xboxdrv
+            google-chrome
+            llvm-libs-minimal-git
+            python312
+            hyprtoolkit
+            wayfire
+            qt5-scxml
+            apriltag
+            openapv
+            xevd
+            libklvanc
+            waydroid
 ))
