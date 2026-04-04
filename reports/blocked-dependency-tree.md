@@ -1,109 +1,132 @@
 # Blocked Dependency Tree
 
-**Generated:** 2026-04-04T19:14:04.793735+00:00
-**Total BLOCKED:** 6562
+**Generated:** 2026-04-04T20:37:57Z
+**Total unique BLOCKED:** 6568
 
-## Top 100 Priority Queue
+## Top 20 Priority Queue
 
-| Rank | Package | Org# | Blocked Deps | Reverse Deps | Total Deps |
-|------|---------|------|-------------|-------------|------------|
-| 1 | httpdirfs | 2342 | 0 | 18 | 18 |
-| 2 | fftw-amd | 4813 | 0 | 13 | 6 |
-| 3 | openssl-1.1 | 11348 | 0 | 12 | 4 |
-| 4 | texlive-installer | 8013 | 0 | 11 | 4 |
-| 5 | fortune-mod-off | 7690 | 0 | 11 | 6 |
-| 6 | deno-stable-bin | 6483 | 0 | 10 | 2 |
-| 7 | bcompare | 1974 | 0 | 7 | 4 |
-| 8 | domake | 5290 | 0 | 7 | 6 |
-| 9 | nvidia-utils-beta | 2351 | 0 | 7 | 20 |
-| 10 | auto-auto-complete | 7413 | 0 | 6 | 1 |
-| 11 | archlinux-java-run | 1541 | 0 | 6 | 3 |
-| 12 | dotnet-runtime-9.0-bin | 6363 | 0 | 6 | 16 |
-| 13 | lib32-nvidia-vulkan-utils | 550 | 0 | 5 | 5 |
-| 14 | aspnet-runtime-bin | 1273 | 0 | 4 | 1 |
-| 15 | python-art | 6694 | 0 | 4 | 5 |
-| 16 | python-munge | 4329 | 0 | 4 | 6 |
-| 17 | sqlite-utils | 6632 | 0 | 4 | 11 |
-| 18 | aspnet-targeting-pack-bin | 1272 | 0 | 3 | 1 |
-| 19 | cudnn9.10-cuda12.9 | 6245 | 0 | 3 | 2 |
-| 20 | python-plyer | 5156 | 0 | 3 | 2 |
-| 21 | babashka-bin | 1334 | 0 | 3 | 4 |
-| 22 | python-condense-json | 6650 | 0 | 3 | 4 |
-| 23 | python-m3u8 | 6355 | 0 | 3 | 5 |
-| 24 | python-inquirerpy | 3882 | 0 | 3 | 8 |
-| 25 | pgadmin4-server-bin | 4333 | 0 | 3 | 9 |
-| 26 | python312 | 89 | 0 | 3 | 23 |
-| 27 | lidm-systemd-git | 4085 | 0 | 2 | 0 |
-| 28 | logmein-hamachi | 1958 | 0 | 2 | 0 |
-| 29 | xone-dongle-firmware | 197 | 0 | 2 | 3 |
-| 30 | lib32-l-smash | 2372 | 0 | 2 | 4 |
-| 31 | viu-media-bin | 17323 | 0 | 2 | 4 |
-| 32 | electron28-bin | 1493 | 0 | 2 | 5 |
-| 33 | electron33-bin | 3803 | 0 | 2 | 5 |
-| 34 | gtk-sharp-2 | 11646 | 0 | 2 | 5 |
-| 35 | openbsd-netcat-tls | 8312 | 0 | 2 | 5 |
-| 36 | python-pid | 4372 | 0 | 2 | 5 |
-| 37 | python-wassima | 8298 | 0 | 2 | 6 |
-| 38 | verify-lib | 2667 | 0 | 2 | 6 |
-| 39 | foobar2000 | 1968 | 0 | 2 | 8 |
-| 40 | libuvc | 1718 | 0 | 2 | 8 |
-| 41 | python-samplerate-ledfx | 4088 | 0 | 2 | 9 |
-| 42 | python-uv-dynamic-versioning | 2740 | 0 | 2 | 9 |
-| 43 | gslapper | 6326 | 0 | 2 | 16 |
-| 44 | python-urllib3-future | 8297 | 0 | 2 | 21 |
-| 45 | studio-one-7 | 4177 | 0 | 2 | 27 |
-| 46 | fooyin | 135 | 0 | 2 | 40 |
-| 47 | clash-geoip | 4131 | 0 | 1 | 0 |
-| 48 | genders | 7422 | 0 | 1 | 0 |
-| 49 | ghostty-shell-integration-nightly-bin | 1178 | 0 | 1 | 0 |
-| 50 | ghostty-terminfo-nightly-bin | 1177 | 0 | 1 | 0 |
-| 51 | keychron-link-udev | 4168 | 0 | 1 | 0 |
-| 52 | libfmod | 7233 | 0 | 1 | 0 |
-| 53 | localepurge | 475 | 0 | 1 | 0 |
-| 54 | noto-fonts-emoji-blob | 7037 | 0 | 1 | 0 |
-| 55 | redhat-fonts | 4123 | 0 | 1 | 0 |
-| 56 | tailscale | 52 | 0 | 1 | 0 |
-| 57 | tosu | 6382 | 0 | 1 | 0 |
-| 58 | upd72020x-fw | 178 | 0 | 1 | 0 |
-| 59 | waydroid | 57 | 0 | 1 | 0 |
-| 60 | zerotier-one | 53 | 0 | 1 | 0 |
-| 61 | asroot | 3730 | 0 | 1 | 1 |
-| 62 | ruby-http-2 | 8581 | 0 | 1 | 1 |
-| 63 | unreal-tournament-data-steam | 3520 | 0 | 1 | 1 |
-| 64 | acestream-engine | 8014 | 0 | 1 | 2 |
-| 65 | arduino-ctags | 222 | 0 | 1 | 2 |
-| 66 | brscan4 | 394 | 0 | 1 | 2 |
-| 67 | claude-code-stable | 3253 | 0 | 1 | 2 |
-| 68 | cmake-format | 8048 | 0 | 1 | 2 |
-| 69 | crossplane | 5284 | 0 | 1 | 2 |
-| 70 | cryptomator-bin | 1215 | 0 | 1 | 2 |
-| 71 | deb2targz | 4242 | 0 | 1 | 2 |
-| 72 | doas | 3821 | 0 | 1 | 2 |
-| 73 | elephant | 192 | 0 | 1 | 2 |
-| 74 | gnirehtet-bin | 2728 | 0 | 1 | 2 |
-| 75 | grepcidr | 8079 | 0 | 1 | 2 |
-| 76 | intel-oneapi-basekit-2025 | 900 | 0 | 1 | 2 |
-| 77 | jre25-temurin | 967 | 0 | 1 | 2 |
-| 78 | kaitai-struct-compiler | 8217 | 0 | 1 | 2 |
-| 79 | libjodycode | 1043 | 0 | 1 | 2 |
-| 80 | libklvanc | 7392 | 0 | 1 | 2 |
-| 81 | modern-beep | 1038 | 0 | 1 | 2 |
-| 82 | netbird-bin | 1182 | 0 | 1 | 2 |
-| 83 | notify-send.sh | 4865 | 0 | 1 | 2 |
-| 84 | nvidia-vulkan-open-dkms | 547 | 0 | 1 | 2 |
-| 85 | opencl-nvidia-vulkan | 545 | 0 | 1 | 2 |
-| 86 | python-sysv_ipc | 4779 | 0 | 1 | 2 |
-| 87 | rtk-bin | 2887 | 0 | 1 | 2 |
-| 88 | ruby-kaitai-struct | 8168 | 0 | 1 | 2 |
-| 89 | scala3 | 7609 | 0 | 1 | 2 |
-| 90 | tuxedo-drivers-dkms | 3313 | 0 | 1 | 2 |
-| 91 | wd719x-firmware | 1900 | 0 | 1 | 2 |
-| 92 | elephant-archlinuxpkgs-bin | 3586 | 0 | 1 | 3 |
-| 93 | elephant-bluetooth-bin | 3587 | 0 | 1 | 3 |
-| 94 | elephant-desktopapplications-bin | 3583 | 0 | 1 | 3 |
-| 95 | elephant-menus-bin | 3581 | 0 | 1 | 3 |
-| 96 | elephant-providerlist-bin | 3580 | 0 | 1 | 3 |
-| 97 | elephant-runner-bin | 3579 | 0 | 1 | 3 |
-| 98 | elephant-symbols-bin | 3578 | 0 | 1 | 3 |
-| 99 | elephant-todo-bin | 3577 | 0 | 1 | 3 |
-| 100 | elephant-unicode-bin | 3576 | 0 | 1 | 3 |
+| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
+|------|---------|-------------|-------------|------------|
+| 1 | npm-corepack | 0 | 191 | 1 |
+| 2 | 7zip-natspec | 0 | 84 | 5 |
+| 3 | pnpm-corepack | 0 | 61 | 1 |
+| 4 | yarn-corepack | 0 | 49 | 1 |
+| 5 | libinput-epp | 0 | 25 | 9 |
+| 6 | aeroshell-libplasma-git | 0 | 24 | 28 |
+| 7 | openssl-1.1 | 0 | 19 | 2 |
+| 8 | httpdirfs | 0 | 18 | 10 |
+| 9 | fftw-amd | 0 | 13 | 4 |
+| 10 | html2markdown | 0 | 12 | 3 |
+| 11 | fortune-mod-off | 0 | 11 | 4 |
+| 12 | llvm-libs-git | 0 | 11 | 32 |
+| 13 | opencl-amd | 0 | 10 | 5 |
+| 14 | noto-fonts-emoji-blob | 0 | 9 | 0 |
+| 15 | libsodium-1.0.18 | 0 | 9 | 3 |
+| 16 | xapp-thumbnailers-common | 0 | 9 | 5 |
+| 17 | linux-firmware-whence-git | 0 | 8 | 4 |
+| 18 | qt5-doc | 0 | 8 | 15 |
+| 19 | bcompare | 0 | 7 | 2 |
+| 20 | domake | 0 | 7 | 4 |
+
+## Selected 100 Packages
+
+1. **npm-corepack** (blocked_deps=0, rev_deps=191, total=1)
+2. **7zip-natspec** (blocked_deps=0, rev_deps=84, total=5)
+3. **pnpm-corepack** (blocked_deps=0, rev_deps=61, total=1)
+4. **yarn-corepack** (blocked_deps=0, rev_deps=49, total=1)
+5. **libinput-epp** (blocked_deps=0, rev_deps=25, total=9)
+6. **aeroshell-libplasma-git** (blocked_deps=0, rev_deps=24, total=28)
+7. **openssl-1.1** (blocked_deps=0, rev_deps=19, total=2)
+8. **httpdirfs** (blocked_deps=0, rev_deps=18, total=10)
+9. **fftw-amd** (blocked_deps=0, rev_deps=13, total=4)
+10. **html2markdown** (blocked_deps=0, rev_deps=12, total=3)
+11. **fortune-mod-off** (blocked_deps=0, rev_deps=11, total=4)
+12. **llvm-libs-git** (blocked_deps=0, rev_deps=11, total=32)
+13. **opencl-amd** (blocked_deps=0, rev_deps=10, total=5)
+14. **noto-fonts-emoji-blob** (blocked_deps=0, rev_deps=9, total=0)
+15. **libsodium-1.0.18** (blocked_deps=0, rev_deps=9, total=3)
+16. **xapp-thumbnailers-common** (blocked_deps=0, rev_deps=9, total=5)
+17. **linux-firmware-whence-git** (blocked_deps=0, rev_deps=8, total=4)
+18. **qt5-doc** (blocked_deps=0, rev_deps=8, total=15)
+19. **bcompare** (blocked_deps=0, rev_deps=7, total=2)
+20. **domake** (blocked_deps=0, rev_deps=7, total=4)
+21. **rvgl-bin** (blocked_deps=0, rev_deps=7, total=7)
+22. **xlibre-xserver-devel-git** (blocked_deps=0, rev_deps=7, total=35)
+23. **archlinux-java-run** (blocked_deps=0, rev_deps=6, total=2)
+24. **auto-auto-complete** (blocked_deps=0, rev_deps=6, total=2)
+25. **asf** (blocked_deps=0, rev_deps=6, total=4)
+26. **firefox-beta-bin** (blocked_deps=0, rev_deps=6, total=6)
+27. **jdk-temurin** (blocked_deps=0, rev_deps=6, total=7)
+28. **xlibre-xserver-common-git** (blocked_deps=0, rev_deps=5, total=33)
+29. **aspnet-runtime-bin** (blocked_deps=0, rev_deps=4, total=1)
+30. **nvidia-535xx-utils** (blocked_deps=0, rev_deps=4, total=3)
+31. **python-art** (blocked_deps=0, rev_deps=4, total=5)
+32. **python-munge** (blocked_deps=0, rev_deps=4, total=5)
+33. **jdk21-temurin** (blocked_deps=0, rev_deps=4, total=7)
+34. **sqlite-utils** (blocked_deps=0, rev_deps=4, total=9)
+35. **xrizer-common** (blocked_deps=0, rev_deps=4, total=9)
+36. **advantagescope** (blocked_deps=0, rev_deps=4, total=26)
+37. **emacs-deco** (blocked_deps=0, rev_deps=4, total=38)
+38. **aspnet-targeting-pack-bin** (blocked_deps=0, rev_deps=3, total=1)
+39. **doas** (blocked_deps=0, rev_deps=3, total=1)
+40. **babashka-bin** (blocked_deps=0, rev_deps=3, total=2)
+41. **python-plyer** (blocked_deps=0, rev_deps=3, total=2)
+42. **lib32-libvpx1.10** (blocked_deps=0, rev_deps=3, total=4)
+43. **python-condense-json** (blocked_deps=0, rev_deps=3, total=4)
+44. **qt5-connectivity** (blocked_deps=0, rev_deps=3, total=4)
+45. **python-m3u8** (blocked_deps=0, rev_deps=3, total=5)
+46. **zmusic** (blocked_deps=0, rev_deps=3, total=5)
+47. **libastal-io-git** (blocked_deps=0, rev_deps=3, total=6)
+48. **python-inquirerpy** (blocked_deps=0, rev_deps=3, total=7)
+49. **xorg-xinit-git** (blocked_deps=0, rev_deps=3, total=8)
+50. **python312** (blocked_deps=0, rev_deps=3, total=12)
+51. **dracut-git** (blocked_deps=0, rev_deps=3, total=15)
+52. **llvm-libs-minimal-git** (blocked_deps=0, rev_deps=3, total=19)
+53. **openvino** (blocked_deps=0, rev_deps=3, total=21)
+54. **ttf-google-fonts-git** (blocked_deps=0, rev_deps=3, total=24)
+55. **logmein-hamachi** (blocked_deps=0, rev_deps=2, total=0)
+56. **v2ray-domain-list-custom** (blocked_deps=0, rev_deps=2, total=0)
+57. **intel-oneapi-basekit-2025** (blocked_deps=0, rev_deps=2, total=1)
+58. **nonicons-license-git** (blocked_deps=0, rev_deps=2, total=1)
+59. **bitwarden-cli-bin** (blocked_deps=0, rev_deps=2, total=2)
+60. **lianwalld-bin** (blocked_deps=0, rev_deps=2, total=2)
+61. **qt5-scxml** (blocked_deps=0, rev_deps=2, total=2)
+62. **spicetify-cli-git** (blocked_deps=0, rev_deps=2, total=2)
+63. **xone-dongle-firmware** (blocked_deps=0, rev_deps=2, total=2)
+64. **electron28-bin** (blocked_deps=0, rev_deps=2, total=3)
+65. **electron33-bin** (blocked_deps=0, rev_deps=2, total=3)
+66. **gtk-sharp-2** (blocked_deps=0, rev_deps=2, total=3)
+67. **verify-lib** (blocked_deps=0, rev_deps=2, total=3)
+68. **libuvc** (blocked_deps=0, rev_deps=2, total=4)
+69. **mozc** (blocked_deps=0, rev_deps=2, total=4)
+70. **themix-gui-git** (blocked_deps=0, rev_deps=2, total=4)
+71. **python-pid** (blocked_deps=0, rev_deps=2, total=5)
+72. **python-wassima** (blocked_deps=0, rev_deps=2, total=5)
+73. **libastal-bluetooth-git** (blocked_deps=0, rev_deps=2, total=6)
+74. **ntfsprogs-plus** (blocked_deps=0, rev_deps=2, total=6)
+75. **lib32-libbluray** (blocked_deps=0, rev_deps=2, total=7)
+76. **python-samplerate-ledfx** (blocked_deps=0, rev_deps=2, total=7)
+77. **gslapper** (blocked_deps=0, rev_deps=2, total=8)
+78. **libastal-wireplumber-git** (blocked_deps=0, rev_deps=2, total=8)
+79. **python-uv-dynamic-versioning** (blocked_deps=0, rev_deps=2, total=8)
+80. **qtutilities-qt6** (blocked_deps=0, rev_deps=2, total=9)
+81. **xboxdrv** (blocked_deps=0, rev_deps=2, total=9)
+82. **radicle-node** (blocked_deps=0, rev_deps=2, total=10)
+83. **web-eid-native** (blocked_deps=0, rev_deps=2, total=10)
+84. **qmc2-common-git** (blocked_deps=0, rev_deps=2, total=13)
+85. **linux-lqx** (blocked_deps=0, rev_deps=2, total=17)
+86. **python-urllib3-future** (blocked_deps=0, rev_deps=2, total=17)
+87. **mupen64plus-git** (blocked_deps=0, rev_deps=2, total=18)
+88. **aeroshell-smod-git** (blocked_deps=0, rev_deps=2, total=21)
+89. **vscodium-translucent** (blocked_deps=0, rev_deps=2, total=21)
+90. **fooyin** (blocked_deps=0, rev_deps=2, total=22)
+91. **rom-properties** (blocked_deps=0, rev_deps=2, total=33)
+92. **ros2-arch-deps** (blocked_deps=0, rev_deps=2, total=44)
+93. **clash-geoip** (blocked_deps=0, rev_deps=1, total=0)
+94. **genders** (blocked_deps=0, rev_deps=1, total=0)
+95. **ghostty-shell-integration-nightly-bin** (blocked_deps=0, rev_deps=1, total=0)
+96. **ghostty-terminfo-nightly-bin** (blocked_deps=0, rev_deps=1, total=0)
+97. **keychron-link-udev** (blocked_deps=0, rev_deps=1, total=0)
+98. **libfmod** (blocked_deps=0, rev_deps=1, total=0)
+99. **localepurge** (blocked_deps=0, rev_deps=1, total=0)
+100. **nordvpn-bin** (blocked_deps=0, rev_deps=1, total=0)
