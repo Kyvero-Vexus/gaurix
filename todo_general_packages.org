@@ -12136,9 +12136,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2023. paru
+** FAILED 2023. paru
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show paru` -> package not found; A2 candidate normalization tried paru; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260329p100.scm:119 (inherits zoxide placeholder); AUR triage deps=[git, pacman, libalpm.so>=14] url=https://github.com/morganamilo/paru.
+   - Status: BLOCKED: ARCH_SPECIFIC_TOOL | paru requires pacman/libalpm which is Arch-specific; not packageable for Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14105,9 +14105,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2351. nvidia-utils-beta
+** FAILED 2351. nvidia-utils-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show nvidia-utils-beta` -> package not found; A2 candidate normalization tried nvidia-utils-beta, nvidia-utils; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[bash, egl-gbm, egl-wayland, egl-wayland2, ...] url=https://www.nvidia.com/.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_COMPLEX | 404MB monolithic .run file requires dedicated nonfree binary-driver infrastructure; previously blocked by cron-c79f127f-w02.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14429,9 +14429,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2405. rom-properties
+** DONE 2405. rom-properties
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show rom-properties` -> package not found; A2 candidate normalization tried rom-properties; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[curl, fmt, gcc-libs, glibc, ...] url=https://github.com/GerbilSoft/rom-properties.
+   - Status: DONE | cmake-build-system recipe in cron-5a2fb251-r14-w02.scm; v2.7.1; dry-run validated.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -15221,9 +15221,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2537. cursor-ide-bin
+** DONE 2537. cursor-ide-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: binary wrapper (proprietary); https://www.cursor.com v2.6.21.
+   - Status: DONE | trivial-build-system AppImage wrapper in cron-5a2fb251-r14-w02.scm; v3.0.12; dry-run validated.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16001,9 +16001,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2667. verify-lib
+** DONE 2667. verify-lib
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show verify-lib` -> package not found; A2 candidate normalization tried verify-lib; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc] url=https://gitlab.com/fkzys/verify-lib.
+   - Status: DONE | gnu-build-system recipe in cron-5a2fb251-r14-w02.scm; v0.0.4; dry-run validated.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16067,9 +16067,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2678. wolfssl-all
+** DONE 2678. wolfssl-all
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `wolfssl-all` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE | alias already exists in general-compat.scm (inherits gnu:wolfssl); dry-run validated successfully.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -18017,27 +18017,27 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3003. blogr-bin [NEEDS_RECIPE_DESIGN: guix show blogr failed (package not found in current channels); next: draft standalone recipe for blogr-bin in future pass]
+** DONE 3003. blogr-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: binary wrapper; https://github.com/bahdotsh/blogr v0.4.1.
+   - Status: DONE | trivial-build-system binary wrapper in cron-5a2fb251-r14-w02.scm; v0.4.1; dry-run validated.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3004. charliecloud [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for charliecloud; next: determine upstream source + build system for charliecloud]
+** DONE 3004. charliecloud
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: autotools C recipe; https://github.com/hpc/charliecloud v0.43.
+   - Status: DONE | gnu-build-system recipe in cron-5a2fb251-r14-w02.scm; v0.38; dry-run validated.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3005. wl-mpris-idle-inhibit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for wl-mpris-idle-inhibit; next: determine upstream source + build system for wl-mpris-idle-inhibit]
+** FAILED 3005. wl-mpris-idle-inhibit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: cargo recipe; https://github.com/sameer/wl-mpris-idle-inhibit v0.1.8.
+   - Status: BLOCKED: CARGO_GIT_DEPS | 3 git dependencies (wayland-rs, mpris-rs) not on crates.io; 59 total crate deps; no binary releases available.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3006. systemd-suspend-modules [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for systemd-suspend-modules; next: determine upstream source + build system for systemd-suspend-modules]
+** FAILED 3006. systemd-suspend-modules
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: trivial systemd service install; AUR PKGBUILD sources v1.2.
+   - Status: BLOCKED: SYSTEMD_SPECIFIC | installs to systemd system-sleep hook dir; Guix uses Shepherd not systemd; no equivalent mechanism.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
