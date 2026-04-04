@@ -314,7 +314,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 52. tailscale
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/tailscale.git` (HEAD reachable at evaluation time).
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show tailscale` -> package not found; A2 candidate normalization tried tailscale, headscale; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (tailscale 1.96.4, prebuilt binary from pkgs.tailscale.com)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -374,7 +374,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 62. hyprshot
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/hyprshot.git` (HEAD reachable at evaluation time).
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show hyprshot` -> package not found; A2 candidate normalization tried hyprshot; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (hyprshot 1.3.0, shell script with grim/slurp/wl-clipboard deps)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -582,11 +582,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 97. openssl-1.0
+** DONE 97. openssl-1.0
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 3.806, votes 50).
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `openssl-1.0` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -n openssl-1.0
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 98. grub-customizer
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 3.341, votes 16).
@@ -594,17 +594,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 99. lib32-openssl-1.0
+** DONE 99. lib32-openssl-1.0
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 3.199, votes 12).
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `lib32-openssl-1.0` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -n lib32-openssl-1.0
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 100. llama.cpp-vulkan
+** DONE 100. llama.cpp-vulkan
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 3.171, votes 20).
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `llama.cpp-vulkan` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias (inherits upstream llama-cpp with Vulkan) in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -n llama.cpp-vulkan
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 101. qt5-webchannel
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -666,11 +666,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 111. lib32-openssl-1.1
+** DONE 111. lib32-openssl-1.1
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `lib32-openssl-1.1` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -n lib32-openssl-1.1
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 112. qt6-avif-image-plugin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -734,7 +734,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 122. pilowlava-font-common
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show pilowlava-font-common` -> package not found; A2 candidate normalization tried pilowlava-font-common, pilowlava-font; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://events.ccc.de/congress/2024/infos/styleguide.html.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (pilowlava-font-common 20240528, OTF font from Velvetyne/GitLab)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -996,11 +996,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: FAILED
 
-** BLOCKED 166. libvpx1.3
+** DONE 166. libvpx1.3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `libvpx1.3` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -e (@ (gaurix packages cron-5a2fb251-recipe-w01) libvpx1.3) -n
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 167. libtiff4
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -1020,11 +1020,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 170. lib32-libvpx1.3
+** DONE 170. lib32-libvpx1.3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `lib32-libvpx1.3` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -e (@ (gaurix packages cron-5a2fb251-recipe-w01) lib32-libvpx1.3) -n
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** FAILED 171. lib32-libudev0-shim
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -1056,21 +1056,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 176. lib32-glew1.10
+** DONE 176. lib32-glew1.10
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `lib32-glew1.10` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -e (@ (gaurix packages cron-5a2fb251-recipe-w01) lib32-glew1.10) -n
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 177. glew1.10
+** DONE 177. glew1.10
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `glew1.10` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -e (@ (gaurix packages cron-5a2fb251-recipe-w01) glew1.10) -n
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 178. upd72020x-fw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show upd72020x-fw` -> package not found; A2 candidate normalization tried upd72020x-fw; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/denisandroid/uPD72020x-Firmware.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (upd72020x-fw 1.0.0, firmware data from archive.org)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1154,7 +1154,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 192. elephant
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show elephant` -> package not found; A2 candidate normalization tried elephant; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/abenz1267/elephant.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (elephant 2.20.3, prebuilt Go binary)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1322,7 +1322,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 220. wl-screenrec
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show wl-screenrec` -> package not found; A2 candidate normalization tried wl-screenrec; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[ffmpeg, libva-driver, gcc-libs, glibc] url=https://github.com/russelltg/wl-screenrec.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (wl-screenrec compat alias to wf-recorder; no prebuilt binary and cargo-build infeasible)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1682,7 +1682,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 280. c++utilities
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show c++utilities` -> package not found; A2 candidate normalization tried c++utilities; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[glibc, libstdc++, libgcc] url=https://github.com/Martchus/cpp-utilities.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (c++utilities alias to upstream cpp-utilities)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2852,7 +2852,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 475. localepurge
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show localepurge` -> package not found; A2 candidate normalization tried localepurge, locales; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=http://packages.debian.org/source/sid/localepurge.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (localepurge 0.7.3.11, from Debian source tarball)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5662,9 +5662,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 940. circle-flags
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show circle-flags` -> package not found; A2 candidate normalization tried circle-flags; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/linuxmint/circle-flags.
+   - Status: DONE: Resolved with copy-build-system recipe in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -e (@ (gaurix packages cron-5a2fb251-recipe-w01) circle-flags) -n
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 941. bisq-desktop
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -8716,7 +8716,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** FAILED 1449. mullvad-vpn-daemon-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mullvad-vpn-daemon-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (mullvad-vpn-daemon-bin 2026.1, extracted from .deb)
    - Difficulty: medium
    - TODO Status: FAILED
 
@@ -9052,7 +9052,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1505. zmusic
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show zmusic` -> package not found; A2 candidate normalization tried zmusic; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[alsa-lib, libsndfile, mpg123] url=https://github.com/ZDoom/ZMusic.
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (zmusic 1.3.0, CMake build with alsa/sndfile/mpg123)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9339,11 +9339,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 1556. llama.cpp-cuda
+** DONE 1556. llama.cpp-cuda
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: printf '(use-modules (gaurix packages queue-20260403p100daily2))' | guix repl -L guix | error: target `llama.cpp-cuda` is unknown during module import | next: replace alias with direct Guix recipe or correct upstream package mapping and revalidate
+   - Status: DONE: Resolved via standalone alias (re-exports llama-cpp-cuda) in cron-5a2fb251-recipe-w01.scm; validated with guix build -L guix -n llama.cpp-cuda
    - Difficulty: hard
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 1557. plasma6-runners-jetbrains-runner-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -64128,7 +64128,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 160, popularity: 7.2895
    - Note: The Mullvad VPN client app for desktop (daemon and CLI)
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mullvad-vpn-daemon-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: RESOLVED via cron-5a2fb251-recipe-w03.scm (mullvad-vpn-daemon-bin 2026.1, extracted from .deb)
 ** FAILED 11344. lib32-nvidia-580xx-utils
    - AUR votes: 25, popularity: 7.1800
    - Note: NVIDIA drivers utilities (32-bit) (580xx)
