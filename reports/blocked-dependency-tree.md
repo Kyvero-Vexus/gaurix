@@ -1,109 +1,133 @@
-# Blocked Dependency Tree
+# Blocked Dependency Tree — Run r9
 
-**Generated:** 2026-04-04T15:10:18Z
-**Total BLOCKED:** 6420
+**Timestamp:** 2026-04-04T17:27:32Z
+**Total BLOCKED:** 8056
+**Selected:** 100
 
-## Top 100 Priority Queue
+## Top 20 Priority Queue
 
 | Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|-------------|-------------|------------|
-| 1 | httpdirfs | 0 | 18 | 10 |
-| 2 | paru | 0 | 16 | 6 |
-| 3 | openssl-1.1 | 0 | 14 | 2 |
+| 1 | php84 | 0 | 52 | 53 |
+| 2 | httpdirfs | 0 | 26 | 10 |
+| 3 | openssl-1.1 | 0 | 18 | 2 |
 | 4 | html2markdown | 0 | 12 | 3 |
 | 5 | xapp-thumbnailers-common | 0 | 9 | 5 |
-| 6 | qt5-doc | 0 | 8 | 15 |
-| 7 | auto-auto-complete | 0 | 6 | 1 |
-| 8 | archlinux-java-run | 0 | 6 | 2 |
-| 9 | gnome-icon-theme-symbolic | 0 | 6 | 5 |
-| 10 | doas | 0 | 5 | 2 |
-| 11 | xlibre-xserver-common-git | 0 | 5 | 32 |
-| 12 | python-art | 0 | 4 | 5 |
-| 13 | python-munge | 0 | 4 | 8 |
-| 14 | sqlite-utils | 0 | 4 | 9 |
-| 15 | xrizer-common | 0 | 4 | 9 |
-| 16 | flaresolverr | 0 | 4 | 13 |
-| 17 | chexquest3-wad | 0 | 3 | 0 |
-| 18 | square1-wad | 0 | 3 | 0 |
-| 19 | tailscale | 0 | 3 | 0 |
-| 20 | davs2 | 0 | 3 | 2 |
-| 21 | python-plyer | 0 | 3 | 2 |
-| 22 | dotool | 0 | 3 | 3 |
-| 23 | mint-x-icons | 0 | 3 | 3 |
-| 24 | verify-lib | 0 | 3 | 3 |
-| 25 | python-condense-json | 0 | 3 | 4 |
-| 26 | freedm | 0 | 3 | 5 |
-| 27 | python-m3u8 | 0 | 3 | 5 |
-| 28 | mdcat | 0 | 3 | 6 |
-| 29 | zmusic | 0 | 3 | 6 |
-| 30 | libunity | 0 | 3 | 7 |
-| 31 | python-inquirerpy | 0 | 3 | 7 |
-| 32 | python-sse-starlette | 0 | 3 | 8 |
-| 33 | python-uv-dynamic-versioning | 0 | 3 | 8 |
-| 34 | xboxdrv | 0 | 3 | 9 |
-| 35 | google-chrome | 0 | 3 | 12 |
-| 36 | mozc-ut-full-common | 0 | 3 | 13 |
-| 37 | llvm-libs-minimal-git | 0 | 3 | 14 |
-| 38 | python312 | 0 | 3 | 14 |
-| 39 | hyprtoolkit-git | 0 | 3 | 15 |
-| 40 | wayfire | 0 | 3 | 15 |
-| 41 | libastal-meta | 0 | 3 | 17 |
-| 42 | logmein-hamachi | 0 | 2 | 0 |
-| 43 | waydroid | 0 | 2 | 0 |
-| 44 | aspnet-targeting-pack-bin | 0 | 2 | 1 |
-| 45 | libklvanc | 0 | 2 | 1 |
-| 46 | apriltag | 0 | 2 | 2 |
-| 47 | openapv | 0 | 2 | 2 |
-| 48 | qt5-scxml | 0 | 2 | 2 |
-| 49 | system76-acpi-dkms | 0 | 2 | 2 |
-| 50 | xevd | 0 | 2 | 2 |
-| 51 | xeve | 0 | 2 | 2 |
-| 52 | xone-dongle-firmware | 0 | 2 | 2 |
-| 53 | csvtable | 0 | 2 | 3 |
-| 54 | dynamips | 0 | 2 | 3 |
-| 55 | flite1 | 0 | 2 | 3 |
-| 56 | libaribcaption | 0 | 2 | 3 |
-| 57 | python-steamgriddb | 0 | 2 | 3 |
-| 58 | quirc | 0 | 2 | 3 |
-| 59 | uavs3d-git | 0 | 2 | 3 |
-| 60 | vpcs | 0 | 2 | 3 |
-| 61 | vvenc | 0 | 2 | 3 |
-| 62 | arduino-avr-core | 0 | 2 | 4 |
-| 63 | brscan-skey | 0 | 2 | 4 |
-| 64 | foobar2000 | 0 | 2 | 4 |
-| 65 | gtk-sharp-2 | 0 | 2 | 4 |
-| 66 | kdotool | 0 | 2 | 4 |
-| 67 | lianwalld-bin | 0 | 2 | 4 |
-| 68 | libelectron | 0 | 2 | 4 |
-| 69 | libuvc | 0 | 2 | 4 |
-| 70 | qt5-connectivity | 0 | 2 | 4 |
-| 71 | reshade-shaders-git | 0 | 2 | 4 |
-| 72 | xavs2 | 0 | 2 | 4 |
-| 73 | python-pid | 0 | 2 | 5 |
-| 74 | python-wassima | 0 | 2 | 5 |
-| 75 | ani-skip-git | 0 | 2 | 6 |
-| 76 | lcevcdec | 0 | 2 | 7 |
-| 77 | moodbar | 0 | 2 | 7 |
-| 78 | python-syncedlyrics | 0 | 2 | 8 |
-| 79 | wl-screenrec | 0 | 2 | 8 |
-| 80 | dotnet-runtime-9.0-bin | 0 | 2 | 9 |
-| 81 | llama.cpp | 0 | 2 | 9 |
-| 82 | radicle-node | 0 | 2 | 9 |
-| 83 | gslapper | 0 | 2 | 10 |
-| 84 | qtutilities-qt6 | 0 | 2 | 10 |
-| 85 | web-eid-native | 0 | 2 | 10 |
-| 86 | openbangla-keyboard-git | 0 | 2 | 11 |
-| 87 | trizen | 0 | 2 | 12 |
-| 88 | bms-shell | 0 | 2 | 15 |
-| 89 | python-urllib3-future | 0 | 2 | 17 |
-| 90 | linux-lqx | 0 | 2 | 21 |
-| 91 | vscodium-translucent | 0 | 2 | 23 |
-| 92 | fooyin | 0 | 2 | 24 |
-| 93 | ros2-arch-deps | 0 | 2 | 48 |
-| 94 | sonic-win | 0 | 2 | 61 |
-| 95 | 86box-roms | 0 | 1 | 0 |
-| 96 | alarm | 0 | 1 | 0 |
-| 97 | clash-geoip | 0 | 1 | 0 |
-| 98 | dbeaver | 0 | 1 | 0 |
-| 99 | equicord-installer-bin | 0 | 1 | 0 |
-| 100 | genders | 0 | 1 | 0 |
+| 6 | qt5-doc | 0 | 9 | 15 |
+| 7 | archlinux-java-run | 0 | 8 | 2 |
+| 8 | libpng12 | 0 | 8 | 2 |
+| 9 | rvgl-bin | 0 | 8 | 7 |
+| 10 | bcompare | 0 | 7 | 2 |
+| 11 | domake | 0 | 7 | 4 |
+| 12 | nvidia-utils-beta | 0 | 7 | 11 |
+| 13 | omnissa-horizon-client | 0 | 7 | 14 |
+| 14 | auto-auto-complete | 0 | 6 | 1 |
+| 15 | asf | 0 | 6 | 3 |
+| 16 | yay | 0 | 6 | 3 |
+| 17 | flutter-common | 0 | 6 | 5 |
+| 18 | python-diskcache | 0 | 6 | 5 |
+| 19 | python-questionary | 0 | 6 | 5 |
+| 20 | xlibre-xserver-common-git | 0 | 5 | 32 |
+
+## Selected 100 Packages
+
+- [1] php84 (blocked_deps=0, rev_deps=52, total_deps=53)
+- [2] httpdirfs (blocked_deps=0, rev_deps=26, total_deps=10)
+- [3] openssl-1.1 (blocked_deps=0, rev_deps=18, total_deps=2)
+- [4] html2markdown (blocked_deps=0, rev_deps=12, total_deps=3)
+- [5] xapp-thumbnailers-common (blocked_deps=0, rev_deps=9, total_deps=5)
+- [6] qt5-doc (blocked_deps=0, rev_deps=9, total_deps=15)
+- [7] archlinux-java-run (blocked_deps=0, rev_deps=8, total_deps=2)
+- [8] libpng12 (blocked_deps=0, rev_deps=8, total_deps=2)
+- [9] rvgl-bin (blocked_deps=0, rev_deps=8, total_deps=7)
+- [10] bcompare (blocked_deps=0, rev_deps=7, total_deps=2)
+- [11] domake (blocked_deps=0, rev_deps=7, total_deps=4)
+- [12] nvidia-utils-beta (blocked_deps=0, rev_deps=7, total_deps=11)
+- [13] omnissa-horizon-client (blocked_deps=0, rev_deps=7, total_deps=14)
+- [14] auto-auto-complete (blocked_deps=0, rev_deps=6, total_deps=1)
+- [15] asf (blocked_deps=0, rev_deps=6, total_deps=3)
+- [16] yay (blocked_deps=0, rev_deps=6, total_deps=3)
+- [17] flutter-common (blocked_deps=0, rev_deps=6, total_deps=5)
+- [18] python-diskcache (blocked_deps=0, rev_deps=6, total_deps=5)
+- [19] python-questionary (blocked_deps=0, rev_deps=6, total_deps=5)
+- [20] xlibre-xserver-common-git (blocked_deps=0, rev_deps=5, total_deps=32)
+- [21] kdoctools5 (blocked_deps=0, rev_deps=4, total_deps=5)
+- [22] python-art (blocked_deps=0, rev_deps=4, total_deps=5)
+- [23] python-munge (blocked_deps=0, rev_deps=4, total_deps=5)
+- [24] python-readchar (blocked_deps=0, rev_deps=4, total_deps=5)
+- [25] python-inquirerpy (blocked_deps=0, rev_deps=4, total_deps=7)
+- [26] qtutilities-qt6 (blocked_deps=0, rev_deps=4, total_deps=9)
+- [27] sqlite-utils (blocked_deps=0, rev_deps=4, total_deps=9)
+- [28] tome4 (blocked_deps=0, rev_deps=4, total_deps=9)
+- [29] xrizer-common (blocked_deps=0, rev_deps=4, total_deps=9)
+- [30] asusctl (blocked_deps=0, rev_deps=4, total_deps=14)
+- [31] libcava (blocked_deps=0, rev_deps=4, total_deps=14)
+- [32] hyprtoolkit-git (blocked_deps=0, rev_deps=4, total_deps=15)
+- [33] gpu-screen-recorder (blocked_deps=0, rev_deps=3, total_deps=0)
+- [34] ttf-rubik-vf (blocked_deps=0, rev_deps=3, total_deps=0)
+- [35] waydroid (blocked_deps=0, rev_deps=3, total_deps=0)
+- [36] davs2 (blocked_deps=0, rev_deps=3, total_deps=2)
+- [37] emsdk (blocked_deps=0, rev_deps=3, total_deps=2)
+- [38] libudev0-shim (blocked_deps=0, rev_deps=3, total_deps=2)
+- [39] python-plyer (blocked_deps=0, rev_deps=3, total_deps=2)
+- [40] gurobi (blocked_deps=0, rev_deps=3, total_deps=3)
+- [41] execstack (blocked_deps=0, rev_deps=3, total_deps=4)
+- [42] libelectron (blocked_deps=0, rev_deps=3, total_deps=4)
+- [43] nvidia-580xx-utils (blocked_deps=0, rev_deps=3, total_deps=4)
+- [44] python-condense-json (blocked_deps=0, rev_deps=3, total_deps=4)
+- [45] qt5-connectivity (blocked_deps=0, rev_deps=3, total_deps=4)
+- [46] python-m3u8 (blocked_deps=0, rev_deps=3, total_deps=5)
+- [47] zmusic (blocked_deps=0, rev_deps=3, total_deps=5)
+- [48] openssl-1.0 (blocked_deps=0, rev_deps=3, total_deps=6)
+- [49] python-opentelemetry-proto (blocked_deps=0, rev_deps=3, total_deps=6)
+- [50] python-syncedlyrics (blocked_deps=0, rev_deps=3, total_deps=8)
+- [51] python-uv-dynamic-versioning (blocked_deps=0, rev_deps=3, total_deps=8)
+- [52] steamcmd (blocked_deps=0, rev_deps=3, total_deps=8)
+- [53] python312 (blocked_deps=0, rev_deps=3, total_deps=12)
+- [54] mozc-ut-full-common (blocked_deps=0, rev_deps=3, total_deps=13)
+- [55] llvm-libs-minimal-git (blocked_deps=0, rev_deps=3, total_deps=14)
+- [56] wayfire (blocked_deps=0, rev_deps=3, total_deps=15)
+- [57] libastal-meta (blocked_deps=0, rev_deps=3, total_deps=17)
+- [58] openvino (blocked_deps=0, rev_deps=3, total_deps=18)
+- [59] zen-browser (blocked_deps=0, rev_deps=3, total_deps=51)
+- [60] sonic-win (blocked_deps=0, rev_deps=3, total_deps=61)
+- [61] logmein-hamachi (blocked_deps=0, rev_deps=2, total_deps=0)
+- [62] redhat-fonts (blocked_deps=0, rev_deps=2, total_deps=0)
+- [63] tosu (blocked_deps=0, rev_deps=2, total_deps=0)
+- [64] celt (blocked_deps=0, rev_deps=2, total_deps=1)
+- [65] claude-code (blocked_deps=0, rev_deps=2, total_deps=1)
+- [66] libklvanc (blocked_deps=0, rev_deps=2, total_deps=1)
+- [67] perl-cpan-distnameinfo (blocked_deps=0, rev_deps=2, total_deps=1)
+- [68] shine (blocked_deps=0, rev_deps=2, total_deps=1)
+- [69] xavs (blocked_deps=0, rev_deps=2, total_deps=1)
+- [70] xr-hardware (blocked_deps=0, rev_deps=2, total_deps=1)
+- [71] argagg (blocked_deps=0, rev_deps=2, total_deps=2)
+- [72] heidisql (blocked_deps=0, rev_deps=2, total_deps=2)
+- [73] lianwalld-bin (blocked_deps=0, rev_deps=2, total_deps=2)
+- [74] oh-my-zsh-git (blocked_deps=0, rev_deps=2, total_deps=2)
+- [75] openapv (blocked_deps=0, rev_deps=2, total_deps=2)
+- [76] piper-voices-common (blocked_deps=0, rev_deps=2, total_deps=2)
+- [77] python-fvs (blocked_deps=0, rev_deps=2, total_deps=2)
+- [78] qt5-scxml (blocked_deps=0, rev_deps=2, total_deps=2)
+- [79] xevd (blocked_deps=0, rev_deps=2, total_deps=2)
+- [80] xeve (blocked_deps=0, rev_deps=2, total_deps=2)
+- [81] xone-dongle-firmware (blocked_deps=0, rev_deps=2, total_deps=2)
+- [82] depot-tools-git (blocked_deps=0, rev_deps=2, total_deps=3)
+- [83] flite1 (blocked_deps=0, rev_deps=2, total_deps=3)
+- [84] gtk-sharp-2 (blocked_deps=0, rev_deps=2, total_deps=3)
+- [85] libaribcaption (blocked_deps=0, rev_deps=2, total_deps=3)
+- [86] python-steamgriddb (blocked_deps=0, rev_deps=2, total_deps=3)
+- [87] quirc (blocked_deps=0, rev_deps=2, total_deps=3)
+- [88] spicetify-cli (blocked_deps=0, rev_deps=2, total_deps=3)
+- [89] uavs3d-git (blocked_deps=0, rev_deps=2, total_deps=3)
+- [90] verify-lib (blocked_deps=0, rev_deps=2, total_deps=3)
+- [91] vvenc (blocked_deps=0, rev_deps=2, total_deps=3)
+- [92] chromaprint-fftw (blocked_deps=0, rev_deps=2, total_deps=4)
+- [93] foobar2000 (blocked_deps=0, rev_deps=2, total_deps=4)
+- [94] libuvc (blocked_deps=0, rev_deps=2, total_deps=4)
+- [95] mozc (blocked_deps=0, rev_deps=2, total_deps=4)
+- [96] paru (blocked_deps=0, rev_deps=2, total_deps=4)
+- [97] xavs2 (blocked_deps=0, rev_deps=2, total_deps=4)
+- [98] discord-rpc (blocked_deps=0, rev_deps=2, total_deps=5)
+- [99] dms-shell (blocked_deps=0, rev_deps=2, total_deps=5)
+- [100] python-pid (blocked_deps=0, rev_deps=2, total_deps=5)
