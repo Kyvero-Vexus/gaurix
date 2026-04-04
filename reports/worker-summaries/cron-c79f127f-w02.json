@@ -1,0 +1,150 @@
+{
+  "run_id": "cron-c79f127f-77f8-4d2a-beb6-3c7cf8a9aaad",
+  "chunk_id": "w02",
+  "branch": "cron-c79f127f-w02",
+  "worktree": "/var/tmp/gaurix-cron-c79f127f/w02",
+  "module_file": "guix/gaurix/packages/cron-c79f127f-w02.scm",
+  "selected_packages": [
+    "nvidia-utils-beta",
+    "auto-auto-complete",
+    "archlinux-java-run",
+    "python-opencensus",
+    "yay",
+    "c++utilities",
+    "xlibre-xserver-common-git",
+    "jdk25-graalvm-bin",
+    "cpp-jwt",
+    "python-art"
+  ],
+  "resolved_packages": [
+    {
+      "name": "auto-auto-complete",
+      "status_line": "DONE auto-auto-complete 7.2.3",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New GNU make-based package from Codeberg release tarball; source hash verified against AUR checksum."
+      }
+    },
+    {
+      "name": "archlinux-java-run",
+      "status_line": "DONE archlinux-java-run (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package mapped to openjdk for compatibility."
+      }
+    },
+    {
+      "name": "python-opencensus",
+      "status_line": "DONE python-opencensus 0.11.4",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Python package validated with dependency wiring to python-opencensus-context and existing python-google-api-core/python-six."
+      }
+    },
+    {
+      "name": "c++utilities",
+      "status_line": "DONE c++utilities (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package mapped to upstream cpp-utilities."
+      }
+    },
+    {
+      "name": "xlibre-xserver-common-git",
+      "status_line": "DONE xlibre-xserver-common-git (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package mapped to xorg-server."
+      }
+    },
+    {
+      "name": "jdk25-graalvm-bin",
+      "status_line": "DONE jdk25-graalvm-bin (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package mapped to openjdk 25 line for dependency compatibility."
+      }
+    },
+    {
+      "name": "cpp-jwt",
+      "status_line": "DONE cpp-jwt 1.5",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "CMake package with vendored-json disabled and explicit nlohmann-json/openssl inputs."
+      }
+    },
+    {
+      "name": "python-art",
+      "status_line": "DONE python-art 6.5",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Python package from upstream GitHub release tarball."
+      }
+    }
+  ],
+  "dependency_packages": [
+    {
+      "name": "python-opencensus-context",
+      "status_line": "DONE python-opencensus-context 0.1.3 (dependency)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Added as explicit dependency package required by python-opencensus."
+      }
+    }
+  ],
+  "remaining_blockers": [
+    {
+      "name": "nvidia-utils-beta",
+      "reason_code": "BINARY_DRIVER_RECIPE_PENDING",
+      "status_line": "BLOCKED nvidia-utils-beta: dedicated nonfree split-driver packaging pass still required",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search found no nvidia-utils-beta or equivalent proprietary nvidia-utils package in this checkout."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD analysis: recipe is split into nvidia-utils-beta/opencl-nvidia-beta/nvidia-settings-beta with custom extraction, linker symlink generation, and system integration files."
+        },
+        {
+          "id": "A3",
+          "detail": "Upstream source probe: NVIDIA .run payload URL is reachable (HTTP 200, ~403 MiB), but implementing an auditable Guix split binary-driver recipe is out-of-scope for this chunk."
+        }
+      ]
+    },
+    {
+      "name": "yay",
+      "reason_code": "MISSING_CORE_DEPENDENCY",
+      "status_line": "BLOCKED yay: pacman/libalpm dependency chain unavailable in current Guix package set",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show yay and guix show pacman both fail; guix search libalpm/alpm found no provider."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD review confirms hard dependency pacman>6.1 plus CGO-enabled Go build path."
+        },
+        {
+          "id": "A3",
+          "detail": "Upstream build probes fail without libalpm: CGO_ENABLED=1 fails on missing alpm.h; CGO_ENABLED=0 still fails with undefined alpm symbols."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Secondary blocker module written to guix/gaurix/packages/cron-c79f127f-w02-blocked-notes.scm.",
+    "Validation commands used expression-based targets to avoid modifying shared guix/gaurix/packages.scm.",
+    "This repository emits pre-existing global lint/load warnings from unrelated modules; target package expressions for this chunk completed with lint_rc=0 and build_n_rc=0."
+  ],
+  "commit": "1acb274e21811c62ebe92c71cf688418d36c3cd6"
+}

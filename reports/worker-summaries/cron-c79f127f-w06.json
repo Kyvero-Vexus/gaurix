@@ -1,0 +1,170 @@
+{
+  "run_id": "cron-c79f127f-77f8-4d2a-beb6-3c7cf8a9aaad",
+  "chunk_id": "w06",
+  "branch": "cron-c79f127f-w06",
+  "worktree": "/var/tmp/gaurix-cron-c79f127f/w06",
+  "module_file": "guix/gaurix/packages/queue-20260402blocked-c79f127f-w06.scm",
+  "selected_packages": [
+    "verify-lib",
+    "foobar2000",
+    "libelectron",
+    "libuvc",
+    "mozc",
+    "paru",
+    "qt5-connectivity",
+    "lib32-blas",
+    "osu-mime",
+    "python-aiolimiter"
+  ],
+  "resolved_packages": [
+    {
+      "name": "verify-lib",
+      "status_line": "DONE verify-lib 0.0.4",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Added CC-for-target make flags; full build succeeds in isolated -L module validation context."
+      }
+    },
+    {
+      "name": "libuvc",
+      "status_line": "DONE libuvc 0.0.7",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Revalidated prior recipe; full build succeeds."
+      }
+    },
+    {
+      "name": "qt5-connectivity",
+      "status_line": "DONE qt5-connectivity (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Mapped to upstream qtconnectivity-5 package and validated with lint + dry-run."
+      }
+    },
+    {
+      "name": "osu-mime",
+      "status_line": "DONE osu-mime 0.1",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Switched to AUR snapshot tarball source and corrected install-plan path; full build succeeds."
+      }
+    },
+    {
+      "name": "python-aiolimiter",
+      "status_line": "DONE python-aiolimiter 1.2.1",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Revalidated pyproject package from PyPI source; full build succeeds."
+      }
+    }
+  ],
+  "dependency_packages": [],
+  "remaining_blockers": [
+    {
+      "name": "foobar2000",
+      "reason_code": "PROPRIETARY_WINE_BINARY_RECIPE_PENDING",
+      "status_line": "BLOCKED foobar2000: proprietary Windows installer + Wine wrapper recipe not drafted in this chunk",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search found no foobar2000 package."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD analysis shows packaging based on proprietary foobar2000 .exe installers and runtime dependence on wine."
+        },
+        {
+          "id": "A3",
+          "detail": "Upstream probe confirmed downloadable Windows PE installer artifacts (no native source build path)."
+        }
+      ]
+    },
+    {
+      "name": "libelectron",
+      "reason_code": "NONREPRODUCIBLE_NODE_DEP_GRAPH",
+      "status_line": "BLOCKED libelectron: npm dependency closure is unresolved/non-locked for Guix reproducibility",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search found no libelectron package."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD requires npm install --legacy-peer-deps and external libelectronmeta symlink."
+        },
+        {
+          "id": "A3",
+          "detail": "Upstream source tarball lacks package-lock.json; npm ci fails, confirming missing deterministic lock strategy."
+        }
+      ]
+    },
+    {
+      "name": "mozc",
+      "reason_code": "BAZEL_STACK_UNPACKAGED",
+      "status_line": "BLOCKED mozc: Bazel-centric source graph and toolchain bootstrap require dedicated packaging pass",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search found no mozc package."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD review shows Bazel build path with multiple git submodules and registry mirroring steps."
+        },
+        {
+          "id": "A3",
+          "detail": "Counted 32 remote source artifacts in current PKGBUILD (git repos, archives, and Bazel binary)."
+        }
+      ]
+    },
+    {
+      "name": "paru",
+      "reason_code": "MISSING_CORE_DEPENDENCY",
+      "status_line": "BLOCKED paru: depends on pacman/libalpm stack unavailable in this Guix package set",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search found no paru package."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD requires pacman and libalpm.so>=14 at build/runtime."
+        },
+        {
+          "id": "A3",
+          "detail": "guix search for pacman/libalpm/alpm yielded no provider for Arch libalpm ABI."
+        }
+      ]
+    },
+    {
+      "name": "lib32-blas",
+      "reason_code": "MULTILIB_COMPAT_RECIPE_PENDING",
+      "status_line": "BLOCKED lib32-blas: multilib compatibility package layout is not yet defined for this chunk",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search found no lib32-blas package."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR analysis: lib32-blas is produced from a lib32-lapack split package targeting /usr/lib32 multilib layout."
+        },
+        {
+          "id": "A3",
+          "detail": "Guix probe confirms i686 openblas builds, but no Arch-style lib32 compatibility split package exists."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Blocked details were also written to guix/gaurix/packages/queue-20260402blocked-c79f127f-w06-blocked-notes.scm.",
+    "Validation used expression-based targets with -L isolated module path; no changes to guix/gaurix/packages.scm.",
+    "Full builds completed for verify-lib, libuvc, osu-mime, and python-aiolimiter; qt5-connectivity validated via alias dry-run/lint."
+  ],
+  "commit": "2d7f0c65695775dc59a88d64a5ce6b8954142f2d"
+}

@@ -1,0 +1,150 @@
+{
+  "run_id": "cron-c79f127f-77f8-4d2a-beb6-3c7cf8a9aaad",
+  "chunk_id": "w10",
+  "branch": "cron-c79f127f-w10",
+  "worktree": "/var/tmp/gaurix-cron-c79f127f/w10",
+  "module_file": "guix/gaurix/packages/cron-c79f127f-w10.scm",
+  "selected_packages": [
+    "noto-fonts-emoji-blob",
+    "redhat-fonts",
+    "tailscale",
+    "ttf-material-symbols-variable-git",
+    "upd72020x-fw",
+    "waydroid",
+    "zerotier-one",
+    "arduino-ctags",
+    "asroot",
+    "brscan4"
+  ],
+  "resolved_packages": [
+    {
+      "name": "noto-fonts-emoji-blob",
+      "status_line": "DONE noto-fonts-emoji-blob 15.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New package from upstream Blobmoji release font file; full build rc=0."
+      }
+    },
+    {
+      "name": "redhat-fonts",
+      "status_line": "DONE redhat-fonts 4.1.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New package from RedHatFont upstream source archive with TTF/OTF install phases; full build rc=0."
+      }
+    },
+    {
+      "name": "tailscale",
+      "status_line": "DONE tailscale 1.96.4",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New x86_64 binary-repackage package from official upstream tarball; installs tailscale/tailscaled plus defaults and systemd unit; full build rc=0."
+      }
+    },
+    {
+      "name": "ttf-material-symbols-variable-git",
+      "status_line": "DONE ttf-material-symbols-variable-git (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package mapped to upstream font-google-material-design-icons."
+      }
+    },
+    {
+      "name": "upd72020x-fw",
+      "status_line": "DONE upd72020x-fw 1.0.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New firmware package from archived upstream tarball; installs renesas_usb_fw.mem and bundled license; full build rc=0."
+      }
+    },
+    {
+      "name": "zerotier-one",
+      "status_line": "DONE zerotier-one 1.2.4",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New source package from upstream archive using make + DESTDIR install flow; full build rc=0."
+      }
+    },
+    {
+      "name": "arduino-ctags",
+      "status_line": "DONE arduino-ctags (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Alias package mapped to upstream universal-ctags."
+      }
+    },
+    {
+      "name": "asroot",
+      "status_line": "DONE asroot 1.1.12",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "New package from Codeberg release tarball; linked with libenv + libxcrypt; full build rc=0."
+      }
+    }
+  ],
+  "dependency_packages": [
+    {
+      "name": "libenv",
+      "status_line": "DONE libenv 1.0.3 (dependency)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Added as explicit dependency package required by asroot; full build rc=0."
+      }
+    }
+  ],
+  "remaining_blockers": [
+    {
+      "name": "waydroid",
+      "reason_code": "MISSING_DEPENDENCY_CHAIN",
+      "status_line": "BLOCKED waydroid: python-gbinder/libgbinder dependency chain missing in current channels",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search/package -A confirms no waydroid package currently available."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD review confirms dependency set includes python-gbinder and dbus-python in addition to lxc/nftables/dnsmasq/python-gobject/gtk3."
+        },
+        {
+          "id": "A3",
+          "detail": "Dependency-chain probe: guix import pypi gbinder produced python-gbinder candidate, but upstream setup.py requires pkg-config libgbinder and guix show libgbinder reports package not found."
+        }
+      ]
+    },
+    {
+      "name": "brscan4",
+      "reason_code": "BINARY_RPM_REPACKAGE_PENDING",
+      "status_line": "BLOCKED brscan4: vendor RPM repackaging + udev/hwdb integration recipe still needed",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show/search/package -A found no existing brscan4/Brother SANE package."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD analysis shows architecture-specific Brother RPM repackaging, hwdb generation script usage, and SANE library symlink handling."
+        },
+        {
+          "id": "A3",
+          "detail": "Upstream payload probe confirms vendor artifact availability (brscan4-0.4.11-1.x86_64.rpm returns HTTP 200), but Guix rpm extraction/install wiring remains to be implemented."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Blocker notes module written to guix/gaurix/packages/cron-c79f127f-w10-blocked-notes.scm.",
+    "Validation commands used expression-based targets to avoid modifying shared guix/gaurix/packages.scm.",
+    "This repository emits pre-existing global lint/load warnings from unrelated modules; chunk-local package expressions for this worker all returned lint_rc=0 and build_n_rc=0."
+  ],
+  "commit": "fe651ed679138524bdf2d2f6507293aabbe6813d"
+}

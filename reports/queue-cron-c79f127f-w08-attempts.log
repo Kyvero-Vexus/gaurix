@@ -1,0 +1,486 @@
+===== qmc2-common-git =====
+A1: guix show qmc2-common-git
+guix show: error: qmc2-common-git: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r '^qmc2|qmc2'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh qmc2-common-git
+Cloning into '/tmp/tmp.FOQCzzZ54R/qmc2-common-git'...
+warning: You appear to have cloned an empty repository.
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+cp: cannot stat '/tmp/tmp.FOQCzzZ54R/qmc2-common-git/PKGBUILD': No such file or directory
+A3_RESULT:FETCH_FAIL(rc=1)
+A3_AUR_DIR_CONTENTS:
+total 8
+drwxrwxr-x 2 slime slime 4096 Apr  2 16:32 .
+drwxrwxr-x 3 slime slime 4096 Apr  2 16:32 ..
+
+
+===== lgogdownloader =====
+A1: guix show lgogdownloader
+guix show: error: lgogdownloader: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r 'lgogdownloader|gogdownloader'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh lgogdownloader
+Cloning into '/tmp/tmp.AavyN3Fy06/lgogdownloader'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Fetched AUR PKGBUILD for lgogdownloader -> /var/tmp/gaurix-cron-c79f127f/w08/data/aur-cache/pkgbuilds/lgogdownloader
+A3_RESULT:PKGBUILD_FETCHED
+A3_PKGBUILD_HEAD:
+# Maintainer: Fabio 'Lolix' Loli <fabio.loli@disroot.org> -> https://github.com/FabioLolix
+# Contributor: C. Dominik Bódi <dominikdotbodiatgmxdotde>
+# Contributor: Joe Davison <joe@warhaggis.com>
+
+pkgname=lgogdownloader
+pkgver=3.18
+pkgrel=1
+pkgdesc="Open source downloader for GOG.com games, uses the GOG.com API"
+url="https://github.com/Sude-/lgogdownloader"
+arch=(x86_64 i686 pentium4)
+license=(WTFPL)
+depends=(boost-libs jsoncpp tinyxml2 rhash tidy glibc gcc-libs curl
+         libboost_filesystem.so)
+makedepends=(help2man cmake boost)
+source=("https://github.com/Sude-/lgogdownloader/releases/download/v${pkgver}/lgogdownloader-${pkgver}.tar.gz"
+		)
+sha256sums=('1974f09cb0e0cdfed536937335488548addd92e5c654f4229ac22594a22f8ae0')
+
+prepare() {
+  cd "lgogdownloader-${pkgver}"
+  #patch -Np1 -i ../lgogdownloader-boost-1.89.patch
+}
+
+build() {
+  local _flags=(
+    -DUSE_QT_GUI=OFF
+  )
+
+  cmake -B build -S "lgogdownloader-${pkgver}" -Wno-dev \
+    -DCMAKE_BUILD_TYPE=None \
+    -DCMAKE_INSTALL_PREFIX=/usr \
+    "${_flags[@]}"
+
+  cmake --build build
+}
+
+package() {
+  DESTDIR="${pkgdir}" cmake --install build
+  install -Dm644 "lgogdownloader-${pkgver}"/COPYING -t "${pkgdir}/usr/share/licenses/${pkgname}/"
+}
+
+
+===== linux-lqx =====
+A1: guix show linux-lqx
+guix show: error: linux-lqx: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r 'linux.*liquorix|liquorix|lqx'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh linux-lqx
+Cloning into '/tmp/tmp.s9VLCLV5SX/linux-lqx'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Fetched AUR PKGBUILD for linux-lqx -> /var/tmp/gaurix-cron-c79f127f/w08/data/aur-cache/pkgbuilds/linux-lqx
+A3_RESULT:PKGBUILD_FETCHED
+A3_PKGBUILD_HEAD:
+# Maintainer: Piotr Gorski <lucjan.lucjanov@gmail.com> PGP-Key: BDB26C5A
+# Contributor: shivik <> PGP-Key: 761E423C
+# Contributor: Michael Duell <mail@akurei.me> PGP-Key: 6EE23EBE
+# A special thanks to Steven Barrett for very important suggestions
+# Contributor: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Contributor: Tobias Powalowski <tpowa@archlinux.org>
+# Contributor: Thomas Baechler <thomas@archlinux.org>
+
+### BUILD OPTIONS
+# Set these variables to ANYTHING that is not null to enable them
+
+### Tweak kernel options prior to a build via nconfig
+_makenconfig=
+
+### Tweak kernel options prior to a build via menuconfig
+_makemenuconfig=
+
+### Tweak kernel options prior to a build via xconfig
+_makexconfig=
+
+### Tweak kernel options prior to a build via gconfig
+_makegconfig=
+
+# Compile ONLY used modules to VASTLY reduce the number of modules built
+# and the build time.
+#
+# To keep track of which modules are needed for your specific system/hardware,
+# give module_db script a try: https://aur.archlinux.org/packages/modprobed-db
+# This PKGBUILD read the database kept if it exists
+#
+# More at this wiki page ---> https://wiki.archlinux.org/index.php/Modprobed-db
+_localmodcfg=
+
+# Use the current kernel's .config file
+# Enabling this option will use the .config of the RUNNING kernel rather than
+# the ARCH defaults. Useful when the package gets updated and you already went
+# through the trouble of customizing your config options.  NOT recommended when
+# a new kernel is released, but again, convenient for package bumps.
+_use_current=
+
+
+
+===== fooyin =====
+A1: guix show fooyin
+guix show: error: fooyin: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r 'fooyin'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh fooyin
+Cloning into '/tmp/tmp.rdxBNNu9Oj/fooyin'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Fetched AUR PKGBUILD for fooyin -> /var/tmp/gaurix-cron-c79f127f/w08/data/aur-cache/pkgbuilds/fooyin
+A3_RESULT:PKGBUILD_FETCHED
+A3_PKGBUILD_HEAD:
+# Maintainer: zxp19821005 <zxp19821005 at 163 dot com>
+pkgname=fooyin
+_pkgname=Fooyin
+pkgver=0.10.2
+pkgrel=2
+pkgdesc="A customisable music player."
+arch=('x86_64')
+url="https://www.fooyin.org/"
+_ghurl="https://github.com/ludouzi/fooyin"
+license=('GPL-3.0-only')
+depends=(
+    'qt6-base'
+    'alsa-lib'
+    'taglib'
+    'ffmpeg'
+    'kdsingleapplication'
+    'libvgm-git'
+    'qcoro'
+)
+makedepends=(
+    'qt6-svg'
+    'qt6-tools'
+    'ninja'
+    'cmake'
+    'libpipewire'
+    'icu'
+    'libopenmpt'
+    'libsndfile'
+    'libebur128'
+    'libarchive'
+    'libgme'
+    'soundtouch'
+    'git'
+)
+optdepends=(
+    'sdl2: For the SDL2 audio output plugin'
+    'libpipewire: For the PipeWire audio output plugin'
+    'libopenmpt: For the OpenMPT audio input plugin'
+    'libgme: For the GME audio input plugin'
+    'libsndfile: For the GME audio input plugin'
+
+
+===== vscodium-translucent =====
+A1: guix show vscodium-translucent
+guix show: error: vscodium-translucent: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r 'vscodium|codium|vscode'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh vscodium-translucent
+Cloning into '/tmp/tmp.kEqEqwGfSU/vscodium-translucent'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Fetched AUR PKGBUILD for vscodium-translucent -> /var/tmp/gaurix-cron-c79f127f/w08/data/aur-cache/pkgbuilds/vscodium-translucent
+A3_RESULT:PKGBUILD_FETCHED
+A3_PKGBUILD_HEAD:
+# Maintainer: Avi Tretiak <avi (at) babi (dot) uy>.
+# lightly edited copy of PKGBUILD from vscodium, originally created by Semirose.
+
+pkgname=vscodium-translucent
+# Placeholder for mksrcinfo; actual version is set by pkgver()
+pkgver=1.109.51242
+pkgrel=1
+pkgdesc="Free/Libre Open Source Software Binaries of VSCode with the translucent patch applied (git build from latest release)."
+arch=('x86_64' 'aarch64' 'armv7h')
+url='https://github.com/VSCodium/vscodium'
+license=('MIT')
+options=(!strip !debug)
+depends=(
+    'fontconfig'
+    'libxtst'
+    'gtk3'
+    'cairo'
+    'alsa-lib'
+    'nss'
+    'libnotify'
+    'libxss'
+    'glibc>=2.28-4'
+    'libxkbfile'
+)
+optdepends=(
+    'gvfs: For move to trash functionality'
+    'libdbusmenu-glib: For KDE global menu'
+)
+makedepends=(
+    'nvm'
+    'rustup'
+    'gulp'
+    'jq'
+    'libxdmcp'
+    'git'
+    'git-lfs'
+    'patch'
+    'python'
+    'python-distutils-extra'
+    'pkg-config'
+
+
+===== rom-properties =====
+A1: guix show rom-properties
+guix show: error: rom-properties: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r 'rom-properties|rom'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh rom-properties
+Cloning into '/tmp/tmp.rdOFVk3vhY/rom-properties'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Fetched AUR PKGBUILD for rom-properties -> /var/tmp/gaurix-cron-c79f127f/w08/data/aur-cache/pkgbuilds/rom-properties
+A3_RESULT:PKGBUILD_FETCHED
+A3_PKGBUILD_HEAD:
+# Maintainer: Darvin Delgado <dnmodder at gmail dot com>
+
+pkgname=('rom-properties' 'rom-properties-gtk' 'rom-properties-kde')
+pkgbase=rom-properties
+pkgdesc="Shell extension for displaying ROM and disc image metadata in file managers"
+pkgver=2.7.1
+pkgrel=1
+arch=('x86_64')
+url='https://github.com/GerbilSoft/rom-properties'
+license=('GPL-2.0-or-later')
+makedepends=(
+    'cairo'
+    'cmake'
+    'extra-cmake-modules'
+    'fmt'
+    'gdk-pixbuf2'
+    'gettext'
+    'glib2-devel'
+    'gsound'
+    'gtk3'
+    'gtk4'
+    'kcrash'
+    'kio'
+    'kfilemetadata'
+    'kwidgetsaddons'
+    'libnautilus-extension'
+    'pkgconf'
+    'python'
+    'qt5-base'
+    'qt6-base'
+    'qt6-tools'
+    'tinyxml2'
+)
+source=(
+    "$pkgbase-$pkgver.tar.gz::https://github.com/GerbilSoft/rom-properties/archive/v$pkgver.tar.gz"
+)
+sha256sums=(
+    '6856e3ad88720d0571e82fcac64c0c51605f8ddfbd942130ee5a6e688a2bc399'
+)
+options=(!debug)
+
+
+===== ros2-arch-deps =====
+A1: guix show ros2-arch-deps
+guix show: error: ros2-arch-deps: package not found
+A1_RESULT:NOT_FOUND(rc=1)
+
+A2: guix search -r 'ros2|ament|colcon|vcstool'
+guix search: error: r: unrecognized option
+A2_RESULT:SEARCH_FAIL(rc=1)
+
+A3: scripts/fetch-aur-pkgbuild.sh ros2-arch-deps
+Cloning into '/tmp/tmp.W9Lirnu5pH/ros2-arch-deps'...
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+Fetched AUR PKGBUILD for ros2-arch-deps -> /var/tmp/gaurix-cron-c79f127f/w08/data/aur-cache/pkgbuilds/ros2-arch-deps
+A3_RESULT:PKGBUILD_FETCHED
+A3_PKGBUILD_HEAD:
+# Contributor: dangerdev <dangerdev004@protonmail.com>
+# Contributor: leuko <aur_202302 at aydos.de>
+# Contributor: Tobias Borgert <tobias.borgert@gmail.com>
+# Contributor: kartikmohta
+# Contributor: calvertdw
+pkgname=ros2-arch-deps
+pkgver=0.23
+pkgrel=1
+pkgdesc="[Meta-PKG] Dependencies for building ROS2 on Arch"
+url="https://docs.ros.org/"
+arch=('any')
+license=('none')
+
+depends=(
+  'asio'
+  'bullet'
+  'cmake'
+  'curl'
+  'eigen'
+  'git'
+  'glew'
+  'glu'
+  'hdf5'
+  'libxaw'
+  'libxrandr'
+  'log4cxx'
+  'opencv'
+  'openssl'
+  'poco'
+  'procps-ng' # provides /usr/bin/free command
+  'python'
+  'python-argcomplete'
+  'python-build'
+  'python-cryptography'
+  'python-installer'
+  'python-lark-parser'
+  'python-netifaces'
+  'python-notify2'
+  'python-numpy'
+  'python-pyqt5'
+
+

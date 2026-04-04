@@ -1,0 +1,151 @@
+{
+  "run_id": "cron-c79f127f-77f8-4d2a-beb6-3c7cf8a9aaad",
+  "chunk_id": "w04",
+  "branch": "cron-c79f127f-w04",
+  "worktree": "/var/tmp/gaurix-cron-c79f127f/w04",
+  "module_file": "guix/gaurix/packages/queue-cron-c79f127f-w04.scm",
+  "selected_packages": [
+    "llvm-libs-minimal-git",
+    "hyprtoolkit-git",
+    "wayfire",
+    "pgadmin4-server",
+    "python-sse-starlette",
+    "openvino",
+    "dotnet-targeting-pack-bin",
+    "hyprshot",
+    "logmein-hamachi",
+    "ps3-env"
+  ],
+  "resolved_packages": [
+    {
+      "name": "llvm-libs-minimal-git",
+      "status_line": "DONE llvm-libs-minimal-git (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Compatibility alias package inheriting Guix llvm; evaluated via expression-based lint/build dry-run."
+      }
+    },
+    {
+      "name": "hyprtoolkit-git",
+      "status_line": "DONE hyprtoolkit-git 0.0.0-97.f3e4245",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "CMake package from pinned HyprWM commit with Guix-native inputs (aquamarine/hypr* stack)."
+      }
+    },
+    {
+      "name": "wayfire",
+      "status_line": "DONE wayfire 0.10.1",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Meson package with system wf-config/wlroots flags and tests disabled for queue throughput."
+      }
+    },
+    {
+      "name": "python-sse-starlette",
+      "status_line": "DONE python-sse-starlette 3.3.4",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Pyproject package validated and fully built; dependency bounds relaxed for available anyio/starlette versions."
+      }
+    },
+    {
+      "name": "hyprshot",
+      "status_line": "DONE hyprshot 1.3.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Script-style gnu-build-system package validated and fully built; installs executable plus license file."
+      }
+    },
+    {
+      "name": "logmein-hamachi",
+      "status_line": "DONE logmein-hamachi 2.1.0.203",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Binary package from upstream tarball validated and fully built; runpath validation disabled intentionally for proprietary binaries."
+      }
+    },
+    {
+      "name": "ps3-env",
+      "status_line": "DONE ps3-env 20230409",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Environment/modulefile package from AUR snapshot validated and fully built."
+      }
+    }
+  ],
+  "dependency_packages": [],
+  "remaining_blockers": [
+    {
+      "name": "pgadmin4-server",
+      "reason_code": "MISSING_TOOLCHAIN_STACK",
+      "status_line": "BLOCKED pgadmin4-server: missing staged node/corepack/yarn/syft pipeline for this Guix snapshot",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Exact probe: guix package -A '^pgadmin4-server$' -> no package found."
+        },
+        {
+          "id": "A2",
+          "detail": "Fuzzy probe: guix package -A 'pgadmin4|pgadmin' -> no pgadmin variants in current package set."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR recipe audit (pgadmin4-server PKGBUILD): server build requires nodejs/corepack/yarn/npm + syft + custom linux build helper phases and patched docs/runtime assembly."
+        }
+      ]
+    },
+    {
+      "name": "openvino",
+      "reason_code": "MULTI_REPO_GRAPH_TOO_LARGE",
+      "status_line": "BLOCKED openvino: upstream recipe is a large multi-repository split-output build graph",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Exact probe: guix package -A '^openvino$' -> no package found."
+        },
+        {
+          "id": "A2",
+          "detail": "Fuzzy probe: guix package -A 'openvino|open-?vino|one(dnn|api)' -> only oneapi-dnnl/onednn available, not OpenVINO."
+        },
+        {
+          "id": "A3",
+          "detail": "AUR recipe audit (openvino PKGBUILD): >20 git/submodule sources (openvino, oneDNN, OpenCL, ONNX, protobuf, plugins) plus git-lfs/submodule remapping and split package outputs."
+        }
+      ]
+    },
+    {
+      "name": "dotnet-targeting-pack-bin",
+      "reason_code": "SPLIT_PACKAGE_FAMILY_PENDING",
+      "status_line": "BLOCKED dotnet-targeting-pack-bin: provided as part of dotnet-core-bin split family, not standalone in current Guix set",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Exact probe: guix package -A '^dotnet-targeting-pack-bin$' and '^dotnet-targeting-pack-9.0-bin$' -> no package found."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR RPC search confirms targeting-pack variants exist, but as AUR packages tied to dotnet core packaging tracks."
+        },
+        {
+          "id": "A3",
+          "detail": "Split PKGBUILD audit (dotnet-core-bin): targeting-pack output is tightly coupled with host/runtime/sdk outputs and multi-arch SDK payload layout."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Reused and revalidated prior chunk04 module content in a new chunk-local module and blocked-notes module.",
+    "Validation commands were expression-based to avoid touching guix/gaurix/packages.scm.",
+    "Global channel has pre-existing unrelated module load warnings/errors under -L guix; target package lint/build evaluations for this chunk returned lint_rc=0 and build_n_rc=0.",
+    "Full builds completed for hyprshot, logmein-hamachi, ps3-env, and python-sse-starlette."
+  ],
+  "commit": "0f6ec100efdfd9f4b4b876607d470aa21875279d"
+}

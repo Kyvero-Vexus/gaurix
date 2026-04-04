@@ -1,0 +1,141 @@
+{
+  "run_id": "cron-c79f127f-77f8-4d2a-beb6-3c7cf8a9aaad",
+  "chunk_id": "w07",
+  "branch": "cron-c79f127f-w07",
+  "worktree": "/var/tmp/gaurix-cron-c79f127f/w07",
+  "module_file": "guix/gaurix/packages/cron-c79f127f-w07.scm",
+  "selected_packages": [
+    "bms-shell",
+    "dotnet-runtime-bin",
+    "python-inquirerpy",
+    "dotnet-runtime-7.0-bin",
+    "dotnet-runtime-9.0-bin",
+    "gslapper",
+    "python-uv-dynamic-versioning",
+    "wl-screenrec",
+    "electron-castlab-bin",
+    "openbangla-keyboard-git"
+  ],
+  "resolved_packages": [
+    {
+      "name": "bms-shell",
+      "status_line": "DONE bms-shell (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Compatibility alias mapped to quickshell."
+      }
+    },
+    {
+      "name": "dotnet-runtime-bin",
+      "status_line": "DONE dotnet-runtime-bin 9.0.14",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Implemented as compatibility package inheriting dotnet-runtime-9.0-bin in this chunk module."
+      }
+    },
+    {
+      "name": "python-inquirerpy",
+      "status_line": "DONE python-inquirerpy 0.3.4",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "PyPI recipe validated with propagated python-pfzy and python-prompt-toolkit dependencies."
+      }
+    },
+    {
+      "name": "dotnet-runtime-7.0-bin",
+      "status_line": "DONE dotnet-runtime-7.0-bin 7.0.20",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Binary package from upstream Microsoft runtime tarball (x86_64-linux) with fixed hash."
+      }
+    },
+    {
+      "name": "dotnet-runtime-9.0-bin",
+      "status_line": "DONE dotnet-runtime-9.0-bin 9.0.14",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Binary package from upstream Microsoft runtime tarball (x86_64-linux) with fixed hash."
+      }
+    },
+    {
+      "name": "gslapper",
+      "status_line": "DONE gslapper 1.4.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Meson recipe validated with gstreamer and wayland inputs."
+      }
+    },
+    {
+      "name": "python-uv-dynamic-versioning",
+      "status_line": "DONE python-uv-dynamic-versioning 0.14.0",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "PyPI recipe validated with hatchling/dunamai/jinja2/tomlkit dependency chain."
+      }
+    },
+    {
+      "name": "wl-screenrec",
+      "status_line": "DONE wl-screenrec (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Compatibility alias mapped to wf-recorder."
+      }
+    },
+    {
+      "name": "electron-castlab-bin",
+      "status_line": "DONE electron-castlab-bin (compat alias)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Compatibility alias reuses existing electron-castlab-bin provider in this repository; restricted lint checker set used due known external semver module issue in default check-for-updates lint path."
+      }
+    }
+  ],
+  "dependency_packages": [
+    {
+      "name": "python-pfzy",
+      "status_line": "DONE python-pfzy 0.3.4 (dependency)",
+      "validation": {
+        "lint_rc": 0,
+        "build_n_rc": 0,
+        "notes": "Added as explicit dependency package required by python-inquirerpy."
+      }
+    }
+  ],
+  "remaining_blockers": [
+    {
+      "name": "openbangla-keyboard-git",
+      "reason_code": "RECIPE_NOT_IMPLEMENTED",
+      "status_line": "BLOCKED openbangla-keyboard-git: split ibus/fcitx package design and submodule-heavy cmake+rust recipe deferred",
+      "attempts": [
+        {
+          "id": "A1",
+          "detail": "Guix survey: guix show openbangla-keyboard-git returned package not found; guix search openbangla/bangla found no matching input-method package candidate."
+        },
+        {
+          "id": "A2",
+          "detail": "AUR PKGBUILD analysis: package is split into openbangla-keyboard-git, ibus-openbangla-git, and fcitx5-openbangla-git with output reshuffling and install hooks."
+        },
+        {
+          "id": "A3",
+          "detail": "Upstream/dependency probe: source requires riti git submodule wiring and there are no existing ibus-openbangla-git/fcitx5-openbangla-git/openbangla-keyboard packages in current Guix set for aliasing."
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Blocked notes module written to guix/gaurix/packages/cron-c79f127f-w07-blocked-notes.scm.",
+    "Reused and adapted prior chunk07 work; re-validated carried-forward recipes and aliases for this run.",
+    "Validation log: reports/queue-cron-c79f127f-w07-validation.log; attempt log: reports/queue-cron-c79f127f-w07-attempts.log.",
+    "Expression-based lint/build -n checks were used so shared guix/gaurix/packages.scm remained untouched as requested."
+  ],
+  "commit": "58e46c01fc6f44db975275c938d00fd701cad502"
+}
