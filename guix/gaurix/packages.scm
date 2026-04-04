@@ -135,6 +135,9 @@
 #:use-module (gaurix packages cron-c79f127f-integrated)
   #:use-module (gaurix packages queue-20260404-daily1)
   #:use-module (gaurix packages queue-20260404-daily1-blocked-notes)
+  #:use-module (gaurix packages cron-5a2fb251-recipe-w01)
+  #:use-module (gaurix packages cron-5a2fb251-recipe-w02)
+  #:use-module (gaurix packages cron-5a2fb251-recipe-w03)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3437,4 +3440,15 @@ elephant-bin
             python-youtube-transcript-api
             crudini
             python-vapor-steam
+            openssl-1.0
+            lib32-openssl-1.0
+            llama.cpp-vulkan
+            lib32-openssl-1.1
+            libvpx1.3
+            lib32-libvpx1.3
+            lib32-glew1.10
+            glew1.10
+            llama.cpp-cuda
+            elephant
+            pilowlava-font-common
 ))
