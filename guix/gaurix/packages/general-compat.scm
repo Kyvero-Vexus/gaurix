@@ -1794,7 +1794,7 @@
 
 (define-public xremap-wlroots-bin xremap-wlroots)
 
-(define-public swift-bin swift)
+(define-public swift-bin (specification->package "swift"))
 
 (define-public neovim-nightly-bin neovim)
 

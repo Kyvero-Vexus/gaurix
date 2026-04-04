@@ -143,6 +143,8 @@
   #:use-module (gaurix packages cron-c79f127f-r8-w03)
   #:use-module (gaurix packages cron-c79f127f-r8-w04)
   #:use-module (gaurix packages cron-c79f127f-r8-w05)
+  #:use-module (gaurix packages queue-20260404-daily2)
+  #:use-module (gaurix packages queue-20260404-daily2-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
