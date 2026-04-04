@@ -133,6 +133,8 @@
   #:use-module (gaurix packages queue-20260403p100daily7)
   #:use-module (gaurix packages queue-20260403p100daily7-blocked-notes)
 #:use-module (gaurix packages cron-c79f127f-integrated)
+  #:use-module (gaurix packages queue-20260404-daily1)
+  #:use-module (gaurix packages queue-20260404-daily1-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3429,4 +3431,10 @@ elephant-bin
             python-opencensus-context
             python-pfzy
             python-typing-inspection
+            python-bidi
+            python-cobble
+            python-mammoth
+            python-youtube-transcript-api
+            crudini
+            python-vapor-steam
 ))
