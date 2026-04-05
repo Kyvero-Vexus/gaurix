@@ -153,6 +153,9 @@
   #:use-module (gaurix packages queue-20260404-daily3-blocked-notes)
   #:use-module (gaurix packages cron-ce7dd90b-daily3)
   #:use-module (gaurix packages cron-ce7dd90b-daily3-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w00)
+  #:use-module (gaurix packages cron-c79f127f-r22-w01)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3604,6 +3607,8 @@ elephant-bin
             vesc-tool
             warp-cli
             waydroid
+
+            ))
             ai-pkg-bin
             amdctl
             arch-udev-usb-sync
@@ -3624,6 +3629,7 @@ elephant-bin
             cosmic-settings-daemon-git
             cosmic-settings-git
             cosmic-workspaces-git
+            deb2targz
             dmg2img
             docker-language-server
             dolphin-emu-nogui-git
@@ -3658,11 +3664,14 @@ elephant-bin
             lem-editor-git
             liberica-jdk-full-bin
             libfprint-2-tod1-synatudor-git
+            libjodycode
             libstdc++5
+            libticables
             logria
             max-appimage
             mdevctl
             mozlz4
+            notify-send.sh
             nteract
             nvidia-550xx-dkms
             nvidia-550xx-utils
@@ -3675,10 +3684,13 @@ elephant-bin
             python-doi2bib3
             python-lynxpresence
             python-materialyoucolor
+            python-pid
+            python-steamgriddb
             python-validity
             python3-xcgf
             python3-xcpf
             qflipper-bin
+            qtutilities-qt6
             recoil-engine-rc
             rivalcfg-tray
             scalar-desktop-bin
@@ -3691,12 +3703,14 @@ elephant-bin
             trackma
             trueconf
             trustedqsl
+            ttf-gabarito
             ttf-gabarito-git
             ttf-genjyuu-gothic
             ttf-meslo-nerd-font-powerlevel10k
             typing-test
             visual-paradigm-community
             vivictpp
+            vpcs
             waveterm-bin
             wayclip-cli
             wayfire
