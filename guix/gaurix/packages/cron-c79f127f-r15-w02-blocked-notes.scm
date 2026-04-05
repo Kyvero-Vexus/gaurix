@@ -1,3 +1,5 @@
+(define-module (gaurix packages cron-c79f127f-r15-w02-blocked-notes))
+
 ;;; Blocked notes for cron-c79f127f-r15 worker w02.
 ;;; All 10 packages RESOLVED or ALREADY_DONE.
 ;;;

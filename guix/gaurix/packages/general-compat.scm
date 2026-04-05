@@ -70,6 +70,29 @@
   #:use-module (gnu packages version-control)
   #:use-module (gnu packages audio)
   #:use-module (gnu packages bootloaders)
+#:use-module (gnu packages astronomy)
+#:use-module (gnu packages ntp)
+#:use-module (gnu packages emacs-xyz)
+#:use-module (gnu packages calendar)
+#:use-module (gnu packages cmake)
+#:use-module (gnu packages firmware)
+#:use-module (gnu packages geo)
+#:use-module (gnu packages gnunet)
+#:use-module (gnu packages gnustep)
+#:use-module (gnu packages golang-apps)
+#:use-module (gnu packages golang-check)
+#:use-module (gnu packages kde-frameworks)
+#:use-module (gnu packages lxde)
+#:use-module (gnu packages maths)
+#:use-module (gnu packages patchutils)
+#:use-module (gnu packages rust)
+#:use-module (gnu packages scanner)
+#:use-module (gnu packages shellutils)
+#:use-module (gnu packages suckless)
+#:use-module (gnu packages upnp)
+#:use-module (gnu packages vulkan)
+#:use-module (gnu packages wget)
+#:use-module (gnu packages zig-xyz)
   #:use-module (gnu packages electronics)
   #:use-module (gnu packages emulators)
   #:use-module (gnu packages hexedit)
@@ -433,7 +456,7 @@
             kbdd-git
             bombadillo-git
             py-spy-bin
-            ginkgo-cli
+            ;; ginkgo-cli  ; FIXME: ginkgo not exported from (gnu packages golang-check)
             rust-git
             prjtrellis-git
             celestia-qt6-git
