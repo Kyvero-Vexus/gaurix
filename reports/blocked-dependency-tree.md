@@ -1,133 +1,130 @@
 # Blocked Dependency Tree
 
-**Timestamp:** 2026-04-05T20:00:23.154736+00:00
-**Run:** cron-c79f127f-r24-w03
-**Total BLOCKED:** 6515
+**Timestamp:** 2026-04-05T22:29:38.518473+00:00
+**Run:** cron-c79f127f-r26-w03
+**Total blocked:** 6463
 
-## Top 20 Priority Queue
+## Priority Queue (top 120)
 
-| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
-|------|---------|-------------|-------------|------------|
-| 1 | html2markdown | 0 | 12 | 3 |
-| 2 | xapp-thumbnailers-common | 0 | 9 | 5 |
-| 3 | qt5-doc | 0 | 8 | 15 |
-| 4 | bcompare | 0 | 7 | 2 |
-| 5 | domake | 0 | 7 | 4 |
-| 6 | archlinux-java-run | 0 | 6 | 2 |
-| 7 | auto-auto-complete | 0 | 6 | 2 |
-| 8 | asf | 0 | 6 | 4 |
-| 9 | cosmic-icons-git | 0 | 5 | 3 |
-| 10 | openvino | 0 | 5 | 21 |
-| 11 | waydroid | 0 | 4 | 0 |
-| 12 | xrizer-common | 0 | 4 | 9 |
-| 13 | qt5-connectivity | 0 | 3 | 4 |
-| 14 | cosmic-randr-git | 0 | 3 | 5 |
-| 15 | zmusic | 0 | 3 | 5 |
-| 16 | python-sqlite-migrate | 0 | 3 | 8 |
-| 17 | hyprtoolkit-git | 0 | 3 | 15 |
-| 18 | wayfire | 0 | 3 | 15 |
-| 19 | llvm-libs-minimal-git | 0 | 3 | 19 |
-| 20 | python-mcp | 0 | 3 | 21 |
-
-## Selected 100
-
-1. html2markdown (blocked_deps=0, rev_deps=12, total=3)
-2. xapp-thumbnailers-common (blocked_deps=0, rev_deps=9, total=5)
-3. qt5-doc (blocked_deps=0, rev_deps=8, total=15)
-4. bcompare (blocked_deps=0, rev_deps=7, total=2)
-5. domake (blocked_deps=0, rev_deps=7, total=4)
-6. archlinux-java-run (blocked_deps=0, rev_deps=6, total=2)
-7. auto-auto-complete (blocked_deps=0, rev_deps=6, total=2)
-8. asf (blocked_deps=0, rev_deps=6, total=4)
-9. cosmic-icons-git (blocked_deps=0, rev_deps=5, total=3)
-10. openvino (blocked_deps=0, rev_deps=5, total=21)
-11. waydroid (blocked_deps=0, rev_deps=4, total=0)
-12. xrizer-common (blocked_deps=0, rev_deps=4, total=9)
-13. qt5-connectivity (blocked_deps=0, rev_deps=3, total=4)
-14. cosmic-randr-git (blocked_deps=0, rev_deps=3, total=5)
-15. zmusic (blocked_deps=0, rev_deps=3, total=5)
-16. python-sqlite-migrate (blocked_deps=0, rev_deps=3, total=8)
-17. hyprtoolkit-git (blocked_deps=0, rev_deps=3, total=15)
-18. wayfire (blocked_deps=0, rev_deps=3, total=15)
-19. llvm-libs-minimal-git (blocked_deps=0, rev_deps=3, total=19)
-20. python-mcp (blocked_deps=0, rev_deps=3, total=21)
-21. logmein-hamachi (blocked_deps=0, rev_deps=2, total=0)
-22. mips64-linux-gnu-linux-api-headers (blocked_deps=0, rev_deps=2, total=1)
-23. lianwalld-bin (blocked_deps=0, rev_deps=2, total=2)
-24. xone-dongle-firmware (blocked_deps=0, rev_deps=2, total=2)
-25. gtk-sharp-2 (blocked_deps=0, rev_deps=2, total=3)
-26. foobar2000 (blocked_deps=0, rev_deps=2, total=4)
-27. libelectron (blocked_deps=0, rev_deps=2, total=4)
-28. paru (blocked_deps=0, rev_deps=2, total=4)
-29. bms-shell (blocked_deps=0, rev_deps=2, total=7)
-30. dotnet-runtime-9.0-bin (blocked_deps=0, rev_deps=2, total=8)
-31. gslapper (blocked_deps=0, rev_deps=2, total=8)
-32. wl-screenrec (blocked_deps=0, rev_deps=2, total=8)
-33. xboxdrv (blocked_deps=0, rev_deps=2, total=9)
-34. openbangla-keyboard-git (blocked_deps=0, rev_deps=2, total=10)
-35. linux-lqx (blocked_deps=0, rev_deps=2, total=17)
-36. vscodium-translucent (blocked_deps=0, rev_deps=2, total=21)
-37. ros2-arch-deps (blocked_deps=0, rev_deps=2, total=44)
-38. sonic-win (blocked_deps=0, rev_deps=2, total=61)
-39. tailscale (blocked_deps=0, rev_deps=1, total=0)
-40. aspnet-runtime-bin (blocked_deps=0, rev_deps=1, total=1)
-41. aspnet-targeting-pack-bin (blocked_deps=0, rev_deps=1, total=1)
-42. brscan4 (blocked_deps=0, rev_deps=1, total=1)
-43. scala3 (blocked_deps=0, rev_deps=1, total=1)
-44. tuxedo-drivers-dkms (blocked_deps=0, rev_deps=1, total=1)
-45. wd719x-firmware (blocked_deps=0, rev_deps=1, total=1)
-46. crossplane (blocked_deps=0, rev_deps=1, total=2)
-47. elephant-archlinuxpkgs-bin (blocked_deps=0, rev_deps=1, total=2)
-48. elephant-bluetooth-bin (blocked_deps=0, rev_deps=1, total=2)
-49. elephant-desktopapplications-bin (blocked_deps=0, rev_deps=1, total=2)
-50. elephant-menus-bin (blocked_deps=0, rev_deps=1, total=2)
-51. elephant-providerlist-bin (blocked_deps=0, rev_deps=1, total=2)
-52. elephant-runner-bin (blocked_deps=0, rev_deps=1, total=2)
-53. elephant-symbols-bin (blocked_deps=0, rev_deps=1, total=2)
-54. elephant-todo-bin (blocked_deps=0, rev_deps=1, total=2)
-55. elephant-unicode-bin (blocked_deps=0, rev_deps=1, total=2)
-56. elephant-websearch-bin (blocked_deps=0, rev_deps=1, total=2)
-57. java-service-wrapper (blocked_deps=0, rev_deps=1, total=2)
-58. jre25-temurin (blocked_deps=0, rev_deps=1, total=2)
-59. lib32-l-smash (blocked_deps=0, rev_deps=1, total=2)
-60. libtifiles (blocked_deps=0, rev_deps=1, total=2)
-61. makepkg-git-lfs-proto (blocked_deps=0, rev_deps=1, total=2)
-62. mint-y-icons (blocked_deps=0, rev_deps=1, total=2)
-63. mintcommon (blocked_deps=0, rev_deps=1, total=2)
-64. mips64-linux-gnu-binutils (blocked_deps=0, rev_deps=1, total=2)
-65. new-lg4ff-dkms-git (blocked_deps=0, rev_deps=1, total=2)
-66. numix-icon-theme-git (blocked_deps=0, rev_deps=1, total=2)
-67. otf-misans (blocked_deps=0, rev_deps=1, total=2)
-68. otf-misans-arabic (blocked_deps=0, rev_deps=1, total=2)
-69. otf-misans-devanagari (blocked_deps=0, rev_deps=1, total=2)
-70. otf-misans-gujarati (blocked_deps=0, rev_deps=1, total=2)
-71. otf-misans-gurmukhi (blocked_deps=0, rev_deps=1, total=2)
-72. otf-misans-khmer (blocked_deps=0, rev_deps=1, total=2)
-73. otf-misans-l3 (blocked_deps=0, rev_deps=1, total=2)
-74. otf-misans-lao (blocked_deps=0, rev_deps=1, total=2)
-75. otf-misans-latin (blocked_deps=0, rev_deps=1, total=2)
-76. otf-misans-myanmar (blocked_deps=0, rev_deps=1, total=2)
-77. otf-misans-tc (blocked_deps=0, rev_deps=1, total=2)
-78. otf-misans-thai (blocked_deps=0, rev_deps=1, total=2)
-79. otf-misans-tibetan (blocked_deps=0, rev_deps=1, total=2)
-80. piper-voices-common (blocked_deps=0, rev_deps=1, total=2)
-81. python-fvs (blocked_deps=0, rev_deps=1, total=2)
-82. python-sysv_ipc (blocked_deps=0, rev_deps=1, total=2)
-83. qt5-serialbus (blocked_deps=0, rev_deps=1, total=2)
-84. ruby-httpx (blocked_deps=0, rev_deps=1, total=2)
-85. ruby-kaitai-struct (blocked_deps=0, rev_deps=1, total=2)
-86. sac-core (blocked_deps=0, rev_deps=1, total=2)
-87. sh-elf-binutils (blocked_deps=0, rev_deps=1, total=2)
-88. stardust-xr-black-hole (blocked_deps=0, rev_deps=1, total=2)
-89. stardust-xr-flatland (blocked_deps=0, rev_deps=1, total=2)
-90. stardust-xr-gravity (blocked_deps=0, rev_deps=1, total=2)
-91. stardust-xr-protostar (blocked_deps=0, rev_deps=1, total=2)
-92. stardust-xr-solar-sailer (blocked_deps=0, rev_deps=1, total=2)
-93. ttf-misans (blocked_deps=0, rev_deps=1, total=2)
-94. ttf-misans-arabic (blocked_deps=0, rev_deps=1, total=2)
-95. ttf-misans-devanagari (blocked_deps=0, rev_deps=1, total=2)
-96. ttf-misans-gujarati (blocked_deps=0, rev_deps=1, total=2)
-97. ttf-misans-gurmukhi (blocked_deps=0, rev_deps=1, total=2)
-98. ttf-misans-khmer (blocked_deps=0, rev_deps=1, total=2)
-99. ttf-misans-l3 (blocked_deps=0, rev_deps=1, total=2)
-100. ttf-misans-lao (blocked_deps=0, rev_deps=1, total=2)
+| Rank | Package | Blocked Deps | Reverse Deps | Total Deps | Blocked Dep Names |
+|------|---------|-------------|-------------|------------|-------------------|
+| 1 | qt5-doc | 0 | 8 | 15 |  |
+| 2 | asf | 0 | 6 | 4 |  |
+| 3 | openvino | 0 | 5 | 21 |  |
+| 4 | waydroid | 0 | 4 | 0 |  |
+| 5 | wayfire | 0 | 4 | 15 |  |
+| 6 | pilowlava-font-common | 0 | 3 | 3 |  |
+| 7 | qt5-connectivity | 0 | 3 | 4 |  |
+| 8 | cosmic-randr-git | 0 | 3 | 5 |  |
+| 9 | hyprtoolkit-git | 0 | 3 | 15 |  |
+| 10 | llvm-libs-minimal-git | 0 | 3 | 19 |  |
+| 11 | logmein-hamachi | 0 | 2 | 0 |  |
+| 12 | mips64-linux-gnu-linux-api-headers | 0 | 2 | 1 |  |
+| 13 | xone-dongle-firmware | 0 | 2 | 2 |  |
+| 14 | flite1 | 0 | 2 | 3 |  |
+| 15 | gtk-sharp-2 | 0 | 2 | 3 |  |
+| 16 | foobar2000 | 0 | 2 | 4 |  |
+| 17 | libelectron | 0 | 2 | 4 |  |
+| 18 | openrc | 0 | 2 | 4 |  |
+| 19 | bms-shell | 0 | 2 | 7 |  |
+| 20 | lcevcdec | 0 | 2 | 7 |  |
+| 21 | openbangla-keyboard-git | 0 | 2 | 10 |  |
+| 22 | gradle8 | 0 | 2 | 13 |  |
+| 23 | linux-lqx | 0 | 2 | 17 |  |
+| 24 | vscodium-translucent | 0 | 2 | 21 |  |
+| 25 | ros2-arch-deps | 0 | 2 | 44 |  |
+| 26 | sonic-win | 0 | 2 | 61 |  |
+| 27 | brother-lpr-drivers-common | 0 | 1 | 0 |  |
+| 28 | tailscale | 0 | 1 | 0 |  |
+| 29 | aspnet-runtime-bin | 0 | 1 | 1 |  |
+| 30 | aspnet-targeting-pack-bin | 0 | 1 | 1 |  |
+| 31 | tuxedo-drivers-dkms | 0 | 1 | 1 |  |
+| 32 | jre25-temurin | 0 | 1 | 2 |  |
+| 33 | libtifiles | 0 | 1 | 2 |  |
+| 34 | mips64-linux-gnu-binutils | 0 | 1 | 2 |  |
+| 35 | new-lg4ff-dkms-git | 0 | 1 | 2 |  |
+| 36 | openhab5 | 0 | 1 | 2 |  |
+| 37 | piper-voices-common | 0 | 1 | 2 |  |
+| 38 | qt5-serialbus | 0 | 1 | 2 |  |
+| 39 | recoil2png | 0 | 1 | 2 |  |
+| 40 | sac-core | 0 | 1 | 2 |  |
+| 41 | sdrpp-headers-git | 0 | 1 | 2 |  |
+| 42 | sh-elf-binutils | 0 | 1 | 2 |  |
+| 43 | stardust-xr-black-hole | 0 | 1 | 2 |  |
+| 44 | stardust-xr-flatland | 0 | 1 | 2 |  |
+| 45 | stardust-xr-gravity | 0 | 1 | 2 |  |
+| 46 | stardust-xr-protostar | 0 | 1 | 2 |  |
+| 47 | stardust-xr-solar-sailer | 0 | 1 | 2 |  |
+| 48 | ttf-misans-latin | 0 | 1 | 2 |  |
+| 49 | ttf-misans-myanmar | 0 | 1 | 2 |  |
+| 50 | ttf-misans-tc | 0 | 1 | 2 |  |
+| 51 | ttf-misans-thai | 0 | 1 | 2 |  |
+| 52 | ttf-misans-tibetan | 0 | 1 | 2 |  |
+| 53 | vapoursynth-plugin-vszip | 0 | 1 | 2 |  |
+| 54 | woff-misans | 0 | 1 | 2 |  |
+| 55 | woff-misans-arabic | 0 | 1 | 2 |  |
+| 56 | woff-misans-devanagari | 0 | 1 | 2 |  |
+| 57 | woff-misans-gujarati | 0 | 1 | 2 |  |
+| 58 | woff-misans-gurmukhi | 0 | 1 | 2 |  |
+| 59 | woff-misans-khmer | 0 | 1 | 2 |  |
+| 60 | woff-misans-l3 | 0 | 1 | 2 |  |
+| 61 | woff-misans-lao | 0 | 1 | 2 |  |
+| 62 | woff-misans-latin | 0 | 1 | 2 |  |
+| 63 | woff-misans-myanmar | 0 | 1 | 2 |  |
+| 64 | woff-misans-tc | 0 | 1 | 2 |  |
+| 65 | woff-misans-thai | 0 | 1 | 2 |  |
+| 66 | woff-misans-tibetan | 0 | 1 | 2 |  |
+| 67 | woff2-misans | 0 | 1 | 2 |  |
+| 68 | woff2-misans-arabic | 0 | 1 | 2 |  |
+| 69 | woff2-misans-devanagari | 0 | 1 | 2 |  |
+| 70 | woff2-misans-lao | 0 | 1 | 2 |  |
+| 71 | coolercontrold-bin | 0 | 1 | 3 |  |
+| 72 | depot-tools-git | 0 | 1 | 3 |  |
+| 73 | e-imzo | 0 | 1 | 3 |  |
+| 74 | elephant-bitwarden-bin | 0 | 1 | 3 |  |
+| 75 | elephant-calc-bin | 0 | 1 | 3 |  |
+| 76 | elephant-dnfpackages-bin | 0 | 1 | 3 |  |
+| 77 | elephant-files-bin | 0 | 1 | 3 |  |
+| 78 | elephant-niriactions-bin | 0 | 1 | 3 |  |
+| 79 | elephant-nirisessions-bin | 0 | 1 | 3 |  |
+| 80 | elephant-snippets-bin | 0 | 1 | 3 |  |
+| 81 | elephant-windows-bin | 0 | 1 | 3 |  |
+| 82 | elephant-wireplumber-bin | 0 | 1 | 3 |  |
+| 83 | ggml-sycl-f16-git | 0 | 1 | 3 |  |
+| 84 | google-compute-engine-oslogin | 0 | 1 | 3 |  |
+| 85 | itchio-dlagent | 0 | 1 | 3 |  |
+| 86 | jameica | 0 | 1 | 3 |  |
+| 87 | libsodium-1.0.18 | 0 | 1 | 3 |  |
+| 88 | libstdc++5 | 0 | 1 | 3 |  |
+| 89 | mint-x-icons | 0 | 1 | 3 |  |
+| 90 | nceplibs-ip | 0 | 1 | 3 |  |
+| 91 | nohang | 0 | 1 | 3 |  |
+| 92 | nvidia-390xx-utils | 0 | 1 | 3 |  |
+| 93 | nvidia-470xx-utils | 0 | 1 | 3 |  |
+| 94 | ocaml-iostream | 0 | 1 | 3 |  |
+| 95 | python-easydict | 0 | 1 | 3 |  |
+| 96 | python-get-video-properties | 0 | 1 | 3 |  |
+| 97 | python-jetpytools | 0 | 1 | 3 |  |
+| 98 | python-py-radix | 0 | 1 | 3 |  |
+| 99 | qt5-quick3d | 0 | 1 | 3 |  |
+| 100 | recoil-mime | 0 | 1 | 3 |  |
+| 101 | samsung-unified-driver-printer | 0 | 1 | 3 |  |
+| 102 | slsa-verifier | 0 | 1 | 3 |  |
+| 103 | subtitles-contact-sheet-qt-cli | 0 | 1 | 3 |  |
+| 104 | themix-import-images-git | 0 | 1 | 3 |  |
+| 105 | wolfssl-all | 0 | 1 | 3 |  |
+| 106 | yaycache | 0 | 1 | 3 |  |
+| 107 | arduino-builder | 0 | 1 | 4 |  |
+| 108 | cnmatrix | 0 | 1 | 4 |  |
+| 109 | dosh-cqfd | 0 | 1 | 4 |  |
+| 110 | elephant-1password-bin | 0 | 1 | 4 |  |
+| 111 | elephant-bookmarks-bin | 0 | 1 | 4 |  |
+| 112 | elephant-clipboard-bin | 0 | 1 | 4 |  |
+| 113 | nvidia-580xx-utils | 0 | 1 | 4 |  |
+| 114 | paru-git | 0 | 1 | 4 |  |
+| 115 | presage | 0 | 1 | 4 |  |
+| 116 | qt5-gamepad | 0 | 1 | 4 |  |
+| 117 | samsung-unified-driver-scanner | 0 | 1 | 4 |  |
+| 118 | themix-gui-git | 0 | 1 | 4 |  |
+| 119 | themix-icons-archdroid-git | 0 | 1 | 4 |  |
+| 120 | themix-icons-papirus-git | 0 | 1 | 4 |  |

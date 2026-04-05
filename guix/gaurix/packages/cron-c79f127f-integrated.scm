@@ -11,6 +11,11 @@
   #:use-module (gaurix packages cron-c79f127f-w08)
   #:use-module (gaurix packages cron-c79f127f-w09)
   #:use-module (gaurix packages cron-c79f127f-w10)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03)
+  #:use-module (gaurix packages cron-c79f127f-r23-w03)
+  #:use-module (gaurix packages cron-c79f127f-r24-w03)
+  #:use-module (gaurix packages cron-c79f127f-r25-w03)
+  #:use-module (gaurix packages cron-c79f127f-r26-w03)
   #:re-export (
             elephant-bin
             html2markdown
@@ -96,4 +101,65 @@
             python-opencensus-context
             python-pfzy
             python-typing-inspection
+            ;; r26-w03 exports
+            python-easydict
+            python-py-radix
+            python-jetpytools
+            python-get-video-properties
+            elephant-bitwarden-bin
+            elephant-calc-bin
+            elephant-dnfpackages-bin
+            elephant-files-bin
+            elephant-niriactions-bin
+            elephant-nirisessions-bin
+            elephant-snippets-bin
+            elephant-windows-bin
+            elephant-wireplumber-bin
+            stardust-xr-black-hole
+            stardust-xr-flatland
+            stardust-xr-gravity
+            stardust-xr-protostar
+            stardust-xr-solar-sailer
+            ttf-misans-latin
+            ttf-misans-myanmar
+            ttf-misans-tc
+            ttf-misans-thai
+            ttf-misans-tibetan
+            woff-misans
+            woff-misans-arabic
+            woff-misans-devanagari
+            woff-misans-gujarati
+            woff-misans-gurmukhi
+            woff-misans-khmer
+            woff-misans-l3
+            woff-misans-lao
+            woff-misans-latin
+            woff-misans-myanmar
+            woff-misans-tc
+            woff-misans-thai
+            woff-misans-tibetan
+            woff2-misans
+            woff2-misans-arabic
+            woff2-misans-devanagari
+            woff2-misans-lao
+            flite1
+            libsodium-1.0.18
+            nohang
+            openrc
+            mint-x-icons
+            recoil2png
+            recoil-mime
+            mips64-linux-gnu-linux-api-headers
+            mips64-linux-gnu-binutils
+            sh-elf-binutils
+            new-lg4ff-dkms-git
+            tuxedo-drivers-dkms
+            nceplibs-ip
+            google-compute-engine-oslogin
+            ocaml-iostream
+            jameica
+            brother-lpr-drivers-common
+            piper-voices-common
+            coolercontrold-bin
+            depot-tools-git
             ))
