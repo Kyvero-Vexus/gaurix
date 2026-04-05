@@ -11,7 +11,6 @@
             ryujinx-bin
             python-pyfakewebcam-git
             python-mediapipe-bin
-            python-cmapy
             fake-background-webcam-git
             nomachine
             falcond
@@ -46,15 +45,12 @@
             tsmuxer-git
             displaylink
             plugdata-bin
-            python-questionary
             discord-chat-exporter-cli-bin
             discord-chat-exporter-gui-bin
             soupault-bin
             bin86
             skia-static
-            python-frontmatter
             flatpak-builder-tools-git
-            python-requirements-parser
             cassette
             airshipper
             firefox-tridactyl-native
@@ -143,11 +139,7 @@
     (inherit zoxide)
     (name "python-mediapipe-bin")))
 
-(define-public python-cmapy
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-cmapy.
-  (package
-    (inherit zoxide)
-    (name "python-cmapy")))
+;; python-cmapy: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public fake-background-webcam-git
   ;; NEEDS_RECIPE_DESIGN queue stub for fake-background-webcam-git.
@@ -353,11 +345,7 @@
     (inherit zoxide)
     (name "plugdata-bin")))
 
-(define-public python-questionary
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-questionary.
-  (package
-    (inherit zoxide)
-    (name "python-questionary")))
+;; python-questionary: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public discord-chat-exporter-cli-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for discord-chat-exporter-cli-bin.
@@ -389,11 +377,7 @@
     (inherit zoxide)
     (name "skia-static")))
 
-(define-public python-frontmatter
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-frontmatter.
-  (package
-    (inherit zoxide)
-    (name "python-frontmatter")))
+;; python-frontmatter: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public flatpak-builder-tools-git
   ;; NEEDS_RECIPE_DESIGN queue stub for flatpak-builder-tools-git.
@@ -401,11 +385,7 @@
     (inherit zoxide)
     (name "flatpak-builder-tools-git")))
 
-(define-public python-requirements-parser
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-requirements-parser.
-  (package
-    (inherit zoxide)
-    (name "python-requirements-parser")))
+;; python-requirements-parser: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public cassette
   ;; NEEDS_RECIPE_DESIGN queue stub for cassette.

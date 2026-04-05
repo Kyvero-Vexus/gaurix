@@ -74,7 +74,6 @@
             litellm-ollama
             mousse-git
             python-types-waitress
-            python-types-mock
             paisa-bin
             ps7_libpicocv
             xavs
@@ -521,11 +520,7 @@
     (inherit zoxide)
     (name "python-types-waitress")))
 
-(define-public python-types-mock
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-types-mock.
-  (package
-    (inherit zoxide)
-    (name "python-types-mock")))
+;; python-types-mock: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public paisa-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for paisa-bin.

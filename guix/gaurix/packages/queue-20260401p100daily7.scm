@@ -8,7 +8,6 @@
             pawfetch-git
             ty-git
             soundux
-            python-samila
             sfnt2woff-zopfli
             anamnesis
             poweriso-gui
@@ -16,7 +15,6 @@
             libretro-fbneo-git
             tabular-bin
             taskell-bin
-            python-pyrgg
             athas
             poppler-qt-lcd
             nautilus-konsole
@@ -36,7 +34,6 @@
             yarc-launcher-bin
             rust-docs
             linapple-git
-            python-xxh
             reddix-bin
             panasonic-mfp
             dpt-rp1-py
@@ -124,11 +121,7 @@
     (inherit hello)
     (name "soundux")))
 
-(define-public python-samila
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-samila.
-  (package
-    (inherit hello)
-    (name "python-samila")))
+;; python-samila: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public sfnt2woff-zopfli
   ;; NEEDS_RECIPE_DESIGN queue stub for sfnt2woff-zopfli.
@@ -172,11 +165,7 @@
     (inherit hello)
     (name "taskell-bin")))
 
-(define-public python-pyrgg
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-pyrgg.
-  (package
-    (inherit hello)
-    (name "python-pyrgg")))
+;; python-pyrgg: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public athas
   ;; NEEDS_RECIPE_DESIGN queue stub for athas.
@@ -292,11 +281,7 @@
     (inherit hello)
     (name "linapple-git")))
 
-(define-public python-xxh
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-xxh.
-  (package
-    (inherit hello)
-    (name "python-xxh")))
+;; python-xxh: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public reddix-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for reddix-bin.

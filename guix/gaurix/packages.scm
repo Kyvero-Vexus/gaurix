@@ -156,7 +156,40 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w00)
   #:use-module (gaurix packages cron-c79f127f-r22-w01)
   #:use-module (gaurix packages cron-c79f127f-r22-w03)
+  #:use-module (gaurix packages cron-c79f127f-r23-w03)
   #:export (
+            ;; r23-w03: 30 resolved NEEDS_RECIPE_DESIGN + 1 dep
+            python-pipe
+            python-simple-term-menu
+            python-cmapy
+            python-fleep
+            python-uploadserver
+            python-isocodes
+            python-types-mock
+            python-questionary
+            python-requirements-parser
+            python-frontmatter
+            python-deepl
+            python-javalang
+            psrecord
+            coccigrep
+            git-delete-merged-branches
+            python-rich-rst
+            python-pyrgg
+            python-samila
+            python-polyfactory
+            cmake-format
+            ndeftool
+            python-pybeam
+            python-kajson
+            python-niquests
+            python-clox
+            python-findlibs
+            python-ensurepath
+            python-zipremove
+            python-iterfzf
+            python-xxh
+            python-jdatetime
             ttf-amiri
             ttf-0xproto
             renpy
@@ -361,30 +394,17 @@
             zotero
             eden-git
             dsd-git
-            hcxtools-git
             hcxdumptool-git
-            exercism-bin
             simdutf-git
-            v4l-utils-git
-            icewm-git
             openrct2-git
-            qimgv-git
             tenacity-git
             midori-bin
             celestia-bin
-            dia-git
             dstask-bin
-            yamagi-quake2-git
             fceux-git
-            mu-git
             corosync-git
-            zathura-git
-            espanso-x11-bin
             radicle-bin
-            tuxpaint-git
-            ttf-victor-mono
             syncthing-bin
-            lib2geom-git
             numix-gtk-theme-git
             qt5ct-kde
             linux-mainline
@@ -750,7 +770,6 @@
             resin-pro
             wasm-language-tools
             persepolis-git
-            python-kajson
             tug-bin
             c001apk-flutter-git
             eovpn
@@ -767,7 +786,6 @@
             motd
             buttery-bin
             chandler-bin
-            python-deepl
             bashhound-ce-git
             natscli-bin
             obamify-git
@@ -778,7 +796,6 @@
             cargo-visualize-bin
             r-mcmcse
             r-inflection
-            python-ensurepath
             r-ggquiver
             r-finetune
             dbmodel-qt4
@@ -789,20 +806,17 @@
             orphanrm
             all
             python-thinc-bin-8-3-2
-            python-fleep
             wsl-open
             fastrace
             python-audible
             python-audible-cli
             libuev-docs
             pixiecore-git
-            coccigrep
             openwrt-devel
             mattercontrol
             libnest2d
             daylight-bin
             mkdocs-macros-plugin
-            ndeftool
             doxx-git
             kaitai-struct-compiler
             kaitai-struct-visualizer
@@ -1251,7 +1265,6 @@
             python-tree-sitter-requirements
             python-yacl
             python-can-ada-git
-            yt-dlp-git
             gst-pipeline-studio
             wait4tailscale
             fuzzel-pass
@@ -2111,7 +2124,6 @@
             greetd-qtgreet
             bitbox-wallet-app-rpm
             go-mtpfs-git
-            python-iterfzf
             checkmake-bin
             green-recorder
             gpt4all-chat-git
@@ -2144,7 +2156,6 @@
             piper-voices-ru-ru
             todo-bin
             macchina-git
-            git-delete-merged-branches
             rtodo-bin
             tauno-serial-plotter-bin
             scx-openrc
@@ -2162,7 +2173,6 @@
             needle-cli
             icloudpd
             iceweasel
-            python-rich-rst
             supersayer
             python-cyclopts
             woff2-annotation-mono-variable
@@ -2239,7 +2249,6 @@
             litellm-ollama
             mousse-git
             python-types-waitress
-            python-types-mock
             paisa-bin
             ps7_libpicocv
             xavs
@@ -2297,7 +2306,6 @@
             lceda-pro
             vapoursynth-plugin-vsakarin-git
             driverctl
-            python-simple-term-menu
             freeoffice
             naps2-bin
             xlibre-video-fbdev
@@ -2467,10 +2475,8 @@
             pyznap
             scrotty
             footfetch-git
-            psrecord
             relink
             python-pdbufr
-            python-findlibs
             python-eccodes
             passcheck
             wl-kaomoji
@@ -3606,6 +3612,7 @@ elephant-bin
             verify-lib
             vesc-tool
             warp-cli
+            xboxdrv
             waydroid
 
             python-steamgriddb

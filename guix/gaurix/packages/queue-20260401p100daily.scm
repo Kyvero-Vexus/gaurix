@@ -71,7 +71,6 @@
             opendeck-bin
             discord-rpc
             github-desktop-plus
-            python-isocodes
             mingw-w64-minizip-ng
             derper-ipcert
             vimpc-git
@@ -503,11 +502,7 @@
     (inherit zoxide)
     (name "github-desktop-plus")))
 
-(define-public python-isocodes
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-isocodes.
-  (package
-    (inherit zoxide)
-    (name "python-isocodes")))
+;; python-isocodes: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public mingw-w64-minizip-ng
   ;; NEEDS_RECIPE_DESIGN queue stub for mingw-w64-minizip-ng.

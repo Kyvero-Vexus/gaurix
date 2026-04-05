@@ -26,7 +26,6 @@
             gup-bin
             off-en
             fsv3
-            python-zipremove
             tenere-bin
             pda
             pda-git
@@ -44,7 +43,6 @@
             nemo-tags
             pawlette
             pawlette-git
-            python-niquests
             python-urllib3-future
             python-wassima
             aur-check-updates-bin
@@ -66,7 +64,6 @@
             harmonymusic
             ssh2incus-bin
             upower-nosystemd-git
-            python-polyfactory
             cocode
             mockoon-bin
             pipelex
@@ -222,11 +219,7 @@
     (inherit hello)
     (name "fsv3")))
 
-(define-public python-zipremove
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-zipremove.
-  (package
-    (inherit hello)
-    (name "python-zipremove")))
+;; python-zipremove: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public tenere-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for tenere-bin.
@@ -330,11 +323,7 @@
     (inherit hello)
     (name "pawlette-git")))
 
-(define-public python-niquests
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-niquests.
-  (package
-    (inherit hello)
-    (name "python-niquests")))
+;; python-niquests: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public python-urllib3-future
   ;; NEEDS_RECIPE_DESIGN queue stub for python-urllib3-future.
@@ -462,11 +451,7 @@
     (inherit hello)
     (name "upower-nosystemd-git")))
 
-(define-public python-polyfactory
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-polyfactory.
-  (package
-    (inherit hello)
-    (name "python-polyfactory")))
+;; python-polyfactory: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public cocode
   ;; NEEDS_RECIPE_DESIGN queue stub for cocode.

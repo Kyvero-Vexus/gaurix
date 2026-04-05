@@ -5,14 +5,12 @@
   #:use-module (guix packages)
   #:use-module (gnu packages rust-apps)
   #:export (
-            python-clox
             fcitx5-pinyin-starrail
             teleport-client-bin
             fcitx5-meta
             python-pdf2doi
             quakewatch
             ragnarwm
-            python-uploadserver
             xterminal-bin
             ect
             btrustbiss
@@ -43,7 +41,6 @@
             feluda-bin
             wasmrun-bin
             java17-openjfx-bin
-            python-javalang
             wordlist-git
             bindiff
             libreoffice-extension-h2orestart
@@ -71,7 +68,6 @@
             texlive-installer
             acestream-engine
             rofi-games
-            python-pybeam
             waybar-updates
             pacsea-git
             espionage
@@ -89,7 +85,6 @@
             sysinfo
             playonlinux
             flow-control-git
-            python-pipe
             updpkgsrcs
             ttf-aptos
             picotron
@@ -102,16 +97,11 @@
             vkd3d-proton-bin
             ficsit-cli-bin
             unetbootin
-            cmake-format
             keepass-plugin-keechallenge
             webcord
 ))
 
-(define-public python-clox
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-clox.
-  (package
-    (inherit zoxide)
-    (name "python-clox")))
+;; python-clox: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public fcitx5-pinyin-starrail
   ;; NEEDS_RECIPE_DESIGN queue stub for fcitx5-pinyin-starrail.
@@ -149,11 +139,7 @@
     (inherit zoxide)
     (name "ragnarwm")))
 
-(define-public python-uploadserver
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-uploadserver.
-  (package
-    (inherit zoxide)
-    (name "python-uploadserver")))
+;; python-uploadserver: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public xterminal-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for xterminal-bin.
@@ -335,11 +321,7 @@
     (inherit zoxide)
     (name "java17-openjfx-bin")))
 
-(define-public python-javalang
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-javalang.
-  (package
-    (inherit zoxide)
-    (name "python-javalang")))
+;; python-javalang: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public wordlist-git
   ;; NEEDS_RECIPE_DESIGN queue stub for wordlist-git.
@@ -503,11 +485,7 @@
     (inherit zoxide)
     (name "rofi-games")))
 
-(define-public python-pybeam
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-pybeam.
-  (package
-    (inherit zoxide)
-    (name "python-pybeam")))
+;; python-pybeam: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public waybar-updates
   ;; NEEDS_RECIPE_DESIGN queue stub for waybar-updates.
@@ -611,11 +589,7 @@
     (inherit zoxide)
     (name "flow-control-git")))
 
-(define-public python-pipe
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-pipe.
-  (package
-    (inherit zoxide)
-    (name "python-pipe")))
+;; python-pipe: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public updpkgsrcs
   ;; NEEDS_RECIPE_DESIGN queue stub for updpkgsrcs.
@@ -689,11 +663,7 @@
     (inherit zoxide)
     (name "unetbootin")))
 
-(define-public cmake-format
-  ;; NEEDS_RECIPE_DESIGN queue stub for cmake-format.
-  (package
-    (inherit zoxide)
-    (name "cmake-format")))
+;; cmake-format: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public keepass-plugin-keechallenge
   ;; NEEDS_RECIPE_DESIGN queue stub for keepass-plugin-keechallenge.

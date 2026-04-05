@@ -32,7 +32,6 @@
             lceda-pro
             vapoursynth-plugin-vsakarin-git
             driverctl
-            python-simple-term-menu
             freeoffice
             naps2-bin
             xlibre-video-fbdev
@@ -269,11 +268,7 @@
     (inherit zoxide)
     (name "driverctl")))
 
-(define-public python-simple-term-menu
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-simple-term-menu.
-  (package
-    (inherit zoxide)
-    (name "python-simple-term-menu")))
+;; python-simple-term-menu: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public freeoffice
   ;; NEEDS_RECIPE_DESIGN queue stub for freeoffice.
