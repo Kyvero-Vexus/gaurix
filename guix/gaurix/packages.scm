@@ -161,6 +161,8 @@
   #:use-module (gaurix packages cron-c79f127f-r24-w03-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r25-w03)
   #:use-module (gaurix packages cron-c79f127f-r25-w03-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd-blocked-notes)
   #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
@@ -3793,25 +3795,44 @@ elephant-bin
             libstdc++5
             libticables
             llama.cpp
+            ezstream
+            fish-autopair
+            hunspell-ar
+            hunspell-sk
             logria
+            mars-mips
             max-appimage
             mdevctl
             moodbar
             mozlz4
+            mpv-sponsorblock
+            mved
+            nanoflann
             notify-send.sh
             nteract
+            numix-circle-icon-theme-git
             nvidia-550xx-dkms
             nvidia-550xx-utils
             obfs4proxy
+            official-gamecube-controller-adapter-rules
+            openmesh
+            otf-xkcd-font
+            overdue
             pacaur
             perfect-dark-git
             php74-redis
             pixieditor
+            protonhax
             pulse-secure
+            python-calgebra
             python-doi2bib3
+            python-fastfeedparser
+            python-legendary-gl
             python-lynxpresence
             python-materialyoucolor
             python-pid
+            python-pip-tools
+            python-sqlit-tui
             python-steamgriddb
             python-urllib3-future
             python-validity
@@ -3819,12 +3840,14 @@ elephant-bin
             python3-xcpf
             qflipper-bin
             qtutilities-qt6
+            rdrview
             recoil-engine-rc
             rivalcfg-tray
             scalar-desktop-bin
             schedtoold
             spek
             srb2
+            stylepak-git
             talosctl-bin
             textext
             tibia
@@ -3834,7 +3857,9 @@ elephant-bin
             ttf-gabarito
             ttf-gabarito-git
             ttf-genjyuu-gothic
+            ttf-lxgw-neo-xihei-plus
             ttf-meslo-nerd-font-powerlevel10k
+            ttymidi
             typing-test
             uavs3d
             visual-paradigm-community
@@ -3852,6 +3877,7 @@ elephant-bin
             xapp-thumbnailers-common
             xboxdrv
             xcursor-simpleandsoft
+            xdg-su
             xevd
             xlibre-xserver-common-git
             xrizer-common
