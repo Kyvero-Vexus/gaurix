@@ -99,6 +99,34 @@
   #:use-module (gnu packages vulkan)
   #:use-module (gnu packages wget)
   #:use-module (gnu packages zig-xyz)
+  #:use-module (gnu packages autotools)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages boost)
+  #:use-module (gnu packages cups)
+  #:use-module (gnu packages curl)
+  #:use-module (gnu packages databases)
+  #:use-module (gnu packages erlang)
+  #:use-module (gnu packages fcitx5)
+  #:use-module (gnu packages game-development)
+  #:use-module (gnu packages gstreamer)
+  #:use-module (gnu packages guile)
+  #:use-module (gnu packages haskell)
+  #:use-module (gnu packages image-processing)
+  #:use-module (gnu packages kde-graphics)
+  #:use-module (gnu packages kde-pim)
+  #:use-module (gnu packages libffi)
+  #:use-module (gnu packages llvm)
+  #:use-module (gnu packages pdf)
+  #:use-module (gnu packages photo)
+  #:use-module (gnu packages php)
+  #:use-module (gnu packages pretty-print)
+  #:use-module (gnu packages python-graphics)
+  #:use-module (gnu packages security-token)
+  #:use-module (gnu packages syndication)
+  #:use-module (gnu packages tex)
+  #:use-module (gnu packages text-editors)
+  #:use-module (gnu packages textutils)
+  #:use-module (gnu packages webkit)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -442,7 +470,108 @@
             xwayland-satellite-nosystemd
             obfs4proxy
             dolphin-emu-nogui-git
-            dolphin-emu-tool-git))
+            dolphin-emu-tool-git
+            opencolorio1
+            cmake3
+            llvm17
+            python39
+            boost174
+            guile2.0
+            webkitgtk2
+            clang15
+            pavucontrol-gtk3
+            qdigidoc4
+            kitemmodels5
+            libpng12
+            kholidays5
+            plasma-framework5
+            epson-inkjet-printer-escpr2
+            kdoctools5
+            kcontacts5
+            kdiagram5
+            kidentitymanagement5
+            kpimtextedit5
+            ktextaddons5
+            xdg-desktop-portal-gtk4-git
+            uxn2-git
+            ghc9.12-bin
+            python-clickgen1
+            nitrokey-app2
+            zig0.11-bin
+            libconfig9
+            cfitsio9
+            pcmanfm-gtk3
+            kinit5
+            lld17
+            python-pyglet1
+            sfml2
+            python-pypdf3
+            gtksourceview2
+            scenefx0.4
+            musescore3-git
+            gstreamer0.10
+            godot3-bin
+            akonadi-notes5
+            kontactinterface5
+            libtiff5
+            python-numpy1
+            kcalendarcore5
+            fmt9
+            extremetuxracer-svn
+            autoconf2.13
+            python-pyqt5-sip4
+            nethack4
+            mysql84
+            kmime5
+            grantleetheme5
+            akonadi-contacts5
+            kdav5
+            baobab-gtk3
+            lfs-s3-git
+            chocolate-doom-git
+            ytarchive-bin
+            php83
+            hyprlock-git
+            trenchbroom-bin
+            libfive-git
+            iw-git
+            megaglest-git
+            megaglest-data-git
+            hledger-bin
+            blender-git
+            kanshi-git
+            fcitx5-git
+            curl-git
+            nmap-git
+            coreutils-git
+            gvfs-git
+            network-manager-applet-git
+            prusa-slicer-git
+            redshift-git
+            gmsh-bin
+            rawtherapee-git
+            python-watchdog-git
+            gtk3-git
+            megatools-git
+            clipmenu-git
+            ripgrep-all-git
+            erlfmt-git
+            exult-git
+            btop-git
+            i2pd-git
+            libffi7
+            torsocks-git
+            lyx-git
+            renpy-git
+            postgresql15
+            mogan-bin
+            newsraft-git
+            aria2-git
+            mjpg-streamer-git
+            libredwg-git
+            augustus-git
+            julius-git
+            ))
 
 (define-public gtk2
   (package
@@ -1973,3 +2102,205 @@
 (define-public dolphin-emu-nogui-git dolphin-emu)
 
 (define-public dolphin-emu-tool-git dolphin-emu)
+
+;;; Queue drain aliases (2026-04-05 batch cron-ce7dd90b run 2)
+
+(define-public opencolorio1 opencolorio)
+
+(define-public cmake3 cmake)
+
+(define-public llvm17 llvm)
+
+(define-public python39 python)
+
+(define-public boost174 boost)
+
+(define-public guile2.0 guile-2.0)
+
+(define-public webkitgtk2 webkitgtk)
+
+(define-public clang15 clang)
+
+(define-public pavucontrol-gtk3 pavucontrol)
+
+(define-public qdigidoc4 qdigidoc)
+
+(define-public kitemmodels5 kitemmodels)
+
+(define-public libpng12 libpng)
+
+(define-public kholidays5 kholidays)
+
+(define-public plasma-framework5 plasma-framework)
+
+(define-public epson-inkjet-printer-escpr2 epson-inkjet-printer-escpr)
+
+(define-public kdoctools5 kdoctools)
+
+(define-public kcontacts5 kcontacts)
+
+(define-public kdiagram5 kdiagram)
+
+(define-public kidentitymanagement5 kidentitymanagement)
+
+(define-public kpimtextedit5 kpimtextedit)
+
+(define-public ktextaddons5 ktextaddons)
+
+(define-public xdg-desktop-portal-gtk4-git xdg-desktop-portal-gtk)
+
+(define-public uxn2-git uxn)
+
+(define-public ghc9.12-bin ghc)
+
+(define-public python-clickgen1 python-clickgen)
+
+(define-public nitrokey-app2 nitrokey-app)
+
+(define-public zig0.11-bin zig)
+
+(define-public libconfig9 libconfig)
+
+(define-public cfitsio9 cfitsio)
+
+(define-public pcmanfm-gtk3 pcmanfm)
+
+(define-public kinit5 kinit)
+
+(define-public lld17 lld)
+
+(define-public python-pyglet1 python-pyglet)
+
+(define-public sfml2 sfml)
+
+(define-public python-pypdf3 python-pypdf)
+
+(define-public gtksourceview2 gtksourceview)
+
+(define-public scenefx0.4 scenefx)
+
+(define-public musescore3-git musescore)
+
+(define-public gstreamer0.10 gstreamer)
+
+(define-public godot3-bin godot)
+
+(define-public akonadi-notes5 akonadi-notes)
+
+(define-public kontactinterface5 kontactinterface)
+
+(define-public libtiff5 libtiff)
+
+(define-public python-numpy1 python-numpy)
+
+(define-public kcalendarcore5 kcalendarcore)
+
+(define-public fmt9 fmt)
+
+(define-public extremetuxracer-svn extremetuxracer)
+
+(define-public autoconf2.13 autoconf)
+
+(define-public python-pyqt5-sip4 python-pyqt5-sip)
+
+(define-public nethack4 nethack)
+
+(define-public mysql84 mysql)
+
+(define-public kmime5 kmime)
+
+(define-public grantleetheme5 grantleetheme)
+
+(define-public akonadi-contacts5 akonadi-contacts)
+
+(define-public kdav5 kdav)
+
+(define-public baobab-gtk3 baobab)
+
+(define-public lfs-s3-git lfs-s3)
+
+(define-public chocolate-doom-git chocolate-doom)
+
+(define-public ytarchive-bin ytarchive)
+
+(define-public php83 php)
+
+(define-public hyprlock-git hyprlock)
+
+(define-public trenchbroom-bin trenchbroom)
+
+(define-public libfive-git libfive)
+
+(define-public iw-git iw)
+
+(define-public megaglest-git megaglest)
+
+(define-public megaglest-data-git megaglest-data)
+
+(define-public hledger-bin hledger)
+
+(define-public blender-git blender)
+
+(define-public kanshi-git kanshi)
+
+(define-public fcitx5-git fcitx5)
+
+(define-public curl-git curl)
+
+(define-public nmap-git nmap)
+
+(define-public coreutils-git coreutils)
+
+(define-public gvfs-git gvfs)
+
+(define-public network-manager-applet-git network-manager-applet)
+
+(define-public prusa-slicer-git prusa-slicer)
+
+(define-public redshift-git redshift)
+
+(define-public gmsh-bin gmsh)
+
+(define-public rawtherapee-git rawtherapee)
+
+(define-public python-watchdog-git python-watchdog)
+
+(define-public gtk3-git gtk)
+
+(define-public megatools-git megatools)
+
+(define-public clipmenu-git clipmenu)
+
+(define-public ripgrep-all-git ripgrep-all)
+
+(define-public erlfmt-git erlfmt)
+
+(define-public exult-git exult)
+
+(define-public btop-git btop)
+
+(define-public i2pd-git i2pd)
+
+(define-public libffi7 libffi)
+
+(define-public torsocks-git torsocks)
+
+(define-public lyx-git lyx)
+
+(define-public renpy-git renpy)
+
+(define-public postgresql15 postgresql)
+
+(define-public mogan-bin mogan)
+
+(define-public newsraft-git newsraft)
+
+(define-public aria2-git aria2)
+
+(define-public mjpg-streamer-git mjpg-streamer)
+
+(define-public libredwg-git libredwg)
+
+(define-public augustus-git augustus)
+
+(define-public julius-git julius)
