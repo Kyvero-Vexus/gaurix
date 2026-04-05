@@ -159,7 +159,35 @@
   #:use-module (gaurix packages cron-c79f127f-r23-w03)
   #:use-module (gaurix packages cron-c79f127f-r24-w03)
   #:use-module (gaurix packages cron-c79f127f-r24-w03-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r25-w03)
+  #:use-module (gaurix packages cron-c79f127f-r25-w03-blocked-notes)
   #:export (
+            ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
+            xlibre-input-void
+            xlibre-video-vesa
+            xlibre-video-fbdev
+            xlibre-video-ati
+            xlibre-input-synaptics
+            xlibre-input-libinput-git
+            tramp
+            waybar-git
+            python-nspektr
+            python-graphyte
+            python-bencoding
+            python-ftputil
+            python-xlsx2csv
+            python-pythondialog
+            python-boolshit
+            python-maison
+            python-pylibsrtp
+            python-west
+            pixelserv-tls
+            lwm-legacy
+            driverctl
+            mint-themes
+            kwin-scripts-krohnkite
+            broadcom-bt-firmware
+            kernel-chktaint
             ;; r24-w03: 62 resolved from blocked-tree pass (21 fonts + 12 binaries + 4 python + 1 go + 4 c/c++ + 3 icons + 3 scripts + 2 ruby + 2 java + 10 misc)
             otf-misans
             otf-misans-arabic
