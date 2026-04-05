@@ -20,6 +20,7 @@
   #:use-module (gnu packages python-web)
   #:use-module (gnu packages python-crypto)
   #:use-module (gnu packages check)
+  #:use-module (gnu packages gstreamer)
   #:use-module (gnu packages databases)
   #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages audio)
@@ -588,10 +589,10 @@ backends.")
               (sha256
                (base32
                 "0bh5a3j3bz5dm0yp0ng8fs1arqszblc3zpyprnwj35vdbdirqyi2"))))
-    (build-system cmake-build-system)
+    (build-system meson-build-system)
     (arguments
      (list #:tests? #f))
-    (inputs (list eudev libusb libx11 dbus glib))
+    (inputs (list eudev libusb libx11 dbus glib python))
     (native-inputs (list pkg-config))
     (home-page "https://github.com/xiota/xboxdrv")
     (synopsis "userspace Xbox gamepad driver and input remapper")
@@ -646,8 +647,10 @@ muxing, demuxing, and remuxing MP4 content.")
               (sha256
                (base32
                 "09dand4z4p9wb10yzjz2k2lq7zrlvxkz7kjr0s8fy4ixp35kk03v"))))
-    (build-system cmake-build-system)
+    (build-system meson-build-system)
     (arguments (list #:tests? #f))
+    (inputs (list gstreamer gst-plugins-base gst-plugins-good))
+    (native-inputs (list pkg-config))
     (home-page "https://github.com/Nomadcxx/gSlapper")
     (synopsis "wallpaper utility for Wayland with video and image support")
     (description "gSlapper is a wallpaper utility for Wayland compositors
