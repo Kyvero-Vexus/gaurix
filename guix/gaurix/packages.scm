@@ -3608,6 +3608,47 @@ elephant-bin
             warp-cli
             waydroid
 
+            python-steamgriddb
+            python-materialyoucolor
+            ttf-meslo-nerd-font-powerlevel10k
+            vpcs
+            qtutilities-qt6
+            python-pid
+            deb2targz
+            libjodycode
+            notify-send.sh
+            ttf-gabarito
+            libticables
+            
+            python-confu
+            python-tmpl
+            python-pluginmgr
+            python-vodka
+            python-graphsrv
+            python-pytest-filedata
+            python-bencode-py
+            python-desktop-entry-lib
+            python-htmlgenerator
+            python-stupidartnet
+            python-aiolifx
+            python-markovify
+            python-eyed3
+            python-openrgb
+            python-vdf
+            python-cinemagoer
+            python-soco
+            python-powerline-gitstatus
+            python-exa-py
+            python-materialyoucolor3
+            python-zftools
+            python-xeddsa
+            python-glean-parser
+            python-diwire
+            python-samplerate
+            python-imagebackup
+            python-curlify
+            python-pricehist
+            python-discord-py
             ))
             ai-pkg-bin
             amdctl
