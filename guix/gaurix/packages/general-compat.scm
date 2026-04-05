@@ -74,6 +74,31 @@
   #:use-module (gnu packages emulators)
   #:use-module (gnu packages hexedit)
   #:use-module (gnu packages tree-sitter)
+  #:use-module (gnu packages tor)
+  #:use-module (gnu packages astronomy)
+  #:use-module (gnu packages golang-crypto)
+  #:use-module (gnu packages upnp)
+  #:use-module (gnu packages ntp)
+  #:use-module (gnu packages calendar)
+  #:use-module (gnu packages cmake)
+  #:use-module (gnu packages emacs-xyz)
+  #:use-module (gnu packages firmware)
+  #:use-module (gnu packages geo)
+  #:use-module (gnu packages gnunet)
+  #:use-module (gnu packages gnustep)
+  #:use-module (gnu packages golang-apps)
+  #:use-module (gnu packages golang-check)
+  #:use-module (gnu packages kde-frameworks)
+  #:use-module (gnu packages lxde)
+  #:use-module (gnu packages maths)
+  #:use-module (gnu packages patchutils)
+  #:use-module (gnu packages rust)
+  #:use-module (gnu packages scanner)
+  #:use-module (gnu packages shellutils)
+  #:use-module (gnu packages suckless)
+  #:use-module (gnu packages vulkan)
+  #:use-module (gnu packages wget)
+  #:use-module (gnu packages zig-xyz)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -405,8 +430,19 @@
             wolfssl-all
             jdk22-openjdk
             jdk25-openjdk-wakefield
-
-))
+            helm-synth
+            helm-synth-common
+            helm-synth-lv2
+            helm-synth-standalone
+            helm-synth-vst
+            flat-remix
+            gtk4-git
+            gtk4-demos-git
+            gtk-update-icon-cache-git
+            xwayland-satellite-nosystemd
+            obfs4proxy
+            dolphin-emu-nogui-git
+            dolphin-emu-tool-git))
 
 (define-public gtk2
   (package
@@ -1876,7 +1912,7 @@
 
 (define-public py-spy-bin py-spy)
 
-(define-public ginkgo-cli ginkgo)
+(define-public ginkgo-cli go-ginkgo)
 
 (define-public rust-git rust)
 
@@ -1908,3 +1944,32 @@
 
 (define-public kuserfeedback-git kuserfeedback)
 
+
+
+;;; Queue drain aliases (2026-04-05 batch cron-ce7dd90b)
+
+(define-public helm-synth helm)
+
+(define-public helm-synth-common helm)
+
+(define-public helm-synth-lv2 helm)
+
+(define-public helm-synth-standalone helm)
+
+(define-public helm-synth-vst helm)
+
+(define-public flat-remix flat-remix-icon-theme)
+
+(define-public gtk4-git gtk)
+
+(define-public gtk4-demos-git gtk)
+
+(define-public gtk-update-icon-cache-git gtk)
+
+(define-public xwayland-satellite-nosystemd xwayland-satellite)
+
+(define-public obfs4proxy go-obfs4proxy)
+
+(define-public dolphin-emu-nogui-git dolphin-emu)
+
+(define-public dolphin-emu-tool-git dolphin-emu)
