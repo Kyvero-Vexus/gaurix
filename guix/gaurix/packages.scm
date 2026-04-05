@@ -163,6 +163,8 @@
   #:use-module (gaurix packages cron-c79f127f-r25-w03-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r27-w03)
+  #:use-module (gaurix packages cron-c79f127f-r27-w03-blocked-notes)
   #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
@@ -3817,6 +3819,34 @@ elephant-bin
             official-gamecube-controller-adapter-rules
             openmesh
             otf-xkcd-font
+            acid-gtk-theme
+            amazon-corretto-21-bin
+            amazon-ecr-credential-helper
+            beangulp
+            cljfmt-bin
+            colorized-logs
+            dms
+            droplet-agent
+            fish-done
+            gay
+            hamradio-menus
+            hid-listen
+            hunspell-pt-br
+            igsc-legacy
+            level-zero-headers-legacy
+            level-zero-loader-legacy
+            libhid
+            libt3key
+            libt3window
+            libtranscript
+            libuser
+            mini-xfwm4-theme
+            mpv-acestream
+            mpvc
+            mujoco-bin
+            nhentai
+            open-in-mpv
+            osx-el-capitan-theme
             overdue
             pacaur
             perfect-dark-git
@@ -3824,44 +3854,64 @@ elephant-bin
             pixieditor
             protonhax
             pulse-secure
+            pyinstaller-hooks-contrib
+            pypi2aur
+            python-acestream
             python-calgebra
             python-doi2bib3
             python-fastfeedparser
             python-legendary-gl
+            python-lineprofiler
             python-lynxpresence
             python-materialyoucolor
             python-pid
             python-pip-tools
             python-sqlit-tui
             python-steamgriddb
+            python-stitching
             python-urllib3-future
             python-validity
             python3-xcgf
             python3-xcpf
+            pywinery
             qflipper-bin
             qtutilities-qt6
             rdrview
             recoil-engine-rc
             rivalcfg-tray
+            rofi-power-menu
+            sardi-icons
             scalar-desktop-bin
             schedtoold
+            skiller-ctl
+            sol2
+            sol2-single
             spek
             srb2
             stylepak-git
+            sysz
             talosctl-bin
+            tcping-go
+            tcptraceroute
             textext
             tibia
+            todotxt
             trackma
             trueconf
             trustedqsl
+            ttf-comic-sans
             ttf-gabarito
             ttf-gabarito-git
             ttf-genjyuu-gothic
             ttf-lxgw-neo-xihei-plus
             ttf-meslo-nerd-font-powerlevel10k
+            ttf-unifraktur
+            ttf-zpix
             ttymidi
             typing-test
             uavs3d
+            via-appimage
+            vimrc-amix
             visual-paradigm-community
             vivictpp
             vpcs
@@ -3873,14 +3923,17 @@ elephant-bin
             wreckfest2-wine-steam
             wrye-bash
             wsjtx-improved-widescreen
+            wtwitch
             wuming
             xapp-thumbnailers-common
             xboxdrv
             xcursor-simpleandsoft
             xdg-su
             xevd
+            xfce-simple-dark
             xlibre-xserver-common-git
             xrizer-common
+            xts-dark-theme
             xwayland-satellite-nosystemd
             yandex-disk-indicator
             yesvgmap-bin
