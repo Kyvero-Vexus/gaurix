@@ -165,6 +165,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r27-w03)
   #:use-module (gaurix packages cron-c79f127f-r27-w03-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
+  #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd-blocked-notes)
   #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
@@ -3886,6 +3888,31 @@ elephant-bin
             skiller-ctl
             sol2
             sol2-single
+            bililive-recorder-bin
+            bzmenu-bin
+            chough-bin
+            claude-code-seccomp
+            clightd
+            console2svg-bin
+            ddccontrol
+            ferris-scan-bin
+            fish-done
+            framework-control-bin
+            funzzy-bin
+            gram-editor-bin
+            iwmenu-bin
+            lazytail-bin
+            libavif-noglycin
+            libheif-noglycin
+            libjxl-noglycin
+            lobster
+            mezzotone-bin
+            netwatch-tui-bin
+            oken-bin
+            podserv-b-bin
+            pwmenu-bin
+            q5k-usb-udev
+            sabiql-bin
             spek
             srb2
             stylepak-git
@@ -3920,7 +3947,9 @@ elephant-bin
             wayclip-cli
             wayfire
             wiremix-git
+            wo-bin
             wreckfest2-wine-steam
+            wrkflw-bin
             wrye-bash
             wsjtx-improved-widescreen
             wtwitch

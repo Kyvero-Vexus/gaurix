@@ -32,6 +32,7 @@
   #:use-module (gnu packages web)
   #:use-module (gnu packages video)
   #:use-module (gnu packages perl)
+  #:use-module (gnu packages pciutils)
   #:use-module (gaurix packages cron-5a2fb251-r19-w01)
   #:use-module (gaurix packages cron-5a2fb251-r14-w01)
   #:use-module ((guix licenses) #:prefix license:)
