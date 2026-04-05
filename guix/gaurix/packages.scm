@@ -157,7 +157,72 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w01)
   #:use-module (gaurix packages cron-c79f127f-r22-w03)
   #:use-module (gaurix packages cron-c79f127f-r23-w03)
+  #:use-module (gaurix packages cron-c79f127f-r24-w03)
+  #:use-module (gaurix packages cron-c79f127f-r24-w03-blocked-notes)
   #:export (
+            ;; r24-w03: 62 resolved from blocked-tree pass (21 fonts + 12 binaries + 4 python + 1 go + 4 c/c++ + 3 icons + 3 scripts + 2 ruby + 2 java + 10 misc)
+            otf-misans
+            otf-misans-arabic
+            otf-misans-devanagari
+            otf-misans-gujarati
+            otf-misans-gurmukhi
+            otf-misans-khmer
+            otf-misans-l3
+            otf-misans-lao
+            otf-misans-latin
+            otf-misans-myanmar
+            otf-misans-tc
+            otf-misans-thai
+            otf-misans-tibetan
+            ttf-misans
+            ttf-misans-arabic
+            ttf-misans-devanagari
+            ttf-misans-gujarati
+            ttf-misans-gurmukhi
+            ttf-misans-khmer
+            ttf-misans-l3
+            ttf-misans-lao
+            lianwalld-bin
+            dotnet-runtime-9.0-bin
+            bcompare
+            elephant-archlinuxpkgs-bin
+            elephant-bluetooth-bin
+            elephant-desktopapplications-bin
+            elephant-menus-bin
+            elephant-providerlist-bin
+            elephant-runner-bin
+            elephant-symbols-bin
+            elephant-todo-bin
+            elephant-unicode-bin
+            elephant-websearch-bin
+            python-sqlite-migrate
+            python-fvs
+            python-sysv-ipc
+            crossplane
+            html2markdown
+            zmusic
+            xboxdrv
+            l-smash
+            gslapper
+            mint-y-icons
+            cosmic-icons-git
+            numix-icon-theme-git
+            archlinux-java-run
+            auto-auto-complete
+            domake
+            ruby-httpx
+            ruby-kaitai-struct
+            scala3
+            java-service-wrapper
+            brscan4
+            xrizer-common
+            xapp-thumbnailers-common
+            mintcommon
+            paru
+            wl-screenrec
+            wd719x-firmware
+            makepkg-git-lfs-proto
+
             ;; r23-w03: 30 resolved NEEDS_RECIPE_DESIGN + 1 dep
             python-pipe
             python-simple-term-menu
