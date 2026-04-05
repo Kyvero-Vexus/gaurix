@@ -150,6 +150,7 @@
   #:use-module (gnu packages text-editors)
   #:use-module (gnu packages textutils)
   #:use-module (gnu packages webkit)
+  #:use-module (gnu packages speech)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -594,6 +595,12 @@
             libredwg-git
             augustus-git
             julius-git
+            doas
+            flite1
+            freedm
+            llama.cpp
+            radicle-node
+            gnome-icon-theme-symbolic
             ))
 
 (define-public gtk2
@@ -2327,3 +2334,35 @@
 (define-public augustus-git augustus)
 
 (define-public julius-git julius)
+
+;;; ── Compat aliases (cron-c79f127f-r22-w03) ────────────────────────
+
+(define-public doas
+  (package
+    (inherit opendoas)
+    (name "doas")))
+
+(define-public flite1
+  (package
+    (inherit flite)
+    (name "flite1")))
+
+(define-public freedm
+  (package
+    (inherit freedoom)
+    (name "freedm")))
+
+(define-public llama.cpp
+  (package
+    (inherit llama-cpp)
+    (name "llama.cpp")))
+
+(define-public radicle-node
+  (package
+    (inherit radicle)
+    (name "radicle-node")))
+
+(define-public gnome-icon-theme-symbolic
+  (package
+    (inherit adwaita-icon-theme)
+    (name "gnome-icon-theme-symbolic")))

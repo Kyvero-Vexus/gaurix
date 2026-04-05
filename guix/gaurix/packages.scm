@@ -3649,6 +3649,7 @@ elephant-bin
             python-curlify
             python-pricehist
             python-discord-py
+                        python-wassima
             ))
             ai-pkg-bin
             amdctl
@@ -3675,6 +3676,7 @@ elephant-bin
             docker-language-server
             dolphin-emu-nogui-git
             dolphin-emu-tool-git
+            dynamips
             edopro-bin
             enpass-bin
             eprosima-fast-dds
@@ -3682,6 +3684,7 @@ elephant-bin
             equilux-theme
             flashplayer-standalone
             flat-remix
+            flite1
             fluffychat-bin
             fooyin-bin
             gmrun
@@ -3703,14 +3706,17 @@ elephant-bin
             kde-material-you-colors
             lazysql-bin
             lem-editor-git
+            libaribcaption
             liberica-jdk-full-bin
             libfprint-2-tod1-synatudor-git
             libjodycode
             libstdc++5
             libticables
+            llama.cpp
             logria
             max-appimage
             mdevctl
+            moodbar
             mozlz4
             notify-send.sh
             nteract
@@ -3727,6 +3733,7 @@ elephant-bin
             python-materialyoucolor
             python-pid
             python-steamgriddb
+            python-urllib3-future
             python-validity
             python3-xcgf
             python3-xcpf
@@ -3749,9 +3756,11 @@ elephant-bin
             ttf-genjyuu-gothic
             ttf-meslo-nerd-font-powerlevel10k
             typing-test
+            uavs3d
             visual-paradigm-community
             vivictpp
             vpcs
+            vvenc
             waveterm-bin
             wayclip-cli
             wayfire
