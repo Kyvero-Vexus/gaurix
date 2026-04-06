@@ -182,8 +182,12 @@
   #:use-module (gnu packages terminals)
   #:use-module (gnu packages monitoring)
   #:use-module (gnu packages python-science)
+  #:use-module (gnu packages selinux)
   #:export (
             dyalog-bin
+            ;; nrd18 compat aliases
+            gcc13
+            setools
             ;; nrd30f compat aliases
             zrepl-git
             waybar-claude-usage
@@ -3085,3 +3089,15 @@
   (package
     (inherit nnn)
     (name "nnn-icons")))
+
+;; nrd18 compat aliases (2026-04-06 dep-tree BLOCKED pass)
+
+(define-public gcc13
+  (package
+    (inherit gcc-toolchain-13)
+    (name "gcc13")))
+
+(define-public setools
+  (package
+    (inherit python-setools)
+    (name "setools")))

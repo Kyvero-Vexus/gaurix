@@ -206,6 +206,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd17)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd17-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd18)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd18-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b)
@@ -378,6 +380,103 @@
             cairo-dock-core-wayland-git-blocked-note
             cosmic-launcher-git-blocked-note
             openvino-blocked-note
+            ;; nrd18: 2 recipes + 2 compat aliases + 94 blocked (dep-tree pass)
+            pipes.sh
+            python-aria2p
+            qt5-webkit-nrd18-blocked-note
+            matlab-mpm-nrd18-blocked-note
+            cosmic-randr-git-nrd18-blocked-note
+            intel-npu-driver-nrd18-blocked-note
+            foobar2000-nrd18-blocked-note
+            libelectron-nrd18-blocked-note
+            python-albucore-nrd18-blocked-note
+            vscodium-translucent-nrd18-blocked-note
+            ros2-arch-deps-nrd18-blocked-note
+            aspnet-targeting-pack-preview-bin-nrd18-blocked-note
+            sac-core-nrd18-blocked-note
+            e-imzo-nrd18-blocked-note
+            electron22-bin-nrd18-blocked-note
+            ggml-sycl-f16-git-nrd18-blocked-note
+            itchio-dlagent-nrd18-blocked-note
+            nvidia-390xx-utils-nrd18-blocked-note
+            nvidia-470xx-utils-nrd18-blocked-note
+            qt5-quick3d-nrd18-blocked-note
+            samsung-unified-driver-printer-nrd18-blocked-note
+            themix-import-images-git-nrd18-blocked-note
+            yaycache-nrd18-blocked-note
+            arduino-builder-nrd18-blocked-note
+            iscan-nrd18-blocked-note
+            paru-git-nrd18-blocked-note
+            samsung-unified-driver-scanner-nrd18-blocked-note
+            themix-plugin-base16-git-nrd18-blocked-note
+            tzpfms-nrd18-blocked-note
+            vectorchord-nrd18-blocked-note
+            zectl-nrd18-blocked-note
+            cosmic-idle-git-nrd18-blocked-note
+            cosmic-screenshot-git-nrd18-blocked-note
+            dosh-cqfd-nrd18-blocked-note
+            eprosima-fast-dds-nrd18-blocked-note
+            eww-nrd18-blocked-note
+            lib32-libvmaf-nrd18-blocked-note
+            opencl-amd-nrd18-blocked-note
+            python-loro-nrd18-blocked-note
+            sleuthkit-java-nrd18-blocked-note
+            aurutils-nrd18-blocked-note
+            cosmic-app-library-git-nrd18-blocked-note
+            cosmic-panel-git-nrd18-blocked-note
+            kanidm-clients-nrd18-blocked-note
+            kanidm-server-nrd18-blocked-note
+            kanidm-unixd-clients-nrd18-blocked-note
+            ps3-psl1ght-nrd18-blocked-note
+            cosmic-workspaces-git-nrd18-blocked-note
+            easytier-cli-nrd18-blocked-note
+            easytier-core-nrd18-blocked-note
+            easytier-web-nrd18-blocked-note
+            memoria-daemon-nrd18-blocked-note
+            pgadmin4-web-nrd18-blocked-note
+            qtforkawesome-qt6-nrd18-blocked-note
+            cosmic-bg-git-nrd18-blocked-note
+            cosmic-notifications-git-nrd18-blocked-note
+            cryptomator-nrd18-blocked-note
+            lib32-nvidia-utils-beta-nrd18-blocked-note
+            plasticscm-client-core-nrd18-blocked-note
+            python-frida-nrd18-blocked-note
+            stardust-xr-non-spatial-input-nrd18-blocked-note
+            aylurs-gtk-shell-git-nrd18-blocked-note
+            cosmic-files-git-nrd18-blocked-note
+            lib32-bluez-libs-nrd18-blocked-note
+            mips64-linux-gnu-gcc-bootstrap-nrd18-blocked-note
+            stardust-xr-server-nrd18-blocked-note
+            tagparser-nrd18-blocked-note
+            upscayl-ncnn-nrd18-blocked-note
+            cairo-dock-core-wayland-git-nrd18-blocked-note
+            cosmic-launcher-git-nrd18-blocked-note
+            spotify-nrd18-blocked-note
+            vapoursynth-plugin-vsjetpack-nrd18-blocked-note
+            android-sdk-nrd18-blocked-note
+            dpt-rp1-py-nrd18-blocked-note
+            element-web-git-nrd18-blocked-note
+            epsonscan2-nrd18-blocked-note
+            llama.cpp-hip-nrd18-blocked-note
+            python-asyncpraw-nrd18-blocked-note
+            sidef-nrd18-blocked-note
+            themix-theme-oomox-git-nrd18-blocked-note
+            obsidianctl-nrd18-blocked-note
+            python-twisterl-nrd18-blocked-note
+            xr-driver-git-nrd18-blocked-note
+            cosmic-applets-git-nrd18-blocked-note
+            cosmic-comp-git-nrd18-blocked-note
+            radiotray-ng-nrd18-blocked-note
+            tl-render-nrd18-blocked-note
+            wf-shell-nrd18-blocked-note
+            xviewer-nrd18-blocked-note
+            kde-material-you-colors-nrd18-blocked-note
+            libpamac-full-nrd18-blocked-note
+            maliit-framework-nrd18-blocked-note
+            python-panel-nrd18-blocked-note
+            clightd-nrd18-blocked-note
+            libadwaita-yaru-git-nrd18-blocked-note
+            python-aiortc-nrd18-blocked-note
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa
