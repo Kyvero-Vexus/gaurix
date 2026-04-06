@@ -15,7 +15,6 @@
             resin-pro
             wasm-language-tools
             persepolis-git
-            python-kajson
             tug-bin
             c001apk-flutter-git
             eovpn
@@ -32,7 +31,6 @@
             motd
             buttery-bin
             chandler-bin
-            python-deepl
             bashhound-ce-git
             natscli-bin
             obamify-git
@@ -43,7 +41,6 @@
             cargo-visualize-bin
             r-mcmcse
             r-inflection
-            python-ensurepath
             r-ggquiver
             r-finetune
             dbmodel-qt4
@@ -54,20 +51,17 @@
             orphanrm
             all
             python-thinc-bin-8-3-2
-            python-fleep
             wsl-open
             fastrace
             python-audible
             python-audible-cli
             libuev-docs
             pixiecore-git
-            coccigrep
             openwrt-devel
             mattercontrol
             libnest2d
             daylight-bin
             mkdocs-macros-plugin
-            ndeftool
             doxx-git
             kaitai-struct-compiler
             kaitai-struct-visualizer
@@ -147,11 +141,7 @@
     (inherit zoxide)
     (name "persepolis-git")))
 
-(define-public python-kajson
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-kajson.
-  (package
-    (inherit zoxide)
-    (name "python-kajson")))
+;; python-kajson: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public tug-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for tug-bin.
@@ -249,11 +239,7 @@
     (inherit zoxide)
     (name "chandler-bin")))
 
-(define-public python-deepl
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-deepl.
-  (package
-    (inherit zoxide)
-    (name "python-deepl")))
+;; python-deepl: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public bashhound-ce-git
   ;; NEEDS_RECIPE_DESIGN queue stub for bashhound-ce-git.
@@ -314,11 +300,7 @@
     (inherit zoxide)
     (name "r-inflection")))
 
-(define-public python-ensurepath
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-ensurepath.
-  (package
-    (inherit zoxide)
-    (name "python-ensurepath")))
+;; python-ensurepath: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public r-ggquiver
   ;; NEEDS_RECIPE_DESIGN queue stub for r-ggquiver.
@@ -380,11 +362,7 @@
     (inherit zoxide)
     (name "python-thinc-bin-8.3.2")))
 
-(define-public python-fleep
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-fleep.
-  (package
-    (inherit zoxide)
-    (name "python-fleep")))
+;; python-fleep: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public wsl-open
   ;; NEEDS_RECIPE_DESIGN queue stub for wsl-open.
@@ -421,11 +399,7 @@
     (inherit zoxide)
     (name "pixiecore-git")))
 
-(define-public coccigrep
-  ;; NEEDS_RECIPE_DESIGN queue stub for coccigrep.
-  (package
-    (inherit zoxide)
-    (name "coccigrep")))
+;; coccigrep: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public openwrt-devel
   ;; NEEDS_RECIPE_DESIGN queue stub for openwrt-devel.
@@ -456,11 +430,7 @@
     (inherit zoxide)
     (name "mkdocs-macros-plugin")))
 
-(define-public ndeftool
-  ;; NEEDS_RECIPE_DESIGN queue stub for ndeftool.
-  (package
-    (inherit zoxide)
-    (name "ndeftool")))
+;; ndeftool: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public doxx-git
   ;; NEEDS_RECIPE_DESIGN queue stub for doxx-git.

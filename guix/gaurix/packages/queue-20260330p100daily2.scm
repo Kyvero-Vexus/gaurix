@@ -5,7 +5,6 @@
   #:use-module (guix packages)
   #:use-module (gnu packages rust-apps)
   #:export (
-            python-findlibs
             python-eccodes
             passcheck
             wl-kaomoji
@@ -107,11 +106,7 @@
             boosteroid
 ))
 
-(define-public python-findlibs
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-findlibs.
-  (package
-    (inherit zoxide)
-    (name "python-findlibs")))
+;; python-findlibs: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public python-eccodes
   ;; NEEDS_RECIPE_DESIGN queue stub for python-eccodes.

@@ -102,7 +102,6 @@
             pyznap
             scrotty
             footfetch-git
-            psrecord
             relink
             python-pdbufr
 ))
@@ -689,11 +688,7 @@
     (inherit zoxide)
     (name "footfetch-git")))
 
-(define-public psrecord
-  ;; NEEDS_RECIPE_DESIGN queue stub for psrecord.
-  (package
-    (inherit zoxide)
-    (name "psrecord")))
+;; psrecord: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public relink
   ;; NEEDS_RECIPE_DESIGN queue stub for relink.

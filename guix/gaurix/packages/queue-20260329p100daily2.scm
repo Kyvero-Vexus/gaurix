@@ -46,7 +46,6 @@
             greetd-qtgreet
             bitbox-wallet-app-rpm
             go-mtpfs-git
-            python-iterfzf
             checkmake-bin
             green-recorder
             gpt4all-chat-git
@@ -79,7 +78,6 @@
             piper-voices-ru-ru
             todo-bin
             macchina-git
-            git-delete-merged-branches
             rtodo-bin
             tauno-serial-plotter-bin
             scx-openrc
@@ -97,7 +95,6 @@
             needle-cli
             icloudpd
             iceweasel
-            python-rich-rst
             supersayer
             python-cyclopts
             woff2-annotation-mono-variable
@@ -353,11 +350,7 @@
     (inherit zoxide)
     (name "go-mtpfs-git")))
 
-(define-public python-iterfzf
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-iterfzf.
-  (package
-    (inherit zoxide)
-    (name "python-iterfzf")))
+;; python-iterfzf: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public checkmake-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for checkmake-bin.
@@ -551,11 +544,7 @@
     (inherit zoxide)
     (name "macchina-git")))
 
-(define-public git-delete-merged-branches
-  ;; NEEDS_RECIPE_DESIGN queue stub for git-delete-merged-branches.
-  (package
-    (inherit zoxide)
-    (name "git-delete-merged-branches")))
+;; git-delete-merged-branches: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public rtodo-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for rtodo-bin.
@@ -659,11 +648,7 @@
     (inherit zoxide)
     (name "iceweasel")))
 
-(define-public python-rich-rst
-  ;; NEEDS_RECIPE_DESIGN queue stub for python-rich-rst.
-  (package
-    (inherit zoxide)
-    (name "python-rich-rst")))
+;; python-rich-rst: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public supersayer
   ;; NEEDS_RECIPE_DESIGN queue stub for supersayer.

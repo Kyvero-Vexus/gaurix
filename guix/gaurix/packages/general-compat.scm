@@ -114,6 +114,7 @@
   #:use-module (gnu packages kde-frameworks)
   #:use-module (gnu packages lxde)
   #:use-module (gnu packages maths)
+  #:use-module (gnu packages commencement)
   #:use-module (gnu packages patchutils)
   #:use-module (gnu packages rust)
   #:use-module (gnu packages scanner)
@@ -134,7 +135,6 @@
   #:use-module (gnu packages gstreamer)
   #:use-module (gnu packages guile)
   #:use-module (gnu packages haskell)
-  #:use-module (gnu packages image-processing)
   #:use-module (gnu packages kde-graphics)
   #:use-module (gnu packages kde-pim)
   #:use-module (gnu packages libffi)
@@ -150,7 +150,46 @@
   #:use-module (gnu packages text-editors)
   #:use-module (gnu packages textutils)
   #:use-module (gnu packages webkit)
+  #:use-module (gnu packages speech)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd13)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16)
+  #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
+  #:use-module (gnu packages opencl)
+  #:use-module (gnu packages image-processing)
+#:use-module (gnu packages cdrom)
+  #:use-module (gnu packages ssh)
+  #:use-module (gnu packages dictionaries)
+  #:use-module (gnu packages gimp)
+  #:use-module (gnu packages syncthing)
+  #:use-module (gnu packages sphinx)
+  #:use-module (gnu packages w3m)
+  #:use-module (gnu packages wordnet)
+  #:use-module (gnu packages virtualization)
+  #:use-module (gnu packages dotnet)
+  #:use-module (gnu packages mp3)
+  #:use-module (gnu packages ibus)
+  #:use-module (gnu packages wine)
+  #:use-module (gnu packages compression)
+  #:use-module (gnu packages xfce)
+  #:use-module (nongnu packages dyalog)
+  #:use-module (gaurix packages queue-20260406-nrd30f)
+  #:use-module (gnu packages sycl)
+  #:use-module (gnu packages chromium)
+  #:use-module (gnu packages matrix)
+  #:use-module (gnu packages terminals)
+  #:use-module (gnu packages monitoring)
+  #:use-module (gnu packages python-science)
+  #:use-module (gnu packages selinux)
   #:export (
+            dyalog-bin
+            ;; nrd18 compat aliases
+            gcc13
+            setools
+            ;; nrd30f compat aliases
+            zrepl-git
             waybar-claude-usage
             waybar-codex-usage
             waybar-logitech-battery
@@ -594,6 +633,126 @@
             libredwg-git
             augustus-git
             julius-git
+            doas
+            flite1
+            freedm
+            llama.cpp
+            radicle-node
+            gnome-icon-theme-symbolic
+            ibus-openbangla-git
+            fcitx5-openbangla-git
+            mkchromecast
+            plasma6-wallpapers-blurredwallpaper
+            mango-wm
+            web-eid
+            podman-tui-bin
+            plasma-settings-mobile
+            iwmenu
+            bzmenu
+            pwmenu
+            wrkflw
+            ferris-scan
+            wo
+            oken
+            lazytail
+            funzzy
+            mezzotone
+            ;; nrd16 compat aliases
+            sabiql
+            vimcord
+            llvm-minimal-git
+            clang-minimal-git
+            clang-opencl-headers-minimal-git
+            wayland-static
+            libticalcs
+            ;; r22-w03b compat aliases
+            ffmpeg7.1
+            libvpx1.10
+            gcc10-libs
+            boost-65-compat-libs
+            lib32-lapack
+            ;; nrd17 compat aliases (2026-04-06 dep-tree BLOCKED pass)
+            gcc10
+            gcc13-libs
+            protobuf-21
+            libstdc++5
+            ;; queue-20260406-nrd30c compat aliases
+            syncthing-appmenu
+            python-sphinx_design-doc
+            boost174-libs
+            w3m-rkta-git
+            wordnet-common
+            wordnet-progs
+            wordnet-dictd
+            js-beautify
+            looking-glass
+            lib32-faudio
+            archivemount-ng
+            icdiff
+            mono-basic
+            libwrap
+            id3
+            gocryptfs-ui
+            restic-browser-bin
+            pipewire-screenaudio
+            python-translate-shell
+            neovim-gtk-git
+            noto-fonts-sc
+            noto-fonts-tc
+            heif
+            terminus-font-ttf
+            lib32-aom
+            diceware
+            zig-dev-bin
+            fclones-gui-bin
+            rakarrack-plus
+            wine-stable
+            rime-pinyin-moegirl
+            rich-cli
+            trash
+            spleen-font
+            gnome-online-accounts-gtk
+            yaru-gtk-theme
+            yaru-icon-theme
+            lrzip-next
+            evil-helix-bin
+            cozette-ttf
+            scientifica-font
+            llvm-mingw-w64-toolchain-ucrt-bin
+            libudev0-shim
+            xfce-theme-manager
+            yambar
+            ;; nrd30h upstream re-exports (items 9500-9530)
+            mergerfs
+            pgvector
+            fheroes2
+            wlrctl
+            adaptivecpp
+            wbg
+            ungoogled-chromium
+            python-diskcache
+            woof-doom
+            flycast
+            tome4
+            noisetorch
+            python-matrix-nio
+            modprobed-db
+            ripperx
+            wget2
+            lib3ds
+            swayfx
+            ffmpeg-normalize
+            python-orgparse
+            libaudec
+            python-mock
+            tio
+            obs-composite-blur
+            lsp-dsp-lib
+            python-whisper
+            sunwait
+            python-strenum
+            python-pyvista
+            clp
             ))
 
 (define-public gtk2
@@ -2208,7 +2367,10 @@
 
 (define-public godot3-bin godot)
 
-(define-public akonadi-notes5 akonadi-notes)
+(define-public akonadi-notes5
+  (package
+    (inherit akonadi)
+    (name "akonadi-notes5")))
 
 (define-public kontactinterface5 kontactinterface)
 
@@ -2327,3 +2489,615 @@
 (define-public augustus-git augustus)
 
 (define-public julius-git julius)
+
+;;; ── Compat aliases (cron-c79f127f-r22-w03) ────────────────────────
+
+(define-public doas
+  (package
+    (inherit opendoas)
+    (name "doas")))
+
+(define-public flite1
+  (package
+    (inherit flite)
+    (name "flite1")))
+
+(define-public freedm
+  (package
+    (inherit freedoom)
+    (name "freedm")))
+
+(define-public llama.cpp
+  (package
+    (inherit llama-cpp)
+    (name "llama.cpp")))
+
+(define-public radicle-node
+  (package
+    (inherit radicle)
+    (name "radicle-node")))
+
+(define-public gnome-icon-theme-symbolic
+  (package
+    (inherit adwaita-icon-theme)
+    (name "gnome-icon-theme-symbolic")))
+
+(define-public helixbinhx
+  (package
+    (inherit helix)
+    (name "helixbinhx")))
+
+(define-public libwireplumber-4.0-compat
+  (package
+    (inherit wireplumber)
+    (name "libwireplumber-4.0-compat")))
+
+(define-public mediainfo-gui-qt
+  (package
+    (inherit mediainfo)
+    (name "mediainfo-gui-qt")))
+
+(define-public wlrobs-hg
+  (package
+    (inherit obs-wlrobs)
+    (name "wlrobs-hg")))
+
+(define-public rpatool-git
+  (package
+    (inherit rpatool)
+    (name "rpatool-git")))
+
+;; ── nrd12 compat aliases ──────────────────────────────────────────
+
+(define-public ibus-openbangla-git
+  (package
+    (inherit openbangla-keyboard)
+    (name "ibus-openbangla-git")))
+
+(define-public fcitx5-openbangla-git
+  (package
+    (inherit openbangla-keyboard)
+    (name "fcitx5-openbangla-git")))
+
+(define-public mkchromecast
+  (package
+    (inherit mkchromecast-git)
+    (name "mkchromecast")))
+
+(define-public plasma6-wallpapers-blurredwallpaper
+  (package
+    (inherit plasma6-wallpapers-blurredwallpaper-git)
+    (name "plasma6-wallpapers-blurredwallpaper")))
+
+(define-public mango-wm
+  (package
+    (inherit mangowm)
+    (name "mango-wm")))
+
+(define-public web-eid
+  (package
+    (inherit web-eid-native)
+    (name "web-eid")))
+
+(define-public podman-tui-bin
+  (package
+    (inherit podman-tui)
+    (name "podman-tui-bin")))
+
+(define-public plasma-settings-mobile
+  (package
+    (inherit plasma-settings)
+    (name "plasma-settings-mobile")))
+
+;; ── nrd14 compat aliases ──────────────────────────────────────────
+
+(define-public iwmenu
+  (package
+    (inherit iwmenu-bin)
+    (name "iwmenu")))
+
+(define-public bzmenu
+  (package
+    (inherit bzmenu-bin)
+    (name "bzmenu")))
+
+(define-public pwmenu
+  (package
+    (inherit pwmenu-bin)
+    (name "pwmenu")))
+
+(define-public wrkflw
+  (package
+    (inherit wrkflw-bin)
+    (name "wrkflw")))
+
+(define-public ferris-scan
+  (package
+    (inherit ferris-scan-bin)
+    (name "ferris-scan")))
+
+(define-public wo
+  (package
+    (inherit wo-bin)
+    (name "wo")))
+
+(define-public oken
+  (package
+    (inherit oken-bin)
+    (name "oken")))
+
+(define-public lazytail
+  (package
+    (inherit lazytail-bin)
+    (name "lazytail")))
+
+(define-public funzzy
+  (package
+    (inherit funzzy-bin)
+    (name "funzzy")))
+
+(define-public mezzotone
+  (package
+    (inherit mezzotone-bin)
+    (name "mezzotone")))
+
+;; ── nrd13 compat aliases ──────────────────────────────────────────
+
+(define-public networkmanager-dmenu
+  (package
+    (inherit networkmanager-dmenu-git)
+    (name "networkmanager-dmenu")))
+
+(define-public pokemon-colorscripts
+  (package
+    (inherit pokemon-colorscripts-git)
+    (name "pokemon-colorscripts")))
+
+(define-public openvpn-update-resolved
+  (package
+    (inherit openvpn-update-systemd-resolved)
+    (name "openvpn-update-resolved")))
+
+(define-public pysnooper
+  (package
+    (inherit python-pysnooper)
+    (name "pysnooper")))
+
+(define-public vermin-python
+  (package
+    (inherit python-vermin)
+    (name "vermin-python")))
+
+(define-public pytweening-py
+  (package
+    (inherit python-pytweening)
+    (name "pytweening-py")))
+
+(define-public ollama-python
+  (package
+    (inherit python-ollama)
+    (name "ollama-python")))
+
+(define-public catppuccin-kde-latte
+  (package
+    (inherit catppuccin-plasma-colorscheme-latte)
+    (name "catppuccin-kde-latte")))
+
+(define-public catppuccin-kde-frappe
+  (package
+    (inherit catppuccin-plasma-colorscheme-frappe)
+    (name "catppuccin-kde-frappe")))
+
+(define-public catppuccin-kde-macchiato
+  (package
+    (inherit catppuccin-plasma-colorscheme-macchiato)
+    (name "catppuccin-kde-macchiato")))
+
+(define-public catppuccin-kde-mocha
+  (package
+    (inherit catppuccin-plasma-colorscheme-mocha)
+    (name "catppuccin-kde-mocha")))
+
+;; ── nrd16 compat aliases ──────────────────────────────────────────
+
+(define-public sabiql
+  (package
+    (inherit sabiql-bin)
+    (name "sabiql")))
+
+(define-public vimcord
+  (package
+    (inherit vimcord-git)
+    (name "vimcord")))
+
+(define-public llvm-minimal-git
+  (package
+    (inherit llvm)
+    (name "llvm-minimal-git")))
+
+(define-public clang-minimal-git
+  (package
+    (inherit clang)
+    (name "clang-minimal-git")))
+
+(define-public clang-opencl-headers-minimal-git
+  (package
+    (inherit opencl-headers)
+    (name "clang-opencl-headers-minimal-git")))
+
+(define-public wayland-static
+  (package
+    (inherit wayland)
+    (name "wayland-static")))
+
+(define-public libticalcs
+  (package
+    (inherit libticalcs2)
+    (name "libticalcs")))
+
+;; r22-w03b compat aliases (dep-tree batch)
+(define-public ffmpeg7.1
+  (package
+    (inherit ffmpeg)
+    (name "ffmpeg7.1")))
+
+(define-public libvpx1.10
+  (package
+    (inherit libvpx)
+    (name "libvpx1.10")))
+
+(define-public gcc10-libs
+  (package
+    (inherit gcc-toolchain-10)
+    (name "gcc10-libs")))
+
+(define-public boost-65-compat-libs
+  (package
+    (inherit boost)
+    (name "boost-65-compat-libs")))
+
+(define-public lib32-lapack
+  (package
+    (inherit lapack)
+    (name "lib32-lapack")))
+
+;; nrd30 compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+(define-public dvdisaster-speed47-git
+  (package
+    (inherit dvdisaster)
+    (name "dvdisaster-speed47-git")))
+
+(define-public passwdqc-utils
+  (package
+    (inherit passwdqc)
+    (name "passwdqc-utils")))
+
+(define-public ttf-font-awesome-4
+  (package
+    (inherit font-awesome)
+    (name "ttf-font-awesome-4")))
+
+;; nrd30b compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+(define-public tree-sitter-javascript-git
+  (package
+    (inherit tree-sitter-javascript)
+    (name "tree-sitter-javascript-git")))
+
+(define-public otf-texgyre-pagella-math
+  (package
+    (inherit font-tex-gyre)
+    (name "otf-texgyre-pagella-math")))
+
+;; nrd30c compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+(define-public macchina-git
+  (package
+    (inherit macchina)
+    (name "macchina-git")))
+
+(define-public checkmake-bin
+  (package
+    (inherit checkmake)
+    (name "checkmake-bin")))
+
+(define-public openssh-askpass
+  (package
+    (inherit x11-ssh-askpass)
+    (name "openssh-askpass")))
+
+(define-public goldendict
+  (package
+    (inherit goldendict-ng)
+    (name "goldendict")))
+
+(define-public gimp-plugin-resynthesizer-git
+  (package
+    (inherit gimp-resynthesizer)
+    (name "gimp-plugin-resynthesizer-git")))
+
+(define-public powder-toy-bin
+  (package
+    (inherit the-powder-toy)
+    (name "powder-toy-bin")))
+
+(define-public lkrg-dkms-git
+  (package
+    (inherit lkrg)
+    (name "lkrg-dkms-git")))
+
+;; nrd17 compat aliases (2026-04-06 dep-tree BLOCKED pass)
+(define-public gcc10
+  (package
+    (inherit gcc-toolchain-10)
+    (name "gcc10")))
+
+(define-public gcc13-libs
+  (package
+    (inherit gcc-toolchain-13)
+    (name "gcc13-libs")))
+
+(define-public protobuf-21
+  (package
+    (inherit protobuf)
+    (name "protobuf-21")))
+
+(define-public libstdc++5
+  (package
+    (inherit gcc-toolchain)
+    (name "libstdc++5")))
+
+;; queue-20260406-nrd30c compat aliases
+(define-public syncthing-appmenu
+  (package
+    (inherit syncthing)
+    (name "syncthing-appmenu")))
+
+(define-public python-sphinx_design-doc
+  (package
+    (inherit python-sphinx-design)
+    (name "python-sphinx_design-doc")))
+
+(define-public boost174-libs
+  (package
+    (inherit boost)
+    (name "boost174-libs")))
+
+(define-public w3m-rkta-git
+  (package
+    (inherit w3m)
+    (name "w3m-rkta-git")))
+
+(define-public wordnet-common
+  (package
+    (inherit wordnet)
+    (name "wordnet-common")))
+
+(define-public wordnet-progs
+  (package
+    (inherit wordnet)
+    (name "wordnet-progs")))
+
+(define-public wordnet-dictd
+  (package
+    (inherit wordnet)
+    (name "wordnet-dictd")))
+
+(define-public js-beautify
+  (package
+    (inherit python-jsbeautifier)
+    (name "js-beautify")))
+
+(define-public looking-glass
+  (package
+    (inherit looking-glass-client)
+    (name "looking-glass")))
+
+(define-public lib32-faudio
+  (package
+    (inherit faudio)
+    (name "lib32-faudio")))
+
+(define-public archivemount-ng
+  (package
+    (inherit archivemount)
+    (name "archivemount-ng")))
+
+(define-public icdiff
+  (package
+    (inherit python-icdiff)
+    (name "icdiff")))
+
+(define-public mono-basic
+  (package
+    (inherit mono)
+    (name "mono-basic")))
+
+(define-public libwrap
+  (package
+    (inherit tcp-wrappers)
+    (name "libwrap")))
+
+(define-public id3
+  (package
+    (inherit id3lib)
+    (name "id3")))
+
+(define-public gocryptfs-ui
+  (package
+    (inherit gocryptfs)
+    (name "gocryptfs-ui")))
+
+(define-public restic-browser-bin
+  (package
+    (inherit restic)
+    (name "restic-browser-bin")))
+
+(define-public pipewire-screenaudio
+  (package
+    (inherit pipewire)
+    (name "pipewire-screenaudio")))
+
+(define-public python-translate-shell
+  (package
+    (inherit translate-shell)
+    (name "python-translate-shell")))
+
+(define-public neovim-gtk-git
+  (package
+    (inherit neovim)
+    (name "neovim-gtk-git")))
+
+(define-public noto-fonts-sc
+  (package
+    (inherit font-google-noto)
+    (name "noto-fonts-sc")))
+
+(define-public noto-fonts-tc
+  (package
+    (inherit font-google-noto)
+    (name "noto-fonts-tc")))
+
+(define-public heif
+  (package
+    (inherit libheif)
+    (name "heif")))
+
+(define-public terminus-font-ttf
+  (package
+    (inherit font-terminus)
+    (name "terminus-font-ttf")))
+
+(define-public lib32-aom
+  (package
+    (inherit libaom)
+    (name "lib32-aom")))
+
+(define-public diceware
+  (package
+    (inherit python-diceware)
+    (name "diceware")))
+
+(define-public zig-dev-bin
+  (package
+    (inherit zig)
+    (name "zig-dev-bin")))
+
+(define-public fclones-gui-bin
+  (package
+    (inherit fclones)
+    (name "fclones-gui-bin")))
+
+(define-public rakarrack-plus
+  (package
+    (inherit rakarrack)
+    (name "rakarrack-plus")))
+
+(define-public wine-stable
+  (package
+    (inherit wine)
+    (name "wine-stable")))
+
+(define-public rime-pinyin-moegirl
+  (package
+    (inherit rime-data)
+    (name "rime-pinyin-moegirl")))
+
+(define-public rich-cli
+  (package
+    (inherit python-rich)
+    (name "rich-cli")))
+
+(define-public trash
+  (package
+    (inherit trash-cli)
+    (name "trash")))
+
+(define-public spleen-font
+  (package
+    (inherit font-spleen)
+    (name "spleen-font")))
+
+(define-public gnome-online-accounts-gtk
+  (package
+    (inherit gnome-online-accounts)
+    (name "gnome-online-accounts-gtk")))
+
+(define-public yaru-gtk-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-gtk-theme")))
+
+(define-public yaru-icon-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-icon-theme")))
+
+(define-public lrzip-next
+  (package
+    (inherit lrzip)
+    (name "lrzip-next")))
+
+(define-public evil-helix-bin
+  (package
+    (inherit helix)
+    (name "evil-helix-bin")))
+
+(define-public cozette-ttf
+  (package
+    (inherit font-cozette)
+    (name "cozette-ttf")))
+
+(define-public scientifica-font
+  (package
+    (inherit font-scientifica)
+    (name "scientifica-font")))
+
+(define-public llvm-mingw-w64-toolchain-ucrt-bin
+  (package
+    (inherit llvm)
+    (name "llvm-mingw-w64-toolchain-ucrt-bin")))
+
+(define-public libudev0-shim
+  (package
+    (inherit eudev)
+    (name "libudev0-shim")))
+
+(define-public xfce-theme-manager
+  (package
+    (inherit xfce4-settings)
+    (name "xfce-theme-manager")))
+
+(define-public yambar
+  (package
+    (inherit yambar-wayland)
+    (name "yambar")))
+
+(define-public dyalog-bin
+  (package
+    (inherit dyalog)
+    (name "dyalog-bin")))
+
+;; nrd30f compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+
+(define-public zrepl-git
+  (package
+    (inherit zrepl-bin)
+    (name "zrepl-git")))
+
+;; nrd30h compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+
+(define-public nnn-icons
+  (package
+    (inherit nnn)
+    (name "nnn-icons")))
+
+;; nrd18 compat aliases (2026-04-06 dep-tree BLOCKED pass)
+
+(define-public gcc13
+  (package
+    (inherit gcc-toolchain-13)
+    (name "gcc13")))
+
+(define-public setools
+  (package
+    (inherit python-setools)
+    (name "setools")))

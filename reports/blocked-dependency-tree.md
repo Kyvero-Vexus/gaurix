@@ -1,133 +1,130 @@
 # Blocked Dependency Tree
 
-**Timestamp:** 2026-04-05T02:44:07.896705+00:00
-**Run:** cron-c79f127f-r19
-**Total BLOCKED:** 6560
+**Timestamp:** 2026-04-06T17:52:08.130386+00:00
+**Run:** cron-c79f127f-r22-w03-nrd18
+**Total blocked:** 6297
 
-## Top 20 Priority Queue
+## Priority Queue (top 120)
 
-| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
-|------|---------|-------------|-------------|------------|
-| 1 | httpdirfs | 0 | 18 | 10 |
-| 2 | openssl-1.1 | 0 | 15 | 2 |
-| 3 | html2markdown | 0 | 12 | 3 |
-| 4 | xapp-thumbnailers-common | 0 | 9 | 5 |
-| 5 | qt5-doc | 0 | 8 | 15 |
-| 6 | bcompare | 0 | 7 | 2 |
-| 7 | domake | 0 | 7 | 5 |
-| 8 | rvgl-bin | 0 | 7 | 7 |
-| 9 | archlinux-java-run | 0 | 6 | 2 |
-| 10 | auto-auto-complete | 0 | 6 | 2 |
-| 11 | cosmic-icons-git | 0 | 6 | 3 |
-| 12 | yay | 0 | 6 | 3 |
-| 13 | asf | 0 | 6 | 4 |
-| 14 | python-opencensus | 0 | 6 | 4 |
-| 15 | openvino | 0 | 5 | 21 |
-| 16 | xlibre-xserver-common-git | 0 | 5 | 33 |
-| 17 | waydroid | 0 | 4 | 0 |
-| 18 | python-art | 0 | 4 | 5 |
-| 19 | python-inquirerpy | 0 | 4 | 7 |
-| 20 | python-munge | 0 | 4 | 7 |
-
-## Selected 100
-
-1. httpdirfs (blocked_deps=0, rev_deps=18, total=10)
-2. openssl-1.1 (blocked_deps=0, rev_deps=15, total=2)
-3. html2markdown (blocked_deps=0, rev_deps=12, total=3)
-4. xapp-thumbnailers-common (blocked_deps=0, rev_deps=9, total=5)
-5. qt5-doc (blocked_deps=0, rev_deps=8, total=15)
-6. bcompare (blocked_deps=0, rev_deps=7, total=2)
-7. domake (blocked_deps=0, rev_deps=7, total=5)
-8. rvgl-bin (blocked_deps=0, rev_deps=7, total=7)
-9. archlinux-java-run (blocked_deps=0, rev_deps=6, total=2)
-10. auto-auto-complete (blocked_deps=0, rev_deps=6, total=2)
-11. cosmic-icons-git (blocked_deps=0, rev_deps=6, total=3)
-12. yay (blocked_deps=0, rev_deps=6, total=3)
-13. asf (blocked_deps=0, rev_deps=6, total=4)
-14. python-opencensus (blocked_deps=0, rev_deps=6, total=4)
-15. openvino (blocked_deps=0, rev_deps=5, total=21)
-16. xlibre-xserver-common-git (blocked_deps=0, rev_deps=5, total=33)
-17. waydroid (blocked_deps=0, rev_deps=4, total=0)
-18. python-art (blocked_deps=0, rev_deps=4, total=5)
-19. python-inquirerpy (blocked_deps=0, rev_deps=4, total=7)
-20. python-munge (blocked_deps=0, rev_deps=4, total=7)
-21. xrizer-common (blocked_deps=0, rev_deps=4, total=9)
-22. sqlite-utils (blocked_deps=0, rev_deps=4, total=11)
-23. davs2 (blocked_deps=0, rev_deps=3, total=2)
-24. python-plyer (blocked_deps=0, rev_deps=3, total=2)
-25. qt5-connectivity (blocked_deps=0, rev_deps=3, total=4)
-26. cosmic-randr-git (blocked_deps=0, rev_deps=3, total=5)
-27. python-condense-json (blocked_deps=0, rev_deps=3, total=5)
-28. zmusic (blocked_deps=0, rev_deps=3, total=5)
-29. python-m3u8 (blocked_deps=0, rev_deps=3, total=8)
-30. python-uv-dynamic-versioning (blocked_deps=0, rev_deps=3, total=8)
-31. python312 (blocked_deps=0, rev_deps=3, total=12)
-32. mozc-ut-full-common (blocked_deps=0, rev_deps=3, total=13)
-33. hyprtoolkit-git (blocked_deps=0, rev_deps=3, total=15)
-34. wayfire (blocked_deps=0, rev_deps=3, total=15)
-35. python-sse-starlette (blocked_deps=0, rev_deps=3, total=16)
-36. llvm-libs-minimal-git (blocked_deps=0, rev_deps=3, total=19)
-37. logmein-hamachi (blocked_deps=0, rev_deps=2, total=0)
-38. libklvanc (blocked_deps=0, rev_deps=2, total=1)
-39. mips64-linux-gnu-linux-api-headers (blocked_deps=0, rev_deps=2, total=1)
-40. lianwalld-bin (blocked_deps=0, rev_deps=2, total=2)
-41. openapv (blocked_deps=0, rev_deps=2, total=2)
-42. qt5-scxml (blocked_deps=0, rev_deps=2, total=2)
-43. xevd (blocked_deps=0, rev_deps=2, total=2)
-44. xeve (blocked_deps=0, rev_deps=2, total=2)
-45. xone-dongle-firmware (blocked_deps=0, rev_deps=2, total=2)
-46. flite1 (blocked_deps=0, rev_deps=2, total=3)
-47. gtk-sharp-2 (blocked_deps=0, rev_deps=2, total=3)
-48. libaribcaption (blocked_deps=0, rev_deps=2, total=3)
-49. quirc (blocked_deps=0, rev_deps=2, total=3)
-50. uavs3d-git (blocked_deps=0, rev_deps=2, total=3)
-51. vvenc (blocked_deps=0, rev_deps=2, total=3)
-52. foobar2000 (blocked_deps=0, rev_deps=2, total=4)
-53. libelectron (blocked_deps=0, rev_deps=2, total=4)
-54. libuvc (blocked_deps=0, rev_deps=2, total=4)
-55. mozc (blocked_deps=0, rev_deps=2, total=4)
-56. paru (blocked_deps=0, rev_deps=2, total=4)
-57. xavs2 (blocked_deps=0, rev_deps=2, total=4)
-58. python-wassima (blocked_deps=0, rev_deps=2, total=5)
-59. python-pid (blocked_deps=0, rev_deps=2, total=6)
-60. bms-shell (blocked_deps=0, rev_deps=2, total=7)
-61. lcevcdec (blocked_deps=0, rev_deps=2, total=7)
-62. dotnet-runtime-9.0-bin (blocked_deps=0, rev_deps=2, total=8)
-63. gslapper (blocked_deps=0, rev_deps=2, total=8)
-64. wl-screenrec (blocked_deps=0, rev_deps=2, total=8)
-65. python-materialyoucolor (blocked_deps=0, rev_deps=2, total=9)
-66. python-syncedlyrics (blocked_deps=0, rev_deps=2, total=9)
-67. qtutilities-qt6 (blocked_deps=0, rev_deps=2, total=9)
-68. xboxdrv (blocked_deps=0, rev_deps=2, total=9)
-69. openbangla-keyboard-git (blocked_deps=0, rev_deps=2, total=10)
-70. radicle-node (blocked_deps=0, rev_deps=2, total=10)
-71. cosmic-comp-git (blocked_deps=0, rev_deps=2, total=13)
-72. qmc2-common-git (blocked_deps=0, rev_deps=2, total=13)
-73. linux-lqx (blocked_deps=0, rev_deps=2, total=17)
-74. python-urllib3-future (blocked_deps=0, rev_deps=2, total=17)
-75. vscodium-translucent (blocked_deps=0, rev_deps=2, total=21)
-76. ros2-arch-deps (blocked_deps=0, rev_deps=2, total=44)
-77. sonic-win (blocked_deps=0, rev_deps=2, total=61)
-78. clash-geoip (blocked_deps=0, rev_deps=1, total=0)
-79. genders (blocked_deps=0, rev_deps=1, total=0)
-80. ghostty-shell-integration-nightly-bin (blocked_deps=0, rev_deps=1, total=0)
-81. ghostty-terminfo-nightly-bin (blocked_deps=0, rev_deps=1, total=0)
-82. keychron-link-udev (blocked_deps=0, rev_deps=1, total=0)
-83. libfmod (blocked_deps=0, rev_deps=1, total=0)
-84. localepurge (blocked_deps=0, rev_deps=1, total=0)
-85. nordvpn-bin (blocked_deps=0, rev_deps=1, total=0)
-86. noto-fonts-emoji-blob (blocked_deps=0, rev_deps=1, total=0)
-87. redhat-fonts (blocked_deps=0, rev_deps=1, total=0)
-88. tailscale (blocked_deps=0, rev_deps=1, total=0)
-89. tosu (blocked_deps=0, rev_deps=1, total=0)
-90. upd72020x-fw (blocked_deps=0, rev_deps=1, total=0)
-91. arduino-ctags (blocked_deps=0, rev_deps=1, total=1)
-92. aspnet-runtime-bin (blocked_deps=0, rev_deps=1, total=1)
-93. aspnet-targeting-pack-bin (blocked_deps=0, rev_deps=1, total=1)
-94. brscan4 (blocked_deps=0, rev_deps=1, total=1)
-95. deb2targz (blocked_deps=0, rev_deps=1, total=1)
-96. doas (blocked_deps=0, rev_deps=1, total=1)
-97. elephant (blocked_deps=0, rev_deps=1, total=1)
-98. grepcidr (blocked_deps=0, rev_deps=1, total=1)
-99. kaitai-struct-compiler (blocked_deps=0, rev_deps=1, total=1)
-100. libjodycode (blocked_deps=0, rev_deps=1, total=1)
+| Rank | Package | Blocked Deps | Reverse Deps | Total Deps | Blocked Dep Names |
+|------|---------|-------------|-------------|------------|-------------------|
+| 1 | qt5-webkit | 0 | 6 | 32 |  |
+| 2 | matlab-mpm | 0 | 4 | 4 |  |
+| 3 | cosmic-randr-git | 0 | 3 | 5 |  |
+| 4 | intel-npu-driver | 0 | 3 | 11 |  |
+| 5 | foobar2000 | 0 | 2 | 4 |  |
+| 6 | libelectron | 0 | 2 | 4 |  |
+| 7 | python-albucore | 0 | 2 | 8 |  |
+| 8 | aria2p | 0 | 2 | 9 |  |
+| 9 | gcc13 | 0 | 2 | 19 |  |
+| 10 | vscodium-translucent | 0 | 2 | 21 |  |
+| 11 | ros2-arch-deps | 0 | 2 | 44 |  |
+| 12 | aspnet-targeting-pack-preview-bin | 0 | 1 | 1 |  |
+| 13 | pipes.sh | 0 | 1 | 1 |  |
+| 14 | sac-core | 0 | 1 | 2 |  |
+| 15 | e-imzo | 0 | 1 | 3 |  |
+| 16 | electron22-bin | 0 | 1 | 3 |  |
+| 17 | ggml-sycl-f16-git | 0 | 1 | 3 |  |
+| 18 | itchio-dlagent | 0 | 1 | 3 |  |
+| 19 | nvidia-390xx-utils | 0 | 1 | 3 |  |
+| 20 | nvidia-470xx-utils | 0 | 1 | 3 |  |
+| 21 | qt5-quick3d | 0 | 1 | 3 |  |
+| 22 | samsung-unified-driver-printer | 0 | 1 | 3 |  |
+| 23 | themix-import-images-git | 0 | 1 | 3 |  |
+| 24 | yaycache | 0 | 1 | 3 |  |
+| 25 | arduino-builder | 0 | 1 | 4 |  |
+| 26 | iscan | 0 | 1 | 4 |  |
+| 27 | paru-git | 0 | 1 | 4 |  |
+| 28 | samsung-unified-driver-scanner | 0 | 1 | 4 |  |
+| 29 | themix-plugin-base16-git | 0 | 1 | 4 |  |
+| 30 | tzpfms | 0 | 1 | 4 |  |
+| 31 | vectorchord | 0 | 1 | 4 |  |
+| 32 | zectl | 0 | 1 | 4 |  |
+| 33 | cosmic-idle-git | 0 | 1 | 5 |  |
+| 34 | cosmic-screenshot-git | 0 | 1 | 5 |  |
+| 35 | dosh-cqfd | 0 | 1 | 5 |  |
+| 36 | eprosima-fast-dds | 0 | 1 | 5 |  |
+| 37 | eww | 0 | 1 | 5 |  |
+| 38 | lib32-libvmaf | 0 | 1 | 5 |  |
+| 39 | opencl-amd | 0 | 1 | 5 |  |
+| 40 | python-loro | 0 | 1 | 5 |  |
+| 41 | sleuthkit-java | 0 | 1 | 5 |  |
+| 42 | aurutils | 0 | 1 | 6 |  |
+| 43 | cosmic-app-library-git | 0 | 1 | 6 |  |
+| 44 | cosmic-panel-git | 0 | 1 | 6 |  |
+| 45 | kanidm-clients | 0 | 1 | 6 |  |
+| 46 | kanidm-server | 0 | 1 | 6 |  |
+| 47 | kanidm-unixd-clients | 0 | 1 | 6 |  |
+| 48 | ps3-psl1ght | 0 | 1 | 6 |  |
+| 49 | cosmic-workspaces-git | 0 | 1 | 7 |  |
+| 50 | easytier-cli | 0 | 1 | 7 |  |
+| 51 | easytier-core | 0 | 1 | 7 |  |
+| 52 | easytier-web | 0 | 1 | 7 |  |
+| 53 | memoria-daemon | 0 | 1 | 7 |  |
+| 54 | pgadmin4-web | 0 | 1 | 7 |  |
+| 55 | qtforkawesome-qt6 | 0 | 1 | 7 |  |
+| 56 | cosmic-bg-git | 0 | 1 | 8 |  |
+| 57 | cosmic-notifications-git | 0 | 1 | 8 |  |
+| 58 | cryptomator | 0 | 1 | 8 |  |
+| 59 | kcontacts5 | 0 | 1 | 8 |  |
+| 60 | lib32-nvidia-utils-beta | 0 | 1 | 8 |  |
+| 61 | plasticscm-client-core | 0 | 1 | 8 |  |
+| 62 | python-frida | 0 | 1 | 8 |  |
+| 63 | stardust-xr-non-spatial-input | 0 | 1 | 8 |  |
+| 64 | aylurs-gtk-shell-git | 0 | 1 | 9 |  |
+| 65 | cosmic-files-git | 0 | 1 | 9 |  |
+| 66 | lib32-bluez-libs | 0 | 1 | 9 |  |
+| 67 | mips64-linux-gnu-gcc-bootstrap | 0 | 1 | 9 |  |
+| 68 | stardust-xr-server | 0 | 1 | 9 |  |
+| 69 | tagparser | 0 | 1 | 9 |  |
+| 70 | upscayl-ncnn | 0 | 1 | 9 |  |
+| 71 | cairo-dock-core-wayland-git | 0 | 1 | 10 |  |
+| 72 | cosmic-launcher-git | 0 | 1 | 10 |  |
+| 73 | spotify | 0 | 1 | 10 |  |
+| 74 | vapoursynth-plugin-vsjetpack | 0 | 1 | 10 |  |
+| 75 | android-sdk | 0 | 1 | 11 |  |
+| 76 | dpt-rp1-py | 0 | 1 | 11 |  |
+| 77 | element-web-git | 0 | 1 | 11 |  |
+| 78 | epsonscan2 | 0 | 1 | 11 |  |
+| 79 | llama.cpp-hip | 0 | 1 | 11 |  |
+| 80 | python-asyncpraw | 0 | 1 | 11 |  |
+| 81 | setools | 0 | 1 | 11 |  |
+| 82 | sidef | 0 | 1 | 11 |  |
+| 83 | themix-theme-oomox-git | 0 | 1 | 11 |  |
+| 84 | obsidianctl | 0 | 1 | 12 |  |
+| 85 | python-twisterl | 0 | 1 | 12 |  |
+| 86 | xr-driver-git | 0 | 1 | 12 |  |
+| 87 | cosmic-applets-git | 0 | 1 | 13 |  |
+| 88 | cosmic-comp-git | 0 | 1 | 13 |  |
+| 89 | radiotray-ng | 0 | 1 | 13 |  |
+| 90 | tl-render | 0 | 1 | 13 |  |
+| 91 | wf-shell | 0 | 1 | 13 |  |
+| 92 | xviewer | 0 | 1 | 13 |  |
+| 93 | kde-material-you-colors | 0 | 1 | 14 |  |
+| 94 | libappindicator-gtk2 | 0 | 1 | 14 |  |
+| 95 | libpamac-full | 0 | 1 | 14 |  |
+| 96 | maliit-framework | 0 | 1 | 14 |  |
+| 97 | python-panel | 0 | 1 | 14 |  |
+| 98 | clightd | 0 | 1 | 15 |  |
+| 99 | libadwaita-yaru-git | 0 | 1 | 15 |  |
+| 100 | python-aiortc | 0 | 1 | 15 |  |
+| 101 | python-google-generativeai | 0 | 1 | 15 |  |
+| 102 | snapx | 0 | 1 | 15 |  |
+| 103 | xrizer-git | 0 | 1 | 15 |  |
+| 104 | cosmic-settings-daemon-git | 0 | 1 | 16 |  |
+| 105 | ktextaddons5 | 0 | 1 | 16 |  |
+| 106 | linux-cachyos-lts | 0 | 1 | 16 |  |
+| 107 | python-rapidocr | 0 | 1 | 16 |  |
+| 108 | backintime-cli-git | 0 | 1 | 17 |  |
+| 109 | libastal-meta | 0 | 1 | 17 |  |
+| 110 | litellm | 0 | 1 | 17 |  |
+| 111 | portable | 0 | 1 | 17 |  |
+| 112 | angle | 0 | 1 | 18 |  |
+| 113 | mupen64plus-git | 0 | 1 | 18 |  |
+| 114 | linux-cachyos | 0 | 1 | 19 |  |
+| 115 | python-insightface | 0 | 1 | 19 |  |
+| 116 | tensorrt | 0 | 1 | 19 |  |
+| 117 | protonmail-bridge-free-core | 0 | 1 | 21 |  |
+| 118 | libpamac-aur | 0 | 1 | 22 |  |
+| 119 | vscodium | 0 | 1 | 22 |  |
+| 120 | opera-gx-stable | 0 | 1 | 27 |  |
