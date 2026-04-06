@@ -4671,6 +4671,56 @@
             xrdp
             xremap-kde
             xremap-kde-bin
+            nextpnr-git
+            ttf-iosevka-term
+            queue-20260403p100daily2-blocked-notes
+            rtl_433-git
+            sdl_pango
+            klassy-qt5
+            keepassxc-qt6
+            ocaml-ppx_expect
+            qcustomplot-qt6
+            kseexpr-qt6-git
+            buku_run-git
+            otf-oswald
+            queue-20260403p100daily3-blocked-notes
+            waydroid-image-gapps
+            teleport-client-bin
+            ttf-gentium-basic
+            auth0-bin
+            rtimelog
+            rtimelogger
+            python-javalang
+            ocr-fonts
+            terraform-bin
+            ttf-aptos
+            porty-bin
+            repacman2
+            launcherx-bin
+            httm-bin
+            apidash-bin
+            base64-converter
+            buku_run-git
+            cdncheck-bin
+            chatgpt-bin
+            httm-bin
+            keepassxc-qt6
+            klassy-qt5
+            kseexpr-qt6-git
+            launcherx-bin
+            magic-cpp
+            nextpnr-git
+            ocaml-ppx_expect
+            otf-oswald
+            porty-bin
+            qcustomplot-qt6
+            queue-20260403p100daily2-blocked-notes
+            queue-20260403p100daily3-blocked-notes
+            repacman2
+            rtl_433-git
+            sdl_pango
+            ttf-bizter
+            ttf-iosevka-term
             xremap-wlroots-bin
             xremap-x11-bin
             xrizer-common

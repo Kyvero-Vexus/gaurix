@@ -3,6 +3,11 @@
 ;;; Status: recipe-attempt stubs with NEEDS_RECIPE_DESIGN blockers.
 (define-module (gaurix packages queue-20260329p100daily2)
   #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system trivial)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages compression)
   #:use-module (gnu packages rust-apps)
   #:export (
             lib32-libxxf86dga
@@ -261,16 +266,89 @@
     (name "seqtui-bin")))
 
 (define-public sakura-frp
-  ;; NEEDS_RECIPE_DESIGN queue stub for sakura-frp.
   (package
-    (inherit zoxide)
-    (name "sakura-frp")))
+    (name "sakura-frp")
+    (version "0.68.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/fatedier/frp/releases/download/v"
+             version "/frp_" version "_linux_amd64.tar.gz"))
+       (sha256
+        (base32 "088n3v7qr2xdmxcny1q06clf7zzm6gxk377436gfxcaggx3k9y9w"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list coreutils tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (bin (string-append out "/bin"))
+                (doc (string-append out "/share/doc/sakura-frp"))
+                (license-dir (string-append out "/share/licenses/sakura-frp")))
+           (mkdir-p bin)
+           (mkdir-p doc)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (chdir "frp_0.68.0_linux_amd64")
+           (install-file "frpc" bin)
+           (chmod (string-append bin "/frpc") #o755)
+           (symlink "frpc" (string-append bin "/sakura-frp"))
+           (install-file "frpc.toml" doc)
+           (install-file "LICENSE" license-dir)))))
+    (home-page "https://github.com/fatedier/frp")
+    (synopsis "Client for reverse proxy tunnels")
+    (description
+     "This package provides the @command{frpc} client for reverse proxy
+connectivity and installs a @command{sakura-frp} compatibility symlink.")
+    (license license:asl2.0)))
 
 (define-public git-spice-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for git-spice-bin.
   (package
-    (inherit zoxide)
-    (name "git-spice-bin")))
+    (name "git-spice-bin")
+    (version "0.24.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/abhinav/git-spice/releases/download/v"
+             version "/git-spice.Linux-x86_64.tar.gz"))
+       (sha256
+        (base32 "1bhyf4ml5bf7rs0cqbjh3vajfxvrf9lx6x1fid9g3iwl7hmf9qwh"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list coreutils tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (bin (string-append out "/bin"))
+                (doc (string-append out "/share/doc/git-spice-bin"))
+                (license-dir (string-append out "/share/licenses/git-spice-bin")))
+           (mkdir-p bin)
+           (mkdir-p doc)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (install-file "git-spice" bin)
+           (chmod (string-append bin "/git-spice") #o755)
+           (for-each (lambda (f) (install-file f doc))
+                     '("README.md" "CHANGELOG.md"))
+           (install-file "LICENSE" license-dir)))))
+    (home-page "https://github.com/abhinav/git-spice")
+    (synopsis "CLI for stacked Git branches")
+    (description
+     "git-spice helps manage stacked branch workflows and patch series on top
+of Git repositories.")
+    (license license:expat)))
 
 (define-public mvw
   ;; NEEDS_RECIPE_DESIGN queue stub for mvw.
@@ -278,23 +356,97 @@
     (inherit zoxide)
     (name "mvw")))
 
+(define fraunces-source
+  (origin
+    (method url-fetch)
+    (uri "https://github.com/undercasetype/Fraunces/archive/refs/tags/1.000.tar.gz")
+    (sha256
+     (base32 "012m5pmqbllq3aqflbm4qn9j97v7426pzkvx74dznspv0g44vl46"))))
+
 (define-public ttf-fraunces-variable
-  ;; NEEDS_RECIPE_DESIGN queue stub for ttf-fraunces-variable.
   (package
-    (inherit zoxide)
-    (name "ttf-fraunces-variable")))
+    (name "ttf-fraunces-variable")
+    (version "1.000")
+    (source fraunces-source)
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (fonts-dir (string-append out "/share/fonts/truetype"))
+                (license-dir (string-append out "/share/licenses/ttf-fraunces-variable")))
+           (mkdir-p fonts-dir)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (for-each (lambda (font) (install-file font fonts-dir))
+                     '("Fraunces-1.000/fonts/Fraunces[SOFT,WONK,opsz,wght].ttf"
+                       "Fraunces-1.000/fonts/Fraunces-Italic[SOFT,WONK,opsz,wght].ttf"))
+           (install-file "Fraunces-1.000/OFL.txt" license-dir)))))
+    (home-page "https://github.com/undercasetype/Fraunces")
+    (synopsis "Fraunces variable TrueType fonts")
+    (description "This package provides the variable TrueType Fraunces fonts.")
+    (license license:silofl1.1)))
 
 (define-public ttf-fraunces
-  ;; NEEDS_RECIPE_DESIGN queue stub for ttf-fraunces.
   (package
-    (inherit zoxide)
-    (name "ttf-fraunces")))
+    (name "ttf-fraunces")
+    (version "1.000")
+    (source fraunces-source)
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (fonts-dir (string-append out "/share/fonts/truetype"))
+                (license-dir (string-append out "/share/licenses/ttf-fraunces")))
+           (mkdir-p fonts-dir)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (for-each (lambda (font) (install-file font fonts-dir))
+                     (find-files "Fraunces-1.000/fonts/static/ttf" "\\.ttf$"))
+           (install-file "Fraunces-1.000/OFL.txt" license-dir)))))
+    (home-page "https://github.com/undercasetype/Fraunces")
+    (synopsis "Fraunces static TrueType fonts")
+    (description "This package provides static TrueType Fraunces fonts.")
+    (license license:silofl1.1)))
 
 (define-public otf-fraunces
-  ;; NEEDS_RECIPE_DESIGN queue stub for otf-fraunces.
   (package
-    (inherit zoxide)
-    (name "otf-fraunces")))
+    (name "otf-fraunces")
+    (version "1.000")
+    (source fraunces-source)
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (fonts-dir (string-append out "/share/fonts/opentype"))
+                (license-dir (string-append out "/share/licenses/otf-fraunces")))
+           (mkdir-p fonts-dir)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (for-each (lambda (font) (install-file font fonts-dir))
+                     (find-files "Fraunces-1.000/fonts/static/otf" "\\.otf$"))
+           (install-file "Fraunces-1.000/OFL.txt" license-dir)))))
+    (home-page "https://github.com/undercasetype/Fraunces")
+    (synopsis "Fraunces static OpenType fonts")
+    (description "This package provides static OpenType Fraunces fonts.")
+    (license license:silofl1.1)))
 
 (define-public lunarvim-git
   ;; NEEDS_RECIPE_DESIGN queue stub for lunarvim-git.
@@ -321,10 +473,38 @@
     (name "polybar-git")))
 
 (define-public bitbake-vim
-  ;; NEEDS_RECIPE_DESIGN queue stub for bitbake-vim.
   (package
-    (inherit zoxide)
-    (name "bitbake-vim")))
+    (name "bitbake-vim")
+    (version "5.3.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://git.openembedded.org/bitbake/snapshot/bitbake-yocto-5.3.2.tar.gz")
+       (sha256
+        (base32 "1npqbbx30hdkq2r124z8qkji2hjpvpkd4pj2crlz021f387kd8p9"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (vim-dir (string-append out "/share/vim/vimfiles"))
+                (license-dir (string-append out "/share/licenses/bitbake-vim")))
+           (mkdir-p vim-dir)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (copy-recursively "bitbake-yocto-5.3.2/contrib/vim" vim-dir)
+           (install-file "bitbake-yocto-5.3.2/contrib/vim/LICENSE.txt" license-dir)))))
+    (home-page "https://git.openembedded.org/bitbake")
+    (synopsis "Vim files for BitBake recipes")
+    (description
+     "This package installs the Vim syntax, filetype, indent, and plugin files
+from BitBake's @file{contrib/vim} directory.")
+    (license license:expat)))
 
 (define-public bitbake
   ;; NEEDS_RECIPE_DESIGN queue stub for bitbake.
@@ -485,16 +665,88 @@
     (name "python-indexed-gzip")))
 
 (define-public qogir-cursor-theme
-  ;; NEEDS_RECIPE_DESIGN queue stub for qogir-cursor-theme.
   (package
-    (inherit zoxide)
-    (name "qogir-cursor-theme")))
+    (name "qogir-cursor-theme")
+    (version "2025.02.15")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://github.com/vinceliuice/Qogir-icon-theme/archive/2025-02-15.tar.gz")
+       (sha256
+        (base32 "1virnagsa83690sx8hc7qdgvf8qq27nz0bd6acd39q01asnprl5h"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (root "Qogir-icon-theme-2025-02-15/src/cursors")
+                (icons-dir (string-append out "/share/icons"))
+                (license-dir (string-append out "/share/licenses/qogir-cursor-theme")))
+           (mkdir-p icons-dir)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (for-each
+            (lambda (theme)
+              (copy-recursively (string-append root "/" theme)
+                                (string-append icons-dir "/" theme)))
+            '("dist-Dark"
+              "dist-Manjaro-Dark"
+              "dist-Manjaro"
+              "dist-Ubuntu-Dark"
+              "dist-Ubuntu"))
+           (install-file "Qogir-icon-theme-2025-02-15/COPYING" license-dir)
+           (install-file (string-append root "/LICENSE") license-dir)))))
+    (home-page "https://github.com/vinceliuice/Qogir-icon-theme")
+    (synopsis "Qogir cursor themes")
+    (description "This package provides the cursor variants from Qogir icon theme.")
+    (license license:gpl3)))
 
 (define-public grove-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for grove-bin.
   (package
-    (inherit zoxide)
-    (name "grove-bin")))
+    (name "grove-bin")
+    (version "1.8.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/sQVe/grove/releases/download/v"
+             version "/grove_" version "_linux_amd64.tar.gz"))
+       (sha256
+        (base32 "0l81crcgvlbg4ih4xxvnnp71i05hj8pf1vi7nlmirb9zqxb0kwvv"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list coreutils tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (out (assoc-ref %outputs "out"))
+                (bin (string-append out "/bin"))
+                (doc (string-append out "/share/doc/grove-bin"))
+                (license-dir (string-append out "/share/licenses/grove-bin")))
+           (mkdir-p bin)
+           (mkdir-p doc)
+           (mkdir-p license-dir)
+           (invoke "tar" "-xzf" source)
+           (install-file "grove" bin)
+           (chmod (string-append bin "/grove") #o755)
+           (for-each (lambda (f) (install-file f doc))
+                     '("README.md" "CHANGELOG.md"))
+           (install-file "LICENSE" license-dir)))))
+    (home-page "https://github.com/sQVe/grove")
+    (synopsis "Terminal dashboard for Kubernetes")
+    (description
+     "Grove provides a terminal user interface for Kubernetes resource
+inspection and interactions.")
+    (license license:gpl3)))
 
 (define-public janet-lang-git
   ;; NEEDS_RECIPE_DESIGN queue stub for janet-lang-git.
@@ -533,10 +785,48 @@
     (name "piper-voices-ru-ru")))
 
 (define-public todo-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for todo-bin.
   (package
-    (inherit zoxide)
-    (name "todo-bin")))
+    (name "todo-bin")
+    (version "2.4")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/sioodmy/todo/releases/download/"
+             version "/todo"))
+       (sha256
+        (base32 "1j0xmnznzab9gpwd443p6j41wh74qmcgpc9l9i10ylbx4zirx1pg"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     (list
+      `( "coreutils" ,coreutils)
+      `("license-file"
+        ,(origin
+           (method url-fetch)
+           (uri "https://raw.githubusercontent.com/sioodmy/todo/master/LICENSE")
+           (sha256
+            (base32 "11k9nggwk1mgsrkdwgdjz65avrradxlpdgrdkc7ryjgn8jbxqwir"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (license-file (assoc-ref %build-inputs "license-file"))
+                (out (assoc-ref %outputs "out"))
+                (bin (string-append out "/bin"))
+                (license-dir (string-append out "/share/licenses/todo-bin")))
+           (mkdir-p bin)
+           (mkdir-p license-dir)
+           (copy-file source (string-append bin "/todo"))
+           (chmod (string-append bin "/todo") #o755)
+           (install-file license-file license-dir)))))
+    (home-page "https://github.com/sioodmy/todo")
+    (synopsis "Simple command-line todo manager")
+    (description "This package provides prebuilt @command{todo} binary release.")
+    (license license:expat)))
 
 (define-public macchina-git
   ;; NEEDS_RECIPE_DESIGN queue stub for macchina-git.
@@ -547,10 +837,51 @@
 ;; git-delete-merged-branches: resolved in cron-c79f127f-r23-w03 (real recipe).
 
 (define-public rtodo-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for rtodo-bin.
   (package
-    (inherit zoxide)
-    (name "rtodo-bin")))
+    (name "rtodo-bin")
+    (version "v0.1.4")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/TiagoRCorreia/rtodo/releases/download/"
+             version "/rtodo.gz"))
+       (sha256
+        (base32 "18lxgsbhx4pdlnzjjl0abqx2qzagg1dc40qgsgq7wgw3jwsvbrxl"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     (list
+      `("coreutils" ,coreutils)
+      `("gzip" ,gzip)
+      `("license-file"
+        ,(origin
+           (method url-fetch)
+           (uri "https://raw.githubusercontent.com/TiagoRCorreia/rtodo/main/LICENSE.md")
+           (sha256
+            (base32 "05mf5yrcdgziwhl0ppj2vsp604j2dwgb82072pjpnxfyh1gdc9yz"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      '(begin
+         (use-modules (guix build utils))
+         (let* ((source (assoc-ref %build-inputs "source"))
+                (license-file (assoc-ref %build-inputs "license-file"))
+                (out (assoc-ref %outputs "out"))
+                (bin (string-append out "/bin"))
+                (license-dir (string-append out "/share/licenses/rtodo-bin")))
+           (mkdir-p bin)
+           (mkdir-p license-dir)
+           (copy-file source "rtodo.gz")
+           (invoke "gunzip" "rtodo.gz")
+           (copy-file "rtodo" (string-append bin "/rtodo"))
+           (chmod (string-append bin "/rtodo") #o755)
+           (install-file license-file license-dir)))))
+    (home-page "https://github.com/TiagoRCorreia/rtodo")
+    (synopsis "Simple command-line todo manager written in Rust")
+    (description "This package provides prebuilt @command{rtodo} release binary.")
+    (license license:expat)))
 
 (define-public tauno-serial-plotter-bin
   ;; NEEDS_RECIPE_DESIGN queue stub for tauno-serial-plotter-bin.
