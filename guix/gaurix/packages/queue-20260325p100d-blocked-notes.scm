@@ -431,84 +431,44 @@
     "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
     "Next: fetch glazepkg v0.3.6 Linux binary, compute sha256, draft binary wrapper")
 
-  '(blogr-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/bahdotsh/blogr v0.4.1"
-    "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch blogr v0.4.1 Linux binary, compute sha256, draft binary wrapper")
-
-  '(charliecloud NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/hpc/charliecloud v0.43"
-    "Autotools C recipe; deps: python, squashfs-tools, libfuse3"
-    "Next: fetch charliecloud-0.43.tar.gz, compute sha256, draft autotools recipe")
-
   '(wl-mpris-idle-inhibit NEEDS_RECIPE_DESIGN
     "Source: https://github.com/sameer/wl-mpris-idle-inhibit v0.1.8"
-    "cargo build recipe; deps: rust, dbus"
-    "Next: fetch v0.1.8 source, compute sha256, draft cargo recipe")
+    "Blocked in this pass after 4 attempts: offline cargo fails on git deps, required rust crate specs unavailable, crate import lockfile path crashes, and upstream release has no binary assets"
+    "Next: package/update required Rust crate graph (including git-sourced deps), then retry cargo-build-system recipe")
 
-  '(systemd-suspend-modules NEEDS_RECIPE_DESIGN
-    "Source: AUR PKGBUILD sources (shell scripts) v1.2"
-    "Trivial systemd service + config install"
-    "Next: fetch AUR PKGBUILD sources, compute sha256, draft trivial install")
+  '(crier-bin DONE
+    "Implemented trivial-build-system binary recipe from GitHub release v0.2.3"
+    "Installed crier executable plus README and LICENSE from release tarball"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n crier-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm crier-bin")
 
-  '(python-pysmart NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/freenas/py-SMART v1.4.2"
-    "python-build-system; deps: smartmontools, python"
-    "Next: fetch py-SMART 1.4.2 from PyPI/GitHub, compute sha256, draft python recipe")
+  '(reqable-bin DONE
+    "Implemented proprietary .deb repack from Reqable GitHub release v3.0.40"
+    "Installs app payload under /lib/reqable with launcher and desktop/icon assets"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n reqable-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm reqable-bin")
 
-  '(renamemytvseries-gtk-bin NEEDS_RECIPE_DESIGN
-    "Source: https://www.tweaking4all.com/home-theatre/rename-my-tv-series-v2/ v2.3.12 (proprietary)"
-    "Binary wrapper; proprietary; fetch Linux binary from vendor"
-    "Next: fetch Rename My TV Series v2 Linux binary, compute sha256, draft binary wrapper")
+  '(cliamp-bin DONE
+    "Implemented trivial binary package from upstream cliamp v1.31.7 Linux amd64 release"
+    "Direct install of prebuilt cliamp executable into $out/bin"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n cliamp-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm cliamp-bin")
 
-  '(openhue-cli NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/openhue/openhue-cli v0.23"
-    "Binary wrapper (Go binary); fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch openhue-cli v0.23 Linux binary, compute sha256, draft binary wrapper")
+  '(ferrishot-bin DONE
+    "Implemented trivial-build-system package from ferrishot v0.2.0 x86_64 tarball"
+    "Installs binary and bundled README/CHANGELOG/license files"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n ferrishot-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm ferrishot-bin")
 
-  '(feedr-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/bahdotsh/feedr v0.5.0"
-    "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch feedr v0.5.0 Linux binary, compute sha256, draft binary wrapper")
+  '(sysbox-ce DONE
+    "Implemented binary .deb repack from upstream sysbox-ce v0.6.7 release"
+    "Installs sysbox-fs/sysbox-mgr/sysbox-runc plus bundled systemd and sysctl files"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n sysbox-ce; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm sysbox-ce")
 
-  '(boscaceoil-blue-bin NEEDS_RECIPE_DESIGN
-    "Source: https://yurisizov.itch.io/boscaceoil-blue v3.1.2 (Godot binary)"
-    "Binary wrapper; fetch Linux binary from itch.io/GitHub releases"
-    "Next: fetch boscaceoil-blue v3.1.2 Linux binary, compute sha256, draft binary wrapper")
+  '(noto-fonts-cjk-fontconfig DONE
+    "Implemented trivial fontconfig package from pinned AUR 70-noto-cjk.conf"
+    "Installs conf.avail snippet and conf.default symlink; propagates Noto CJK font packages"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100d.scm -n noto-fonts-cjk-fontconfig; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100d.scm noto-fonts-cjk-fontconfig")
 
-  '(crier-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/skorotkiewicz/crier v0.2.3"
-    "Binary wrapper; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch crier v0.2.3 Linux binary, compute sha256, draft binary wrapper")
-
-  '(reqable-bin NEEDS_RECIPE_DESIGN
-    "Source: https://reqable.com v3.0.39 (proprietary)"
-    "Binary wrapper; proprietary; fetch Linux AppImage/binary"
-    "Next: fetch Reqable v3.0.39 Linux binary, compute sha256, draft binary wrapper")
-
-  '(cliamp-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/bjarneo/cliamp v1.27.2"
-    "Binary wrapper; Node.js packaged binary; fetch Linux release"
-    "Next: fetch cliamp v1.27.2 Linux binary, compute sha256, draft binary wrapper")
-
-  '(ferrishot-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/nik-rev/ferrishot v0.2.0"
-    "Binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch ferrishot v0.2.0 Linux binary, compute sha256, draft binary wrapper")
-
-  '(sysbox-ce NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/nestybox/sysbox v0.6.7"
-    "Go binary recipe; complex kernel/sysfs integration; needs kernel module handling"
-    "Next: fetch sysbox 0.6.7 source, compute sha256, draft go-build-system recipe")
-
-  '(noto-fonts-cjk-fontconfig NEEDS_RECIPE_DESIGN
-    "Source: AUR PKGBUILD (fontconfig config file) v1-1"
-    "Trivial fontconfig rule install; dep: noto-cjk fonts"
-    "Next: fetch config file from AUR PKGBUILD, compute sha256, draft trivial install")
-
-  '(webtorrent-bittorrent-tracker NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/webtorrent/bittorrent-tracker v11.2.2"
-    "node.js npm recipe; deps: node, npm"
-    "Next: fetch bittorrent-tracker 11.2.2 from npm/GitHub, compute sha256, draft node recipe")
+  '(webtorrent-bittorrent-tracker BLOCKED
+    "Attempt 1: upstream/equivalent survey via guix search and repo grep found no existing Guix/Gaurix package to alias"
+    "Attempt 2: dependency closure check showed most runtime deps missing in Guix (e.g., node-bencode, node-ws, node-socks, node-run-parallel)"
+    "Attempt 3: offline npm install of bittorrent-tracker-11.2.2.tgz failed ENOTCACHED (@thaunknown/simple-peer); GitHub release has no bundled binary assets")
 
   ))

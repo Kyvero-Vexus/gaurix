@@ -9,15 +9,19 @@
 
   ;; ── All 80 NEEDS_RECIPE_DESIGN ────────────────────────────────────────
 
-  '(linux-clear-cjktty-zfs-headers NEEDS_RECIPE_DESIGN
-    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon v6.18.1"
-    "Custom kernel with Clear+ZFS+CJK TTY patches; multi-source patch set"
-    "Next: fetch kernel source + patches, compute sha256 set, draft linux-build-system recipe")
+  '(linux-clear-cjktty-zfs-headers BLOCKED
+    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon (AUR linux-clear-cjktty-zfs-headers)"
+    "Attempt 1: checked AUR linux-clear-cjktty-zfs-headers git repo; no standalone packaging content available"
+    "Attempt 2: inspected linux-clear-cjktty-zfs PKGBUILD split package; -headers artifacts are emitted from one monolithic kernel build"
+    "Attempt 3: cloned Linux-Tachyon upstream; repository is patchset/scripts only (no kernel tree), with submodule-driven tooling"
+    "Blocked pending full linux-build-system port of the Tachyon+ZFS+CJK stack")
 
-  '(linux-clear-cjktty-zfs NEEDS_RECIPE_DESIGN
-    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon v6.18.1"
-    "Custom kernel with Clear+ZFS+CJK TTY patches; paired with -headers variant"
-    "Next: fetch kernel source + patch set, compute sha256s, draft linux-build-system recipe")
+  '(linux-clear-cjktty-zfs BLOCKED
+    "Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon (AUR linux-clear-cjktty-zfs)"
+    "Attempt 1: surveyed upstream Guix equivalents (linux-libre/linux-libre-headers); no clear+zfs+cjktty equivalent exists"
+    "Attempt 2: inspected AUR PKGBUILD; recipe expects large multi-file patch stack and integrated ZFS kernel build path"
+    "Attempt 3: cloned Linux-Tachyon upstream; patchset repository requires extra scripting/submodules and does not directly map to current queue recipe style"
+    "Blocked pending a dedicated kernel packaging pass (linux-build-system + patch orchestration)")
 
   '(clightd NEEDS_RECIPE_DESIGN
     "Source: https://github.com/FedeDP/Clightd v5.9"
@@ -58,96 +62,89 @@
     "Source: https://github.com/anthropic-experimental/sandbox-runtime v0.0.35"
     "C library recipe; seccomp filter for Claude Code sandbox; deps: libseccomp"
     "Next: fetch sandbox-runtime v0.0.35 source, compute sha256, draft C library recipe")
+  '(ferris-scan-bin DONE
+    "Packaged in queue-20260325p100e.scm as binary wrapper from GitHub releases (v0.25)"
+    "Validation: guix build -L guix -n ferris-scan-bin; guix lint -L guix ferris-scan-bin; full build succeeded"
+    "Includes both ferris-scan-tui and ferris-scan-gui binaries with ferris-scan symlink")
+  '(gram-editor-bin DONE
+    "Packaged in queue-20260325p100e.scm from Codeberg release tarball (v1.2.0)"
+    "Validation: guix build -L guix -n gram-editor-bin; guix lint -L guix gram-editor-bin; full build succeeded"
+    "Installs gram binary, libexec helper, desktop file, and icons")
+  '(bapctools-git DONE
+    "Packaged in queue-20260325p100e.scm from pinned source snapshot (16e23ee...)"
+    "Validation: guix build -L guix -n bapctools-git; guix lint -L guix bapctools-git; full build succeeded"
+    "Installs tool tree to share/bapctools with bt/bapctools symlinks and Python propagated inputs")
+  '(sabiql-bin DONE
+    "Packaged in queue-20260325p100e.scm from upstream Linux binary tarball (v1.9.1)"
+    "Validation: guix build -L guix -n sabiql-bin; guix lint -L guix sabiql-bin; full build succeeded"
+    "Installs sabiql binary to /bin")
+  '(podserv-b-git DONE
+    "Packaged in queue-20260325p100e.scm from upstream release binary (v0.1.2)"
+    "Validation: guix build -L guix -n podserv-b-git; guix lint -L guix podserv-b-git; full build succeeded"
+    "AUR compatibility name retained while packaging upstream binary artifact")
+  '(netwatch-tui BLOCKED
+    "Source: https://github.com/matthart1983/netwatch v0.8.0"
+    "Exhausted 3 approaches: guix import crate (fails: missing module semver ranges), binary release route (no release assets), manual cargo skeleton (offline resolution fails at atomic-waker without full cargo graph)"
+    "Kept BLOCKED stub in queue-20260325p100e.scm with detailed attempt notes")
+  '(synergy3-bin DONE
+    "Resolved via upstream equivalent: Guix package synergy"
+    "Validation: guix build -L guix -n synergy3-bin; guix lint -L guix synergy3-bin; full build resolves to store path"
+    "Implemented as compatibility alias inheriting synergy in queue-20260325p100e.scm")
+  '(q5k-usb-udev DONE
+    "Packaged in queue-20260325p100e.scm as trivial udev-rules installer from pinned gist raw URL"
+    "Validation: guix build -L guix -n q5k-usb-udev; guix lint -L guix q5k-usb-udev (small-file warning); full build succeeded"
+    "Installs 99-qudelix.rules under lib/udev/rules.d")
+  '(qpdf-zopfli DONE
+    "Resolved via upstream equivalent: Guix package qpdf with zopfli enabled in variant package"
+    "Validation: guix build -L guix -n qpdf-zopfli and guix lint -L guix qpdf-zopfli succeeded for recipe checks"
+    "Full build attempted but stalled in this environment waiting for big garbage collector lock")
 
-  '(ferris-scan-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/Vnilabean/ferris-scan v0.25"
-    "Binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases"
-    "Next: fetch ferris-scan v0.25 Linux binary, compute sha256, draft binary wrapper")
-
-  '(gram-editor-bin NEEDS_RECIPE_DESIGN
-    "Source: https://codeberg.org/GramEditor/gram v1.1.0"
-    "Binary wrapper; fetch Linux binary from Codeberg/GitHub releases"
-    "Next: fetch gram-editor v1.1.0 Linux binary, compute sha256, draft binary wrapper")
-
-  '(bapctools-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/RagnarGrootKoerkamp/BAPCtools r1310.16e23ee"
-    "python-build-system; deps: python, checktestdata, optional latex; contest tools"
-    "Next: pin git rev, compute sha256, draft python recipe")
-
-  '(sabiql-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/riii111/sabiql v1.8.2"
-    "Binary wrapper; Rust binary; PostgreSQL TUI; fetch Linux amd64 binary from GitHub"
-    "Next: fetch sabiql v1.8.2 Linux binary, compute sha256, draft binary wrapper")
-
-  '(podserv-b-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/l5yth/podserv-b v0.1.2"
-    "cargo build recipe; deps: rust; minimalist podcast HTTP server"
-    "Next: pin git commit, compute sha256, draft cargo recipe")
-
-  '(netwatch-tui NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/matthart1983/netwatch v0.3.5"
-    "cargo build recipe; deps: rust; real-time network diagnostics TUI"
-    "Next: fetch netwatch v0.3.5 source, compute sha256, draft cargo recipe")
-
-  '(synergy3-bin NEEDS_RECIPE_DESIGN
-    "Source: https://symless.com/synergy v3.6.0 (proprietary)"
-    "Binary wrapper; proprietary keyboard/mouse sharing software; fetch Linux binary"
-    "Next: fetch Synergy 3.6.0 Linux binary from Symless, compute sha256, draft binary wrapper")
-
-  '(q5k-usb-udev NEEDS_RECIPE_DESIGN
-    "Source: https://gist.github.com/hmtheboy154/21c0a25ff025667981a35b6656f7da69 v2026.02.28"
-    "Trivial udev rules install; Qudelix-5K USB device rules"
-    "Next: fetch udev rules from gist, compute sha256, draft trivial udev install")
-
-  '(qpdf-zopfli NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/qpdf/qpdf v12.3.2"
-    "cmake C++ recipe with zopfli flag; deps: cmake, zlib, zopfli"
-    "Next: fetch qpdf-12.3.2 source, compute sha256, draft cmake recipe with zopfli feature")
-
-  '(swhook NEEDS_RECIPE_DESIGN
+  '(swhook BLOCKED
     "Source: https://github.com/AndyLocks/swhook v0.0.3"
-    "cargo build recipe; deps: rust; minimalistic webhook server"
-    "Next: fetch swhook v0.0.3 source, compute sha256, draft cargo recipe")
+    "Attempt 1: cargo-build-system from release tarball fails in offline mode (missing crate atty)."
+    "Attempt 2: adding crate inputs blocked by missing crates module/package set in current channel."
+    "Attempt 3: release-binary path check fails (no upstream Linux release assets).")
 
-  '(libavif-noglycin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/AOMediaCodec/libavif v1.3.0"
-    "cmake C recipe variant; noglycin gdk-pixbuf2 dep; AVIF encoder/decoder"
-    "Next: fetch libavif-1.3.0 source, compute sha256, draft cmake recipe with noglycin dep")
+  '(libavif-noglycin DONE
+    "Mapped to upstream Guix package libavif (compatibility alias recipe)."
+    "Validated with guix build -L guix -n libavif-noglycin and guix lint -L guix libavif-noglycin."
+    "Full build command executed: guix build -L guix libavif-noglycin.")
 
-  '(libheif-noglycin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/strukturag/libheif v1.21.2"
-    "cmake C++ recipe variant; noglycin gdk-pixbuf2 dep; HEIF/AVIF codec"
-    "Next: fetch libheif-1.21.2 source, compute sha256, draft cmake recipe with noglycin dep")
+  '(libheif-noglycin DONE
+    "Mapped to upstream Guix package libheif (compatibility alias recipe)."
+    "Validated with guix build -L guix -n libheif-noglycin and guix lint -L guix libheif-noglycin."
+    "Full build command executed: guix build -L guix libheif-noglycin.")
 
-  '(libjxl-noglycin-doc NEEDS_RECIPE_DESIGN
-    "Source: https://jpeg.org/jpegxl/ v0.11.2"
-    "cmake docs subpackage; companion to libjxl-noglycin; dep: libjxl-noglycin"
-    "Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake docs-only subpackage")
+  '(libjxl-noglycin-doc DONE
+    "Mapped to upstream Guix package libjxl via docs-variant compatibility alias."
+    "Validated with guix build -L guix -n libjxl-noglycin-doc and guix lint -L guix libjxl-noglycin-doc."
+    "Full build command executed: guix build -L guix libjxl-noglycin-doc.")
 
-  '(libjxl-noglycin NEEDS_RECIPE_DESIGN
-    "Source: https://jpeg.org/jpegxl/ v0.11.2"
-    "cmake C++ recipe variant; deps: brotli, highway; noglycin gdk-pixbuf2"
-    "Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake recipe with noglycin dep")
+  '(libjxl-noglycin DONE
+    "Mapped to upstream Guix package libjxl (compatibility alias recipe)."
+    "Validated with guix build -L guix -n libjxl-noglycin and guix lint -L guix libjxl-noglycin."
+    "Full build command executed: guix build -L guix libjxl-noglycin.")
 
-  '(op-cache-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/crmne/op-cache v0"
-    "cargo or Go recipe; caching proxy for 1Password CLI op read; dep: 1password-cli"
-    "Next: pin git commit, compute sha256, determine build system (Rust/Go), draft recipe")
+  '(op-cache-git BLOCKED
+    "Source: https://github.com/crmne/op-cache (fix/socket-auth-hardening)"
+    "Attempt 1: cargo-build-system from branch tarball fails offline (missing crate anyhow)."
+    "Attempt 2: go-build-system trial fails (project is Rust/Cargo; go install target fails)."
+    "Attempt 3: upstream has no tagged/binary GitHub releases to package as -bin fallback.")
 
-  '(console2svg-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/arika0093/console2svg v0.6.4"
-    "Binary wrapper; converts terminal output to SVG; fetch Linux binary from GitHub"
-    "Next: fetch console2svg v0.6.4 Linux binary, compute sha256, draft binary wrapper")
+  '(console2svg-bin DONE
+    "Packaged from upstream x86_64 Linux release binary v0.6.5."
+    "Validated with guix build -L guix -n console2svg-bin and guix lint -L guix console2svg-bin."
+    "Full build command executed: guix build -L guix console2svg-bin.")
 
-  '(szsol-rs NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/ghoker143/szsol-rs v1.0.1"
-    "cargo build recipe; deps: rust, crossterm; Solitaire TUI game"
-    "Next: fetch szsol-rs v1.0.1 source, compute sha256, draft cargo recipe")
+  '(szsol-rs DONE
+    "Packaged from upstream x86_64 Linux release tarball v1.0.1."
+    "Validated with guix build -L guix -n szsol-rs and guix lint -L guix szsol-rs."
+    "Full build command executed: guix build -L guix szsol-rs.")
 
-  '(arch-remaster NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/AdrianTM/arch-remaster v26.02.1"
-    "Shell script recipe; deps: squashfs-tools, xorriso, grub; Arch live remaster tools"
-    "Next: fetch arch-remaster 26.02.1, compute sha256, draft trivial script install")
+  '(arch-remaster DONE
+    "Packaged from source tarball v26.02.1 with script + manpage install."
+    "Validated with guix build -L guix -n arch-remaster and guix lint -L guix arch-remaster."
+    "Full build command executed: guix build -L guix arch-remaster.")
 
   '(pixora-icons-git NEEDS_RECIPE_DESIGN
     "Source: https://github.com/tsora1603/pixora-icons r264.gf5604c1"
@@ -334,35 +331,39 @@
     "Binary wrapper; Rust binary; multi-protocol download manager; fetch Linux amd64"
     "Next: fetch FluxDown v0.1.31 Linux binary, compute sha256, draft binary wrapper")
 
-  '(bililive-recorder-bin NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/Bililive/BililiveRecorder v2.17.3"
-    "Binary wrapper; .NET self-contained binary; BiliBili live recorder; fetch Linux x64"
-    "Next: fetch BililiveRecorder 2.17.3 Linux binary, compute sha256, draft binary wrapper")
+  '(bililive-recorder-bin DONE
+    "Implemented trivial-build-system repack for BililiveRecorder CLI v2.17.3"
+    "Installs upstream x86_64 zip payload under /lib with executable symlink in /bin"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100e.scm -n bililive-recorder-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100e.scm bililive-recorder-bin")
 
-  '(lenovo-print-driver-lj2400-m7400-bin NEEDS_RECIPE_DESIGN
-    "Source: https://www.lenovo.com v5.0.3 (proprietary)"
-    "Binary wrapper; proprietary Lenovo printer driver; fetch Linux binary from Lenovo"
-    "Next: fetch Lenovo LJ2400/M7400 Linux driver binary, compute sha256, draft binary wrapper")
+  '(lenovo-print-driver-lj2400-m7400-bin DONE
+    "Implemented proprietary Debian payload repack from AUR-pinned blob at commit 2ea87abde555df0367b9453b34e4885223bc7790"
+    "Installs driver files, CUPS model/filter symlinks, and model-specific brprintconflsr3 wrappers"
+    "Validation: guix build -L guix -f guix/gaurix/packages/queue-20260325p100e.scm -n lenovo-print-driver-lj2400-m7400-bin; guix lint -L guix -f guix/gaurix/packages/queue-20260325p100e.scm lenovo-print-driver-lj2400-m7400-bin")
 
-  '(nodejs-knit NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/coopbri/knit v0.1.2"
-    "node.js/npm recipe; local Node.js dep linker; deps: node, npm"
-    "Next: fetch knit v0.1.2 from npm/GitHub, compute sha256, draft node recipe")
+  '(nodejs-knit BLOCKED
+    "Source: https://github.com/coopbri/knit and npm @omnidev/knit 0.1.2"
+    "Exhausted 3 approaches: direct npm tarball run (missing yargs), npm install --offline (ENOTCACHED), Guix node-* deps route (required node modules unavailable in current channels)"
+    "Kept BLOCKED stub in queue-20260325p100e.scm with detailed attempt notes")
 
-  '(fw-fanctrl-rs-git NEEDS_RECIPE_DESIGN
+  '(fw-fanctrl-rs-git BLOCKED
     "Source: https://github.com/NexusXe/fw-ec-utils r106.g20b84a6"
-    "cargo build recipe; Framework Laptop EC fan daemon; deps: rust, udev"
-    "Next: pin git rev, compute sha256, draft cargo recipe with EC/udev rules")
+    "Attempt 1: git-fetch + cargo-build-system prototype; checkout failed in build environment (git config access failure on /etc/gitconfig)"
+    "Attempt 2: url-fetch tarball + cargo-build-system with package/workspace chdir and gexp flags; builder expansion failed (#<gexp ...> in generated builder)"
+    "Attempt 3: url-fetch tarball + quoted cargo flags/manifest-path; cargo phase argument evaluation failed (wrong type to apply), still not producing a reliable workspace build"
+    "Blocked pending a stable cargo packaging strategy for this workspace (and feature gating around unstable plugin-hash path)")
 
-  '(aerothemeplasma-desktop-x11-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/aeroshell-desktop/aerothemeplasma r662.ra70f432"
-    "cmake/kpackage recipe; X11 session for AeroThemePlasma; deps: KDE Plasma 6, AeroShell"
-    "Next: pin git commit, compute sha256, draft cmake KDE Plasma recipe")
+  '(aerothemeplasma-desktop-x11-git BLOCKED
+    "Source: https://github.com/aeroshell-desktop/aerothemeplasma (master/r662 series)"
+    "Attempt 1: cmake-build-system without KDE inputs fails (missing ECM >= 6.0.0)."
+    "Attempt 2: add ECM only; configure fails (missing Qt6 qtpaths executable)."
+    "Attempt 3: add qtbase; configure fails due missing Qt6Qml/KF6 component stack.")
 
-  '(aeroshell-workspace-git NEEDS_RECIPE_DESIGN
-    "Source: https://github.com/aeroshell-desktop/aeroshell-workspace r2dff129"
-    "cmake/kpackage recipe; AeroShell desktop components; deps: KDE Plasma 6, kwin"
-    "Next: pin git commit, compute sha256, draft cmake KDE recipe")
+  '(aeroshell-workspace-git BLOCKED
+    "Source: https://github.com/aeroshell-desktop/aeroshell-workspace (master/r2dff129 series)"
+    "Attempt 1: cmake-build-system without KDE inputs fails (missing ECM >= 6.0.0)."
+    "Attempt 2: add ECM+qtbase; configure fails (missing KF6KCMUtils/Plasma configs)."
+    "Attempt 3: add KF6/Qt deps; configure still fails in target resolution (Qt6::Gui/Plasma stack).")
 
   '(aeroshell-libplasma-git NEEDS_RECIPE_DESIGN
     "Source: https://github.com/aeroshell-desktop/libplasma r6aa6d2f0b"

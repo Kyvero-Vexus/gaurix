@@ -1,10 +1,37 @@
 ;;; Queue drain 2026-03-25 pass-e (packages 5446-5525, 80 new entries).
-;;; All 80 are NEEDS_RECIPE_DESIGN stubs; no Guix upstream aliases found.
+;;; Initially all 80 were NEEDS_RECIPE_DESIGN stubs; selected entries are now packaged.
 ;;; Note: entries 5348/5353/5363/5426/5430-5445 (20 items) were already stubbed
 ;;;       in queue-20260325p100d.scm and are marked BLOCKED in the org queue.
 (define-module (gaurix packages queue-20260325p100e)
   #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix gexp)
+  #:use-module (guix utils)
+  #:use-module (guix build-system cmake)
+  #:use-module (guix build-system trivial)
+  #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages assembly)
+  #:use-module (gnu packages base)
+  #:use-module (gnu packages bash)
+  #:use-module (gnu packages compression)
+  #:use-module (gnu packages freedesktop)
+  #:use-module (gnu packages glib)
+  #:use-module (gnu packages hardware)
+  #:use-module (gnu packages image)
+  #:use-module (gnu packages libusb)
+  #:use-module (gnu packages linux)
+  #:use-module (gnu packages pdf)
+  #:use-module (gnu packages pkg-config)
+  #:use-module (gnu packages polkit)
+  #:use-module (gnu packages python)
+  #:use-module (gnu packages python-xyz)
+  #:use-module (gnu packages python-web)
+  #:use-module (gnu packages radio)
+  #:use-module (gnu packages serialization)
+  #:use-module (gnu packages synergy)
   #:use-module (gnu packages rust-apps)
+  #:use-module (gnu packages xdisorg)
+  #:use-module (gnu packages xorg)
   #:export (
             linux-clear-cjktty-zfs-headers
             linux-clear-cjktty-zfs
@@ -91,200 +118,790 @@
 ;;; ── NEEDS_RECIPE_DESIGN stubs ────────────────────────────────────────
 
 (define-public linux-clear-cjktty-zfs-headers
-  ;; AUR linux-clear-cjktty-zfs-headers: Clear Linux kernel +zfs+cjktty headers; v6.18.1-1; 2 votes.
-  ;; Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon
-  ;; NEEDS_RECIPE_DESIGN: custom kernel build; complex patch set (Clear+ZFS+CJK TTY).
-  ;; Next: fetch kernel source + patches, compute sha256 set, draft linux-build-system recipe.
+  ;; AUR linux-clear-cjktty-zfs-headers: Clear Linux kernel +zfs+cjktty headers; v6.18.1-1.
+  ;; BLOCKED: No standalone upstream for *-headers (AUR repo is empty); headers are split out
+  ;; from linux-clear-cjktty-zfs PKGBUILD, which carries a large custom patch stack and
+  ;; OpenZFS builtin integration that is not yet ported to Guix linux-build-system here.
   (package (inherit zoxide) (name "linux-clear-cjktty-zfs-headers")))
 
 (define-public linux-clear-cjktty-zfs
-  ;; AUR linux-clear-cjktty-zfs: Clear Linux kernel +zfs+cjktty; v6.18.1-1; 2 votes.
-  ;; Source: https://git.staropensource.de/StarOpenSource/Linux-Tachyon
-  ;; NEEDS_RECIPE_DESIGN: custom kernel build; same patch set as headers variant.
-  ;; Next: fetch kernel source + patch set, compute sha256s, draft linux-build-system recipe.
+  ;; AUR linux-clear-cjktty-zfs: Clear Linux kernel +zfs+cjktty; v6.18.1-1.
+  ;; BLOCKED: Upstream recipe requires a large Tachyon patch series plus OpenZFS builtin
+  ;; integration workflow not yet translated to a reproducible Guix kernel recipe in this pass.
   (package (inherit zoxide) (name "linux-clear-cjktty-zfs")))
 
 (define-public clightd
-  ;; AUR clightd: D-Bus interface for screen brightness and frame capture; v5.9-1; 18 votes.
-  ;; Source: https://github.com/FedeDP/Clightd
-  ;; NEEDS_RECIPE_DESIGN: cmake C recipe; deps: libddcutil, udev, pipewire, polkit.
-  ;; Next: fetch clightd-5.9 tarball, compute sha256, draft cmake recipe with udev rules.
-  (package (inherit zoxide) (name "clightd")))
+  (package
+    (name "clightd")
+    (version "5.9")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/FedeDP/Clightd/archive/" version
+                           ".tar.gz"))
+       (sha256
+        (base32 "0m1h1xjvarj6n6b06v9qf45w3dmj662ls79vqac1qwpbbrdqdbkn"))))
+    (build-system cmake-build-system)
+    (arguments
+     (list
+      #:tests? #f
+      #:configure-flags
+      #~(list (string-append "-DUDEV_RULES_INSTALL_DIR=" #$output
+                              "/lib/udev/rules.d")
+              (string-append "-DSYSTEMD_SERVICE_DIR=" #$output
+                              "/lib/systemd/system")
+              (string-append "-DDBUS_CONFIG_DIR=" #$output
+                              "/etc/dbus-1/system.d")
+              (string-append "-DMODULE_LOAD_DIR=" #$output
+                              "/lib/modules-load.d")
+              "-DENABLE_GAMMA=ON"
+              "-DENABLE_DPMS=ON"
+              "-DENABLE_SCREEN=ON"
+              "-DENABLE_YOCTOLIGHT=OFF")
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'unpack 'patch-install-paths
+            (lambda _
+              (let ((conf "src/modules/modules.conf"))
+                (when (file-exists? conf)
+                  (substitute* conf
+                    (("/usr/lib/systemd/system")
+                     (string-append #$output "/lib/systemd/system")))))
+              (substitute* "CMakeLists.txt"
+                (("pkg_get_variable\\(SYSTEM_BUS_DIR dbus-1 system_bus_services_dir\\)")
+                 (string-append
+                  "set(SYSTEM_BUS_DIR \"" #$output
+                  "/share/dbus-1/system-services\")"))
+                (("pkg_get_variable\\(POLKIT_ACTION_DIR polkit-gobject-1 actiondir\\)")
+                 (string-append
+                  "set(POLKIT_ACTION_DIR \"" #$output
+                  "/share/polkit-1/actions\")")))
+              #t)))))
+    (native-inputs (list pkg-config))
+    (inputs
+     (list dbus
+           ddcutil
+           elogind
+           eudev
+           libdrm
+           libiio
+           libjpeg-turbo
+           libmodule
+           libusb
+           libx11
+           libxext
+           libxrandr
+           polkit
+           wayland))
+    (home-page "https://github.com/FedeDP/Clightd")
+    (synopsis "D-Bus daemon for brightness and webcam frame capture")
+    (description
+     "clightd provides a D-Bus interface to control display brightness, gamma,
+DPMS, and related ambient-light features for user sessions.")
+    (license license:gpl3+)))
 
 (define-public libmodule
-  ;; AUR libmodule: C library for modular project design; v5.0.2-1; 10 votes.
-  ;; Source: https://github.com/FedeDP/libmodule
-  ;; NEEDS_RECIPE_DESIGN: cmake C library recipe; minimal deps; companion to clightd.
-  ;; Next: fetch libmodule-5.0.2 tarball, compute sha256, draft cmake library recipe.
-  (package (inherit zoxide) (name "libmodule")))
+  (package
+    (name "libmodule")
+    (version "5.0.2")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/FedeDP/libmodule/archive/" version
+                           ".tar.gz"))
+       (sha256
+        (base32 "1zpp46jly4sqb7gbffxajv72i6rh60cacc7sfrsr65mym9liw43j"))))
+    (build-system cmake-build-system)
+    (arguments (list #:tests? #f))
+    (native-inputs (list pkg-config))
+    (home-page "https://github.com/FedeDP/libmodule")
+    (synopsis "C library for building modular Linux projects")
+    (description
+     "libmodule is a C helper library that provides reusable modules and
+patterns for modular Linux applications.")
+    (license license:expat)))
 
 (define-public mas
-  ;; AUR mas: Macro cross-assembler (asl) for various processors; v1.42b300-1; 3 votes.
-  ;; Source: http://john.ccac.rwth-aachen.de:8000/as/
-  ;; NEEDS_RECIPE_DESIGN: C make recipe; multi-architecture assembler.
-  ;; Next: fetch asl source tarball, compute sha256, draft make recipe.
-  (package (inherit zoxide) (name "mas")))
+  ;; AUR mas is a renamed distribution of the ASL macro cross-assembler.
+  (package
+    (inherit asl)
+    (name "mas")))
 
 (define-public wrkflw-bin
-  ;; AUR wrkflw-bin: Validate/execute GitHub Actions workflows locally (binary); v0.7.3-1; 1 vote.
-  ;; Source: https://github.com/bahdotsh/wrkflw
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch wrkflw v0.7.3 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "wrkflw-bin")))
+  (package
+    (name "wrkflw-bin")
+    (version "0.7.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/bahdotsh/wrkflw/releases/download/v" version
+             "/wrkflw-v" version "-linux-x86_64.tar.gz"))
+       (sha256
+        (base32 "1bkqs48ph0b0m96p6v6kgrkh3kbhaqfcc5vvs4lsw5bfk3fizyxy"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (bin (string-append out "/bin")))
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src)
+            (mkdir-p bin)
+            (install-file "wrkflw" bin)
+            (chmod (string-append bin "/wrkflw") #o755)
+            #t))))
+    (home-page "https://github.com/bahdotsh/wrkflw")
+    (synopsis "Validate and run GitHub Actions workflows locally")
+    (description
+     "wrkflw validates and executes GitHub Actions workflows in a local
+environment.  This package repackages the upstream prebuilt Linux binary.")
+    (license license:expat)))
 
 (define-public iwmenu-bin
-  ;; AUR iwmenu-bin: Launcher-driven Wi-Fi manager for Linux (binary); v0.4.0-1; 1 vote.
-  ;; Source: https://github.com/e-tho/iwmenu
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch iwmenu v0.4.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "iwmenu-bin")))
+  (package
+    (name "iwmenu-bin")
+    (version "0.4.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/e-tho/iwmenu/releases/download/v" version
+             "/iwmenu-x86_64-linux-gnu"))
+       (sha256
+        (base32 "1pwkv6a8h5kx82dn7wpd9n701i510v2zwjzykd66r9rpm9pkc2rf"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (copy-file src (string-append bin "/iwmenu"))
+            (chmod (string-append bin "/iwmenu") #o755)
+            #t))))
+    (home-page "https://github.com/e-tho/iwmenu")
+    (synopsis "Launcher-driven Wi-Fi manager for Linux")
+    (description
+     "iwmenu is a lightweight launcher-driven interface for managing Wi-Fi
+connections on Linux.  This package repackages the upstream prebuilt binary.")
+    (license license:gpl3)))
 
 (define-public pwmenu-bin
-  ;; AUR pwmenu-bin: Launcher-driven audio manager for Linux (binary); v0.4.0-1; 1 vote.
-  ;; Source: https://github.com/e-tho/pwmenu
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch pwmenu v0.4.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "pwmenu-bin")))
+  (package
+    (name "pwmenu-bin")
+    (version "0.4.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/e-tho/pwmenu/releases/download/v" version
+             "/pwmenu-x86_64-linux-gnu"))
+       (sha256
+        (base32 "0gj12lpwx6zw3p6gcda1gq7cr5frsvzzq1plra2sm511m0lg3rbj"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (inputs (list pipewire))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (copy-file src (string-append bin "/pwmenu"))
+            (chmod (string-append bin "/pwmenu") #o755)
+            #t))))
+    (home-page "https://github.com/e-tho/pwmenu")
+    (synopsis "Launcher-driven audio manager for Linux")
+    (description
+     "pwmenu is a launcher-driven audio manager for Linux systems using
+PipeWire.  This package repackages the upstream prebuilt binary.")
+    (license license:gpl3)))
 
 (define-public bzmenu-bin
-  ;; AUR bzmenu-bin: Launcher-driven Bluetooth manager for Linux (binary); v0.4.0-1; 1 vote.
-  ;; Source: https://github.com/e-tho/bzmenu
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch bzmenu v0.4.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "bzmenu-bin")))
+  (package
+    (name "bzmenu-bin")
+    (version "0.4.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/e-tho/bzmenu/releases/download/v" version
+             "/bzmenu-x86_64-linux-gnu"))
+       (sha256
+        (base32 "0ggnand2ih6s1si6amp0mnl9r6d4gjj65vx03kysmzdvggxy71a2"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (inputs (list dbus elogind))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (copy-file src (string-append bin "/bzmenu"))
+            (chmod (string-append bin "/bzmenu") #o755)
+            #t))))
+    (home-page "https://github.com/e-tho/bzmenu")
+    (synopsis "Launcher-driven Bluetooth manager for Linux")
+    (description
+     "bzmenu is a launcher-driven Bluetooth manager for Linux.  This package
+repackages the upstream prebuilt binary.")
+    (license license:gpl3)))
 
 (define-public claude-code-seccomp
-  ;; AUR claude-code-seccomp: seccomp filter dep for Claude Code /sandbox; v0.0.35-1; 1 vote.
-  ;; Source: https://github.com/anthropic-experimental/sandbox-runtime
-  ;; NEEDS_RECIPE_DESIGN: C library recipe; seccomp filter build; deps: libseccomp.
-  ;; Next: fetch sandbox-runtime source, compute sha256, draft C library recipe.
-  (package (inherit zoxide) (name "claude-code-seccomp")))
+  (package
+    (name "claude-code-seccomp")
+    (version "0.0.35")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://raw.githubusercontent.com/anthropic-experimental/sandbox-runtime/"
+         "4fad8fa35db3f09958db1df401b30bd00402b611/vendor/seccomp/x64/"
+         "apply-seccomp"))
+       (sha256
+        (base32 "1zcq1gc1p9nqyda8g9fi3xrfxapqy3j238sxhg4xprwp6yv4c0z7"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     (list
+      `("unix-block.bpf"
+        ,(origin
+           (method url-fetch)
+           (uri
+            (string-append
+             "https://raw.githubusercontent.com/anthropic-experimental/sandbox-runtime/"
+             "4fad8fa35db3f09958db1df401b30bd00402b611/vendor/seccomp/x64/"
+             "unix-block.bpf"))
+           (sha256
+            (base32 "01w8hr79mk93f3p8xavhsd2m1k9q76n9pcrsn56r6rs2smh5klf4"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (apply-seccomp (assoc-ref %build-inputs "source"))
+                 (unix-block (assoc-ref %build-inputs "unix-block.bpf"))
+                 (libdir (string-append out "/lib/claude-code-seccomp")))
+            (mkdir-p libdir)
+            (copy-file apply-seccomp (string-append libdir "/apply-seccomp"))
+            (chmod (string-append libdir "/apply-seccomp") #o755)
+            (copy-file unix-block (string-append libdir "/unix-block.bpf"))
+            #t))))
+    (home-page "https://github.com/anthropic-experimental/sandbox-runtime")
+    (synopsis "Seccomp sandbox runtime payloads for Claude Code")
+    (description
+     "claude-code-seccomp installs the prebuilt apply-seccomp helper binary
+and unix-block seccomp BPF payload used by Claude Code sandboxing.")
+    (license license:asl2.0)))
 
 (define-public ferris-scan-bin
-  ;; AUR ferris-scan-bin: Lightweight Rust-based file scanner (binary); v0.25-1; 1 vote.
-  ;; Source: https://github.com/Vnilabean/ferris-scan
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch ferris-scan v0.25 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "ferris-scan-bin")))
+  (package
+    (name "ferris-scan-bin")
+    (version "0.25")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://github.com/Vnilabean/ferris-scan/releases/download/v"
+                           version "/ferris-scan-tui-v" version "-linux"))
+       (sha256
+        (base32 "1a2sb0w04a3qnxdbjg7nf74zab949wpsj5yfgbx5v9yfgws8fbq4"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs
+     (list
+      (list "ferris-scan-gui"
+            (origin
+              (method url-fetch)
+              (uri
+               (string-append
+                "https://github.com/Vnilabean/ferris-scan/releases/download/v"
+                version "/ferris-scan-gui-v" version "-linux"))
+              (sha256
+               (base32 "1fdjhgz0gzlad89jggq99m4bfyi7a3mssp5fdnkm9xkinar61xys"))))))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (bin (string-append out "/bin"))
+                 (src-tui (assoc-ref %build-inputs "source"))
+                 (src-gui (assoc-ref %build-inputs "ferris-scan-gui")))
+            (mkdir-p bin)
+            (copy-file src-tui (string-append bin "/ferris-scan-tui"))
+            (copy-file src-gui (string-append bin "/ferris-scan-gui"))
+            (chmod (string-append bin "/ferris-scan-tui") #o755)
+            (chmod (string-append bin "/ferris-scan-gui") #o755)
+            (symlink (string-append out "/bin/ferris-scan-tui")
+                     (string-append bin "/ferris-scan"))
+            #t))))
+    (home-page "https://github.com/Vnilabean/ferris-scan")
+    (synopsis "Lightweight file scanner binaries")
+    (description
+     "Ferris Scan is a lightweight file scanner written in Rust.  This
+package installs the upstream pre-built Linux TUI and GUI binaries from the
+official release artifacts.")
+    (license license:expat)))
 
 (define-public gram-editor-bin
-  ;; AUR gram-editor-bin: Code editor for humanoid apes and grumpy toads (binary); v1.1.0-4; 1 vote.
-  ;; Source: https://codeberg.org/GramEditor/gram
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from Codeberg releases.
-  ;; Next: fetch gram-editor v1.1.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "gram-editor-bin")))
+  (package
+    (name "gram-editor-bin")
+    (version "1.2.0")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append "https://codeberg.org/GramEditor/gram/releases/download/"
+                           version "/gram-linux-x86_64-" version ".tar.gz"))
+       (sha256
+        (base32 "044sivzmka5chgmjw32y8vmxfplnigav654pxvfwbfwdvhhxf79c"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin-out (string-append out "/bin"))
+                 (lib-out (string-append out "/lib/gram"))
+                 (apps-out (string-append out "/share/applications"))
+                 (icons-out (string-append out "/share/icons")))
+            (invoke #$(file-append tar "/bin/tar")
+                    "--use-compress-program" #$(file-append gzip "/bin/gzip")
+                    "-xvf" src)
+            (mkdir-p bin-out)
+            (mkdir-p lib-out)
+            (mkdir-p apps-out)
+            (install-file "gram.app/bin/gram" bin-out)
+            (install-file "gram.app/libexec/gram-editor" lib-out)
+            (chmod (string-append bin-out "/gram") #o755)
+            (chmod (string-append lib-out "/gram-editor") #o755)
+            (install-file "gram.app/share/applications/gram.desktop" apps-out)
+            (copy-recursively "gram.app/share/icons" icons-out)
+            #t))))
+    (home-page "https://codeberg.org/GramEditor/gram")
+    (synopsis "Code editor binary distribution from Gram Editor")
+    (description
+     "Gram is a code editor.  This package repackages the upstream Linux
+x86_64 binary release published by the Gram Editor project.")
+    (license (list license:gpl3+ license:agpl3+ license:asl2.0))))
 
 (define-public bapctools-git
-  ;; AUR bapctools-git: Tools for ICPC-style contest problem development; r1310.16e23ee-1; 4 votes.
-  ;; Source: https://github.com/RagnarGrootKoerkamp/BAPCtools
-  ;; NEEDS_RECIPE_DESIGN: python-build-system; deps: python, checktestdata, optional: latex.
-  ;; Next: pin git commit, compute sha256, draft python recipe.
-  (package (inherit zoxide) (name "bapctools-git")))
+  (package
+    (name "bapctools-git")
+    (version "r1310.16e23ee")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/RagnarGrootKoerkamp/BAPCtools/archive/"
+             "16e23ee1f866f17ea71756b77897230e73b948e3.tar.gz"))
+       (sha256
+        (base32 "0jr44rw5gnhhpbc7cczj8rg547bali7qmnym42iwk61vppd9da59"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (propagated-inputs
+     (list python
+           python-argcomplete
+           python-colorama
+           python-pyyaml
+           python-requests
+           python-ruamel.yaml))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (dir "BAPCtools-16e23ee1f866f17ea71756b77897230e73b948e3")
+                 (share-dir (string-append out "/share/bapctools"))
+                 (bin-dir (string-append out "/bin")))
+            (invoke #$(file-append tar "/bin/tar")
+                    "--use-compress-program" #$(file-append gzip "/bin/gzip")
+                    "-xvf" src)
+            (copy-recursively dir share-dir)
+            (mkdir-p bin-dir)
+            (symlink (string-append share-dir "/bin/tools.py")
+                     (string-append bin-dir "/bt"))
+            (symlink (string-append share-dir "/bin/tools.py")
+                     (string-append bin-dir "/bapctools"))
+            #t))))
+    (home-page "https://github.com/RagnarGrootKoerkamp/BAPCtools")
+    (synopsis "Toolkit for ICPC-style programming contest problem development")
+    (description
+     "BAPCtools provides utilities for creating, validating, and testing
+ICPC-style programming contest problems.  This package installs a pinned
+snapshot of the upstream Git repository.")
+    (license license:gpl3+)))
 
 (define-public sabiql-bin
-  ;; AUR sabiql-bin: Fast driverless TUI for PostgreSQL (binary); v1.8.2-1; 1 vote.
-  ;; Source: https://github.com/riii111/sabiql
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch sabiql v1.8.2 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "sabiql-bin")))
+  (package
+    (name "sabiql-bin")
+    (version "1.9.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/riii111/sabiql/releases/download/v" version
+             "/sabiql-x86_64-unknown-linux-gnu.tar.gz"))
+       (sha256
+        (base32 "0mp1x9k4v9r5snba1m07ywbhx6d6kx85zrbhq19wrkh2bv24y0ay"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (invoke #$(file-append tar "/bin/tar")
+                    "--use-compress-program" #$(file-append gzip "/bin/gzip")
+                    "-xvf" src)
+            (mkdir-p bin)
+            (install-file "sabiql" bin)
+            (chmod (string-append bin "/sabiql") #o755)
+            #t))))
+    (home-page "https://github.com/riii111/sabiql")
+    (synopsis "Fast driver-less PostgreSQL terminal UI")
+    (description
+     "Sabiql is a terminal user interface for browsing, querying, and editing
+PostgreSQL databases.  This package repackages the upstream pre-built Linux
+x86_64 binary release.")
+    (license license:expat)))
 
 (define-public podserv-b-git
-  ;; AUR podserv-b-git: Minimalist podcast server (type b); v0.1.2.r0.g536e372-1; 1 vote.
-  ;; Source: https://github.com/l5yth/podserv-b
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; serves media files over HTTP.
-  ;; Next: pin git commit, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "podserv-b-git")))
+  (package
+    (name "podserv-b-git")
+    (version "0.1.2.r0.g536e372")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://github.com/l5yth/podserv-b/releases/download/v0.1.2/podserv-b")
+       (sha256
+        (base32 "1hdss5h1wfbbb51hsfvxky5s4yly50sgp5sfkf6is5wvz3dxvx99"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (copy-file src (string-append bin "/podserv-b"))
+            (chmod (string-append bin "/podserv-b") #o755)
+            #t))))
+    (home-page "https://github.com/l5yth/podserv-b")
+    (synopsis "Minimalist podcast media HTTP server")
+    (description
+     "Podserv-b is a minimalist podcast server for serving media files over
+HTTP.  This package installs the upstream pre-built Linux binary and keeps the
+AUR compatibility name podserv-b-git.")
+    (license license:asl2.0)))
 
 (define-public netwatch-tui
-  ;; AUR netwatch-tui: Real-time network diagnostics TUI; v0.3.5-2; 1 vote.
+  ;; AUR netwatch-tui: Real-time network diagnostics TUI; v0.8.0-1; 1 vote.
   ;; Source: https://github.com/matthart1983/netwatch
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; like htop for network.
-  ;; Next: fetch netwatch v0.3.5 source, compute sha256, draft cargo recipe.
+  ;; BLOCKED after 3 approaches in this pass:
+  ;; 1) `guix import crate netwatch` fails: missing module (semver ranges).
+  ;; 2) Binary route unavailable: upstream release v0.8.0 ships zero assets.
+  ;; 3) Manual cargo-build-system skeleton fails offline: missing vendored crate
+  ;;    `atomic-waker` without full cargo-inputs graph.
   (package (inherit zoxide) (name "netwatch-tui")))
 
 (define-public synergy3-bin
-  ;; AUR synergy3-bin: Share mouse/keyboard between computers v3 (proprietary binary); v3.6.0-1; 5 votes.
-  ;; Source: https://symless.com/synergy (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary; fetch Linux binary from Symless.
-  ;; Next: fetch Synergy 3.6.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "synergy3-bin")))
+  (package
+    (inherit synergy)
+    (name "synergy3-bin")
+    (synopsis "Compatibility alias for the Synergy keyboard/mouse sharing tool")
+    (description
+     "This package provides the AUR-style compatibility name
+@code{synergy3-bin} by re-exporting Guix's @code{synergy} package.")))
 
 (define-public q5k-usb-udev
-  ;; AUR q5k-usb-udev: Qudelix-5K USB udev rules; v2026.02.28-1; 1 vote.
-  ;; Source: https://gist.github.com/hmtheboy154/21c0a25ff025667981a35b6656f7da69
-  ;; NEEDS_RECIPE_DESIGN: trivial-build-system udev rules install; minimal.
-  ;; Next: fetch udev rules file from gist, compute sha256, draft trivial udev install.
-  (package (inherit zoxide) (name "q5k-usb-udev")))
+  (package
+    (name "q5k-usb-udev")
+    (version "2026.02.28")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://gist.githubusercontent.com/hmtheboy154/"
+             "21c0a25ff025667981a35b6656f7da69/raw/"
+             "8242cefe13667ddcbe8291b5f34bb523c3142eed/99-qudelix.rules"))
+       (sha256
+        (base32 "1lm47kh7gbdphfqszdx1zhd47h87f29k8b11w27swq0hca29255d"))))
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (rules-dir (string-append out "/lib/udev/rules.d")))
+            (mkdir-p rules-dir)
+            (copy-file src (string-append rules-dir "/99-qudelix.rules"))
+            #t))))
+    (home-page "https://gist.github.com/hmtheboy154/21c0a25ff025667981a35b6656f7da69")
+    (synopsis "Udev rules for Qudelix-5K USB mode")
+    (description
+     "This package installs udev rules for Qudelix-5K USB devices so the
+device is accessible with the expected permissions on GNU/Linux systems.")
+    (license license:bsd-3)))
 
 (define-public qpdf-zopfli
-  ;; AUR qpdf-zopfli: QPDF PDF transformation system with Zopfli compression; v12.3.2-2; 1 vote.
-  ;; Source: https://github.com/qpdf/qpdf
-  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe with zopfli flag; deps: cmake, zlib, zopfli.
-  ;; Next: fetch qpdf-12.3.2 source, compute sha256, draft cmake recipe with zopfli feature.
-  (package (inherit zoxide) (name "qpdf-zopfli")))
+  (package
+    (inherit qpdf)
+    (name "qpdf-zopfli")
+    (inputs
+     (modify-inputs (package-inputs qpdf)
+       (prepend zopfli)))
+    (arguments
+     (substitute-keyword-arguments (package-arguments qpdf)
+       ((#:configure-flags flags #~'())
+        #~(append #$flags
+                  (list "-DZOPFLI=ON")))))
+    (synopsis "QPDF with Zopfli compression support")
+    (description
+     "qpdf-zopfli is a qpdf variant built with Zopfli compression support
+enabled.")))
+
 
 (define-public swhook
   ;; AUR swhook: Minimalistic webhook server; v0.0.3-1; 1 vote.
   ;; Source: https://github.com/AndyLocks/swhook
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust.
-  ;; Next: fetch swhook v0.0.3 source, compute sha256, draft cargo recipe.
+  ;; BLOCKED: upstream ships source-only Rust releases (no prebuilt binaries)
+  ;; and packaging from source requires a non-trivial cargo dependency graph.
   (package (inherit zoxide) (name "swhook")))
 
 (define-public libavif-noglycin
   ;; AUR libavif-noglycin: libavif for gdk-pixbuf2-noglycin variant; v1.3.0-5; 1 vote.
-  ;; Source: https://github.com/AOMediaCodec/libavif
-  ;; NEEDS_RECIPE_DESIGN: cmake C recipe variant; requires noglycin gdk-pixbuf2 dep.
-  ;; Next: fetch libavif-1.3.0 source, compute sha256, draft cmake recipe with noglycin dep.
-  (package (inherit zoxide) (name "libavif-noglycin")))
+  ;; Maps to Guix libavif (gnu/packages/image.scm).
+  (package
+    (inherit libavif)
+    (name "libavif-noglycin")
+    (synopsis "Compatibility package name for libavif")
+    (description
+     "Compatibility package that provides @code{libavif} under the AUR-style
+package name @code{libavif-noglycin}.")))
 
 (define-public libheif-noglycin
   ;; AUR libheif-noglycin: libheif for gdk-pixbuf2-noglycin variant; v1.21.2-2; 1 vote.
-  ;; Source: https://github.com/strukturag/libheif
-  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe variant; requires noglycin gdk-pixbuf2 dep.
-  ;; Next: fetch libheif-1.21.2 source, compute sha256, draft cmake recipe with noglycin dep.
-  (package (inherit zoxide) (name "libheif-noglycin")))
-
-(define-public libjxl-noglycin-doc
-  ;; AUR libjxl-noglycin-doc: JPEG XL reference docs for noglycin variant; v0.11.2-2; 1 vote.
-  ;; Source: https://jpeg.org/jpegxl/
-  ;; NEEDS_RECIPE_DESIGN: cmake docs subpackage; dep: libjxl-noglycin.
-  ;; Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake docs-only recipe.
-  (package (inherit zoxide) (name "libjxl-noglycin-doc")))
+  ;; Maps to Guix libheif (gnu/packages/image.scm).
+  (package
+    (inherit libheif)
+    (name "libheif-noglycin")
+    (synopsis "Compatibility package name for libheif")
+    (description
+     "Compatibility package that provides @code{libheif} under the AUR-style
+package name @code{libheif-noglycin}.")))
 
 (define-public libjxl-noglycin
   ;; AUR libjxl-noglycin: JPEG XL for gdk-pixbuf2-noglycin variant; v0.11.2-2; 1 vote.
-  ;; Source: https://jpeg.org/jpegxl/
-  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe variant; deps: brotli, highway; noglycin gdk-pixbuf2.
-  ;; Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake recipe with noglycin dep.
-  (package (inherit zoxide) (name "libjxl-noglycin")))
+  ;; Maps to Guix libjxl (gnu/packages/image.scm).
+  (package
+    (inherit libjxl)
+    (name "libjxl-noglycin")
+    (synopsis "Compatibility package name for libjxl")
+    (description
+     "Compatibility package that provides @code{libjxl} under the AUR-style
+package name @code{libjxl-noglycin}.")))
+
+(define-public libjxl-noglycin-doc
+  ;; AUR libjxl-noglycin-doc: JPEG XL docs variant for gdk-pixbuf2-noglycin; v0.11.2-2.
+  ;; Guix does not split libjxl docs into a separate output package.
+  (package
+    (inherit libjxl-noglycin)
+    (name "libjxl-noglycin-doc")
+    (synopsis "Compatibility package name for libjxl documentation variant")
+    (description
+     "Compatibility package that provides @code{libjxl} under the AUR-style
+package name @code{libjxl-noglycin-doc}.  Guix does not split libjxl
+documentation into a standalone docs package.")))
 
 (define-public op-cache-git
   ;; AUR op-cache-git: Caching proxy for 1Password CLI op read; v0-1; 1 vote.
   ;; Source: https://github.com/crmne/op-cache
-  ;; NEEDS_RECIPE_DESIGN: cargo or Go recipe; deps: 1password-cli.
-  ;; Next: pin git commit, compute sha256, determine build system, draft recipe.
+  ;; BLOCKED: upstream is an unpublished Rust git branch with no release assets;
+  ;; packaging from source requires a generated cargo dependency graph.
   (package (inherit zoxide) (name "op-cache-git")))
 
 (define-public console2svg-bin
-  ;; AUR console2svg-bin: Convert terminal output to SVG images (binary); v0.6.4-2; 1 vote.
-  ;; Source: https://github.com/arika0093/console2svg
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from GitHub releases.
-  ;; Next: fetch console2svg v0.6.4 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "console2svg-bin")))
+  ;; AUR console2svg-bin: Convert terminal output to SVG images (binary); v0.6.5-1.
+  (package
+    (name "console2svg-bin")
+    (version "0.6.5")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://github.com/arika0093/console2svg/releases/download/v"
+         version
+         "/console2svg-linux-x64"))
+       (sha256
+        (base32 "0cwbq60zw4dx5gg2xkd5qny22yg9cjkyfrcnznl4rmkicxas8mal"))))
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (bin (string-append out "/bin"))
+                 (target (string-append bin "/console2svg")))
+            (mkdir-p bin)
+            (copy-file src target)
+            (chmod target #o755)))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/arika0093/console2svg")
+    (synopsis "Convert terminal output to SVG")
+    (description
+     "Console2svg converts terminal output streams into SVG images suitable
+for documentation and sharing.")
+    (license license:asl2.0)))
 
 (define-public szsol-rs
-  ;; AUR szsol-rs: Solitaire card game from SHENZHEN I/O with TUI; v1.0.1-1; 1 vote.
-  ;; Source: https://github.com/ghoker143/szsol-rs
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, crossterm or similar TUI crate.
-  ;; Next: fetch szsol-rs v1.0.1 source, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "szsol-rs")))
+  ;; AUR szsol-rs: Solitaire card game from SHENZHEN I/O with TUI; v1.0.1-1.
+  (package
+    (name "szsol-rs")
+    (version "1.0.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://github.com/ghoker143/szsol-rs/releases/download/v"
+         version
+         "/szsol-rs-x86_64-unknown-linux-gnu.tar.xz"))
+       (sha256
+        (base32 "1mdmrlzw9w5sslrqmijk36aid19rhzv3x60fbj394ykixi1v6g5a"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (bin (string-append out "/bin"))
+                 (doc (string-append out "/share/doc/szsol-rs"))
+                 (licenses (string-append out "/share/licenses/szsol-rs"))
+                 (extract-dir "szsol-rs-x86_64-unknown-linux-gnu"))
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" src)
+            (mkdir-p bin)
+            (install-file (string-append extract-dir "/szsol-rs") bin)
+            (chmod (string-append bin "/szsol-rs") #o755)
+            (mkdir-p doc)
+            (install-file (string-append extract-dir "/README.MD") doc)
+            (mkdir-p licenses)
+            (install-file (string-append extract-dir "/LICENSE") licenses)))))
+    (home-page "https://github.com/ghoker143/szsol-rs")
+    (synopsis "Solitaire card game from SHENZHEN I/O")
+    (description
+     "Szsol-rs is a terminal-based solitaire card game inspired by
+SHENZHEN I/O.")
+    (license license:expat)))
 
 (define-public arch-remaster
-  ;; AUR arch-remaster: Tools for remastering Arch Linux live systems; v26.02.1-1; 1 vote.
-  ;; Source: https://github.com/AdrianTM/arch-remaster
-  ;; NEEDS_RECIPE_DESIGN: shell script recipe; deps: squashfs-tools, xorriso, grub.
-  ;; Next: fetch arch-remaster 26.02.1 source, compute sha256, draft trivial script install.
-  (package (inherit zoxide) (name "arch-remaster")))
+  ;; AUR arch-remaster: Tools for remastering Arch Linux live systems; v26.02.1-1.
+  (package
+    (name "arch-remaster")
+    (version "26.02.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        "https://github.com/AdrianTM/arch-remaster/archive/refs/tags/26.02.1.tar.gz")
+       (file-name (string-append name "-" version ".tar.gz"))
+       (sha256
+        (base32 "11xmq1vygbnflwzankxmpdvdwjpdamx892188d7njark92dp47jy"))))
+    (build-system trivial-build-system)
+    (native-inputs (list tar gzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (gzip (search-input-file %build-inputs "/bin/gzip"))
+                 (bin-dir (string-append out "/bin"))
+                 (man1-dir (string-append out "/share/man/man1"))
+                 (work (string-append (getcwd) "/work"))
+                 (top (string-append work "/arch-remaster-26.02.1"))
+                 (bash (string-append #$bash-minimal "/bin/bash")))
+            (mkdir-p work)
+            (invoke tar (string-append "--use-compress-program=" gzip) "-xf" src "-C" work)
+            (mkdir-p bin-dir)
+            (install-file (string-append top "/live-remaster") bin-dir)
+            (install-file (string-append top "/update-cow-space") bin-dir)
+            (for-each
+             (lambda (script)
+               (chmod script #o755)
+               (substitute* script
+                 (("^#!/bin/bash")
+                  (string-append "#!" bash))))
+             (list (string-append bin-dir "/live-remaster")
+                   (string-append bin-dir "/update-cow-space")))
+            (mkdir-p man1-dir)
+            (install-file (string-append top "/live-remaster.1") man1-dir)
+            (install-file (string-append top "/update-cow-space.1") man1-dir)))))
+    (home-page "https://github.com/AdrianTM/arch-remaster")
+    (synopsis "Tools for remastering Arch Linux live systems")
+    (description
+     "arch-remaster provides shell tools to remaster Arch Linux live systems
+and to update live USB copy-on-write boot parameters.")
+    (license license:gpl3+)))
 
 (define-public pixora-icons-git
   ;; AUR pixora-icons-git: 16-bit pixel icon theme for Linux desktops (git); r264.gf5604c1-1; 1 vote.
@@ -546,45 +1163,158 @@
   (package (inherit zoxide) (name "zerx-lab-fluxdown-bin")))
 
 (define-public bililive-recorder-bin
-  ;; AUR bililive-recorder-bin: BiliBili live stream recorder (binary); v2.17.3-1; 1 vote.
-  ;; Source: https://github.com/Bililive/BililiveRecorder
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; .NET self-contained binary; fetch Linux x64 release.
-  ;; Next: fetch BililiveRecorder 2.17.3 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "bililive-recorder-bin")))
+  (package
+    (name "bililive-recorder-bin")
+    (version "2.17.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/Bililive/BililiveRecorder/releases/download/v"
+             version
+             "/BililiveRecorder-CLI-linux-x64.zip"))
+       (sha256
+        (base32 "1lw4i01zjpnglrv6sbz3q357mjfap1z2218pr0r7lx7m5qml21dw"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list unzip))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (unzip (search-input-file %build-inputs "/bin/unzip"))
+                 (work (string-append (getcwd) "/unpack"))
+                 (lib (string-append out "/lib/bililive-recorder"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p work)
+            (invoke unzip "-q" src "-d" work)
+            (mkdir-p lib)
+            (copy-recursively work lib)
+            (mkdir-p bin)
+            (symlink (string-append lib "/BililiveRecorder.Cli")
+                     (string-append bin "/BililiveRecorder.Cli"))
+            #t))))
+    (home-page "https://github.com/Bililive/BililiveRecorder")
+    (synopsis "Bilibili live stream recorder")
+    (description
+     "Bililive Recorder captures and stores livestreams from Bilibili.  This
+package repackages the upstream x86_64 CLI binary release.")
+    (license license:gpl3)))
 
 (define-public lenovo-print-driver-lj2400-m7400-bin
-  ;; AUR lenovo-print-driver-lj2400-m7400-bin: Lenovo LJ2400/M7400 printer driver (proprietary binary); v5.0.3-1; 1 vote.
-  ;; Source: https://www.lenovo.com (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary printer driver; fetch Linux binary from Lenovo.
-  ;; Next: fetch Lenovo LJ2400/M7400 Linux driver binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "lenovo-print-driver-lj2400-m7400-bin")))
+  (package
+    (name "lenovo-print-driver-lj2400-m7400-bin")
+    (version "5.0.3")
+    (source
+     (origin
+       (method url-fetch)
+       (uri
+        (string-append
+         "https://aur.archlinux.org/cgit/aur.git/plain/"
+         "drive-service_signed_com.lenovo.lenovoprints_5.0.3-2_amd64.deb"
+         "?h=lenovo-print-driver-lj2400-m7400-bin&id="
+         "2ea87abde555df0367b9453b34e4885223bc7790"))
+       (file-name "lenovo-print-driver-lj2400-m7400-bin-5.0.3.deb")
+       (sha256
+        (base32 "13wsmva0frgmg1naimik9majn5mg75z8vbzj6j7i2lqs063l5nhp"))))
+    (build-system trivial-build-system)
+    (supported-systems '("x86_64-linux"))
+    (native-inputs (list binutils tar xz))
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (src (assoc-ref %build-inputs "source"))
+                 (ar (search-input-file %build-inputs "/bin/ar"))
+                 (tar (search-input-file %build-inputs "/bin/tar"))
+                 (xz (search-input-file %build-inputs "/bin/xz"))
+                 (driver-root (string-append out "/opt/lenovo/com.lenovo.lenovoprints"))
+                 (lpd-root (string-append driver-root "/bin/lpd"))
+                 (license-dir (string-append out "/share/licenses/lenovo-print-driver-lj2400-m7400-bin"))
+                 (cups-model-dir (string-append out "/share/cups/model"))
+                 (cups-filter-dir (string-append out "/lib/cups/filter"))
+                 (bin-dir (string-append out "/bin"))
+                 (models '("LJ2405D" "LJ2605D" "LJ2405" "LJ2400Pro" "M7405D"
+                           "M7605D" "M7400Pro" "M7450FPro" "M7655DHF" "M7400W"
+                           "M7405DW" "M7605DW" "M7625DWA" "M7626DNA" "M7628DNA"
+                           "M7685DXF" "M7686DXF" "LJ2680DN" "M7680D" "M7460"
+                           "M7480" "M7690DNA" "M7490DNF" "M7675DXF" "M7455DNF"
+                           "M7615DNA" "LJ2655DN")))
+            (invoke ar "x" src)
+            (invoke tar (string-append "--use-compress-program=" xz) "-xf" "data.tar.xz")
+            (copy-recursively "opt" (string-append out "/opt"))
+            (mkdir-p cups-model-dir)
+            (copy-recursively "usr/share/cups/model" cups-model-dir)
+            (mkdir-p license-dir)
+            (copy-file (string-append driver-root "/bin/LICENSE_ENG.txt")
+                       (string-append license-dir "/LICENSE_ENG.txt"))
+            (copy-file (string-append driver-root "/bin/LICENSE_CHN.txt")
+                       (string-append license-dir "/LICENSE_CHN.txt"))
+            (symlink (string-append lpd-root "/x86_64/rawtobr3")
+                     (string-append lpd-root "/rawtobr3"))
+            (symlink (string-append lpd-root "/x86_64/brprintconflsr3")
+                     (string-append lpd-root "/brprintconflsr3"))
+            (mkdir-p cups-filter-dir)
+            (for-each
+             (lambda (model)
+               (symlink (string-append driver-root "/bin/cupswrapper/lpdwrapper")
+                        (string-append cups-filter-dir "/lenovo_" model)))
+             models)
+            (mkdir-p bin-dir)
+            (for-each
+             (lambda (model)
+               (let ((wrapper (string-append bin-dir "/brprintconflsr3_" model)))
+                 (call-with-output-file wrapper
+                   (lambda (port)
+                     (format port
+                             "#!/bin/sh~%exec \"~a/bin/lpd/brprintconflsr3\" -P ~a \"$@\"~%"
+                             driver-root model)))
+                 (chmod wrapper #o755)))
+             models)
+            #t))))
+    (home-page "https://aur.archlinux.org/packages/lenovo-print-driver-lj2400-m7400-bin")
+    (synopsis "Lenovo LJ2400 and M7400 series printer driver payload")
+    (description
+     "This package repackages the Lenovo LJ2400/M7400 proprietary Debian
+driver payload mirrored in AUR, including PPD files and CUPS filter wrappers.")
+    (license (license:non-copyleft "https://www.lenovo.com/us/en/legal/"))))
 
 (define-public nodejs-knit
   ;; AUR nodejs-knit: Knit local Node.js dependencies together; v0.1.2-1; 1 vote.
-  ;; Source: https://github.com/coopbri/knit
-  ;; NEEDS_RECIPE_DESIGN: node.js/npm recipe; deps: node, npm.
-  ;; Next: fetch knit v0.1.2 from npm/GitHub, compute sha256, draft node recipe.
+  ;; Source: https://github.com/coopbri/knit and npm @omnidev/knit 0.1.2
+  ;; BLOCKED after 3 approaches in this pass:
+  ;; 1) npm tarball direct run fails at runtime: missing module `yargs`.
+  ;; 2) `npm install --offline` fails with ENOTCACHED (full dependency graph not vendored).
+  ;; 3) Guix dependency route blocked: required node-* packages (yargs/chalk/fs-extra/
+  ;;    glob/ignore/ini/npm-packlist/@npmcli-arborist) are unavailable in current channels.
   (package (inherit zoxide) (name "nodejs-knit")))
 
 (define-public fw-fanctrl-rs-git
-  ;; AUR fw-fanctrl-rs-git: Lightweight fan control daemon for Framework laptops (git); r106.g20b84a6-1; 1 vote.
-  ;; Source: https://github.com/NexusXe/fw-ec-utils
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; Framework Embedded Controller access.
-  ;; Next: pin git rev, compute sha256, draft cargo recipe with EC/udev rules.
+  ;; AUR fw-fanctrl-rs-git: Lightweight fan control daemon for Framework laptops (git); r106.g20b84a6-1.
+  ;; BLOCKED: upstream currently requires a full Rust workspace + unstable feature path for
+  ;; plugin hashing in default feature set; cargo-build-system recipe is pending after feature
+  ;; gating/patch strategy is finalized for stable toolchains.
   (package (inherit zoxide) (name "fw-fanctrl-rs-git")))
 
 (define-public aerothemeplasma-desktop-x11-git
   ;; AUR aerothemeplasma-desktop-x11-git: X11 session for AeroThemePlasma; r662.ra70f432-1; 1 vote.
   ;; Source: https://github.com/aeroshell-desktop/aerothemeplasma
-  ;; NEEDS_RECIPE_DESIGN: cmake/kpackage recipe; deps: KDE Plasma 6, AeroShell components.
-  ;; Next: pin git commit, compute sha256, draft cmake KDE Plasma recipe.
+  ;; BLOCKED: current upstream requires an AeroShell-specific patched Plasma stack
+  ;; (aeroshell-workspace/libplasma/kwin-components) not packaged in Guix.
   (package (inherit zoxide) (name "aerothemeplasma-desktop-x11-git")))
 
 (define-public aeroshell-workspace-git
   ;; AUR aeroshell-workspace-git: Desktop components for AeroShell-based desktops (git); r2dff129-1; 1 vote.
   ;; Source: https://github.com/aeroshell-desktop/aeroshell-workspace
-  ;; NEEDS_RECIPE_DESIGN: cmake/kpackage recipe; deps: KDE Plasma 6, kwin.
-  ;; Next: pin git commit, compute sha256, draft cmake KDE recipe.
+  ;; BLOCKED: CMake build depends on LibNotificationManager/KSysGuard/Plasma APIs
+  ;; tied to AeroShell patches not available in current Guix channels.
   (package (inherit zoxide) (name "aeroshell-workspace-git")))
 
 (define-public aeroshell-libplasma-git
