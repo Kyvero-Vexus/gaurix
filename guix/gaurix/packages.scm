@@ -220,6 +220,8 @@
   #:use-module (gaurix packages queue-20260406-nrd30c-blocked-notes)
   #:use-module (gaurix packages queue-20260406-nrd30d)
   #:use-module (gaurix packages queue-20260406-nrd30d-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30e)
+  #:use-module (gaurix packages queue-20260406-nrd30e-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -4680,18 +4682,28 @@ elephant-bin
             eve-ng-integration
             gnome-shell-extension-all-in-one-clipboard-bin
             libtar-twrp-git
+            ;; queue-20260406-nrd30e: 9 recipes + 0 compat aliases + 21 re-blocked
+            async-profiler-bin
+            automx2
+            ca0132-tools-git
+            gogitver-bin
             macchina-git
+            migrate-bin
             onscripter-yuri-bin
             openssh-askpass
             passwdqc-utils
             powder-toy-bin
             python-automx2
+            python-cmsis-svd
             resticprofile-bin
             rivalcfg-git
             rockhopper-bin
+            ruby-install
+            sqlite-web
             terminess-powerline-font
             tinct-bin
             ttf-font-awesome-4
+            vgx-bin
             xcursor-borealis
             zeptofetch-git
             zmate-bin
