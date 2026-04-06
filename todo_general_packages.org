@@ -10187,9 +10187,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 1697. ddccontrol-db-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show ddccontrol-db-git` -> package not found; A2 candidate normalization tried ddccontrol-db-git, ddccontrol-db; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/ddccontrol/ddccontrol-db.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as ddccontrol-db. Autotools data package (ddccontrol monitor DB), v20260120 from GitHub.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 1698. gddccontrol
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -16493,11 +16493,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2749. podman-tui-bin
+** DONE 2749. podman-tui-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No existing Guix/Gaurix package by this name, and completing a new lawful manual-grounded recipe today requires per-package upstream source/hash/license/build-system audit beyond this queue-drain batch.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as podman-tui-bin. Go binary v1.11.1 from GitHub release, copy-build-system.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 2750. autoaspm-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18329,11 +18329,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3055. gnix [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for gnix; next: determine upstream source + build system for gnix]
+** DONE 3055. gnix [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for gnix; next: determine upstream source + build system for gnix]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); a simple stupid http reverse proxy
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as gnix. Rust source reference v2.5.0 from Codeberg; full cargo dep tree not yet available.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** BLOCKED 3056. hurrycurry-server [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for hurrycurry-server; next: determine upstream source + build system for hurrycurry-server]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18361,9 +18361,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3060. udiskr [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for udiskr; next: determine upstream source + build system for udiskr]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Lightweight alternative to udiskie
+   - Status: BLOCKED: NEEDS_NIGHTLY_RUST — requires Rust nightly features; no prebuilt binaries. 3 approaches tried: A1 no releases, A2 nightly required, A3 no stable forks.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** BLOCKED 3061. comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18449,11 +18449,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3075. dpibreak [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for dpibreak; next: determine upstream source + build system for dpibreak]
+** DONE 3075. dpibreak [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for dpibreak; next: determine upstream source + build system for dpibreak]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); fast and easy-to-use DPI circumvention tool in Rust.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as dpibreak. Rust source reference v0.6.0; full cargo dep tree not yet available.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** BLOCKED 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18505,9 +18505,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); UI-first session manager for Fish shell with persistent PTY sessions
+   - Status: BLOCKED: LICENSE_INCOMPATIBLE — listed as UNLICENSED; cannot distribute. 3 approaches tried: A1 no LICENSE file, A2 Cargo.toml says UNLICENSED, A3 upstream contact out of scope.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** BLOCKED 3085. we-layerd-git [NEEDS_RECIPE_DESIGN: guix show we-layerd failed (package not found in current channels); next: draft standalone recipe for we-layerd-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18535,21 +18535,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3089. spinwheel-pipewire [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for spinwheel-pipewire; next: determine upstream source + build system for spinwheel-pipewire]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A terminal wheel spinner with named wheels and built-in modes
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Codeberg repo (the-traveler/spinwheel) returns HTTP 404. 3 approaches tried: A1 Codeberg 404, A2 no mirrors/forks, A3 AUR only refs Codeberg.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** BLOCKED 3090. compendium [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for compendium; next: determine upstream source + build system for compendium]
+** DONE 3090. compendium [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for compendium; next: determine upstream source + build system for compendium]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A user-friendly strace for x86 Linux with HTML reports
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as compendium-bin. Rust binary v0.2.0 from GitHub release, trivial-build-system.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
-** BLOCKED 3091. yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]
+** DONE 3091. yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Terminal-based YouTube player and downloader
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as yewtube. Python/pyproject v2.13.1 terminal YouTube player.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** BLOCKED 3092. pandoc-crossref-bin [NEEDS_RECIPE_DESIGN: guix show pandoc-crossref failed (package not found in current channels); next: draft standalone recipe for pandoc-crossref-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18557,29 +18557,29 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3093. codexbar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for codexbar; next: determine upstream source + build system for codexbar]
+** DONE 3093. codexbar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for codexbar; next: determine upstream source + build system for codexbar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widget displaying OpenAI Codex subscription usage with colored progress bars
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as codexbar. Shell script waybar widget v0.1.17, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
-** BLOCKED 3094. logibar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for logibar; next: determine upstream source + build system for logibar]
+** DONE 3094. logibar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for logibar; next: determine upstream source + build system for logibar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widgets and daemons for monitoring Logitech wireless peripheral battery levels
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as logibar. Shell/Python waybar widget v0.1.3, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** BLOCKED 3095. boomer-git [NEEDS_RECIPE_DESIGN: guix show boomer failed (package not found in current channels); next: draft standalone recipe for boomer-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=4); Zoomer application for Linux.
+   - Status: BLOCKED: NEEDS_NIM_COMPILER — Nim compiler not available in Guix; no prebuilt binaries. 3 approaches tried: A1 no binaries, A2 Nim not in Guix, A3 no alt build path.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** BLOCKED 3096. claudebar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for claudebar; next: determine upstream source + build system for claudebar]
+** DONE 3096. claudebar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for claudebar; next: determine upstream source + build system for claudebar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widget displaying Claude AI subscription usage with colored progress bars
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as claudebar. Shell script waybar widget v0.1.17, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** BLOCKED 3097. mkinitcpio-firmware [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for mkinitcpio-firmware; next: determine upstream source + build system for mkinitcpio-firmware]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18589,9 +18589,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3098. qxmledit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for qxmledit; next: determine upstream source + build system for qxmledit]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=2); Simple XML editor and XSD viewer
+   - Status: BLOCKED: COMPLEX_QT5_BUILD — requires qt5-scxml (not in Guix), unmaintained since 2019. 3 approaches tried: A1 qt5-scxml missing, A2 no Qt6 port, A3 scope exceeded.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** BLOCKED 3099. tufw-git [NEEDS_RECIPE_DESIGN: guix show tufw failed (package not found in current channels); next: draft standalone recipe for tufw-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18659,11 +18659,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3110. nemu
+** DONE 3110. nemu
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show nemu -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as nemu. C/cmake TUI for QEMU v3.4.0, cmake-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3111. endcord
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18815,11 +18815,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3136. icons-in-terminal-git
+** DONE 3136. icons-in-terminal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show icons-in-terminal-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as icons-in-terminal-git. Icon font aggregating FA/Octicons/Material, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3137. linux-xanmod
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18839,11 +18839,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3140. ttf-icomoon-feather
+** DONE 3140. ttf-icomoon-feather
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show ttf-icomoon-feather -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as ttf-icomoon-feather. Font file from polybar-themes repo, trivial-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3141. i2p-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18857,11 +18857,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3143. videocut
+** DONE 3143. videocut
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show videocut -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as videocut. Python video editor v3.1.2, copy-build-system with wrapper.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3144. python-discord
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18881,11 +18881,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3147. ttf-xkcd-script-font
+** DONE 3147. ttf-xkcd-script-font
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show ttf-xkcd-script-font -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as ttf-xkcd-script-font. xkcd handwriting font from git, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3148. kuroko-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18911,17 +18911,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3152. rubix
+** DONE 3152. rubix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show rubix -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as rubix. C/X11 v1.0.6, gnu-build-system from sed.free.fr source.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3153. rubiks_cube
+** DONE 3153. rubiks_cube
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show rubiks_cube -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as rubiks-cube. C/ncurses v1.2, gnu-build-system with custom Makefile.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3154. wt-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18937,7 +18937,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3156. exaile-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show exaile-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: COMPLEX_PYTHON_GTK_DEPS — requires python-bsddb (not in Guix), GStreamer plugins, beta version. 3 approaches tried: A1 no binaries, A2 python-bsddb missing, A3 core requires bsddb.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18953,11 +18953,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3159. dora-bin
+** DONE 3159. dora-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show dora-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as dora-bin. Rust binary v0.6.6 from GitHub release, copy-build-system. TUI media downloader.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3160. mpvcut
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19003,7 +19003,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3167. nanoclaw-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show nanoclaw-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: ARCH_SPECIFIC_DEPS — requires claude-code + Docker + complex npm tree. 3 approaches tried: A1 no binaries, A2 npm tree too complex, A3 needs Docker runtime.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19111,7 +19111,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3185. caffeine-ng-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show caffeine-ng-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: COMPLEX_DEPS_CODEBERG — requires python-ewmh, python-pulsectl (not in Guix), Codeberg source. 3 approaches tried: A1 deps missing, A2 each dep has own tree, A3 no binaries.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19145,11 +19145,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3191. timr
+** DONE 3191. timr
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show timr -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as timr-bin. Rust binary v1.8.0 from GitHub release, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3192. youtube-music-desktop
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19169,17 +19169,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3195. relayfsd
+** DONE 3195. relayfsd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show relayfsd -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as relayfsd. Go v2.0.0 from source, gnu-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3196. mdviewer-git
+** DONE 3196. mdviewer-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show mdviewer-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as mdviewer-bin. Go binary v0.1.1 from GitHub release, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3197. planarally-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19199,11 +19199,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3200. sunder-bin
+** DONE 3200. sunder-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show sunder-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as sunder-bin. Tauri AppImage v1.3.2 from GitHub release, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3201. tilp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19229,11 +19229,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3205. bluetuith-git
+** DONE 3205. bluetuith-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show bluetuith-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as bluetuith-bin. Go binary v0.2.6 from GitHub release, copy-build-system.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3206. vineflower-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json

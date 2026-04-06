@@ -165,6 +165,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r27-w03)
   #:use-module (gaurix packages cron-c79f127f-r27-w03-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd3)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd3-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd-blocked-notes)
   #:export (
@@ -3906,22 +3908,41 @@ elephant-bin
             libheif-noglycin
             libjxl-noglycin
             lobster
+            bluetuith-bin
+            claudebar
+            clightd
+            codexbar
+            compendium-bin
+            ddccontrol
+            ddccontrol-db
+            dora-bin
+            dpibreak
+            gnix
+            icons-in-terminal-git
+            logibar
+            mdviewer-bin
             mezzotone-bin
+            nemu
             netwatch-tui-bin
             oken-bin
             podserv-b-bin
             pwmenu-bin
             q5k-usb-udev
+            relayfsd
+            rubiks-cube
+            rubix
             sabiql-bin
             spek
             srb2
             stylepak-git
+            sunder-bin
             sysz
             talosctl-bin
             tcping-go
             tcptraceroute
             textext
             tibia
+            timr-bin
             todotxt
             trackma
             trueconf
@@ -3930,14 +3951,17 @@ elephant-bin
             ttf-gabarito
             ttf-gabarito-git
             ttf-genjyuu-gothic
+            ttf-icomoon-feather
             ttf-lxgw-neo-xihei-plus
             ttf-meslo-nerd-font-powerlevel10k
             ttf-unifraktur
+            ttf-xkcd-script-font
             ttf-zpix
             ttymidi
             typing-test
             uavs3d
             via-appimage
+            videocut
             vimrc-amix
             visual-paradigm-community
             vivictpp
@@ -3966,9 +3990,11 @@ elephant-bin
             xwayland-satellite-nosystemd
             yandex-disk-indicator
             yesvgmap-bin
+            yewtube
             yr-bin
             zandronum
             zeptofetch-git
             zmate-bin
             zmusic
+podman-tui-bin
 ))
