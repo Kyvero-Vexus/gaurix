@@ -222,6 +222,8 @@
   #:use-module (gaurix packages queue-20260406-nrd30d-blocked-notes)
   #:use-module (gaurix packages queue-20260406-nrd30e)
   #:use-module (gaurix packages queue-20260406-nrd30e-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-blocked-tree-p100)
+  #:use-module (gaurix packages queue-20260406-blocked-tree-p100-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -4685,24 +4687,44 @@ elephant-bin
             ;; queue-20260406-nrd30e: 9 recipes + 0 compat aliases + 21 re-blocked
             async-profiler-bin
             automx2
+            ;; queue-20260406-blocked-tree-p100: 19 recipes + 1 compat alias + 80 re-blocked
+            aspnet-runtime-preview-bin
             ca0132-tools-git
+            dotnet-targeting-pack-preview-bin
+            fw-ectool-git
+            git-credential-manager-bin
             gogitver-bin
+            gradle8-bin
+            gtk-sharp-2
+            lcevcdec
+            libajantv2
+            libgksu
+            lovr
             macchina-git
             migrate-bin
             onscripter-yuri-bin
+            openhab5
             openssh-askpass
+            oversteer
             passwdqc-utils
             powder-toy-bin
+            python-audible
             python-automx2
             python-cmsis-svd
+            python-eccodes
+            python-mpris-server
+            python-textualeffects
             resticprofile-bin
             rivalcfg-git
             rockhopper-bin
             ruby-install
+            sdrpp-headers-git
             sqlite-web
             terminess-powerline-font
             tinct-bin
             ttf-font-awesome-4
+            tvbrowser
+            vapoursynth-plugin-vszip
             vgx-bin
             xcursor-borealis
             zeptofetch-git

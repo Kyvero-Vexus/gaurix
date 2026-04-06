@@ -174,7 +174,9 @@
   #:use-module (gnu packages wine)
   #:use-module (gnu packages compression)
   #:use-module (gnu packages xfce)
+  #:use-module (nongnu packages dyalog)
   #:export (
+            dyalog-bin
             waybar-claude-usage
             waybar-codex-usage
             waybar-logitech-battery
@@ -3024,3 +3026,8 @@
   (package
     (inherit yambar-wayland)
     (name "yambar")))
+
+(define-public dyalog-bin
+  (package
+    (inherit dyalog)
+    (name "dyalog-bin")))
