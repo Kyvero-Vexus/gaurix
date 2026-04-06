@@ -206,6 +206,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b)
+  #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b-blocked-notes)
             ;; nrd16: 8 recipes + 7 compat aliases + 15 blocked
             vineflower-bin
             signal-cli
@@ -2892,7 +2894,6 @@
             dotnet-targeting-pack-9.0-bin
             dotnet-sdk-9.0-bin
             dotnet-runtime-9.0-bin
-            aspnet-targeting-pack-9.0-bin
             aspnet-runtime-9.0-bin
             zeptofetch
             mitogen
@@ -4478,12 +4479,30 @@ elephant-bin
             gitarbor-bin
             jsongrep-bin
             mingw-w64-libmicrohttpd
+
+            ;; r22-w03b: 14 recipes + 7 compat aliases
+            boost-65-compat-libs
+            buildcache
+            dotnet-runtime-preview-bin
+            downgrade
+            ffmpeg7.1
+            gcc10-libs
+            imsprog
+            lianwall-bin
+            lib32-lapack
+            libvpx1.10
+            mdns-scan
+            mihomo
+            mpv-uosc
             networkmanager-dmenu-git
             ninvaders
+            nordvpn-bin
             nvimpager
             obs-3d-effect
+            obs-pwvideo
             obs-source-dock
             obs-text-pthread
+            ollama-mlx-cuda13-bin
             openvpn-update-systemd-resolved
             oxicord-bin
             pokemon-colorscripts-git
@@ -4494,11 +4513,14 @@ elephant-bin
             python-pyscreeze
             python-pysnooper
             python-pytweening
+            python-rapidgzip
             python-timesched
+            python-uncalled-for
             python-vermin
             qstat
             reflector-rs-bin
             restman-bin
+            smpq
             sudoku-simple
             zeptofetch-git
             zmate-bin

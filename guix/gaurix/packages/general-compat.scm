@@ -114,6 +114,7 @@
   #:use-module (gnu packages kde-frameworks)
   #:use-module (gnu packages lxde)
   #:use-module (gnu packages maths)
+  #:use-module (gnu packages commencement)
   #:use-module (gnu packages patchutils)
   #:use-module (gnu packages rust)
   #:use-module (gnu packages scanner)
@@ -134,7 +135,6 @@
   #:use-module (gnu packages gstreamer)
   #:use-module (gnu packages guile)
   #:use-module (gnu packages haskell)
-  #:use-module (gnu packages image-processing)
   #:use-module (gnu packages kde-graphics)
   #:use-module (gnu packages kde-pim)
   #:use-module (gnu packages libffi)
@@ -158,6 +158,7 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
   #:use-module (gnu packages opencl)
+  #:use-module (gnu packages image-processing)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -634,6 +635,12 @@
             clang-opencl-headers-minimal-git
             wayland-static
             libticalcs
+            ;; r22-w03b compat aliases
+            ffmpeg7.1
+            libvpx1.10
+            gcc10-libs
+            boost-65-compat-libs
+            lib32-lapack
             ))
 
 (define-public gtk2
@@ -2615,3 +2622,29 @@
   (package
     (inherit libticalcs2)
     (name "libticalcs")))
+
+;; r22-w03b compat aliases (dep-tree batch)
+(define-public ffmpeg7.1
+  (package
+    (inherit ffmpeg)
+    (name "ffmpeg7.1")))
+
+(define-public libvpx1.10
+  (package
+    (inherit libvpx)
+    (name "libvpx1.10")))
+
+(define-public gcc10-libs
+  (package
+    (inherit gcc-toolchain-10)
+    (name "gcc10-libs")))
+
+(define-public boost-65-compat-libs
+  (package
+    (inherit boost)
+    (name "boost-65-compat-libs")))
+
+(define-public lib32-lapack
+  (package
+    (inherit lapack)
+    (name "lib32-lapack")))
