@@ -176,6 +176,12 @@
   #:use-module (gnu packages xfce)
   #:use-module (nongnu packages dyalog)
   #:use-module (gaurix packages queue-20260406-nrd30f)
+  #:use-module (gnu packages sycl)
+  #:use-module (gnu packages chromium)
+  #:use-module (gnu packages matrix)
+  #:use-module (gnu packages terminals)
+  #:use-module (gnu packages monitoring)
+  #:use-module (gnu packages python-science)
   #:export (
             dyalog-bin
             ;; nrd30f compat aliases
@@ -712,6 +718,37 @@
             libudev0-shim
             xfce-theme-manager
             yambar
+            ;; nrd30h upstream re-exports (items 9500-9530)
+            mergerfs
+            pgvector
+            fheroes2
+            wlrctl
+            adaptivecpp
+            wbg
+            ungoogled-chromium
+            python-diskcache
+            woof-doom
+            flycast
+            tome4
+            noisetorch
+            python-matrix-nio
+            modprobed-db
+            ripperx
+            wget2
+            lib3ds
+            swayfx
+            ffmpeg-normalize
+            python-orgparse
+            libaudec
+            python-mock
+            tio
+            obs-composite-blur
+            lsp-dsp-lib
+            python-whisper
+            sunwait
+            python-strenum
+            python-pyvista
+            clp
             ))
 
 (define-public gtk2

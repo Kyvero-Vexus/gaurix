@@ -4763,14 +4763,38 @@ elephant-bin
             sfizz-standalone-git
             sfizz-vst3-git
             shotwell-git
+            ;; nrd30h upstream re-exports
+            adaptivecpp
+            clp
+            ffmpeg-normalize
+            fheroes2
+            lib3ds
+            libaudec
+            lsp-dsp-lib
+            mergerfs
+            modprobed-db
+            obs-composite-blur
+            pgvector
+            python-diskcache
+            python-matrix-nio
+            python-mock
+            python-orgparse
+            python-pyvista
+            python-strenum
+            python-whisper
+            ripperx
             snapper-support
             sqlite-web
+            sunwait
             terminess-powerline-font
             tinct-bin
+            tio
             ttf-font-awesome-4
             tvbrowser
             vapoursynth-plugin-vszip
             vgx-bin
+            wbg
+            woof-doom
             xcursor-borealis
             xfce4-appfinder-devel
             xfce4-session-git
