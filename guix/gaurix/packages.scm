@@ -167,6 +167,8 @@
   #:use-module (gaurix packages cron-c79f127f-r27-w03-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd3)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd3-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd4)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd4-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd-blocked-notes)
   #:export (
@@ -3991,6 +3993,40 @@ elephant-bin
             yandex-disk-indicator
             yesvgmap-bin
             yewtube
+
+            ;; r22-w03-nrd4: dep-tree resolution (32 recipes)
+            c-client
+            cnmatrix
+            elephant-1password-bin
+            elephant-bookmarks-bin
+            elephant-clipboard-bin
+            envycontrol
+            kdesu5
+            nceplibs-g2c
+            ocaml-ppx_here
+            openobex
+            openssl-1.0
+            pilowlava-font-common
+            python-aiohttp-sse-client
+            python-emoji-country-flag
+            python-myjdapi
+            python-myloginpath
+            python-proglog
+            python-simsimd
+            python-stringzilla
+            qt5-gamepad
+            qt5-serialbus
+            slsa-verifier
+            stl-thumb
+            themix-icons-archdroid-git
+            themix-icons-numix-git
+            themix-icons-papirus-git
+            themix-icons-suru-plus-aspromauros-git
+            themix-icons-suru-plus-git
+            undr
+            updpkgsrcs
+            upliftpowerplay
+            wolfssl-all
             yr-bin
             zandronum
             zeptofetch-git
