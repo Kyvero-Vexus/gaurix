@@ -196,6 +196,8 @@
   #:use-module (gaurix packages queue-20260406-blocked-tree-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12-blocked-notes)
+  #:use-module (gaurix packages queue-20260406p100)
+  #:use-module (gaurix packages queue-20260406p100-blocked-notes)
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa
@@ -4380,12 +4382,32 @@ elephant-bin
             mkchromecast-git
             ngrok
             openbangla-keyboard
+            ;; queue-20260406p100
+            appmenu-glib-translator
+            backintime-cli
+            feather-tk
+            libastal-bluetooth
+            libastal-wireplumber
+            libnautilus-extension-typeahead
+            libsurvive
+            msdfgen
             openbsd-netcat-tls
             os-prober-btrfs
             ov-git
             plasma-settings
             plasma6-wallpapers-blurredwallpaper-git
             podman-tui
+            python-agent-client-protocol
+            python-asyncprawcore
+            python-aubio-ledfx
+            python-ftfy
+            python-google-ai-generativelanguage
+            python-inquirer-textual
+            python-textual-fspicker
+            shiboken2
+            smooth
+            themix-export-spotify
+            themix-icons-gnome-colors
             web-eid-native
             webcamize-pkg
             webtorrent-bittorrent-tracker
@@ -4399,6 +4421,7 @@ elephant-bin
             yr-bin
             zandronum
             zenmonitor3
+            zensical
             zeptofetch-git
             zmate-bin
             zmusic
