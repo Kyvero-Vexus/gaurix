@@ -3928,7 +3928,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 651. samsung-unified-driver-common
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show samsung-unified-driver-common` -> package not found; A2 candidate normalization tried samsung-unified-driver-common, samsung-unified-driver; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=http://www.samsung.com.
+   - Status: BLOCKED: PROPRIETARY_DELETED | nrd12: proprietary Samsung driver, AUR repo deleted, no source available
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9605,7 +9605,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 1600. pgadmin4-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show pgadmin4-server` -> package not found; A2 candidate normalization tried pgadmin4-server, pgadmin4; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[postgresql-libs, krb5, python-dbus] url=https://www.pgadmin.org/.
+   - Status: BLOCKED: COMPLEX_BUILD_INFEASIBLE | nrd12: requires Python venv + Node.js yarn bundling + network access during build — incompatible with Guix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -10433,7 +10433,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 1738. web-eid-native
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show web-eid-native` -> package not found; A2 candidate normalization tried web-eid-native, web-eid; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[pcsclite, ccid, openssl, qt6-base, ...] url=https://www.id.ee/.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 web-eid-native (cmake-build-system, Web eID native messaging host)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -18637,13 +18637,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3106. plasma-settings
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show plasma-settings -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 plasma-settings (cmake-build-system, KDE Plasma mobile settings app)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3107. archivebox
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show archivebox -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: COMPLEX_BUILD_MISSING_DEPS | nrd12: requires chromium (not in Guix) + pip install with network + many missing deps
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18673,7 +18673,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3112. podman-tui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show podman-tui -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 podman-tui (go-build-system, terminal UI for Podman)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18685,25 +18685,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3114. dingtalk-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show dingtalk-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: PROPRIETARY_BINARY | nrd12: proprietary Alibaba messaging app, binary-only .deb, custom license
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3115. plasma6-wallpapers-blurredwallpaper-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show plasma6-wallpapers-blurredwallpaper-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 plasma6-wallpapers-blurredwallpaper-git (copy-build-system, Plasma 6 blurred wallpaper plugin)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3116. mkinitcpio-tailscale
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show mkinitcpio-tailscale -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: ARCH_SPECIFIC | nrd12: mkinitcpio hooks are Arch-specific; Guix uses its own initrd system
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3117. discord-chat-exporter-plus-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show discord-chat-exporter-plus-cli -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: DOTNET_VERSION_MISSING | nrd12: requires dotnet-sdk-10.0 (Guix only has 8.x); .NET build system limited in Guix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18715,7 +18715,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3119. codename-goose
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show codename-goose -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: COMPLEX_RUST_CARGO_DEPS | nrd12: large Rust project with 100+ crate deps; cargo dep vendoring too complex for batch
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18739,7 +18739,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3123. mkchromecast-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show mkchromecast-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 mkchromecast-git (python-build-system, cast to Chromecast/Sonos)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18751,7 +18751,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3125. bcachefs-dkms-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show bcachefs-dkms-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: DKMS_DELETED | nrd12: AUR repo deleted + DKMS incompatible with Guix; bcachefs in mainline kernel since 6.7
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18763,7 +18763,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3127. bgb
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show bgb -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: PROPRIETARY_WINDOWS_BINARY | nrd12: proprietary Windows-only Game Boy emulator run through Wine, no source
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18781,7 +18781,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3130. sdkman-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show sdkman-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NETWORK_BUILD_INCOMPATIBLE | nrd12: curl-based SDK manager, fetches from API during build — incompatible with Guix sandbox
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18793,13 +18793,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3132. ibus-openbangla-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show ibus-openbangla-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 openbangla-keyboard + compat alias ibus-openbangla-git (cmake-build-system, Bengali keyboard for IBus)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3133. fcitx5-openbangla-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show fcitx5-openbangla-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 openbangla-keyboard + compat alias fcitx5-openbangla-git (cmake-build-system, Bengali keyboard)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18853,7 +18853,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3142. openbangla-keyboard
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show openbangla-keyboard -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 openbangla-keyboard (cmake-build-system, Bengali keyboard for Linux)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -64168,7 +64168,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 26, popularity: 9.2195
    - Note: Desktop shell for wayland compositors built with Quickshell & GO
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dms-shell-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: MISSING_DEPS_ECOSYSTEM | nrd12: depends on quickshell + dgop (neither in Guix); binary-only package
 ** BLOCKED 11332. yay-bin
    - AUR votes: 354, popularity: 9.1965
    - Note: Yet another yogurt. Pacman wrapper and AUR helper written in go. Pre-compiled.
@@ -64243,7 +64243,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 44, popularity: 7.1047
    - Note: An interactive update notifier & applier that assists you with important pre / post update tasks
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n arch-update | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: ARCH_SPECIFIC | nrd12: depends on pacman, pacman-contrib, archlinux-contrib — Arch-only tools
 ** FAILED 11347. opencode-bin
    - AUR votes: 37, popularity: 6.9531
    - Note: The AI coding agent built for the terminal.
@@ -64258,7 +64258,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 27, popularity: 6.2931
    - Note: Run Windows apps on Linux with seamless integration
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n winboat-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: BINARY_ONLY_NO_SOURCE | nrd12: .deb binary only, no buildable source code on GitHub
 ** FAILED 11350. nvidia-580xx-settings
    - AUR votes: 20, popularity: 6.1873
    - Note: Tool for configuring the NVIDIA graphics driver (580xx)
@@ -64358,42 +64358,42 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA prohibits redistribution; source requires FUSE-mounting evaluation ISO
 ** FAILED 11370. ttf-ms-win11-auto-japanese
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Japanese TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-japanese | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11371. ttf-ms-win11-auto-korean
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Korean TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-korean | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11372. ttf-ms-win11-auto-sea
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Southeast Asian TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-sea | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11373. ttf-ms-win11-auto-thai
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Thai TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-thai | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11374. ttf-ms-win11-auto-zh_cn
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Simplified Chinese TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-zh_cn | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11375. ttf-ms-win11-auto-zh_tw
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Traditional Chinese TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-zh_tw | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11376. ttf-ms-win11-auto-other
    - AUR votes: 112, popularity: 4.6720
    - Note: Microsoft Windows 11 Other TrueType fonts
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-ms-win11-auto-other | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11377. bottles
    - AUR votes: 180, popularity: 4.6293
    - Note: Easily manage wine and proton prefix
@@ -64438,7 +64438,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 330, popularity: 4.1238
    - Note: Feature packed AUR helper
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n paru-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: ARCH_SPECIFIC | nrd12: AUR helper depending on pacman/libalpm — useless outside Arch
 ** FAILED 11386. anytype-bin
    - AUR votes: 45, popularity: 4.0812
    - Note: Operating environment for the new internet. Anytype is a next generation software that breaks down barriers between appl
@@ -64523,7 +64523,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 7, popularity: 3.6122
    - Note: A Wayland compositor with smooth animation
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mangowm | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 mangowm (meson-build-system, Wayland compositor based on wlroots+scenefx)
 ** FAILED 11403. rider
    - AUR votes: 107, popularity: 3.6114
    - Note: A cross-platform .NET IDE by JetBrains.
@@ -64533,7 +64533,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 5, popularity: 3.6007
    - Note: DKMS Bluetooth (MT6639) and WiFi (MT7925e/MT7902) modules for MediaTek MT7927 Filogic 380
    - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mediatek-mt7927-dkms | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: DKMS_KERNEL_MODULE | nrd12: DKMS incompatible with Guix + proprietary firmware required
 ** TODO 11405. ente-auth-bin
    - AUR votes: 33, popularity: 3.5588
    - Note: Ente two-factor authenticator.

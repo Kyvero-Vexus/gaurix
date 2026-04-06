@@ -194,6 +194,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd11-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree)
   #:use-module (gaurix packages queue-20260406-blocked-tree-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12-blocked-notes)
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa
@@ -4374,10 +4376,17 @@ elephant-bin
             iventoy-bin
             kwin-polonium
             libray
+            mangowm
+            mkchromecast-git
             ngrok
+            openbangla-keyboard
             openbsd-netcat-tls
             os-prober-btrfs
             ov-git
+            plasma-settings
+            plasma6-wallpapers-blurredwallpaper-git
+            podman-tui
+            web-eid-native
             webcamize-pkg
             webtorrent-bittorrent-tracker
             webtorrent-mpv-hook

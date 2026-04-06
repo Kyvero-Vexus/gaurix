@@ -152,6 +152,7 @@
   #:use-module (gnu packages webkit)
   #:use-module (gnu packages speech)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -602,6 +603,14 @@
             llama.cpp
             radicle-node
             gnome-icon-theme-symbolic
+            ibus-openbangla-git
+            fcitx5-openbangla-git
+            mkchromecast
+            plasma6-wallpapers-blurredwallpaper
+            mango-wm
+            web-eid
+            podman-tui-bin
+            plasma-settings-mobile
             ))
 
 (define-public gtk2
@@ -2395,3 +2404,45 @@
   (package
     (inherit rpatool)
     (name "rpatool-git")))
+
+;; ── nrd12 compat aliases ──────────────────────────────────────────
+
+(define-public ibus-openbangla-git
+  (package
+    (inherit openbangla-keyboard)
+    (name "ibus-openbangla-git")))
+
+(define-public fcitx5-openbangla-git
+  (package
+    (inherit openbangla-keyboard)
+    (name "fcitx5-openbangla-git")))
+
+(define-public mkchromecast
+  (package
+    (inherit mkchromecast-git)
+    (name "mkchromecast")))
+
+(define-public plasma6-wallpapers-blurredwallpaper
+  (package
+    (inherit plasma6-wallpapers-blurredwallpaper-git)
+    (name "plasma6-wallpapers-blurredwallpaper")))
+
+(define-public mango-wm
+  (package
+    (inherit mangowm)
+    (name "mango-wm")))
+
+(define-public web-eid
+  (package
+    (inherit web-eid-native)
+    (name "web-eid")))
+
+(define-public podman-tui-bin
+  (package
+    (inherit podman-tui)
+    (name "podman-tui-bin")))
+
+(define-public plasma-settings-mobile
+  (package
+    (inherit plasma-settings)
+    (name "plasma-settings-mobile")))
