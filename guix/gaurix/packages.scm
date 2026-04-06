@@ -171,6 +171,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd4-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd-blocked-notes)
+  #:use-module (gaurix packages queue-20260405-daily1)
+  #:use-module (gaurix packages queue-20260405-daily1-blocked-notes)
   #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
@@ -4017,15 +4019,68 @@ elephant-bin
             qt5-gamepad
             qt5-serialbus
             slsa-verifier
+            ;; queue-20260405-daily1: 52 recipes (13 aliases, 39 new)
+            masterpassword-cli
+            mdp-git
+            mediastreamer-git
+            megabasterd-bin
+            meld-git
+            mined
+            mkvtoolnix-git
+            mopidy-mpris
+            mutt-slang
+            mypy-git
+            nbwmon
+            newsboat-git
+            opendht-git
+            otf-vegur
+            peervpn
+            pekwm-git
+            perl-getopt-mixed
+            perl-parse-errorstring-perl
+            photoprism-bin
+            play-with-mpv-git
+            python-espeak
+            python-pyspf
+            qdirstat-git
+            redshift-scheduler
+            restic-git
+            retmux
+            ruby-colored
+            shadow-icon-theme
+            simple-fb2-reader
+            sparklines-git
+            stardict-cz
             stl-thumb
+            structuresynth
+            sunclock
+            swi-prolog-devel
+            synergy-1.6
+            syobon
+            tbclock
+            tealdeer-git
             themix-icons-archdroid-git
             themix-icons-numix-git
             themix-icons-papirus-git
             themix-icons-suru-plus-aspromauros-git
             themix-icons-suru-plus-git
+            threadweaver-git
+            tig-git
+            timew-git
+            tmpreaper
+            toppler
+            torrentcheck
             undr
             updpkgsrcs
             upliftpowerplay
+            uw-ttyp0-font
+            verynice
+            vim-instant-markdown
+            vim-manpageview
+            vim-notes
+            vim-pandoc-git
+            vim-perl-completion
+            vim-repeat
             wolfssl-all
             yr-bin
             zandronum
