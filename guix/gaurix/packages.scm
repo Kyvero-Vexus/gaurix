@@ -222,6 +222,8 @@
   #:use-module (gaurix packages queue-20260406-nrd30d-blocked-notes)
   #:use-module (gaurix packages queue-20260406-nrd30e)
   #:use-module (gaurix packages queue-20260406-nrd30e-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30f)
+  #:use-module (gaurix packages queue-20260406-nrd30f-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree-p100)
   #:use-module (gaurix packages queue-20260406-blocked-tree-p100-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
@@ -4699,6 +4701,15 @@ elephant-bin
             lcevcdec
             libajantv2
             libgksu
+            ;; queue-20260406-nrd30f: 9 recipes + 1 compat alias + 21 re-blocked (zrepl-git -> zrepl-bin)
+            catppuccin-fcitx5-git
+            cheshmak-bin
+            devify
+            docx2tex
+            fstabfmt
+            glava
+            gtk-sharp-2
+            libreoffice-impress-templates
             lovr
             macchina-git
             migrate-bin
@@ -4706,6 +4717,7 @@ elephant-bin
             openhab5
             openssh-askpass
             oversteer
+            oxygen-cursors-extra
             passwdqc-utils
             powder-toy-bin
             python-audible
@@ -4730,6 +4742,7 @@ elephant-bin
             zeptofetch-git
             zmate-bin
             zmusic
+            zrepl-bin
             zscroll
             zulu-21-bin
             zulu-jre11-fx

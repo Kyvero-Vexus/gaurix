@@ -175,8 +175,11 @@
   #:use-module (gnu packages compression)
   #:use-module (gnu packages xfce)
   #:use-module (nongnu packages dyalog)
+  #:use-module (gaurix packages queue-20260406-nrd30f)
   #:export (
             dyalog-bin
+            ;; nrd30f compat aliases
+            zrepl-git
             waybar-claude-usage
             waybar-codex-usage
             waybar-logitech-battery
@@ -3031,3 +3034,10 @@
   (package
     (inherit dyalog)
     (name "dyalog-bin")))
+
+;; nrd30f compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+
+(define-public zrepl-git
+  (package
+    (inherit zrepl-bin)
+    (name "zrepl-git")))
