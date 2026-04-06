@@ -177,7 +177,12 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd5-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6-blocked-notes)
-  #:export (
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100b)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100-blocked-notes)
+
+  #:use-module (gaurix packages queue-20260405-daily2)
+  #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)  #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa
@@ -4114,7 +4119,65 @@ elephant-bin
             vim-pandoc-git
             vim-perl-completion
             vim-repeat
+            ;; queue-20260405-daily2
+            acestream-launcher
+            adminer-pkg
+            apidog-bin
+            bongocat
+            bustd
+            bws-bin
+            caja-open-any-terminal
+            chmap
+            containerlab-bin
+            cpptrace-pkg
+            dockbarx
+            ella-bin
+            emulationstation-de
+            extract-xiso-bin
+            fish-fishtape
+            flatpost-bin
+            folo-bin
+            getmail
+            icewm-extra-themes
+            iwinfo
+            kwin-scripts-kzones
+            lpc21isp
+            matomo-bin
+            mqttx-appimage
+            nautilus-open-any-terminal
+            obs-teleport
+            oldschool-pc-fonts
+            opencbm
+            opensoundmeter
+            otf-stix
+            otf-suse
+            pragtical
+            process-mem
+            proto-bin
+            qrcp-git
+            ratatouille
+            ratatouille-clap
+            ratatouille-lv2
+            ratatouille-standalone
+            ratatouille-vst
+            rustmius-bin
+            stardict-cz
+            steamdepotdownloader-bin
+            structuresynth
+            sunsetr-bin
+            thiefmd
+            tinty-git
+            ttf-stix-variable
+            ttf-suse
+            ttf-tannenberg
+            ttf-unifraktur
+            uhk-agent-appimage
+            webcamize-pkg
+            webtorrent-mpv-hook
+            wlr-sunclock-git
+            woff2-suse
             wolfssl-all
+            wttr
             yr-bin
             zandronum
             zeptofetch-git
