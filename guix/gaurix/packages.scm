@@ -196,6 +196,8 @@
   #:use-module (gaurix packages queue-20260406-blocked-tree-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)

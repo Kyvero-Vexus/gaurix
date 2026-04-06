@@ -153,6 +153,7 @@
   #:use-module (gnu packages speech)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -611,6 +612,16 @@
             web-eid
             podman-tui-bin
             plasma-settings-mobile
+            iwmenu
+            bzmenu
+            pwmenu
+            wrkflw
+            ferris-scan
+            wo
+            oken
+            lazytail
+            funzzy
+            mezzotone
             ))
 
 (define-public gtk2
@@ -2446,3 +2457,55 @@
   (package
     (inherit plasma-settings)
     (name "plasma-settings-mobile")))
+
+;; ── nrd14 compat aliases ──────────────────────────────────────────
+
+(define-public iwmenu
+  (package
+    (inherit iwmenu-bin)
+    (name "iwmenu")))
+
+(define-public bzmenu
+  (package
+    (inherit bzmenu-bin)
+    (name "bzmenu")))
+
+(define-public pwmenu
+  (package
+    (inherit pwmenu-bin)
+    (name "pwmenu")))
+
+(define-public wrkflw
+  (package
+    (inherit wrkflw-bin)
+    (name "wrkflw")))
+
+(define-public ferris-scan
+  (package
+    (inherit ferris-scan-bin)
+    (name "ferris-scan")))
+
+(define-public wo
+  (package
+    (inherit wo-bin)
+    (name "wo")))
+
+(define-public oken
+  (package
+    (inherit oken-bin)
+    (name "oken")))
+
+(define-public lazytail
+  (package
+    (inherit lazytail-bin)
+    (name "lazytail")))
+
+(define-public funzzy
+  (package
+    (inherit funzzy-bin)
+    (name "funzzy")))
+
+(define-public mezzotone
+  (package
+    (inherit mezzotone-bin)
+    (name "mezzotone")))
