@@ -202,8 +202,41 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd15)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd15-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
+            ;; nrd16: 8 recipes + 7 compat aliases + 15 blocked
+            vineflower-bin
+            signal-cli
+            plasma-dialer
+            openscap
+            vimcord-git
+            tilp
+            openaudible-bin
+            alpemix-bin
+            sabiql
+            vimcord
+            llvm-minimal-git
+            clang-minimal-git
+            clang-opencl-headers-minimal-git
+            wayland-static
+            libticalcs
+            linux-xanmod-blocked-note
+            linux-xanmod-headers-blocked-note
+            aseprite-bin-blocked-note
+            python38-blocked-note
+            sklauncher-bin-blocked-note
+            asix-ax88179-dkms-blocked-note
+            i2p-bin-blocked-note
+            eden-beta-blocked-note
+            astraeditor-git-blocked-note
+            sunder-blocked-note
+            linux-show-player-blocked-note
+            youtube-music-desktop-blocked-note
+            gemini-cli-live-bin-blocked-note
+            qt-web-extractor-blocked-note
+            planarally-bin-blocked-note
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa

@@ -155,6 +155,9 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd13)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16)
+  #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
+  #:use-module (gnu packages opencl)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -623,6 +626,14 @@
             lazytail
             funzzy
             mezzotone
+            ;; nrd16 compat aliases
+            sabiql
+            vimcord
+            llvm-minimal-git
+            clang-minimal-git
+            clang-opencl-headers-minimal-git
+            wayland-static
+            libticalcs
             ))
 
 (define-public gtk2
@@ -2567,3 +2578,40 @@
   (package
     (inherit catppuccin-plasma-colorscheme-mocha)
     (name "catppuccin-kde-mocha")))
+
+;; ── nrd16 compat aliases ──────────────────────────────────────────
+
+(define-public sabiql
+  (package
+    (inherit sabiql-bin)
+    (name "sabiql")))
+
+(define-public vimcord
+  (package
+    (inherit vimcord-git)
+    (name "vimcord")))
+
+(define-public llvm-minimal-git
+  (package
+    (inherit llvm)
+    (name "llvm-minimal-git")))
+
+(define-public clang-minimal-git
+  (package
+    (inherit clang)
+    (name "clang-minimal-git")))
+
+(define-public clang-opencl-headers-minimal-git
+  (package
+    (inherit opencl-headers)
+    (name "clang-opencl-headers-minimal-git")))
+
+(define-public wayland-static
+  (package
+    (inherit wayland)
+    (name "wayland-static")))
+
+(define-public libticalcs
+  (package
+    (inherit libticalcs2)
+    (name "libticalcs")))

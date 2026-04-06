@@ -18823,13 +18823,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3137. linux-xanmod
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show linux-xanmod -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; custom kernel build requires kernel config infrastructure, patchset integration, and kernel-style build phases not available in batch processing. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3138. linux-xanmod-headers
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show linux-xanmod-headers -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; depends on linux-xanmod which is blocked (custom kernel infrastructure needed). See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18847,7 +18847,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3141. i2p-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show i2p-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Java installer JAR (izpack) requires interactive installation and java-service-wrapper. Guix has i2pd (C++ impl) as compat alias. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18869,11 +18869,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3145. sabiql
+** DONE 3145. sabiql
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show sabiql -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from sabiql-bin (already in cron-c79f127f-r26-w03-nrd).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3146. otf-xkcd-font
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18907,7 +18907,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3151. python38
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show python38 -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Python 3.8 is EOL (Oct 2024), building from source produces insecure interpreter. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18943,7 +18943,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3157. aseprite-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show aseprite-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; proprietary paid software, no freely downloadable binary URL. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18965,15 +18965,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3161. wayland-static
+** DONE 3161. wayland-static
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show wayland-static -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from wayland (already in Guix).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3162. sklauncher-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show sklauncher-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; proprietary Minecraft launcher, redistribution unclear. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18983,11 +18983,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3164. alpemix-bin
+** DONE 3164. alpemix-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show alpemix-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with copy-build-system recipe from upstream zip (https://www.alpemix.com/site/linux/Alpemix.zip).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3165. asciify
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18997,7 +18997,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3166. gemini-cli-live-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show gemini-cli-live-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; requires npm build with large dependency tree. No standalone binary releases. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19007,17 +19007,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3168. vimcord-git
+** DONE 3168. vimcord-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show vimcord-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with copy-build-system recipe from GitHub binary release v0.6.0 (Rust TUI Discord client).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3169. vimcord
+** DONE 3169. vimcord
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show vimcord -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from vimcord-git.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3170. hunspell-sk
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19027,21 +19027,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3171. eden-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show eden-beta -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Nintendo Switch emulator fork with 5+ missing deps (zydis, zycore-c, cubeb, etc.). See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3172. linux-show-player
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show linux-show-player -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Python cue player needs 6+ missing Python packages (python-falcon, python-mido, etc.). See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3173. llvm-minimal-git
+** DONE 3173. llvm-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show llvm-minimal-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from llvm (already in Guix).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3174. llvm-libs-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19049,11 +19049,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3175. clang-minimal-git
+** DONE 3175. clang-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show clang-minimal-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from clang (already in Guix).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3176. clang-libs-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19061,15 +19061,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3177. clang-opencl-headers-minimal-git
+** DONE 3177. clang-opencl-headers-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show clang-opencl-headers-minimal-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from opencl-headers (already in Guix).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3178. asix-ax88179-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show asix-ax88179-dkms -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; DKMS kernel module incompatible with Guix. Driver exists in mainline Linux since 3.8. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19085,17 +19085,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3181. openaudible-bin
+** DONE 3181. openaudible-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show openaudible-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with copy-build-system recipe from GitHub .deb release v4.7.4 (audiobook manager).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3182. libticalcs
+** DONE 3182. libticalcs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show libticalcs -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as compat alias inheriting from libticalcs2 (already in Guix).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3183. libtifiles
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19127,11 +19127,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3188. signal-cli
+** DONE 3188. signal-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show signal-cli -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with copy-build-system recipe from GitHub native binary release v0.14.2 (Signal messenger CLI).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3189. pip-tools
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19141,7 +19141,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3190. astraeditor-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show astraeditor-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Electron/npm app, Guix lacks electron packaging infrastructure. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19153,21 +19153,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3192. youtube-music-desktop
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show youtube-music-desktop -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; requires qtws-base (Qt Web Shortcut) not in Guix. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3193. plasma-dialer
+** DONE 3193. plasma-dialer
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show plasma-dialer -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with cmake-build-system recipe from KDE release v6.3.5 (Plasma Mobile phone dialer).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3194. openscap-git
+** DONE 3194. openscap-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show openscap-git -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 as openscap with cmake-build-system recipe from GitHub release v1.4.3 (security compliance framework).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3195. relayfsd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19183,7 +19183,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3197. planarally-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show planarally-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; 'binary' tarball is actually Python source needing many deps. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19195,7 +19195,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3199. sunder
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show sunder -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Tauri (Rust+npm) app, requires both npm and cargo ecosystems. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19205,15 +19205,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3201. tilp
+** DONE 3201. tilp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show tilp -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with gnu-build-system recipe from SourceForge v1.18 (TI calculator linker).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3202. qt-web-extractor
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show qt-web-extractor -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; needs PySide6 which is not packaged in Guix. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19235,11 +19235,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3206. vineflower-bin
+** DONE 3206. vineflower-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show vineflower-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: DONE: Resolved in nrd16-r22-w03 with copy-build-system recipe from GitHub JAR release v1.11.2 (Java decompiler).
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3207. astraeditor-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
