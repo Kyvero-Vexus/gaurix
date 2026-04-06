@@ -1,3 +1,4 @@
+(define-module (gaurix packages cron-c79f127f-r22-w03-nrd2-blocked-notes))
 ;;; Round-22 worker-03 NEEDS_RECIPE_DESIGN batch 2 — blocked notes.
 ;;; No packages re-blocked in this pass.  All 30 candidates resolved.
 ;;;

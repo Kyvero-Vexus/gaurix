@@ -190,6 +190,8 @@
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)  #:export (
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-blocked-tree)
+  #:use-module (gaurix packages queue-20260406-blocked-tree-blocked-notes)
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa
@@ -4280,12 +4282,50 @@ elephant-bin
             firefox-esr-i18n-xh
             firefox-esr-i18n-zh-cn
             firefox-esr-i18n-zh-tw
+            ;; queue-20260406-blocked-tree: 62 resolved from dep-tree priority pass
+            aspnet-runtime-7.0-bin
+            aspnet-runtime-bin
+            aspnet-targeting-pack-bin
+            babashka-bin
+            bitwarden-cli-bin
+            caddy-cloudflare-l4
+            caddy-naiveproxy-bin
+            dash-static-musl
+            deno-stable-bin
+            doas-sudo-shim-k
+            fftw-amd
+            firefox-esr-bin
+            fortune-mod-off
+            fuzzel-dmenu-dropin
             git-recursive
+            gopass-secret-service
+            jaq-git
+            jdk-temurin
+            jdk11-graalvm-bin
+            jdk19-graalvm-bin
+            jdk21-graalvm-bin
+            jdk21-temurin
+            jdk25-graalvm-ce-bin
+            jdk8-graalvm-bin
+            jre-jetbrains
+            jre11-temurin
+            jre17-temurin
+            jre21-temurin
+            jre8-temurin
             nodejs-knit
+            noto-fonts-lite
+            npm-corepack
+            ntfsprogs-plus
             nvidia-580xx-settings
             op-cache-git
+            openbsd-netcat-tls
             opentyrian2000
+            os-prober-btrfs
+            otf-unifont
+            p7zip-zstd-bin
+            pnpm-corepack
             python-justext
+            rosec-bin
             rustmius-bin
             stardict-cz
             steamdepotdownloader-bin
@@ -4296,13 +4336,30 @@ elephant-bin
             szsol-rs
             thiefmd
             tinty-git
+            ttf-apple-emoji
+            ttf-joypixels
+            ttf-noto-emoji-monochrome
+            ttf-paratype
+            ttf-pt-astra-sans
+            ttf-pt-astra-serif
+            ttf-pt-mono
+            ttf-pt-root_ui
+            ttf-pt-sans
+            ttf-pt-serif
+            ttf-roboto-fontconfig
+            ttf-shanggu
             ttf-stix-variable
             ttf-suse
             ttf-tannenberg
+            ttf-twemoji-color
             ttf-unifraktur
+            ttf-vt323
+            ttf-xenia
             udiskr
             uhk-agent-appimage
+            viu-media-bin
             vr-lighthouse-bin
+            waydroid-pkg
             webcamize-pkg
             webtorrent-bittorrent-tracker
             webtorrent-mpv-hook
@@ -4310,11 +4367,19 @@ elephant-bin
             woff2-suse
             wolfssl-all
             wttr
+            xfce-polkit
+            yarn-corepack
             yr-bin
             zandronum
             zenmonitor3
             zeptofetch-git
             zmate-bin
             zmusic
+            zulu-21-bin
+            zulu-jre11-fx
+            zulu-jre17-fx
+            zulu-jre21-fx
+            zulu-jre25-fx
+            zulu-jre8-fx
 podman-tui-bin
 ))
