@@ -173,6 +173,8 @@
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd-blocked-notes)
   #:use-module (gaurix packages queue-20260405-daily1)
   #:use-module (gaurix packages queue-20260405-daily1-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd5)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd5-blocked-notes)
   #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
@@ -285,6 +287,21 @@
             python-transformers
             imgui
             dosage
+
+            ;; r22-w03-nrd5: 13 resolved NEEDS_RECIPE_DESIGN (1 inherit + 1 alias + 5 binary + 4 source + 1 fish + 1 cmake)
+            libjxl-noglycin-doc
+            dpibreak-git
+            c47-bin
+            r47-bin
+            cliamp
+            dafny-bin
+            wireview-linux
+            qpdf-zopfli
+            qxmledit
+            ipmctl-git
+            mas
+            tilem-gtk3-git
+            fish-session
             cctools
             java-asm
             xfe
