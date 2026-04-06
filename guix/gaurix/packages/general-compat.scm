@@ -151,6 +151,7 @@
   #:use-module (gnu packages textutils)
   #:use-module (gnu packages webkit)
   #:use-module (gnu packages speech)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
   #:export (
             waybar-claude-usage
             waybar-codex-usage

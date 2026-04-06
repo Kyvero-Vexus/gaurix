@@ -320,9 +320,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 53. zerotier-one
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/zerotier-one.git` (HEAD reachable at evaluation time).
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show zerotier-one` -> package not found; A2 candidate normalization tried zerotier-one, zerotier; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=AUR metadata only.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: zerotier-one (C++, gnu-build-system, git-fetch from github.com/zerotier/ZeroTierOne v1.14.2)
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 54. solaar-git
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/solaar-git.git` (HEAD reachable at evaluation time).
@@ -812,7 +812,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 135. fooyin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show fooyin` -> package not found; A2 candidate normalization tried fooyin; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[qt6-base, alsa-lib, taglib, ffmpeg, ...] url=https://www.fooyin.org/.
+   - Status: BLOCKED: QT6_DEPS_NOT_AVAILABLE — Qt6/C++ music player; requires Qt6Multimedia not packaged in Guix. A1: cmake needs Qt6Multimedia; A2: no binary release; A3: Qt6-only codebase, cannot build against Qt5.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -36061,7 +36061,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 6027. r-quick-share   - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n r-quick-share | detail: recipe-attempt stub added in queue-20260329p100daily4; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust/GTK4 Quick Share implementation; cargo dep tree includes gtk4-rs, zbus, tokio — 100+ crates not in Guix. A1: no binary release; A2: Rust/cargo deps massive; A3: no simpler alternative.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -36071,12 +36071,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 6029. tic80-pro-git   - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n tic80-pro-git | detail: recipe-attempt stub added in queue-20260329p100daily4; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
+   - Status: BLOCKED: COMPLEX_CMAKE_DEPS — TIC-80 fantasy console; cmake build with 20+ vendored third-party libs. A1: vendored deps break unbundling; A2: pro version has no binary release; A3: complex dep graph.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 6030. spotube   - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n spotube | detail: recipe-attempt stub added in queue-20260329p100daily4; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
+   - Status: BLOCKED: FLUTTER_NOT_AVAILABLE — Dart/Flutter application; Flutter SDK not available in Guix. A1: Flutter not in Guix; A2: AppImage requires FUSE extract + patchelf; A3: no native build alternative.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -85246,7 +85246,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 15559. dela-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show dela | detail: target `dela` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust task runner; cargo deps include clap, serde, toml, tera — 50+ crates not in Guix. A1: no binary release; A2: cargo dep tree not available; A3: no simpler fork.
    - AUR votes: 1, popularity: 0.0246
    - Note: A task runner that delegates the work to other tools
    - TODO Status: BLOCKED
@@ -85605,7 +85605,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 15629. catnap-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show catnap | detail: target `catnap` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: NEEDS_NIM_COMPILER — system fetch written in Nim; Nim compiler not in Guix, no prebuilt Linux binary. A1: Nim not in Guix; A2: no binary releases; A3: no Rust/Go/C rewrite.
    - AUR votes: 4, popularity: 0.0093
    - Note: A minimalistic and fast system fetch written in Nim.
    - TODO Status: BLOCKED
@@ -85751,7 +85751,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `daemonize` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 ** BLOCKED 15658. kdotool-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show kdotool | detail: target `kdotool` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust xdotool for KDE Wayland; cargo deps include dbus, zbus, clap — 60+ crates not in Guix. A1: no binary release; A2: cargo deps not available; A3: no simpler alternative.
    - AUR votes: 9, popularity: 0.0090
    - Note: xdotool-like for KDE Wayland
    - TODO Status: BLOCKED
@@ -86022,16 +86022,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `buku` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 ** BLOCKED 15712. wormhole-rs-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show wormhole-rs | detail: target `wormhole-rs` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust Magic Wormhole; 100+ cargo crates missing. Linux binary releases not consistently published. A1: GitHub releases lack Linux; A2: cargo deps massive; A3: python-magic-wormhole in Guix as alternative.
    - AUR votes: 5, popularity: 0.0065
    - Note: Rust implementation of Magic Wormhole, with new features and enhancements
    - TODO Status: BLOCKED
 
 ** BLOCKED 15713. quirc-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show quirc | detail: target `quirc` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: quirc (C, gnu-build-system, git-fetch from github.com/dlbeer/quirc v1.2)
    - AUR votes: 2, popularity: 0.0064
    - Note: QR decoder library (git version)
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 15714. kitty-git
    - AUR votes: 28, popularity: 0.0064
@@ -86089,7 +86089,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `plocate` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 ** BLOCKED 15725. deskreen-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show deskreen | detail: target `deskreen` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: ELECTRON_BINARY_COMPLEX — Electron app; .deb/.AppImage binary requires FUSE-free extract + extensive patchelf. A1: AppImage needs extract + patchelf; A2: Electron deps massive; A3: no lightweight alternative.
    - AUR votes: 6, popularity: 0.0059
    - Note: Turn any device into a secondary screen for your computer (binary release)
    - TODO Status: BLOCKED
@@ -86270,10 +86270,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 15761. arkenfox-user.js-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show arkenfox-user.js | detail: target `arkenfox-user.js` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: arkenfox-user.js (copy-build-system, git-fetch from github.com/arkenfox/user.js 140.1)
    - AUR votes: 5, popularity: 0.0054
    - Note: Firefox privacy, security and anti-tracking: a comprehensive user.js template for configuration and hardening
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 15762. code-server
    - AUR votes: 25, popularity: 0.0053
@@ -87354,10 +87354,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 15977. lieer-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show lieer | detail: target `lieer` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: lieer (Python, pyproject-build-system, git-fetch from github.com/gauteh/lieer v1.6)
    - AUR votes: 4, popularity: 0.0045
    - Note: Fast fetch and two-way tag synchronization between notmuch and GMail
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 15978. creduce-git
    - AUR votes: 3, popularity: 0.0045
@@ -87960,7 +87960,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 16098. micromamba-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show micromamba | detail: target `micromamba` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: BINARY_NOT_SELF_CONTAINED — C++ binary from conda-forge CDN; URL not stable for reproducible builds. A1: conda-forge URL unstable; A2: source build requires mamba C++ stack not in Guix; A3: Guix has conda package as partial alternative.
    - AUR votes: 22, popularity: 0.0040
    - Note: Tiny version of mamba, the fast conda package installer
    - TODO Status: BLOCKED
@@ -88163,7 +88163,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 16138. goldendict-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show goldendict | detail: target `goldendict` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: QT6_DEPS_NOT_AVAILABLE — goldendict-ng requires Qt6WebEngine not in Guix. A1: Qt6WebEngine not packaged; A2: Qt5 version (goldendict classic) abandoned; A3: no text-only alternative.
    - AUR votes: 91, popularity: 0.0039
    - Note: Feature-rich dictionary lookup program supporting multiple dictionary formats
    - TODO Status: BLOCKED
@@ -89029,10 +89029,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 16311. python-wassima-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show python-wassima | detail: target `python-wassima` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: python-wassima (Python, pyproject-build-system, git-fetch from github.com/jawah/wassima 2.0.5)
    - AUR votes: 1, popularity: 0.0033
    - Note: Say goodbye to certifi. Embrace your system root CAs — retrieve them with ease and comfort (latest commit)
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 16312. yd-go-git
    - AUR votes: 1, popularity: 0.0033
@@ -89556,10 +89556,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 16416. powder-toy-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show powder-toy | detail: target `powder-toy` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: powder-toy (C++, meson-build-system, git-fetch from github.com/The-Powder-Toy/The-Powder-Toy v98.2.365)
    - AUR votes: 2, popularity: 0.0033
    - Note: Desktop version of the classic falling sand physics sandbox, simulates air pressure, velocity & heat!
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 16417. gdal-libkml-filegdb
    - AUR votes: 7, popularity: 0.0033
@@ -91866,10 +91866,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 16874. jbig2enc-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show jbig2enc | detail: target `jbig2enc` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: jbig2enc (C++, gnu-build-system+autotools, git-fetch from github.com/agl/jbig2enc 0.30)
    - AUR votes: 18, popularity: 0.0025
    - Note: A JBIG2 image encoder
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 16875. wljoywake
    - AUR votes: 7, popularity: 0.0025
@@ -92464,7 +92464,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 16992. iamb-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show iamb | detail: target `iamb` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust Matrix client; 200+ cargo crates missing, no Linux binary releases. A1: no binary releases; A2: cargo dep tree massive; A3: Guix has other Matrix clients.
    - AUR votes: 2, popularity: 0.0022
    - Note: A Matrix client for Vim addicts
    - TODO Status: BLOCKED
@@ -93245,7 +93245,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 17146. yt-dlg-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show yt-dlg | detail: target `yt-dlg` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: WXPYTHON_NOT_AVAILABLE — Python GUI using wxPython; python-wxpython not packaged in Guix, requires wxWidgets 3.2+ C++ build. A1: wxPython not in Guix; A2: wxWidgets bindings complex; A3: no alt GUI framework version.
    - AUR votes: 94, popularity: 0.0019
    - Note: A cross platform front-end GUI of the popular youtube-dl written in wxPython (maintained fork of youtube-dl-gui)
    - TODO Status: BLOCKED
@@ -96027,10 +96027,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 17697. shine-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show shine | detail: target `shine` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: shine (C, gnu-build-system+autotools, git-fetch from github.com/toots/shine 3.1.1)
    - AUR votes: 1, popularity: 0.0012
    - Note: Super fast fixed-point MP3 encoder
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 17698. scxvid
    - AUR votes: 1, popularity: 0.0012
@@ -97425,10 +97425,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 17973. sngrep-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show sngrep | detail: target `sngrep` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: sngrep (C, cmake-build-system, git-fetch from github.com/irontec/sngrep v2.1.1)
    - AUR votes: 1, popularity: 0.0009
    - Note: A tool for displaying SIP call message flows from a terminal
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 17974. rotion-bin
    - AUR votes: 1, popularity: 0.0009
@@ -97642,10 +97642,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 18016. qogir-gtk-theme-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show qogir-gtk-theme | detail: target `qogir-gtk-theme` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: qogir-gtk-theme (gnu-build-system+install.sh, git-fetch from github.com/vinceliuice/Qogir-theme 2025-02-19)
    - AUR votes: 16, popularity: 0.0009
    - Note: Qogir is a flat Design theme for GTK
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 18017. manuskript-git
    - AUR votes: 11, popularity: 0.0009
@@ -100717,10 +100717,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 18623. xavs2-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show xavs2 | detail: target `xavs2` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: xavs2 (C, gnu-build-system, git-fetch from github.com/pkuvcl/xavs2 1.4)
    - AUR votes: 4, popularity: 0.0005
    - Note: Open-Source encoder of AVS2-P2/IEEE1857.4 video coding standard (git version)
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 18624. perimeter81-rpm
    - AUR votes: 1, popularity: 0.0005
@@ -100754,10 +100754,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 18630. python-fleep-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show python-fleep | detail: target `python-fleep` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: python-fleep (Python, pyproject-build-system, git-fetch from github.com/floyernick/fleep-py v1.0.1)
    - AUR votes: 4, popularity: 0.0005
    - Note: File format determination library for Python
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 18631. python-ctypescrypto-git
    - AUR votes: 4, popularity: 0.0005
@@ -102389,7 +102389,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 18950. bottles-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show bottles | detail: target `bottles` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: COMPLEX_PYTHON_MESON_DEPS — Python/Meson/GTK4 app; 10+ Python deps missing (patool, pefile, orjson, icoextract, fvs). A1: multiple deps missing; A2: Flatpak is upstream-preferred; A3: no reduced-dep version.
    - AUR votes: 17, popularity: 0.0004
    - Note: Easily manage wineprefix using environments
    - TODO Status: BLOCKED
@@ -103286,7 +103286,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 19127. zsa-kontroll-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show zsa-kontroll | detail: target `zsa-kontroll` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust CLI for ZSA Keymapp; 100+ cargo crates missing, no binary release. A1: no binary releases; A2: cargo dep tree massive; A3: no simpler alternative.
    - AUR votes: 3, popularity: 0.0003
    - Note: Helper cli tool for the ZSA Keymapp API
    - TODO Status: BLOCKED
@@ -103357,7 +103357,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 19141. popsicle-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show popsicle | detail: target `popsicle` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust/GTK4 USB flasher; 100+ cargo crates missing, no generic Linux binary. A1: no AppImage/tarball; A2: cargo deps massive; A3: Guix has gnome-disks.
    - AUR votes: 2, popularity: 0.0003
    - Note: Linux utility for flashing multiple USB devices in parallel, written in Rust
    - TODO Status: BLOCKED
@@ -103518,7 +103518,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 19173. jitsi-meet-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show jitsi-meet | detail: target `jitsi-meet` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: BLOCKED: ELECTRON_BINARY_COMPLEX — Jitsi Meet Electron desktop app; requires electron runtime wrapping + patchelf. A1: AppImage/deb needs extract + patchelf; A2: Electron deps; A3: web interface as alternative.
    - AUR votes: 14, popularity: 0.0003
    - Note: Jitsi Meet Web binary
    - TODO Status: BLOCKED
@@ -103826,10 +103826,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 19234. liboqs-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show liboqs | detail: target `liboqs` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: liboqs (C, cmake-build-system, git-fetch from github.com/open-quantum-safe/liboqs 0.15.0)
    - AUR votes: 1, popularity: 0.0003
    - Note: C library for prototyping and experimenting with quantum-resistant cryptography
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 19235. lfetch
    - AUR votes: 1, popularity: 0.0003

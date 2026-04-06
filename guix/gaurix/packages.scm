@@ -175,6 +175,8 @@
   #:use-module (gaurix packages queue-20260405-daily1-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd5)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd5-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6-blocked-notes)
   #:export (
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
@@ -2438,6 +2440,20 @@
             electron32
             davs2
             cnrdrvcups-lb-bin
+            ;; r22-w03-nrd6: 13 resolved NEEDS_RECIPE_DESIGN (5 C/C++ + 2 C/cmake + 3 Python + 1 meson + 1 copy + 1 theme)
+            quirc
+            jbig2enc
+            shine
+            xavs2
+            liboqs
+            sngrep
+            zerotier-one
+            python-fleep
+            python-wassima
+            lieer
+            powder-toy
+            arkenfox-user.js
+            qogir-gtk-theme
             kwin-scripts-krohnkite
             xcaddy-bin
             shaka-packager-git
