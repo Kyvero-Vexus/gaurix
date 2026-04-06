@@ -148,6 +148,9 @@
   #:use-module (gaurix packages queue-20260404-daily3)
   #:use-module (gaurix packages queue-20260404-daily3-blocked-notes)
   #:use-module (gaurix packages cron-ce7dd90b-r1-w01)
+  #:use-module (gaurix packages cron-5a2fb251-r5-w02)
+  #:use-module (gaurix packages queue-20260404-daily3)
+  #:use-module (gaurix packages queue-20260404-daily3-blocked-notes)
   #:export (
             ttf-amiri
             ttf-0xproto
@@ -3461,50 +3464,150 @@ elephant-bin
             llama.cpp-cuda
             elephant
             pilowlava-font-common
+            4th
             ;; r8 blocked-tree pass exports
-            openssl-1.1
-            doas
-            gnome-icon-theme-symbolic
-            qt5-doc
-            paru
+            adbyss-bin
+            andcli-bin
+            android-ndk-28
+            apriltag
+            arattai-bin
             archlinux-java-run
+            archstatus-git
+            auto-auto-complete
+            bar-lobby-git
+            bibleanalyzer
+            biscuit
+            brother-dcpt535dw
+            brrtfetch-git
+            c
+            c-lcrypt
+            channelz-bin
+            chatbox-bin
+            chexquest3-wad
+            circup
+            codanna-bin
+            collapseloader-bin
+            davs2
+            deletor-bin
+            dnsdiag
+            doas
+            dotool
+            eget-bin
+            evcolors
+            factor
+            flaresolverr
+            flix-cli
+            fluent-gtk-theme
+            freedm
+            fsel-git
+            gnome-icon-theme-symbolic
+            gnu-apl
+            google-chrome
+            gtrash-bin
+            guff-bin
+            guitar-bin
+            hashcc-git
+            heptabase-bin
+            htminl-bin
             html2markdown
             httpdirfs
-            auto-auto-complete
-            xapp-thumbnailers-common
-            xlibre-xserver-common-git
-            python-art
-            python-munge
-            sqlite-utils
-            xrizer-common
-            flaresolverr
-            chexquest3-wad
-            square1-wad
-            tailscale
-            davs2
-            python-plyer
-            python-condense-json
-            python-m3u8
-            verify-lib
-            freedm
-            zmusic
-            mint-x-icons
-            dotool
+            hyprtoolkit
+            i8086emu-git
+            jxplorer
+            kew-git
+            lamebar
+            libhelium
+            libklvanc
             libunity
-            python-pfzy
+            llvm-libs-minimal-git
+            loggo-bin
+            lue-reader-git
+            lxappearance-gtk2
+            maple-mono-nf-cn-unhinted
+            mate-applet-lockkeys
+            members
+            mgmt-bin
+            mint-x-icons
+            mips64-linux-gnu-gcc-bootstrap
+            motus-bin
+            netop
+            norwester-otf
+            notepadqq
+            ns-usbloader
+            obos-genissue-git
+            obsidian2web
+            obsidian2web-bin
+            obsidian2web-git
+            oggvideotools
+            oh-my-theme
+            olvid
+            openapv
+            openssl-1.1
+            outline-manager-appimage
+            pac-pacman-aliases
+            pamac-aur-git
+            paru
+            pkgstate-bin
+            printnotes-git
+            procreate-thumbnailer-git
+            pvw-bin
+            python-art
+            python-asyncinotify
+            python-condense-json
             python-inquirerpy
+            python-m3u8
+            python-munge
+            python-odsexport
+            python-pfzy
+            python-plyer
             python-sse-starlette
             python-uv-dynamic-versioning
-            xboxdrv
-            google-chrome
-            llvm-libs-minimal-git
             python312
-            hyprtoolkit
-            wayfire
+            qb64
+            qt5-doc
             qt5-scxml
-            apriltag
-            openapv
-            xevd
-            libklvanc
+            resemb
+            rkvm
+            scrollmpris-git
+            sentry
+            sentry-relay
+            slskd-bin
+            snap-sync
+            sqlite-utils
+            square1-wad
+            szyszka
+            tailscale
+            topiary-bin
+            torrra
+            toutui-bin
+            ttf-babelstone-runic
+            ttf-ms-win11-fod-auto-hant
+            ttf-ms-win11-fod-auto-hebr
+            ttf-ms-win11-fod-auto-jpan
+            ttf-ms-win11-fod-auto-khmr
+            ttf-ms-win11-fod-auto-knda
+            ttf-ms-win11-fod-auto-kore
+            tuckr
+            utctimerightnow
+            valkyrie
+            valkyrie-qt6
+            verify-lib
+            vesc-tool
+            warp-cli
             waydroid
+            wayfire
+            wreckfest2-wine-steam
+            wsjtx-improved-widescreen
+            xapp-thumbnailers-common
+            xboxdrv
+            xcursor-simpleandsoft
+            xevd
+            xlibre-xserver-common-git
+            xrizer-common
+            yandex-disk-indicator
+            yesvgmap-bin
+            yr-bin
+            zeptofetch-git
+            zmate-bin
+            zmusic
 ))
