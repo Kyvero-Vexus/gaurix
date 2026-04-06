@@ -226,6 +226,8 @@
   #:use-module (gaurix packages queue-20260406-nrd30f-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree-p100)
   #:use-module (gaurix packages queue-20260406-blocked-tree-p100-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30g)
+  #:use-module (gaurix packages queue-20260406-nrd30g-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -4718,8 +4720,33 @@ elephant-bin
             openssh-askpass
             oversteer
             oxygen-cursors-extra
+            ;; queue-20260406-nrd30g: 36 compat aliases + 64 re-blocked
+            apulse-git
+            ccls-git
+            clamav-unofficial-sigs
+            csvkit-git
+            egl-wayland-git
+            elisa-git
+            fdroidserver-git
+            gamin-docs
+            geary-git
+            gnome-builder-git
+            hexchat-git
+            kdecoration-git
+            kdevelop-pg-qt-git
+            kimageformats-git
+            konversation-git
+            ktorrent-git
+            kunitconversion-git
+            kwallet-pam-git
+            libcamera-git
+            libsecp256k1-git
+            liquid-dsp-git
+            ntfs-3g-system-compression
             passwdqc-utils
+            pd-sfizz-git
             powder-toy-bin
+            protonup-git
             python-audible
             python-automx2
             python-cmsis-svd
@@ -4731,6 +4758,12 @@ elephant-bin
             rockhopper-bin
             ruby-install
             sdrpp-headers-git
+            sfizz-lib-git
+            sfizz-lv2-git
+            sfizz-standalone-git
+            sfizz-vst3-git
+            shotwell-git
+            snapper-support
             sqlite-web
             terminess-powerline-font
             tinct-bin
@@ -4739,6 +4772,12 @@ elephant-bin
             vapoursynth-plugin-vszip
             vgx-bin
             xcursor-borealis
+            xfce4-appfinder-devel
+            xfce4-session-git
+            xfce4-terminal-git
+            xfce4-whiskermenu-plugin-git
+            xournal-git
+            xpra-git
             zeptofetch-git
             zmate-bin
             zmusic
