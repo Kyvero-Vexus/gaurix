@@ -2665,3 +2665,14 @@
   (package
     (inherit font-awesome)
     (name "ttf-font-awesome-4")))
+
+;; nrd30b compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+(define-public tree-sitter-javascript-git
+  (package
+    (inherit tree-sitter-javascript)
+    (name "tree-sitter-javascript-git")))
+
+(define-public otf-texgyre-pagella-math
+  (package
+    (inherit font-tex-gyre)
+    (name "otf-texgyre-pagella-math")))

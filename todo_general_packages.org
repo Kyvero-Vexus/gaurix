@@ -19243,7 +19243,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3207. astraeditor-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: guix show astraeditor-bin -> package not found; next: Draft recipe from AUR PKGBUILD + source hash, then re-run guix build -L guix -n.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Electron/JavaScript app (TurboWarp fork), Guix lacks Electron packaging infrastructure. See queue-20260406-nrd30b-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19261,13 +19261,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3210. meta-package-manager-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix meta-package-manager-bin` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/meta-package-manager-bin.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Python with uv-build backend (not in Guix), many missing deps (click-extra, spdx-tools). See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3211. rofi-gpaste-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix rofi-gpaste-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/rofi-gpaste-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; depends on gpaste clipboard manager which is not in Guix. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -19279,28 +19279,28 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 3213. wiznoteplus-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix wiznoteplus-bin` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/wiznoteplus-bin.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; C++/Qt5 depends on OpenSSL 1.1 (deprecated), project stale since 2023. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3214. bugwarrior-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix bugwarrior-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/bugwarrior-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; needs python-taskw and python-dogpile.cache (not in Guix). See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3215. git-koji-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix git-koji-bin` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/git-koji-bin.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Fedora Koji-specific tooling, requires koji client libraries. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3216. ttf-octicons
+** DONE 3216. ttf-octicons [Recipe created as `ttf-octicons` in queue-20260406-nrd30b.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix ttf-octicons` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/ttf-octicons.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: Recipe created as `ttf-octicons` in queue-20260406-nrd30b.scm; font/copy-build v19.22.0.
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** DONE 3217. pulseaudio-control
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe created in queue-20260406-nrd30.scm; copy-build-system bash script v3.1.1.
@@ -19309,13 +19309,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 3218. translatelocally-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix translatelocally-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/translatelocally-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; ML translation tool needs marian-lite and sentencepiece (not in Guix). See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3219. psn-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix psn-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/psn-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Rust/Cargo, needs full cargo-inputs enumeration, upstream status uncertain. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -19345,7 +19345,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 3224. xdg-autostart
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix xdg-autostart` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/xdg-autostart.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Vala/Meson, tarball download failed, functionality superseded by dex. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -19357,7 +19357,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 3226. xwinwrap-0.9-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix xwinwrap-0.9-bin` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/xwinwrap-0.9-bin.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; unmaintained X11-only tool from 2007, no active upstream. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -19393,7 +19393,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3232. vscoq-language-server-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix vscoq-language-server-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/vscoq-language-server-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; OCaml-based Coq LSP, needs OCaml/Coq ecosystem packaging. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -19423,25 +19423,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 ** BLOCKED 3237. rofi-polkit-agent-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix rofi-polkit-agent-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/rofi-polkit-agent-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; single Bash script, no tagged releases, author notes security concerns. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3238. rofimoji-git
+** DONE 3238. rofimoji-git [Recipe created as `rofimoji` in queue-20260406-nrd30b.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix rofimoji-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/rofimoji-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: Recipe created as `rofimoji` in queue-20260406-nrd30b.scm; Python/pyproject v6.7.0.
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** BLOCKED 3239. scap-security-guide
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix scap-security-guide` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/scap-security-guide.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; distro-specific SCAP compliance content, not applicable to Guix. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3240. ssh3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix ssh3` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/ssh3.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Go with large module dep tree, project stalled since Jan 2024. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -19451,39 +19451,39 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3242. otf-texgyre-pagella-math
+** DONE 3242. otf-texgyre-pagella-math [Compat alias `otf-texgyre-pagella-math` → `font-tex-gyre` in general-compat.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix otf-texgyre-pagella-math` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/otf-texgyre-pagella-math.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: Compat alias `otf-texgyre-pagella-math` → `font-tex-gyre` in general-compat.scm.
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** BLOCKED 3243. pipewire-enable-bluez5
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix pipewire-enable-bluez5` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/pipewire-enable-bluez5.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; AUR meta-package (config only), Guix handles PipeWire Bluetooth via system config. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3244. obs-scrab
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix obs-scrab` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/obs-scrab.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; OBS Studio plugin, OBS Studio not packaged in Guix. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3245. obs-vnc
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix obs-vnc` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/obs-vnc.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; OBS Studio plugin, OBS Studio not packaged in Guix. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3246. python-anchor-kr-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix python-anchor-kr-git` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/python-anchor-kr-git.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; niche Korean Python package, unclear upstream/repository. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
 ** BLOCKED 3247. lsdesktopf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix lsdesktopf` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/lsdesktopf.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; unmaintained since 2016, no tags, superseded by desktop-file-utils. See blocked-notes.
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -30083,11 +30083,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5014. hyprls
+** DONE 5014. hyprls [Recipe created as `hyprls-bin` in queue-20260406-nrd30b.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Hyprland config LSP server Go; pin release, draft go recipe; Source: https://github.com/hyprland-community/hyprls. Stub exported in queue-20260324p100d.scm.
+   - Status: Recipe created as `hyprls-bin` in queue-20260406-nrd30b.scm; Go binary v0.13.0.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 5015. ps3toolchain
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -32171,11 +32171,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5362. efibooteditor-qt5
+** DONE 5362. efibooteditor-qt5 [Recipe created as `efibooteditor` in queue-20260406-nrd30b.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: cmake Qt6 recipe; https://github.com/Neverous/efibooteditor v1.5.6.
+   - Status: Recipe created as `efibooteditor` in queue-20260406-nrd30b.scm; CMake/Qt6 source build v1.5.6.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 5363. efibooteditor
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -50417,11 +50417,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n crossdirstat-bin | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily7.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
    - TODO Status: BLOCKED
 
-** BLOCKED 8568. ffdec
+** DONE 8568. ffdec [Recipe created as `ffdec` in queue-20260406-nrd30b.scm]
    - Note: AUR popularity=0.0766, votes=35; Open Source Flash SWF decompiler and editor
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ffdec | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily7.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
-   - TODO Status: BLOCKED
+   - Status: Recipe created as `ffdec` in queue-20260406-nrd30b.scm; Java JAR v25.1.3.
+   - TODO Status: DONE
 
 ** BLOCKED 8569. fs
    - Note: AUR popularity=0.0766, votes=1; a Simple CLI tool to show file and directory sizes
@@ -50780,11 +50780,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n nyan-doom | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily7.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
    - TODO Status: BLOCKED
 
-** BLOCKED 8630. oh-my-posh
+** DONE 8630. oh-my-posh [Recipe created as `oh-my-posh-bin` in queue-20260406-nrd30b.scm]
    - Note: AUR popularity=0.0686, votes=12; A prompt theme engine for any shell.
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n oh-my-posh | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily7.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
-   - TODO Status: BLOCKED
+   - Status: Recipe created as `oh-my-posh-bin` in queue-20260406-nrd30b.scm; Go binary v29.9.2.
+   - TODO Status: DONE
 
 ** FAILED 8631. mint-l-theme
    - Note: AUR popularity=0.0684, votes=5; A collection of legacy mint themes.
@@ -69808,11 +69808,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: HTML grammar for tree-sitter
    - TODO Status: TODO
 
-** BLOCKED 12435. tree-sitter-javascript-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n tree-sitter-javascript-git | error: guix build: error: tree-sitter-javascript-git: unknown package | next: draft recipe with normalized package name/source URI/hash then validate with guix lint/build
+** DONE 12435. tree-sitter-javascript-git [Compat alias `tree-sitter-javascript-git` → `tree-sitter-javascript` in general-compat.scm]
+   - Status: Compat alias `tree-sitter-javascript-git` → `tree-sitter-javascript` in general-compat.scm.
    - AUR votes: 1, popularity: 1.0000
    - Note: Javascript grammar for tree-sitter
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 12436. tree-sitter-jsdoc-git [gaurix:queue-20260402p100daily3 target=tree-sitter-jsdoc rule=strip-git]
    - AUR votes: 1, popularity: 1.0000
@@ -70350,11 +70350,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Head tracking software
    - TODO Status: TODO
 
-** BLOCKED 12543. protonup-rs-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show protonup-rs | detail: target `protonup-rs` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+** DONE 12543. protonup-rs-bin [Recipe created as `protonup-rs-bin` in queue-20260406-nrd30b.scm]
+   - Status: Recipe created as `protonup-rs-bin` in queue-20260406-nrd30b.scm; Rust binary v0.11.0.
    - AUR votes: 5, popularity: 0.9300
    - Note: CLI program to automate the installation and update of Proton-GE
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 12544. pandora-launcher-bin
    - AUR votes: 2, popularity: 0.9298
@@ -72699,11 +72699,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Upscale and enhance images
    - TODO Status: TODO
 
-** BLOCKED 13011. pixelterm-c-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show pixelterm-c | detail: target `pixelterm-c` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+** DONE 13011. pixelterm-c-bin [Recipe created as `pixelterm-c` in queue-20260406-nrd30b.scm]
+   - Status: Recipe created as `pixelterm-c` in queue-20260406-nrd30b.scm; C/Make source build v1.7.20.
    - AUR votes: 1, popularity: 0.7704
    - Note: A high-performance terminal image/video/book browser written in C, based on the Chafa library
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 13012. pear-desktop-git
    - AUR votes: 5, popularity: 0.7704
@@ -100448,11 +100448,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A digital version of Futura
    - TODO Status: TODO
 
-** BLOCKED 18532. mew-git
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show mew | detail: target `mew` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+** DONE 18532. mew-git [Recipe created as `mew` in queue-20260406-nrd30b.scm]
+   - Status: Recipe created as `mew` in queue-20260406-nrd30b.scm; C/Make Wayland menu v1.0.
    - AUR votes: 1, popularity: 0.0005
    - Note: Wayland port of dmenu
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** TODO 18533. linux-tip-git-headers
    - AUR votes: 1, popularity: 0.0005
