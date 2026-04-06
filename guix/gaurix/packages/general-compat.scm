@@ -2216,7 +2216,10 @@
 
 (define-public godot3-bin godot)
 
-(define-public akonadi-notes5 akonadi-notes)
+(define-public akonadi-notes5
+  (package
+    (inherit akonadi)
+    (name "akonadi-notes5")))
 
 (define-public kontactinterface5 kontactinterface)
 
@@ -2367,3 +2370,28 @@
   (package
     (inherit adwaita-icon-theme)
     (name "gnome-icon-theme-symbolic")))
+
+(define-public helixbinhx
+  (package
+    (inherit helix)
+    (name "helixbinhx")))
+
+(define-public libwireplumber-4.0-compat
+  (package
+    (inherit wireplumber)
+    (name "libwireplumber-4.0-compat")))
+
+(define-public mediainfo-gui-qt
+  (package
+    (inherit mediainfo)
+    (name "mediainfo-gui-qt")))
+
+(define-public wlrobs-hg
+  (package
+    (inherit obs-wlrobs)
+    (name "wlrobs-hg")))
+
+(define-public rpatool-git
+  (package
+    (inherit rpatool)
+    (name "rpatool-git")))

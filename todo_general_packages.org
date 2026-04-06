@@ -23225,45 +23225,45 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3871. cudatext-qt6-bin
+** DONE 3871. cudatext-qt6-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh cudatext-qt6-bin` succeeded (AUR rev 0bdade6e7f2eb72dad643f4499744add3de73ca0; source=("https://sourceforge.net/projects/cudatext/files/release/${pkgver}/cudatext-linux-qt6-amd64-${pkgver}.tar.xz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, SourceForge binary v1.233.1.0); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3872. chawan-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh chawan-git` succeeded (AUR rev c87ba79f0a56da386cc7bcf771687551d5efbf3f; source=(${pkgname%-git}::git+$url)). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: NIM_ECOSYSTEM_MISSING | Chawan needs Nim compiler chain with C FFI bindings (brotli, libssh2, openssl); batch-infeasible.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3873. portmaster-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh portmaster-bin` succeeded (AUR rev 47e663fd8905b12afb493e0e563f4552865339ea; source=("portmaster.desktop"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: TAURI_WEBKIT2GTK_DEPS | Portmaster is a Tauri app needing webkit2gtk-4.1 + libappindicator + complex patchelf.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3874. libwireplumber-4.0-compat
+** DONE 3874. libwireplumber-4.0-compat
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh libwireplumber-4.0-compat` succeeded (AUR rev 8b1730b96c43a41fc1d3241af5483101053475f7; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Compat alias `libwireplumber-4.0-compat` inheriting Guix `wireplumber` added to general-compat.scm; NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3875. rtl8821ce-dkms-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh rtl8821ce-dkms-git` succeeded (AUR rev 2e72e0741cd29a8888f95b8ee3b96d9cbc934845; source=("git+https://github.com/tomaspinho/rtl8821ce.git")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DKMS_KERNEL_MODULE | rtl8821ce is a DKMS kernel module; Guix uses linux-module-build-system requiring kernel-specific compilation.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3876. cherry-studio-electron-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh cherry-studio-electron-bin` succeeded (AUR rev 10cd70860556d2496fc0a053ab8955028d3ec400; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: ELECTRON_RUNTIME_MISSING | Cherry Studio needs electron40 runtime; Guix has no standalone Electron package.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3877. brother-mfc-l8690cdw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh brother-mfc-l8690cdw` succeeded (AUR rev 29e5c752a4f023c864d24eb1e708217cb3325c94; source=("${_model}-lpr::https://download.brother.com/welcome/dlf103241/${_model}lpr-${pkgver}-0.i386.deb"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: PROPRIETARY_BINARY_DEB | Brother printer driver from .deb packages; non-free EULA + i386 binary extraction + CUPS wrapper.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23273,21 +23273,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3879. ngrok
+** DONE 3879. ngrok
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh ngrok` succeeded (AUR rev 0d0f33554b30bf2331160559fa3a842bd3e01825; source=("TERMS-OF-SERVICE.txt")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, prebuilt binary v3.37.2); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3880. audiobookshelf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh audiobookshelf` succeeded (AUR rev b1a5f91a3b0cea86298f8371db06884e4b0aaebc; source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: NPM_NATIVE_DEPS | Audiobookshelf is Node.js with native better-sqlite3 C++ addon; node-build-system cannot handle this.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3881. simple-thumbnailer-stl
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh simple-thumbnailer-stl` succeeded (AUR rev 135812fbc16bfc127a42be27eaa77143d4cdfc72; source=(git+https://gitlab.com/zoli111/simple-thumbnailer-stl.git)). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOWNLOAD_FAILED | simple-thumbnailer-stl v0.4.0 GitLab archive URL returned 404; Rust cargo deps also needed.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23297,45 +23297,45 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3883. libray
+** DONE 3883. libray
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh libray` succeeded (AUR rev 4837c80db7096a27ae62bfc5d9ab91b85f0085ee; source=("https://codeberg.org/necklace/${_gitname}/archive/${pkgver}.tar.gz"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (python-build-system, v0.0.10 from codeberg.org/necklace/libray); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3884. nsz-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh nsz-git` succeeded (AUR rev 89f437e46cf864e631281984476622109ff11e4c; source=("${pkgname}::git+https://github.com/nicoboss/${pkgname%-*}.git")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: MISSING_DEP_CHAIN | nsz-git needs python-enlighten which needs python-prefixed; two-deep missing dep chain.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3885. fortune-mod-portal-game
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh fortune-mod-portal-game` succeeded (AUR rev 565b895092e827d888466072fb6d2d754dd7725c; source=("git+https://github.com/outadoc/portal-fortunes.git")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: MISSING_DEP_FORTUNE_MOD | fortune-mod-portal-game build uses strfile from fortune-mod which is not in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3886. helixbinhx
+** DONE 3886. helixbinhx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh helixbinhx` succeeded (AUR rev 584382cd33801242261b697dfe295dc030b2b5a3; source=()). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Compat alias `helixbinhx` inheriting Guix `helix` added to general-compat.scm; NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3887. freeze-bin
+** DONE 3887. freeze-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh freeze-bin` succeeded (AUR rev 0d70bbb1b39e8a3e9cc0691fcf3a6914e45311a2). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, prebuilt binary v0.2.2 from charmbracelet); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3888. chiaki
+** DONE 3888. chiaki
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh chiaki` succeeded (AUR rev 7e03a87b50883aa93cdf5a8269167a45ebd19824; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Source-reference recipe in cron-c79f127f-r22-w03-nrd11.scm (cmake-build-system, v2.2.0; needs Qt5/FFmpeg/SDL2 dep packaging); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3889. llvm-bolt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh llvm-bolt` succeeded (AUR rev 828ecabd17e247a97a25352ab1b0139541735050; source=("https://github.com/llvm/llvm-project/releases/download/llvmorg-$pkgver/llvm-project-$pkgver.src.tar.xz"{,.sig})). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: MASSIVE_BUILD_INFRA | LLVM BOLT requires full LLVM monorepo rebuild (~2GB source, hours of compilation).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23345,83 +23345,83 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3891. kwin-polonium
+** DONE 3891. kwin-polonium
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh kwin-polonium` succeeded (AUR rev c5be23f08292092a1cf2ff622b358c7e0c4e727d; source=("$_pkgname-$pkgver.tar.gz::https://github.com/zeroxoneafour/polonium/archive/refs/tags/v$pkgver.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Source-reference recipe in cron-c79f127f-r22-w03-nrd11.scm (gnu-build-system, v1.0rc; needs npm/TypeScript build toolchain); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3892. sparrow-wallet
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh sparrow-wallet` succeeded (AUR rev a44491aad0ca0c9e64bbb18c9c3706366a7febcb; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOWNLOAD_FAILED | Sparrow Wallet v2.4.2 x86_64 tarball URL returned 404; also needs JRE wrapper.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3893. vfstool-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh vfstool-git` succeeded (AUR rev 24e843c45ef8355fcf13b90a42414a9c03f5a5f7; source=('git+https://github.com/DreamWeave-MP/vfstool')). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOWNLOAD_FAILED | vfstool-git v2.5 tarball URL returned 404 (tried both tag patterns); Rust cargo deps also needed.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3894. kate-discord-rpc-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh kate-discord-rpc-git` succeeded (AUR rev 86fa67fd86bedf6041218d475ee6765f6b89f564; source=("git+$url.git"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOWNLOAD_FAILED | kate-discord-rpc-git main.tar.gz URL returned 404; repo may be removed/private.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3895. mediainfo-gui-qt
+** DONE 3895. mediainfo-gui-qt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh mediainfo-gui-qt` succeeded (AUR rev c233b580a0101611148a81e8adbe95cd693cb34e; source=("$pkgname-$pkgver.tar.gz::https://github.com/MediaArea/MediaInfo/archive/v$pkgver.tar.gz"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Compat alias `mediainfo-gui-qt` inheriting Guix `mediainfo` added to general-compat.scm; NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3896. streamlink-twitch-gui-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh streamlink-twitch-gui-bin` succeeded (AUR rev ae778f1dc5d76b1df39fed3450ddc74cc1ddfed4). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOWNLOAD_FAILED | Streamlink Twitch GUI v2.5.3 linux64 tarball URL returned 404; NW.js app needs complex patching.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3897. wlrobs-hg
+** DONE 3897. wlrobs-hg
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh wlrobs-hg` succeeded (AUR rev 54740305ada574b3e00b9d3e27b14b593afc44c2; source=("hg+https://hg.sr.ht/~scoopta/${_pkgname}")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Compat alias `wlrobs-hg` inheriting Guix `obs-wlrobs` added to general-compat.scm; NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3898. ov-git
+** DONE 3898. ov-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh ov-git` succeeded (AUR rev 74dfeb9ecda1cf6e1ccd659e6897982fb767e386; source=("git+$url.git")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Source-reference recipe in cron-c79f127f-r22-w03-nrd11.scm (go-build-system, v0.50.2; needs Go module dep packaging); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3899. jira-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh jira-cli` succeeded (AUR rev 138af9122f215e8cfdc8d0dc18d63b7f78bbff6b; source=("${pkgname}-${pkgver}::${url}/archive/refs/tags/v${pkgver}.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOWNLOAD_FAILED | jira-cli v1.7.0 tarball URL returned 404; Go module deps would also need packaging.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3900. rpatool-git
+** DONE 3900. rpatool-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh rpatool-git` succeeded (AUR rev 9fbbe7819bb0ac218cefb297cab8228bb7782405; source=("git+${url}.git")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Compat alias `rpatool-git` inheriting Guix `rpatool` added to general-compat.scm; NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3901. intermodal
+** DONE 3901. intermodal
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh intermodal` succeeded (AUR rev 0bf66b61660eaedaa205d63cd4a157585f372888; source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Source-reference recipe in cron-c79f127f-r22-w03-nrd11.scm (cargo-build-system, v0.1.16; needs Rust cargo dep packaging); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3902. arch-silence-grub-theme-git
+** DONE 3902. arch-silence-grub-theme-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh arch-silence-grub-theme-git` succeeded (AUR rev d5f78f80c7510e16b5375d625590829aa7cb0d73; source=('git+https://github.com/fghibellini/arch-silence.git')). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, GRUB2 theme files from github.com/fghibellini/arch-silence); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3903. iventoy-bin
+** DONE 3903. iventoy-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh iventoy-bin` succeeded (AUR rev e2d3dcb0bd4a79065aa7a446cc6f2a49168a05cc; source=("${_pkgname}-${pkgver}.tar.gz::https://github.com/ventoy/PXE/releases/download/v${pkgver}/${_pkgname}-${pkgver}-linux-free.tar.gz"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, prebuilt binary v1.0.21 from ventoy/PXE); NRD11 pass 2026-04-06.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3904. openbuilds-control
    - Source List: data/aur-cache/packages-meta-ext-v1.json

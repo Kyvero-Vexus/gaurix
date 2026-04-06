@@ -190,6 +190,8 @@
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)  #:export (
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd11)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd11-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree)
   #:use-module (gaurix packages queue-20260406-blocked-tree-blocked-notes)
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
@@ -4360,6 +4362,22 @@ elephant-bin
             viu-media-bin
             vr-lighthouse-bin
             waydroid-pkg
+            arch-silence-grub-theme-git
+            caddy-cloudflare-l4
+            chiaki
+            cudatext-qt6-bin
+            dash-static-musl
+            fftw-amd
+            freeze-bin
+            gopass-secret-service
+            intermodal
+            iventoy-bin
+            kwin-polonium
+            libray
+            ngrok
+            openbsd-netcat-tls
+            os-prober-btrfs
+            ov-git
             webcamize-pkg
             webtorrent-bittorrent-tracker
             webtorrent-mpv-hook
