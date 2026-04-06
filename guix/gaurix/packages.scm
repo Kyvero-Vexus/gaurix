@@ -210,6 +210,8 @@
   #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100b)
   #:use-module (gaurix packages queue-20260406p100b-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30)
+  #:use-module (gaurix packages queue-20260406-nrd30-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -4511,9 +4513,14 @@ elephant-bin
             imsprog
             lianwall-bin
             lib32-lapack
+            dvdisaster-speed47-git
+            gohan-bin
+            htmltest-bin
+            lavat
             libvpx1.10
             mdns-scan
             mihomo
+            mma
             mpv-uosc
             networkmanager-dmenu-git
             ninvaders
@@ -4526,8 +4533,11 @@ elephant-bin
             ollama-mlx-cuda13-bin
             openvpn-update-systemd-resolved
             oxicord-bin
+            passwdqc-utils
+            perl-io-tiecombine
             pokemon-colorscripts-git
             properties-cpp
+            pulseaudio-control
             python-mouseinfo
             python-ollama
             python-pinstall
@@ -4539,13 +4549,23 @@ elephant-bin
             python-uncalled-for
             python-vermin
             qstat
+            rakubrew-bin
             reflector-rs-bin
             restman-bin
             smpq
             sudoku-simple
+            terminess-powerline-font
+            transset-df
+            ttf-font-awesome-4
+            ttf-kanjistrokeorders
+            wayland-push-to-talk-fix
+            wmutils-core
+            wshowkeys
+            xcursor-borealis
             zeptofetch-git
             zmate-bin
             zmusic
+            zscroll
             zulu-21-bin
             zulu-jre11-fx
             zulu-jre17-fx

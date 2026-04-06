@@ -159,6 +159,7 @@
   #:use-module (gaurix packages cron-c79f127f-r26-w03-nrd)
   #:use-module (gnu packages opencl)
   #:use-module (gnu packages image-processing)
+#:use-module (gnu packages cdrom)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -2648,3 +2649,19 @@
   (package
     (inherit lapack)
     (name "lib32-lapack")))
+
+;; nrd30 compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+(define-public dvdisaster-speed47-git
+  (package
+    (inherit dvdisaster)
+    (name "dvdisaster-speed47-git")))
+
+(define-public passwdqc-utils
+  (package
+    (inherit passwdqc)
+    (name "passwdqc-utils")))
+
+(define-public ttf-font-awesome-4
+  (package
+    (inherit font-awesome)
+    (name "ttf-font-awesome-4")))
