@@ -182,6 +182,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100b)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd8)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd9)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd9-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd8-blocked-notes)
 
   #:use-module (gaurix packages queue-20260405-daily2)
@@ -4170,12 +4172,21 @@ elephant-bin
             libxnvctrl-580xx
             noctalia-qs
             noctalia-shell
+            ;; r22-w03-nrd9: 9 resolved NEEDS_RECIPE_DESIGN (1 copy + 1 GNU-make bash + 1 GNU-make C + 2 CMake Qt + 1 copy-bin + 2 cargo + 1 GNU-make game)
+            adwaita-qt5
+            adwaita-qt6
+            amdfand-bin
+            anyrun
+            bapctools-git
+            git-recursive
             nodejs-knit
             nvidia-580xx-settings
             op-cache-git
+            opentyrian2000
             rustmius-bin
             stardict-cz
             steamdepotdownloader-bin
+            steamtinkerlaunch
             structuresynth
             sunsetr-bin
             swhook
@@ -4188,6 +4199,7 @@ elephant-bin
             ttf-unifraktur
             udiskr
             uhk-agent-appimage
+            vr-lighthouse-bin
             webcamize-pkg
             webtorrent-bittorrent-tracker
             webtorrent-mpv-hook
@@ -4197,6 +4209,7 @@ elephant-bin
             wttr
             yr-bin
             zandronum
+            zenmonitor3
             zeptofetch-git
             zmate-bin
             zmusic

@@ -19873,7 +19873,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 ** BLOCKED 3312. rapidraw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Tauri framework requires integrated cargo+npm build pipeline; Guix has no Tauri build-system support; would need full npm dep tree vendored plus Rust crate deps
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19883,11 +19883,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3314. steamtinkerlaunch
+** DONE 3314. steamtinkerlaunch
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (gnu-build-system, bash script from GitHub v12.12, GPL3); validated with guix build -L guix -n steamtinkerlaunch
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3315. libva-vdpau-driver
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19897,7 +19897,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3316. weasis-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Java/Maven application with massive dependency tree; source at github.com/nroduit/Weasis (EPL-2.0) but needs Maven build with dozens of Java deps not in Guix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19909,37 +19909,37 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3318. p7zip-gui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: DEAD_UPSTREAM — p7zip last released 16.02 in 2016; wxWidgets GUI (7zFM) portion is unmaintained; Guix has p7zip CLI already
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3319. yed
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: NONFREE_LICENSE — proprietary freeware graph editor from yWorks; no source code available; cannot be packaged in a free software channel
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3320. anyrun
+** DONE 3320. anyrun
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cargo-build-system, Rust/GTK4 launcher v25.12.0, GPL3); validated with guix build -L guix -n anyrun
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3321. zenmonitor3-git
+** DONE 3321. zenmonitor3-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (gnu-build-system, C/GTK3 from GitHub commit 1e1ceec, MIT); validated with guix build -L guix -n zenmonitor3
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3322. unigine-heaven
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: NONFREE_LICENSE — proprietary GPU benchmark from Unigine Corp; binary-only distribution with custom license
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3323. breitbandmessung-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: NONFREE_LICENSE — proprietary Electron app from German Federal Network Agency (zafaco GmbH); no source available
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19951,7 +19951,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3325. ancient-packages
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: ARCH_SPECIFIC — depends on package-query which queries Arch Linux pacman database; entirely Arch-specific with no applicability to Guix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19963,7 +19963,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3327. tidal-hifi
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: ELECTRON_NONFREE — Electron wrapper for Tidal streaming; requires Widevine DRM; massive npm dependency tree
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19987,49 +19987,49 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3331. marp-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: NODE_DEP_AVALANCHE — Node.js CLI with hundreds of transitive npm deps; Guix node ecosystem lacks most packages
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3332. adwaita-qt5-git
+** DONE 3332. adwaita-qt5-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cmake-build-system, Qt5 theme v1.4.2 from GitHub, LGPL2.1+); validated with guix build -L guix -n adwaita-qt5
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3333. adwaita-qt6-git
+** DONE 3333. adwaita-qt6-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cmake-build-system, Qt6 theme v1.4.2 from GitHub, LGPL2.1+); validated with guix build -L guix -n adwaita-qt6
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3334. ssacli-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: NONFREE_LICENSE — HPE Smart Storage Administrator CLI; proprietary binary with no source code or public download URL
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3335. tuxboot
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: DEAD_DEPENDENCY — requires Qt4 (EOL since 2015, removed from Guix); project appears unmaintained; would need Qt5/6 port
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3336. amdfand-bin
+** DONE 3336. amdfand-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cargo-build-system, Rust fan daemon v1.0.12, Apache-2.0/MIT); validated with guix build -L guix -n amdfand-bin
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3337. scratch3-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: ELECTRON_BUNDLE — Electron-based binary of Scratch 3.0; source build requires full Electron toolchain; binary bundles Chromium
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3338. libstdc++5-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: LEGACY_TOOLCHAIN — legacy libstdc++ from GCC 3.3; building from source requires GCC 3.3 not in Guix; binary .so redistribution is fragile
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20041,7 +20041,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3340. cevomapgen
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: MISSING_TOOLCHAIN — requires Free Pascal compiler (fpc) and Lazarus IDE with Qt6 bindings; none packaged in Guix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20053,7 +20053,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3342. slippi-launcher-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — attempted recipe drafting pass for this queue batch; `guix package -A` has no direct equivalent and full source/build-system mapping not completed in this pass; next action: draft standalone package definition in next queue batch and validate with `guix build -L guix -n <pkg>`.
+   - Status: BLOCKED: ELECTRON_NONFREE — prebuilt Electron binary for SSBM netplay; tied to proprietary game ecosystem
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20275,7 +20275,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3379. element-web-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show element-web-git` -> package not found; A2 candidate normalization tried element-web-git, element-web; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/vector-im/element-web.
+   - Status: BLOCKED: ALREADY_IN_GUIX — Guix provides element-desktop v1.12.2; -git variant unnecessary; version bumps go through existing package
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23173,31 +23173,31 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3862. rapidraw-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh rapidraw-bin` succeeded (AUR rev 55b7741f606f334ba8584fe5d75b66fc2dfe8b84). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: BINARY_REDISTRIBUTION — prebuilt Tauri/Rust binary as .deb; prefer source build; webkit2gtk runtime deps may not match Guix library versions
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3863. opentyrian2000
+** DONE 3863. opentyrian2000
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh opentyrian2000` succeeded (AUR rev 77d7de44f6847c82abdf711a720211bc495709c6; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (gnu-build-system, C/SDL2 game v2000.20250408, GPL2); validated with guix build -L guix -n opentyrian2000
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3864. vr-lighthouse-bin
+** DONE 3864. vr-lighthouse-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh vr-lighthouse-bin` succeeded (AUR rev fa14632c58a30465884f19a36563f662977f00ac; source=("${url}/releases/download/${pkgver}/Linux-x86_64.zip")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (copy-build-system, prebuilt binary v1.4.0 from GitHub, MIT); validated with guix build -L guix -n vr-lighthouse-bin
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3865. vita3k-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh vita3k-git` succeeded (AUR rev eba0ba991f91d2be22c718a6976be5b6dc5e7fa8; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: EXCESSIVE_VENDORED_DEPS — PS Vita emulator with 30+ git submodule dependencies; CMake/clang/lld build; reproducing submodule tree in Guix extremely complex
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3866. discord-electron-openasar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh discord-electron-openasar` succeeded (AUR rev 7880df73a9911265568b1144b8fb46ff994122f4; source=("https://dl.discordapp.net/apps/linux/${_discord_ver}/${_pkgname}-${_discord_ver}.tar.gz"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: NONFREE_LICENSE — Discord client (proprietary service ToS); downloads nonfree Discord tarball; cannot distribute in free channel
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23207,21 +23207,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3868. git-recursive
+** DONE 3868. git-recursive
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh git-recursive` succeeded (AUR rev 7bdfc7e84021a763711c7bc1e00ae771a8726da4; source=("$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/${pkgver}.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (copy-build-system, shell script from GitHub v0.3.1, MIT license); validated with guix build -L guix -n git-recursive
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3869. audiorelay
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh audiorelay` succeeded (AUR rev f279f90a6aae8757b59ed49a6e4e9019111f109d; source=("https://dl.audiorelay.net/setups/linux/$pkgname-$pkgver.tar.gz" "$pkgname.sh" "$pkgname.desktop")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: NONFREE_LICENSE — proprietary Java application; unknown license; no source code available
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3870. kind
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh kind` succeeded (AUR rev 83f72e1292c3888783f7ebd8e692efce0615a397; source=("https://github.com/kubernetes-sigs/kind/archive/v$pkgver/$pkgname-$pkgver.tar.gz"). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: ALREADY_IN_GUIX — Guix provides kind v0.27.0 (go-build-system); AUR v0.31.0 needs version bump on existing upstream Guix package, not channel duplicate
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
