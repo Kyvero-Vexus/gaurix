@@ -153,6 +153,7 @@
   #:use-module (gnu packages speech)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd13)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
   #:export (
             waybar-claude-usage
@@ -2509,3 +2510,60 @@
   (package
     (inherit mezzotone-bin)
     (name "mezzotone")))
+
+;; ── nrd13 compat aliases ──────────────────────────────────────────
+
+(define-public networkmanager-dmenu
+  (package
+    (inherit networkmanager-dmenu-git)
+    (name "networkmanager-dmenu")))
+
+(define-public pokemon-colorscripts
+  (package
+    (inherit pokemon-colorscripts-git)
+    (name "pokemon-colorscripts")))
+
+(define-public openvpn-update-resolved
+  (package
+    (inherit openvpn-update-systemd-resolved)
+    (name "openvpn-update-resolved")))
+
+(define-public pysnooper
+  (package
+    (inherit python-pysnooper)
+    (name "pysnooper")))
+
+(define-public vermin-python
+  (package
+    (inherit python-vermin)
+    (name "vermin-python")))
+
+(define-public pytweening-py
+  (package
+    (inherit python-pytweening)
+    (name "pytweening-py")))
+
+(define-public ollama-python
+  (package
+    (inherit python-ollama)
+    (name "ollama-python")))
+
+(define-public catppuccin-kde-latte
+  (package
+    (inherit catppuccin-plasma-colorscheme-latte)
+    (name "catppuccin-kde-latte")))
+
+(define-public catppuccin-kde-frappe
+  (package
+    (inherit catppuccin-plasma-colorscheme-frappe)
+    (name "catppuccin-kde-frappe")))
+
+(define-public catppuccin-kde-macchiato
+  (package
+    (inherit catppuccin-plasma-colorscheme-macchiato)
+    (name "catppuccin-kde-macchiato")))
+
+(define-public catppuccin-kde-mocha
+  (package
+    (inherit catppuccin-plasma-colorscheme-mocha)
+    (name "catppuccin-kde-mocha")))

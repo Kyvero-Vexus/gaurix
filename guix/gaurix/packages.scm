@@ -196,6 +196,8 @@
   #:use-module (gaurix packages queue-20260406-blocked-tree-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd12-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd13)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd13-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
@@ -4424,6 +4426,30 @@ elephant-bin
             zandronum
             zenmonitor3
             zensical
+            catppuccin-plasma-colorscheme-frappe
+            catppuccin-plasma-colorscheme-latte
+            catppuccin-plasma-colorscheme-macchiato
+            catppuccin-plasma-colorscheme-mocha
+            clipboard-type-wl
+            devilutionx
+            gauth
+            llama-swap
+            networkmanager-dmenu-git
+            obs-3d-effect
+            obs-source-dock
+            obs-text-pthread
+            openvpn-update-systemd-resolved
+            pokemon-colorscripts-git
+            properties-cpp
+            python-mouseinfo
+            python-ollama
+            python-pinstall
+            python-pyscreeze
+            python-pysnooper
+            python-pytweening
+            python-timesched
+            python-vermin
+            qstat
             zeptofetch-git
             zmate-bin
             zmusic
