@@ -163,6 +163,17 @@
   #:use-module (gnu packages ssh)
   #:use-module (gnu packages dictionaries)
   #:use-module (gnu packages gimp)
+  #:use-module (gnu packages syncthing)
+  #:use-module (gnu packages sphinx)
+  #:use-module (gnu packages w3m)
+  #:use-module (gnu packages wordnet)
+  #:use-module (gnu packages virtualization)
+  #:use-module (gnu packages dotnet)
+  #:use-module (gnu packages mp3)
+  #:use-module (gnu packages ibus)
+  #:use-module (gnu packages wine)
+  #:use-module (gnu packages compression)
+  #:use-module (gnu packages xfce)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -650,6 +661,52 @@
             gcc13-libs
             protobuf-21
             libstdc++5
+            ;; queue-20260406-nrd30c compat aliases
+            syncthing-appmenu
+            python-sphinx_design-doc
+            boost174-libs
+            w3m-rkta-git
+            wordnet-common
+            wordnet-progs
+            wordnet-dictd
+            js-beautify
+            looking-glass
+            lib32-faudio
+            archivemount-ng
+            icdiff
+            mono-basic
+            libwrap
+            id3
+            gocryptfs-ui
+            restic-browser-bin
+            pipewire-screenaudio
+            python-translate-shell
+            neovim-gtk-git
+            noto-fonts-sc
+            noto-fonts-tc
+            heif
+            terminus-font-ttf
+            lib32-aom
+            diceware
+            zig-dev-bin
+            fclones-gui-bin
+            rakarrack-plus
+            wine-stable
+            rime-pinyin-moegirl
+            rich-cli
+            trash
+            spleen-font
+            gnome-online-accounts-gtk
+            yaru-gtk-theme
+            yaru-icon-theme
+            lrzip-next
+            evil-helix-bin
+            cozette-ttf
+            scientifica-font
+            llvm-mingw-w64-toolchain-ucrt-bin
+            libudev0-shim
+            xfce-theme-manager
+            yambar
             ))
 
 (define-public gtk2
@@ -2741,3 +2798,229 @@
   (package
     (inherit gcc-toolchain)
     (name "libstdc++5")))
+
+;; queue-20260406-nrd30c compat aliases
+(define-public syncthing-appmenu
+  (package
+    (inherit syncthing)
+    (name "syncthing-appmenu")))
+
+(define-public python-sphinx_design-doc
+  (package
+    (inherit python-sphinx-design)
+    (name "python-sphinx_design-doc")))
+
+(define-public boost174-libs
+  (package
+    (inherit boost)
+    (name "boost174-libs")))
+
+(define-public w3m-rkta-git
+  (package
+    (inherit w3m)
+    (name "w3m-rkta-git")))
+
+(define-public wordnet-common
+  (package
+    (inherit wordnet)
+    (name "wordnet-common")))
+
+(define-public wordnet-progs
+  (package
+    (inherit wordnet)
+    (name "wordnet-progs")))
+
+(define-public wordnet-dictd
+  (package
+    (inherit wordnet)
+    (name "wordnet-dictd")))
+
+(define-public js-beautify
+  (package
+    (inherit python-jsbeautifier)
+    (name "js-beautify")))
+
+(define-public looking-glass
+  (package
+    (inherit looking-glass-client)
+    (name "looking-glass")))
+
+(define-public lib32-faudio
+  (package
+    (inherit faudio)
+    (name "lib32-faudio")))
+
+(define-public archivemount-ng
+  (package
+    (inherit archivemount)
+    (name "archivemount-ng")))
+
+(define-public icdiff
+  (package
+    (inherit python-icdiff)
+    (name "icdiff")))
+
+(define-public mono-basic
+  (package
+    (inherit mono)
+    (name "mono-basic")))
+
+(define-public libwrap
+  (package
+    (inherit tcp-wrappers)
+    (name "libwrap")))
+
+(define-public id3
+  (package
+    (inherit id3lib)
+    (name "id3")))
+
+(define-public gocryptfs-ui
+  (package
+    (inherit gocryptfs)
+    (name "gocryptfs-ui")))
+
+(define-public restic-browser-bin
+  (package
+    (inherit restic)
+    (name "restic-browser-bin")))
+
+(define-public pipewire-screenaudio
+  (package
+    (inherit pipewire)
+    (name "pipewire-screenaudio")))
+
+(define-public python-translate-shell
+  (package
+    (inherit translate-shell)
+    (name "python-translate-shell")))
+
+(define-public neovim-gtk-git
+  (package
+    (inherit neovim)
+    (name "neovim-gtk-git")))
+
+(define-public noto-fonts-sc
+  (package
+    (inherit font-google-noto)
+    (name "noto-fonts-sc")))
+
+(define-public noto-fonts-tc
+  (package
+    (inherit font-google-noto)
+    (name "noto-fonts-tc")))
+
+(define-public heif
+  (package
+    (inherit libheif)
+    (name "heif")))
+
+(define-public terminus-font-ttf
+  (package
+    (inherit font-terminus)
+    (name "terminus-font-ttf")))
+
+(define-public lib32-aom
+  (package
+    (inherit libaom)
+    (name "lib32-aom")))
+
+(define-public diceware
+  (package
+    (inherit python-diceware)
+    (name "diceware")))
+
+(define-public zig-dev-bin
+  (package
+    (inherit zig)
+    (name "zig-dev-bin")))
+
+(define-public fclones-gui-bin
+  (package
+    (inherit fclones)
+    (name "fclones-gui-bin")))
+
+(define-public rakarrack-plus
+  (package
+    (inherit rakarrack)
+    (name "rakarrack-plus")))
+
+(define-public wine-stable
+  (package
+    (inherit wine)
+    (name "wine-stable")))
+
+(define-public rime-pinyin-moegirl
+  (package
+    (inherit rime-data)
+    (name "rime-pinyin-moegirl")))
+
+(define-public rich-cli
+  (package
+    (inherit python-rich)
+    (name "rich-cli")))
+
+(define-public trash
+  (package
+    (inherit trash-cli)
+    (name "trash")))
+
+(define-public spleen-font
+  (package
+    (inherit font-spleen)
+    (name "spleen-font")))
+
+(define-public gnome-online-accounts-gtk
+  (package
+    (inherit gnome-online-accounts)
+    (name "gnome-online-accounts-gtk")))
+
+(define-public yaru-gtk-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-gtk-theme")))
+
+(define-public yaru-icon-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-icon-theme")))
+
+(define-public lrzip-next
+  (package
+    (inherit lrzip)
+    (name "lrzip-next")))
+
+(define-public evil-helix-bin
+  (package
+    (inherit helix)
+    (name "evil-helix-bin")))
+
+(define-public cozette-ttf
+  (package
+    (inherit font-cozette)
+    (name "cozette-ttf")))
+
+(define-public scientifica-font
+  (package
+    (inherit font-scientifica)
+    (name "scientifica-font")))
+
+(define-public llvm-mingw-w64-toolchain-ucrt-bin
+  (package
+    (inherit llvm)
+    (name "llvm-mingw-w64-toolchain-ucrt-bin")))
+
+(define-public libudev0-shim
+  (package
+    (inherit eudev)
+    (name "libudev0-shim")))
+
+(define-public xfce-theme-manager
+  (package
+    (inherit xfce4-settings)
+    (name "xfce-theme-manager")))
+
+(define-public yambar
+  (package
+    (inherit yambar-wayland)
+    (name "yambar")))
