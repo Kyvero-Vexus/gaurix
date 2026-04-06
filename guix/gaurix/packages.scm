@@ -181,6 +181,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100b)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd8)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd8-blocked-notes)
 
   #:use-module (gaurix packages queue-20260405-daily2)
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)  #:export (
@@ -4161,19 +4163,33 @@ elephant-bin
             ratatouille-lv2
             ratatouille-standalone
             ratatouille-vst
+            ;; r22-w03-nrd8: 12 resolved NEEDS_RECIPE_DESIGN (4 Rust + 2 Node.js + 1 CMake + 1 Make + 2 copy + 1 Python + 1 split)
+            arch-remaster
+            bapctools-git
+            docx-you-want
+            libxnvctrl-580xx
+            noctalia-qs
+            noctalia-shell
+            nodejs-knit
+            nvidia-580xx-settings
+            op-cache-git
             rustmius-bin
             stardict-cz
             steamdepotdownloader-bin
             structuresynth
             sunsetr-bin
+            swhook
+            szsol-rs
             thiefmd
             tinty-git
             ttf-stix-variable
             ttf-suse
             ttf-tannenberg
             ttf-unifraktur
+            udiskr
             uhk-agent-appimage
             webcamize-pkg
+            webtorrent-bittorrent-tracker
             webtorrent-mpv-hook
             wlr-sunclock-git
             woff2-suse
