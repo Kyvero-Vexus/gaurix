@@ -208,6 +208,27 @@
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b)
   #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b-blocked-notes)
+  #:use-module (gaurix packages queue-20260406p100b)
+  #:use-module (gaurix packages queue-20260406p100b-blocked-notes)
+            ;; queue-20260406p100b: 18 recipes + 82 blocked
+            urlview
+            sexpect
+            ntfsfixboot
+            swaykbdd
+            ifupdown-ng
+            gcli
+            sdl2pp
+            nautilus-hide
+            dtrx
+            mediamtx-bin
+            oatmeal-bin
+            albafetch-bin
+            radicle-node-bin
+            moonbit-bin
+            ttf-cm-unicode
+            ttf-minecrafter
+            la-capitaine-icon-theme
+            catppuccin-sddm-theme-mocha
             ;; nrd16: 8 recipes + 7 compat aliases + 15 blocked
             vineflower-bin
             signal-cli
