@@ -1,0 +1,97 @@
+{
+  "chunk": "chunk5",
+  "branch": "cron/20260402t0530z-needs-recipe-design-chunk5",
+  "attempted": [
+    "sabiql-bin",
+    "synergy3-bin",
+    "c++utilities",
+    "xrizer-common",
+    "pilowlava-font-common",
+    "sqlite-utils",
+    "samsung-unified-driver-common",
+    "hadolint-bin",
+    "otf-unifont",
+    "rust-docs"
+  ],
+  "resolved": [
+    "sabiql-bin",
+    "synergy3-bin",
+    "c++utilities",
+    "xrizer-common",
+    "pilowlava-font-common",
+    "sqlite-utils",
+    "samsung-unified-driver-common",
+    "hadolint-bin",
+    "otf-unifont",
+    "rust-docs"
+  ],
+  "dependencies_packaged": [
+    "python-sqlite-fts4-without-tests"
+  ],
+  "blocked": [],
+  "validation": {
+    "sabiql-bin": {
+      "dry_run": "PASS (`guix build -L guix -e '(@ (gaurix packages recipe-design-20260402-chunk5) sabiql-bin)' -n`)",
+      "lint": "WARN (no updater + Software Heritage availability/rate-limit notes; host warning for missing `(semver)` when loading nuget importer)",
+      "full_build": "PASS (/gnu/store/yxhfzx0kgkdya5mbh0a0rlkjibqpb23d-sabiql-bin-1.9.1)"
+    },
+    "synergy3-bin": {
+      "dry_run": "PASS",
+      "lint": "WARN (inherits upstream synergy lint notices: input label mismatch, redirect, newer upstream version; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/3lhmfsdgwg7698fvzp0c8ic9lmgfb9v8-synergy3-bin-1.11.1)"
+    },
+    "c++utilities": {
+      "dry_run": "PASS",
+      "lint": "WARN (newer upstream version available + Software Heritage note; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/h7gzg6qrj79xz252c7p5ld54vgqvgwzm-c++utilities-5.27.3)"
+    },
+    "xrizer-common": {
+      "dry_run": "PASS",
+      "lint": "WARN (generic-html updater could not derive releases from AUR snapshot URL; source not archived on SWH/Disarchive in current check; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/iknavx590fi70782h28glirdlbh83974-xrizer-common-0.5)"
+    },
+    "pilowlava-font-common": {
+      "dry_run": "PASS",
+      "lint": "WARN (generic-html updater could not infer releases from CCC URL; source archiving note; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/adf9nrxdwgb53bw2j37yajh2ijl8vrlf-pilowlava-font-common-2)"
+    },
+    "sqlite-utils": {
+      "dry_run": "PASS",
+      "lint": "WARN (newer upstream version available; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/aqlp091x53dysqiqw2l618d8xx03ihcb-sqlite-utils-3.38; uses local dependency variant `python-sqlite-fts4-without-tests` to bypass broken legacy test command)",
+      "notes": [
+        "Approach 1 (direct alias to `python-sqlite-utils`) failed full build due upstream `python-sqlite-fts4` invoking deprecated `setup.py test`.",
+        "Approach 2 (local inherited `python-sqlite-fts4` with `#:tests? #f`) succeeded and was wired via `modify-inputs` replacement in `sqlite-utils`."
+      ]
+    },
+    "samsung-unified-driver-common": {
+      "dry_run": "PASS",
+      "lint": "WARN (updater cannot scrape Samsung directory listing; SWH/archival note; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/fh2kl71c2vgzn0i3a2rj47iqawbg61z2-samsung-unified-driver-common-1.00.39)"
+    },
+    "hadolint-bin": {
+      "dry_run": "PASS",
+      "lint": "WARN (no updater + Software Heritage note; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/rf9pfvnlnw7y6hp3ccchmsjq04xpcnh2-hadolint-bin-2.14.0)",
+      "notes": [
+        "Packaged from scratch as upstream static release binary."
+      ]
+    },
+    "otf-unifont": {
+      "dry_run": "PASS",
+      "lint": "WARN (generic-html updater could not infer release feed; SWH rate-limit/availability note; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/3cp59s894w887drby45b1h7bxgmnsk9r-otf-unifont-17.0.04)",
+      "notes": [
+        "Packaged from scratch from Unifoundry release tarball; installs OTF variants and license payload."
+      ]
+    },
+    "rust-docs": {
+      "dry_run": "PASS",
+      "lint": "WARN (generic-html updater unsupported on rust dist index endpoint + Software Heritage note; plus host `(semver)` warning)",
+      "full_build": "PASS (/gnu/store/s1marldwr4fghq3m1ykw1afhpi8q4vqb-rust-docs-1.94.1)",
+      "notes": [
+        "Packaged from scratch from Rust official docs tarball for x86_64-linux."
+      ]
+    }
+  }
+}
