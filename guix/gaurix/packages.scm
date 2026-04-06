@@ -177,6 +177,7 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd5-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd6-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd7-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100b)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-blocked100-blocked-notes)
