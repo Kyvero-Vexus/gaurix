@@ -4671,8 +4671,6 @@
             xrdp
             xremap-kde
             xremap-kde-bin
-<<<<<<< HEAD
-=======
             nextpnr-git
             ttf-iosevka-term
             queue-20260403p100daily2-blocked-notes
@@ -4700,7 +4698,6 @@
             repacman2
             launcherx-bin
             httm-bin
->>>>>>> a4a1570 (feat: integrate cron 5a2fb251 recipe pass)
             apidash-bin
             base64-converter
             buku_run-git
