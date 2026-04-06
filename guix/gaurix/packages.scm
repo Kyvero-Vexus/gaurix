@@ -228,6 +228,8 @@
   #:use-module (gaurix packages queue-20260406-blocked-tree-p100-blocked-notes)
   #:use-module (gaurix packages queue-20260406-nrd30g)
   #:use-module (gaurix packages queue-20260406-nrd30g-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30h)
+  #:use-module (gaurix packages queue-20260406-nrd30h-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -4766,15 +4768,34 @@ elephant-bin
             ;; nrd30h upstream re-exports
             adaptivecpp
             clp
+            ;; queue-20260406-nrd30h: 9 recipes + 1 compat alias + 20 re-blocked
+            blueberry-blocked-note-h
+            buck2-bin-blocked-note-h
+            catppuccin-cursors-latte
+            cherry-studio-bin-blocked-note-h
+            ddnet-blocked-note-h
+            dethrace-blocked-note-h
             ffmpeg-normalize
             fheroes2
+            firefox-beta-bin-blocked-note-h
+            gittop-bin
+            kairo-bin
             lib3ds
             libaudec
+            lowfi-blocked-note-h
             lsp-dsp-lib
             mergerfs
             modprobed-db
+            nnn-icons-reexport-note
             obs-composite-blur
+            otf-monocraft
+            par-fractal-bin
+            par-term-bin
+            perl-file-keepass-blocked-note-h
             pgvector
+            phos-blocked-note-h
+            pipes-rs-blocked-note-h
+            pm-utils-blocked-note-h
             python-diskcache
             python-matrix-nio
             python-mock
@@ -4782,18 +4803,28 @@ elephant-bin
             python-pyvista
             python-strenum
             python-whisper
+            reframe-blocked-note-h
             ripperx
+            rose-pine-cursor
+            sacad-blocked-note-h
+            serve-md-blocked-note-h
             snapper-support
+            spek-rs-bin
             sqlite-web
+            subliminal-blocked-note-h
             sunwait
+            supersonic-desktop-bin
             terminess-powerline-font
             tinct-bin
             tio
             ttf-font-awesome-4
             tvbrowser
+            twintaillauncher-bin-blocked-note-h
             vapoursynth-plugin-vszip
+            varia-blocked-note-h
             vgx-bin
             wbg
+            wezterm-nightly-bin-blocked-note-h
             woof-doom
             xcursor-borealis
             xfce4-appfinder-devel
@@ -4802,6 +4833,8 @@ elephant-bin
             xfce4-whiskermenu-plugin-git
             xournal-git
             xpra-git
+            zaread-git-blocked-note-h
+            zeitfetch-blocked-note-h
             zeptofetch-git
             zmate-bin
             zmusic

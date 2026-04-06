@@ -3078,3 +3078,10 @@
   (package
     (inherit zrepl-bin)
     (name "zrepl-git")))
+
+;; nrd30h compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+
+(define-public nnn-icons
+  (package
+    (inherit nnn)
+    (name "nnn-icons")))
