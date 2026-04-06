@@ -200,6 +200,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd13-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd14-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd15)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd15-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
@@ -4434,11 +4436,23 @@ elephant-bin
             devilutionx
             gauth
             llama-swap
+
+            ;; nrd15: 12 resolved (3 C/Make + 6 binary + 2 data/scripts + 1 compat)
+            alacritty-use-theme-with-redshift
+            clipboard-type-wl
+            cpx-copy-bin
+            cvbasic
+            gitarbor-bin
+            jsongrep-bin
+            mingw-w64-libmicrohttpd
             networkmanager-dmenu-git
+            ninvaders
+            nvimpager
             obs-3d-effect
             obs-source-dock
             obs-text-pthread
             openvpn-update-systemd-resolved
+            oxicord-bin
             pokemon-colorscripts-git
             properties-cpp
             python-mouseinfo
@@ -4450,6 +4464,9 @@ elephant-bin
             python-timesched
             python-vermin
             qstat
+            reflector-rs-bin
+            restman-bin
+            sudoku-simple
             zeptofetch-git
             zmate-bin
             zmusic
