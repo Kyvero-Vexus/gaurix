@@ -204,6 +204,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd15-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd16-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd17)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd17-blocked-notes)
   #:use-module (gaurix packages queue-20260406p100)
   #:use-module (gaurix packages queue-20260406p100-blocked-notes)
   #:use-module (gaurix packages queue-20260406-blocked-tree-r22w03b)
@@ -212,6 +214,10 @@
   #:use-module (gaurix packages queue-20260406p100b-blocked-notes)
   #:use-module (gaurix packages queue-20260406-nrd30)
   #:use-module (gaurix packages queue-20260406-nrd30-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30b)
+  #:use-module (gaurix packages queue-20260406-nrd30b-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-nrd30c)
+  #:use-module (gaurix packages queue-20260406-nrd30c-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -262,6 +268,104 @@
             gemini-cli-live-bin-blocked-note
             qt-web-extractor-blocked-note
             planarally-bin-blocked-note
+            ;; nrd17: 7 recipes + 4 compat aliases + 86 blocked (dep-tree pass)
+            llama.cpp-vulkan-gaurix
+            intel-graphics-compiler-legacy
+            subtitles-contact-sheet-qt-cli
+            python-deezer-py
+            themix-gui-git
+            myctl
+            ivpn-cli
+            asf-blocked-note
+            qt5-webkit-blocked-note
+            matlab-mpm-blocked-note
+            cosmic-randr-git-blocked-note
+            libajantv2-blocked-note
+            dotnet-targeting-pack-preview-bin-blocked-note
+            gtk-sharp-2-blocked-note
+            foobar2000-blocked-note
+            libelectron-blocked-note
+            lcevcdec-blocked-note
+            python-albucore-blocked-note
+            openbangla-keyboard-git-blocked-note
+            gradle8-blocked-note
+            intel-npu-driver-blocked-note
+            linux-lqx-blocked-note
+            vscodium-translucent-blocked-note
+            ros2-arch-deps-blocked-note
+            aspnet-runtime-preview-bin-blocked-note
+            openhab5-blocked-note
+            sac-core-blocked-note
+            sdrpp-headers-git-blocked-note
+            vapoursynth-plugin-vszip-blocked-note
+            e-imzo-blocked-note
+            electron22-bin-blocked-note
+            ggml-sycl-f16-git-blocked-note
+            itchio-dlagent-blocked-note
+            nvidia-390xx-utils-blocked-note
+            nvidia-470xx-utils-blocked-note
+            qt5-quick3d-blocked-note
+            samsung-unified-driver-printer-blocked-note
+            themix-import-images-git-blocked-note
+            yaycache-blocked-note
+            arduino-builder-blocked-note
+            dosh-cqfd-blocked-note
+            nvidia-580xx-utils-blocked-note
+            paru-git-blocked-note
+            samsung-unified-driver-scanner-blocked-note
+            themix-plugin-base16-git-blocked-note
+            tzpfms-blocked-note
+            vectorchord-blocked-note
+            zectl-blocked-note
+            cosmic-idle-git-blocked-note
+            cosmic-screenshot-git-blocked-note
+            eprosima-fast-dds-blocked-note
+            eww-blocked-note
+            git-credential-manager-blocked-note
+            kanidm-unixd-clients-blocked-note
+            lib32-libvmaf-blocked-note
+            opencl-amd-blocked-note
+            python-loro-blocked-note
+            sleuthkit-java-blocked-note
+            tvbrowser-blocked-note
+            aurutils-blocked-note
+            cosmic-app-library-git-blocked-note
+            cosmic-panel-git-blocked-note
+            kanidm-clients-blocked-note
+            kanidm-server-blocked-note
+            memoria-daemon-blocked-note
+            ps3-psl1ght-blocked-note
+            python-textualeffects-blocked-note
+            cosmic-workspaces-git-blocked-note
+            easytier-cli-blocked-note
+            easytier-core-blocked-note
+            easytier-web-blocked-note
+            fw-ectool-git-blocked-note
+            lib32-nvidia-utils-beta-blocked-note
+            libgksu-blocked-note
+            pgadmin4-web-blocked-note
+            qtforkawesome-qt6-blocked-note
+            setools-blocked-note
+            tagparser-blocked-note
+            cosmic-bg-git-blocked-note
+            cosmic-notifications-git-blocked-note
+            cryptomator-blocked-note
+            intel-graphics-compiler-legacy-status-note
+            kcontacts5-blocked-note
+            plasticscm-client-core-blocked-note
+            python-frida-blocked-note
+            stardust-xr-non-spatial-input-blocked-note
+            aylurs-gtk-shell-git-blocked-note
+            cosmic-files-git-blocked-note
+            lib32-bluez-libs-blocked-note
+            mips64-linux-gnu-gcc-bootstrap-blocked-note
+            python-eccodes-blocked-note
+            python-mpris-server-blocked-note
+            stardust-xr-server-blocked-note
+            upscayl-ncnn-blocked-note
+            cairo-dock-core-wayland-git-blocked-note
+            cosmic-launcher-git-blocked-note
+            openvino-blocked-note
             ;; r25-w03: 25 resolved (6 XLibre + 2 inherit + 11 Python + 6 C/shell/data)
             xlibre-input-void
             xlibre-video-vesa
@@ -4561,6 +4665,23 @@ elephant-bin
             wayland-push-to-talk-fix
             wmutils-core
             wshowkeys
+            ;; nrd30c compat aliases
+            ;; queue-20260406-nrd30c: 8 recipes + 8 compat aliases + 14 re-blocked
+            checkmake-bin
+            dvdisaster-speed47-git
+            gimp-plugin-resynthesizer-git
+            goldendict
+            googler
+            gotop-bin
+            lkrg-dkms-git
+            macchina-git
+            openssh-askpass
+            passwdqc-utils
+            powder-toy-bin
+            resticprofile-bin
+            rivalcfg-git
+            terminess-powerline-font
+            ttf-font-awesome-4
             xcursor-borealis
             zeptofetch-git
             zmate-bin

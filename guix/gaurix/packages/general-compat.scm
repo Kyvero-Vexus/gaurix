@@ -160,6 +160,9 @@
   #:use-module (gnu packages opencl)
   #:use-module (gnu packages image-processing)
 #:use-module (gnu packages cdrom)
+  #:use-module (gnu packages ssh)
+  #:use-module (gnu packages dictionaries)
+  #:use-module (gnu packages gimp)
   #:export (
             waybar-claude-usage
             waybar-codex-usage
@@ -642,6 +645,11 @@
             gcc10-libs
             boost-65-compat-libs
             lib32-lapack
+            ;; nrd17 compat aliases (2026-04-06 dep-tree BLOCKED pass)
+            gcc10
+            gcc13-libs
+            protobuf-21
+            libstdc++5
             ))
 
 (define-public gtk2
@@ -2676,3 +2684,60 @@
   (package
     (inherit font-tex-gyre)
     (name "otf-texgyre-pagella-math")))
+
+;; nrd30c compat aliases (2026-04-06 NEEDS_RECIPE_DESIGN pass)
+(define-public macchina-git
+  (package
+    (inherit macchina)
+    (name "macchina-git")))
+
+(define-public checkmake-bin
+  (package
+    (inherit checkmake)
+    (name "checkmake-bin")))
+
+(define-public openssh-askpass
+  (package
+    (inherit x11-ssh-askpass)
+    (name "openssh-askpass")))
+
+(define-public goldendict
+  (package
+    (inherit goldendict-ng)
+    (name "goldendict")))
+
+(define-public gimp-plugin-resynthesizer-git
+  (package
+    (inherit gimp-resynthesizer)
+    (name "gimp-plugin-resynthesizer-git")))
+
+(define-public powder-toy-bin
+  (package
+    (inherit the-powder-toy)
+    (name "powder-toy-bin")))
+
+(define-public lkrg-dkms-git
+  (package
+    (inherit lkrg)
+    (name "lkrg-dkms-git")))
+
+;; nrd17 compat aliases (2026-04-06 dep-tree BLOCKED pass)
+(define-public gcc10
+  (package
+    (inherit gcc-toolchain-10)
+    (name "gcc10")))
+
+(define-public gcc13-libs
+  (package
+    (inherit gcc-toolchain-13)
+    (name "gcc13-libs")))
+
+(define-public protobuf-21
+  (package
+    (inherit protobuf)
+    (name "protobuf-21")))
+
+(define-public libstdc++5
+  (package
+    (inherit gcc-toolchain)
+    (name "libstdc++5")))
