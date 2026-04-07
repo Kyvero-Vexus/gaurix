@@ -190,6 +190,7 @@
   #:use-module (gaurix packages deptree-resolver-260407)
   #:use-module (gaurix packages deptree-resolver-260407b)
   #:use-module (gaurix packages queue-20260407-deptree)
+  #:use-module (gaurix packages queue-20260407-opus-p100)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -3243,6 +3244,67 @@
             goland-jre
             rustrover-jre
             rustrover-eap-jre
+            ;; queue-20260407-opus-p100 recipes
+            fortune-mod-anarchism
+            usockets
+            uwebsockets
+            libclipboard
+            garbage
+            sshto
+            base16-vtrgb
+            teaftp
+            numptyphysics
+            unexicon-sound-theme
+            whatip
+            x11-keyboard-flags
+            xde-sounds
+            linux-a11y-sound-theme
+            flite-voices
+            parrot
+            dynamips
+            dex2jar
+            pico-sdk
+            gxml
+            snip-go
+            dowm
+            setcolors
+            swiv
+            xash3d-fwgs
+            principia
+            ch34xsercfg
+            opww
+            obsidianwall
+            vot-cli
+            revc
+            librw
+            plugind
+            observatory
+            obsidianctl
+            git-nautilus-icons
+            appeditor
+            libmongocrypt
+            ktechlab
+            gphotos-uploader-cli
+            youtube-local
+            wfuzz
+            x32edit
+            turtl
+            monetdb
+            nrf-udev
+            jddesktopentryedit
+            pyinstaller
+            proton-shim
+            vopono
+            amp-editor
+            notepadqq
+            python-genanki
+            jackett
+            torrserver
+            nitter
+            gedit-open-uri-context-menu
+            gedit-source-code-browser
+            nginx-mod-fancyindex
+            harmony2
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
