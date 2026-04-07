@@ -253,6 +253,10 @@
   #:use-module (gaurix packages queue-20260406-recipe-resolver-p2-blocked-notes)
   #:use-module (gaurix packages queue-20260406-recipe-resolver-p3)
   #:use-module (gaurix packages queue-20260406-recipe-resolver-p3-blocked-notes)
+  #:use-module (gaurix packages deptree-r21-w01)
+  #:use-module (gaurix packages queue-20260407-deptree-resolver)
+  #:use-module (gaurix packages queue-20260407-deptree-resolver-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260406)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7546,4 +7550,39 @@ podman-tui-bin
             weylus-bin
             workz-bin
             xavs2
+            protonhax
+            overdue
+            git-recursive
+            helixbinhx
+            freeze-bin
+            amdfand-bin
+            noto-fonts-emoji-blob
+            clash-geoip
+            togo-bin
+            jsongrep-bin
+            dosh
+            python-markovify
+            sqlite-utils
+            nsz
+            ddccontrol-db
+            ezstream
+            xdg-su
+            genders
+            libva-vdpau-driver
+            adwaita-qt5
+            adwaita-qt6
+            gslapper
+            opentyrian2000
+            opentyrian2000-data
+            chiaki
+            rapidraw-bin
+            gitarbor-bin
+            restman-bin
+            lianwall-bin
+            iventoy-bin
+            vr-lighthouse-bin
+            ferrishot-bin
+            blogr-bin
+            boscaceoil-blue-bin
+            triangle-bin
 ))

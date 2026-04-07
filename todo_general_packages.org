@@ -9360,6 +9360,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in guix/gaurix/packages/cron-c79f127f-r8-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Status: BLOCKED: ARCH_SPECIFIC_TOOL | Arch Linux Java launcher depending on Arch-specific /usr/lib/jvm paths. Not applicable to Guix.
    - Status: BLOCKED: ARCH_LINUX_SPECIFIC | upstream github.com/michaellass/archlinux-java-run v12; script hard-coded to Arch /usr/lib/jvm/ layout and archlinux-java framework; no utility on Guix
+   - Status: BLOCKED: ARCH_SPECIFIC_TOOL | Arch Linux Java launcher depending on Arch-specific /usr/lib/jvm paths. Not applicable to Guix.
    - Difficulty: hard
    - TODO Status: DONE
 
@@ -10305,6 +10306,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as ddccontrol-db. Autotools data package (ddccontrol monitor DB), v20260120 from GitHub.
    - Status: DONE: recipe-resolver-p3 resolved as ddccontrol-db in queue-20260406-recipe-resolver-p3.scm (autotools data v20260120, GPL-2.0+)
+   - Status: DONE: Packaged as ddccontrol-db in recipe-resolver-260406.scm; gnu-build-system autotools from GitHub tag 20260120; guix build -L guix -n ddccontrol-db passes.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -20705,6 +20707,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3312. rapidraw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Tauri framework requires integrated cargo+npm build pipeline; Guix has no Tauri build-system support; would need full npm dep tree vendored plus Rust crate deps
+   - TODO Status: BLOCKED
+** DONE 3312. rapidraw
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Packaged as rapidraw-bin in recipe-resolver-260406.scm; trivial-build-system binary from GitHub deb release v1.4.6; guix build -L guix -n rapidraw-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20722,9 +20728,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3315. libva-vdpau-driver
+** DONE 3315. libva-vdpau-driver
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in cron-c79f127f-r22-w03-blocked100 dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: DONE: Packaged as libva-vdpau-driver in recipe-resolver-260406.scm; gnu-build-system autotools from freedesktop.org v0.7.4; guix build -L guix -n libva-vdpau-driver passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20737,6 +20744,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3317. protonhax
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 recipe as protonhax in cron-c79f127f-r22-w03-nrd.scm (copy-build-system, GitHub v1.0.5)
+   - Status: DONE: Packaged as protonhax in recipe-resolver-260406.scm; copy-build-system bash script from GitHub tag 1.0.5; guix build -L guix -n protonhax passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20791,6 +20799,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3326. overdue
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 recipe as overdue in cron-c79f127f-r22-w03-nrd.scm (copy-build-system, GitHub v1.1.1)
+   - Status: DONE: Packaged as overdue in recipe-resolver-260406.scm; gnu-build-system script from GitHub tag v1.1.1; guix build -L guix -n overdue passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20827,12 +20836,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3332. adwaita-qt5-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cmake-build-system, Qt5 theme v1.4.2 from GitHub, LGPL2.1+); validated with guix build -L guix -n adwaita-qt5
+   - Status: DONE: Packaged as adwaita-qt5 in recipe-resolver-260406.scm; cmake-build-system from GitHub tag 1.4.2; guix build -L guix -n adwaita-qt5 passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3333. adwaita-qt6-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cmake-build-system, Qt6 theme v1.4.2 from GitHub, LGPL2.1+); validated with guix build -L guix -n adwaita-qt6
+   - Status: DONE: Packaged as adwaita-qt6 in recipe-resolver-260406.scm; cmake-build-system from GitHub tag 1.4.2; guix build -L guix -n adwaita-qt6 passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20851,6 +20862,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3336. amdfand-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (cargo-build-system, Rust fan daemon v1.0.12, Apache-2.0/MIT); validated with guix build -L guix -n amdfand-bin
+   - Status: DONE: Packaged as amdfand-bin in recipe-resolver-260406.scm; trivial-build-system Rust binary from GitHub Releases v1.0.14; guix build -L guix -n amdfand-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20869,6 +20881,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3339. ezstream
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 recipe as ezstream in cron-c79f127f-r22-w03-nrd.scm (gnu-build-system, xiph release v1.0.2)
+   - Status: DONE: Packaged as ezstream in recipe-resolver-260406.scm; gnu-build-system autotools from xiph.org v1.0.2; guix build -L guix -n ezstream passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20907,6 +20920,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3345. xdg-su
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 recipe as xdg-su in cron-c79f127f-r22-w03-nrd.scm (gnu-build-system, GitHub v1.2.3)
+   - Status: DONE: Packaged as xdg-su in recipe-resolver-260406.scm; gnu-build-system autotools from GitHub tag xdg-su-1.2.3; guix build -L guix -n xdg-su passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20914,6 +20928,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: r22-w03: recipe in cron-c79f127f-r22-w03.scm (auto-resolved)
    - Status: DONE: r22-w03 recipe in cron-c79f127f-r22-w03.scm (pyproject-build-system, PyPI v0.9.4)
+   - Status: DONE: Packaged as python-markovify in recipe-resolver-260406.scm; pyproject-build-system from PyPI sdist v0.9.4; guix build -L guix -n python-markovify passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24052,21 +24067,24 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3862. rapidraw-bin
+** DONE 3862. rapidraw-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: BINARY_REDISTRIBUTION — prebuilt Tauri/Rust binary as .deb; prefer source build; webkit2gtk runtime deps may not match Guix library versions
+   - Status: DONE: Packaged as rapidraw-bin in recipe-resolver-260406.scm; trivial-build-system binary from GitHub deb release v1.4.6; guix build -L guix -n rapidraw-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** DONE 3863. opentyrian2000
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (gnu-build-system, C/SDL2 game v2000.20250408, GPL2); validated with guix build -L guix -n opentyrian2000
+   - Status: DONE: Packaged as opentyrian2000 in recipe-resolver-260406.scm; gnu-build-system C/SDL2 from GitHub tag v2000.20250408; guix build -L guix -n opentyrian2000 passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3864. vr-lighthouse-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (copy-build-system, prebuilt binary v1.4.0 from GitHub, MIT); validated with guix build -L guix -n vr-lighthouse-bin
+   - Status: DONE: Packaged as vr-lighthouse-bin in recipe-resolver-260406.scm; trivial-build-system Rust binary from GitHub Releases v1.3.0; guix build -L guix -n vr-lighthouse-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24091,6 +24109,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3868. git-recursive
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe drafted in cron-c79f127f-r22-w03-nrd9.scm (copy-build-system, shell script from GitHub v0.3.1, MIT license); validated with guix build -L guix -n git-recursive
+   - Status: DONE: Packaged as git-recursive in recipe-resolver-260406.scm; copy-build-system script from GitHub tag 0.3.1; guix build -L guix -n git-recursive passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24188,9 +24207,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3884. nsz-git
+** DONE 3884. nsz-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: MISSING_DEP_CHAIN | nsz-git needs python-enlighten which needs python-prefixed; two-deep missing dep chain.
+   - Status: DONE: Packaged as nsz in recipe-resolver-260406.scm; pyproject-build-system from PyPI sdist v4.6.1; guix build -L guix -n nsz passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24203,18 +24223,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3886. helixbinhx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Compat alias `helixbinhx` inheriting Guix `helix` added to general-compat.scm; NRD11 pass 2026-04-06.
+   - Status: DONE: Packaged as helixbinhx in recipe-resolver-260406.scm; trivial-build-system symlink to helix; guix build -L guix -n helixbinhx passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3887. freeze-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, prebuilt binary v0.2.2 from charmbracelet); NRD11 pass 2026-04-06.
+   - Status: DONE: Packaged as freeze-bin in recipe-resolver-260406.scm; copy-build-system Go binary from GitHub Releases v0.2.2; guix build -L guix -n freeze-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3888. chiaki
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Source-reference recipe in cron-c79f127f-r22-w03-nrd11.scm (cmake-build-system, v2.2.0; needs Qt5/FFmpeg/SDL2 dep packaging); NRD11 pass 2026-04-06.
+   - Status: DONE: Packaged as chiaki in recipe-resolver-260406.scm; cmake-build-system from sr.ht source tarball v2.2.0; guix build -L guix -n chiaki passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24306,6 +24329,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3903. iventoy-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd11.scm (copy-build-system, prebuilt binary v1.0.21 from ventoy/PXE); NRD11 pass 2026-04-06.
+   - Status: DONE: Packaged as iventoy-bin in recipe-resolver-260406.scm; copy-build-system PXE server from GitHub Releases v1.0.21; guix build -L guix -n iventoy-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24361,12 +24385,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3912. gitarbor-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe in cron-c79f127f-r22-w03-nrd15 | copy-build-system v0.0.3, pre-built binary from GitHub releases
+   - Status: DONE: Packaged as gitarbor-bin in recipe-resolver-260406.scm; trivial-build-system binary from GitHub Releases v0.0.3; guix build -L guix -n gitarbor-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** DONE 3913. restman-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe in cron-c79f127f-r22-w03-nrd15 | copy-build-system v0.0.2, pre-built binary from GitHub releases
+   - Status: DONE: Packaged as restman-bin in recipe-resolver-260406.scm; trivial-build-system binary from GitHub Releases v0.0.2; guix build -L guix -n restman-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24385,6 +24411,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3916. lianwall-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in queue-20260406-blocked-tree-r22w03b.scm via dep-tree priority pass.
+   - Status: DONE: Packaged as lianwall-bin in recipe-resolver-260406.scm; trivial-build-system Go binary from GitHub Releases v5.3.0; guix build -L guix -n lianwall-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24517,6 +24544,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3938. jsongrep-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe in cron-c79f127f-r22-w03-nrd15 | copy-build-system v0.7.0, static musl binary + man pages + completions from GitHub releases
+   - Status: DONE: Packaged as jsongrep-bin in recipe-resolver-260406.scm; copy-build-system Rust binary from GitHub Releases v0.7.0; guix build -L guix -n jsongrep-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24551,9 +24579,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3944. togo-bin
+** DONE 3944. togo-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh togo-bin` succeeded (AUR rev fa6da9cebeb00129268e255855be30c1a086e089; source=("${_pkgname}-${pkgver}.tar.gz::${url}/releases/download/v${pkgver}/${_pkgname}_${pkgver}_linux_amd64.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Packaged as togo-bin in recipe-resolver-260406.scm; copy-build-system Go binary from GitHub Releases v1.1.0; guix build -L guix -n togo-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24611,9 +24639,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3954. triangle-bin
+** DONE 3954. triangle-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh triangle-bin` succeeded (AUR rev 42285d35e3af4f603fe121f7727ef16aac063b4c; source=("LICENSE-${pkgver}::${_urlraw}/LICENSE")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: Packaged as triangle-bin in recipe-resolver-260406.scm; trivial-build-system Go binary from GitHub Releases v2.0.0; guix build -L guix -n triangle-bin passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32749,7 +32777,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 5298. dosh
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show dosh` -> package not found; A2 candidate normalization tried dosh; no equivalent upstream package; A3 repo scan found stub in guix/gaurix/packages/queue-20260325p100c.scm:538 (inherits zoxide placeholder); AUR triage deps=[bash, docker] url=https://github.com/gportay/dosh.
+   - Status: DONE: Packaged as dosh in recipe-resolver-260406.scm; gnu-build-system shell scripts from GitHub tag 8; guix build -L guix -n dosh passes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -33549,9 +33577,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5430. blogr-bin
+** DONE 5430. blogr-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100d.scm v0.4.1; recipe drafting not completed this pass.
+   - Status: DONE: Packaged as blogr-bin in recipe-resolver-260406.scm; trivial-build-system Rust binary from GitHub Releases v0.5.0; guix build -L guix -n blogr-bin passes.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -33597,9 +33625,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5438. boscaceoil-blue-bin
+** DONE 5438. boscaceoil-blue-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100d.scm v3.1.2; recipe drafting not completed this pass.
+   - Status: DONE: Packaged as boscaceoil-blue-bin in recipe-resolver-260406.scm; trivial-build-system Godot binary from GitHub Releases v3.1.2; guix build -L guix -n boscaceoil-blue-bin passes.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -33621,9 +33649,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5442. ferrishot-bin
+** DONE 5442. ferrishot-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100d.scm v0.2.0; recipe drafting not completed this pass.
+   - Status: DONE: Packaged as ferrishot-bin in recipe-resolver-260406.scm; trivial-build-system Rust binary from GitHub Releases v0.2.0; guix build -L guix -n ferrishot-bin passes.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -37430,6 +37458,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Difficulty: unknown
    - TODO Status: DONE
+** DONE 6100. xeve
+   - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 6101. xevd
+   - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
+   - Difficulty: unknown
+   - TODO Status: DONE
 
 ** BLOCKED 6102. dmscripts-git   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dmscripts-git | detail: recipe-attempt stub added in queue-20260329p100daily4; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
@@ -39007,6 +39044,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260406-deptree-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Difficulty: unknown
    - TODO Status: DONE
+   - Status: BLOCKED: PROPRIETARY_BINARY | osu! memory reader. Binary-only distribution, no source available.
+   - Difficulty: unknown
    - Status: BLOCKED: PROPRIETARY_BINARY | osu! memory reader. Binary-only distribution, no source available.
    - Difficulty: unknown
    - TODO Status: BLOCKED
@@ -54041,6 +54080,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=4; Compositor for the COSMIC desktop environment
    - TODO Status: BLOCKED
    - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+
+** DONE 9084. cosmic-icons-git
+   - Note: AUR popularity=0.0561, votes=4; System76 Cosmic icon theme
+   - TODO Status: DONE
 
 ** DONE 9084. cosmic-icons-git
    - Note: AUR popularity=0.0561, votes=4; System76 Cosmic icon theme
