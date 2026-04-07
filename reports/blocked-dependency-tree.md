@@ -18,6 +18,8 @@
 **Timestamp:** 2026-04-07T08:07:59.754355+00:00
 **Run:** deptree-resolver-260407
 **Total BLOCKED:** 6640
+**Timestamp:** 2026-04-07T10:12:06.996510+00:00
+**Total BLOCKED:** 6548
 
 ## Priority Queue (top 120)
 
@@ -634,3 +636,123 @@
 98. woff-misans-tc (blocked_deps=0, rev_deps=1, total=2)
 99. woff-misans-thai (blocked_deps=0, rev_deps=1, total=2)
 100. woff-misans-tibetan (blocked_deps=0, rev_deps=1, total=2)
+| 1 | npm-corepack | 0 | 196 | 1 |
+| 2 | 7zip-natspec | 0 | 89 | 5 |
+| 3 | pnpm-corepack | 0 | 62 | 1 |
+| 4 | yarn-corepack | 0 | 50 | 1 |
+| 5 | libinput-epp | 0 | 33 | 13 |
+| 6 | aeroshell-libplasma-git | 0 | 25 | 28 |
+| 7 | openssl-1.1 | 0 | 23 | 2 |
+| 8 | httpdirfs | 0 | 18 | 10 |
+| 9 | noto-fonts-emoji-blob | 0 | 13 | 0 |
+| 10 | flite1 | 0 | 13 | 3 |
+| 11 | fftw-amd | 0 | 13 | 4 |
+| 12 | llvm-libs-git | 0 | 13 | 32 |
+| 13 | html2markdown | 0 | 12 | 3 |
+| 14 | fortune-mod-off | 0 | 11 | 4 |
+| 15 | emacs-deco | 0 | 10 | 38 |
+| 16 | libsodium-1.0.18 | 0 | 9 | 3 |
+| 17 | xapp-thumbnailers-common | 0 | 9 | 5 |
+| 18 | doas | 0 | 8 | 2 |
+| 19 | cosmic-icons-git | 0 | 8 | 3 |
+| 20 | linux-firmware-whence-git | 0 | 8 | 4 |
+1. npm-corepack (blocked_deps=0, rev_deps=196, total=1)
+2. 7zip-natspec (blocked_deps=0, rev_deps=89, total=5)
+3. pnpm-corepack (blocked_deps=0, rev_deps=62, total=1)
+4. yarn-corepack (blocked_deps=0, rev_deps=50, total=1)
+5. libinput-epp (blocked_deps=0, rev_deps=33, total=13)
+6. aeroshell-libplasma-git (blocked_deps=0, rev_deps=25, total=28)
+7. openssl-1.1 (blocked_deps=0, rev_deps=23, total=2)
+8. httpdirfs (blocked_deps=0, rev_deps=18, total=10)
+9. noto-fonts-emoji-blob (blocked_deps=0, rev_deps=13, total=0)
+10. flite1 (blocked_deps=0, rev_deps=13, total=3)
+11. fftw-amd (blocked_deps=0, rev_deps=13, total=4)
+12. llvm-libs-git (blocked_deps=0, rev_deps=13, total=32)
+13. html2markdown (blocked_deps=0, rev_deps=12, total=3)
+14. fortune-mod-off (blocked_deps=0, rev_deps=11, total=4)
+15. emacs-deco (blocked_deps=0, rev_deps=10, total=38)
+16. libsodium-1.0.18 (blocked_deps=0, rev_deps=9, total=3)
+17. xapp-thumbnailers-common (blocked_deps=0, rev_deps=9, total=5)
+18. doas (blocked_deps=0, rev_deps=8, total=2)
+19. cosmic-icons-git (blocked_deps=0, rev_deps=8, total=3)
+20. linux-firmware-whence-git (blocked_deps=0, rev_deps=8, total=4)
+21. qt5-doc (blocked_deps=0, rev_deps=8, total=15)
+22. jdk-temurin (blocked_deps=0, rev_deps=7, total=9)
+23. archlinux-java-run (blocked_deps=0, rev_deps=6, total=2)
+24. auto-auto-complete (blocked_deps=0, rev_deps=6, total=2)
+25. gnome-icon-theme-symbolic (blocked_deps=0, rev_deps=6, total=5)
+26. ntfsprogs-plus (blocked_deps=0, rev_deps=6, total=6)
+27. advantagescope (blocked_deps=0, rev_deps=6, total=26)
+28. android-udev-git (blocked_deps=0, rev_deps=5, total=3)
+29. xlibre-xserver-common-git (blocked_deps=0, rev_deps=5, total=33)
+30. aspnet-runtime-bin (blocked_deps=0, rev_deps=4, total=1)
+31. aspnet-targeting-pack-bin (blocked_deps=0, rev_deps=4, total=1)
+32. python-art (blocked_deps=0, rev_deps=4, total=5)
+33. python-inquirerpy (blocked_deps=0, rev_deps=4, total=7)
+34. python-munge (blocked_deps=0, rev_deps=4, total=8)
+35. jdk21-temurin (blocked_deps=0, rev_deps=4, total=9)
+36. sqlite-utils (blocked_deps=0, rev_deps=4, total=9)
+37. xrizer-common (blocked_deps=0, rev_deps=4, total=9)
+38. xorg-xinit-git (blocked_deps=0, rev_deps=4, total=10)
+39. discord-electron-openasar (blocked_deps=0, rev_deps=4, total=11)
+40. google-chrome (blocked_deps=0, rev_deps=4, total=12)
+41. flaresolverr (blocked_deps=0, rev_deps=4, total=13)
+42. chexquest3-wad (blocked_deps=0, rev_deps=3, total=0)
+43. square1-wad (blocked_deps=0, rev_deps=3, total=0)
+44. ttf-meslo-nerd-font-powerlevel10k (blocked_deps=0, rev_deps=3, total=0)
+45. babashka-bin (blocked_deps=0, rev_deps=3, total=2)
+46. bitwarden-cli-bin (blocked_deps=0, rev_deps=3, total=2)
+47. davs2 (blocked_deps=0, rev_deps=3, total=2)
+48. python-plyer (blocked_deps=0, rev_deps=3, total=2)
+49. dotool (blocked_deps=0, rev_deps=3, total=3)
+50. mint-x-icons (blocked_deps=0, rev_deps=3, total=3)
+51. brscan-skey (blocked_deps=0, rev_deps=3, total=4)
+52. python-condense-json (blocked_deps=0, rev_deps=3, total=4)
+53. cosmic-randr-git (blocked_deps=0, rev_deps=3, total=5)
+54. freedm (blocked_deps=0, rev_deps=3, total=5)
+55. python-m3u8 (blocked_deps=0, rev_deps=3, total=5)
+56. qt5-connectivity (blocked_deps=0, rev_deps=3, total=5)
+57. libastal-io-git (blocked_deps=0, rev_deps=3, total=6)
+58. mdcat (blocked_deps=0, rev_deps=3, total=6)
+59. zmusic (blocked_deps=0, rev_deps=3, total=6)
+60. lib32-libbluray (blocked_deps=0, rev_deps=3, total=7)
+61. libunity (blocked_deps=0, rev_deps=3, total=7)
+62. nvidia-535xx-utils (blocked_deps=0, rev_deps=3, total=7)
+63. python-sse-starlette (blocked_deps=0, rev_deps=3, total=8)
+64. python-uv-dynamic-versioning (blocked_deps=0, rev_deps=3, total=8)
+65. xboxdrv (blocked_deps=0, rev_deps=3, total=9)
+66. python312 (blocked_deps=0, rev_deps=3, total=16)
+67. llvm-libs-minimal-git (blocked_deps=0, rev_deps=3, total=19)
+68. ttf-google-fonts-git (blocked_deps=0, rev_deps=3, total=24)
+69. logmein-hamachi (blocked_deps=0, rev_deps=2, total=0)
+70. nordvpn-bin (blocked_deps=0, rev_deps=2, total=0)
+71. v2ray-domain-list-custom (blocked_deps=0, rev_deps=2, total=0)
+72. v2ray-geoip-custom (blocked_deps=0, rev_deps=2, total=0)
+73. libklvanc (blocked_deps=0, rev_deps=2, total=1)
+74. mips64-linux-gnu-linux-api-headers (blocked_deps=0, rev_deps=2, total=1)
+75. opencode-bin (blocked_deps=0, rev_deps=2, total=1)
+76. apriltag (blocked_deps=0, rev_deps=2, total=2)
+77. openapv (blocked_deps=0, rev_deps=2, total=2)
+78. qt5-scxml (blocked_deps=0, rev_deps=2, total=2)
+79. system76-acpi-dkms (blocked_deps=0, rev_deps=2, total=2)
+80. xevd (blocked_deps=0, rev_deps=2, total=2)
+81. xeve (blocked_deps=0, rev_deps=2, total=2)
+82. xone-dongle-firmware (blocked_deps=0, rev_deps=2, total=2)
+83. csvtable (blocked_deps=0, rev_deps=2, total=3)
+84. dynamips (blocked_deps=0, rev_deps=2, total=3)
+85. libaribcaption (blocked_deps=0, rev_deps=2, total=3)
+86. python-steamgriddb (blocked_deps=0, rev_deps=2, total=3)
+87. quirc (blocked_deps=0, rev_deps=2, total=3)
+88. uavs3d-git (blocked_deps=0, rev_deps=2, total=3)
+89. vpcs (blocked_deps=0, rev_deps=2, total=3)
+90. vvenc (blocked_deps=0, rev_deps=2, total=3)
+91. arduino-avr-core (blocked_deps=0, rev_deps=2, total=4)
+92. gtk-sharp-2 (blocked_deps=0, rev_deps=2, total=4)
+93. kdotool (blocked_deps=0, rev_deps=2, total=4)
+94. libuvc (blocked_deps=0, rev_deps=2, total=4)
+95. reshade-shaders-git (blocked_deps=0, rev_deps=2, total=4)
+96. xavs2 (blocked_deps=0, rev_deps=2, total=4)
+97. python-pid (blocked_deps=0, rev_deps=2, total=5)
+98. python-wassima (blocked_deps=0, rev_deps=2, total=5)
+99. ani-skip-git (blocked_deps=0, rev_deps=2, total=6)
+100. libastal-bluetooth-git (blocked_deps=0, rev_deps=2, total=6)

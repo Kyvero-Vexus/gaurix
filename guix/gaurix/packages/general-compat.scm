@@ -185,6 +185,7 @@
   #:use-module (gnu packages python-science)
   #:use-module (gnu packages selinux)
   #:use-module (nongnu packages mozilla)
+  #:use-module (gaurix packages deptree-resolver-260407)
   #:export (
             dyalog-bin
             ;; nrd18 compat aliases
@@ -767,6 +768,29 @@
             libheif-noglycin
             libjxl-noglycin
             libjxl-noglycin-doc
+            npm-corepack
+            pnpm-corepack
+            yarn-corepack
+            bitwarden-cli-bin
+            nordvpn-bin
+            vvenc
+            vpcs
+            dynamips
+            libaribcaption
+            ntfsprogs-plus
+            fortune-mod-off
+            python-pid
+            python-steamgriddb
+            ttf-meslo-nerd-font-powerlevel10k
+            v2ray-domain-list-custom
+            reshade-shaders-git
+            android-udev-git
+            linux-firmware-whence-git
+            cosmic-icons-git
+            mips64-linux-gnu-linux-api-headers
+            dotool
+            ani-skip-git
+            libastal-bluetooth-git
             ))
 
 (define-public gtk2
