@@ -266,6 +266,12 @@
   #:use-module (gaurix packages recipe-resolver-260407c)
   #:use-module (gaurix packages deptree-resolver-260407)
   #:use-module (gaurix packages deptree-resolver-260407-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260407)
+  #:use-module (gaurix packages deptree-resolver-260407-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260407b)
+  #:use-module (gaurix packages recipe-resolver-260407c)
+  #:use-module (gaurix packages deptree-resolver-260407b)
+  #:use-module (gaurix packages deptree-resolver-260407b-blocked-notes)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7757,6 +7763,30 @@ podman-tui-bin
               deb2targz
               libjodycode
 
+            ttf-meslo-nerd-font-powerlevel10k
+            v2ray-domain-list-custom
+            reshade-shaders-git
+            android-udev-git
+            linux-firmware-whence-git
+            cosmic-icons-git
+            mips64-linux-gnu-linux-api-headers
+            bitwarden-cli-bin
+            nordvpn-bin
+            vvenc
+            vpcs
+            dynamips
+            libaribcaption
+            ntfsprogs-plus
+            fortune-mod-off
+            dotool
+            python-pid
+            python-steamgriddb
+            ani-skip-git
+            libsodium-1.0.18
+            npm-corepack
+            pnpm-corepack
+            yarn-corepack
+            libastal-bluetooth-git
             ;; recipe-resolver-260407b
             archivebox
             bapctools-git

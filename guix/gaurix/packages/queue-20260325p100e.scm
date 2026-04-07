@@ -705,11 +705,13 @@ enabled.")))
   ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
   ;; Next: fetch bzmenu v0.4.0 Linux binary, compute sha256, draft binary wrapper.
   (package (inherit zoxide) (name "bzmenu-bin")))
+(define-public podserv-b-git
   ;; AUR podserv-b-git: Minimalist podcast server (type b); v0.1.2.r0.g536e372-1; 1 vote.
   ;; Source: https://github.com/l5yth/podserv-b
   ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; serves media files over HTTP.
   ;; Next: pin git commit, compute sha256, draft cargo recipe.
   (package (inherit zoxide) (name "podserv-b-git")))
+(define-public qpdf-zopfli
   ;; AUR qpdf-zopfli: QPDF PDF transformation system with Zopfli compression; v12.3.2-2; 1 vote.
   ;; Source: https://github.com/qpdf/qpdf
   ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe with zopfli flag; deps: cmake, zlib, zopfli.
@@ -907,6 +909,11 @@ SHENZHEN I/O.")
      "arch-remaster provides shell tools to remaster Arch Linux live systems
 and to update live USB copy-on-write boot parameters.")
     (license license:gpl3+)))
+  ;; AUR arch-remaster: Tools for remastering Arch Linux live systems; v26.02.1-1; 1 vote.
+  ;; Source: https://github.com/AdrianTM/arch-remaster
+  ;; NEEDS_RECIPE_DESIGN: shell script recipe; deps: squashfs-tools, xorriso, grub.
+  ;; Next: fetch arch-remaster 26.02.1 source, compute sha256, draft trivial script install.
+  (package (inherit zoxide) (name "arch-remaster")))
 
 (define-public comp-scan-bin
   ;; AUR comp-scan-bin: Local AI agent system scanner (binary); v0.1.0-1; 1 vote.

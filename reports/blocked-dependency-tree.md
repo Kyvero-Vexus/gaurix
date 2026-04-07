@@ -20,6 +20,9 @@
 **Total BLOCKED:** 6640
 **Timestamp:** 2026-04-07T10:12:06.996510+00:00
 **Total BLOCKED:** 6548
+**Timestamp:** 2026-04-07T12:57:42.143607+00:00
+**Run:** deptree-resolver-260407b
+**Total BLOCKED:** 6462
 
 ## Priority Queue (top 120)
 
@@ -756,3 +759,123 @@
 98. python-wassima (blocked_deps=0, rev_deps=2, total=5)
 99. ani-skip-git (blocked_deps=0, rev_deps=2, total=6)
 100. libastal-bluetooth-git (blocked_deps=0, rev_deps=2, total=6)
+| 1 | yay | 0 | 22 | 5 |
+| 2 | paru | 0 | 17 | 6 |
+| 3 | waydroid | 0 | 6 | 0 |
+| 4 | python-opencensus | 0 | 6 | 4 |
+| 5 | python-mcp | 0 | 6 | 34 |
+| 6 | gnome-icon-theme | 0 | 5 | 5 |
+| 7 | qt5-webkit | 0 | 5 | 33 |
+| 8 | tailscale | 0 | 3 | 0 |
+| 9 | cosmic-randr-git | 0 | 3 | 5 |
+| 10 | mdcat | 0 | 3 | 6 |
+| 11 | python-sqlite-migrate | 0 | 3 | 8 |
+| 12 | mozc-ut-full-common | 0 | 3 | 13 |
+| 13 | libappindicator-gtk2 | 0 | 3 | 14 |
+| 14 | hyprtoolkit-git | 0 | 3 | 15 |
+| 15 | wayfire | 0 | 3 | 15 |
+| 16 | libastal-meta | 0 | 3 | 17 |
+| 17 | aspnet-targeting-pack-bin | 0 | 2 | 1 |
+| 18 | system76-acpi-dkms | 0 | 2 | 2 |
+| 19 | mint-y-icons | 0 | 2 | 3 |
+| 20 | otf-uncut-sans | 0 | 2 | 3 |
+1. yay (blocked_deps=0, rev_deps=22, total=5)
+2. paru (blocked_deps=0, rev_deps=17, total=6)
+3. waydroid (blocked_deps=0, rev_deps=6, total=0)
+4. python-opencensus (blocked_deps=0, rev_deps=6, total=4)
+5. python-mcp (blocked_deps=0, rev_deps=6, total=34)
+6. gnome-icon-theme (blocked_deps=0, rev_deps=5, total=5)
+7. qt5-webkit (blocked_deps=0, rev_deps=5, total=33)
+8. tailscale (blocked_deps=0, rev_deps=3, total=0)
+9. cosmic-randr-git (blocked_deps=0, rev_deps=3, total=5)
+10. mdcat (blocked_deps=0, rev_deps=3, total=6)
+11. python-sqlite-migrate (blocked_deps=0, rev_deps=3, total=8)
+12. mozc-ut-full-common (blocked_deps=0, rev_deps=3, total=13)
+13. libappindicator-gtk2 (blocked_deps=0, rev_deps=3, total=14)
+14. hyprtoolkit-git (blocked_deps=0, rev_deps=3, total=15)
+15. wayfire (blocked_deps=0, rev_deps=3, total=15)
+16. libastal-meta (blocked_deps=0, rev_deps=3, total=17)
+17. aspnet-targeting-pack-bin (blocked_deps=0, rev_deps=2, total=1)
+18. system76-acpi-dkms (blocked_deps=0, rev_deps=2, total=2)
+19. mint-y-icons (blocked_deps=0, rev_deps=2, total=3)
+20. otf-uncut-sans (blocked_deps=0, rev_deps=2, total=3)
+21. stm32cubemx (blocked_deps=0, rev_deps=2, total=3)
+22. ttf-space-mono (blocked_deps=0, rev_deps=2, total=3)
+23. ttf-uncut-sans (blocked_deps=0, rev_deps=2, total=3)
+24. woff-uncut-sans (blocked_deps=0, rev_deps=2, total=3)
+25. woff2-uncut-sans (blocked_deps=0, rev_deps=2, total=3)
+26. arduino-avr-core (blocked_deps=0, rev_deps=2, total=4)
+27. foobar2000 (blocked_deps=0, rev_deps=2, total=4)
+28. lianwalld-bin (blocked_deps=0, rev_deps=2, total=4)
+29. libelectron (blocked_deps=0, rev_deps=2, total=4)
+30. pacaur (blocked_deps=0, rev_deps=2, total=6)
+31. lcevcdec (blocked_deps=0, rev_deps=2, total=7)
+32. moodbar (blocked_deps=0, rev_deps=2, total=7)
+33. wl-screenrec (blocked_deps=0, rev_deps=2, total=8)
+34. dotnet-runtime-9.0-bin (blocked_deps=0, rev_deps=2, total=9)
+35. llama.cpp (blocked_deps=0, rev_deps=2, total=9)
+36. python-materialyoucolor (blocked_deps=0, rev_deps=2, total=9)
+37. python-pluginmgr (blocked_deps=0, rev_deps=2, total=9)
+38. python-syncedlyrics (blocked_deps=0, rev_deps=2, total=9)
+39. radicle-node (blocked_deps=0, rev_deps=2, total=9)
+40. gslapper (blocked_deps=0, rev_deps=2, total=10)
+41. qtutilities-qt6 (blocked_deps=0, rev_deps=2, total=10)
+42. openbangla-keyboard-git (blocked_deps=0, rev_deps=2, total=11)
+43. ddccontrol (blocked_deps=0, rev_deps=2, total=12)
+44. trizen (blocked_deps=0, rev_deps=2, total=12)
+45. cosmic-comp-git (blocked_deps=0, rev_deps=2, total=13)
+46. clang-libs-minimal-git (blocked_deps=0, rev_deps=2, total=14)
+47. bms-shell (blocked_deps=0, rev_deps=2, total=15)
+48. python-urllib3-future (blocked_deps=0, rev_deps=2, total=17)
+49. linux-lqx (blocked_deps=0, rev_deps=2, total=21)
+50. vscodium-translucent (blocked_deps=0, rev_deps=2, total=23)
+51. ros2-arch-deps (blocked_deps=0, rev_deps=2, total=48)
+52. sonic-win (blocked_deps=0, rev_deps=2, total=61)
+53. 86box-roms (blocked_deps=0, rev_deps=1, total=0)
+54. alarm (blocked_deps=0, rev_deps=1, total=0)
+55. clash-geoip (blocked_deps=0, rev_deps=1, total=0)
+56. dbeaver (blocked_deps=0, rev_deps=1, total=0)
+57. equicord-installer-bin (blocked_deps=0, rev_deps=1, total=0)
+58. genders (blocked_deps=0, rev_deps=1, total=0)
+59. ghostty-shell-integration-nightly-bin (blocked_deps=0, rev_deps=1, total=0)
+60. ghostty-terminfo-nightly-bin (blocked_deps=0, rev_deps=1, total=0)
+61. gruvbox-dark-gtk (blocked_deps=0, rev_deps=1, total=0)
+62. keychron-link-udev (blocked_deps=0, rev_deps=1, total=0)
+63. libfmod (blocked_deps=0, rev_deps=1, total=0)
+64. localepurge (blocked_deps=0, rev_deps=1, total=0)
+65. mxw-udev (blocked_deps=0, rev_deps=1, total=0)
+66. pdeath (blocked_deps=0, rev_deps=1, total=0)
+67. plex-media-server (blocked_deps=0, rev_deps=1, total=0)
+68. redhat-fonts (blocked_deps=0, rev_deps=1, total=0)
+69. rustrover-eap-jre (blocked_deps=0, rev_deps=1, total=0)
+70. ttf-harmonyos-sans (blocked_deps=0, rev_deps=1, total=0)
+71. upd72020x-fw (blocked_deps=0, rev_deps=1, total=0)
+72. waybar-hyprland-git (blocked_deps=0, rev_deps=1, total=0)
+73. 86box-roms-git (blocked_deps=0, rev_deps=1, total=1)
+74. alice-bin (blocked_deps=0, rev_deps=1, total=1)
+75. arduino-ctags (blocked_deps=0, rev_deps=1, total=1)
+76. aspnet-runtime-bin (blocked_deps=0, rev_deps=1, total=1)
+77. aspnet-targeting-pack-9.0-bin (blocked_deps=0, rev_deps=1, total=1)
+78. asroot (blocked_deps=0, rev_deps=1, total=1)
+79. claude-desktop-bin (blocked_deps=0, rev_deps=1, total=1)
+80. datagrip-jre (blocked_deps=0, rev_deps=1, total=1)
+81. deb2targz (blocked_deps=0, rev_deps=1, total=1)
+82. elephant (blocked_deps=0, rev_deps=1, total=1)
+83. fake-ms-fonts (blocked_deps=0, rev_deps=1, total=1)
+84. goland-jre (blocked_deps=0, rev_deps=1, total=1)
+85. googler (blocked_deps=0, rev_deps=1, total=1)
+86. grepcidr (blocked_deps=0, rev_deps=1, total=1)
+87. iscan-data (blocked_deps=0, rev_deps=1, total=1)
+88. kaitai-struct-compiler (blocked_deps=0, rev_deps=1, total=1)
+89. ksql (blocked_deps=0, rev_deps=1, total=1)
+90. lianpkg-bin (blocked_deps=0, rev_deps=1, total=1)
+91. libjodycode (blocked_deps=0, rev_deps=1, total=1)
+92. linux-zen-git-headers (blocked_deps=0, rev_deps=1, total=1)
+93. mdns-scan (blocked_deps=0, rev_deps=1, total=1)
+94. notify-send.sh (blocked_deps=0, rev_deps=1, total=1)
+95. regina-rexx-doc (blocked_deps=0, rev_deps=1, total=1)
+96. ruby-http-2 (blocked_deps=0, rev_deps=1, total=1)
+97. rustrover-jre (blocked_deps=0, rev_deps=1, total=1)
+98. scala3 (blocked_deps=0, rev_deps=1, total=1)
+99. tosu (blocked_deps=0, rev_deps=1, total=1)
+100. ttf-gabarito-git (blocked_deps=0, rev_deps=1, total=1)
