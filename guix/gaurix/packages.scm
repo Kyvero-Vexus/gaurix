@@ -249,6 +249,8 @@
   #:use-module (gaurix packages deptree-r21-w01)
   #:use-module (gaurix packages queue-20260407-deptree-resolver)
   #:use-module (gaurix packages queue-20260407-deptree-resolver-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-recipe-resolver-p2)
+  #:use-module (gaurix packages queue-20260406-recipe-resolver-p2-blocked-notes)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7510,4 +7512,14 @@ podman-tui-bin
             openbsd-netcat-tls
 
             babashka-bin
+            comp-scan-bin
+            framework-control-bin
+            mezzotone-bin
+            chough-bin
+            oken-bin
+            python-aiohttp-jinja2
+            pricehist
+            lobster
+            c47-bin
+            r47-bin
 ))
