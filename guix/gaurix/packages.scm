@@ -246,6 +246,9 @@
   #:use-module (gaurix packages queue-20260406-recipe-resolver)
   #:use-module (gaurix packages queue-20260406-recipe-resolver-blocked-notes)
   #:use-module (gaurix packages queue-cron-c79f127f-w04)
+  #:use-module (gaurix packages deptree-r21-w01)
+  #:use-module (gaurix packages queue-20260407-deptree-resolver)
+  #:use-module (gaurix packages queue-20260407-deptree-resolver-blocked-notes)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7481,4 +7484,30 @@ podman-tui-bin
             tuxedo-drivers-dkms
             vscodium-translucent
             wd719x-firmware
+            vvenc
+            libaribcaption
+            libjodycode
+            python-pid
+            python-wassima
+            cmake-format
+            wd719x-firmware
+            notify-send.sh
+            deb2targz
+            netbird-bin
+            rtk-bin
+            viu-media-bin
+            nordvpn-bin
+            gnirehtet-bin
+            elephant-archlinuxpkgs-bin
+            elephant-bluetooth-bin
+            elephant-desktopapplications-bin
+            ruby-http-2
+            scala3
+            modern-beep
+            claude-code-stable
+            fortune-mod-off
+            lidm-systemd-git
+            openbsd-netcat-tls
+
+            babashka-bin
 ))
