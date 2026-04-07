@@ -262,6 +262,8 @@
   #:use-module (gaurix packages recipe-resolver-260407)
   #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (gaurix packages deptree-260407)
+  #:use-module (gaurix packages recipe-resolver-260407b)
+  #:use-module (gaurix packages recipe-resolver-260407c)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7752,4 +7754,67 @@ podman-tui-bin
               ttf-gabarito-git
               deb2targz
               libjodycode
+
+            ;; recipe-resolver-260407b
+            archivebox
+            bapctools-git
+            boomer-git
+            claudebar
+            clightd
+            codexbar
+            docx-you-want
+            endcord
+            ferris-scan-bin
+            ffsend-bin
+            fw-fanctrl-rs-git
+            gram-editor-bin
+            hurrycurry-server
+            ipmctl-git
+            jellything-git
+            keks-meet-server
+            logibar
+            lswt
+            mkbrr-gui-bin
+            mouse-actions-gui-bin
+            nemu
+            op-cache-git
+            pixora-icons-git
+            podman-tui
+            sabiql-bin
+            synergy3-bin
+            uac-polkit-agent-git
+            udiskr
+            we-layerd-git
+            wireview-linux
+            ;; recipe-resolver-260407c
+            adbfs-rootless
+            chough-bin
+            compendium
+            console2svg-bin
+            dafny-bin
+            ddccontrol-db
+            dpibreak-bin
+            dpibreak-git
+            framework-control-bin
+            funzzy-bin
+            gnix
+            lazytail-bin
+            libmodule
+            lobster
+            mezzotone-bin
+            omp-manager-bin
+            pandoc-crossref-bin
+            pricehist
+            python-aiohttp-jinja2
+            q5k-usb-udev
+            qxmledit
+            spinwheel-pipewire
+            swhook
+            szsol-rs
+            tmux-plugin-panel-bin
+            tufw-bin
+            weylus-bin
+            workz-bin
+            wrkflw-bin
+            yewtube-bin
 ))

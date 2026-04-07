@@ -35,7 +35,6 @@
   #:export (
             linux-clear-cjktty-zfs-headers
             linux-clear-cjktty-zfs
-            clightd
             libmodule
             mas
             wrkflw-bin
@@ -43,13 +42,8 @@
             pwmenu-bin
             bzmenu-bin
             claude-code-seccomp
-            ferris-scan-bin
-            gram-editor-bin
-            bapctools-git
-            sabiql-bin
             podserv-b-git
             netwatch-tui
-            synergy3-bin
             q5k-usb-udev
             qpdf-zopfli
             swhook
@@ -57,16 +51,12 @@
             libheif-noglycin
             libjxl-noglycin-doc
             libjxl-noglycin
-            op-cache-git
             console2svg-bin
             szsol-rs
             arch-remaster
-            pixora-icons-git
-            udiskr
             comp-scan-bin
             tilem-gtk3-git
             r47-bin
-            docx-you-want
             c47-bin
             wo-bin
             cliamp
@@ -78,9 +68,7 @@
             dpibreak
             lobster
             dpibreak-git
-            uac-polkit-agent-git
             mezzotone-bin
-            ipmctl-git
             python-aiohttp-jinja2
             pricehist
             fish-session
@@ -90,7 +78,6 @@
             spinwheel-pipewire
             compendium
             pandoc-crossref-bin
-            boomer-git
             mkinitcpio-firmware
             qxmledit
             tufw-git
@@ -101,17 +88,11 @@
             bililive-recorder-bin
             lenovo-print-driver-lj2400-m7400-bin
             nodejs-knit
-            fw-fanctrl-rs-git
             aerothemeplasma-desktop-x11-git
             aeroshell-workspace-git
             aeroshell-libplasma-git
             aeroshell-kwin-components-git
-            keks-meet-server
-            jellything-git
-            hurrycurry-server
             gnix
-            mkbrr-gui-bin
-            wireview-linux
             chough-bin
             ))
 
@@ -265,6 +246,11 @@ patterns for modular Linux applications.")
 environment.  This package repackages the upstream prebuilt Linux binary.")
     (license license:expat)))
 
+  ;; AUR mas: Macro cross-assembler (asl) for various processors; v1.42b300-1; 3 votes.
+  ;; Source: http://john.ccac.rwth-aachen.de:8000/as/
+  ;; NEEDS_RECIPE_DESIGN: C make recipe; multi-architecture assembler.
+  ;; Next: fetch asl source tarball, compute sha256, draft make recipe.
+  (package (inherit zoxide) (name "mas")))
 (define-public iwmenu-bin
   (package
     (name "iwmenu-bin")
@@ -714,6 +700,21 @@ enabled.")))
   ;; and packaging from source requires a non-trivial cargo dependency graph.
   (package (inherit zoxide) (name "swhook")))
 
+  ;; AUR bzmenu-bin: Launcher-driven Bluetooth manager for Linux (binary); v0.4.0-1; 1 vote.
+  ;; Source: https://github.com/e-tho/bzmenu
+  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
+  ;; Next: fetch bzmenu v0.4.0 Linux binary, compute sha256, draft binary wrapper.
+  (package (inherit zoxide) (name "bzmenu-bin")))
+  ;; AUR podserv-b-git: Minimalist podcast server (type b); v0.1.2.r0.g536e372-1; 1 vote.
+  ;; Source: https://github.com/l5yth/podserv-b
+  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust; serves media files over HTTP.
+  ;; Next: pin git commit, compute sha256, draft cargo recipe.
+  (package (inherit zoxide) (name "podserv-b-git")))
+  ;; AUR qpdf-zopfli: QPDF PDF transformation system with Zopfli compression; v12.3.2-2; 1 vote.
+  ;; Source: https://github.com/qpdf/qpdf
+  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe with zopfli flag; deps: cmake, zlib, zopfli.
+  ;; Next: fetch qpdf-12.3.2 source, compute sha256, draft cmake recipe with zopfli feature.
+  (package (inherit zoxide) (name "qpdf-zopfli")))
 (define-public libavif-noglycin
   ;; AUR libavif-noglycin: libavif for gdk-pixbuf2-noglycin variant; v1.3.0-5; 1 vote.
   ;; Maps to Guix libavif (gnu/packages/image.scm).
@@ -850,6 +851,10 @@ for documentation and sharing.")
 SHENZHEN I/O.")
     (license license:expat)))
 
+  ;; Source: https://jpeg.org/jpegxl/
+  ;; NEEDS_RECIPE_DESIGN: cmake C++ recipe variant; deps: brotli, highway; noglycin gdk-pixbuf2.
+  ;; Next: fetch libjxl-0.11.2 source, compute sha256, draft cmake recipe with noglycin dep.
+  (package (inherit zoxide) (name "libjxl-noglycin")))
 (define-public arch-remaster
   ;; AUR arch-remaster: Tools for remastering Arch Linux live systems; v26.02.1-1.
   (package
@@ -903,20 +908,6 @@ SHENZHEN I/O.")
 and to update live USB copy-on-write boot parameters.")
     (license license:gpl3+)))
 
-(define-public pixora-icons-git
-  ;; AUR pixora-icons-git: 16-bit pixel icon theme for Linux desktops (git); r264.gf5604c1-1; 1 vote.
-  ;; Source: https://github.com/tsora1603/pixora-icons
-  ;; NEEDS_RECIPE_DESIGN: trivial icon theme install; pin git commit.
-  ;; Next: pin git rev, compute sha256, draft trivial icon theme install.
-  (package (inherit zoxide) (name "pixora-icons-git")))
-
-(define-public udiskr
-  ;; AUR udiskr: Lightweight alternative to udiskie; v0.1.1-1; 1 vote.
-  ;; Source: https://github.com/uriib/udiskr
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, udisks2.
-  ;; Next: fetch udiskr v0.1.1 source, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "udiskr")))
-
 (define-public comp-scan-bin
   ;; AUR comp-scan-bin: Local AI agent system scanner (binary); v0.1.0-1; 1 vote.
   ;; Source: https://github.com/vvk147/comp-scan
@@ -937,13 +928,6 @@ and to update live USB copy-on-write boot parameters.")
   ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary; fetch Linux binary from 47calc.com.
   ;; Next: fetch R47 Linux binary, compute sha256, draft binary wrapper.
   (package (inherit zoxide) (name "r47-bin")))
-
-(define-public docx-you-want
-  ;; AUR docx-you-want: Unusual PDF-to-DOCX converter; v0.1.2-1; 1 vote.
-  ;; Source: https://github.com/MikeWalrus/docx-you-want
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, poppler or pdfium.
-  ;; Next: fetch docx-you-want v0.1.2 source, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "docx-you-want")))
 
 (define-public c47-bin
   ;; AUR c47-bin: C47 pocket calculator emulator (binary); v00.109.03.01b1-1; 1 vote.
@@ -1001,6 +985,24 @@ and to update live USB copy-on-write boot parameters.")
   ;; Next: pin git commit for v0.2.7, compute sha256, draft go-build-system recipe.
   (package (inherit zoxide) (name "tufw-git")))
 
+(define-public baremetal-compiler-rt
+  ;; AUR baremetal-compiler-rt: compiler-rt builtins for bare-metal ARM Cortex-M; v22.1.1-1; 1 vote.
+  ;; Source: https://github.com/llvm/llvm-project
+  ;; NEEDS_RECIPE_DESIGN: cmake recipe for LLVM compiler-rt bare-metal subset; cross-compile needed.
+  ;; Next: fetch llvm-project 22.1.1 source, compute sha256, draft cmake cross-compile recipe.
+  (package (inherit zoxide) (name "baremetal-compiler-rt")))
+(define-public fish-session
+  ;; AUR fish-session: UI-first session manager for Fish shell; v0.1.8-1; 1 vote.
+  ;; Source: https://github.com/AtefR/fish-session
+  ;; NEEDS_RECIPE_DESIGN: trivial Fish plugin install; deps: fish.
+  ;; Next: fetch fish-session v0.1.8, compute sha256, draft trivial Fish plugin install.
+  (package (inherit zoxide) (name "fish-session")))
+(define-public mkinitcpio-firmware
+  ;; AUR mkinitcpio-firmware: Optional firmware for default linux kernel; v1.6.0-1; 1 vote.
+  ;; Source: https://aur.archlinux.org/packages/mkinitcpio-firmware
+  ;; NEEDS_RECIPE_DESIGN: firmware data install recipe; collect various firmware blobs.
+  ;; Next: identify firmware sources/versions, compute sha256s, draft firmware install recipe.
+  (package (inherit zoxide) (name "mkinitcpio-firmware")))
 (define-public zerx-lab-fluxdown-bin
   ;; AUR zerx-lab-fluxdown-bin: FluxDown multi-protocol download manager (binary); v0.1.31-1; 1 vote.
   ;; Source: https://fluxdown.zerx.dev
