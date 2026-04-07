@@ -274,6 +274,7 @@
   #:use-module (gaurix packages recipe-resolver-260407c)
   #:use-module (gaurix packages recipe-resolver-260407d)
   #:use-module (gaurix packages recipe-resolver-260407e)
+  #:use-module (gaurix packages recipe-resolver-260407f)
   #:use-module (gaurix packages deptree-resolver-260407b)
   #:use-module (gaurix packages deptree-resolver-260407b-blocked-notes)
   #:export (
@@ -327,6 +328,8 @@
             #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260407d)
   #:use-module (gaurix packages queue-20260407-opus-p101)
+  #:use-module (gaurix packages deptree-resolver-260407e)
+  #:use-module (gaurix packages deptree-resolver-260407e-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8091,5 +8094,66 @@ podman-tui-bin
             gnome-shell-extension-hibernate-status
             ion-git
             recon-ng
+            qt5-webkit-dtre
+            cosmic-icons-git
+            flite1
+            libajantv2
+            owlry-plugin-calculator
+            owlry-plugin-system
+            owlry-plugin-bookmarks
+            owlry-plugin-filesearch
+            owlry-plugin-pomodoro
+            owlry-plugin-scripts
+            owlry-plugin-websearch
+            owlry-plugin-media
+            owlry-plugin-ssh
+            owlry-plugin-systemd
+            owlry-plugin-weather
+            owlry-plugin-clipboard
+            owlry-plugin-emoji
+            dotnet-runtime-preview-bin
+            python-materialyoucolor-dtre
+            aspnet-targeting-pack-preview-bin
+            ttf-gabarito-git
+            c-client
+            stl-thumb
+            themix-import-images-git
+            eww
+            cosmic-randr-git
+            cosmic-idle-git
+            cosmic-screenshot-git
+            cosmic-app-library-git
+            cosmic-panel-git
+            cosmic-workspaces-git
+            cosmic-launcher-git
+            cosmic-notifications-git
+            cosmic-comp-git
+            cosmic-settings-daemon-git
+            qtforkawesome-qt6
+            clight-pkg
+            upscayl-ncnn
+            cairo-dock-core-wayland-git
+            stardust-xr-non-spatial-input
+            stardust-xr-server
+            xrizer-git
+            maliit-framework
+            libadwaita-yaru-git
+            aylurs-gtk-shell-git
+            themix-plugin-base16-git
+            themix-theme-oomox-git
+            obsidianctl
+            mupen64plus-git
+            protonmail-bridge-free-core
+            backintime-cli-git
+            portable-sandbox
+            angle-chromium
+            qt5-quick3d
+            nvidia-390xx-utils-pkg
+            nvidia-470xx-utils-pkg
+            nvidia-580xx-utils-pkg
+            opera-gx-stable
+            matlab-mpm
+            vscodium-compat
+            arduino-builder
             gitqlient-git))
 )

@@ -10,6 +10,7 @@
   #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (gaurix packages recipe-resolver-260407d)
   #:use-module (gaurix packages recipe-resolver-260407e)
+  #:use-module (gaurix packages recipe-resolver-260407f)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -194,6 +195,7 @@
   #:use-module (gaurix packages queue-20260407-deptree)
   #:use-module (gaurix packages queue-20260407-opus-p100)
   #:use-module (gaurix packages queue-20260407-opus-p101)
+  #:use-module (gaurix packages deptree-resolver-260407e)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
