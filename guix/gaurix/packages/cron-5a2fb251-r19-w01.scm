@@ -219,38 +219,6 @@ record multiple rooms simultaneously with automatic stream reconnection.")
 CJK variant of Noto fonts (Sans, Serif, Mono) based on the user's locale
 setting (Chinese Simplified/Traditional, Japanese, Korean).")
     (license license:gpl3+)))
-
-;;; ─────────────────────────────────────────────
-;;; libmodule — C library for building modular projects
-;;; CMake build. Dependency of clightd.
-;;; ─────────────────────────────────────────────
-(define-public libmodule
-  (package
-    (name "libmodule")
-    (version "5.0.2")
-    (source
-     (origin
-       (method url-fetch)
-       (uri (string-append
-             "https://github.com/FedeDP/libmodule/archive/refs/tags/"
-             version ".tar.gz"))
-       (file-name (string-append name "-" version ".tar.gz"))
-       (sha256
-        (base32 "1zpp46jly4sqb7gbffxajv72i6rh60cacc7sfrsr65mym9liw43j"))))
-    (build-system cmake-build-system)
-    (arguments
-     (list
-      #:tests? #f  ;; tests require cmocka which is optional
-      #:configure-flags
-      #~(list (string-append "-DCMAKE_INSTALL_PREFIX=" #$output))))
-    (home-page "https://github.com/FedeDP/libmodule")
-    (synopsis "C library to build modular, event-driven projects")
-    (description
-     "Libmodule is a C library that provides an easy-to-use API for building
-modular, event-driven projects.  It uses a publish/subscribe pattern and
-integrates with the system event loop (epoll/kqueue).")
-    (license license:expat)))
-
 ;;; ─────────────────────────────────────────────
 ;;; mas — Macro cross-assembler (asl) for various processors
 ;;; Uses plain GNU Make with Makefile.def configuration.
@@ -306,62 +274,6 @@ variety of microprocessors and microcontrollers, including 6502, 68000, 8051,
 ARM, AVR, PIC, Z80, and many others.  It is mainly targeted at embedded
 processors and single-board computers.")
     (license license:gpl2)))
-
-;;; ─────────────────────────────────────────────
-;;; wrkflw-bin — Validate and execute GitHub Actions locally
-;;; ─────────────────────────────────────────────
-(define-public wrkflw-bin
-  (package
-    (name "wrkflw-bin")
-    (version "0.7.3")
-    (source
-     (origin
-       (method url-fetch)
-       (uri (string-append
-             "https://github.com/bahdotsh/wrkflw/releases/download/v"
-             version "/wrkflw-v" version "-linux-x86_64.tar.gz"))
-       (file-name (string-append name "-" version ".tar.gz"))
-       (sha256
-        (base32 "1bkqs48ph0b0m96p6v6kgrkh3kbhaqfcc5vvs4lsw5bfk3fizyxy"))))
-    (build-system trivial-build-system)
-    (native-inputs (list tar gzip patchelf))
-    (inputs (list bash-minimal glibc `(,gcc "lib")))
-    (arguments
-     (list
-      #:modules '((guix build utils))
-      #:builder
-      #~(begin
-          (use-modules (guix build utils))
-          (let* ((out (assoc-ref %outputs "out"))
-                 (src (assoc-ref %build-inputs "source"))
-                 (tar (search-input-file %build-inputs "/bin/tar"))
-                 (gzip (search-input-file %build-inputs "/bin/gzip"))
-                 (patchelf (search-input-file %build-inputs "/bin/patchelf"))
-                 (ld-so (search-input-file %build-inputs
-                                           "/lib/ld-linux-x86-64.so.2"))
-                 (libc-lib (dirname (dirname ld-so)))
-                 (gcc-lib (assoc-ref %build-inputs "gcc:lib"))
-                 (rpath (string-append libc-lib "/lib:" gcc-lib "/lib"))
-                 (bin-dir (string-append out "/bin")))
-            (setenv "PATH" (string-append (dirname tar) ":"
-                                          (dirname gzip)))
-            (invoke tar "xzf" src)
-            (mkdir-p bin-dir)
-            (install-file "wrkflw" bin-dir)
-            (chmod (string-append bin-dir "/wrkflw") #o755)
-            (invoke patchelf "--set-interpreter" ld-so
-                    (string-append bin-dir "/wrkflw"))
-            (invoke patchelf "--set-rpath" rpath
-                    (string-append bin-dir "/wrkflw"))))))
-    (supported-systems '("x86_64-linux"))
-    (home-page "https://github.com/bahdotsh/wrkflw")
-    (synopsis "Validate and run GitHub Actions workflows locally")
-    (description
-     "Wrkflw lets you validate and execute GitHub Actions workflow files
-on your local machine, without needing to push to GitHub.  Useful for
-testing CI/CD pipelines during development.")
-    (license license:expat)))
-
 ;;; ─────────────────────────────────────────────
 ;;; iwmenu-bin — Launcher-driven Wi-Fi manager (binary)
 ;;; ─────────────────────────────────────────────
