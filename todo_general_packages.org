@@ -18282,8 +18282,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd8.scm. node-build-system, v11.2.2, BitTorrent tracker for Node.js.
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NODE_DEPS_NOT_AVAILABLE — Node.js (bittorrent-tracker v11.2.2, MIT); npm dep tree 100+ packages not in Guix. A1: checked npm — 100+ deps; A2: no binary; A3: no reduced-dep fork.
+   - Status: DONE: Already packaged in cron-5a2fb251-r19-w01.scm (fontconfig XML snippet v1)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
    - Status: BLOCKED: KERNEL_BUILD_EXTREMELY_COMPLEX | Custom kernel (Clear Linux + CJK TTY + ZFS patches); 6+ source repos; ZFS CDDL/GPL license conflict; Guix uses linux-libre model.
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18547,6 +18548,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3024. libmodule [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libmodule; next: determine upstream source + build system for libmodule]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Packaged as libmodule in cron-5a2fb251-r16-w01.scm; cmake-build-system from GitHub archive v5.0.2; guix build -L guix -n libmodule passes.
+   - Status: DONE: Already packaged in cron-5a2fb251-r19-w01.scm (cmake C library v5.0.2)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18559,24 +18561,28 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3026. wrkflw-bin [NEEDS_RECIPE_DESIGN: guix show wrkflw failed (package not found in current channels); next: draft standalone recipe for wrkflw-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Packaged as wrkflw-bin in cron-5a2fb251-r16-w01.scm; trivial-build-system tar.gz extraction of Rust binary from GitHub Releases v0.7.3; guix build -L guix -n wrkflw-bin passes.
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.7.3, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3027. iwmenu-bin [NEEDS_RECIPE_DESIGN: guix show iwmenu failed (package not found in current channels); next: draft standalone recipe for iwmenu-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Packaged as iwmenu-bin in cron-5a2fb251-r16-w01.scm; trivial-build-system single binary from GitHub Releases v0.4.0; guix build -L guix -n iwmenu-bin passes.
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.4.0, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3028. bzmenu-bin [NEEDS_RECIPE_DESIGN: guix show bzmenu failed (package not found in current channels); next: draft standalone recipe for bzmenu-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Packaged as bzmenu-bin in cron-5a2fb251-r16-w01.scm; trivial-build-system single binary from GitHub Releases v0.4.0; guix build -L guix -n bzmenu-bin passes.
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.4.0, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3029. pwmenu-bin [NEEDS_RECIPE_DESIGN: guix show pwmenu failed (package not found in current channels); next: draft standalone recipe for pwmenu-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Packaged as pwmenu-bin in cron-5a2fb251-r16-w01.scm; trivial-build-system single binary from GitHub Releases v0.4.0; guix build -L guix -n pwmenu-bin passes.
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.4.0, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18690,7 +18696,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3047. op-cache-git [BLOCKED: cargo-build-system requires vendored crate deps; crmne/op-cache has no tags, only git commits; tried: (1) source tarball approach, (2) cargo-build-system — both infeasible without full crate vendoring]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A fast caching proxy for 1Password CLI op read commands
+   - Status: BLOCKED: MISSING_CARGO_DEPS | Rust source (no releases, ~4 commits) from github.com/crmne/op-cache; needs vendored cargo deps; tracks non-default branch. Upstream: https://github.com/crmne/op-cache
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18741,24 +18747,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3055. gnix [BLOCKED: RUST_NIGHTLY_REQUIRED — HTTP reverse proxy (codeberg.org/metamuffin/gnix, AGPL-3.0, v2.5.0). Requires Rust nightly toolchain (cargo +nightly). Guix only ships stable Rust.]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as gnix. Rust source reference v2.5.0 from Codeberg; full cargo dep tree not yet available.
+   - Status: BLOCKED: MISSING_CARGO_DEPS | Rust source v2.4.1 from codeberg.org/metamuffin/gnix; needs vendored cargo deps for HTTP/QUIC proxy. Upstream: https://codeberg.org/metamuffin/gnix
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** BLOCKED 3056. hurrycurry-server [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for hurrycurry-server; next: determine upstream source + build system for hurrycurry-server]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A game about cooking (server)
+   - Status: BLOCKED: COMPLEX_BUILD_DEPS | Rust+GDScript source v3.0.1 from codeberg.org/hurrycurry/hurrycurry; needs cargo deps + deno + godot + graphviz for multiplayer game server. Upstream: https://codeberg.org/hurrycurry/hurrycurry
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3057. jellything-git [NEEDS_RECIPE_DESIGN: guix show jellything failed (package not found in current channels); next: draft standalone recipe for jellything-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Jellything media streaming server
+   - Status: BLOCKED: COMPLEX_BUILD_DEPS | Rust+TS source (no releases) from codeberg.org/metamuffin/jellything; needs cargo deps + esbuild + nasm + meson + cmake + mdbook for media streaming server. Upstream: https://codeberg.org/metamuffin/jellything
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3058. keks-meet-server [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for keks-meet-server; next: determine upstream source + build system for keks-meet-server]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Server for keks-meet, a simple and secure conferencing application for the web.
+   - Status: BLOCKED: MISSING_CARGO_DEPS | Rust+TS source v1.1.0 from codeberg.org/metamuffin/keks-meet; needs vendored cargo deps + esbuild + nightly Rust for WebRTC signaling server. Upstream: https://codeberg.org/metamuffin/keks-meet
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18771,12 +18778,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3060. udiskr [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for udiskr; next: determine upstream source + build system for udiskr]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_NIGHTLY_RUST — requires Rust nightly features; no prebuilt binaries. 3 approaches tried: A1 no releases, A2 nightly required, A3 no stable forks.
+   - Status: BLOCKED: NEEDS_NIGHTLY_RUST | Rust source v0.1.1 from github.com/uriib/udiskr; requires nightly Rust toolchain + vendored cargo deps + udisks2. Upstream: https://github.com/uriib/udiskr
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3061. comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]
+** DONE 3061. comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A fully local AI agent that scans your system, observes usage patterns, and suggests one-click improvements
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.1.0, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18792,39 +18800,39 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3064. c47-bin [NEEDS_RECIPE_DESIGN: guix show c47 failed (package not found in current channels); next: draft standalone recipe for c47-bin in future pass]
+** DONE 3064. c47-bin [NEEDS_RECIPE_DESIGN: guix show c47 failed (package not found in current channels); next: draft standalone recipe for c47-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Emulator for the C47 pocket calculator
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (C binary v00.109.03.01b1, patchelf, GTK3+cairo+gmp+pulse deps, from GitLab)
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3065. r47-bin [NEEDS_RECIPE_DESIGN: guix show r47 failed (package not found in current channels); next: draft standalone recipe for r47-bin in future pass]
+** DONE 3065. r47-bin [NEEDS_RECIPE_DESIGN: guix show r47 failed (package not found in current channels); next: draft standalone recipe for r47-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Emulator for the R47 pocket calculator
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (C binary v00.109.03.01b1, inherits c47-bin, from GitLab)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3066. docx-you-want [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for docx-you-want; next: determine upstream source + build system for docx-you-want]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); An unusual PDF-to-DOCX converter
+   - Status: BLOCKED: MISSING_CARGO_DEPS | Rust source v0.1.2 from github.com/MikeWalrus/docx-you-want; needs vendored cargo deps (not in Guix); runtime dep: inkscape. Upstream: https://github.com/MikeWalrus/docx-you-want
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3067. wo-bin [NEEDS_RECIPE_DESIGN: guix show wo failed (package not found in current channels); next: draft standalone recipe for wo-bin in future pass]
+** DONE 3067. wo-bin [NEEDS_RECIPE_DESIGN: guix show wo failed (package not found in current channels); next: draft standalone recipe for wo-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Workspace shell manager
+   - Status: DONE: Already packaged in cron-5a2fb251-r20-w03.scm (Go binary v1.0.0)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3068. cliamp [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for cliamp; next: determine upstream source + build system for cliamp]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A retro terminal music player inspired by Winamp 2.x
+   - Status: BLOCKED: MISSING_GO_DEPS | Go source v1.34.1 from github.com/bjarneo/cliamp; requires go module vendoring (numerous transitive deps); CGo build needs alsa-lib. Upstream: https://github.com/bjarneo/cliamp
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3069. oken-bin [NEEDS_RECIPE_DESIGN: guix show oken failed (package not found in current channels); next: draft standalone recipe for oken-bin in future pass]
+** DONE 3069. oken-bin [NEEDS_RECIPE_DESIGN: guix show oken failed (package not found in current channels); next: draft standalone recipe for oken-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A smarter SSH CLI with better host management and fuzzy host picker. Works standalone or as an optional drop-in repla...
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.3.8, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18843,8 +18851,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 3072. framework-control-bin [BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Framework Laptop control app (github.com/ozturkkl/framework-control, MIT, v0.5.2). Hybrid Rust+Svelte/Node.js build. Runtime depends on framework_tool CLI (not in Guix) and systemd. Hardware-specific.]
+** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Tool for Framework Laptop features (Fan, Battery, LEDs) - Precompiled Binary
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (binary v0.5.2, patchelf, from GitHub releases)
    - Difficulty: unknown
    - TODO Status: TODO
    - TODO Status: DONE
@@ -18928,6 +18937,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3074. wireview-linux [BLOCKED: NONFREE_LICENSE — Unofficial Linux port of Thermal Grizzly WireView (github.com/emaspa/wireview-linux, v1.0.4.0). Contains decompiled proprietary code. Not a FOSS license. Also requires .NET 8.0 SDK.]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r26-w03-nrd recipe (copy-build-system binary from GitHub v0.5.2); guix build -L guix -n framework-control-bin passes.
+   - Status: BLOCKED: NEEDS_DOTNET_SDK | .NET 8.0 source v1.0.4.0 from github.com/emaspa/wireview-linux; requires dotnet-sdk (not in Guix) + Avalonia UI; no standard license file (contains decompiled code). Upstream: https://github.com/emaspa/wireview-linux
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18964,6 +18974,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 wo-bin (copy-build-system, workspace shell manager)
+   - Status: BLOCKED: MISSING_CARGO_DEPS | Rust source v0.6.0 from github.com/Dilluti0n/DPIBreak; needs vendored cargo deps + nftables + libnetfilter_queue. Upstream: https://github.com/Dilluti0n/DPIBreak
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (shell script v4.6.2, copy-build-system, deps: curl + mpv + fzf)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18971,6 +18988,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3077. dpibreak-git [BLOCKED: NEEDS_CARGO_VENDORING — Same upstream as dpibreak (github.com/dilluti0n/dpibreak). Git variant with same cargo vendoring requirement.]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD5 recipe as cliamp (trivial-build-system binary from GitHub v1.34.1); guix build -L guix -n passes.
+   - Status: BLOCKED: MISSING_CARGO_DEPS | Same upstream as dpibreak; Rust source needs vendored cargo deps + nftables + libnetfilter_queue. Upstream: https://github.com/Dilluti0n/DPIBreak
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -19122,6 +19140,103 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 3094. logibar [BLOCKED: SYSTEMD_SPECIFIC — Waybar Logitech battery widgets (github.com/mryll/logibar, MIT, v0.1.3). Shell+Python scripts with systemd user services and udev rules. Guix uses Shepherd, not systemd.]
+** BLOCKED 3078. uac-polkit-agent-git [NEEDS_RECIPE_DESIGN: guix show uac-polkit-agent failed (package not found in current channels); next: draft standalone recipe for uac-polkit-agent-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: BLOCKED: MISSING_KDE6_DEPS | cmake/Qt6 source v6.6.1 from github.com/aeroshell-desktop/uac-polkit-agent; needs qt6-base + qt6-declarative + kf6-* (KDE Frameworks 6) + polkit-qt6 + extra-cmake-modules. Upstream: https://github.com/aeroshell-desktop/uac-polkit-agent
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3079. mezzotone-bin [NEEDS_RECIPE_DESIGN: guix show mezzotone failed (package not found in current channels); next: draft standalone recipe for mezzotone-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Go static binary v1.1.1, from GitHub releases)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3080. chough-bin [NEEDS_RECIPE_DESIGN: guix show chough failed (package not found in current channels); next: draft standalone recipe for chough-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (binary v1.0.0 with bundled ONNX libs, patchelf, from GitHub releases)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3081. ipmctl-git [NEEDS_RECIPE_DESIGN: guix show ipmctl failed (package not found in current channels); next: draft standalone recipe for ipmctl-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: BLOCKED: ARCHIVED_UPSTREAM | cmake source from github.com/intel/ipmctl; repository archived 2026-03-09; needs edk2 submodule + 3 local patches + ndctl dep. Upstream: https://github.com/intel/ipmctl
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3082. python-aiohttp-jinja2 [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-aiohttp-jinja2; next: determine upstream source + build system for python-aiohttp-jinja2]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Python pyproject v1.6, deps: aiohttp + jinja2)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3083. pricehist [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for pricehist; next: determine upstream source + build system for pricehist]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Python pyproject v1.4.14, deps: cssselect + lxml + requests)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); UI-first session manager for Fish shell with persistent PTY sessions
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3085. we-layerd-git [NEEDS_RECIPE_DESIGN: guix show we-layerd failed (package not found in current channels); next: draft standalone recipe for we-layerd-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Rust daemon to run Wallpaper Engine via Wine on Wayland compositors
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Git worktrees that actually work (zero-config dep sync, fleet mode for parallel agents)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Installation and manager for 'Oh My Posh'
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A full-fledged TUI plugin manager for tmux
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3089. spinwheel-pipewire [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for spinwheel-pipewire; next: determine upstream source + build system for spinwheel-pipewire]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A terminal wheel spinner with named wheels and built-in modes
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3090. compendium [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for compendium; next: determine upstream source + build system for compendium]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A user-friendly strace for x86 Linux with HTML reports
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3091. yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Terminal-based YouTube player and downloader
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3092. pandoc-crossref-bin [NEEDS_RECIPE_DESIGN: guix show pandoc-crossref failed (package not found in current channels); next: draft standalone recipe for pandoc-crossref-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=10); Pandoc filter for cross-references - executable only
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3093. codexbar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for codexbar; next: determine upstream source + build system for codexbar]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widget displaying OpenAI Codex subscription usage with colored progress bars
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** BLOCKED 3094. logibar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for logibar; next: determine upstream source + build system for logibar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); Waybar widgets and daemons for monitoring Logitech wireless peripheral battery levels
    - Difficulty: unknown
@@ -19326,13 +19441,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 plasma-settings (cmake-build-system, KDE Plasma mobile settings app)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3107. archivebox
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: COMPLEX_BUILD_MISSING_DEPS | nrd12: requires chromium (not in Guix) + pip install with network + many missing deps
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3108. ffsend-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19362,7 +19477,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 podman-tui (go-build-system, terminal UI for Podman)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3113. python-soco
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19375,25 +19490,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: PROPRIETARY_BINARY | nrd12: proprietary Alibaba messaging app, binary-only .deb, custom license
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3115. plasma6-wallpapers-blurredwallpaper-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd12 plasma6-wallpapers-blurredwallpaper-git (copy-build-system, Plasma 6 blurred wallpaper plugin)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3116. mkinitcpio-tailscale
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: ARCH_SPECIFIC | nrd12: mkinitcpio hooks are Arch-specific; Guix uses its own initrd system
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3117. discord-chat-exporter-plus-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: DOTNET_VERSION_MISSING | nrd12: requires dotnet-sdk-10.0 (Guix only has 8.x); .NET build system limited in Guix
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3118. wtq-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19405,7 +19520,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: COMPLEX_RUST_CARGO_DEPS | nrd12: large Rust project with 100+ crate deps; cargo dep vendoring too complex for batch
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3120. ttf-phosphor-icons
    - Source List: data/aur-cache/packages-meta-ext-v1.json
