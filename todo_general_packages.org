@@ -323,6 +323,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 53. zerotier-one
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/zerotier-one.git` (HEAD reachable at evaluation time).
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: zerotier-one (C++, gnu-build-system, git-fetch from github.com/zerotier/ZeroTierOne v1.14.2)
+   - Status: BLOCKED: MIXED_LICENSE_COMPLEX_BUILD | upstream github.com/zerotier/ZeroTierOne v1.16.0; MPL-2.0 core + proprietary nonfree/ controller; complex hybrid C++/Rust build with bundled deps in ext/; requires system daemon
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -9358,6 +9359,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-r24-w03.scm. gnu-build-system, v12, Java launcher script.
    - Status: DONE: Recipe in guix/gaurix/packages/cron-c79f127f-r8-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Status: BLOCKED: ARCH_SPECIFIC_TOOL | Arch Linux Java launcher depending on Arch-specific /usr/lib/jvm paths. Not applicable to Guix.
+   - Status: BLOCKED: ARCH_LINUX_SPECIFIC | upstream github.com/michaellass/archlinux-java-run v12; script hard-coded to Arch /usr/lib/jvm/ layout and archlinux-java framework; no utility on Guix
    - Difficulty: hard
    - TODO Status: DONE
 
@@ -10302,6 +10304,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 1697. ddccontrol-db-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as ddccontrol-db. Autotools data package (ddccontrol monitor DB), v20260120 from GitHub.
+   - Status: DONE: recipe-resolver-p3 resolved as ddccontrol-db in queue-20260406-recipe-resolver-p3.scm (autotools data v20260120, GPL-2.0+)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -18703,7 +18706,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3048. console2svg-bin [NEEDS_RECIPE_DESIGN: guix show console2svg failed (package not found in current channels); next: draft standalone recipe for console2svg-bin in future pass]
 ** DONE 3048. console2svg-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Easily convert terminal output into SVG images
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (self-contained .NET binary v0.6.5, trivial-build-system + patchelf, Apache-2.0)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18770,8 +18773,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** DONE 3059. pixora-icons-git
+** DONE 3059. pixora-icons-git [NEEDS_RECIPE_DESIGN: guix show pixora-icons failed (package not found in current channels); next: draft standalone recipe for pixora-icons-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); 16-bit icons theme for Linux desktops. (GIT version)
+   - Status: DONE: recipe-resolver-p3 resolved as pixora-icons in queue-20260406-recipe-resolver-p3.scm (copy-build-system icon theme, CC-BY-4.0)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -18839,14 +18843,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3070. lazytail-bin [NEEDS_RECIPE_DESIGN: guix show lazytail failed (package not found in current channels); next: draft standalone recipe for lazytail-bin in future pass]
 ** DONE 3070. lazytail-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A fast, universal terminal-based log viewer with live filtering and follow mode
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v0.9.0, trivial-build-system + patchelf, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3071. funzzy-bin [NEEDS_RECIPE_DESIGN: guix show funzzy failed (package not found in current channels); next: draft standalone recipe for funzzy-bin in future pass]
 ** DONE 3071. funzzy-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A lightweight generic purpose file watcher
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v1.5.0, trivial-build-system + patchelf, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -19178,7 +19182,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); UI-first session manager for Fish shell with persistent PTY sessions
+   - Status: BLOCKED: NO_LICENSE | upstream github.com/AtefR/fish-session has no LICENSE file, no license in Cargo.toml; AUR says LicenseRef-UNLICENSED; cannot package for Guix without declared FOSS license
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -19188,21 +19192,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
+** DONE 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Git worktrees that actually work (zero-config dep sync, fleet mode for parallel agents)
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v0.8.0, trivial-build-system + patchelf, MIT/Apache-2.0)
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
+** DONE 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Installation and manager for 'Oh My Posh'
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v0.1.2, trivial-build-system + patchelf, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
+** DONE 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); A full-fledged TUI plugin manager for tmux
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v0.1.1, trivial-build-system + patchelf, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -19220,37 +19224,37 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3091. yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Terminal-based YouTube player and downloader
+   - Status: BLOCKED: NEEDS_PYTHON_DEPS | upstream pypi.org/project/yewtube v2.13.1; pure Python but requires yewtube-search-python (>=1.6.7) not in Guix; would need packaging first
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3092. pandoc-crossref-bin [NEEDS_RECIPE_DESIGN: guix show pandoc-crossref failed (package not found in current channels); next: draft standalone recipe for pandoc-crossref-bin in future pass]
+** DONE 3092. pandoc-crossref-bin [NEEDS_RECIPE_DESIGN: guix show pandoc-crossref failed (package not found in current channels); next: draft standalone recipe for pandoc-crossref-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=10); Pandoc filter for cross-references - executable only
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Haskell binary v0.3.23a, trivial-build-system + patchelf, GPL-2.0+)
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3093. codexbar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for codexbar; next: determine upstream source + build system for codexbar]
+** DONE 3093. codexbar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for codexbar; next: determine upstream source + build system for codexbar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widget displaying OpenAI Codex subscription usage with colored progress bars
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (bash script v0.1.17, copy-build-system, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3094. logibar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for logibar; next: determine upstream source + build system for logibar]
+** DONE 3094. logibar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for logibar; next: determine upstream source + build system for logibar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widgets and daemons for monitoring Logitech wireless peripheral battery levels
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (bash+python scripts v0.1.3, copy-build-system, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3095. boomer-git [BLOCKED: MISSING_BUILD_TOOLS — Screen zoomer (github.com/tsoding/boomer, MIT). Written in Nim. Guix has no Nim compiler or nimble build system. No tagged releases or binary downloads.]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=4); Zoomer application for Linux.
+   - Status: BLOCKED: NEEDS_NIM_TOOLCHAIN | upstream github.com/tsoding/boomer; written in Nim; no nim-build-system in Guix; no tagged releases or prebuilt binaries; last commit 2024-02-08
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3096. claudebar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for claudebar; next: determine upstream source + build system for claudebar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=1); Waybar widget displaying Claude AI subscription usage with colored progress bars
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (bash script v0.1.17, copy-build-system, MIT)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -19260,21 +19264,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3098. qxmledit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for qxmledit; next: determine upstream source + build system for qxmledit]
+** DONE 3098. qxmledit [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for qxmledit; next: determine upstream source + build system for qxmledit]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=2); Simple XML editor and XSD viewer
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (Qt6 C++ cmake v0.9.18, LGPL-2.0+)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3099. tufw-git [NEEDS_RECIPE_DESIGN: guix show tufw failed (package not found in current channels); next: draft standalone recipe for tufw-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=3); Terminal UI for ufw
+   - Status: BLOCKED: NEEDS_GO_MODULE_VENDORING | upstream github.com/peltho/tufw v0.2.7; Go 1.23 with tcell/tview TUI libs not in Guix; also needs ufw at runtime (not in Guix)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3100. adbfs-rootless-git [NEEDS_RECIPE_DESIGN: guix show adbfs-rootless failed (package not found in current channels); next: draft standalone recipe for adbfs-rootless-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: TODO: Candidate from AUR cache (votes=47); fuse filesystem over adb tool for android devices, no device root required
+   - Status: BLOCKED: NEEDS_ANDROID_TOOLS | upstream github.com/spion/adbfs-rootless; simple Makefile C++ but no tags; requires android-tools (adb) at runtime which is not in Guix
    - Difficulty: unknown
    - TODO Status: TODO
    - Status: DONE: r22-w03 NRD2 recipe as omp-manager-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.2)
@@ -19386,6 +19390,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: ARCH_SPECIFIC_META_PACKAGE | Installs a single pacman hook file; mkinitcpio not used in Guix; Guix handles firmware through its own boot model.
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: ARCH_SPECIFIC — mkinitcpio is Arch Linux initramfs generator; firmware collection not applicable to Guix initrd. A1: Arch-specific; A2: Guix uses different initrd; A3: linux-firmware available separately.
+   - Status: BLOCKED: NEEDS_DOTNET_RUNTIME | upstream github.com/dafny-lang/dafny v4.11.0; .NET 8.0 verification language; dotnet-runtime not available in Guix; source build impossible without .NET SDK
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3102. weylus-bin [NEEDS_RECIPE_DESIGN: guix show weylus failed (package not found in current channels); next: draft standalone recipe for weylus-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt binary v0.11.4, trivial-build-system + patchelf/unzip, AGPL-3.0+)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -32102,9 +32113,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5194. sngrep
+** DONE 5194. sngrep
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: autotools C with ncurses, libpcap, openssl; fetch release from GitHub irontec/sngrep v1.8.1; Source: https://github.com/irontec/sngrep
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (cmake C v1.8.3, ncurses+libpcap+gnutls, GPL-3.0+)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -33127,12 +33138,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5362. efibooteditor-qt5 [Recipe created as `efibooteditor` in queue-20260406-nrd30b.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: Recipe created as `efibooteditor` in queue-20260406-nrd30b.scm; CMake/Qt6 source build v1.5.6.
+** DONE 5362. efibooteditor-qt5
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 5363 in queue-20260406-recipe-resolver-p3.scm
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 5363. efibooteditor
+** DONE 5363. efibooteditor
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100d.scm v1.5.6; recipe drafting not completed this pass.
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (cmake Qt6 C++ v1.5.6, efivar dep, LGPL-3.0+)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -34123,21 +34137,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** FAILED 5526. codexbar
+** DONE 5526. codexbar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n codexbar | detail: placeholder stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved in this pass | next: finish full recipe and run guix lint/build
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 3093 in queue-20260406-recipe-resolver-p3.scm
    - Difficulty: unknown
    - TODO Status: FAILED
 
-** FAILED 5527. logibar
+** DONE 5527. logibar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n logibar | detail: placeholder stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved in this pass | next: finish full recipe and run guix lint/build
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 3094 in queue-20260406-recipe-resolver-p3.scm
    - Difficulty: unknown
    - TODO Status: FAILED
 
-** FAILED 5528. claudebar
+** DONE 5528. claudebar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n claudebar | detail: placeholder stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved in this pass | next: finish full recipe and run guix lint/build
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 3096 in queue-20260406-recipe-resolver-p3.scm
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -36880,9 +36894,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: FAILED
 
-** FAILED 6002. shine
+** DONE 6002. shine
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n shine | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n shine && guix lint -L guix shine
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (autotools C library v3.1.1, gnu-build-system, LGPL-2.0)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -37351,6 +37365,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6090. xavs2   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: New recipe in cron-c79f127f-r22-w03.scm
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (custom configure C v1.4, nasm dep, GPL-2.0+)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -37460,6 +37475,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: New recipe in cron-c79f127f-r22-w03.scm
 ** BLOCKED 6110. quirc   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: MISSING_GUIX_DEPS: depends on sdl_gfx and sdl12-compat (SDL1.2 not in Guix, only SDL2). (deptree-r21 run, 2026-04-06, 3+ approaches tried).
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (C library v1.2, gnu-build-system, ISC)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -47267,7 +47283,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1022, votes=4; MiSans Global is a global language font customization project led by Xiaomi and 
    - TODO Status: BLOCKED
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n misans-fontconfig | error: error: specification->package: unbound variable | hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
-** FAILED 7840. jbig2enc
+** DONE 7840. jbig2enc
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (cmake C++ v0.30, leptonica dep, Apache-2.0)
    - Note: AUR popularity=0.1022, votes=15; A JBIG2 image encoder
    - TODO Status: BLOCKED
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n jbig2enc | error: error: specification->package: unbound variable | hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
@@ -48626,7 +48643,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0943, votes=8; C library for prototyping and experimenting with quantum-resistant cryptography
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n liboqs | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix liboqs && guix build -L guix -n liboqs | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (cmake C v0.15.0, openssl dep, MIT)
 ** FAILED 8053. ryujinx-bin
    - Note: AUR popularity=0.0942, votes=3; Experimental Nintendo Switch Emulator written in C#
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n ryujinx-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
@@ -62502,6 +62519,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 10743. powder-toy-bin
    - Status: DONE: nrd30c compat alias powder-toy-bin -> the-powder-toy in general-compat.scm; upstream Guix has the-powder-toy in (gnu packages games)
+** BLOCKED 10743. powder-toy-bin
+   - Status: DONE: recipe-resolver-p3 resolved as powder-toy in queue-20260406-recipe-resolver-p3.scm (meson C++ v99.5.394, sdl2+curl+fftw+luajit, GPL-3.0+)
    - AUR votes: 8, popularity: 0.0229
    - Note: Desktop version of the classic falling sand physics sandbox, simulates air pressure, velocity & heat!
    - TODO Status: DONE
@@ -87501,6 +87520,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 15713. quirc-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: quirc (C, gnu-build-system, git-fetch from github.com/dlbeer/quirc v1.2)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 6110 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 2, popularity: 0.0064
    - Note: QR decoder library (git version)
    - TODO Status: DONE
@@ -91029,6 +91049,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 16416. powder-toy-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: powder-toy (C++, meson-build-system, git-fetch from github.com/The-Powder-Toy/The-Powder-Toy v98.2.365)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 10743 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 2, popularity: 0.0033
    - Note: Desktop version of the classic falling sand physics sandbox, simulates air pressure, velocity & heat!
    - TODO Status: DONE
@@ -93339,6 +93360,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 16874. jbig2enc-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: jbig2enc (C++, gnu-build-system+autotools, git-fetch from github.com/agl/jbig2enc 0.30)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 7840 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 18, popularity: 0.0025
    - Note: A JBIG2 image encoder
    - TODO Status: DONE
@@ -97501,6 +97523,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 17697. shine-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: shine (C, gnu-build-system+autotools, git-fetch from github.com/toots/shine 3.1.1)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 6002 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 1, popularity: 0.0012
    - Note: Super fast fixed-point MP3 encoder
    - TODO Status: DONE
@@ -98899,6 +98922,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 17973. sngrep-bin
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: sngrep (C, cmake-build-system, git-fetch from github.com/irontec/sngrep v2.1.1)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 5194 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 1, popularity: 0.0009
    - Note: A tool for displaying SIP call message flows from a terminal
    - TODO Status: DONE
@@ -99443,7 +99467,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 18081. efibooteditor-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show efibooteditor | detail: target `efibooteditor` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 5363 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 1, popularity: 0.0008
    - Note: Boot Editor for (U)EFI based systems.
    - TODO Status: BLOCKED
@@ -102191,6 +102215,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 18623. xavs2-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: xavs2 (C, gnu-build-system, git-fetch from github.com/pkuvcl/xavs2 1.4)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 6090 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 4, popularity: 0.0005
    - Note: Open-Source encoder of AVS2-P2/IEEE1857.4 video coding standard (git version)
    - TODO Status: DONE
@@ -105300,6 +105325,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 19234. liboqs-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: liboqs (C, cmake-build-system, git-fetch from github.com/open-quantum-safe/liboqs 0.15.0)
+   - Status: DONE: recipe-resolver-p3 resolved via primary entry 8052 in queue-20260406-recipe-resolver-p3.scm
    - AUR votes: 1, popularity: 0.0003
    - Note: C library for prototyping and experimenting with quantum-resistant cryptography
    - TODO Status: DONE

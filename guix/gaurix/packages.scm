@@ -251,6 +251,8 @@
   #:use-module (gaurix packages queue-20260407-deptree-resolver-blocked-notes)
   #:use-module (gaurix packages queue-20260406-recipe-resolver-p2)
   #:use-module (gaurix packages queue-20260406-recipe-resolver-p2-blocked-notes)
+  #:use-module (gaurix packages queue-20260406-recipe-resolver-p3)
+  #:use-module (gaurix packages queue-20260406-recipe-resolver-p3-blocked-notes)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7522,4 +7524,26 @@ podman-tui-bin
             lobster
             c47-bin
             r47-bin
+            claudebar
+            codexbar
+            console2svg-bin
+            ddccontrol-db
+            efibooteditor
+            funzzy-bin
+            jbig2enc
+            lazytail-bin
+            liboqs
+            logibar
+            omp-manager-bin
+            pandoc-crossref-bin
+            pixora-icons
+            powder-toy
+            quirc
+            qxmledit
+            shine
+            sngrep
+            tmux-plugin-panel-bin
+            weylus-bin
+            workz-bin
+            xavs2
 ))
