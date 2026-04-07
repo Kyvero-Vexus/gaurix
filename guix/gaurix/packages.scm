@@ -258,6 +258,8 @@
   #:use-module (gaurix packages queue-20260407-deptree-resolver-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260406)
   #:use-module (gaurix packages deptree-resolver-260407)
+  #:use-module (gaurix packages deptree-resolver-260407)
+  #:use-module (gaurix packages recipe-resolver-260407)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7606,6 +7608,48 @@ podman-tui-bin
             python-plyer
             python-condense-json
             python-m3u8
+            verify-lib
+            freedm
+            zmusic
+            mint-x-icons
+            dotool
+            libunity
+            python-pfzy
+            python-inquirerpy
+            python-sse-starlette
+            python-uv-dynamic-versioning
+            xboxdrv
+            google-chrome
+            llvm-libs-minimal-git
+            python312
+            hyprtoolkit
+            wayfire
+            qt5-scxml
+            apriltag
+            openapv
+            xevd
+            libklvanc
+            waydroid
+            ;; deptree-resolver-260407
+            davs2
+            xavs2
+            vvenc
+            libaribcaption
+            uavs3d
+            zmusic
+            libuvc
+            grepcidr
+            domake
+            arduino-ctags
+            html2markdown
+            elephant
+            gslapper
+            genders
+            python-art
+            python-pid
+            python-plyer
+            python-condense-json
+            python-m3u8
             python-wassima
             python-munge
             python-opencensus
@@ -7616,4 +7660,38 @@ podman-tui-bin
             ghostty-terminfo
             clash-geoip
             keychron-link-udev
+            ;; recipe-resolver-260407
+            lazytail-bin
+            funzzy-bin
+            pandoc-crossref-bin
+            console2svg-bin
+            mezzotone-bin
+            chough-bin
+            workz-bin
+            omp-manager-bin
+            tmux-plugin-panel-bin
+            framework-control-bin
+            szsol-rs
+            tufw-bin
+            dafny-bin
+            weylus-bin
+            lobster
+            python-aiohttp-jinja2
+            pricehist
+            python-yewtube-search-python
+            yewtube
+            swhook
+            dpibreak
+            dpibreak-git
+            compendium
+            netwatch-tui
+            gnix
+            qxmledit
+            adbfs-rootless
+            adbfs-rootless-git
+            qpdf-zopfli
+            fish-session
+            spinwheel-pipewire
+            mkinitcpio-firmware
+            baremetal-compiler-rt
 ))

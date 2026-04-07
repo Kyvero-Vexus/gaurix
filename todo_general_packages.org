@@ -18781,12 +18781,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 3041. qpdf-zopfli [NEEDS_SOURCE_PATCH: qpdf-zopfli requires patching upstream qpdf (CMake/C++) to link against Zopfli compression; upstream qpdf v12.3.2 available but Zopfli integration needs custom build]
+** DONE 3041. qpdf-zopfli [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for qpdf-zopfli; next: determine upstream source + build system for qpdf-zopfli]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); QPDF: A Content-Preserving PDF Transformation System (with Zopfli support)
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** BLOCKED 3042. swhook [NEEDS_CARGO_BUILD: swhook (https://github.com/AndyLocks/swhook v0.0.3) is a Rust webhook server; release assets unclear; would need cargo-build-system recipe from source]
+** DONE 3042. swhook [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for swhook; next: determine upstream source + build system for swhook]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); A minimalistic Webhook server
    - Difficulty: unknown
@@ -18848,13 +18850,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3048. console2svg-bin [NEEDS_RECIPE_DESIGN: guix show console2svg failed (package not found in current channels); next: draft standalone recipe for console2svg-bin in future pass]
+** DONE 3048. console2svg-bin [NEEDS_RECIPE_DESIGN: guix show console2svg failed (package not found in current channels); next: draft standalone recipe for console2svg-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); Easily convert terminal output into SVG images
    - Difficulty: unknown
    - TODO Status: TODO
 
 ** DONE 3049. szsol-rs [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (szsol-rs-bin v1.1.0, pre-built Rust binary from GitHub)]
+** DONE 3049. szsol-rs [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for szsol-rs; next: determine upstream source + build system for szsol-rs]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); A solitaire card game originating from SHENZHEN I/O, with tui/cli mode and solver
    - Difficulty: unknown
@@ -19013,6 +19016,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3072. framework-control-bin [BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Framework Laptop control app (github.com/ozturkkl/framework-control, MIT, v0.5.2). Hybrid Rust+Svelte/Node.js build. Runtime depends on framework_tool CLI (not in Guix) and systemd. Hardware-specific.]
 ** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
 ** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (framework-control-bin v0.5.2, pre-built Rust binary from GitHub)]
+** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (binary v0.5.2, patchelf, from GitHub releases)
    - Difficulty: unknown
@@ -19020,6 +19024,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** DONE 3062. mkbrr-gui-bin [NEEDS_RECIPE_DESIGN: guix show mkbrr-gui failed (package not found in current channels); next: draft standalone recipe for mkbrr-gui-bin in future pass]
+** DONE 3073. baremetal-compiler-rt [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for baremetal-compiler-rt; next: determine upstream source + build system for baremetal-compiler-rt]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as mkbrr-gui-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v1.19.0-rc.1)
    - Difficulty: unknown
@@ -19043,6 +19048,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (lobster v4.6.2, POSIX shell script from GitHub)]
+** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD5 recipe as c47-bin (trivial-build-system binary from GitLab v00.109.03.02a0.vect); guix build -L guix -n passes.
    - Difficulty: unknown
@@ -19105,6 +19111,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
 ** BLOCKED 3074. wireview-linux [BLOCKED: NONFREE_LICENSE — Unofficial Linux port of Thermal Grizzly WireView (github.com/emaspa/wireview-linux, v1.0.4.0). Contains decompiled proprietary code. Not a FOSS license. Also requires .NET 8.0 SDK.]
+** DONE 3077. dpibreak-git [NEEDS_RECIPE_DESIGN: guix show dpibreak failed (package not found in current channels); next: draft standalone recipe for dpibreak-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r26-w03-nrd recipe (copy-build-system binary from GitHub v0.5.2); guix build -L guix -n framework-control-bin passes.
    - Status: BLOCKED: NEEDS_DOTNET_SDK | .NET 8.0 source v1.0.4.0 from github.com/emaspa/wireview-linux; requires dotnet-sdk (not in Guix) + Avalonia UI; no standard license file (contains decompiled code). Upstream: https://github.com/emaspa/wireview-linux
@@ -19349,7 +19356,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
+** DONE 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NO_LICENSE | upstream github.com/AtefR/fish-session has no LICENSE file, no license in Cargo.toml; AUR says LicenseRef-UNLICENSED; cannot package for Guix without declared FOSS license
    - Difficulty: unknown
@@ -19379,19 +19386,19 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3089. spinwheel-pipewire [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for spinwheel-pipewire; next: determine upstream source + build system for spinwheel-pipewire]
+** DONE 3089. spinwheel-pipewire [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for spinwheel-pipewire; next: determine upstream source + build system for spinwheel-pipewire]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); A terminal wheel spinner with named wheels and built-in modes
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3090. compendium [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for compendium; next: determine upstream source + build system for compendium]
+** DONE 3090. compendium [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for compendium; next: determine upstream source + build system for compendium]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); A user-friendly strace for x86 Linux with HTML reports
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3091. yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]
+** DONE 3091. yewtube-bin [NEEDS_RECIPE_DESIGN: guix show yewtube failed (package not found in current channels); next: draft standalone recipe for yewtube-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_PYTHON_DEPS | upstream pypi.org/project/yewtube v2.13.1; pure Python but requires yewtube-search-python (>=1.6.7) not in Guix; would need packaging first
    - Difficulty: unknown
@@ -19427,7 +19434,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3097. mkinitcpio-firmware [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for mkinitcpio-firmware; next: determine upstream source + build system for mkinitcpio-firmware]
+** DONE 3097. mkinitcpio-firmware [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for mkinitcpio-firmware; next: determine upstream source + build system for mkinitcpio-firmware]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=103); Optional firmware for the default linux kernel to get rid of the annoying 'WARNING: Possibly missing firmware for mod...
    - Difficulty: unknown
@@ -19445,7 +19452,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: TODO
 
-** BLOCKED 3100. adbfs-rootless-git [NEEDS_RECIPE_DESIGN: guix show adbfs-rootless failed (package not found in current channels); next: draft standalone recipe for adbfs-rootless-git in future pass]
+** DONE 3100. adbfs-rootless-git [NEEDS_RECIPE_DESIGN: guix show adbfs-rootless failed (package not found in current channels); next: draft standalone recipe for adbfs-rootless-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_ANDROID_TOOLS | upstream github.com/spion/adbfs-rootless; simple Makefile C++ but no tags; requires android-tools (adb) at runtime which is not in Guix
    - Difficulty: unknown
@@ -19491,12 +19498,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
 ** BLOCKED 3102. weylus-bin [BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Tablet as graphic tablet (github.com/H-M-H/Weylus, AGPL-3.0, v0.11.4). Multi-language: Rust+TypeScript+C+nasm. Many X11/Wayland/GStreamer deps. Last release Oct 2021, likely abandoned.]
+** DONE 3101. dafny-bin [NEEDS_RECIPE_DESIGN: guix show dafny failed (package not found in current channels); next: draft standalone recipe for dafny-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as workz-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.8.0)
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
+** DONE 3102. weylus-bin [NEEDS_RECIPE_DESIGN: guix show weylus failed (package not found in current channels); next: draft standalone recipe for weylus-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as omp-manager-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.2)
    - Difficulty: unknown
@@ -33964,6 +33973,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 5461. netwatch-tui [see #3038]
 ** BLOCKED 5461. netwatch-tui [CARGO_DEP_CHAIN]
+** DONE 5461. netwatch-tui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.3.5; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -33989,6 +33999,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 5465. swhook [CARGO_DEP_CHAIN]
+** DONE 5465. swhook
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.0.3; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34032,6 +34043,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 5472. szsol-rs [CARGO_DEP_CHAIN]
+** DONE 5472. szsol-rs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.0.1; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34115,31 +34127,31 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5486. framework-control-bin
+** DONE 5486. framework-control-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.5.1; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5487. baremetal-compiler-rt
+** DONE 5487. baremetal-compiler-rt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v22.1.1; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5488. dpibreak
+** DONE 5488. dpibreak
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.5.1; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5489. lobster
+** DONE 5489. lobster
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vv4.6.2; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5490. dpibreak-git
+** DONE 5490. dpibreak-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vr357; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34151,7 +34163,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5492. mezzotone-bin
+** DONE 5492. mezzotone-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.1.1; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34176,43 +34188,43 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 5496. fish-session
+** DONE 5496. fish-session
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.8; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5497. workz-bin
+** DONE 5497. workz-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.8.0; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5498. omp-manager-bin
+** DONE 5498. omp-manager-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.2; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5499. tmux-plugin-panel-bin
+** DONE 5499. tmux-plugin-panel-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.1; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5500. spinwheel-pipewire
+** DONE 5500. spinwheel-pipewire
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.0; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5501. compendium
+** DONE 5501. compendium
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.2.0; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5502. pandoc-crossref-bin
+** DONE 5502. pandoc-crossref-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.3.23.a; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34224,13 +34236,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5504. mkinitcpio-firmware
+** DONE 5504. mkinitcpio-firmware
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.6.0; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5505. qxmledit
+** DONE 5505. qxmledit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.9.18; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34242,19 +34254,19 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5507. adbfs-rootless-git
+** DONE 5507. adbfs-rootless-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vr112; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5508. dafny-bin
+** DONE 5508. dafny-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v4.11.0; recipe drafting not completed this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5509. weylus-bin
+** DONE 5509. weylus-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.11.4; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34334,7 +34346,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5522. gnix
+** DONE 5522. gnix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v2.4.1; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -34352,7 +34364,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5525. chough-bin
+** DONE 5525. chough-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.0.0; recipe drafting not completed this pass.
    - Difficulty: medium
@@ -37607,6 +37619,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Difficulty: unknown
    - TODO Status: DONE
+** DONE 6090. xavs2
+   - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 6091. uavs3d-git
+   - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+   - Difficulty: unknown
+   - TODO Status: DONE
 
 ** BLOCKED 6092. opencv2   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n opencv2 | detail: recipe-attempt stub added in queue-20260329p100daily4; source/hash/build-system unresolved in this pass | next: complete full Guix recipe then guix lint/build
@@ -37680,6 +37701,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6101. xevd
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
+   - Difficulty: unknown
+   - TODO Status: DONE
+** DONE 6100. xeve
+   - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 6101. xevd
+   - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Difficulty: unknown
    - TODO Status: DONE
 ** DONE 6100. xeve
@@ -45508,6 +45538,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
 
+   - TODO Status: DONE
+   - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+
   - TODO Status: DONE
   - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
 ** BLOCKED 7423. gashell
@@ -48016,7 +48049,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-pdf2doi | detail: placeholder stub added in guix/gaurix/packages/queue-20260401p100daily2.scm (source/hash/build-system not finalized) | next: draft full recipe and run guix lint/build
    - TODO Status: BLOCKED
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n python-pdf2doi | error: package recipe drafting not completed this pass | next: finalize source URI/hash/inputs and validate
-** FAILED 7942. tufw-bin
+** DONE 7942. tufw-bin
 ** FAILED 7945. weatherfetch
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n weatherfetch | detail: placeholder stub added in guix/gaurix/packages/queue-20260401p100daily2.scm (source/hash/build-system not finalized) | next: draft full recipe and run guix lint/build
    - TODO Status: BLOCKED
@@ -50961,6 +50994,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-r24-w03.scm. cmake-build-system, v0.8.14, Xbox gamepad driver.
 
    - Status: BLOCKED: MISSING_GUIX_DEPS | Userspace Xbox gamepad driver. Needs dbus-glib and scons build system investigation.
+
 
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
 ** BLOCKED 8391. whisper.cpp-model-large-v3
@@ -76808,7 +76842,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Transportation planning and traffic simulation software for creating cities friendlier to walking, biking, and public transit.(Prebuilt version)
    - TODO Status: TODO
 
-** TODO 13510. yewtube-bin
+** DONE 13510. yewtube-bin
    - AUR votes: 1, popularity: 0.6515
    - Note: Terminal-based YouTube player and downloader
    - TODO Status: TODO
