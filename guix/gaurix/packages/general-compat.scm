@@ -3133,6 +3133,7 @@
   (package
     (inherit libsodium)
     (name "libsodium-1.0.18")))
+;;; Deptree-resolver 260407 compat aliases
 
 (define-public noto-fonts-emoji-blob
   (package
@@ -3154,3 +3155,6 @@
 (define-public libheif-noglycin libheif)
 (define-public libjxl-noglycin libjxl)
 (define-public libjxl-noglycin-doc libjxl)
+(define-public doas
+    (inherit opendoas)
+    (name "doas")))
