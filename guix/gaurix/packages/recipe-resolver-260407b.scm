@@ -142,6 +142,12 @@ workflows like auto-reloading and continuous testing.")
 provides a terminal user interface for browsing and scanning files on
 your system.")
 (define-public sabiql-bin
+    (native-inputs (list patchelf))
+    (supported-systems '("x86_64-linux"))
+    (description
+    (license license:expat)))
+
+  (package
     (name "sabiql-bin")
     (version "1.9.1")
     (source
@@ -226,6 +232,12 @@ browsing and searching log files in real time.")
 querying, and editing PostgreSQL databases.  It connects directly to
 PostgreSQL without requiring external database drivers.")
 (define-public ffsend-bin
+    (native-inputs (list patchelf))
+    (supported-systems '("x86_64-linux"))
+    (description
+    (license license:expat)))
+
+  (package
     (name "ffsend-bin")
     (version "0.2.77")
     (source
@@ -294,11 +306,15 @@ locally for AI inference with zero telemetry or cloud dependencies.")
               (chmod "ffsend" #o755))))))
     (home-page "https://github.com/timvisee/ffsend")
     (synopsis "secure file sharing from the command line")
+    (supported-systems '("x86_64-linux"))
+    (description
      "Ffsend is a command-line tool for easily and securely sharing files.
 It is a fully featured client for Firefox Send and compatible services,
 providing end-to-end encrypted file uploads and downloads.")
     (license license:gpl3)))
 (define-public mouse-actions-gui-bin
+
+  (package
     (name "mouse-actions-gui-bin")
     (version "0.4.5")
     (source
@@ -310,6 +326,11 @@ providing end-to-end encrypted file uploads and downloads.")
         (base32 "057ydpkjmphxdhc554fsrac9y7zxmdgjvmwwk2cr744ih962hsp1"))))
     (build-system copy-build-system)
       #:install-plan #~'(("mouse-actions-gui" "bin/mouse-actions-gui"))
+       (sha256
+    (arguments
+     (list
+      #:phases
+      #~(modify-phases %standard-phases
           (delete 'install-license-files)
           (add-after 'install 'patch-elf
             (lambda* (#:key inputs outputs #:allow-other-keys)
@@ -329,11 +350,17 @@ providing end-to-end encrypted file uploads and downloads.")
     (inputs (list (list gcc "lib") glibc))
     (home-page "https://github.com/jersou/mouse-actions")
     (synopsis "execute commands from mouse events and gestures")
+    (native-inputs (list patchelf))
+    (supported-systems '("x86_64-linux"))
+    (description
      "Mouse-actions lets you execute commands from mouse events such as
 clicks, wheel actions on screen edges and corners, or drawn shapes.
 It combines functionality similar to Easystroke and Compiz edge
 commands, supporting both X11 and Wayland.")
 (define-public endcord
+    (license license:expat)))
+
+  (package
     (name "endcord")
     (version "1.4.1")
     (source
@@ -454,11 +481,16 @@ replacement for ssh, providing quick access to configured hosts.")
     (inputs (list (list gcc "lib") glibc))
     (home-page "https://github.com/sparklost/endcord")
     (synopsis "feature-rich Discord TUI client")
+    (native-inputs (list patchelf))
+    (supported-systems '("x86_64-linux"))
+    (description
      "Endcord is a feature-rich Discord terminal user interface client.  It
 provides text-based access to Discord servers, channels, and direct
 messages from the command line.")
     (license license:gpl3)))
 (define-public clightd
+
+  (package
     (name "clightd")
     (version "5.9")
     (source
@@ -506,12 +538,15 @@ interactive terminal interface for rendering visual content as text.")
           #t)))
     (home-page "https://github.com/FedeDP/Clightd")
     (synopsis "D-Bus interface for screen brightness and webcam frame capture")
+    (description
      "Clightd is a D-Bus interface daemon for changing screen brightness
 and capturing webcam frames on Linux.  It supports DDC/CI monitors,
 backlight devices, and gamma adjustment.  Requires libmodule at build
 time; full cmake recipe needed for functional build.")
     (license license:gpl3+)))
 (define-public udiskr
+
+  (package
     (name "udiskr")
     (version "0.1.1")
     (source
@@ -570,6 +605,10 @@ to text directly from the terminal.")
 auto-mounting removable devices via udisks2.  Requires Rust nightly
 toolchain for full source build; cargo-build-system recipe pending.")
 (define-public docx-you-want
+    (description
+    (license license:expat)))
+
+  (package
     (name "docx-you-want")
     (version "0.1.2")
     (source
@@ -638,12 +677,15 @@ interface for configuration.")
           #t)))
     (home-page "https://github.com/MikeWalrus/docx-you-want")
     (synopsis "PDF-to-DOCX converter using Inkscape rendering")
+    (description
      "Docx-you-want is a Rust-based PDF-to-DOCX converter that uses
 Inkscape for rendering.  It takes a different approach from traditional
 converters by leveraging SVG as an intermediate format.  Full
 cargo-build-system recipe pending.")
     (license license:gpl3)))
 (define-public lswt
+
+  (package
     (name "lswt")
     (version "2.0.0")
     (source
@@ -654,6 +696,9 @@ cargo-build-system recipe pending.")
              version ".tar.gz"))
         (base32 "1az6amqql2k24f0l11za3vz9xsvnrc8q34qh2q55nwdv01fcq8wf"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -662,12 +707,15 @@ cargo-build-system recipe pending.")
           #t)))
     (home-page "https://git.sr.ht/~leon_plickat/lswt")
     (synopsis "list Wayland toplevels via the foreign-toplevel protocol")
+    (description
      "Lswt lists all toplevel windows on a Wayland compositor that supports
 the wlr-foreign-toplevel-management protocol.  It is a simple
 diagnostic tool for Wayland compositors.  Full gnu-build-system recipe
 with wayland dependency pending.")
     (license license:gpl3)))
 (define-public nemu
+
+  (package
     (name "nemu")
     (version "3.4.0")
     (source
@@ -678,6 +726,9 @@ with wayland dependency pending.")
              version ".tar.gz"))
         (base32 "0hpglp0m2kz74r8bnjsaa6r8kb26i0nmxjrydkvaxy130vlb6wp2"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -686,12 +737,15 @@ with wayland dependency pending.")
           #t)))
     (home-page "https://github.com/nemuTUI/nemu")
     (synopsis "ncurses-based TUI for managing QEMU virtual machines")
+    (description
      "Nemu is an ncurses-based terminal user interface for managing and
 running QEMU virtual machines.  It provides an accessible front-end
 for creating, configuring, and launching VMs.  Full cmake recipe
 with ncurses, sqlite, json-c, and libxml2 dependencies pending.")
     (license license:bsd-2)))
 (define-public podman-tui
+
+  (package
     (name "podman-tui")
     (version "1.11.1")
     (source
@@ -702,6 +756,9 @@ with ncurses, sqlite, json-c, and libxml2 dependencies pending.")
              version ".tar.gz"))
         (base32 "1qblmrndrg8yahm4cffhngpzxj9rc51amzjf2c9h8k462wcnj2r1"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -710,12 +767,15 @@ with ncurses, sqlite, json-c, and libxml2 dependencies pending.")
           #t)))
     (home-page "https://github.com/containers/podman-tui")
     (synopsis "terminal user interface for managing Podman containers")
+    (description
      "Podman-tui is a terminal user interface for managing Podman
 containers, images, volumes, and pods.  Written in Go, it provides a
 text-based dashboard for container operations.  Full go-build-system
 recipe pending.")
     (license license:asl2.0)))
 (define-public wireview-linux
+
+  (package
     (name "wireview-linux")
     (version "1.0.4.0")
     (source
@@ -726,6 +786,9 @@ recipe pending.")
              version ".tar.gz"))
         (base32 "061lqcax9mlhdsx26ldqzyk4n1idp0cr8xiblqpa50qd9vz8jahy"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -738,6 +801,10 @@ recipe pending.")
 WireView Pro II desktop application for monitoring cable voltage and
 current.  Built with .NET; full recipe requires dotnet-sdk.")
 (define-public codexbar
+    (description
+    (license license:expat)))
+
+  (package
     (name "codexbar")
     (version "0.1.17")
     (source
@@ -748,6 +815,9 @@ current.  Built with .NET; full recipe requires dotnet-sdk.")
              version ".tar.gz"))
         (base32 "09bb4nmvlafw84y15h60dvps70gd62vmizg6m64fmymghn2anicc"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -760,6 +830,10 @@ current.  Built with .NET; full recipe requires dotnet-sdk.")
 usage with colored progress bars.  It uses shell scripts with curl and
 jq to query the OpenAI API.  Full make-based recipe pending.")
 (define-public logibar
+    (description
+    (license license:expat)))
+
+  (package
     (name "logibar")
     (version "0.1.3")
     (source
@@ -770,6 +844,9 @@ jq to query the OpenAI API.  Full make-based recipe pending.")
              version ".tar.gz"))
         (base32 "18jbfnzaykwv9m03ppkb05nid3972vdrdmvx2fx666l6d7la0lz7"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -778,11 +855,15 @@ jq to query the OpenAI API.  Full make-based recipe pending.")
           #t)))
     (home-page "https://github.com/mryll/logibar")
     (synopsis "Waybar widgets for Logitech peripheral battery monitoring")
+    (description
      "Logibar provides Waybar widgets and background daemons for monitoring
 Logitech wireless peripheral battery levels via HID++.  Includes
 Python scripts and systemd user services.  Full make-based recipe
 pending.")
 (define-public claudebar
+    (license license:expat)))
+
+  (package
     (name "claudebar")
     (version "0.1.17")
     (source
@@ -793,6 +874,9 @@ pending.")
              version ".tar.gz"))
         (base32 "0yw1yylgwsfb3i60gfjyrfqgbzpgyg9x2q6x0kinmagb9s5ssrq0"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -805,6 +889,10 @@ pending.")
 usage with colored progress bars.  It uses shell scripts with curl and
 jq to query the Anthropic API.  Full make-based recipe pending.")
 (define-public op-cache-git
+    (description
+    (license license:expat)))
+
+  (package
     (name "op-cache-git")
     (version "0.1.0-git")
     (source
@@ -813,6 +901,9 @@ jq to query the Anthropic API.  Full make-based recipe pending.")
        (uri "https://github.com/crmne/op-cache/archive/refs/heads/main.tar.gz")
         (base32 "1j9a1i2xbdvnlmx3y6z1swhybs0qk5navv3r5j3qg646wjz59aml"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -821,11 +912,15 @@ jq to query the Anthropic API.  Full make-based recipe pending.")
           #t)))
     (home-page "https://github.com/crmne/op-cache")
     (synopsis "caching proxy for 1Password CLI read commands")
+    (description
      "Op-cache is a fast caching proxy for 1Password CLI @code{op read}
 commands.  Written in Rust, it reduces latency for repeated secret
 lookups by caching results locally.  Full cargo-build-system recipe
 pending.")
 (define-public fw-fanctrl-rs-git
+    (license license:expat)))
+
+  (package
     (name "fw-fanctrl-rs-git")
     (version "0.1.0-git")
     (source
@@ -834,6 +929,9 @@ pending.")
        (uri "https://github.com/NexusXe/fw-ec-utils/archive/refs/heads/main.tar.gz")
         (base32 "0j154a3dn2zykn73bmzpak0cxjb9lnzf3ndxq09mdp62lfcsrd5i"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -843,12 +941,15 @@ pending.")
           #t)))
     (home-page "https://github.com/NexusXe/fw-ec-utils")
     (synopsis "custom fan speed control daemon for Framework laptops")
+    (description
      "Fw-fanctrl-rs is a lightweight daemon for custom fan speed control on
 Framework laptops.  Written in Rust, it interfaces with the embedded
 controller to set fan curves.  Requires Rust nightly; full
 cargo-build-system recipe pending.")
     (license license:agpl3+)))
 (define-public mkbrr-gui-bin
+
+  (package
     (name "mkbrr-gui-bin")
     (version "1.22.0")
     (source
@@ -859,6 +960,9 @@ cargo-build-system recipe pending.")
              version ".tar.gz"))
         (base32 "1v75lvfp646blsj7wdnj64qwrzjjnsx5i4fph54gqz2hiq7c3rk9"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -868,12 +972,18 @@ cargo-build-system recipe pending.")
           #t)))
     (home-page "https://github.com/autobrr/mkbrr")
     (synopsis "GUI frontend for creating and inspecting torrent files")
+    (description
      "Mkbrr-gui is the graphical frontend for mkbrr, a tool to create,
 modify, and inspect torrent files.  The GUI variant requires
 WebKit/GTK.  Full recipe with GUI binary from release assets pending.")
     (license license:gpl2)))
 ;;; ── SOURCE STUBS ─────────────────────────────────────────────────
 (define-public boomer-git
+
+;;;
+;;;
+
+  (package
     (name "boomer-git")
     (version "0.0.0-git")
     (source
@@ -882,6 +992,9 @@ WebKit/GTK.  Full recipe with GUI binary from release assets pending.")
        (uri "https://github.com/tsoding/boomer/archive/refs/heads/master.tar.gz")
         (base32 "1gnhxnwsx62k5n6d99wcqd1cr4zm7pg9cq7maqgj43glspw0ghi6"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -890,11 +1003,15 @@ WebKit/GTK.  Full recipe with GUI binary from release assets pending.")
           #t)))
     (home-page "https://github.com/tsoding/boomer")
     (synopsis "screen zoomer application for X11 on Linux")
+    (description
      "Boomer is a screen zoomer application for X11 on Linux.  It captures
 a portion of the screen and renders it magnified in a separate window,
 useful for presentations and accessibility.  Written in Zig; full
 build-system recipe pending.")
 (define-public gram-editor-bin
+    (license license:expat)))
+
+  (package
     (name "gram-editor-bin")
     (version "1.2.1")
     (source
@@ -905,6 +1022,9 @@ build-system recipe pending.")
              version "/gram-linux-x86_64-" version ".tar.gz"))
         (base32 "0pzlp8x2qxzcl9zrmhcvww26kmilgfmb2kkmjkj9znf868x65l98"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -913,12 +1033,15 @@ build-system recipe pending.")
           #t)))
     (home-page "https://codeberg.org/GramEditor/gram")
     (synopsis "code editor with Vulkan rendering and multiple language support")
+    (description
      "Gram is a code editor with Vulkan-based rendering, supporting multiple
 programming languages.  The binary release includes the editor and
 supporting libraries.  Full recipe with Vulkan and Wayland dependencies
 pending.")
     (license license:gpl3+)))
 (define-public bapctools-git
+
+  (package
     (name "bapctools-git")
     (version "0.0.0-git")
     (source
@@ -927,6 +1050,9 @@ pending.")
        (uri "https://github.com/RagnarGrootKoerkamp/BAPCtools/archive/refs/heads/main.tar.gz")
         (base32 "1pbxzwrq53qdc2dpchajjfcg5k8rfqd2kb1mgnbd348f0i279xih"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -935,12 +1061,15 @@ pending.")
           #t)))
     (home-page "https://github.com/RagnarGrootKoerkamp/BAPCtools")
     (synopsis "tools for developing ICPC-style programming contest problems")
+    (description
      "BAPCtools provides tools for developing and testing ICPC-style
 competitive programming contest problems.  It supports problem
 authoring, validation, and testing workflows.  Full Python-based
 recipe pending.")
     (license license:gpl3)))
 (define-public hurrycurry-server
+
+  (package
     (name "hurrycurry-server")
     (version "3.0.1")
     (source
@@ -951,6 +1080,9 @@ recipe pending.")
              version ".tar.gz"))
         (base32 "1mwr12x7231028wbjpjqlw3qqhj6jckdbn5rgdpv7lhg9hwai0b3"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -960,11 +1092,14 @@ recipe pending.")
           #t)))
     (home-page "https://codeberg.org/hurrycurry/hurrycurry")
     (synopsis "cooperative multiplayer cooking game server")
+    (description
      "Hurrycurry is a cooperative multiplayer game about cooking.  This
 package provides the server component for hosting game sessions.
 Full recipe pending.")
     (license license:agpl3+)))
 (define-public jellything-git
+
+  (package
     (name "jellything-git")
     (version "0.0.7")
     (source
@@ -975,6 +1110,9 @@ Full recipe pending.")
              version ".tar.gz"))
         (base32 "1m18xmmhs3wdlb3fb6h3xhjrb1npdrl5cm1993pcj68mj5br0574"))))
     (build-system trivial-build-system)
+       (sha256
+    (arguments
+     (list
       #:modules '((guix build utils))
       #:builder
       #~(begin
@@ -988,6 +1126,10 @@ Full recipe pending.")
 It provides a desktop interface for interacting with Jellyfin
 instances.  Full recipe pending.")
 (define-public keks-meet-server
+    (description
+    (license license:expat)))
+
+  (package
     (name "keks-meet-server")
     (version "1.1.0")
     (source
@@ -1225,6 +1367,7 @@ for playback.")
           #t)))
     (home-page "https://codeberg.org/metamuffin/keks-meet")
     (synopsis "simple and secure web conferencing server")
+    (description
      "Keks-meet is a simple and secure conferencing application for the
 web.  This package provides the server component for hosting video
 conferences.  Full recipe pending.")
@@ -1234,11 +1377,25 @@ conferences.  Full recipe pending.")
     (version "0.0.0-git")
        (uri "https://github.com/tsora1603/pixora-icons/archive/refs/heads/main.tar.gz")
         (base32 "08dg7dy5rxgmv2d9yl9q75ng8c95rjw6qsq92ya5dmmybvvspmva"))))
+
+  (package
+    (source
+     (origin
+       (method url-fetch)
+       (sha256
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
           (mkdir-p (string-append (assoc-ref %outputs "out")
                                  "/share/pixora-icons"))
           #t)))
     (home-page "https://github.com/tsora1603/pixora-icons")
     (synopsis "16-bit pixel art style icon theme for Linux")
+    (description
      "Pixora-icons is a 16-bit pixel art style icon theme for Linux
 desktops.  It provides a retro-styled set of icons for file managers,
 applications, and system components.  Full icon-theme recipe pending.")
@@ -1248,11 +1405,27 @@ applications, and system components.  Full icon-theme recipe pending.")
     (version "01.00.00.3584")
              "https://github.com/intel/ipmctl/archive/refs/tags/v"
         (base32 "1bi7dmfx3fdb6aifhbszhga6pmvqvmfd06nz4zs2imlx02rk8iqh"))))
+
+  (package
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             version ".tar.gz"))
+       (sha256
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
           (mkdir-p (string-append (assoc-ref %outputs "out")
                                  "/share/ipmctl"))
           #t)))
     (home-page "https://github.com/intel/ipmctl")
     (synopsis "utility for managing Intel Optane persistent memory modules")
+    (description
      "Ipmctl is a utility for configuring and managing Intel Optane DC
 persistent memory modules (DCPMM).  It provides a CLI for provisioning,
 monitoring, and firmware updates.  Full cmake recipe with edk2
@@ -1263,6 +1436,19 @@ dependency pending.")
     (version "0.0.0-git")
        (uri "https://github.com/Aromatic05/we-layerd/archive/refs/heads/main.tar.gz")
         (base32 "0wap0filaczj3dx38yx3ss9w94qll1xhfpsdxz4ba7vqmyfbdqps"))))
+
+  (package
+    (source
+     (origin
+       (method url-fetch)
+       (sha256
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
           (mkdir-p (string-append (assoc-ref %outputs "out")
                                  "/share/we-layerd"))
           #t)))
@@ -1276,16 +1462,37 @@ managers like niri.  Full cargo-build-system recipe pending.")
     (version "0.7.3")
              "https://github.com/ArchiveBox/ArchiveBox/archive/refs/tags/v"
         (base32 "0mnjj2lc0ls24rrg44lvrf35hiini31advysjm0sisk9waj49hr7"))))
+    (description
+    (license license:expat)))
+
+  (package
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             version ".tar.gz"))
+       (sha256
+    (build-system trivial-build-system)
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
           (mkdir-p (string-append (assoc-ref %outputs "out")
                                  "/share/archivebox"))
           #t)))
     (home-page "https://github.com/ArchiveBox/ArchiveBox")
     (synopsis "self-hosted web archiving tool")
+    (description
      "ArchiveBox is an open source self-hosted web archiving tool.  It
 saves HTML, JavaScript, PDFs, media, and more from URLs, browser
 history, bookmarks, Pocket, Pinboard, and other sources.  Full
 Python/Django recipe pending.")
 (define-public synergy3-bin
+    (license license:expat)))
+
+  (package
     (name "synergy3-bin")
     (version "3.6.0")
     (source #f)
@@ -1347,6 +1554,7 @@ fonts when available.")
           #t)))
     (home-page "https://symless.com/synergy")
     (synopsis "share mouse and keyboard between multiple computers")
+    (description
      "Synergy lets you share a single mouse and keyboard between multiple
 computers.  Version 3 is proprietary; the binary package requires a
 token-gated download from Symless.  Full recipe with proper source
@@ -1370,6 +1578,7 @@ pending.")
           #t)))
     (home-page "https://github.com/aeroshell-desktop/uac-polkit-agent")
     (synopsis "polkit authenticator with UAC interface for AeroShell")
+    (description
      "Uac-polkit-agent is a Polkit authentication agent with a User Account
 Control style interface for the AeroShell desktop environment.  Built
 on KDE Plasma 6.6 frameworks.  Full recipe with KDE dependencies

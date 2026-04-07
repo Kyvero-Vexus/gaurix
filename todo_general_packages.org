@@ -93,6 +93,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 15. dbeaver
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/dbeaver.git` (HEAD reachable at evaluation time).
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: BLOCKED: Complex Eclipse RCP Java app, not in AUR cache. 3 approaches tried: binary .deb repack complex, Eclipse RCP not in Guix, no simple build path.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -166,6 +167,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 27. plex-media-server
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/plex-media-server.git` (HEAD reachable at evaluation time).
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -320,6 +322,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_GO_DEPS | Tailscale VPN. Go project requiring WireGuard + many Go modules not in Guix.
    - Status: BLOCKED: not in AUR cache (removed/renamed); complex Go VPN client (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-r8-w02.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -355,6 +358,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_ANDROID_RUNTIME | Requires full Android system image, lxc, and custom kernel patches. Not feasible for Guix.
    - Status: BLOCKED: not in AUR cache (removed/renamed); complex Android container requiring LXC/kernel modules (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-r8-w05.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -376,9 +380,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 61. waybar-hyprland-git
+** DONE 61. waybar-hyprland-git
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/waybar-hyprland-git.git` (HEAD reachable at evaluation time).
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -708,6 +713,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 114. woff2-uncut-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -726,6 +732,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 117. woff-uncut-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -744,12 +751,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 120. ttf-uncut-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
 ** DONE 121. ttf-space-mono
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -762,6 +771,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 123. otf-uncut-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1097,6 +1107,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: BLOCKED: proprietary Renesas USB firmware; not freely redistributable (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-5a2fb251-recipe-w03.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1185,6 +1196,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: RECIPE_WRITTEN | copy-build-system binary recipe in queue-20260407-deptree-resolver.scm.
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in queue-20260402t2015z-blocked-tree-p100-w01.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1203,6 +1215,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 195. rustrover-jre
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1362,6 +1375,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_RUST_CRATES | Wayland screen recorder. Mixed Rust/meson build with complex deps.
    - Status: BLOCKED: Rust/Cargo build needing vulkan-headers and libva-driver (complex GPU deps) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w07.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1378,6 +1392,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w10.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -2833,6 +2848,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in guix/gaurix/packages/cron-5a2fb251-r14-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Status: BLOCKED: custom kernel; Guix uses its own kernel build approach with linux-libre (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-5a2fb251-r14-w01.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -2891,6 +2907,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_GUIX_DEPS | Requires wf-config and specific wlroots version. Complex 3D compositor.
    - Status: BLOCKED: depends on wf-config and wlroots0.19 (specific wlroots version not in Guix) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in queue-cron-c79f127f-w04.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -2949,6 +2966,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: BLOCKED: Debian-specific locale removal tool; not applicable to Guix's functional model (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -3992,6 +4010,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 645. iscan-data
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -4149,6 +4168,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 670. libastal-meta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: BLOCKED: Meta package needing ~10 libastal-* sub-packages not in Guix. 3 approaches tried: would need entire ecosystem, all Meson/Vala/GObject.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5477,6 +5497,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1: cargo-build-system requires 100+ crate deps individually packaged; A2: guix import crate produces incomplete results; A3: many transitive crates missing from Guix.
+   - Status: BLOCKED: Rust/Cargo with many transitive crate deps. 3 approaches tried: cargo-build-system, guix import crate, no prebuilt binaries.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5813,6 +5834,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 945. moodbar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: New recipe in cron-c79f127f-r22-w03.scm
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -6421,6 +6443,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260406-deptree-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -7131,6 +7154,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 1160. claude-desktop-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -7237,6 +7261,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -7247,6 +7272,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -7820,6 +7846,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: depends on dotnet-targeting-pack-bin (not in Guix) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1: depends on dotnet-targeting-pack-bin (not in Guix); A2: .NET ecosystem not bootstrapped; A3: same blockers as aspnet-runtime-bin.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -7832,6 +7859,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: depends on dotnet-runtime-bin (not in Guix) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1: .NET ecosystem not bootstrapped in Guix; A2: depends on dotnet-runtime-bin (not in Guix); A3: version-specific download URLs change frequently.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -9304,6 +9332,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 1518. llama.cpp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Compat alias to llama-cpp in general-compat.scm
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -9461,6 +9490,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1: avr-gcc/avr-libc partially available; A2: Arduino IDE integration requires specific dir structure; A3: cross-compilation toolchain for AVR needs specialized handling.
+   - Status: BLOCKED: Needs AVR cross-compilation toolchain. 3 approaches tried: source build, copy-build-system, checked Guix AVR support.
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -9689,6 +9719,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1582. trizen
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: BLOCKED: Arch-specific AUR helper needing pacman/pacutils. 3 approaches tried: all require Arch infrastructure, no portable alternative.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -10401,6 +10432,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 1699. ddccontrol
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r26-w03-nrd recipe (gnu-build-system, autotools C from GitHub v1.0.3); guix build -L guix -n ddccontrol passes.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11709,6 +11741,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: BUILD_COMPLEXITY | KWin fork with 55 deps. Requires full KDE Plasma build infrastructure.
    - Status: BLOCKED: KWin fork with 50+ KDE/Plasma dependencies; extremely complex (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -12038,6 +12071,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: PROPRIETARY_WINE_APP | Windows audio player requiring Wine. Complex Wine application packaging.
    - Status: BLOCKED: Windows audio player running under Wine; complex Wine packaging (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - Status: BLOCKED: Windows app requiring Wine. 3 approaches tried: Wine wrapper, copy-build-system, Wine integration limited in Guix.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -12372,6 +12406,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: ARCH_SPECIFIC_TOOL | Pacman wrapper and AUR helper. Requires pacman and AUR infrastructure. Not applicable to Guix.
    - Status: BLOCKED: AUR helper depending on pacman/libalpm; Arch-specific, not portable (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in queue-20260330p100daily6.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -13062,6 +13097,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 2136. python-mcp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Already in Guix upstream as python-mcp v1.25.0.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -16442,6 +16478,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 2694. 86box-roms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -16772,6 +16809,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 2748. mdns-scan
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in queue-20260406-blocked-tree-r22w03b.scm via dep-tree priority pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -17007,6 +17045,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1: DKMS requires running kernel headers; A2: Guix kernel modules must be built with kernel; A3: custom kernel config needed.
+   - Status: BLOCKED: DKMS kernel module needs kernel headers. 3 approaches tried: source build, linux-module-build-system, checked mainline kernel.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -17359,6 +17398,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: New recipe in cron-c79f127f-r22-w03.scm
    - Status: DONE: RECIPE_WRITTEN | pyproject-build-system recipe in queue-20260407-deptree-resolver.scm.
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -18686,10 +18726,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Packaged as clightd in cron-5a2fb251-r16-w01.scm; cmake-build-system with ddcutil/libdrm/libiio/libmodule deps; also packaged dependency libmodule; guix build -L guix -n clightd passes.
 ** DONE 3023. clightd
+** DONE 3023. clightd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
    - TODO Status: DONE
+
+** DONE 3024. libmodule [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libmodule; next: determine upstream source + build system for libmodule]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3024. libmodule [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for libmodule; next: determine upstream source + build system for libmodule]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18719,6 +18767,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe already exists in cron-5a2fb251-r19-w01.scm; validated with guix build -L guix -n wrkflw-bin.
    - Difficulty: unknown
    - TODO Status: DONE
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3027. iwmenu-bin [NEEDS_RECIPE_DESIGN: guix show iwmenu failed (package not found in current channels); next: draft standalone recipe for iwmenu-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18822,6 +18871,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Packaged as sabiql-bin v1.9.1 in recipe-resolver-260407.scm; gnu-build-system binary from GitHub Releases; guix build -L guix -n sabiql-bin passes.
 ** DONE 3036. sabiql-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
+** DONE 3036. sabiql-bin
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
    - TODO Status: DONE
@@ -18866,6 +18917,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3042. swhook [CARGO_DEP_CHAIN]
 ** BLOCKED 3040. q5k-usb-udev [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for q5k-usb-udev; next: determine upstream source + build system for q5k-usb-udev]
+** DONE 3039. synergy3-bin
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
 ** DONE 3040. q5k-usb-udev [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for q5k-usb-udev; next: determine upstream source + build system for q5k-usb-udev]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); Qudelix-5k USB udev rules.
@@ -19046,16 +19103,54 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (Rust binary v0.1.0, patchelf, from GitHub releases)
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3062. mkbrr-gui-bin
 ** BLOCKED 3062. mkbrr-gui-bin [NEEDS_GTK_WEBKIT_DEPS: mkbrr-gui-bin (https://github.com/autobrr/mkbrr v1.19.0-rc.1) GUI binary requires GTK3, WebKit2GTK, libsoup3 as runtime deps; only pre-release available; complex dynamic linking]
+** DONE 3056. hurrycurry-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** BLOCKED 3063. tilem-gtk3-git [NEEDS_AUTOTOOLS_BUILD: tilem-gtk3-git (https://github.com/kuba160/tilem-gtk3) TI calculator emulator fork; no releases; autotools/C build with GTK3; 7 commits total]
+** DONE 3057. jellything-git
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3058. keks-meet-server
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3059. pixora-icons-git
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3060. udiskr
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** BLOCKED 3061. comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A fully local AI agent that scans your system, observes usage patterns, and suggests one-click improvements
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3062. mkbrr-gui-bin
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** BLOCKED 3063. tilem-gtk3-git [NEEDS_RECIPE_DESIGN: guix show tilem-gtk3 failed (package not found in current channels); next: draft standalone recipe for tilem-gtk3-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); TI calculator emulator.
    - Difficulty: unknown
@@ -19088,8 +19183,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3067. wo-bin [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (wo-bin v1.0.0, pre-built Go binary from GitHub)]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Already packaged in cron-5a2fb251-r20-w03.scm (Go binary v1.0.0)
+** DONE 3066. docx-you-want
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 3068. cliamp [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (cliamp-bin v1.34.1, pre-built Go binary from GitHub)]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19133,6 +19231,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 3062. mkbrr-gui-bin [NEEDS_RECIPE_DESIGN: guix show mkbrr-gui failed (package not found in current channels); next: draft standalone recipe for mkbrr-gui-bin in future pass]
 ** DONE 3073. baremetal-compiler-rt [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for baremetal-compiler-rt; next: determine upstream source + build system for baremetal-compiler-rt]
+** DONE 3070. lazytail-bin [NEEDS_RECIPE_DESIGN: guix show lazytail failed (package not found in current channels); next: draft standalone recipe for lazytail-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as mkbrr-gui-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v1.19.0-rc.1)
    - Difficulty: unknown
@@ -19143,16 +19242,37 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD5 recipe as tilem-gtk3-git (gnu-build-system from GitHub commit 64b9a38); guix build -L guix -n passes.
 ** DONE 3074. wireview-linux
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3071. funzzy-bin [NEEDS_RECIPE_DESIGN: guix show funzzy failed (package not found in current channels); next: draft standalone recipe for funzzy-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A lightweight generic purpose file watcher
+   - Difficulty: unknown
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
    - TODO Status: DONE
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3075. dpibreak [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for dpibreak; next: determine upstream source + build system for dpibreak]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as dpibreak. Rust source reference v0.6.0; full cargo dep tree not yet available.
 ** DONE 3064. c47-bin [NEEDS_RECIPE_DESIGN: guix show c47 failed (package not found in current channels); next: draft standalone recipe for c47-bin in future pass]
 ** DONE 3075. dpibreak [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (dpibreak-bin v0.6.0, pre-built Rust musl binary from GitHub)]
+   - Status: TODO: Candidate from AUR cache (votes=1); compiler-rt builtins for bare-metal ARM Cortex-M targets (armv7m, armv7em, armv8m.main, armv8.1m.main)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3074. wireview-linux
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3075. dpibreak [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for dpibreak; next: determine upstream source + build system for dpibreak]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); fast and easy-to-use DPI circumvention tool in Rust.
    - Difficulty: unknown
@@ -19256,15 +19376,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust source (v0.1.2, GPL-3.0), no binary release; cargo dep tree for PDF/DOCX parsing not in Guix.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3067. wo-bin [NEEDS_RECIPE_DESIGN: guix show wo failed (package not found in current channels); next: draft standalone recipe for wo-bin in future pass]
 ** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
+** DONE 3077. dpibreak-git [NEEDS_RECIPE_DESIGN: guix show dpibreak failed (package not found in current channels); next: draft standalone recipe for dpibreak-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 wo-bin (copy-build-system, workspace shell manager)
    - Status: BLOCKED: MISSING_CARGO_DEPS | Rust source v0.6.0 from github.com/Dilluti0n/DPIBreak; needs vendored cargo deps + nftables + libnetfilter_queue. Upstream: https://github.com/Dilluti0n/DPIBreak
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19476,16 +19597,23 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NO_LICENSE | upstream github.com/AtefR/fish-session has no LICENSE file, no license in Cargo.toml; AUR says LicenseRef-UNLICENSED; cannot package for Guix without declared FOSS license
+** DONE 3078. uac-polkit-agent-git
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 3085. we-layerd-git
+** DONE 3079. mezzotone-bin [NEEDS_RECIPE_DESIGN: guix show mezzotone failed (package not found in current channels); next: draft standalone recipe for mezzotone-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3080. chough-bin [NEEDS_RECIPE_DESIGN: guix show chough failed (package not found in current channels); next: draft standalone recipe for chough-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v0.8.0, trivial-build-system + patchelf, MIT/Apache-2.0)
    - Difficulty: unknown
@@ -19498,8 +19626,51 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 ** DONE 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
+** DONE 3081. ipmctl-git
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3082. python-aiohttp-jinja2 [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-aiohttp-jinja2; next: determine upstream source + build system for python-aiohttp-jinja2]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (prebuilt Rust binary v0.1.1, trivial-build-system + patchelf, MIT)
+   - Difficulty: unknown
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3083. pricehist [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for pricehist; next: determine upstream source + build system for pricehist]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A command-line tool for fetching and formatting historical price data, with support for multiple data sources and out...
+   - Difficulty: unknown
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** BLOCKED 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); UI-first session manager for Fish shell with persistent PTY sessions
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3085. we-layerd-git
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Git worktrees that actually work (zero-config dep sync, fleet mode for parallel agents)
+   - Difficulty: unknown
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); Installation and manager for 'Oh My Posh'
+   - Difficulty: unknown
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=1); A full-fledged TUI plugin manager for tmux
    - Difficulty: unknown
    - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
@@ -19531,6 +19702,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (bash script v0.1.17, copy-build-system, MIT)
 ** DONE 3093. codexbar
+** DONE 3093. codexbar
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3094. logibar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
@@ -19540,6 +19718,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe-resolver-p3 resolved in queue-20260406-recipe-resolver-p3.scm (bash+python scripts v0.1.3, copy-build-system, MIT)
 ** DONE 3094. logibar
+** DONE 3095. boomer-git
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3096. claudebar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
@@ -19591,17 +19776,32 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** DONE 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3099. tufw-git [NEEDS_RECIPE_DESIGN: guix show tufw failed (package not found in current channels); next: draft standalone recipe for tufw-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: TODO: Candidate from AUR cache (votes=3); Terminal UI for ufw
+   - Difficulty: unknown
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3100. adbfs-rootless-git [NEEDS_RECIPE_DESIGN: guix show adbfs-rootless failed (package not found in current channels); next: draft standalone recipe for adbfs-rootless-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as tmux-plugin-panel-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.1)
    - Difficulty: unknown
    - TODO Status: DONE
 ** DONE 3081. ipmctl-git [NEEDS_RECIPE_DESIGN: guix show ipmctl failed (package not found in current channels); next: draft standalone recipe for ipmctl-git in future pass]
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3101. dafny-bin [NEEDS_RECIPE_DESIGN: guix show dafny failed (package not found in current channels); next: draft standalone recipe for dafny-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD5 recipe as ipmctl-git (cmake-build-system from source v03.00.00.0538); guix build -L guix -n passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3082. python-aiohttp-jinja2 [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-aiohttp-jinja2; next: determine upstream source + build system for python-aiohttp-jinja2]
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3102. weylus-bin [NEEDS_RECIPE_DESIGN: guix show weylus failed (package not found in current channels); next: draft standalone recipe for weylus-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 python-aiohttp-jinja2 (python-build-system, Jinja2 for aiohttp)
    - Difficulty: unknown
@@ -19692,8 +19892,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NIM_BUILD_SYSTEM_UNAVAILABLE | Written in Nim; requires nimble build system which is not packaged in Guix; no alternative build path.
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_NIM_COMPILER — Nim compiler not available in Guix; no prebuilt binaries. 3 approaches tried: A1 no binaries, A2 Nim not in Guix, A3 no alt build path.
+   - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
+
+** DONE 3103. mouse-actions-gui-bin
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE [recipe-resolver-260407b: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407b.scm]
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3096. claudebar [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for claudebar; next: determine upstream source + build system for claudebar]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -19915,6 +20120,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: BUILD_COMPLEXITY | VSCodium with translucency patches. Requires full Electron/Chromium build pipeline.
    - Status: BLOCKED: complex Electron/Node.js build needing nvm, rustup, gulp (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - Status: BLOCKED: Modified Electron build from source. 3 approaches tried: full source build too complex, no patched binaries, translucency patches need source build.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -19931,6 +20137,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260406-deptree-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Status: BLOCKED: Bengali IME needing openbangla-im, ibus/fcitx5 integration (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - Status: BLOCKED: CMake+Rust hybrid with IBus/Fcitx5. 3 approaches tried: depends on openbangla-im not in Guix, hybrid build non-trivial.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -20206,6 +20413,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3176. clang-libs-minimal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in dep-tree pass 2026-04-06; COMPLEX_BUILD — LLVM trunk, matching llvm-libs-minimal-git missing.
+   - Status: BLOCKED: LLVM trunk build from git. 3 approaches tried: cmake build too complex, Guix LLVM not trunk, inheriting/updating not feasible.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21245,6 +21453,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_RUST_CRATES | Rust p2p code collab stack. Many Rust crate deps not available in Guix.
    - Status: BLOCKED: Rust/Cargo build needing specific libgit2 version (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w08.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -23050,6 +23259,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3637. libappindicator-gtk2
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Already aliased in general-compat.scm → libappindicator (prior pass).
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -23586,6 +23796,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3726. alarm
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -23614,6 +23825,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: BLOCKED: depends on libenv (not in Guix); alternative to sudo/doas (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w10.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24040,6 +24252,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_GUIX_DEPS | Qt6 utilities requiring cpp-utilities (c++utilities) not in Guix.
    - Status: BLOCKED: depends on c++utilities (not in Guix) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - Status: BLOCKED: cmake C++ lib needing c++utilities not in Guix. 3 approaches tried: would need to first package c++utilities.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -24076,6 +24289,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3806. equicord-installer-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -25655,6 +25869,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: RECIPE_WRITTEN | trivial-build-system binary recipe in queue-20260407-deptree-resolver.scm.
    - Status: BLOCKED: depends on awww and mpvpaper (neither in Guix) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w05.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26028,6 +26243,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: BLOCKED: need to verify OFL license compatibility and font file source URL (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w10.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26080,6 +26296,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26212,6 +26429,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4153. datagrip-jre
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26306,6 +26524,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26324,6 +26543,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4171. rustrover-eap-jre
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26422,6 +26642,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4187. goland-jre
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -26756,6 +26977,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: BLOCKED: trivial Perl script for Debian packages; not useful on Guix (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -27249,6 +27471,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: r22-w03: recipe in cron-c79f127f-r22-w03.scm (auto-resolved)
    - Status: DONE: r22-w03 recipe in cron-c79f127f-r22-w03.scm (pyproject-build-system, PyPI v1.2.1)
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -29502,6 +29725,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18 dep-tree pass; massive WebKit2 build with 32 deps, Qt5 private API integration infeasible.
    - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Qt5 WebKit requires building the entire WebKit engine from source with 30+ dependencies.  Extremely complex build, multiple hours compilation, and significant patching needed.
+   - Status: BLOCKED: Needs full WebKit engine build (cmake, ICU, GStreamer, woff2, Ruby codegen). 3 approaches tried: source build too complex, Guix upstream too old, no prebuilt binaries.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29622,6 +29846,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4715. stm32cubemx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -29911,6 +30136,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4763. mint-y-icons
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r24-w03.scm. copy-build-system, v1.9.1, Linux Mint icon theme.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -30274,6 +30500,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: META_PACKAGE_COMPLEX | Meta-package for ROS2 build deps (44 deps). ROS2 ecosystem needs dedicated effort.
    - Status: BLOCKED: Arch-specific meta-package for ROS2 build dependencies (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in queue-20260324p100c.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -30461,6 +30688,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4853. gruvbox-dark-gtk
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -30538,6 +30766,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260324p100c.scm. Resolved in deptree-resolver-260406 pass.
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: DONE: Recipe in queue-20260324p100c.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -30937,6 +31166,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4931. mxw-udev
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -31636,6 +31866,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in queue-20260406-blocked-tree-p100.scm; LCEVC video codec decoder, cmake build.
    - Status: BLOCKED: no tagged releases on GitHub; source URL resolution failed (deptree-resolver-260407, 2026-04-07)
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -33090,6 +33321,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5285. 86box-roms-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -33330,6 +33562,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5324. gnome-icon-theme
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -33341,6 +33574,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: META_PACKAGE_COMPLEX | Meta-package for Electron. Electron build is extremely complex (~4GB source, custom Chromium).
    - Status: BLOCKED: Electron meta-package depending on npm; Electron not in Guix (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in queue-20260325p100c.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -37555,6 +37789,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
 ** BLOCKED 6042. mozc-ut-full-common   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: requires Bazel build system; very complex Japanese IME build process (deptree-resolver-260407, 2026-04-07)
+** DONE 6042. mozc-ut-full-common
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -37739,6 +37975,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
 ** DONE 6078. python-syncedlyrics
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+** DONE 6078. python-syncedlyrics
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -37827,6 +38065,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6091. uavs3d-git
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+   - Difficulty: unknown
+   - TODO Status: DONE
+** DONE 6090. xavs2
+   - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 6091. uavs3d-git
+   - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
    - Difficulty: unknown
    - TODO Status: DONE
 ** DONE 6090. xavs2
@@ -37929,6 +38176,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6101. xevd
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
+   - Difficulty: unknown
+   - TODO Status: DONE
+** DONE 6100. xeve
+   - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 6101. xevd
+   - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
    - Difficulty: unknown
    - TODO Status: DONE
 ** DONE 6100. xeve
@@ -38405,6 +38661,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 6192. pdeath
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 ** BLOCKED 6193. setpgrp
@@ -38827,6 +39084,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 6268. lianpkg-bin
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
    - TODO Status: DONE
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
+   - TODO Status: BLOCKED
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Difficulty: unknown
 
@@ -39036,6 +39295,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6303. linux-zen-git-headers
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+** DONE 6303. linux-zen-git-headers
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - TODO Status: BLOCKED
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Difficulty: unknown
@@ -39082,6 +39343,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 6310. bms-shell
    - Status: BLOCKED: depends on quickshell, dgop, ttf-material-symbols-variable (not in Guix) (deptree-resolver-260407, 2026-04-07)
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - TODO Status: BLOCKED
    - Status: DONE: Recipe in cron-c79f127f-w07.scm (resolved deptree-resolver batch 2026-04-07).
    - TODO Status: DONE
@@ -39185,6 +39447,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in queue-20260330p100daily4.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -39357,6 +39620,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_GUIX_DEPS | Requires hyprutils, hyprwayland-scanner, aquamarine — Hyprland ecosystem libs not in Guix.
    - Status: BLOCKED: depends on aquamarine-git, hyprgraphics-git, hyprlang-git (all unpackaged -git deps) (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in queue-cron-c79f127f-w04.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -39420,12 +39684,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: RECIPE_WRITTEN | gnu-build-system binary recipe in queue-20260407-deptree-resolver.scm.
    - Status: BLOCKED: .NET runtime binary; complex dependency on dotnet-host ecosystem (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in queue-20260330p100daily4.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 6364. aspnet-targeting-pack-9.0-bin
+** DONE 6364. aspnet-targeting-pack-9.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39536,6 +39802,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: r22-w03: recipe exists in gaurix channel
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260406-deptree-w01.scm. Resolved in deptree-resolver-260406 pass.
    - Status: BLOCKED: osu! memory reader; game-specific tool with unclear build process (deptree-resolver-260407, 2026-04-07)
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
    - Status: BLOCKED: PROPRIETARY_BINARY | osu! memory reader. Binary-only distribution, no source available.
@@ -40940,6 +41207,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 6613. ttf-harmonyos-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -42383,6 +42651,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 6836. fake-ms-fonts
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Next: draft new recipe module for networkd-broker (source+hash+build-system), then rerun guix build -L guix -n networkd-broker
    - Difficulty: unknown
    - TODO Status: DONE
@@ -43404,6 +43673,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 7005. alice-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -44782,6 +45052,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: PROPRIETARY_BINARY | FMOD audio engine. Proprietary binary-only distribution.
    - Status: BLOCKED: proprietary FMOD audio engine; binary not freely redistributable (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -45593,6 +45864,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: no tagged releases on GitHub; source URL not available (deptree-resolver-260407, 2026-04-07)
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
 
+   - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
+
    - TODO Status: DONE
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
 ** BLOCKED 7393. makesure
@@ -45784,6 +46057,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - TODO Status: DONE
    - Status: DONE: Recipe in cron-c79f127f-w09.scm (resolved deptree-resolver batch 2026-04-07).
+   - TODO Status: DONE
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
 
    - TODO Status: DONE
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
@@ -45987,6 +46262,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1565, votes=1; A simple database migration system for SQLite, based on sqlite-utils
    - TODO Status: DONE
    - Status: DONE: Recipe in cron-c79f127f-r24-w03.scm. pyproject-build-system, v0.1b0, SQLite migration tool.
+   - Status: DONE: Recipe added in deptree-resolver-260407b.scm.
 
    - TODO Status: DONE
    - Status: DONE: Recipe in cron-c79f127f-r24-w03.scm. pyproject-build-system, v0.1b0, SQLite migration tool.
@@ -46739,6 +47015,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show scala3` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
    - Status: DONE: Recipe in guix/gaurix/packages/deptree-260407.scm (deptree-resolver batch 2026-04-07).
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: JVM compiler using SBT. 3 approaches tried: no SBT in Guix, no Scala importer, prebuilt JAR approach needs complex dep resolution.
 ** BLOCKED 7610. trakt-cli-bin
    - Note: AUR popularity=0.1177, votes=1; A CLI for trakt.tv
    - TODO Status: BLOCKED
@@ -49088,6 +49366,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8024. googler
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Note: AUR popularity=0.0982, votes=53; Google from the command-line
    - TODO Status: DONE
 
@@ -49367,6 +49646,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 8079. grepcidr
    - Source List: todo_general_packages.org
    - Status: r22-w03: recipe exists in gaurix channel
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - TODO Status: BLOCKED
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260401p100daily5.scm. Resolved in deptree-resolver-260406 pass.
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
@@ -50067,6 +50347,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: todo_general_packages.org
    - Status: r22-w03: recipe exists in gaurix channel
    - Status: BLOCKED: Java-based compiler; needs specific java-runtime packaging (deptree-resolver-260407, 2026-04-07)
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - TODO Status: BLOCKED
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260401p100daily5.scm. Resolved in deptree-resolver-260406 pass.
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
@@ -50168,6 +50449,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: todo_general_packages.org
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
    - TODO Status: DONE
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
+   - TODO Status: BLOCKED
 
 ** DONE 8237. binvec
    - Note: AUR popularity=0.0885, votes=1; A simple application to convert raster graphics to vector graphics
@@ -50590,6 +50873,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: RECIPE_WRITTEN | pyproject-build-system recipe in queue-20260407-deptree-resolver.scm.
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in queue-20260401p100daily6.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
    - Note: AUR popularity=0.0884, votes=1; Inplace replacement for urllib3 capable of async with automatic HTTP/1, HTTP/2 a
@@ -50820,6 +51104,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 8325. ksql
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Difficulty: unknown
    - TODO Status: DONE
    - Note: AUR popularity=0.0882, votes=1; Wrapper for the SQLite C interface focusing on ease correct usage and data integ
@@ -51266,6 +51551,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
 
    - Status: DONE: Recipe in cron-c79f127f-r8-w04.scm (resolved deptree-resolver batch 2026-04-07).
+
 
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
 ** BLOCKED 8391. whisper.cpp-model-large-v3
@@ -52200,6 +52486,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0766, votes=1; Pure-Ruby HTTP 2.0 protocol implementation
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
    - Status: r22-w03: recipe exists in gaurix channel
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - TODO Status: BLOCKED
    - Status: DONE: Recipe in guix/gaurix/packages/queue-20260401p100daily7.scm. Resolved in deptree-resolver-260406 pass.
    - Status: DONE: recipe added in guix/gaurix/packages/deptree-r21-w01.scm (deptree-r21 run, 2026-04-06).
@@ -54480,6 +54767,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0575, votes=3; Kernel headers sanitized for use in userspace (MIPS64 target, for the toolchain 
    - TODO Status: DONE
 
+** DONE 9046. mips64-linux-gnu-linux-api-headers
+   - Note: AUR popularity=0.0575, votes=3; Kernel headers sanitized for use in userspace (MIPS64 target, for the toolchain 
+   - TODO Status: DONE
+
 ** DONE 9047. helm-synth
    - Note: AUR popularity=0.0575, votes=7; Free polyphonic synth with lots of modulation
    - TODO Status: DONE
@@ -54662,6 +54953,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=4; Compositor for the COSMIC desktop environment
    - TODO Status: BLOCKED
    - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+
+** DONE 9084. cosmic-icons-git
+   - Note: AUR popularity=0.0561, votes=4; System76 Cosmic icon theme
+   - TODO Status: DONE
 
 ** DONE 9084. cosmic-icons-git
    - Note: AUR popularity=0.0561, votes=4; System76 Cosmic icon theme
@@ -66099,6 +66394,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Feature packed AUR helper
    - TODO Status: DONE
    - Status: DONE: Recipe in queue-20260329p100.scm (resolved deptree-resolver batch 2026-04-07).
+   - TODO Status: DONE
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
+** DONE 11312. paru
+   - AUR votes: 1172, popularity: 39.4491
+   - Note: Feature packed AUR helper
+   - TODO Status: DONE
+   - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
 ** FAILED 11313. aur-sync-vote
    - AUR votes: 58, popularity: 27.2547
    - Note: Syncing votes with the currently installed AUR packages
@@ -68864,6 +69166,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: DONE: Recipe in cron-c79f127f-r8-w05.scm (resolved deptree-resolver batch 2026-04-07).
+   - TODO Status: DONE
+
    - TODO Status: DONE
 
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.

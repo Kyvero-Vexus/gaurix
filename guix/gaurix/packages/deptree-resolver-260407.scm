@@ -115,6 +115,11 @@ needed for a complete Powerlevel10k experience.")
     (license license:asl2.0)))
 ;;; ── DATA / RESOURCE PACKAGES ───────────────────────────────────────────
 (define-public v2ray-domain-list-custom
+
+;;;
+;;;
+
+  (package
     (name "v2ray-domain-list-custom")
     (version "20240401")
     (source (origin
@@ -143,6 +148,8 @@ needed for a complete Powerlevel10k experience.")
 in V2Ray and compatible proxies.  Based on Loyalsoldier's rules.")
     (license license:gpl3+)))
 (define-public reshade-shaders-git
+
+  (package
     (name "reshade-shaders-git")
     (version "0.0.0")
     (source (origin
@@ -170,6 +177,8 @@ graphical enhancements in games and applications.")
               "https://github.com/crosire/reshade-shaders/blob/master/LICENSE.md"
               "Custom license"))))
 (define-public android-udev-git
+
+  (package
     (name "android-udev-git")
     (version "20250311")
     (source (origin
@@ -194,6 +203,8 @@ a Linux system.  Covers most Android device vendors for ADB, fastboot,
 and MTP access.")
     (license license:gpl3+)))
 (define-public linux-firmware-whence-git
+
+  (package
     (name "linux-firmware-whence-git")
     (version "20250305")
     (source (origin
@@ -220,6 +231,8 @@ repository, which documents vendor license details for binary firmware
 blobs distributed with the Linux kernel.")
     (license license:gpl2)))
 (define-public cosmic-icons-git
+
+  (package
     (name "cosmic-icons-git")
     (version "1.0.0-alpha.5.1")
     (source (origin
@@ -244,6 +257,8 @@ blobs distributed with the Linux kernel.")
 designed for the COSMIC desktop environment.")
     (license (list license:cc-by-sa4.0 license:gpl3))))
 (define-public mips64-linux-gnu-linux-api-headers
+
+  (package
     (name "mips64-linux-gnu-linux-api-headers")
     (version "6.11")
     (source (origin
@@ -371,6 +386,10 @@ MIPS64 architecture with the GNU C library and multilib ABI.")
 ;;; ── BINARY PACKAGES ────────────────────────────────────────────────────
 ;;;
 (define-public bitwarden-cli-bin
+    (description
+
+
+  (package
     (name "bitwarden-cli-bin")
     (version "2024.12.0")
     (source (origin
@@ -383,6 +402,10 @@ MIPS64 architecture with the GNU C library and multilib ABI.")
                 "0rj0xwm2li0rnbl24shmgyxlraqsw4vhn32j4dnishksbds79ra2"))))
     (build-system copy-build-system)
       #:install-plan #~'(("." "lib/node_modules/@bitwarden/cli/"))
+    (arguments
+     (list
+      #:phases
+      #~(modify-phases %standard-phases
           (add-after 'install 'create-wrapper
             (lambda* (#:key inputs outputs #:allow-other-keys)
               (let* ((out (assoc-ref outputs "out"))
@@ -400,11 +423,14 @@ MIPS64 architecture with the GNU C library and multilib ABI.")
     (inputs (list node))
     (home-page "https://bitwarden.com")
     (synopsis "command line interface for the Bitwarden password manager")
+    (description
      "The Bitwarden CLI is a powerful, full-featured command line interface
 for interacting with the Bitwarden vault.  It supports all vault
 management operations including login, sync, and item management.")
     (license license:gpl3)))
 (define-public nordvpn-bin
+
+  (package
     (name "nordvpn-bin")
     (version "3.19.2")
     (source (origin
@@ -419,6 +445,10 @@ management operations including login, sync, and item management.")
       #:install-plan #~'(("usr/bin/" "bin/")
                          ("usr/sbin/" "sbin/")
                          ("usr/share/" "share/"))
+    (arguments
+     (list
+      #:phases
+      #~(modify-phases %standard-phases
           (replace 'unpack
             (lambda* (#:key source #:allow-other-keys)
               (invoke "ar" "x" source)
@@ -427,12 +457,14 @@ management operations including login, sync, and item management.")
     (supported-systems '("x86_64-linux"))
     (home-page "https://nordvpn.com/download/linux/")
     (synopsis "NordVPN CLI tool for Linux")
+    (description
      "NordVPN command line interface for connecting to NordVPN servers
 on Linux.  Supports automatic server selection, protocol switching,
 and kill switch functionality.")
     (license (license:non-copyleft
               "https://nordvpn.com/terms-of-service/"
               "NordVPN Terms of Service"))))
+
 ;;;
 ;;; ── SOURCE-BUILD PACKAGES ──────────────────────────────────────────────
 ;;;
@@ -491,12 +523,15 @@ video workflows.")
               (sha256
                (base32
                 "0x71ks9rhmq6iy9jhqk427c7v1vj0ss9rfg5kadhvg4xsmhx0hyx"))))
+    (build-system cmake-build-system)
+    (arguments
      (list
       #:configure-flags
       #~(list "-DBUILD_SHARED_LIBS=ON"
               "-DVVENC_ENABLE_LINK_TIME_OPT=OFF")))
     (home-page "https://github.com/fraunhoferhhi/vvenc/")
     (synopsis "H.266/VVC encoder implementation")
+    (description
      "VVenC is an open-source H.266/VVC (Versatile Video Coding) encoder
 implementation developed by Fraunhofer HHI.  It provides fast and
 efficient VVC encoding with various presets and configurations.")
@@ -504,6 +539,8 @@ efficient VVC encoding with various presets and configurations.")
               "https://github.com/fraunhoferhhi/vvenc/blob/master/LICENSE.txt"
               "BSD-3-Clause-Clear"))))
 (define-public vpcs
+
+  (package
     (name "vpcs")
     (version "0.8.3")
     (source (origin
@@ -515,6 +552,7 @@ efficient VVC encoding with various presets and configurations.")
                (base32
                 "19rxlfqf58kqdfgl0kq1xnmvpfmknxxqgx6xfryvv2yv7y98q0bk"))))
     (build-system gnu-build-system)
+    (arguments
      (list
       #:tests? #f
       #:phases
@@ -531,12 +569,15 @@ efficient VVC encoding with various presets and configurations.")
                 (install-file "vpcs" bin)))))))
     (home-page "https://github.com/GNS3/vpcs")
     (synopsis "simple virtual PC simulator for network emulation")
+    (description
      "VPCS (Virtual PC Simulator) is a lightweight program that simulates
 up to 9 virtual PCs for use with network emulators like GNS3.  Each
 virtual PC supports basic networking commands including ping, traceroute,
 and ARP.")
     (license license:bsd-2)))
 (define-public dynamips
+
+  (package
     (name "dynamips")
     (version "0.2.23")
     (source (origin
@@ -550,6 +591,10 @@ and ARP.")
     (inputs (list libpcap elfutils))
     (home-page "https://github.com/GNS3/dynamips")
     (synopsis "Cisco router emulator for network simulation")
+    (build-system cmake-build-system)
+    (arguments
+     (list #:tests? #f))
+    (description
      "Dynamips is a Cisco router emulator that can emulate Cisco 7200, 3600,
 3725, 3745, and 2600 series routers.  It is primarily used with GNS3
 for network simulation and lab environments.")
@@ -759,11 +804,14 @@ can be used to extract matching addresses from logs and other text files.")
     (inputs (list util-linux))
     (home-page "https://github.com/ntfsprogs-plus/ntfsprogs-plus")
     (synopsis "NTFS filesystem utilities")
+    (description
      "Ntfsprogs-plus provides utilities for creating, checking, and
 manipulating NTFS file systems.  A modern continuation of the
 ntfsprogs toolset.")
     (license license:gpl2+)))
 (define-public fortune-mod-off
+
+  (package
     (name "fortune-mod-off")
     (version "3.24.0")
     (source (origin
@@ -783,6 +831,7 @@ ntfsprogs toolset.")
     (native-inputs (list perl))
     (home-page "https://www.shlomifish.org/open-source/projects/fortune-mod/")
     (synopsis "fortune cookie program with offensive quotes enabled")
+    (description
      "Fortune-mod is the BSD fortune program which displays a random
 quotation from a collection of files.  This build includes the
 offensive fortune cookie files that are excluded from many
@@ -791,6 +840,8 @@ distributions.")
               "file://COPYING.txt"
               "BSD-4-Clause-UC"))))
 (define-public dotool
+
+  (package
     (name "dotool")
     (version "1.6")
     (source (origin
@@ -1361,6 +1412,14 @@ The database enables geographic IP-based routing rules.")
 and cross-platform file locking.  It ensures only one instance of a
 process is running at a time.")
 (define-public python-steamgriddb
+    (build-system python-build-system)
+    (arguments (list #:tests? #f))
+    (home-page "https://github.com/trbs/pid")
+    (synopsis "pidfile featuring stale detection and file-locking")
+    (description
+    (license license:asl2.0)))
+
+  (package
     (name "python-steamgriddb")
     (version "1.0.5")
     (source (origin
@@ -1377,6 +1436,15 @@ access to custom game artwork including grids, heroes, logos, and
 icons for Steam and other game launchers.")
 ;;; ── SHELL SCRIPT / WRAPPER PACKAGES ────────────────────────────────────
 (define-public ani-skip-git
+    (build-system python-build-system)
+    (arguments (list #:tests? #f))
+    (description
+    (license license:expat)))
+
+;;;
+;;;
+
+  (package
     (name "ani-skip-git")
     (version "0.0.1")
     (source (origin
@@ -1400,6 +1468,17 @@ and skip intro and outro segments during playback.")
     (inherit (@ (gnu packages crypto) libsodium))
     (name "libsodium-1.0.18")))
 (define-public npm-corepack
+    (arguments
+     (list
+    (description
+    (license license:gpl3+)))
+
+;;;
+;;;
+
+  (package
+
+  (package
     (name "npm-corepack")
     (version "0.1.0")
     (source #f)
@@ -1458,11 +1537,14 @@ receiver, allowing non-root users to access the device.")
     (inputs (list node))
     (home-page "https://github.com/nodejs/corepack/")
     (synopsis "corepack shim providing npm via Node.js")
+    (description
      "This package uses the corepack shim bundled with Node.js to provide
 npm as a managed package manager.  Corepack ensures the correct version
 of npm is used for each project.")
     (license license:expat)))
 (define-public pnpm-corepack
+
+  (package
     (inherit npm-corepack)
     (name "pnpm-corepack")
     (arguments
@@ -1484,6 +1566,9 @@ of npm is used for each project.")
 pnpm as a managed package manager.  Corepack ensures the correct version
 of pnpm is used for each project.")))
 (define-public yarn-corepack
+    (description
+
+  (package
     (inherit npm-corepack)
     (name "yarn-corepack")
     (arguments
@@ -1506,6 +1591,12 @@ Yarn as a managed package manager.  Corepack ensures the correct version
 of Yarn is used for each project.")))
 ;;; ── MESON/GLIB PACKAGES ───────────────────────────────────────────────
 (define-public libastal-bluetooth-git
+    (description
+
+;;;
+;;;
+
+  (package
     (name "libastal-bluetooth-git")
     (version "0.1.0")
     (source (origin
@@ -1540,6 +1631,7 @@ attributes that can be queried for cluster administration tasks.")
     (inputs (list glib))
     (home-page "https://github.com/Aylur/astal")
     (synopsis "library to control BlueZ over D-Bus")
+    (description
      "Libastal-bluetooth is a GObject-based library for controlling BlueZ
 (the Linux Bluetooth stack) over D-Bus.  It is part of the Astal
 widget toolkit ecosystem.")

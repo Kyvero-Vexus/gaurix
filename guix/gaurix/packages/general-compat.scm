@@ -186,6 +186,7 @@
   #:use-module (gnu packages selinux)
   #:use-module (nongnu packages mozilla)
   #:use-module (gaurix packages deptree-resolver-260407)
+  #:use-module (gaurix packages deptree-resolver-260407b)
   #:export (
             dyalog-bin
             ;; nrd18 compat aliases
@@ -3182,3 +3183,34 @@
 (define-public doas
     (inherit opendoas)
     (name "doas")))
+            waybar-hyprland-git
+            otf-uncut-sans
+            ttf-space-mono
+            ttf-uncut-sans
+            woff-uncut-sans
+            woff2-uncut-sans
+            ttf-gabarito-git
+            86box-roms
+            86box-roms-git
+            iscan-data
+            fake-ms-fonts
+            aspnet-targeting-pack-bin
+            aspnet-runtime-bin
+            equicord-installer-bin
+            alice-bin
+            claude-desktop-bin
+            plex-media-server
+            libjodycode
+            mdns-scan
+            alarm
+            deb2targz
+            notify-send.sh
+            python-sqlite-migrate
+            python-materialyoucolor
+            python-pluginmgr
+            moodbar
+            ddccontrol
+            datagrip-jre
+            goland-jre
+            rustrover-jre
+            rustrover-eap-jre
