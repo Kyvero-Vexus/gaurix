@@ -230,6 +230,8 @@
   #:use-module (gaurix packages queue-20260406-nrd30g-blocked-notes)
   #:use-module (gaurix packages queue-20260406-nrd30h)
   #:use-module (gaurix packages queue-20260406-nrd30h-blocked-notes)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd21)
+  #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd21-blocked-notes)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7284,4 +7286,36 @@ podman-tui-bin
             zaread-git-blocked-note-h
             twintaillauncher-bin-blocked-note-h
             wezterm-nightly-bin-blocked-note-h
+            ;; cron-c79f127f-r22-w03-nrd21
+            loghew-bin
+            gitopolis-bin
+            btlescan-bin
+            gito-bin
+            csvi-bin
+            pv-migrate-bin
+            jadwal-shalat
+            sqlpage-bin
+            python-partial-json-parser
+            ;; cron-c79f127f-r22-w03-nrd21-blocked-notes
+            subtui-git-blocked-note
+            gochecker-blocked-note
+            vscodium-translucent-features-blocked-note
+            vscodium-translucent-marketplace-blocked-note
+            yap-bin-blocked-note
+            crql-anina-blocked-note
+            claude-cowork-linux-blocked-note
+            upnote-appimage-blocked-note
+            ds360go-git-blocked-note
+            tuistory-blocked-note
+            smtk-obs-git-blocked-note
+            gj-git-blocked-note
+            peergos-blocked-note
+            shadps4-qtlauncher-bin-blocked-note
+            winestreamproxy-blocked-note
+            fcitx5-hazkey-bin-blocked-note
+            hammer-editor-bin-blocked-note
+            uutils-diffutils-bin-blocked-note
+            loliashizuku-bin-blocked-note
+            lolia-cli-blocked-note
+            reminduck-blocked-note
 ))
