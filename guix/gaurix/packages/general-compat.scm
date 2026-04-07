@@ -193,6 +193,7 @@
   #:use-module (gaurix packages deptree-resolver-260407b)
   #:use-module (gaurix packages queue-20260407-deptree)
   #:use-module (gaurix packages queue-20260407-opus-p100)
+  #:use-module (gaurix packages queue-20260407-opus-p101)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -841,6 +842,107 @@
             zl-equalizer-bin
             lidarr-bin
             suwayomi-server-bin
+            ; queue-20260407-opus-p101
+            cef-minimal-obs-bin
+            claudia
+            nrf-udev
+            zfs-linux-lts
+            zfs-linux-lts-headers
+            tamgamp-lv2-git
+            akvcam-dkms
+            dxvk-nvapi-vkreflex-layer
+            jddesktopentryedit
+            qtspim
+            lumen
+            synapse-compress-state
+            jdk11-temurin
+            adspower-global
+            papermc
+            pikaur-git
+            tangara-companion
+            looking-glass-module-dkms
+            obs-plugin-looking-glass
+            colmap
+            voacapl
+            soulseekqt
+            threema-desktop-beta
+            esphome-flasher
+            verylup
+            grub-hook
+            jmeter
+            gconfmm
+            gconfmm-docs
+            chomikbox
+            mingw-w64-zlib
+            sex
+            mutemplate
+            idevicegui
+            rebind-devices
+            plainotepad
+            gcencryptor
+            geminicommit-bin
+            arch-upgrade
+            pass-otp-age
+            intel-oneapi-hpckit
+            softmaker-office-nx-bin
+            mingw-w64-libjpeg-turbo
+            mingw-w64-libpng
+            mingw-w64-sdl2
+            ciso
+            mingw-w64-libtiff
+            mingw-w64-libogg
+            mingw-w64-xz
+            mingw-w64-libvorbis
+            mingw-w64-flac
+            webstorm-eap
+            webstorm-eap-jre
+            mingw-w64-sdl2-ttf
+            asap
+            mingw-w64-libwebp
+            mingw-w64-sdl2-image
+            agg-2-6-git
+            mingw-w64-giflib
+            mingw-w64-libmodplug
+            icytower
+            mingw-w64-sdl2-mixer
+            binutils-ia16
+            gcc-ia16
+            vitasdk-git
+            openafs
+            gnome-shell-extension-kimpanel-git
+            id3ren
+            snyk
+            raine
+            rest-server-bin
+            android-armv7a-eabi-openssl
+            perlnavigator
+            nodejs-perl-navigator-web-server
+            nodejs-perlnavigator-client
+            nodejs-perlnavigator-server
+            twitch
+            pass-clip
+            pass-qr
+            gcs-bin
+            grml2usb
+            sbkeys
+            micropolis-java
+            xfce-theme-greybird-git
+            vislcg3
+            ntfy-alertmanager
+            prometheus-podman-exporter
+            ardupilot-mission-planner
+            fortune-mod-xfiles
+            msi-keyboard-git
+            twad-git
+            schemaspy
+            shcopy-bin
+            purple-discord-git
+            slack-libpurple-git
+            sshcd
+            gnome-shell-extension-hibernate-status
+            ion-git
+            recon-ng
+            gitqlient-git
             ))
 
 (define-public gtk2
