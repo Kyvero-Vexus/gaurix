@@ -12,6 +12,9 @@
 **Timestamp:** 2026-04-06T21:58:27.982194+00:00
 **Run:** deptree-resolver-260406
 **Total BLOCKED:** 6623
+**Timestamp:** 2026-04-07T03:20:48.404983+00:00
+**Run:** deptree-resolver-20260407-0320
+**Total BLOCKED:** 6555
 
 ## Priority Queue (top 120)
 
@@ -499,3 +502,123 @@
 98. elephant-menus-bin (blocked_deps=0, rev_deps=1, total=2)
 99. elephant-providerlist-bin (blocked_deps=0, rev_deps=1, total=2)
 100. elephant-runner-bin (blocked_deps=0, rev_deps=1, total=2)
+| 1 | html2markdown | 0 | 12 | 3 |
+| 2 | rvgl-bin | 0 | 7 | 7 |
+| 3 | archlinux-java-run | 0 | 6 | 2 |
+| 4 | yay | 0 | 5 | 3 |
+| 5 | waydroid | 0 | 4 | 0 |
+| 6 | cosmic-randr-git | 0 | 3 | 5 |
+| 7 | zmusic | 0 | 3 | 5 |
+| 8 | python-sqlite-migrate | 0 | 3 | 8 |
+| 9 | hyprtoolkit-git | 0 | 3 | 15 |
+| 10 | wayfire | 0 | 3 | 15 |
+| 11 | llvm-libs-minimal-git | 0 | 3 | 19 |
+| 12 | python-mcp | 0 | 3 | 34 |
+| 13 | mips64-linux-gnu-linux-api-headers | 0 | 2 | 1 |
+| 14 | qt5-scxml | 0 | 2 | 2 |
+| 15 | gtk-sharp-2 | 0 | 2 | 3 |
+| 16 | foobar2000 | 0 | 2 | 4 |
+| 17 | libelectron | 0 | 2 | 4 |
+| 18 | mozc | 0 | 2 | 4 |
+| 19 | paru | 0 | 2 | 4 |
+| 20 | wl-screenrec | 0 | 2 | 8 |
+1. html2markdown (blocked_deps=0, rev_deps=12, total=3)
+2. rvgl-bin (blocked_deps=0, rev_deps=7, total=7)
+3. archlinux-java-run (blocked_deps=0, rev_deps=6, total=2)
+4. yay (blocked_deps=0, rev_deps=5, total=3)
+5. waydroid (blocked_deps=0, rev_deps=4, total=0)
+6. cosmic-randr-git (blocked_deps=0, rev_deps=3, total=5)
+7. zmusic (blocked_deps=0, rev_deps=3, total=5)
+8. python-sqlite-migrate (blocked_deps=0, rev_deps=3, total=8)
+9. hyprtoolkit-git (blocked_deps=0, rev_deps=3, total=15)
+10. wayfire (blocked_deps=0, rev_deps=3, total=15)
+11. llvm-libs-minimal-git (blocked_deps=0, rev_deps=3, total=19)
+12. python-mcp (blocked_deps=0, rev_deps=3, total=34)
+13. mips64-linux-gnu-linux-api-headers (blocked_deps=0, rev_deps=2, total=1)
+14. qt5-scxml (blocked_deps=0, rev_deps=2, total=2)
+15. gtk-sharp-2 (blocked_deps=0, rev_deps=2, total=3)
+16. foobar2000 (blocked_deps=0, rev_deps=2, total=4)
+17. libelectron (blocked_deps=0, rev_deps=2, total=4)
+18. mozc (blocked_deps=0, rev_deps=2, total=4)
+19. paru (blocked_deps=0, rev_deps=2, total=4)
+20. wl-screenrec (blocked_deps=0, rev_deps=2, total=8)
+21. python-pluginmgr (blocked_deps=0, rev_deps=2, total=9)
+22. xboxdrv (blocked_deps=0, rev_deps=2, total=9)
+23. radicle-node (blocked_deps=0, rev_deps=2, total=10)
+24. qtutilities-qt6 (blocked_deps=0, rev_deps=2, total=12)
+25. qmc2-common-git (blocked_deps=0, rev_deps=2, total=13)
+26. vscodium-translucent (blocked_deps=0, rev_deps=2, total=21)
+27. ros2-arch-deps (blocked_deps=0, rev_deps=2, total=44)
+28. sonic-win (blocked_deps=0, rev_deps=2, total=61)
+29. libfmod (blocked_deps=0, rev_deps=1, total=0)
+30. tailscale (blocked_deps=0, rev_deps=1, total=0)
+31. tosu (blocked_deps=0, rev_deps=1, total=0)
+32. brscan4 (blocked_deps=0, rev_deps=1, total=1)
+33. ttf-gabarito-git (blocked_deps=0, rev_deps=1, total=1)
+34. tuxedo-drivers-dkms (blocked_deps=0, rev_deps=1, total=1)
+35. acestream-engine (blocked_deps=0, rev_deps=1, total=2)
+36. heidisql (blocked_deps=0, rev_deps=1, total=2)
+37. java-service-wrapper (blocked_deps=0, rev_deps=1, total=2)
+38. jre25-temurin (blocked_deps=0, rev_deps=1, total=2)
+39. lib32-l-smash (blocked_deps=0, rev_deps=1, total=2)
+40. libticables (blocked_deps=0, rev_deps=1, total=2)
+41. libtifiles (blocked_deps=0, rev_deps=1, total=2)
+42. makepkg-git-lfs-proto (blocked_deps=0, rev_deps=1, total=2)
+43. mint-y-icons (blocked_deps=0, rev_deps=1, total=2)
+44. mintcommon (blocked_deps=0, rev_deps=1, total=2)
+45. mips64-linux-gnu-binutils (blocked_deps=0, rev_deps=1, total=2)
+46. new-lg4ff-dkms-git (blocked_deps=0, rev_deps=1, total=2)
+47. numix-icon-theme-git (blocked_deps=0, rev_deps=1, total=2)
+48. otf-misans (blocked_deps=0, rev_deps=1, total=2)
+49. otf-misans-arabic (blocked_deps=0, rev_deps=1, total=2)
+50. otf-misans-devanagari (blocked_deps=0, rev_deps=1, total=2)
+51. otf-misans-gujarati (blocked_deps=0, rev_deps=1, total=2)
+52. otf-misans-gurmukhi (blocked_deps=0, rev_deps=1, total=2)
+53. otf-misans-khmer (blocked_deps=0, rev_deps=1, total=2)
+54. otf-misans-l3 (blocked_deps=0, rev_deps=1, total=2)
+55. otf-misans-lao (blocked_deps=0, rev_deps=1, total=2)
+56. otf-misans-latin (blocked_deps=0, rev_deps=1, total=2)
+57. otf-misans-myanmar (blocked_deps=0, rev_deps=1, total=2)
+58. otf-misans-tc (blocked_deps=0, rev_deps=1, total=2)
+59. otf-misans-thai (blocked_deps=0, rev_deps=1, total=2)
+60. otf-misans-tibetan (blocked_deps=0, rev_deps=1, total=2)
+61. piper-voices-common (blocked_deps=0, rev_deps=1, total=2)
+62. python-fvs (blocked_deps=0, rev_deps=1, total=2)
+63. python-sysv_ipc (blocked_deps=0, rev_deps=1, total=2)
+64. qt5-serialbus (blocked_deps=0, rev_deps=1, total=2)
+65. ruby-httpx (blocked_deps=0, rev_deps=1, total=2)
+66. ruby-kaitai-struct (blocked_deps=0, rev_deps=1, total=2)
+67. sac-core (blocked_deps=0, rev_deps=1, total=2)
+68. sh-elf-binutils (blocked_deps=0, rev_deps=1, total=2)
+69. stardust-xr-black-hole (blocked_deps=0, rev_deps=1, total=2)
+70. stardust-xr-flatland (blocked_deps=0, rev_deps=1, total=2)
+71. stardust-xr-gravity (blocked_deps=0, rev_deps=1, total=2)
+72. stardust-xr-protostar (blocked_deps=0, rev_deps=1, total=2)
+73. stardust-xr-solar-sailer (blocked_deps=0, rev_deps=1, total=2)
+74. ttf-misans (blocked_deps=0, rev_deps=1, total=2)
+75. ttf-misans-arabic (blocked_deps=0, rev_deps=1, total=2)
+76. ttf-misans-devanagari (blocked_deps=0, rev_deps=1, total=2)
+77. ttf-misans-gujarati (blocked_deps=0, rev_deps=1, total=2)
+78. ttf-misans-gurmukhi (blocked_deps=0, rev_deps=1, total=2)
+79. ttf-misans-khmer (blocked_deps=0, rev_deps=1, total=2)
+80. ttf-misans-l3 (blocked_deps=0, rev_deps=1, total=2)
+81. ttf-misans-lao (blocked_deps=0, rev_deps=1, total=2)
+82. ttf-misans-latin (blocked_deps=0, rev_deps=1, total=2)
+83. ttf-misans-myanmar (blocked_deps=0, rev_deps=1, total=2)
+84. ttf-misans-tc (blocked_deps=0, rev_deps=1, total=2)
+85. ttf-misans-thai (blocked_deps=0, rev_deps=1, total=2)
+86. ttf-misans-tibetan (blocked_deps=0, rev_deps=1, total=2)
+87. vapoursynth-plugin-vszip (blocked_deps=0, rev_deps=1, total=2)
+88. woff-misans (blocked_deps=0, rev_deps=1, total=2)
+89. woff-misans-arabic (blocked_deps=0, rev_deps=1, total=2)
+90. woff-misans-devanagari (blocked_deps=0, rev_deps=1, total=2)
+91. woff-misans-gujarati (blocked_deps=0, rev_deps=1, total=2)
+92. woff-misans-gurmukhi (blocked_deps=0, rev_deps=1, total=2)
+93. woff-misans-khmer (blocked_deps=0, rev_deps=1, total=2)
+94. woff-misans-l3 (blocked_deps=0, rev_deps=1, total=2)
+95. woff-misans-lao (blocked_deps=0, rev_deps=1, total=2)
+96. woff-misans-latin (blocked_deps=0, rev_deps=1, total=2)
+97. woff-misans-myanmar (blocked_deps=0, rev_deps=1, total=2)
+98. woff-misans-tc (blocked_deps=0, rev_deps=1, total=2)
+99. woff-misans-thai (blocked_deps=0, rev_deps=1, total=2)
+100. woff-misans-tibetan (blocked_deps=0, rev_deps=1, total=2)
