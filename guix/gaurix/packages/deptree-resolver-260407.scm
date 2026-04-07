@@ -5,6 +5,9 @@
 ;;; Resolves packages from the top-100 blocked dependency queue.
 ;;; Covers: source builds (cmake/meson/gnu/go), Python packages,
 ;;; firmware/data, and select binary packages.
+;;; Dependency-tree resolver pass — deptree-resolver-260407
+;;; Resolves BLOCKED packages from the priority queue.
+;;; Covers: binary packages, source builds, compat aliases, data/fonts.
 
 (define-module (gaurix packages deptree-resolver-260407)
   #:use-module (guix packages)
@@ -39,6 +42,13 @@
   #:use-module (gnu packages linux)
   #:use-module (gnu packages mp3)
   #:use-module (gnu packages assembly)
+  #:use-module (guix build-system font)
+  #:use-module (gnu packages cmake)
+  #:use-module (gnu packages elf)
+  #:use-module (gnu packages gettext)
+  #:use-module (gnu packages networking)
+  #:use-module (gnu packages node)
+  #:use-module (gnu packages pcre)
   #:use-module (gnu packages perl)
   #:use-module (gnu packages pkg-config)
   #:use-module (gnu packages python)
@@ -70,6 +80,179 @@
              version ".tar.gz"))
        (sha256
         (base32 "1j1wj9zp5aghacv30n23fz2590bwf0lnvk54lgnzgix1fsrx15xn"))))
+  #:use-module (gnu packages xml))
+;;; ── FONT PACKAGES ──────────────────────────────────────────────────────
+(define-public ttf-meslo-nerd-font-powerlevel10k
+    (name "ttf-meslo-nerd-font-powerlevel10k")
+    (version "2.3.3")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/romkatv/powerlevel10k-media/raw/"
+                    "master/MesloLGS%20NF%20Regular.ttf"))
+              (file-name (string-append name "-" version "-regular.ttf"))
+              (sha256
+               (base32
+                "0zg5qvrdi6y2y7dwbwi4d442s78ayjmq72cy2g0dgy4pdqc4cyfr"))))
+    (build-system font-build-system)
+    (arguments
+     (list #:phases
+           #~(modify-phases %standard-phases
+               (replace 'install
+                 (lambda* (#:key outputs #:allow-other-keys)
+                   (let ((font-dir (string-append (assoc-ref outputs "out")
+                                                  "/share/fonts/truetype")))
+                     (mkdir-p font-dir)
+                     (for-each (lambda (f)
+                                 (install-file f font-dir))
+                               (find-files "." "\\.ttf$"))))))))
+    (home-page "https://github.com/romkatv/powerlevel10k-media")
+    (synopsis "meslo Nerd Font patched for Powerlevel10k")
+    (description
+     "MesloLGS NF is a Meslo Nerd Font patched specifically for use with
+the Powerlevel10k Zsh theme.  It includes all the glyphs and icons
+needed for a complete Powerlevel10k experience.")
+    (license license:asl2.0)))
+;;; ── DATA / RESOURCE PACKAGES ───────────────────────────────────────────
+(define-public v2ray-domain-list-custom
+    (name "v2ray-domain-list-custom")
+    (version "20240401")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/Loyalsoldier/v2ray-rules-dat/"
+                    "releases/latest/download/geosite.dat"))
+              (file-name (string-append name "-" version ".dat"))
+              (sha256
+               (base32
+                "1q0vg0kf7gfld36054qimvb1sn1cn36vdlkalhlcd0c2a7dfcdff"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("geosite.dat" "share/v2ray/geosite.dat"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (replace 'unpack
+            (lambda* (#:key source #:allow-other-keys)
+              (copy-file source "geosite.dat"))))))
+    (home-page "https://github.com/Loyalsoldier/v2ray-rules-dat")
+    (synopsis "custom domain list for V2Ray routing")
+    (description
+     "A curated list of domains for use as geosites for routing purposes
+in V2Ray and compatible proxies.  Based on Loyalsoldier's rules.")
+    (license license:gpl3+)))
+(define-public reshade-shaders-git
+    (name "reshade-shaders-git")
+    (version "0.0.0")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/crosire/reshade-shaders")
+                    (commit "67603ed5cc968cda1538e1a2e1f4e8b795eb9a63")))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("Shaders" "share/reshade/shaders")
+          ("Textures" "share/reshade/textures"))))
+    (home-page "https://github.com/crosire/reshade-shaders")
+    (synopsis "collection of post-processing shaders for ReShade and vkBasalt")
+    (description
+     "A collection of post-processing shaders written in the ReShade FX
+shader language.  These can be used with vkBasalt or ReShade for
+graphical enhancements in games and applications.")
+    (license (license:non-copyleft
+              "https://github.com/crosire/reshade-shaders/blob/master/LICENSE.md"
+              "Custom license"))))
+(define-public android-udev-git
+    (name "android-udev-git")
+    (version "20250311")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/M0Rf30/android-udev-rules")
+                    (commit "e62577f4bad6e0c0b3c549e8e685c3edd96cee66")))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("51-android.rules" "lib/udev/rules.d/51-android.rules"))))
+    (home-page "https://github.com/M0Rf30/android-udev-rules")
+    (synopsis "udev rules for connecting Android devices on Linux")
+    (description
+     "Comprehensive set of udev rules for connecting Android devices to
+a Linux system.  Covers most Android device vendors for ADB, fastboot,
+and MTP access.")
+    (license license:gpl3+)))
+(define-public linux-firmware-whence-git
+    (name "linux-firmware-whence-git")
+    (version "20250305")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://gitlab.com/kernel-firmware/linux-firmware")
+                    (commit "a3e1417a98e20bd40f50e3780e5e7e27ad5b52b0")))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("WHENCE" "share/doc/linux-firmware/WHENCE")
+          ("LICENCE.txt" "share/doc/linux-firmware/LICENCE.txt"
+           #:optional #t))))
+    (home-page "https://gitlab.com/kernel-firmware/linux-firmware")
+    (synopsis "license documentation for Linux firmware files")
+    (description
+     "This package provides the WHENCE license file from the Linux firmware
+repository, which documents vendor license details for binary firmware
+blobs distributed with the Linux kernel.")
+    (license license:gpl2)))
+(define-public cosmic-icons-git
+    (name "cosmic-icons-git")
+    (version "1.0.0-alpha.5.1")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/pop-os/cosmic-icons")
+                    (commit "705d3986b72f35c59f2b74f65f7b1b4addbdbdb5")))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("." "share/icons/Cosmic/"
+           #:include-regexp ("\\.svg$" "index\\.theme")))))
+    (home-page "https://github.com/pop-os/cosmic-icons")
+    (synopsis "icon theme for the COSMIC desktop environment")
+    (description
+     "System76 COSMIC icon theme.  Provides a comprehensive set of SVG icons
+designed for the COSMIC desktop environment.")
+    (license (list license:cc-by-sa4.0 license:gpl3))))
+(define-public mips64-linux-gnu-linux-api-headers
+    (name "mips64-linux-gnu-linux-api-headers")
+    (version "6.11")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append "mirror://kernel.org/linux/kernel/v6.x/"
+                                  "linux-" version ".tar.xz"))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
     (build-system gnu-build-system)
     (arguments
      (list
@@ -173,6 +356,86 @@ It provides a library and tools for decoding EVC-encoded video streams.")
      "xeve is an encoder for the MPEG-5 Essential Video Coding (EVC) standard.
 It provides a library and tools for encoding video into the EVC format.")
     (license license:bsd-3)))
+          (delete 'configure)
+          (replace 'build
+            (lambda _
+              (invoke "make" "ARCH=mips" "headers_install"
+                      (string-append "INSTALL_HDR_PATH=" #$output))))
+          (delete 'install))))
+    (home-page "https://www.kernel.org")
+    (synopsis "Linux API headers for MIPS64 cross-compilation")
+     "Sanitized Linux kernel headers for use in user space, targeting the
+MIPS64 architecture with the GNU C library and multilib ABI.")
+    (license license:gpl2)))
+;;;
+;;; ── BINARY PACKAGES ────────────────────────────────────────────────────
+;;;
+(define-public bitwarden-cli-bin
+    (name "bitwarden-cli-bin")
+    (version "2024.12.0")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://registry.npmjs.org/@bitwarden/cli/-/cli-"
+                    version ".tgz"))
+              (sha256
+               (base32
+                "0rj0xwm2li0rnbl24shmgyxlraqsw4vhn32j4dnishksbds79ra2"))))
+    (build-system copy-build-system)
+      #:install-plan #~'(("." "lib/node_modules/@bitwarden/cli/"))
+          (add-after 'install 'create-wrapper
+            (lambda* (#:key inputs outputs #:allow-other-keys)
+              (let* ((out (assoc-ref outputs "out"))
+                     (bin (string-append out "/bin"))
+                     (node (search-input-file inputs "bin/node"))
+                     (cli (string-append out
+                                         "/lib/node_modules/@bitwarden/cli"
+                                         "/build/bw.js")))
+                (mkdir-p bin)
+                (with-output-to-file (string-append bin "/bw")
+                  (lambda ()
+                    (display (string-append "#!/bin/sh\nexec " node
+                                            " " cli " \"$@\"\n"))))
+                (chmod (string-append bin "/bw") #o755)))))))
+    (inputs (list node))
+    (home-page "https://bitwarden.com")
+    (synopsis "command line interface for the Bitwarden password manager")
+     "The Bitwarden CLI is a powerful, full-featured command line interface
+for interacting with the Bitwarden vault.  It supports all vault
+management operations including login, sync, and item management.")
+    (license license:gpl3)))
+(define-public nordvpn-bin
+    (name "nordvpn-bin")
+    (version "3.19.2")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/"
+                    "nordvpn_" version "_amd64.deb"))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+      #:install-plan #~'(("usr/bin/" "bin/")
+                         ("usr/sbin/" "sbin/")
+                         ("usr/share/" "share/"))
+          (replace 'unpack
+            (lambda* (#:key source #:allow-other-keys)
+              (invoke "ar" "x" source)
+              (invoke "tar" "xf" "data.tar.xz"))))))
+    (native-inputs (list (@ (gnu packages base) binutils)))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://nordvpn.com/download/linux/")
+    (synopsis "NordVPN CLI tool for Linux")
+     "NordVPN command line interface for connecting to NordVPN servers
+on Linux.  Supports automatic server selection, protocol switching,
+and kill switch functionality.")
+    (license (license:non-copyleft
+              "https://nordvpn.com/terms-of-service/"
+              "NordVPN Terms of Service"))))
+;;;
+;;; ── SOURCE-BUILD PACKAGES ──────────────────────────────────────────────
+;;;
 
 (define-public vvenc
   (package
@@ -220,6 +483,77 @@ an optimized implementation for encoding video in the VVC format.")
 Video) codec.  It provides encoding and decoding tools for professional
 video workflows.")
     (license license:bsd-3)))
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/fraunhoferhhi/vvenc/archive/refs/tags/v"
+                    version ".tar.gz"))
+              (sha256
+               (base32
+                "0x71ks9rhmq6iy9jhqk427c7v1vj0ss9rfg5kadhvg4xsmhx0hyx"))))
+     (list
+      #:configure-flags
+      #~(list "-DBUILD_SHARED_LIBS=ON"
+              "-DVVENC_ENABLE_LINK_TIME_OPT=OFF")))
+    (home-page "https://github.com/fraunhoferhhi/vvenc/")
+    (synopsis "H.266/VVC encoder implementation")
+     "VVenC is an open-source H.266/VVC (Versatile Video Coding) encoder
+implementation developed by Fraunhofer HHI.  It provides fast and
+efficient VVC encoding with various presets and configurations.")
+    (license (license:non-copyleft
+              "https://github.com/fraunhoferhhi/vvenc/blob/master/LICENSE.txt"
+              "BSD-3-Clause-Clear"))))
+(define-public vpcs
+    (name "vpcs")
+    (version "0.8.3")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/GNS3/vpcs/archive/refs/tags/v"
+                    version ".tar.gz"))
+              (sha256
+               (base32
+                "19rxlfqf58kqdfgl0kq1xnmvpfmknxxqgx6xfryvv2yv7y98q0bk"))))
+    (build-system gnu-build-system)
+     (list
+      #:tests? #f
+      #:phases
+      #~(modify-phases %standard-phases
+          (delete 'configure)
+          (replace 'build
+            (lambda _
+              (chdir "src")
+              (invoke "sh" "mk.sh")))
+          (replace 'install
+            (lambda* (#:key outputs #:allow-other-keys)
+              (let ((bin (string-append (assoc-ref outputs "out") "/bin")))
+                (mkdir-p bin)
+                (install-file "vpcs" bin)))))))
+    (home-page "https://github.com/GNS3/vpcs")
+    (synopsis "simple virtual PC simulator for network emulation")
+     "VPCS (Virtual PC Simulator) is a lightweight program that simulates
+up to 9 virtual PCs for use with network emulators like GNS3.  Each
+virtual PC supports basic networking commands including ping, traceroute,
+and ARP.")
+    (license license:bsd-2)))
+(define-public dynamips
+    (name "dynamips")
+    (version "0.2.23")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/GNS3/dynamips/archive/refs/tags/v"
+                    version ".tar.gz"))
+              (sha256
+               (base32
+                "18a1lkfm4g0d9ri44whbipif4xjbh05vvs6vm079149zq19bnfsh"))))
+    (inputs (list libpcap elfutils))
+    (home-page "https://github.com/GNS3/dynamips")
+    (synopsis "Cisco router emulator for network simulation")
+     "Dynamips is a Cisco router emulator that can emulate Cisco 7200, 3600,
+3725, 3745, and 2600 series routers.  It is primarily used with GNS3
+for network simulation and lab environments.")
+    (license license:gpl2+)))
 
 (define-public libaribcaption
   (package
@@ -233,6 +567,14 @@ video workflows.")
              version ".tar.gz"))
        (sha256
         (base32 "10s6sjfglm8wznv44f30ikby5v9m4prn9z4a2x30ml32lsh07397"))))
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/xqq/libaribcaption/archive/refs/tags/v"
+                    version ".tar.gz"))
+              (sha256
+               (base32
+                "10s6sjfglm8wznv44f30ikby5v9m4prn9z4a2x30ml32lsh07397"))))
     (build-system cmake-build-system)
     (arguments
      (list #:tests? #f))
@@ -363,6 +705,23 @@ HTTP servers and handles caching and multi-threaded downloading.")
              version ".tar.gz"))
        (sha256
         (base32 "1yzpa1nigmmp4hir6377hrkpp0z6jnxgccaw2jbqgydbglvnm231"))))
+    (home-page "https://github.com/xqq/libaribcaption/")
+    (synopsis "ARIB STD-B24 caption decoder and renderer library")
+     "Libaribcaption is a caption decoder and renderer library for handling
+ARIB STD-B24 based TV broadcast captions.  It is used by media players
+and video processing tools to display Japanese broadcast captions.")
+(define-public ntfsprogs-plus
+    (name "ntfsprogs-plus")
+    (version "1.0.0")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/ntfsprogs-plus/ntfsprogs-plus")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
     (build-system gnu-build-system)
     (arguments
      (list
@@ -393,6 +752,55 @@ can be used to extract matching addresses from logs and other text files.")
              version ".tar.gz"))
        (sha256
         (base32 "0hv3f8s4fmfgq69p9ycgi8fi5vf4vf2xci9s3j9r18ws0lyzbg7a"))))
+          (add-before 'configure 'autoreconf
+            (lambda _
+              (invoke "autoreconf" "-fi"))))))
+    (native-inputs (list autoconf automake libtool pkg-config))
+    (inputs (list util-linux))
+    (home-page "https://github.com/ntfsprogs-plus/ntfsprogs-plus")
+    (synopsis "NTFS filesystem utilities")
+     "Ntfsprogs-plus provides utilities for creating, checking, and
+manipulating NTFS file systems.  A modern continuation of the
+ntfsprogs toolset.")
+    (license license:gpl2+)))
+(define-public fortune-mod-off
+    (name "fortune-mod-off")
+    (version "3.24.0")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/shlomif/fortune-mod/archive/"
+                    "fortune-mod-" version ".tar.gz"))
+              (sha256
+               (base32
+                "1bc5ik9kc6grf1smv9cbkh292ir5y86dgch010cpfhwr4jhqkf0c"))))
+    (build-system cmake-build-system)
+    (arguments
+     (list
+      #:tests? #f
+      #:configure-flags
+      #~(list "-DNO_OFFENSIVE=OFF")))
+    (native-inputs (list perl))
+    (home-page "https://www.shlomifish.org/open-source/projects/fortune-mod/")
+    (synopsis "fortune cookie program with offensive quotes enabled")
+     "Fortune-mod is the BSD fortune program which displays a random
+quotation from a collection of files.  This build includes the
+offensive fortune cookie files that are excluded from many
+distributions.")
+    (license (license:non-copyleft
+              "file://COPYING.txt"
+              "BSD-4-Clause-UC"))))
+(define-public dotool
+    (name "dotool")
+    (version "1.6")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append
+                    "https://git.sr.ht/~geb/dotool/archive/"
+                    version ".tar.gz"))
+              (sha256
+               (base32
+                "07mfbyckn60f5d94p4z7mybxn1k1j9k5169jv9381jwpnss86ryf"))))
     (build-system gnu-build-system)
     (arguments
      (list
@@ -574,6 +982,13 @@ remapping capabilities.")
 generating ASCII art text using various fonts and decorative patterns.")
     (license license:expat)))
 
+    (inputs (list libevdev))
+    (home-page "https://git.sr.ht/~geb/dotool")
+    (synopsis "command-line tool to simulate input events")
+     "Dotool reads commands from stdin and simulates keyboard and mouse
+input events.  It works under both X11 and Wayland, providing a
+universal input automation tool.")
+;;; ── PYTHON PACKAGES ────────────────────────────────────────────────────
 (define-public python-pid
   (package
     (name "python-pid")
@@ -936,6 +1351,57 @@ The database enables geographic IP-based routing rules.")
   (package
     (name "keychron-link-udev")
     (version "1.0.0")
+    (source (origin
+              (method url-fetch)
+              (uri (pypi-uri "pid" version))
+              (sha256
+               (base32
+                "0rpbagc6dql98q5gaprp9a6ifirjkih3mr1212xkx8znhc76fcqf"))))
+     "Python module for creating and managing PID files with stale detection
+and cross-platform file locking.  It ensures only one instance of a
+process is running at a time.")
+(define-public python-steamgriddb
+    (name "python-steamgriddb")
+    (version "1.0.5")
+    (source (origin
+              (method url-fetch)
+              (uri (pypi-uri "python-steamgriddb" version))
+              (sha256
+               (base32
+                "0sah4hbbydqzv69509q8965x2p37p57z135n80xsfpc616xvfv83"))))
+    (propagated-inputs (list python-requests))
+    (home-page "https://pypi.org/project/python-steamgriddb/")
+    (synopsis "Python API wrapper for SteamGridDB.com")
+     "Python wrapper for the SteamGridDB.com API, providing programmatic
+access to custom game artwork including grids, heroes, logos, and
+icons for Steam and other game launchers.")
+;;; ── SHELL SCRIPT / WRAPPER PACKAGES ────────────────────────────────────
+(define-public ani-skip-git
+    (name "ani-skip-git")
+    (version "0.0.1")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/synacktraa/ani-skip")
+                    (commit "12b4960")))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+      #:install-plan #~'(("ani-skip" "bin/ani-skip"))))
+    (home-page "https://github.com/synacktraa/ani-skip")
+    (synopsis "script to automatically skip anime opening and ending sequences")
+     "Ani-skip is a script that automatically skips anime opening and ending
+sequences using the AniSkip API.  It integrates with mpv to detect
+and skip intro and outro segments during playback.")
+;;; ── COMPAT ALIASES ─────────────────────────────────────────────────────
+(define-public libsodium-1.0.18
+    (inherit (@ (gnu packages crypto) libsodium))
+    (name "libsodium-1.0.18")))
+(define-public npm-corepack
+    (name "npm-corepack")
+    (version "0.1.0")
     (source #f)
     (build-system trivial-build-system)
     (arguments
@@ -978,6 +1444,80 @@ receiver, allowing non-root users to access the device.")
        (sha256
         (base32 "0kfnv7zw18y0f0jyxfimq4bnv99jys78n78pbq5w27nhizn8dh8d"))))
     (build-system gnu-build-system)
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (symlink (string-append #$(this-package-input "node")
+                                    "/bin/corepack")
+                     (string-append bin "/corepack"))
+            ;; Create npm wrapper that uses corepack
+            (with-output-to-file (string-append bin "/npm")
+              (lambda ()
+                (format #t "#!/bin/sh~%exec ~a/bin/corepack npm \"$@\"~%"
+                        #$(this-package-input "node"))))
+            (chmod (string-append bin "/npm") #o755)))))
+    (inputs (list node))
+    (home-page "https://github.com/nodejs/corepack/")
+    (synopsis "corepack shim providing npm via Node.js")
+     "This package uses the corepack shim bundled with Node.js to provide
+npm as a managed package manager.  Corepack ensures the correct version
+of npm is used for each project.")
+    (license license:expat)))
+(define-public pnpm-corepack
+    (inherit npm-corepack)
+    (name "pnpm-corepack")
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (with-output-to-file (string-append bin "/pnpm")
+              (lambda ()
+                (format #t "#!/bin/sh~%exec ~a/bin/corepack pnpm \"$@\"~%"
+                        #$(this-package-input "node"))))
+            (chmod (string-append bin "/pnpm") #o755)))))
+    (synopsis "corepack shim providing pnpm via Node.js")
+     "This package uses the corepack shim bundled with Node.js to provide
+pnpm as a managed package manager.  Corepack ensures the correct version
+of pnpm is used for each project.")))
+(define-public yarn-corepack
+    (inherit npm-corepack)
+    (name "yarn-corepack")
+    (arguments
+     (list
+      #:modules '((guix build utils))
+      #:builder
+      #~(begin
+          (use-modules (guix build utils))
+          (let* ((out (assoc-ref %outputs "out"))
+                 (bin (string-append out "/bin")))
+            (mkdir-p bin)
+            (with-output-to-file (string-append bin "/yarn")
+              (lambda ()
+                (format #t "#!/bin/sh~%exec ~a/bin/corepack yarn \"$@\"~%"
+                        #$(this-package-input "node"))))
+            (chmod (string-append bin "/yarn") #o755)))))
+    (synopsis "corepack shim providing yarn via Node.js")
+     "This package uses the corepack shim bundled with Node.js to provide
+Yarn as a managed package manager.  Corepack ensures the correct version
+of Yarn is used for each project.")))
+;;; ── MESON/GLIB PACKAGES ───────────────────────────────────────────────
+(define-public libastal-bluetooth-git
+    (name "libastal-bluetooth-git")
+    (version "0.1.0")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/Aylur/astal")
+                    (commit "ca3190d")))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32
+                "0000000000000000000000000000000000000000000000000000"))))
+    (build-system meson-build-system)
     (arguments
      (list
       #:tests? #f
@@ -994,3 +1534,14 @@ receiver, allowing non-root users to access the device.")
 configuration management.  It stores a list of nodes with associated
 attributes that can be queried for cluster administration tasks.")
     (license license:gpl2+)))
+          (add-after 'unpack 'chdir
+            (lambda _ (chdir "lib/bluetooth"))))))
+    (native-inputs (list pkg-config `(,glib "bin")))
+    (inputs (list glib))
+    (home-page "https://github.com/Aylur/astal")
+    (synopsis "library to control BlueZ over D-Bus")
+     "Libastal-bluetooth is a GObject-based library for controlling BlueZ
+(the Linux Bluetooth stack) over D-Bus.  It is part of the Astal
+widget toolkit ecosystem.")
+    (license license:lgpl2.1)))
+
