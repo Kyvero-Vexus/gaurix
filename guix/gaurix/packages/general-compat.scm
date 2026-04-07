@@ -183,6 +183,7 @@
   #:use-module (gnu packages monitoring)
   #:use-module (gnu packages python-science)
   #:use-module (gnu packages selinux)
+  #:use-module (nongnu packages mozilla)
   #:export (
             dyalog-bin
             ;; nrd18 compat aliases
@@ -753,6 +754,13 @@
             python-strenum
             python-pyvista
             clp
+            ;; deptree-260407 compat aliases
+            7zip-zstd-bin
+            firefox-esr-bin
+            libsodium-1.0.18
+            noto-fonts-emoji-blob
+            noto-fonts-lite
+            otf-unifont
             ))
 
 (define-public gtk2
@@ -3101,3 +3109,36 @@
   (package
     (inherit python-setools)
     (name "setools")))
+
+
+;; deptree-260407 compat aliases (dep-tree BLOCKED pass)
+
+(define-public 7zip-zstd-bin
+  (package
+    (inherit 7zip)
+    (name "7zip-zstd-bin")))
+
+(define-public firefox-esr-bin
+  (package
+    (inherit firefox-esr)
+    (name "firefox-esr-bin")))
+
+(define-public libsodium-1.0.18
+  (package
+    (inherit libsodium)
+    (name "libsodium-1.0.18")))
+
+(define-public noto-fonts-emoji-blob
+  (package
+    (inherit font-google-noto-emoji)
+    (name "noto-fonts-emoji-blob")))
+
+(define-public noto-fonts-lite
+  (package
+    (inherit font-google-noto)
+    (name "noto-fonts-lite")))
+
+(define-public otf-unifont
+  (package
+    (inherit font-gnu-unifont)
+    (name "otf-unifont")))

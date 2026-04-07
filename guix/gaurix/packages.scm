@@ -272,6 +272,8 @@
             #:use-module (gaurix packages queue-20260406p100-blocked-notes)
             #:use-module (gaurix packages queue-20260406p100b)
             #:use-module (gaurix packages queue-20260406p100b-blocked-notes)
+  #:use-module (gaurix packages deptree-260407)
+  #:use-module (gaurix packages deptree-260407-blocked-notes)
             0ad-git
             2s2h
             4th
