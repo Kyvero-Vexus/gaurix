@@ -233,6 +233,19 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd21)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd21-blocked-notes)
   #:use-module (gaurix packages cron-5a2fb251-r21-w01)
+  #:use-module (gaurix packages cron-5a2fb251-r14-w01)
+  #:use-module (gaurix packages cron-c79f127f-w02)
+  #:use-module (gaurix packages cron-c79f127f-w05)
+  #:use-module (gaurix packages cron-c79f127f-w07)
+  #:use-module (gaurix packages cron-c79f127f-w08)
+  #:use-module (gaurix packages cron-c79f127f-w09)
+  #:use-module (gaurix packages cron-c79f127f-w10)
+  #:use-module (gaurix packages queue-20260402blocked-c79f127f-w06)
+  #:use-module (gaurix packages queue-20260402t2015z-blocked-tree-p100-w01)
+  #:use-module (gaurix packages queue-20260406-deptree-w01)
+  #:use-module (gaurix packages queue-20260406-recipe-resolver)
+  #:use-module (gaurix packages queue-20260406-recipe-resolver-blocked-notes)
+  #:use-module (gaurix packages queue-cron-c79f127f-w04)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -5293,7 +5306,7 @@
             ttf-annotation-mono-variable
             ttf-annotation-mono
             otf-annotation-mono
-                        cnijfilter2-g3010
+            cnijfilter2-g3010
             openterface_qt-git
             python-unitypy-git
             python-fmod-tookit-git
@@ -6303,6 +6316,96 @@
             xray-oci-git
             xrdp
             xremap-kde
+            wayland-protocols-git
+            autojump-git
+            grim-git
+            wlopm-git
+            udevil-git
+            fakeroot-git
+            wayland-git
+            wl-clipboard-git
+            swayidle-git
+            swappy-git
+            zenity-git
+            wlr-protocols-git
+            ttf-plemoljp-bin
+            slurp-git
+            grimblast-git
+            inkscape-bin
+            hyprland-git
+            beads-git
+            ttf-mononoki
+            ttf-recursive
+            tmsu-bin
+            helix-git
+            elm-bin
+            nim-git
+            tome4-bin
+            ttf-comic-neue
+            wdisplays-git
+            qdmr-git
+            jitterentropy-rngd-git
+            python-pywal16-git
+            rot8-git
+            star-bin
+            queue-20260402p100daily5-blocked-notes
+            adobe-base-14-fonts
+            ttf-meslo
+            python-httpx-sse
+            sov
+            fvwm3-git
+            python-stanza
+            parallel-hashmap
+            soapysdrplay3-git
+            arx-libertatis-git
+            file-roller-git
+            mpv-uosc-git
+            python-yapsy-git
+            grayjay-git
+            i3lock-fancy-git
+            emacs-git
+            libadwaita-git
+            catppuccin-whiskers-bin
+            zathura-pdf-mupdf-git
+            whois-git
+            scanbd-git
+            nwipe-git
+            telegram-desktop-git
+            adwaita-icon-theme-git
+            mousepad-git
+            electrum-git
+            deskflow-git
+            mupdf-git
+            gparted-git
+            hashlink-git
+            conky-git
+            jujutsu-git
+            thunar-git
+            openfortivpn-git
+            ddcui-git
+            crow-translate-git
+            thunar-volman-git
+            deja-dup-git
+            libavif-git
+            mmc-utils-git
+            wine-git
+            awesome-git
+            syncplay-git
+            xdg-desktop-portal-wlr-git
+            retroarch-joypad-autoconfig-git
+            nushell-git
+            speed-dreams-git
+            xbyak
+            clifm-bin
+            hydroxide-git
+            typstyle-git
+            fnlfmt-git
+            fennel-ls-git
+            mda-lv2-git
+            geos-git
+            dool-git
+            ericw-tools-git
+            cpdf-bin
             xremap-kde-bin
             nextpnr-git
             ttf-iosevka-term
@@ -6356,6 +6459,21 @@
             ttf-iosevka-term
             xremap-wlroots-bin
             xremap-x11-bin
+            elephant-bin
+            html2markdown
+            xapp-thumbnailers-common
+            python-litex
+            qt5-doc
+            bcompare
+            rvgl-bin
+            auto-auto-complete
+            archlinux-java-run
+            python-opencensus
+            c++utilities
+            jdk25-graalvm-bin
+            cpp-jwt
+            python-art
+            python-munge
             xrizer-common
             xsane
             xsane-gimp
@@ -7336,4 +7454,31 @@ podman-tui-bin
             tmux-plugin-panel-bin
             tufw-git
             workz-bin
+            asf
+            aspnet-runtime-bin
+            aspnet-targeting-pack-bin
+            brscan4
+            cosmic-icons-git
+            cosmic-randr-git
+            deb2targz
+            elephant-archlinuxpkgs-bin
+            elephant-bluetooth-bin
+            elephant-desktopapplications-bin
+            elephant-menus-bin
+            elephant-providerlist-bin
+            elephant-runner-bin
+            foobar2000
+            gtk-sharp-2
+            libjodycode
+            mips64-linux-gnu-linux-api-headers
+            mozc
+            openbangla-keyboard-git
+            python-materialyoucolor
+            python-pid
+            qtutilities-qt6
+            scala3
+            ttf-gabarito-git
+            tuxedo-drivers-dkms
+            vscodium-translucent
+            wd719x-firmware
 ))
