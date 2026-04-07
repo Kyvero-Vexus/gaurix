@@ -1,6 +1,7 @@
 (define-module (gaurix packages general-compat)
   #:use-module (gaurix packages llama-cpp-cuda)
   #:use-module (gaurix packages deptree-resolver-260407c)
+  #:use-module (gaurix packages deptree-resolver-260407d)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages rdesktop)
   #:use-module (gnu packages i2p)
@@ -8,6 +9,7 @@
   #:use-module (gaurix packages fluxer-bin)
   #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (gaurix packages recipe-resolver-260407d)
+  #:use-module (gaurix packages recipe-resolver-260407e)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -822,6 +824,23 @@
             bzmenu-bin-260407d
             iwmenu-bin-260407d
             ghostty-terminfo-260407d
+            pigo-bin
+            glab-bin-260407e
+            oh-my-posh-bin
+            juliaup-bin
+            qbittorrent-cli-bin
+            hyprls-bin
+            spicetify-cli-bin
+            mindustry-bin
+            atlauncher-bin
+            ffdec-bin
+            wolfssl
+            wolfssl-all
+            cachyos-ananicy-rules
+            neo4j-community-bin
+            zl-equalizer-bin
+            lidarr-bin
+            suwayomi-server-bin
             ))
 
 (define-public gtk2

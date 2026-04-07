@@ -273,6 +273,7 @@
   #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (gaurix packages recipe-resolver-260407c)
   #:use-module (gaurix packages recipe-resolver-260407d)
+  #:use-module (gaurix packages recipe-resolver-260407e)
   #:use-module (gaurix packages deptree-resolver-260407b)
   #:use-module (gaurix packages deptree-resolver-260407b-blocked-notes)
   #:export (
@@ -324,6 +325,7 @@
   #:use-module (gaurix packages deptree-260407-blocked-notes)
             #:use-module (gaurix packages auto-deptree-260406)
             #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260407d)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -7876,4 +7878,116 @@ podman-tui-bin
             pnpm-corepack
             yarn-corepack
             libastal-bluetooth-git
+            ;; recipe-resolver-260407e
+            atlauncher-bin
+            cachyos-ananicy-rules
+            ffdec-bin
+            glab-bin-260407e
+            hyprls-bin
+            juliaup-bin
+            lidarr-bin
+            mindustry-bin
+            neo4j-community-bin
+            oh-my-posh-bin
+            pigo-bin
+            qbittorrent-cli-bin
+            spicetify-cli-bin
+            suwayomi-server-bin
+            wolfssl
+            wolfssl-all
+            zl-equalizer-bin
+            bab-bin
+            azd-cli
+            aws-nuke-bin
+            auto-mcs-bin
+            authelia-bin
+            auth0-bin
+            audiobookconverter-bin
+            audacity4-alpha
+            atl-gui-git
+            assh-bin
+            artisan-roaster-scope
+            art-standalone
+            argo-bin
+            arattai-bin
+            arad-fonts
+            apple-cursor
+            apipost-bin
+            ansisvg-bin
+            amdctl
+            amd-vulkan-prefixes
+            ambit-bin
+            amalgo-bin
+            ali-instance-cli-bin
+            airwindows-consolidated-bin
+            aider-chat-venv
+            aic-bin
+            ahab-bin
+            aggregate
+            agent-sync-bin
+            afx-bin
+            aerothemeplasma-desktop-x11-git
+            aeroshell-workspace-git
+            aeroshell-kwin-components-git
+            adguardvpn-cli-bin
+            abacusai-bin
+            kwin-povd
+            tl-render
+            android-sdk
+            vapoursynth-plugin-vsjetpack
+            python-google-generativeai
+            lib32-bluez-libs
+            rocm-gfx120x-bin
+            plasticscm-client-core
+            qtforkawesome-qt6
+            pgadmin4-web
+            lib32-nvidia-utils-beta
+            python-holoviews
+            ps3-psl1ght
+            memoria-daemon
+            kpimtextedit5
+            heidisql-qt6-bin
+            sleuthkit-java
+            opencl-amd
+            lib32-libvmaf
+            zectl
+            xorg-font-utils
+            vectorchord
+            samsung-unified-driver-scanner
+            discord-arch-electron
+            crystal-nightly
+            samsung-unified-driver-printer
+            pgadmin4-desktop-bin
+            nvidia-470xx-utils
+            nvidia-390xx-utils
+            llama-cpp-vulkan-bin
+            gtk-sharp-2
+            e-imzo
+            sac-core
+            libstdc-plus-plus5-bin
+            dotnet-host-preview-bin
+            acestream-engine
+            unreal-tournament-data-steam
+            opencl-nvidia-vulkan
+            nvidia-vulkan-open-dkms
+            mongosh-bin
+            intel-oneapi-basekit-2025
+            cryptomator-bin
+            aspnet-runtime-9-0-bin
+            windsurf-next
+            mingw-w64-headers-msvcrt
+            studio-one-7
+            foobar2000
+            openrc
+            nvidia-550xx-utils
+            mips64-linux-gnu-linux-api-headers
+            dotnet-targeting-pack-preview-bin
+            python-albumentationsx
+            cudnn9-10-cuda12-9
+            lib32-nvidia-vulkan-utils
+            qt5-webkit
+            dotnet-sdk-9-0-bin
+            dotnet-sdk-bin
+            texlive-installer
 ))
+)
