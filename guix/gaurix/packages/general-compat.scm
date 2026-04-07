@@ -761,6 +761,10 @@
             noto-fonts-emoji-blob
             noto-fonts-lite
             otf-unifont
+            libavif-noglycin
+            libheif-noglycin
+            libjxl-noglycin
+            libjxl-noglycin-doc
             ))
 
 (define-public gtk2
@@ -3142,3 +3146,9 @@
   (package
     (inherit font-gnu-unifont)
     (name "otf-unifont")))
+;;; noglycin variants — Arch AUR packages built without glycin gdk-pixbuf
+;;; loader; Guix upstream packages do not use glycin, so these are direct aliases.
+(define-public libavif-noglycin libavif)
+(define-public libheif-noglycin libheif)
+(define-public libjxl-noglycin libjxl)
+(define-public libjxl-noglycin-doc libjxl)
