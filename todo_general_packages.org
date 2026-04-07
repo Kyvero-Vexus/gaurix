@@ -868,6 +868,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 144. maliit-framework
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; complex Qt6/C++ with 14 deps, maliit ecosystem not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Maliit input method framework depends on systemd-libs for dbus activation.  Guix uses elogind instead of systemd.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1396,7 +1397,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 232. xrizer-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `xrizer-git` depends on missing/unclear companion packages in queue (`xrizer-common*`, `lib32-*`); recipe not safely completable in this pass.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: OpenVR to OpenXR translation layer requires Rust cargo vendoring + 32-bit Rust libs + CMake.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1781,6 +1782,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 296. epsonscan2
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; proprietary Epson scanner drivers.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Epson scanner utility depends on qt5-singlecoreapplication (not available as separate package in Guix).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2171,6 +2173,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 361. matlab-mpm
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; proprietary MathWorks EULA prohibits redistribution.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: MATLAB Package Manager is proprietary software under custom:MATLAB EULA.  Binary distribution requires accepting MATLAB license terms.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2326,11 +2329,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 387. xviewer
+** DONE 387. xviewer
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on xapp (Linux Mint) not in Guix.
+   - Status: DONE: Recipe in auto-deptree-260406.scm (dependency-tree resolver pass 2026-04-06).  Build succeeds via `guix build -L guix xviewer`.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 388. virtualbox-kvm
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -2552,6 +2556,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: PROPRIETARY_BINARY: AMD OpenCL runtime repackaged from Ubuntu (custom license) (deptree-260407 dep-tree pass)
    - Status: BLOCKED: Re-evaluated nrd18; proprietary AMD ROCm binary.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: AMD ROCm OpenCL runtime is repackaged from AMD proprietary Ubuntu releases.  Custom:AMD license restricts redistribution.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2600,6 +2605,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 432. wf-shell
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on wayfire compositor not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Wayfire shell panel depends on wayfire compositor which is not in Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2732,6 +2738,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 454. llama.cpp-hip
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on AMD ROCm stack not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: llama.cpp with AMD ROCm depends on hip-runtime-amd, hipblas, rocblas, rocm-hip-sdk (AMD ROCm stack, not in Guix).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2750,6 +2757,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 457. linux-lqx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: Re-evaluated in r22-w03-nrd17 dep-tree pass.  BLOCKED: Custom kernel build infra.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Liquorix kernel requires custom kconfig, Liquorix patchset, and full kernel build infrastructure.  Kernel builds in Guix use different tooling.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3859,6 +3867,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 640. iscan
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Epson proprietary scanner driver.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: EPSON Image Scan depends on libstdc++5 (ancient C++ library, not in Guix) and proprietary scanner plugins.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3922,6 +3931,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 649. samsung-unified-driver-scanner
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Samsung proprietary scanner driver.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Samsung unified scanner driver — proprietary Samsung binary.  Depends on samsung-unified-driver-common (not in Guix).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3929,6 +3939,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 650. samsung-unified-driver-printer
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Samsung proprietary printer driver.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Samsung unified printer driver — proprietary Samsung binary.  Depends on samsung-unified-driver-common (not in Guix).
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -4193,6 +4204,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 694. vapoursynth-plugin-vsjetpack
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; vapoursynth not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: VapourSynth plugin depends on vapoursynth framework which is not in Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -4297,18 +4309,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 710. kanidm-unixd-clients
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; 100+ Rust crate deps not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Kanidm UNIX resolver requires cargo vendoring, systemd integration, and TPM2 support.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 711. kanidm-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; 100+ Rust crate deps not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Kanidm identity server requires cargo vendoring, systemd, and database integration.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 712. kanidm-clients
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; 100+ Rust crate deps not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Kanidm CLI client is a complex Rust identity management system requiring cargo vendoring, systemd, TPM2, and clang/lld.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -4771,6 +4786,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 789. android-sdk
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; proprietary Google binary SDK.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Google Android SDK is proprietary under custom license.  Requires lib32-gcc-libs (multilib) and Java environment.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5944,6 +5960,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 983. openvino
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: Re-evaluated in r22-w03-nrd17 dep-tree pass.  BLOCKED: Complex CMake with git-lfs, flatbuffers, opencv integration.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Intel OpenVINO v2026.0.0 requires git-lfs for model files, flatbuffers, opencv integration, and complex CMake build.  Previous attempts failed due to build system complexity.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -8967,6 +8984,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1486. paru-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; AUR helper depending on libalpm/pacman.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  ARCH_SPECIFIC: AUR helper — depends on pacman/libalpm (Arch-specific package manager).  Not applicable to Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9244,6 +9262,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1535. qtforkawesome-qt6
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on c++utilities/qtutilities not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Qt ForkAwesome library depends on qtutilities-qt6 (not in Guix).  Part of Martchus Qt ecosystem.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -10651,6 +10670,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1768. sac-core
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Thales SafeNet commercial proprietary software.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Thales/Gemalto SafeNet Authentication Client is proprietary with no publicly downloadable source.  Requires vendor license.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11043,6 +11063,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1834. aurutils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific AUR repo management.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  ARCH_SPECIFIC: AUR helper utilities — depends on pacutils (Arch-specific package manager tooling).  Not applicable to Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11835,6 +11856,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1966. eww
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; 200+ Rust crate deps not available in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Elkowar Wacky Widgets is a Rust/Cargo project requiring cargo vendoring of all dependencies.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -11847,6 +11869,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 1968. foobar2000
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; proprietary Windows audio player requiring Wine.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: foobar2000 is a Windows audio player that runs under Wine.  Proprietary with custom license.  Wine integration is complex in Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -12206,6 +12229,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 2028. nvidia-580xx-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: Re-evaluated in r22-w03-nrd17 dep-tree pass.  BLOCKED: Proprietary NVIDIA, kernel module.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: NVIDIA proprietary driver utilities.  Requires proprietary kernel module and binary blobs.  Guix supports only free software drivers.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -12272,6 +12296,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 2039. spotify
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; proprietary closed-source binary.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Spotify is proprietary music streaming software.  Binary-only distribution with custom license.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -13996,6 +14021,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA legacy 470 proprietary binary blob (deptree-260407 dep-tree pass)
    - Status: BLOCKED: Re-evaluated nrd18; proprietary NVIDIA 470xx driver blob.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: NVIDIA proprietary driver utilities.  Requires proprietary kernel module and binary blobs.  Guix supports only free software drivers.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14237,6 +14263,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 2366. lib32-libvmaf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Guix does not support multilib/lib32.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  UNSUPPORTED_ARCH: Guix does not support multilib/32-bit compatibility libraries.  The 64-bit equivalent is available in Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14437,6 +14464,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA legacy 390 proprietary binary blob (deptree-260407 dep-tree pass)
    - Status: BLOCKED: Re-evaluated nrd18; proprietary NVIDIA 390xx driver blob.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: NVIDIA proprietary driver utilities.  Requires proprietary kernel module and binary blobs.  Guix supports only free software drivers.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14492,6 +14520,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA 32-bit beta proprietary binary (deptree-260407 dep-tree pass)
    - Status: BLOCKED: Re-evaluated nrd18; multilib + proprietary NVIDIA.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  UNSUPPORTED_ARCH: Guix does not support multilib/32-bit compatibility libraries.  The 64-bit equivalent is available in Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14630,6 +14659,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 2431. lib32-bluez-libs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Guix does not support multilib/lib32.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  UNSUPPORTED_ARCH: Guix does not support multilib/32-bit compatibility libraries.  The 64-bit equivalent is available in Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16365,6 +16395,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 2720. upscayl-ncnn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; ncnn library not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Upscayl NCNN depends on ncnn (Tencent neural network framework, not in Guix).  Requires Vulkan shaders.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -18756,13 +18787,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust source (v0.1.2, GPL-3.0), no binary release; cargo dep tree for PDF/DOCX parsing not in Guix.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 3067. wo-bin [NEEDS_RECIPE_DESIGN: guix show wo failed (package not found in current channels); next: draft standalone recipe for wo-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 wo-bin (copy-build-system, workspace shell manager)
+** DONE 3063. tilem-gtk3-git [NEEDS_RECIPE_DESIGN: guix show tilem-gtk3 failed (package not found in current channels); next: draft standalone recipe for tilem-gtk3-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as tilem-gtk3-git (gnu-build-system from GitHub commit 64b9a38); guix build -L guix -n passes.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 3068. cliamp [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for cliamp; next: determine upstream source + build system for cliamp]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18773,14 +18807,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3069. oken-bin [NEEDS_RECIPE_DESIGN: guix show oken failed (package not found in current channels); next: draft standalone recipe for oken-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 oken-bin (copy-build-system, SSH CLI with fuzzy picker)
+** DONE 3064. c47-bin [NEEDS_RECIPE_DESIGN: guix show c47 failed (package not found in current channels); next: draft standalone recipe for c47-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as c47-bin (trivial-build-system binary from GitLab v00.109.03.02a0.vect); guix build -L guix -n passes.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 3070. lazytail-bin [NEEDS_RECIPE_DESIGN: guix show lazytail failed (package not found in current channels); next: draft standalone recipe for lazytail-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 lazytail-bin (copy-build-system, terminal log viewer)
+** DONE 3065. r47-bin [NEEDS_RECIPE_DESIGN: guix show r47 failed (package not found in current channels); next: draft standalone recipe for r47-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as r47-bin (trivial-build-system binary from GitLab v00.109.03.02a0.vect); guix build -L guix -n passes.
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** DONE 3082. python-aiohttp-jinja2 [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-aiohttp-jinja2; next: determine upstream source + build system for python-aiohttp-jinja2]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18819,12 +18859,30 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 lobster (copy-build-system, terminal streaming script)
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd8.scm. cargo-build-system, v0.1.2, PDF-to-DOCX converter.
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: BLOCKED: CARGO_DEPS_NOT_AVAILABLE — Rust source (v0.1.2, GPL-3.0), no binary release; cargo dep tree for PDF/DOCX parsing not in Guix.
    - Difficulty: unknown
    - TODO Status: TODO
+
+** DONE 3067. wo-bin [NEEDS_RECIPE_DESIGN: guix show wo failed (package not found in current channels); next: draft standalone recipe for wo-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 wo-bin (copy-build-system, workspace shell manager)
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3068. cliamp [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for cliamp; next: determine upstream source + build system for cliamp]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as cliamp (trivial-build-system binary from GitHub v1.34.1); guix build -L guix -n passes.
+   - Difficulty: unknown
+   - TODO Status: DONE
 
 ** DONE 3077. dpibreak-git [NEEDS_RECIPE_DESIGN: guix show dpibreak failed (package not found in current channels); next: draft standalone recipe for dpibreak-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD5 recipe as dpibreak-git (alias to existing dpibreak source-reference package); guix build -L guix -n passes.
+** DONE 3069. oken-bin [NEEDS_RECIPE_DESIGN: guix show oken failed (package not found in current channels); next: draft standalone recipe for oken-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 oken-bin (copy-build-system, SSH CLI with fuzzy picker)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -18832,6 +18890,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: SOURCE_UNAVAILABLE — Codeberg repo (the-traveler/spinwheel) returns HTTP 404. 3 approaches tried: A1 Codeberg 404, A2 no mirrors/forks, A3 AUR only refs Codeberg.
    - Status: BLOCKED: KDE_PLASMA6_BUILD_CHAIN — depends on AeroShell + KDE Plasma 6 not in Guix. A1: cmake+KDE6; A2: depends on blocked aeroshell-libplasma; A3: no standalone.
+** DONE 3070. lazytail-bin [NEEDS_RECIPE_DESIGN: guix show lazytail failed (package not found in current channels); next: draft standalone recipe for lazytail-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 lazytail-bin (copy-build-system, terminal log viewer)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -18841,6 +18902,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3079. mezzotone-bin [NEEDS_RECIPE_DESIGN: guix show mezzotone failed (package not found in current channels); next: draft standalone recipe for mezzotone-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 mezzotone-bin (copy-build-system, ASCII art converter)
+** DONE 3071. funzzy-bin [NEEDS_RECIPE_DESIGN: guix show funzzy failed (package not found in current channels); next: draft standalone recipe for funzzy-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 funzzy-bin (copy-build-system, file watcher)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -18850,12 +18914,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3080. chough-bin [NEEDS_RECIPE_DESIGN: guix show chough failed (package not found in current channels); next: draft standalone recipe for chough-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r26-w03-nrd recipe (copy-build-system binary+libs from GitHub v1.0.0); guix build -L guix -n chough-bin passes.
+** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r26-w03-nrd recipe (copy-build-system binary from GitHub v0.5.2); guix build -L guix -n framework-control-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3081. ipmctl-git [NEEDS_RECIPE_DESIGN: guix show ipmctl failed (package not found in current channels); next: draft standalone recipe for ipmctl-git in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD5 recipe as ipmctl-git (cmake-build-system from source v03.00.00.0538); guix build -L guix -n passes.
+   - Status: BLOCKED: CROSS_COMPILATION_SPECIALIZED | Cross-compiles compiler-rt for ARM bare-metal targets using clang; requires arm-none-eabi-newlib sysroot (not in Guix).
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: BLOCKED: CROSS_COMPILE_NOT_SUPPORTED — LLVM compiler-rt for bare-metal ARM Cortex-M requires arm-none-eabi cross-compile not set up in Guix LLVM. A1: cmake cross-compile; A2: no bare-metal ARM support; A3: no prebuilt archive.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -18877,6 +18947,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 3083. pricehist [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for pricehist; next: determine upstream source + build system for pricehist]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 recipe as python-pricehist in cron-c79f127f-r22-w03.scm (pyproject-build-system, PyPI v1.4.14)
+** DONE 3074. wireview-linux [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for wireview-linux; next: determine upstream source + build system for wireview-linux]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as wireview-linux (copy-build-system binary from GitHub v1.0.4.0); guix build -L guix -n passes.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3075. dpibreak [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for dpibreak; next: determine upstream source + build system for dpibreak]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as dpibreak. Rust source reference v0.6.0; full cargo dep tree not yet available.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 lobster (copy-build-system, terminal streaming script)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -18890,18 +18975,33 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as claudebar. Shell script waybar widget v0.1.17, copy-build-system.
    - Status: DONE: r22-w03 NRD5 recipe as fish-session (copy-build-system fish plugin from GitHub v0.1.8); guix build -L guix -n passes.
+** DONE 3077. dpibreak-git [NEEDS_RECIPE_DESIGN: guix show dpibreak failed (package not found in current channels); next: draft standalone recipe for dpibreak-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as dpibreak-git (alias to existing dpibreak source-reference package); guix build -L guix -n passes.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+   - Status: BLOCKED: UNPACKAGED_DEPS | Part of AeroShell suite; depends on polkit-qt6 (not in Guix, only polkit-qt5) and aeroshell-libplasma (unpackaged).
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: BLOCKED: KDE_PLASMA6_BUILD_CHAIN — depends on AeroShell + KDE Plasma 6 not in Guix. A1: cmake+KDE6; A2: depends on blocked aeroshell-libplasma; A3: no standalone.
    - Difficulty: unknown
    - TODO Status: DONE
 
    - Status: BLOCKED: ORPHANED_UNKNOWN_LICENSE | AUR package orphaned (maintainer=null); license listed as 'unknown'; requires Wine + complex Wayland/X11 interop.
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NO_LICENSE — no LICENSE file or Cargo.toml license field in repo; runtime depends on proprietary Wallpaper Engine + Wine. A1: no license; A2: proprietary runtime dependency; A3: no standalone utility.rs
+** DONE 3079. mezzotone-bin [NEEDS_RECIPE_DESIGN: guix show mezzotone failed (package not found in current channels); next: draft standalone recipe for mezzotone-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 mezzotone-bin (copy-build-system, ASCII art converter)
    - Difficulty: unknown
    - TODO Status: DONE
 
 ** DONE 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as workz-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.8.0)
+** DONE 3080. chough-bin [NEEDS_RECIPE_DESIGN: guix show chough failed (package not found in current channels); next: draft standalone recipe for chough-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r26-w03-nrd recipe (copy-build-system binary+libs from GitHub v1.0.0); guix build -L guix -n chough-bin passes.
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -18922,6 +19022,53 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: TODO: Candidate from AUR cache (votes=47); fuse filesystem over adb tool for android devices, no device root required
    - Difficulty: unknown
    - TODO Status: TODO
+   - Status: DONE: r22-w03 NRD2 recipe as omp-manager-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.2)
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD2 recipe as tmux-plugin-panel-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.1)
+   - Difficulty: unknown
+   - TODO Status: DONE
+** DONE 3081. ipmctl-git [NEEDS_RECIPE_DESIGN: guix show ipmctl failed (package not found in current channels); next: draft standalone recipe for ipmctl-git in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as ipmctl-git (cmake-build-system from source v03.00.00.0538); guix build -L guix -n passes.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3082. python-aiohttp-jinja2 [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for python-aiohttp-jinja2; next: determine upstream source + build system for python-aiohttp-jinja2]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 python-aiohttp-jinja2 (python-build-system, Jinja2 for aiohttp)
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3083. pricehist [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for pricehist; next: determine upstream source + build system for pricehist]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 recipe as python-pricehist in cron-c79f127f-r22-w03.scm (pyproject-build-system, PyPI v1.4.14)
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD5 recipe as fish-session (copy-build-system fish plugin from GitHub v0.1.8); guix build -L guix -n passes.
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+   - Status: BLOCKED: ORPHANED_UNKNOWN_LICENSE | AUR package orphaned (maintainer=null); license listed as 'unknown'; requires Wine + complex Wayland/X11 interop.
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: BLOCKED: NO_LICENSE — no LICENSE file or Cargo.toml license field in repo; runtime depends on proprietary Wallpaper Engine + Wine. A1: no license; A2: proprietary runtime dependency; A3: no standalone utility.rs
+   - Difficulty: unknown
+   - TODO Status: TODO
+
+** DONE 3086. workz-bin [NEEDS_RECIPE_DESIGN: guix show workz failed (package not found in current channels); next: draft standalone recipe for workz-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: r22-w03 NRD2 recipe as workz-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.8.0)
+   - Difficulty: unknown
+   - TODO Status: DONE
+
+** DONE 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
+   - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as omp-manager-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.2)
    - Difficulty: unknown
    - TODO Status: DONE
@@ -19176,6 +19323,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3129. vscodium-translucent
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; requires full Electron/Chromium build infrastructure.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: VSCodium with translucent patch requires building from source with nvm, rustup, gulp, git-lfs, and the entire Chromium/Electron stack.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19188,6 +19336,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3131. openbangla-keyboard-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: Re-evaluated in r22-w03-nrd17 dep-tree pass.  BLOCKED: openbangla-im dep not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Depends on openbangla-im (input method framework, not in Guix).  Requires both CMake + Rust builds.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -20681,6 +20830,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: ALREADY_IN_GUIX — Guix provides element-desktop v1.12.2; -git variant unnecessary; version bumps go through existing package
    - Status: BLOCKED: Re-evaluated nrd18; requires Node.js/yarn/webpack ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Element Web requires npm, yarn, Python, Rust, Tcl, and Electron for building.  Complex web application build.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21227,7 +21377,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3470. credentialsd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit bc7bca463e11); source=("$pkgname-$pkgver.tar.gz::https://github.com/linux-credentials/credentialsd/archive/refs/tags/v$pkgver.tar.gz"; next: draft Guix recipe with fixed source hash and inputs.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Linux credential manager portal requires Rust cargo vendoring + Meson + GTK4 + libnfc/pcsclite.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22424,6 +22574,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3667. ggml-sycl-f16-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on intel-oneapi-basekit (proprietary).
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: GGML with Intel SYCL depends on intel-oneapi-basekit (proprietary Intel oneAPI toolkit, not in Guix).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23766,6 +23917,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3890. arduino-builder
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arduino ecosystem (arduino-ctags) not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Arduino sketch compiler depends on arduino-ctags (not in Guix).  Part of Arduino ecosystem.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -27268,6 +27420,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4471. zectl
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; ZFS integration experimental in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: ZFS Boot Environment manager depends on zfs.  ZFS is not in Guix (license incompatibility).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -27634,6 +27787,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4532. tl-render
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on OpenTimelineIO stack not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: tlRender depends on feather-tk, minizip-ng, opentimelineio, opencolorio, openimageio (not in Guix).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -27836,11 +27990,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4566. radiotray-ng
+** DONE 4566. radiotray-ng
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; complex Autotools build with many missing deps.
+   - Status: DONE: Recipe in auto-deptree-260406.scm (dependency-tree resolver pass 2026-04-06).  Build succeeds via `guix build -L guix radiotray-ng`.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4567. sc-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28613,6 +28768,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4695. qt5-webkit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18 dep-tree pass; massive WebKit2 build with 32 deps, Qt5 private API integration infeasible.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Qt5 WebKit requires building the entire WebKit engine from source with 30+ dependencies.  Extremely complex build, multiple hours compilation, and significant patching needed.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29376,6 +29532,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4822. ros2-arch-deps
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific pacman meta-package (44 deps).
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: ROS2 meta-package with 40+ dependencies.  Many are ROS2-specific packages not available in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29436,6 +29593,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4832. e-imzo
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Uzbekistan state proprietary e-signing tool.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Uzbek state e-identity tool (E-IMZO) is proprietary.  No source code available.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29610,6 +29768,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4861. stardust-xr-non-spatial-input
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; stardust-xr Rust ecosystem not available.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Stardust XR input tool requires Rust cargo vendoring.  Niche XR ecosystem.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29622,6 +29781,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4863. stardust-xr-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; stardust-xr Rust ecosystem not available.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Stardust XR display server requires Rust cargo vendoring.  Niche XR ecosystem.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29875,6 +30035,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4905. python-twisterl
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Rust+Python (maturin) with missing crate chain.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Reinforcement learning framework requires python-maturin for Rust extension building.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30080,6 +30241,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4939. tzpfms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Rust crate ecosystem + ZFS integration complex.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: TPM-based encryption for ZFS depends on zfs-utils.  ZFS is not in Guix (CDDL/GPL license incompatibility).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30284,6 +30446,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4973. memoria-daemon
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Rust crate ecosystem not available.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Memoria clipboard daemon is a Rust/Cargo project requiring cargo vendoring + CMake + ninja sub-build.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30554,6 +30717,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5018. ps3-psl1ght
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; PS3 cross-toolchain not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: PS3 homebrew SDK depends on entire PS3 cross-compilation toolchain (ps3-env, ps3-ppu-*, ps3-spu-*) not in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30728,6 +30892,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5047. qt5-quick3d
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Qt5 Quick3D requires private API integration.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Qt5 Quick3D module is not packaged separately in Guix.  Requires assimp integration with Qt5 build infrastructure.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31853,6 +32018,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5234. itchio-dlagent
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific makepkg download agent.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: itch.io download agent depends on ruby-nokogiri and ruby-httpx which are not in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31884,6 +32050,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5239. python-panel
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; HoloViz ecosystem (pyviz-comms etc.) not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Panel (HoloViz) depends on python-bokeh, python-pyviz_comms, and npm for building.  Multiple missing Python deps.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32295,6 +32462,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5307. dosh-cqfd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on dosh + Docker runtime.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Docker shell wrapper depends on dosh (not in Guix).  Docker integration tool.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32403,6 +32571,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5325. libelectron
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific Electron meta-package, Chromium infeasible.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Meta package for Electron.  Depends on npm which is not usable in Guix sandboxed build environment.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32745,12 +32914,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5382. themix-theme-oomox-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on themix-gui core not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Themix Oomox theme plugin depends on themix-gui which is not in Guix upstream.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 5383. themix-plugin-base16-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on themix-gui ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Themix Base16 plugin depends on themix-gui and python-pystache (not in Guix).
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32769,6 +32940,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5386. themix-import-images-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on themix-gui not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Themix image import plugin depends on themix-gui which is not in Guix upstream.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -33141,6 +33313,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 5448. clightd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on libmodule not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Clightd bus interface depends on libmodule (not in Guix) for its module/plugin system.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -38700,6 +38873,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6424. libadwaita-yaru-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; requires patching libadwaita source with Yaru fork.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Libadwaita with Ubuntu Yaru patches requires specific patched build from Ubuntu source with sassc and vala.
    - Difficulty: unknown
    - TODO Status: BLOCKED (TOOLING_FAILURE)
 
@@ -39308,6 +39482,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6525. sidef
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; multiple Perl math modules not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Sidef programming language depends on multiple Perl math modules (Math::GmpQ, Math::GmpZ, Math::MPFR, Math::MPC) not in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39398,6 +39573,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6540. plasticscm-client-core
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; proprietary Plastic SCM binary.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  PROPRIETARY: Unity Version Control (Plastic SCM) is proprietary under LicenseRef-UnityVersionControl.  No freely downloadable binary.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39957,6 +40133,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6633. yaycache
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific pacman cache manager.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  ARCH_SPECIFIC: Yay cache cleaner — depends on pacman-contrib (Arch-specific).  Not applicable to Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -40017,6 +40194,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6643. libpamac-full
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific, depends on libalpm/pacman.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  ARCH_SPECIFIC: Pamac package manager library depends on libalpm, flatpak snapd-glib, and Arch-specific infrastructure.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -40029,18 +40207,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6645. easytier-web
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Rust + Node.js frontend deps not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: EasyTier VPN web interface requires cargo vendoring + Node.js/pnpm build.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 6646. easytier-core
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; same as easytier-cli.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: EasyTier VPN core requires cargo vendoring + protobuf + Node.js multi-language build.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 6647. easytier-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Rust + protobuf crate deps not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: EasyTier VPN CLI requires cargo vendoring + protobuf code generation + Node.js/pnpm web build.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -41210,6 +41391,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6829. python-albucore
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; deps python-numkong/python-stringzilla not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Depends on python-simsimd, python-stringzilla, and python-opencv which are not available in Guix.
    - Next: draft new recipe module for aaaaxy (source+hash+build-system), then rerun guix build -L guix -n aaaaxy
    - Difficulty: unknown
    - TODO Status: BLOCKED
@@ -42129,6 +42311,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 6980. python-asyncpraw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; depends on python-asyncprawcore not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Asynchronous Python Reddit API wrapper depends on python-asyncprawcore which is not in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -45270,6 +45453,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1179, votes=11; C++ library for reading and writing MP4/M4A/AAC (iTunes), ID3, Vorbis, Opus, FLA
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; depends on c++utilities not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Tag parser library depends on c++utilities (not in Guix).  Part of Martchus ecosystem.
 ** BLOCKED 7536. nexttrace-bin
    - Note: AUR popularity=0.1179, votes=3; An open source visual route tracking CLI tool
    - TODO Status: BLOCKED
@@ -45808,6 +45992,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 7662. python-frida
    - Status: BLOCKED: Re-evaluated nrd18; Frida downloads binaries during build.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Python Frida bindings require nodejs/npm at runtime and download binary agents during build.
    - Note: AUR popularity=0.1148, votes=20; Inject JavaScript to explore native apps on Windows, Mac, Linux, iOS and Android
    - TODO Status: BLOCKED
 
@@ -45989,6 +46174,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 7698. cryptomator
    - Status: BLOCKED: Re-evaluated nrd18; requires Java 22+ (Guix max 21) + JNI.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  COMPLEX_BUILD: Cryptomator requires Maven build system with specific JDK toolchain.  Maven is not well supported in Guix.
    - Note: AUR popularity=0.1091, votes=80; Multiplatform transparent client-side encryption of your files in the cloud.
    - TODO Status: BLOCKED
 
@@ -46330,6 +46516,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 7766. sleuthkit-java
    - Status: BLOCKED: Re-evaluated nrd18; requires OpenJFX 17 (Guix has 8.x only).
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Java bindings for Sleuth Kit depend on java-openjfx (JavaFX, not in Guix).
    - Note: AUR popularity=0.1030, votes=11; Java bindings for The Sleuth Kit.
    - TODO Status: BLOCKED
 
@@ -47452,6 +47639,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n espionage | error: package recipe drafting not completed this pass | next: finalize source URI/hash/inputs and validate
 ** BLOCKED 8021. aylurs-gtk-shell-git
    - Status: BLOCKED: Re-evaluated nrd18; requires astal Rust libs + GTK4 layer-shell bindings.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: AGS depends on libastal, libastal-4, gtk4-layer-shell, and npm.  Multiple unavailable deps.
    - TODO Status: BLOCKED
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n aylurs-gtk-shell-git | error: package recipe drafting not completed this pass | next: finalize source URI/hash/inputs and validate
 ** FAILED 8022. lightdm-settings
@@ -49412,6 +49600,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 8302. pgadmin4-web
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
    - Status: BLOCKED: Re-evaluated nrd18; complex Python+JS with 20+ missing deps.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: pgAdmin4 web interface depends on pgadmin4-server and mod_wsgi (not in Guix).
    - Difficulty: unknown
    - TODO Status: BLOCKED
    - Note: AUR popularity=0.0884, votes=1; The web interface for pgAdmin, hosted under Apache HTTPD. pgAdmin is the most po
@@ -50813,6 +51002,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0767, votes=1; Python package to manage a Sony DPT-RP1 or Fujitsu Quaderno
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
    - Status: BLOCKED: Re-evaluated nrd18; depends on python-httpsig not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Sony DPT-RP1 manager depends on python-httpsig, python-pbkdf2, python-anytree, python-fusepy (not in Guix).
    - TODO Status: BLOCKED
 
 ** BLOCKED 8557. rtl8761b-firmware
@@ -50837,6 +51027,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0767, votes=1; Python bindings for Loro CRDT
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
    - Status: BLOCKED: Re-evaluated nrd18; Rust+Python (maturin) with missing crate chain.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: Python Loro CRDT bindings require python-maturin (Rust-based Python build tool) for Rust compilation.
    - TODO Status: BLOCKED
 
 ** BLOCKED 8561. ttf-fonts-gb-deepin
@@ -53220,6 +53411,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0575, votes=3; The GNU Compiler Collection - bootstrap/stage1 cross compiler for the MIPS64 tar
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; conflicts with Guix cross-compilation model.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: MIPS64 cross-compiler bootstrap depends on mips64-linux-gnu-binutils and linux-api-headers.  Complete cross-compilation toolchain not in Guix.
 ** DONE 9046. mips64-linux-gnu-linux-api-headers
    - Note: AUR popularity=0.0575, votes=3; Kernel headers sanitized for use in userspace (MIPS64 target, for the toolchain 
    - TODO Status: DONE
@@ -53330,6 +53522,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=4; Layer Shell notifications daemon which integrates with COSMIC.
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; depends on libcosmic Rust ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+** BLOCKED 9072. cosmic-notifications-git
+   - Note: AUR popularity=0.0561, votes=4; Layer Shell notifications daemon which integrates with COSMIC.
+   - TODO Status: BLOCKED
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
 ** BLOCKED 9073. cosmic-osd-git
    - Note: AUR popularity=0.0561, votes=4; COSMIC On-Screen Display
    - TODO Status: BLOCKED
@@ -53346,6 +53543,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=4; Utility for capturing screenshots via XDG Desktop Portal
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; depends on libcosmic Rust ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+** BLOCKED 9075. cosmic-randr-git
+   - Note: AUR popularity=0.0561, votes=4; Library and utility for displaying and configuring Wayland outputs
+   - TODO Status: BLOCKED
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+** BLOCKED 9076. cosmic-screenshot-git
+   - Note: AUR popularity=0.0561, votes=4; Utility for capturing screenshots via XDG Desktop Portal
+   - TODO Status: BLOCKED
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
 ** BLOCKED 9077. cosmic-settings-daemon-git
    - Note: AUR popularity=0.0561, votes=4; Cosmic settings daemon
    - TODO Status: BLOCKED
@@ -53362,6 +53568,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=4; An application launcher for the COSMIC desktop
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; depends on libcosmic Rust ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+** BLOCKED 9080. cosmic-app-library-git
+   - Note: AUR popularity=0.0561, votes=4; An application launcher for the COSMIC desktop
+   - TODO Status: BLOCKED
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
 ** BLOCKED 9081. cosmic-applets-git
    - Note: AUR popularity=0.0561, votes=4; Applets for COSMIC Panel
    - TODO Status: BLOCKED
@@ -53374,6 +53585,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=4; Compositor for the COSMIC desktop environment
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; depends on libcosmic + smithay Rust ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+** BLOCKED 9083. cosmic-comp-git
+   - Note: AUR popularity=0.0561, votes=4; Compositor for the COSMIC desktop environment
+   - TODO Status: BLOCKED
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
 
 ** DONE 9084. cosmic-icons-git
    - Note: AUR popularity=0.0561, votes=4; System76 Cosmic icon theme
@@ -53387,6 +53603,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0561, votes=2; Cosmic idle daemon
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; depends on libcosmic Rust ecosystem.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
+** BLOCKED 9086. cosmic-idle-git
+   - Note: AUR popularity=0.0561, votes=2; Cosmic idle daemon
+   - TODO Status: BLOCKED
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: COSMIC desktop component.  Requires Rust cargo vendoring and the COSMIC toolkit ecosystem (libcosmic, cosmic-comp, etc.) which is not available in Guix.  Part of System76 COSMIC DE.
 ** BLOCKED 9087. gmrun
    - Note: AUR popularity=0.0560, votes=4; A simple program which provides a run program window
    - TODO Status: BLOCKED
@@ -53436,6 +53657,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0550, votes=1; eProsima's Fast-DDS implementation
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated nrd18; requires foonathan-memory/fast-cdr not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: eProsima Fast-DDS depends on foonathan_memory and eprosima-fast-cdr (not in Guix).
 ** BLOCKED 9099. tibia
    - Note: AUR popularity=0.0550, votes=13; Fast-paced free massively multiplayer online role-playing game
    - TODO Status: BLOCKED
@@ -54249,6 +54471,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 ** DONE 9275. recoil2png
    - Note: AUR popularity=0.0501, votes=1; Converter for native picture formats of retro computers (command line tool)
+** DONE 9275. recoil2png
+   - Note: AUR popularity=0.0501, votes=1; Converter for native picture formats of retro computers (command line tool)
    - TODO Status: DONE
 
 ** BLOCKED 9276. recoil-thumbnailer
@@ -54258,6 +54482,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 9277. recoil-mime
    - Note: AUR popularity=0.0501, votes=1; Converter for native picture formats of retro computers (MIME file type descript
    - TODO Status: BLOCKED
+** DONE 9277. recoil-mime
+   - Note: AUR popularity=0.0501, votes=1; Converter for native picture formats of retro computers (MIME file type descript
 ** DONE 9277. recoil-mime
    - Note: AUR popularity=0.0501, votes=1; Converter for native picture formats of retro computers (MIME file type descript
    - TODO Status: DONE
@@ -54349,6 +54575,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: Re-evaluated nrd18; Cairo Dock stack not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  FETCH_FAILED: Source tarball URL returns 404.  The 3.5.99-rc2 tag may not exist on GitHub.
 ** DONE 9299. cpmenu
    - Note: AUR popularity=0.0501, votes=1; Modern circular menu for Wayland (legacy package, use snmenu instead)
    - TODO Status: DONE
@@ -54765,6 +54992,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 48, popularity: 1.0003
    - Note: Dependency based init system that works with sysvinit and systemd or on its own.
    - TODO Status: BLOCKED
+** DONE 9384. openrc
+   - AUR votes: 48, popularity: 1.0003
+   - Note: Dependency based init system that works with sysvinit and systemd or on its own.
 ** DONE 9384. openrc
    - AUR votes: 48, popularity: 1.0003
    - Note: Dependency based init system that works with sysvinit and systemd or on its own.
@@ -56896,6 +57126,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 9803. sdrpp-headers-git
    - AUR votes: 2, popularity: 0.0500
    - Note: SDR++ headers for building out-of-tree modules
+** DONE 9803. sdrpp-headers-git
+   - AUR votes: 2, popularity: 0.0500
+   - Note: SDR++ headers for building out-of-tree modules
    - TODO Status: DONE
    - Status: DONE: Recipe in queue-20260406-blocked-tree-p100.scm; SDR++ headers for out-of-tree modules.
 ** DONE 9804. projectm-git
@@ -57194,6 +57427,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 9861. intel-graphics-compiler-legacy
    - AUR votes: 3, popularity: 0.0479
    - Note: Intel Graphics Compiler for OpenCL (legacy platforms)
+** DONE 9861. intel-graphics-compiler-legacy
+   - AUR votes: 3, popularity: 0.0479
+   - Note: Intel Graphics Compiler for OpenCL (legacy platforms)
    - TODO Status: DONE
 
 ** DONE 9862. level-zero-headers-legacy
@@ -57323,6 +57559,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: Re-evaluated nrd18; proprietary Intel NPU hardware driver.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: Intel NPU driver depends on level-zero-loader and requires kernel module support not available in Guix.
 ** BLOCKED 9887. logseq-desktop-electron-bin
    - AUR votes: 2, popularity: 0.0455
    - Note: Privacy-first, open-source platform for knowledge sharing and management.(Prebuilt version.Use system-wide electron)
@@ -57332,6 +57569,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 9, popularity: 0.0452
    - Note: Imap client library
    - TODO Status: BLOCKED
+** DONE 9888. c-client
+   - AUR votes: 9, popularity: 0.0452
+   - Note: Imap client library
 ** DONE 9888. c-client
    - AUR votes: 9, popularity: 0.0452
    - Note: Imap client library
@@ -57453,6 +57693,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: Re-evaluated nrd18; EOL Electron v22, proprietary binary.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  EOL_SOFTWARE: Electron 22 is end-of-life.  Packaging old Electron versions provides limited value and has known security issues.
 ** BLOCKED 9912. wleave-git
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show wleave | detail: target `wleave` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - AUR votes: 8, popularity: 0.0437
@@ -57503,6 +57744,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 9, popularity: 0.0435
    - Note: A fast lightweight thumbnail generator for STL files
    - TODO Status: BLOCKED
+** DONE 9921. stl-thumb
+   - AUR votes: 9, popularity: 0.0435
+   - Note: A fast lightweight thumbnail generator for STL files
 ** DONE 9921. stl-thumb
    - AUR votes: 9, popularity: 0.0435
    - Note: A fast lightweight thumbnail generator for STL files
@@ -58545,6 +58789,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: Re-evaluated nrd18; 100+ Rust crates + depends on proprietary Obsidian.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  ARCH_SPECIFIC: ObsidianOS A/B partition manager is specific to ObsidianOS Linux distribution.  Not applicable to Guix.
 ** BLOCKED 10124. qt6gtk2
    - AUR votes: 27, popularity: 0.0369
    - Note: GTK+2.0 integration plugins for Qt6
@@ -58587,6 +58832,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 10130. dotnet-runtime-preview-bin
    - AUR votes: 22, popularity: 0.0367
    - Note: The .NET Core runtime (preview, binary)
+** DONE 10129. aspnet-runtime-preview-bin
+   - AUR votes: 22, popularity: 0.0367
+   - Note: The ASP.NET Core runtime (preview, binary)
+   - TODO Status: DONE
+   - Status: DONE: Recipe in queue-20260406-blocked-tree-p100.scm; ASP.NET Core runtime preview binary.
+** DONE 10130. dotnet-runtime-preview-bin
+   - AUR votes: 22, popularity: 0.0367
+   - Note: The .NET Core runtime (preview, binary)
    - TODO Status: DONE
 
 ** BLOCKED 10131. dotnet-sdk-preview-bin
@@ -58599,6 +58852,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The .NET Core targeting pack (preview, binary)
    - TODO Status: BLOCKED
 
+** DONE 10132. dotnet-targeting-pack-preview-bin
+   - AUR votes: 22, popularity: 0.0367
+   - Note: The .NET Core targeting pack (preview, binary)
 ** DONE 10132. dotnet-targeting-pack-preview-bin
    - AUR votes: 22, popularity: 0.0367
    - Note: The .NET Core targeting pack (preview, binary)
@@ -58707,6 +58963,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Open-source SDK for discovering, interrogating and controlling NTV2 professional video I/O devices from AJA Video System
    - TODO Status: BLOCKED
 
+** DONE 10152. libajantv2
+   - AUR votes: 18, popularity: 0.0358
+   - Note: Open-source SDK for discovering, interrogating and controlling NTV2 professional video I/O devices from AJA Video System
+   - TODO Status: DONE
+   - Status: DONE: Recipe in queue-20260406-blocked-tree-p100.scm; AJA NTV2 SDK, cmake build.
+** BLOCKED 10153. ajantv2-tools
+   - AUR votes: 18, popularity: 0.0358
+   - Note: Open-source SDK for discovering, interrogating and controlling NTV2 professional video I/O devices from AJA Video System
 ** DONE 10152. libajantv2
    - AUR votes: 18, popularity: 0.0358
    - Note: Open-source SDK for discovering, interrogating and controlling NTV2 professional video I/O devices from AJA Video System
@@ -58827,6 +59091,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Scalable, fast, and disk-friendly vector search in Postgres, successor to pgvecto.rs
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Rust/pgrx PostgreSQL extension; see queue-20260406p100b-blocked-notes.
    - Status: BLOCKED: Re-evaluated nrd18; requires pgrx + 100 Rust crates not in Guix.
+   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  NEEDS_CARGO_VENDORING: PostgreSQL vector search extension requires Rust cargo vendoring and PostgreSQL extension infrastructure.
    - TODO Status: BLOCKED
 
 ** DONE 10176. python-pyscreeze
@@ -59317,6 +59582,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A wrapper for all Deezer's APIs
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: python-slumber not packaged; see queue-20260406p100b-blocked-notes.
    - TODO Status: BLOCKED
+** DONE 10260. python-deezer-py
+   - AUR votes: 9, popularity: 0.0321
+   - Note: A wrapper for all Deezer's APIs
 ** DONE 10260. python-deezer-py
    - AUR votes: 9, popularity: 0.0321
    - Note: A wrapper for all Deezer's APIs
@@ -60355,6 +60623,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 8, popularity: 0.0277
    - Note: Command-line tool and library to interact with an aria2c daemon process with JSON-RPC
    - TODO Status: BLOCKED
+** DONE 10461. aria2p
+   - AUR votes: 8, popularity: 0.0277
+   - Note: Command-line tool and library to interact with an aria2c daemon process with JSON-RPC
 ** DONE 10461. aria2p
    - AUR votes: 8, popularity: 0.0277
    - Note: Command-line tool and library to interact with an aria2c daemon process with JSON-RPC
