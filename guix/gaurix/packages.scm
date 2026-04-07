@@ -260,6 +260,8 @@
   #:use-module (gaurix packages deptree-resolver-260407)
   #:use-module (gaurix packages deptree-resolver-260407)
   #:use-module (gaurix packages recipe-resolver-260407)
+  #:use-module (gaurix packages recipe-resolver-260407b)
+  #:use-module (gaurix packages deptree-260407)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7694,4 +7696,60 @@ podman-tui-bin
             spinwheel-pipewire
             mkinitcpio-firmware
             baremetal-compiler-rt
+              ;; recipe-resolver-260407b
+              wrkflw-bin
+              iwmenu-bin
+              bzmenu-bin
+              pwmenu-bin
+              ferris-scan-bin
+              sabiql-bin
+              comp-scan-bin
+              wo-bin
+              oken-bin
+              ffsend-bin
+              mouse-actions-gui-bin
+              endcord
+              c47-bin
+              r47-bin
+              libmodule
+              clightd
+              udiskr
+              docx-you-want
+              cliamp
+              lswt
+              nemu
+              podman-tui
+              wireview-linux
+              codexbar
+              logibar
+              claudebar
+              op-cache-git
+              fw-fanctrl-rs-git
+              mkbrr-gui-bin
+              noto-fonts-cjk-fontconfig
+              tuxedo-drivers-dkms
+              openbangla-keyboard-git
+              cosmic-randr-git
+              asf
+              vscodium-translucent
+              foobar2000
+              brscan4
+              aspnet-targeting-pack-bin
+              aspnet-runtime-bin
+              mips64-linux-gnu-linux-api-headers
+              elephant-runner-bin
+              elephant-providerlist-bin
+              elephant-menus-bin
+              elephant-desktopapplications-bin
+              elephant-bluetooth-bin
+              elephant-archlinuxpkgs-bin
+              qtutilities-qt6
+              cosmic-icons-git
+              scala3
+              wd719x-firmware
+              python-materialyoucolor
+              python-pid
+              ttf-gabarito-git
+              deb2targz
+              libjodycode
 ))
