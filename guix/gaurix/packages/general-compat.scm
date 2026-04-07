@@ -1,5 +1,6 @@
 (define-module (gaurix packages general-compat)
   #:use-module (gaurix packages llama-cpp-cuda)
+  #:use-module (gaurix packages deptree-resolver-260407c)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages rdesktop)
   #:use-module (gnu packages i2p)

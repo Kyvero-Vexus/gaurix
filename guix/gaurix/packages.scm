@@ -183,6 +183,8 @@
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd8-blocked-notes)
   #:use-module (gaurix packages queue-20260405-daily2)
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260407c)
+  #:use-module (gaurix packages deptree-resolver-260407c-blocked-notes)
 
   #:use-module (gaurix packages queue-20260405-daily2)
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)  #:export (
