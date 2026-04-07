@@ -945,6 +945,39 @@
             ion-git
             recon-ng
             gitqlient-git
+            ;; recipe-resolver-260407f re-exports
+            btop-theme-catppuccin
+            catppuccin-konsole-theme-git
+            fluent-icon-theme-git
+            fluent-cursor-theme-git
+            bettergruvbox-gtk-theme
+            gruvbox-plus-icon-theme-git
+            bibata-cursor-theme
+            notwaita-cursor-theme
+            plymouth-theme-ecorp-glitch
+            plymouth-theme-arch-darwin
+            plymouth-theme-psx
+            plymouth-theme-pedro-raccoon
+            plymouth-theme-arch-ascii
+            plymouth-theme-monoarch-refined
+            ttf-gabarito
+            font-eb-garamond-gaurix
+            ocr-fonts
+            perl-date-simple
+            morewaita-icon-theme
+            sddm-silent-theme
+            simplex-chat-bin
+            simple2d
+            distro-grub-themes-arch
+            grub-theme-tela-color-1080p-git
+            grub-theme-tela-color-2k-git
+            grub-theme-tela-color-4k-git
+            grub-theme-tela-color-ultrawide-git
+            grub-theme-tela-color-ultrawide2k-git
+            grub-theme-tela-white-1080p-git
+            mint-l-theme
+            sddm-silent-theme-git
+            ebgaramond-otf
             ))
 
 (define-public gtk2
@@ -3432,3 +3465,8 @@
 (define-public qt5-connectivity
     (inherit qtconnectivity)
     (name "qt5-connectivity")))
+
+;; ─── recipe-resolver-260407f compat aliases ───
+(define-public sddm-silent-theme-git sddm-silent-theme)
+(define-public ebgaramond-otf font-eb-garamond-gaurix)
+(define-public ttf-gabarito-git ttf-gabarito)
