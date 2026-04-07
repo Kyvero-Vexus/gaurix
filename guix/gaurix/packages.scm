@@ -277,6 +277,8 @@
             #:use-module (gaurix packages queue-20260406p100b-blocked-notes)
   #:use-module (gaurix packages deptree-260407)
   #:use-module (gaurix packages deptree-260407-blocked-notes)
+            #:use-module (gaurix packages auto-deptree-260406)
+            #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
