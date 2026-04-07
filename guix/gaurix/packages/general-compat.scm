@@ -187,7 +187,19 @@
   #:use-module (nongnu packages mozilla)
   #:use-module (gaurix packages deptree-resolver-260407)
   #:use-module (gaurix packages deptree-resolver-260407b)
+  #:use-module (gaurix packages queue-20260407-deptree)
   #:export (
+            ;; deptree-resolver-260407 compat aliases
+            qt5-connectivity
+            ;; deptree-resolver-260407 recipes
+            pipes.sh
+            grepcidr
+            libjodycode
+            notify-send.sh
+            python-pid
+            python-condense-json
+            python-m3u8
+            python-plyer
             dyalog-bin
             ;; nrd18 compat aliases
             gcc13
@@ -3214,3 +3226,7 @@
             goland-jre
             rustrover-jre
             rustrover-eap-jre
+;; ─── deptree-resolver-260407 compat aliases ───
+(define-public qt5-connectivity
+    (inherit qtconnectivity)
+    (name "qt5-connectivity")))
