@@ -973,68 +973,12 @@ and to update live USB copy-on-write boot parameters.")
   ;; Next: fetch oken v0.3.8 Linux binary, compute sha256, draft binary wrapper.
   (package (inherit zoxide) (name "oken-bin")))
 
-(define-public lazytail-bin
-  ;; AUR lazytail-bin: Fast universal terminal log viewer with live filter (binary); v0.9.0-1; 1 vote.
-  ;; Source: https://github.com/raaymax/lazytail
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch lazytail v0.9.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "lazytail-bin")))
-
-(define-public funzzy-bin
-  ;; AUR funzzy-bin: Lightweight generic file watcher (binary); v1.5.0-2; 1 vote.
-  ;; Source: https://github.com/cristianoliveira/funzzy
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch funzzy v1.5.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "funzzy-bin")))
-
-(define-public framework-control-bin
-  ;; AUR framework-control-bin: Framework Laptop fan/battery/LED tool (proprietary binary); v0.5.1-1; 1 vote.
-  ;; Source: https://github.com/ozturkkl/framework-control (proprietary)
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; proprietary; fetch Linux AppImage/binary from GitHub.
-  ;; Next: fetch framework-control v0.5.1 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "framework-control-bin")))
-
-(define-public baremetal-compiler-rt
-  ;; AUR baremetal-compiler-rt: compiler-rt builtins for bare-metal ARM Cortex-M; v22.1.1-1; 1 vote.
-  ;; Source: https://github.com/llvm/llvm-project
-  ;; NEEDS_RECIPE_DESIGN: cmake recipe for LLVM compiler-rt bare-metal subset; cross-compile needed.
-  ;; Next: fetch llvm-project 22.1.1 source, compute sha256, draft cmake cross-compile recipe.
-  (package (inherit zoxide) (name "baremetal-compiler-rt")))
-
-(define-public dpibreak
-  ;; AUR dpibreak: Fast and easy DPI circumvention tool in Rust; v0.5.1-1; 1 vote.
-  ;; Source: https://github.com/dilluti0n/dpibreak
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, libc.
-  ;; Next: fetch dpibreak v0.5.1 source, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "dpibreak")))
-
-(define-public lobster
-  ;; AUR lobster: Shell script to watch Movies/Shows from terminal; v4.6.2-1; 1 vote.
-  ;; Source: https://github.com/justchokingaround/lobster
-  ;; NEEDS_RECIPE_DESIGN: shell script recipe; deps: mpv, yt-dlp, fzf, rofi/wofi.
-  ;; Next: fetch lobster v4.6.2 script, compute sha256, draft trivial shell script install.
-  (package (inherit zoxide) (name "lobster")))
-
-(define-public dpibreak-git
-  ;; AUR dpibreak-git: DPIBreak DPI circumvention in Rust (git); r357.f5c4f03-1; 1 vote.
-  ;; Source: https://github.com/Dilluti0n/DPIBreak
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe (git version); deps: rust, libc.
-  ;; Next: pin git rev, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "dpibreak-git")))
-
 (define-public uac-polkit-agent-git
   ;; AUR uac-polkit-agent-git: UAC-style Polkit authenticator for AeroShell; r30f6179-1; 1 vote.
   ;; Source: https://github.com/aeroshell-desktop/uac-polkit-agent
   ;; NEEDS_RECIPE_DESIGN: cmake Qt/KDE recipe; deps: polkit, KDE Plasma, AeroShell.
   ;; Next: pin git commit, compute sha256, draft cmake KDE recipe.
   (package (inherit zoxide) (name "uac-polkit-agent-git")))
-
-(define-public mezzotone-bin
-  ;; AUR mezzotone-bin: TUI Go app to convert images to ASCII art (binary); v1.1.1-1; 1 vote.
-  ;; Source: https://github.com/joaoheitorgarcia/Mezzotone
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Go binary; fetch Linux amd64 binary from GitHub.
-  ;; Next: fetch Mezzotone v1.1.1 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "mezzotone-bin")))
 
 (define-public ipmctl-git
   ;; AUR ipmctl-git: Intel Optane DC persistent memory management utility (git); 1 vote.
@@ -1043,69 +987,6 @@ and to update live USB copy-on-write boot parameters.")
   ;; Next: pin git rev, compute sha256, draft cmake recipe with ndctl deps.
   (package (inherit zoxide) (name "ipmctl-git")))
 
-(define-public python-aiohttp-jinja2
-  ;; AUR python-aiohttp-jinja2: Jinja2 template renderer for aiohttp.web; v1.6-2; 1 vote.
-  ;; Source: http://aiohttp-jinja2.aio-libs.org/
-  ;; NEEDS_RECIPE_DESIGN: python-build-system; deps: python-aiohttp, python-jinja2.
-  ;; Next: fetch aiohttp-jinja2 1.6 from PyPI, compute sha256, draft python recipe.
-  (package (inherit zoxide) (name "python-aiohttp-jinja2")))
-
-(define-public pricehist
-  ;; AUR pricehist: CLI tool for fetching historical price data; v1.4.14-1; 1 vote.
-  ;; Source: https://gitlab.com/chrisberkhout/pricehist
-  ;; NEEDS_RECIPE_DESIGN: python-build-system; deps: python-requests, python-lxml, python-click.
-  ;; Next: fetch pricehist 1.4.14 from PyPI/GitLab, compute sha256, draft python recipe.
-  (package (inherit zoxide) (name "pricehist")))
-
-(define-public fish-session
-  ;; AUR fish-session: UI-first session manager for Fish shell; v0.1.8-1; 1 vote.
-  ;; Source: https://github.com/AtefR/fish-session
-  ;; NEEDS_RECIPE_DESIGN: trivial Fish plugin install; deps: fish.
-  ;; Next: fetch fish-session v0.1.8, compute sha256, draft trivial Fish plugin install.
-  (package (inherit zoxide) (name "fish-session")))
-
-(define-public workz-bin
-  ;; AUR workz-bin: Git worktrees with zero-config dep sync (binary); v0.8.0-1; 1 vote.
-  ;; Source: https://github.com/rohansx/workz
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch workz v0.8.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "workz-bin")))
-
-(define-public omp-manager-bin
-  ;; AUR omp-manager-bin: Installation manager for 'Oh My Posh' (binary); v0.1.2-1; 1 vote.
-  ;; Source: https://github.com/marlocarlo/omp-manager
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from GitHub releases.
-  ;; Next: fetch omp-manager v0.1.2 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "omp-manager-bin")))
-
-(define-public tmux-plugin-panel-bin
-  ;; AUR tmux-plugin-panel-bin: TUI tmux plugin manager (binary); v0.1.1-1; 1 vote.
-  ;; Source: https://github.com/marlocarlo/Tmux-Plugin-Panel
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux binary from GitHub releases.
-  ;; Next: fetch Tmux-Plugin-Panel v0.1.1 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "tmux-plugin-panel-bin")))
-
-(define-public spinwheel-pipewire
-  ;; AUR spinwheel-pipewire: Terminal wheel spinner with PipeWire audio mode; v0.1.0-1; 1 vote.
-  ;; Source: https://codeberg.org/the-traveler/spinwheel
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, pipewire.
-  ;; Next: fetch spinwheel v0.1.0 source, compute sha256, draft cargo recipe with pipewire dep.
-  (package (inherit zoxide) (name "spinwheel-pipewire")))
-
-(define-public compendium
-  ;; AUR compendium: User-friendly strace for x86 Linux with HTML reports; v0.2.0-1; 1 vote.
-  ;; Source: https://crates.io/crates/compendium
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, ptrace/seccomp.
-  ;; Next: fetch compendium v0.2.0 from crates.io, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "compendium")))
-
-(define-public pandoc-crossref-bin
-  ;; AUR pandoc-crossref-bin: Pandoc filter for cross-references (binary); v0.3.23.a-1; 1 vote.
-  ;; Source: https://github.com/lierdakil/pandoc-crossref/
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; fetch Linux amd64 binary from GitHub releases.
-  ;; Next: fetch pandoc-crossref v0.3.23a Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "pandoc-crossref-bin")))
-
 (define-public boomer-git
   ;; AUR boomer-git: Zoomer application for Linux (git); r286.cc0f531-1; 1 vote.
   ;; Source: https://github.com/tsoding/boomer
@@ -1113,47 +994,12 @@ and to update live USB copy-on-write boot parameters.")
   ;; Next: pin git rev, compute sha256, draft nim build recipe.
   (package (inherit zoxide) (name "boomer-git")))
 
-(define-public mkinitcpio-firmware
-  ;; AUR mkinitcpio-firmware: Optional firmware for default linux kernel; v1.6.0-1; 1 vote.
-  ;; Source: https://aur.archlinux.org/packages/mkinitcpio-firmware
-  ;; NEEDS_RECIPE_DESIGN: firmware data install recipe; collect various firmware blobs.
-  ;; Next: identify firmware sources/versions, compute sha256s, draft firmware install recipe.
-  (package (inherit zoxide) (name "mkinitcpio-firmware")))
-
-(define-public qxmledit
-  ;; AUR qxmledit: Simple XML editor and XSD viewer; v0.9.18-1; 1 vote.
-  ;; Source: https://qxmledit.org/
-  ;; NEEDS_RECIPE_DESIGN: qmake Qt5 recipe; deps: qt5-base, qt5-xml, qt5-declarative.
-  ;; Next: fetch qxmledit-0.9.18 source, compute sha256, draft qmake Qt5 recipe.
-  (package (inherit zoxide) (name "qxmledit")))
-
 (define-public tufw-git
   ;; AUR tufw-git: Terminal UI for ufw firewall manager (git); v0.2.7-2; 1 vote.
   ;; Source: https://github.com/peltho/tufw
   ;; NEEDS_RECIPE_DESIGN: Go recipe; deps: go, ufw.
   ;; Next: pin git commit for v0.2.7, compute sha256, draft go-build-system recipe.
   (package (inherit zoxide) (name "tufw-git")))
-
-(define-public adbfs-rootless-git
-  ;; AUR adbfs-rootless-git: FUSE filesystem over ADB, rootless; r112.fd56381-1; 1 vote.
-  ;; Source: https://github.com/spion/adbfs-rootless
-  ;; NEEDS_RECIPE_DESIGN: C make recipe; deps: fuse, android-tools/adb.
-  ;; Next: pin git rev, compute sha256, draft C+fuse recipe.
-  (package (inherit zoxide) (name "adbfs-rootless-git")))
-
-(define-public dafny-bin
-  ;; AUR dafny-bin: Dafny verification-aware programming language (binary); v4.11.0-1; 1 vote.
-  ;; Source: https://github.com/dafny-lang/dafny
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; .NET self-contained binary; fetch Linux x64 release.
-  ;; Next: fetch Dafny 4.11.0 Linux x64 binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "dafny-bin")))
-
-(define-public weylus-bin
-  ;; AUR weylus-bin: Use tablet as graphic tablet/touchscreen on your computer (binary); v0.11.4-1; 1 vote.
-  ;; Source: https://github.com/H-M-H/Weylus
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub.
-  ;; Next: fetch Weylus v0.11.4 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "weylus-bin")))
 
 (define-public zerx-lab-fluxdown-bin
   ;; AUR zerx-lab-fluxdown-bin: FluxDown multi-protocol download manager (binary); v0.1.31-1; 1 vote.
@@ -1352,13 +1198,6 @@ driver payload mirrored in AUR, including PPD files and CUPS filter wrappers.")
   ;; Next: fetch hurrycurry v3.0.1 source, identify server build system, draft recipe.
   (package (inherit zoxide) (name "hurrycurry-server")))
 
-(define-public gnix
-  ;; AUR gnix: Simple stupid HTTP reverse proxy; v2.4.1-1; 1 vote.
-  ;; Source: https://codeberg.org/metamuffin/gnix
-  ;; NEEDS_RECIPE_DESIGN: cargo build recipe; deps: rust, tokio/hyper.
-  ;; Next: fetch gnix v2.4.1 source, compute sha256, draft cargo recipe.
-  (package (inherit zoxide) (name "gnix")))
-
 (define-public mkbrr-gui-bin
   ;; AUR mkbrr-gui-bin: Create/modify/inspect torrent files - GUI version (binary); v1.19.0_rc1-2; 1 vote.
   ;; Source: https://github.com/autobrr/mkbrr/
@@ -1373,9 +1212,3 @@ driver payload mirrored in AUR, including PPD files and CUPS filter wrappers.")
   ;; Next: fetch wireview-linux v1.0.4.0 source/binary, compute sha256, draft recipe.
   (package (inherit zoxide) (name "wireview-linux")))
 
-(define-public chough-bin
-  ;; AUR chough-bin: Fast ASR CLI using Parakeet TDT 0.6b V3 (binary); v1.0.0-1; 1 vote.
-  ;; Source: https://github.com/hyperpuncher/chough
-  ;; NEEDS_RECIPE_DESIGN: binary wrapper; Rust binary; fetch Linux amd64 binary from GitHub.
-  ;; Next: fetch chough v1.0.0 Linux binary, compute sha256, draft binary wrapper.
-  (package (inherit zoxide) (name "chough-bin")))

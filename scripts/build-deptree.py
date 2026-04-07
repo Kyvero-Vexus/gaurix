@@ -214,6 +214,8 @@ ORG_FILE = REPO_ROOT / "todo_general_packages.org"
 AUR_CACHE = REPO_ROOT / "data" / "aur-cache" / "packages-meta-ext-v1.json"
 TREE_JSON = REPO_ROOT / "reports" / "blocked-dependency-tree.json"
 TREE_MD = REPO_ROOT / "reports" / "blocked-dependency-tree.md"
+
+
 def extract_blocked_packages(org_path):
     """Extract BLOCKED package names from the org file."""
     blocked = set()
@@ -224,6 +226,8 @@ def extract_blocked_packages(org_path):
             if m:
                 blocked.add(m.group(1))
     return blocked
+
+
 def load_aur_cache(cache_path):
     """Load AUR package metadata. File is JSON array (one big line or multi-line)."""
     # The file could be a JSON array or JSONL; try array first
@@ -243,6 +247,8 @@ def load_aur_cache(cache_path):
     for pkg in data:
         by_name[pkg['Name']] = pkg
     return by_name
+
+
 def build_dependency_tree(blocked_set, aur_index):
     """Build dependency tree metrics for all blocked packages."""
     # For each blocked package, gather its deps from AUR
@@ -258,10 +264,13 @@ def build_dependency_tree(blocked_set, aur_index):
                     if dep_name:
                         deps.add(dep_name)
         pkg_deps[name] = deps
+
+    # Compute metrics
     results = []
     for name in sorted(blocked_set):
         deps = pkg_deps.get(name, set())
         blocked_dep_count = len(deps & blocked_set)
+        total_dep_count = len(deps)
         # Reverse deps: how many blocked packages depend on this one
         reverse_dep_count = 0
         for other_name in blocked_set:
@@ -273,6 +282,8 @@ def build_dependency_tree(blocked_set, aur_index):
             'blocked_dep_count': blocked_dep_count,
             'reverse_dep_count': reverse_dep_count,
             'total_dep_count': total_dep_count,
+        })
+
     # Sort: blocked_dep_count ASC, reverse_dep_count DESC, total_dep_count ASC, name ASC
     results.sort(key=lambda x: (
         x['blocked_dep_count'],
@@ -283,6 +294,13 @@ def build_dependency_tree(blocked_set, aur_index):
         r['rank'] = i
     return results
 def write_json(queue, blocked_count, run_id):
+    ))
+
+    # Assign ranks
+
+
+
+    timestamp = datetime.now(timezone.utc).isoformat()
     data = {
         'timestamp': timestamp,
         'run_id': run_id,
@@ -291,6 +309,9 @@ def write_json(queue, blocked_count, run_id):
     with open(TREE_JSON, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2)
     return timestamp
+    }
+
+
 def write_md(queue, blocked_count, run_id, timestamp):
     top20 = queue[:20]
     top100 = queue[:100]
@@ -305,10 +326,12 @@ def write_md(queue, blocked_count, run_id, timestamp):
         f"",
         f"| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |",
         f"|------|---------|-------------|-------------|-----------|",
+    ]
     for p in top20:
         lines.append(
             f"| {p['rank']} | {p['name']} | {p['blocked_dep_count']} | "
             f"{p['reverse_dep_count']} | {p['total_dep_count']} |"
+        )
     lines.extend([
         f"",
         f"## Selected 100 for This Run",
@@ -334,20 +357,31 @@ def main():
     print("Building dependency tree...")
     queue = build_dependency_tree(blocked, aur_index)
     print(f"  Computed metrics for {len(queue)} packages")
+        )
+
+
+
+
+
+
     print("Writing reports...")
     timestamp = write_json(queue, len(blocked), run_id)
     write_md(queue, len(blocked), run_id, timestamp)
     print(f"  {TREE_JSON}")
     print(f"  {TREE_MD}")
+
     # Print top 20
     print("\nTop 20 Priority Queue:")
     print(f"{'Rank':>4} {'Package':<40} {'Blk':>4} {'Rev':>4} {'Tot':>4}")
     for p in queue[:20]:
         print(f"{p['rank']:>4} {p['name']:<40} {p['blocked_dep_count']:>4} "
               f"{p['reverse_dep_count']:>4} {p['total_dep_count']:>4}")
+
     # Print selected 100 names
     print(f"\nSelected 100 packages:")
     for p in queue[:100]:
         print(f"  {p['rank']:>3}. {p['name']}")
+
+
 if __name__ == '__main__':
     main()

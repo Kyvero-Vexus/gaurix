@@ -684,12 +684,6 @@
     (inherit zoxide)
     (name "pragmatapro-fonts")))
 
-(define-public tufw-bin
-  ;; NEEDS_RECIPE_DESIGN queue stub for tufw-bin.
-  (package
-    (inherit zoxide)
-    (name "tufw-bin")))
-
 (define-public shiftfs-lts-dkms
   ;; NEEDS_RECIPE_DESIGN queue stub for shiftfs-lts-dkms.
   (package
