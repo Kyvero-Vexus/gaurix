@@ -257,6 +257,7 @@
   #:use-module (gaurix packages queue-20260407-deptree-resolver)
   #:use-module (gaurix packages queue-20260407-deptree-resolver-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260406)
+  #:use-module (gaurix packages deptree-resolver-260407)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7585,4 +7586,34 @@ podman-tui-bin
             blogr-bin
             boscaceoil-blue-bin
             triangle-bin
+            ;; deptree-resolver-260407
+            davs2
+            xavs2
+            vvenc
+            libaribcaption
+            uavs3d
+            zmusic
+            libuvc
+            grepcidr
+            domake
+            arduino-ctags
+            html2markdown
+            elephant
+            gslapper
+            genders
+            python-art
+            python-pid
+            python-plyer
+            python-condense-json
+            python-m3u8
+            python-wassima
+            python-munge
+            python-opencensus
+            python-syncedlyrics
+            python-materialyoucolor
+            python-urllib3-future
+            ghostty-shell-integration
+            ghostty-terminfo
+            clash-geoip
+            keychron-link-udev
 ))

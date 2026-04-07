@@ -23,6 +23,7 @@ import json
 import re
 import sys
 from collections import defaultdict
+"""Build dependency tree for BLOCKED packages using AUR cache data."""
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -209,3 +210,144 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+ORG_FILE = REPO_ROOT / "todo_general_packages.org"
+AUR_CACHE = REPO_ROOT / "data" / "aur-cache" / "packages-meta-ext-v1.json"
+TREE_JSON = REPO_ROOT / "reports" / "blocked-dependency-tree.json"
+TREE_MD = REPO_ROOT / "reports" / "blocked-dependency-tree.md"
+def extract_blocked_packages(org_path):
+    """Extract BLOCKED package names from the org file."""
+    blocked = set()
+    pattern = re.compile(r'^\*\*\s+BLOCKED\s+\d+\.\s+(\S+)')
+    with open(org_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            m = pattern.match(line)
+            if m:
+                blocked.add(m.group(1))
+    return blocked
+def load_aur_cache(cache_path):
+    """Load AUR package metadata. File is JSON array (one big line or multi-line)."""
+    # The file could be a JSON array or JSONL; try array first
+    with open(cache_path, 'r', encoding='utf-8') as f:
+        first_char = f.read(1)
+        f.seek(0)
+        if first_char == '[':
+            data = json.load(f)
+        else:
+            data = []
+            for line in f:
+                line = line.strip()
+                if line:
+                    data.append(json.loads(line))
+    # Index by name
+    by_name = {}
+    for pkg in data:
+        by_name[pkg['Name']] = pkg
+    return by_name
+def build_dependency_tree(blocked_set, aur_index):
+    """Build dependency tree metrics for all blocked packages."""
+    # For each blocked package, gather its deps from AUR
+    pkg_deps = {}  # name -> set of dep names (just the package name part)
+    for name in blocked_set:
+        deps = set()
+        pkg_data = aur_index.get(name)
+        if pkg_data:
+            for field in ('Depends', 'MakeDepends', 'CheckDepends'):
+                for dep in pkg_data.get(field, []) or []:
+                    # Strip version constraints: "foo>=1.0" -> "foo"
+                    dep_name = re.split(r'[><=:]', dep)[0].strip()
+                    if dep_name:
+                        deps.add(dep_name)
+        pkg_deps[name] = deps
+    results = []
+    for name in sorted(blocked_set):
+        deps = pkg_deps.get(name, set())
+        blocked_dep_count = len(deps & blocked_set)
+        # Reverse deps: how many blocked packages depend on this one
+        reverse_dep_count = 0
+        for other_name in blocked_set:
+            if other_name != name:
+                if name in pkg_deps.get(other_name, set()):
+                    reverse_dep_count += 1
+        results.append({
+            'name': name,
+            'blocked_dep_count': blocked_dep_count,
+            'reverse_dep_count': reverse_dep_count,
+            'total_dep_count': total_dep_count,
+    # Sort: blocked_dep_count ASC, reverse_dep_count DESC, total_dep_count ASC, name ASC
+    results.sort(key=lambda x: (
+        x['blocked_dep_count'],
+        -x['reverse_dep_count'],
+        x['total_dep_count'],
+        x['name'],
+    for i, r in enumerate(results, 1):
+        r['rank'] = i
+    return results
+def write_json(queue, blocked_count, run_id):
+    data = {
+        'timestamp': timestamp,
+        'run_id': run_id,
+        'total_blocked': blocked_count,
+        'queue': queue,
+    with open(TREE_JSON, 'w', encoding='utf-8') as f:
+        json.dump(data, f, indent=2)
+    return timestamp
+def write_md(queue, blocked_count, run_id, timestamp):
+    top20 = queue[:20]
+    top100 = queue[:100]
+    lines = [
+        f"# Blocked Dependency Tree",
+        f"",
+        f"- **Timestamp**: {timestamp}",
+        f"- **Run**: {run_id}",
+        f"- **Total BLOCKED packages**: {blocked_count:,}",
+        f"",
+        f"## Top 20 Priority Queue",
+        f"",
+        f"| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |",
+        f"|------|---------|-------------|-------------|-----------|",
+    for p in top20:
+        lines.append(
+            f"| {p['rank']} | {p['name']} | {p['blocked_dep_count']} | "
+            f"{p['reverse_dep_count']} | {p['total_dep_count']} |"
+    lines.extend([
+        f"",
+        f"## Selected 100 for This Run",
+        f"",
+        f"| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |",
+        f"|------|---------|-------------|-------------|-----------|",
+    ])
+    for p in top100:
+        lines.append(
+            f"| {p['rank']} | {p['name']} | {p['blocked_dep_count']} | "
+            f"{p['reverse_dep_count']} | {p['total_dep_count']} |"
+    lines.append("")
+    with open(TREE_MD, 'w', encoding='utf-8') as f:
+        f.write('\n'.join(lines))
+def main():
+    run_id = sys.argv[1] if len(sys.argv) > 1 else "deptree-resolver"
+    print("Extracting BLOCKED packages from org file...")
+    blocked = extract_blocked_packages(ORG_FILE)
+    print(f"  Found {len(blocked)} BLOCKED packages")
+    print("Loading AUR cache...")
+    aur_index = load_aur_cache(AUR_CACHE)
+    print(f"  Loaded {len(aur_index)} AUR packages")
+    print("Building dependency tree...")
+    queue = build_dependency_tree(blocked, aur_index)
+    print(f"  Computed metrics for {len(queue)} packages")
+    print("Writing reports...")
+    timestamp = write_json(queue, len(blocked), run_id)
+    write_md(queue, len(blocked), run_id, timestamp)
+    print(f"  {TREE_JSON}")
+    print(f"  {TREE_MD}")
+    # Print top 20
+    print("\nTop 20 Priority Queue:")
+    print(f"{'Rank':>4} {'Package':<40} {'Blk':>4} {'Rev':>4} {'Tot':>4}")
+    for p in queue[:20]:
+        print(f"{p['rank']:>4} {p['name']:<40} {p['blocked_dep_count']:>4} "
+              f"{p['reverse_dep_count']:>4} {p['total_dep_count']:>4}")
+    # Print selected 100 names
+    print(f"\nSelected 100 packages:")
+    for p in queue[:100]:
+        print(f"  {p['rank']:>3}. {p['name']}")
+if __name__ == '__main__':
+    main()
