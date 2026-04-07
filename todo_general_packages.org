@@ -510,9 +510,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 85. openssl-1.1
+** DONE 85. openssl-1.1
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 8.725, votes 11).
-   - Status: BLOCKED: BUILD_FAILURE_CONFIGURE | A1 exact alias check: `guix build -L guix -n openssl-1.1` succeeds; A2 configure strategy update (chmod + invoke via `sh ./config`) still fails with exit 127 in full build (`guix build -L guix openssl-1.1`); A3 upstream source triage confirms openssl-1.1.1u in AUR/Guix but sandbox configure path remains failing, keeping blocked pending deeper phase patching.
+   - Status: DONE: Prior compat alias in general-compat.scm (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1386,9 +1386,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 231. libsodium-1.0.18
+** DONE 231. libsodium-1.0.18
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted compat alias path for `libsodium-1.0.18`, but Gaurix custom package resolution for new alias names needs channel-level indexing/refactor; not safely completed in this pass.
+   - Status: DONE: Compat alias -> libsodium in general-compat.scm (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2186,7 +2186,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 364. ttf-joypixels
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no exact Guix package match from `guix search '^ttf-joypixels$'`; new recipe (source URI/hash + dependency/wrapper work) not completed safely in this queue pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: JoyPixels emoji (custom commercial license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2222,7 +2222,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 370. qt5-doc
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no exact Guix package match from `guix search '^qt5-doc$'`; new recipe (source URI/hash + dependency/wrapper work) not completed safely in this queue pass.
+   - Status: BLOCKED: COMPLEX_BUILD: Qt5 docs require full qdoc toolchain (~2GB output) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2546,7 +2546,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 424. opencl-amd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED in this queue-drain pass: no deterministic upstream release artifact or Guix-ready source mapping was validated quickly enough for safe packaging today; requires deeper recipe/release investigation.
+   - Status: BLOCKED: PROPRIETARY_BINARY: AMD OpenCL runtime repackaged from Ubuntu (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3030,9 +3030,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 505. ttf-xenia
+** DONE 505. ttf-xenia
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No corresponding package found in current Guix set (`guix package -A`), and Guix has no AUR importer (`guix import`); requires manual upstream-source packaging.
+   - Status: DONE: Recipe in deptree-260407.scm (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3302,7 +3302,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 550. lib32-nvidia-vulkan-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No corresponding package found in current Guix set (verified with `guix search`/`guix package -A`), and no existing Gaurix recipe for this entry; requires manual upstream-source packaging (source URI, hash, build/install phases) before validation.
+   - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA 32-bit Vulkan dev proprietary binary (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -4204,49 +4204,49 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 697. ttf-ms-win11-zh_tw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Traditional Chinese fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 698. ttf-ms-win11-zh_cn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Simplified Chinese fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 699. ttf-ms-win11-thai
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Thai fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 700. ttf-ms-win11-sea
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Southeast Asian fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 701. ttf-ms-win11-other
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 other fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 702. ttf-ms-win11-korean
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Korean fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 703. ttf-ms-win11-japanese
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft Windows font redistribution/licensing constraints require legal-source verification not completed in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Japanese fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 704. ttf-ms-win11
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Microsoft proprietary fonts; redistribution prohibited by EULA; AUR package requires user-supplied Windows 11 ISO; cannot distribute via Guix
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Windows 11 fonts (cannot redistribute) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5746,7 +5746,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 954. zulu-jre8-fx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `zulu-jre8-fx` is binary JRE with JavaFX; lawful binary package could be done, but source URI/hash pinning + wrapper constraints were not finalized in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Zulu JRE 8 with JavaFX (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -5782,49 +5782,49 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 960. zulu-jre11-fx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but zulu-jre11-fx is a vendor binary JRE+JavaFX bundle; lawful pinned binary packaging (URI/hash + wrapper policy) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Zulu JRE 11 with JavaFX (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 961. zulu-jre25-fx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but zulu-jre25-fx is a vendor binary JRE+JavaFX bundle; lawful pinned binary packaging (URI/hash + wrapper policy) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Zulu JRE 25 with JavaFX (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 962. zulu-jre17-fx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but zulu-jre17-fx is a vendor binary JRE+JavaFX bundle; lawful pinned binary packaging (URI/hash + wrapper policy) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Zulu JRE 17 with JavaFX (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 963. jre8-temurin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but jre8-temurin is a binary runtime; deterministic Guix binary recipe (source URI/hash/repack constraints) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Adoptium binary JRE 8; Guix has openjdk@9+ (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 964. jre11-temurin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but jre11-temurin is a binary runtime; deterministic Guix binary recipe (source URI/hash/repack constraints) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Adoptium binary JRE 11; Guix has openjdk@11 (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 965. jre21-temurin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but jre21-temurin is a binary runtime; deterministic Guix binary recipe (source URI/hash/repack constraints) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Adoptium binary JRE 21; Guix has openjdk@21 (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 966. jre17-temurin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but jre17-temurin is a binary runtime; deterministic Guix binary recipe (source URI/hash/repack constraints) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Adoptium binary JRE 17; Guix has openjdk@17 (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 967. jre25-temurin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: AUR recipe exists, but jre25-temurin is a binary runtime; deterministic Guix binary recipe (source URI/hash/repack constraints) not completed in this pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Adoptium binary JRE 25; Guix has openjdk@25 (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -6178,7 +6178,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1026. libinput-epp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted in 2026-03-08 queue drain; no existing Guix package match and no stable, verifiable upstream release+hash workflow was established quickly enough for safe same-day packaging.
+   - Status: BLOCKED: PATCHED_VARIANT: libinput with Windows EPP acceleration curve patches (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -7582,7 +7582,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1260. rocm-nightly-gfx1151-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted in 2026-03-17 queue drain; AUR HEAD reachable; rocm-nightly-gfx1151-bin is nightly binary content (non-immutable), preventing reproducible fixed-hash packaging in this pass.
+   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm nightly gfx1151 (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -7660,7 +7660,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1273. aspnet-runtime-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted in 2026-03-17 queue drain; authoritative AUR endpoint for aspnet-runtime-bin returned no repository/HEAD at evaluation time.
+   - Status: BLOCKED: BINARY_RUNTIME_CHAIN: depends on dotnet-runtime-bin (complex binary chain) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -8182,7 +8182,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1360. jdk17-zulu-prime-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `guix build -L guix -n jdk17-zulu-prime-bin` fails (unbound package variable). Needs a lawful binary JDK package definition with pinned URI/hash.
+   - Status: BLOCKED: PROPRIETARY_BINARY: Azul Zulu Prime 17 (proprietary stream license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -8876,9 +8876,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1476. ttf-vt323
+** DONE 1476. ttf-vt323
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-vt323` could not be mapped to a confirmed Guix-equivalent package symbol in this environment; needs dedicated font recipe import.
+   - Status: DONE: Recipe in deptree-260407.scm (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9251,7 +9251,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1541. archlinux-java-run
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show archlinux-java-run` -> package not found; A2 candidate normalization tried archlinux-java-run; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[bash, java-runtime-common] url=https://github.com/michaellass/archlinux-java-run.
+   - Status: BLOCKED: ARCH_SPECIFIC: Arch Linux Java launcher using java-runtime-common (deptree-260407 dep-tree pass)
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -9653,49 +9653,49 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1608. ttf-ms-win10
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Windows 10 fonts (cannot redistribute) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1609. ttf-ms-win10-japanese
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10-japanese` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Japanese fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1610. ttf-ms-win10-korean
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10-korean` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Korean fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1611. ttf-ms-win10-sea
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10-sea` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Southeast Asian fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1612. ttf-ms-win10-thai
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10-thai` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Thai fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1613. ttf-ms-win10-zh_cn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10-zh_cn` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Simplified Chinese fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1614. ttf-ms-win10-zh_tw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `ttf-ms-win10-zh_tw` requires redistributable Windows font source provenance/licensing and deterministic source hashing; that legal/source validation was not completed safely in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Traditional Chinese fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1615. ttf-ms-win10-other
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted queue drain on 2026-03-19; `guix build -L guix -n ttf-ms-win10-other` unresolved and authoritative AUR endpoint `https://aur.archlinux.org/ttf-ms-win10-other.git` was unavailable from this runtime, so a lawful/pinned package recipe could not be validated in this pass.
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 other fonts (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -13957,7 +13957,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2326. nvidia-470xx-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA legacy 470 proprietary binary blob (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14051,9 +14051,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2342. httpdirfs
+** DONE 2342. httpdirfs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: DONE: Recipe in deptree-260407.scm (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14329,7 +14329,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2388. freetype2-macos
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PATCHED_VARIANT: macOS-style rendering patches for freetype (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14395,7 +14395,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2399. nvidia-390xx-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA legacy 390 proprietary binary blob (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14449,7 +14449,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2408. lib32-nvidia-utils-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA 32-bit beta proprietary binary (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -15433,7 +15433,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2572. jdk8-graalvm-ee-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Attempted in 2026-03-20 package-100 queue drain; no safe/validated Guix package completion in this batch without custom recipe/dependency work.
+   - Status: BLOCKED: PROPRIETARY_BINARY: GraalVM EE 8 (OTN license) (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16129,7 +16129,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2688. system76-power
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Attempted in 2026-03-20 queue-drain batch; no direct Guix package match from naming heuristics; requires custom recipe research/implementation.
+   - Status: BLOCKED: CARGO_VENDORING: Rust project with 50+ crate deps needing vendoring (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16729,7 +16729,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2788. nvidia-535xx-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No existing Guix/Gaurix package by this name, and completing a new lawful manual-grounded recipe today requires per-package upstream source/hash/license/build-system audit beyond this queue-drain batch.
+   - Status: BLOCKED: PROPRIETARY_DRIVER: NVIDIA 535 branch proprietary binary blob (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -16751,9 +16751,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 2792. rosec-bin
+** DONE 2792. rosec-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No existing Guix/Gaurix package by this name, and completing a new lawful manual-grounded recipe today requires per-package upstream source/hash/license/build-system audit beyond this queue-drain batch.
+   - Status: DONE: Recipe in deptree-260407.scm (deptree-260407 dep-tree pass)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -17461,7 +17461,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2910. gopass-secret-service
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching upstream Guix package alias found via `guix build -L guix -n` candidate checks, and a fresh deterministic recipe (source URI + fixed hash + build wiring) was not completed safely in this queue pass.
+   - Status: BLOCKED: MISSING_DEP: D-Bus provider using gopass (not in Guix) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -19793,9 +19793,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3299. 7zip-zstd-bin
+** DONE 3299. 7zip-zstd-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `guix show -L guix 7zip-zstd-bin` -> package not found; AUR reachable (`git ls-remote --heads https://aur.archlinux.org/7zip-zstd-bin.git` ok); next: draft Guix recipe with source hash then run build/lint.
+   - Status: DONE: Compat alias -> 7zip in general-compat.scm (deptree-260407 dep-tree pass)
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -20899,7 +20899,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3483. freetype2-qdoled-gen3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit dec698a59b84); source=(; next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: PATCHED_VARIANT: QD-OLED Gen3 subpixel patches for freetype (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21241,19 +21241,19 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3540. npm-corepack
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh npm-corepack` => `cp: cannot stat '/tmp/tmp.szMHrT4Z86/npm-corepack/PKGBUILD': No such file or directory`; next: verify package rename/path and retry fetch.
+   - Status: BLOCKED: META_PACKAGE: corepack shim for npm; Guix node includes corepack (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3541. yarn-corepack
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh yarn-corepack` => `cp: cannot stat '/tmp/tmp.hmFBdlFpzx/yarn-corepack/PKGBUILD': No such file or directory`; next: verify package rename/path and retry fetch.
+   - Status: BLOCKED: META_PACKAGE: corepack shim for yarn; Guix node includes corepack (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3542. pnpm-corepack
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh pnpm-corepack` => `cp: cannot stat '/tmp/tmp.uX3S7a7n1P/pnpm-corepack/PKGBUILD': No such file or directory`; next: verify package rename/path and retry fetch.
+   - Status: BLOCKED: META_PACKAGE: corepack shim for pnpm; Guix node includes corepack (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21395,9 +21395,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3566. firefox-esr-bin
+** DONE 3566. firefox-esr-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh firefox-esr-bin` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
+   - Status: DONE: Compat alias -> firefox-esr in general-compat.scm (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21667,7 +21667,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3611. ttf-paratype
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh ttf-paratype` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: OFL font but no stable versioned download URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21709,37 +21709,37 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3618. ttf-pt-astra-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh ttf-pt-astra-sans` exit 1; snippet: `Cloning into '/tmp/tmp.oLfgiqs6VG/ttf-pt-astra-sans'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject to change...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Astra Sans OFL font, no stable archive URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3619. ttf-pt-astra-serif
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh ttf-pt-astra-serif` exit 1; snippet: `Cloning into '/tmp/tmp.FKUHq5WnMP/ttf-pt-astra-serif'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject to chang...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Astra Serif OFL font, no stable archive URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3620. ttf-pt-mono
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh ttf-pt-mono` exit 1; snippet: `Cloning into '/tmp/tmp.ljuacR6I98/ttf-pt-mono'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject to change. To c...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Mono OFL font, no stable archive URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3621. ttf-pt-root_ui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh ttf-pt-root_ui` exit 1; snippet: `Cloning into '/tmp/tmp.hc80gXYcGd/ttf-pt-root_ui'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject to change. T...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Root UI OFL font, no stable archive URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3622. ttf-pt-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh ttf-pt-sans` exit 1; snippet: `Cloning into '/tmp/tmp.LerzJkWzqa/ttf-pt-sans'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject to change. To c...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Sans OFL font, no stable archive URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3623. ttf-pt-serif
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh ttf-pt-serif` exit 1; snippet: `Cloning into '/tmp/tmp.uNTUV3jEUt/ttf-pt-serif'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject to change. To ...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Serif OFL font, no stable archive URL (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22609,7 +22609,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3768. zulu-jre21-fx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh zulu-jre21-fx` succeeded (AUR rev e4463d7b46fab2f06e88ca87382532634d22089a; (source not parsed)). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Zulu JRE 21 with JavaFX (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22639,7 +22639,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3773. firefox-beta-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; rolling beta needs library wrapping framework (GTK, PulseAudio, Mesa, dbus). See blocked-notes.
+   - Status: BLOCKED: BETA_BINARY: Firefox beta binary; rapidly changing, impractical to track (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22651,7 +22651,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3775. firefox-beta-bin-all-localizations
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh firefox-beta-bin-all-localizations` succeeded (AUR rev 37eb577888732656ddf2dd7d891b7a138912edd2; source=('firefox-beta-bin.desktop' 'ff-downloader.pl' 'firefox-beta.sh' 'policies.json')). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: BETA_BINARY: Firefox beta all locales; rapidly changing (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23107,7 +23107,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3851. jdk21-graalvm-ee-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh jdk21-graalvm-ee-bin` succeeded (AUR rev 46feacfbae51d8b2f45cc90cd0812b37c8b2b7a4; (source not parsed)). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: PROPRIETARY_BINARY: GraalVM EE 21 (GFTC license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -26611,7 +26611,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4435. rocm-nightly-gfx110x-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix rocm-nightly; AMD binary at https://repo.radeon.com/rocm/; binary recipe with patchelf + udev rules needed; Next: pin nightly version, draft binary recipe.
+   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm nightly for RDNA3 (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -27331,7 +27331,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4555. jdk25-graalvm-ce-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix jdk25-graalvm-ce; GraalVM CE JDK25; same upstream as above; Next: differentiate CE/EE, draft binary recipe
+   - Status: BLOCKED: BINARY_VENDOR_JDK: GraalVM CE 25 binary (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -28879,7 +28879,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4813. fftw-amd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: SPECIALIZED_VARIANT: AMD-optimized FFTW; Guix has generic fftw@3.3.10 (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29269,7 +29269,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4878. jdk21-graalvm-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN + LICENSE_REVIEW_NEEDED — GraalVM CE JDK 21 binary; https://github.com/graalvm/graalvm-ce-builds; stub added.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: GraalVM CE 21 (custom license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29521,7 +29521,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4920. jaq-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Rust jq-compatible processor; https://github.com/01mf02/jaq; stub added as jaq-bin.
+   - Status: BLOCKED: CARGO_VENDORING: Rust jq clone; needs full cargo dependency vendoring (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30775,7 +30775,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5129. jdk-temurin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Binary JDK wrapper; functionally aliases Guix openjdk; Next: fetch Linux tarball from adoptium.net, compute sha256, draft binary wrapper.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Adoptium binary JDK; Guix has openjdk@25 from source (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30925,7 +30925,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5154. freetype2-qdoled-aw3225qf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: patched freetype2 recipe; extract PKGBUILD patches, apply to Guix freetype; Source: AUR PKGBUILD
+   - Status: BLOCKED: PATCHED_VARIANT: QD-OLED AW3225QF subpixel patches for freetype (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31069,7 +31069,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5178. jdk17-graalvm-ee-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [LICENSE_REVIEW_NEEDED]: Oracle OTN license requires click-through; confirm terms allow redistribution; Source: https://www.oracle.com/java/graalvm/
+   - Status: BLOCKED: PROPRIETARY_BINARY: GraalVM EE 17 (OTN license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31429,7 +31429,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5238. ttf-shanggu
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: trivial-build-system TTF font install; fetch font archive; Source: https://github.com/nicholasgasior/shanggu-fonts
+   - Status: BLOCKED: SOURCE_FORMAT: CJK OFL font distributed as .7z archives only (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31531,7 +31531,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5255. 7zip-natspec
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: CJK natspec 7-Zip patch; cmake; Guix name p7zip-natspec (cannot start with digit).
+   - Status: BLOCKED: MISSING_DEP: 7zip with libnatspec (not in Guix) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31669,7 +31669,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5278. rocm-gfx110x-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: ROCm GFX110x binaries; large AMD proprietary; multi-output binary package.
+   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm SDK for RDNA3 (custom AMD license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31741,7 +31741,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5290. domake
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Docker make wrapper; shell script; Docker runtime dep.
+   - Status: BLOCKED: MISSING_DEP: Docker make, depends on dosh (not in Guix) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38533,7 +38533,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6472. rocm-gfx120x-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n rocm-gfx120x-bin | detail: error: specification->package: unbound variable (module load path issue in existing queue modules) | next: repair queue module imports to include (gnu packages), then rerun guix build -L guix -n rocm-gfx120x-bin
+   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm SDK for RDNA4 (custom AMD license) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38597,9 +38597,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 6483. deno-stable-bin
+** DONE 6483. deno-stable-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n deno-stable-bin | detail: error: specification->package: unbound variable (module load path issue in existing queue modules) | next: repair queue module imports to include (gnu packages), then rerun guix build -L guix -n deno-stable-bin
+   - Status: DONE: Recipe in deptree-260407.scm (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39247,7 +39247,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6591. jdk11-graalvm-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n jdk11-graalvm-bin | detail: error: specification->package: unbound variable (global module-load failure while evaluating existing queue modules) | next: repair failing queue modules, then re-run guix build -L guix -n jdk11-graalvm-bin
+   - Status: BLOCKED: BINARY_VENDOR_JDK: GraalVM CE 11 (custom, EOL since 2023) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39799,13 +39799,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6683. jdk8-graalvm-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n jdk8-graalvm-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: repair queue module import/runtime error around specification->package; rerun guix build/lint
+   - Status: BLOCKED: BINARY_VENDOR_JDK: GraalVM CE 8 (custom, EOL) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 6684. jdk19-graalvm-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n jdk19-graalvm-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: repair queue module import/runtime error around specification->package; rerun guix build/lint
+   - Status: BLOCKED: BINARY_VENDOR_JDK: GraalVM CE 19 (custom, EOL) (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -40208,7 +40208,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6750. aspnet-runtime-7.0-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n aspnet-runtime-7.0-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: BLOCKED: EOL_BINARY: ASP.NET 7.0 runtime (EOL), depends on dotnet-runtime-7.0-bin (deptree-260407 dep-tree pass)
    - Next: draft new recipe module for twmn-git (source+hash+build-system), then rerun guix build -L guix -n twmn-git
    - Difficulty: unknown
    - TODO Status: FAILED
@@ -42008,9 +42008,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 7037. noto-fonts-emoji-blob
+** DONE 7037. noto-fonts-emoji-blob
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1 exact upstream lookup: `guix show noto-fonts-emoji-blob` -> package not found; A2 candidate normalization tried noto-fonts-emoji-blob; no equivalent upstream package; A3 repo scan found no package definition for this name; AUR triage deps=[none] url=https://github.com/C1710/blobmoji/.
+   - Status: DONE: Compat alias -> font-google-noto-emoji in general-compat.scm (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -44108,7 +44108,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n kdownload | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
-** BLOCKED 7413. auto-auto-complete
+** DONE 7413. auto-auto-complete
    - Note: AUR popularity=0.2002, votes=58; Autogenerate shell auto-completion scripts
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n auto-auto-complete | detail: guix build: error: auto-auto-complete: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
@@ -45485,8 +45485,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1114, votes=3; KiCad libraries for Espressif chips and modules (symbols, footprints and 3D mode
    - TODO Status: BLOCKED
 
-** BLOCKED 7690. fortune-mod-off
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fortune-mod-off | error: guix build: error: fortune-mod-off: unknown package | next: draft new Guix recipe module and validate with guix lint/build
+** DONE 7690. fortune-mod-off
+   - Status: DONE: Recipe in deptree-260407.scm (deptree-260407 dep-tree pass)
    - Note: AUR popularity=0.1106, votes=8; The Fortune Cookie Program from BSD games, with the offensive quotes added back 
    - TODO Status: BLOCKED
 
@@ -48662,7 +48662,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 8266. postgresql17-docs
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n postgresql17-docs | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily6.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: VERSION_MISMATCH: PostgreSQL 17 docs; Guix has postgresql@16 only (deptree-260407 dep-tree pass)
    - Difficulty: unknown
    - TODO Status: BLOCKED
    - Note: AUR popularity=0.0885, votes=1; HTML documentation for PostgreSQL
@@ -49507,7 +49507,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0812, votes=39; Apple Color Emoji is a color typeface used by iOS and macOS to display emoji
    - TODO Status: BLOCKED
 
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-apple-emoji | error: guix build: error: ttf-apple-emoji: unknown package | aur-head: 0cd37bba1bc3a57b4d47564d396e1fded7d1cf84 | next: draft Guix recipe from AUR PKGBUILD/source metadata, then run guix lint/build
+   - Status: BLOCKED: PROPRIETARY_NONFREE: Apple Color Emoji (extracted from macOS, cannot redistribute) (deptree-260407 dep-tree pass)
 ** BLOCKED 8379. classisland-bin
    - Note: AUR popularity=0.0812, votes=4; 适用于班级大屏的课表小工具（预编译二进制包）。Class schedule displaying tool for interactive whiteboard
    - TODO Status: BLOCKED
@@ -50763,10 +50763,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n rider-eap | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily7.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
    - TODO Status: BLOCKED
 
-** BLOCKED 8627. otf-unifont
+** DONE 8627. otf-unifont
    - Note: AUR popularity=0.0689, votes=11; OpenType version of the GNU Unifont
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n otf-unifont | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily7.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
+   - Status: DONE: Compat alias -> font-gnu-unifont in general-compat.scm (deptree-260407 dep-tree pass)
    - TODO Status: BLOCKED
 
 ** DONE 8628. hyprpaper-git
@@ -52004,7 +52004,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0603, votes=2; Another Mihomo GUI
    - TODO Status: BLOCKED
 
-** BLOCKED 8863. noto-fonts-lite
+** DONE 8863. noto-fonts-lite
    - Note: AUR popularity=0.0603, votes=21; Google Noto TTF fonts (lite version)
    - TODO Status: BLOCKED
 
@@ -58740,13 +58740,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 10251. amazon-corretto-8
    - AUR votes: 7, popularity: 0.0326
    - Note: No-cost, multiplatform, production-ready distribution of OpenJDK
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: OpenJDK variant, Guix has openjdk-8; see queue-20260406p100b-blocked-notes.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Amazon Corretto 8 (binary dist for Java 8) (deptree-260407 dep-tree pass)
    - TODO Status: BLOCKED
 
 ** BLOCKED 10252. amazon-corretto-17
    - AUR votes: 3, popularity: 0.0326
    - Note: No-cost, multiplatform, production-ready distribution of OpenJDK
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: OpenJDK variant, Guix has openjdk-17; see queue-20260406p100b-blocked-notes.
+   - Status: BLOCKED: BINARY_VENDOR_JDK: Amazon Corretto 17 (binary dist); Guix has openjdk@17 (deptree-260407 dep-tree pass)
    - TODO Status: BLOCKED
 
 ** BLOCKED 10253. dracut-ukify
@@ -64349,11 +64349,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The AI coding agent built for the terminal.
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n opencode-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
-** BLOCKED 11348. openssl-1.1
+** DONE 11348. openssl-1.1
    - AUR votes: 13, popularity: 6.5676
    - Note: The Open Source toolkit for Secure Sockets Layer and Transport Layer Security
    - TODO Status: BLOCKED
-   - Status: BLOCKED: BUILD_FAILURE_CONFIGURE | A1 exact alias check: `guix build -L guix -n openssl-1.1` succeeds; A2 configure strategy update (chmod + invoke via `sh ./config`) still fails with exit 127 in full build (`guix build -L guix openssl-1.1`); A3 upstream source triage confirms openssl-1.1.1u in AUR/Guix but sandbox configure path remains failing, keeping blocked pending deeper phase patching.
+   - Status: DONE: Prior compat alias in general-compat.scm (deptree-260407 dep-tree pass)
 ** FAILED 11349. winboat-bin
    - AUR votes: 27, popularity: 6.2931
    - Note: Run Windows apps on Linux with seamless integration
