@@ -232,6 +232,7 @@
   #:use-module (gaurix packages queue-20260406-nrd30h-blocked-notes)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd21)
   #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd21-blocked-notes)
+  #:use-module (gaurix packages cron-5a2fb251-r21-w01)
   #:export (
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10)
             #:use-module (gaurix packages cron-c79f127f-r22-w03-nrd10-blocked-notes)
@@ -7318,4 +7319,21 @@ podman-tui-bin
             loliashizuku-bin-blocked-note
             lolia-cli-blocked-note
             reminduck-blocked-note
+            claudebar
+            codexbar
+            compendium
+            console2svg-bin
+            ferris-scan-bin
+            funzzy-bin
+            lazytail-bin
+            lobster
+            mezzotone-bin
+            netwatch-tui
+            omp-manager-bin
+            pandoc-crossref-bin
+            python-aiohttp-jinja2
+            sabiql-bin
+            tmux-plugin-panel-bin
+            tufw-git
+            workz-bin
 ))
