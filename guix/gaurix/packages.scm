@@ -272,6 +272,7 @@
   #:use-module (gaurix packages deptree-resolver-260407-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (gaurix packages recipe-resolver-260407c)
+  #:use-module (gaurix packages recipe-resolver-260407d)
   #:use-module (gaurix packages deptree-resolver-260407b)
   #:use-module (gaurix packages deptree-resolver-260407b-blocked-notes)
   #:export (

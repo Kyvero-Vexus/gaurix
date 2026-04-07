@@ -7,6 +7,7 @@
   #:use-module (gnu packages sync)
   #:use-module (gaurix packages fluxer-bin)
   #:use-module (gaurix packages recipe-resolver-260407b)
+  #:use-module (gaurix packages recipe-resolver-260407d)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -805,6 +806,21 @@
             dotool
             ani-skip-git
             libastal-bluetooth-git
+            ctags-arduino
+            aribb24
+            pxz
+            cpp-utilities
+            culmus
+            font-redhat
+            betterspades
+            textern
+            tridactyl-native-messenger-bin
+            ttf-lxgw-neo-xihei
+            ttf-lxgw-neo-xihei-screen
+            pwmenu-bin-260407d
+            bzmenu-bin-260407d
+            iwmenu-bin-260407d
+            ghostty-terminfo-260407d
             ))
 
 (define-public gtk2
