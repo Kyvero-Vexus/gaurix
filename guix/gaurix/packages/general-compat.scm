@@ -5,6 +5,7 @@
   #:use-module (gnu packages i2p)
   #:use-module (gnu packages sync)
   #:use-module (gaurix packages fluxer-bin)
+  #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -220,6 +221,7 @@
             ripgrep-git
             fd-git
             eza-git
+            dpibreak-git
             zoxide-git
             shellcheck-bin
             xlibre-xserver
