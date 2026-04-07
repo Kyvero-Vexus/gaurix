@@ -15,6 +15,9 @@
 **Timestamp:** 2026-04-07T03:20:48.404983+00:00
 **Run:** deptree-resolver-20260407-0320
 **Total BLOCKED:** 6555
+**Timestamp:** 2026-04-07T08:07:59.754355+00:00
+**Run:** deptree-resolver-260407
+**Total BLOCKED:** 6640
 
 ## Priority Queue (top 120)
 
@@ -432,6 +435,15 @@
 28. python312 (blocked_deps=0, rev_deps=3, total=12)
 29. hyprtoolkit-git (blocked_deps=0, rev_deps=3, total=15)
 30. wayfire (blocked_deps=0, rev_deps=3, total=15)
+22. wayfire (blocked_deps=0, rev_deps=4, total=15)
+23. python-plyer (blocked_deps=0, rev_deps=3, total=2)
+24. python-condense-json (blocked_deps=0, rev_deps=3, total=4)
+25. qt5-connectivity (blocked_deps=0, rev_deps=3, total=4)
+26. cosmic-randr-git (blocked_deps=0, rev_deps=3, total=5)
+27. python-m3u8 (blocked_deps=0, rev_deps=3, total=5)
+28. zmusic (blocked_deps=0, rev_deps=3, total=5)
+29. python312 (blocked_deps=0, rev_deps=3, total=12)
+30. hyprtoolkit-git (blocked_deps=0, rev_deps=3, total=15)
 31. llvm-libs-minimal-git (blocked_deps=0, rev_deps=3, total=19)
 32. logmein-hamachi (blocked_deps=0, rev_deps=2, total=0)
 33. mips64-linux-gnu-linux-api-headers (blocked_deps=0, rev_deps=2, total=1)
