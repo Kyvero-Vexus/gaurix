@@ -8192,7 +8192,18 @@ podman-tui-bin
             matlab-mpm
             vscodium-compat
             arduino-builder
-            gitqlient-git))
+            gitqlient-git            mindustry
+            lidarr
+            wallchemy
+            atlauncher
+            kopia
+            kopia-ui
+            playit
+            notesnook-bin
+            jellyfin-desktop-bin
+            libsmb2
+            playit-agent-bin
+))
             ;; recipe-resolver-260407h
             fishnet-bin
             pkl-bin
@@ -9039,4 +9050,5 @@ podman-tui-bin
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408h-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260408r)
+  #:use-module (gaurix packages recipe-resolver-260408t)
 )

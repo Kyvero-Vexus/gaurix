@@ -238,6 +238,7 @@
   #:use-module (gaurix packages recipe-resolver-260408q)
   #:use-module (gaurix packages recipe-resolver-260408r)
   #:use-module (gaurix packages recipe-resolver-260408s)
+  #:use-module (gaurix packages recipe-resolver-260408t)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
@@ -1551,7 +1552,22 @@
             brokefetch-git
             vhd2vl-git
             sc-git
-            ))
+                        localsend
+            juliaup
+            mindustry
+            lidarr
+            zl-equalizer
+            wallchemy
+            atlauncher
+            kopia
+            kopia-ui
+            playit
+            arduino-ctags
+            notesnook-bin
+            jellyfin-desktop-bin
+            libsmb2
+            playit-agent-bin
+))
 
 (define-public gtk2
   (package
@@ -4916,3 +4932,62 @@
 (define-public recaf-git (package (inherit recaf-bin) (name "recaf-git")))
 ;; AUR emsdk -> gaurix emsdk-bin
 (define-public emsdk (package (inherit emsdk-bin) (name "emsdk")))
+
+;;;
+;;; ── recipe-resolver-260408t compat aliases ─────────────────────
+;;;
+(define-public localsend
+  (package
+    (inherit localsend-bin)
+    (name "localsend")))
+
+(define-public juliaup
+  (package
+    (inherit juliaup-bin)
+    (name "juliaup")))
+
+(define-public mindustry
+  (package
+    (inherit mindustry-bin)
+    (name "mindustry")))
+
+(define-public lidarr
+  (package
+    (inherit lidarr-bin)
+    (name "lidarr")))
+
+(define-public zl-equalizer
+  (package
+    (inherit zl-equalizer-bin)
+    (name "zl-equalizer")))
+
+(define-public wallchemy
+  (package
+    (inherit wallchemy-bin)
+    (name "wallchemy")))
+
+(define-public atlauncher
+  (package
+    (inherit atlauncher-bin)
+    (name "atlauncher")))
+
+(define-public kopia
+  (package
+    (inherit kopia-bin)
+    (name "kopia")))
+
+(define-public kopia-ui
+  (package
+    (inherit kopia-ui-bin)
+    (name "kopia-ui")))
+
+(define-public playit
+  (package
+    (inherit playit-bin)
+    (name "playit")))
+
+;; arduino-ctags: defined in recipe-resolver-260408t
+;; notesnook-bin: defined in recipe-resolver-260408t
+;; jellyfin-desktop-bin: defined in recipe-resolver-260408t
+;; libsmb2: defined in recipe-resolver-260408t
+;; playit-agent-bin: defined in recipe-resolver-260408t
