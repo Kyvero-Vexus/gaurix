@@ -9138,6 +9138,103 @@ podman-tui-bin
             elephant-symbols
             elephant-todo
             elephant-unicode
+            ;; deptree-resolver-260408j
+            elephant-websearch
+            envy-tui-bin
+            epson-printer-utility
+            epub2pdf
+            equibop-bin
+            esa-snap-bin
+            evhz-git
+            exodus
+            f5vpn
+            factor
+            factory-cli-bin
+            fastbuild
+            fcitx5-skin-ori-git
+            ffdash-bin
+            ffmpeg-audio-thumbnailer
+            file2key
+            finar-bin
+            finar-unstable
+            firefox-extension-arch-search
+            fish-pure-prompt
+            fixvr-git
+            flogo
+            flyctl-bin
+            foobar2000-component-beefweb-bin
+            foobar2000-component-openlyrics-bin
+            fortune-mod-portal-game
+            free42
+            frpc-bin
+            frps-bin
+            fswebcam
+            fusee-nano
+            gaffer-bin
+            geargrafx
+            gedit-cut-line
+            gedit-dark-variant
+            gedit-duplicate-line
+            gedit-panel-toggler
+            gedit-scroll-past
+            gedit-smart-home
+            ggc-bin
+            ghdl
+            git-credential-keepassxc
+            git-koji-bin
+            gitflow-avh
+            gmodpatchtool-bin
+            gnome-shell-extension-resource-monitor
+            gnome-shell-extension-tophat
+            gnome-shell-extension-tray-icons-reloaded
+            gnome-ssh-askpass3
+            goanime
+            goofcord-bin
+            goose-desktop-bin
+            goto-ssh-bin
+            gowall-bin
+            goxe
+            grepai-bin
+            grub-netboot-archlinux
+            grub-theme-minegrub-world-selection-git
+            h2status
+            hachimi-world-bin
+            hammer-editor-bin
+            hardened-malloc-git
+            hd-idle-go
+            heynote-bin
+            hla-bin
+            huaweicloudmeeting-bin
+            hydrogen-drumkits
+            hyphen-ru
+            hyprmon-bin
+            inkstitch
+            ipatool
+            iscan-plugin-perfection-v330
+            jfq
+            jira-cli
+            jitsi-meet-bin
+            jubler-bin
+            katifetch
+            keepass-diff
+            kernel-install-for-dracut
+            kernel-modules-hook-reflink
+            kickassembler
+            klit-bin
+            klit-unstable
+            koboldcpp-cuda-bin
+            komga
+            koofr-desktop-bin
+            kora-icon-theme
+            kuva
+            kwin-scripts-dynamic-workspaces
+            kwprocessor
+            kyp-bin
+            lazyjournal
+            lcarsde-onboard-theme
+            leafview-bin
+            legacy-launcher-ely.by
+            lft
   #:use-module (gaurix packages recipe-resolver-260408q)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408h-blocked-notes)
@@ -9146,4 +9243,6 @@ podman-tui-bin
   #:use-module (gaurix packages recipe-resolver-260408u)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408i-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260408j)
+  #:use-module (gaurix packages deptree-resolver-260408j-blocked-notes)
 )

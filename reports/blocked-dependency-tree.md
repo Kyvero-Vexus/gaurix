@@ -1,17 +1,17 @@
 # Blocked Dependency Tree
 
-- **Timestamp:** 2026-04-08T16:13:26.573885+00:00
-- **Run ID:** deptree-resolver-260408i
-- **Total blocked:** 5521
-- **Queue length:** 5415
+- **Timestamp:** 2026-04-08T17:32:25.674284+00:00
+- **Run ID:** deptree-resolver-260408j
+- **Total blocked:** 5407
+- **Queue length:** 5301
 
 ## Priority Queue (top 120)
 
 | Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|-------------|-------------|-----------|
 | 1 | yay | 0 | 6 | 3 |
-| 2 | java-openjfx | 0 | 4 | 22 |
-| 3 | matlab | 0 | 3 | 6 |
+| 2 | matlab | 0 | 3 | 6 |
+| 3 | java-openjfx | 0 | 3 | 22 |
 | 4 | mingw-w64-pkg-config | 0 | 2 | 2 |
 | 5 | paru | 0 | 2 | 4 |
 | 6 | plasma-workspace-povd | 0 | 2 | 105 |
