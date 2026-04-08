@@ -29,6 +29,107 @@
             shiru-lv2
             tanin
             swaycons
+            ;; recipe-resolver-260407m re-exports
+            sff
+            streamdeck-ui
+            zulucrypt
+            rankmirrors
+            python-vllm
+            grass-desktop-node
+            python-flash-attention
+            tonelib-zoom-bin
+            gittyup
+            dropbox-cli
+            ripcalc
+            perl-authen-simple
+            intel-media-driver-legacy-bin
+            pacman-hook-list-systemd-units
+            vcsi
+            atproto-pds
+            vmware-vmrc
+            libwebcam
+            v4l2ucp
+            glpi-agent
+            perl-xml-treepp
+            bcc-tools
+            python-bcc
+            perl-test-compile
+            perl-io-capture
+            electron6-bin
+            jsignpdf
+            simutrans-pak192-comic
+            perl-http-server-simple-authen
+            mermaid-filter
+            python-atlassian-api
+            wiki-js
+            gkrellm-gkfreq
+            thunderbird-beta-bin
+            replay-sorcery
+            kolossus-launcher
+            hunspell-hr
+            nyrna-bin
+            font-work-sans
+            font-work-sans-variable
+            sway-git-wlroots
+            opennebula
+            fancontrol-gui
+            heaptrack
+            trufflehog
+            chs
+            heroic-gogdl
+            xmind
+            profile-sync-daemon-librewolf
+            code-saturne
+            vertex-themes
+            alacarte-xfce
+            tonelib-jam-bin
+            steamrun
+            tunescope
+            guitarix-vst
+            elementary-xfce-icons
+            gkleds
+            gkrelltop
+            gkrellm-themes
+            chowbyod-bin
+            patchance
+            chowcentaur-bin
+            nootka
+            tuxedo-drivers-dkms
+            macintosh-js-bin
+            opera-developer
+            sslyze
+            trelby
+            scidb
+            tencent-docs-bin
+            slang-verilog
+            noi-desktop-bin
+            jzintv
+            kyocera-universal
+            intiface-central
+            font-sorts-mill-goudy
+            go-musicfox-bin
+            adminer-editor
+            scream
+            qt5-styleplugins
+            vkd3d-proton-mingw
+            pam-ssh
+            lenmus
+            selinux-refpolicy-arch
+            vencord
+            chromium-vencord
+            firefox-vencord
+            firefox-developer-edition-vencord
+            librewolf-vencord
+            font-udev-gothic
+            wofi-power-menu
+            slimevr-beta-bin
+            terminal-rain-lightning
+            syncclipboard-desktop
+            wine-discord-ipc-bridge
+            vpinball
+            qt6-jpegxl-image-plugin
+            zls-master-bin
+            optimus-manager-qt
 (define-module (gaurix packages general-compat)
   #:use-module (gaurix packages llama-cpp-cuda)
   #:use-module (gaurix packages deptree-resolver-260407c)
@@ -233,6 +334,7 @@
   #:use-module (gaurix packages recipe-resolver-260407j)
   #:use-module (gaurix packages recipe-resolver-260407k)
   #:use-module (gaurix packages recipe-resolver-260407l)
+  #:use-module (gaurix packages recipe-resolver-260407m)
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:export (
             ;; deptree-resolver-260407 compat aliases
