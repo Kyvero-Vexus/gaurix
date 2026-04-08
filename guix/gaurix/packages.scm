@@ -350,6 +350,7 @@
   #:use-module (gaurix packages recipe-resolver-260408e)
   #:use-module (gaurix packages recipe-resolver-260408f)
   #:use-module (gaurix packages recipe-resolver-260408g)
+  #:use-module (gaurix packages recipe-resolver-260408h)
   #:use-module (gaurix packages compat-aliases-260408c)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview

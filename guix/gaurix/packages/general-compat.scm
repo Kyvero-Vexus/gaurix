@@ -221,6 +221,7 @@
   #:use-module (gaurix packages recipe-resolver-260408e)
   #:use-module (gaurix packages recipe-resolver-260408f)
   #:use-module (gaurix packages recipe-resolver-260408g)
+  #:use-module (gaurix packages recipe-resolver-260408h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity

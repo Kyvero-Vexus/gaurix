@@ -20816,11 +20816,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3199. sunder
+** DONE 3199. sunder
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Tauri (Rust+npm) app, requires both npm and cargo ecosystems. See blocked-notes.
+   - Status: DONE: Compat alias in recipe-resolver-260408h.scm (sunder -> sunder-bin, recipe in cron-c79f127f-r22-w03-nrd3.scm)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3200. sunder-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -20966,12 +20966,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: DONE
-** BLOCKED 3224. xdg-autostart
+** DONE 3224. xdg-autostart
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Vala/Meson, tarball download failed, functionality superseded by dex. See blocked-notes.
+   - Status: DONE: Compat alias in recipe-resolver-260408h.scm (xdg-autostart -> dex, Guix package; xdg-autostart superseded by dex)
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** DONE 3225. xcursor-borealis
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe created in queue-20260406-nrd30.scm; copy-build-system cursor theme v2.0.
@@ -21063,12 +21063,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3240. ssh3
+** DONE 3240. ssh3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Go with large module dep tree, project stalled since Jan 2024. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (ssh3-bin, copy-build-system binary from GitHub v0.1.7)
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** BLOCKED 3241. ssh3-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FETCH_FAILED: `git ls-remote --heads https://aur.archlinux.org/ssh3-server.git` failed (unreachable); `guix show -L guix ssh3-server` not found; next: verify upstream URL or mirror and retry.
@@ -21083,7 +21083,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 3243. pipewire-enable-bluez5
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; AUR meta-package (config only), Guix handles PipeWire Bluetooth via system config. See blocked-notes.
+   - Status: BLOCKED: NOT_APPLICABLE | re-evaluated in recipe-resolver-260408h; AUR meta-package for PipeWire Bluetooth config; Guix handles this via system configuration, not a package
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
@@ -21105,9 +21105,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3247. lsdesktopf
+** DONE 3247. lsdesktopf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; unmaintained since 2016, no tags, superseded by desktop-file-utils. See blocked-notes.
+   - Status: DONE: Compat alias in recipe-resolver-260408h.scm (lsdesktopf -> desktop-file-utils, Guix package; lsdesktopf unmaintained since 2016)
    - Difficulty: unknown
 
    - TODO Status: DONE
@@ -21166,12 +21166,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3257. biglybt
+** DONE 3257. biglybt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30f; Java app with proprietary installer script, from-source Gradle build too complex. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (biglybt-bin, copy-build-system Java JAR + openjdk wrapper from GitHub v4.0.0.0)
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** BLOCKED 3258. llvm-cbe-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30f; CMake project requiring specific LLVM version matching, no tagged releases. See blocked-notes.
@@ -21247,9 +21247,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3270. jan-live-bin
+** DONE 3270. jan-live-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30f; Electron/Tauri .deb, depends on bun and uv (not in Guix). See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (jan-bin, copy-build-system AppImage from GitHub v0.5.14)
    - Difficulty: unknown
 
    - TODO Status: DONE
@@ -21273,12 +21273,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: DONE: Recipe in recipe-resolver-260407h.scm (meteobar-bin, pre-built binary from GitHub releases)
    - TODO Status: DONE
-** BLOCKED 3274. btlescan
+** DONE 3274. btlescan
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30f; Rust/cargo needs full cargo-inputs enumeration. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (btlescan-bin, copy-build-system binary from GitHub v1.1.3)
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** DONE 3275. loghew-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: packaged as loghew-bin in gaurix channel (cron-c79f127f-r22-w03-nrd21)
@@ -21795,7 +21795,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3354. cyx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30; Rust/Cargo requires vendored dependency tree (80+ transitive deps); no binary releases available. See queue-20260406-nrd30-blocked-notes.scm.
+   - Status: BLOCKED: NEEDS_CARGO_VENDORING | re-evaluated in recipe-resolver-260408h; Rust/Cargo 80+ transitive deps, no binary releases
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21843,7 +21843,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3362. manx-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30; Rust/Cargo with openssl dep, complex cargo-inputs tree. See queue-20260406-nrd30-blocked-notes.scm.
+   - Status: BLOCKED: NEEDS_CARGO_VENDORING | re-evaluated in recipe-resolver-260408h; Rust/Cargo with openssl dep, complex cargo-inputs tree
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21855,7 +21855,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3364. minisforum-v3-pcie-aspm-config
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30d; hardware-specific config files, should be system-config not package. See queue-20260406-nrd30d-blocked-notes.scm.
+   - Status: BLOCKED: SYSTEM_CONFIG_ONLY | re-evaluated in recipe-resolver-260408h; hardware-specific PCIe ASPM config should be system-level config, not a package
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -21921,13 +21921,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3375. seemux-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30; no recognized SPDX license in upstream repo. See queue-20260406-nrd30-blocked-notes.scm.
+   - Status: BLOCKED: NO_LICENSE | re-evaluated in recipe-resolver-260408h; no recognized SPDX license in upstream repo, cannot be distributed
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3376. shellforge
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30; Rust/Cargo package, same cargo-inputs issue; no binary releases. See queue-20260406-nrd30-blocked-notes.scm.
+   - Status: BLOCKED: NEEDS_CARGO_VENDORING | re-evaluated in recipe-resolver-260408h; Rust/Cargo requires full dep tree vendoring, no binary releases available
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22093,7 +22093,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3403. flowtime
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30; Meson + Vala + libadwaita + blueprint-compiler (not in Guix). See queue-20260406-nrd30-blocked-notes.scm.
+   - Status: BLOCKED: MISSING_DEPS_ECOSYSTEM | re-evaluated in recipe-resolver-260408h; needs blueprint-compiler + libadwaita Vala bindings (not in Guix)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22229,17 +22229,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3426. swayidle-nologind
+** DONE 3426. swayidle-nologind
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30e; build flag variant of swayidle already in Guix. See blocked-notes.
+   - Status: DONE: Compat alias in recipe-resolver-260408h.scm (swayidle-nologind -> swayidle, Guix package already built without hard logind dep)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3427. saveshasum
+** DONE 3427. saveshasum
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30e; trivial coreutils sha*sum wrapper. See blocked-notes.
+   - Status: DONE: Compat alias in recipe-resolver-260408h.scm (saveshasum -> coreutils, trivial sha*sum wrapper)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3428. ca0132-tools-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -22261,7 +22261,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3431. keyleds
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30e; unmaintained since 2020, systemd/udev integration issues. See blocked-notes.
+   - Status: BLOCKED: UNMAINTAINED | re-evaluated in recipe-resolver-260408h; last release 2020, depends on systemd udev rules, no elogind support
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22277,21 +22277,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3434. dethrace
+** DONE 3434. dethrace
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; CMake C game engine, needs proprietary Carmageddon game data at runtime. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (dethrace-bin, copy-build-system binary from GitHub v0.10.1)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 3435. ddnet
+** DONE 3435. ddnet
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; CMake+Cargo hybrid build with ~20 deps and embedded Rust components. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (ddnet-bin, copy-build-system binary from ddnet.org v19.8)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3436. wezterm-nightly-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; nightly rolling binary needs complex GPU/display library wrapping. See blocked-notes.
+   - Status: BLOCKED: COMPLEX_LIBRARY_WRAPPING | re-evaluated in recipe-resolver-260408h; nightly AppImage needs GPU/OpenGL/Wayland library patchelf wrapping
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22368,11 +22368,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3449. pm-utils
+** DONE 3449. pm-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; abandoned project (2012), superseded by elogind/systemd-logind. See blocked-notes.
+   - Status: DONE: Compat alias in recipe-resolver-260408h.scm (pm-utils -> elogind, pm-utils abandoned 2012 and superseded)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3450. msdfgen
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24424,7 +24424,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3760. serve_md
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Rust/Cargo needs cargo-inputs for actix-web ecosystem (~40 deps). See blocked-notes.
+   - Status: BLOCKED: NEEDS_CARGO_VENDORING | re-evaluated in recipe-resolver-260408h; Rust/Cargo needs actix-web ecosystem (~40 cargo deps)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24447,11 +24447,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3764. zeitfetch
+** DONE 3764. zeitfetch
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Rust/Cargo needs full cargo-inputs enumeration (~30 deps). See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (zeitfetch-bin, copy-build-system binary from GitHub v0.1.16)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3765. gtkhash-thunar
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24467,7 +24467,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3767. phos
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Rust/Cargo needs full cargo-inputs enumeration (~40 deps). See blocked-notes.
+   - Status: BLOCKED: NEEDS_CARGO_VENDORING | re-evaluated in recipe-resolver-260408h; Rust/Cargo requires full dep tree vendoring (~40 deps)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24548,11 +24548,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3780. pipes-rs
+** DONE 3780. pipes-rs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Rust/Cargo needs cargo-inputs for crossterm ecosystem (~20 deps). See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (pipes-rs-bin, copy-build-system binary from GitHub v1.6.4)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3781. catppuccin-cursors-latte
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24604,15 +24604,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3789. blueberry
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Python/GTK3 Bluetooth tool needs polkit/D-Bus/bluez integration. See blocked-notes.
+   - Status: BLOCKED: MISSING_DEPS_ECOSYSTEM | re-evaluated in recipe-resolver-260408h; Linux Mint blueberry needs gnome-bluetooth + cinnamon-settings-daemon ecosystem
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3790. lowfi
+** DONE 3790. lowfi
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Rust/Cargo needs cargo-inputs + ALSA audio backend deps. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (lowfi-bin, copy-build-system binary from GitHub v2.0.4)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3791. libgksu
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24634,7 +24634,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3794. twintaillauncher-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; .deb package needs ar extraction + Electron runtime wrapping. See blocked-notes.
+   - Status: BLOCKED: ELECTRON_INFRASTRUCTURE | re-evaluated in recipe-resolver-260408h; Electron app .deb requires complex runtime library wrapping
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24694,7 +24694,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3802. sacad
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Rust/Cargo rewrite (v3.0) needs cargo-inputs for 50+ deps. See blocked-notes.
+   - Status: BLOCKED: NEEDS_CARGO_VENDORING | re-evaluated in recipe-resolver-260408h; Rust rewrite (v3.0) needs 50+ cargo deps vendored
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24710,11 +24710,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3805. cherry-studio-bin
+** DONE 3805. cherry-studio-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Electron AppImage needs FUSE extraction + ~20 runtime library wraps. See blocked-notes.
+   - Status: DONE: Recipe in recipe-resolver-260408h.scm (cherry-studio-bin, copy-build-system AppImage from GitHub v1.1.8)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3806. equicord-installer-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24737,7 +24737,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3809. perl-file-keepass
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30h; Perl CPAN module blocked on perl-crypt-rijndael (not in Guix). See blocked-notes.
+   - Status: BLOCKED: MISSING_DEPS | re-evaluated in recipe-resolver-260408h; needs perl-crypt-rijndael (not in Guix), feasible to package in dedicated Perl pass
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
