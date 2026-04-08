@@ -237,6 +237,7 @@
   #:use-module (gaurix packages recipe-resolver-260408p)
   #:use-module (gaurix packages recipe-resolver-260408q)
   #:use-module (gaurix packages recipe-resolver-260408r)
+  #:use-module (gaurix packages recipe-resolver-260408s)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
@@ -4842,3 +4843,76 @@
 
 ;; AUR sweet-folders-icons -> gaurix sweet-folders-icons-git
 (define-public sweet-folders-icons (package (inherit sweet-folders-icons-git) (name "sweet-folders-icons")))
+
+; --- recipe-resolver-260408s compat aliases ---
+
+;; AUR ferdium -> gaurix ferdium-source
+(define-public ferdium (package (inherit ferdium-source) (name "ferdium")))
+;; AUR pycharm -> gaurix pycharm-community-bin
+(define-public pycharm (package (inherit pycharm-community-bin) (name "pycharm")))
+;; AUR gtk-nocsd-git -> gaurix gtk-nocsd
+(define-public gtk-nocsd-git (package (inherit gtk-nocsd) (name "gtk-nocsd-git")))
+;; AUR deadbeef -> gaurix deadbeef-bin
+(define-public deadbeef (package (inherit deadbeef-bin) (name "deadbeef")))
+;; AUR coolercontrol -> gaurix coolercontrol-bin
+(define-public coolercontrol (package (inherit coolercontrol-bin) (name "coolercontrol")))
+;; AUR coolercontrold -> gaurix coolercontrold-bin
+(define-public coolercontrold (package (inherit coolercontrold-bin) (name "coolercontrold")))
+;; AUR dropbox -> gaurix dropbox-bin
+(define-public dropbox (package (inherit dropbox-bin) (name "dropbox")))
+;; AUR joplin-desktop -> gaurix joplin-desktop-bin
+(define-public joplin-desktop (package (inherit joplin-desktop-bin) (name "joplin-desktop")))
+;; AUR azahar -> gaurix azahar-bin
+(define-public azahar (package (inherit azahar-bin) (name "azahar")))
+;; AUR openlinkhub -> gaurix openlinkhub-bin
+(define-public openlinkhub (package (inherit openlinkhub-bin) (name "openlinkhub")))
+;; AUR teamspeak -> gaurix teamspeak-client-bin
+(define-public teamspeak (package (inherit teamspeak-client-bin) (name "teamspeak")))
+;; AUR windsurf -> gaurix windsurf-bin
+(define-public windsurf (package (inherit windsurf-bin) (name "windsurf")))
+;; AUR winbox -> gaurix winbox-bin
+(define-public winbox (package (inherit winbox-bin) (name "winbox")))
+;; AUR gogcli -> gaurix gogcli-bin
+(define-public gogcli (package (inherit gogcli-bin) (name "gogcli")))
+;; AUR wps-office-cn -> gaurix wps-office-cn-bin
+(define-public wps-office-cn (package (inherit wps-office-cn-bin) (name "wps-office-cn")))
+;; AUR zsh-theme-powerlevel10k-git -> gaurix zsh-theme-powerlevel10k
+(define-public zsh-theme-powerlevel10k-git (package (inherit zsh-theme-powerlevel10k) (name "zsh-theme-powerlevel10k-git")))
+;; AUR google-cloud-cli -> gaurix google-cloud-cli-bin
+(define-public google-cloud-cli (package (inherit google-cloud-cli-bin) (name "google-cloud-cli")))
+;; AUR ivpn-ui -> gaurix ivpn-ui-bin
+(define-public ivpn-ui (package (inherit ivpn-ui-bin) (name "ivpn-ui")))
+;; AUR ivpn -> gaurix ivpn-bin
+(define-public ivpn (package (inherit ivpn-bin) (name "ivpn")))
+;; AUR mihomo -> gaurix mihomo-bin
+(define-public mihomo (package (inherit mihomo-bin) (name "mihomo")))
+;; AUR barrier -> gaurix barrier-bin
+(define-public barrier (package (inherit barrier-bin) (name "barrier")))
+;; AUR netbird-ui -> gaurix netbird-ui-bin
+(define-public netbird-ui (package (inherit netbird-ui-bin) (name "netbird-ui")))
+;; AUR netbird-server -> gaurix netbird-server-bin
+(define-public netbird-server (package (inherit netbird-server-bin) (name "netbird-server")))
+;; AUR imgbrd-grabber-git -> gaurix imgbrd-grabber-bin
+(define-public imgbrd-grabber-git (package (inherit imgbrd-grabber-bin) (name "imgbrd-grabber-git")))
+;; AUR ocs-url -> gaurix ocs-url-bin
+(define-public ocs-url (package (inherit ocs-url-bin) (name "ocs-url")))
+;; AUR appmanager -> gaurix appmanager-bin
+(define-public appmanager (package (inherit appmanager-bin) (name "appmanager")))
+;; AUR euphonica -> gaurix euphonica-bin
+(define-public euphonica (package (inherit euphonica-bin) (name "euphonica")))
+;; AUR drawy -> gaurix drawy-bin
+(define-public drawy (package (inherit drawy-bin) (name "drawy")))
+;; AUR helium-browser -> gaurix helium-browser-bin
+(define-public helium-browser (package (inherit helium-browser-bin) (name "helium-browser")))
+;; AUR m8mouse-git -> gaurix m8mouse
+(define-public m8mouse-git (package (inherit m8mouse) (name "m8mouse-git")))
+;; AUR rapidraw -> gaurix rapidraw-bin
+(define-public rapidraw (package (inherit rapidraw-bin) (name "rapidraw")))
+;; AUR android-sdk-cmdline-tools-latest -> gaurix android-sdk-cmdline-tools-bin
+(define-public android-sdk-cmdline-tools-latest (package (inherit android-sdk-cmdline-tools-bin) (name "android-sdk-cmdline-tools-latest")))
+;; AUR hunspell-ja-git -> gaurix hunspell-ja
+(define-public hunspell-ja-git (package (inherit hunspell-ja) (name "hunspell-ja-git")))
+;; AUR recaf-git -> gaurix recaf-bin
+(define-public recaf-git (package (inherit recaf-bin) (name "recaf-git")))
+;; AUR emsdk -> gaurix emsdk-bin
+(define-public emsdk (package (inherit emsdk-bin) (name "emsdk")))
