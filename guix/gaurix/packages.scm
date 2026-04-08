@@ -355,6 +355,7 @@
   #:use-module (gaurix packages recipe-resolver-260408j)
   #:use-module (gaurix packages recipe-resolver-260408k)
   #:use-module (gaurix packages recipe-resolver-260408l)
+  #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages deptree-resolver-260408d)
   #:use-module (gaurix packages deptree-resolver-260408d-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260408e)
@@ -8718,4 +8719,15 @@ podman-tui-bin
             xrizer
             xtensa-lx106-elf-gcc-bin
             yabridgectl-wine10-git
+            ;; recipe-resolver-260408l
+            wafw00f
+            yamlfix
+            pamix
+            wb32-dfu-updater
+            holyc-lang
+            sdbus-cpp
+            alacritty-use-theme-with-gnome-darkmode
+            sayonara-player
+            mrboom
+            pixelterm-c
 )

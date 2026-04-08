@@ -228,6 +228,7 @@
   #:use-module (gaurix packages recipe-resolver-260408j)
   #:use-module (gaurix packages recipe-resolver-260408k)
   #:use-module (gaurix packages recipe-resolver-260408l)
+  #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages deptree-resolver-260408e)
   #:export (
             ;; deptree-resolver-260407 compat aliases
@@ -4645,3 +4646,7 @@
 ;; AUR llama.cpp-hip -> gaurix llama-cpp-hip
 (define-public llama-dot-cpp-hip (package (inherit llama-cpp-hip) (name "llama.cpp-hip")))
 
+;; --- recipe-resolver-260408l compat aliases ---
+
+;; AUR alacritty-use-theme-with-gnome-darkmode -> gaurix alacritty-use-theme-with-gnome-darkmode
+(define-public alacritty-gnome-darkmode (package (inherit alacritty-use-theme-with-gnome-darkmode) (name "alacritty-gnome-darkmode")))
