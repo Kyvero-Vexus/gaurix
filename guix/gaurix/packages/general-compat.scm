@@ -236,6 +236,7 @@
   #:use-module (gaurix packages recipe-resolver-260408o)
   #:use-module (gaurix packages recipe-resolver-260408p)
   #:use-module (gaurix packages recipe-resolver-260408q)
+  #:use-module (gaurix packages recipe-resolver-260408r)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
@@ -4809,3 +4810,35 @@
 (define-public ttf-selawik (package (inherit font-selawik) (name "ttf-selawik")))
 (define-public ttf-sipa-sarabun (package (inherit font-sipa-sarabun) (name "ttf-sipa-sarabun")))
 (define-public ttf-sipa-sarabun-new (package (inherit font-sipa-sarabun-new) (name "ttf-sipa-sarabun-new")))
+
+; --- recipe-resolver-260408r compat aliases ---
+
+;; AUR simplex-chat -> gaurix simplex-chat-bin
+(define-public simplex-chat (package (inherit simplex-chat-bin) (name "simplex-chat")))
+
+;; AUR sourcegit -> gaurix sourcegit-bin
+(define-public sourcegit (package (inherit sourcegit-bin) (name "sourcegit")))
+
+;; AUR github-desktop-plus -> gaurix github-desktop-plus-bin
+(define-public github-desktop-plus (package (inherit github-desktop-plus-bin) (name "github-desktop-plus")))
+
+;; AUR seamonkey -> gaurix seamonkey-bin
+(define-public seamonkey (package (inherit seamonkey-bin) (name "seamonkey")))
+
+;; AUR openbuilds-control -> gaurix openbuilds-control-bin
+(define-public openbuilds-control (package (inherit openbuilds-control-bin) (name "openbuilds-control")))
+
+;; AUR bfg -> gaurix bfg-repo-cleaner
+(define-public bfg (package (inherit bfg-repo-cleaner) (name "bfg")))
+
+;; AUR nzbhydra2 -> gaurix nzbhydra2-bin
+(define-public nzbhydra2 (package (inherit nzbhydra2-bin) (name "nzbhydra2")))
+
+;; AUR deadd-notification-center -> gaurix deadd-notification-center-bin
+(define-public deadd-notification-center (package (inherit deadd-notification-center-bin) (name "deadd-notification-center")))
+
+;; AUR candy-icons -> gaurix candy-icons-git
+(define-public candy-icons (package (inherit candy-icons-git) (name "candy-icons")))
+
+;; AUR sweet-folders-icons -> gaurix sweet-folders-icons-git
+(define-public sweet-folders-icons (package (inherit sweet-folders-icons-git) (name "sweet-folders-icons")))
