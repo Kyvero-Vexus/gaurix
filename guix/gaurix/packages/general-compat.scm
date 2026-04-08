@@ -247,6 +247,7 @@
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408j)
   #:use-module (gaurix packages deptree-resolver-260408k)
+  #:use-module (gaurix packages recipe-resolver-260408y)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1626,6 +1627,30 @@
             graphite-gtk-theme-black-git
             graphite-gtk-theme-black-compact-git
             fontpreview-git
+            ;; recipe-resolver-260408y
+            unciv-bin
+            pseint-bin
+            sparta-plugins-bin
+            pdf4qt-bin
+            spotube-bin
+            audio-share-bin
+            nekoray-bin
+            tacentview-bin
+            exifcleaner-bin
+            sherlock-launcher-bin
+            koala-clash-bin
+            termframe-bin
+            voxtype-bin
+            odinls-bin
+            raptor-cage-bin
+            geteduroam-gui-bin
+            dawn-writer-bin
+            portablemc-bin
+            cake-wallet-bin
+            betterbird-es-bin
+            ab-download-manager-bin
+            bizhawk-bin
+            bs-manager-bin
 ))
 
 (define-public gtk2
