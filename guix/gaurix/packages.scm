@@ -353,6 +353,8 @@
   #:use-module (gaurix packages recipe-resolver-260408h)
   #:use-module (gaurix packages compat-aliases-260408c)
   #:use-module (gaurix packages recipe-resolver-260408j)
+  #:use-module (gaurix packages deptree-resolver-260408d)
+  #:use-module (gaurix packages deptree-resolver-260408d-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
