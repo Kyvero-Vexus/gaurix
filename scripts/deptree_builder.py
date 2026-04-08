@@ -11,7 +11,7 @@ TODO_FILE = "todo_general_packages.org"
 AUR_CACHE = "data/aur-cache/packages-meta-ext-v1.json"
 REPORT_JSON = "reports/blocked-dependency-tree.json"
 REPORT_MD = "reports/blocked-dependency-tree.md"
-SELECTED_JSON = "reports/deptree-resolver-260407e-selection.json"
+SELECTED_JSON = "reports/deptree-resolver-260407g-selection.json"
 
 def extract_blocked_packages(todo_file):
     """Extract all BLOCKED package names and their line numbers from the todo file."""

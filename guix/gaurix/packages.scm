@@ -330,6 +330,7 @@
   #:use-module (gaurix packages queue-20260407-opus-p101)
   #:use-module (gaurix packages deptree-resolver-260407e)
   #:use-module (gaurix packages deptree-resolver-260407e-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260407g)
   #:use-module (gaurix packages recipe-resolver-260407h)
   #:use-module (gaurix packages recipe-resolver-260407i)
             ;; queue-20260406p100b: 18 recipes + 82 blocked

@@ -200,6 +200,7 @@
   #:use-module (gaurix packages recipe-resolver-260407h)
   #:use-module (gaurix packages recipe-resolver-260407i)
   #:use-module (gaurix packages recipe-resolver-260407j)
+  #:use-module (gaurix packages deptree-resolver-260407g)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -3551,6 +3552,24 @@
             layan-gtk-theme
             cfs-zen-tweaks
             gpaste-menu
+            ;; deptree-resolver-260407g re-exports
+            caligula-bin
+            capa-bin
+            carapace-bin
+            catbox-bin
+            catwalk-bin
+            chibi-cli-bin
+            chmod-cli-bin
+            bililive-recorder-bin
+            fonts-droid-fallback
+            fonts-noto-hinted
+            catppuccin-cursors-frappe
+            catppuccin-cursors-macchiato
+            catppuccin-cursors-mocha
+            catppuccin-gtk-theme-macchiato
+            catppuccin-gtk-theme-mocha
+            cdirip
+            c47-bin
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
@@ -3567,3 +3586,6 @@
 
 ;; ─── recipe-resolver-260407i compat aliases ───
 ;; (all re-exported directly from the recipe module, no aliases needed)
+
+;; ─── deptree-resolver-260407g compat aliases ───
+;; (all 17 packages re-exported directly from deptree-resolver-260407g, no aliases needed)
