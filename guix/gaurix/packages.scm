@@ -331,12 +331,15 @@
   #:use-module (gaurix packages deptree-resolver-260407e)
   #:use-module (gaurix packages deptree-resolver-260407e-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260407g)
+  #:use-module (gaurix packages deptree-resolver-260407h)
+  #:use-module (gaurix packages deptree-resolver-260407h-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260407h)
   #:use-module (gaurix packages recipe-resolver-260407i)
   #:use-module (gaurix packages recipe-resolver-260407j)
   #:use-module (gaurix packages recipe-resolver-260407k)
   #:use-module (gaurix packages recipe-resolver-260407l)
   #:use-module (gaurix packages recipe-resolver-260407m)
+  #:use-module (gaurix packages recipe-resolver-260407n)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8357,4 +8360,35 @@ podman-tui-bin
             qt6-jpegxl-image-plugin
             zls-master-bin
             optimus-manager-qt
+            ;; recipe-resolver-260407n
+            torrserver-bin
+            ov-bin
+            tgcp-bin
+            tredis-bin
+            rjq-bin
+            superdb-bin
+            pomo-bin
+            sq-bin
+            plenti-bin
+            code-minimap-bin
+            terraformer-bin
+            kubeshark-bin
+            git-brunch-bin
+            memtui-bin
+            goplaying-bin
+            lazyactions-bin
+            mmdr-bin
+            goful-bin
+            tsql-bin
+            go-prism-bin
+            r-quick-share-bin
+            stash-bin
+            crush-bin
+            mongodb-tools-bin
+            open-tv-bin
+            querycat-bin
+            mods-bin
+            zvm-bin
+            kyanos-bin
+            crab-bin
 )

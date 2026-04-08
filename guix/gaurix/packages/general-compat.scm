@@ -335,7 +335,9 @@
   #:use-module (gaurix packages recipe-resolver-260407k)
   #:use-module (gaurix packages recipe-resolver-260407l)
   #:use-module (gaurix packages recipe-resolver-260407m)
+  #:use-module (gaurix packages recipe-resolver-260407n)
   #:use-module (gaurix packages deptree-resolver-260407g)
+  #:use-module (gaurix packages deptree-resolver-260407h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -3736,6 +3738,56 @@
             catppuccin-gtk-theme-mocha
             cdirip
             c47-bin
+            ;; recipe-resolver-260407n re-exports
+            torrserver-bin
+            ov-bin
+            tgcp-bin
+            tredis-bin
+            rjq-bin
+            superdb-bin
+            pomo-bin
+            sq-bin
+            plenti-bin
+            code-minimap-bin
+            terraformer-bin
+            kubeshark-bin
+            git-brunch-bin
+            memtui-bin
+            goplaying-bin
+            lazyactions-bin
+            mmdr-bin
+            goful-bin
+            tsql-bin
+            go-prism-bin
+            r-quick-share-bin
+            stash-bin
+            crush-bin
+            mongodb-tools-bin
+            open-tv-bin
+            querycat-bin
+            mods-bin
+            zvm-bin
+            kyanos-bin
+            crab-bin
+            ;; deptree-resolver-260407h re-exports
+            cagent-bin
+            claude-agent-acp-bin
+            cloudflare-speed-cli-bin
+            cloudflarewarpspeedtest-bin
+            codecrafters-bin
+            codegrab-bin
+            codes-bin
+            convcommitlint-bin
+            carbonyl-bin
+            compressonator-cli-bin
+            cosmocc-bin
+            chess-merida-font
+            chromium-extension-adnauseam
+            chromium-extension-web-store
+            perl-test-useallmodules
+            blindpaste
+            chkrootkit
+            betterbird-fr-bin
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
@@ -3755,3 +3807,6 @@
 
 ;; ─── deptree-resolver-260407g compat aliases ───
 ;; (all 17 packages re-exported directly from deptree-resolver-260407g, no aliases needed)
+
+;; ─── deptree-resolver-260407h compat aliases ───
+;; (all 18 packages re-exported directly from deptree-resolver-260407h, no aliases needed)
