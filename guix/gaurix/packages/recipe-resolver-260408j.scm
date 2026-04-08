@@ -19,10 +19,13 @@
   #:use-module (guix build-system trivial)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module ((nonguix licenses) #:prefix nonguix-license:)
+  #:use-module (gnu packages admin)
+  #:use-module (gnu packages algebra)
   #:use-module (gnu packages base)
+  #:use-module (gnu packages bash)
   #:use-module (gnu packages compression)
   #:use-module (gnu packages java)
-  #:use-module (gnu packages bash)
+  #:use-module (gnu packages wm)
   #:export (
             imgbrd-grabber-bin
             netcoredbg-bin
@@ -78,6 +81,14 @@
             gdm-settings-bin
             gimp-plugin-gimp3-tools-bin
             zclock-bin
+            ;; recipe-resolver-260408j pass 2 (NRD)
+            wootility-appimage
+            muse-sounds-manager-bin
+            java-openjdk-ea-bin
+            auto-throttle
+            swiftly-bin
+            trayer
+            nnn-nerd
             ))
 
 ;;;
@@ -2257,4 +2268,244 @@ path operations, and batch processing.")
 Zig.  It displays the current time in a large, readable format
 in the terminal.")
     (license license:expat)))
+
+;;;
+;;; ── recipe-resolver-260408j pass 2 (NRD) ──────────────────────
+;;; 5 binary recipes + 2 compat aliases for NEEDS_RECIPE_DESIGN resolution
+;;;
+
+;;;
+;;; ── wootility-appimage ──────────────────────────────────────────
+;;; Configuration utility for Wooting keyboards
+;;;
+(define-public wootility-appimage
+  (package
+    (name "wootility-appimage")
+    (version "5.2.5")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://api.wooting.io/public/wootility/download"
+             "?os=linux&version=" version))
+       (file-name (string-append "Wootility-" version ".AppImage"))
+       (sha256
+        (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("wootility" "bin/wootility"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (replace 'unpack
+            (lambda* (#:key source #:allow-other-keys)
+              (copy-file source "wootility")
+              (chmod "wootility" #o755)))
+          (delete 'install-license-files))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://wooting.io/wootility")
+    (synopsis "configuration utility for Wooting analog keyboards")
+    (description
+     "Wootility is the configuration application for Wooting analog
+mechanical keyboards.  It provides firmware updates, key remapping,
+actuation point adjustment, and analog profile management.  This
+package provides the pre-built AppImage binary.")
+    (license (nonguix-license:nonfree
+              "https://wooting.io/terms"))))
+
+;;;
+;;; ── muse-sounds-manager-bin ──────────────────────────────────────────
+;;; Manage MuseScore sound libraries
+;;;
+(define-public muse-sounds-manager-bin
+  (package
+    (name "muse-sounds-manager-bin")
+    (version "2.1.1.912")
+    (source
+     (origin
+       (method url-fetch)
+       (uri "https://muse-cdn.com/Muse_Sounds_Manager_x64.tar.gz")
+       (file-name (string-append "muse-sounds-manager-" version ".tar.gz"))
+       (sha256
+        (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~`((,(string-append "Muse_Sounds_Manager_x64_" #$version "/bin")
+           "opt/muse-sounds-manager/"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (add-after 'install 'create-wrapper
+            (lambda* (#:key outputs #:allow-other-keys)
+              (let* ((out (assoc-ref outputs "out"))
+                     (bin (string-append out "/bin")))
+                (mkdir-p bin)
+                (symlink (string-append out "/opt/muse-sounds-manager/muse-sounds-manager")
+                         (string-append bin "/muse-sounds-manager")))))
+          (delete 'install-license-files))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://www.musehub.com/")
+    (synopsis "manage MuseScore sound libraries and instruments")
+    (description
+     "Muse Sounds Manager is the companion application for downloading
+and managing high-quality instrument sound libraries for MuseScore 4.
+It provides a graphical interface for browsing, installing, and
+updating sound packs.  This package provides the pre-built binary.")
+    (license (nonguix-license:nonfree
+              "https://www.musehub.com/terms"))))
+
+;;;
+;;; ── java-openjdk-ea-bin ──────────────────────────────────────────
+;;; Early-access build of OpenJDK
+;;;
+(define-public java-openjdk-ea-bin
+  (package
+    (name "java-openjdk-ea-bin")
+    (version "27b14")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://download.java.net/java/early_access/jdk27/"
+             "14/GPL/openjdk-27-ea+14_linux-x64_bin.tar.gz"))
+       (sha256
+        (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("." "lib/jvm/java-openjdk-ea/"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (replace 'unpack
+            (lambda* (#:key source #:allow-other-keys)
+              (invoke "tar" "xzf" source "--strip-components=1")))
+          (add-after 'install 'create-symlinks
+            (lambda* (#:key outputs #:allow-other-keys)
+              (let* ((out (assoc-ref outputs "out"))
+                     (jvm (string-append out "/lib/jvm/java-openjdk-ea"))
+                     (bin (string-append out "/bin")))
+                (mkdir-p bin)
+                (symlink (string-append jvm "/bin/java")
+                         (string-append bin "/java-ea"))
+                (symlink (string-append jvm "/bin/javac")
+                         (string-append bin "/javac-ea")))))
+          (delete 'install-license-files))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://jdk.java.net/27/")
+    (synopsis "early-access build of OpenJDK 27")
+    (description
+     "This package provides an early-access (EA) build of OpenJDK 27
+for testing upcoming Java features before the official release.
+EA builds are not intended for production use.  This package installs
+the pre-built JDK from the official Oracle/OpenJDK distribution.")
+    (license license:gpl2+)))
+
+;;;
+;;; ── auto-throttle ──────────────────────────────────────────
+;;; Lightweight thermal and power management for Linux
+;;;
+(define-public auto-throttle
+  (package
+    (name "auto-throttle")
+    (version "1.0.4")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://github.com/ZauJulio/AutoThrottleSetup/archive"
+             "/refs/tags/v" version ".tar.gz"))
+       (file-name (string-append name "-" version ".tar.gz"))
+       (sha256
+        (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("auto-throttle.sh" "bin/auto-throttle")
+           ("auto-throttle.conf" "etc/auto-throttle.conf"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (replace 'unpack
+            (lambda* (#:key source #:allow-other-keys)
+              (invoke "tar" "xzf" source "--strip-components=1")))
+          (add-after 'unpack 'fix-paths
+            (lambda _
+              (substitute* "auto-throttle.sh"
+                (("/usr/local/bin/auto-throttle")
+                 "auto-throttle"))))
+          (add-after 'install 'make-executable
+            (lambda* (#:key outputs #:allow-other-keys)
+              (chmod (string-append (assoc-ref outputs "out")
+                                    "/bin/auto-throttle")
+                     #o755)))
+          (delete 'install-license-files))))
+    (inputs (list bash bc))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://github.com/ZauJulio/AutoThrottleSetup")
+    (synopsis "lightweight thermal and power management orchestration for Linux")
+    (description
+     "Auto-Throttle is a lightweight thermal and power management tool
+for Linux.  It monitors CPU temperature and adjusts performance settings
+to prevent overheating while maintaining responsiveness.  Configuration
+is via a simple config file.  This package installs the management
+script and default configuration.")
+    (license license:expat)))
+
+;;;
+;;; ── swiftly-bin ──────────────────────────────────────────
+;;; Swift toolchain installer and manager
+;;;
+(define-public swiftly-bin
+  (package
+    (name "swiftly-bin")
+    (version "1.1.1")
+    (source
+     (origin
+       (method url-fetch)
+       (uri (string-append
+             "https://download.swift.org/swiftly/linux/swiftly-"
+             version "-x86_64.tar.gz"))
+       (sha256
+        (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system copy-build-system)
+    (arguments
+     (list
+      #:install-plan
+      #~'(("swiftly" "bin/swiftly"))
+      #:phases
+      #~(modify-phases %standard-phases
+          (replace 'unpack
+            (lambda* (#:key source #:allow-other-keys)
+              (invoke "tar" "xzf" source)))
+          (delete 'install-license-files))))
+    (supported-systems '("x86_64-linux"))
+    (home-page "https://swiftlang.github.io/swiftly/")
+    (synopsis "swift toolchain installer and manager")
+    (description
+     "Swiftly is a command-line tool for installing and managing Swift
+toolchains on Linux.  It handles downloading, installing, and switching
+between different versions of the Swift compiler and runtime.  This
+package provides the pre-built binary.")
+    (license license:asl2.0)))
+
+;;;
+;;; ── Compat aliases (NRD pass) ──────────────────────────────────
+;;;
+
+;; AUR trayer -> Guix trayer-srg (same upstream project)
+(define-public trayer
+  (package
+    (inherit trayer-srg)
+    (name "trayer")))
+
+;; AUR nnn-nerd -> Guix nnn
+;; Note: AUR variant builds nnn with O_NERD=1 for nerd font icons;
+;; this alias maps to standard nnn without nerd font support.
+(define-public nnn-nerd
+  (package
+    (inherit nnn)
+    (name "nnn-nerd")))
 
