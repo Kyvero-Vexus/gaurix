@@ -214,6 +214,10 @@
   #:use-module (gaurix packages recipe-resolver-260408c)
   #:use-module (gaurix packages recipe-resolver-260408d)
   #:use-module (gaurix packages recipe-resolver-260408e)
+  #:use-module (gaurix packages recipe-resolver-260408b)
+  #:use-module (gaurix packages recipe-resolver-260408c)
+  #:use-module (gaurix packages recipe-resolver-260408d)
+  #:use-module (gaurix packages recipe-resolver-260408e)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1189,6 +1193,141 @@
             qt6-jpegxl-image-plugin
             zls-master-bin
             optimus-manager-qt
+            ;; recipe-resolver-260408b re-exports
+            otf-atkinson-hyperlegible-next
+            ttf-atkinson-hyperlegible-next
+            ttf-atkinson-hyperlegible-next-variable
+            otf-atkinson-hyperlegible-next-mono
+            ttf-atkinson-hyperlegible-next-mono
+            ttf-atkinson-hyperlegible-next-mono-variable
+            blobmoji
+            candy-icons-git
+            sweet-folders-icons-git
+            gruvbox-icon-theme-git
+            breeze-hacked-cursor-theme-git
+            grub-theme-tela-white-2k-git
+            grub-theme-tela-white-4k-git
+            grub2-theme-archxion
+            grub2-theme-archlinux
+            sound-theme-smooth
+            gruvbox-gtk-theme-git
+            xfce-theme-cobibird
+            fagram-bin
+            pixieditor-bin
+            android-apktool-bin
+            amdgpu-clocks
+            python-funk
+            nvimpager
+            jome
+            croaring
+            logiops-git
+            duckduckgo-chat-cli
+            plymouth-theme-hexagon-alt-gruvbox
+            puddletag
+            ;; recipe-resolver-260408c re-exports
+            palemoon-bin
+            simplex-desktop-appimage
+            alcom-bin
+            torrra-bin
+            katana-bin
+            ytui-bin
+            clang-format-static-bin
+            easytier-bin
+            reshell-bin
+            quickserv-bin
+            f2-bin
+            nfpm-bin
+            breaktimer-bin
+            activitywatch-bin
+            zaproxy-bin
+            codename-goose-bin
+            flaca-bin
+            mcontrolcenter-bin
+            soundy-bin
+            nimo-bin
+            webplotdigitizer-bin
+            tunein-cli-bin
+            littlenavmap-bin
+            tuxedo-webfai-creator-bin
+            nethermind-ethereum-bin
+            emudeck-bin
+            fontbase
+            epochcli
+            spoofdpi
+            smartamp
+            qtscrcpy-bin
+            implay
+            chiaki-ng
+            fluent-reader-bin
+            ;; recipe-resolver-260408d re-exports
+            ttf-wps-fonts
+            ttf-rounded-mplus
+            behdad-fonts
+            shahab-fonts
+            iranian-fonts
+            tanha-fonts
+            ttf-signika
+            ttf-merriweather-sans
+            ttf-merriweather
+            ttf-quintessential
+            ttf-readex-pro
+            maplemono-ttf-autohint
+            ttf-rubik-vf
+            ttf-material-icons-git
+            phinger-cursors
+            catppuccin-gtk-theme-git
+            numix-square-icon-theme
+            python-pip-search
+            python-lsp-ruff
+            python-chex
+            python-hf-transfer
+            python-pynvml
+            python-ipware
+            python-fugashi
+            python-msoffcrypto-tool
+            python-gps3
+            python-manuf
+            nvitop
+            angrysearch
+            python-vondb
+            kcc
+            beeref
+            ;; recipe-resolver-260408e re-exports
+            btrfs-list
+            chkboot
+            envchain
+            lpac
+            libeuicc
+            minify
+            cheat
+            quickserve
+            dcfldd
+            i8kutils
+            cmoc
+            lwtools
+            procmon
+            snort
+            crowdsec
+            tetrs
+            bkmr
+            stor
+            jellyfin-tui
+            oblivion-desktop-bin
+            siyuan-note-bin
+            codex-bin
+            gowall
+            ;; 260408c-batch compat aliases
+            vulkan-icd-loader-git
+            bdf-unifont
+            fastfetch-gif-git
+            libmpv-git
+            yaru-sound-theme
+            yaru-gtksourceview-theme
+            yaru-gnome-shell-theme
+            yaru-xfwm4-theme
+            yaru-unity-theme
+            yaru-metacity-theme
+            yaru-session
             ;; recipe-resolver-260408b re-exports
             otf-atkinson-hyperlegible-next
             ttf-atkinson-hyperlegible-next
@@ -4034,6 +4173,76 @@
 
 ;; ─── deptree-resolver-260408a compat aliases ───
 ;; (all 7 packages re-exported directly from deptree-resolver-260408a, no aliases needed)
+
+
+;; --- recipe-resolver-260408b compat aliases ---
+;; (all 30 packages are new definitions with no AUR name aliases needed)
+
+;; --- recipe-resolver-260408c compat aliases ---
+;; (all 34 packages are new definitions with no AUR name aliases needed)
+
+;; --- recipe-resolver-260408d compat aliases ---
+;; (all 32 packages are new definitions with no AUR name aliases needed)
+
+;; --- recipe-resolver-260408e compat aliases ---
+;; (all 23 packages are new definitions with no AUR name aliases needed)
+
+;; --- 260408c-batch compat aliases (AUR names -> Guix packages) ---
+
+(define-public vulkan-icd-loader-git
+  (package
+    (inherit vulkan-loader)
+    (name "vulkan-icd-loader-git")))
+
+(define-public bdf-unifont
+  (package
+    (inherit font-gnu-unifont)
+    (name "bdf-unifont")))
+
+(define-public fastfetch-gif-git
+  (package
+    (inherit fastfetch)
+    (name "fastfetch-gif-git")))
+
+(define-public libmpv-git
+  (package
+    (inherit mpv)
+    (name "libmpv-git")))
+
+(define-public yaru-sound-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-sound-theme")))
+
+(define-public yaru-gtksourceview-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-gtksourceview-theme")))
+
+(define-public yaru-gnome-shell-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-gnome-shell-theme")))
+
+(define-public yaru-xfwm4-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-xfwm4-theme")))
+
+(define-public yaru-unity-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-unity-theme")))
+
+(define-public yaru-metacity-theme
+  (package
+    (inherit yaru-theme)
+    (name "yaru-metacity-theme")))
+
+(define-public yaru-session
+  (package
+    (inherit yaru-theme)
+    (name "yaru-session")))
 
 
 ;; --- recipe-resolver-260408b compat aliases ---
