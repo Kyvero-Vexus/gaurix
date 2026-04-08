@@ -235,6 +235,7 @@
   #:use-module (gaurix packages recipe-resolver-260408m)
   #:use-module (gaurix packages recipe-resolver-260408o)
   #:use-module (gaurix packages recipe-resolver-260408p)
+  #:use-module (gaurix packages recipe-resolver-260408q)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -4742,3 +4743,47 @@
 
 ;; AUR sc-git -> gaurix sc
 (define-public sc-git (package (inherit sc) (name "sc-git")))
+
+; --- recipe-resolver-260408q compat aliases ---
+
+;; AUR cliamp -> gaurix cliamp-bin
+(define-public cliamp (package (inherit cliamp-bin) (name "cliamp")))
+
+;; AUR air -> gaurix air-bin
+(define-public air (package (inherit air-bin) (name "air")))
+
+;; AUR mpm -> gaurix meta-package-manager-bin
+(define-public mpm (package (inherit meta-package-manager-bin) (name "mpm")))
+
+;; AUR zigmir -> gaurix zigmir-bin
+(define-public zigmir (package (inherit zigmir-bin) (name "zigmir")))
+
+;; AUR gopac -> gaurix gopac-bin
+(define-public gopac (package (inherit gopac-bin) (name "gopac")))
+
+;; AUR lian -> gaurix lian-bin
+(define-public lian (package (inherit lian-bin) (name "lian")))
+
+;; AUR spout2pw -> gaurix spout2pw-bin
+(define-public spout2pw (package (inherit spout2pw-bin) (name "spout2pw")))
+
+;; AUR geforce-infinity -> gaurix geforce-infinity-bin
+(define-public geforce-infinity (package (inherit geforce-infinity-bin) (name "geforce-infinity")))
+
+;; AUR flclash -> gaurix flclash-bin
+(define-public flclash (package (inherit flclash-bin) (name "flclash")))
+
+;; AUR reqable -> gaurix reqable-bin
+(define-public reqable (package (inherit reqable-bin) (name "reqable")))
+
+;; AUR boscaceoil-blue -> gaurix boscaceoil-blue-bin
+(define-public boscaceoil-blue (package (inherit boscaceoil-blue-bin) (name "boscaceoil-blue")))
+
+;; AUR ferrishot -> gaurix ferrishot-bin
+(define-public ferrishot (package (inherit ferrishot-bin) (name "ferrishot")))
+
+;; AUR ferris-scan -> gaurix ferris-scan-bin
+(define-public ferris-scan (package (inherit ferris-scan-bin) (name "ferris-scan")))
+
+;; AUR bililive-recorder -> gaurix bililive-recorder-bin
+(define-public bililive-recorder (package (inherit bililive-recorder-bin) (name "bililive-recorder")))

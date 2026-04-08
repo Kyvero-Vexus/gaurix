@@ -8942,4 +8942,5 @@ podman-tui-bin
             slack
             slackdump-bin
             slides-bin
+  #:use-module (gaurix packages recipe-resolver-260408q)
 )
