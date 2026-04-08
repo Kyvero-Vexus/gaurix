@@ -241,6 +241,7 @@
   #:use-module (gaurix packages recipe-resolver-260408t)
   #:use-module (gaurix packages recipe-resolver-260408u)
   #:use-module (gaurix packages recipe-resolver-260408v)
+  #:use-module (gaurix packages recipe-resolver-260408w)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408j)
@@ -1597,6 +1598,32 @@
             waybar-crypto
             lief
             mstflint
+            graphite-gtk-theme-wallpaper-git
+            graphite-gtk-theme-rimless-normal-git
+            graphite-gtk-theme-rimless-normal-compact-git
+            graphite-gtk-theme-rimless-git
+            graphite-gtk-theme-rimless-compact-git
+            graphite-gtk-theme-normal-git
+            graphite-gtk-theme-normal-compact-git
+            graphite-gtk-theme-nord-rimless-normal-git
+            graphite-gtk-theme-nord-rimless-normal-compact-git
+            graphite-gtk-theme-nord-rimless-git
+            graphite-gtk-theme-nord-rimless-compact-git
+            graphite-gtk-theme-nord-normal-git
+            graphite-gtk-theme-nord-normal-compact-git
+            graphite-gtk-theme-nord-git
+            graphite-gtk-theme-nord-compact-git
+            graphite-gtk-theme-git
+            graphite-gtk-theme-compact-git
+            graphite-gtk-theme-black-rimless-normal-git
+            graphite-gtk-theme-black-rimless-normal-compact-git
+            graphite-gtk-theme-black-rimless-git
+            graphite-gtk-theme-black-rimless-compact-git
+            graphite-gtk-theme-black-normal-git
+            graphite-gtk-theme-black-normal-compact-git
+            graphite-gtk-theme-black-git
+            graphite-gtk-theme-black-compact-git
+            fontpreview-git
 ))
 
 (define-public gtk2
@@ -5027,4 +5054,139 @@
 
 ;; --- recipe-resolver-260408v compat aliases ---
 ;; (No compat aliases needed - all packages have unique names)
+
+
+;;;
+;;; -- recipe-resolver-260408w compat aliases --------------------------
+;;;
+
+(define-public graphite-gtk-theme-wallpaper-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-wallpaper-git")))
+
+(define-public graphite-gtk-theme-rimless-normal-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-rimless-normal-git")))
+
+(define-public graphite-gtk-theme-rimless-normal-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-rimless-normal-compact-git")))
+
+(define-public graphite-gtk-theme-rimless-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-rimless-git")))
+
+(define-public graphite-gtk-theme-rimless-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-rimless-compact-git")))
+
+(define-public graphite-gtk-theme-normal-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-normal-git")))
+
+(define-public graphite-gtk-theme-normal-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-normal-compact-git")))
+
+(define-public graphite-gtk-theme-nord-rimless-normal-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-rimless-normal-git")))
+
+(define-public graphite-gtk-theme-nord-rimless-normal-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-rimless-normal-compact-git")))
+
+(define-public graphite-gtk-theme-nord-rimless-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-rimless-git")))
+
+(define-public graphite-gtk-theme-nord-rimless-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-rimless-compact-git")))
+
+(define-public graphite-gtk-theme-nord-normal-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-normal-git")))
+
+(define-public graphite-gtk-theme-nord-normal-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-normal-compact-git")))
+
+(define-public graphite-gtk-theme-nord-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-git")))
+
+(define-public graphite-gtk-theme-nord-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-nord-compact-git")))
+
+(define-public graphite-gtk-theme-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-git")))
+
+(define-public graphite-gtk-theme-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-compact-git")))
+
+(define-public graphite-gtk-theme-black-rimless-normal-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-rimless-normal-git")))
+
+(define-public graphite-gtk-theme-black-rimless-normal-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-rimless-normal-compact-git")))
+
+(define-public graphite-gtk-theme-black-rimless-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-rimless-git")))
+
+(define-public graphite-gtk-theme-black-rimless-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-rimless-compact-git")))
+
+(define-public graphite-gtk-theme-black-normal-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-normal-git")))
+
+(define-public graphite-gtk-theme-black-normal-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-normal-compact-git")))
+
+(define-public graphite-gtk-theme-black-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-git")))
+
+(define-public graphite-gtk-theme-black-compact-git
+  (package
+    (inherit graphite-gtk-theme)
+    (name "graphite-gtk-theme-black-compact-git")))
+
+(define-public fontpreview-git
+  (package
+    (inherit fontpreview)
+    (name "fontpreview-git")))
 
