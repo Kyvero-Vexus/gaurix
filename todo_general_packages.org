@@ -370,9 +370,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 58. anbox-git
    - Source List: authoritative AUR git endpoint `https://aur.archlinux.org/anbox-git.git` (HEAD reachable at evaluation time).
-   - Status: Attempted in 2026-03-20 queue-drain batch; not safely completable in this pass without custom packaging/rework beyond batch limits.
+   - Status: BLOCKED: NOT_IN_AUR — Android-in-a-box. Project discontinued, succeeded by Waydroid.
    - Difficulty: medium
-   - Status: BLOCKED: NOT_IN_AUR_CACHE | not in AUR cache (removed/renamed) (deptree-resolver-260407d, 2026-04-07)
+   - Status: BLOCKED: NOT_IN_AUR — Android-in-a-box. Project discontinued, succeeded by Waydroid.
    - TODO Status: BLOCKED
 
 ** BLOCKED 59. genymotion
@@ -888,7 +888,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 141. apple-fonts
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `guix build -L guix -n apple-fonts` reports unknown package in current channels; requires a new Gaurix recipe (source URI/hash/build-system) to proceed.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — Apple platform fonts require Apple developer access. Custom license.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2405,7 +2405,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 380. ttf-ms-win10-auto
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no exact Guix package match from `guix search '^ttf-ms-win10-auto$'`; new recipe (source URI/hash + dependency/wrapper work) not completed safely in this queue pass.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 fonts require Windows ISO extraction. Not redistributable.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -2997,7 +2997,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 473. mechrevo-drivers-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching package in current Guix channels (`guix search ^mechrevo-drivers-dkms$` empty); DKMS driver packaging recipe not completed in this pass.
+   - Status: BLOCKED: DKMS_DRIVER — MECHREVO laptop DKMS driver. DKMS incompatible with Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -3548,7 +3548,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 562. nvidia-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No corresponding package found in current Guix set (verified with `guix search`/`guix package -A`) and no existing Gaurix recipe for this entry; requires manual upstream-source packaging (source URI, hash, build/install phases) before validation.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA kernel module (beta). Proprietary driver.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -4032,13 +4032,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 640. iscan
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Re-evaluated nrd18; Epson proprietary scanner driver.
-   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: EPSON Image Scan depends on libstdc++5 (ancient C++ library, not in Guix) and proprietary scanner plugins.
+   - Status: BLOCKED: PROPRIETARY_COMPONENTS — EPSON scanner. Mixed GPL + proprietary AVASYSPL license.
+   - Status: BLOCKED: PROPRIETARY_COMPONENTS — EPSON scanner. Mixed GPL + proprietary AVASYSPL license.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 
-   - Status: BLOCKED: MISSING_GUIX_DEPS: requires deprecated libstdc++5 (deptree-resolver-260407e, 2026-04-07)
+   - Status: BLOCKED: PROPRIETARY_COMPONENTS — EPSON scanner. Mixed GPL + proprietary AVASYSPL license.
    - TODO Status: BLOCKED
 ** BLOCKED 641. flyctl
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -4401,50 +4401,50 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 697. ttf-ms-win11-zh_tw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Traditional Chinese fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 Traditional Chinese fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Chinese (Traditional) fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Chinese (Traditional) fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 698. ttf-ms-win11-zh_cn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Simplified Chinese fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 Simplified Chinese fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Chinese (Simplified) fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Chinese (Simplified) fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 699. ttf-ms-win11-thai
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Thai fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 Thai fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Thai fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Thai fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 700. ttf-ms-win11-sea
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Southeast Asian fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 SEA fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 SEA fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 SEA fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 701. ttf-ms-win11-other
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 other fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 other fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 other fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 other fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 702. ttf-ms-win11-korean
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Korean fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 Korean fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Korean fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Korean fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 703. ttf-ms-win11-japanese
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win11 Japanese fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 11 Japanese fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Japanese fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 11 Japanese fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -7099,11 +7099,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1137. bfind
+** DONE 1137. bfind
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No existing Guix package match and no vetted upstream release recipe (source URI/hash/build steps) was completed in this queue pass.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm (as bfind-pkg). gnu-build-system, C source from Codeberg v3.0.2.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 1138. gcc14-libs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -7491,11 +7491,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 1199. bookokrat-bin
+** DONE 1199. bookokrat-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: Blocked: AUR recipe consumes precompiled release binaries; Guix package definition plus runtime validation were not completed in this queue pass.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Rust binary from GitHub v0.3.9.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 1200. cc-switch-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -7860,8 +7860,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1260. rocm-nightly-gfx1151-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm nightly gfx1151 (custom license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: NIGHTLY_UNSTABLE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; ROCm nightly build; URLs rotate daily; no stable version to pin
+   - Status: BLOCKED: HARDWARE_SPECIFIC_BINARY — ROCm nightly gfx1151. Unstable nightly URLs.
+   - Status: BLOCKED: HARDWARE_SPECIFIC_BINARY — ROCm nightly gfx1151. Unstable nightly URLs.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -8089,11 +8089,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1296. bin-cpuflags-x86-bin
+** DONE 1296. bin-cpuflags-x86-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted 2026-03-17 queue drain; authoritative AUR recipe fetched, but Guix package implementation/validation was not completed in this pass (pending package-specific build/wrapper integration).
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Rust binary from GitHub v1.0.8.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 1297. glide-browser-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -8185,11 +8185,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
 
-** BLOCKED 1312. bat-asus-battery-bin
+** DONE 1312. bat-asus-battery-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: attempted 2026-03-17 queue drain; authoritative AUR recipe fetched, but Guix package implementation/validation was not completed in this pass (pending package-specific build/wrapper integration).
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Go binary from GitHub v1.2.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 1313. python-duckduckgo-search
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -8479,8 +8479,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1360. jdk17-zulu-prime-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: Azul Zulu Prime 17 (proprietary stream license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Azul Zulu Prime is a commercial product requiring paid subscription; not freely redistributable
+   - Status: BLOCKED: PROPRIETARY_LICENSE — Azul Platform Prime JDK 17. Proprietary Azul license.
+   - Status: BLOCKED: PROPRIETARY_LICENSE — Azul Platform Prime JDK 17. Proprietary Azul license.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -8898,11 +8898,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1430. batdoc-bin
+** DONE 1430. batdoc-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Upstream binary acquisition path in AUR is helper-driven and not directly reproducible from fixed URI/hash as implemented today.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, zstd-compressed binary from GitHub v1.3.1.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 1431. arch-upgrader-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -9519,7 +9519,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1534. nerd-fonts-apple
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: no matching package `nerd-fonts-apple` in current Guix channels (`guix search '^nerd-fonts-apple$'` empty), and creating a new pinned-source recipe was not safely completed in this queue pass.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — Nerd-patched Apple fonts. Derived from proprietary Apple fonts.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -9988,50 +9988,50 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1609. ttf-ms-win10-japanese
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Japanese fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 Japanese fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Japanese fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Japanese fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1610. ttf-ms-win10-korean
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Korean fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 Korean fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Korean fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Korean fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1611. ttf-ms-win10-sea
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Southeast Asian fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 SEA fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 SEA fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 SEA fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1612. ttf-ms-win10-thai
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Thai fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 Thai fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Thai fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Thai fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1613. ttf-ms-win10-zh_cn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Simplified Chinese fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 Simplified Chinese fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Chinese (Simplified) fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Chinese (Simplified) fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1614. ttf-ms-win10-zh_tw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 Traditional Chinese fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 Traditional Chinese fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Chinese (Traditional) fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 Chinese (Traditional) fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 1615. ttf-ms-win10-other
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_NONFREE: Microsoft Win10 other fonts (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Microsoft Windows 10 other fonts; redistribution prohibited by EULA
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 other fonts require Windows ISO.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — MS Windows 10 other fonts require Windows ISO.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -10766,11 +10766,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1736. btdu-bin
+** DONE 1736. btdu-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED 2026-03-19: `btdu-bin` requires binary-distribution repack/wrapping work; lawful reproducible Guix integration not completed in this pass.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, static binary from GitHub v0.7.2.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 1737. vt-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -12354,9 +12354,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 1993. archlinux-artwork
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: `archlinux-artwork` is Arch branding asset package, not present in Guix; needs standalone asset packaging work if still desired.
+   - Status: BLOCKED: ARCH_SPECIFIC_BRANDING — Arch Linux logos/icons. Trademark-restricted.
    - Difficulty: medium
-   - Status: BLOCKED: ARCH_SPECIFIC | Arch Linux specific, not applicable to Guix (deptree-resolver-260407d, 2026-04-07)
+   - Status: BLOCKED: ARCH_SPECIFIC_BRANDING — Arch Linux logos/icons. Trademark-restricted.
    - TODO Status: BLOCKED
 
 ** BLOCKED 1994. gns3-gui
@@ -14400,13 +14400,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 2327. opencl-nvidia-470xx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 470xx OpenCL. Proprietary driver extraction.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 2328. nvidia-470xx-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 470xx DKMS. DKMS incompatible with Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14509,13 +14509,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2344. nvidia-open-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA open kernel (beta). Coupled to NVIDIA driver stack.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 2345. nvidia-open-beta-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA open DKMS (beta). DKMS incompatible with Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14557,7 +14557,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2352. opencl-nvidia-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_DRIVER | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; NVIDIA OpenCL beta requires proprietary driver blob; version-pinning unstable
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA beta OpenCL. Proprietary driver extraction.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14668,7 +14668,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2370. lib32-libbluray
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: 32-bit library — Guix lacks multilib (deptree-resolver-260407c)
+   - Status: BLOCKED: 32BIT_LIBRARY — 32-bit libbluray. Extensive 32-bit dep chain.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -14861,13 +14861,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** BLOCKED 2400. opencl-nvidia-390xx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NVIDIA proprietary OpenCL — needs nongnu channel (deptree-resolver-260407c)
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 390xx OpenCL. Proprietary driver extraction.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 2401. nvidia-390xx-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No resolvable Guix package candidate via automated mapping; requires manual packaging/audit.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 390xx DKMS. DKMS incompatible with Guix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -15901,8 +15901,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2572. jdk8-graalvm-ee-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: GraalVM EE 8 (OTN license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Oracle GraalVM Enterprise Edition requires OTN license click-through; redistribution prohibited without Oracle agreement
+   - Status: BLOCKED: PROPRIETARY_LICENSE — GraalVM EE JDK 8. OTN license requires Oracle account.
+   - Status: BLOCKED: PROPRIETARY_LICENSE — GraalVM EE JDK 8. OTN license requires Oracle account.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -15968,7 +15968,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2583. lib32-libdovi
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: 32-bit library — Guix lacks multilib (deptree-resolver-260407c)
+   - Status: BLOCKED: 32BIT_LIBRARY — 32-bit Dolby Vision lib. Needs 32-bit Rust toolchain.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -17212,14 +17212,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 2788. nvidia-535xx-utils
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NVIDIA proprietary driver — needs nongnu channel (deptree-resolver-260407c)
-   - Status: BLOCKED: NVIDIA proprietary driver — needs nongnu channel (deptree-resolver-260407c)
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 535 branch driver utils. Best handled by nonguix.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 535 branch driver utils. Best handled by nonguix.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
 ** BLOCKED 2789. opencl-nvidia-535xx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_DRIVER | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; NVIDIA OpenCL 535.xx requires proprietary driver blob extraction
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA 535xx OpenCL. Proprietary driver extraction.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -17398,11 +17398,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 2819. bine-bin
+** DONE 2819. bine-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching upstream Guix package alias found via `guix build -L guix -n` candidate checks, and a fresh deterministic recipe (source URI + fixed hash + build wiring) was not completed safely in this queue pass.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Go binary from GitHub v0.10.1.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 2820. helixnotes-appimage-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -17771,11 +17771,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 2880. batctl-tui-bin
+** DONE 2880. batctl-tui-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: No matching upstream Guix package alias found via `guix build -L guix -n` candidate checks, and a fresh deterministic recipe (source URI + fixed hash + build wiring) was not completed safely in this queue pass.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, binary from GitHub v2026.3.13.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 2881. tuwunel-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -18280,11 +18280,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 2964. binco-bin
+** DONE 2964. binco-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: No matching package in current Guix package index and no vetted upstream source recipe prepared in this batch window.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, D binary from GitHub v0.3.0.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 2965. hpsahba-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -22480,8 +22480,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3483. freetype2-qdoled-gen3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PATCHED_VARIANT: QD-OLED Gen3 subpixel patches for freetype (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: COMPLEX_PATCH | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; QD-OLED Gen3 subpixel patches for freetype2; same constraints as aw3225qf variant; attempted 3 approaches
+   - Status: BLOCKED: HARDWARE_SPECIFIC_PATCH — freetype2 with QD-OLED Gen3 patches from AUR.
+   - Status: BLOCKED: HARDWARE_SPECIFIC_PATCH — freetype2 with QD-OLED Gen3 patches from AUR.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22697,13 +22697,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3518. unreal-tournament-data-archiveorg
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 1e7ffd03e7fc); source=("https://archive.org/download/ut-goty/UT_GOTY_CD1.iso"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — UT99 game data from Archive.org ISO.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3519. unreal-tournament-data-gog
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit af4fe42dd43b); source=("setup_unreal_tournament_goty_2.0.0.5.exe::gogdownloader://unreal_tournament_goty/en1installer0"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: PROPRIETARY_SOURCE_REQUIRED — UT99 game data from GOG. Requires GOG account.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24021,11 +24021,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3725. bus
+** DONE 3725. bus
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: guix package index probe found no direct candidate in variants ['bus']; next action: draft fresh recipe from upstream source in next pass.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm (as bus-pkg). gnu-build-system, C source from Codeberg v3.1.11.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3726. alarm
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -24334,7 +24334,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3775. firefox-beta-bin-all-localizations
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: BETA_BINARY: Firefox beta all locales; rapidly changing (deptree-260407 dep-tree pass)
+   - Status: BLOCKED: COMPLEX_PACKAGING — Perl download helper for Firefox Beta. Better to package Firefox directly.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24562,7 +24562,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3811. vscodium-electron-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh vscodium-electron-bin` succeeded (AUR rev e8b4442ed72e3f442fd4b3ce22915a2ce967ab99; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: BLOCKED_DEPENDENCY — Needs electron39 not available in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24812,8 +24812,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3851. jdk21-graalvm-ee-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: GraalVM EE 21 (GFTC license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Oracle GraalVM Enterprise Edition 21 requires OTN license; redistribution not permitted
+   - Status: BLOCKED: PROPRIETARY_LICENSE — GraalVM EE JDK 21. GFTC license.
+   - Status: BLOCKED: PROPRIETARY_LICENSE — GraalVM EE JDK 21. GFTC license.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24855,7 +24855,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3858. beatmapexporter-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh beatmapexporter-bin` succeeded (AUR rev 33df75bf4a6a981ecdbb641293e2a216a1f92c36; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: DOTNET_RUNTIME — .NET application. Limited .NET support in Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -24999,9 +24999,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3880. audiobookshelf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NPM_NATIVE_DEPS | Audiobookshelf is Node.js with native better-sqlite3 C++ addon; node-build-system cannot handle this.
+   - Status: BLOCKED: NOT_IN_AUR — Audiobook server. Not in AUR cache.
    - Difficulty: unknown
-   - Status: BLOCKED: NOT_IN_AUR_CACHE | not in AUR cache (removed/renamed) (deptree-resolver-260407d, 2026-04-07)
+   - Status: BLOCKED: NOT_IN_AUR — Audiobook server. Not in AUR cache.
    - TODO Status: BLOCKED
 
 ** BLOCKED 3881. simple-thumbnailer-stl
@@ -28446,8 +28446,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4435. rocm-nightly-gfx110x-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm nightly for RDNA3 (custom license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: NIGHTLY_UNSTABLE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; ROCm nightly build; URLs rotate daily; no stable version to pin
+   - Status: BLOCKED: HARDWARE_SPECIFIC_BINARY — ROCm nightly RDNA3. Unstable nightly URLs.
+   - Status: BLOCKED: HARDWARE_SPECIFIC_BINARY — ROCm nightly RDNA3. Unstable nightly URLs.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29943,7 +29943,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4681. nvidia-beta-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: NVIDIA beta DKMS module; proprietary; version tracks NVIDIA beta channel. Next: pin current beta version, draft kernel-module recipe.
+   - Status: BLOCKED: PROPRIETARY_DRIVER_FRAMEWORK — NVIDIA beta DKMS. DKMS incompatible with Guix.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30122,7 +30122,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4710. spotify-1.1
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Spotify legacy v1.1.x binary; proprietary. Source: Spotify Linux repo. Next: assess availability of v1.1 channel; draft binary recipe if stable URL exists.
+   - Status: BLOCKED: PROPRIETARY_LICENSE — Spotify legacy client v1.1. Proprietary EULA.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31295,7 +31295,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4900. butter-launcher-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Wayland launcher binary; AUR PKGBUILD audit needed; stub added.
+   - Status: BLOCKED: ELECTRON_APP — Electron game launcher. Complex Electron packaging.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31993,11 +31993,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5015. ps3toolchain
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — PS3 toolchain meta package; draft meta aggregating cross-tool recipes; Source: https://github.com/ps3dev/ps3toolchain. Stub exported in queue-20260324p100d.scm.
+   - Status: BLOCKED: MISSING_DEPENDENCIES — PS3 homebrew meta-package. All 5 deps missing.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-   - Status: BLOCKED: CROSS_COMPILATION_META: PS3 homebrew toolchain meta-package (deptree-resolver-260407e, 2026-04-07)
+   - Status: BLOCKED: MISSING_DEPENDENCIES — PS3 homebrew meta-package. All 5 deps missing.
    - TODO Status: BLOCKED
 ** DONE 5016. ps3-env
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -32354,11 +32354,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5072. bento-bin
+** DONE 5072. bento-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Go binary wrapper; Next: fetch release binary from GitHub warpstreamlabs/bento, compute sha256, draft wrapper.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Go binary from GitHub v1.16.2.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 5073. crush-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -32820,7 +32820,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5148. spotify-dev
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: proprietary binary wrapper; fetch .deb from Spotify APT repo; Source: https://repository.spotify.com
+   - Status: BLOCKED: PROPRIETARY_LICENSE — Spotify dev channel. Proprietary EULA.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32838,7 +32838,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5151. bulky
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: python-build-system with GTK3; fetch from GitHub linuxmint/bulky; Source: https://github.com/linuxmint/bulky
+   - Status: BLOCKED: NOT_IN_AUR — Linux Mint bulk renamer. Not in AUR cache.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32856,8 +32856,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5154. freetype2-qdoled-aw3225qf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PATCHED_VARIANT: QD-OLED AW3225QF subpixel patches for freetype (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: COMPLEX_PATCH | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Requires niche QD-OLED subpixel patches on freetype2; attempted patched recipe approach but patch availability/stability unverified; tried: inherit+patch, AUR PKGBUILD extraction, upstream patch review
+   - Status: BLOCKED: HARDWARE_SPECIFIC_PATCH — freetype2 with Dell AW3225QF QD-OLED patches from AUR.
+   - Status: BLOCKED: HARDWARE_SPECIFIC_PATCH — freetype2 with Dell AW3225QF QD-OLED patches from AUR.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -33008,8 +33008,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5178. jdk17-graalvm-ee-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: GraalVM EE 17 (OTN license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: PROPRIETARY_LICENSE | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; Oracle GraalVM Enterprise Edition 17 requires OTN license; redistribution not permitted
+   - Status: BLOCKED: PROPRIETARY_LICENSE — GraalVM EE JDK 17. OTN license.
+   - Status: BLOCKED: PROPRIETARY_LICENSE — GraalVM EE JDK 17. OTN license.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -33356,11 +33356,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5236. bcmr-bin
+** DONE 5236. bcmr-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: binary wrapper; fetch release binary; Source: https://github.com/bitjson/chip-bcmr
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Rust binary from GitHub v0.5.4.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 5237. ferrite
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -33615,8 +33615,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5278. rocm-gfx110x-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: PROPRIETARY_BINARY: AMD ROCm SDK for RDNA3 (custom AMD license) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: LARGE_PROPRIETARY_BINARY | Re-evaluated in queue-20260406-blocked-tree dep-tree pass 2026-04-06; ROCm GFX110x pre-release binary ~2GB; version-pinning unstable; AMD proprietary redistribution terms unclear
+   - Status: BLOCKED: HARDWARE_SPECIFIC_BINARY — ROCm RDNA3 binary (~2GB). Custom AMD license.
+   - Status: BLOCKED: HARDWARE_SPECIFIC_BINARY — ROCm RDNA3 binary (~2GB). Custom AMD license.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -34091,11 +34091,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 5354. blocky-bin
+** DONE 5354. blocky-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: binary wrapper; https://github.com/0xERR0R/blocky v0.29.0; fetch Linux amd64 binary.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Go DNS proxy from GitHub v0.29.0.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 5355. tut
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -35013,7 +35013,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5503. boomer-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vr286; recipe drafting not completed this pass.
+   - Status: BLOCKED: MISSING_BUILD_TOOLS — Nim screen zoomer. Guix has no Nim compiler.
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -39957,9 +39957,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6346. archarchive
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: ARCH_SPECIFIC — Arch Linux rollback tool. Uses pacman and ALA.
    - Difficulty: unknown
-   - Status: BLOCKED: ARCH_SPECIFIC | Arch Linux specific, not applicable to Guix (deptree-resolver-260407d, 2026-04-07)
+   - Status: BLOCKED: ARCH_SPECIFIC — Arch Linux rollback tool. Uses pacman and ALA.
    - TODO Status: BLOCKED
 
 ** BLOCKED 6347. ulaa-browser
@@ -40279,9 +40279,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6392. vectorchord-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: BLOCKED: DATABASE_EXTENSION — PostgreSQL extension. Version-locked to PostgreSQL major.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 6393. maa-assistant-arknights-cuda
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -40379,11 +40379,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED (TOOLING_FAILURE)
 
-** BLOCKED 6409. backblaze-b2-bin
+** DONE 6409. backblaze-b2-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [TOOLING_FAILURE] via queue-20260330p100daily4; error: specification->package: unbound variable
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm. copy-build-system, Python binary from GitHub v4.6.0.
    - Difficulty: unknown
-   - TODO Status: BLOCKED (TOOLING_FAILURE)
+   - TODO Status: DONE
 
 ** DONE 6410. fooyin-kode54-plugins-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -41019,7 +41019,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6514. blindpaste
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n blindpaste | detail: error: specification->package: unbound variable (module load path issue in existing queue modules) | next: repair queue module imports to include (gnu packages), then rerun guix build -L guix -n blindpaste
+   - Status: BLOCKED: NO_LINUX_BINARY — TUI note app. No GitHub repo or binary found.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -41196,11 +41196,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 6543. gst-thumbnailers
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: TOOLING_FAILURE | cmd: guix build -L guix -n gst-thumbnailers | detail: error: specification->package: unbound variable (global module-load failure while evaluating existing queue modules) | next: repair failing queue modules, then re-run guix build -L guix -n gst-thumbnailers
+   - Status: BLOCKED: NOT_IN_AUR — Not found in AUR cache. May be removed or renamed.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-   - Status: BLOCKED: NOT_IN_AUR_CACHE: package removed/renamed from AUR (deptree-resolver-260407e, 2026-04-07)
+   - Status: BLOCKED: NOT_IN_AUR — Not found in AUR cache. May be removed or renamed.
    - TODO Status: BLOCKED
 ** BLOCKED 6544. void-mod-manager-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -46109,8 +46109,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n lapctl | detail: (gnu packages golang-web)'? | guix build: error: lapctl: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
 ** BLOCKED 7346. llama.cpp-opencl
    - Note: AUR popularity=1.0000, votes=1; Port of Facebook's LLaMA model in C/C++(with OpenCL Backend support)
-   - TODO Status: FAILED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n llama.cpp-opencl | detail: (gnu packages golang-web)'? | guix build: error: llama.cpp-opencl: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: BLOCKED_DEPENDENCY — llama.cpp OpenCL backend. Requires vendor-specific OpenCL ICD.
 ** BLOCKED 7347. primer-bin
    - Note: AUR popularity=1.0000, votes=1; Build real software step-by-step with Claude, Codex, OpenCode, Gemini, Cursor, a
    - TODO Status: FAILED
@@ -55264,9 +55264,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 9045. mips64-linux-gnu-gcc-bootstrap
    - Note: AUR popularity=0.0575, votes=3; The GNU Compiler Collection - bootstrap/stage1 cross compiler for the MIPS64 tar
    - TODO Status: BLOCKED
-   - Status: BLOCKED: Re-evaluated nrd18; conflicts with Guix cross-compilation model.
-   - Status: Re-evaluated in auto-deptree-260406 pass (2026-04-06).  MISSING_DEPENDENCY: MIPS64 cross-compiler bootstrap depends on mips64-linux-gnu-binutils and linux-api-headers.  Complete cross-compilation toolchain not in Guix.
-   - Status: BLOCKED: CROSS_COMPILATION_TARGET: Guix uses (cross-base) for cross (deptree-resolver-260407e, 2026-04-07)
+   - Status: BLOCKED: CROSS_COMPILATION_TOOLCHAIN — MIPS64 GCC bootstrap. Guix has native cross-compilation.
+   - Status: BLOCKED: CROSS_COMPILATION_TOOLCHAIN — MIPS64 GCC bootstrap. Guix has native cross-compilation.
+   - Status: BLOCKED: CROSS_COMPILATION_TOOLCHAIN — MIPS64 GCC bootstrap. Guix has native cross-compilation.
    - TODO Status: BLOCKED
 ** DONE 9046. mips64-linux-gnu-linux-api-headers
 
@@ -56244,9 +56244,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.0517, votes=18; Validity fingerprint sensor driver
    - TODO Status: BLOCKED
 
-** BLOCKED 9228. liberica-jdk-full-bin
+** DONE 9228. liberica-jdk-full-bin
    - Note: AUR popularity=0.0517, votes=8; BellSoft builds of OpenJDK are fully certified and 100% open source Java Develop
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 9229. ttf-meslo-nerd-font-powerlevel10k
    - Note: AUR popularity=0.0515, votes=65; Meslo Nerd Font patched for Powerlevel10k
@@ -61526,12 +61526,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific pacman tool; see queue-20260406p100b-blocked-notes.
    - TODO Status: BLOCKED
 
-** BLOCKED 10251. amazon-corretto-8
+** DONE 10251. amazon-corretto-8
    - AUR votes: 7, popularity: 0.0326
    - Note: No-cost, multiplatform, production-ready distribution of OpenJDK
-   - Status: BLOCKED: BINARY_VENDOR_JDK: Amazon Corretto 8 (binary dist for Java 8) (deptree-260407 dep-tree pass)
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: OpenJDK variant, Guix has openjdk-8; see queue-20260406p100b-blocked-notes.
-   - TODO Status: BLOCKED
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm (as amazon-corretto-8-bin). copy-build-system, AWS JDK 8.482.08.1.
+   - Status: DONE: Recipe in deptree-resolver-260407f.scm (as amazon-corretto-8-bin). copy-build-system, AWS JDK 8.482.08.1.
+   - TODO Status: DONE
 
 ** DONE 10252. amazon-corretto-17
    - AUR votes: 3, popularity: 0.0326
@@ -62692,10 +62692,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Fancy indexes module for the Nginx web server
    - TODO Status: DONE
 
-** BLOCKED 10472. jdk17-temurin
+** DONE 10472. jdk17-temurin
    - AUR votes: 22, popularity: 0.0269
    - Note: Temurin 17 (OpenJDK 17 Java binaries by Adoptium, formerly AdoptOpenJDK)
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 10473. python-behave
    - AUR votes: 2, popularity: 0.0269
@@ -68676,10 +68676,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Powerlevel10k is a theme for Zsh. It emphasizes speed, flexibility and out-of-the-box experience.
    - TODO Status: TODO
 
-** TODO 11638. apple-fonts
+** BLOCKED 11638. apple-fonts
    - AUR votes: 50, popularity: 1.8952
    - Note: Fonts for Apple platforms, including San Francisco and New York typefaces
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 11639. gogcli
    - AUR votes: 3, popularity: 1.8926
@@ -69732,15 +69732,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in deptree-resolver-260407d.scm; dep-tree priority pass 2026-04-07.
    - TODO Status: DONE
    - Status: BLOCKED: NVIDIA proprietary driver — needs nongnu channel (deptree-resolver-260407c)
-** TODO 11845. opencl-nvidia-470xx
+** BLOCKED 11845. opencl-nvidia-470xx
    - AUR votes: 113, popularity: 1.4087
    - Note: OpenCL implemention for NVIDIA
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 11846. nvidia-470xx-dkms
+** BLOCKED 11846. nvidia-470xx-dkms
    - AUR votes: 113, popularity: 1.4087
    - Note: NVIDIA drivers - module sources
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 11847. visual-studio-code-insiders-bin
    - AUR votes: 39, popularity: 1.4076
@@ -70026,10 +70026,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Create, run and share large language models (LLMs) with Vulkan
    - TODO Status: TODO
 
-** TODO 11901. ttf-ms-win10-auto
+** BLOCKED 11901. ttf-ms-win10-auto
    - AUR votes: 45, popularity: 1.3106
    - Note: Microsoft Windows 10 TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 11902. ttf-ms-win10-auto-japanese
    - AUR votes: 45, popularity: 1.3106
@@ -70382,15 +70382,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A Go CLI tool to manage and run Turtle WoW on Linux (X11/Wayland)
    - TODO Status: TODO
 
-** TODO 11971. nvidia-open-beta
+** BLOCKED 11971. nvidia-open-beta
    - AUR votes: 21, popularity: 1.2348
    - Note: NVIDIA open kernel modules (beta version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 11972. nvidia-open-beta-dkms
+** BLOCKED 11972. nvidia-open-beta-dkms
    - AUR votes: 21, popularity: 1.2348
    - Note: NVIDIA open kernel modules (module sources; beta version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 11973. yubico-authenticator-bin
    - AUR votes: 49, popularity: 1.2340
@@ -70601,10 +70601,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: NVIDIA drivers utilities (beta version)
    - TODO Status: TODO
 
-** TODO 12013. opencl-nvidia-beta
+** BLOCKED 12013. opencl-nvidia-beta
    - AUR votes: 348, popularity: 1.1930
    - Note: OpenCL implemention for NVIDIA (beta version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** DONE 12014. nvidia-settings-beta [gaurix:queue-20260402p100daily3 target=nvidia-settings-beta rule=exact]
    - AUR votes: 348, popularity: 1.1930
@@ -71385,10 +71385,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A portable library for SSA/ASS subtitles rendering (32 bit)
    - TODO Status: TODO
 
-** TODO 12169. lib32-libbluray
+** BLOCKED 12169. lib32-libbluray
    - AUR votes: 25, popularity: 1.0245
    - Note: Library to access Blu-Ray disks for video playback (32-bit)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 12170. lib32-x264
    - AUR votes: 8, popularity: 1.0245
@@ -72398,10 +72398,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Employee time tracking software for employees
    - TODO Status: TODO
 
-** TODO 12371. jdk8-graalvm-ee-bin
+** BLOCKED 12371. jdk8-graalvm-ee-bin
    - AUR votes: 1, popularity: 1.0000
    - Note: Universal virtual machine for running applications written in a variety of languages (JVM-based, LLVM-based, or other), 
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 12372. kanzi-git
    - AUR votes: 1, popularity: 1.0000
@@ -72458,10 +72458,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A powerful per-process CPU limiter for Linux with universal Wayland & X11 focus support.
    - TODO Status: TODO
 
-** TODO 12383. lib32-libdovi
+** BLOCKED 12383. lib32-libdovi
    - AUR votes: 1, popularity: 1.0000
    - Note: Library to read and write Dolby Vision metadata C-API (32-bit)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 12384. lib32-zix
    - AUR votes: 1, popularity: 1.0000
@@ -73501,10 +73501,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: TETR.IO desktop client, using the system Electron package
    - TODO Status: TODO
 
-** TODO 12590. archlinux-artwork
+** BLOCKED 12590. archlinux-artwork
    - AUR votes: 33, popularity: 0.8875
    - Note: Official logos, icons, CD labels and other artwork for Arch Linux
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 12591. google-chrome-dev
    - AUR votes: 654, popularity: 0.8866
@@ -73702,15 +73702,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in deptree-resolver-260407d.scm; dep-tree priority pass 2026-04-07.
    - TODO Status: DONE
    - Status: BLOCKED: NVIDIA proprietary driver — needs nongnu channel (deptree-resolver-260407c)
-** TODO 12630. opencl-nvidia-390xx
+** BLOCKED 12630. opencl-nvidia-390xx
    - AUR votes: 62, popularity: 0.8703
    - Note: OpenCL implemention for NVIDIA
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12631. nvidia-390xx-dkms
+** BLOCKED 12631. nvidia-390xx-dkms
    - AUR votes: 62, popularity: 0.8703
    - Note: NVIDIA drivers - module sources
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 12632. gns3-server
    - AUR votes: 82, popularity: 0.8702
@@ -75198,40 +75198,40 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Microsoft Windows 10 TrueType fonts
    - TODO Status: TODO
 
-** TODO 12925. ttf-ms-win10-japanese
+** BLOCKED 12925. ttf-ms-win10-japanese
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Japanese TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12926. ttf-ms-win10-korean
+** BLOCKED 12926. ttf-ms-win10-korean
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Korean TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12927. ttf-ms-win10-sea
+** BLOCKED 12927. ttf-ms-win10-sea
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Southeast Asian TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12928. ttf-ms-win10-thai
+** BLOCKED 12928. ttf-ms-win10-thai
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Thai TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12929. ttf-ms-win10-zh_cn
+** BLOCKED 12929. ttf-ms-win10-zh_cn
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Simplified Chinese TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12930. ttf-ms-win10-zh_tw
+** BLOCKED 12930. ttf-ms-win10-zh_tw
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Traditional Chinese TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 12931. ttf-ms-win10-other
+** BLOCKED 12931. ttf-ms-win10-other
    - AUR votes: 125, popularity: 0.8225
    - Note: Microsoft Windows 10 Other TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 12932. xkb-ultimatekeys
    - AUR votes: 3, popularity: 0.8224
@@ -76096,15 +76096,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Binary-Text Encoder-Decoder
    - TODO Status: TODO
 
-** TODO 13104. nvidia-535xx-utils
+** BLOCKED 13104. nvidia-535xx-utils
    - AUR votes: 15, popularity: 0.7524
    - Note: NVIDIA drivers utilities, 535 branch
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 13105. opencl-nvidia-535xx
+** BLOCKED 13105. opencl-nvidia-535xx
    - AUR votes: 15, popularity: 0.7524
    - Note: OpenCL implemention for NVIDIA, 535 branch
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 13106. nvidia-535xx-dkms
    - AUR votes: 15, popularity: 0.7524
@@ -76653,10 +76653,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: SDK for Zephyr real-time operating system
    - TODO Status: TODO
 
-** TODO 13215. rocm-nightly-gfx1151-bin
+** BLOCKED 13215. rocm-nightly-gfx1151-bin
    - AUR votes: 2, popularity: 0.7369
    - Note: AMD ROCm Nightly Release (gfx1151) - Monolithic Install
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 13216. gopher64
    - AUR votes: 6, popularity: 0.7359
@@ -117460,10 +117460,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A library for configuring and customizing font access (with Ubuntu patches) (documentation)
    - TODO Status: TODO
 
-** TODO 21328. nvidia-beta
+** BLOCKED 21328. nvidia-beta
    - AUR votes: 350, popularity: 0.434729
    - Note: NVIDIA kernel module (beta version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 21329. nvidia-settings-beta
    - AUR votes: 348, popularity: 0.89779
@@ -119036,10 +119036,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A command-line tool for converting single and multipart UIF images to the ISO format.
    - TODO Status: TODO
 
-** TODO 21643. nvidia-beta-dkms
+** BLOCKED 21643. nvidia-beta-dkms
    - AUR votes: 72, popularity: 0.262568
    - Note: NVIDIA kernel modules - module sources (beta version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 21644. bluej
    - AUR votes: 72, popularity: 0
@@ -122734,10 +122734,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: UnixBench is a simple benchmark whose purpose is to provide a basic indicator of the performance of a Unix-like system.
    - TODO Status: TODO
 
-** TODO 22382. firefox-beta-bin-all-localizations
+** BLOCKED 22382. firefox-beta-bin-all-localizations
    - AUR votes: 34, popularity: 0.358881
    - Note: Perl script for installing latest FF beta in the language of your choice
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 22383. crunch
    - AUR votes: 34, popularity: 0.267665
@@ -123094,40 +123094,40 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Microsoft Windows 11 TrueType fonts
    - TODO Status: TODO
 
-** TODO 22454. ttf-ms-win11-japanese
+** BLOCKED 22454. ttf-ms-win11-japanese
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Japanese TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 22455. ttf-ms-win11-korean
+** BLOCKED 22455. ttf-ms-win11-korean
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Korean TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 22456. ttf-ms-win11-sea
+** BLOCKED 22456. ttf-ms-win11-sea
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Southeast Asian TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 22457. ttf-ms-win11-thai
+** BLOCKED 22457. ttf-ms-win11-thai
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Thai TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 22458. ttf-ms-win11-zh_cn
+** BLOCKED 22458. ttf-ms-win11-zh_cn
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Simplified Chinese TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 22459. ttf-ms-win11-zh_tw
+** BLOCKED 22459. ttf-ms-win11-zh_tw
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Traditional Chinese TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
-** TODO 22460. ttf-ms-win11-other
+** BLOCKED 22460. ttf-ms-win11-other
    - AUR votes: 32, popularity: 0.423673
    - Note: Microsoft Windows 11 Other TrueType fonts
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 22461. bisq-bin
    - AUR votes: 32, popularity: 0.248146
@@ -124439,10 +124439,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: notify-send drop-in replacement with more features
    - TODO Status: TODO
 
-** TODO 22723. spotify-dev
+** BLOCKED 22723. spotify-dev
    - AUR votes: 27, popularity: 0.209848
    - Note: A proprietary music streaming service
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 22724. mpv-full-git
    - AUR votes: 27, popularity: 0.11875
@@ -126769,10 +126769,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: like the famous font but monospace and with adjusted metric
    - TODO Status: TODO
 
-** TODO 23189. betterbird-fr-bin
+** BLOCKED 23189. betterbird-fr-bin
    - AUR votes: 21, popularity: 0.168719
    - Note: FRENCH // Betterbird is a fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 ** TODO 23190. check-broken-packages-pacman-hook-git
    - AUR votes: 21, popularity: 0.159827

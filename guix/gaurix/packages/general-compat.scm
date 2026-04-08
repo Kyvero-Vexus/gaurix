@@ -196,6 +196,7 @@
   #:use-module (gaurix packages queue-20260407-opus-p100)
   #:use-module (gaurix packages queue-20260407-opus-p101)
   #:use-module (gaurix packages deptree-resolver-260407e)
+  #:use-module (gaurix packages deptree-resolver-260407f)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
