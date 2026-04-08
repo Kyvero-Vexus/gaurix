@@ -22332,18 +22332,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3437. rstudio-desktop
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show rstudio-desktop => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: COMPLEX_BUILD_SYSTEM — RStudio IDE is a C++/Java/Qt hybrid with 50+ bundled deps (Boost, pandoc, Hunspell, etc.); requires R, custom GWT compiler, and Ant; not feasible without dedicated effort | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3438. nodejs-http-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show nodejs-http-server => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: NPM_ECOSYSTEM — simple http-server npm package requires node-build-system with npm dependency tree; trivially replaced by python3 -m http.server | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3439. rats-search-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show rats-search-bin => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: ELECTRON_APP — Rats! Search is an Electron/React BitTorrent search app; Guix lacks Electron packaging infrastructure; no standalone binary releases on GitHub | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22353,13 +22356,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3441. tnoodle-cli
+** DONE 3441. tnoodle-cli
+   - Status: DONE: compat alias tnoodle-cli -> tnoodle-wca-bin in recipe-resolver-260408i.scm
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show tnoodle-cli => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3442. tnoodle-wca
+** DONE 3442. tnoodle-wca
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (tnoodle-wca-bin v1.2.3, WCA scramble generator Java JAR, AGPL-3.0)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show tnoodle-wca => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
    - Difficulty: unknown
@@ -22374,12 +22381,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3444. lol
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show lol => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: MISSING_SOURCE — 'lol' is ambiguous; no clear upstream repository found matching AUR package; likely abandoned or niche utility | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3445. wingedit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show wingedit => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: MISSING_SOURCE — WingEdit text editor; no public source repository or binary releases found; appears to be abandoned or private | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22393,12 +22402,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3447. notejot
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show notejot => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: VALA_GRANITE_DEPS — Notejot is a Vala/GTK4 note app from elementary OS ecosystem; requires Granite 7 and libadwaita which are not fully available in Guix | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3448. com.cassidyjames.butler
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show com.cassidyjames.butler => package not found; next: draft explicit Guix recipe (or lawful binary package) with stable source URI+hash.
+   - Status: BLOCKED: ELEMENTARY_OS_DEPS — Butler is a Vala/Granite elementary OS app; requires elementary OS Flatpak runtime and Granite libraries | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22433,7 +22444,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407l.scm (msdf-atlas-gen v1.4, MSDF atlas gen CMake source, MIT)
 
-** BLOCKED 3454. recaf
+** DONE 3454. recaf
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (recaf-bin v4.0.0-alpha, Java bytecode editor self-contained JAR, MIT)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit dd561ab522a8); source=(; next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
@@ -22449,6 +22462,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3456. displaylink-connect
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 81a9d4decfda); source=("https://gitlab.com/hadogenes/displaylink-connect/-/archive/v${pkgver}/displaylink-connect-v${pkgver}.zip"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: PROPRIETARY_DRIVER — DisplayLink Connect requires proprietary DisplayLink EVDI kernel module and userspace driver; cannot distribute proprietary blobs | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22534,6 +22548,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3469. flameget
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit ed8af1328c1b); source=(; next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: QT5_COMPLEX_DEPS — FlameGet download manager is a Qt5/C++ app with aria2 integration; requires custom build with Qt5 webkit/webengine; complex dep chain | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22560,6 +22575,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3473. polymath
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 5097afd00f28); source=(; next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: MISSING_SOURCE — 'polymath' AUR package; unclear upstream; multiple projects use this name; no definitive source found for the AUR package | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22601,12 +22617,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3479. loliashizuku-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit fa60b6e94cfd); source=("${pkgname}::git+https://github.com/Mxmilu666/LoliaShizuku.git#tag=v${pkgver}"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: ELECTRON_APP — LoliaShizuku is an Electron/web desktop mascot app; Guix lacks Electron packaging infrastructure; npm/node ecosystem build | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3480. oopz
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit c576cdac1ed3); source=("$pkgname::git+https://git.pysio.online/pysio/linux_oopz.git#commit=$_commit"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: NON_STANDARD_SOURCE — oopz hosted on git.pysio.online (self-hosted Gitea); non-standard hosting, uncertain availability; C/Make build but source stability unclear | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22635,6 +22653,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3484. brother-dcpj132w
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 75867cda85b9); source=(; next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: PROPRIETARY_DRIVER — Brother DCP-J132W printer driver contains proprietary binary blobs from Brother; cannot redistribute | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22649,6 +22668,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3486. harbour-amazfish-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 1d36dc7b565c); source=("${pkgname}::git+${url}.git"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: SAILFISH_OS_DEPS — AmazFish fitness watch companion app built for Sailfish OS; requires SailfishOS SDK, Nemo QML plugins, and lipstick-qt5; not applicable to standard Linux desktop | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22669,12 +22689,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3489. pwmenu-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 53853d92d525); source=(${pkgname%-git}::git+$url.git); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: CARGO_DEPS — pwmenu is a Rust/Cargo rofi-like menu; requires full cargo-inputs enumeration with 30+ crate dependencies; guix import crate incomplete | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3490. kvm-configurator
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 85e00ec9ebe5); source=("git+${url}.git"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: QT6_PYTHON_DEPS — KVM Configurator is a Python/Qt6 GUI for QEMU/KVM; requires PyQt6/PySide6 which are not packaged in Guix | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22702,12 +22724,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3494. plasma-weather-plus
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 4a17f9df410a); source=(git+${url}.git); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: KDE6_DEPS — Plasma Weather Plus is a KDE Plasma 6 weather widget; requires full KDE Frameworks 6 + Plasma desktop integration; heavy dependency chain | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 3495. spredit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 4f554e46436f); source=("http://csdb.dk/getinternalfile.php/93647/SPRedit-for-linux.zip"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: UNSTABLE_SOURCE — SPRedit C64 sprite editor hosted on csdb.dk (demoscene database); HTTP download from dynamic PHP URL; source stability and reproducibility uncertain | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22718,7 +22742,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407l.scm (swaycons v0.3.1, Swaycons Sway icon setter, MIT)
 
-** BLOCKED 3497. pixelorama-git
+** DONE 3497. pixelorama-git
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (pixelorama-bin v1.1.8, pixel art editor Godot binary tar.gz, MIT)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 4071bd539c39); source=("${_pkgname}::git+${_url}.git"); next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
@@ -22738,7 +22764,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407l.scm (bsd-leave v1.12, BSD leave C source, BSD-3)
 
-** BLOCKED 3500. openmarch-bin
+** DONE 3500. openmarch-bin
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (openmarch-bin v0.0.22, marching band drill design AppImage, AGPL-3.0)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 82e88d873d7d); source=("${pkgname%-bin}.sh"); next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
@@ -22755,6 +22783,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3502. pacviz
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 9f8901138eb1); source=("$pkgname-$pkgver.tar.gz::https://github.com/sjsanc/pacviz/archive/refs/tags/v$pkgver.tar.gz"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: ARCH_SPECIFIC — pacviz is an Arch Linux package dependency visualizer; depends on pacman/libalpm for reading package databases; not applicable to Guix | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -22772,7 +22801,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407l.scm (binauralplayer v1.4.0, BinauralPlayer CMake Qt6, GPL-3.0)
 
-** BLOCKED 3505. chataigne-stable-bin
+** DONE 3505. chataigne-stable-bin
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (chataigne-stable-bin v1.10.3, creative control AppImage, GPL-3.0)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 682151634b83); source=unknown; next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
@@ -22887,7 +22918,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407l.scm (dotctl v0.1.0, dotctl Python dotfiles tool, MIT)
 
-** BLOCKED 3522. haproxy-awslc
+** DONE 3522. haproxy-awslc
+   - Status: DONE: compat alias haproxy-awslc -> haproxy in recipe-resolver-260408i.scm
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 1efd64ac07ff); source=("git+https://git.haproxy.org/git/haproxy-${pkgver%.*}.git#tag=v${pkgver}?signed"; next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
@@ -23043,6 +23076,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3545. distroav
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 94602cc66da6); source=("${pkgname}-${pkgver}.tar.gz::${url}/archive/${pkgver}.tar.gz"); next: draft Guix recipe with fixed source hash and inputs.
+   - Status: BLOCKED: OBS_PLUGIN — DistroAV (formerly obs-ndi) is an OBS Studio NDI plugin; OBS Studio is not packaged in Guix; requires OBS plugin API and NewTek NDI SDK | recipe-resolver-260408i
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -23053,13 +23087,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407g.scm (kubefwd-bin v1.25.12, pre-built binary from GitHub; Kubernetes port-forward utility)
 
-** BLOCKED 3547. capacities-appimage
+** DONE 3547. capacities-appimage
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (capacities-appimage v1.60.1, PKM tool AppImage, proprietary)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit a84a8ae33858); source=unknown; next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3548. flclash-bin
+** DONE 3548. flclash-bin
+   - Status: DONE: recipe in recipe-resolver-260408i.scm (flclash-bin v0.8.92, proxy client .deb binary, GPL-3.0)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 098eea5de974); source=(; next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
@@ -23078,7 +23116,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3551. linux-firmware-git
+** DONE 3551. linux-firmware-git
+   - Status: DONE: compat alias linux-firmware-git -> nongnu linux-firmware in recipe-resolver-260408i.scm
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit e3f5286fa276); source=("${pkgbase}::git+${url}.git"); next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown

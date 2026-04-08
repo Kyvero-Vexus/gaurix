@@ -223,6 +223,7 @@
   #:use-module (gaurix packages recipe-resolver-260408f)
   #:use-module (gaurix packages recipe-resolver-260408g)
   #:use-module (gaurix packages recipe-resolver-260408h)
+  #:use-module (gaurix packages recipe-resolver-260408i)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1504,6 +1505,13 @@
             yaru-unity-theme
             yaru-metacity-theme
             yaru-session
+            ;; recipe-resolver-260408i compat aliases
+            recaf
+            pixelorama-git
+            tnoodle-wca
+            flclash
+            openmarch
+            chataigne-stable
             ))
 
 (define-public gtk2
@@ -4472,3 +4480,41 @@
   (package
     (inherit netbeans-bin)
     (name "netbeans")))
+
+;; --- recipe-resolver-260408i compat aliases ---
+
+;; AUR recaf -> gaurix recaf-bin
+(define-public recaf
+  (package
+    (inherit recaf-bin)
+    (name "recaf")))
+
+;; AUR pixelorama-git -> gaurix pixelorama-bin
+(define-public pixelorama-git
+  (package
+    (inherit pixelorama-bin)
+    (name "pixelorama-git")))
+
+;; AUR tnoodle-wca -> gaurix tnoodle-wca-bin
+(define-public tnoodle-wca
+  (package
+    (inherit tnoodle-wca-bin)
+    (name "tnoodle-wca")))
+
+;; AUR flclash -> gaurix flclash-bin
+(define-public flclash
+  (package
+    (inherit flclash-bin)
+    (name "flclash")))
+
+;; AUR openmarch -> gaurix openmarch-bin
+(define-public openmarch
+  (package
+    (inherit openmarch-bin)
+    (name "openmarch")))
+
+;; AUR chataigne-stable -> gaurix chataigne-stable-bin
+(define-public chataigne-stable
+  (package
+    (inherit chataigne-stable-bin)
+    (name "chataigne-stable")))
