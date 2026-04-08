@@ -356,6 +356,8 @@
   #:use-module (gaurix packages recipe-resolver-260408k)
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages recipe-resolver-260408l)
+  #:use-module (gaurix packages recipe-resolver-260408m)
+  #:use-module (gaurix packages recipe-resolver-260408n)
   #:use-module (gaurix packages deptree-resolver-260408d)
   #:use-module (gaurix packages deptree-resolver-260408d-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260408e)
@@ -8730,4 +8732,61 @@ podman-tui-bin
             sayonara-player
             mrboom
             pixelterm-c
+            ;; recipe-resolver-260408m
+            font-maplemono-cn-unhinted
+            font-maplemono-cn
+            font-maplemono-nf-cn-unhinted
+            font-maplemono-nf-cn
+            font-maplemono-nf-unhinted
+            font-maplemono-nf
+            font-maplemono-otf
+            font-maplemono-ttf
+            font-maplemono-variable
+            font-maplemono-woff2
+            python-miniflux
+            python-undervolt
+            ds4drv
+            gcalcli
+            python-watchdog
+            discover-overlay
+            open-fprintd
+            yofi-bin
+            termpicker-bin
+            filebeat-bin
+            feishin-electron-bin
+            zenta-bin
+            quarkuscli-bin
+            whispering-bin
+            ssmtp
+            dar
+            posixovl
+            icecream
+            opensuperclone
+            helm-ls
+            mkbrr
+            aliyunpan
+            gnirehtet
+            grub-theme-minegrub
+            plymouth-theme-catppuccin-latte
+            plymouth-theme-catppuccin-frappe
+            plymouth-theme-catppuccin-macchiato
+            hunspell-pt-pt-preao
+            dtv-scan-tables
+            spacer-cli
+            kerl
+            huawei-me936-udev
+            sudachi
+            fastgame
+            shh
+            zswap-disable-writeback
+            ;; recipe-resolver-260408n
+            zgrab2
+            wtp
+            gosuki
+            apache-tools
+            kclock-rs-bin
+            taskwire-bin
+            livecaptions
+            appanvil
+            nucleus-cli
 )
