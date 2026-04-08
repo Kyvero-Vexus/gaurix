@@ -239,6 +239,7 @@
   #:use-module (gaurix packages recipe-resolver-260408r)
   #:use-module (gaurix packages recipe-resolver-260408s)
   #:use-module (gaurix packages recipe-resolver-260408t)
+  #:use-module (gaurix packages recipe-resolver-260408u)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:export (
@@ -1568,6 +1569,32 @@
             jellyfin-desktop-bin
             libsmb2
             playit-agent-bin
+            ;; --- recipe-resolver-260408u exports ---
+            font-courier-prime
+            font-comic-mono
+            font-juliamono
+            font-monocraft
+            font-gentium-basic
+            font-lxgw-fasmart-gothic
+            btop-theme-catppuccin
+            qogir-gtk-theme
+            morewaita-icon-theme
+            vimix-gtk-themes
+            spicetify-themes
+            pdfsam-bin
+            process-compose-bin
+            rp-bin
+            bifrost-bin
+            bitwarden-rofi
+            lenovo-wwan-unlock
+            zsh-you-should-use
+            bash-complete-alias
+            python-blockdiag
+            python-nwdiag
+            python-actdiag
+            waybar-crypto
+            lief
+            mstflint
 ))
 
 (define-public gtk2
@@ -4992,3 +5019,7 @@
 ;; jellyfin-desktop-bin: defined in recipe-resolver-260408t
 ;; libsmb2: defined in recipe-resolver-260408t
 ;; playit-agent-bin: defined in recipe-resolver-260408t
+
+;; --- recipe-resolver-260408u compat aliases ---
+;; (No compat aliases needed - all packages have unique names)
+

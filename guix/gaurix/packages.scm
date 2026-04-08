@@ -9143,6 +9143,7 @@ podman-tui-bin
   #:use-module (gaurix packages deptree-resolver-260408h-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260408r)
   #:use-module (gaurix packages recipe-resolver-260408t)
+  #:use-module (gaurix packages recipe-resolver-260408u)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408i-blocked-notes)
 )
