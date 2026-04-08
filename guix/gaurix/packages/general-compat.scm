@@ -220,6 +220,7 @@
   #:use-module (gaurix packages recipe-resolver-260408d)
   #:use-module (gaurix packages recipe-resolver-260408e)
   #:use-module (gaurix packages recipe-resolver-260408f)
+  #:use-module (gaurix packages recipe-resolver-260408g)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1478,6 +1479,17 @@
             siyuan-note-bin
             codex-bin
             gowall
+            ;; recipe-resolver-260408g re-exports
+            android-studio-bin
+            netbeans-bin
+            localsend-git
+            logseq-desktop-git
+            xlibre-input-wacom-bin
+            xlibre-video-fbdev-bin
+            appimagelauncher-git
+            ffmpeg-amd-full-git
+            android-studio
+            netbeans
             ;; 260408c-batch compat aliases
             vulkan-icd-loader-git
             bdf-unifont
@@ -4444,3 +4456,17 @@
   (package
     (inherit appimagelauncher-bin)
     (name "appimagelauncher")))
+
+;; --- recipe-resolver-260408g compat aliases ---
+
+;; AUR android-studio -> gaurix android-studio-bin
+(define-public android-studio
+  (package
+    (inherit android-studio-bin)
+    (name "android-studio")))
+
+;; AUR netbeans -> gaurix netbeans-bin
+(define-public netbeans
+  (package
+    (inherit netbeans-bin)
+    (name "netbeans")))

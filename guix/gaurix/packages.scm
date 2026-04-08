@@ -349,6 +349,7 @@
   #:use-module (gaurix packages recipe-resolver-260408d)
   #:use-module (gaurix packages recipe-resolver-260408e)
   #:use-module (gaurix packages recipe-resolver-260408f)
+  #:use-module (gaurix packages recipe-resolver-260408g)
   #:use-module (gaurix packages compat-aliases-260408c)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
@@ -8607,4 +8608,13 @@ podman-tui-bin
             dinfo
             discli
             discord-rpc-extension-bin
+            ;; recipe-resolver-260408g
+            android-studio-bin
+            netbeans-bin
+            localsend-git
+            logseq-desktop-git
+            xlibre-input-wacom-bin
+            xlibre-video-fbdev-bin
+            appimagelauncher-git
+            ffmpeg-amd-full-git
 )

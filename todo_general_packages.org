@@ -61923,6 +61923,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 9, popularity: 0.0323
    - Note: IDE for Java, HTML5, PHP, Groovy, C and C++
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: large Java IDE, copy-build + JDK wrapper; see queue-20260406p100b-blocked-notes.
+   - Status: DONE: recipe in recipe-resolver-260408g.scm (netbeans-bin v24, zip binary from Apache, Apache-2.0 license) (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - TODO Status: BLOCKED
 
 ** DONE 10259. swaykbdd
@@ -67810,6 +67812,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: An open source cross-platform alternative to AirDrop
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n localsend | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists as localsend-bin in localsend-bin.scm, exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** BLOCKED 11354. aurutils
    - AUR votes: 298, popularity: 5.8547
    - Note: helper tools for the arch user repository
@@ -67828,37 +67832,51 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The industry standard for running multiple operating systems as virtual machines on a single Linux PC.
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vmware-workstation | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: PROPRIETARY_COMPLEX_EXHAUSTED | A1: proprietary binary with DKMS kernel modules (vmmon, vmnet) incompatible with Guix; A2: requires systemd services + kernel headers; A3: binary redistribution restricted by VMware EULA | recipe-resolver-260408g pass
+   - TODO Status: BLOCKED
 ** FAILED 11357. zapzap
    - AUR votes: 64, popularity: 5.6270
    - Note: WhatsApp desktop application written in Pyqt6 + PyQt6-WebEngine
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n zapzap | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r5-w02.scm (zapzap), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11358. mullvad-browser-bin
    - AUR votes: 72, popularity: 5.5706
    - Note: Privacy-focused web browser developed by Mullvad VPN and the Tor Project
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mullvad-browser-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in recipe-resolver-260407j.scm (mullvad-browser-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (mullvad-browser-bin v15.0.9, Mullvad Browser privacy browser, MPL-2.0)
 ** FAILED 11359. jellyfin-desktop
    - AUR votes: 106, popularity: 5.4389
    - Note: Jellyfin Desktop Client
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n jellyfin-desktop | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r12-w03.scm (jellyfin-desktop), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11360. vesktop
    - AUR votes: 81, popularity: 5.4029
    - Note: A standalone Electron-based Discord app with Vencord & improved Linux support
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vesktop | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r3-w01.scm (vesktop-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11361. electron40-bin
    - AUR votes: 7, popularity: 5.1678
    - Note: Build cross platform desktop apps with web technologies — prebuilt
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n electron40-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r12-w03.scm (electron40-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11362. jetbrains-toolbox
    - AUR votes: 198, popularity: 5.0510
    - Note: Manage all your JetBrains Projects and Tools
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n jetbrains-toolbox | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-recipe-w02.scm (jetbrains-toolbox), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (jetbrains-toolbox v3.4.1.78303, JetBrains Toolbox App, proprietary free-to-use)
 ** FAILED 11363. prefixer
    - AUR votes: 11, popularity: 5.0445
@@ -67870,11 +67888,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: RGB lighting management front-end application for OpenRazer
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n polychromatic | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r10-w03.scm (polychromatic), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11365. freetube-bin
    - AUR votes: 222, popularity: 4.8422
    - Note: An open source desktop YouTube player built with privacy in mind.
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n freetube-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r18-w01.scm (freetube-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (freetube-bin v0.24.0-beta, FreeTube privacy YouTube player, AGPL-3.0)
 ** FAILED 11366. fresh-editor-bin
    - Status: DONE: compat alias in general-compat.scm -> rustdesk-bin; recipe in recipe-resolver-260407j.scm (recipe-resolver-260408f pass)
@@ -67893,6 +67915,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Zotero Standalone. Is a free, easy-to-use tool to help you collect, organize, cite, and share your research sources.
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n zotero-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r18-w01.scm (zotero-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (zotero-bin v8.0.4, Zotero reference manager, AGPL-3.0)
 ** FAILED 11369. ttf-ms-win11-auto
    - AUR votes: 112, popularity: 4.6720
@@ -67941,11 +67965,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Easily manage wine and proton prefix
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n bottles | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-recipe-r4-w02.scm (bottles), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11378. proton-pass-bin
    - AUR votes: 39, popularity: 4.5822
    - Note: Open-source password manager for effortless protection. Securely store, share and auto-login your accounts with Proton P
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n proton-pass-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r3-w01.scm (proton-pass-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (proton-pass-bin v1.36.0, Proton Pass desktop .deb, proprietary)
 ** FAILED 11379. cursor-bin
    - AUR votes: 75, popularity: 4.5284
@@ -67954,22 +67982,30 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AI-first coding environment
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cursor-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-recipe-w02.scm (cursor-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (cursor-bin v3.0.13, Cursor AI editor AppImage, proprietary)
 ** FAILED 11380. faugus-launcher
    - AUR votes: 22, popularity: 4.4889
    - Note: A simple and lightweight app for running Windows games using UMU-Launcher
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n faugus-launcher | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r5-w02.scm (faugus-launcher), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11381. android-studio
    - AUR votes: 1120, popularity: 4.3094
    - Note: The official Android IDE (Stable branch)
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n android-studio | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: recipe in recipe-resolver-260408g.scm (android-studio-bin v2024.3.2.16, tar.gz binary, proprietary) + compat alias android-studio in general-compat.scm (recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11382. minecraft-launcher
    - AUR votes: 1132, popularity: 4.2667
    - Note: Official Minecraft Launcher
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n minecraft-launcher | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r10-w03.scm (minecraft-launcher), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11383. arduino-ide-bin
    - Status: DONE: compat alias in general-compat.scm -> slack-desktop-bin; recipe in recipe-resolver-260407j.scm (recipe-resolver-260408f pass)
    - TODO Status: DONE
@@ -67977,6 +68013,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Arduino prototyping platform IDE, rewrite based on the Theia IDE framework.
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n arduino-ide-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r18-w01.scm (arduino-ide-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (arduino-ide-bin v2.3.8, Arduino IDE 2.x binary, AGPL-3.0)
 ** FAILED 11384. rustdesk
    - AUR votes: 59, popularity: 4.1550
@@ -67995,12 +68033,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Operating environment for the new internet. Anytype is a next generation software that breaks down barriers between appl
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n anytype-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-r18-w01.scm (anytype-bin), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (anytype-bin v0.54.26, Anytype knowledge management .deb, custom license)
 ** FAILED 11387. traur
    - AUR votes: 8, popularity: 4.0265
    - Note: Trust scoring for AUR packages
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n traur | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: ARCH_SPECIFIC_EXHAUSTED | A1: AUR trust scoring tool, requires makepkg/pacman infrastructure; A2: Bash script tightly coupled to AUR API + pacman local DB; A3: no Guix analogue possible (AUR-specific tool) | recipe-resolver-260408g pass
+   - TODO Status: BLOCKED
 ** FAILED 11388. floorp-bin
    - AUR votes: 66, popularity: 4.0208
    - Note: Firefox-based web browser focused on performance and customizability
@@ -68012,6 +68054,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Drawing/editing program modeled after Paint.NET. It's goal is to provide a simplified alternative to GIMP for casual use
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n pinta | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: DONE: already resolved; real recipe exists in cron-5a2fb251-recipe-r4-w02.scm (pinta), exported from packages.scm (confirmed in recipe-resolver-260408g pass)
+   - TODO Status: DONE
 ** FAILED 11390. informant
    - AUR votes: 131, popularity: 4.0108
    - Note: An Arch Linux News reader and pacman hook
@@ -68038,11 +68082,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Push-to-talk voice-to-text for Linux (optimized for Wayland, works on X11)
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n voxtype | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED | A1: no upstream source found (GitHub/GitLab search yields no results); A2: AUR package has no PKGBUILD or source URL accessible; A3: insufficient information to draft any recipe | recipe-resolver-260408g pass
+   - TODO Status: BLOCKED
 ** FAILED 11395. davinci-resolve
    - AUR votes: 178, popularity: 3.9304
    - Note: Professional A/V post-production software suite from Blackmagic Design
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n davinci-resolve | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
+   - Status: BLOCKED: PROPRIETARY_COMPLEX_EXHAUSTED | A1: proprietary video editor, requires manual download from blackmagicdesign.com (no direct URL); A2: massive ~3GB binary with CUDA/OpenCL deps; A3: complex runtime requiring specific GPU driver versions | recipe-resolver-260408g pass
+   - TODO Status: BLOCKED
 ** FAILED 11396. protonup-qt
    - AUR votes: 105, popularity: 3.9173
    - Note: Install and manage Proton-GE and Luxtorpeda for Steam and Wine-GE for Lutris
@@ -89201,12 +89249,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 15592. xlibre-input-wacom-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show xlibre-input-wacom | detail: target `xlibre-input-wacom` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: compat alias in recipe-resolver-260408g.scm -> xf86-input-wacom (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - AUR votes: 1, popularity: 0.0139
    - Note: XLibre Official Easy Install Drop in Replacement fork of X.Org Wacom tablet driver (binary release)
    - TODO Status: BLOCKED
 
 ** BLOCKED 15593. xlibre-video-fbdev-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show xlibre-video-fbdev | detail: target `xlibre-video-fbdev` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: compat alias in recipe-resolver-260408g.scm -> xf86-video-fbdev (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - AUR votes: 1, popularity: 0.0139
    - Note: XLibre Official Easy Install Drop in Replacement fork of X.Org fbdev video driver (binary release)
    - TODO Status: BLOCKED
@@ -89233,6 +89285,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 15598. appimagelauncher-git
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show appimagelauncher | detail: target `appimagelauncher` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: compat alias in recipe-resolver-260408g.scm -> appimagelauncher-bin (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - AUR votes: 5, popularity: 0.0120
    - Note: A Helper application for running and integrating AppImages.
    - TODO Status: BLOCKED
@@ -90715,6 +90769,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `showmethekey` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 ** BLOCKED 15892. logseq-desktop-git
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show logseq-desktop | detail: target `logseq-desktop` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: compat alias in recipe-resolver-260408g.scm -> logseq-desktop-bin (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - AUR votes: 5, popularity: 0.0051
    - Note: A privacy-first, open-source platform for knowledge sharing and management.
    - TODO Status: BLOCKED
@@ -96743,6 +96799,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 17086. localsend-git
    - Status: BLOCKED: FLUTTER_BINARY_INFRA | localsend v1.17.0 tarball confirmed at GitHub; needs Flutter patchelf infrastructure. Re-evaluated in recipe-resolver-260407e.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show localsend | detail: target `localsend` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: compat alias in recipe-resolver-260408g.scm -> localsend-bin (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - AUR votes: 2, popularity: 0.0019
    - Note: An open source cross-platform alternative to AirDrop
    - TODO Status: BLOCKED
@@ -102387,6 +102445,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 18202. ffmpeg-amd-full-git
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show ffmpeg-amd-full | detail: target `ffmpeg-amd-full` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
+   - Status: DONE: compat alias in recipe-resolver-260408g.scm -> ffmpeg (recipe-resolver-260408g pass)
+   - TODO Status: DONE
    - AUR votes: 15, popularity: 0.0008
    - Note: Complete solution to record, convert and stream audio and video (all possible features for AMD, including libfdk-aac; git version)
    - TODO Status: BLOCKED
