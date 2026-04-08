@@ -230,6 +230,7 @@
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages deptree-resolver-260408e)
+  #:use-module (gaurix packages recipe-resolver-260408m)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -4650,3 +4651,47 @@
 
 ;; AUR alacritty-use-theme-with-gnome-darkmode -> gaurix alacritty-use-theme-with-gnome-darkmode
 (define-public alacritty-gnome-darkmode (package (inherit alacritty-use-theme-with-gnome-darkmode) (name "alacritty-gnome-darkmode")))
+
+;; --- recipe-resolver-260408m compat aliases ---
+
+;; AUR maplemono-cn-unhinted -> gaurix font-maplemono-cn-unhinted
+(define-public maplemono-cn-unhinted (package (inherit font-maplemono-cn-unhinted) (name "maplemono-cn-unhinted")))
+
+;; AUR maplemono-cn -> gaurix font-maplemono-cn
+(define-public maplemono-cn (package (inherit font-maplemono-cn) (name "maplemono-cn")))
+
+;; AUR maplemono-nf-cn-unhinted -> gaurix font-maplemono-nf-cn-unhinted
+(define-public maplemono-nf-cn-unhinted (package (inherit font-maplemono-nf-cn-unhinted) (name "maplemono-nf-cn-unhinted")))
+
+;; AUR maplemono-nf-cn -> gaurix font-maplemono-nf-cn
+(define-public maplemono-nf-cn (package (inherit font-maplemono-nf-cn) (name "maplemono-nf-cn")))
+
+;; AUR maplemono-nf-unhinted -> gaurix font-maplemono-nf-unhinted
+(define-public maplemono-nf-unhinted (package (inherit font-maplemono-nf-unhinted) (name "maplemono-nf-unhinted")))
+
+;; AUR maplemono-nf -> gaurix font-maplemono-nf
+(define-public maplemono-nf (package (inherit font-maplemono-nf) (name "maplemono-nf")))
+
+;; AUR maplemono-otf -> gaurix font-maplemono-otf
+(define-public maplemono-otf (package (inherit font-maplemono-otf) (name "maplemono-otf")))
+
+;; AUR maplemono-ttf -> gaurix font-maplemono-ttf
+(define-public maplemono-ttf (package (inherit font-maplemono-ttf) (name "maplemono-ttf")))
+
+;; AUR maplemono-variable -> gaurix font-maplemono-variable
+(define-public maplemono-variable (package (inherit font-maplemono-variable) (name "maplemono-variable")))
+
+;; AUR maplemono-woff2 -> gaurix font-maplemono-woff2
+(define-public maplemono-woff2 (package (inherit font-maplemono-woff2) (name "maplemono-woff2")))
+
+;; AUR aliyunpan-go -> gaurix aliyunpan
+(define-public aliyunpan-go (package (inherit aliyunpan) (name "aliyunpan-go")))
+
+;; AUR opensuperclone-git -> gaurix opensuperclone
+(define-public opensuperclone-git (package (inherit opensuperclone) (name "opensuperclone-git")))
+
+;; AUR grub-theme-minegrub-git -> gaurix grub-theme-minegrub
+(define-public grub-theme-minegrub-git (package (inherit grub-theme-minegrub) (name "grub-theme-minegrub-git")))
+
+;; AUR spacer -> gaurix spacer-cli
+(define-public spacer (package (inherit spacer-cli) (name "spacer")))

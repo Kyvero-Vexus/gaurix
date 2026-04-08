@@ -67263,12 +67263,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: CMake C++20 file manager; duplicate of spacefm-thermitegod
    - TODO Status: BLOCKED
 
-** TODO 11156. googlemessages
+** BLOCKED 11156. googlemessages
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Electron web wrapper; needs investigation of AUR PKGBUILD for .deb repack
    - AUR votes: 4, popularity: 0.0161
    - Note: Unnofficial Google messages desktop app
    - TODO Status: TODO
 
-** TODO 11157. stable-diffusion-webui-git
+** BLOCKED 11157. stable-diffusion-webui-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — ~40 pip deps (torch, transformers, etc.) not in Guix
    - AUR votes: 9, popularity: 0.0161
    - Note: Stable Diffusion Web UI (AUTOMATIC1111)
    - TODO Status: TODO
@@ -67278,27 +67280,32 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Next generation multi-threaded compression with rzip
    - TODO Status: DONE
 
-** TODO 11159. mingw-w64-pkg-config
+** BLOCKED 11159. mingw-w64-pkg-config
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — MinGW cross-compilation; Guix cross model differs from AUR
    - AUR votes: 73, popularity: 0.0161
    - Note: Support pkg-config script (does not depend on any particular version of pkg-config). Useful for pkg-config powered cross
    - TODO Status: TODO
 
-** TODO 11160. mingw-w64-cmake
+** BLOCKED 11160. mingw-w64-cmake
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — MinGW cross-compilation; Guix cross model differs from AUR
    - AUR votes: 58, popularity: 0.0161
    - Note: CMake wrapper for MinGW (mingw-w64)
    - TODO Status: TODO
 
-** TODO 11161. zephyr-sdk-bin
+** BLOCKED 11161. zephyr-sdk-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — ~2GB SDK bundle with cross-toolchains; needs large binary repack
    - AUR votes: 2, popularity: 0.0161
    - Note: SDK for Zephyr real-time operating system
    - TODO Status: TODO
 
-** TODO 11162. python2-libxml2
+** BLOCKED 11162. python2-libxml2
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Python 2 EOL; verify if Python 3 bindings suffice
    - AUR votes: 6, popularity: 0.0161
    - Note: Python 2 bindings for the XML parsing library v2
    - TODO Status: TODO
 
-** TODO 11163. fittstool
+** BLOCKED 11163. fittstool
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Cannot locate upstream source or AUR PKGBUILD
    - AUR votes: 4, popularity: 0.0161
    - Note: This utility allows you to do just that - bind commands to mouse button events on the screen corners, via a simple and c
    - TODO Status: TODO
@@ -67320,17 +67327,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `ansilove`; validated by direct target resolution with `guix package -A '^(ansilove)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11167. zswap-disable-writeback
+** DONE 11167. zswap-disable-writeback
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (zswap-disable-writeback)
    - AUR votes: 3, popularity: 0.0161
    - Note: Disable zswap writeback using systemd cgroup configuration
    - TODO Status: TODO
 
-** TODO 11168. sierra-breeze-enhanced
+** BLOCKED 11168. sierra-breeze-enhanced
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Requires KDE kdecoration-dev not in Guix
    - AUR votes: 2, popularity: 0.0160
    - Note: A kwin decoration with support for transparency, rounded corners, multiple titlebar button presets and more
    - TODO Status: TODO
 
-** TODO 11169. grep-compat
+** BLOCKED 11169. grep-compat
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Ambiguous; no clear upstream source or AUR PKGBUILD
    - AUR votes: 2, popularity: 0.0160
    - Note: A string search utility (without egrep and fgrep warnings when used in scripts)
    - TODO Status: TODO
@@ -67340,7 +67350,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: PulseAudio Volume Control 5.0 (last GTK3 release)
    - TODO Status: DONE
 
-** TODO 11171. cpr-git
+** BLOCKED 11171. cpr-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — C++ HTTP lib; cmake-build-system feasible; needs version pinning
    - AUR votes: 4, popularity: 0.0160
    - Note: C++ Requests: Curl for People
    - TODO Status: TODO
@@ -67350,7 +67361,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Helix fork with Vim keybindings and more
    - TODO Status: DONE
 
-** TODO 11173. lanxchange
+** BLOCKED 11173. lanxchange
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Java/Gradle app; Gradle not supported in Guix; investigate JAR repack
    - AUR votes: 3, popularity: 0.0160
    - Note: Configuration-free, cross-platform file transfers for your local network
    - TODO Status: TODO
@@ -67361,47 +67373,56 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `python-ezdxf`; validated by direct target resolution with `guix package -A '^(python-ezdxf)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11175. freeswitch
+** BLOCKED 11175. freeswitch
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — 50+ telephony deps (Sofia-SIP, spandsp, etc.) not in Guix
    - AUR votes: 17, popularity: 0.0160
    - Note: An opensource and free (libre, price) telephony system, similar to Asterisk.
    - TODO Status: TODO
 
-** TODO 11176. scrutiny-web-frontend
+** BLOCKED 11176. scrutiny-web-frontend
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Go+Angular; needs npm/Angular build for frontend assets
    - AUR votes: 4, popularity: 0.0160
    - Note: Hard Drive S.M.A.R.T Monitoring, Historical Trends & Real World Failure Thresholds - Web Frontend Files
    - TODO Status: TODO
 
-** TODO 11177. k3s
+** BLOCKED 11177. k3s
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Massive Go dep tree (200+ modules); investigate binary repack
    - AUR votes: 2, popularity: 0.0160
    - Note: Lightweight Kubernetes
    - TODO Status: TODO
 
-** TODO 11178. apache-gremlin-console
+** BLOCKED 11178. apache-gremlin-console
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Java/Groovy console; binary ZIP repack feasible
    - AUR votes: 2, popularity: 0.0160
    - Note: Gremlin console from Apache TinkerPop
    - TODO Status: TODO
 
-** TODO 11179. kerl
+** DONE 11179. kerl
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (kerl)
    - AUR votes: 6, popularity: 0.0160
    - Note: Easy building and installing of Erlang/OTP instances
    - TODO Status: TODO
 
-** TODO 11180. aliyunpan-go
+** DONE 11180. aliyunpan-go
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (aliyunpan)
    - AUR votes: 4, popularity: 0.0160
    - Note: 阿里云盘命令行客户端，支持webdav文件服务，支持JavaScript插件，支持同步备份功能。
    - TODO Status: TODO
 
-** TODO 11181. python-miniflux
+** DONE 11181. python-miniflux
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (python-miniflux)
    - AUR votes: 2, popularity: 0.0160
    - Note: Python client for Miniflux API.
    - TODO Status: TODO
 
-** TODO 11182. olive-git
+** BLOCKED 11182. olive-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Needs OpenTimelineIO, OpenColorIO, OpenImageIO not in Guix
    - AUR votes: 14, popularity: 0.0160
    - Note: Free non-linear video editor
    - TODO Status: TODO
 
-** TODO 11183. brother-ql700
+** BLOCKED 11183. brother-ql700
+   - Status: BLOCKED: LICENSE_REVIEW_NEEDED — Proprietary Brother firmware; redistribution rights unclear
    - AUR votes: 3, popularity: 0.0160
    - Note: LPR and CUPS driver for Brother QL-700 label printer
    - TODO Status: TODO
@@ -67412,17 +67433,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `fuzzylite`; validated by direct target resolution with `guix package -A '^(fuzzylite)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11185. com.163.music.spark
+** BLOCKED 11185. com.163.music.spark
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NetEase Cloud Music; investigate .deb binary repack
    - AUR votes: 3, popularity: 0.0160
    - Note: Netease Music Wine Client from Spark Store
    - TODO Status: TODO
 
-** TODO 11186. flightgear-data
+** BLOCKED 11186. flightgear-data
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — ~3.5GB data; needs large file handling validation
    - AUR votes: 22, popularity: 0.0160
    - Note: The FlightGear base package contains the necessary data files to run FlightGear
    - TODO Status: TODO
 
-** TODO 11187. kodi-addon-inputstream-ffmpegdirect
+** BLOCKED 11187. kodi-addon-inputstream-ffmpegdirect
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Requires kodi-dev headers not in Guix
    - AUR votes: 9, popularity: 0.0160
    - Note: Inputstream ffmpegdirect kodi plugin
    - TODO Status: TODO
@@ -67433,12 +67457,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `emacs-lucid`; validated by direct target resolution with `guix package -A '^(emacs-lucid)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11189. caido-desktop
+** BLOCKED 11189. caido-desktop
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Security toolkit; investigate AppImage/.deb binary repack
    - AUR votes: 5, popularity: 0.0160
    - Note: A lightweight web security auditing toolkit.
    - TODO Status: TODO
 
-** TODO 11190. betterbird-pt-bin
+** BLOCKED 11190. betterbird-pt-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Portuguese Betterbird; investigate .deb binary repack
    - AUR votes: 4, popularity: 0.0160
    - Note: PORTUGUESE // Betterbird is a fine-tuned version of Mozilla Thunderbird, Thunderbird on steroids, if you will.
    - TODO Status: TODO
@@ -67449,42 +67475,50 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `qbe`; validated by direct target resolution with `guix package -A '^(qbe)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11192. spacer
+** DONE 11192. spacer
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (spacer-cli)
    - AUR votes: 2, popularity: 0.0160
    - Note: CLI tool to insert spacers in when command output stops
    - TODO Status: TODO
 
-** TODO 11193. gr-fosphor-git
+** BLOCKED 11193. gr-fosphor-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Requires GNU Radio + OpenCL + GLFW; OpenCL partially in Guix
    - AUR votes: 5, popularity: 0.0160
    - Note: GNU Radio block for RTSA-like spectrum visualization using OpenCL and OpenGL acceleration
    - TODO Status: TODO
 
-** TODO 11194. posixovl
+** DONE 11194. posixovl
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (posixovl)
    - AUR votes: 5, popularity: 0.0160
    - Note: A FUSE filesystem that provides POSIX functionality, a modern equivalent to UMSDOS
    - TODO Status: TODO
 
-** TODO 11195. eidklient
+** BLOCKED 11195. eidklient
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Slovak eID client; investigate official .deb repack
    - AUR votes: 18, popularity: 0.0160
    - Note: Slovak eID Client
    - TODO Status: TODO
 
-** TODO 11196. watchdog
+** DONE 11196. watchdog
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (python-watchdog)
    - AUR votes: 18, popularity: 0.0160
    - Note: Watchdog daemon
    - TODO Status: TODO
 
-** TODO 11197. naver-whale-stable
+** BLOCKED 11197. naver-whale-stable
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Korean Chromium browser; .deb binary repack feasible
    - AUR votes: 5, popularity: 0.0160
    - Note: The web browser from NAVER
    - TODO Status: TODO
 
-** TODO 11198. kwin-decoration-sierra-breeze-enhanced-git
+** BLOCKED 11198. kwin-decoration-sierra-breeze-enhanced-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Requires KDE kdecoration-dev not in Guix
    - AUR votes: 9, popularity: 0.0160
    - Note: A fork of BreezeEnhanced to make it (arguably) more minimalistic and informative (git version)
    - TODO Status: TODO
 
-** TODO 11199. llvm-mos-git
+** BLOCKED 11199. llvm-mos-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — LLVM fork for 6502; needs full LLVM build customization
    - AUR votes: 3, popularity: 0.0160
    - Note: AUR package
    - TODO Status: TODO
@@ -67501,107 +67535,128 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `bitlbee`; validated by direct target resolution with `guix package -A '^(bitlbee)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11202. hunspell-pt_pt-preao
+** DONE 11202. hunspell-pt_pt-preao
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (hunspell-pt-pt-preao)
    - AUR votes: 12, popularity: 0.0160
    - Note: Portuguese (European, pre-orthographic agreement) hunspell dictionaries
    - TODO Status: TODO
 
-** TODO 11203. fastgame-git
+** DONE 11203. fastgame-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (fastgame)
    - AUR votes: 3, popularity: 0.0160
    - Note: Optimize system performance for games
    - TODO Status: TODO
 
-** TODO 11204. huawei-me936-udev
+** DONE 11204. huawei-me936-udev
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (huawei-me936-udev)
    - AUR votes: 2, popularity: 0.0160
    - Note: Udev rule and configs for the Huawei ME936 modem
    - TODO Status: TODO
 
-** TODO 11205. lib32-vulkan-tools
+** BLOCKED 11205. lib32-vulkan-tools
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — 32-bit; Guix lacks lib32 multilib model
    - AUR votes: 2, popularity: 0.0160
    - Note: Vulkan Utilities and Tools (32-bit)
    - TODO Status: TODO
 
-** TODO 11206. opensuperclone-git
+** DONE 11206. opensuperclone-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (opensuperclone)
    - AUR votes: 2, popularity: 0.0160
    - Note: Fork of HDDSuperClone
    - TODO Status: TODO
 
-** TODO 11207. helm-ls
+** DONE 11207. helm-ls
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (helm-ls)
    - AUR votes: 3, popularity: 0.0160
    - Note: Language server for Helm
    - TODO Status: TODO
 
-** TODO 11208. ssmtp
+** DONE 11208. ssmtp
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (ssmtp)
    - AUR votes: 10, popularity: 0.0160
    - Note: Extremely simple MTA to get mail off the system to a mailhub (with Fedora patches)
    - TODO Status: TODO
 
-** TODO 11209. icecream
+** DONE 11209. icecream
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (icecream)
    - AUR votes: 38, popularity: 0.0160
    - Note: takes compile jobs from your build and distributes it to remote machines allowing a parallel build on several machines.
    - TODO Status: TODO
 
-** TODO 11210. ibus-avro-git
+** BLOCKED 11210. ibus-avro-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Bengali IME; needs libavro-phonetic packaging first
    - AUR votes: 11, popularity: 0.0160
    - Note: Avro Phonetic Bangla typing for Linux
    - TODO Status: TODO
 
-** TODO 11211. libsdrplay
+** BLOCKED 11211. libsdrplay
+   - Status: BLOCKED: LICENSE_REVIEW_NEEDED — Proprietary SDRplay API; EULA redistribution review needed
    - AUR votes: 15, popularity: 0.0160
    - Note: Modules for the SDRplay receiver
    - TODO Status: TODO
 
-** TODO 11212. shh
+** DONE 11212. shh
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (shh)
    - AUR votes: 5, popularity: 0.0159
    - Note: Automatic systemd service hardening guided by strace profiling
    - TODO Status: TODO
 
-** TODO 11213. mips64el-linux-gnu-binutils
+** BLOCKED 11213. mips64el-linux-gnu-binutils
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Cross-compilation; investigate Guix cross-toolchain model
    - AUR votes: 2, popularity: 0.0159
    - Note: Tools to assemble and manipulate binary and object files for the MIPS64EL target (for the toolchain with GNU C library a
    - TODO Status: TODO
 
-** TODO 11214. yofi-bin
+** DONE 11214. yofi-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (yofi-bin)
    - AUR votes: 5, popularity: 0.0158
    - Note: Minimalistic menu for Wayland-based compositors
    - TODO Status: TODO
 
-** TODO 11215. electrs
+** BLOCKED 11215. electrs
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Electrum Server; ~100 Rust crate deps; Bitcoin Core headers
    - AUR votes: 9, popularity: 0.0157
    - Note: An efficient re-implementation of Electrum Server in Rust
    - TODO Status: TODO
 
-** TODO 11216. dtv-scan-tables-git
+** DONE 11216. dtv-scan-tables-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (dtv-scan-tables)
    - AUR votes: 10, popularity: 0.0157
    - Note: Digital TV scan tables
    - TODO Status: TODO
 
-** TODO 11217. fcitx5-sitelen-pona
+** BLOCKED 11217. fcitx5-sitelen-pona
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Toki Pona IME; cmake recipe feasible once fcitx5-dev confirmed
    - AUR votes: 2, popularity: 0.0157
    - Note: fcitx5 table for translating latin characters into toki pona's sitelen pona glyphs
    - TODO Status: TODO
 
-** TODO 11218. gozen
+** BLOCKED 11218. gozen
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Requires Godot Engine not in Guix
    - AUR votes: 3, popularity: 0.0157
    - Note: A minimalistic video editor
    - TODO Status: TODO
 
-** TODO 11219. netextender
+** BLOCKED 11219. netextender
+   - Status: BLOCKED: LICENSE_REVIEW_NEEDED — SonicWall proprietary VPN; EULA redistribution review needed
    - AUR votes: 32, popularity: 0.0157
    - Note: SonicWALL SSL VPN Client
    - TODO Status: TODO
 
-** TODO 11220. classisland-git
+** BLOCKED 11220. classisland-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Windows-only .NET WPF app; no Linux build available
    - AUR votes: 2, popularity: 0.0156
    - Note: 适用于班级大屏的课表小工具（最新开发构建）。Class schedule displaying tool for interactive whiteboards in classrooms. (Built from latest Git c
    - TODO Status: TODO
 
-** TODO 11221. termpicker-bin
+** DONE 11221. termpicker-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (termpicker-bin)
    - AUR votes: 3, popularity: 0.0154
    - Note: A color picker for the terminal
    - TODO Status: TODO
 
-** TODO 11222. komodo-periphery
+** BLOCKED 11222. komodo-periphery
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Source repo unclear/private; may be commercial platform
    - AUR votes: 2, popularity: 0.0154
    - Note: Periphery server for the komodo monitor
    - TODO Status: TODO
@@ -67611,12 +67666,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A bitmap programming font optimized for coziness
    - TODO Status: DONE
 
-** TODO 11224. wsjtx-improved-al
+** BLOCKED 11224. wsjtx-improved-al
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Amateur radio; needs Qt6, Hamlib, Fortran, custom DSP libs
    - AUR votes: 4, popularity: 0.0153
    - Note: Software for Amateur Radio Weak-Signal Communication (JT9 and JT65) - WSJT-X Improved by DG2YCB (Alternative Layout Vers
    - TODO Status: TODO
 
-** TODO 11225. mkbrr
+** DONE 11225. mkbrr
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (mkbrr)
    - AUR votes: 2, popularity: 0.0153
    - Note: A tool to create, modify and inspect torrent files
    - TODO Status: TODO
@@ -67627,7 +67684,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `abook`; validated by direct target resolution with `guix package -A '^(abook)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11227. fcitx5-mcbopomofo-git
+** BLOCKED 11227. fcitx5-mcbopomofo-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Traditional Chinese IME; cmake recipe feasible
    - AUR votes: 6, popularity: 0.0152
    - Note: McBopomofo for fcitx5
    - TODO Status: TODO
@@ -67637,32 +67695,38 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Free and Open Source PlayStation Remote Play Client
    - TODO Status: TODO
 
-** TODO 11229. filebeat-bin
+** DONE 11229. filebeat-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (filebeat-bin)
    - AUR votes: 3, popularity: 0.0152
    - Note: Filebeat sends log files to Logstash or directly to Elasticsearch
    - TODO Status: TODO
 
-** TODO 11230. puddletag-git
+** BLOCKED 11230. puddletag-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Audio tag editor; needs PyQt5/6 + mutagen deps
    - AUR votes: 35, popularity: 0.0152
    - Note: An audio tag editor for GNU/Linux, git version
    - TODO Status: TODO
 
-** TODO 11231. image-optimizer
+** BLOCKED 11231. image-optimizer
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Ambiguous name; multiple projects; AUR PKGBUILD not in cache
    - AUR votes: 2, popularity: 0.0152
    - Note: Simple lossless compression
    - TODO Status: TODO
 
-** TODO 11232. discover-overlay
+** DONE 11232. discover-overlay
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (discover-overlay)
    - AUR votes: 16, popularity: 0.0152
    - Note: Yet another Discord overlay for Linux written in Python using GTK3
    - TODO Status: TODO
 
-** TODO 11233. zenta-bin
+** DONE 11233. zenta-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (zenta-bin)
    - AUR votes: 3, popularity: 0.0151
    - Note: mindfulness for terminal users
    - TODO Status: TODO
 
-** TODO 11234. feishin-electron-bin
+** DONE 11234. feishin-electron-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (feishin-electron-bin)
    - AUR votes: 3, popularity: 0.0151
    - Note: A modern self-hosted music player.(Prebuilt version.Use system-wide electron)
    - TODO Status: TODO
@@ -67672,17 +67736,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Modern desktop RSS reader built with Electron, React, and Fluent UI.
    - TODO Status: TODO
 
-** TODO 11236. gnirehtet
+** DONE 11236. gnirehtet
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (gnirehtet)
    - AUR votes: 15, popularity: 0.0151
    - Note: Gnirehtet provides reverse tethering for Android
    - TODO Status: TODO
 
-** TODO 11237. sudachi
+** DONE 11237. sudachi
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (sudachi)
    - AUR votes: 5, popularity: 0.0151
    - Note: Nintendo Switch emulator forked from yuzu.
    - TODO Status: TODO
 
-** TODO 11238. maptool-bin
+** BLOCKED 11238. maptool-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — RPTools MapTool; Java binary ZIP repack feasible
    - AUR votes: 8, popularity: 0.0151
    - Note: An open source virtual tabletop program
    - TODO Status: TODO
@@ -67692,7 +67759,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A tool to convert a Wallpaper's color scheme - palette
    - TODO Status: TODO
 
-** TODO 11240. vcvrack-bin
+** BLOCKED 11240. vcvrack-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Modular synth; binary tar.gz repack; verify JACK/ALSA/OpenGL deps
    - AUR votes: 20, popularity: 0.0150
    - Note: Open-source virtual modular synthesizer
    - TODO Status: TODO
@@ -67702,47 +67770,56 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Tall and condensed bitmap font for geeks.
    - TODO Status: DONE
 
-** TODO 11242. btrfs-assistant-git
+** BLOCKED 11242. btrfs-assistant-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — Needs Qt6 + btrfs-progs + snapper; verify Guix availability
    - AUR votes: 7, popularity: 0.0150
    - Note: An application for managing BTRFS subvolumes and Snapper snapshots
    - TODO Status: TODO
 
-** TODO 11243. quarkuscli-bin
+** DONE 11243. quarkuscli-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (quarkuscli-bin)
    - AUR votes: 4, popularity: 0.0149
    - Note: Create projects, manage extensions and perform build and development tasks for Quarkus, the Kubernetes Native Java stack
    - TODO Status: TODO
 
-** TODO 11244. mingw-w64-environment
+** BLOCKED 11244. mingw-w64-environment
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — MinGW meta-package; Guix cross model covers this differently
    - AUR votes: 10, popularity: 0.0149
    - Note: Script providing common environment variables and functions for MinGW (mingw-w64)
    - TODO Status: TODO
 
-** TODO 11245. phantomjs
+** BLOCKED 11245. phantomjs
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Abandoned since 2018; website down; project unmaintained
    - AUR votes: 31, popularity: 0.0149
    - Note: Headless WebKit with JavaScript API
    - TODO Status: TODO
 
-** TODO 11246. grub-theme-minegrub-git
+** DONE 11246. grub-theme-minegrub-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (grub-theme-minegrub)
    - AUR votes: 5, popularity: 0.0149
    - Note: A Grub Theme in the style of Minecraft!
    - TODO Status: TODO
 
-** TODO 11247. dar
+** DONE 11247. dar
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (dar)
    - AUR votes: 59, popularity: 0.0148
    - Note: A full featured command-line backup tool, short for Disk ARchive
    - TODO Status: TODO
 
-** TODO 11248. caddy-custom
+** BLOCKED 11248. caddy-custom
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Custom Caddy build; needs xcaddy Go plugin builder
    - AUR votes: 2, popularity: 0.0148
    - Note: Caddy web server with plugins
    - TODO Status: TODO
 
-** TODO 11249. gcalcli
+** DONE 11249. gcalcli
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (gcalcli)
    - AUR votes: 125, popularity: 0.0148
    - Note: Google calendar command line interface
    - TODO Status: TODO
 
-** TODO 11250. open-fprintd
+** DONE 11250. open-fprintd
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (open-fprintd)
    - AUR votes: 11, popularity: 0.0148
    - Note: Fprintd replacement which allows you to have your own backend as a standalone service
    - TODO Status: TODO
@@ -67753,42 +67830,50 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `labwc`; validated by direct target resolution with `guix package -A '^(labwc)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11252. isd-git
+** BLOCKED 11252. isd-git
+   - Status: BLOCKED: SOURCE_UNAVAILABLE — Unclear upstream; multiple projects named isd
    - AUR votes: 5, popularity: 0.0148
    - Note: Interactive TUI for systemd units (development version)
    - TODO Status: TODO
 
-** TODO 11253. maplemono-cn-unhinted
+** DONE 11253. maplemono-cn-unhinted
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-cn-unhinted)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11254. maplemono-cn
+** DONE 11254. maplemono-cn
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-cn)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11255. maplemono-nf-cn-unhinted
+** DONE 11255. maplemono-nf-cn-unhinted
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-nf-cn-unhinted)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11256. maplemono-nf-cn
+** DONE 11256. maplemono-nf-cn
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-nf-cn)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11257. maplemono-nf-unhinted
+** DONE 11257. maplemono-nf-unhinted
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-nf-unhinted)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11258. maplemono-nf
+** DONE 11258. maplemono-nf
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-nf)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11259. maplemono-otf
+** DONE 11259. maplemono-otf
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-otf)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
@@ -67798,42 +67883,50 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11261. maplemono-ttf
+** DONE 11261. maplemono-ttf
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-ttf)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11262. maplemono-variable
+** DONE 11262. maplemono-variable
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-variable)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11263. maplemono-woff2
+** DONE 11263. maplemono-woff2
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (font-maplemono-woff2)
    - AUR votes: 7, popularity: 0.0148
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
-** TODO 11264. python-undervolt
+** DONE 11264. python-undervolt
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (python-undervolt)
    - AUR votes: 12, popularity: 0.0148
    - Note: Undervolt Intel CPUs under Linux
    - TODO Status: TODO
 
-** TODO 11265. ryujinx-canary
+** BLOCKED 11265. ryujinx-canary
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Switch emulator; .NET 8; investigate binary AppImage repack
    - AUR votes: 2, popularity: 0.0147
    - Note: Experimental Nintendo Switch Emulator written in C#
    - TODO Status: TODO
 
-** TODO 11266. onedrivegui-git
+** BLOCKED 11266. onedrivegui-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — OneDrive GUI; needs onedrive CLI backend packaged first
    - AUR votes: 8, popularity: 0.0146
    - Note: A simple GUI for OneDrive Linux client, with multi-account support.
    - TODO Status: TODO
 
-** TODO 11267. whispering-bin
+** DONE 11267. whispering-bin
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (whispering-bin)
    - AUR votes: 2, popularity: 0.0146
    - Note: An open-source transcription application that provides global speech-to-text functionality, with options such as keyboar
    - TODO Status: TODO
 
-** TODO 11268. ds4drv
+** DONE 11268. ds4drv
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (ds4drv)
    - AUR votes: 14, popularity: 0.0146
    - Note: Sony DualShock 4 Userspace Driver
    - TODO Status: TODO
@@ -67848,7 +67941,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A local-first personal knowledge management system.(Prebuilt version.Use system-wide electron)
    - TODO Status: TODO
 
-** TODO 11271. fprintd-clients-git
+** BLOCKED 11271. fprintd-clients-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Fingerprint clients; meson recipe; verify fprintd in Guix
    - AUR votes: 10, popularity: 0.0144
    - Note: Fprintd without the daemon (debian/clients-only git branch)
    - TODO Status: TODO
@@ -67859,7 +67953,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `gophernicus`; validated by direct target resolution with `guix package -A '^(gophernicus)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11273. paper-velocity
+** BLOCKED 11273. paper-velocity
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Minecraft server JAR; copy-build-system with JRE wrapper
    - AUR votes: 2, popularity: 0.0144
    - Note: The modern, next-generation Minecraft server proxy.
    - TODO Status: TODO
@@ -67869,12 +67964,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A free note-taking software for programmers and Computer Science students.(Prebuilt version.Use system-wide electron)
    - TODO Status: TODO
 
-** TODO 11275. libdxvk
+** BLOCKED 11275. libdxvk
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — DXVK; needs Meson cross-compilation with MinGW-w64 for Wine
    - AUR votes: 3, popularity: 0.0144
    - Note: Vulkan-based implementation of D3D8, 9, 10 and 11 for Linux
    - TODO Status: TODO
 
-** TODO 11276. lib32-libdxvk
+** BLOCKED 11276. lib32-libdxvk
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED — 32-bit DXVK; blocked on MinGW-w64 + lib32 support
    - AUR votes: 3, popularity: 0.0144
    - Note: Vulkan-based implementation of D3D8, 9, 10 and 11 for Linux (32-bit)
    - TODO Status: TODO
@@ -67885,17 +67982,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `vlang`; validated by direct target resolution with `guix package -A '^(vlang)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** TODO 11278. plymouth-theme-catppuccin-latte-git
+** DONE 11278. plymouth-theme-catppuccin-latte-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (plymouth-theme-catppuccin-latte)
    - AUR votes: 4, popularity: 0.0143
    - Note: Soothing pastel theme for Plymouth - Latte
    - TODO Status: TODO
 
-** TODO 11279. plymouth-theme-catppuccin-frappe-git
+** DONE 11279. plymouth-theme-catppuccin-frappe-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (plymouth-theme-catppuccin-frappe)
    - AUR votes: 4, popularity: 0.0143
    - Note: Soothing pastel theme for Plymouth - Frappe
    - TODO Status: TODO
 
-** TODO 11280. plymouth-theme-catppuccin-macchiato-git
+** DONE 11280. plymouth-theme-catppuccin-macchiato-git
+   - Status: DONE: recipe in recipe-resolver-260408m.scm (plymouth-theme-catppuccin-macchiato)
    - AUR votes: 4, popularity: 0.0143
    - Note: Soothing pastel theme for Plymouth - Macchiato
    - TODO Status: TODO
