@@ -358,6 +358,7 @@
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages recipe-resolver-260408m)
   #:use-module (gaurix packages recipe-resolver-260408n)
+  #:use-module (gaurix packages recipe-resolver-260408o)
   #:use-module (gaurix packages deptree-resolver-260408d)
   #:use-module (gaurix packages deptree-resolver-260408d-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260408e)
@@ -8791,6 +8792,20 @@ podman-tui-bin
             livecaptions
             appanvil
             nucleus-cli
+            ;; recipe-resolver-260408o
+            fdir
+            puny-manager
+            netinfo
+            python-django-docs
+            gollama
+            andcli
+            pstate-frequency
+            stdexec
+            playit-bin
+            scrutiny
+            scrutiny-collector
+            mousam
+            pam-fprint-grosshack
             ;; deptree-resolver-260408f
             ancestris
             archarchive
