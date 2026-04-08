@@ -197,6 +197,7 @@
   #:use-module (gaurix packages queue-20260407-opus-p101)
   #:use-module (gaurix packages deptree-resolver-260407e)
   #:use-module (gaurix packages deptree-resolver-260407f)
+  #:use-module (gaurix packages recipe-resolver-260407h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -3462,6 +3463,37 @@
             gedit-source-code-browser
             nginx-mod-fancyindex
             harmony2
+            ;; recipe-resolver-260407h re-exports
+            fishnet-bin
+            pkl-bin
+            struct-bin
+            termflix-bin
+            jn-bin
+            resterm-bin
+            fitui-bin
+            gh-enhance-bin
+            lolcatpp-bin
+            grab-bin
+            meteobar-bin
+            proc-bin
+            mcp-cli-bin
+            zerobrew-bin
+            beatmapexporter-bin
+            byedpi-bin
+            rt-bin
+            runa-bin
+            gryph-bin
+            treekei-bin
+            xfr-bin
+            ttl-bin
+            xc-bin
+            pj-bin
+            openlist-bin
+            bbdown-bin
+            geoclue-tz-bin
+            buck2-bin
+            libdeep-filter-ladspa-bin
+            cli-proxy-api-bin
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
@@ -3471,3 +3503,7 @@
 (define-public sddm-silent-theme-git sddm-silent-theme)
 (define-public ebgaramond-otf font-eb-garamond-gaurix)
 (define-public ttf-gabarito-git ttf-gabarito)
+
+
+;; ─── recipe-resolver-260407h compat aliases ───
+;;  (all 30 packages are new binary packages with no AUR name aliases needed)

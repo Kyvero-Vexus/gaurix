@@ -330,6 +330,7 @@
   #:use-module (gaurix packages queue-20260407-opus-p101)
   #:use-module (gaurix packages deptree-resolver-260407e)
   #:use-module (gaurix packages deptree-resolver-260407e-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260407h)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8156,4 +8157,35 @@ podman-tui-bin
             vscodium-compat
             arduino-builder
             gitqlient-git))
+            ;; recipe-resolver-260407h
+            fishnet-bin
+            pkl-bin
+            struct-bin
+            termflix-bin
+            jn-bin
+            resterm-bin
+            fitui-bin
+            gh-enhance-bin
+            lolcatpp-bin
+            grab-bin
+            meteobar-bin
+            proc-bin
+            mcp-cli-bin
+            zerobrew-bin
+            beatmapexporter-bin
+            byedpi-bin
+            rt-bin
+            runa-bin
+            gryph-bin
+            treekei-bin
+            xfr-bin
+            ttl-bin
+            xc-bin
+            pj-bin
+            openlist-bin
+            bbdown-bin
+            geoclue-tz-bin
+            buck2-bin
+            libdeep-filter-ladspa-bin
+            cli-proxy-api-bin
 )
