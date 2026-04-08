@@ -230,6 +230,7 @@
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages deptree-resolver-260408e)
+  #:use-module (gaurix packages deptree-resolver-260408f)
   #:use-module (gaurix packages recipe-resolver-260408m)
   #:export (
             ;; deptree-resolver-260407 compat aliases

@@ -361,6 +361,8 @@
   #:use-module (gaurix packages deptree-resolver-260408d)
   #:use-module (gaurix packages deptree-resolver-260408d-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260408e)
+  #:use-module (gaurix packages deptree-resolver-260408f)
+  #:use-module (gaurix packages deptree-resolver-260408f-blocked-notes)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8789,4 +8791,40 @@ podman-tui-bin
             livecaptions
             appanvil
             nucleus-cli
+            ;; deptree-resolver-260408f
+            ancestris
+            archarchive
+            archlinux-artwork
+            butter-launcher-bin
+            crql-anina
+            crql-locd
+            electerm-live-bin
+            empty
+            en-se
+            evcolors
+            firefox-beta-bin-all-localizations
+            freetype2-qdoled-aw3225qf
+            freetype2-qdoled-gen3
+            grep-compat
+            heidisql-qt6-bin
+            jdk17-zulu-prime-bin
+            libelectron-electron-meta
+            libinput-no-gestures
+            librewolf-extension-keepassxc-browser
+            llama.cpp-opencl
+            mongodb-bin
+            nvidia-535xx-utils
+            opencl-amd
+            opencl-nvidia-390xx
+            opencl-nvidia-470xx
+            opencl-nvidia-535xx
+            opencl-nvidia-550xx
+            opencl-nvidia-580xx
+            opencl-nvidia-beta
+            rocm-gfx110x-bin
+            rocm-nightly-gfx110x-bin
+            rocm-nightly-gfx1151-bin
+            scrutiny-web-frontend
+            vectorchord-bin
+            vscodium-electron-bin
 )
