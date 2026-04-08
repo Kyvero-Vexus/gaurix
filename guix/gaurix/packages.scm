@@ -364,6 +364,7 @@
   #:use-module (gaurix packages deptree-resolver-260408e)
   #:use-module (gaurix packages deptree-resolver-260408f)
   #:use-module (gaurix packages deptree-resolver-260408f-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260408p)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8842,4 +8843,76 @@ podman-tui-bin
             scrutiny-web-frontend
             vectorchord-bin
             vscodium-electron-bin
+            ;; recipe-resolver-260408p
+            ente-auth-bin
+            oh-my-zsh-git
+            bruno-bin
+            amneziavpn-bin
+            android-sdk-platform-tools
+            postman-bin
+            brave-beta-bin
+            1password-cli
+            bitwarden-bin
+            proton-mail-bin
+            cloudflare-warp-bin
+            tor-browser-bin
+            microsoft-edge-stable-bin
+            losslesscut-bin
+            tidal-hifi-bin
+            gitkraken
+            superproductivity-bin
+            standardnotes-bin
+            triliumnext-bin
+            todoist-appimage
+            itch-bin
+            osu-lazer-bin
+            megasync-bin
+            visual-studio-code-insiders-bin
+            positron-ide-devel-bin
+            intellij-idea-ultimate-edition
+            backrest
+            warp-terminal-bin
+            equibop-bin
+            atuin-desktop-bin
+            peazip-qt-bin
+            plasticity-bin
+            en-croissant-bin
+            thorium-browser-avx-bin
+            yandex-browser
+            servo-bin
+            legcord
+            beeper-v4-bin
+            ente-desktop-bin
+            stoat-desktop-bin
+            clash-verge-rev-bin
+            hmcl-bin
+            ollama-vulkan-bin
+            proton-authenticator-bin
+            helixnotes-appimage-bin
+            weathr-bin
+            apifox-bin
+            ruffle-nightly-bin
+            ghostty-nightly-bin
+            opencode-desktop-bin
+            happ-desktop-bin
+            unityhub
+            openai-codex-bin
+            aceplay-bin
+            krokiet-bin
+            darkly-bin
+            chatall-bin
+            navithingy-bin
+            neodlp
+            t3code-bin
+            rustdesk-appimage
+            apk-editor-studio
+            passcualito
+            luffy-bin
+            max-bin
+            font-merriweather-sans-variable
+            refind-theme-catppuccin-git
+            plymouth-theme-catppuccin-mocha-git
+            preloader-signed
+            openoffice-ru-bin
+            zeroclaw
 )

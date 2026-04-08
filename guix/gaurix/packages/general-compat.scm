@@ -233,6 +233,7 @@
   #:use-module (gaurix packages deptree-resolver-260408f)
   #:use-module (gaurix packages recipe-resolver-260408m)
   #:use-module (gaurix packages recipe-resolver-260408o)
+  #:use-module (gaurix packages recipe-resolver-260408p)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1534,6 +1535,8 @@
             xc
             ;; recipe-resolver-260408l compat aliases
             alacritty-gnome-darkmode
+            ;; recipe-resolver-260408p compat
+            ttf-merriweather-sans-variable
             ))
 
 (define-public gtk2
@@ -4697,3 +4700,8 @@
 
 ;; AUR spacer -> gaurix spacer-cli
 (define-public spacer (package (inherit spacer-cli) (name "spacer")))
+
+;; --- recipe-resolver-260408p compat aliases ---
+
+;; AUR ttf-merriweather-sans-variable -> gaurix font-merriweather-sans-variable
+(define-public ttf-merriweather-sans-variable (package (inherit font-merriweather-sans-variable) (name "ttf-merriweather-sans-variable")))
