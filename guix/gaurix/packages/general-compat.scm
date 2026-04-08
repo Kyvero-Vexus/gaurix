@@ -3810,3 +3810,6 @@
 
 ;; ─── deptree-resolver-260407h compat aliases ───
 ;; (all 18 packages re-exported directly from deptree-resolver-260407h, no aliases needed)
+
+;; ─── recipe-resolver-260407n compat aliases ───
+;; (all 30 packages are new binary packages with no AUR name aliases needed)
