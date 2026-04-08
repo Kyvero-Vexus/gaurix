@@ -339,6 +339,7 @@
   #:use-module (gaurix packages recipe-resolver-260407o)
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:use-module (gaurix packages deptree-resolver-260407h)
+  #:use-module (gaurix packages deptree-resolver-260408a)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -3820,6 +3821,14 @@
             enyo-launcher
             pmg-bin
             drl
+            ;; deptree-resolver-260408a re-exports
+            cs-bin
+            crtui-bin
+            crycco-bin
+            cubyz-bin
+            crunch
+            icu74
+            csvi-bin-260408a
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
@@ -3848,3 +3857,6 @@
 
 ;; --- recipe-resolver-260407o compat aliases ---
 ;; (all 30 packages are new definitions with no AUR name aliases needed)
+
+;; ─── deptree-resolver-260408a compat aliases ───
+;; (all 7 packages re-exported directly from deptree-resolver-260408a, no aliases needed)
