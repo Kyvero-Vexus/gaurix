@@ -342,6 +342,7 @@
   #:use-module (gaurix packages recipe-resolver-260407n)
   #:use-module (gaurix packages recipe-resolver-260407o)
   #:use-module (gaurix packages recipe-resolver-260408a)
+  #:use-module (gaurix packages recipe-resolver-260408b)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8455,4 +8456,35 @@ podman-tui-bin
             twitch-downloader-bin
             maretf-bin
             kopia-ui-bin
+            ;; recipe-resolver-260408b
+            otf-atkinson-hyperlegible-next
+            ttf-atkinson-hyperlegible-next
+            ttf-atkinson-hyperlegible-next-variable
+            otf-atkinson-hyperlegible-next-mono
+            ttf-atkinson-hyperlegible-next-mono
+            ttf-atkinson-hyperlegible-next-mono-variable
+            blobmoji
+            candy-icons-git
+            sweet-folders-icons-git
+            gruvbox-icon-theme-git
+            breeze-hacked-cursor-theme-git
+            grub-theme-tela-white-2k-git
+            grub-theme-tela-white-4k-git
+            grub2-theme-archxion
+            grub2-theme-archlinux
+            sound-theme-smooth
+            gruvbox-gtk-theme-git
+            xfce-theme-cobibird
+            fagram-bin
+            pixieditor-bin
+            android-apktool-bin
+            amdgpu-clocks
+            python-funk
+            nvimpager
+            jome
+            croaring
+            logiops-git
+            duckduckgo-chat-cli
+            plymouth-theme-hexagon-alt-gruvbox
+            puddletag
 )
