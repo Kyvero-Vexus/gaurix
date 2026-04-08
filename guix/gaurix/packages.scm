@@ -185,6 +185,8 @@
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260407c)
   #:use-module (gaurix packages deptree-resolver-260407c-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260408b)
+  #:use-module (gaurix packages deptree-resolver-260408b-blocked-notes)
 
   #:use-module (gaurix packages queue-20260405-daily2)
   #:use-module (gaurix packages queue-20260405-daily2-blocked-notes)  #:export (
@@ -8595,4 +8597,13 @@ podman-tui-bin
             yaru-unity-theme
             yaru-metacity-theme
             yaru-session
+            ;; deptree-resolver-260408b
+            cull-bin
+            diz-bin
+            dnscontrol-bin
+            docker-credential-secretservice-bin
+            culmus
+            dinfo
+            discli
+            discord-rpc-extension-bin
 )
