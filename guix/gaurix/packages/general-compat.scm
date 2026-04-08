@@ -1536,8 +1536,17 @@
             xc
             ;; recipe-resolver-260408l compat aliases
             alacritty-gnome-darkmode
-            ;; recipe-resolver-260408p compat
-            ttf-merriweather-sans-variable
+            ;; recipe-resolver-260408p compat aliases
+            otf-geist
+            ttf-geist
+            ttf-geist-variable
+            otf-geist-mono
+            ttf-geist-mono
+            ttf-geist-mono-variable
+            sddm-theme-elegant-archlinux-git
+            brokefetch-git
+            vhd2vl-git
+            sc-git
             ))
 
 (define-public gtk2
@@ -4702,7 +4711,34 @@
 ;; AUR spacer -> gaurix spacer-cli
 (define-public spacer (package (inherit spacer-cli) (name "spacer")))
 
-;; --- recipe-resolver-260408p compat aliases ---
+; --- recipe-resolver-260408p compat aliases ---
 
-;; AUR ttf-merriweather-sans-variable -> gaurix font-merriweather-sans-variable
-(define-public ttf-merriweather-sans-variable (package (inherit font-merriweather-sans-variable) (name "ttf-merriweather-sans-variable")))
+;; AUR otf-geist -> gaurix font-geist
+(define-public otf-geist (package (inherit font-geist) (name "otf-geist")))
+
+;; AUR ttf-geist -> gaurix font-geist
+(define-public ttf-geist (package (inherit font-geist) (name "ttf-geist")))
+
+;; AUR ttf-geist-variable -> gaurix font-geist
+(define-public ttf-geist-variable (package (inherit font-geist) (name "ttf-geist-variable")))
+
+;; AUR otf-geist-mono -> gaurix font-geist-mono
+(define-public otf-geist-mono (package (inherit font-geist-mono) (name "otf-geist-mono")))
+
+;; AUR ttf-geist-mono -> gaurix font-geist-mono
+(define-public ttf-geist-mono (package (inherit font-geist-mono) (name "ttf-geist-mono")))
+
+;; AUR ttf-geist-mono-variable -> gaurix font-geist-mono
+(define-public ttf-geist-mono-variable (package (inherit font-geist-mono) (name "ttf-geist-mono-variable")))
+
+;; AUR sddm-theme-elegant-archlinux-git -> gaurix sddm-theme-elegant-archlinux
+(define-public sddm-theme-elegant-archlinux-git (package (inherit sddm-theme-elegant-archlinux) (name "sddm-theme-elegant-archlinux-git")))
+
+;; AUR brokefetch-git -> gaurix brokefetch
+(define-public brokefetch-git (package (inherit brokefetch) (name "brokefetch-git")))
+
+;; AUR vhd2vl-git -> gaurix vhd2vl
+(define-public vhd2vl-git (package (inherit vhd2vl) (name "vhd2vl-git")))
+
+;; AUR sc-git -> gaurix sc
+(define-public sc-git (package (inherit sc) (name "sc-git")))
