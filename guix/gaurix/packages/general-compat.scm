@@ -226,6 +226,7 @@
   #:use-module (gaurix packages recipe-resolver-260408h)
   #:use-module (gaurix packages recipe-resolver-260408i)
   #:use-module (gaurix packages recipe-resolver-260408j)
+  #:use-module (gaurix packages recipe-resolver-260408k)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1519,6 +1520,12 @@
             muse-sounds-manager
             java-openjdk-ea
             swiftly
+            ;; recipe-resolver-260408k compat aliases
+            ttf-b612
+            crabdrop
+            matcha-client
+            github-account-switch
+            xc
             ))
 
 (define-public gtk2
@@ -4607,3 +4614,19 @@
 (define-public gimp-plugin-gimp3-tools (package (inherit gimp-plugin-gimp3-tools-bin) (name "gimp-plugin-gimp3-tools")))
 (define-public zclock (package (inherit zclock-bin) (name "zclock")))
 
+;; --- recipe-resolver-260408k compat aliases ---
+
+;; AUR ttf-b612 -> gaurix font-b612
+(define-public ttf-b612 (package (inherit font-b612) (name "ttf-b612")))
+
+;; AUR crabdrop -> gaurix crabdrop-bin
+(define-public crabdrop (package (inherit crabdrop-bin) (name "crabdrop")))
+
+;; AUR matcha-client -> gaurix matcha-client-bin
+(define-public matcha-client (package (inherit matcha-client-bin) (name "matcha-client")))
+
+;; AUR github-account-switch -> gaurix github-account-switch-bin
+(define-public github-account-switch (package (inherit github-account-switch-bin) (name "github-account-switch")))
+
+;; AUR xc -> gaurix xc-bin
+(define-public xc (package (inherit xc-bin) (name "xc")))
