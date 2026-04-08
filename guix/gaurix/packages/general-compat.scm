@@ -199,6 +199,7 @@
   #:use-module (gaurix packages deptree-resolver-260407f)
   #:use-module (gaurix packages recipe-resolver-260407h)
   #:use-module (gaurix packages recipe-resolver-260407i)
+  #:use-module (gaurix packages recipe-resolver-260407j)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -981,6 +982,37 @@
             mint-l-theme
             sddm-silent-theme-git
             ebgaramond-otf
+            ;; recipe-resolver-260407j re-exports
+            brave-bin
+            zen-browser-bin
+            ventoy-bin
+            vscodium-bin
+            heroic-games-launcher-bin
+            freetube-bin
+            zotero-bin
+            onlyoffice-bin
+            vesktop-bin
+            opencode-bin
+            arduino-ide-bin
+            anytype-bin
+            floorp-bin
+            jetbrains-toolbox
+            spicetify-cli-bin
+            helium-browser-bin
+            koboldcpp-bin
+            jitsi-meet-desktop-bin
+            trezor-suite-bin
+            ldtk-bin
+            mullvad-browser-bin
+            rustdesk-bin
+            proton-pass-cli-bin
+            zoom-bin
+            slack-desktop-bin
+            mullvad-vpn-bin
+            cursor-bin
+            proton-pass-bin
+            betterbird-bin
+            google-chrome-bin
             ))
 
 (define-public gtk2
