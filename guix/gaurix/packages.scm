@@ -9235,6 +9235,107 @@ podman-tui-bin
             leafview-bin
             legacy-launcher-ely.by
             lft
+            ;; deptree-resolver-260408k
+            libigloo
+            libowfat
+            libreoffice-dev-af
+            libreoffice-dev-am
+            libreoffice-dev-ar
+            libreoffice-dev-as
+            libreoffice-dev-ast
+            libreoffice-dev-be
+            libreoffice-dev-bg
+            libreoffice-dev-bn
+            libreoffice-dev-bn-in
+            libreoffice-dev-bo
+            libreoffice-dev-br
+            libreoffice-dev-brx
+            libreoffice-dev-bs
+            libreoffice-dev-ca
+            libreoffice-dev-ca-valencia
+            libreoffice-dev-cs
+            libreoffice-dev-cy
+            libreoffice-dev-da
+            libreoffice-dev-de
+            libreoffice-dev-dgo
+            libreoffice-dev-dsb
+            libreoffice-dev-dz
+            libreoffice-dev-el
+            libreoffice-dev-en-gb
+            libreoffice-dev-en-za
+            libreoffice-dev-eo
+            libreoffice-dev-es
+            libreoffice-dev-et
+            libreoffice-dev-eu
+            libreoffice-dev-fa
+            libreoffice-dev-fi
+            libreoffice-dev-fr
+            libreoffice-dev-fur
+            libreoffice-dev-fy
+            libreoffice-dev-ga
+            libreoffice-dev-gd
+            libreoffice-dev-gl
+            libreoffice-dev-gu
+            libreoffice-dev-gug
+            libreoffice-dev-he
+            libreoffice-dev-hi
+            libreoffice-dev-hr
+            libreoffice-dev-hsb
+            libreoffice-dev-hu
+            libreoffice-dev-id
+            libreoffice-dev-is
+            libreoffice-dev-it
+            libreoffice-dev-ja
+            libreoffice-dev-ka
+            libreoffice-dev-kab
+            libreoffice-dev-kk
+            libreoffice-dev-km
+            libreoffice-dev-kmr-latn
+            libreoffice-dev-kn
+            libreoffice-dev-ko
+            libreoffice-dev-kok
+            libreoffice-dev-ks
+            libreoffice-dev-lb
+            libreoffice-dev-lo
+            libreoffice-dev-lt
+            libreoffice-dev-lv
+            libreoffice-dev-mai
+            libreoffice-dev-mk
+            libreoffice-dev-ml
+            libreoffice-dev-mn
+            libreoffice-dev-mni
+            libreoffice-dev-mr
+            libreoffice-dev-my
+            libreoffice-dev-nb
+            libreoffice-dev-ne
+            libreoffice-dev-nl
+            libreoffice-dev-nn
+            libreoffice-dev-nr
+            libreoffice-dev-nso
+            libreoffice-dev-oc
+            libreoffice-dev-om
+            libreoffice-dev-or
+            libreoffice-dev-pa-in
+            libreoffice-dev-pl
+            libreoffice-dev-pt
+            libreoffice-dev-pt-br
+            libreoffice-dev-ro
+            libreoffice-dev-ru
+            libreoffice-dev-rw
+            libreoffice-dev-sa-in
+            libreoffice-dev-sat
+            libreoffice-dev-sd
+            libreoffice-dev-si
+            libreoffice-dev-sid
+            libreoffice-dev-sk
+            libreoffice-dev-sl
+            libreoffice-dev-sq
+            libreoffice-dev-sr
+            libreoffice-dev-sr-latn
+            libreoffice-dev-ss
+            libreoffice-dev-st
+            libreoffice-dev-sv
+            libreoffice-dev-sw-tz
   #:use-module (gaurix packages recipe-resolver-260408q)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408h-blocked-notes)
@@ -9250,4 +9351,6 @@ podman-tui-bin
   #:use-module (gaurix packages recipe-resolver-260408x)
   #:use-module (gaurix packages recipe-resolver-260408x-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260408w-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260408k)
+  #:use-module (gaurix packages deptree-resolver-260408k-blocked-notes)
 )

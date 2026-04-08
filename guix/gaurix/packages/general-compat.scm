@@ -246,6 +246,7 @@
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408j)
+  #:use-module (gaurix packages deptree-resolver-260408k)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
