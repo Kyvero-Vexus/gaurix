@@ -242,6 +242,7 @@
   #:use-module (gaurix packages recipe-resolver-260408u)
   #:use-module (gaurix packages recipe-resolver-260408v)
   #:use-module (gaurix packages recipe-resolver-260408w)
+  #:use-module (gaurix packages recipe-resolver-260408x)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408j)
@@ -5190,3 +5191,69 @@
     (inherit fontpreview)
     (name "fontpreview-git")))
 
+; --- recipe-resolver-260408x compat aliases ---
+
+(define-public clipsync-git
+  (package
+    (inherit clipsync)
+    (name "clipsync-git")))
+
+(define-public dmenustatus-git
+  (package
+    (inherit dmenustatus)
+    (name "dmenustatus-git")))
+
+(define-public bridge-core-bin-compat
+  (package
+    (inherit bridge-core-bin)
+    (name "bridge-core-bin")))
+
+(define-public tmodloader-bin-compat
+  (package
+    (inherit tmodloader-bin)
+    (name "tmodloader-bin")))
+
+(define-public music-assistant-desktop-bin-compat
+  (package
+    (inherit music-assistant-desktop-bin)
+    (name "music-assistant-desktop-bin")))
+
+(define-public snapmaker-orca-appimage-compat
+  (package
+    (inherit snapmaker-orca-appimage)
+    (name "snapmaker-orca-appimage")))
+
+(define-public adb-gui-kit-bin-compat
+  (package
+    (inherit adb-gui-kit-bin)
+    (name "adb-gui-kit-bin")))
+
+(define-public xapp-appimage-thumbnailer-compat
+  (package
+    (inherit xapp-appimage-thumbnailer)
+    (name "xapp-appimage-thumbnailer")))
+
+(define-public mev-boost-compat
+  (package
+    (inherit mev-boost-bin)
+    (name "mev-boost")))
+
+(define-public surge-compat
+  (package
+    (inherit surge-bin)
+    (name "surge")))
+
+(define-public konfyt-compat
+  (package
+    (inherit konfyt)
+    (name "konfyt")))
+
+(define-public alix-git
+  (package
+    (inherit alix)
+    (name "alix-git")))
+
+(define-public task-manager-compat
+  (package
+    (inherit task-manager)
+    (name "task-manager")))
