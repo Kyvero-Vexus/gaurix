@@ -340,6 +340,7 @@
   #:use-module (gaurix packages recipe-resolver-260407l)
   #:use-module (gaurix packages recipe-resolver-260407m)
   #:use-module (gaurix packages recipe-resolver-260407n)
+  #:use-module (gaurix packages recipe-resolver-260407o)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8391,4 +8392,35 @@ podman-tui-bin
             zvm-bin
             kyanos-bin
             crab-bin
+            ;; recipe-resolver-260407o
+            sshcommand
+            vobcopy
+            fortune-mod-calvin
+            fortune-mod-hitchhiker
+            fortune-mod-discworld
+            breeze-contrast-cursor-theme
+            fhtagn
+            dracula-icons-git
+            neowofetch-git
+            zimfw
+            hosts-update
+            foomuuri
+            potato-c
+            airctl-bin
+            mpris-scrobbler
+            bash-git-prompt
+            x11-mouse-funnel
+            gridlock-bin
+            peaclock
+            fuc-bin
+            goodvibes
+            numr-bin
+            batz-converter
+            lazyworktree-bin
+            mythes-ru
+            ovpn-status-bin
+            sley-bin
+            enyo-launcher
+            pmg-bin
+            drl
 )

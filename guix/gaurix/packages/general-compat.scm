@@ -336,6 +336,7 @@
   #:use-module (gaurix packages recipe-resolver-260407l)
   #:use-module (gaurix packages recipe-resolver-260407m)
   #:use-module (gaurix packages recipe-resolver-260407n)
+  #:use-module (gaurix packages recipe-resolver-260407o)
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:use-module (gaurix packages deptree-resolver-260407h)
   #:export (
@@ -3788,6 +3789,37 @@
             blindpaste
             chkrootkit
             betterbird-fr-bin
+            ;; recipe-resolver-260407o re-exports
+            sshcommand
+            vobcopy
+            fortune-mod-calvin
+            fortune-mod-hitchhiker
+            fortune-mod-discworld
+            breeze-contrast-cursor-theme
+            fhtagn
+            dracula-icons-git
+            neowofetch-git
+            zimfw
+            hosts-update
+            foomuuri
+            potato-c
+            airctl-bin
+            mpris-scrobbler
+            bash-git-prompt
+            x11-mouse-funnel
+            gridlock-bin
+            peaclock
+            fuc-bin
+            goodvibes
+            numr-bin
+            batz-converter
+            lazyworktree-bin
+            mythes-ru
+            ovpn-status-bin
+            sley-bin
+            enyo-launcher
+            pmg-bin
+            drl
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
@@ -3813,3 +3845,6 @@
 
 ;; ─── recipe-resolver-260407n compat aliases ───
 ;; (all 30 packages are new binary packages with no AUR name aliases needed)
+
+;; --- recipe-resolver-260407o compat aliases ---
+;; (all 30 packages are new definitions with no AUR name aliases needed)
