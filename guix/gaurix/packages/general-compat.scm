@@ -240,6 +240,7 @@
   #:use-module (gaurix packages recipe-resolver-260408s)
   #:use-module (gaurix packages recipe-resolver-260408t)
   #:use-module (gaurix packages recipe-resolver-260408u)
+  #:use-module (gaurix packages recipe-resolver-260408v)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408i)
   #:use-module (gaurix packages deptree-resolver-260408j)
@@ -5022,5 +5023,8 @@
 ;; playit-agent-bin: defined in recipe-resolver-260408t
 
 ;; --- recipe-resolver-260408u compat aliases ---
+;; (No compat aliases needed - all packages have unique names)
+
+;; --- recipe-resolver-260408v compat aliases ---
 ;; (No compat aliases needed - all packages have unique names)
 
