@@ -224,6 +224,7 @@
   #:use-module (gaurix packages recipe-resolver-260408g)
   #:use-module (gaurix packages recipe-resolver-260408h)
   #:use-module (gaurix packages recipe-resolver-260408i)
+  #:use-module (gaurix packages recipe-resolver-260408j)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1512,6 +1513,11 @@
             flclash
             openmarch
             chataigne-stable
+            ;; recipe-resolver-260408j compat aliases
+            wootility
+            muse-sounds-manager
+            java-openjdk-ea
+            swiftly
             ))
 
 (define-public gtk2
@@ -4518,3 +4524,85 @@
   (package
     (inherit chataigne-stable-bin)
     (name "chataigne-stable")))
+
+;; --- recipe-resolver-260408j compat aliases ---
+
+;; AUR wootility -> gaurix wootility-appimage
+(define-public wootility
+  (package
+    (inherit wootility-appimage)
+    (name "wootility")))
+
+;; AUR muse-sounds-manager -> gaurix muse-sounds-manager-bin
+(define-public muse-sounds-manager
+  (package
+    (inherit muse-sounds-manager-bin)
+    (name "muse-sounds-manager")))
+
+;; AUR java-openjdk-ea -> gaurix java-openjdk-ea-bin
+(define-public java-openjdk-ea
+  (package
+    (inherit java-openjdk-ea-bin)
+    (name "java-openjdk-ea")))
+
+;; AUR swiftly -> gaurix swiftly-bin
+(define-public swiftly
+  (package
+    (inherit swiftly-bin)
+    (name "swiftly")))
+
+;; --- recipe-resolver-260408j new compat aliases ---
+(define-public imgbrd-grabber (package (inherit imgbrd-grabber-bin) (name "imgbrd-grabber")))
+(define-public netcoredbg (package (inherit netcoredbg-bin) (name "netcoredbg")))
+(define-public natscli (package (inherit natscli-bin) (name "natscli")))
+(define-public kaf-cli (package (inherit kaf-cli-bin) (name "kaf-cli")))
+(define-public kaf-wifi (package (inherit kaf-wifi-bin) (name "kaf-wifi")))
+(define-public f2 (package (inherit f2-bin) (name "f2")))
+(define-public vet (package (inherit vet-bin) (name "vet")))
+(define-public rune-editor (package (inherit rune-editor-bin) (name "rune-editor")))
+(define-public logisim (package (inherit logisim-bin) (name "logisim")))
+(define-public nwjs (package (inherit nwjs-bin) (name "nwjs")))
+(define-public nwjs-sdk (package (inherit nwjs-sdk-bin) (name "nwjs-sdk")))
+(define-public turbowarp-desktop (package (inherit turbowarp-desktop-bin) (name "turbowarp-desktop")))
+(define-public hakuneko-desktop-nightly (package (inherit hakuneko-desktop-bin) (name "hakuneko-desktop-nightly")))
+(define-public teleport-connect (package (inherit teleport-connect-bin) (name "teleport-connect")))
+(define-public crazydiskinfo (package (inherit crazydiskinfo-bin) (name "crazydiskinfo")))
+(define-public betterdiscord-installer (package (inherit betterdiscord-installer-bin) (name "betterdiscord-installer")))
+(define-public icaclient (package (inherit icaclient-bin) (name "icaclient")))
+(define-public jriver-media-center (package (inherit jriver-media-center-bin) (name "jriver-media-center")))
+(define-public tracktion-waveform (package (inherit tracktion-waveform-bin) (name "tracktion-waveform")))
+(define-public intel-compute-runtime-legacy (package (inherit intel-compute-runtime-legacy-bin) (name "intel-compute-runtime-legacy")))
+(define-public intel-graphics-compiler-legacy (package (inherit intel-graphics-compiler-legacy-bin) (name "intel-graphics-compiler-legacy")))
+(define-public protondb-tags (package (inherit protondb-tags-bin) (name "protondb-tags")))
+(define-public absolutely-proprietary (package (inherit absolutely-proprietary-bin) (name "absolutely-proprietary")))
+(define-public webtorrent-cli (package (inherit webtorrent-cli-bin) (name "webtorrent-cli")))
+(define-public dl-librescore (package (inherit dl-librescore-bin) (name "dl-librescore")))
+(define-public fish-lsp (package (inherit fish-lsp-bin) (name "fish-lsp")))
+(define-public vdu-controls (package (inherit vdu-controls-bin) (name "vdu-controls")))
+(define-public better-adb-sync (package (inherit better-adb-sync-bin) (name "better-adb-sync")))
+(define-public mpv-sponsorblock-minimal (package (inherit mpv-sponsorblock-minimal-bin) (name "mpv-sponsorblock-minimal")))
+(define-public wayclip (package (inherit wayclip-bin) (name "wayclip")))
+(define-public gitflow-cjs (package (inherit gitflow-cjs-bin) (name "gitflow-cjs")))
+(define-public gpu-passthrough-manager (package (inherit gpu-passthrough-manager-bin) (name "gpu-passthrough-manager")))
+(define-public xe-guest-utilities-xcp-ng (package (inherit xe-guest-utilities-xcp-ng-bin) (name "xe-guest-utilities-xcp-ng")))
+(define-public xenstore-xcp-ng (package (inherit xenstore-xcp-ng-bin) (name "xenstore-xcp-ng")))
+(define-public prisma-language-server (package (inherit prisma-language-server-bin) (name "prisma-language-server")))
+(define-public firebase-tools (package (inherit firebase-tools-bin) (name "firebase-tools")))
+(define-public asbru-cm (package (inherit asbru-cm-bin) (name "asbru-cm")))
+(define-public debmirror (package (inherit debmirror-bin) (name "debmirror")))
+(define-public subliminal (package (inherit subliminal-bin) (name "subliminal")))
+(define-public magic-tape (package (inherit magic-tape-bin) (name "magic-tape")))
+(define-public izumi (package (inherit izumi-bin) (name "izumi")))
+(define-public minecraft-plymouth-theme (package (inherit minecraft-plymouth-theme-bin) (name "minecraft-plymouth-theme")))
+(define-public python-vllm (package (inherit python-vllm-bin) (name "python-vllm")))
+(define-public brother-hll2340dw (package (inherit brother-hll2340dw-bin) (name "brother-hll2340dw")))
+(define-public 64gram-desktop (package (inherit pkg-64gram-desktop-bin) (name "64gram-desktop")))
+(define-public libremines (package (inherit libremines-bin) (name "libremines")))
+(define-public umu-launcher (package (inherit umu-launcher-bin) (name "umu-launcher")))
+(define-public open-webui (package (inherit open-webui-bin) (name "open-webui")))
+(define-public xv (package (inherit xv-bin) (name "xv")))
+(define-public roo-code-gemini-cli (package (inherit roo-code-gemini-cli-bin) (name "roo-code-gemini-cli")))
+(define-public gdm-settings (package (inherit gdm-settings-bin) (name "gdm-settings")))
+(define-public gimp-plugin-gimp3-tools (package (inherit gimp-plugin-gimp3-tools-bin) (name "gimp-plugin-gimp3-tools")))
+(define-public zclock (package (inherit zclock-bin) (name "zclock")))
+
