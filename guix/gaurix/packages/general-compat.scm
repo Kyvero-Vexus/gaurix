@@ -236,6 +236,7 @@
   #:use-module (gaurix packages recipe-resolver-260408o)
   #:use-module (gaurix packages recipe-resolver-260408p)
   #:use-module (gaurix packages recipe-resolver-260408q)
+  #:use-module (gaurix packages deptree-resolver-260408h)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -4787,3 +4788,24 @@
 
 ;; AUR bililive-recorder -> gaurix bililive-recorder-bin
 (define-public bililive-recorder (package (inherit bililive-recorder-bin) (name "bililive-recorder")))
+
+; --- deptree-resolver-260408h compat aliases ---
+(define-public ttf-babelstone-runic (package (inherit font-babelstone-runic) (name "ttf-babelstone-runic")))
+(define-public ttf-bitter (package (inherit font-bitter) (name "ttf-bitter")))
+(define-public ttf-font-awesome-5 (package (inherit font-font-awesome-5) (name "ttf-font-awesome-5")))
+(define-public ttf-garamontio (package (inherit font-garamontio) (name "ttf-garamontio")))
+(define-public ttf-garamontio-capo (package (inherit font-garamontio-capo) (name "ttf-garamontio-capo")))
+(define-public ttf-garamontio-variable (package (inherit font-garamontio-variable) (name "ttf-garamontio-variable")))
+(define-public ttf-hackgen (package (inherit font-hackgen) (name "ttf-hackgen")))
+(define-public ttf-hellvetica (package (inherit font-hellvetica) (name "ttf-hellvetica")))
+(define-public ttf-iosevka-fixed (package (inherit font-iosevka-fixed) (name "ttf-iosevka-fixed")))
+(define-public ttf-iosevka-fixed-ss06 (package (inherit font-iosevka-fixed-ss06) (name "ttf-iosevka-fixed-ss06")))
+(define-public ttf-ioskeley-mono-unhinted (package (inherit font-ioskeley-mono-unhinted) (name "ttf-ioskeley-mono-unhinted")))
+(define-public ttf-lxgw-wenkai-mono-nerd (package (inherit font-lxgw-wenkai-mono-nerd) (name "ttf-lxgw-wenkai-mono-nerd")))
+(define-public ttf-oxanium (package (inherit font-oxanium) (name "ttf-oxanium")))
+(define-public ttf-qurancomplex-fonts (package (inherit font-qurancomplex-fonts) (name "ttf-qurancomplex-fonts")))
+(define-public ttf-roboto-flex (package (inherit font-roboto-flex) (name "ttf-roboto-flex")))
+(define-public ttf-segoe-ui-variable (package (inherit font-segoe-ui-variable) (name "ttf-segoe-ui-variable")))
+(define-public ttf-selawik (package (inherit font-selawik) (name "ttf-selawik")))
+(define-public ttf-sipa-sarabun (package (inherit font-sipa-sarabun) (name "ttf-sipa-sarabun")))
+(define-public ttf-sipa-sarabun-new (package (inherit font-sipa-sarabun-new) (name "ttf-sipa-sarabun-new")))

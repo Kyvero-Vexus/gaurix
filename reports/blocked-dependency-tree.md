@@ -1,130 +1,131 @@
 # Blocked Dependency Tree
 
-**Timestamp:** 2026-04-08T11:55:53.822673+00:00
-**Run:** deptree-resolver-260408f
-**Total blocked:** 5713
+- **Timestamp:** 2026-04-08T14:56:18.844139+00:00
+- **Run ID:** deptree-resolver-260408h
+- **Total blocked:** 5601
+- **Queue length:** 5493
 
 ## Priority Queue (top 120)
 
-| Rank | Package | Blocked Deps | Reverse Deps | Total Deps | Blocked Dep Names |
-|------|---------|-------------|-------------|------------|-------------------|
-| 1 | freetype2-qdoled-aw3225qf | 0 | 178 | 10 |  |
-| 2 | freetype2-qdoled-gen3 | 0 | 178 | 10 |  |
-| 3 | jdk8-graalvm-ee-bin | 0 | 161 | 3 |  |
-| 4 | jdk17-zulu-prime-bin | 0 | 161 | 9 |  |
-| 5 | jdk17-graalvm-ee-bin | 0 | 156 | 2 |  |
-| 6 | jdk21-graalvm-ee-bin | 0 | 156 | 2 |  |
-| 7 | nvidia-535xx-utils | 0 | 40 | 3 |  |
-| 8 | ttf-ms-win10-auto | 0 | 32 | 6 |  |
-| 9 | ttf-ms-win10-japanese | 0 | 31 | 0 |  |
-| 10 | ttf-ms-win10-korean | 0 | 31 | 0 |  |
-| 11 | ttf-ms-win10-other | 0 | 31 | 0 |  |
-| 12 | ttf-ms-win10-sea | 0 | 31 | 0 |  |
-| 13 | ttf-ms-win10-thai | 0 | 31 | 0 |  |
-| 14 | ttf-ms-win10-zh_cn | 0 | 31 | 0 |  |
-| 15 | ttf-ms-win10-zh_tw | 0 | 31 | 0 |  |
-| 16 | ttf-ms-win11-japanese | 0 | 31 | 0 |  |
-| 17 | ttf-ms-win11-korean | 0 | 31 | 0 |  |
-| 18 | ttf-ms-win11-other | 0 | 31 | 0 |  |
-| 19 | ttf-ms-win11-sea | 0 | 31 | 0 |  |
-| 20 | ttf-ms-win11-thai | 0 | 31 | 0 |  |
-| 21 | ttf-ms-win11-zh_cn | 0 | 31 | 0 |  |
-| 22 | ttf-ms-win11-zh_tw | 0 | 31 | 0 |  |
-| 23 | apple-fonts | 0 | 31 | 1 |  |
-| 24 | grep-compat | 0 | 28 | 3 |  |
-| 25 | libinput-no-gestures | 0 | 27 | 9 |  |
-| 26 | dotnet-sdk-preview-bin | 0 | 26 | 7 |  |
-| 27 | rocm-gfx110x-bin | 0 | 16 | 8 |  |
-| 28 | rocm-nightly-gfx110x-bin | 0 | 14 | 4 |  |
-| 29 | rocm-nightly-gfx1151-bin | 0 | 14 | 4 |  |
-| 30 | opencl-amd | 0 | 11 | 5 |  |
-| 31 | mingw-w64-crt-msvcrt | 0 | 7 | 3 |  |
-| 32 | lib32-nvidia-utils-beta | 0 | 6 | 7 |  |
-| 33 | firefox-beta-bin-all-localizations | 0 | 6 | 8 |  |
-| 34 | matlab | 0 | 3 | 6 |  |
-| 35 | intel-compute-runtime-legacy | 0 | 3 | 9 |  |
-| 36 | opencl-nvidia-390xx | 0 | 2 | 1 |  |
-| 37 | opencl-nvidia-470xx | 0 | 2 | 1 |  |
-| 38 | opencl-nvidia-580xx | 0 | 2 | 1 |  |
-| 39 | opencl-nvidia-beta | 0 | 2 | 1 |  |
-| 40 | opencl-nvidia-535xx | 0 | 2 | 2 |  |
-| 41 | opencl-nvidia-550xx | 0 | 2 | 2 |  |
-| 42 | lib32-libbluray | 0 | 2 | 7 |  |
-| 43 | vscodium-electron-bin | 0 | 2 | 9 |  |
-| 44 | gst-thumbnailers | 0 | 1 | 0 |  |
-| 45 | mingw-w64-environment | 0 | 1 | 0 |  |
-| 46 | scrutiny-web-frontend | 0 | 1 | 0 |  |
-| 47 | libelectron-electron-meta | 0 | 1 | 1 |  |
-| 48 | libsdrplay | 0 | 1 | 1 |  |
-| 49 | mechrevo-drivers-dkms | 0 | 1 | 1 |  |
-| 50 | unreal-tournament-data-archiveorg | 0 | 1 | 1 |  |
-| 51 | mips64el-linux-gnu-binutils | 0 | 1 | 2 |  |
-| 52 | ndi-sdk | 0 | 1 | 2 |  |
-| 53 | unreal-tournament-data-gog | 0 | 1 | 2 |  |
-| 54 | vectorchord-bin | 0 | 1 | 2 |  |
-| 55 | nvidia-390xx-dkms | 0 | 1 | 3 |  |
-| 56 | nvidia-470xx-dkms | 0 | 1 | 3 |  |
-| 57 | nvidia-580xx-dkms | 0 | 1 | 3 |  |
-| 58 | nvidia-beta-dkms | 0 | 1 | 3 |  |
-| 59 | lib32-xvidcore | 0 | 1 | 4 |  |
-| 60 | mongodb-bin | 0 | 1 | 4 |  |
-| 61 | nvidia-open-beta | 0 | 1 | 4 |  |
-| 62 | nvidia-open-beta-dkms | 0 | 1 | 4 |  |
-| 63 | lib32-libdovi | 0 | 1 | 5 |  |
-| 64 | lib32-libvmaf | 0 | 1 | 5 |  |
-| 65 | nvidia-beta | 0 | 1 | 5 |  |
-| 66 | heidisql-qt6-bin | 0 | 1 | 6 |  |
-| 67 | llama.cpp-opencl | 0 | 1 | 6 |  |
-| 68 | ps3toolchain | 0 | 1 | 6 |  |
-| 69 | lib32-bluez-libs | 0 | 1 | 9 |  |
-| 70 | mips64-linux-gnu-gcc-bootstrap | 0 | 1 | 9 |  |
-| 71 | spotify-1.1 | 0 | 1 | 9 |  |
-| 72 | spotify-dev | 0 | 1 | 12 |  |
-| 73 | anbox-git | 0 | 0 | 0 |  |
-| 74 | ancestris | 0 | 0 | 0 |  |
-| 75 | archarchive | 0 | 0 | 0 |  |
-| 76 | archlinux-artwork | 0 | 0 | 0 |  |
-| 77 | audiobookshelf | 0 | 0 | 0 |  |
-| 78 | bigpemu-bin | 0 | 0 | 0 |  |
-| 79 | bulky | 0 | 0 | 0 |  |
-| 80 | butter-launcher-bin | 0 | 0 | 0 |  |
-| 81 | chkufsd-bin | 0 | 0 | 0 |  |
-| 82 | chromium-gost | 0 | 0 | 0 |  |
-| 83 | codex-desktop-bin | 0 | 0 | 0 |  |
-| 84 | crql-anina | 0 | 0 | 0 |  |
-| 85 | crql-locd | 0 | 0 | 0 |  |
-| 86 | cursor-ide | 0 | 0 | 0 |  |
-| 87 | dbeaver | 0 | 0 | 0 |  |
-| 88 | electerm-live-bin | 0 | 0 | 0 |  |
-| 89 | empty | 0 | 0 | 0 |  |
-| 90 | en_se | 0 | 0 | 0 |  |
-| 91 | evcolors | 0 | 0 | 0 |  |
-| 92 | fahviewer | 0 | 0 | 0 |  |
-| 93 | fluxdown-bin | 0 | 0 | 0 |  |
-| 94 | glazepkg-bin | 0 | 0 | 0 |  |
-| 95 | gram-editor-bin | 0 | 0 | 0 |  |
-| 96 | hylauncher-bin | 0 | 0 | 0 |  |
-| 97 | hypnotix | 0 | 0 | 0 |  |
-| 98 | komodo-periphery-git | 0 | 0 | 0 |  |
-| 99 | konform-multi-account-containers-lite | 0 | 0 | 0 |  |
-| 100 | librewolf-extension-keepassxc-browser | 0 | 0 | 0 |  |
-| 101 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 |  |
-| 102 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 |  |
-| 103 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 |  |
-| 104 | linux6.19.9.arch1-1-bin | 0 | 0 | 0 |  |
-| 105 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 |  |
-| 106 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 |  |
-| 107 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 |  |
-| 108 | linux6.19.9.zen1-1-zen-docs-bin | 0 | 0 | 0 |  |
-| 109 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 |  |
-| 110 | llama-swap-bin | 0 | 0 | 0 |  |
-| 111 | llog-bin | 0 | 0 | 0 |  |
-| 112 | lnko-bin | 0 | 0 | 0 |  |
-| 113 | localias-bin | 0 | 0 | 0 |  |
-| 114 | log2ram | 0 | 0 | 0 |  |
-| 115 | logmonster-bin | 0 | 0 | 0 |  |
-| 116 | lstr-bin | 0 | 0 | 0 |  |
-| 117 | lx-bin | 0 | 0 | 0 |  |
-| 118 | lzbench-bin | 0 | 0 | 0 |  |
-| 119 | magiskboot-bin | 0 | 0 | 0 |  |
-| 120 | makeenv | 0 | 0 | 0 |  |
+| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
+|------|---------|-------------|-------------|-----------|
+| 1 | yay | 0 | 6 | 3 |
+| 2 | java-openjfx | 0 | 4 | 22 |
+| 3 | matlab | 0 | 3 | 6 |
+| 4 | mingw-w64-pkg-config | 0 | 2 | 2 |
+| 5 | paru | 0 | 2 | 4 |
+| 6 | plasma-workspace-povd | 0 | 2 | 105 |
+| 7 | gst-thumbnailers | 0 | 1 | 0 |
+| 8 | mingw-w64-environment | 0 | 1 | 0 |
+| 9 | libsdrplay | 0 | 1 | 1 |
+| 10 | android-platform | 0 | 1 | 2 |
+| 11 | mips64el-linux-gnu-binutils | 0 | 1 | 2 |
+| 12 | yaycache | 0 | 1 | 3 |
+| 13 | package-query | 0 | 1 | 4 |
+| 14 | paru-git | 0 | 1 | 4 |
+| 15 | lib32-libvmaf | 0 | 1 | 5 |
+| 16 | aurutils | 0 | 1 | 6 |
+| 17 | ps3toolchain | 0 | 1 | 6 |
+| 18 | lib32-nvidia-utils-beta | 0 | 1 | 7 |
+| 19 | lib32-bluez-libs | 0 | 1 | 9 |
+| 20 | mips64-linux-gnu-gcc-bootstrap | 0 | 1 | 9 |
+| 21 | python-rapidocr | 0 | 1 | 15 |
+| 22 | linux-cachyos-bore | 0 | 1 | 16 |
+| 23 | linux-cachyos-lts | 0 | 1 | 16 |
+| 24 | tensorrt | 0 | 1 | 16 |
+| 25 | linux-cachyos | 0 | 1 | 19 |
+| 26 | linux-cachyos-rc | 0 | 1 | 19 |
+| 27 | cosmic-settings-git | 0 | 1 | 20 |
+| 28 | goldendict | 0 | 1 | 22 |
+| 29 | input-leap-headless-git | 0 | 1 | 22 |
+| 30 | libpamac-aur | 0 | 1 | 22 |
+| 31 | alice-vision | 0 | 1 | 31 |
+| 32 | dragengine | 0 | 1 | 34 |
+| 33 | wechat-bin | 0 | 1 | 34 |
+| 34 | hypryou | 0 | 1 | 35 |
+| 35 | amdonly-gaming-opencl-rusticl-mesa-git | 0 | 1 | 36 |
+| 36 | amdonly-gaming-mesa-git | 0 | 1 | 37 |
+| 37 | amdonly-gaming-vulkan-radeon-git | 0 | 1 | 37 |
+| 38 | libnm-iwd | 0 | 1 | 37 |
+| 39 | amdonly-gaming-vulkan-mesa-layers-git | 0 | 1 | 38 |
+| 40 | pipelex | 0 | 1 | 41 |
+| 41 | qt6-base-hifps | 0 | 1 | 62 |
+| 42 | qemu-headless-git | 0 | 1 | 83 |
+| 43 | anbox-git | 0 | 0 | 0 |
+| 44 | audiobookshelf | 0 | 0 | 0 |
+| 45 | bigpemu-bin | 0 | 0 | 0 |
+| 46 | bulky | 0 | 0 | 0 |
+| 47 | chkufsd-bin | 0 | 0 | 0 |
+| 48 | chromium-gost | 0 | 0 | 0 |
+| 49 | codex-desktop-bin | 0 | 0 | 0 |
+| 50 | cursor-ide | 0 | 0 | 0 |
+| 51 | dbeaver | 0 | 0 | 0 |
+| 52 | fahviewer | 0 | 0 | 0 |
+| 53 | fluxdown-bin | 0 | 0 | 0 |
+| 54 | glazepkg-bin | 0 | 0 | 0 |
+| 55 | gram-editor-bin | 0 | 0 | 0 |
+| 56 | hylauncher-bin | 0 | 0 | 0 |
+| 57 | hypnotix | 0 | 0 | 0 |
+| 58 | komodo-periphery-git | 0 | 0 | 0 |
+| 59 | konform-multi-account-containers-lite | 0 | 0 | 0 |
+| 60 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 |
+| 61 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 |
+| 62 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 |
+| 63 | linux6.19.9.arch1-1-bin | 0 | 0 | 0 |
+| 64 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 |
+| 65 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 |
+| 66 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 |
+| 67 | linux6.19.9.zen1-1-zen-docs-bin | 0 | 0 | 0 |
+| 68 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 |
+| 69 | lnko-bin | 0 | 0 | 0 |
+| 70 | lzbench-bin | 0 | 0 | 0 |
+| 71 | makeenv | 0 | 0 | 0 |
+| 72 | mangowc-git | 0 | 0 | 0 |
+| 73 | mas | 0 | 0 | 0 |
+| 74 | max-appimage | 0 | 0 | 0 |
+| 75 | mchose-a7-v2-pro-udev | 0 | 0 | 0 |
+| 76 | megit | 0 | 0 | 0 |
+| 77 | mercury-browser-sse4-bin | 0 | 0 | 0 |
+| 78 | miniconda3 | 0 | 0 | 0 |
+| 79 | mockoon-bin | 0 | 0 | 0 |
+| 80 | mongotimer | 0 | 0 | 0 |
+| 81 | moor-bin | 0 | 0 | 0 |
+| 82 | mullvad-socks-bin | 0 | 0 | 0 |
+| 83 | natscli-bin | 0 | 0 | 0 |
+| 84 | nautilus-megasync | 0 | 0 | 0 |
+| 85 | navicat17-premium-en | 0 | 0 | 0 |
+| 86 | netscanner-bin | 0 | 0 | 0 |
+| 87 | nextcloud-talk-desktop-bin | 0 | 0 | 0 |
+| 88 | nextdns-bin | 0 | 0 | 0 |
+| 89 | ninjarmm-ncplayer | 0 | 0 | 0 |
+| 90 | nodenv-node-build | 0 | 0 | 0 |
+| 91 | notwaita-cursor-theme | 0 | 0 | 0 |
+| 92 | nvidia-prime-rtd3pm | 0 | 0 | 0 |
+| 93 | nvidia-vulkan-dkms | 0 | 0 | 0 |
+| 94 | ocr-fonts | 0 | 0 | 0 |
+| 95 | olvid | 0 | 0 | 0 |
+| 96 | openai-codex-autoup-bin | 0 | 0 | 0 |
+| 97 | openbao | 0 | 0 | 0 |
+| 98 | opensc-p11-kit-module | 0 | 0 | 0 |
+| 99 | otf-atkinson-hyperlegible-next | 0 | 0 | 0 |
+| 100 | otf-atkinson-hyperlegible-next-mono | 0 | 0 | 0 |
+| 101 | otf-kopub | 0 | 0 | 0 |
+| 102 | otf-kopubworld | 0 | 0 | 0 |
+| 103 | otf-myna | 0 | 0 | 0 |
+| 104 | p4merge-bin | 0 | 0 | 0 |
+| 105 | pac-pacman-aliases | 0 | 0 | 0 |
+| 106 | pantum-driver | 0 | 0 | 0 |
+| 107 | pgyvisitor | 0 | 0 | 0 |
+| 108 | pingme-bin | 0 | 0 | 0 |
+| 109 | pipewire-enable-bluez5 | 0 | 0 | 0 |
+| 110 | plecs-standalone | 0 | 0 | 0 |
+| 111 | plex-media-server-plexpass | 0 | 0 | 0 |
+| 112 | pmtiles | 0 | 0 | 0 |
+| 113 | projtlauncher | 0 | 0 | 0 |
+| 114 | protonup-rs-bin | 0 | 0 | 0 |
+| 115 | reddix-bin | 0 | 0 | 0 |
+| 116 | rider-eap | 0 | 0 | 0 |
+| 117 | rime-wanxiang-gram-zh-hans | 0 | 0 | 0 |
+| 118 | rofi-lbonn-wayland-git | 0 | 0 | 0 |
+| 119 | rres-bin | 0 | 0 | 0 |
+| 120 | rtimelog | 0 | 0 | 0 |
