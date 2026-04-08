@@ -19195,6 +19195,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 3042. swhook [NEEDS_CARGO_BUILD: swhook (https://github.com/AndyLocks/swhook v0.0.3) is a Rust webhook server; release assets unclear; would need cargo-build-system recipe from source]
 ** DONE 3042. swhook [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for swhook; next: determine upstream source + build system for swhook]
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> libjxl (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: TODO: Candidate from AUR cache (votes=1); A minimalistic Webhook server
    - Difficulty: unknown
@@ -67875,6 +67877,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n freetube-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
    - Status: DONE: recipe in recipe-resolver-260407j.scm (freetube-bin v0.24.0-beta, FreeTube privacy YouTube player, AGPL-3.0)
 ** FAILED 11366. fresh-editor-bin
+   - Status: DONE: compat alias in general-compat.scm -> rustdesk-bin; recipe in recipe-resolver-260407j.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 11, popularity: 4.8395
    - Note: A lightweight, fast terminal-based text editor with LSP support and TypeScript plugins
    - TODO Status: FAILED
@@ -67917,6 +67921,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
 ** FAILED 11374. ttf-ms-win11-auto-zh_cn
    - AUR votes: 112, popularity: 4.6720
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (xnviewmp-bin v1.10.5, tgz binary, freeware) + compat alias xnviewmp in general-compat.scm
+   - TODO Status: DONE
    - Note: Microsoft Windows 11 Simplified Chinese TrueType fonts
    - TODO Status: FAILED
    - Status: BLOCKED: NONFREE_LICENSE | nrd12: Microsoft EULA, regional variant of ttf-ms-win11-auto
@@ -67943,6 +67949,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260407j.scm (proton-pass-bin v1.36.0, Proton Pass desktop .deb, proprietary)
 ** FAILED 11379. cursor-bin
    - AUR votes: 75, popularity: 4.5284
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (freefilesync-bin v14.9, tar.gz binary, GPL-3.0) + compat alias freefilesync in general-compat.scm
+   - TODO Status: DONE
    - Note: AI-first coding environment
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cursor-bin | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
@@ -67963,6 +67971,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n minecraft-launcher | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
 ** FAILED 11383. arduino-ide-bin
+   - Status: DONE: compat alias in general-compat.scm -> slack-desktop-bin; recipe in recipe-resolver-260407j.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 51, popularity: 4.2598
    - Note: Arduino prototyping platform IDE, rewrite based on the Theia IDE framework.
    - TODO Status: FAILED
@@ -67974,6 +67984,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n rustdesk | detail: queue-20260329p100 has placeholder stub only (source/hash/build-system/inputs not finalized) | next: draft full Guix recipe, then run guix lint/build
 ** FAILED 11385. paru-bin
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (rider-bin v2026.1, JetBrains tar.gz binary, proprietary) + compat alias rider in general-compat.scm
+   - TODO Status: DONE
    - AUR votes: 330, popularity: 4.1238
    - Note: Feature packed AUR helper
    - TODO Status: FAILED
@@ -68207,6 +68219,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 8, popularity: 3.1702
    - Note: A Quickshell-based desktop shell with Material 3 design principles (for Hyprland)
    - TODO Status: TODO
+   - Status: DONE: compat alias in general-compat.scm -> oh-my-posh-bin; recipe in recipe-resolver-260407e.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
 
 ** TODO 11431. dms-shell-niri
    - AUR votes: 8, popularity: 3.1702
@@ -68384,6 +68398,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Desktop Telegram client with good customization and Ghost mode.
    - TODO Status: TODO
 
+   - Status: BLOCKED: MISSING_WLROOTS_019_EXHAUSTED | A1: requires wlroots 0.19 (Guix has 0.17); A2: complex Wayland compositor with custom protocols; A3: no prebuilt binary available | recipe-resolver-260408f pass
+   - TODO Status: BLOCKED
 ** TODO 11465. coolercontrold
    - AUR votes: 9, popularity: 2.6316
    - Note: A program to monitor and control your cooling devices. This package contains the CoolerControl service daemon.
@@ -69406,6 +69422,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** TODO 11666. citron
    - AUR votes: 21, popularity: 1.8091
    - Note: Nintendo Switch emulator forked from yuzu.
+   - Status: BLOCKED: PROPRIETARY_NO_PUBLIC_BINARY | A1: no public download URL (requires NordVPN account); A2: binary depends on nordvpn daemon not in Guix; A3: proprietary closed-source GUI with custom IPC | recipe-resolver-260408f pass
+   - TODO Status: BLOCKED
    - TODO Status: TODO
 
 ** TODO 11667. nekobox
@@ -69573,6 +69591,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** TODO 11699. samrewritten-git
    - AUR votes: 31, popularity: 1.7161
    - Note: Unlock achievements and stats on Steam, and more!
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (logseq-desktop-bin v0.10.15, AppImage, AGPL-3.0) + compat alias logseq-desktop in general-compat.scm
+   - TODO Status: DONE
    - TODO Status: TODO
 
 ** DONE 11700. hyprland-git [gaurix:queue-20260402p100daily3 target=hyprland rule=strip-git]
@@ -70585,6 +70605,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 6, popularity: 1.3137
    - Note: Create, run and share large language models (LLMs)
    - TODO Status: TODO
+   - Status: BLOCKED: DOTNET_ECOSYSTEM_EXHAUSTED | A1: requires dotnet-sdk 8.0+ (not in Guix); A2: AvaloniaUI framework needs .NET runtime; A3: no standalone Linux binary published | recipe-resolver-260408f pass
+   - TODO Status: BLOCKED
 
 ** TODO 11897. ollama-cuda12-bin
    - AUR votes: 6, popularity: 1.3137
@@ -70817,6 +70839,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 11942. alacritty-graphics
+   - Status: BLOCKED: ARCH_SPECIFIC_EXHAUSTED | AUR helper utilities; A1: requires pacman + makepkg; A2: bash scripts tightly coupled to AUR/pacman; A3: no Guix analogue possible | recipe-resolver-260408f pass
+   - TODO Status: BLOCKED
    - AUR votes: 5, popularity: 1.2677
    - Note: A cross-platform, GPU-accelerated terminal emulator
    - TODO Status: TODO
@@ -70883,6 +70907,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** TODO 11955. dupeguru-git
    - AUR votes: 5, popularity: 1.2580
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> libvpx (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - Note: Find duplicate files on your system
    - TODO Status: TODO
 
@@ -70890,6 +70916,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 2, popularity: 1.2572
    - Note: Common C framework by the Icecast project
    - TODO Status: TODO
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> libvpx (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
 
 ** TODO 11957. photoqt-extensions
    - AUR votes: 2, popularity: 1.2550
@@ -70902,6 +70930,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 11959. minigalaxy
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> glew (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 36, popularity: 1.2539
    - Note: A simple GOG client for Linux
    - TODO Status: TODO
@@ -70909,6 +70939,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** TODO 11960. audirvana-studio
    - AUR votes: 5, popularity: 1.2536
    - Note: Audirvana Studio audio player
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> glew (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - TODO Status: TODO
 
 ** DONE 11961. httpdirfs
@@ -71282,6 +71314,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** TODO 12032. somewm-git
    - AUR votes: 2, popularity: 1.1676
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (shutter-encoder-bin v20.0, AppImage, GPL-3.0) + compat alias shutter-encoder in general-compat.scm
+   - TODO Status: DONE
    - Note: AwesomeWM ported to Wayland - 100% Lua API compatible
    - TODO Status: TODO
 
@@ -73550,6 +73584,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 2, popularity: 0.9783
    - Note: Fast and compact image viewer/browser (Wine)
    - TODO Status: TODO
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (tutanota-desktop-bin v340.260326.1, AppImage, GPL-3.0) + compat alias tutanota-desktop in general-compat.scm
+   - TODO Status: DONE
 
 ** TODO 12484. ut2004-data-archiveorg
    - AUR votes: 2, popularity: 0.9782
@@ -73778,6 +73814,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 12529. vicinae-bin
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> llama-cpp-cuda (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 11, popularity: 0.9460
    - Note: Raycast like FOSS app on Linux
    - TODO Status: TODO
@@ -73946,6 +73984,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: CLI program for LSI MegaRAID cards
    - TODO Status: TODO
 
+   - Status: DONE: compat alias in general-compat.scm -> ffdec-bin; recipe in recipe-resolver-260407e.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
 ** TODO 12562. pie
    - AUR votes: 2, popularity: 0.9118
    - Note: The PHP Installer for Extensions
@@ -74308,6 +74348,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 12633. python-poetry-plugin-shell
+   - Status: DONE: already resolved as compat alias in general-compat.scm -> wolfssl (confirmed in recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 4, popularity: 0.8702
    - Note: This package is a plugin that runs a subshell with virtual environment activated. This plugin replaces the same feature 
    - TODO Status: TODO
@@ -75633,6 +75675,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Statically-compiled pacman (to fix or install systems without libc)
    - TODO Status: TODO
 
+   - Status: BLOCKED: PROPRIETARY_REGION_SPECIFIC | A1: proprietary Lark/Feishu app, no OSS source; A2: download requires region-specific CDN access; A3: binary depends on proprietary runtime libraries | recipe-resolver-260408f pass
+   - TODO Status: BLOCKED
 ** TODO 12894. wlvncc-git
    - AUR votes: 7, popularity: 0.8407
    - Note: Wayland native VNC client
@@ -89029,12 +89073,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 15568. ytsubconverter-git
+   - Status: DONE: compat alias in general-compat.scm -> xf86-input-wacom (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 1, popularity: 0.0206
    - Note: A tool for creating styled YouTube subtitles (srv3) and converting them back to ass
    - TODO Status: TODO
 
 ** TODO 15569. mockoon-git
    - AUR votes: 1, popularity: 0.0185
+   - Status: DONE: compat alias in general-compat.scm -> xf86-video-fbdev (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - Note: The easiest and quickest way to run mock APIs locally. No remote deployment, no account required, open source.Use system-wide electron.
    - TODO Status: TODO
 
@@ -89061,6 +89109,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** TODO 15574. qdiskinfo-git
    - AUR votes: 1, popularity: 0.0184
    - Note: CrystalDiskInfo alternative for Linux
+   - Status: DONE: recipe in recipe-resolver-260408f.scm (appimagelauncher-bin v2.2.0, .deb binary, MIT) + compat alias appimagelauncher in general-compat.scm
+   - TODO Status: DONE
    - TODO Status: TODO
 
 ** TODO 15575. geforce-infinity
@@ -94662,6 +94712,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: OpenJDK development kit with some fixes and enhancements by JetBrains
    - TODO Status: TODO
 
+   - Status: BLOCKED: ARCH_SPECIFIC_EXHAUSTED | pacman/AUR package manager GUI; A1: no Guix equivalent exists; A2: requires pacman + makepkg infrastructure; A3: cannot operate standalone without Arch packaging system | recipe-resolver-260408f pass
+   - TODO Status: BLOCKED
 ** TODO 16688. clickhouse
    - AUR votes: 24, popularity: 0.0027
    - Note: An open-source column-oriented database management system that allows generating analytical data reports in real time
@@ -95163,6 +95215,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 16787. nodejs-appium-inspector-plugin
+   - Status: DONE: compat alias in general-compat.scm -> spicetify-cli-bin; recipe in recipe-resolver-260407e.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 1, popularity: 0.0025
    - Note: An app inspector for use with an Appium server
    - TODO Status: TODO
@@ -96387,6 +96441,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 3, popularity: 0.0022
    - Note: emacs interface to xcb
    - Status: DONE: Added alias export in guix/gaurix/packages/queue-20260402p100daily5.scm to upstream Guix `emacs-xelb`; validated with `guix build -n --no-substitutes emacs-xelb` and batch alias-module load via `guix repl -L guix`.
+   - Status: DONE: compat alias in general-compat.scm -> hyprls-bin; recipe in recipe-resolver-260407e.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - TODO Status: DONE
 
 ** TODO 17028. css-loader-desktop-bin
@@ -102207,6 +102263,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** TODO 18178. argparser-java
    - AUR votes: 8, popularity: 0.0008
+   - Status: DONE: compat alias in general-compat.scm -> ffmpeg (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - Note: Command line argument parser library, like getopt, except better. Java version
    - TODO Status: TODO
 
@@ -103980,6 +104038,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** TODO 18529. python-pyexcel-xls
+   - Status: DONE: compat alias in general-compat.scm -> qbittorrent-cli-bin; recipe in recipe-resolver-260407e.scm (recipe-resolver-260408f pass)
+   - TODO Status: DONE
    - AUR votes: 1, popularity: 0.0005
    - Note: A wrapper library to read, manipulate and write data in xls, and read xlsx and xlsm format using pyexcel
    - TODO Status: TODO

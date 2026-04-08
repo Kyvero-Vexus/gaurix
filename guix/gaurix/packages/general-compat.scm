@@ -219,6 +219,7 @@
   #:use-module (gaurix packages recipe-resolver-260408c)
   #:use-module (gaurix packages recipe-resolver-260408d)
   #:use-module (gaurix packages recipe-resolver-260408e)
+  #:use-module (gaurix packages recipe-resolver-260408f)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1429,6 +1430,31 @@
             kcc
             beeref
             ;; recipe-resolver-260408e re-exports
+            ;; recipe-resolver-260408f re-exports
+            xlibre-input-wacom
+            xlibre-video-fbdev
+            ffmpeg-amd-full
+            slack-desktop
+            oh-my-posh
+            spicetify-cli
+            rustdesk
+            qbittorrent-cli
+            hyprls
+            ffdec
+            logseq-desktop-bin
+            rider-bin
+            xnviewmp-bin
+            tutanota-desktop-bin
+            shutter-encoder-bin
+            freefilesync-bin
+            appimagelauncher-bin
+            logseq-desktop
+            rider
+            xnviewmp
+            tutanota-desktop
+            shutter-encoder
+            freefilesync
+            appimagelauncher
             btrfs-list
             chkboot
             envchain
@@ -4314,3 +4340,107 @@
   (package
     (inherit yaru-theme)
     (name "yaru-session")))
+
+;; --- recipe-resolver-260408f compat aliases ---
+
+;; AUR xlibre-input-wacom -> Guix xf86-input-wacom
+(define-public xlibre-input-wacom
+  (package
+    (inherit xf86-input-wacom)
+    (name "xlibre-input-wacom")))
+
+;; AUR xlibre-video-fbdev -> Guix xf86-video-fbdev
+(define-public xlibre-video-fbdev
+  (package
+    (inherit xf86-video-fbdev)
+    (name "xlibre-video-fbdev")))
+
+;; AUR ffmpeg-amd-full -> Guix ffmpeg
+(define-public ffmpeg-amd-full
+  (package
+    (inherit ffmpeg)
+    (name "ffmpeg-amd-full")))
+
+;; AUR slack-desktop -> gaurix slack-desktop-bin
+(define-public slack-desktop
+  (package
+    (inherit slack-desktop-bin)
+    (name "slack-desktop")))
+
+;; AUR oh-my-posh -> gaurix oh-my-posh-bin
+(define-public oh-my-posh
+  (package
+    (inherit oh-my-posh-bin)
+    (name "oh-my-posh")))
+
+;; AUR spicetify-cli -> gaurix spicetify-cli-bin
+(define-public spicetify-cli
+  (package
+    (inherit spicetify-cli-bin)
+    (name "spicetify-cli")))
+
+;; AUR rustdesk -> gaurix rustdesk-bin
+(define-public rustdesk
+  (package
+    (inherit rustdesk-bin)
+    (name "rustdesk")))
+
+;; AUR qbittorrent-cli -> gaurix qbittorrent-cli-bin
+(define-public qbittorrent-cli
+  (package
+    (inherit qbittorrent-cli-bin)
+    (name "qbittorrent-cli")))
+
+;; AUR hyprls -> gaurix hyprls-bin
+(define-public hyprls
+  (package
+    (inherit hyprls-bin)
+    (name "hyprls")))
+
+;; AUR ffdec -> gaurix ffdec-bin
+(define-public ffdec
+  (package
+    (inherit ffdec-bin)
+    (name "ffdec")))
+
+;; AUR logseq-desktop -> gaurix logseq-desktop-bin
+(define-public logseq-desktop
+  (package
+    (inherit logseq-desktop-bin)
+    (name "logseq-desktop")))
+
+;; AUR rider -> gaurix rider-bin
+(define-public rider
+  (package
+    (inherit rider-bin)
+    (name "rider")))
+
+;; AUR xnviewmp -> gaurix xnviewmp-bin
+(define-public xnviewmp
+  (package
+    (inherit xnviewmp-bin)
+    (name "xnviewmp")))
+
+;; AUR tutanota-desktop -> gaurix tutanota-desktop-bin
+(define-public tutanota-desktop
+  (package
+    (inherit tutanota-desktop-bin)
+    (name "tutanota-desktop")))
+
+;; AUR shutter-encoder -> gaurix shutter-encoder-bin
+(define-public shutter-encoder
+  (package
+    (inherit shutter-encoder-bin)
+    (name "shutter-encoder")))
+
+;; AUR freefilesync -> gaurix freefilesync-bin
+(define-public freefilesync
+  (package
+    (inherit freefilesync-bin)
+    (name "freefilesync")))
+
+;; AUR appimagelauncher -> gaurix appimagelauncher-bin
+(define-public appimagelauncher
+  (package
+    (inherit appimagelauncher-bin)
+    (name "appimagelauncher")))
