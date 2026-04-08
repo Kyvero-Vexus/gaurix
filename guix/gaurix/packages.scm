@@ -333,6 +333,8 @@
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:use-module (gaurix packages recipe-resolver-260407h)
   #:use-module (gaurix packages recipe-resolver-260407i)
+  #:use-module (gaurix packages recipe-resolver-260407j)
+  #:use-module (gaurix packages recipe-resolver-260407k)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8190,4 +8192,35 @@ podman-tui-bin
             buck2-bin
             libdeep-filter-ladspa-bin
             cli-proxy-api-bin
+            ;; recipe-resolver-260407k
+            teams-for-linux-bin
+            obsidian-bin
+            1password-bin
+            rambox-bin
+            ferdium-bin
+            insomnia-bin
+            datagrip-bin
+            pycharm-professional-bin
+            webstorm-bin
+            goland-bin
+            mongodb-compass-bin
+            beekeeper-studio-bin
+            parsec-bin
+            sunshine-bin
+            protonmail-bridge-bin
+            vivaldi-bin
+            waterfox-bin
+            youtube-music-bin
+            jellyfin-media-player-bin
+            drawio-desktop-bin
+            figma-linux-bin
+            wps-office-bin
+            marktext-bin
+            joplin-appimage
+            simplenote-electron-bin
+            signal-desktop-bin
+            element-desktop-bin
+            session-desktop-bin
+            feishin-bin
+            caprine-bin
 )

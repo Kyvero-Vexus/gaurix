@@ -200,6 +200,7 @@
   #:use-module (gaurix packages recipe-resolver-260407h)
   #:use-module (gaurix packages recipe-resolver-260407i)
   #:use-module (gaurix packages recipe-resolver-260407j)
+  #:use-module (gaurix packages recipe-resolver-260407k)
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:export (
             ;; deptree-resolver-260407 compat aliases
@@ -1014,6 +1015,37 @@
             proton-pass-bin
             betterbird-bin
             google-chrome-bin
+            ;; recipe-resolver-260407k re-exports
+            teams-for-linux-bin
+            obsidian-bin
+            1password-bin
+            rambox-bin
+            ferdium-bin
+            insomnia-bin
+            datagrip-bin
+            pycharm-professional-bin
+            webstorm-bin
+            goland-bin
+            mongodb-compass-bin
+            beekeeper-studio-bin
+            parsec-bin
+            sunshine-bin
+            protonmail-bridge-bin
+            vivaldi-bin
+            waterfox-bin
+            youtube-music-bin
+            jellyfin-media-player-bin
+            drawio-desktop-bin
+            figma-linux-bin
+            wps-office-bin
+            marktext-bin
+            joplin-appimage
+            simplenote-electron-bin
+            signal-desktop-bin
+            element-desktop-bin
+            session-desktop-bin
+            feishin-bin
+            caprine-bin
             ))
 
 (define-public gtk2
