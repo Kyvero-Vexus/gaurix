@@ -364,6 +364,8 @@
   #:use-module (gaurix packages deptree-resolver-260408e)
   #:use-module (gaurix packages deptree-resolver-260408f)
   #:use-module (gaurix packages deptree-resolver-260408f-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260408g)
+  #:use-module (gaurix packages deptree-resolver-260408g-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260408p)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
@@ -8915,4 +8917,77 @@ podman-tui-bin
             preloader-signed
             openoffice-ru-bin
             zeroclaw
+            ;; deptree-resolver-260408g
+            llama-swap-bin
+            llog-bin
+            localias-bin
+            log2ram
+            logmonster-bin
+            lstr-bin
+            lx-bin
+            magiskboot-bin
+            mangcli-bin
+            maptool-bin
+            mcjoin
+            median
+            mercator-bin
+            min-ed-launcher-bin
+            mod-desktop-bin
+            mongoclock
+            monika-after-story
+            monika-after-story-bin
+            mping
+            mynav-bin
+            nav-cli
+            nexttrace-bin
+            norwester-otf
+            noxdir-bin
+            nvidia-gpu-exporter-bin
+            obsidian-2-theme
+            omnidotdev-cli-bin
+            omnidotdev-eden-bin
+            openide-bin
+            openscad-attachable-text3d
+            openscad-bosl2-git
+            orbit-bin
+            orbolay-bin
+            otel-weaver-bin
+            otf-arsenal
+            otf-font-awesome-4
+            otf-font-awesome-5
+            otf-garamontio
+            otf-garamontio-capo
+            otf-geist
+            otf-geist-mono
+            otf-tesla
+            ovrport-bin
+            oyasumi-bin
+            path-utils
+            pent-bin
+            pi-hole-web
+            picsort-bin
+            pistol-bin
+            plist-bin
+            popsicle-bin
+            powerline-go-bin
+            pxsum-bin
+            qqqa-bin
+            qui-bin
+            radicle-httpd-bin
+            rbackup
+            recall-bin
+            rep-bin
+            repo-security-scanner-bin
+            rexuiz-bin
+            rimsort-bin
+            rinetd
+            scooter-bin
+            seclists
+            seristack-bin
+            shadps4-qtlauncher-bin
+            shc
+            shim-signed
+            slack
+            slackdump-bin
+            slides-bin
 )

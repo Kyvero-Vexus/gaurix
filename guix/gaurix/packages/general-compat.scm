@@ -231,6 +231,7 @@
   #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages deptree-resolver-260408e)
   #:use-module (gaurix packages deptree-resolver-260408f)
+  #:use-module (gaurix packages deptree-resolver-260408g)
   #:use-module (gaurix packages recipe-resolver-260408m)
   #:use-module (gaurix packages recipe-resolver-260408o)
   #:use-module (gaurix packages recipe-resolver-260408p)
