@@ -198,6 +198,7 @@
   #:use-module (gaurix packages deptree-resolver-260407e)
   #:use-module (gaurix packages deptree-resolver-260407f)
   #:use-module (gaurix packages recipe-resolver-260407h)
+  #:use-module (gaurix packages recipe-resolver-260407i)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -3494,6 +3495,30 @@
             buck2-bin
             libdeep-filter-ladspa-bin
             cli-proxy-api-bin
+            ;; recipe-resolver-260407i re-exports
+            antidot-bin
+            copilot-cli-bin
+            homeassistant-osagent-bin
+            symfony-cli-bin
+            doppler-cli-bin
+            pat-bin
+            vopono-bin
+            ttc-monocraft
+            ttf-sil-lateef
+            beanstalkd
+            fzy
+            librelp
+            flxmlrpc
+            zd1211-firmware
+            ebook2cw
+            qrq
+            demorse
+            xdemorse
+            bluetooth-headset-battery-level
+            edl
+            layan-gtk-theme
+            cfs-zen-tweaks
+            gpaste-menu
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
     (inherit qtconnectivity)
@@ -3507,3 +3532,6 @@
 
 ;; ─── recipe-resolver-260407h compat aliases ───
 ;;  (all 30 packages are new binary packages with no AUR name aliases needed)
+
+;; ─── recipe-resolver-260407i compat aliases ───
+;; (all re-exported directly from the recipe module, no aliases needed)
