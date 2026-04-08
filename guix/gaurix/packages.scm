@@ -341,6 +341,7 @@
   #:use-module (gaurix packages recipe-resolver-260407m)
   #:use-module (gaurix packages recipe-resolver-260407n)
   #:use-module (gaurix packages recipe-resolver-260407o)
+  #:use-module (gaurix packages recipe-resolver-260408a)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8423,4 +8424,35 @@ podman-tui-bin
             enyo-launcher
             pmg-bin
             drl
+            ;; recipe-resolver-260408a
+            fortune-mod-futurama
+            fortune-mod-firefly
+            fortune-mod-matrix
+            fortune-mod-archer
+            fortune-mod-hackers
+            fortune-mod-iasip
+            ;; gruvbox-dark-icons-gtk already exported above
+            posy-improved-cursors
+            zaread-git
+            kfr
+            namefix-git
+            osslsigncode
+            3dstool
+            signalbackup-tools-git
+            xclicker
+            xbindkeys-config-gtk2
+            cls
+            nb
+            most-snapshot
+            rpcapd
+            scrapfetch-git
+            ctpv-git
+            mcbash
+            air-bin
+            meta-package-manager-bin
+            xremap-niri-bin
+            continuwuity-bin
+            twitch-downloader-bin
+            maretf-bin
+            kopia-ui-bin
 )

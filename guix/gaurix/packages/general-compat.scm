@@ -337,6 +337,7 @@
   #:use-module (gaurix packages recipe-resolver-260407m)
   #:use-module (gaurix packages recipe-resolver-260407n)
   #:use-module (gaurix packages recipe-resolver-260407o)
+  #:use-module (gaurix packages recipe-resolver-260408a)
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:use-module (gaurix packages deptree-resolver-260407h)
   #:use-module (gaurix packages deptree-resolver-260408a)
@@ -3821,6 +3822,37 @@
             enyo-launcher
             pmg-bin
             drl
+            ;; recipe-resolver-260408a re-exports
+            fortune-mod-futurama
+            fortune-mod-firefly
+            fortune-mod-matrix
+            fortune-mod-archer
+            fortune-mod-hackers
+            fortune-mod-iasip
+            gruvbox-dark-icons-gtk
+            posy-improved-cursors
+            zaread-git
+            kfr
+            namefix-git
+            osslsigncode
+            3dstool
+            signalbackup-tools-git
+            xclicker
+            xbindkeys-config-gtk2
+            cls
+            nb
+            most-snapshot
+            rpcapd
+            scrapfetch-git
+            ctpv-git
+            mcbash
+            air-bin
+            meta-package-manager-bin
+            xremap-niri-bin
+            continuwuity-bin
+            twitch-downloader-bin
+            maretf-bin
+            kopia-ui-bin
             ;; deptree-resolver-260408a re-exports
             cs-bin
             crtui-bin
@@ -3856,6 +3888,9 @@
 ;; (all 30 packages are new binary packages with no AUR name aliases needed)
 
 ;; --- recipe-resolver-260407o compat aliases ---
+;; (all 30 packages are new definitions with no AUR name aliases needed)
+
+;; --- recipe-resolver-260408a compat aliases ---
 ;; (all 30 packages are new definitions with no AUR name aliases needed)
 
 ;; ─── deptree-resolver-260408a compat aliases ───
