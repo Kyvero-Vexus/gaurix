@@ -1,3 +1,34 @@
+            ;; recipe-resolver-260407l re-exports
+            pipette-desktop-bin
+            elyprismlauncher-bin
+            lianpkg-gui-bin
+            gb-studio-bin
+            velo-bin
+            webtunnel-client-bin
+            hytale-downloader-bin
+            sonarr-bin
+            ffstudio-bin
+            undertalemodtool-bin
+            thorium-browser-avx2-bin
+            tonelib-gfx-bin
+            mateengine-bin
+            msdf-atlas-gen
+            gnuclad
+            bsd-leave
+            pidgin-libnotify
+            binauralplayer
+            python-rofi
+            dotctl
+            sxhkhm
+            myapps
+            toad-ai
+            font-chocolate-classical-sans
+            nordic-darker-standard-buttons-theme
+            catppuccin-qt5ct
+            fairy-stockfish
+            shiru-lv2
+            tanin
+            swaycons
 (define-module (gaurix packages general-compat)
   #:use-module (gaurix packages llama-cpp-cuda)
   #:use-module (gaurix packages deptree-resolver-260407c)
@@ -201,6 +232,7 @@
   #:use-module (gaurix packages recipe-resolver-260407i)
   #:use-module (gaurix packages recipe-resolver-260407j)
   #:use-module (gaurix packages recipe-resolver-260407k)
+  #:use-module (gaurix packages recipe-resolver-260407l)
   #:use-module (gaurix packages deptree-resolver-260407g)
   #:export (
             ;; deptree-resolver-260407 compat aliases
