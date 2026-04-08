@@ -9046,9 +9046,103 @@ podman-tui-bin
             amazon-fonts
             amok-exif-sorter
             ani-rss
+            ;; deptree-resolver-260408i
+            dms-shell
+            sonic-screen-library
+            vencord-installer
+            sonic-silver-theme
+            sonic-system-info
+            anyrun-provider
+            aoc-cli
+            apprenticevr-bin
+            arch-cache-cleaner-git
+            archiso-systemd-boot
+            ascii-moon
+            aspnet-targeting-pack-7.0-bin
+            aws-session-manager-plugin
+            baidunetdisk-electron
+            bash-pipes
+            betterbird-pt-bin
+            bgb
+            blinkenlib
+            bluekeys-bin
+            brisqi-bin
+            brother-dcpj1140dw
+            brother-dcpl2640dw
+            brother-mfc6490cw-lpr
+            brother-ql700
+            browsh-bin
+            bsky-cli-bin
+            burpsuite
+            bwlog
+            c3c-bin
+            caches-manager
+            ccat
+            ccd-nav
+            chatbox-bin
+            chimerax
+            cinnamon-applet-weather
+            classin-bin
+            clion-cmake
+            clion-gdb
+            clion-jre
+            clion-lldb
+            cmc-mod-manager-bin
+            cnote-bin
+            colloid-cursors-git
+            commitlint-go-bin
+            configuradorfnmt
+            connectiq-sdk-manager
+            crandpass
+            crier
+            cs-script
+            cusparselt
+            cvmfs-config-eessi
+            cwalk
+            d52
+            datui-bin
+            davinconv
+            ddcutil-service
+            dealve
+            dict-foldoc
+            dict-moby-thesaurus
+            dina-font
+            disktype
+            displaylink-connect
+            distrohelper
+            dmrgateway-git
+            docan-bin
+            docan-unstable
+            dopamine-bin
+            dopamine-official
+            doudou-bin
+            doudou-unstable
+            dpms-off-git
+            dsw-bin
+            duplicati-beta-bin
+            duplicati-canary-bin
+            eask-cli-bin
+            easy-conflict-bin
+            eci-icc
+            eden-nightly-bin
+            editasroot
+            elecwhat-bin
+            element-desktop-nightly-bin
+            elephant-archlinuxpkgs
+            elephant-bluetooth
+            elephant-desktopapplications
+            elephant-dnfpackages
+            elephant-menus
+            elephant-providerlist
+            elephant-runner
+            elephant-symbols
+            elephant-todo
+            elephant-unicode
   #:use-module (gaurix packages recipe-resolver-260408q)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408h-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260408r)
   #:use-module (gaurix packages recipe-resolver-260408t)
+  #:use-module (gaurix packages deptree-resolver-260408i)
+  #:use-module (gaurix packages deptree-resolver-260408i-blocked-notes)
 )
