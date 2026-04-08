@@ -354,8 +354,10 @@
   #:use-module (gaurix packages compat-aliases-260408c)
   #:use-module (gaurix packages recipe-resolver-260408j)
   #:use-module (gaurix packages recipe-resolver-260408k)
+  #:use-module (gaurix packages recipe-resolver-260408l)
   #:use-module (gaurix packages deptree-resolver-260408d)
   #:use-module (gaurix packages deptree-resolver-260408d-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260408e)
             ;; queue-20260406p100b: 18 recipes + 82 blocked
             urlview
             sexpect
@@ -8633,4 +8635,87 @@ podman-tui-bin
             qatlib
             pipewire-audio-idle-inhibit
             xc-bin
+            ;; recipe-resolver-260408l
+            wafw00f
+            yamlfix
+            pamix
+            wb32-dfu-updater
+            holyc-lang
+            sdbus-cpp
+            alacritty-use-theme-with-gnome-darkmode
+            sayonara-player
+            mrboom
+            pixelterm-c
+
+            ;; deptree-resolver-260408e
+            amdvlk
+            android-sdk
+            archlinux-java-run
+            arduino-avr-core
+            aspnet-runtime-preview-bin
+            awww-git
+            betterlockscreen
+            bms-shell
+            clion
+            cosmic-applets-git
+            cosmic-bg-git
+            cosmic-files-git
+            cosmic-greeter-git
+            cosmic-osd-git
+            element-web-git
+            emacs-mozc
+            fcitx5-mozc-ut
+            firmware-manager
+            ggml-sycl-f16-git
+            hypryou-utils
+            icu69
+            intel-graphics-compiler-legacy
+            intel-npu-driver
+            iscan
+            karakeep-cli
+            kde-material-you-colors
+            kdesignerplugin
+            kemoticons
+            kwin-effects-better-blur-dx
+            kwin-minimize2tray-git
+            libastal-git
+            libastal-meta
+            libpamac-full
+            llama-cpp-hip
+            maa-assistant-arknights
+            mdcat
+            mozc-ut-full-common
+            nautilus-sendto
+            noctalia-qs
+            opensnitch-ebpf-module-git
+            openssh-askpass
+            overskride
+            owlry-lua
+            owlry-rune
+            php-imap
+            powershell
+            processing-examples
+            python-frida
+            python-insightface
+            python-moviepy
+            python-snakeviz
+            python-twisterl
+            python38
+            qadwaitadecorations-qt6
+            qtforkawesome
+            radicle-httpd
+            rvgl-io-cars
+            samsung-unified-driver-printer
+            samsung-unified-driver-scanner
+            sdrpp-headers-git
+            snapx
+            todds
+            trustedqsl
+            vivaldi-snapshot-ffmpeg-codecs
+            vkbasalt-redemp-git
+            waydroid-image
+            waydroid-script-git
+            xrizer
+            xtensa-lx106-elf-gcc-bin
+            yabridgectl-wine10-git
 )
