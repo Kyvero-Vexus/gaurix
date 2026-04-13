@@ -276,6 +276,32 @@
             godot-beta-bin
             karing-bin
             data-peek-bin
+            ;; recipe-resolver-260413o
+            icann-rdap-bin
+            sendme-bin
+            ytcui-bin
+            tickit-bin
+            hazelnut-bin
+            feedo-bin
+            certradar-cli-bin
+            spotatui-bin
+            headroom-bin
+            jpu-bin
+            turso-bin
+            lsfg-vk-bin
+            sonyheadphonesclient-bluetooth-bin
+            usb-tree-app-bin
+            vvv-bin
+            pomodorolm-bin
+            insomnium-bin
+            pomotroid-bin
+            pulsar-bin
+            modrinth-app-bin
+            pince-bin
+            notepadnext-bin
+            swt-bin
+            qualcoder-bin
+            xdgctl
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -642,4 +668,5 @@
   #:use-module (gaurix packages recipe-resolver-260413m-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413n)
   #:use-module (gaurix packages recipe-resolver-260413n-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413o)
 )
