@@ -255,6 +255,27 @@
             vlc-bittorrent
             powerline-go-bin
             adwaita-qt5-git
+            ;; recipe-resolver-260413n
+            thorium-browser-avx-bin
+            devpod-community-bin
+            phiola-bin
+            ionosctl-bin
+            melonds-bin
+            keystore-explorer-bin
+            greenlight-bin
+            lore-cli-bin
+            tonkeeper-bin
+            termide-bin
+            kftui-bin
+            fhc-bin
+            qo-bin
+            vex-tui-bin
+            ghk-bin
+            antares-sql-bin
+            rclone-ui-bin
+            godot-beta-bin
+            karing-bin
+            data-peek-bin
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -619,4 +640,6 @@
   #:use-module (gaurix packages recipe-resolver-260413l-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413m)
   #:use-module (gaurix packages recipe-resolver-260413m-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413n)
+  #:use-module (gaurix packages recipe-resolver-260413n-blocked-notes)
 )

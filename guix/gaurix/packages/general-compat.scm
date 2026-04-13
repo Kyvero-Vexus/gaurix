@@ -269,6 +269,7 @@
   #:use-module (gaurix packages recipe-resolver-260413k)
   #:use-module (gaurix packages recipe-resolver-260413l)
   #:use-module (gaurix packages deptree-resolver-260413g)
+  #:use-module (gaurix packages recipe-resolver-260413n)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -5709,3 +5710,28 @@
 (define-public ironbar (package (inherit ironbar-git) (name "ironbar")))
 (define-public httpdirfs (package (inherit httpdirfs-git) (name "httpdirfs")))
 (define-public adwaita-qt5 (package (inherit adwaita-qt5-git) (name "adwaita-qt5")))
+
+
+; --- recipe-resolver-260413n compat aliases ---
+(define-public thorium-browser-avx (package (inherit thorium-browser-avx-bin) (name "thorium-browser-avx")))
+(define-public thorium-browser (package (inherit thorium-browser-avx-bin) (name "thorium-browser")))
+(define-public devpod-community (package (inherit devpod-community-bin) (name "devpod-community")))
+(define-public devpod (package (inherit devpod-community-bin) (name "devpod")))
+(define-public phiola (package (inherit phiola-bin) (name "phiola")))
+(define-public ionosctl (package (inherit ionosctl-bin) (name "ionosctl")))
+(define-public melonds (package (inherit melonds-bin) (name "melonds")))
+(define-public keystore-explorer (package (inherit keystore-explorer-bin) (name "keystore-explorer")))
+(define-public greenlight (package (inherit greenlight-bin) (name "greenlight")))
+(define-public lore-cli (package (inherit lore-cli-bin) (name "lore-cli")))
+(define-public tonkeeper (package (inherit tonkeeper-bin) (name "tonkeeper")))
+(define-public termide (package (inherit termide-bin) (name "termide")))
+(define-public kftui (package (inherit kftui-bin) (name "kftui")))
+(define-public fhc (package (inherit fhc-bin) (name "fhc")))
+(define-public qo (package (inherit qo-bin) (name "qo")))
+(define-public vex-tui (package (inherit vex-tui-bin) (name "vex-tui")))
+(define-public ghk (package (inherit ghk-bin) (name "ghk")))
+(define-public antares-sql (package (inherit antares-sql-bin) (name "antares-sql")))
+(define-public rclone-ui (package (inherit rclone-ui-bin) (name "rclone-ui")))
+(define-public godot-beta (package (inherit godot-beta-bin) (name "godot-beta")))
+(define-public karing (package (inherit karing-bin) (name "karing")))
+(define-public data-peek (package (inherit data-peek-bin) (name "data-peek")))
