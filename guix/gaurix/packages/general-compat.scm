@@ -270,6 +270,7 @@
   #:use-module (gaurix packages recipe-resolver-260413l)
   #:use-module (gaurix packages deptree-resolver-260413g)
   #:use-module (gaurix packages recipe-resolver-260413n)
+  #:use-module (gaurix packages deptree-resolver-260413h)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -5735,3 +5736,14 @@
 (define-public godot-beta (package (inherit godot-beta-bin) (name "godot-beta")))
 (define-public karing (package (inherit karing-bin) (name "karing")))
 (define-public data-peek (package (inherit data-peek-bin) (name "data-peek")))
+
+; --- deptree-resolver-260413h compat aliases ---
+(define-public btrfsmaintenance (package (inherit btrfsmaintenance-git) (name "btrfsmaintenance")))
+(define-public catppuccin-konsole-colorscheme-frappe (package (inherit catppuccin-konsole-colorscheme-frappe-git) (name "catppuccin-konsole-colorscheme-frappe")))
+(define-public catppuccin-konsole-colorscheme-latte (package (inherit catppuccin-konsole-colorscheme-latte-git) (name "catppuccin-konsole-colorscheme-latte")))
+(define-public catppuccin-konsole-colorscheme-macchiato (package (inherit catppuccin-konsole-colorscheme-macchiato-git) (name "catppuccin-konsole-colorscheme-macchiato")))
+(define-public catppuccin-konsole-colorscheme-mocha (package (inherit catppuccin-konsole-colorscheme-mocha-git) (name "catppuccin-konsole-colorscheme-mocha")))
+(define-public cecil (package (inherit cecil-bin) (name "cecil")))
+(define-public certradar-cli (package (inherit certradar-cli-bin) (name "certradar-cli")))
+(define-public climp (package (inherit climp-bin) (name "climp")))
+(define-public cmake-modules-webos (package (inherit cmake-modules-webos-git) (name "cmake-modules-webos")))
