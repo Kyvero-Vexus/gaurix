@@ -15,6 +15,7 @@
   #:use-module (gaurix packages recipe-resolver-260407d)
   #:use-module (gaurix packages recipe-resolver-260407e)
   #:use-module (gaurix packages recipe-resolver-260407f)
+  #:use-module (gaurix packages recipe-resolver-260412a)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -249,6 +250,8 @@
   #:use-module (gaurix packages deptree-resolver-260408k)
   #:use-module (gaurix packages recipe-resolver-260408y)
   #:use-module (gaurix packages deptree-resolver-260412a)
+  #:use-module (gaurix packages recipe-resolver-260412b)
+  #:use-module (gaurix packages recipe-resolver-260412c)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1652,6 +1655,62 @@
             ab-download-manager-bin
             bizhawk-bin
             bs-manager-bin
+
+            windsurf
+            offpunk-git
+            brscan5
+            megasync
+            jdtls
+            irpf2025
+            woff2-material-symbols-variable
+            microsoft-identity-broker
+            hyprshutdown-compat
+            bitwig-studio
+            notion-app-electron
+            nettui
+            opentubex
+            ani2xcursor
+            crtui
+            mdterm
+            btdu
+            openide
+            tsenta-desktop
+            bookokrat
+            terraria-server
+            intune-portal
+            reiserfsprogs
+            waterfox-bin-pkg
+            windsurf-bin
+            offpunk
+            brscan5-bin
+            megasync-bin
+            google-cloud-cli-bq
+            google-cloud-cli-gsutil
+            google-cloud-cli-python3
+            gke-gcloud-auth-plugin
+            ironwail
+            jdtls-bin
+            irpf2025-bin
+            xdg-su
+            font-material-symbols-variable
+            microsoft-identity-broker-bin
+            wps-office-mui-zh-cn
+            hyprshutdown
+            bitwig-studio-bin
+            vmware-keymaps
+            reiserfsprogs-pkg
+            notion-app-bin
+            nettui-bin
+            opentubex-bin
+            ani2xcursor-bin
+            crtui-bin
+            mdterm-bin
+            btdu-bin
+            openide-bin
+            tsenta-desktop-bin
+            bookokrat-bin
+            terraria-server-bin
+            intune-portal-bin
 ))
 
 (define-public gtk2
@@ -5287,3 +5346,28 @@
 
 ; --- deptree-resolver-260412a compat aliases ---
 (define-public otf-arundina (package (inherit font-arundina) (name "otf-arundina")))
+
+; --- recipe-resolver-260412b/c compat aliases ---
+(define-public waterfox-bin (package (inherit waterfox-bin-pkg) (name "waterfox-bin")))
+(define-public offpunk-git (package (inherit offpunk) (name "offpunk-git")))
+(define-public brscan5 (package (inherit brscan5-bin) (name "brscan5")))
+(define-public megasync (package (inherit megasync-bin) (name "megasync")))
+(define-public jdtls (package (inherit jdtls-bin) (name "jdtls")))
+(define-public irpf2025 (package (inherit irpf2025-bin) (name "irpf2025")))
+(define-public woff2-material-symbols-variable (package (inherit font-material-symbols-variable) (name "woff2-material-symbols-variable")))
+(define-public microsoft-identity-broker (package (inherit microsoft-identity-broker-bin) (name "microsoft-identity-broker")))
+(define-public hyprshutdown-compat (package (inherit hyprshutdown) (name "hyprshutdown-compat")))
+(define-public bitwig-studio (package (inherit bitwig-studio-bin) (name "bitwig-studio")))
+(define-public notion-app-electron (package (inherit notion-app-bin) (name "notion-app-electron")))
+(define-public nettui (package (inherit nettui-bin) (name "nettui")))
+(define-public opentubex (package (inherit opentubex-bin) (name "opentubex")))
+(define-public ani2xcursor (package (inherit ani2xcursor-bin) (name "ani2xcursor")))
+(define-public crtui (package (inherit crtui-bin) (name "crtui")))
+(define-public mdterm (package (inherit mdterm-bin) (name "mdterm")))
+(define-public btdu (package (inherit btdu-bin) (name "btdu")))
+(define-public openide (package (inherit openide-bin) (name "openide")))
+(define-public tsenta-desktop (package (inherit tsenta-desktop-bin) (name "tsenta-desktop")))
+(define-public bookokrat (package (inherit bookokrat-bin) (name "bookokrat")))
+(define-public terraria-server (package (inherit terraria-server-bin) (name "terraria-server")))
+(define-public intune-portal (package (inherit intune-portal-bin) (name "intune-portal")))
+(define-public reiserfsprogs (package (inherit reiserfsprogs-pkg) (name "reiserfsprogs")))

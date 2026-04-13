@@ -9443,7 +9443,12 @@ podman-tui-bin
   #:use-module (gaurix packages deptree-resolver-260408k-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260408y)
   #:use-module (gaurix packages recipe-resolver-260408y-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260412a)
 
   #:use-module (gaurix packages deptree-resolver-260412a)
   #:use-module (gaurix packages deptree-resolver-260412a-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260412b)
+  #:use-module (gaurix packages recipe-resolver-260412b-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260412c)
+  #:use-module (gaurix packages recipe-resolver-260412c-blocked-notes)
 )
