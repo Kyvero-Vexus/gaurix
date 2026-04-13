@@ -512,6 +512,27 @@
             fsid
             ftr-site-config-git
             gasroot
+            ;; deptree-resolver-260413m
+            python-scipy-doctest
+            python-opentelemetry-exporter-zipkin-proto-http
+            python-opentelemetry-exporter-otlp-proto-grpc
+            python-opentelemetry-exporter-otlp-proto-http
+            gatus
+            ghgrab-bin
+            giff-bin
+            git-backdate-git
+            git-donkey
+            gitv-bin
+            gmatrix
+            gnome-menu-editor-qt
+            gnome-shell-extension-fuzzy-app-search-git
+            gnome-shell-extension-just-perfection-desktop
+            gnome-shell-extension-mpris-indicator-button-git
+            gnome-shell-extension-windowisready-remover-git
+            go-sendxmpp-git
+            go-sqlcmd
+            gochecker
+
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -896,4 +917,8 @@
   #:use-module (gaurix packages recipe-resolver-260413x)
   #:use-module (gaurix packages recipe-resolver-260413y)
   #:use-module (gaurix packages recipe-resolver-260413z)
+  #:use-module (gaurix packages deptree-resolver-260413m)
+  #:use-module (gaurix packages deptree-resolver-260413m-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413aa)
+  #:use-module (gaurix packages recipe-resolver-260413aa-blocked-notes)
 )
