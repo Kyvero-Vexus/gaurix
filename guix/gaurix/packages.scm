@@ -9451,4 +9451,6 @@ podman-tui-bin
   #:use-module (gaurix packages recipe-resolver-260412b-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260412c)
   #:use-module (gaurix packages recipe-resolver-260412c-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413a)
+  #:use-module (gaurix packages recipe-resolver-260413a-blocked-notes)
 )

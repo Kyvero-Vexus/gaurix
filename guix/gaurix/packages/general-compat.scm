@@ -252,6 +252,7 @@
   #:use-module (gaurix packages deptree-resolver-260412a)
   #:use-module (gaurix packages recipe-resolver-260412b)
   #:use-module (gaurix packages recipe-resolver-260412c)
+  #:use-module (gaurix packages recipe-resolver-260413a)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -5371,3 +5372,25 @@
 (define-public terraria-server (package (inherit terraria-server-bin) (name "terraria-server")))
 (define-public intune-portal (package (inherit intune-portal-bin) (name "intune-portal")))
 (define-public reiserfsprogs (package (inherit reiserfsprogs-pkg) (name "reiserfsprogs")))
+
+; --- recipe-resolver-260413a compat aliases ---
+
+(define-public sshm-bin-compat
+  (package
+    (inherit sshm)
+    (name "sshm-bin")))
+
+(define-public librepods-git
+  (package
+    (inherit librepods)
+    (name "librepods-git")))
+
+(define-public shaka-packager-git
+  (package
+    (inherit shaka-packager)
+    (name "shaka-packager-git")))
+
+(define-public ffmpeg-libfdk_aac
+  (package
+    (inherit ffmpeg-libfdk-aac)
+    (name "ffmpeg-libfdk_aac")))
