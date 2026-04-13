@@ -16,6 +16,7 @@
   #:use-module (gaurix packages recipe-resolver-260407e)
   #:use-module (gaurix packages recipe-resolver-260407f)
   #:use-module (gaurix packages recipe-resolver-260412a)
+  #:use-module (gaurix packages recipe-resolver-260413c)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -5426,3 +5427,25 @@
   (package
     (inherit astro-modloader)
     (name "astro_modloader")))
+
+; --- recipe-resolver-260413c compat aliases ---
+
+(define-public tome4-zomnibus_addon
+  (package
+    (inherit tome4-zomnibus-addon)
+    (name "tome4-zomnibus_addon")))
+
+(define-public opentaiko
+  (package
+    (inherit opentaiko-bin)
+    (name "opentaiko")))
+
+(define-public whisper.cpp-vulkan
+  (package
+    (inherit whisper-cpp-vulkan)
+    (name "whisper.cpp-vulkan")))
+
+(define-public rbdoom3-bfg-git
+  (package
+    (inherit rbdoom3-bfg)
+    (name "rbdoom3-bfg-git")))

@@ -23987,24 +23987,26 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407l.scm (catppuccin-qt5ct vgit, Catppuccin qt5ct color scheme, MIT)
 
-** BLOCKED 3615. paru-static
+** BLOCKED 3615. paru-static [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR helper, depends on pacman/libalpm ecosystem, no Guix utility]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh paru-static` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR helper, depends on pacman/libalpm ecosystem, no Guix utility
 ** DONE 3616. dumbpipe-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: mapped to Guix equivalent `dumbpipe` via general-compat alias; validated target availability with `guix package -A` and queue log `reports/queue-20260321p100-validate-targets.log`.
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3617. aurto
+** BLOCKED 3617. aurto [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR auto-build tool, depends on pacman/aurutils]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh aurto` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR auto-build tool, depends on pacman/aurutils
 ** DONE 3618. ttf-pt-astra-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: SOURCE_UNAVAILABLE: PT Astra Sans OFL font, no stable archive URL (deptree-260407 dep-tree pass)
@@ -24047,12 +24049,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3624. linux-xanmod-lts-linux-bin-x64v3
+** BLOCKED 3624. linux-xanmod-lts-linux-bin-x64v3 [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel binary, incompatible with Guix boot model]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh linux-xanmod-lts-linux-bin-x64v3` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel binary, incompatible with Guix boot model
 ** BLOCKED 3625. linux-xanmod-lts-linux-headers-bin-x64v3
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh linux-xanmod-lts-linux-headers-bin-x64v3` exit 1; snippet: `Cloning into '/tmp/tmp.fT8JbZb5BS/linux-xanmod-lts-linux-headers-bin-x64v3'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hin...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
@@ -24100,31 +24103,35 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3631. linux-xanmod-linux-bin-x64v3
+** BLOCKED 3631. linux-xanmod-linux-bin-x64v3 [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel binary, incompatible with Guix boot model]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh linux-xanmod-linux-bin-x64v3` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3632. linux-xanmod-linux-headers-bin-x64v3
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel binary, incompatible with Guix boot model
+** BLOCKED 3632. linux-xanmod-linux-headers-bin-x64v3 [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel headers, incompatible with Guix boot model]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh linux-xanmod-linux-headers-bin-x64v3` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3633. ladybird-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel headers, incompatible with Guix boot model
+** BLOCKED 3633. ladybird-git [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; COMPLEX_DEPS: AUR-only deps: angle, simdutf-git, cpptrace; Web engine with heavy dep chain]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh ladybird-git` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
    - Status: BLOCKED: COMPLEX_DEPS re-evaluated in recipe-resolver-260408n; massive AUR-only deps (angle, simdutf-git, cpptrace), no stable release. See blocked-notes.
 
-** BLOCKED 3634. awsvpnclient
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; COMPLEX_DEPS: AUR-only deps: angle, simdutf-git, cpptrace; Web engine with heavy dep chain
+** DONE 3634. awsvpnclient
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh awsvpnclient` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (awsvpnclient, AWS VPN client binary, nonfree)
 ** DONE 3635. auto-mcs-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh auto-mcs-bin` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
@@ -24132,12 +24139,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in deptree-resolver-260407d.scm; dep-tree priority pass 2026-04-07.
    - TODO Status: DONE
 
-** BLOCKED 3636. pamac-all
+** BLOCKED 3636. pamac-all [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: Manjaro package manager GUI, depends on libpamac-full/pacman]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh pamac-all` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: Manjaro package manager GUI, depends on libpamac-full/pacman
 ** DONE 3637. libappindicator-gtk2
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Already aliased in general-compat.scm → libappindicator (prior pass).
@@ -24180,25 +24188,28 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408y.scm (bizhawk-bin v2.11, multi-system emulator tar.gz, MIT)
-** BLOCKED 3643. phoenix-arch
+** DONE 3643. phoenix-arch
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh phoenix-arch` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3644. lazarus-gtk2
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (phoenix-arch, Firefox privacy config data, GPL-3.0)
+** BLOCKED 3644. lazarus-gtk2 [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; MISSING_GUIX_DEPS: requires Free Pascal Compiler (fpc) not packaged in Guix]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh lazarus-gtk2` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3645. lyrionmusicserver
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; MISSING_GUIX_DEPS: requires Free Pascal Compiler (fpc) not packaged in Guix
+** BLOCKED 3645. lyrionmusicserver [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; PERL_VERSION_PINNING: pins Perl 5.40-5.43, vendor build with 200+ CPAN deps]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh lyrionmusicserver` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
    - Status: BLOCKED: PERL_VERSION_PINNING re-evaluated in recipe-resolver-260408n; requires Perl 5.40-5.43, bundles arch-specific binaries. See blocked-notes.
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; PERL_VERSION_PINNING: pins Perl 5.40-5.43, vendor build with 200+ CPAN deps
 ** BLOCKED 3646. qwhitesurgtkdecorations-qt5
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh qwhitesurgtkdecorations-qt5` exit 1; snippet: `Cloning into '/tmp/tmp.plwdwIRdwz/qwhitesurgtkdecorations-qt5'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
@@ -26354,24 +26365,27 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3962. mozillavpn-git
+** BLOCKED 3962. mozillavpn-git [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build, missing Qt6 modules]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh mozillavpn-git` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n mozillavpn-git` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3963. yt-beats
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build, missing Qt6 modules
+** DONE 3963. yt-beats
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh yt-beats` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n yt-beats` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3964. preset
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (yt-beats, Python TUI YouTube music player, GPL-3.0)
+** DONE 3964. preset
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh preset` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n preset` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (preset, Rust/Cargo dotfiles manager CLI, MIT)
 ** DONE 3965. python-django-docs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh python-django-docs` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n python-django-docs` after adding module/export.
@@ -26379,25 +26393,28 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260408o.scm (python-django-docs v6.0, Django documentation, copy-build-system, BSD-3)
    - TODO Status: DONE
 
-** BLOCKED 3966. opentaiko
+** DONE 3966. opentaiko
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh opentaiko` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n opentaiko` after adding module/export.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; requires .NET runtime (dotnet-runtime) which is not bootstrapped in Guix.
    - TODO Status: BLOCKED
 
-** BLOCKED 3967. whisper.cpp-vulkan
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (opentaiko-bin, Taiko drum rhythm game .NET binary, MIT)
+** DONE 3967. whisper.cpp-vulkan
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh whisper.cpp-vulkan` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n whisper.cpp-vulkan` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3968. x50ng
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (whisper-cpp-vulkan, Whisper.cpp Vulkan speech recognition, MIT)
+** DONE 3968. x50ng
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh x50ng` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n x50ng` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (x50ng, C/Make HP 50g calculator emulator, GPL-2.0)
 ** BLOCKED 3969. xerahs-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh xerahs-git` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n xerahs-git` after adding module/export.
@@ -26460,12 +26477,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260408o.scm (stdexec v2026.03.17, C++ Senders P2300, cmake-build-system, Apache-2.0)
    - TODO Status: DONE
 
-** BLOCKED 3978. brother-hl1200
+** DONE 3978. brother-hl1200
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh brother-hl1200` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n brother-hl1200` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (brother-hl1200, Brother HL-1200 CUPS printer driver binary, GPL+nonfree)
 ** BLOCKED 3979. aeth-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh aeth-git` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n aeth-git` after adding module/export.
@@ -26487,19 +26505,21 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260408o.scm (andcli v2.6.1, 2FA TUI, go-build-system, MIT)
    - TODO Status: DONE
 
-** BLOCKED 3982. starcal
+** DONE 3982. starcal
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh starcal` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n starcal` after adding module/export.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; many Python deps not in Guix (python-cachetools, python-igraph, python-httplib2, python-dateutil). Heavy dep chain.
    - TODO Status: BLOCKED
 
-** BLOCKED 3983. rbdoom3-bfg-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (starcal, Star Calendar Python app binary, GPL-3.0)
+** DONE 3983. rbdoom3-bfg-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh rbdoom3-bfg-git` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n rbdoom3-bfg-git` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (rbdoom3-bfg, DOOM 3 BFG Edition source port, GPL-3.0)
 ** DONE 3984. chrony-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: mapped to Guix equivalent `chrony` via general-compat alias; validated target availability with `guix package -A` and queue log `reports/queue-20260321p100-validate-targets.log`.
@@ -26539,12 +26559,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3990. tome4-zomnibus_addon
+** DONE 3990. tome4-zomnibus_addon
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh tome4-zomnibus_addon` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n tome4-zomnibus_addon` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (tome4-zomnibus-addon, ToME4 game addon data, custom license)
 ** DONE 3991. fdir
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh fdir` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n fdir` after adding module/export.
@@ -26567,18 +26588,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408y.scm (bs-manager-bin v1.5.6, Beat Saber manager deb, GPL-3.0)
-** BLOCKED 3994. vrms-arch
+** BLOCKED 3994. vrms-arch [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: depends on pyalpm (Arch pacman Python bindings), Arch-only utility]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh vrms-arch` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n vrms-arch` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 3995. brother-mfc-j1010dw
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: depends on pyalpm (Arch pacman Python bindings), Arch-only utility
+** DONE 3995. brother-mfc-j1010dw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh brother-mfc-j1010dw` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n brother-mfc-j1010dw` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (brother-mfc-j1010dw, Brother MFC-J1010DW printer driver binary, nonfree)
 ** DONE 3996. sshcommand
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh sshcommand` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n sshcommand` after adding module/export.
@@ -26587,12 +26610,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260407o.scm (sshcommand)
     - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408w.scm (sshcommand v0.20.1, SSH thin client wrapper from GitHub)
 
-** BLOCKED 3997. bilibili
+** BLOCKED 3997. bilibili [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ELECTRON_APP: Electron/nvm/pnpm build chain, no viable Guix Electron packaging path]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh bilibili` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n bilibili` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ELECTRON_APP: Electron/nvm/pnpm build chain, no viable Guix Electron packaging path
 ** DONE 3998. vobcopy
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh vobcopy` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n vobcopy` after adding module/export.
@@ -26676,12 +26700,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260407o.scm (breeze-contrast-cursor-theme)
     - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408w; NO_STABLE_URL; opendesktop.org DNS unreachable, no mirror found. See blocked-notes.
 
-** BLOCKED 4009. doublecmd-plugin-p7z-usr
+** DONE 4009. doublecmd-plugin-p7z-usr
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh doublecmd-plugin-p7z-usr` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n doublecmd-plugin-p7z-usr` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (doublecmd-plugin-p7z-usr, Double Commander 7z plugin, GPL-3.0)
 ** DONE 4010. fhtagn
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh fhtagn` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n fhtagn` after adding module/export.
@@ -26695,6 +26720,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (hla-bin, High Level Assembly binary, CC-BY-4.0)
 ** DONE 4012. enyo-launcher
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh enyo-launcher` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n enyo-launcher` after adding module/export.
@@ -26702,12 +26728,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260407o.scm (enyo-launcher)
 
-** BLOCKED 4013. adom-noteye
+** DONE 4013. adom-noteye
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh adom-noteye` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n adom-noteye` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (adom-noteye, ADOM roguelike graphical binary, nonfree)
 ** DONE 4014. drl
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh drl` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n drl` after adding module/export.
@@ -26728,20 +26755,22 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4017. dev-janitor-bin
+** DONE 4017. dev-janitor-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh dev-janitor-bin` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n dev-janitor-bin` after adding module/export.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; Tauri .deb binary needing webkit2gtk-4.1 + complex deb extraction + shared lib patching.
    - TODO Status: BLOCKED
 
-** BLOCKED 4018. notify-complete
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (dev-janitor-bin, workspace cleanup Tauri binary, MIT)
+** DONE 4018. notify-complete
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh notify-complete` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n notify-complete` after adding module/export.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; Rust with cargo dependencies needing vendored crate hashes for dbus bindings.
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (notify-complete, Rust shell command notifier, MIT)
 ** DONE 4019. puny-manager
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh puny-manager` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n puny-manager` after adding module/export.
@@ -30574,6 +30603,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408y.scm (pseint-bin v20250314, Qt binary, GPL-2.0)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (pseint-bin, pseudocode IDE Qt binary, GPL-2.0)
 ** DONE 4618. nautilus-code
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe in recipe-resolver-260408p.scm (meson-build-system, Nautilus open-in-editor extension)
