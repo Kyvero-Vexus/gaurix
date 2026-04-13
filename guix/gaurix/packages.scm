@@ -176,6 +176,30 @@
             adw-gimp3-git
             alvr-launcher-bin
             antidot
+            ;; recipe-resolver-260413m
+            grepai-bin
+            lazydns-bin
+            aceplay-bin
+            dawn-writer-bin
+            miro-pdf-bin
+            lianwalld-bin
+            koboldcpp-cuda-bin
+            portablemc-bin
+            aura-bin
+            hla-bin
+            ab-download-manager-bin
+            katana-mk2-fxfloorboard-bin
+            exifcleaner-bin
+            dev-janitor-bin
+            ride-bin
+            pairux-bin
+            openmarch-bin
+            stremio-enhanced-bin
+            vial-appimage
+            bs-manager-bin
+            dn-famitracker-bin
+            qfinderpro-bin
+            pexip-infinity-connect-bin
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -538,4 +562,6 @@
   #:use-module (gaurix packages recipe-resolver-260413k-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413l)
   #:use-module (gaurix packages recipe-resolver-260413l-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413m)
+  #:use-module (gaurix packages recipe-resolver-260413m-blocked-notes)
 )
