@@ -448,6 +448,23 @@
             glew-2.1
             qt5-3d
             hunspell-ar
+            ;; recipe-resolver-260413u
+            elephant-files-plugin
+            elephant-calc-plugin
+            elephant-niriactions-plugin
+            elephant-bitwarden-plugin
+            dust-git-bin
+            lazytail-bin
+            qbit-manage-desktop-bin
+            brewtarget-bin
+            epub2pdf
+            sillytavern
+            deezer-enhanced-bin
+            ghc9.12-bin
+            hunspell-ja
+            python-pyfiglet
+            python-opentelemetry-exporter-zipkin-proto-http
+            python-opencensus
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -825,4 +842,6 @@
   #:use-module (gaurix packages recipe-resolver-260413s)
   #:use-module (gaurix packages recipe-resolver-260413s-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413t)
+  #:use-module (gaurix packages recipe-resolver-260413u)
+  #:use-module (gaurix packages recipe-resolver-260413u-blocked-notes)
 )

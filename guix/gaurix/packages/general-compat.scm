@@ -22,6 +22,7 @@
   #:use-module (gaurix packages recipe-resolver-260413j)
   #:use-module (gaurix packages recipe-resolver-260413m)
   #:use-module (gaurix packages recipe-resolver-260413s)
+  #:use-module (gaurix packages recipe-resolver-260413u)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
