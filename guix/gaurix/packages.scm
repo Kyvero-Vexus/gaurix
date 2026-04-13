@@ -1,5 +1,42 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260413g
+            argc
+            ascii-image-converter
+            bfree-bin
+            bfree
+            archium-bin
+            autosubsync-bin
+            briar-desktop-bin
+            bash-fuzzy-clock
+            arkenfox-user.js
+            xone-dongle-firmware
+            unreal-tournament-data
+            bcpp
+            blt
+            powerofforreboot-efi
+            typing-test
+            batctl-tui
+            aspire-cli-bin
+            chromium-gost
+            megit
+            bisq-cli
+            bisq-daemon
+            bisq-desktop
+            vibe-kanban-bin
+            binkplayer-bin
+            plecs-standalone-bin
+            davinci-resolve-studio-bin
+            ssacli-bin
+            breitbandmessung-bin
+            bash-fuzzy-clock-git
+            arkenfox-user.js-git
+            unreal-tournament-data-archiveorg
+            powerofforreboot.efi
+            typing_test
+            aspire-cli
+            plecs-standalone
+            davinci-resolve-studio
             ;; recipe-resolver-260413k
             sigscan-bin
             ast-grep-bin

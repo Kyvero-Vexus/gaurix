@@ -267,6 +267,7 @@
   #:use-module (gaurix packages deptree-resolver-260413f)
   #:use-module (gaurix packages recipe-resolver-260413k)
   #:use-module (gaurix packages recipe-resolver-260413l)
+  #:use-module (gaurix packages deptree-resolver-260413g)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -5657,3 +5658,14 @@
 (define-public graphite-cursor-theme-git (package (inherit graphite-cursor-theme) (name "graphite-cursor-theme-git")))
 (define-public gnome-shell-extension-pop-shell-git (package (inherit gnome-shell-extension-pop-shell) (name "gnome-shell-extension-pop-shell-git")))
 (define-public gnome-shell-extension-just-perfection-desktop (package (inherit gnome-shell-extension-just-perfection) (name "gnome-shell-extension-just-perfection-desktop")))
+
+
+; --- deptree-resolver-260413g compat aliases ---
+(define-public bash-fuzzy-clock-git (package (inherit bash-fuzzy-clock) (name "bash-fuzzy-clock-git")))
+(define-public arkenfox-user.js-git (package (inherit arkenfox-user.js) (name "arkenfox-user.js-git")))
+(define-public unreal-tournament-data-archiveorg (package (inherit unreal-tournament-data) (name "unreal-tournament-data-archiveorg")))
+(define-public powerofforreboot.efi (package (inherit powerofforreboot-efi) (name "powerofforreboot.efi")))
+(define-public typing_test (package (inherit typing-test) (name "typing_test")))
+(define-public aspire-cli (package (inherit aspire-cli-bin) (name "aspire-cli")))
+(define-public plecs-standalone (package (inherit plecs-standalone-bin) (name "plecs-standalone")))
+(define-public davinci-resolve-studio (package (inherit davinci-resolve-studio-bin) (name "davinci-resolve-studio")))
