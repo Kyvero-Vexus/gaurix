@@ -277,6 +277,7 @@
   #:use-module (gaurix packages recipe-resolver-260413r)
   #:use-module (gaurix packages recipe-resolver-260413q)
   #:use-module (gaurix packages deptree-resolver-260413i)
+  #:use-module (gaurix packages deptree-resolver-260413j)
   #:use-module (gnu packages telephony)
   #:use-module (gnu packages rdf)
   #:use-module (gnu packages datastructures)
@@ -5948,4 +5949,13 @@
 ; --- recipe-resolver-260413t additional compat aliases ---
 (define-public glew-2.1 (package (inherit glew) (name "glew-2.1")))
 (define-public qt5-3d (package (inherit qt3d) (name "qt5-3d")))
+
+; --- deptree-resolver-260413j compat aliases ---
+(define-public ente-desktop (package (inherit ente-desktop-bin) (name "ente-desktop")))
+(define-public envtrace (package (inherit envtrace-bin) (name "envtrace")))
+(define-public eso-addons-manager (package (inherit eso-addons-manager-bin) (name "eso-addons-manager")))
+(define-public ethtui (package (inherit ethtui-bin) (name "ethtui")))
+(define-public etr (package (inherit etr-bin) (name "etr")))
+(define-public exiled-exchange-2 (package (inherit exiled-exchange-2-bin) (name "exiled-exchange-2")))
+(define-public fackr (package (inherit fackr-bin) (name "fackr")))
 (define-public hunspell-ar (package (inherit hunspell) (name "hunspell-ar")))

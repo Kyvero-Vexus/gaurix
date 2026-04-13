@@ -1,9 +1,9 @@
 # Blocked Dependency Tree
 
-- **Timestamp:** 2026-04-13T16:49:19.368725+00:00
-- **Run ID:** deptree-resolver-260413i
-- **Total blocked:** 2941
-- **Queue length:** 2941
+- **Timestamp:** 2026-04-13T18:05:34.427615+00:00
+- **Run ID:** deptree-resolver-260413j
+- **Total blocked:** 2913
+- **Queue length:** 2913
 
 ## Priority Queue (top 120)
 
@@ -86,46 +86,46 @@
 | 75 | critique | 0 | 0 | 2 |
 | 76 | csharpier | 0 | 0 | 2 |
 | 77 | cython2 | 0 | 0 | 2 |
-| 78 | czkawka-cli-bin | 0 | 0 | 2 |
-| 79 | darya-bin | 0 | 0 | 2 |
-| 80 | dasel | 0 | 0 | 2 |
-| 81 | deadbranch-bin | 0 | 0 | 2 |
-| 82 | ded | 0 | 0 | 2 |
-| 83 | deezer-enhanced | 0 | 0 | 2 |
-| 84 | devbox-bin | 0 | 0 | 2 |
-| 85 | dict-gcide | 0 | 0 | 2 |
-| 86 | dinit-edit-git | 0 | 0 | 2 |
-| 87 | discord-chat-exporter-plus-cli | 0 | 0 | 2 |
-| 88 | doasedit-nhk | 0 | 0 | 2 |
-| 89 | dosbox-pure-unleashed-bin | 0 | 0 | 2 |
-| 90 | dotnet-host-bin | 0 | 0 | 2 |
-| 91 | ds | 0 | 0 | 2 |
-| 92 | dupe-krill | 0 | 0 | 2 |
-| 93 | dusage-bin | 0 | 0 | 2 |
-| 94 | dust-git | 0 | 0 | 2 |
-| 95 | eden-bin | 0 | 0 | 2 |
-| 96 | eden-preview-bin | 0 | 0 | 2 |
-| 97 | elephant-bitwarden | 0 | 0 | 2 |
-| 98 | elephant-calc | 0 | 0 | 2 |
-| 99 | elephant-files | 0 | 0 | 2 |
-| 100 | elephant-niriactions | 0 | 0 | 2 |
-| 101 | elephant-nirisessions | 0 | 0 | 2 |
-| 102 | elephant-snippets | 0 | 0 | 2 |
-| 103 | elephant-windows | 0 | 0 | 2 |
-| 104 | ente-desktop-bin | 0 | 0 | 2 |
-| 105 | envtrace-bin | 0 | 0 | 2 |
-| 106 | eperiodique | 0 | 0 | 2 |
-| 107 | epsonscan2-non-free-plugin | 0 | 0 | 2 |
-| 108 | eso-addons-manager-bin | 0 | 0 | 2 |
-| 109 | etckeeper-packages | 0 | 0 | 2 |
-| 110 | ethtui-bin | 0 | 0 | 2 |
-| 111 | etr-bin | 0 | 0 | 2 |
-| 112 | exiled-exchange-2-bin | 0 | 0 | 2 |
-| 113 | extramaus | 0 | 0 | 2 |
-| 114 | fackr-bin | 0 | 0 | 2 |
-| 115 | fake86-git | 0 | 0 | 2 |
-| 116 | falcon-sensor | 0 | 0 | 2 |
-| 117 | famitracker | 0 | 0 | 2 |
-| 118 | fastfind-bin | 0 | 0 | 2 |
-| 119 | faubox | 0 | 0 | 2 |
-| 120 | fbctrl | 0 | 0 | 2 |
+| 78 | deezer-enhanced | 0 | 0 | 2 |
+| 79 | dinit-edit-git | 0 | 0 | 2 |
+| 80 | discord-chat-exporter-plus-cli | 0 | 0 | 2 |
+| 81 | doasedit-nhk | 0 | 0 | 2 |
+| 82 | elephant-bitwarden | 0 | 0 | 2 |
+| 83 | elephant-calc | 0 | 0 | 2 |
+| 84 | elephant-files | 0 | 0 | 2 |
+| 85 | elephant-niriactions | 0 | 0 | 2 |
+| 86 | elephant-nirisessions | 0 | 0 | 2 |
+| 87 | elephant-snippets | 0 | 0 | 2 |
+| 88 | elephant-windows | 0 | 0 | 2 |
+| 89 | ente-desktop-bin | 0 | 0 | 2 |
+| 90 | envtrace-bin | 0 | 0 | 2 |
+| 91 | eperiodique | 0 | 0 | 2 |
+| 92 | epsonscan2-non-free-plugin | 0 | 0 | 2 |
+| 93 | eso-addons-manager-bin | 0 | 0 | 2 |
+| 94 | etckeeper-packages | 0 | 0 | 2 |
+| 95 | ethtui-bin | 0 | 0 | 2 |
+| 96 | etr-bin | 0 | 0 | 2 |
+| 97 | exiled-exchange-2-bin | 0 | 0 | 2 |
+| 98 | extramaus | 0 | 0 | 2 |
+| 99 | fackr-bin | 0 | 0 | 2 |
+| 100 | fake86-git | 0 | 0 | 2 |
+| 101 | falcon-sensor | 0 | 0 | 2 |
+| 102 | famitracker | 0 | 0 | 2 |
+| 103 | fastfind-bin | 0 | 0 | 2 |
+| 104 | faubox | 0 | 0 | 2 |
+| 105 | fbctrl | 0 | 0 | 2 |
+| 106 | fcitx5-pinyin-chinese-idiom | 0 | 0 | 2 |
+| 107 | feroxbuster | 0 | 0 | 2 |
+| 108 | fist-bin | 0 | 0 | 2 |
+| 109 | fittstool | 0 | 0 | 2 |
+| 110 | flyctl | 0 | 0 | 2 |
+| 111 | fm-git | 0 | 0 | 2 |
+| 112 | fmlib | 0 | 0 | 2 |
+| 113 | folder-declutter-bin | 0 | 0 | 2 |
+| 114 | fortitude-bin | 0 | 0 | 2 |
+| 115 | freelens-bin | 0 | 0 | 2 |
+| 116 | fsid | 0 | 0 | 2 |
+| 117 | ftr-site-config-git | 0 | 0 | 2 |
+| 118 | gasroot | 0 | 0 | 2 |
+| 119 | gatus | 0 | 0 | 2 |
+| 120 | ghgrab-bin | 0 | 0 | 2 |
