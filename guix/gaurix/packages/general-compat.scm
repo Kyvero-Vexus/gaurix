@@ -21,6 +21,7 @@
   #:use-module (gaurix packages recipe-resolver-260413i)
   #:use-module (gaurix packages recipe-resolver-260413j)
   #:use-module (gaurix packages recipe-resolver-260413m)
+  #:use-module (gaurix packages recipe-resolver-260413s)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -5881,3 +5882,10 @@
 (define-public dusage (package (inherit dusage-bin) (name "dusage")))
 (define-public eden (package (inherit eden-bin) (name "eden")))
 (define-public eden-preview (package (inherit eden-preview-bin) (name "eden-preview")))
+
+; --- recipe-resolver-260413s compat aliases ---
+(define-public dasel (package (inherit dasel-bin) (name "dasel")))
+(define-public jjui (package (inherit jjui-bin) (name "jjui")))
+(define-public dust (package (inherit dust-bin) (name "dust")))
+(define-public tre-command (package (inherit tre-command-bin) (name "tre-command")))
+(define-public dupe-krill (package (inherit dupe-krill-bin) (name "dupe-krill")))

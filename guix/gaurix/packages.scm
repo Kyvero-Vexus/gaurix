@@ -330,6 +330,23 @@
             swt-bin
             qualcoder-bin
             xdgctl
+            ;; recipe-resolver-260413s
+            dasel-bin
+            jjui-bin
+            dust-bin
+            tre-command-bin
+            dupe-krill-bin
+            fstl
+            qt-hearts
+            ffqueue
+            nautilus-bluetooth
+            recorder
+            python-c-formatter-42
+            fsign
+            fontviewer
+            perl-jq-lite
+            neovim-plenary
+            scopebuddy
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -704,4 +721,6 @@
   #:use-module (gaurix packages recipe-resolver-260413r-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260413i)
   #:use-module (gaurix packages deptree-resolver-260413i-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413s)
+  #:use-module (gaurix packages recipe-resolver-260413s-blocked-notes)
 )

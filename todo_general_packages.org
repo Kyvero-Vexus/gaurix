@@ -5962,6 +5962,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 923. dinit-edit-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — UPSTREAM_NOT_FOUND: cannot locate upstream source; A1: searched GitHub/GitLab/Codeberg — no match; A2: checked AUR — no PKGBUILD; A3: author unknown (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: Blocked after AUR recipe check: VCS package has unresolved dependency/toolchain chain in current channel state; recipe deferred.
    - Difficulty: medium
@@ -6819,11 +6820,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1058. dasel
+** DONE 1058. dasel
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (dasel-bin v3.4.1, Go CLI binary from GitHub, MIT)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED after AUR HEAD verification: candidate remains unpackageged in this pass; no Guix-native package/module + validation ladder completion achieved today.
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
 ** BLOCKED 1059. hardinfo2-git
@@ -7045,7 +7047,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: BLOCKED
 
-** BLOCKED 1092. dust-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (dust-bin v1.2.4, du replacement binary from GitHub, Apache-2.0)
+** DONE 1092. dust-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (dust-bin v1.2.4, du replacement binary from GitHub, Apache-2.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: dust-git VCS variant packaging unresolved in this pass (no validated Guix recipe produced today).
    - Difficulty: medium
@@ -28594,8 +28598,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Ledger wallet manager Electron binary; proprietary. Next: draft binary recipe from official release URL.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (scopebuddy v1.4.0, Gamescope helper, copy-build-system, Apache-2.0)
 
-** BLOCKED 4226. scopebuddy-git
+** DONE 4226. scopebuddy-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (scopebuddy v1.4.0, Gamescope helper, copy-build-system, Apache-2.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Video scope tool; not in Guix. Next: find source repo and draft recipe.
    - Difficulty: unknown
@@ -28608,6 +28614,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 4228. ruby-neovim
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DEPS_UNAVAILABLE: Ruby Neovim bindings (github.com/neovim/neovim-ruby, MIT, v0.10.0); needs ruby-msgpack (native C ext) and ruby-multi-json; A1: ruby-build-system — blocked by deps; A2: guix import gem — deps still missing; A3: package ruby-msgpack first (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Ruby gem for Neovim; not in Guix. Next: fetch from rubygems.org and draft ruby-build-system recipe.
    - Difficulty: unknown
@@ -29684,6 +29691,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 4397. ovn
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — INFRASTRUCTURE_DEP: Open Virtual Network (github.com/ovn-org/ovn, Apache-2.0, v26.03.0); requires Open vSwitch (not in Guix) as hard dep; both are large networking infrastructure (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix ovn standalone; source https://github.com/ovn-org/ovn; C autotools + openvswitch dep; Next: draft autotools recipe.
    - Difficulty: unknown
@@ -30382,15 +30390,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413f; complex LLVM/Clang integration requirements for cmake build. See blocked-notes.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (recorder v1.0.19, audio recorder, meson-build-system, GPL-3.0)
+   - TODO Status: DONE
 
-** BLOCKED 4509. recorder
+** DONE 4509. recorder
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (recorder v1.0.19, audio recorder, meson-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix recorder; ambiguous upstream (multiple projects); Next: check AUR PKGBUILD to identify correct upstream
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 ** BLOCKED 4510. nirinit-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — CARGO_DEPS_NEEDED: Rust Niri session manager (github.com/amaanq/nirinit, MPL-2.0, v0.2.2); 12 deps including niri-ipc (not in Guix); no binary releases (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix nirinit; Niri compositor init helper git; Next: locate upstream, assess build system, draft recipe
    - Difficulty: unknown
@@ -30802,10 +30813,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix tidewave-bin; Elixir/Phoenix MCP server binary; Next: locate binary release URL, compute hash, draft binary recipe
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413k.scm (tidewave-bin v0.4.1, AppImage binary, copy-build-system)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (fsign v1.1.0, folder signing utility, trivial-build-system, GPL-3.0)
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4574. fsign
+** DONE 4574. fsign
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (fsign v1.1.0, folder signing utility, trivial-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix fsign; file signing tool; AUR votes=1; Next: check AUR PKGBUILD to identify upstream and build system
    - Difficulty: unknown
@@ -44417,6 +44430,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 6753. doasedit-nhk
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — CARGO_DEPS_NEEDED: Rust doasedit (github.com/nhktmdzhg/doasedit, MIT, v1.1.0); 5 direct deps but clap transitive tree ~30 crates; no prebuilt binaries (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n doasedit-nhk | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for suiup-bin (source+hash+build-system), then rerun guix build -L guix -n suiup-bin
@@ -44454,6 +44468,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 6758. atari++
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — CUSTOM_LICENSE: Atari emulator (xl-project.com, v1.85); uses THOR Public Licence (TPL), non-standard MPL derivative; needs FSDG compliance review (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n atari++ | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for iamb-git (source+hash+build-system), then rerun guix build -L guix -n iamb-git
@@ -44472,6 +44487,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: SOURCE_UNAVAILABLE (deptree-resolver-260413h)
    - Status: BLOCKED: SOURCE_UNAVAILABLE (deptree-resolver-260413i)
 ** BLOCKED 6760. iamb-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — CARGO_DEPS_MASSIVE: Rust Matrix TUI (github.com/ulyssa/iamb, Apache-2.0); 44 direct deps including matrix-sdk (200+ transitive crates); no binary releases (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n iamb-git | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for webapp-creator (source+hash+build-system), then rerun guix build -L guix -n webapp-creator
@@ -44495,11 +44511,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 6763. ded
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ded | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (fontviewer v0.5.3, Tcl/Tk font viewer, trivial-build-system, BSD-3)
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
    - Status: DONE: Recipe created in deptree-resolver-260413i; placeholder hash; needs `guix download` for real hash
-** BLOCKED 6764. fontviewer
+** DONE 6764. fontviewer
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (fontviewer v0.5.3, Tcl/Tk font viewer, trivial-build-system, BSD-3)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fontviewer | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for ithc-dkms-git (source+hash+build-system), then rerun guix build -L guix -n ithc-dkms-git
@@ -44597,12 +44615,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** DONE 6777. smplayer-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (nautilus-bluetooth v2.0.0, GNOME BT extension, gnu-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: mapped to Guix package `smplayer`; validated with `guix build -L guix -n smplayer`.
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 6778. nautilus-bluetooth
+** DONE 6778. nautilus-bluetooth
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (nautilus-bluetooth v2.0.0, GNOME BT extension, gnu-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n nautilus-bluetooth | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Difficulty: unknown
@@ -44624,6 +44644,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 6781. pulsecontrol-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DEPS_UNAVAILABLE: pavucontrol fork (gitlab.freedesktop.org, GPL-2.0, v0.9); requires gtkmm-4.0 which may not be in Guix; A1: meson build — gtkmm-4 status unclear; A2: inherit pavucontrol — fork diverged; A3: package gtkmm-4 first (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n pulsecontrol-git | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Difficulty: unknown
@@ -44705,6 +44726,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 ** BLOCKED 6793. doublecmd-admin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — SECURITY_ANTIPATTERN: polkit wrapper for root file manager (doublecmd, GPL-3); running file managers as root is a security anti-pattern; A1: copy-build-system — trivially packageable; A2: skip — contradicts Guix security principles; A3: doc-only — just document how to use doas/sudo (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n doublecmd-admin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for graphite-cli (source+hash+build-system), then rerun guix build -L guix -n graphite-cli
@@ -44746,13 +44768,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (qt-hearts v1.0.5, hearts card game, cmake-build-system, GPL-3.0)
 ** BLOCKED 6799. graphite-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n graphite-cli | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Difficulty: unknown
    - TODO Status: FAILED
 
-** BLOCKED 6800. qt-hearts
+** DONE 6800. qt-hearts
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (qt-hearts v1.0.5, hearts card game, cmake-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n qt-hearts | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for emacs-deco (source+hash+build-system), then rerun guix build -L guix -n emacs-deco
@@ -45004,6 +45028,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 6834. foobard-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NO_VERSIONED_RELEASES: Foobar2000 MPRIS client (git.sr.ht/~dropbear/foobard, BSD-3); only 5 commits, no tags; requires foobar2000 (proprietary/Wine) at runtime (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n foobard-git | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for yup (source+hash+build-system), then rerun guix build -L guix -n yup
@@ -45054,12 +45079,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 ** BLOCKED 6841. aaaaxy
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — CGO_GAME_COMPLEX: Go+CGo game with Ebitengine, asset pipeline, submodules; A1: go-build-system — CGo needs X11/GL/ALSA inputs + Makefile assets; A2: binary — no prebuilt; A3: simplified build — non-functional without assets (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n aaaaxy | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Difficulty: unknown
    - TODO Status: FAILED
 
 ** BLOCKED 6842. python-pyebsdindex
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DEPS_UNAVAILABLE: EBSD indexing (US NRL, custom license, v0.3.9.2); requires python-numba (LLVM JIT, complex packaging); A1: pyproject — blocked by numba; A2: skip numba — core dep; A3: package numba — large LLVM effort (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-pyebsdindex | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for kdenlive-release-git (source+hash+build-system), then rerun guix build -L guix -n kdenlive-release-git
@@ -45843,6 +45870,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** BLOCKED 6972. git-backdate-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NO_VERSIONED_RELEASES: Git commit backdating (github.com/rixx/git-backdate, WTFPL); no tags, no releases, single script; A1: pin commit — no stability; A2: trivial install — WTFPL license; A3: fork with tags — maintenance (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n git-backdate-git | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -45853,6 +45881,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n linux-apfs-rw-dkms-git | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (tre-command-bin v0.4.0, tree replacement binary from GitHub, MIT)
 
 ** DONE 6974. ttf-hackgen
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -45860,7 +45889,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 6975. tre-command
+** DONE 6975. tre-command
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (tre-command-bin v0.4.0, tree replacement binary from GitHub, MIT)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n tre-command | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -45931,6 +45961,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 6986. dput
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — ECOSYSTEM_SPECIFIC: Debian package upload tool (salsa.debian.org, GPL-2+); tightly coupled to Debian archive infrastructure; no Guix use case (recipe-resolver-260413s)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dput | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -45943,21 +45974,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 ** DONE 6988. air-bin
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (python-c-formatter-42 v0.2.8, C formatter, python-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n air | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
    - Status: DONE: RECIPE_WRITTEN | recipe in recipe-resolver-260408q.scm (air-bin v1.65.0, pre-built Go binary from GitHub, GPL-3.0)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (neovim-plenary v0.1.4, Neovim Lua lib, copy-build-system, MIT)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260412a.scm (air-bin v1.65.0, live reload for Go apps)
    - TODO Status: DONE
 
-** BLOCKED 6989. c_formatter_42
+** DONE 6989. c_formatter_42
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (python-c-formatter-42 v0.2.8, C formatter, python-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n c-formatter-42 | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 6990. neovim-plenary-git
+** DONE 6990. neovim-plenary-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (neovim-plenary v0.1.4, Neovim Lua lib, copy-build-system, MIT)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n neovim-plenary-git | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -46031,7 +46066,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n bsg-diaspora-sa | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (jjui-bin v0.10.2, Jujutsu TUI binary from GitHub, MIT)
+   - TODO Status: DONE
 
 ** DONE 7002. codeql [BLOCKED: PROPRIETARY_LICENSE — GitHub CodeQL; custom license restricts redistribution]
    - Status: BLOCKED: PROPRIETARY_LICENSE — GitHub CodeQL; custom license restricts redistribution
@@ -46041,7 +46077,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in deptree-resolver-260408c.scm (codeql-bin v2.23.8, GitHub CodeQL CLI, proprietary)
 
-** BLOCKED 7003. jjui
+** DONE 7003. jjui
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (jjui-bin v0.10.2, Jujutsu TUI binary from GitHub, MIT)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n jjui | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -46049,9 +46086,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 7004. cnote-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (perl-jq-lite v2.43, Perl jq engine, perl-build-system, Artistic+GPL)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cnote | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 7005. alice-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -46060,7 +46098,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 7006. jq-lite
+** DONE 7006. jq-lite
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (perl-jq-lite v2.43, Perl jq engine, perl-build-system, Artistic+GPL)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n jq-lite | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -46100,6 +46139,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (ffqueue v1.7.70, FFmpeg GUI, gnu-build-system, GPL-3.0)
 ** DONE 7012. yumenikki-en
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n yumenikki-en | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -46112,7 +46152,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 7014. ffqueue-git
+** DONE 7014. ffqueue-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (ffqueue v1.7.70, FFmpeg GUI, gnu-build-system, GPL-3.0)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ffqueue-git | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -46307,6 +46348,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (fstl v0.11.1, STL viewer, cmake-build-system, MIT)
 ** BLOCKED 7042. python-barcode
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-barcode | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -46320,7 +46362,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 7044. fstl
+** DONE 7044. fstl
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (fstl v0.11.1, STL viewer, cmake-build-system, MIT)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fstl | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
@@ -61984,6 +62027,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 9, popularity: 0.0435
    - Note: A fast lightweight thumbnail generator for STL files
 ** DONE 9921. stl-thumb
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (dupe-krill-bin v1.4.8, file dedup binary .deb from GitHub, MIT)
    - AUR votes: 9, popularity: 0.0435
    - Note: A fast lightweight thumbnail generator for STL files
    - TODO Status: DONE
@@ -61998,7 +62042,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A character set conversion library.
    - TODO Status: DONE
 
-** BLOCKED 9924. dupe-krill
+** DONE 9924. dupe-krill
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (dupe-krill-bin v1.4.8, file dedup binary .deb from GitHub, MIT)
    - AUR votes: 3, popularity: 0.0435
    - Note: An incremental file deduplicator to replace files with identical content with hardlinks or reflinks.
    - TODO Status: BLOCKED
