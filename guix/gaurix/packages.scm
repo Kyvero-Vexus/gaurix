@@ -702,4 +702,6 @@
   #:use-module (gaurix packages recipe-resolver-260413q)
   #:use-module (gaurix packages recipe-resolver-260413r)
   #:use-module (gaurix packages recipe-resolver-260413r-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260413i)
+  #:use-module (gaurix packages deptree-resolver-260413i-blocked-notes)
 )

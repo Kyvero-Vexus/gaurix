@@ -273,7 +273,8 @@
   #:use-module (gaurix packages deptree-resolver-260413h)
   #:use-module (gaurix packages recipe-resolver-260413p)
   #:use-module (gaurix packages recipe-resolver-260413r)
-  #:use-module (gaurix packages recipe-resolver-260413q)
+  #:use-module (gaurix packages recipe-resolver-260413q)  #:use-module (gaurix packages deptree-resolver-260413i)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -5869,3 +5870,14 @@
 ; --- recipe-resolver-260413r compat aliases ---
 (define-public cutieascii (package (inherit cutieascii-bin) (name "cutieascii")))
 (define-public mindustry-server (package (inherit mindustry-server-bin) (name "mindustry-server")))
+
+; --- deptree-resolver-260413i compat aliases ---
+(define-public czkawka-cli (package (inherit czkawka-cli-bin) (name "czkawka-cli")))
+(define-public darya (package (inherit darya-bin) (name "darya")))
+(define-public deadbranch (package (inherit deadbranch-bin) (name "deadbranch")))
+(define-public devbox (package (inherit devbox-bin) (name "devbox")))
+(define-public dosbox-pure-unleashed (package (inherit dosbox-pure-unleashed-bin) (name "dosbox-pure-unleashed")))
+(define-public dotnet-host (package (inherit dotnet-host-bin) (name "dotnet-host")))
+(define-public dusage (package (inherit dusage-bin) (name "dusage")))
+(define-public eden (package (inherit eden-bin) (name "eden")))
+(define-public eden-preview (package (inherit eden-preview-bin) (name "eden-preview")))
