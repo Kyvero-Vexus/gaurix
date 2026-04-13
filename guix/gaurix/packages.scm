@@ -348,4 +348,8 @@
   #:use-module (gaurix packages visual-studio-code-bin)
   #:use-module (gaurix packages recipe-resolver-260413f)
   #:use-module (gaurix packages recipe-resolver-260413f-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413g)
+  #:use-module (gaurix packages recipe-resolver-260413g-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413h)
+  #:use-module (gaurix packages recipe-resolver-260413h-blocked-notes)
 )
