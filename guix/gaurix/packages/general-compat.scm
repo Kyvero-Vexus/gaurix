@@ -256,6 +256,7 @@
   #:use-module (gaurix packages recipe-resolver-260413a)
   #:use-module (gaurix packages recipe-resolver-260413b)
   #:use-module (gaurix packages deptree-resolver-260413b)
+  #:use-module (gaurix packages recipe-resolver-260413d)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -5449,3 +5450,6 @@
   (package
     (inherit rbdoom3-bfg)
     (name "rbdoom3-bfg-git")))
+
+
+;;; --- recipe-resolver-260413d compat aliases ---
