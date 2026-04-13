@@ -261,6 +261,7 @@
   #:use-module (gaurix packages recipe-resolver-260413f)
   #:use-module (gaurix packages recipe-resolver-260413g)
   #:use-module (gaurix packages deptree-resolver-260413c)
+  #:use-module (gaurix packages deptree-resolver-260413e)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -5561,3 +5562,45 @@
 
 
 ;;; --- recipe-resolver-260413d compat aliases ---
+
+;;; --- deptree-resolver-260413e compat aliases ---
+
+(define-public plymouth-i_use_arch_btw-git
+  (package
+    (inherit plymouth-i-use-arch-btw-git)
+    (name "plymouth-i_use_arch_btw-git")))
+
+(define-public powerofforreboot.efi
+  (package
+    (inherit powerofforreboot-efi)
+    (name "powerofforreboot.efi")))
+
+(define-public ps_mem
+  (package
+    (inherit ps-mem)
+    (name "ps_mem")))
+
+(define-public ruby-unicode_utils
+  (package
+    (inherit ruby-unicode-utils)
+    (name "ruby-unicode_utils")))
+
+(define-public serve_md
+  (package
+    (inherit serve-md)
+    (name "serve_md")))
+
+(define-public tome4-ashes_of_urhrok
+  (package
+    (inherit tome4-ashes-of-urhrok)
+    (name "tome4-ashes_of_urhrok")))
+
+(define-public tome4-embers_of_rage
+  (package
+    (inherit tome4-embers-of-rage)
+    (name "tome4-embers_of_rage")))
+
+(define-public tome4-forbidden_cults
+  (package
+    (inherit tome4-forbidden-cults)
+    (name "tome4-forbidden_cults")))
