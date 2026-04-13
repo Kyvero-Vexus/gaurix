@@ -347,6 +347,107 @@
             perl-jq-lite
             neovim-plenary
             scopebuddy
+            ;; recipe-resolver-260413t
+            lib32-openjpeg2
+            lib32-zimg
+            lib32-rtmpdump
+            lib32-faad2
+            lib32-a52dec
+            lib32-libdvdnav
+            lib32-libdvdread
+            lib32-libdc1394
+            lib32-libdca
+            lib32-x265
+            lib32-libsrtp
+            lib32-neon
+            lib32-sbc
+            lib32-libde265
+            lib32-serd
+            lib32-sord
+            lib32-libdvdcss
+            lib32-dav1d
+            lib32-shaderc
+            lib32-libcdio
+            lib32-glslang
+            lib32-zix
+            lib32-bluez-plugins
+            lib32-libmpcdec
+            plymouth-theme-abstract-ring-git
+            plymouth-theme-abstract-ring-alt-git
+            plymouth-theme-alienware-git
+            plymouth-theme-angular-git
+            plymouth-theme-angular-alt-git
+            plymouth-theme-black-hud-git
+            plymouth-theme-blockchain-git
+            plymouth-theme-circle-git
+            plymouth-theme-circle-alt-git
+            plymouth-theme-circle-flow-git
+            plymouth-theme-circle-hud-git
+            plymouth-theme-circuit-git
+            plymouth-theme-colorful-git
+            plymouth-theme-colorful-loop-git
+            plymouth-theme-colorful-sliced-git
+            plymouth-theme-connect-git
+            plymouth-theme-cross-hud-git
+            plymouth-theme-cubes-git
+            plymouth-theme-cuts-git
+            plymouth-theme-cuts-alt-git
+            catppuccin-cursors-macchiato
+            lc0-network-sm
+            lc0-network-md
+            lc0-network-lg
+            lc0-network-xl
+            basilisk-bin
+            slippi-launcher-bin
+            agentsview-bin
+            astro-bin
+            bine-bin
+            engram-bin
+            frankenphp-bin
+            gf2
+            hashdir-bin
+            pacselect-bin
+            pomo-cli
+            termaid
+            wait-port
+            tkey-ssh-agent
+            vet-bin
+            sqlbless-bin
+            seemux-bin
+            shellforge
+            nightingale
+            multibg-wayland
+            music-tags
+            pipetoys
+            lbs
+            logserver
+            manx-cli
+            msgvault-bin
+            promptcmd-bin
+            sway-easyshot-bin
+            strung-bin
+            zmx-bin
+            cc-switch-bin
+            jackify-bin
+            plist-bin
+            roborev-bin
+            sinuous
+            rmw-git
+            mptcpd
+            psgrep
+            etr-bin
+            flyenv-bin
+            hamr-bin
+            gh-aw-bin
+            giff-bin
+            win2xcur
+            easystroke
+            tuxboot
+            ani-skip-git
+            cevomapgen
+            glew-2.1
+            qt5-3d
+            hunspell-ar
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -723,4 +824,5 @@
   #:use-module (gaurix packages deptree-resolver-260413i-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413s)
   #:use-module (gaurix packages recipe-resolver-260413s-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413t)
 )
