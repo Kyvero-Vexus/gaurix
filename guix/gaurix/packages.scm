@@ -1,5 +1,29 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; recipe-resolver-260413k
+            sigscan-bin
+            ast-grep-bin
+            caescript-bin
+            httptap-bin
+            music-player-bin
+            nijiexpose-bin
+            git-switcher-bin
+            tidewave-bin
+            veracrypt-console-bin
+            logisim-evolution-bin
+            ledfx-cc-bin
+            termtosvg
+            pisek
+            python-upnpclient
+            python-backports.shutil-which
+            snapborg
+            pam-luks-keyring-unlock
+            wlr-dpms
+            wl-gears
+            xtatusbar
+            xdgctl
+            terminalimageviewer
+            snoop
             ;; deptree-resolver-260413f
             python-opentelemetry-proto
             python-opentelemetry-exporter-zipkin-json
@@ -449,4 +473,6 @@
   #:use-module (gaurix packages recipe-resolver-260413i-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260413f)
   #:use-module (gaurix packages deptree-resolver-260413f-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413k)
+  #:use-module (gaurix packages recipe-resolver-260413k-blocked-notes)
 )

@@ -265,6 +265,7 @@
   #:use-module (gaurix packages deptree-resolver-260413c)
   #:use-module (gaurix packages deptree-resolver-260413e)
   #:use-module (gaurix packages deptree-resolver-260413f)
+  #:use-module (gaurix packages recipe-resolver-260413k)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -5611,3 +5612,10 @@
 ; --- deptree-resolver-260413f compat aliases ---
 (define-public ttf-arundina (package (inherit font-arundina) (name "ttf-arundina")))
 (define-public ttf-inconsolata-hellenic (package (inherit font-inconsolata-hellenic) (name "ttf-inconsolata-hellenic")))
+
+
+; --- recipe-resolver-260413k compat aliases ---
+(define-public pisek-git (package (inherit pisek) (name "pisek-git")))
+(define-public wlr-dpms-git (package (inherit wlr-dpms) (name "wlr-dpms-git")))
+(define-public wl-gears-git (package (inherit wl-gears) (name "wl-gears-git")))
+(define-public xdgctl-git (package (inherit xdgctl) (name "xdgctl-git")))
