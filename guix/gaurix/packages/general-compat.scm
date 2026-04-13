@@ -253,6 +253,8 @@
   #:use-module (gaurix packages recipe-resolver-260412b)
   #:use-module (gaurix packages recipe-resolver-260412c)
   #:use-module (gaurix packages recipe-resolver-260413a)
+  #:use-module (gaurix packages recipe-resolver-260413b)
+  #:use-module (gaurix packages deptree-resolver-260413b)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -1712,6 +1714,31 @@
             bookokrat-bin
             terraria-server-bin
             intune-portal-bin
+            ;; recipe-resolver-260413b exports
+            arduino-ctags
+            nnn-nerd
+            trayer
+            potato-c
+            fey
+            rp-plus-plus
+            croaring
+            libsmb2
+            jome
+            qtilitools
+            wasistlos
+            openclaw
+            netrc
+            pigo
+            mpris-scrobbler
+            notejot
+            butler
+            puddletag
+            tex-fmt
+            bash-git-prompt
+            font-atkinson-hyperlegible-next
+            auto-throttle
+            wingedit
+            fortune-mod-futurama
 ))
 
 (define-public gtk2
@@ -5394,3 +5421,8 @@
   (package
     (inherit ffmpeg-libfdk-aac)
     (name "ffmpeg-libfdk_aac")))
+
+(define-public astro_modloader
+  (package
+    (inherit astro-modloader)
+    (name "astro_modloader")))

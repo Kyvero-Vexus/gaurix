@@ -1,131 +1,59 @@
-# Blocked Dependency Tree
+# Blocked Package Dependency Tree
 
-- **Timestamp:** 2026-04-13T03:57:06.334600+00:00
-- **Run ID:** deptree-resolver-260412a
-- **Total blocked:** 5055
-- **Queue length:** 4961
+**Generated:** 2026-04-13T05:10:33Z
+**Total blocked:** 5077
 
-## Priority Queue (top 120)
+## Priority Queue (Top 50)
 
-| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
-|------|---------|-------------|-------------|-----------|
-| 1 | yay | 0 | 6 | 3 |
-| 2 | matlab | 0 | 3 | 6 |
-| 3 | java-openjfx | 0 | 3 | 22 |
-| 4 | mingw-w64-pkg-config | 0 | 2 | 2 |
-| 5 | paru | 0 | 2 | 4 |
-| 6 | plasma-workspace-povd | 0 | 2 | 105 |
-| 7 | gst-thumbnailers | 0 | 1 | 0 |
-| 8 | mingw-w64-environment | 0 | 1 | 0 |
-| 9 | libsdrplay | 0 | 1 | 1 |
-| 10 | opencl-legacy-amdgpu-pro | 0 | 1 | 1 |
-| 11 | android-platform | 0 | 1 | 2 |
-| 12 | mips64el-linux-gnu-binutils | 0 | 1 | 2 |
-| 13 | yaycache | 0 | 1 | 3 |
-| 14 | package-query | 0 | 1 | 4 |
-| 15 | paru-git | 0 | 1 | 4 |
-| 16 | lib32-libvmaf | 0 | 1 | 5 |
-| 17 | aurutils | 0 | 1 | 6 |
-| 18 | ps3toolchain | 0 | 1 | 6 |
-| 19 | lib32-nvidia-utils-beta | 0 | 1 | 7 |
-| 20 | lib32-bluez-libs | 0 | 1 | 9 |
-| 21 | mips64-linux-gnu-gcc-bootstrap | 0 | 1 | 9 |
-| 22 | python-rapidocr | 0 | 1 | 15 |
-| 23 | linux-cachyos-bore | 0 | 1 | 16 |
-| 24 | linux-cachyos-lts | 0 | 1 | 16 |
-| 25 | tensorrt | 0 | 1 | 16 |
-| 26 | linux-cachyos | 0 | 1 | 19 |
-| 27 | linux-cachyos-rc | 0 | 1 | 19 |
-| 28 | cosmic-settings-git | 0 | 1 | 20 |
-| 29 | goldendict | 0 | 1 | 22 |
-| 30 | input-leap-headless-git | 0 | 1 | 22 |
-| 31 | libpamac-aur | 0 | 1 | 22 |
-| 32 | alice-vision | 0 | 1 | 31 |
-| 33 | dragengine | 0 | 1 | 34 |
-| 34 | wechat-bin | 0 | 1 | 34 |
-| 35 | hypryou | 0 | 1 | 35 |
-| 36 | amdonly-gaming-opencl-rusticl-mesa-git | 0 | 1 | 36 |
-| 37 | amdonly-gaming-mesa-git | 0 | 1 | 37 |
-| 38 | amdonly-gaming-vulkan-radeon-git | 0 | 1 | 37 |
-| 39 | libnm-iwd | 0 | 1 | 37 |
-| 40 | amdonly-gaming-vulkan-mesa-layers-git | 0 | 1 | 38 |
-| 41 | pipelex | 0 | 1 | 41 |
-| 42 | qt6-base-hifps | 0 | 1 | 62 |
-| 43 | qemu-headless-git | 0 | 1 | 83 |
-| 44 | anbox-git | 0 | 0 | 0 |
-| 45 | audiobookshelf | 0 | 0 | 0 |
-| 46 | bigpemu-bin | 0 | 0 | 0 |
-| 47 | bulky | 0 | 0 | 0 |
-| 48 | chkufsd-bin | 0 | 0 | 0 |
-| 49 | chromium-gost | 0 | 0 | 0 |
-| 50 | codex-desktop-bin | 0 | 0 | 0 |
-| 51 | cursor-ide | 0 | 0 | 0 |
-| 52 | dbeaver | 0 | 0 | 0 |
-| 53 | fahviewer | 0 | 0 | 0 |
-| 54 | fluxdown-bin | 0 | 0 | 0 |
-| 55 | glazepkg-bin | 0 | 0 | 0 |
-| 56 | gram-editor-bin | 0 | 0 | 0 |
-| 57 | hylauncher-bin | 0 | 0 | 0 |
-| 58 | hypnotix | 0 | 0 | 0 |
-| 59 | komodo-periphery-git | 0 | 0 | 0 |
-| 60 | konform-multi-account-containers-lite | 0 | 0 | 0 |
-| 61 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 |
-| 62 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 |
-| 63 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 |
-| 64 | linux6.19.9.arch1-1-bin | 0 | 0 | 0 |
-| 65 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 |
-| 66 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 |
-| 67 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 |
-| 68 | linux6.19.9.zen1-1-zen-docs-bin | 0 | 0 | 0 |
-| 69 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 |
-| 70 | lnko-bin | 0 | 0 | 0 |
-| 71 | lzbench-bin | 0 | 0 | 0 |
-| 72 | makeenv | 0 | 0 | 0 |
-| 73 | mangowc-git | 0 | 0 | 0 |
-| 74 | mas | 0 | 0 | 0 |
-| 75 | max-appimage | 0 | 0 | 0 |
-| 76 | mchose-a7-v2-pro-udev | 0 | 0 | 0 |
-| 77 | megit | 0 | 0 | 0 |
-| 78 | mercury-browser-sse4-bin | 0 | 0 | 0 |
-| 79 | miniconda3 | 0 | 0 | 0 |
-| 80 | mockoon-bin | 0 | 0 | 0 |
-| 81 | mongotimer | 0 | 0 | 0 |
-| 82 | moor-bin | 0 | 0 | 0 |
-| 83 | mullvad-socks-bin | 0 | 0 | 0 |
-| 84 | natscli-bin | 0 | 0 | 0 |
-| 85 | nautilus-megasync | 0 | 0 | 0 |
-| 86 | navicat17-premium-en | 0 | 0 | 0 |
-| 87 | nextcloud-talk-desktop-bin | 0 | 0 | 0 |
-| 88 | nextdns-bin | 0 | 0 | 0 |
-| 89 | ninjarmm-ncplayer | 0 | 0 | 0 |
-| 90 | nodenv-node-build | 0 | 0 | 0 |
-| 91 | notwaita-cursor-theme | 0 | 0 | 0 |
-| 92 | nvidia-prime-rtd3pm | 0 | 0 | 0 |
-| 93 | nvidia-vulkan-dkms | 0 | 0 | 0 |
-| 94 | ocr-fonts | 0 | 0 | 0 |
-| 95 | olvid | 0 | 0 | 0 |
-| 96 | openai-codex-autoup-bin | 0 | 0 | 0 |
-| 97 | openbao | 0 | 0 | 0 |
-| 98 | opensc-p11-kit-module | 0 | 0 | 0 |
-| 99 | otf-atkinson-hyperlegible-next | 0 | 0 | 0 |
-| 100 | otf-atkinson-hyperlegible-next-mono | 0 | 0 | 0 |
-| 101 | otf-kopub | 0 | 0 | 0 |
-| 102 | otf-kopubworld | 0 | 0 | 0 |
-| 103 | otf-myna | 0 | 0 | 0 |
-| 104 | p4merge-bin | 0 | 0 | 0 |
-| 105 | pac-pacman-aliases | 0 | 0 | 0 |
-| 106 | pantum-driver | 0 | 0 | 0 |
-| 107 | pgyvisitor | 0 | 0 | 0 |
-| 108 | pingme-bin | 0 | 0 | 0 |
-| 109 | pipewire-enable-bluez5 | 0 | 0 | 0 |
-| 110 | plecs-standalone | 0 | 0 | 0 |
-| 111 | plex-media-server-plexpass | 0 | 0 | 0 |
-| 112 | pmtiles | 0 | 0 | 0 |
-| 113 | projtlauncher | 0 | 0 | 0 |
-| 114 | protonup-rs-bin | 0 | 0 | 0 |
-| 115 | reddix-bin | 0 | 0 | 0 |
-| 116 | rider-eap | 0 | 0 | 0 |
-| 117 | rime-wanxiang-gram-zh-hans | 0 | 0 | 0 |
-| 118 | rofi-lbonn-wayland-git | 0 | 0 | 0 |
-| 119 | rres-bin | 0 | 0 | 0 |
-| 120 | rtimelog | 0 | 0 | 0 |
+| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
+|------|---------|---|-------------|-------------|------------|
+| 1 | yay | 21311 | 0 | 6 | 2 |
+| 2 | xmlada | 4783 | 0 | 3 | 0 |
+| 3 | matlab | 9975 | 0 | 3 | 3 |
+| 4 | java-openjfx | 11085 | 0 | 3 | 4 |
+| 5 | asusctl | 11697 | 0 | 3 | 5 |
+| 6 | paru | 11312 | 0 | 2 | 3 |
+| 7 | aimp | 11562 | 0 | 2 | 8 |
+| 8 | wivrn-server | 11519 | 0 | 2 | 20 |
+| 9 | plasma-workspace-povd | 2890 | 0 | 2 | 99 |
+| 10 | gst-thumbnailers | 6543 | 0 | 1 | 0 |
+| 11 | mingw-w64-environment | 11244 | 0 | 1 | 0 |
+| 12 | opencl-legacy-amdgpu-pro | 11299 | 0 | 1 | 0 |
+| 13 | lib32-libvpx1.3 | 11975 | 0 | 1 | 1 |
+| 14 | libvpx1.3 | 11974 | 0 | 1 | 1 |
+| 15 | qt5-doc | 11679 | 0 | 1 | 1 |
+| 16 | tuxedo-drivers-dkms | 11527 | 0 | 1 | 1 |
+| 17 | yaycache | 6633 | 0 | 1 | 1 |
+| 18 | android-platform | 8355 | 0 | 1 | 2 |
+| 19 | lib32-libvmaf | 2366 | 0 | 1 | 2 |
+| 20 | lib32-openssl-1.0 | 11766 | 0 | 1 | 2 |
+| 21 | lib32-openssl-1.1 | 11910 | 0 | 1 | 2 |
+| 22 | mingw-w64-pkg-config | 11159 | 0 | 1 | 2 |
+| 23 | mips64el-linux-gnu-binutils | 11213 | 0 | 1 | 2 |
+| 24 | linux-cachyos | 1070 | 0 | 1 | 3 |
+| 25 | linux-cachyos-bore | 6123 | 0 | 1 | 3 |
+| 26 | linux-cachyos-lts | 1755 | 0 | 1 | 3 |
+| 27 | linux-cachyos-rc | 10770 | 0 | 1 | 3 |
+| 28 | paru-git | 21765 | 0 | 1 | 3 |
+| 29 | amdonly-gaming-vulkan-mesa-layers-git | 6639 | 0 | 1 | 4 |
+| 30 | package-query | 10483 | 0 | 1 | 4 |
+| 31 | aurutils | 11354 | 0 | 1 | 6 |
+| 32 | glew1.10 | 11978 | 0 | 1 | 6 |
+| 33 | lib32-glew1.10 | 11977 | 0 | 1 | 6 |
+| 34 | ps3toolchain | 5015 | 0 | 1 | 6 |
+| 35 | tensorrt | 7025 | 0 | 1 | 6 |
+| 36 | lib32-nvidia-utils-beta | 2408 | 0 | 1 | 7 |
+| 37 | libnm-iwd | 6538 | 0 | 1 | 7 |
+| 38 | amdonly-gaming-opencl-rusticl-mesa-git | 6640 | 0 | 1 | 8 |
+| 39 | amdonly-gaming-vulkan-radeon-git | 6638 | 0 | 1 | 9 |
+| 40 | amdonly-gaming-mesa-git | 6641 | 0 | 1 | 11 |
+| 41 | input-leap-headless-git | 2773 | 0 | 1 | 12 |
+| 42 | python-rapidocr | 6825 | 0 | 1 | 13 |
+| 43 | libpamac-aur | 5099 | 0 | 1 | 14 |
+| 44 | cosmic-settings-git | 9078 | 0 | 1 | 15 |
+| 45 | alice-vision | 4528 | 0 | 1 | 16 |
+| 46 | goldendict | 8040 | 0 | 1 | 22 |
+| 47 | dragengine | 7020 | 0 | 1 | 27 |
+| 48 | hypryou | 4216 | 0 | 1 | 31 |
+| 49 | wechat-bin | 1282 | 0 | 1 | 33 |
+| 50 | qt6-base-hifps | 939 | 0 | 1 | 45 |
