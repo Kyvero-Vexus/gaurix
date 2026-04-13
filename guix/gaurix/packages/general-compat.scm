@@ -284,6 +284,7 @@
   #:use-module (gnu packages datastructures)
   #:use-module (gnu packages hunspell)
   #:use-module (gaurix packages recipe-resolver-260413t)
+  #:use-module (gaurix packages deptree-resolver-260413k)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -5982,3 +5983,7 @@
 (define-public exiled-exchange-2 (package (inherit exiled-exchange-2-bin) (name "exiled-exchange-2")))
 (define-public fackr (package (inherit fackr-bin) (name "fackr")))
 (define-public hunspell-ar (package (inherit hunspell) (name "hunspell-ar")))
+
+; --- deptree-resolver-260413k compat aliases ---
+(define-public fastfind (package (inherit fastfind-bin) (name "fastfind")))
+(define-public fist (package (inherit fist-bin) (name "fist")))

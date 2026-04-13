@@ -1,67 +1,64 @@
 #!/usr/bin/env python3
-"""Add recipe-resolver-260413k to general-compat.scm."""
+"""
+Update general-compat.scm to add deptree-resolver-260413k module import and compat aliases.
+Uses deterministic programmatic full-file transform (read, compute, write temp, atomic move).
+"""
 
-import tempfile
-import shutil
 import os
+import re
+import shutil
+import tempfile
 
-COMPAT_SCM = "guix/gaurix/packages/general-compat.scm"
+BASE = "/home/slime/projects/gaurix"
+COMPAT_FILE = os.path.join(BASE, "guix/gaurix/packages/general-compat.scm")
+RUN_ID = "deptree-resolver-260413k"
 
-# use-module to add
-NEW_MODULE = "(gaurix packages recipe-resolver-260413k)"
+# Read the entire file
+with open(COMPAT_FILE, 'r') as f:
+    content = f.read()
 
-# Compat aliases (AUR name -> Guix variable, for cases where names differ)
-COMPAT_ALIASES = [
-    # ("aur-name", "guix-variable")
-    ("pisek-git", "pisek"),
-    ("wlr-dpms-git", "wlr-dpms"),
-    ("wl-gears-git", "wl-gears"),
-    ("xdgctl-git", "xdgctl"),
-    ("ksnip-git", "snoop"),  # NOT ksnip, just skip this - ksnip is blocked
-]
-# Actually only the ones that are RESOLVED and have different AUR names
-COMPAT_ALIASES = [
-    ("pisek-git", "pisek"),
-    ("wlr-dpms-git", "wlr-dpms"),
-    ("wl-gears-git", "wl-gears"),
-    ("xdgctl-git", "xdgctl"),
-]
-
-
-def main():
-    with open(COMPAT_SCM, "r") as f:
-        content = f.read()
-
-    # Add use-module near the top (after the last existing use-module line)
-    lines = content.split("\n")
-    last_use_module_idx = 0
+# Step 1: Add module import if not already present
+module_import = f"  #:use-module (gaurix packages {RUN_ID})"
+if module_import not in content:
+    lines = content.split('\n')
+    insert_idx = None
     for i, line in enumerate(lines):
-        if line.strip().startswith("#:use-module"):
-            last_use_module_idx = i
+        if '#:use-module (gaurix packages' in line and not line.strip().startswith(';;'):
+            insert_idx = i
 
-    if last_use_module_idx > 0:
-        lines.insert(last_use_module_idx + 1, f"  #:use-module {NEW_MODULE}")
+    if insert_idx is not None:
+        lines.insert(insert_idx + 1, module_import)
+        content = '\n'.join(lines)
+        print(f"  Added module import at line {insert_idx + 2}")
+    else:
+        print("  WARNING: Could not find insertion point for module import")
 
-    # Add compat aliases at the end
-    lines.append("")
-    lines.append("; --- recipe-resolver-260413k compat aliases ---")
-    for aur_name, guix_var in COMPAT_ALIASES:
-        lines.append(f'(define-public {aur_name} (package (inherit {guix_var}) (name "{aur_name}")))')
+# Step 2: Add compat aliases at end of file
+# Recipe packages that need compat aliases (bin -> non-bin aliases)
+compat_aliases = [
+    ("fastfind", "fastfind-bin"),
+    ("fist", "fist-bin"),
+]
 
-    content = "\n".join(lines)
+alias_block = f"\n; --- {RUN_ID} compat aliases ---\n"
+for alias, parent in compat_aliases:
+    alias_block += f'(define-public {alias} (package (inherit {parent}) (name "{alias}")))\n'
 
-    # Atomic write
-    fd, tmp_path = tempfile.mkstemp(dir=os.path.dirname(COMPAT_SCM), suffix=".scm.tmp")
-    try:
-        with os.fdopen(fd, "w") as tmp:
-            tmp.write(content)
-        shutil.move(tmp_path, COMPAT_SCM)
-    except:
-        os.unlink(tmp_path)
-        raise
+if f"; --- {RUN_ID} compat aliases ---" not in content:
+    if not content.endswith('\n'):
+        content += '\n'
+    content += alias_block
+    print(f"  Added {len(compat_aliases)} compat aliases")
+else:
+    print("  Compat aliases already present")
 
-    print(f"Updated {COMPAT_SCM}: added 1 module import and {len(COMPAT_ALIASES)} compat aliases")
-
-
-if __name__ == "__main__":
-    main()
+# Write atomically
+fd, tmp_path = tempfile.mkstemp(dir=os.path.dirname(COMPAT_FILE), suffix=".scm.tmp")
+try:
+    with os.fdopen(fd, 'w') as tmp:
+        tmp.write(content)
+    shutil.move(tmp_path, COMPAT_FILE)
+except:
+    os.unlink(tmp_path)
+    raise
+print(f"  Wrote {COMPAT_FILE}")
