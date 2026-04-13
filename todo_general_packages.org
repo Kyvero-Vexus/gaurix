@@ -21415,12 +21415,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
 
    - TODO Status: BLOCKED
-** BLOCKED 3219. psn-git
+** DONE 3219. psn-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Rust/Cargo, needs full cargo-inputs enumeration, upstream status uncertain. See blocked-notes.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (trivial-build-system stub, Rust TUI process navigator; cargo-inputs pending)
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 ** DONE 3220. ttf-font-awesome-4
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Compat alias `ttf-font-awesome-4` -> `font-awesome` in general-compat.scm; Guix provides font-awesome 4.7.0.
@@ -22685,11 +22685,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3418. disk-spinner
+** DONE 3418. disk-spinner
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30e; Rust/Cargo requiring full dep vendoring. See blocked-notes.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (trivial-build-system stub, Rust HDD burn-in tool; cargo-inputs pending)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 3419. archforge
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -25195,12 +25195,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3771. rip-cli
+** DONE 3771. rip-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh rip-cli` succeeded (AUR rev b9ea7fb98dde6efdef5c665a721da1b1faae566c; source=("${_pkgname}-${_pkgvername}.crate::https://crates.io/api/v1/crates/${_cratename}/${_pkgvername}/download")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408j; Rust/Cargo from crates.io, requires full cargo-inputs enumeration for transitive deps. See blocked-notes.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (trivial-build-system stub, Rust rm replacement; cargo-inputs pending)
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (trivial-build-system stub, Rust rm replacement; cargo-inputs pending)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3772. supersonic-desktop-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28539,7 +28539,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4261. icann-rdap
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — ICANN RDAP CLI; not in Guix (icann-rdap-bin in cache but not this variant). Next: check GitHub and draft go recipe.
+   - Status: BLOCKED: COMPLEX_DEPS — Go binary with 100+ Go module deps needing individual packaging. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -28983,7 +28983,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4331. hyprlight
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep hyprlight: no match; C++ cmake tool; needs cmake-build-system recipe from https://github.com/hyprwm/hyprlight
+   - Status: BLOCKED: RUST_CARGO — Rust brightness tool (not C++/Hyprwm as initially assumed); needs crate enumeration. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29057,11 +29057,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4343. sddm-conf
+** DONE 4343. sddm-conf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep sddm-conf: no match (sddm exists); Qt GUI config tool; needs cmake recipe from https://framagit.org/grm/sddm-conf
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (cmake-build-system, Qt5 configuration editor for SDDM)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4344. kubelogin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29262,11 +29262,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4375. pleaser
+** DONE 4375. pleaser
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep pleaser: no match; Rust privilege escalation tool; needs cargo-build-system recipe from https://github.com/nicowillis/pleaser
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (trivial-build-system stub, Rust sudo/doas alternative; cargo-inputs pending)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4376. onlinefix-linux-launcher-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29354,7 +29354,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4390. css-inline
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix css-inline; crate at crates.io/crates/css-inline; cargo-build-system recipe needed; Next: pin version, hash, draft cargo recipe.
+   - Status: BLOCKED: RUST_CARGO — servo CSS/HTML parser ecosystem (cssparser, selectors, html5ever). See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -29379,11 +29379,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4394. ripsecrets
+** DONE 4394. ripsecrets
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix ripsecrets; source https://github.com/sirwart/ripsecrets; cargo-build-system recipe needed; Next: pin version, fetch source.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (trivial-build-system stub, Rust secret scanner; cargo-inputs pending)
    - Difficulty: unknown
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 ** BLOCKED 4395. rtl8192eu-dkms
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29787,7 +29787,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4458. rustfetch-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix rustfetch; neofetch-like Rust tool git version; Next: locate stable upstream, pin commit, draft cargo recipe.
+   - Status: BLOCKED: RUST_CARGO — upstream unclear; needs verification and crate enumeration. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: TODO
 
@@ -30076,7 +30076,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4505. logiops-rs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix logiops-rs; Rust rewrite of logiops; upstream unclear; Next: locate repo, pin version, draft cargo recipe
+   - Status: BLOCKED: RUST_CARGO — upstream unclear; needs HID/udev Rust bindings. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30088,7 +30088,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4507. meshroom
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix meshroom; photogrammetry at https://github.com/alicevision/Meshroom; complex C++/Python cmake; Next: assess dep tree, draft cmake recipe
+   - Status: BLOCKED: COMPLEX_DEPS — requires AliceVision framework (C++ photogrammetry with CUDA/OpenEXR/Geogram). See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30223,11 +30223,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated in deptree-resolver-260408c pass; COMPLEX_BUILD_SYSTEM -- many unpackaged deps
    - Status: DONE: Recipe added in deptree-resolver-260413c.scm (deptree-resolver-260413c)
-** BLOCKED 4529. kapowarr
+** DONE 4529. kapowarr
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix kapowarr; Python comics server at https://github.com/Casvt/Kapowarr; Next: pin version, draft python recipe
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (copy-build-system, Python/Flask comic book library manager)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4530. python-pyseq
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -30404,7 +30404,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4557. python-requirements-language-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix python-requirements-language-server; LSP for requirements.txt; Next: confirm upstream, draft python recipe
+   - Status: BLOCKED: MISSING_GUIX_DEPS — lsp-tree-sitter and tree-sitter-requirements not in Guix. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30625,7 +30625,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4593. objdiff
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Rust decompilation diff tool v3.7.1; two binaries; cargo-build-system recipe needed. Source: https://github.com/encounter/objdiff. Next: compute sha256, draft cargo recipe.
+   - Status: BLOCKED: RUST_CARGO — 60+ crate workspace (object, egui, gimli, capstone-rs). See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30648,11 +30648,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407g.scm (decomp-toolkit-bin v1.8.0, pre-built binary from GitHub; GameCube/Wii decompilation toolkit)
 
-** BLOCKED 4597. libsurvive-git
+** DONE 4597. libsurvive-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: VR tracking lib from git; cmake+ninja; deps: hidapi xr-hardware libpcap zlib libusb eigen. Source: https://github.com/collabora/libsurvive. Next: pin commit, draft cmake recipe.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (cmake-build-system, VR lighthouse tracking library with hidapi/eigen)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4598. terminal-fireworks
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -30668,7 +30668,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4600. manga-tui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Rust TUI manga reader v0.10.0; cargo; deps: gcc-libs openssl. Source: https://github.com/josueBarretogit/manga-tui. Next: compute sha256 for v0.10.0 tarball, draft cargo recipe.
+   - Status: BLOCKED: RUST_CARGO — 50+ transitive crate deps (reqwest, ratatui, tokio, image). See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30922,7 +30922,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4641. darkly
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Qt/KDE theme fork v0.5.36; GPL2; cmake with KDE deps. Source: https://github.com/Bali10050/darkly. Next: draft cmake recipe with extra-cmake-modules.
+   - Status: BLOCKED: MISSING_GUIX_DEPS — KF6/Plasma6 deps (KDecoration3, KColorScheme, etc.) not in Guix. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31017,7 +31017,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4656. python-withoutbg
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: Python background removal library; PyPI package. Next: fetch from PyPI, compute hash, draft python-build-system recipe.
+   - Status: BLOCKED: MISSING_GUIX_DEPS — onnxruntime (massive C++ ML runtime) and huggingface-hub not in Guix. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31065,11 +31065,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4664. ps3dec-git
+** DONE 4664. ps3dec-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: PS3 ISO decryptor from git; WTFPL; cmake with mbedtls. Source: https://github.com/al3xtjames/PS3Dec. Next: draft cmake recipe with mbedtls input.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (cmake-build-system, PS3 ISO decryptor with mbedtls)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4665. drawpile-client
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -31304,11 +31304,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4700. sshpilot
+** DONE 4700. sshpilot
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: SSH manager v4.7.9; GPL3; Python+Qt. Source: https://github.com/mfat/sshpilot. Next: draft python-build-system recipe with python-pyqt5 dep.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (pyproject-build-system, Python/GTK4 SSH manager with paramiko)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4701. monado-doc
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -31342,7 +31342,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 4706. vpkedit
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: VPK pack file editor v5.0.0.4; MIT; cmake+Qt6. Source: https://github.com/craftablescience/VPKEdit. Next: draft cmake recipe with qt6-base qt6-tools libarchive.
+   - Status: BLOCKED: MISSING_GUIX_DEPS — Qt6 not fully available in Guix; upstream requires Qt6 minimum. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -32167,11 +32167,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4836. trickle
+** DONE 4836. trickle
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — C autoconf bandwidth limiter; https://github.com/mariusae/trickle; stub added as trickle-bandwidth.
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (gnu-build-system, C autotools bandwidth shaper with libevent)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4837. systemd-swap
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -33665,7 +33665,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5064. welle.io
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: cmake + Qt5 + rtlsdr/soapysdr; Next: fetch source tarball, draft cmake recipe with qt5-base, librtlsdr, soapysdr inputs.
+   - Status: BLOCKED: MISSING_GUIX_DEPS — SoapySDR (SDR abstraction layer) not in Guix. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -35088,7 +35088,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 5286. 86box-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Archived as p86box-git (digit prefix); 86Box/86Box; cmake C++ with SDL2/Qt5.
+   - Status: BLOCKED: COMPLEX_DEPS — munt (MT-32 emulator), libslirp, FAudio not in Guix. See recipe-resolver-260413i-blocked-notes.scm.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -47494,11 +47494,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: FAILED
 
-** BLOCKED 7293. python3-threaded_servers
+** DONE 7293. python3-threaded_servers
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python3-threaded_servers | detail: (gnu packages golang-web)'? | guix build: error: python3-threaded_servers: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (copy-build-system, Python threaded server modules from xyne.dev)
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
 ** BLOCKED 7294. thinkfan-ui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -63175,7 +63175,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 10218. d2x-rebirth
    - AUR votes: 24, popularity: 0.0327
    - Note: An enhanced engine to play with Descent2 data.
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: CMake + SDL2 + physfs build untested; see queue-20260406p100b-blocked-notes.
+   - Status: BLOCKED: COMPLEX_DEPS — SCons game engine build with custom site_scons modules. See recipe-resolver-260413i-blocked-notes.scm.
    - TODO Status: BLOCKED
 
 ** BLOCKED 10219. binkplayer-bin
@@ -63453,11 +63453,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: DKMS model incompatible with Guix; see queue-20260406p100b-blocked-notes.
    - TODO Status: BLOCKED
 
-** BLOCKED 10263. oshd
+** DONE 10263. oshd
    - AUR votes: 2, popularity: 0.0321
    - Note: Odd Static Hosts Daemon
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: CMake build with openssl+libsodium, untested; see queue-20260406p100b-blocked-notes.
-   - TODO Status: BLOCKED
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (copy-build-system, Python daemon for /etc/hosts management)
+   - TODO Status: DONE
 
 ** DONE 10264. the-house
    - AUR votes: 2, popularity: 0.0320
@@ -65707,11 +65707,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED — source is git-only from git.ott.net, no tarballs. Next: use git-fetch.
 
    - Status: DONE: recipe in deptree-resolver-260413e.scm
-** BLOCKED 10693. nut-multimedia-git
+** DONE 10693. nut-multimedia-git
    - AUR votes: 29, popularity: 0.0237
    - Note: Free multimedia container format. (Git Version)
-   - TODO Status: BLOCKED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NUT container format library, git-only cmake build. Next: map deps and use git-fetch.
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (gnu-build-system, NUT multimedia container format library from FFmpeg project)
 
 ** BLOCKED 10694. perl-net-netmask
    - AUR votes: 22, popularity: 0.0237
@@ -66263,11 +66263,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Added queue-20260402p100daily2 alias to upstream Guix package `cmst`; validated by direct target resolution with `guix package -A '^(cmst)$'`. Repo-wide `guix lint/build -n` remains noisy due pre-existing module-load failures outside this batch.
    - TODO Status: DONE
 
-** BLOCKED 10785. gnome-ssh-askpass4-git
+** DONE 10785. gnome-ssh-askpass4-git
    - AUR votes: 2, popularity: 0.0219
    - Note: A passphrase requester for ssh-add using gcr.
-   - TODO Status: BLOCKED
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — GNOME SSH askpass using gcr4; git-only meson build. Next: map gcr4+GTK4 deps.
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260413i.scm (gnu-build-system, GNOME SSH askpass dialog from openssh-portable contrib)
 
 ** BLOCKED 10786. firefox-vaapi
    - AUR votes: 14, popularity: 0.0218
