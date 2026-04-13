@@ -1007,4 +1007,16 @@
             pdf4qt
             rpmlint
             next-music
+            ;; recipe-resolver-260413ac
+            execstack
+            davinci-ffmpeg-encoder-plugin
+            labwc-tweaks-git
+            obs-wayland-hotkeys-git
+            gcn64tools-git
+            fcitx5-lotus
+            whatsit
+            ttime
+            python-opentelemetry-opencensus-shim
+            python-griffe
+            papis
 )

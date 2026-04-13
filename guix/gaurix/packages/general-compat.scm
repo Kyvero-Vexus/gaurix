@@ -292,6 +292,7 @@
   #:use-module (gaurix packages deptree-resolver-260413l)
   #:use-module (gaurix packages deptree-resolver-260413m)
   #:use-module (gaurix packages recipe-resolver-260413ab)
+  #:use-module (gaurix packages recipe-resolver-260413ac)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -6221,3 +6222,11 @@
 (define-public way-edges (package (inherit way-edges-bin) (name "way-edges")))
 (define-public python-textual-fspicker-git (package (inherit python-textual-fspicker) (name "python-textual-fspicker-git")))
 (define-public xdg-desktop-portal-termfilechooser-hunkyburrito-git (package (inherit xdg-desktop-portal-termfilechooser-hunkyburrito) (name "xdg-desktop-portal-termfilechooser-hunkyburrito-git")))
+
+; --- recipe-resolver-260413ac compat aliases ---
+(define-public labwc-tweaks (package (inherit labwc-tweaks-git) (name "labwc-tweaks")))
+(define-public obs-wayland-hotkeys (package (inherit obs-wayland-hotkeys-git) (name "obs-wayland-hotkeys")))
+(define-public gcn64tools (package (inherit gcn64tools-git) (name "gcn64tools")))
+(define-public whatsit-git (package (inherit whatsit) (name "whatsit-git")))
+(define-public ttime-bin (package (inherit ttime) (name "ttime-bin")))
+(define-public papis-git (package (inherit papis) (name "papis-git")))
