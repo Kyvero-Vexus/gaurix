@@ -286,6 +286,7 @@
   #:use-module (gnu packages hunspell)
   #:use-module (gaurix packages recipe-resolver-260413t)
   #:use-module (gaurix packages deptree-resolver-260413k)
+  #:use-module (gaurix packages recipe-resolver-260413x)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -1935,6 +1936,96 @@
             usergrant
             linux-enable-ir-emitter
             beekeeper-qt
+            ;; recipe-resolver-260413x recipes
+            fastx-desktop-client
+            tetrio-plus-bin
+            libstdcplusplus5-bin
+            cockpit-tools-bin
+            oh-my-pi-bin
+            oneclient-bin
+            onscripter-yuri-bin
+            opera-gx
+            pencil-dev-bin
+            srcom-bin
+            srwm-bin
+            stalker-gamma-cli-bin
+            tinywiibackupmanager-bin
+            wayvr-bin
+            finar-bin
+            rootchat-bin
+            hubstaff
+            irfanview
+            comfyui-desktop-2-beta
+            cyx
+            lazyjira-git
+            megit
+            maniadrive
+            cdebootstrap-static
+            amethyst-mod-manager
+            anime-games-launcher-git
+            connectiq-sdk-manager
+            gnome-shell-extension-all-in-one-clipboard-bin
+            claude-agent-acp
+            sillytavern
+            specify-cli
+            touchhle
+            ts-query-ls
+            vikunja
+            railwayapp-cli
+            web-eid-firefox
+            web-eid-chrome
+            oxicord
+            dealve
+            kontainer
+            nettui
+            terraform-ls
+            bcompare
+            vencord-installer
+            minisforum-v3-pcie-aspm-config
+            python-yappi
+            python-kiutils
+            vidcutter
+            pvetui
+            python-qh3-bin
+            torbrowser-launcher-git
+            pisek
+            ttf-patrick-hand-full
+            ttf-sipa-sarabun
+            ttf-sipa-sarabun-new
+            ezstream
+            squeezelite
+            qpxtool
+            libkcapi
+            ddcci-hotplugd
+            blocker
+            kernel-alive
+            xboxdrv-blitz
+            dmrgateway-git
+            drawterm-9front-wl-git
+            ojcsh
+            oniri
+            wayland-push-to-talk-fix-git
+            kanzi-git
+            fluidplug-git
+            emacs-pgtk-igc-git
+            cnijfilter2
+            hobbits
+            blinkenlib
+            vkdevicechooser
+            blas-clblast
+            bareos-common
+            lazylpsolverlibs-git
+            klog
+            gnome-menu-editor-qt
+            ksteamtrayicon
+            kwin-effects-better-blur-dx
+            kwm
+            adwaita-qt5
+            adwaita-qt6
+            adwaita-qt6-git
+            perl-test-refcount
+            ckan
+            ccd-nav
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
