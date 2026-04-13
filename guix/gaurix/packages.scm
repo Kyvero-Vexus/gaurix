@@ -699,4 +699,7 @@
   #:use-module (gaurix packages recipe-resolver-260413o)
   #:use-module (gaurix packages recipe-resolver-260413p)
   #:use-module (gaurix packages recipe-resolver-260413p-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413q)
+  #:use-module (gaurix packages recipe-resolver-260413r)
+  #:use-module (gaurix packages recipe-resolver-260413r-blocked-notes)
 )

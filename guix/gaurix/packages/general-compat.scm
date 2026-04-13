@@ -272,6 +272,7 @@
   #:use-module (gaurix packages recipe-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413h)
   #:use-module (gaurix packages recipe-resolver-260413p)
+  #:use-module (gaurix packages recipe-resolver-260413r)
   #:use-module (gaurix packages recipe-resolver-260413q)
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -1892,6 +1893,13 @@
             ltex-ls-plus-bin
             pomodorolm-bin
             youtube-music-cli-bin
+            ;; recipe-resolver-260413r recipes
+            keychron-link-udev
+            keychron-q3-max-udev
+            cutieascii-bin
+            energygraph
+            d1x-rebirth
+            mindustry-server-bin
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -5857,3 +5865,7 @@
 (define-public jd-gui (package (inherit jd-gui-bin) (name "jd-gui")))
 (define-public mindustry-server (package (inherit mindustry-server-bin) (name "mindustry-server")))
 (define-public bashhound (package (inherit bashhound-git) (name "bashhound")))
+
+; --- recipe-resolver-260413r compat aliases ---
+(define-public cutieascii (package (inherit cutieascii-bin) (name "cutieascii")))
+(define-public mindustry-server (package (inherit mindustry-server-bin) (name "mindustry-server")))
