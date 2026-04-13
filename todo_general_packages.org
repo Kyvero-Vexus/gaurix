@@ -25603,6 +25603,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 3787. helion
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh helion` succeeded (AUR rev a186996778d6fca56a1e5fcb52fa3d5b43f546ba; source=("https://github.com/Helion-Engine/Helion/archive/refs/tags/${pkgver}.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DOTNET_UNSUPPORTED: C# game engine requiring .NET SDK; .NET not available in Guix (recipe-resolver-260413v)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -25715,11 +25716,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 3804. tidal-dl-ng
+** DONE 3804. tidal-dl-ng
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh tidal-dl-ng` succeeded (AUR rev 1a2f9c57f0c15521737e628ea5b62e18a2b258ce; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (tidal-dl-ng v0.33.0, TIDAL music downloader, AGPL-3.0)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 3805. cherry-studio-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28424,11 +28426,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260408n.scm (livecaptions v0.4.2, live captioning app, meson-build-system, GPL-3.0)
 
-** BLOCKED 4193. linux-enable-ir-emitter-beta
+** DONE 4193. linux-enable-ir-emitter-beta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — IR emitter tool; Python+C; not in Guix. Next: fetch from GitHub and draft recipe.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (linux-enable-ir-emitter v7.0.0, IR emitter tool, MIT)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4194. koboldcpp-cuda-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28613,11 +28616,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260408o.scm (gollama v2.0.4, TUI Ollama manager, go-build-system, MIT)
    - TODO Status: DONE
 
-** BLOCKED 4221. google-cloud-cli-gke-gcloud-auth-plugin
+** DONE 4221. google-cloud-cli-gke-gcloud-auth-plugin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — GKE auth plugin proprietary Go binary. Next: draft binary recipe from Google Cloud SDK releases.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (google-cloud-cli-gke-gcloud-auth-plugin v542.0.0, GKE auth plugin binary, Apache-2.0)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4222. zrythm-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28907,11 +28911,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4267. fabric-server
+** DONE 4267. fabric-server
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Fabric Minecraft modded server JAR; not in Guix. Next: draft JAR wrapper recipe from Fabric releases.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (fabric-server v1.1.1, Fabric Minecraft server JAR, Apache-2.0)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4268. gittyup
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29397,11 +29402,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4344. kubelogin
+** DONE 4344. kubelogin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep kubelogin: no match; Go binary; needs go recipe from https://github.com/Azure/kubelogin
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (kubelogin v1.35.2, Kubernetes OIDC auth plugin binary, Apache-2.0)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4345. rkdeveloptool-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29418,6 +29424,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4347. piper-voices-en-gb
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep piper-voices-en-gb: no match; use Gaurix piper-voices-en-us as template; fetch GB voice model from Piper releases
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — GIT_LFS_NEEDED: requires git-lfs to download large voice model files from HuggingFace; Guix git-fetch does not support LFS (recipe-resolver-260413v)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29635,6 +29642,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4381. lazynmap
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep lazynmap: no match; nmap TUI frontend; needs recipe from source; nmap available in Guix as dep
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — BUILD_SYSTEM_UNKNOWN: cannot determine source language or build system from AUR metadata alone; needs upstream repository inspection (recipe-resolver-260413v)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -29671,11 +29679,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
-** BLOCKED 4387. beekeeper-qt
+** DONE 4387. beekeeper-qt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep beekeeper-qt: no match; Qt database GUI; needs cmake recipe from source
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (beekeeper-qt v1.3.4, Qt dedup tool, AGPL-3.0)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4388. textern-native-messaging-host
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -30401,11 +30410,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in deptree-resolver-260408c.scm (dol-bin v0.2.0, CLI dark/light mode detector, MIT)
 
-** BLOCKED 4503. netlogo
+** DONE 4503. netlogo
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix netlogo; Java app at ccl.northwestern.edu; needs openjdk binary wrapper; Next: fetch installer, compute hash
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (netlogo v7.0.3, NetLogo modeling environment, GPL-2.0+)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4504. cctag
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -30826,6 +30836,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4568. jivexdv-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix jivexdv; XDV viewer binary; AUR votes=1; Next: check AUR PKGBUILD for upstream URL
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — WINDOWS_ONLY: AUR PKGBUILD downloads Windows .exe installer (SETUP_JiveXdv.exe); no Linux binary available (recipe-resolver-260413v)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -30987,11 +30998,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4594. tabularis-bin
+** DONE 4594. tabularis-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Tauri binary v0.9.10 from GitHub .deb; webkit2gtk-4.1/gtk3/openssl deps; needs extract+wrap recipe. Next: fetch .deb, compute hash.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (tabularis-bin v0.9.14, Tabularis .deb binary, custom)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 4595. tuitube-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -31382,6 +31394,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** BLOCKED 4657. arduino
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Arduino IDE; Java+Electron; Linux AppImage available. Next: fetch AppImage, compute hash, draft binary wrapper recipe.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — COMPLEX_BUILD: 8+ source archives (Java+Processing+custom toolchain+libraries); needs dedicated packaging pass (recipe-resolver-260413v)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -31735,17 +31748,19 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 4711. chitubox-free-bin
+** DONE 4711. chitubox-free-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Chitubox 3D slicer binary; proprietary; AppImage. Next: fetch AppImage, compute hash, draft binary wrapper recipe.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (chitubox-free-bin v2.3.1, CHITUBOX slicer binary, proprietary)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
-** BLOCKED 4712. browsh
+** DONE 4712. browsh
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Text-mode browser v<upstream>; MIT; Go binary. Source: https://github.com/browsh-org/browsh. Next: pin release, draft go-build-system or binary recipe.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (browsh-bin v1.8.3, text-based browser binary, LGPL-2.1)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 4713. droidcam-obs-plugin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -33624,11 +33639,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 5004. 02engine-bin
+** DONE 5004. 02engine-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Design tool binary; verify Linux binary availability, fetch, draft wrapper; Source: https://github.com/02engine/. Stub exported in queue-20260324p100d.scm.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (02engine-bin v1.2.3, 02Engine .deb binary, GPL-3.0)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 5005. shinobi-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -46294,11 +46310,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
-** BLOCKED 7028. obsidian-appimage
+** DONE 7028. obsidian-appimage
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n obsidian-appimage | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (obsidian-appimage v1.12.7, Obsidian AppImage, proprietary)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 7029. raindrop
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -47662,11 +47679,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in deptree-resolver-260408c.scm (eldiron-bin v0.9.2, RPG game creator, MIT)
 
-** BLOCKED 7248. electrum-ltc-appimage
+** DONE 7248. electrum-ltc-appimage
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n electrum-ltc-appimage | detail: error: specification->package: unbound variable; hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust recipe, then rerun guix lint/build
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (electrum-ltc-appimage v4.2.2.1, Electrum-LTC AppImage, MIT)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** BLOCKED 7249. osuboot-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -48819,16 +48837,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - TODO Status: DONE
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n docker-scout | detail: guix build: error: docker-scout: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
    - Status: DONE: recipe in deptree-resolver-260408c.scm (docker-scout v1.20.3, Docker supply chain security, proprietary)
-** BLOCKED 7450. otpgui
+** DONE 7450. otpgui
    - Note: AUR popularity=0.1566, votes=2; An OTP generator compatible with totp. Written in python and gtk.
   - TODO Status: BLOCKED
 
-  - TODO Status: BLOCKED
+  - TODO Status: DONE
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n otpgui | detail: guix build: error: otpgui: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
-** BLOCKED 7451. usergrant-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (otpgui v0.3.3, Python/GTK OTP generator, GPL)
+** DONE 7451. usergrant-git
    - Note: AUR popularity=0.1566, votes=1; Temporarily grant ACLs and environment to a secondary user for the duration of a
-  - TODO Status: BLOCKED
+  - TODO Status: DONE
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n usergrant-git | detail: guix build: error: usergrant-git: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (usergrant v0.0.1, ACL grant tool, GPL-2.0)
 
 ** BLOCKED 7452. sideloader-bin
    - Note: AUR popularity=0.1566, votes=2; Open-source cross-platform iOS app sideloader
@@ -48960,10 +48980,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - TODO Status: DONE
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n uhubctl | detail: guix build: error: uhubctl: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
-** BLOCKED 7474. termux-language-server
+** DONE 7474. termux-language-server
    - Note: AUR popularity=0.1245, votes=6; Language server for build.sh, PKGBUILD, ebuild
-  - TODO Status: BLOCKED
+  - TODO Status: DONE
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n termux-language-server | detail: guix build: error: termux-language-server: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (termux-language-server v0.0.31, build script language server, GPL-3.0)
 
 ** DONE 7475. bash-complete-alias
    - Note: AUR popularity=0.1242, votes=17; automagical bash shell alias completion
@@ -49465,10 +49486,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1178, votes=1; Floorp fork built with custom branding and settings - testing version for the up
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show firedragon-alpha-bin` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
-** BLOCKED 7568. python-morfeus-ml
+** DONE 7568. python-morfeus-ml
    - Note: AUR popularity=0.1178, votes=1; A Python package for calculating molecular features
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show python-morfeus-ml` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (python-morfeus-ml v0.7.2, molecular features Python package, MIT)
 ** DONE 7569. picsort-bin
    - Note: AUR popularity=0.1178, votes=1; PicSort is a simple tool to sort your pictures using only your keyboard
    - TODO Status: BLOCKED
@@ -49500,6 +49522,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1178, votes=1; A modern, fully typed Python client and CLI for interacting with Zoekt, a fast, 
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show python-zoekt-py-git` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DEP_FORK_NEEDED: depends on forked httpx variant (H3mul/zoekt-py); non-standard dependency not in Guix (recipe-resolver-260413v)
 ** BLOCKED 7576. python-user_agent
    - Note: AUR popularity=0.1178, votes=3; Generate random, valid web user-agent headers
    - TODO Status: BLOCKED
@@ -49583,6 +49606,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1178, votes=1; IDE for Java, Groovy and other programming languages with advanced refactoring f
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show intellij-idea-open-eap` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — COMPLEX_BUILD: requires building from 2 large git repos (intellij-community + android); full JDK bootstrap needed (recipe-resolver-260413v)
 ** BLOCKED 7595. aim-bin
    - Note: AUR popularity=0.1178, votes=1; A command line download/upload tool with resume
    - TODO Status: BLOCKED
@@ -49669,10 +49693,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1177, votes=2; An interactive decompiler, disassembler, debugger, and binary analysis platform.
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show binaryninja-personal` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
-** BLOCKED 7614. python-landlock
+** DONE 7614. python-landlock
    - Note: AUR popularity=0.1177, votes=1; Python interface to the Landlock Linux Security Module
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show python-landlock` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (python-landlock v1.0.0.dev5, Landlock LSM Python interface, MIT)
 ** BLOCKED 7615. quarto-cli
    - Note: AUR popularity=0.1177, votes=7; Quarto is an open-source scientific and technical publishing system built on [Pa
    - TODO Status: BLOCKED
@@ -49931,10 +49956,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: AUR popularity=0.1142, votes=7; pluggable transport proxy for Tor, implementing obfs4
    - TODO Status: BLOCKED
 
-** BLOCKED 7667. vicinae-appimage-bin
+** DONE 7667. vicinae-appimage-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vicinae-appimage-bin|vicinae-appimage|vicinae | error: guix build: error: vicinae: unknown package | next: draft new Guix recipe module and validate with guix lint/build
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (vicinae-appimage-bin v0.20.12, Vicinae launcher AppImage, GPL-3.0)
    - Note: AUR popularity=0.1141, votes=2; Raycast like FOSS app on Linux
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
 ** DONE 7668. browsh-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n browsh-bin|browsh | error: guix build: error: browsh: unknown package | next: draft new Guix recipe module and validate with guix lint/build
@@ -63560,11 +63586,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Control NetworkManager via dmenu
    - TODO Status: DONE
 
-** BLOCKED 10190. orca-slicer-unstable-bin
+** DONE 10190. orca-slicer-unstable-bin
    - AUR votes: 6, popularity: 0.0331
    - Note: G-code generator for 3D printers (versions including beta, release candidates and stable versions)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: AppImage extraction + patchelf needed; see queue-20260406p100b-blocked-notes.
-   - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (orca-slicer-unstable-bin v2.3.2, OrcaSlicer AppImage, AGPL-3.0)
+   - TODO Status: DONE
 
 ** DONE 10191. oatmeal-bin
    - AUR votes: 4, popularity: 0.0331
@@ -66560,6 +66587,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: Python package; needs dependency resolution via pyproject build (deptree-resolver-260413j)
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — PYTHON2_DEPRECATED: Cython 0.29.x for Python 2; Python 2 is EOL and poorly supported in Guix (recipe-resolver-260413v)
 ** DONE 10741. blt
    - Status: DONE: recipe in deptree-resolver-260413g.scm (blt)
    - TODO Status: DONE
@@ -66706,6 +66734,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Commandline tool for controlling Sonos devices
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Python CLI for Sonos; needs python-soco. Next: package python-soco first.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DEP_MISSING: requires python-soco (SoCo library) not packaged in Guix; need to package python-soco first (recipe-resolver-260413v)
 
 ** DONE 10765. python-android-backup-tools
    - AUR votes: 2, popularity: 0.0224
@@ -74905,13 +74934,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    -    - Status: DONE: recipe in recipe-resolver-260413j.scm (upscayl-bin, copy/source, placeholder hash)
    - TODO Status: DONE
 
-** BLOCKED 12019. onlyoffice
+** DONE 12019. onlyoffice
    - AUR votes: 13, popularity: 1.1855
    - Note: An office suite that combines text, spreadsheet and presentation editors allowing to create, view and edit local documen
    - TODO Status: TODO
    -    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: OnlyOffice Desktop Editors; massive C++/Qt application with custom build system; A1: binary .deb rep... (recipe-resolver-260413j)
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413v.scm (onlyoffice-bin v9.3.1, OnlyOffice .deb binary, AGPL-3.0)
 ** DONE 12020. intiface-central-bin
    - AUR votes: 7, popularity: 1.1847
    - Note: Frontend application for the Buttplug Sex Toy Control Library

@@ -23,6 +23,7 @@
   #:use-module (gaurix packages recipe-resolver-260413m)
   #:use-module (gaurix packages recipe-resolver-260413s)
   #:use-module (gaurix packages recipe-resolver-260413u)
+  #:use-module (gaurix packages recipe-resolver-260413v)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -1910,6 +1911,28 @@
             energygraph
             d1x-rebirth
             mindustry-server-bin
+            ;; recipe-resolver-260413v recipes
+            obsidian-appimage
+            electrum-ltc-appimage
+            orca-slicer-unstable-bin
+            vicinae-appimage-bin
+            chitubox-free-bin
+            tabularis-bin
+            onlyoffice-bin
+            02engine-bin
+            kubelogin
+            google-cloud-cli-gke-gcloud-auth-plugin
+            netlogo
+            browsh-bin
+            fabric-server
+            python-morfeus-ml
+            python-landlock
+            termux-language-server
+            otpgui
+            tidal-dl-ng
+            usergrant
+            linux-enable-ir-emitter
+            beekeeper-qt
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---

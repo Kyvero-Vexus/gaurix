@@ -465,6 +465,28 @@
             python-pyfiglet
             python-opentelemetry-exporter-zipkin-proto-http
             python-opencensus
+            ;; recipe-resolver-260413v
+            obsidian-appimage
+            electrum-ltc-appimage
+            orca-slicer-unstable-bin
+            vicinae-appimage-bin
+            chitubox-free-bin
+            tabularis-bin
+            onlyoffice-bin
+            02engine-bin
+            kubelogin
+            google-cloud-cli-gke-gcloud-auth-plugin
+            netlogo
+            browsh-bin
+            fabric-server
+            python-morfeus-ml
+            python-landlock
+            termux-language-server
+            otpgui
+            tidal-dl-ng
+            usergrant
+            linux-enable-ir-emitter
+            beekeeper-qt
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -843,5 +865,6 @@
   #:use-module (gaurix packages recipe-resolver-260413s-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413t)
   #:use-module (gaurix packages recipe-resolver-260413u)
+  #:use-module (gaurix packages recipe-resolver-260413v)
   #:use-module (gaurix packages recipe-resolver-260413u-blocked-notes)
 )
