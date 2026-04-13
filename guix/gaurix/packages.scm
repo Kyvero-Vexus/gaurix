@@ -353,5 +353,7 @@
   #:use-module (gaurix packages recipe-resolver-260413h)
   #:use-module (gaurix packages recipe-resolver-260413h-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413i)
+  #:use-module (gaurix packages recipe-resolver-260413j)
+  #:use-module (gaurix packages recipe-resolver-260413j-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413i-blocked-notes)
 )
