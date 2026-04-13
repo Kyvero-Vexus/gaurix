@@ -266,7 +266,38 @@
   #:use-module (gaurix packages deptree-resolver-260413e)
   #:use-module (gaurix packages deptree-resolver-260413f)
   #:use-module (gaurix packages recipe-resolver-260413k)
+  #:use-module (gaurix packages recipe-resolver-260413l)
   #:export (
+            ;; recipe-resolver-260413l recipes
+            font-heuristica
+            font-gelasio
+            font-lxgw-wenkai-screen
+            font-lxgw-fasmart-gothic
+            font-ubuntu-sans-mono
+            font-blobmoji
+            graphite-cursor-theme
+            rose-pine-hyprcursor
+            googledot-cursor-theme
+            phiola-bin
+            ionosctl-bin
+            fhc-bin
+            hypruler-bin
+            logviewer-bin
+            termide-bin
+            gnome-shell-extension-tiling-assistant
+            gnome-shell-extension-pop-shell
+            gnome-shell-extension-logo-menu
+            gnome-shell-extension-just-perfection
+            gnome-shell-extension-blur-my-shell
+            gnome-shell-extension-run-or-raise
+            gnome-shell-extension-panel-date-format
+            gnome-shell-extension-media-controls
+            ;; recipe-resolver-260413l compat aliases
+            ttf-gelasio-variable
+            noto-fonts-emoji-blob
+            graphite-cursor-theme-git
+            gnome-shell-extension-pop-shell-git
+            gnome-shell-extension-just-perfection-desktop
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
             ;; deptree-resolver-260407 recipes
@@ -5619,3 +5650,10 @@
 (define-public wlr-dpms-git (package (inherit wlr-dpms) (name "wlr-dpms-git")))
 (define-public wl-gears-git (package (inherit wl-gears) (name "wl-gears-git")))
 (define-public xdgctl-git (package (inherit xdgctl) (name "xdgctl-git")))
+
+; --- recipe-resolver-260413l compat aliases ---
+(define-public ttf-gelasio-variable (package (inherit font-gelasio) (name "ttf-gelasio-variable")))
+(define-public noto-fonts-emoji-blob (package (inherit font-blobmoji) (name "noto-fonts-emoji-blob")))
+(define-public graphite-cursor-theme-git (package (inherit graphite-cursor-theme) (name "graphite-cursor-theme-git")))
+(define-public gnome-shell-extension-pop-shell-git (package (inherit gnome-shell-extension-pop-shell) (name "gnome-shell-extension-pop-shell-git")))
+(define-public gnome-shell-extension-just-perfection-desktop (package (inherit gnome-shell-extension-just-perfection) (name "gnome-shell-extension-just-perfection-desktop")))

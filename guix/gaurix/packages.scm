@@ -24,6 +24,30 @@
             xdgctl
             terminalimageviewer
             snoop
+            ;; recipe-resolver-260413l
+            font-heuristica
+            font-gelasio
+            font-lxgw-wenkai-screen
+            font-lxgw-fasmart-gothic
+            font-ubuntu-sans-mono
+            font-blobmoji
+            graphite-cursor-theme
+            rose-pine-hyprcursor
+            googledot-cursor-theme
+            phiola-bin
+            ionosctl-bin
+            fhc-bin
+            hypruler-bin
+            logviewer-bin
+            termide-bin
+            gnome-shell-extension-tiling-assistant
+            gnome-shell-extension-pop-shell
+            gnome-shell-extension-logo-menu
+            gnome-shell-extension-just-perfection
+            gnome-shell-extension-blur-my-shell
+            gnome-shell-extension-run-or-raise
+            gnome-shell-extension-panel-date-format
+            gnome-shell-extension-media-controls
             ;; deptree-resolver-260413f
             python-opentelemetry-proto
             python-opentelemetry-exporter-zipkin-json
@@ -475,4 +499,6 @@
   #:use-module (gaurix packages deptree-resolver-260413f-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413k)
   #:use-module (gaurix packages recipe-resolver-260413k-blocked-notes)
+  #:use-module (gaurix packages recipe-resolver-260413l)
+  #:use-module (gaurix packages recipe-resolver-260413l-blocked-notes)
 )
