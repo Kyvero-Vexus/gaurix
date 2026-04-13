@@ -287,6 +287,7 @@
   #:use-module (gaurix packages recipe-resolver-260413t)
   #:use-module (gaurix packages deptree-resolver-260413k)
   #:use-module (gaurix packages recipe-resolver-260413x)
+  #:use-module (gaurix packages recipe-resolver-260413y)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2026,6 +2027,32 @@
             perl-test-refcount
             ckan
             ccd-nav
+            ;; recipe-resolver-260413y recipes
+            materialgram-bin
+            marktext-tkaixiang-bin
+            anytype-alpha-bin
+            sideloader-bin
+            youtube-tui-full-bin
+            bluebubbles-bin
+            deepchat-bin
+            ripes-bin
+            freeshow-bin
+            kanri-bin
+            loopi-bin
+            alt-sendme-bin
+            vcard-studio-bin
+            firedragon-alpha-bin
+            paket-bin
+            fchat-horizon-bin
+            classisland-bin
+            stremio-service-bin
+            electron12-bin
+            firestorm-bin
+            microsoft-edge-dev-bin
+            dbeaver-ce-jre-bin
+            alchitry-labs-bin
+            anycubicslicernext-bin
+            local-by-flywheel-bin
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
