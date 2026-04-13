@@ -487,6 +487,31 @@
             usergrant
             linux-enable-ir-emitter
             beekeeper-qt
+            ;; deptree-resolver-260413l
+            python-opentelemetry-exporter-otlp-proto-common
+            python-opentelemetry-exporter-zipkin-proto-http
+            brother-cups-wrapper-common
+            brother-mfc-l2710dw
+            ccase
+            dinit-edit-git
+            doasedit-nhk
+            elephant-bitwarden
+            elephant-calc
+            elephant-files
+            elephant-niriactions
+            elephant-nirisessions
+            elephant-snippets
+            elephant-windows
+            feroxbuster
+            flyctl
+            fm-git
+            fmlib
+            folder-declutter-bin
+            fortitude-bin
+            freelens-bin
+            fsid
+            ftr-site-config-git
+            gasroot
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
