@@ -264,6 +264,7 @@
   #:use-module (gaurix packages recipe-resolver-260413g)
   #:use-module (gaurix packages deptree-resolver-260413c)
   #:use-module (gaurix packages deptree-resolver-260413e)
+  #:use-module (gaurix packages deptree-resolver-260413f)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -5606,3 +5607,7 @@
   (package
     (inherit tome4-forbidden-cults)
     (name "tome4-forbidden_cults")))
+
+; --- deptree-resolver-260413f compat aliases ---
+(define-public ttf-arundina (package (inherit font-arundina) (name "ttf-arundina")))
+(define-public ttf-inconsolata-hellenic (package (inherit font-inconsolata-hellenic) (name "ttf-inconsolata-hellenic")))

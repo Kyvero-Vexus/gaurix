@@ -1,5 +1,96 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260413f
+            python-opentelemetry-proto
+            python-opentelemetry-exporter-zipkin-json
+            subtitleedit-avalonia
+            android-google-apis-playstore-x86-64-system-image
+            pantum-universal-driver
+            perl-net-netmask
+            pipewire-openrc
+            pipewire-pulse-openrc
+            plasma6-applets-window-title
+            plasma6-themes-fluent-git
+            profile-sync-daemon-floorp
+            psiphonlinuxgui
+            pureref
+            ralph-tui
+            replit-desktop-app
+            rofi-emoji-git
+            rustrover
+            saleae-logic2
+            shstatus
+            skillshare
+            spacestation14-launcher-bin
+            stack-wallet-appimage
+            stardict-indic-update
+            storcli
+            svnkit
+            systemd-oomd-defaults
+            tdarr
+            technitium-dns-server-bin
+            tetrio-desktop
+            timerrs
+            timeshift-autosnap
+            ts-query-ls
+            font-arundina
+            font-inconsolata-hellenic
+            tun2socks
+            turtle-wow
+            uber-apk-signer-bin
+            universal-android-debloater-bin
+            unixbench
+            unraid-usb-creator-bin
+            update-grub
+            usenet-reborn-git
+            ut2004-data-steam
+            utools-bin
+            v1541commander
+            vanta-agent
+            vdhcoapp-bin
+            vex-shell
+            vial-appimage
+            vidoas
+            vim-bootstrap
+            vimalender-bin
+            vimcdoc
+            virtualbox-ext-oracle
+            vite-plus-bin
+            vr-lighthouse-git
+            vt-cli-bin
+            wait4x-bin
+            warcraftlogsuploader
+            waves-bin
+            webapp-creator
+            webtorrent-desktop-bin
+            weiqihub
+            winbox3
+            wireproxy-awg-bin
+            wl-gammarelay-rs-git
+            wlctl-bin
+            wttrbar
+            wxedid
+            x86-manpages-git
+            xattrvi
+            yana-bin
+            yap-bin
+            yasp-bin
+            ymuse-bin
+            ytdownloader-gui-bin
+            yumenikki-en
+            zectl-pacman-hook
+            zfs-utils-staging-git
+            zmx
+            zmx-git
+            zookeeper
+            zps-bin
+            2048.c
+            addrwatch
+            adebar
+            adobe-reader-11
+            adw-gimp3-git
+            alvr-launcher-bin
+            antidot
   #:use-module (gaurix packages aider-chat)
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
@@ -356,4 +447,6 @@
   #:use-module (gaurix packages recipe-resolver-260413j)
   #:use-module (gaurix packages recipe-resolver-260413j-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413i-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260413f)
+  #:use-module (gaurix packages deptree-resolver-260413f-blocked-notes)
 )
