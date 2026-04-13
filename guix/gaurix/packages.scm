@@ -1019,4 +1019,30 @@
             python-opentelemetry-opencensus-shim
             python-griffe
             papis
+            ;; deptree-resolver-260413n
+            elephant-providerlist
+            elephant-runner
+            elephant-symbols
+            elephant-todo
+            elephant-websearch
+            elephant-calc
+            elephant-files
+            google-breakpad
+            helixnotes-appimage-bin
+            hmcl-bin
+            hpsahba-git
+            hytale-updater
+            i2p-bin
+            nvidia-utils-beta
+            ccusage
+            claude-agent-acp
+            critique
+            hyprflow
+            ibus-autostart-kimpanel
+            famitracker
+            oopz
+            yabridgectl-wine10-git
+            homepage-git
+            hurrycurry-client
+            hyprland-plugin-easymotion
 )

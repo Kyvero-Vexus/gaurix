@@ -25,6 +25,7 @@
   #:use-module (gaurix packages recipe-resolver-260413u)
   #:use-module (gaurix packages recipe-resolver-260413v)
   #:use-module (gaurix packages recipe-resolver-260413w)
+  #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
