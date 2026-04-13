@@ -271,6 +271,8 @@
   #:use-module (gaurix packages deptree-resolver-260413g)
   #:use-module (gaurix packages recipe-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413h)
+  #:use-module (gaurix packages recipe-resolver-260413p)
+  #:use-module (gaurix packages recipe-resolver-260413q)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -1800,6 +1802,96 @@
             superdb
             whosthere
             python-face_recognition_models
+
+            ;; recipe-resolver-260413q recipes
+            firefox-beta-bin
+            anydesk-bin
+            dxvk-bin
+            mailspring-bin
+            keybase-bin
+            robo3t-bin
+            jd-gui-bin
+            microsoft-edge-dev-bin
+            streamlink-twitch-gui-bin
+            powershell-bin
+            gotop-bin
+            duplicati-canary-bin
+            github-desktop-bin
+            thorium-browser-bin
+            ledger-live-bin
+            dotnet-host-bin
+            aspnet-runtime-bin
+            dotnet-sdk-bin
+            aspnet-targeting-pack-bin
+            svp-bin
+            keeweb-desktop-bin
+            i2p-bin
+            browsh-bin
+            rocketchat-client-bin
+            ocenaudio-bin
+            rpcs3-bin
+            dingtalk-bin
+            webtorrent-desktop-bin
+            an-anime-game-launcher-bin
+            nuclear-player-bin
+            tuxedo-control-center-bin
+            multimc-bin
+            pandora-launcher-bin
+            feishu-bin
+            electronmail-bin
+            franz-bin
+            pdfstudio-bin
+            protonup-qt-bin
+            glance-bin
+            waterfox-classic-bin
+            cutechess-bin
+            virtualbox-bin
+            firestorm-bin
+            zoiper-bin
+            microchip-mplabx-bin
+            android-sdk
+            paru
+            jdk-doc
+            google-chrome-dev
+            nautilus-dropbox
+            ttf-google-fonts-git
+            sublime-text-dev
+            wps-office-mime
+            jdownloader2
+            numix-icon-theme-git
+            hplip-plugin
+            numix-circle-icon-theme-git
+            foxitreader
+            usb-creator
+            trizen
+            eclipse-java-bin
+            ssacli-bin
+            amdfand-bin
+            mihomo-bin
+            snazy-bin
+            codelldb-bin
+            shadered-bin
+            armbian-imager-bin
+            docker-tui-bin
+            lazyjira-bin
+            mkbrr-bin
+            subfinder-bin
+            bambustudio-bin
+            cryptomator-bin
+            sidequest-bin
+            iptvnator-bin
+            headlamp-bin
+            git-credential-manager-bin
+            jamesdsp-pipewire-bin
+            zen-twilight-bin
+            hyprism-bin
+            surge-bin
+            gale-bin
+            keylightd-bin
+            vvv-bin
+            ltex-ls-plus-bin
+            pomodorolm-bin
+            youtube-music-cli-bin
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
