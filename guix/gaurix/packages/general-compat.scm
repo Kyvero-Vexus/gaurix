@@ -291,6 +291,7 @@
   #:use-module (gaurix packages recipe-resolver-260413z)
   #:use-module (gaurix packages deptree-resolver-260413l)
   #:use-module (gaurix packages deptree-resolver-260413m)
+  #:use-module (gaurix packages recipe-resolver-260413ab)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2056,6 +2057,92 @@
             alchitry-labs-bin
             anycubicslicernext-bin
             local-by-flywheel-bin
+            ;; recipe-resolver-260413ab
+            bareos-contrib-director-python-plugins
+            bareos-contrib-filedaemon-python-plugins
+            bareos-contrib-tools
+            bareos-database-common
+            bareos-database-postgresql
+            bareos-database-tools
+            bareos-devel
+            bareos-director
+            bareos-director-python-plugins-common
+            bareos-director-python3-plugin
+            bareos-filedaemon
+            bareos-filedaemon-glusterfs-plugin
+            bareos-filedaemon-ldap-python-plugin
+            bareos-filedaemon-libcloud-python-plugin
+            bareos-filedaemon-mariabackup-python-plugin
+            bareos-filedaemon-percona-xtrabackup-python-plugin
+            bareos-filedaemon-postgresql-python-plugin
+            bareos-filedaemon-python-plugins-common
+            bareos-filedaemon-python3-plugin
+            bareos-storage
+            bareos-storage-droplet
+            bareos-storage-fifo
+            bareos-storage-glusterfs
+            bareos-storage-python-plugins-common
+            bareos-storage-python3-plugin
+            bareos-storage-tape
+            bareos-tools
+            bareos-traymonitor
+            bareos-vmware-plugin
+            bareos-webui
+            bareos-webui-apache
+            bareos-webui-nginx
+            python-bareos
+            oh-my-pi-git
+            piperig-bin
+            python-fastfeedparser-git
+            vite-plus-bin
+            vkbasalt-redemp-git
+            volt-desktop
+            voxtype-cuda
+            wifi-audio-streaming
+            windsurf-next-marketplace
+            ymir-emu-git
+            xboxdrv-git
+            wallpaper-engine-kde-plugin-git
+            ut2004-data-archiveorg
+            fw16-kbd-uleds-git
+            cryptopro-csp-k1
+            bcompare-kde6
+            bcompare-kde5
+            bcompare-kde4
+            bcompare-nautilus
+            bcompare-thunar
+            bcompare-cinnamon
+            bcompare-mate
+            alma-desktop-bin
+            kvantum-theme-catppuccin-git
+            airwindows-consolidated-bin
+            yabsnap
+            mozc
+            lft
+            pkglog-elixir-bin
+            ratarmount
+            prismlauncher-git
+            vrrtest-git
+            arduino-avr-core
+            kora-icon-theme
+            cemu
+            amneziawg-tools
+            valent-git
+            xdgctl
+            vicinae-bin
+            meshtastic-python
+            limine-snapper-sync
+            usbtop
+            prek-bin
+            yp-tools
+            opentrack
+            aacs-keydb-daily
+            libunity
+            plasma6-runners-jetbrains-runner-git
+            zsh-fast-syntax-highlighting
+            pdf4qt
+            rpmlint
+            next-music
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
