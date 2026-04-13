@@ -288,6 +288,7 @@
   #:use-module (gaurix packages deptree-resolver-260413k)
   #:use-module (gaurix packages recipe-resolver-260413x)
   #:use-module (gaurix packages recipe-resolver-260413y)
+  #:use-module (gaurix packages recipe-resolver-260413z)
   #:use-module (gaurix packages deptree-resolver-260413l)
 
   #:export (
@@ -6107,3 +6108,28 @@
 ; --- deptree-resolver-260413k compat aliases ---
 (define-public fastfind (package (inherit fastfind-bin) (name "fastfind")))
 (define-public fist (package (inherit fist-bin) (name "fist")))
+
+; --- recipe-resolver-260413z compat aliases ---
+(define-public wttrbar (package (inherit wttrbar-bin) (name "wttrbar")))
+(define-public primer (package (inherit primer-bin) (name "primer")))
+(define-public tg-ws-proxy (package (inherit tg-ws-proxy-bin) (name "tg-ws-proxy")))
+(define-public marmite (package (inherit marmite-bin) (name "marmite")))
+(define-public randompass (package (inherit randompass-bin) (name "randompass")))
+(define-public pipeview (package (inherit pipeview-bin) (name "pipeview")))
+(define-public aim (package (inherit aim-bin) (name "aim")))
+(define-public musage (package (inherit musage-bin) (name "musage")))
+(define-public tmmpr (package (inherit tmmpr-bin) (name "tmmpr")))
+(define-public kdownload (package (inherit kdownload-bin) (name "kdownload")))
+(define-public vtf-thumbnailer (package (inherit vtf-thumbnailer-bin) (name "vtf-thumbnailer")))
+(define-public overskride (package (inherit overskride-bin) (name "overskride")))
+(define-public sfxr-qt (package (inherit sfxr-qt-bin) (name "sfxr-qt")))
+(define-public stakpak (package (inherit stakpak-bin) (name "stakpak")))
+(define-public savestate (package (inherit savestate-bin) (name "savestate")))
+(define-public camunda-modeler (package (inherit camunda-modeler-bin) (name "camunda-modeler")))
+(define-public hardbore (package (inherit hardbore-bin) (name "hardbore")))
+(define-public kaizen (package (inherit kaizen-bin) (name "kaizen")))
+(define-public uiua (package (inherit uiua-bin) (name "uiua")))
+(define-public jd-gui (package (inherit jd-gui-bin) (name "jd-gui")))
+(define-public way-edges (package (inherit way-edges-bin) (name "way-edges")))
+(define-public python-textual-fspicker-git (package (inherit python-textual-fspicker) (name "python-textual-fspicker-git")))
+(define-public xdg-desktop-portal-termfilechooser-hunkyburrito-git (package (inherit xdg-desktop-portal-termfilechooser-hunkyburrito) (name "xdg-desktop-portal-termfilechooser-hunkyburrito-git")))
