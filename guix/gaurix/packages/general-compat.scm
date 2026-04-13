@@ -248,6 +248,7 @@
   #:use-module (gaurix packages deptree-resolver-260408j)
   #:use-module (gaurix packages deptree-resolver-260408k)
   #:use-module (gaurix packages recipe-resolver-260408y)
+  #:use-module (gaurix packages deptree-resolver-260412a)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
@@ -5283,3 +5284,6 @@
   (package
     (inherit task-manager)
     (name "task-manager")))
+
+; --- deptree-resolver-260412a compat aliases ---
+(define-public otf-arundina (package (inherit font-arundina) (name "otf-arundina")))

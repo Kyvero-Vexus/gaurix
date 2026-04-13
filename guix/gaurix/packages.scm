@@ -9336,6 +9336,94 @@ podman-tui-bin
             libreoffice-dev-st
             libreoffice-dev-sv
             libreoffice-dev-sw-tz
+            ;; deptree-resolver-260412a
+            libreoffice-dev-szl
+            libreoffice-dev-ta
+            libreoffice-dev-te
+            libreoffice-dev-tg
+            libreoffice-dev-th
+            libreoffice-dev-tn
+            libreoffice-dev-tr
+            libreoffice-dev-ts
+            libreoffice-dev-tt
+            libreoffice-dev-ug
+            libreoffice-dev-uk
+            libreoffice-dev-uz
+            libreoffice-dev-ve
+            libreoffice-dev-vec
+            libreoffice-dev-vi
+            libreoffice-dev-xh
+            libreoffice-dev-zh-cn
+            libreoffice-dev-zh-tw
+            libreoffice-dev-zu
+            libsmb2-git
+            libtxc-dxtn
+            likwid
+            linphone-plugin-msx264
+            linux-versioned-bin
+            linux-versioned-docs-bin
+            linux-versioned-headers-bin
+            lla
+            locale-en-nl-git
+            logfmt-bin
+            lssecret-git
+            marmite
+            masterpassword-gui
+            mbrola-voices-de5
+            mc-dracula-theme
+            mcos-shell-theme
+            mehshell-bin
+            members
+            min-browser-bin
+            minisforum-v3-pcie-aspm-config
+            mirth-connect-administrator-launcher
+            mkmm
+            mm2odt
+            modsecurity-crs
+            moltbot
+            mqttx-bin
+            muffon-bin
+            mycelium
+            netease-cloud-music-web-player
+            netrc
+            nibble-bin
+            nimble-git
+            nimpretty-git
+            nimsuggest-git
+            nitrux-icon-theme
+            nmcrcon-git
+            nmsurf
+            nodejs-express
+            nonicons-doc-git
+            nonicons-license-git
+            nordic-wallpapers
+            notable-bin
+            note-tui-bin
+            nsnake
+            nstool
+            nuclei-bin
+            numara-bin
+            nvidia-oc
+            nvim-lazy
+            objconv
+            obs-livesplit-one-bin
+            octave-splines
+            octoberctl-bin
+            odin4-cli
+            omm-bin
+            omnidotdev-cli
+            omnidotdev-eden
+            open-in-native-client
+            openhab5-addons
+            opennic-up
+            opentorrent-bin
+            opentorrent-unstable
+            opentubex-bin
+            opera-gx-stable-ffmpeg-codecs-bin
+            ostorybook
+            font-arundina
+            ourico
+            pacman-mirrorup
   #:use-module (gaurix packages recipe-resolver-260408q)
   #:use-module (gaurix packages deptree-resolver-260408h)
   #:use-module (gaurix packages deptree-resolver-260408h-blocked-notes)
@@ -9356,4 +9444,6 @@ podman-tui-bin
   #:use-module (gaurix packages recipe-resolver-260408y)
   #:use-module (gaurix packages recipe-resolver-260408y-blocked-notes)
 
+  #:use-module (gaurix packages deptree-resolver-260412a)
+  #:use-module (gaurix packages deptree-resolver-260412a-blocked-notes)
 )
