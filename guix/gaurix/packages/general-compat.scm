@@ -257,6 +257,7 @@
   #:use-module (gaurix packages recipe-resolver-260413b)
   #:use-module (gaurix packages deptree-resolver-260413b)
   #:use-module (gaurix packages recipe-resolver-260413d)
+  #:use-module (gaurix packages recipe-resolver-260413f)
   #:use-module (gaurix packages deptree-resolver-260413c)
   #:export (
             ;; deptree-resolver-260407 compat aliases
@@ -1742,7 +1743,95 @@
             auto-throttle
             wingedit
             fortune-mod-futurama
+            ;; recipe-resolver-260413f compat aliases
+            sizeof
+            nextdns
+            intermodal
+            ov
+            torrserver
+            rjq
+            tmpo
+            dol
+            sq
+            mynav
+            solv
+            superdb
+            whosthere
+            python-face_recognition_models
 ))
+
+;;; --- recipe-resolver-260413f compat aliases ---
+
+(define-public sizeof
+  (package
+    (inherit sizeof-tool)
+    (name "sizeof")))
+
+(define-public nextdns
+  (package
+    (inherit nextdns-bin)
+    (name "nextdns")))
+
+(define-public intermodal
+  (package
+    (inherit intermodal-bin)
+    (name "intermodal")))
+
+(define-public ov
+  (package
+    (inherit ov-bin)
+    (name "ov")))
+
+(define-public torrserver
+  (package
+    (inherit torrserver-bin)
+    (name "torrserver")))
+
+(define-public rjq
+  (package
+    (inherit rjq-bin)
+    (name "rjq")))
+
+(define-public tmpo
+  (package
+    (inherit tmpo-bin)
+    (name "tmpo")))
+
+(define-public dol
+  (package
+    (inherit dol-bin)
+    (name "dol")))
+
+(define-public sq
+  (package
+    (inherit sq-bin)
+    (name "sq")))
+
+(define-public mynav
+  (package
+    (inherit mynav-bin)
+    (name "mynav")))
+
+(define-public solv
+  (package
+    (inherit solv-bin)
+    (name "solv")))
+
+(define-public superdb
+  (package
+    (inherit superdb-bin)
+    (name "superdb")))
+
+(define-public whosthere
+  (package
+    (inherit whosthere-bin)
+    (name "whosthere")))
+
+(define-public python-face_recognition_models
+  (package
+    (inherit python-face-recognition-models)
+    (name "python-face_recognition_models")))
+
 
 (define-public gtk2
   (package
@@ -4381,6 +4470,21 @@
             drl
             ;; recipe-resolver-260408a re-exports
             fortune-mod-futurama
+            ;; recipe-resolver-260413f compat aliases
+            sizeof
+            nextdns
+            intermodal
+            ov
+            torrserver
+            rjq
+            tmpo
+            dol
+            sq
+            mynav
+            solv
+            superdb
+            whosthere
+            python-face_recognition_models
             fortune-mod-firefly
             fortune-mod-matrix
             fortune-mod-archer
@@ -5402,6 +5506,7 @@
 (define-public terraria-server (package (inherit terraria-server-bin) (name "terraria-server")))
 (define-public intune-portal (package (inherit intune-portal-bin) (name "intune-portal")))
 (define-public reiserfsprogs (package (inherit reiserfsprogs-pkg) (name "reiserfsprogs")))
+
 
 ; --- recipe-resolver-260413a compat aliases ---
 
