@@ -1045,4 +1045,35 @@
             homepage-git
             hurrycurry-client
             hyprland-plugin-easymotion
+            ;; recipe-resolver-260413ad
+            sublime-text-4-bin
+            mullvad-browser-bin
+            rojo-bin
+            perch-bin
+            sherut-bin
+            tickit-sync-bin
+            mediamtx-bin
+            librespeed-cli-bin
+            kubecolor-bin
+            petbottle-bin
+            pyrite64-bin
+            qidi-studio-appimage
+            postman-live-bin
+            wezterm-nightly-bin
+            tchap-desktop-bin
+            docker-credential-secretservice-bin
+            optomizer
+            tty-clock
+            jrnlc
+            media-downloader
+            libopenrazer
+            tinc-pre
+            dreamchess
+            nvi-multibyte
+            tuipaper
+            stacer
+            ttf-monocraft
+            caffeine-ng
+            cpupower-gui
+            perl-cpan-uploader
 )
