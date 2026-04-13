@@ -59,6 +59,34 @@
             wl-gears
             xtatusbar
             xdgctl
+            ;; recipe-resolver-260413p
+            randompass-bin
+            musage-bin
+            dusage-bin
+            pipeview-bin
+            aim-bin
+            kdownload-bin
+            marmite-bin
+            darya-bin
+            wttrbar-bin
+            kaizen-bin
+            stakpak-bin
+            primer-bin
+            overskride-bin
+            makesure
+            jd-gui-bin
+            mindustry-server-bin
+            lanxchange
+            davmail
+            gashell
+            bashhound-git
+            python-barcode
+            python-user-agent
+            python-portion
+            python-asyncer
+            hardened-malloc
+            x11-emoji-picker
+            airwindows-lv2
             terminalimageviewer
             snoop
             ;; recipe-resolver-260413l
@@ -669,4 +697,6 @@
   #:use-module (gaurix packages recipe-resolver-260413n)
   #:use-module (gaurix packages recipe-resolver-260413n-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413o)
+  #:use-module (gaurix packages recipe-resolver-260413p)
+  #:use-module (gaurix packages recipe-resolver-260413p-blocked-notes)
 )
