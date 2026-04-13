@@ -1,59 +1,59 @@
 # Blocked Package Dependency Tree
 
-**Generated:** 2026-04-13T06:41:18Z
-**Total blocked:** 5024
+**Generated:** 2026-04-13T08:31:06Z
+**Total blocked:** 3244
 
 ## Priority Queue (Top 50)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | yay | 21311 | 0 | 24 | 5 |
-| 2 | paru | 11312 | 0 | 21 | 6 |
-| 3 | java-openjfx | 11085 | 0 | 5 | 22 |
-| 4 | mingw-w64-pkg-config | 11159 | 0 | 2 | 2 |
-| 5 | pacaur | 9212 | 0 | 2 | 6 |
-| 6 | lib32-xrizer | 256 | 0 | 2 | 12 |
-| 7 | pikaur | 11522 | 0 | 2 | 12 |
-| 8 | trizen | 1582 | 0 | 2 | 12 |
-| 9 | wivrn-server | 11519 | 0 | 2 | 35 |
-| 10 | plasma-workspace-povd | 2890 | 0 | 2 | 113 |
-| 11 | dbeaver | 15 | 0 | 1 | 0 |
-| 12 | fahviewer | 10672 | 0 | 1 | 0 |
-| 13 | gst-thumbnailers | 6543 | 0 | 1 | 0 |
-| 14 | mingw-w64-environment | 11244 | 0 | 1 | 0 |
-| 15 | libsdrplay | 11211 | 0 | 1 | 1 |
-| 16 | linux-zen-git-headers | 6303 | 0 | 1 | 1 |
-| 17 | android-platform | 8355 | 0 | 1 | 2 |
-| 18 | lib32-openssl-1.1 | 11910 | 0 | 1 | 2 |
-| 19 | portage | 7628 | 0 | 1 | 2 |
-| 20 | system76-acpi-dkms | 2787 | 0 | 1 | 2 |
-| 21 | system76-io-dkms | 2786 | 0 | 1 | 2 |
-| 22 | topgrade | 1513 | 0 | 1 | 2 |
-| 23 | lib32-libvpx1.3 | 11975 | 0 | 1 | 3 |
-| 24 | ndi-sdk | 9867 | 0 | 1 | 3 |
-| 25 | opencl-legacy-amdgpu-pro | 11299 | 0 | 1 | 3 |
-| 26 | package-query | 10483 | 0 | 1 | 4 |
-| 27 | yaycache | 6633 | 0 | 1 | 4 |
-| 28 | lib32-libvmaf | 2366 | 0 | 1 | 5 |
-| 29 | paru-git | 21765 | 0 | 1 | 6 |
-| 30 | tuxedo-drivers-dkms | 11527 | 0 | 1 | 6 |
-| 31 | fcitx5-mozc-ut | 11635 | 0 | 1 | 7 |
-| 32 | lib32-glew1.10 | 11977 | 0 | 1 | 7 |
-| 33 | awww-git | 11559 | 0 | 1 | 8 |
-| 34 | aurman | 1681 | 0 | 1 | 9 |
-| 35 | lib32-bluez-libs | 2431 | 0 | 1 | 9 |
-| 36 | lib32-openssl-1.0 | 11766 | 0 | 1 | 9 |
-| 37 | mips64-linux-gnu-gcc-bootstrap | 9045 | 0 | 1 | 9 |
-| 38 | mkinitcpio-systemd-extras | 723 | 0 | 1 | 10 |
-| 39 | limine-dracut-support | 4745 | 0 | 1 | 11 |
-| 40 | limine-mkinitcpio-hook | 1912 | 0 | 1 | 11 |
-| 41 | libdxvk | 11275 | 0 | 1 | 12 |
-| 42 | linux-pf-headers | 4263 | 0 | 1 | 12 |
-| 43 | cryptopro-csp-k1 | 199 | 0 | 1 | 14 |
-| 44 | aurutils | 11354 | 0 | 1 | 15 |
-| 45 | snapd | 11742 | 0 | 1 | 15 |
-| 46 | mssql-server | 6117 | 0 | 1 | 16 |
-| 47 | tensorrt-cross-builder-libs | 7024 | 0 | 1 | 16 |
-| 48 | openvpn3 | 50 | 0 | 1 | 19 |
-| 49 | linux-cachyos-bore | 6123 | 0 | 1 | 20 |
-| 50 | linux-cachyos-lts | 1755 | 0 | 1 | 20 |
+| 1 | sonic-win | 11979 | 0 | 3 | 61 |
+| 2 | lib32-xrizer | 256 | 0 | 2 | 12 |
+| 3 | plasma-workspace-povd | 2890 | 0 | 2 | 113 |
+| 4 | new-lg4ff-dkms-git | 11866 | 0 | 1 | 2 |
+| 5 | yabridgectl-wine10-git | 11948 | 0 | 1 | 14 |
+| 6 | linux-cachyos-lts | 1755 | 0 | 1 | 20 |
+| 7 | linux-cachyos | 1070 | 0 | 1 | 23 |
+| 8 | linux-cachyos-rc | 10770 | 0 | 1 | 23 |
+| 9 | davinci-resolve-studio | 11928 | 0 | 1 | 25 |
+| 10 | floorp | 4709 | 0 | 1 | 47 |
+| 11 | qt6-base-hifps | 939 | 0 | 1 | 66 |
+| 12 | steam-native-runtime | 11529 | 0 | 1 | 136 |
+| 13 | anbox-git | 58 | 0 | 0 | 0 |
+| 14 | chromium-gost | 11985 | 0 | 0 | 0 |
+| 15 | linux6.19.8.arch1-1-bin | 7510 | 0 | 0 | 0 |
+| 16 | linux6.19.8.arch1-1-docs-bin | 7512 | 0 | 0 | 0 |
+| 17 | linux6.19.8.arch1-1-headers-bin | 7511 | 0 | 0 | 0 |
+| 18 | linux6.19.9.arch1-1-bin | 9670 | 0 | 0 | 0 |
+| 19 | linux6.19.9.arch1-1-docs-bin | 9672 | 0 | 0 | 0 |
+| 20 | linux6.19.9.arch1-1-headers-bin | 9671 | 0 | 0 | 0 |
+| 21 | linux6.19.9.zen1-1-zen-bin | 9956 | 0 | 0 | 0 |
+| 22 | linux6.19.9.zen1-1-zen-docs-bin | 9958 | 0 | 0 | 0 |
+| 23 | linux6.19.9.zen1-1-zen-headers-bin | 9957 | 0 | 0 | 0 |
+| 24 | megit | 2484 | 0 | 0 | 0 |
+| 25 | nautilus-megasync | 9392 | 0 | 0 | 0 |
+| 26 | ninjarmm-ncplayer | 7498 | 0 | 0 | 0 |
+| 27 | nvidia-vulkan-dkms | 548 | 0 | 0 | 0 |
+| 28 | openai-codex-autoup-bin | 1578 | 0 | 0 | 0 |
+| 29 | opensc-p11-kit-module | 7333 | 0 | 0 | 0 |
+| 30 | pac-pacman-aliases | 9004 | 0 | 0 | 0 |
+| 31 | pacman-log-orphans-hook | 11596 | 0 | 0 | 0 |
+| 32 | pipewire-enable-bluez5 | 3243 | 0 | 0 | 0 |
+| 33 | plecs-standalone | 2780 | 0 | 0 | 0 |
+| 34 | projtlauncher | 6759 | 0 | 0 | 0 |
+| 35 | shimmy-bin | 7482 | 0 | 0 | 0 |
+| 36 | subs2srs-git | 2878 | 0 | 0 | 0 |
+| 37 | ttf-ms-win10-japanese | 12925 | 0 | 0 | 0 |
+| 38 | ttf-ms-win10-korean | 12926 | 0 | 0 | 0 |
+| 39 | ttf-ms-win10-other | 12931 | 0 | 0 | 0 |
+| 40 | ttf-ms-win10-sea | 12927 | 0 | 0 | 0 |
+| 41 | ttf-ms-win10-thai | 12928 | 0 | 0 | 0 |
+| 42 | ttf-ms-win10-zh_cn | 12929 | 0 | 0 | 0 |
+| 43 | ttf-ms-win10-zh_tw | 12930 | 0 | 0 | 0 |
+| 44 | ttf-ms-win11-japanese | 22454 | 0 | 0 | 0 |
+| 45 | ttf-ms-win11-korean | 22455 | 0 | 0 | 0 |
+| 46 | ttf-ms-win11-other | 22460 | 0 | 0 | 0 |
+| 47 | ttf-ms-win11-sea | 22456 | 0 | 0 | 0 |
+| 48 | ttf-ms-win11-thai | 22457 | 0 | 0 | 0 |
+| 49 | ttf-ms-win11-zh_cn | 22458 | 0 | 0 | 0 |
+| 50 | ttf-ms-win11-zh_tw | 22459 | 0 | 0 | 0 |
