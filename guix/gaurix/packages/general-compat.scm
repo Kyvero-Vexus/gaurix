@@ -257,6 +257,7 @@
   #:use-module (gaurix packages recipe-resolver-260413b)
   #:use-module (gaurix packages deptree-resolver-260413b)
   #:use-module (gaurix packages recipe-resolver-260413d)
+  #:use-module (gaurix packages deptree-resolver-260413c)
   #:export (
             ;; deptree-resolver-260407 compat aliases
             qt5-connectivity
