@@ -1608,4 +1608,35 @@
             llama-cpp-vulkan
             tapi
             plasma6-applets-kara
+            ;; recipe-resolver-260414f
+            win11-clipboard-history-bin
+            duelsplus-bin
+            outline-client-appimage
+            obs-captions-plugin-bin
+            zen-c
+            feb
+            dollarskip
+            eltclsh
+            template-script
+            optiscaler-universal
+            compose-unicode
+            qt6-tools-desktop
+            vim-wakatime
+            user-scanner
+            plex-mpv-shim
+            mopidy-musicbox-webclient
+            python-sip4
+            quazaar
+            qbittorrent-clientblocker
+            dnscontrol
+            ryelang
+            caddy-he
+            go-boot
+            go-hass-agent
+            clight-gui
+            tacentview
+            ktx-software
+            netpeek
+            vk-hdr-layer-kwin6
+            trayscale
 )
