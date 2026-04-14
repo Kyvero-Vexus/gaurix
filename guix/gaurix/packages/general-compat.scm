@@ -329,6 +329,8 @@
 
   #:use-module (gaurix packages deptree-resolver-260414l)
 
+  #:use-module (gaurix packages deptree-resolver-260414m)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2409,6 +2411,61 @@
             graphite-cli
             hibiscus
             whisper-cpp-model-large-v3-turbo
+            ;; deptree-resolver-260414m recipes
+            html2ps
+            hyprlight
+            ibus-avro-git
+            icann-rdap
+            intellij-idea-ultimate-edition
+            invoiceninja
+            ipfs-desktop
+            jdk8-graalvm-ee-bin
+            jdupes
+            jdwp-mcp-git
+            joycon-git
+            kazumi-bin
+            kiro-cli
+            kluctl
+            koboldcpp-cuda
+            kopa
+            kwin-scripts-krohnkite-git
+            lanxchange
+            lattice-diamond
+            lazynmap
+            lcarsde-application-starter
+            lesstif
+            lib32-faac
+            lib32-gsm
+            lib32-lame
+            lib32-libnuma
+            lib32-libomxil-bellagio
+            libdeep-filter-ladspa-git
+            libdf-git
+            libilbm-git
+            libretro-swanstation-git
+            llama-cpp-sycl-f16-git
+            logiops-rs
+            logisim-evolution
+            logseq-desktop-electron-bin
+            lolia-cli
+            lsu-git
+            lvsk-calendar
+            magicpodscore-git
+            mal
+            mendeley-reference-manager
+            meteobar
+            mingw-w64-crt-msvcrt
+            mingw-w64-json-glib
+            misuzu-music-bin
+            motoc-git
+            neo-matrix
+            neothesia
+            nikode-bin
+            niri-sidebar-git
+            nirinit-git
+            nodejs-ramadan-cli
+            nordvpn-gui-bin
+            objdiff
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6625,3 +6682,21 @@
 (define-public ginkgocadx (package (inherit ginkgocadx-bin) (name "ginkgocadx")))
 (define-public gitversion (package (inherit gitversion-bin) (name "gitversion")))
 (define-public go-grip (package (inherit go-grip-git) (name "go-grip")))
+
+;; --- deptree-resolver-260414m compat aliases ---
+(define-public jdk8-graalvm-ee (package (inherit jdk8-graalvm-ee-bin) (name "jdk8-graalvm-ee")))
+(define-public jdwp-mcp (package (inherit jdwp-mcp-git) (name "jdwp-mcp")))
+(define-public joycon (package (inherit joycon-git) (name "joycon")))
+(define-public kazumi (package (inherit kazumi-bin) (name "kazumi")))
+(define-public libdeep-filter-ladspa (package (inherit libdeep-filter-ladspa-git) (name "libdeep-filter-ladspa")))
+(define-public libdf (package (inherit libdf-git) (name "libdf")))
+(define-public libilbm (package (inherit libilbm-git) (name "libilbm")))
+(define-public libretro-swanstation (package (inherit libretro-swanstation-git) (name "libretro-swanstation")))
+(define-public llama-cpp-sycl-f16 (package (inherit llama-cpp-sycl-f16-git) (name "llama-cpp-sycl-f16")))
+(define-public logseq-desktop-electron (package (inherit logseq-desktop-electron-bin) (name "logseq-desktop-electron")))
+(define-public lsu (package (inherit lsu-git) (name "lsu")))
+(define-public misuzu-music (package (inherit misuzu-music-bin) (name "misuzu-music")))
+(define-public motoc (package (inherit motoc-git) (name "motoc")))
+(define-public nikode (package (inherit nikode-bin) (name "nikode")))
+(define-public niri-sidebar (package (inherit niri-sidebar-git) (name "niri-sidebar")))
+(define-public nirinit (package (inherit nirinit-git) (name "nirinit")))
