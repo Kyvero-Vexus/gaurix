@@ -2536,4 +2536,45 @@
                kdiff3
                xdg-desktop-portal-minimal-git
                swaystatus-git
+
+               ;; deptree-resolver-260414r
+               arch-upgrader
+               cargo-pkgbuild-git
+               cognito-local-git
+               ssh3-server
+               structurizr-git
+               subtitleedit
+               subtitleedit-cli-git
+               subtui-git
+               supermodel
+               suwayomi-server-preview-bin
+               syshud
+               systemd-netns-git
+               tableplus
+               taskchampion-sync-server
+               tcltls
+               telegraf
+               theclicker
+               thedude
+               tirith
+               todoist-appimage
+               touchportal-appimage
+               ttf-ms-win11-fod-auto-arab
+               ttf-ms-win11-fod-auto-beng
+               ttf-ms-win11-fod-auto-cans
+               ttf-ms-win11-fod-auto-cher
+               ttf-ms-win11-fod-auto-deva
+               ttf-ms-win11-fod-auto-ethi
+               ttf-ms-win11-fod-auto-gujr
+               ttf-ms-win11-fod-auto-guru
+               ttf-ms-win11-fod-auto-hans
+               ttf-ms-win11-fod-auto-hant
+               ttf-ms-win11-fod-auto-hebr
+               ttf-ms-win11-fod-auto-jpan
+               ttf-ms-win11-fod-auto-khmr
+               ttf-ms-win11-fod-auto-knda
+               ttf-ms-win11-fod-auto-kore
+               ttf-ms-win11-fod-auto-laoo
+               ttf-ms-win11-fod-auto-mlym
+               ttf-ms-win11-fod-auto-orya
 ))
