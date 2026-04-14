@@ -1,131 +1,165 @@
 # Blocked Dependency Tree
 
-- **Timestamp:** 2026-04-14T18:02:10.244942+00:00
-- **Run ID:** deptree-resolver-260414o
-- **Total blocked:** 1631
-- **Queue length:** 1631
+Generated: 2026-04-14T19:18:36.088033+00:00
+Total BLOCKED: 1701
 
-## Priority Queue (top 120)
+## Priority Queue (top 50)
 
-| Rank | Package | Blocked Deps | Reverse Deps | Total Deps |
-|------|---------|-------------|-------------|-----------|
-| 1 | pat-aur-client-git | 0 | 3 | 13 |
-| 2 | wl-vapi-gen | 0 | 1 | 2 |
-| 3 | owlry-core | 0 | 1 | 3 |
-| 4 | seafile | 0 | 1 | 8 |
-| 5 | anbox-git | 0 | 0 | 0 |
-| 6 | crocotile3d | 0 | 0 | 0 |
-| 7 | gram-editor-git | 0 | 0 | 0 |
-| 8 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 |
-| 9 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 |
-| 10 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 |
-| 11 | linux6.19.9.arch1-1-bin | 0 | 0 | 0 |
-| 12 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 |
-| 13 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 |
-| 14 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 |
-| 15 | linux6.19.9.zen1-1-zen-docs-bin | 0 | 0 | 0 |
-| 16 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 |
-| 17 | llama.cpp-aio | 0 | 0 | 0 |
-| 18 | nodejs-ripencli | 0 | 0 | 0 |
-| 19 | nvidia-vulkan-dkms | 0 | 0 | 0 |
-| 20 | openai-codex-autoup-bin | 0 | 0 | 0 |
-| 21 | opensc-p11-kit-module | 0 | 0 | 0 |
-| 22 | pinapp | 0 | 0 | 0 |
-| 23 | projtlauncher | 0 | 0 | 0 |
-| 24 | shimmy-bin | 0 | 0 | 0 |
-| 25 | shorinclip-git | 0 | 0 | 0 |
-| 26 | swagsh | 0 | 0 | 0 |
-| 27 | vivaldi-ffmpeg-codecs | 0 | 0 | 0 |
-| 28 | voiden-beta-appimage | 0 | 0 | 0 |
-| 29 | whatsapp-for-linux | 0 | 0 | 0 |
-| 30 | zettlr | 0 | 0 | 0 |
-| 31 | conspy | 0 | 0 | 1 |
-| 32 | freecell | 0 | 0 | 1 |
-| 33 | grx-bin | 0 | 0 | 1 |
-| 34 | hardcode-fixer-git | 0 | 0 | 1 |
-| 35 | kdenlive-appimage-pure | 0 | 0 | 1 |
-| 36 | makepkg-optimize-mold | 0 | 0 | 1 |
-| 37 | mpv-manager | 0 | 0 | 1 |
-| 38 | ninjabrain-bot | 0 | 0 | 1 |
-| 39 | pacman-cleanup-hook | 0 | 0 | 1 |
-| 40 | profile-sync-daemon-zotero | 0 | 0 | 1 |
-| 41 | protonfixes | 0 | 0 | 1 |
-| 42 | r8125-dkms | 0 | 0 | 1 |
-| 43 | temp-throttle | 0 | 0 | 1 |
-| 44 | audium | 0 | 0 | 2 |
-| 45 | bcachefs-kernel-dkms-git | 0 | 0 | 2 |
-| 46 | bulk-rename-plus | 0 | 0 | 2 |
-| 47 | ffbtools-git | 0 | 0 | 2 |
-| 48 | gvst-vst-bin | 0 | 0 | 2 |
-| 49 | hexo-cli | 0 | 0 | 2 |
-| 50 | mkinitcpio-archlogo | 0 | 0 | 2 |
-| 51 | mpv-manager-git | 0 | 0 | 2 |
-| 52 | ntfsplus-dkms-git | 0 | 0 | 2 |
-| 53 | pidcat-python3-git | 0 | 0 | 2 |
-| 54 | r8152-dkms | 0 | 0 | 2 |
-| 55 | realitlscanner | 0 | 0 | 2 |
-| 56 | ryzen_smu-dkms-git | 0 | 0 | 2 |
-| 57 | tokount | 0 | 0 | 2 |
-| 58 | whyis-git | 0 | 0 | 2 |
-| 59 | xpad-dkms-git | 0 | 0 | 2 |
-| 60 | yamlresume | 0 | 0 | 2 |
-| 61 | zenpower3-dkms | 0 | 0 | 2 |
-| 62 | zenpower3-dkms-git | 0 | 0 | 2 |
-| 63 | zenpower5-dkms-git | 0 | 0 | 2 |
-| 64 | aacskeys | 0 | 0 | 3 |
-| 65 | aic8800-dkms | 0 | 0 | 3 |
-| 66 | ajantv2-dkms | 0 | 0 | 3 |
-| 67 | bluraybackup | 0 | 0 | 3 |
-| 68 | cargo-pkgbuild-git | 0 | 0 | 3 |
-| 69 | droidcam-dkms-git | 0 | 0 | 3 |
-| 70 | jit-cli | 0 | 0 | 3 |
-| 71 | jrnlc | 0 | 0 | 3 |
-| 72 | kernelsu-dkms | 0 | 0 | 3 |
-| 73 | linux-apfs-rw-dkms-git | 0 | 0 | 3 |
-| 74 | mkinitcpio-btrfs | 0 | 0 | 3 |
-| 75 | mkinitcpio-colors-git | 0 | 0 | 3 |
-| 76 | mkinitcpio-wifi | 0 | 0 | 3 |
-| 77 | mkinitcpio-zerotier | 0 | 0 | 3 |
-| 78 | msi-psu-dkms | 0 | 0 | 3 |
-| 79 | nono-ai | 0 | 0 | 3 |
-| 80 | nvidia-390xx-dkms | 0 | 0 | 3 |
-| 81 | nvidia-470xx-dkms | 0 | 0 | 3 |
-| 82 | nvidia-beta-dkms | 0 | 0 | 3 |
-| 83 | openutau | 0 | 0 | 3 |
-| 84 | openvpn-update-resolv-conf-git | 0 | 0 | 3 |
-| 85 | packwiz-git | 0 | 0 | 3 |
-| 86 | paczf-yay | 0 | 0 | 3 |
-| 87 | powerline-fonts-git | 0 | 0 | 3 |
-| 88 | pvpn-go | 0 | 0 | 3 |
-| 89 | r8127-dkms | 0 | 0 | 3 |
-| 90 | rtw88-dkms-git | 0 | 0 | 3 |
-| 91 | rtw89-dkms-git | 0 | 0 | 3 |
-| 92 | sklauncher-bin | 0 | 0 | 3 |
-| 93 | sle-suite-pro-git | 0 | 0 | 3 |
-| 94 | smartdeblur-git | 0 | 0 | 3 |
-| 95 | smtk-obs-git | 0 | 0 | 3 |
-| 96 | snap-sync | 0 | 0 | 3 |
-| 97 | spacebar-client-git | 0 | 0 | 3 |
-| 98 | sqm-scripts | 0 | 0 | 3 |
-| 99 | stable-diffusion-webui-git | 0 | 0 | 3 |
-| 100 | starc-appimage | 0 | 0 | 3 |
-| 101 | starsector-mod-manager-rust | 0 | 0 | 3 |
-| 102 | steamdepotdownloadergui-bin | 0 | 0 | 3 |
-| 103 | sticks-aur | 0 | 0 | 3 |
-| 104 | strace-tui | 0 | 0 | 3 |
-| 105 | structurizr | 0 | 0 | 3 |
-| 106 | structurizr-git | 0 | 0 | 3 |
-| 107 | subtitleedit | 0 | 0 | 3 |
-| 108 | subtitleedit-cli-git | 0 | 0 | 3 |
-| 109 | subtui-git | 0 | 0 | 3 |
-| 110 | supermodel | 0 | 0 | 3 |
-| 111 | suwayomi-server-preview-bin | 0 | 0 | 3 |
-| 112 | syshud | 0 | 0 | 3 |
-| 113 | systemd-netns-git | 0 | 0 | 3 |
-| 114 | tableplus | 0 | 0 | 3 |
-| 115 | taskchampion-sync-server | 0 | 0 | 3 |
-| 116 | tcltls | 0 | 0 | 3 |
-| 117 | telegraf | 0 | 0 | 3 |
-| 118 | theclicker | 0 | 0 | 3 |
-| 119 | thedude | 0 | 0 | 3 |
-| 120 | tirith | 0 | 0 | 3 |
+| Rank | # | Package | Blocked Deps | Reverse Deps | Total Deps |
+|------|---|---------|-------------|-------------|-----------|
+| 1 | 58 | anbox-git | 0 | 0 | 0 |
+| 2 | 9402 | gd-tools-git | 0 | 0 | 0 |
+| 3 | 2986 | gram-editor-git | 0 | 0 | 0 |
+| 4 | 10469 | insomnia | 0 | 0 | 0 |
+| 5 | 11086 | java-openjfx-doc | 0 | 0 | 0 |
+| 6 | 11087 | java-openjfx-src | 0 | 0 | 0 |
+| 7 | 2836 | java11-openjfx-doc | 0 | 0 | 0 |
+| 8 | 13139 | java11-openjfx-doc | 0 | 0 | 0 |
+| 9 | 2837 | java11-openjfx-src | 0 | 0 | 0 |
+| 10 | 13140 | java11-openjfx-src | 0 | 0 | 0 |
+| 11 | 7201 | linux-libre-hardened-docs | 0 | 0 | 0 |
+| 12 | 7515 | linux-lts515-docs | 0 | 0 | 0 |
+| 13 | 1593 | linux-mainline-docs | 0 | 0 | 0 |
+| 14 | 11796 | linux-mainline-docs | 0 | 0 | 0 |
+| 15 | 7510 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 |
+| 16 | 7512 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 |
+| 17 | 7511 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 |
+| 18 | 9670 | linux6.19.9.arch1-1-bin | 0 | 0 | 0 |
+| 19 | 9672 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 |
+| 20 | 9671 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 |
+| 21 | 9956 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 |
+| 22 | 9958 | linux6.19.9.zen1-1-zen-docs-bin | 0 | 0 | 0 |
+| 23 | 9957 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 |
+| 24 | 2097 | llama.cpp-aio | 0 | 0 | 0 |
+| 25 | 4701 | monado-doc | 0 | 0 | 0 |
+| 26 | 644 | nekobox | 0 | 0 | 0 |
+| 27 | 11667 | nekobox | 0 | 0 | 0 |
+| 28 | 643 | nekobox-core | 0 | 0 | 0 |
+| 29 | 11668 | nekobox-core | 0 | 0 | 0 |
+| 30 | 1534 | nerd-fonts-apple | 0 | 0 | 0 |
+| 31 | 9971 | nextcloud-app-impersonate | 0 | 0 | 0 |
+| 32 | 13452 | nodejs-ripencli | 0 | 0 | 0 |
+| 33 | 10393 | nosystemd-boot-artix | 0 | 0 | 0 |
+| 34 | 548 | nvidia-vulkan-dkms | 0 | 0 | 0 |
+| 35 | 1578 | openai-codex-autoup-bin | 0 | 0 | 0 |
+| 36 | 7333 | opensc-p11-kit-module | 0 | 0 | 0 |
+| 37 | 3615 | paru-static | 0 | 0 | 0 |
+| 38 | 460 | penpot-frontend | 0 | 0 | 0 |
+| 39 | 13307 | penpot-frontend | 0 | 0 | 0 |
+| 40 | 13442 | pinapp | 0 | 0 | 0 |
+| 41 | 6759 | projtlauncher | 0 | 0 | 0 |
+| 42 | 746 | redisinsight | 0 | 0 | 0 |
+| 43 | 3239 | scap-security-guide | 0 | 0 | 0 |
+| 44 | 7617 | sh-elf-newlib | 0 | 0 | 0 |
+| 45 | 7482 | shimmy-bin | 0 | 0 | 0 |
+| 46 | 1149 | shorinclip-git | 0 | 0 | 0 |
+| 47 | 25171 | sickrage-git | 0 | 0 | 0 |
+| 48 | 25171 | sickrage-git | 0 | 0 | 0 |
+| 49 | 3720 | spacebar-git | 0 | 0 | 0 |
+| 50 | 7052 | tosu-git | 0 | 0 | 0 |
+
+## Selected 100 for this run
+
+| Rank | # | Package | Blocked Deps | Reverse Deps | Total Deps |
+|------|---|---------|-------------|-------------|-----------|
+| 1 | 58 | anbox-git | 0 | 0 | 0 |
+| 2 | 9402 | gd-tools-git | 0 | 0 | 0 |
+| 3 | 2986 | gram-editor-git | 0 | 0 | 0 |
+| 4 | 10469 | insomnia | 0 | 0 | 0 |
+| 5 | 11086 | java-openjfx-doc | 0 | 0 | 0 |
+| 6 | 11087 | java-openjfx-src | 0 | 0 | 0 |
+| 7 | 2836 | java11-openjfx-doc | 0 | 0 | 0 |
+| 8 | 13139 | java11-openjfx-doc | 0 | 0 | 0 |
+| 9 | 2837 | java11-openjfx-src | 0 | 0 | 0 |
+| 10 | 13140 | java11-openjfx-src | 0 | 0 | 0 |
+| 11 | 7201 | linux-libre-hardened-docs | 0 | 0 | 0 |
+| 12 | 7515 | linux-lts515-docs | 0 | 0 | 0 |
+| 13 | 1593 | linux-mainline-docs | 0 | 0 | 0 |
+| 14 | 11796 | linux-mainline-docs | 0 | 0 | 0 |
+| 15 | 7510 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 |
+| 16 | 7512 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 |
+| 17 | 7511 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 |
+| 18 | 9670 | linux6.19.9.arch1-1-bin | 0 | 0 | 0 |
+| 19 | 9672 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 |
+| 20 | 9671 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 |
+| 21 | 9956 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 |
+| 22 | 9958 | linux6.19.9.zen1-1-zen-docs-bin | 0 | 0 | 0 |
+| 23 | 9957 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 |
+| 24 | 2097 | llama.cpp-aio | 0 | 0 | 0 |
+| 25 | 4701 | monado-doc | 0 | 0 | 0 |
+| 26 | 644 | nekobox | 0 | 0 | 0 |
+| 27 | 11667 | nekobox | 0 | 0 | 0 |
+| 28 | 643 | nekobox-core | 0 | 0 | 0 |
+| 29 | 11668 | nekobox-core | 0 | 0 | 0 |
+| 30 | 1534 | nerd-fonts-apple | 0 | 0 | 0 |
+| 31 | 9971 | nextcloud-app-impersonate | 0 | 0 | 0 |
+| 32 | 13452 | nodejs-ripencli | 0 | 0 | 0 |
+| 33 | 10393 | nosystemd-boot-artix | 0 | 0 | 0 |
+| 34 | 548 | nvidia-vulkan-dkms | 0 | 0 | 0 |
+| 35 | 1578 | openai-codex-autoup-bin | 0 | 0 | 0 |
+| 36 | 7333 | opensc-p11-kit-module | 0 | 0 | 0 |
+| 37 | 3615 | paru-static | 0 | 0 | 0 |
+| 38 | 460 | penpot-frontend | 0 | 0 | 0 |
+| 39 | 13307 | penpot-frontend | 0 | 0 | 0 |
+| 40 | 13442 | pinapp | 0 | 0 | 0 |
+| 41 | 6759 | projtlauncher | 0 | 0 | 0 |
+| 42 | 746 | redisinsight | 0 | 0 | 0 |
+| 43 | 3239 | scap-security-guide | 0 | 0 | 0 |
+| 44 | 7617 | sh-elf-newlib | 0 | 0 | 0 |
+| 45 | 7482 | shimmy-bin | 0 | 0 | 0 |
+| 46 | 1149 | shorinclip-git | 0 | 0 | 0 |
+| 47 | 25171 | sickrage-git | 0 | 0 | 0 |
+| 48 | 25171 | sickrage-git | 0 | 0 | 0 |
+| 49 | 3720 | spacebar-git | 0 | 0 | 0 |
+| 50 | 7052 | tosu-git | 0 | 0 | 0 |
+| 51 | 380 | ttf-ms-win10-auto | 0 | 0 | 0 |
+| 52 | 11901 | ttf-ms-win10-auto | 0 | 0 | 0 |
+| 53 | 379 | ttf-ms-win10-auto-japanese | 0 | 0 | 0 |
+| 54 | 11902 | ttf-ms-win10-auto-japanese | 0 | 0 | 0 |
+| 55 | 378 | ttf-ms-win10-auto-korean | 0 | 0 | 0 |
+| 56 | 11903 | ttf-ms-win10-auto-korean | 0 | 0 | 0 |
+| 57 | 377 | ttf-ms-win10-auto-other | 0 | 0 | 0 |
+| 58 | 11908 | ttf-ms-win10-auto-other | 0 | 0 | 0 |
+| 59 | 376 | ttf-ms-win10-auto-sea | 0 | 0 | 0 |
+| 60 | 11904 | ttf-ms-win10-auto-sea | 0 | 0 | 0 |
+| 61 | 375 | ttf-ms-win10-auto-thai | 0 | 0 | 0 |
+| 62 | 11905 | ttf-ms-win10-auto-thai | 0 | 0 | 0 |
+| 63 | 374 | ttf-ms-win10-auto-zh_cn | 0 | 0 | 0 |
+| 64 | 11906 | ttf-ms-win10-auto-zh_cn | 0 | 0 | 0 |
+| 65 | 373 | ttf-ms-win10-auto-zh_tw | 0 | 0 | 0 |
+| 66 | 11907 | ttf-ms-win10-auto-zh_tw | 0 | 0 | 0 |
+| 67 | 8928 | ttf-ms-win11-fod-auto-arab | 0 | 0 | 0 |
+| 68 | 8927 | ttf-ms-win11-fod-auto-beng | 0 | 0 | 0 |
+| 69 | 8926 | ttf-ms-win11-fod-auto-cans | 0 | 0 | 0 |
+| 70 | 8925 | ttf-ms-win11-fod-auto-cher | 0 | 0 | 0 |
+| 71 | 8924 | ttf-ms-win11-fod-auto-deva | 0 | 0 | 0 |
+| 72 | 8923 | ttf-ms-win11-fod-auto-ethi | 0 | 0 | 0 |
+| 73 | 8922 | ttf-ms-win11-fod-auto-gujr | 0 | 0 | 0 |
+| 74 | 8921 | ttf-ms-win11-fod-auto-guru | 0 | 0 | 0 |
+| 75 | 8920 | ttf-ms-win11-fod-auto-hans | 0 | 0 | 0 |
+| 76 | 8943 | ttf-ms-win11-fod-auto-hant | 0 | 0 | 0 |
+| 77 | 8942 | ttf-ms-win11-fod-auto-hebr | 0 | 0 | 0 |
+| 78 | 8941 | ttf-ms-win11-fod-auto-jpan | 0 | 0 | 0 |
+| 79 | 8940 | ttf-ms-win11-fod-auto-khmr | 0 | 0 | 0 |
+| 80 | 8939 | ttf-ms-win11-fod-auto-knda | 0 | 0 | 0 |
+| 81 | 8938 | ttf-ms-win11-fod-auto-kore | 0 | 0 | 0 |
+| 82 | 8937 | ttf-ms-win11-fod-auto-laoo | 0 | 0 | 0 |
+| 83 | 8936 | ttf-ms-win11-fod-auto-mlym | 0 | 0 | 0 |
+| 84 | 8935 | ttf-ms-win11-fod-auto-orya | 0 | 0 | 0 |
+| 85 | 8934 | ttf-ms-win11-fod-auto-paneuropean | 0 | 0 | 0 |
+| 86 | 8933 | ttf-ms-win11-fod-auto-sinh | 0 | 0 | 0 |
+| 87 | 8932 | ttf-ms-win11-fod-auto-syrc | 0 | 0 | 0 |
+| 88 | 8931 | ttf-ms-win11-fod-auto-taml | 0 | 0 | 0 |
+| 89 | 8930 | ttf-ms-win11-fod-auto-telu | 0 | 0 | 0 |
+| 90 | 8929 | ttf-ms-win11-fod-auto-thai | 0 | 0 | 0 |
+| 91 | 500 | ttf-vista-fonts | 0 | 0 | 0 |
+| 92 | 9830 | typioca-git | 0 | 0 | 0 |
+| 93 | 24 | vivaldi-ffmpeg-codecs | 0 | 0 | 0 |
+| 94 | 46 | whatsapp-for-linux | 0 | 0 | 0 |
+| 95 | 38 | zettlr | 0 | 0 | 0 |
+| 96 | 10101 | zig-master-bin | 0 | 0 | 0 |
+| 97 | 4107 | affine | 0 | 0 | 1 |
+| 98 | 10154 | ajantv2-dkms | 0 | 0 | 1 |
+| 99 | 2524 | antiafk-rbx-sober | 0 | 0 | 1 |
+| 100 | 12841 | antiafk-rbx-sober | 0 | 0 | 1 |
+

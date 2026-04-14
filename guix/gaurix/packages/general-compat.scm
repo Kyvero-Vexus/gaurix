@@ -43,6 +43,7 @@
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
+  #:use-module (gaurix packages deptree-resolver-260414p)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
