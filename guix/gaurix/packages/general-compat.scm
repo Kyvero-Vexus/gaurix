@@ -34,6 +34,7 @@
   #:use-module (gaurix packages recipe-resolver-260413al)
   #:use-module (gaurix packages recipe-resolver-260414c)
   #:use-module (gaurix packages recipe-resolver-260414e)
+  #:use-module (gaurix packages recipe-resolver-260414f)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -312,6 +313,7 @@
   #:use-module (gaurix packages recipe-resolver-260414b)
   #:use-module (gaurix packages deptree-resolver-260414c)
   #:use-module (gaurix packages deptree-resolver-260414d)
+  #:use-module (gaurix packages deptree-resolver-260414e)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -6353,4 +6355,18 @@
 (define-public hmcl (package (inherit hmcl-bin) (name "hmcl")))
 (define-public slime-git (package (inherit emacs-slime-git) (name "slime-git")))
 (define-public polymc-qt5 (package (inherit polymc-qt5-bin) (name "polymc-qt5")))
+;; --- deptree-resolver-260414e compat aliases ---
+(define-public hashcc (package (inherit hashcc-git) (name "hashcc")))
+(define-public iamb (package (inherit iamb-git) (name "iamb")))
+(define-public konfigkoll-dev (package (inherit konfigkoll-git) (name "konfigkoll-dev")))
+(define-public oxid (package (inherit oxid-git) (name "oxid")))
+(define-public rustfetch (package (inherit rustfetch-git) (name "rustfetch")))
+(define-public steamguard-cli (package (inherit steamguard-cli-git) (name "steamguard-cli")))
+(define-public gosuki (package (inherit gosuki-git) (name "gosuki")))
+(define-public sing-box-ref1nd (package (inherit sing-box-ref1nd-git) (name "sing-box-ref1nd")))
+(define-public gcn64tools (package (inherit gcn64tools-git) (name "gcn64tools")))
+(define-public helix-steel (package (inherit helix-steel-git) (name "helix-steel")))
+(define-public llama-cpp-vulkan (package (inherit llama.cpp-vulkan-git) (name "llama-cpp-vulkan")))
+(define-public tapi (package (inherit tapi-git) (name "tapi")))
+(define-public plasma6-applets-kara (package (inherit plasma6-applets-kara-git) (name "plasma6-applets-kara")))
 
