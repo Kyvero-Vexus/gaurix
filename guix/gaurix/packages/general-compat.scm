@@ -333,6 +333,7 @@
   #:use-module (gaurix packages deptree-resolver-260414m)
   #:use-module (gaurix packages recipe-resolver-260414q)
   #:use-module (gaurix packages recipe-resolver-260414r)
+  #:use-module (gaurix packages recipe-resolver-260414u)
 
   #:use-module (gaurix packages deptree-resolver-260414n)
 
@@ -2534,6 +2535,17 @@
             git-wizard
             ytconverter
             cai
+            ;; recipe-resolver-260414u
+            hopm
+            bluray-info
+            python-pycxx
+            python-ratarmount
+            yazi-bin
+            openlinkhub-bin
+            biscuit-lang-bin
+            qownnotes-bin
+            waybar-minimal-nosystemd-git
+            fprintd-clients-git
 )
 
 ;;; --- recipe-resolver-260413f compat aliases ---

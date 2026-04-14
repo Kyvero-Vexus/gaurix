@@ -2241,6 +2241,7 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260414p)
   #:use-module (gaurix packages recipe-resolver-260414r)
+  #:use-module (gaurix packages recipe-resolver-260414u)
   #:re-export (ytdlp-gui-bin
                modrinth-app-bin
                proton-authenticator-bin
@@ -2402,4 +2403,15 @@
             spacebar-client
             stable-diffusion-webui
             steamdepotdownloadergui
+            ;; recipe-resolver-260414u
+            hopm
+            bluray-info
+            python-pycxx
+            python-ratarmount
+            yazi-bin
+            openlinkhub-bin
+            biscuit-lang-bin
+            qownnotes-bin
+            waybar-minimal-nosystemd-git
+            fprintd-clients-git
 )
