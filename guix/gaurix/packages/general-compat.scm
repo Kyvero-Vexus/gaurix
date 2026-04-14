@@ -40,6 +40,7 @@
   #:use-module (gaurix packages recipe-resolver-260414l)
   #:use-module (gaurix packages recipe-resolver-260414o)
   #:use-module (gaurix packages recipe-resolver-260414p)
+  #:use-module (gaurix packages recipe-resolver-260414v)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -6818,3 +6819,9 @@
 (define-public spacebar-client (package (inherit spacebar-client-git) (name "spacebar-client")))
 (define-public stable-diffusion-webui (package (inherit stable-diffusion-webui-git) (name "stable-diffusion-webui")))
 (define-public steamdepotdownloadergui (package (inherit steamdepotdownloadergui-bin) (name "steamdepotdownloadergui")))
+
+;; --- recipe-resolver-260414v compat aliases ---
+(define-public ngrrram (package (inherit ngrrram-bin) (name "ngrrram")))
+(define-public cmdcreate (package (inherit cmdcreate-bin) (name "cmdcreate")))
+(define-public udever (package (inherit udever-bin) (name "udever")))
+(define-public virt-install (package (inherit virt-install-git) (name "virt-install")))

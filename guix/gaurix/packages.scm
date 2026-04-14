@@ -2414,4 +2414,17 @@
             qownnotes-bin
             waybar-minimal-nosystemd-git
             fprintd-clients-git
+
 )
+
+;; recipe-resolver-260414v
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260414v)
+  #:re-export (gitfourchette
+               wayfarer
+               lumus
+               twmn
+               ngrrram-bin
+               cmdcreate-bin
+               udever-bin
+               virt-install-git))
