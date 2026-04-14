@@ -31,6 +31,7 @@
   #:use-module (gaurix packages recipe-resolver-260413ah)
   #:use-module (gaurix packages recipe-resolver-260413aj)
   #:use-module (gaurix packages recipe-resolver-260413ak)
+  #:use-module (gaurix packages recipe-resolver-260413al)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -6268,3 +6269,5 @@
 (define-public dvdisaster-speed47 (package (inherit dvdisaster-speed47-git) (name "dvdisaster-speed47")))
 (define-public locale-en_ru (package (inherit locale-en-ru) (name "locale-en_ru")))
 (define-public xr-passthrough-layer (package (inherit xr-passthrough-layer-git) (name "xr-passthrough-layer")))
+;; --- recipe-resolver-260413al compat aliases ---
+(define-public lianli-linux-git (package (inherit lianli-linux) (name "lianli-linux-git")))

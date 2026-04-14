@@ -1250,4 +1250,11 @@
             libreelec-dvb-firmware-git
             libreoffice-extension-languagetool
             libtifiles
+            ;; recipe-resolver-260413al
+            mod-maxminddb
+            lianli-linux
+            moc-pulse
+            hyprshade
+            llvm-cbe
+            zlib-ng
 )
