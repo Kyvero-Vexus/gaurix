@@ -924,6 +924,7 @@
   #:use-module (gaurix packages deptree-resolver-260414b)
   #:use-module (gaurix packages recipe-resolver-260414g)
   #:use-module (gaurix packages recipe-resolver-260414h)
+  #:use-module (gaurix packages recipe-resolver-260414l)
             ;; recipe-resolver-260413ab
             bareos-contrib-director-python-plugins
             bareos-contrib-filedaemon-python-plugins
@@ -1924,4 +1925,17 @@
             dolphin-anty
             xytz
             yubico-authenticator
+            ;; recipe-resolver-260414l
+            oniri-bin
+            3dstool-bin
+            ollama-bin
+            flutter-bin
+            dotnet-sdk-7.0-bin
+            uzdoom-bin
+            electron19-bin
+            zephyr-sdk-bin
+            naver-whale-stable
+            eidklient-bin
+            droidcam-obs-plugin-bin
+            xwinwrap
 )
