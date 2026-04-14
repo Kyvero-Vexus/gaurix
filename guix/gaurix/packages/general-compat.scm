@@ -324,6 +324,7 @@
 
   #:use-module (gaurix packages deptree-resolver-260414k)
   #:use-module (gaurix packages recipe-resolver-260414m)
+  #:use-module (gaurix packages recipe-resolver-260414n)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2371,6 +2372,13 @@
             yubico-authenticator-bin
             zish
             zzz
+            ;; recipe-resolver-260414n recipes
+            blockbench-bin
+            djv
+            green-tunnel-bin
+            pokeget-bin
+            prospect-mail-bin
+            xdelta3-cross-gui-bin
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
