@@ -307,6 +307,7 @@
   #:use-module (gaurix packages recipe-resolver-260413ai)
   #:use-module (gaurix packages recipe-resolver-260414a)
   #:use-module (gaurix packages deptree-resolver-260414b)
+  #:use-module (gaurix packages recipe-resolver-260414b)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2158,6 +2159,18 @@
             pdf4qt
             rpmlint
             next-music
+            ;; recipe-resolver-260414b recipes
+            mpc-qt
+            trickle
+            reframe
+            slowrx
+            yarr-bin
+            ab-download-manager-bin
+            retroforth
+            jbofihe
+            neovide-bin
+            abuse
+            nmgui
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6273,3 +6286,14 @@
 (define-public xr-passthrough-layer (package (inherit xr-passthrough-layer-git) (name "xr-passthrough-layer")))
 ;; --- recipe-resolver-260413al compat aliases ---
 (define-public lianli-linux-git (package (inherit lianli-linux) (name "lianli-linux-git")))
+;; --- recipe-resolver-260414b compat aliases ---
+(define-public mpc-qt-git (package (inherit mpc-qt) (name "mpc-qt-git")))
+(define-public trickle-git (package (inherit trickle) (name "trickle-git")))
+(define-public yarr (package (inherit yarr-bin) (name "yarr")))
+(define-public ab-download-manager (package (inherit ab-download-manager-bin) (name "ab-download-manager")))
+(define-public neovide (package (inherit neovide-bin) (name "neovide")))
+(define-public abuse-git (package (inherit abuse) (name "abuse-git")))
+(define-public slowrx-git (package (inherit slowrx) (name "slowrx-git")))
+(define-public jbofihe-git (package (inherit jbofihe) (name "jbofihe-git")))
+(define-public retroforth-git (package (inherit retroforth) (name "retroforth-git")))
+
