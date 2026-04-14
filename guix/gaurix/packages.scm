@@ -1460,4 +1460,27 @@
             xapp-epub-thumbnailer
             xapp-mp3-thumbnailer
             xapp-aiff-thumbnailer
+        ;; deptree-resolver-260414d
+            butter
+            bwrap-common
+            getnf-git
+            makesure
+            mons
+            laptop-mode-tools
+            mpv-thumbfast-git
+            esp8266-nonos-sdk
+            cdebootstrap-static
+            matchmaker-bin
+            clion-eap
+            discordo-git
+            gastown
+            h2status-git
+            fsel-git
+            mozlz4-git
+            mgit
+            kevedit
+            koboldcpp
+            mod_maxminddb
+            mupen64plus-input-raphnetraw
+            davmail
 )
