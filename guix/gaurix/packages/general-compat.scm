@@ -336,6 +336,8 @@
 
   #:use-module (gaurix packages deptree-resolver-260414n)
 
+  #:use-module (gaurix packages deptree-resolver-260414o)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -6785,3 +6787,21 @@
 (define-public shellman (package (inherit shellman-bin) (name "shellman")))
 (define-public shiru (package (inherit shiru-git) (name "shiru")))
 (define-public sickchill (package (inherit sickchill-git) (name "sickchill")))
+
+;; --- deptree-resolver-260414o compat aliases ---
+(define-public pat-aur-client (package (inherit pat-aur-client-git) (name "pat-aur-client")))
+(define-public grx (package (inherit grx-bin) (name "grx")))
+(define-public hardcode-fixer (package (inherit hardcode-fixer-git) (name "hardcode-fixer")))
+(define-public ffbtools (package (inherit ffbtools-git) (name "ffbtools")))
+(define-public gvst-vst (package (inherit gvst-vst-bin) (name "gvst-vst")))
+(define-public mpv-manager (package (inherit mpv-manager-git) (name "mpv-manager")))
+(define-public pidcat-python3 (package (inherit pidcat-python3-git) (name "pidcat-python3")))
+(define-public openvpn-update-resolv-conf (package (inherit openvpn-update-resolv-conf-git) (name "openvpn-update-resolv-conf")))
+(define-public powerline-fonts (package (inherit powerline-fonts-git) (name "powerline-fonts")))
+(define-public sklauncher (package (inherit sklauncher-bin) (name "sklauncher")))
+(define-public sle-suite-pro (package (inherit sle-suite-pro-git) (name "sle-suite-pro")))
+(define-public smartdeblur (package (inherit smartdeblur-git) (name "smartdeblur")))
+(define-public smtk-obs (package (inherit smtk-obs-git) (name "smtk-obs")))
+(define-public spacebar-client (package (inherit spacebar-client-git) (name "spacebar-client")))
+(define-public stable-diffusion-webui (package (inherit stable-diffusion-webui-git) (name "stable-diffusion-webui")))
+(define-public steamdepotdownloadergui (package (inherit steamdepotdownloadergui-bin) (name "steamdepotdownloadergui")))
