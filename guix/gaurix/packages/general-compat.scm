@@ -300,6 +300,7 @@
   #:use-module (gaurix packages deptree-resolver-260413o)
   #:use-module (gaurix packages recipe-resolver-260413ab)
   #:use-module (gaurix packages recipe-resolver-260413ac)
+  #:use-module (gaurix packages recipe-resolver-260413ai)
 
   #:export (
             ;; recipe-resolver-260413l recipes
