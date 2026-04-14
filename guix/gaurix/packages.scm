@@ -1105,4 +1105,25 @@
             tonearm
             wslu
             x11docker
+            ;; recipe-resolver-260413ah
+            pkl-bin
+            doppler-cli-bin
+            goldwarden-bin
+            tsm-bin
+            pseint-bin
+            zimage-ncnn-vulkan-bin
+            openbuilds-control-bin
+            throne-bin
+            pdx-unlimiter-bin
+            seadrive-gui-bin
+            carbonyl-bin
+            wayscriber-configurator-bin
+            rime-nushu
+            vbx
+            fw-fanctrl
+            packwitch-manager
+            libastal-river
+            libastal-tray
+            material-kwin-decoration
+            invader
 )
