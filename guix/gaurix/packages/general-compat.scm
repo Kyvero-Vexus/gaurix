@@ -36,6 +36,7 @@
   #:use-module (gaurix packages recipe-resolver-260414e)
   #:use-module (gaurix packages recipe-resolver-260414f)
   #:use-module (gaurix packages recipe-resolver-260414j)
+  #:use-module (gaurix packages recipe-resolver-260414i)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -2221,6 +2222,48 @@
             hmcl
             slime-git
             polymc-qt5
+            ;; recipe-resolver-260414i
+            jump-bin
+            orla-bin
+            feluda-bin
+            wasmrun-bin
+            seqtui-bin
+            clipvault-bin
+            lact-headless-bin
+            teleport-client-bin
+            jiq-ai-bin
+            checkstyle-bin
+            vitals
+            ect
+            rtrlib
+            quakewatch
+            mousetrap
+            font-annotation-mono
+            python-pympress
+            gonic-bin
+            skyterm-bin
+            rtimelog-bin
+            rtimelogger-bin
+            needle-cli-bin
+            ;; recipe-resolver-260414i compat aliases
+            jump
+            orla
+            feluda
+            wasmrun
+            seqtui
+            clipvault
+            lact-headless
+            teleport-client
+            jiq-ai
+            checkstyle
+            gonic
+            skyterm
+            rtimelog
+            rtimelogger
+            needle-cli
+            otf-annotation-mono
+            ttf-annotation-mono
+            ttf-annotation-mono-variable
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6372,3 +6415,22 @@
 (define-public tapi (package (inherit tapi-git) (name "tapi")))
 (define-public plasma6-applets-kara (package (inherit plasma6-applets-kara-git) (name "plasma6-applets-kara")))
 
+;; --- recipe-resolver-260414i compat aliases ---
+(define-public jump (package (inherit jump-bin) (name "jump")))
+(define-public orla (package (inherit orla-bin) (name "orla")))
+(define-public feluda (package (inherit feluda-bin) (name "feluda")))
+(define-public wasmrun (package (inherit wasmrun-bin) (name "wasmrun")))
+(define-public seqtui (package (inherit seqtui-bin) (name "seqtui")))
+(define-public clipvault (package (inherit clipvault-bin) (name "clipvault")))
+(define-public lact-headless (package (inherit lact-headless-bin) (name "lact-headless")))
+(define-public teleport-client (package (inherit teleport-client-bin) (name "teleport-client")))
+(define-public jiq-ai (package (inherit jiq-ai-bin) (name "jiq-ai")))
+(define-public checkstyle (package (inherit checkstyle-bin) (name "checkstyle")))
+(define-public gonic (package (inherit gonic-bin) (name "gonic")))
+(define-public skyterm (package (inherit skyterm-bin) (name "skyterm")))
+(define-public rtimelog (package (inherit rtimelog-bin) (name "rtimelog")))
+(define-public rtimelogger (package (inherit rtimelogger-bin) (name "rtimelogger")))
+(define-public needle-cli (package (inherit needle-cli-bin) (name "needle-cli")))
+(define-public otf-annotation-mono (package (inherit font-annotation-mono) (name "otf-annotation-mono")))
+(define-public ttf-annotation-mono (package (inherit font-annotation-mono) (name "ttf-annotation-mono")))
+(define-public ttf-annotation-mono-variable (package (inherit font-annotation-mono) (name "ttf-annotation-mono-variable")))

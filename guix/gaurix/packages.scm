@@ -1842,4 +1842,27 @@
             ascii-moon
             checkupdates-notify
             adebar
+            ;; recipe-resolver-260414i
+            jump-bin
+            orla-bin
+            feluda-bin
+            wasmrun-bin
+            seqtui-bin
+            clipvault-bin
+            lact-headless-bin
+            teleport-client-bin
+            jiq-ai-bin
+            checkstyle-bin
+            vitals
+            ect
+            rtrlib
+            quakewatch
+            mousetrap
+            font-annotation-mono
+            python-pympress
+            gonic-bin
+            skyterm-bin
+            rtimelog-bin
+            rtimelogger-bin
+            needle-cli-bin
 )
