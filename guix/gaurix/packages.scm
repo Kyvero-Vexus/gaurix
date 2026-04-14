@@ -922,6 +922,7 @@
   #:use-module (gaurix packages recipe-resolver-260413aa)
   #:use-module (gaurix packages recipe-resolver-260413aa-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260414b)
+  #:use-module (gaurix packages recipe-resolver-260414g)
             ;; recipe-resolver-260413ab
             bareos-contrib-director-python-plugins
             bareos-contrib-filedaemon-python-plugins
@@ -1483,4 +1484,128 @@
             mod_maxminddb
             mupen64plus-input-raphnetraw
             davmail
+    ;; recipe-resolver-260414g
+            omm-bin
+            tinct-bin
+            binco-bin
+            histui-bin
+            rosec-bin
+            tdocker
+            migrate-bin
+            sshconfig-lint-bin
+            tuco-bin
+            tiki-bin
+            uber-apk-signer-bin
+            tuwunel-bin
+            python-logfire-api
+            python-uncalled-for
+            qtqr
+            gonob
+            goanime
+            stringp
+            nchat
+            ani2xcursor
+            headson
+            btdu
+            poutine
+            pkglog
+            inori
+            hypr-zoom
+            firemark
+            chezetc-git
+            nodejs-markdown-toc
+            fish-hydro-git
+            xpytile-git
+            epub2pdf
+            paruse
+            i3bar-river
+            mma
+            powerpanel
+            pixelorama
+            typora
+            coccoc-browser-stable
+            odin4-cli
+            synology-assistant
+            forkgram
+            bolt-launcher
+            upscaler
+            universal-android-debloater
+            chkufsd-bin
+            arduino-ide
+            deezer-enhanced
+            proxmox-backup-client
+            tdarr
+            bapctools
+            system76-driver
+            ntfsplus-udev
+            brother-mfc-l2710dw
+            brother-dcpl2640dw
+            gimp-plugin-batcher-git
+            maliit-framework
+            maliit-keyboard
+            powerofforreboot.efi
+            xrgears-git
+            jay
+            jay-git
+            vidcutter-git
+            nginx-mainline-mod-geoip2
+            nginx-mainline-mod-zstd
+            nginx-mainline-mod-brotli
+            nginx-mainline-mod-headers-more
+            librewolf-extension-keepassxc-browser
+            fixvr-git
+            grimatrix-git
+            ttf-kanjistrokeorders
+            mangayomi-linux
+            element-desktop-nightly-bin
+            konfigkoll-git
+            konfigkoll
+            multios-usb-bin-git
+            expert-git
+            sentinelagent
+            wakadash-bin
+            leshade-git
+            pantum-universal-driver
+            crc-bin
+
+        ;; deptree-resolver-260414e
+            hashcc-git
+            otter-launcher
+            oxid-git
+            rustfetch-git
+            shellforge
+            steamguard-cli-git
+            systemd-manager-tui
+            term39
+            gossip
+            iamb-git
+            konfigkoll
+            konfigkoll-git
+            pwsp
+            reth
+            helix-steel-git
+            gosuki-git
+            local-ai
+            sing-box-ref1nd-git
+            llama.cpp-vulkan-git
+            llvm-libunwind
+            tapi-git
+            plasma6-applets-kara-git
+            gcn64tools-git
+            qvickbuild
+            superhtml
+            liskvork
+            hashcc
+            iamb
+            konfigkoll-dev
+            oxid
+            rustfetch
+            steamguard-cli
+            gosuki
+            sing-box-ref1nd
+            gcn64tools
+            helix-steel
+            llama-cpp-vulkan
+            tapi
+            plasma6-applets-kara
 )
