@@ -1429,4 +1429,35 @@
             lyrics-git
             lyse
             magewell-pro-capture-dkms
+            ;; recipe-resolver-260414c
+            ttf-tahoma
+            ttf-profont-iix
+            perl-test-refcount
+            perl-datetime-format-dateparse
+            perl-future-io
+            python-setuptools-reproducible
+            python-yappi
+            python-logfire-api
+            python-asynctest
+            python-dashing
+            python-ldraw-to-scad
+            python-pyborgeous
+            princeprocessor
+            openseachest
+            evenmoreutils
+            libkcapi
+            onvif-util
+            colloid-icon-theme
+            colloid-nord-icon-theme
+            colloid-gruvbox-icon-theme
+            colloid-everforest-icon-theme
+            colloid-dracula-icon-theme
+            colloid-catppuccin-icon-theme
+            adg-gtk-theme
+            qogir-gtk-theme
+            xapp-ora-thumbnailer
+            xapp-gimp-thumbnailer
+            xapp-epub-thumbnailer
+            xapp-mp3-thumbnailer
+            xapp-aiff-thumbnailer
 )

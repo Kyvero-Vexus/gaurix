@@ -63,7 +63,7 @@
   #:use-module (gnu packages pulseaudio)
   #:use-module (gnu packages python)
   #:use-module (gnu packages python-build)
-  #:use-module (gnu packages sound)
+  ;; NOTE: (gnu packages sound) does not exist; alsa-lib is in (gnu packages linux)
   #:use-module (gnu packages video)
   #:use-module (gnu packages web)
   #:export (mod-maxminddb

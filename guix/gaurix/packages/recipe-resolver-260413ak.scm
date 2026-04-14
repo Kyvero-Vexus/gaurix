@@ -41,6 +41,7 @@
   #:use-module (guix build-system go)
   #:use-module (guix build-system meson)
   #:use-module (guix build-system pyproject)
+  #:use-module (guix build-system python)
   #:use-module (guix build-system ruby)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages autotools)
@@ -239,7 +240,7 @@ and repository management from the command line.")
     (description "HardBore is a fast, modern file manager built with Tauri
 and SvelteKit.  It provides efficient file browsing, search, and management
 with a clean user interface.")
-    (license license:agpl3.0)))
+    (license license:agpl3+)))
 
 ;;; ── jan-bin (#4398) ──
 ;;; Open-source AI assistant that runs offline on your computer.
