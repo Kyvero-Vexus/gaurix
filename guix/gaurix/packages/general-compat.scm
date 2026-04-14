@@ -305,6 +305,7 @@
   #:use-module (gaurix packages recipe-resolver-260413ab)
   #:use-module (gaurix packages recipe-resolver-260413ac)
   #:use-module (gaurix packages recipe-resolver-260413ai)
+  #:use-module (gaurix packages recipe-resolver-260414a)
 
   #:export (
             ;; recipe-resolver-260413l recipes
