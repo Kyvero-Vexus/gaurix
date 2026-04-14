@@ -33,6 +33,7 @@
   #:use-module (gaurix packages recipe-resolver-260413ak)
   #:use-module (gaurix packages recipe-resolver-260413al)
   #:use-module (gaurix packages recipe-resolver-260414c)
+  #:use-module (gaurix packages recipe-resolver-260414e)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -2174,6 +2175,48 @@
             neovide-bin
             abuse
             nmgui
+            ;; recipe-resolver-260414e recipes
+            uemacs
+            vvdec
+            opencollada
+            spacecadetpinball
+            intel-ipsec-mb
+            ebsl
+            finalmouse-cli
+            headsetstatus
+            qt-heif-image-plugin
+            kplotting5
+            fortty
+            calf-no-gui
+            kpeoplevcard
+            hyprsysteminfo
+            wl-shimeji
+            libretro-handy
+            scangearmp2-sane
+            tomoyo-tools
+            python-pyrogram
+            qcomix
+            gearlever
+            icon-lang
+            java21-openjfx-bin
+            polymc-qt5-bin
+            runelite-bin
+            hmcl-bin
+            emacs-slime-git
+            minisystool
+            gcdemu
+            openal-hrtf
+            ;; recipe-resolver-260414e compat aliases
+            uemacs-git
+            spacecadetpinball-git
+            wl_shimeji-git
+            libretro-handy-git
+            scangearmp2-sane-git
+            icon-git
+            runelite
+            hmcl
+            slime-git
+            polymc-qt5
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6299,4 +6342,15 @@
 (define-public slowrx-git (package (inherit slowrx) (name "slowrx-git")))
 (define-public jbofihe-git (package (inherit jbofihe) (name "jbofihe-git")))
 (define-public retroforth-git (package (inherit retroforth) (name "retroforth-git")))
+;; --- recipe-resolver-260414e compat aliases ---
+(define-public uemacs-git (package (inherit uemacs) (name "uemacs-git")))
+(define-public spacecadetpinball-git (package (inherit spacecadetpinball) (name "spacecadetpinball-git")))
+(define-public wl_shimeji-git (package (inherit wl-shimeji) (name "wl_shimeji-git")))
+(define-public libretro-handy-git (package (inherit libretro-handy) (name "libretro-handy-git")))
+(define-public scangearmp2-sane-git (package (inherit scangearmp2-sane) (name "scangearmp2-sane-git")))
+(define-public icon-git (package (inherit icon-lang) (name "icon-git")))
+(define-public runelite (package (inherit runelite-bin) (name "runelite")))
+(define-public hmcl (package (inherit hmcl-bin) (name "hmcl")))
+(define-public slime-git (package (inherit emacs-slime-git) (name "slime-git")))
+(define-public polymc-qt5 (package (inherit polymc-qt5-bin) (name "polymc-qt5")))
 
