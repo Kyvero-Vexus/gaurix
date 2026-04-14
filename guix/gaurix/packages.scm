@@ -2213,5 +2213,72 @@
                brickstore-bin
                tev-bin
                mqtt-explorer-bin
-               quarto-cli-bin))
-
+               quarto-cli-bin)            ;; deptree-resolver-260414n
+            obos-genissue-git
+            obs-scrab
+            ocaml-camlzip
+            omniget-bin
+            omnom-git
+            openchamber
+            opencode-claude-auth
+            openmw-tes3mp
+            openrefine
+            openscq30-cli-bin
+            openutau
+            opera-proxy-git
+            packwiz-git
+            pacmods
+            paczf-yay
+            partclone-git
+            pgdr
+            pokemmo
+            prex
+            printnotes-git
+            promptfoo
+            punt
+            purple-gowhatsapp
+            pydio
+            python-fleep-git
+            python-pyqt5-chart
+            python-zoekt-py-git
+            python2-jpype1
+            qt5-purchasing
+            qt6gtk2
+            r2modman-appimage
+            radii5-bin
+            raindrop
+            redu
+            rename-pl
+            rexit-git
+            riftbar-bin
+            rimsort-git
+            rivetui
+            ruffle-nightly-bin
+            run0-sudo-shim-git
+            sacad
+            selectdefaultapplication-git
+            setrixtui
+            shellman-bin
+            shiru-git
+            shopify-cli
+            shpool
+            sickchill-git
+            sip4
+            obos-genissue
+            omnom
+            opera-proxy
+            packwiz
+            partclone
+            printnotes
+            python-zoekt-py
+            radii5
+            rexit
+            riftbar
+            rimsort
+            ruffle-nightly
+            run0-sudo-shim
+            selectdefaultapplication
+            shellman
+            shiru
+            sickchill
+)

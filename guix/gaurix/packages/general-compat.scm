@@ -333,6 +333,8 @@
   #:use-module (gaurix packages deptree-resolver-260414m)
   #:use-module (gaurix packages recipe-resolver-260414q)
 
+  #:use-module (gaurix packages deptree-resolver-260414n)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2468,6 +2470,57 @@
             nodejs-ramadan-cli
             nordvpn-gui-bin
             objdiff
+            ;; deptree-resolver-260414n recipes
+            obos-genissue-git
+            obs-scrab
+            ocaml-camlzip
+            omniget-bin
+            omnom-git
+            openchamber
+            opencode-claude-auth
+            openmw-tes3mp
+            openrefine
+            openscq30-cli-bin
+            openutau
+            opera-proxy-git
+            packwiz-git
+            pacmods
+            paczf-yay
+            partclone-git
+            pgdr
+            pokemmo
+            prex
+            printnotes-git
+            promptfoo
+            punt
+            purple-gowhatsapp
+            pydio
+            python-fleep-git
+            python-pyqt5-chart
+            python-zoekt-py-git
+            python2-jpype1
+            qt5-purchasing
+            qt6gtk2
+            r2modman-appimage
+            radii5-bin
+            raindrop
+            redu
+            rename-pl
+            rexit-git
+            riftbar-bin
+            rimsort-git
+            rivetui
+            ruffle-nightly-bin
+            run0-sudo-shim-git
+            sacad
+            selectdefaultapplication-git
+            setrixtui
+            shellman-bin
+            shiru-git
+            shopify-cli
+            shpool
+            sickchill-git
+            sip4
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6702,3 +6755,22 @@
 (define-public nikode (package (inherit nikode-bin) (name "nikode")))
 (define-public niri-sidebar (package (inherit niri-sidebar-git) (name "niri-sidebar")))
 (define-public nirinit (package (inherit nirinit-git) (name "nirinit")))
+
+;; --- deptree-resolver-260414n compat aliases ---
+(define-public obos-genissue (package (inherit obos-genissue-git) (name "obos-genissue")))
+(define-public omnom (package (inherit omnom-git) (name "omnom")))
+(define-public opera-proxy (package (inherit opera-proxy-git) (name "opera-proxy")))
+(define-public packwiz (package (inherit packwiz-git) (name "packwiz")))
+(define-public partclone (package (inherit partclone-git) (name "partclone")))
+(define-public printnotes (package (inherit printnotes-git) (name "printnotes")))
+(define-public python-zoekt-py (package (inherit python-zoekt-py-git) (name "python-zoekt-py")))
+(define-public radii5 (package (inherit radii5-bin) (name "radii5")))
+(define-public rexit (package (inherit rexit-git) (name "rexit")))
+(define-public riftbar (package (inherit riftbar-bin) (name "riftbar")))
+(define-public rimsort (package (inherit rimsort-git) (name "rimsort")))
+(define-public ruffle-nightly (package (inherit ruffle-nightly-bin) (name "ruffle-nightly")))
+(define-public run0-sudo-shim (package (inherit run0-sudo-shim-git) (name "run0-sudo-shim")))
+(define-public selectdefaultapplication (package (inherit selectdefaultapplication-git) (name "selectdefaultapplication")))
+(define-public shellman (package (inherit shellman-bin) (name "shellman")))
+(define-public shiru (package (inherit shiru-git) (name "shiru")))
+(define-public sickchill (package (inherit sickchill-git) (name "sickchill")))
