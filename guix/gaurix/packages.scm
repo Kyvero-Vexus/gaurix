@@ -2578,3 +2578,13 @@
                ttf-ms-win11-fod-auto-mlym
                ttf-ms-win11-fod-auto-orya
 ))
+
+;; recipe-resolver-260414z
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260414z)
+  #:re-export (ww-manager
+               tg-config
+               neovim-qt
+               neovim-qt-git
+               cvs-feature-bin
+               psdoom-ng))

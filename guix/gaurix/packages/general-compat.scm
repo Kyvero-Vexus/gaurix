@@ -41,6 +41,7 @@
   #:use-module (gaurix packages recipe-resolver-260414o)
   #:use-module (gaurix packages recipe-resolver-260414p)
   #:use-module (gaurix packages recipe-resolver-260414v)
+  #:use-module (gaurix packages recipe-resolver-260414z)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -2559,6 +2560,15 @@
             xdg-desktop-portal-minimal-git
             swaystatus-git
             ;; patchy already exported from deptree-resolver-260413d
+
+            ;; recipe-resolver-260414z
+            ww-manager
+            tg-config
+            neovim-qt
+            neovim-qt-git
+            cvs-feature-bin
+            psdoom-ng
+            cvs-feature
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6861,3 +6871,6 @@
 ;; --- recipe-resolver-260414y compat aliases ---
 (define-public xdg-desktop-portal-minimal (package (inherit xdg-desktop-portal-minimal-git) (name "xdg-desktop-portal-minimal")))
 (define-public kdiff3-git-alias (package (inherit kdiff3) (name "kdiff3-git")))
+
+;; --- recipe-resolver-260414z compat aliases ---
+(define-public cvs-feature (package (inherit cvs-feature-bin) (name "cvs-feature")))
