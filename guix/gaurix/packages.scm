@@ -923,6 +923,7 @@
   #:use-module (gaurix packages recipe-resolver-260413aa-blocked-notes)
   #:use-module (gaurix packages deptree-resolver-260414b)
   #:use-module (gaurix packages recipe-resolver-260414g)
+  #:use-module (gaurix packages recipe-resolver-260414h)
             ;; recipe-resolver-260413ab
             bareos-contrib-director-python-plugins
             bareos-contrib-filedaemon-python-plugins
@@ -1639,4 +1640,28 @@
             netpeek
             vk-hdr-layer-kwin6
             trayscale
+            ;; recipe-resolver-260414h
+            uutils-diffutils-bin
+            kdotool-bin
+            elide-bin
+            catapult-bin
+            upscayl-bin
+            proton-mail-bin
+            the-honkers-railway-launcher-bin
+            whph-bin
+            peazip-qt-bin
+            dorion-bin
+            elysia-bin
+            python-fangfrisch
+            python-poetry-plugin-shell
+            python-bump-my-version
+            python-opentelemetry-propagator-jaeger
+            python-opentelemetry-propagator-b3
+            python-opentelemetry-opentracing-shim
+            lug-helper
+            novafetch
+            zswap-cli
+            mihomo-alpha
+            streamlink-twitch-gui-bin
+            jellyfin-server-bin
 )
