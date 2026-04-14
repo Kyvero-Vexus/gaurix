@@ -32,6 +32,7 @@
   #:use-module (gaurix packages recipe-resolver-260413aj)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
+  #:use-module (gaurix packages deptree-resolver-260413q)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -6262,3 +6263,7 @@
 ;; --- deptree-resolver-260413p compat aliases ---
 (define-public lazyjira (package (inherit lazyjira-git) (name "lazyjira")))
 (define-public libiff (package (inherit libiff-git) (name "libiff")))
+;; --- deptree-resolver-260413q compat aliases ---
+(define-public dvdisaster-speed47 (package (inherit dvdisaster-speed47-git) (name "dvdisaster-speed47")))
+(define-public locale-en_ru (package (inherit locale-en-ru) (name "locale-en_ru")))
+(define-public xr-passthrough-layer (package (inherit xr-passthrough-layer-git) (name "xr-passthrough-layer")))

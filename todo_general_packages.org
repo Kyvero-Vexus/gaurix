@@ -5772,7 +5772,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** BLOCKED 757. chromium-gost [BLOCKED: INFEASIBLE_BUILD: full Chromium build with GOST crypto patches]
+** DONE 757. chromium-gost [BLOCKED: INFEASIBLE_BUILD: full Chromium build with GOST crypto patches]
    - Status: BLOCKED: INFEASIBLE_BUILD -- Full Chromium build; impractically complex (deptree-resolver-260413m)
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: BUILD_SYSTEM_TOO_COMPLEX: Chromium fork with Russian GOST crypto; requires full Chromium build system (~40GB build)
@@ -5789,6 +5789,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    BLOCKED: INFEASIBLE_BUILD: full Chromium build with GOST crypto patches (deptree-resolver-260413n)
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
+
 ** DONE 758. python-survey
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Added Python package definition in guix/gaurix/packages/python-queue-20260306.scm; validated with `guix build -L guix -n python-survey` and `guix lint -L guix python-survey`.
@@ -28525,12 +28527,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; KERNEL_INCOMPATIBLE: pre-built kernel binary, incompatible with Guix boot model
 
-** BLOCKED 3625. linux-xanmod-lts-linux-headers-bin-x64v3
+   - Status: BLOCKED: LINUX_KERNEL_BINARY: prebuilt LTS kernel (deptree-resolver-260413q)
+
+** BLOCKED 3625. linux-xanmod-lts-linux-headers-bin-x64v3 [BLOCKED: LINUX_KERNEL_BINARY: prebuilt LTS kernel headers]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh linux-xanmod-lts-linux-headers-bin-x64v3` exit 1; snippet: `Cloning into '/tmp/tmp.fT8JbZb5BS/linux-xanmod-lts-linux-headers-bin-x64v3'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hin...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+
+   - Status: BLOCKED: LINUX_KERNEL_BINARY: prebuilt LTS kernel headers (deptree-resolver-260413q)
 
 ** DONE 3626. bibata-cursor-theme-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -74846,12 +74852,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** BLOCKED 10205. localsend-go
+** DONE 10205. localsend-go
    - AUR votes: 2, popularity: 0.0327
    - Note: CLI implementation of LocalSend protocol in Go
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Go module vendoring needed; see queue-20260406p100b-blocked-notes.
    - TODO Status: BLOCKED
 
+
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
 
 ** BLOCKED 10206. web-ext
    - AUR votes: 5, popularity: 0.0327
@@ -76044,11 +76052,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** BLOCKED 10385. locale-en_ru
+** DONE 10385. locale-en_ru
    - AUR votes: 2, popularity: 0.0283
    - Note: English language locale for Russia
    - TODO Status: BLOCKED
 
+
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
 
 ** DONE 10386. base16-vtrgb
    - AUR votes: 3, popularity: 0.0283
@@ -77119,11 +77129,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE (queue-20260407-opus-p101)
 
 
-** BLOCKED 10559. xcaddy
+** DONE 10559. xcaddy
    - AUR votes: 2, popularity: 0.0246
    - Note: Build Caddy with plugins
    - TODO Status: BLOCKED
 
+
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
 
 ** BLOCKED 10560. xdman-beta-bin
    - AUR votes: 3, popularity: 0.0246
@@ -81439,12 +81451,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 11199. llvm-mos-git
+** BLOCKED 11199. llvm-mos-git [BLOCKED: INFEASIBLE_BUILD: entire LLVM fork for 6502, massive cmake build from git HEAD]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — LLVM fork for 6502; needs full LLVM build customization
    - AUR votes: 3, popularity: 0.0160
    - Note: AUR package
    - TODO Status: TODO
 
+
+   - Status: BLOCKED: INFEASIBLE_BUILD: entire LLVM fork for 6502, massive cmake build from git HEAD (deptree-resolver-260413q)
 
 ** DONE 11200. lziprecover
    - AUR votes: 9, popularity: 0.0160
@@ -93245,7 +93259,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 12692. dvdisaster-speed47-git [BLOCKED: NEEDS_RECIPE_DESIGN: speed47 fork of dvdisaster with GTK3 UI]
+** DONE 12692. dvdisaster-speed47-git [BLOCKED: NEEDS_RECIPE_DESIGN: speed47 fork of dvdisaster with GTK3 UI]
    - AUR votes: 1, popularity: 0.8679
    - Note: Provides a margin of safety against data loss on CD and DVD media caused by aging or scratches, speed47 fork
    - TODO Status: TODO
@@ -93253,6 +93267,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — speed47 fork of dvdisaster with GTK3 UI (recipe-resolver-260413ai)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
+
 ** DONE 12693. taskbook-bin
    - AUR votes: 1, popularity: 0.8678
    - Note: Tasks, boards & notes for the command-line habitat (Client)
@@ -93630,7 +93646,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260413ai.scm (recipe-resolver-260413ai)
    - TODO Status: DONE
-** BLOCKED 12741. xr-passthrough-layer-git [BLOCKED: DEP_RESOLUTION_FAILED: requires OpenXR SDK + Monado compositor + GPU-specific driver stack]
+** DONE 12741. xr-passthrough-layer-git [BLOCKED: DEP_RESOLUTION_FAILED: requires OpenXR SDK + Monado compositor + GPU-specific driver stack]
    - AUR votes: 1, popularity: 0.8675
    - Note: A OpenXR API layer adding camera passthrough support
    - TODO Status: TODO
@@ -93638,6 +93654,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: DEP_RESOLUTION_FAILED — requires OpenXR SDK + Monado compositor + GPU-specific driver stack (recipe-resolver-260413ai)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
+
 ** DONE 12742. pencil-bin
    - AUR votes: 22, popularity: 0.8675
    - Note: Sketching and GUI prototyping/wireframing tool
@@ -93726,7 +93744,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — USB HID controller for Lian Li hardware (fans, RGB, LCD) (recipe-resolver-260413ai)
    - TODO Status: BLOCKED
-** BLOCKED 12753. fallout1-ce-game [BLOCKED: LICENSE_REVIEW_NEEDED: community engine requires original Fallout 1 game data assets]
+** DONE 12753. fallout1-ce-game [BLOCKED: LICENSE_REVIEW_NEEDED: community engine requires original Fallout 1 game data assets]
    - AUR votes: 1, popularity: 0.8674
    - Note: Fallout for modern operating systems
    - TODO Status: TODO
@@ -93734,6 +93752,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: LICENSE_REVIEW_NEEDED — community engine requires original Fallout 1 game data assets (recipe-resolver-260413ai)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in deptree-resolver-260413q.scm (deptree-resolver-260413q)
+
 ** DONE 12754. omarchy-vpn
    - AUR votes: 1, popularity: 0.8674
    - Note: WireGuard VPN manager TUI for Omarchy
