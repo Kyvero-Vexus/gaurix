@@ -2206,6 +2206,7 @@
 ;; recipe-resolver-260414p
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260414p)
+  #:use-module (gaurix packages recipe-resolver-260414r)
   #:re-export (ytdlp-gui-bin
                modrinth-app-bin
                proton-authenticator-bin
@@ -2281,4 +2282,13 @@
             shellman
             shiru
             sickchill
+            ;; recipe-resolver-260414r
+            magika-bin
+            sddm-eucalyptus-drop
+            gamepadla-polling
+            rivetui-bin
+            ins-bin
+            git-wizard
+            ytconverter
+            cai
 )

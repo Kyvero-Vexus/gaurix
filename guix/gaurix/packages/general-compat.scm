@@ -332,6 +332,7 @@
 
   #:use-module (gaurix packages deptree-resolver-260414m)
   #:use-module (gaurix packages recipe-resolver-260414q)
+  #:use-module (gaurix packages recipe-resolver-260414r)
 
   #:use-module (gaurix packages deptree-resolver-260414n)
 
@@ -2521,7 +2522,17 @@
             shpool
             sickchill-git
             sip4
-))
+)
+            ;; recipe-resolver-260414r
+            magika-bin
+            sddm-eucalyptus-drop
+            gamepadla-polling
+            rivetui-bin
+            ins-bin
+            git-wizard
+            ytconverter
+            cai
+)
 
 ;;; --- recipe-resolver-260413f compat aliases ---
 
