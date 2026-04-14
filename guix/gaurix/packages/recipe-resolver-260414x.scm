@@ -5,7 +5,7 @@
 ;;; Resolves 30 NEEDS_RECIPE_DESIGN packages from general queue:
 ;;;   - 3 recipes created (1 C++ Make + 1 C library + 1 Fortran/C FEA solver)
 ;;;   - 2 compat aliases (upstream Guix re-exports)
-;;;   - 25 marked NEEDS_RECIPE_DESIGN_EXHAUSTED with specific reasons
+;;;   - 26 marked NEEDS_RECIPE_DESIGN_EXHAUSTED with specific reasons
 ;;;
 ;;; Recipes (3):
 ;;;   iso-commander, spooles, calculix-ccx

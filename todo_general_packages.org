@@ -97046,7 +97046,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 13138. java11-openjfx [BLOCKED: NEEDS_RECIPE_DESIGN: OpenJFX 11 for Java 11]
+** BLOCKED 13138. java11-openjfx [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GRADLE_BUILD: OpenJFX 11 needs Gradle 7, 100+ Java modules; A1: no importer; A2: Gradle not in Guix; A3: no standalone JFX jars]
    - AUR votes: 3, popularity: 0.7522
    - Note: Java OpenJFX 11 client application platform (open-source implementation of JavaFX)
    - TODO Status: TODO
@@ -97054,6 +97054,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — OpenJFX 11 for Java 11 (recipe-resolver-260414m)
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GRADLE_BUILD: OpenJFX 11 requires Gradle 7 build with 100+ modules, webkit/media native deps; A1: no Java 11 importer; A2: Gradle not bootstrapped in Guix; A3: no prebuilt standalone JFX jars (recipe-resolver-260414x)
 ** BLOCKED 13139. java11-openjfx-doc [BLOCKED: COMPLEX_BUILD_DEPS: Java 11 OpenJFX docs; requires gradle7]
    - AUR votes: 3, popularity: 0.7522
    - Note: Java OpenJFX 11 client application platform (open-source implementation of JavaFX)
@@ -97228,7 +97229,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: Recipe added in recipe-resolver-260414m.scm (recipe-resolver-260414m)
-   - TODO Status: DONE
+** BLOCKED 13162. portage-manifest [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC + NON_FREE_LICENSE: Arch package browser, CC-BY-NC; A1: pacman deps; A2: non-free; A3: Electron/npm]
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC + NON_FREE_LICENSE: Arch package browser, CC-BY-NC license non-free; depends on pacman/yay; A1: Arch-specific deps; A2: non-free license; A3: Electron/npm build (recipe-resolver-260414x)
 ** BLOCKED 13162. portage-manifest [BLOCKED: NEEDS_RECIPE_DESIGN: Gentoo Portage manifest generator]
    - AUR votes: 1, popularity: 0.7519
    - Note: A unified package browser for Arch Linux - search official repos, AUR, and Flatpak with beautiful README rendering
@@ -97299,8 +97301,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-   - Status: DONE: Recipe added in recipe-resolver-260414m.scm (recipe-resolver-260414m)
+** DONE 13171. calculix-ccx
    - TODO Status: DONE
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260414x.scm (calculix-ccx v2.23, gnu-build-system Fortran/C FEA solver + spooles 2.2 packaged as dependency)
 ** BLOCKED 13171. calculix-ccx [BLOCKED: NEEDS_RECIPE_DESIGN: CalculiX FEA solver]
    - AUR votes: 27, popularity: 0.7518
    - Note: CalculiX: 3D Structural Finite Element Program - Solver
@@ -97408,9 +97411,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Room boundary overlay for OpenXR, made with LÖVR
    - TODO Status: TODO
 
-
+** BLOCKED 13185. simracing-essentials [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — HARDWARE_SPECIFIC: sim racing tools; A1: no upstream repo; A2: USB HID hardware; A3: bundle nature]
    - Status: DONE: Recipe added in recipe-resolver-260414m.scm (recipe-resolver-260414m)
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — HARDWARE_SPECIFIC: sim racing tool bundle; A1: no clear upstream repo; A2: hardware-specific USB HID integration; A3: bundle nature unclear (recipe-resolver-260414x)
 ** BLOCKED 13185. simracing-essentials [BLOCKED: NEEDS_RECIPE_DESIGN: SimRacing tool bundle]
    - AUR votes: 1, popularity: 0.7516
    - Note: A collection of sim racing-focused utilities and drivers
@@ -97518,10 +97522,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 ** DONE 13198. languagetool-ngrams-es
    - Source List: AUR
-   - Status: DONE: already packaged as languagetool-ngrams-es (discovered deptree-resolver-260414m)
+** BLOCKED 13199. scx-scheds-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KERNEL_BPF: sched_ext needs kernel 6.12+, Rust/BPF; A1: needs BPF toolchain; A2: 50+ crate deps; A3: custom kernel config]
    - Difficulty: auto
    - TODO Status: DONE
 
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KERNEL_BPF: sched_ext schedulers need Linux 6.12+ with CONFIG_SCHED_CLASS_EXT; Rust/BPF toolchain; A1: needs kernel headers + BPF linker; A2: 50+ cargo deps; A3: custom kernel config required (recipe-resolver-260414x)
 ** BLOCKED 13199. scx-scheds-git [BLOCKED: NEEDS_RECIPE_DESIGN: sched_ext schedulers for Linux kernel]
    - AUR votes: 4, popularity: 0.7515
    - Note: sched_ext schedulers and tools
@@ -97633,11 +97638,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 13213. librepods
    - AUR votes: 2, popularity: 0.7382
    - Note: AirPods liberated from Apple's ecosystem
-   - TODO Status: TODO
+** BLOCKED 13214. zephyr-sdk [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CROSS_COMPILATION_SDK: massive multi-arch toolchain bundle 2+GB; A1: too large; A2: 12+ cross-compilers; A3: Guix has native cross-compilation]
 
 
    - Status: DONE: Recipe added in recipe-resolver-260414m.scm (recipe-resolver-260414m)
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CROSS_COMPILATION_SDK: massive multi-arch toolchain (ARM, RISC-V, x86, Xtensa) 2+GB; A1: binary repack too large; A2: source build needs 12+ GCC cross-compilers; A3: Guix handles cross-compilation natively (recipe-resolver-260414x)
 ** BLOCKED 13214. zephyr-sdk [BLOCKED: NEEDS_RECIPE_DESIGN: Zephyr RTOS SDK with cross-compilation toolchains]
    - AUR votes: 12, popularity: 0.7370
    - Note: SDK for Zephyr real-time operating system
@@ -97701,12 +97707,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414m.scm (recipe-resolver-260414m)
    - TODO Status: DONE
-** DONE 13222. whisper.cpp-model-large-v3-turbo
+** BLOCKED 13223. xmcl-launcher [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_NPM: Minecraft launcher; A1: 1000+ npm deps; A2: no Linux binary; A3: game-specific]
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414l.scm (whisper-cpp-model-large-v3-turbo v4)
    - Difficulty: auto
    - TODO Status: DONE
 
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_NPM: Minecraft launcher built with Electron/Vue.js; A1: 1000+ npm deps; A2: no prebuilt Linux binary; A3: game-specific with Microsoft auth (recipe-resolver-260414x)
 ** BLOCKED 13223. xmcl-launcher [BLOCKED: NEEDS_RECIPE_DESIGN: Minecraft launcher built with Electron]
    - AUR votes: 6, popularity: 0.7266
    - Note: X Minecraft Launcher - A modern, open-source Minecraft Launcher with modpack, resource, and instance management
@@ -98185,13 +98192,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** DONE 13287. ascii-chat
-   - AUR votes: 2, popularity: 0.6830
+** BLOCKED 13288. reboot-arch-btw [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pacman kernel checker; A1: pacman dep; A2: Arch kernel naming; A3: Guix handles differently]
    - Note: Video chat in your terminal
    - TODO Status: TODO
 
 
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: checks reboot need via pacman database; A1: pacman not in Guix; A2: tied to Arch kernel versioning; A3: Guix handles kernel updates declaratively (recipe-resolver-260414x)
 ** BLOCKED 13288. reboot-arch-btw [BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific kernel update checker using pacman database]
    - AUR votes: 11, popularity: 0.6825
    - Note: Check if you need to reboot due to an updated kernel
@@ -98309,7 +98317,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
-** DONE 13303. virtio-win
+** BLOCKED 13304. organicmaps [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_DEPS: 100+ C++/Qt deps; A1: custom Boost extensions; A2: mobile-first Qt UI; A3: map data pipeline]
    - AUR votes: 113, popularity: 0.6736
    - Note: virtio drivers for Windows 7 and newer guests
    - TODO Status: TODO
@@ -98317,14 +98325,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
+** BLOCKED 13305. penpot [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: backend+frontend+exporter+PostgreSQL+Redis; A1: leiningen; A2: multi-service; A3: shadow-cljs]
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: multi-container design tool; A1: Clojure needs leiningen/deps.edn; A2: multi-service architecture; A3: ClojureScript frontend needs npm/shadow-cljs (recipe-resolver-260414x)
 ** BLOCKED 13304. organicmaps [BLOCKED: NEEDS_RECIPE_DESIGN: Massive C++/Qt mobile mapping app with 100+ native deps]
    - AUR votes: 3, popularity: 0.6726
    - Note: Organic Maps: Offline Hike, Bike, Trails and Navigation
    - TODO Status: TODO
 
 
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Massive C++/Qt mobile mapping app with 100+ native deps (recipe-resolver-260414q)
+** BLOCKED 13306. penpot-exporter [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: penpot exporter service; A1: depends on penpot backend; A2: Playwright; A3: not standalone]
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: Penpot exporter service; A1: depends on penpot backend; A2: Node.js with Playwright; A3: cannot function standalone (recipe-resolver-260414x)
 ** BLOCKED 13305. penpot [BLOCKED: NEEDS_RECIPE_DESIGN: Clojure multi-service design tool (backend+frontend+exporter)]
    - AUR votes: 3, popularity: 0.6721
    - Note: The open-source design tool for design and code collaboration
@@ -98386,9 +98397,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: CrowdSec bouncer for Nginx
    - TODO Status: TODO
 
-
+** BLOCKED 13314. collabora-office [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — LIBREOFFICE_FORK: 10M+ LOC fork; A1: hours-long build; A2: WebSocket server; A3: Qt6 wrapper]
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — LIBREOFFICE_FORK: massive LibreOffice fork with 10M+ LOC; A1: LibreOffice build takes hours, fork adds more; A2: Collabora Online WebSocket server; A3: Qt6 desktop wrapper (recipe-resolver-260414x)
 ** BLOCKED 13313. pane-fm-git [BLOCKED: DEP_RESOLUTION_FAILED: Tauri/Svelte file manager]
    - AUR votes: 2, popularity: 2.0000
    - Note: A themeable file manager built with Tauri and Svelte
@@ -98401,26 +98413,29 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 2, popularity: 1.9999
    - Note: Collabora Office - Qt6 desktop document editor powered by Collabora Online
    - TODO Status: TODO
-
+** BLOCKED 13316. rust-aarch64-musl-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: Guix handles cross-compilation natively; A1: unnecessary; A2: Arch rustup; A3: musl toolchain]
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Massive LibreOffice fork with Collabora Online integration (recipe-resolver-260414q)
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: Arch-specific Rust cross target; A1: Guix cross-compilation makes this unnecessary; A2: Arch-specific rustup management; A3: musl-cross-toolchain out of scope (recipe-resolver-260414x)
 ** DONE 13315. qwarp
    - AUR votes: 2, popularity: 1.9797
    - Note: A lightweight, Wayland-native Qt6 wrapper for cloudflare-warp-bin
-   - TODO Status: TODO
+** BLOCKED 13317. rust-aarch64-gnu-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: Guix handles cross-compilation natively; A1: unnecessary; A2: Arch rustup; A3: no standalone use]
 
 
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: Arch-specific Rust GNU cross target; A1: Guix cross-compilation makes this unnecessary; A2: Arch-specific rustup integration; A3: no standalone use case (recipe-resolver-260414x)
 ** BLOCKED 13316. rust-aarch64-musl-git [BLOCKED: NEEDS_RECIPE_DESIGN: Rust cross-compilation target for aarch64-musl]
    - AUR votes: 29, popularity: 1.2868
-   - Note: AArch64 Musl target for Rust (GIT VERSION)
+** BLOCKED 13318. lib32-rust-libs-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: Guix uses separate i686 builds; A1: no lib32; A2: no multilib; A3: Arch pattern]
    - TODO Status: TODO
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Rust cross-compilation target for aarch64-musl (recipe-resolver-260414q)
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: Rust 32-bit multilib libraries; A1: Guix i686-linux is separate build; A2: no lib32 infrastructure in Guix; A3: Arch-specific package pattern (recipe-resolver-260414x)
 ** BLOCKED 13317. rust-aarch64-gnu-git [BLOCKED: NEEDS_RECIPE_DESIGN: Rust cross-compilation target for aarch64-gnu]
    - AUR votes: 29, popularity: 1.2868
    - Note: AArch64 GNU target for Rust (GIT VERSION)
@@ -98489,7 +98504,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
-** DONE 13326. dmenu-wayland-git
+** BLOCKED 13328. sulis-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_RUST: 100+ cargo deps; A1: crate deps not packaged; A2: custom OpenGL engine; A3: embedded game data]
    - AUR votes: 7, popularity: 1.0107
    - Note: Wayland port of a generic menu for X
    - TODO Status: TODO
@@ -98497,6 +98512,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
+** BLOCKED 13329. optimus-manager-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NVIDIA_PROPRIETARY + HARDCODED_PATHS: nvidia drivers + 20+ hardcoded paths; A1: proprietary; A2: path patches; A3: X11-only]
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NVIDIA_PROPRIETARY + HARDCODED_PATHS: GPU switching needing nvidia proprietary drivers, no git tags (rolling); A1: nvidia proprietary modules; A2: 20+ hardcoded /usr paths; A3: systemd→Shepherd + X11-only (recipe-resolver-260414x)
 ** DONE 13327. slimevr-bin
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 4, popularity: 1.0097
@@ -98602,15 +98619,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Modified BGRT theme that retains the OEM logo on LUKS passphrase prompt.
    - TODO Status: TODO
 
-
+** DONE 13343. qbittorrent-enhanced-ua-nox
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — compat alias to upstream qbittorrent-enhanced-no-x (recipe-resolver-260414x)
 ** BLOCKED 13341. pacman-cleanup-hook [BLOCKED: ARCH_SPECIFIC: Arch Linux-specific tool (pacman/mkinitcpio infrastructure)]
    - Source List: AUR
    - Status: BLOCKED: ARCH_SPECIFIC: Arch Linux-specific tool (pacman/mkinitcpio infrastructure)
    - Difficulty: auto
-   - TODO Status: BLOCKED
+** DONE 13344. qbittorrent-enhanced-ua
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — compat alias to upstream qbittorrent-enhanced (recipe-resolver-260414x)
 ** DONE 13342. grub2-theme-crt-amber-4k-git
    - AUR votes: 3, popularity: 1.0025
    - Note: Retro Amber CRT Terminal styled GRUB Theme 4k upscale
@@ -98830,13 +98849,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414q.scm (recipe-resolver-260414q)
    - TODO Status: DONE
 ** BLOCKED 13370. kde-thumbnailer-apk
-   - AUR votes: 27, popularity: 1.0000
+** DONE 13373. iso-commander
    - Note: Preview image generator plugin for Android Application Package files
    - TODO Status: TODO
 
 
    - Status: BLOCKED: DEP_RESOLUTION_FAILED — KDE/KIO plugin for APK thumbnail previews; requires KDE Frameworks (KIO, KFileMetaData) build integration; A1: needs kio-dev + cmake KDE macros; next: package KIO plugin build system (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260414x.scm (iso-commander v6.4.7, gnu-build-system C++20 ISO manager)
 ** DONE 13371. openvpn-update-resolv-conf-git
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (openvpn-update-resolv-conf-git vr46.2485e9d)
@@ -98851,18 +98871,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** BLOCKED 13373. iso-commander
    - AUR votes: 3, popularity: 1.0000
-   - Note: The Fastest ISO Manager on the Planet, written in C++
+** BLOCKED 13376. mdbook-epub [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_NEEDED: 30+ Rust crates; A1: need 30+ crates; A2: depends on mdbook; A3: no binaries]
    - TODO Status: TODO
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — C++ ISO manager; no standard release artifacts on GitHub; A1: build system not identified; A2: source repo structure unclear; next: investigate upstream build system (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_NEEDED: Rust mdbook EPUB backend; A1: 30+ transitive crate deps; A2: depends on mdbook (not in Guix); A3: no prebuilt binaries (recipe-resolver-260414x)
 ** DONE 13374. bulk-rename-plus
-   - Source List: AUR
+** BLOCKED 13377. pat-aur-host-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pacman/makepkg deps; A1: pacman; A2: makepkg; A3: not portable]
    - Status: DONE: recipe in deptree-resolver-260414o.scm (bulk-rename-plus v2.0.9)
    - Difficulty: auto
    - TODO Status: DONE
 
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: AUR build helper; A1: depends on pacman; A2: depends on makepkg; A3: fundamentally Arch Linux tooling (recipe-resolver-260414x)
 ** DONE 13375. postsrsd
    - AUR votes: 4, popularity: 1.0000
    - Note: Provides the Sender Rewriting Scheme (SRS) via TCP-based lookup tables for Postfix
@@ -98893,14 +98915,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 13379. pat-aur-client-flatpak-git
+** BLOCKED 13379. pat-aur-client-flatpak-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: depends on pat-aur-host-git (Arch); A1: requires pat-aur; A2: Flatpak integration; A3: blocked on Arch dep]
    - AUR votes: 2, popularity: 1.0000
    - Note: Flatpak updates support for pat-aur.
    - TODO Status: TODO
 
 
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Flatpak support addon for pat-aur; depends on pat-aur + flatpak integration; A1: requires pat-aur first; next: blocked on pat-aur (recipe-resolver-260414t)
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Flatpak support addon for pat-aur; depends on pat-aur-host-git (Arch-only, also EXHAUSTED); A1: requires pat-aur first; A2: pat-aur depends on pacman; A3: not portable (recipe-resolver-260414x)
+** BLOCKED 13383. frame [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ABANDONED_UPSTREAM: last release 2013; A1: 13+ years dead; A2: Bazaar VCS; A3: superseded by libinput]
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ABANDONED_UPSTREAM: libframe touch library by Canonical; A1: last release v2.5.0 in Feb 2013; A2: source in Bazaar VCS; A3: superseded by libinput (recipe-resolver-260414x)
 ** BLOCKED 13380. pat-aur-client-firmware-git
    - AUR votes: 2, popularity: 1.0000
    - Note: firmware updates support for pat-aur.
@@ -98930,11 +98954,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — touch input handling library (discontinued by Canonical); A1: grail+frame replaced by libinput; A2: no maintained upstream; next: check if obsolete (recipe-resolver-260414t)
    - TODO Status: BLOCKED
 ** DONE 13384. hardcode-fixer-git
-   - Source List: AUR
+** BLOCKED 13388. maint [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch system maintenance; A1: pacman deps; A2: Arch filesystem; A3: not portable]
    - Status: DONE: recipe in deptree-resolver-260414o.scm (hardcode-fixer-git v2.0)
    - Difficulty: auto
    - TODO Status: DONE
 
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch system maintenance utility; A1: depends on pacman and Arch tools; A2: shell scripts tied to Arch layout; A3: not portable outside Arch (recipe-resolver-260414x)
 ** DONE 13385. freecell
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (freecell v1.2.6)
@@ -99139,8 +99164,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 1, popularity: 1.0000
    - Note: Your favorite Rust -> Wasm workflow tool
    - TODO Status: TODO
+** BLOCKED 13417. tuimer [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SOURCE_NOT_FOUND: no Go project found; A1: no upstream repo; A2: closest match is Rust; A3: cannot package]
 
-
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SOURCE_NOT_FOUND: described as Go terminal timer but no matching project found; A1: no upstream repo at expected URL; A2: closest match (work-tuimer) is Rust; A3: cannot package without source (recipe-resolver-260414x)
 ** DONE 13414. wardn-bin
    - AUR votes: 1, popularity: 1.0000
    - Note: Credential isolation for AI agents (agents never see real API keys - structural guarantee, not policy)
@@ -99373,8 +99399,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — photo location planner; A1: unclear upstream/build system; A2: may need geolocation libs; next: investigate source (recipe-resolver-260414t)
+** BLOCKED 13448. pardf [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — UNCLEAR_UPSTREAM: no clear source; A1: no repo found; A2: may be proprietary; A3: unknown license]
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — UNCLEAR_UPSTREAM: PDF editor by Word-Sys; A1: no clear open-source repository; A2: may be proprietary/commercial; A3: cannot determine license or build system (recipe-resolver-260414x)
 ** DONE 13445. piclist-bin
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 1, popularity: 1.0000
@@ -99427,11 +99454,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 13452. nodejs-ripencli [BLOCKED: MISSING_SOURCE: not in AUR metadata; no upstream source available]
-   - Source List: AUR
+** BLOCKED 13456. muzak [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NO_LICENSE: no LICENSE file; A1: missing license blocks Guix; A2: small project; A3: needs author action]
    - Status: BLOCKED: MISSING_SOURCE: not in AUR metadata; no upstream source available
    - Difficulty: auto
    - TODO Status: BLOCKED
 
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NO_LICENSE: Rust music suite at github.com/The0x539/muzak; A1: no LICENSE file (hard blocker); A2: small project (87 commits); A3: would need author to add license (recipe-resolver-260414x)
 ** DONE 13453. ninjabrain-bot
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (ninjabrain-bot v1.5.1)
@@ -99510,9 +99538,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The aggregated TCP flows printer in Linux
    - TODO Status: TODO
 
-
+** BLOCKED 13467. llama.cpp-clblast [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SYSTEM_GGML: CLBlast backend in ggml; A1: flag in ggml not llama-cpp; A2: need ggml-clblast; A3: complex Vulkan deps]
    - Status: DONE: Recipe added in recipe-resolver-260414t.scm (recipe-resolver-260414t)
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SYSTEM_GGML_DEPENDENCY: llama-cpp uses system ggml; CLBlast backend must be in ggml; A1: flag belongs in ggml package; A2: need ggml-clblast variant first; A3: ggml has complex Vulkan/shader deps (recipe-resolver-260414x)
 ** DONE 13464. lsconntrack-bin
    - AUR votes: 1, popularity: 1.0000
    - Note: The Linux netfilter conntrack-based connection flows pretty printer
@@ -99587,7 +99616,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414t.scm (recipe-resolver-260414t)
    - TODO Status: DONE
-** BLOCKED 13473. kittehlist-git
+** BLOCKED 13477. incplot [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: 9 custom C++ deps, CPM build; A1: CPM downloads at build; A2: 5+ custom libs; A3: sqlpp23/cpr complexity]
    - AUR votes: 1, popularity: 1.0000
    - Note: todo list for kittehs - development version
    - TODO Status: TODO
@@ -99595,6 +99624,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — unclear upstream; A1: no clear source found; next: investigate (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: C++/CMake CLI plotter using CPM package manager; A1: CPM downloads deps at build time; A2: 5+ custom libraries by same author; A3: sqlpp23, cpr, libarchive superbuild (recipe-resolver-260414x)
 ** DONE 13474. kdenlive-appimage-pure
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (kdenlive-appimage-pure v25.12.3)

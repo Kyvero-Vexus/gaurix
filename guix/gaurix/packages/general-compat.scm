@@ -2529,7 +2529,6 @@
             shpool
             sickchill-git
             sip4
-)
             ;; recipe-resolver-260414r
             magika-bin
             sddm-eucalyptus-drop
@@ -2550,7 +2549,7 @@
             qownnotes-bin
             waybar-minimal-nosystemd-git
             fprintd-clients-git
-)
+))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
 

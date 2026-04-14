@@ -1,7 +1,8 @@
 ;;; recipe-resolver-260414x — blocked notes
 ;;;
-;;; 25 packages marked NEEDS_RECIPE_DESIGN_EXHAUSTED with specific reasons.
-;;; 5 packages resolved (3 recipes + 2 compat aliases).
+;;; 26 packages marked NEEDS_RECIPE_DESIGN_EXHAUSTED with specific reasons.
+;;; 4 packages resolved (3 recipes + 2 compat aliases — 1 recipe provides
+;;; both spooles and calculix-ccx since spooles is a dependency).
 ;;;
 ;;; ── Resolved ──
 ;;;
@@ -140,6 +141,13 @@
 ;;;   arch-install-scripts; fundamentally Arch Linux tooling;
 ;;;   A1: depends on pacman (not in Guix)
 ;;;   A2: depends on makepkg (Arch build tool)
+;;;   A3: not portable outside Arch Linux
+;;;
+;;; #13379 pat-aur-client-flatpak-git
+;;;   ARCH_SPECIFIC: Flatpak support addon for pat-aur; depends on
+;;;   pat-aur-host-git (Arch-only, also EXHAUSTED in this pass);
+;;;   A1: requires pat-aur first (depends on pacman)
+;;;   A2: Flatpak integration specific to pat-aur workflow
 ;;;   A3: not portable outside Arch Linux
 ;;;
 ;;; #13383 frame
