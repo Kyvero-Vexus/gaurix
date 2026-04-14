@@ -2532,4 +2532,8 @@
                python-gguf
                python-ndeflib
                python-docstring-parser
+               ;; recipe-resolver-260414y
+               kdiff3
+               xdg-desktop-portal-minimal-git
+               swaystatus-git
 ))

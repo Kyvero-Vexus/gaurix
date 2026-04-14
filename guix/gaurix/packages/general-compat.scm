@@ -288,6 +288,7 @@
   #:use-module (gaurix packages recipe-resolver-260413f)
   #:use-module (gaurix packages recipe-resolver-260413g)
   #:use-module (gaurix packages deptree-resolver-260413c)
+  #:use-module (gaurix packages deptree-resolver-260413d)
   #:use-module (gaurix packages deptree-resolver-260413e)
   #:use-module (gaurix packages deptree-resolver-260413f)
   #:use-module (gaurix packages recipe-resolver-260413k)
@@ -343,6 +344,7 @@
   #:use-module (gaurix packages deptree-resolver-260414q)
   #:use-module (gaurix packages recipe-resolver-260414w)
   #:use-module (gaurix packages recipe-resolver-260414x)
+  #:use-module (gaurix packages recipe-resolver-260414y)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2550,6 +2552,12 @@
             qownnotes-bin
             waybar-minimal-nosystemd-git
             fprintd-clients-git
+
+            ;; recipe-resolver-260414y
+            kdiff3
+            xdg-desktop-portal-minimal-git
+            swaystatus-git
+            ;; patchy already exported from deptree-resolver-260413d
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6848,3 +6856,7 @@
 (define-public auth0 (package (inherit auth0-bin) (name "auth0")))
 (define-public binjr (package (inherit binjr-bin) (name "binjr")))
 (define-public binvec (package (inherit binvec-bin) (name "binvec")))
+
+;; --- recipe-resolver-260414y compat aliases ---
+(define-public xdg-desktop-portal-minimal (package (inherit xdg-desktop-portal-minimal-git) (name "xdg-desktop-portal-minimal")))
+(define-public kdiff3-git-alias (package (inherit kdiff3) (name "kdiff3-git")))
