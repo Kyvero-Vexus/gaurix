@@ -1,9 +1,9 @@
 # Blocked Dependency Tree
 
-- **Timestamp:** 2026-04-14T00:39:47.266401+00:00
-- **Run ID:** deptree-resolver-260413o
-- **Total blocked:** 2701
-- **Queue length:** 2701
+- **Timestamp:** 2026-04-14T02:00:05.611093+00:00
+- **Run ID:** deptree-resolver-260413p
+- **Total blocked:** 2665
+- **Queue length:** 2665
 
 ## Priority Queue (top 120)
 
@@ -85,47 +85,47 @@
 | 74 | etckeeper-packages | 0 | 0 | 2 |
 | 75 | i2c-nct6793-dkms-git | 0 | 0 | 2 |
 | 76 | imx471-dkms-git | 0 | 0 | 2 |
-| 77 | inkscape-open-symbols-git | 0 | 0 | 2 |
-| 78 | inori | 0 | 0 | 2 |
-| 79 | inotify-info | 0 | 0 | 2 |
-| 80 | intel-ucode-git | 0 | 0 | 2 |
-| 81 | ipscan | 0 | 0 | 2 |
-| 82 | iptvnator-electron-bin | 0 | 0 | 2 |
-| 83 | it87-dkms-git | 0 | 0 | 2 |
-| 84 | ithc-dkms-git | 0 | 0 | 2 |
-| 85 | ivpn-dinit | 0 | 0 | 2 |
-| 86 | jasm-bin | 0 | 0 | 2 |
-| 87 | jdk-doc | 0 | 0 | 2 |
-| 88 | jdk21-graalvm-ee-bin | 0 | 0 | 2 |
-| 89 | jid | 0 | 0 | 2 |
-| 90 | journald-broker | 0 | 0 | 2 |
-| 91 | k3s | 0 | 0 | 2 |
-| 92 | k6 | 0 | 0 | 2 |
-| 93 | kak-tree-sitter | 0 | 0 | 2 |
-| 94 | kaval-bin | 0 | 0 | 2 |
-| 95 | kdrive-bin | 0 | 0 | 2 |
-| 96 | kicad-library-espressif-git | 0 | 0 | 2 |
-| 97 | klein-bin | 0 | 0 | 2 |
-| 98 | konica-minolta-bizhub-c554e-series | 0 | 0 | 2 |
-| 99 | krep-git | 0 | 0 | 2 |
-| 100 | kumono | 0 | 0 | 2 |
-| 101 | kvantum-theme-catppuccin-git | 0 | 0 | 2 |
-| 102 | kvantum-theme-libadwaita-git | 0 | 0 | 2 |
-| 103 | lact-openrc | 0 | 0 | 2 |
-| 104 | larn | 0 | 0 | 2 |
-| 105 | latin-words | 0 | 0 | 2 |
-| 106 | lazyjira-git | 0 | 0 | 2 |
-| 107 | lfe | 0 | 0 | 2 |
-| 108 | lib32-a52dec | 0 | 0 | 2 |
-| 109 | lib32-gperftools | 0 | 0 | 2 |
-| 110 | lib32-opencl-legacy-amdgpu-pro | 0 | 0 | 2 |
-| 111 | libiff-git | 0 | 0 | 2 |
-| 112 | libreelec-dvb-firmware-git | 0 | 0 | 2 |
-| 113 | libreoffice-extension-languagetool | 0 | 0 | 2 |
-| 114 | libtifiles | 0 | 0 | 2 |
-| 115 | linux-xanmod-linux-bin-x64v3 | 0 | 0 | 2 |
-| 116 | linux-xanmod-linux-headers-bin-x64v3 | 0 | 0 | 2 |
-| 117 | linux-xanmod-lts-linux-bin-x64v3 | 0 | 0 | 2 |
-| 118 | linux-xanmod-lts-linux-headers-bin-x64v3 | 0 | 0 | 2 |
-| 119 | linux-zen-versioned-bin | 0 | 0 | 2 |
-| 120 | llvm-mos-git | 0 | 0 | 2 |
+| 77 | intel-ucode-git | 0 | 0 | 2 |
+| 78 | iptvnator-electron-bin | 0 | 0 | 2 |
+| 79 | it87-dkms-git | 0 | 0 | 2 |
+| 80 | ithc-dkms-git | 0 | 0 | 2 |
+| 81 | ivpn-dinit | 0 | 0 | 2 |
+| 82 | jdk-doc | 0 | 0 | 2 |
+| 83 | jdk21-graalvm-ee-bin | 0 | 0 | 2 |
+| 84 | konica-minolta-bizhub-c554e-series | 0 | 0 | 2 |
+| 85 | kvantum-theme-catppuccin-git | 0 | 0 | 2 |
+| 86 | kvantum-theme-libadwaita-git | 0 | 0 | 2 |
+| 87 | lact-openrc | 0 | 0 | 2 |
+| 88 | larn | 0 | 0 | 2 |
+| 89 | latin-words | 0 | 0 | 2 |
+| 90 | lazyjira-git | 0 | 0 | 2 |
+| 91 | lfe | 0 | 0 | 2 |
+| 92 | lib32-a52dec | 0 | 0 | 2 |
+| 93 | lib32-gperftools | 0 | 0 | 2 |
+| 94 | lib32-opencl-legacy-amdgpu-pro | 0 | 0 | 2 |
+| 95 | libiff-git | 0 | 0 | 2 |
+| 96 | libreelec-dvb-firmware-git | 0 | 0 | 2 |
+| 97 | libreoffice-extension-languagetool | 0 | 0 | 2 |
+| 98 | libtifiles | 0 | 0 | 2 |
+| 99 | linux-xanmod-linux-bin-x64v3 | 0 | 0 | 2 |
+| 100 | linux-xanmod-linux-headers-bin-x64v3 | 0 | 0 | 2 |
+| 101 | linux-xanmod-lts-linux-bin-x64v3 | 0 | 0 | 2 |
+| 102 | linux-xanmod-lts-linux-headers-bin-x64v3 | 0 | 0 | 2 |
+| 103 | linux-zen-versioned-bin | 0 | 0 | 2 |
+| 104 | llvm-mos-git | 0 | 0 | 2 |
+| 105 | locale-en_ru | 0 | 0 | 2 |
+| 106 | localsend-go | 0 | 0 | 2 |
+| 107 | logana-bin | 0 | 0 | 2 |
+| 108 | lsu-bin | 0 | 0 | 2 |
+| 109 | luajit-clang-git | 0 | 0 | 2 |
+| 110 | lunar-client | 0 | 0 | 2 |
+| 111 | lunii-qt-bin | 0 | 0 | 2 |
+| 112 | lyrebird-proxy | 0 | 0 | 2 |
+| 113 | lyrics-git | 0 | 0 | 2 |
+| 114 | lyse | 0 | 0 | 2 |
+| 115 | magewell-pro-capture-dkms | 0 | 0 | 2 |
+| 116 | makesure | 0 | 0 | 2 |
+| 117 | mandb-ondemand | 0 | 0 | 2 |
+| 118 | matchmaker-bin | 0 | 0 | 2 |
+| 119 | mgit | 0 | 0 | 2 |
+| 120 | microsip | 0 | 0 | 2 |

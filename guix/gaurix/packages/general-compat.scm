@@ -30,6 +30,7 @@
   #:use-module (gaurix packages recipe-resolver-260413ag)
   #:use-module (gaurix packages recipe-resolver-260413ah)
   #:use-module (gaurix packages deptree-resolver-260413n)
+  #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -6256,3 +6257,6 @@
 (define-public nvi-multibyte-git (package (inherit nvi-multibyte) (name "nvi-multibyte-git")))
 (define-public stacer-git (package (inherit stacer) (name "stacer-git")))
 (define-public ttf-monocraft-git (package (inherit ttf-monocraft) (name "ttf-monocraft-git")))
+;; --- deptree-resolver-260413p compat aliases ---
+(define-public lazyjira (package (inherit lazyjira-git) (name "lazyjira")))
+(define-public libiff (package (inherit libiff-git) (name "libiff")))

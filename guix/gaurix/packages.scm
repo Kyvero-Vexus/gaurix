@@ -1126,4 +1126,15 @@
             libastal-tray
             material-kwin-decoration
             invader
+            ;; deptree-resolver-260413p
+            kvantum-theme-catppuccin-git
+            kvantum-theme-libadwaita-git
+            larn
+            latin-words
+            lazyjira-git
+            lfe
+            libiff-git
+            libreelec-dvb-firmware-git
+            libreoffice-extension-languagetool
+            libtifiles
 )
