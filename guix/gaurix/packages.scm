@@ -1350,6 +1350,40 @@
             stoat-desktop-git
             wlvncc-git
             scrap-git
+            ;; recipe-resolver-260414t
+            peertube-viewer-rs-bin
+            zlaunch-bin
+            zar-bin
+            xmodits-gui-bin
+            xmodits-cli-bin
+            wat-bin
+            wardn-bin
+            tcpulse-bin
+            recordly-bin
+            qbtctl-bin
+            perry-bin
+            parsync-bin
+            neomd-bin
+            mpv-manager-bin
+            m3u8-downloader-colzry-bin
+            lstf-bin
+            lsconntrack-bin
+            limux-bin
+            kuba-bin
+            hmon-bin
+            genv-bin
+            emergent-bin
+            dragit-bin
+            cure-bin
+            ctxgraph-bin
+            crt-bin
+            craft-agents-bin
+            bk-bin
+            animestan-bin
+            acton-ai-bin
+            jottr-bin
+            linux-tool-bin
+            make-4.3
         ;; deptree-resolver-260414b
             logana-bin
             lsu-bin
