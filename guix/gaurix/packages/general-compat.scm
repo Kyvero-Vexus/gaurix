@@ -308,6 +308,7 @@
   #:use-module (gaurix packages recipe-resolver-260414a)
   #:use-module (gaurix packages deptree-resolver-260414b)
   #:use-module (gaurix packages recipe-resolver-260414b)
+  #:use-module (gaurix packages deptree-resolver-260414c)
 
   #:export (
             ;; recipe-resolver-260413l recipes
