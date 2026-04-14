@@ -1076,4 +1076,33 @@
             caffeine-ng
             cpupower-gui
             perl-cpan-uploader
+            wstunnel-bin
+            bluetuith-bin
+            easyeda-bin
+            uutils-coreutils-bin
+            natmap
+            curlftpfs-ng
+            atari++
+            zapret
+            rockchip-mpp
+            fcitx5-mcbopomofo
+            si-edit
+            ftb-file-browser
+            rmg
+            svxlink
+            plasma5-wallpapers-dynamic
+            nautilus-checksums
+            mesonlsp
+            eml2pdf
+            puddletag
+            input-remapper
+            improve-imgsli
+            objection
+            cozy-audiobooks
+            python-magika
+            ruby-digest-crc
+            pyonji
+            tonearm
+            wslu
+            x11docker
 )
