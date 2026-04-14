@@ -294,6 +294,7 @@
   #:use-module (gaurix packages recipe-resolver-260413z)
   #:use-module (gaurix packages deptree-resolver-260413l)
   #:use-module (gaurix packages deptree-resolver-260413m)
+  #:use-module (gaurix packages deptree-resolver-260413o)
   #:use-module (gaurix packages recipe-resolver-260413ab)
   #:use-module (gaurix packages recipe-resolver-260413ac)
 

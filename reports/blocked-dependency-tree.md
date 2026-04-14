@@ -1,9 +1,9 @@
 # Blocked Dependency Tree
 
-- **Timestamp:** 2026-04-13T23:26:08.021308+00:00
-- **Run ID:** deptree-resolver-260413n
-- **Total blocked:** 2761
-- **Queue length:** 2761
+- **Timestamp:** 2026-04-14T00:39:47.266401+00:00
+- **Run ID:** deptree-resolver-260413o
+- **Total blocked:** 2701
+- **Queue length:** 2701
 
 ## Priority Queue (top 120)
 
@@ -108,24 +108,24 @@
 | 97 | klein-bin | 0 | 0 | 2 |
 | 98 | konica-minolta-bizhub-c554e-series | 0 | 0 | 2 |
 | 99 | krep-git | 0 | 0 | 2 |
-| 100 | kubecolor | 0 | 0 | 2 |
-| 101 | kumono | 0 | 0 | 2 |
-| 102 | kvantum-theme-catppuccin-git | 0 | 0 | 2 |
-| 103 | kvantum-theme-libadwaita-git | 0 | 0 | 2 |
-| 104 | lact-openrc | 0 | 0 | 2 |
-| 105 | larn | 0 | 0 | 2 |
-| 106 | latin-words | 0 | 0 | 2 |
-| 107 | lazyjira-git | 0 | 0 | 2 |
-| 108 | lfe | 0 | 0 | 2 |
-| 109 | lib32-a52dec | 0 | 0 | 2 |
-| 110 | lib32-gperftools | 0 | 0 | 2 |
-| 111 | lib32-opencl-legacy-amdgpu-pro | 0 | 0 | 2 |
-| 112 | libiff-git | 0 | 0 | 2 |
-| 113 | libreelec-dvb-firmware-git | 0 | 0 | 2 |
-| 114 | libreoffice-extension-languagetool | 0 | 0 | 2 |
-| 115 | libtifiles | 0 | 0 | 2 |
-| 116 | linux-xanmod-linux-bin-x64v3 | 0 | 0 | 2 |
-| 117 | linux-xanmod-linux-headers-bin-x64v3 | 0 | 0 | 2 |
-| 118 | linux-xanmod-lts-linux-bin-x64v3 | 0 | 0 | 2 |
-| 119 | linux-xanmod-lts-linux-headers-bin-x64v3 | 0 | 0 | 2 |
-| 120 | linux-zen-versioned-bin | 0 | 0 | 2 |
+| 100 | kumono | 0 | 0 | 2 |
+| 101 | kvantum-theme-catppuccin-git | 0 | 0 | 2 |
+| 102 | kvantum-theme-libadwaita-git | 0 | 0 | 2 |
+| 103 | lact-openrc | 0 | 0 | 2 |
+| 104 | larn | 0 | 0 | 2 |
+| 105 | latin-words | 0 | 0 | 2 |
+| 106 | lazyjira-git | 0 | 0 | 2 |
+| 107 | lfe | 0 | 0 | 2 |
+| 108 | lib32-a52dec | 0 | 0 | 2 |
+| 109 | lib32-gperftools | 0 | 0 | 2 |
+| 110 | lib32-opencl-legacy-amdgpu-pro | 0 | 0 | 2 |
+| 111 | libiff-git | 0 | 0 | 2 |
+| 112 | libreelec-dvb-firmware-git | 0 | 0 | 2 |
+| 113 | libreoffice-extension-languagetool | 0 | 0 | 2 |
+| 114 | libtifiles | 0 | 0 | 2 |
+| 115 | linux-xanmod-linux-bin-x64v3 | 0 | 0 | 2 |
+| 116 | linux-xanmod-linux-headers-bin-x64v3 | 0 | 0 | 2 |
+| 117 | linux-xanmod-lts-linux-bin-x64v3 | 0 | 0 | 2 |
+| 118 | linux-xanmod-lts-linux-headers-bin-x64v3 | 0 | 0 | 2 |
+| 119 | linux-zen-versioned-bin | 0 | 0 | 2 |
+| 120 | llvm-mos-git | 0 | 0 | 2 |
