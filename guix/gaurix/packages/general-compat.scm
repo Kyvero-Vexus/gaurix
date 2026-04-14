@@ -340,6 +340,7 @@
   #:use-module (gaurix packages deptree-resolver-260414n)
 
   #:use-module (gaurix packages deptree-resolver-260414o)
+  #:use-module (gaurix packages deptree-resolver-260414q)
   #:use-module (gaurix packages recipe-resolver-260414w)
   #:use-module (gaurix packages recipe-resolver-260414x)
 
@@ -6829,3 +6830,21 @@
 ;; --- recipe-resolver-260414x compat aliases ---
 (define-public qbittorrent-enhanced-ua-alias (package (inherit qbittorrent-enhanced-ua) (name "qbittorrent-enhanced-ua-alias")))
 (define-public qbittorrent-enhanced-ua-nox-alias (package (inherit qbittorrent-enhanced-ua-nox) (name "qbittorrent-enhanced-ua-nox-alias")))
+
+;; --- deptree-resolver-260414q compat aliases ---
+(define-public elephant (package (inherit elephant-bin) (name "elephant")))
+(define-public xlibre-xserver-common (package (inherit xlibre-xserver-common-git) (name "xlibre-xserver-common")))
+(define-public electron-castlab (package (inherit electron-castlab-bin) (name "electron-castlab")))
+(define-public ttf-material-symbols-variable (package (inherit ttf-material-symbols-variable-git) (name "ttf-material-symbols-variable")))
+(define-public dotnet-targeting-pack-9.0 (package (inherit dotnet-targeting-pack-9.0-bin) (name "dotnet-targeting-pack-9.0")))
+(define-public python-pyfakewebcam (package (inherit python-pyfakewebcam-git) (name "python-pyfakewebcam")))
+(define-public libastal-gjs (package (inherit libastal-gjs-git) (name "libastal-gjs")))
+(define-public python-mediapipe (package (inherit python-mediapipe-bin) (name "python-mediapipe")))
+(define-public amdonly-gaming-opencl-rusticl-mesa (package (inherit amdonly-gaming-opencl-rusticl-mesa-git) (name "amdonly-gaming-opencl-rusticl-mesa")))
+(define-public amdonly-gaming-mesa (package (inherit amdonly-gaming-mesa-git) (name "amdonly-gaming-mesa")))
+(define-public amdonly-gaming-vulkan-radeon (package (inherit amdonly-gaming-vulkan-radeon-git) (name "amdonly-gaming-vulkan-radeon")))
+(define-public amdonly-gaming-vulkan-mesa-layers (package (inherit amdonly-gaming-vulkan-mesa-layers-git) (name "amdonly-gaming-vulkan-mesa-layers")))
+(define-public qemu-headless (package (inherit qemu-headless-git) (name "qemu-headless")))
+(define-public auth0 (package (inherit auth0-bin) (name "auth0")))
+(define-public binjr (package (inherit binjr-bin) (name "binjr")))
+(define-public binvec (package (inherit binvec-bin) (name "binvec")))
