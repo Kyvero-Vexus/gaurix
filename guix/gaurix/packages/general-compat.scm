@@ -340,6 +340,8 @@
   #:use-module (gaurix packages deptree-resolver-260414n)
 
   #:use-module (gaurix packages deptree-resolver-260414o)
+  #:use-module (gaurix packages recipe-resolver-260414w)
+  #:use-module (gaurix packages recipe-resolver-260414x)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -6825,3 +6827,6 @@
 (define-public cmdcreate (package (inherit cmdcreate-bin) (name "cmdcreate")))
 (define-public udever (package (inherit udever-bin) (name "udever")))
 (define-public virt-install (package (inherit virt-install-git) (name "virt-install")))
+;; --- recipe-resolver-260414x compat aliases ---
+(define-public qbittorrent-enhanced-ua-alias (package (inherit qbittorrent-enhanced-ua) (name "qbittorrent-enhanced-ua-alias")))
+(define-public qbittorrent-enhanced-ua-nox-alias (package (inherit qbittorrent-enhanced-ua-nox) (name "qbittorrent-enhanced-ua-nox-alias")))
