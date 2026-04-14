@@ -921,6 +921,7 @@
   #:use-module (gaurix packages deptree-resolver-260413m-blocked-notes)
   #:use-module (gaurix packages recipe-resolver-260413aa)
   #:use-module (gaurix packages recipe-resolver-260413aa-blocked-notes)
+  #:use-module (gaurix packages deptree-resolver-260414b)
             ;; recipe-resolver-260413ab
             bareos-contrib-director-python-plugins
             bareos-contrib-filedaemon-python-plugins
@@ -1346,4 +1347,9 @@
             stoat-desktop-git
             wlvncc-git
             scrap-git
+        ;; deptree-resolver-260414b
+            logana-bin
+            lsu-bin
+            lunii-qt-bin
+            skillshare
 )
