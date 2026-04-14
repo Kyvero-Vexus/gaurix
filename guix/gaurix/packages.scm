@@ -2291,4 +2291,16 @@
             git-wizard
             ytconverter
             cai
+            ;; recipe-resolver-260414s
+            edir
+            discord-ptb-bin
+            brave-bin
+            feather-wallet-bin
+            popcorntime-bin
+            uno-calculator-bin
+            wgrib2
+            handbrake-cli-git
+            kdenlive-release-git
+            rmlint-shredder-git
+            jami-daemon-git
 )
