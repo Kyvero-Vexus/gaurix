@@ -30,6 +30,7 @@
   #:use-module (gaurix packages recipe-resolver-260413ag)
   #:use-module (gaurix packages recipe-resolver-260413ah)
   #:use-module (gaurix packages recipe-resolver-260413aj)
+  #:use-module (gaurix packages recipe-resolver-260413ak)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)

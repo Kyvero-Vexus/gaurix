@@ -1217,6 +1217,28 @@
             btrfs-file-history-git
             astrbot-git
             pear-desktop-noads-git
+            ;; recipe-resolver-260413aj
+            ;; (entries added inline — see recipe-resolver-260413aj.scm)
+            ;; recipe-resolver-260413ak
+            reef
+            lazyjournal
+            hardbore-bin
+            jan-bin
+            rats-search-bin
+            battinfo
+            valent
+            exaile
+            mx-samba-config
+            ovn
+            x2goserver
+            glab
+            python-docling-core
+            clipboard-sync
+            conky-colors
+            rofi-gpaste
+            amiberry
+            ruby-neovim
+            bugwarrior
             ;; deptree-resolver-260413p
             kvantum-theme-catppuccin-git
             kvantum-theme-libadwaita-git
