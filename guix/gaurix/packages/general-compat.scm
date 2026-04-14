@@ -326,6 +326,8 @@
   #:use-module (gaurix packages recipe-resolver-260414m)
   #:use-module (gaurix packages recipe-resolver-260414n)
 
+  #:use-module (gaurix packages deptree-resolver-260414l)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2379,6 +2381,33 @@
             pokeget-bin
             prospect-mail-bin
             xdelta3-cross-gui-bin
+            ;; deptree-resolver-260414l recipes
+            ds360go-git
+            duo-desktop
+            eac3to
+            eclipse-dsl-bin
+            elephant-bookmarks
+            elephant-clipboard
+            epson-inkjet-printer-201207w
+            fbpdf-git
+            feishin
+            file-clipper
+            firefly-iii
+            flightgear-data
+            fsel
+            ftb-app-bin
+            gem2arch
+            gemini-cli-git
+            ginkgocadx-bin
+            gitignore-downloader
+            gitversion-bin
+            gnatdoc
+            go-grip
+            go-grip-git
+            gopac-git
+            graphite-cli
+            hibiscus
+            whisper-cpp-model-large-v3-turbo
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6585,3 +6614,13 @@
 (define-public deadbeef-plugin-discord (package (inherit deadbeef-plugin-discord-git) (name "deadbeef-plugin-discord")))
 (define-public dingusppc (package (inherit dingusppc-git) (name "dingusppc")))
 (define-public dolphin-anty (package (inherit dolphin-anty-bin) (name "dolphin-anty")))
+
+;; --- deptree-resolver-260414l compat aliases ---
+(define-public ds360go (package (inherit ds360go-git) (name "ds360go")))
+(define-public eclipse-dsl (package (inherit eclipse-dsl-bin) (name "eclipse-dsl")))
+(define-public fbpdf (package (inherit fbpdf-git) (name "fbpdf")))
+(define-public ftb-app (package (inherit ftb-app-bin) (name "ftb-app")))
+(define-public gemini-cli (package (inherit gemini-cli-git) (name "gemini-cli")))
+(define-public ginkgocadx (package (inherit ginkgocadx-bin) (name "ginkgocadx")))
+(define-public gitversion (package (inherit gitversion-bin) (name "gitversion")))
+(define-public go-grip (package (inherit go-grip-git) (name "go-grip")))

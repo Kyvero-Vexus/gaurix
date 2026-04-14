@@ -2019,4 +2019,39 @@
             dingusppc
             ytm-player
             batctl-tui-src
+            ;; deptree-resolver-260414l
+            ds360go-git
+            duo-desktop
+            eac3to
+            eclipse-dsl-bin
+            elephant-bookmarks
+            elephant-clipboard
+            epson-inkjet-printer-201207w
+            fbpdf-git
+            feishin
+            file-clipper
+            firefly-iii
+            flightgear-data
+            fsel
+            ftb-app-bin
+            gem2arch
+            gemini-cli-git
+            ginkgocadx-bin
+            gitignore-downloader
+            gitversion-bin
+            gnatdoc
+            go-grip
+            go-grip-git
+            gopac-git
+            graphite-cli
+            hibiscus
+            whisper-cpp-model-large-v3-turbo
+            ds360go
+            eclipse-dsl
+            fbpdf
+            ftb-app
+            gemini-cli
+            ginkgocadx
+            gitversion
+            go-grip
 )
