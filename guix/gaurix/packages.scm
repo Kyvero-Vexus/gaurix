@@ -2588,3 +2588,27 @@
                neovim-qt-git
                cvs-feature-bin
                psdoom-ng))
+
+;; recipe-resolver-260414aa
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260414aa)
+  #:re-export (gf2-git
+               frame-touch
+               blend2d
+               imageviewer
+               dooble
+               fulcrum
+               plotjuggler
+               gamehub
+               voc-git
+               sshpilot
+               gazelle-tui
+               php-mcrypt
+               ccraw
+               river-bsp-layout
+               wleave
+               uutils-findutils
+               mdbook-epub
+               tuack-ng
+               fresh-editor
+               tuimer))
