@@ -28809,7 +28809,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 3617. aurto [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR auto-build tool, depends on pacman/aurutils]
+** BLOCKED 3617. aurto [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: AUR auto-build tool depending on pacman/aurutils; A1: requires...]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh aurto` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
@@ -28817,6 +28817,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR auto-build tool, depends on pacman/aurutils
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: AUR auto-build depends on pacman/aurutils; A1: port — depends on pacman; A2: wrapper — no AUR on Guix; A3: Guix channels — different paradigm (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: AUR auto-build tool depending on pacman/aurutils; A1: requires pacman ecosystem; A2: no cross-distro use case; A3: fundamentally Arch-only tool (recipe-resolver-260414k)
 
 ** DONE 3618. ttf-pt-astra-sans
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28967,7 +28968,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    BLOCKED: CUSTOM_KERNEL: prebuilt Xanmod kernel headers (deptree-resolver-260414b)
    - Status: DONE: Recipe added in deptree-resolver-260414c.scm (deptree-resolver-260414c)
    - TODO Status: DONE
-** BLOCKED 3633. ladybird-git [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; COMPLEX_DEPS: AUR-only deps: angle, simdutf-git, cpptrace; Web engine with heavy dep chain]
+** BLOCKED 3633. ladybird-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_DEPS: web browser engine with AUR-only deps]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh ladybird-git` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
@@ -28976,6 +28977,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; COMPLEX_DEPS: AUR-only deps: angle, simdutf-git, cpptrace; Web engine with heavy dep chain
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: web engine with AUR-only deps (angle, simdutf-git, cpptrace); A1: package dep chain — massive effort; A2: binary — no releases; A3: Chromium fork — divergent codebase (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: web browser engine with AUR-only deps (angle, simdutf-git, cpptrace); A1: heavy dependency chain requiring 10+ custom packages; A2: no pre-built binary releases; A3: rapid development pace makes packaging unstable (recipe-resolver-260414k)
 
 ** DONE 3634. awsvpnclient
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28993,7 +28995,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 3636. pamac-all [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: Manjaro package manager GUI, depends on libpamac-full/pacman]
+** BLOCKED 3636. pamac-all [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Manjaro package manager GUI depending on libpamac-full/pacman;...]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh pamac-all` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
@@ -29001,6 +29003,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: Manjaro package manager GUI, depends on libpamac-full/pacman
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Manjaro package manager depends on libpamac-full/pacman; A1: port — depends on pacman; A2: generic GUI — different tool; A3: Guix System — has own package manager (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Manjaro package manager GUI depending on libpamac-full/pacman; A1: requires pacman/libalpm; A2: Manjaro-specific functionality; A3: fundamentally Arch-ecosystem tool (recipe-resolver-260414k)
 
 ** DONE 3637. libappindicator-gtk2
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29059,7 +29062,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (phoenix-arch, Firefox privacy config data, GPL-3.0)
 
-** BLOCKED 3644. lazarus-gtk2 [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; MISSING_GUIX_DEPS: requires Free Pascal Compiler (fpc) not packaged in Guix]
+** BLOCKED 3644. lazarus-gtk2 [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_GUIX_DEPS: requires Free Pascal Compiler]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh lazarus-gtk2` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
@@ -29067,8 +29070,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; MISSING_GUIX_DEPS: requires Free Pascal Compiler (fpc) not packaged in Guix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_GUIX_DEPS: requires Free Pascal Compiler (fpc) not in Guix; A1: package fpc — complex bootstrap; A2: cross-compile — fpc needs fpc; A3: wait for fpc in Guix — passive (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_GUIX_DEPS: requires Free Pascal Compiler (fpc) not packaged in Guix; A1: fpc is a bootstrap compiler (needs itself to build); A2: no fpc package or importer in Guix; A3: Pascal ecosystem entirely absent from Guix (recipe-resolver-260414k)
 
-** BLOCKED 3645. lyrionmusicserver [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; PERL_VERSION_PINNING: pins Perl 5.40-5.43, vendor build with 200+ CPAN deps]
+** BLOCKED 3645. lyrionmusicserver [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PERL_VERSION_PINNING: vendor build pinning Perl 5.40-5.43 with 200+ CPAN deps...]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh lyrionmusicserver` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
@@ -29078,6 +29082,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; PERL_VERSION_PINNING: pins Perl 5.40-5.43, vendor build with 200+ CPAN deps
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413h; COMPLEX_DEPS: 200+ Perl CPAN deps with custom vendor build, Perl 5.40-5.43 pinning. See blocked-notes.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PERL_VERSION_PINNING: pins Perl 5.40-5.43, vendor build with 200+ CPAN deps; A1: vendor all CPAN — 200+ packages; A2: relax version pin — upstream rejects; A3: containerize — not Guix packaging (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PERL_VERSION_PINNING: vendor build pinning Perl 5.40-5.43 with 200+ CPAN deps; A1: massive CPAN dependency tree unpackaged; A2: Perl version pinning incompatible with Guix single-Perl model; A3: vendor/ bundle approach against Guix conventions (recipe-resolver-260414k)
 
 ** BLOCKED 3646. qwhitesurgtkdecorations-qt5
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -31641,7 +31646,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 3962. mozillavpn-git [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build, missing Qt6 modules]
+** BLOCKED 3962. mozillavpn-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build; A1: requir...]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh mozillavpn-git` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n mozillavpn-git` after adding module/export.
    - Difficulty: unknown
@@ -31649,6 +31654,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build, missing Qt6 modules
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build; A1: triple build — missing Qt6 modules in Guix; A2: split components — tightly coupled; A3: binary — no official Linux binary (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — BUILD_SYSTEM_TOO_COMPLEX: Rust+Go+CMake+Qt6 triple-compiler build; A1: requires Qt6 modules not in Guix; A2: three separate build systems in one project; A3: Mozilla-specific Go networking stack (recipe-resolver-260414k)
 
 ** DONE 3963. yt-beats
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -31904,7 +31910,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408y.scm (bs-manager-bin v1.5.6, Beat Saber manager deb, GPL-3.0)
 
-** BLOCKED 3994. vrms-arch [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: depends on pyalpm (Arch pacman Python bindings), Arch-only utility]
+** BLOCKED 3994. vrms-arch [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: depends on pyalpm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh vrms-arch` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n vrms-arch` after adding module/export.
    - Difficulty: unknown
@@ -31912,6 +31918,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: depends on pyalpm (Arch pacman Python bindings), Arch-only utility
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: depends on pyalpm (Arch pacman Python bindings); A1: port — no pacman on Guix; A2: generic FOSS checker — different tool; A3: vrms — Debian-specific alternative (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: depends on pyalpm (Arch pacman Python bindings); A1: requires libalpm/pacman; A2: Arch-only utility for checking non-free packages; A3: no equivalent use case on Guix (recipe-resolver-260414k)
 
 ** DONE 3995. brother-mfc-j1010dw
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -31930,7 +31937,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
     - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408w.scm (sshcommand v0.20.1, SSH thin client wrapper from GitHub)
 
 
-** BLOCKED 3997. bilibili [BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413c; ELECTRON_APP: Electron/nvm/pnpm build chain, no viable Guix Electron packaging path]
+** BLOCKED 3997. bilibili [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_APP: Electron/nvm/pnpm build chain; A1: no viable Electron packaging...]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh bilibili` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n bilibili` after adding module/export.
    - Difficulty: unknown
@@ -31938,6 +31945,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ELECTRON_APP: Electron/nvm/pnpm build chain, no viable Guix Electron packaging path
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: Electron/nvm/pnpm build chain; A1: electron-builder — no Guix Electron packaging path; A2: nativefier — deprecated; A3: web wrapper — different approach (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: Electron/nvm/pnpm build chain; A1: no viable Electron packaging path in Guix; A2: nvm/pnpm not in Guix; A3: Electron apps require Chromium build infrastructure (recipe-resolver-260414k)
 
 ** DONE 3998. vobcopy
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -74940,11 +74948,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 10131. dotnet-sdk-preview-bin [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 10131. dotnet-sdk-preview-bin [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BINARY: proprietary .NET SDK, license prohibits redistribution; A...]
    - AUR votes: 22, popularity: 0.0367
    - Note: The .NET Core SDK (preview, binary)
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_BINARY: proprietary .NET SDK binary, no source; A1: binary repack — license prohibits redistribution; A2: build from source — proprietary; A3: mono — different runtime (recipe-resolver-260413al)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_BINARY: proprietary .NET SDK, license prohibits redistribution; A1: binary repack blocked by license; A2: source unavailable; A3: mono is different runtime (recipe-resolver-260414k)
 
 
 ** DONE 10132. dotnet-targeting-pack-preview-bin
@@ -92641,13 +92650,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: Recipe added in recipe-resolver-260413ab.scm (recipe-resolver-260413ab)
-** BLOCKED 12533. pandora-launcher
+** DONE 12533. pandora-launcher
    - AUR votes: 3, popularity: 0.9435
    - Note: A modern Minecraft launcher that balances ease-of-use with powerful instance management features.
    - TODO Status: TODO
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (recipe-resolver-260413ab)
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 ** DONE 12534. pacman-hook-kernel-install
    - AUR votes: 30, popularity: 0.9421
    - Note: Pacman hooks for kernel-install.
@@ -92838,13 +92849,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: Recipe added in recipe-resolver-260413ab.scm (recipe-resolver-260413ab)
-** BLOCKED 12560. alcom
+** DONE 12560. alcom
    - AUR votes: 7, popularity: 0.9135
    - Note: A fast open-source alternative of VRChat Creator Companion (VCC)
    - TODO Status: TODO
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (recipe-resolver-260413ab)
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 ** DONE 12561. storcli
    - AUR votes: 15, popularity: 0.9120
    - Note: CLI program for LSI MegaRAID cards
@@ -94873,7 +94886,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414a.scm (recipe-resolver-260414a)
    - TODO Status: DONE
-** BLOCKED 12803. r8127-dkms [BLOCKED: NEEDS_RECIPE_DESIGN: Realtek r8127 out-of-tree DKMS kernel module]
+** BLOCKED 12803. r8127-dkms [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_KERNEL_MODULE: out-of-tree kernel module requires kernel source tree and...]
    - AUR votes: 1, popularity: 0.8671
    - Note: Kernel module for Realtek 10GB Ethernet NICs
    - TODO Status: TODO
@@ -94881,6 +94894,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Realtek r8127 out-of-tree DKMS kernel module (recipe-resolver-260414a)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DKMS_KERNEL_MODULE: out-of-tree kernel module requires kernel source tree and DKMS infrastructure not available in Guix; A1: no pre-built .ko distribution; A2: Guix lacks DKMS framework; A3: kernel module packaging infeasible without full kernel source (recipe-resolver-260414k)
 ** DONE 12804. rustdesk-server
    - AUR votes: 3, popularity: 0.8671
    - Note: RustDesk Server Program
@@ -95176,7 +95190,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414a.scm (recipe-resolver-260414a)
    - TODO Status: DONE
-** BLOCKED 12841. antiafk-rbx-sober [BLOCKED: NEEDS_RECIPE_DESIGN: Roblox anti-AFK tool requiring Sober Flatpak runtime]
+** BLOCKED 12841. antiafk-rbx-sober [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLATPAK_DEPENDENCY: requires Sober Flatpak runtime]
    - AUR votes: 1, popularity: 0.8667
    - Note: The best program for AntiAFK for Sober (roblox). Or just Sober Anti-AFK.
    - TODO Status: TODO
@@ -95184,6 +95198,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Roblox anti-AFK tool requiring Sober Flatpak runtime (recipe-resolver-260414a)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FLATPAK_DEPENDENCY: requires Sober Flatpak runtime (proprietary Roblox Wine wrapper); A1: no standalone binary; A2: Flatpak runtime not packageable in Guix; A3: game-specific tool with no alternative runtime (recipe-resolver-260414k)
 ** DONE 12842. kimaki
    - AUR votes: 1, popularity: 0.8667
    - Note: Discord bot - Iron Man's Jarvis for coding agents with OpenCode integration
@@ -95406,7 +95421,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414a.scm (recipe-resolver-260414a)
    - TODO Status: DONE
-** BLOCKED 12870. clean-chroot-manager [BLOCKED: NEEDS_RECIPE_DESIGN: Arch Linux makechrootpkg wrapper]
+** BLOCKED 12870. clean-chroot-manager [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Arch Linux makechrootpkg wrapper, depends on devtools/pacman; ...]
    - AUR votes: 69, popularity: 0.8608
    - Note: Wrapper for managing clean chroot builds with local repo therein.
    - TODO Status: TODO
@@ -95414,6 +95429,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Arch Linux makechrootpkg wrapper (recipe-resolver-260414a)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux makechrootpkg wrapper, depends on devtools/pacman; A1: requires pacman ecosystem; A2: no equivalent Guix functionality; A3: fundamentally Arch-only tool (recipe-resolver-260414k)
 ** DONE 12871. goose-desktop
    - AUR votes: 6, popularity: 0.8606
    - Note: Goose Desktop (built from source) - an open source, extensible AI agent that goes beyond code suggestions - install, exe
@@ -95605,7 +95621,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in recipe-resolver-260414a.scm (recipe-resolver-260414a)
    - TODO Status: DONE
-** BLOCKED 12893. pacman-static [BLOCKED: NEEDS_RECIPE_DESIGN: statically linked Arch Linux pacman]
+** BLOCKED 12893. pacman-static [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: statically linked Arch Linux pacman package manager; A1: requi...]
    - AUR votes: 72, popularity: 0.8408
    - Note: Statically-compiled pacman (to fix or install systems without libc)
    - TODO Status: TODO
@@ -95615,6 +95631,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — statically linked Arch Linux pacman (recipe-resolver-260414a)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: statically linked Arch Linux pacman package manager; A1: requires libalpm and Arch infrastructure; A2: no cross-distro use case; A3: fundamentally Arch-only tool (recipe-resolver-260414k)
 ** DONE 12894. wlvncc-git
    - AUR votes: 7, popularity: 0.8407
    - Note: Wayland native VNC client
@@ -95716,11 +95733,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 12907. firefly-iii [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 12907. firefly-iii [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PHP_WEBAPP: Laravel PHP web application requiring Apache/nginx + MySQL/Postgr...]
    - AUR votes: 12, popularity: 0.8309
    - Note: PHP personal finances manager
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PHP_WEBAPP: Laravel PHP web application requiring Apache/nginx + MySQL/PostgreSQL; A1: no php-build-system in Guix; A2: 100+ Composer PHP dependencies unpackaged; A3: web app deployment model incompatible with Guix package paradigm (recipe-resolver-260414k)
 
 
 ** BLOCKED 12908. zenpower5-dkms-git [BLOCKED: DEP_RESOLUTION_FAILED: DKMS kernel module]
@@ -95744,11 +95762,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 12911. python-dlib-cuda [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 12911. python-dlib-cuda [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_CUDA: CUDA variant requires proprietary NVIDIA CUDA toolkit; A1: ...]
    - AUR votes: 17, popularity: 0.8279
    - Note: Dlib is a general purpose cross-platform C++ library designed using contract programming and modern C++ techniques.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_CUDA: CUDA variant requires proprietary NVIDIA CUDA toolkit; A1: base dlib already in Guix (gnu packages machine-learning); A2: CUDA toolkit not in Guix (proprietary); A3: would need nonguix channel for CUDA support (recipe-resolver-260414k)
 
 
 ** BLOCKED 12912. ntfsplus-dkms-git [BLOCKED: DKMS_KERNEL_MODULE: out-of-tree kernel module; requires kernel source tree and DKMS infrastructure]
@@ -95771,26 +95790,30 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 12915. video2x-git [BLOCKED: NEEDS_RECIPE_DESIGN]
+** DONE 12915. video2x-git
    - AUR votes: 3, popularity: 0.8269
    - Note: A machine learning-based video super resolution and frame interpolation framework
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 
 
-** BLOCKED 12916. feishu-bin
+** BLOCKED 12916. feishu-bin [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: ByteDance Feishu/Lark client; A1: proprietary closed-source; A2:...]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show feishu | detail: target `feishu` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; proprietary (ByteDance), no stable download URL. See blocked-notes.
    - AUR votes: 40, popularity: 0.8269
    - Note: Linux client of Feishu (Lark) from Bytedance.
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: ByteDance Feishu/Lark client; A1: proprietary closed-source; A2: no stable versioned download URL; A3: requires ByteDance account and license agreement (recipe-resolver-260414k)
 
 
-** BLOCKED 12917. servo-git [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 12917. servo-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_RUST: massive Rust web engine with 500+ crate dependencies + SpiderMo...]
    - AUR votes: 49, popularity: 0.8266
    - Note: Parallel Browser Project: web browser written in Rust
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_RUST: massive Rust web engine with 500+ crate dependencies + SpiderMonkey; A1: cargo-build-system requires each crate individually packaged; A2: SpiderMonkey build is Firefox-level complexity; A3: vendored source tarball available but against Guix conventions (recipe-resolver-260414k)
 
 
 ** DONE 12918. powerpanel
@@ -95807,11 +95830,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 12920. esp-idf [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 12920. esp-idf [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CROSS_COMPILER_SDK: IoT dev framework requiring Espressif custom Xtensa/RISC-...]
    - AUR votes: 28, popularity: 0.8240
    - Note: Espressif IoT Development Framework. Official development framework for ESP32.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CROSS_COMPILER_SDK: IoT dev framework requiring Espressif custom Xtensa/RISC-V GCC toolchain; A1: custom cross-compiler not in Guix; A2: idf.py setup requires internet access (incompatible with Guix sandbox); A3: git submodule components downloaded at build time (recipe-resolver-260414k)
 
 
 ** DONE 12921. presage
@@ -96218,11 +96242,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 12971. livebook [BLOCKED: NEEDS_RECIPE_DESIGN]
+** DONE 12971. livebook
    - AUR votes: 3, popularity: 0.8005
    - Note: Automate code & data workflows with interactive Elixir notebooks
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 
 
 ** DONE 12972. orca-slicer-bin
@@ -96317,11 +96343,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 12985. lsfg-vk-git [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 12985. lsfg-vk-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_DEPENDENCY: Vulkan layer wrapping proprietary Windows Lossless Sc...]
    - AUR votes: 14, popularity: 0.7848
    - Note: Lossless Scaling Frame Generation on Linux
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_DEPENDENCY: Vulkan layer wrapping proprietary Windows Lossless Scaling DLL; A1: depends on non-free lossless.dll; A2: no Vulkan layer packaging precedent in Guix; A3: proprietary dependency makes it incompatible with Guix free-software policy (recipe-resolver-260414k)
 
 
 ** DONE 12986. jay-git
@@ -96601,11 +96628,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 13026. openutau [BLOCKED: NEEDS_RECIPE_DESIGN]
+** BLOCKED 13026. openutau [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_APP: .NET/C# singing synthesizer requiring .NET SDK; A1: no dotnet-bui...]
    - AUR votes: 6, popularity: 0.7633
    - Note: Open source UTAU successor
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_APP: .NET/C# singing synthesizer requiring .NET SDK; A1: no dotnet-build-system in Guix; A2: .NET SDK is proprietary Microsoft software; A3: NuGet package ecosystem not supported in Guix (recipe-resolver-260414k)
 
 
 ** DONE 13027. cagent-bin
@@ -96795,11 +96823,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260414d.scm (recipe-resolver-260414d)
 
 
-** BLOCKED 13054. local-ai [BLOCKED: NEEDS_RECIPE_DESIGN]
+** DONE 13054. local-ai
    - AUR votes: 4, popularity: 0.7548
    - Note: Free, Open Source OpenAI alternative. Self-hosted, community-driven and local-first
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 
 
 ** DONE 13055. nginx-mainline-mod-geoip2
@@ -96983,11 +97013,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 13081. mihomo-alpha-git [BLOCKED: NEEDS_RECIPE_DESIGN]
+** DONE 13081. mihomo-alpha-git
    - AUR votes: 1, popularity: 0.7525
    - Note: Mihomo Kernel by MetaCubeX, formerly known as Clash.Meta
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — complex build system/dependencies not resolved this pass; requires dedicated packaging effort (recipe-resolver-260414g)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 
 
 ** DONE 13082. brother-dcpl2640dw
@@ -112367,11 +112399,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15612. polymc-git
+** DONE 15612. polymc-git
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show polymc | detail: target `polymc` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - AUR votes: 15, popularity: 0.0105
    - Note: Minecraft launcher with the ability to manage multiple instances.
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in recipe-resolver-260414k.scm (recipe-resolver-260414k)
+   - TODO Status: DONE
 
 
 ** DONE 15613. beets-git [gaurix:queue-20260402p100daily3 target=beets rule=strip-git]
@@ -114243,12 +114277,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15922. lceda-pro-bin
+** BLOCKED 15922. lceda-pro-bin [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: proprietary Chinese EDA tool]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show lceda-pro | detail: target `lceda-pro` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; proprietary EDA, no redistributable URL. See blocked-notes.
    - AUR votes: 7, popularity: 0.0049
    - Note: 免费、专业、强大的国产PCB设计工具
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: proprietary Chinese EDA tool (LCEDA Pro/EasyEDA Pro); A1: no redistributable download URL; A2: proprietary closed-source; A3: requires online account activation (recipe-resolver-260414k)
 
 
 ** TODO 15923. cobalt-lang-bin
@@ -128905,12 +128940,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 18341. python-urllib3-future-git
+** BLOCKED 18341. python-urllib3-future-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_PYTHON_DEPS: requires h11+jh2+qh3 HTTP/2/3 libraries not in Guix; A1:...]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show python-urllib3-future | detail: target `python-urllib3-future` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; needs h11+jh2+qh3 (not in Guix). See blocked-notes.
    - AUR votes: 2, popularity: 0.0007
    - Note: Powerful HTTP 1.1, 2, and 3 client with both sync and async interfaces (built from latest git commit)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_PYTHON_DEPS: requires h11+jh2+qh3 HTTP/2/3 libraries not in Guix; A1: 5+ unpackaged Python deps (h11, jh2, qh3, wassima); A2: complex C extension builds for HTTP/3; A3: niche fork with limited adoption (recipe-resolver-260414k)
 
 
 ** TODO 18342. mkinitcpio-clevis-hook
@@ -131624,12 +131660,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 18784. python-niquests-git
+** BLOCKED 18784. python-niquests-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_PYTHON_DEPS: depends on python-urllib3-future+wassima not in Guix; A1...]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show python-niquests | detail: target `python-niquests` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; depends on urllib3-future+wassima (not in Guix). See blocked-notes.
    - AUR votes: 1, popularity: 0.0005
    - Note: Simple, yet elegant, Python HTTP library: a drop-in replacement for python-requests (latest commit)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_PYTHON_DEPS: depends on python-urllib3-future+wassima not in Guix; A1: urllib3-future itself blocked (see #18341); A2: wassima requires Rust cryptography extensions; A3: transitive dep chain too deep (recipe-resolver-260414k)
 
 
 ** TODO 18785. python-lizard
