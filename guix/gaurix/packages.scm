@@ -2202,3 +2202,16 @@
             mpv-full
             dokku
 )
+
+;; recipe-resolver-260414p
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260414p)
+  #:re-export (ytdlp-gui-bin
+               modrinth-app-bin
+               proton-authenticator-bin
+               worldpainter-bin
+               brickstore-bin
+               tev-bin
+               mqtt-explorer-bin
+               quarto-cli-bin))
+
