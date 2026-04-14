@@ -6875,3 +6875,12 @@
 
 ;; --- recipe-resolver-260414z compat aliases ---
 (define-public cvs-feature (package (inherit cvs-feature-bin) (name "cvs-feature")))
+
+;; --- deptree-resolver-260414s compat aliases ---
+(define-public casa6-pipeline (package (inherit casa6-pipeline-bin) (name "casa6-pipeline")))
+(define-public fsp (package (inherit fsp-bin) (name "fsp")))
+(define-public mkinitcpio-colors (package (inherit mkinitcpio-colors-git) (name "mkinitcpio-colors")))
+(define-public urnetwork-provider (package (inherit urnetwork-provider-git) (name "urnetwork-provider")))
+(define-public vapoursynth-plugin-vship-amd (package (inherit vapoursynth-plugin-vship-amd-git) (name "vapoursynth-plugin-vship-amd")))
+(define-public vapoursynth-tools-genstubs (package (inherit vapoursynth-tools-genstubs-git) (name "vapoursynth-tools-genstubs")))
+(define-public ynote-desktop (package (inherit ynote-desktop-bin) (name "ynote-desktop")))

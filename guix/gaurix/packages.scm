@@ -2612,3 +2612,43 @@
                tuack-ng
                fresh-editor
                tuimer))
+
+;; deptree-resolver-260414s
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260414s)
+  #:re-export (gtk2-plusextra
+               archbuilder
+               nanofetch
+               cockpit-session-recording
+               mkinitcpio-archlogo
+               casa6-pipeline-bin
+               fsp-bin
+               mkinitcpio-btrfs
+               mkinitcpio-colors-git
+               mkinitcpio-wifi
+               mkinitcpio-zerotier
+               snuba
+               ttop
+               urnetwork-provider-git
+               valkyrie
+               valkyrie-qt6
+               vapoursynth-plugin-vship-amd-git
+               vapoursynth-tools-genstubs-git
+               video-compare
+               vscodium-features
+               vscodium-translucent-features
+               vt-cli
+               wallrust
+               winestreamproxy
+               winscp
+               wl-clipboard-rs
+               wl-clipboard-rs-git
+               wperf
+               x11-emoji-picker
+               xapp-jxl-thumbnailer
+               xapp-raw-thumbnailer
+               xapp-vorbiscomment-thumbnailer
+               xfce4-dockbarx-plugin
+               xsos
+               yamtrack
+               ynote-desktop-bin))
