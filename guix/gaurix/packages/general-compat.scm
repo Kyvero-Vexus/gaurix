@@ -318,6 +318,8 @@
   #:use-module (gaurix packages deptree-resolver-260414e)
   #:use-module (gaurix packages deptree-resolver-260414i)
 
+  #:use-module (gaurix packages deptree-resolver-260414j)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2264,6 +2266,59 @@
             otf-annotation-mono
             ttf-annotation-mono
             ttf-annotation-mono-variable
+            ;; --- deptree-resolver-260414j recipes ---
+            arch-os-manager
+            brother-dcpt535dw
+            brother-hl-1110
+            cherry-studio-electron-bin
+            circuit-macros
+            cisco-secure-client
+            dcli-arch-git
+            docker-model-plugin
+            dolibarr
+            dracut-ukify
+            fcitx5-hazkey-bin
+            find-the-command
+            gitextensions
+            hpuld
+            kando-bin
+            lib32-opencl-nvidia-vulkan
+            matlab
+            mommy-git
+            ollama-cuda12-bin
+            ollama-cuda13-bin
+            opencl-vanity-gpg
+            oxmgr-bin
+            pdf-over
+            pkgstate-bin
+            quickshell-overview-git
+            qwen-code-bin
+            reef-tools
+            rvgl-io-loadlevel
+            rvgl-io-music
+            rvgl-io-skins-bonus
+            rvgl-io-tracks
+            sac-gui
+            sheet-git
+            tiddlydesktop
+            tparted-bin
+            ttf-nonicons-bin-git
+            vscodium-bin-marketplace
+            vscodium-translucent-marketplace
+            vtsls
+            wechat
+            whyis-git
+            wine-installer
+            wireplumber-openrc
+            woff-nonicons-bin-git
+            wormhole-rs-bin
+            wpa-actiond
+            wscat
+            xd-torrent
+            xdg-ninja-git
+            xdg-unused-data-git
+            xdman-beta-bin
+            xpad-noone-git
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -4726,6 +4781,7 @@
 (define-public libjxl-noglycin libjxl)
 (define-public libjxl-noglycin-doc libjxl)
 (define-public doas
+  (package
     (inherit opendoas)
     (name "doas")))
             waybar-hyprland-git
@@ -5030,6 +5086,7 @@
             csvi-bin-260408a
 ;; ─── deptree-resolver-260407 compat aliases ───
 (define-public qt5-connectivity
+  (package
     (inherit qtconnectivity)
     (name "qt5-connectivity")))
 
@@ -6434,3 +6491,23 @@
 (define-public otf-annotation-mono (package (inherit font-annotation-mono) (name "otf-annotation-mono")))
 (define-public ttf-annotation-mono (package (inherit font-annotation-mono) (name "ttf-annotation-mono")))
 (define-public ttf-annotation-mono-variable (package (inherit font-annotation-mono) (name "ttf-annotation-mono-variable")))
+
+;; --- deptree-resolver-260414j compat aliases ---
+(define-public cherry-studio-electron (package (inherit cherry-studio-electron-bin) (name "cherry-studio-electron")))
+(define-public dcli-arch (package (inherit dcli-arch-git) (name "dcli-arch")))
+(define-public fcitx5-hazkey (package (inherit fcitx5-hazkey-bin) (name "fcitx5-hazkey")))
+(define-public kando (package (inherit kando-bin) (name "kando")))
+(define-public mommy (package (inherit mommy-git) (name "mommy")))
+(define-public ollama-cuda12 (package (inherit ollama-cuda12-bin) (name "ollama-cuda12")))
+(define-public ollama-cuda13 (package (inherit ollama-cuda13-bin) (name "ollama-cuda13")))
+(define-public oxmgr (package (inherit oxmgr-bin) (name "oxmgr")))
+(define-public pkgstate (package (inherit pkgstate-bin) (name "pkgstate")))
+(define-public quickshell-overview (package (inherit quickshell-overview-git) (name "quickshell-overview")))
+(define-public sheet (package (inherit sheet-git) (name "sheet")))
+(define-public tparted (package (inherit tparted-bin) (name "tparted")))
+(define-public ttf-nonicons-bin (package (inherit ttf-nonicons-bin-git) (name "ttf-nonicons-bin")))
+(define-public whyis (package (inherit whyis-git) (name "whyis")))
+(define-public woff-nonicons-bin (package (inherit woff-nonicons-bin-git) (name "woff-nonicons-bin")))
+(define-public xdg-unused-data (package (inherit xdg-unused-data-git) (name "xdg-unused-data")))
+(define-public xdman-beta (package (inherit xdman-beta-bin) (name "xdman-beta")))
+(define-public xpad-noone (package (inherit xpad-noone-git) (name "xpad-noone")))
