@@ -1865,4 +1865,63 @@
             rtimelog-bin
             rtimelogger-bin
             needle-cli-bin
+            ;; deptree-resolver-260414k
+            adwaita-dark-darose
+            agisoft-metashape
+            airwindows-lv2
+            alacritty-use-theme-with-redshift-git
+            alarm-notify
+            algodoo-wine
+            altair-ai-studio
+            anythingllm-desktop-bin
+            apachedirectorystudio
+            archie
+            aseprite-bin
+            asf-ui-git
+            avalonia86
+            avda-bin
+            bin-cpuflags-x86
+            bitwig-studio-earlyaccess
+            bluevein
+            brother-dcpt720dw
+            brother-mfc-l3750cdw
+            brother-mfc-l8690cdw
+            btrfs-desktop-notification
+            burpsuite-pro
+            caddy-custom
+            casa6-bin
+            cfspeedtest
+            chayang
+            chibi-cli-git
+            clash-nyanpasu-nightly-bin
+            clonehero-ptb
+            code-features
+            cuda-12-9
+            curd
+            customizepkg-git
+            dbeaver-jvm-hook
+            ddrescueview
+            deadbeef-plugin-discord-git
+            dingusppc-git
+            dmarc-cat
+            dolphin-anty-bin
+            doomrunner
+            dput-ng
+            xytz-bin
+            yabridge-tui
+            yubico-authenticator-bin
+            zish
+            zzz
+            anythingllm-desktop
+            asf-ui
+            avda
+            casa6
+            chibi-cli
+            clash-nyanpasu-nightly
+            customizepkg
+            deadbeef-plugin-discord
+            dingusppc
+            dolphin-anty
+            xytz
+            yubico-authenticator
 )

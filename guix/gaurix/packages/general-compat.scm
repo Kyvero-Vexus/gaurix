@@ -321,6 +321,8 @@
 
   #:use-module (gaurix packages deptree-resolver-260414j)
 
+  #:use-module (gaurix packages deptree-resolver-260414k)
+
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2320,6 +2322,53 @@
             xdg-unused-data-git
             xdman-beta-bin
             xpad-noone-git
+            ;; deptree-resolver-260414k recipes
+            adwaita-dark-darose
+            agisoft-metashape
+            airwindows-lv2
+            alacritty-use-theme-with-redshift-git
+            alarm-notify
+            algodoo-wine
+            altair-ai-studio
+            anythingllm-desktop-bin
+            apachedirectorystudio
+            archie
+            aseprite-bin
+            asf-ui-git
+            avalonia86
+            avda-bin
+            bin-cpuflags-x86
+            bitwig-studio-earlyaccess
+            bluevein
+            brother-dcpt720dw
+            brother-mfc-l3750cdw
+            brother-mfc-l8690cdw
+            btrfs-desktop-notification
+            burpsuite-pro
+            caddy-custom
+            casa6-bin
+            cfspeedtest
+            chayang
+            chibi-cli-git
+            clash-nyanpasu-nightly-bin
+            clonehero-ptb
+            code-features
+            cuda-12-9
+            curd
+            customizepkg-git
+            dbeaver-jvm-hook
+            ddrescueview
+            deadbeef-plugin-discord-git
+            dingusppc-git
+            dmarc-cat
+            dolphin-anty-bin
+            doomrunner
+            dput-ng
+            xytz-bin
+            yabridge-tui
+            yubico-authenticator-bin
+            zish
+            zzz
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -6512,3 +6561,17 @@
 (define-public xdg-unused-data (package (inherit xdg-unused-data-git) (name "xdg-unused-data")))
 (define-public xdman-beta (package (inherit xdman-beta-bin) (name "xdman-beta")))
 (define-public xpad-noone (package (inherit xpad-noone-git) (name "xpad-noone")))
+
+;; --- deptree-resolver-260414k compat aliases ---
+(define-public xytz (package (inherit xytz-bin) (name "xytz")))
+(define-public yubico-authenticator (package (inherit yubico-authenticator-bin) (name "yubico-authenticator")))
+(define-public anythingllm-desktop (package (inherit anythingllm-desktop-bin) (name "anythingllm-desktop")))
+(define-public asf-ui (package (inherit asf-ui-git) (name "asf-ui")))
+(define-public avda (package (inherit avda-bin) (name "avda")))
+(define-public casa6 (package (inherit casa6-bin) (name "casa6")))
+(define-public chibi-cli (package (inherit chibi-cli-git) (name "chibi-cli")))
+(define-public clash-nyanpasu-nightly (package (inherit clash-nyanpasu-nightly-bin) (name "clash-nyanpasu-nightly")))
+(define-public customizepkg (package (inherit customizepkg-git) (name "customizepkg")))
+(define-public deadbeef-plugin-discord (package (inherit deadbeef-plugin-discord-git) (name "deadbeef-plugin-discord")))
+(define-public dingusppc (package (inherit dingusppc-git) (name "dingusppc")))
+(define-public dolphin-anty (package (inherit dolphin-anty-bin) (name "dolphin-anty")))
