@@ -3395,3 +3395,12 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260415f)
   #:re-export (pantheon-dock))
+
+
+;; recipe-resolver-260415g
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260415g)
+  #:re-export (krokiet-bin
+               orca-slicer-bin
+               spacefm-thermitegod
+               vicinae-bin))

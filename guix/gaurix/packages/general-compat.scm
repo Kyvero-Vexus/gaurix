@@ -366,6 +366,7 @@
 
   #:use-module (gaurix packages deptree-resolver-260415g)
   #:use-module (gaurix packages deptree-resolver-260415f)
+  #:use-module (gaurix packages recipe-resolver-260415g)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -7103,3 +7104,10 @@
 
 ;; --- recipe-resolver-260415f compat aliases ---
 (define-public pantheon-dock-git (package (inherit pantheon-dock) (name "pantheon-dock-git")))
+
+;; --- recipe-resolver-260415g compat aliases ---
+(define-public krokiet (package (inherit krokiet-bin) (name "krokiet")))
+(define-public orca-slicer (package (inherit orca-slicer-bin) (name "orca-slicer")))
+(define-public dxvk-mingw (package (inherit dxvk-bin) (name "dxvk-mingw")))
+(define-public vicinae (package (inherit vicinae-bin) (name "vicinae")))
+(define-public spacefm (package (inherit spacefm-thermitegod) (name "spacefm")))

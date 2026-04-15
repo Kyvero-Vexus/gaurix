@@ -80031,6 +80031,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Fast, Private & Safe Web Browser (with VA-API patches)
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Firefox with VA-API patches; full Firefox build required. Next: no batch path.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FULL_BROWSER_REBUILD: Firefox with VA-API patches requires rebuilding entire Firefox (60+ deps, 2+ hour build); A1: patch existing Guix Firefox — Guix firefox-esr may already include VA-API; A2: full rebuild — impractical in batch; A3: binary — no pre-patched builds available (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 
 ** BLOCKED 10787. crqt-ng
@@ -81278,6 +81280,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PHONON_QT6_MISSING: MPV backend needs phonon-qt6 (only Qt5 phonon in Guix); A1: cmake — phonon-qt6 missing; A2: package phonon-qt6 — full Qt6 stack; A3: use qt6-multimedia (recipe-resolver-260414o)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_DEP: phonon-qt6 not in Guix (only phonon-qt5 exists); A1: cmake build — needs phonon-qt6 packaged first; A2: package phonon-qt6 first — significant KDE6 porting effort; A3: no standalone binary (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 ** DONE 10969. icaclient
    - AUR votes: 182, popularity: 0.0192
    - Note: Citrix Workspace App (a.k.a. ICAClient, Citrix Receiver)
@@ -81850,6 +81854,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: ossia score, an interactive sequencer for the intermedia arts
    - Status: NEEDS_RECIPE_DESIGN: complex CMake Qt app with many specialized deps
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLANG_LLD_REQUIRED: requires Clang as compiler and LLD as linker (GCC not supported); complex CMake with 6+ Qt6 modules and unity builds; A1: cmake with Clang — Guix uses GCC by default, Clang-only builds need special handling; A2: AppImage (ossia-score-bin) — outdated v3.5.2; A3: no GCC support upstream (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 
 ** DONE 11054. apfs-fuse-git
@@ -82132,7 +82138,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 11093. spacefm-thermitegod [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FORK_DIVERGED: C++20 SpaceFM fork needs ztd::log...]
+** DONE 11093. spacefm-thermitegod
    - AUR votes: 8, popularity: 0.0173
    - Note: Multi-panel tabbed file manager
    - Status: NEEDS_RECIPE_DESIGN: CMake C++20 file manager with many GTK/Ztd deps
@@ -82141,6 +82147,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FORK_DIVERGED: C++20 SpaceFM fork needs ztd::logger/ztd::out (custom libs); A1: meson — ztd libs missing; A2: package ztd — custom C++20 util; A3: use existing spacefm/thunar (recipe-resolver-260414o)
+   - Status: DONE: recipe in recipe-resolver-260415g.scm (spacefm-thermitegod v2.1.0, meson-build-system, GPL-3.0)
+   - TODO Status: DONE
 ** DONE 11094. gnome-online-accounts-gtk
    - AUR votes: 5, popularity: 0.0173
    - Note: A GTK Frontend for GNOME Online Accounts
@@ -82164,6 +82172,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 22, popularity: 0.0173
    - Note: OBS Linux Vulkan/OpenGL game capture (32-bit)
    - Status: NEEDS_RECIPE_DESIGN: 32-bit multilib CMake build; Guix lacks lib32 pattern
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: 32-bit Vulkan/OpenGL capture layer; Guix lacks lib32 multilib support; A1: cross-compile i686 — wrong ABI; A2: native i686 — not lib32 replacement; A3: 64-bit only — different package (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 
@@ -82193,11 +82203,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 11102. dxvk-mingw
+** DONE 11102. dxvk-mingw
    - AUR votes: 13, popularity: 0.0171
    - Note: Vulkan-based implementation of D3D9, D3D10 and D3D11 for Linux / Wine, MingW version
    - Status: NEEDS_RECIPE_DESIGN: Meson cross-compilation with MinGW for Wine DLLs
    - TODO Status: BLOCKED
+   - Status: DONE: recipe in recipe-resolver-260415g.scm (dxvk-bin v2.6.1, copy-build-system, pre-built Vulkan DLLs, Zlib)
+   - TODO Status: DONE
 
 
 ** DONE 11103. pacmanager-bin
@@ -85338,6 +85350,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — npm/Node.js CLI app; requires full npm dependency tree enumeration
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NPM_COMPLEX: npm monorepo with yarn/corepack/electron-builder and 500+ deps; A1: node-build-system — dep tree too deep; A2: CLI requires building entire monorepo; A3: no standalone CLI binary releases (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** DONE 11510. joplin-desktop
    - AUR votes: 283, popularity: 2.3208
@@ -85433,6 +85447,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — 32-bit variant; lib32 not directly applicable to Guix
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: 32-bit build variant; Guix lacks multilib/lib32 support; A1: cross-compile i686 — produces wrong ABI; A2: native i686 — not replacement for lib32; A3: no upstream 32-bit binary releases (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 11521. wivrn-dashboard [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — VR_STACK_MISSING: OpenXR VR dashboard needs Mona...]
    - AUR votes: 46, popularity: 2.3021
@@ -85445,6 +85461,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — VR_STACK_MISSING: OpenXR VR dashboard needs Monado+OpenXR+Vulkan+KF6+wivrn-server; A1: cmake — all missing; A2: Flatpak only; A3: SteamVR for Linux VR (recipe-resolver-260414o)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KDE6_CHAIN: Qt6/KDE6 Kirigami dashboard; depends on wivrn-server + kirigami + kirigami-addons + qcoro (not in Guix); A1: cmake build — missing kirigami-addons, qcoro; A2: binary — none available; A3: flatpak extraction — too complex (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 ** DONE 11522. pikaur
    - AUR votes: 294, popularity: 2.3009
    - Note: AUR helper which asks all questions before installing/building. Inspired by pacaur, yaourt and yay.
@@ -85683,6 +85701,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — GTK4 frontend for gpu-screen-recorder; many GPU-specific deps
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_BACKEND: GTK3/Meson frontend, but requires gpu-screen-recorder backend which uses GPU kernel modules (CUDA/VAAPI/KMS hardware capture); A1: package frontend only — non-functional without backend; A2: package backend — needs GPU kernel module infrastructure; A3: no binary bundle (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 ** DONE 11550. offpunk-git
@@ -86120,6 +86140,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Python Qt5 bindings; extremely complex build with shiboken2, Qt5, clang
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SHIBOKEN2_COMPLEX: Python Qt5 bindings requiring shiboken2 code generator (needs LLVM/Clang); depends on nearly every Qt5 module; A1: cmake + shiboken2 — needs LLVM/Clang for bindings generation; A2: pip wheel — against Guix conventions; A3: PySide6 instead — even more work (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** BLOCKED 11600. pyside2-tools
    - AUR votes: 15, popularity: 1.9739
@@ -86288,6 +86310,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Qt6 proxy manager; requires sing-box backend, Qt6, cmake
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MIXED_ECOSYSTEMS: requires Qt6 (cmake) + Go (sing-box) + protobuf codegen; three build ecosystems in one project; A1: binary release — zip with two executables requires Qt6 runtime libs; A2: source build — Go + cmake + protoc all needed; A3: split packaging — tight coupling prevents separation (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** DONE 11622. ryzen_smu-dkms-git
    - AUR votes: 19, popularity: 1.9230
@@ -86369,6 +86393,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KDE6_SYSTEM: core Plasma 6 display manager (SDDM fork) needs 15+ KDE6 deps; A1: cmake — KDE6 stack missing; A2: system service ABI match; A3: use sddm/greetd (recipe-resolver-260414o)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KDE6_SYSTEM_SERVICE: KDE Plasma display manager fork; requires KF6, PAM, systemd, Wayland; deeply integrated with KDE6 stack; A1: cmake — needs full KDE6 + PAM; A2: binary — none; A3: use existing sddm in Guix (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 ** DONE 11632. kwin-karousel
    - AUR votes: 7, popularity: 1.9041
    - Note: KWin tiling script with scrolling
@@ -86511,6 +86537,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Rust VR Wayland compositor; requires cargo-inputs + wlroots, openxr
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_NEEDED: Rust VR Wayland compositor; requires cargo-inputs + wlroots + OpenXR; A1: cargo-build-system — 100+ crate deps not enumerated; A2: no binary releases; A3: wlroots integration needs Wayland protocol generation (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** DONE 11648. ivpn
    - AUR votes: 14, popularity: 1.8795
@@ -86634,7 +86662,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 11663. vicinae
+** DONE 11663. vicinae
    - AUR votes: 12, popularity: 1.8225
    - Note: A focused launcher for your desktop — native, fast, extensible
    - TODO Status: TODO
@@ -86642,6 +86670,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Desktop launcher; unclear upstream source and build system
    - TODO Status: BLOCKED
+   - Status: DONE: recipe in recipe-resolver-260415g.scm (vicinae-bin v0.20.12, copy-build-system, pre-built desktop launcher, GPL-3.0)
+   - TODO Status: DONE
 
 ** DONE 11664. servo-bin
    - AUR votes: 9, popularity: 1.8196
@@ -86669,6 +86699,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Nintendo Switch emulator (yuzu fork); massive C++ cmake with 50+ deps
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_DEPS: Nintendo Switch emulator (yuzu fork) with 50+ deps and 22 git submodules (cubeb, dynarmic, Vulkan-Headers, sirit, mbedtls, xbyak, breakpad, etc.); A1: cmake source build — 22 submodules need pre-fetching, many are custom forks; A2: binary — no official releases; A3: legal concerns around Switch emulation (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 ** BLOCKED 11667. nekobox [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: Qt6 proxy GUI; C++/Qt6/Go hybrid]
@@ -86719,6 +86751,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Python/Qt6 backup; requires python-qt6, rsync, polkit integration
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLI recipe with placeholder hash exists (deptree-resolver-260407e); Qt6 GUI needs python-pyqt6 not in Guix; A1: python-build-system CLI only — hash never validated; A2: Qt6 GUI requires python-pyqt6 (not in Guix); A3: no binary releases (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 ** DONE 11672. backintime-cli
@@ -86811,6 +86845,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Wine/Proton game launcher; requires wine, proton, steam runtime
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_RUNTIME_DOWNLOAD: Arch-specific Wine/Proton launcher; bash scripts that download Wine/Proton at runtime; depends on 30+ lib32-* packages; A1: package scripts — downloads at runtime (violates Guix model); A2: bundle Wine — lib32 deps not available; A3: no binary release (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 ** BLOCKED 11682. input-remapper-git
@@ -87187,12 +87223,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: recipe in recipe-resolver-260413d.scm (czkawka-gui)
 
-** BLOCKED 11728. krokiet
+** DONE 11728. krokiet
    - AUR votes: 42, popularity: 1.6443
    - Note: Multi functional app to find duplicates, empty folders, similar images etc. (Desktop App, Slint frontend)
    - TODO Status: TODO
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Rust + Slint UI framework, Slint crate not packaged in Guix; next: package slint crate first
+   - Status: DONE: recipe in recipe-resolver-260415g.scm (krokiet-bin v11.0.1, copy-build-system, pre-built Slint binary, MIT)
+   - TODO Status: DONE
 
 ** DONE 11729. osu-lazer-bin
    - AUR votes: 109, popularity: 1.6430
@@ -87310,6 +87348,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — KDE Plasma 6 applet requiring full KDE6/Qt6 framework stack; next: verify KDE6 availability in Guix
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KDE6_STACK: requires full KDE Plasma 6 framework (plasma-workspace, ksystemstats, libksysguard); KDE6 not fully packaged in Guix; A1: cmake install — needs plasma-workspace; A2: copy QML files — non-functional without KDE6 runtime; A3: no standalone binary (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** DONE 11745. epson-inkjet-printer-escpr2
    - AUR votes: 55, popularity: 1.6140
@@ -87967,12 +88007,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: recipe in recipe-resolver-260413d.scm (spicetify-marketplace-bin)
 
-** BLOCKED 11833. orca-slicer
+** DONE 11833. orca-slicer
    - AUR votes: 35, popularity: 1.4300
    - Note: G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)
    - TODO Status: TODO
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — large C++/CMake project with wxWidgets, OpenGL, CGAL, Boost deps; complex build with embedded resources; next: enumerate dep availability
+   - Status: DONE: recipe in recipe-resolver-260415g.scm (orca-slicer-bin v2.3.2, copy-build-system, AppImage, AGPL-3.0)
+   - TODO Status: DONE
 
 ** DONE 11834. telegram-desktop-bin [gaurix:queue-20260402p100daily3 target=telegram-desktop rule=strip-bin]
    - AUR votes: 50, popularity: 1.4296
@@ -87996,6 +88038,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_NEEDED: identity mgmt with 300+ Rust crate deps + wasm-pack frontend + TPM2; A1: cargo — 300+ crates; A2: no binary; A3: use keycloak/FreeIPA (recipe-resolver-260414o)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_MASSIVE: identity management service with 300+ Rust crate deps + wasm-pack frontend; A1: cargo-build-system — 300+ crates not enumerated; A2: no binary releases; A3: web-only alternative insufficient for PAM/RADIUS features (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 ** DONE 11837. kanidm-clients
    - AUR votes: 10, popularity: 1.4218
    - Note: kanidm client to interact with kanidm identity management server.
@@ -88034,6 +88078,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — large C++ web browser engine, massive dep tree (LibWeb, LibJS, Skia, ICU), rapidly evolving build system; next: track upstream build stabilization
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_BROWSER_ENGINE: rapidly evolving independent web browser engine (LibWeb, LibJS, Skia, ICU); build system changes weekly; A1: cmake — massive dep tree with custom Skia, rapidly evolving; A2: binary — no official releases yet; A3: track upstream — too early (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 ** DONE 11843. lssecret-git
    - AUR votes: 11, popularity: 1.4121
@@ -88394,6 +88440,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN in recipe-resolver-260413g — Complex Python/JS hybrid with NW.js/Electron desktop wrapper; requires bundled Node.js runtime and 300+ Python/JS depend
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_HYBRID: Python/JS hybrid with NW.js desktop wrapper; requires bundled Node.js runtime + Python backend; A1: pyproject backend — NW.js frontend still needs bundling; A2: binary — no standalone desktop release; A3: web-only — loses desktop functionality (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 
 ** DONE 11886. whitesur-icon-theme
@@ -88456,6 +88504,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Free, open source software for live streaming and recording. With Browser Source support. Without the need to install ff
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN in recipe-resolver-260413g — OBS Studio fork with modified Browser Source; requires CEF (Chromium Embedded Framework) which is a massive build depend
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CEF_REQUIRED: OBS Studio fork requiring Chromium Embedded Framework for Browser Source; CEF is a 2GB proprietary-adjacent dependency; A1: cmake without CEF — loses Browser Source (the differentiator); A2: bundle CEF — massive and non-free; A3: use upstream OBS (already in Guix) (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 
@@ -89748,6 +89798,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
    -    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Scratch 3.0 desktop app; Electron with complex npm workspace and 500+ deps; A1: node-build-system — ... (recipe-resolver-260413j)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_NPM: Electron desktop app with npm workspace and 500+ deps; A1: node-build-system — dep tree impossibly deep; A2: AppImage — none available for Scratch 3; A3: use web version at scratch.mit.edu (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 
 ** DONE 12048. smb1r-bin
@@ -89818,6 +89870,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
    -    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: OpenVR to OpenXR translation layer; C++ with complex cmake build, requires OpenXR SDK, Vulkan, X11/W... (recipe-resolver-260413j)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GIT_SUBMODULES: cmake build with git submodules (OpenXR-SDK, glm, libunwind) and no release tarballs; A1: cmake with system deps — OpenXR-SDK in Guix but project expects vendored version; A2: pre-fetch submodules — fragile, no tagged releases; A3: convert to use system OpenXR — likely needs upstream patches (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 
 
 ** DONE 12057. python-agent-client-protocol
@@ -89835,6 +89889,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — XLIBRE_SERVER_NOT_IN_GUIX: requires xlibre-xserver >= 25.0 (XLibre fork of X.Org) not in Guix; A1: meson build needs XLibre server; A2: incompatible with standard X.Org ABI; A3: upstream xf86-video-amdgpu already in Guix (recipe-resolver-260414ae)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_DEP_CHAIN: XLibre fork of xf86-video-amdgpu; requires xlibre-xserver (not in Guix); A1: meson — needs xlibre-xserver-devel; A2: package xlibre-xserver first — large X11 server fork; A3: use standard Xorg amdgpu driver (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 ** DONE 12059. pmt-git
    - AUR votes: 2, popularity: 1.1314
    - Note: Terminal UI package manager for Arch Linux
@@ -90922,6 +90978,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 29, popularity: 1.0029
    - Note: paperless-ngx: scan, index and archive all your physical documents
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: complex Django app with 50+ Python deps (recipe-resolver-260413m)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DJANGO: 50+ Python deps (celery, granian, redis integration); multi-service architecture (web, task queue, scheduler, consumer); A1: pyproject-build-system — too many unpackaged Python deps; A2: venv approach — against Guix conventions; A3: Docker only — not suitable for Guix (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 
 
@@ -100242,6 +100300,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux system maintenance tool; depends on pacman/systemd; not portable to Guix (recipe-resolver-260414z)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux system maintenance utility wrapping pacman, pacman-contrib, pacutils, reflector; every function is Arch-specific; A1: package scripts — depends on pacman ecosystem; A2: port functions — too Arch-specific; A3: zero utility outside Arch Linux (recipe-resolver-260415g)
+   - TODO Status: BLOCKED
 ** DONE 13385. freecell
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (freecell v1.2.6)
@@ -100267,6 +100327,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — system maintenance utility; A1: unclear upstream; A2: may conflict with common name; next: investigate (recipe-resolver-260414t)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux system maintenance utility wrapping pacman, pacman-contrib, pacutils, reflector; every function is Arch-specific; A1: package scripts — depends on pacman ecosystem; A2: port functions — too Arch-specific; A3: zero utility outside Arch Linux (recipe-resolver-260415g)
    - TODO Status: BLOCKED
 ** DONE 13389. ttf-ubraille
    - AUR votes: 8, popularity: 1.0000
