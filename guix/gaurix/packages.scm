@@ -2792,7 +2792,109 @@
                oss4-modules-git
                batticonplus-git
                batticonplus-ayatana-git
-               batticonplus-ayatana))
+               batticonplus-ayatana
+            ;; recipe-resolver-260414af
+            reciteword
+            epubsynth
+            batticonplus
+            celestial-gtk-theme
+            chroma-visualizer-git
+            identities
+            gssg-git
+            bootupd-git
+            shim-fedora
+            wooz-git
+            pacman-ostree
+            cpro-ngate
+            run0edit
+            verusfmt-bin
+            verus-analyzer-bin
+            libtmplinux
+            python-html2image-bin
+            obs-source-switcher
+            obs-plugin-time-source
+            elecap-bin
+            diogenes-bin
+            git-heatgrid
+            tuxnix-sway
+            csharp-ls
+            eralchemy
+            ksud
+            warfork-bin
+            wild-git
+            basalt-bin
+            amplitude-soundboard-appimage
+            tmpvoid
+            gnome-extra-meta
+            libaegis
+            goatcounter-bin
+            watch-your-lan
+            submagic
+            python-ollama-flow
+            xfwm4-theme-pop-git
+            lavalauncher-mao-git
+            lfp
+            uabea-next-git
+            python-llm-mistral
+            lua53-pam-git
+            blender-launcher-v2-bin
+            obs-plugin-vertical-canvas-git
+            ziniaobrowser-bin
+            cantata-legacy
+            python-llm-openrouter
+            python-llm-ollama
+            python-llm-gemini
+            python-llm-anthropic
+            watershot-wayshot-git
+            tomlq-bin
+            python-ytfetcher
+            dracut-iwd
+            wayweather
+            realm-bin
+            pitchfork-bin
+            hk-bin
+            grub-android-prober
+            ingest-bin
+            grub-secureboot-scripts
+            ezy-bin
+            cargo-leptos
+            ghorg-bin
+            flipperzero-ufbt-git
+            crosspatch-bin
+            pog-appimage
+            go-ldap-admin
+            geteduroam
+            doh-server-bin
+            bstyle-qml-theme
+            python-micropie
+            papirus-colors-git
+            dotify
+            stalwart-mail
+            stalwart-cli
+            masscode-bin
+            yaak-beta-bin
+            archupd
+            obelisk-bin
+            syncthingdesktop
+            shim-systemd-boot-update
+            scolorpicker
+            render50
+            reflectortk-git
+            panwriter
+            gnome-shell-extension-applications-overview-tooltip
+            python-backports-dot-shutil-get-terminal-size
+            pacbro
+            netbootxyz-systemd-boot
+            nemo-copypath
+            materialious-bin
+            materialious
+            lib32-libxxf86misc
+            icon-browser-git
+            gnome-software-packagekit-plugin-appstream-git
+            gnome-software-appstream-git
+            gnome-shell-extension-tiling-shell-git
+            gnome-shell-extension-soft-brightness-git
+            ))
 
 ;; recipe-resolver-260414ad
 (define-module (gaurix packages)
@@ -2901,4 +3003,23 @@
             guiless-bing-search
             gummibbs
             haveno
+            ;; recipe-resolver-260414ae
+            ksnip-bin
+            ksnip-git
+            ksnip
+            veracrypt-bin
+            veracrypt-git
+            veracrypt
+            hyprshell-bin
+            hyprshell
+            youtube-dl-gui-bin
+            youtube-dl-gui
+            norisk-client-launcher-nvidia-bin
+            norisk-client-launcher-nvidia
+            neural-amp-modeler-lv2
+            ultimate-tic-tac-toe
+            ultimate-tic-tac-toe-git
+            plasma-gamemode
+            plasma-gamemode-git
+            deezer-enhanced-git
 ))

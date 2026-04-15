@@ -351,7 +351,9 @@
   #:use-module (gaurix packages recipe-resolver-260414x)
   #:use-module (gaurix packages recipe-resolver-260414y)
   #:use-module (gaurix packages recipe-resolver-260414ac)
+  #:use-module (gaurix packages recipe-resolver-260414ae)
   #:use-module (gaurix packages deptree-resolver-260414u)
+  #:use-module (gaurix packages recipe-resolver-260414af)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -6927,3 +6929,16 @@
 (define-public freesmlauncher (package (inherit freesmlauncher-bin) (name "freesmlauncher")))
 (define-public gj (package (inherit gj-git) (name "gj")))
 (define-public gnome-shell-extension-quick-settings-tweaks (package (inherit gnome-shell-extension-quick-settings-tweaks-git) (name "gnome-shell-extension-quick-settings-tweaks")))
+
+;; --- recipe-resolver-260414ae compat aliases ---
+;; waterfox already exists as waterfox-bin (line 6316, from recipe-resolver-260412b)
+(define-public ksnip-git (package (inherit ksnip-bin) (name "ksnip-git")))
+(define-public ksnip (package (inherit ksnip-bin) (name "ksnip")))
+(define-public veracrypt-git (package (inherit veracrypt-bin) (name "veracrypt-git")))
+(define-public veracrypt (package (inherit veracrypt-bin) (name "veracrypt")))
+(define-public hyprshell (package (inherit hyprshell-bin) (name "hyprshell")))
+(define-public youtube-dl-gui (package (inherit youtube-dl-gui-bin) (name "youtube-dl-gui")))
+(define-public norisk-client-launcher-nvidia (package (inherit norisk-client-launcher-nvidia-bin) (name "norisk-client-launcher-nvidia")))
+(define-public ultimate-tic-tac-toe-git (package (inherit ultimate-tic-tac-toe) (name "ultimate-tic-tac-toe-git")))
+(define-public plasma-gamemode-git (package (inherit plasma-gamemode) (name "plasma-gamemode-git")))
+(define-public deezer-enhanced-git (package (inherit deezer-enhanced-bin) (name "deezer-enhanced-git")))
