@@ -3545,6 +3545,22 @@
             sheets-bin
             fcitx5-vinput-bin
 
+            ;; recipe-resolver-260415j
+            font-hackgen
+            iamroot
+            zpaqfranz
+            complete-alias
+            asroot
+            objconv
+            libklvanc
+            logiops
+            python-zenlib
+            qr-backup
+            avvie
+            goxe
+            pmtiles-bin
+            dred
+
             ;; deptree-resolver-260415i
             android-armv7a-eabi-qt6-declarative
             lib32-gstreamer
