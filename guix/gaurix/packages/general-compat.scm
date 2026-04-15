@@ -7100,3 +7100,6 @@
 (define-public dms-shell (package (inherit dms-shell-git) (name "dms-shell")))
 (define-public dnspyex-wine (package (inherit dnspyex-wine-bin) (name "dnspyex-wine")))
 (define-public dumber-browser (package (inherit dumber-browser-git) (name "dumber-browser")))
+
+;; --- recipe-resolver-260415f compat aliases ---
+(define-public pantheon-dock-git (package (inherit pantheon-dock) (name "pantheon-dock-git")))

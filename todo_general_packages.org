@@ -32348,11 +32348,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
     - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408w.scm (hosts-update v1.38, hosts blocklist updater from GitHub)
 
 
-** BLOCKED 4059. parallels-client
+** BLOCKED 4059. parallels-client [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: Parallels RAS Client]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh parallels-client` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n parallels-client` after adding module/export.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: Parallels RAS Client; closed-source binary, EULA prohibits redistribution; A1: proprietary license; A2: no source; A3: use Remmina/FreeRDP (recipe-resolver-260415f)
 
 
 ** DONE 4060. emacs-evil-org-git
@@ -34660,11 +34661,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 4346. forticlient
+** BLOCKED 4346. forticlient [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: Fortinet VPN client]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep forticlient: no match; proprietary binary VPN; needs binary recipe from Fortinet downloads; LICENSE_REVIEW_NEEDED for EULA
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: Fortinet VPN client; closed-source, EULA prohibits redistribution; A1: proprietary license; A2: no source; A3: use openfortivpn (recipe-resolver-260415f)
 
 
 ** DONE 4347. piper-voices-en-gb
@@ -34732,11 +34734,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 4355. sejda-desktop
+** BLOCKED 4355. sejda-desktop [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: Electron PDF editor]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep sejda: no match; proprietary Electron PDF binary; needs binary recipe from https://www.sejda.com/desktop
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: Electron PDF editor; closed-source from Sejda BV; A1: proprietary license; A2: no source; A3: use qpdfview/mupdf (recipe-resolver-260415f)
 
 
 ** DONE 4356. windowmaker-git
@@ -36720,11 +36723,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** BLOCKED 4612. wps-office-365-edu
+** BLOCKED 4612. wps-office-365-edu [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: WPS Office 365 Education]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: WPS Office 365 Education binary; proprietary; account-gated download. Next: locate stable direct URL, assess license for redistribution.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: WPS Office 365 Education; account-gated proprietary binary; A1: proprietary license; A2: no source; A3: use LibreOffice (recipe-resolver-260415f)
 
 
 ** BLOCKED 4613. wps-office-365-edu-fonts
@@ -37038,12 +37042,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 4654. pacboost
+** BLOCKED 4654. pacboost [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: pacman performance wrapper]
    - Status: BLOCKED: ARCH_SPECIFIC: pacman frontend, depends on pacman [deptree-resolver-260415f]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Arch pacman performance wrapper; Arch-specific; limited Guix utility. Next: assess portability, draft with pacman dep replaced by placeholder.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pacman performance wrapper; depends on pacman (Arch-only); A1: pacman not in Guix; A2: script is Arch-specific; A3: Guix has own download infra (recipe-resolver-260415f)
 
 
 ** DONE 4655. waves-bin
@@ -52754,12 +52759,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 6784. vaults
+** BLOCKED 6784. vaults [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: RUST_VENDORED_DEPS: GTK4+Rust encrypted vault manager]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vaults | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for handbrake-cli-git (source+hash+build-system), then rerun guix build -L guix -n handbrake-cli-git
    - Difficulty: unknown
    - TODO Status: FAILED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — RUST_VENDORED_DEPS: GTK4+Rust encrypted vault manager; Meson wrapping Cargo; A1: crate vendoring needed; A2: Meson+Cargo pattern unsupported; A3: use gocryptfs CLI (recipe-resolver-260415f)
 
 
 ** DONE 6785. k3b-git
@@ -52932,12 +52938,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 6805. veracrypt-inyourlanguage
+** BLOCKED 6805. veracrypt-inyourlanguage [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NON_FREE_LICENSE: VeraCrypt uses TrueCrypt License 3.0 (not OSI-approved)]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n veracrypt-inyourlanguage | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for wlr-dpms-git (source+hash+build-system), then rerun guix build -L guix -n wlr-dpms-git
    - Difficulty: unknown
    - TODO Status: FAILED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NON_FREE_LICENSE: VeraCrypt uses TrueCrypt License 3.0 (not OSI-approved); A1: license blocks Guix channel; A2: translations tied to build; A3: use LUKS/cryptsetup (recipe-resolver-260415f)
 
 
 ** DONE 6806. okular-git
@@ -54827,11 +54834,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 7051. expressvpn-staging
+** BLOCKED 7051. expressvpn-staging [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: ExpressVPN client]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n expressvpn-staging | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: ExpressVPN client; closed-source from Kape Technologies; A1: proprietary license; A2: no source; A3: use WireGuard/OpenVPN (recipe-resolver-260415f)
 
 
 ** BLOCKED 7052. tosu-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: osu! memory reader; Node.js/pnpm]
@@ -56071,11 +56079,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413w.scm (vtf-thumbnailer-bin v1.1.2, VTF previewer .deb from GitHub, MIT)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413z.scm (vtf-thumbnailer-bin v1.1.2, .deb binary from GitHub, MIT)
 
-** BLOCKED 7221. ue4localizationstool-zenity
+** BLOCKED 7221. ue4localizationstool-zenity [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_MONO_REQUIRED: C#/Mono UE4 localization editor]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ue4localizationstool-zenity | detail: error: specification->package: unbound variable; hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust recipe, then rerun guix lint/build
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_MONO_REQUIRED: C#/Mono UE4 localization editor; NuGet needs network (hermetic build violation); upstream archived; A1: NuGet fetch blocked; A2: deps unenumerated; A3: upstream abandoned (recipe-resolver-260415f)
 
 
 ** DONE 7222. rvgl-dcpack
@@ -56386,11 +56395,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260408f.scm (dependency-tree pass)
    - TODO Status: DONE
 
-** BLOCKED 7260. yandex-music-windows
+** BLOCKED 7260. yandex-music-windows [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: WINDOWS_ONLY: Yandex Music Windows Electron wrapper]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n yandex-music-windows | detail: error: specification->package: unbound variable; hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust recipe, then rerun guix lint/build
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — WINDOWS_ONLY: Yandex Music Windows Electron wrapper; no Linux-native build; A1: Windows-only; A2: Electron port unavailable; A3: use web interface (recipe-resolver-260415f)
 
 
 ** DONE 7261. portable
@@ -56531,11 +56541,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** BLOCKED 7279. pacpush
+** BLOCKED 7279. pacpush [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: pacman cache sharing tool]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n pacpush | detail: error: specification->package: unbound variable; hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust recipe, then rerun guix lint/build
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pacman cache sharing tool; depends on pacman package format; A1: pacman not in Guix; A2: different caching model; A3: use guix publish (recipe-resolver-260415f)
 
 
 ** BLOCKED 7280. loginized
@@ -81166,11 +81177,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 10954. linux-steam-integration
+** BLOCKED 10954. linux-steam-integration [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_RUNTIME_DEP: Steam runtime integration]
    - AUR votes: 28, popularity: 0.0195
    - Note: Helper for enabling better Steam integration on Linux
    - Status: NEEDS_RECIPE_DESIGN: Meson build that intercepts Steam runtime calls
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_RUNTIME_DEP: Steam runtime integration; requires proprietary Steam + 32-bit multilib; A1: Steam proprietary; A2: Guix lacks multilib; A3: use Flatpak/nonguix (recipe-resolver-260415f)
 
 
 ** DONE 10955. rakarrack-plus
@@ -83016,11 +83028,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in deptree-resolver-260414v.scm (netextender, RECIPE: Guix recipe created (source-generic))
-** BLOCKED 11220. classisland-git
+** BLOCKED 11220. classisland-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: WINDOWS_ONLY_DOTNET: C#/.NET WPF app (Windows-only GUI framework)]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Windows-only .NET WPF app; no Linux build available
    - AUR votes: 2, popularity: 0.0156
    - Note: 适用于班级大屏的课表小工具（最新开发构建）。Class schedule displaying tool for interactive whiteboards in classrooms. (Built from latest Git c
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — WINDOWS_ONLY_DOTNET: C#/.NET WPF app (Windows-only GUI framework); no Linux build exists; A1: WPF is Windows-only; A2: no Avalonia port; A3: no Linux alternative (recipe-resolver-260415f)
 
 
 ** DONE 11221. termpicker-bin
@@ -85555,7 +85568,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — XLibre Plasma X11 session; depends on sonic-workspace
    - TODO Status: BLOCKED
 
-** BLOCKED 11536. arch-smart-update
+** BLOCKED 11536. arch-smart-update [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Arch Linux update decision script]
    - AUR votes: 3, popularity: 2.2350
    - Note: Not sure when to update Arch Linux or its derivative? This script will help you decide!
    - TODO Status: TODO
@@ -85563,6 +85576,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Arch Linux update script; Arch-specific, no use on Guix
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux update decision script; checks Arch-specific news/mirrors; A1: Arch-specific logic; A2: Guix uses channels; A3: use guix pull (recipe-resolver-260415f)
 
 ** DONE 11537. xdg-desktop-portal-termfilechooser-hunkyburrito-git
    - AUR votes: 12, popularity: 2.2317
@@ -86679,7 +86693,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — proxy core (deptree-resolver-260414e)
    - TODO Status: BLOCKED
-** BLOCKED 11669. nitrox
+** BLOCKED 11669. nitrox [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_REQUIRED + PROPRIETARY_GAME_DEP: .NET Subnautica multiplayer mod]
    - AUR votes: 5, popularity: 1.7992
    - Note: An open-source, multiplayer modification for the game Subnautica.
    - TODO Status: TODO
@@ -86687,6 +86701,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — .NET Subnautica mod; requires dotnet-runtime or mono + game assets
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_REQUIRED + PROPRIETARY_GAME_DEP: .NET Subnautica multiplayer mod; needs .NET 8+ runtime + proprietary game; A1: .NET SDK not in Guix; A2: Mono incompatible; A3: proprietary game required (recipe-resolver-260415f)
 
 ** DONE 11670. notion-app-electron
    - AUR votes: 28, popularity: 1.7971
@@ -89009,13 +89024,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 11962. aurutils-git
+** BLOCKED 11962. aurutils-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: AUR helper utilities]
    - Status: BLOCKED: ARCH_SPECIFIC_TOOL | aurutils requires pacman/makepkg (Arch-only). Re-evaluated in recipe-resolver-260407e.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show aurutils | detail: target `aurutils` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; Arch-specific tool requiring pacman/makepkg. See blocked-notes.
    - AUR votes: 23, popularity: 1.2503
    - Note: helper tools for the arch user repository
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: AUR helper utilities; depends on pacman/makepkg; A1: pacman not in Guix; A2: AUR is Arch-specific; A3: fundamentally Arch tooling (recipe-resolver-260415f)
 
 
 ** DONE 11963. logisim-evolution
@@ -100188,7 +100204,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ABANDONED_UPSTREAM: libframe touch library by Canonical; A1: last release v2.5.0 in Feb 2013; A2: source in Bazaar VCS; A3: superseded by libinput (recipe-resolver-260414x)
    - Status: NEEDS_RECIPE_DESIGN resolved in recipe-resolver-260414aa; touch frame library
-** BLOCKED 13380. pat-aur-client-firmware-git
+** BLOCKED 13380. pat-aur-client-firmware-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: firmware updater for pat-aur (Arch AUR helper, already EXHAUSTED)]
    - AUR votes: 2, popularity: 1.0000
    - Note: firmware updates support for pat-aur.
    - TODO Status: TODO
@@ -100196,6 +100212,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — firmware update support for pat-aur; depends on pat-aur + fwupd; A1: requires pat-aur first; next: blocked on pat-aur (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: firmware updater for pat-aur (Arch AUR helper, already EXHAUSTED); A1: depends on pat-aur; A2: use fwupd directly; A3: blocked on exhausted dep (recipe-resolver-260415f)
 ** DONE 13381. powerline-fonts-git
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (powerline-fonts-git vr202.e80e3eb)
@@ -100303,7 +100320,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 13396. thcrap-steam-proton-wrapper-git
+** BLOCKED 13396. thcrap-steam-proton-wrapper-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_RUNTIME_DEP: Touhou game patching for Steam/Proton]
    - AUR votes: 2, popularity: 1.0000
    - Note: A wrapper script for launching the official Touhou games on Steam with patches
    - TODO Status: TODO
@@ -100311,6 +100328,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Touhou game patching wrapper for Steam/Proton; A1: requires Steam runtime + Proton; A2: Windows game patching; next: not feasible without Steam (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_RUNTIME_DEP: Touhou game patching for Steam/Proton; requires proprietary Steam runtime; A1: Steam required; A2: Windows game; A3: niche gaming mod (recipe-resolver-260415f)
 ** DONE 13397. realitlscanner
    - Source List: AUR
    - Status: DONE: recipe in deptree-resolver-260414o.scm (realitlscanner v0.2.1)
@@ -100826,7 +100844,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 13460. mesa-dlss-reflex-git
+** BLOCKED 13460. mesa-dlss-reflex-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MASSIVE_REBUILD + PROPRIETARY_HEADERS: Mesa fork with NVIDIA DLSS/Reflex]
    - AUR votes: 1, popularity: 1.0000
    - Note: Mesa git with VK_NVX_binary_import (NVK DLSS) + VK_NV_low_latency2 (NVK Reflex)
    - TODO Status: TODO
@@ -100834,6 +100852,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Mesa fork with NVIDIA DLSS/Reflex; A1: massive Mesa build + NVIDIA proprietary headers; A2: kernel driver integration; next: not feasible, custom Mesa build (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_REBUILD + PROPRIETARY_HEADERS: Mesa fork with NVIDIA DLSS/Reflex; 20GB+ build + proprietary extensions; A1: massive rebuild; A2: proprietary headers; A3: niche GPU feature (recipe-resolver-260415f)
 ** DONE 13461. make-4.3
    - AUR votes: 1, popularity: 1.0000
    - Note: GNU make 4.3 - without directory cache bug present in 4.4
@@ -100956,7 +100975,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 13476. iwlwifi-lar-patched
+** BLOCKED 13476. iwlwifi-lar-patched [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: KERNEL_MODULE_SPECIFIC: patched Intel WiFi modules]
    - AUR votes: 1, popularity: 1.0000
    - Note: Patched Intel iwlwifi family modules with lar_disable support for Arch Linux kernels
    - TODO Status: TODO
@@ -100964,6 +100983,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — patched Intel WiFi kernel modules; A1: requires linux kernel source + module build; A2: Arch kernel version specific; next: needs linux-module-build-system (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KERNEL_MODULE_SPECIFIC: patched Intel WiFi modules; Arch kernel-specific; A1: exact kernel match needed; A2: Guix uses own kernel; A3: kernel rebuild required (recipe-resolver-260415f)
 ** BLOCKED 13477. incplot
    - AUR votes: 1, popularity: 1.0000
    - Note: CLI tool for drawing great looking plots in the terminal and in HTML focused on user ergonomics and simplicity
@@ -101004,7 +101024,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** BLOCKED 13482. gram
+** BLOCKED 13482. gram [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MASSIVE_CARGO_DEPS: Zed editor fork]
    - AUR votes: 1, popularity: 1.0000
    - Note: A code editor for humanoid apes and grumpy toads
    - TODO Status: TODO
@@ -101012,6 +101032,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — code editor; A1: unclear upstream; A2: may need complex GUI deps; next: investigate (recipe-resolver-260414t)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_CARGO_DEPS: Zed editor fork; 500+ Rust crates + npm + Vulkan; A1: 500+ crates needed; A2: network isolation blocks cargo; A3: use emacs/vim/helix (recipe-resolver-260415f)
 ** DONE 13483. gimp-plugin-text-case-converter
    - AUR votes: 1, popularity: 1.0000
    - Note: GIMP 3.x plugin to convert text layer case (uppercase, lowercase, title case, etc.)
@@ -101254,7 +101275,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Penpot design tool MCP; complex Clojure/Java web app with npm frontend (recipe-resolver-260414z)
    - TODO Status: BLOCKED
-** BLOCKED 13512. conquest-git
+** BLOCKED 13512. conquest-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OFFENSIVE_SECURITY_TOOL: Nim C2/post-exploitation framework]
    - AUR votes: 1, popularity: 0.5649
    - Note: Conquest is a feature-rich and malleable command & control/post-exploitation framework developed in Nim.
    - TODO Status: TODO
@@ -101263,7 +101284,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — C2/post-exploitation framework; requires security context review (recipe-resolver-260414z)
    - TODO Status: BLOCKED
-** BLOCKED 13513. havoc-c2-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — OFFENSIVE_SECURITY_TOOL: Nim C2/post-exploitation framework; not appropriate for general channel; A1: security/ethical concerns; A2: no authorized context; A3: skip (recipe-resolver-260415f)
+** BLOCKED 13513. havoc-c2-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OFFENSIVE_SECURITY_TOOL: C2 post-exploitation framework]
    - AUR votes: 2, popularity: 0.2773
    - Note: Modern and malleable post-exploitation command and control framework
    - TODO Status: TODO
@@ -101272,6 +101294,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — C2/post-exploitation framework; requires security context review (recipe-resolver-260414z)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — OFFENSIVE_SECURITY_TOOL: C2 post-exploitation framework; not appropriate for general channel; A1: security/ethical concerns; A2: no authorized context; A3: skip (recipe-resolver-260415f)
 ** DONE 13514. linux6.19.10.arch1-1-headers-bin
    - AUR votes: 6, popularity: 0.1037
    - Note: Headers and scripts for building modules for the Linux kernel 6.19.10-arch1-1
@@ -102042,7 +102065,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260414aa; upstream repo 404; A1: GitHub URL returns 404; A2: no mirrors/forks found; A3: source only as AUR-embedded files
    - TODO Status: DONE
-** BLOCKED 13603. cclive
+** BLOCKED 13603. cclive [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ABANDONED_DEPS: video downloader using defunct libquvi (archived 2013)]
    - AUR votes: 1, popularity: 0.0433
    - Note: Commandline downloader for popular video websites.
    - TODO Status: TODO
@@ -102051,7 +102074,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Video downloader; depends on quvi library (discontinued, not in Guix) (recipe-resolver-260414z)
    - TODO Status: BLOCKED
-** BLOCKED 13604. winboat-electron
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ABANDONED_DEPS: video downloader using defunct libquvi (archived 2013); A1: libquvi abandoned; A2: scripts broken; A3: use yt-dlp (recipe-resolver-260415f)
+** BLOCKED 13604. winboat-electron [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_COMPLEX: Electron + Wine integration app]
    - AUR votes: 1, popularity: 0.0433
    - Note: Run Windows apps on Linux with seamless integration
    - TODO Status: TODO
@@ -102060,6 +102084,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Electron app for Wine/Windows integration; complex Electron + Wine deps (recipe-resolver-260414z)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_COMPLEX: Electron + Wine integration app; 500+ npm deps + Chromium bundle; A1: npm dep tree; A2: 300MB+ binary; A3: use Wine directly (recipe-resolver-260415f)
 ** DONE 13605. renesas-flash-programmer-bin
    - Status: DONE: recipe in deptree-resolver-260415f.scm (renesas-flash-programmer-bin v3.21, binary from Renesas, commercial) [deptree-resolver-260415f]
    - AUR votes: 1, popularity: 0.0433
@@ -102126,6 +102151,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — elementary OS Pantheon dock; needs Granite + Wingpanel + Vala stack (recipe-resolver-260414z)
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415f.scm (pantheon-dock v8.3.2, elementary OS dock, meson-build-system, GPL-3.0+; NOTE: needs granite >= 7.7.0, Guix has 7.3.0) (recipe-resolver-260415f)
 ** DONE 13612. libkeybinder2
    - AUR votes: 1, popularity: 0.0433
    - Note: Library for registering global keyboard shortcuts
@@ -103951,11 +103977,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260415c.scm (gsnake-cli, recipe-resolver-260415c)
 
 
-** BLOCKED 13854. mate-wayland-session
+** BLOCKED 13854. mate-wayland-session [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_GUIX_DEPS: MATE Wayland session needs Wayfire compositor (not in Guix)]
    - AUR votes: 1, popularity: 0.0246
    - Note: Wayland session using Wayfire for the MATE desktop
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — A1: Requires Wayfire compositor + MATE desktop integration; complex session manager setup (recipe-resolver-260415c)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_GUIX_DEPS: MATE Wayland session needs Wayfire compositor (not in Guix); A1: Wayfire not packaged; A2: packaging Wayfire is large scope; A3: use sway (recipe-resolver-260415f)
 
 
 ** DONE 13855. kubetail-bin
@@ -116595,12 +116622,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `flycast` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** BLOCKED 15913. android_translation_layer-git
+** BLOCKED 15913. android_translation_layer-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ANDROID_RUNTIME_REQUIRED: needs bionic libc + binder IPC]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show android_translation_layer | detail: target `android_translation_layer` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; requires Android runtime libs (bionic/binder). See blocked-notes.
    - AUR votes: 5, popularity: 0.0050
    - Note: A translation layer for running Android apps on a Linux system
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ANDROID_RUNTIME_REQUIRED: needs bionic libc + binder IPC; A1: bionic incompatible; A2: Android system image; A3: fundamentally incompatible (recipe-resolver-260415f)
 
 
 ** TODO 15914. pixivfe
@@ -121418,12 +121446,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 16712. octopi-git
+** BLOCKED 16712. octopi-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Qt pacman GUI frontend]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show octopi | detail: target `octopi` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; Arch pacman frontend requiring libalpm. See blocked-notes.
    - AUR votes: 80, popularity: 0.0026
    - Note: This is Octopi, a powerful Pacman frontend using Qt libs
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Qt pacman GUI frontend; depends on libalpm; A1: libalpm is pacman library; A2: complete rewrite needed; A3: use Guix CLI (recipe-resolver-260415f)
 
 
 ** TODO 16713. nginx-ui
@@ -136434,13 +136463,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 19178. parui-git
+** BLOCKED 19178. parui-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Rust TUI for paru/yay AUR helpers]
    - Status: BLOCKED: ARCH_SPECIFIC: paru/yay TUI frontend, depends on pacman [deptree-resolver-260415f]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix show parui | detail: target `parui` is not directly resolvable in Guix package space, so alias-only packaging via guix/gaurix/packages/queue-20260403p100daily3.scm is invalid | next: draft a direct recipe or import a concrete module binding and re-run lint/build.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408t; Arch pacman TUI requiring paru/libalpm. See blocked-notes.
    - AUR votes: 9, popularity: 0.0003
    - Note: Simple TUI frontend for paru or yay.
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Rust TUI for paru/yay AUR helpers; A1: paru/yay are Arch-specific; A2: AUR irrelevant for Guix; A3: use Guix CLI (recipe-resolver-260415f)
 
 
 ** TODO 19179. mcskinedit

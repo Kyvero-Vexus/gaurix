@@ -3389,3 +3389,9 @@
                linux-firmware-nfp
                linux-firmware-qcom))
 
+
+
+;; recipe-resolver-260415f
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260415f)
+  #:re-export (pantheon-dock))
