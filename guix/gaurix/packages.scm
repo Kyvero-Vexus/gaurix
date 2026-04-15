@@ -103,6 +103,13 @@
             tuistory
             unrealtournament
 
+            ;; recipe-resolver-260415o
+            zen-browser-bin
+            dxvk-nvapi
+            dragengine-bin
+            deigde-bin
+            plasmazones-bin
+            plasma-applet-appgrid-bin
             ;; deptree-resolver-260413g
             argc
             ascii-image-converter
@@ -3962,6 +3969,7 @@
             osrm-backend
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260415l)
+  #:use-module (gaurix packages recipe-resolver-260415o)
   #:re-export (python-pkb-client
                certbot-dns-porkbun
                protonplus
