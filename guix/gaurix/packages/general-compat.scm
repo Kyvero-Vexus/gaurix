@@ -355,6 +355,7 @@
   #:use-module (gaurix packages deptree-resolver-260414u)
   #:use-module (gaurix packages recipe-resolver-260414af)
   #:use-module (gaurix packages recipe-resolver-260414ag)
+  #:use-module (gaurix packages recipe-resolver-260415a)
   #:use-module (gaurix packages deptree-resolver-260414v)
 
   #:export (
@@ -6929,3 +6930,8 @@
 (define-public ollama-vulkan (package (inherit ollama-vulkan-bin) (name "ollama-vulkan")))
 (define-public openscq30-gui (package (inherit openscq30-gui-bin) (name "openscq30-gui")))
 (define-public osu-lazer-tachyon (package (inherit osu-lazer-tachyon-bin) (name "osu-lazer-tachyon")))
+
+;; --- recipe-resolver-260415a compat aliases ---
+(define-public xmousepasteblock (package (inherit xmousepasteblock-git) (name "xmousepasteblock")))
+(define-public wallchemy (package (inherit wallchemy-bin) (name "wallchemy")))
+(define-public jdk25-graalvm (package (inherit jdk25-graalvm-bin) (name "jdk25-graalvm")))

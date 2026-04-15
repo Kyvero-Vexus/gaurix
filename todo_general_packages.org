@@ -29716,6 +29716,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package index probe found no direct candidate in variants ['cmc-mod-manager-bin', 'cmc-mod-manager', 'cmcmodmanager']; next action: draft fresh recipe from upstream source in next pass.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: TypeScript/Electron mod manager; A1: electron-forge build — Guix lacks Electron; A2: binary .deb — 150MB+; A3: niche fangame tool (recipe-resolver-260415a)
+   - TODO Status: BLOCKED
 
 
 ** DONE 3754. gnome-randr-rust
@@ -32319,6 +32321,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show wallchemy rc=1; No direct Guix equivalent found via quick candidate search. Next: Draft full recipe (source/build-system/inputs) and validate with guix build -L guix -n.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (wallchemy-bin v1.0.6, Go binary/copy-build-system, MIT)
+   - TODO Status: DONE
 
 
 ** DONE 4072. lianwall-gui-bin
@@ -32413,6 +32417,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED (NEEDS_RECIPE_DESIGN): guix show cvmfs-config-eessi rc=1; No direct Guix equivalent found via quick candidate search. Next: Draft full recipe (source/build-system/inputs) and validate with guix build -L guix -n.
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_GUIX_DEPS: depends on cvmfs (CernVM-FS) not in Guix; A1: copy config files — useless without cvmfs; A2: package cvmfs — 5+ new packages; A3: no alternative distribution method (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -33682,6 +33688,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Firefox extension; trivial install; not in Guix. Next: fetch XPI and draft trivial recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Wiki/AUR search extension; A1: package XPI — zero value for Guix users; A2: fork for Guix — out of scope; A3: manual Firefox search settings (recipe-resolver-260415a)
+   - TODO Status: BLOCKED
 
 
 ** DONE 4235. extramaus
@@ -34464,6 +34472,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep lief: no match; C++ cmake library; needs cmake recipe from https://github.com/lief-project/LIEF
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (lief v0.17.6, cmake-build-system, Apache-2.0)
+   - TODO Status: DONE
 
 
 ** DONE 4340. nb
@@ -34471,6 +34481,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep ^nb: no match (nbfc-linux is different); shell script; needs trivial recipe from https://github.com/xwmx/nb
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (nb v7.25.2, shell/copy-build-system, AGPL-3.0+)
+   - TODO Status: DONE
 
 
 ** DONE 4341. noisetorch-bin
@@ -34554,12 +34566,16 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep lenovo-wwan-unlock: no match; Python script; needs trivial python install recipe from AUR
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_LICENSE: Lenovo Software Code License + prebuilt .so blobs; A1: copy-build — proprietary license; A2: no source for .so libs; A3: use mmcli instead (recipe-resolver-260415a)
+   - TODO Status: BLOCKED
 
 
 ** DONE 4352. psiphonlinuxgui [BLOCKED: PROPRIETARY_CORE_REQUIRED]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep psiphon: no match; Python Qt5 GUI; needs python recipe
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: Electron+webpack build; A1: npm build — Guix lacks Electron infra; A2: binary .deb — 200MB Chromium bundle; A3: use tor/wireguard instead (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -34605,6 +34621,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package -A | grep mstflint: no match; C++ cmake tool; needs cmake recipe from https://github.com/Mellanox/mstflint
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (mstflint v4.35.0-1, autotools/gnu-build-system, GPL-2.0)
+   - TODO Status: DONE
 
 
 ** DONE 4359. kodi-standalone-service
@@ -35724,6 +35742,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix cctag; C++ cmake CV library at https://github.com/alicevision/CCTag; Next: fetch source, draft cmake recipe
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (cctag v1.0.4, cmake-build-system, MPL-2.0)
+   - TODO Status: DONE
 
 
 ** DONE 4505. logiops-rs
@@ -36099,6 +36119,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix jdk25-graalvm; GraalVM JDK25 binary at https://github.com/graalvm/graalvm-ce-builds/releases; needs patchelf wrapper; Next: fetch tarball, compute hash, draft binary recipe
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (jdk25-graalvm-bin v25.0.2, copy-build-system binary, GPL-2.0+CPE)
+   - TODO Status: DONE
 
 
 ** DONE 4554. wait4tailscale
@@ -36168,6 +36190,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408l; no proper version tags, hobbyist project with no release discipline. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (katifetch v13.1, bash/copy-build-system, MIT)
+   - TODO Status: DONE
 
 
 ** BLOCKED 4563. gtk-meshtastic-client
@@ -36227,6 +36251,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: No Guix zps; process browser binary; AUR votes=1; Next: locate upstream, fetch binary, compute hash
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (zps v2.0.0, cmake-build-system from source, GPL-3.0)
+   - TODO Status: DONE
 
 
 ** DONE 4570. openscad-ldraw
@@ -36579,6 +36605,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Jellyfin media server binary v10.11.6; GPL2; .NET binary. Source: https://repo.jellyfin.org. Next: fetch Linux binary, compute hash, draft dotnet binary recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_UNSUPPORTED: C#/.NET server; A1: dotnet-sdk build — not in Guix; A2: binary wrapper — complex .NET runtime patchelf; A3: no equivalent alternative (recipe-resolver-260415a)
+   - TODO Status: BLOCKED
 
 
 ** DONE 4616. litestream
@@ -36723,6 +36751,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Rust netstat alternative v1.1.0; MIT; cargo recipe needed. Source: https://github.com/theopfr/somo. Next: pin v1.1.0, compute sha256, draft cargo recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (somo v1.3.2, cargo-build-system, MIT)
+   - TODO Status: DONE
 
 
 ** DONE 4635. resticprofile
@@ -36737,6 +36767,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Rust terminal file explorer v1.5.7; BSD-2-Clause; cargo recipe. Source: https://github.com/Sberm/transgender. Next: compute sha256, draft cargo-build-system recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (transgender v1.5.8, cargo-build-system, BSD-2-Clause)
+   - TODO Status: DONE
 
 
 ** DONE 4637. amdvlk
@@ -36765,6 +36797,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Game stream server fork from git; GPL3; cmake. Source: https://github.com/ClassicOldSong/Apollo. Next: draft cmake recipe.
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NPM_WEB_UI: cmake C++ core + npm web UI component; A1: cmake build — web UI requires npm; A2: no web UI — server unusable; A3: Sunshine equally blocked (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -36970,6 +37004,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: TLDR client in Zig v1.1.1; MIT. Source: https://gitlab.com/ve-nt/outfieldr. Next: draft zig build recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ZIG_TOOLCHAIN_MISSING: Zig build system not in Guix; A1: zig build — zig not packaged; A2: no binary releases; A3: use tealdeer/tldr instead (recipe-resolver-260415a)
+   - TODO Status: BLOCKED
 
 
 ** DONE 4669. xmousepasteblock-git
@@ -36977,6 +37013,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Disable X11 middle-click paste from git; GPL2; C with Xlib. Source: https://github.com/milaq/XMousePasteBlock. Next: draft make-build-system recipe with libx11/libxi/libxtst.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (xmousepasteblock-git v1.4, C/gnu-build-system, GPL-2.0)
+   - TODO Status: DONE
 
 
 ** DONE 4670. apriltag
@@ -36995,6 +37033,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Python bindings for apriltag; depends on apriltag cmake recipe. Next: draft after apriltag base recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — apriltag C library recipe in recipe-resolver-260415a.scm (apriltag v3.4.5, cmake-build-system, BSD-2-Clause)
+   - TODO Status: DONE
 
 
 ** DONE 4672. topgrade-bin
@@ -37127,6 +37167,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Rust Magic Wormhole v0.7.7; EUPL-1.2+; cargo. Source: https://github.com/magic-wormhole/wormhole-rs. Next: compute sha256 for v0.7.7 tarball, draft cargo recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (wormhole-rs v0.7.7, cargo-build-system, EUPL-1.2)
+   - TODO Status: DONE
 
 
 ** DONE 4689. iwd-nosystemd-git
@@ -37175,6 +37217,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Bifrost binary tool; AUR PKGBUILD fetched. Next: review PKGBUILD for exact upstream URL, compute hash, draft binary recipe.
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KOTLIN_GRADLE_COMPOSE: Kotlin/Compose Multiplatform; A1: Gradle build — needs network, incompatible with Guix; A2: binary — 15+ .so patchelf; A3: use python-samloader instead (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -37281,6 +37325,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Wayland display brightness daemon v1.0.1; GPL3; Rust cargo. Source: https://github.com/MaxVerevkin/wl-gammarelay-rs. Next: compute sha256 for v1.0.1 tarball, draft cargo recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (wl-gammarelay-rs v1.0.1, cargo-build-system, GPL-3.0)
+   - TODO Status: DONE
 
 
 ** DONE 4708. ttf-lxgw-wenkai-mono-nerd
@@ -37368,6 +37414,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (godot-cpp v4.5, cmake-build-system, MIT)
+   - TODO Status: DONE
 
 
 ** DONE 4719. pokeget
@@ -38313,6 +38361,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Qt5 GPU overclocking GUI; cmake with NVML; https://github.com/Lurkki14/tuxclocker; stub added.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (tuxclocker v1.5.1, meson-build-system, GPL-3.0+)
+   - TODO Status: DONE
 
 
 ** DONE 4847. tigervnc-viewer
@@ -38594,6 +38644,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Electron screen sharing binary; https://github.com/pavlobu/deskreen; stub added.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: TypeScript/Electron with yarn; A1: yarn build — Guix lacks Electron; A2: AppImage — 200MB+ FUSE needed; A3: use wayvnc/wl-mirror instead (recipe-resolver-260415a)
+   - TODO Status: BLOCKED
 
 
 ** DONE 4884. deadd-notification-center-bin
@@ -38633,6 +38685,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Kubernetes resource recommender Python; https://github.com/robusta-dev/krr; stub added.
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_PYTHON_DEPS: K8s resource recommender needs 30+ Python packages; A1: pyproject — kubernetes-client chain not in Guix; A2: package 30+ deps — excessive scope; A3: PyInstaller binary — 200MB bundle (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -38674,6 +38728,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Python GTK web app container; AUR PKGBUILD audit needed; stub added.
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — QT6_WEBENGINE: requires Qt6WebEngine (Chromium-based, 40GB+ build); A1: cmake build — Qt6WebEngine not in Guix; A2: Qt5 — upstream migrated; A3: use GNOME Web app mode (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -38755,6 +38811,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Download manager Qt5 binary; https://github.com/filecxx/FileCentipede; stub added.
    - Difficulty: unknown
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_NO_LICENSE: closed-source binary with no license; A1: binary wrapper — no license; A2: no source available; A3: no license declaration (recipe-resolver-260415a)
    - TODO Status: BLOCKED
 
 
@@ -38853,6 +38911,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Nintendo 3DS tool C++ cmake; https://github.com/dnasdw/3dstool; stub added as threedstool.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415a.scm (threedstool v1.2.6, cmake-build-system, MIT)
+   - TODO Status: DONE
 
 
 ** DONE 4916. ps3libraries

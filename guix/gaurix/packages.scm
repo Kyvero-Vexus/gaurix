@@ -2986,4 +2986,22 @@
             ;; recipe-resolver-260414ag
             alacritty-nox-git
             libpurple-lurch-git
+            ;; recipe-resolver-260415a
+            nb
+            xmousepasteblock-git
+            threedstool
+            katifetch
+            zps
+            lief
+            mstflint
+            cctag
+            tuxclocker
+            godot-cpp
+            jdk25-graalvm-bin
+            somo
+            wl-gammarelay-rs
+            transgender
+            wormhole-rs
+            wallchemy-bin
+            apriltag
 ))
