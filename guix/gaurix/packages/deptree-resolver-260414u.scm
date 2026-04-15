@@ -168,7 +168,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/koverstreet/bcachefs")
-                    (commit "v20260302131047.6ebab1b41eda"))
+                    (commit "v20260302131047.6ebab1b41eda")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -187,7 +187,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/namjaejeon/linux-ntfs")
-                    (commit "v2026.02.07+e6e7478"))
+                    (commit "v2026.02.07+e6e7478")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -222,7 +222,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/amkillam/ryzen_smu")
-                    (commit "v181.9f9569f"))
+                    (commit "v181.9f9569f")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -241,7 +241,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/paroj/xpad")
-                    (commit "vr127.9caad15"))
+                    (commit "vr127.9caad15")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -260,7 +260,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/AliEmreSenel/zenpower3")
-                    (commit "v0.2.0"))
+                    (commit "v0.2.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -279,7 +279,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/AliEmreSenel/zenpower3")
-                    (commit "vr73.dc4f1e2"))
+                    (commit "vr73.dc4f1e2")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -298,7 +298,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/mattkeenan/zenpower5")
-                    (commit "v0.5.0.r3.g66871d8"))
+                    (commit "v0.5.0.r3.g66871d8")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -333,7 +333,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/aja-video/libajantv2")
-                    (commit "v17.5.0"))
+                    (commit "v17.5.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -368,7 +368,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/supechicken/KernelSU")
-                    (commit "v3.1.0+80+g489cb029"))
+                    (commit "v3.1.0+80+g489cb029")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -387,7 +387,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/linux-apfs/linux-apfs-rw")
-                    (commit "v0.3.14.r0.g7d8dc88"))
+                    (commit "v0.3.14.r0.g7d8dc88")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -422,7 +422,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/JackDoan/msi-psu")
-                    (commit "v1"))
+                    (commit "v1")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -474,7 +474,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/lwfinger/rtw88")
-                    (commit "vr675.52072d8"))
+                    (commit "vr675.52072d8")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -493,7 +493,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/morrownr/rtw89")
-                    (commit "vr1673.84a2572"))
+                    (commit "vr1673.84a2572")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -648,7 +648,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/umlaeute/v4l2loopback")
-                    (commit "v0.12.5.r232.g2fa9d6d"))
+                    (commit "v0.12.5.r232.g2fa9d6d")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -701,7 +701,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/orospakr/vrms-arch")
-                    (commit "v0.1.0.r25.g802c767"))
+                    (commit "v0.1.0.r25.g802c767")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -738,7 +738,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/dlundqvist/xone")
-                    (commit "v0.5.8"))
+                    (commit "v0.5.8")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -757,7 +757,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/dlundqvist/xone")
-                    (commit "v0.5.8.r0.gf2aa9fe"))
+                    (commit "v0.5.8.r0.gf2aa9fe")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -810,7 +810,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Agzes/AntiAFK-RBX-Sober")
-                    (commit "v0.2.0"))
+                    (commit "v0.2.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -846,7 +846,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Drazape/arch-upgrader")
-                    (commit "v1.1.0.r1.g737dfec"))
+                    (commit "v1.1.0.r1.g737dfec")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -865,7 +865,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Scqxd/archforge")
-                    (commit "v0.2.2"))
+                    (commit "v0.2.2")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -884,7 +884,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/keircn/archium")
-                    (commit "v1.10.4"))
+                    (commit "v1.10.4")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -903,7 +903,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/gwuen/aurvote-utils")
-                    (commit "v1.1.0.r7.g3e82548"))
+                    (commit "v1.1.0.r7.g3e82548")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -973,7 +973,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/MeIsGaming/cow-to-text")
-                    (commit "v1.0.0"))
+                    (commit "v1.0.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -992,7 +992,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Stranger6667/css-inline")
-                    (commit "v0.20.0"))
+                    (commit "v0.20.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1011,7 +1011,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Rikorose/DeepFilterNet")
-                    (commit "vv0.5.6.r89.gd375b2d"))
+                    (commit "vv0.5.6.r89.gd375b2d")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1030,7 +1030,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/aleyan/dela")
-                    (commit "vr218.90fc83b"))
+                    (commit "vr218.90fc83b")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1066,7 +1066,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/mellowagain/rpc-wine")
-                    (commit "v1.0.0.r2.ge432eb6"))
+                    (commit "v1.0.0.r2.ge432eb6")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1117,7 +1117,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/freemind001/preview")
-                    (commit "v0.4.r32.gb1af840"))
+                    (commit "v0.4.r32.gb1af840")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1136,7 +1136,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/bulletmark/encfsui")
-                    (commit "v1.6"))
+                    (commit "v1.6")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1155,7 +1155,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/google/evcxr/tree/main/evcxr_jupyter")
-                    (commit "v0.21.1"))
+                    (commit "v0.21.1")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1174,7 +1174,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Toastberries/fcitx5-sitelen-pona")
-                    (commit "v1.1.0"))
+                    (commit "v1.1.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1193,7 +1193,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://codeberg.org/Line-fr/Vship")
-                    (commit "v4.1.0"))
+                    (commit "v4.1.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1212,7 +1212,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/nroi/flexo")
-                    (commit "v1.6.10"))
+                    (commit "v1.6.10")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1231,7 +1231,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://git.sr.ht/~dropbear/foobard")
-                    (commit "v0.r5.e57d8ad"))
+                    (commit "v0.r5.e57d8ad")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1250,7 +1250,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/meetfranz/franz")
-                    (commit "v5.11.0"))
+                    (commit "v5.11.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1285,7 +1285,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/efekrskl/gj")
-                    (commit "v0.2.0"))
+                    (commit "v0.2.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1320,7 +1320,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/qwreey75/quick-settings-tweaks")
-                    (commit "v2.2.stable.r7.g8e03bb6"))
+                    (commit "v2.2.stable.r7.g8e03bb6")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1339,7 +1339,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/GUI-for-Cores/GUI.for.SingBox")
-                    (commit "v1.20.0"))
+                    (commit "v1.20.0")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1358,7 +1358,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/wszqkzqk/GUILessBingSearch")
-                    (commit "vr15.20260404.56c849e"))
+                    (commit "vr15.20260404.56c849e")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1377,7 +1377,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/lucas-mior/gummibbs")
-                    (commit "vr306.7922ae8"))
+                    (commit "vr306.7922ae8")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1396,7 +1396,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/haveno-dex/haveno")
-                    (commit "v1.2.3"))
+                    (commit "v1.2.3")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
