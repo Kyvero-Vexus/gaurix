@@ -4057,4 +4057,70 @@
                vtm
                waydroid-git
                ww-manager
+
+            ;; recipe-resolver-260415p
+            ai-chat-bin
+            arashi-icon-theme
+            ardopcf-bin
+            argos-translate
+            authtui-git
+            bak-bin
+            bmm-bin
+            chaterm-bin
+            cspell-lsp
+            dfft-bin
+            disk-usage-git
+            dstll-bin
+            ezcoo-cli
+            fv-cli-bin
+            gnome-shell-extension-hanabi-git
+            godmode-bin
+            gophertube-bin
+            grub-netboot-alpine
+            gsconnect
+            hypersploit
+            hypersploit-bin
+            ipsw
+            kotatsu-dl-git
+            kwin-without-gestures
+            lazyssh-bin
+            libastal-lua-git
+            libgpg-stream
+            librechat
+            libswaykbswitch-git
+            loderunner-ng
+            losci-git
+            mnemo-bin
+            mult-bin
+            nvidia-rt
+            obsidian-control-git
+            openvox-agent-bin
+            partialzipbrowser
+            pi-im
+            pi-im-wayland
+            plasma6-splashscreen-kuro-git
+            polycule-bin
+            python-fastuuid
+            python-qiskit-addon-mpf
+            python-radicale-decsync-git
+            python-sam2-git
+            ratatui-docs
+            rofi-reddit
+            safecloset-bin
+            shfl-bin
+            shopware-cli-bin
+            shtick
+            sip-bin
+            siyuan
+            snapsr-bin
+            sokuji-bin
+            spinnaker-sdk
+            squidge-bin
+            tbll-bin
+            ting-bin
+            tmplinux
+            tomo-bin
+            tor-util
+            wyvern-git
+            zlint-git
 ))
