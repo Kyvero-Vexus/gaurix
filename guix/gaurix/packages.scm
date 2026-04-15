@@ -3187,3 +3187,83 @@
                python-zxing-cpp
                go-prism
                hypruler))
+
+;; deptree-resolver-260415c
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260415c)
+  #:re-export (haskell-filepath
+               firefox-nightly
+               e2-studio-bin
+               alice-ai-app-bin
+               brother-mfc-l8390cdw
+               cp210x-overclock-dkms
+               gv-usb2-driver-dkms-git
+               cargo-xwin
+               clara-verse
+               etherlab-ethercat-dkms
+               mangabox-bin
+               mingw-w64-mpg123
+               fafarunner-bin
+               tmpidlebox
+               vitasdk-packages-git
+               muzak
+               pmt-git
+               reboot-arch-btw
+               samrewritten-git
+               sickrage-git
+               vrc-get
+               wavetracker
+               wayvibes-git
+               weathr
+               web-ext
+               winamax-bin
+               wooting-bg-service
+               xlibre-input-elographics
+               yesplaymusic
+               youtube-dl-gui
+               youtui-player
+               zalo-macos
+               zeptofetch-git
+               zfs-linux
+               zfs-linux-headers
+               ab-av1
+               ajantv2-tools
+               android-studio-for-platform
+               archforge
+               archstatus-git
+               atomic-upgrade
+               aur-auto-vote-git
+               avaloniailspy
+               baidunetdisk-bin
+               basedpyright
+               basedpyright-git
+               binfetch-git
+               bombsquad
+               booklore
+               booster-um
+               brave-beta-bin
+               bruno
+               calculix-ccx
+               cat-browser-git
+               catnap-git
+               certiliamiddleware
+               claude-cowork-linux
+               clean-chroot-manager
+               connectagram
+               connman-resolvconf
+               crestic
+               cursor-cli
+               dbus-action
+               debtap
+               democap
+               denaro
+               discord-canary
+               distroav
+               dms-shell-git
+               dnspyex-wine-bin
+               dput
+               dumber-browser-git
+               electrs
+               eprosima-fast-dds-gen
+               equicord-hook
+               etherpad-lite))

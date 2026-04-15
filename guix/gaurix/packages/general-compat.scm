@@ -361,6 +361,7 @@
   #:use-module (gaurix packages deptree-resolver-260415b)
   #:use-module (gaurix packages recipe-resolver-260415c)
   #:use-module (gaurix packages recipe-resolver-260415d)
+  #:use-module (gaurix packages deptree-resolver-260415c)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -7040,3 +7041,28 @@
 (define-public ntfsprogs-plus (package (inherit ntfsprogs-plus-git) (name "ntfsprogs-plus")))
 (define-public btrfs-desktop-notification (package (inherit btrfs-desktop-notification-git) (name "btrfs-desktop-notification")))
 (define-public plymouth-theme-mikuboot (package (inherit plymouth-theme-mikuboot-git) (name "plymouth-theme-mikuboot")))
+
+;; --- deptree-resolver-260415c compat aliases ---
+(define-public e2-studio (package (inherit e2-studio-bin) (name "e2-studio")))
+(define-public alice-ai-app (package (inherit alice-ai-app-bin) (name "alice-ai-app")))
+(define-public gv-usb2-driver-dkms (package (inherit gv-usb2-driver-dkms-git) (name "gv-usb2-driver-dkms")))
+(define-public mangabox (package (inherit mangabox-bin) (name "mangabox")))
+(define-public fafarunner (package (inherit fafarunner-bin) (name "fafarunner")))
+(define-public vitasdk-packages (package (inherit vitasdk-packages-git) (name "vitasdk-packages")))
+(define-public pmt (package (inherit pmt-git) (name "pmt")))
+(define-public samrewritten (package (inherit samrewritten-git) (name "samrewritten")))
+(define-public sickrage (package (inherit sickrage-git) (name "sickrage")))
+(define-public wayvibes (package (inherit wayvibes-git) (name "wayvibes")))
+(define-public winamax (package (inherit winamax-bin) (name "winamax")))
+(define-public zeptofetch (package (inherit zeptofetch-git) (name "zeptofetch")))
+(define-public archstatus (package (inherit archstatus-git) (name "archstatus")))
+(define-public aur-auto-vote (package (inherit aur-auto-vote-git) (name "aur-auto-vote")))
+(define-public baidunetdisk (package (inherit baidunetdisk-bin) (name "baidunetdisk")))
+(define-public basedpyright (package (inherit basedpyright-git) (name "basedpyright")))
+(define-public binfetch (package (inherit binfetch-git) (name "binfetch")))
+(define-public brave-beta (package (inherit brave-beta-bin) (name "brave-beta")))
+(define-public cat-browser (package (inherit cat-browser-git) (name "cat-browser")))
+(define-public catnap (package (inherit catnap-git) (name "catnap")))
+(define-public dms-shell (package (inherit dms-shell-git) (name "dms-shell")))
+(define-public dnspyex-wine (package (inherit dnspyex-wine-bin) (name "dnspyex-wine")))
+(define-public dumber-browser (package (inherit dumber-browser-git) (name "dumber-browser")))
