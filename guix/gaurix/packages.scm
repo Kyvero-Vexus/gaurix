@@ -3364,3 +3364,28 @@
                wlr-which-key-bin
                manaverse-sdl2
                karp))
+
+
+;; deptree-resolver-260415f
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260415f)
+  #:re-export (gnu-apl
+               opentyrian
+               releng-tool
+               luaunbound
+               lxappearance-obconf-gtk3
+               pass-audit
+               python-requirements-language-server
+               ajantv2-tools
+               pins
+               onset
+               oniri
+               proxybridge
+               onthespot-bin
+               libreoffice-extension-writingtool-bin
+               linux-firmware-bnx2x
+               linux-firmware-marvell
+               linux-firmware-mellanox
+               linux-firmware-nfp
+               linux-firmware-qcom))
+
