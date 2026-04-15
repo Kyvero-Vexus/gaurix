@@ -351,6 +351,7 @@
   #:use-module (gaurix packages recipe-resolver-260414x)
   #:use-module (gaurix packages recipe-resolver-260414y)
   #:use-module (gaurix packages recipe-resolver-260414ac)
+  #:use-module (gaurix packages deptree-resolver-260414u)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -6897,3 +6898,32 @@
 (define-public vapoursynth-plugin-vship-amd (package (inherit vapoursynth-plugin-vship-amd-git) (name "vapoursynth-plugin-vship-amd")))
 (define-public vapoursynth-tools-genstubs (package (inherit vapoursynth-tools-genstubs-git) (name "vapoursynth-tools-genstubs")))
 (define-public ynote-desktop (package (inherit ynote-desktop-bin) (name "ynote-desktop")))
+
+;; --- deptree-resolver-260414u compat aliases ---
+(define-public bcachefs-kernel-dkms (package (inherit bcachefs-kernel-dkms-git) (name "bcachefs-kernel-dkms")))
+(define-public ntfsplus-dkms (package (inherit ntfsplus-dkms-git) (name "ntfsplus-dkms")))
+(define-public ryzen-smu-dkms (package (inherit ryzen-smu-dkms-git) (name "ryzen-smu-dkms")))
+(define-public xpad-dkms (package (inherit xpad-dkms-git) (name "xpad-dkms")))
+;; zenpower3-dkms is a real package, not an alias of zenpower3-dkms-git
+(define-public zenpower5-dkms (package (inherit zenpower5-dkms-git) (name "zenpower5-dkms")))
+(define-public droidcam-dkms (package (inherit droidcam-dkms-git) (name "droidcam-dkms")))
+(define-public linux-apfs-rw-dkms (package (inherit linux-apfs-rw-dkms-git) (name "linux-apfs-rw-dkms")))
+(define-public nifskope (package (inherit nifskope-git) (name "nifskope")))
+(define-public rtw88-dkms (package (inherit rtw88-dkms-git) (name "rtw88-dkms")))
+(define-public rtw89-dkms (package (inherit rtw89-dkms-git) (name "rtw89-dkms")))
+(define-public v4l2loopback-dkms (package (inherit v4l2loopback-dkms-git) (name "v4l2loopback-dkms")))
+;; xone-dkms is a real package, not an alias of xone-dkms-git
+(define-public zfs-dkms-staging-compat (package (inherit zfs-dkms-staging-compat-git) (name "zfs-dkms-staging-compat")))
+(define-public apifox (package (inherit apifox-appimage) (name "apifox")))
+(define-public arch-upgrader (package (inherit arch-upgrader-git) (name "arch-upgrader")))
+(define-public archforge (package (inherit archforge-git) (name "archforge")))
+(define-public aurvote-utils (package (inherit aurvote-utils-git) (name "aurvote-utils")))
+(define-public deepfilternet-demos (package (inherit deepfilternet-demos-git) (name "deepfilternet-demos")))
+(define-public dela (package (inherit dela-git) (name "dela")))
+(define-public discord-rpc-wine (package (inherit discord-rpc-wine-git) (name "discord-rpc-wine")))
+(define-public drawio-live (package (inherit drawio-live-bin) (name "drawio-live")))
+(define-public easy-switcher (package (inherit easy-switcher-git) (name "easy-switcher")))
+(define-public foobard (package (inherit foobard-git) (name "foobard")))
+(define-public freesmlauncher (package (inherit freesmlauncher-bin) (name "freesmlauncher")))
+(define-public gj (package (inherit gj-git) (name "gj")))
+(define-public gnome-shell-extension-quick-settings-tweaks (package (inherit gnome-shell-extension-quick-settings-tweaks-git) (name "gnome-shell-extension-quick-settings-tweaks")))
