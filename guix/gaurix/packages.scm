@@ -3739,4 +3739,10 @@
             thorium-reader-bin
             tidal-hifi-git
             tlclient
+            ;; recipe-resolver-260415k
+            tuxmanager
+            pardf
+            jupyterlab-myst
+            cdesktopenv
+            ytm-player
 ))
