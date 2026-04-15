@@ -3169,3 +3169,21 @@
             rtl-sdr-librtlsdr-git
             aerofetch
 ))
+
+;; recipe-resolver-260415d
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260415d)
+  #:re-export (libtrash
+               scolorpicker-legacy
+               srtodo-git
+               gpgfrontend
+               linux-enable-ir-emitter
+               ntfsprogs-plus-git
+               python-aioice
+               fonts-meta-base
+               btrfs-desktop-notification-git
+               smpeg0
+               plymouth-theme-mikuboot-git
+               python-zxing-cpp
+               go-prism
+               hypruler))

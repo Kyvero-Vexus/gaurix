@@ -360,6 +360,7 @@
   #:use-module (gaurix packages deptree-resolver-260414v)
   #:use-module (gaurix packages deptree-resolver-260415b)
   #:use-module (gaurix packages recipe-resolver-260415c)
+  #:use-module (gaurix packages recipe-resolver-260415d)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2592,6 +2593,27 @@
             tailscale-bin
             mdcat-bin
             fooyin-git
+            ;; recipe-resolver-260415d recipes
+            libtrash
+            scolorpicker-legacy
+            srtodo-git
+            gpgfrontend
+            linux-enable-ir-emitter
+            ntfsprogs-plus-git
+            python-aioice
+            fonts-meta-base
+            btrfs-desktop-notification-git
+            smpeg0
+            plymouth-theme-mikuboot-git
+            python-zxing-cpp
+            go-prism
+            hypruler
+            ;; recipe-resolver-260415d compat aliases
+            scolorpicker
+            srtodo
+            ntfsprogs-plus
+            btrfs-desktop-notification
+            plymouth-theme-mikuboot
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -7011,3 +7033,10 @@
 (define-public hdiffpatch (package (inherit hdiffpatch-bin) (name "hdiffpatch")))
 (define-public moon (package (inherit moon-bin) (name "moon")))
 (define-public rtl-sdr-librtlsdr (package (inherit rtl-sdr-librtlsdr-git) (name "rtl-sdr-librtlsdr")))
+
+;; --- recipe-resolver-260415d compat aliases ---
+(define-public scolorpicker (package (inherit scolorpicker-legacy) (name "scolorpicker")))
+(define-public srtodo (package (inherit srtodo-git) (name "srtodo")))
+(define-public ntfsprogs-plus (package (inherit ntfsprogs-plus-git) (name "ntfsprogs-plus")))
+(define-public btrfs-desktop-notification (package (inherit btrfs-desktop-notification-git) (name "btrfs-desktop-notification")))
+(define-public plymouth-theme-mikuboot (package (inherit plymouth-theme-mikuboot-git) (name "plymouth-theme-mikuboot")))
