@@ -3,6 +3,7 @@
             ;; deptree-resolver-260415m
             ;; deptree-resolver-260415n
             ;; recipe-resolver-260415q (bookkeeping-only, 30 NRD resolved)
+            ;; recipe-resolver-260415r (30 NRD resolved)
             ttf-ms-win10-auto
             jre22-openjdk
             ungoogled-chromium-widevine-bin
@@ -4124,4 +4125,35 @@
             tor-util
             wyvern-git
             zlint-git
+            ;; recipe-resolver-260415r
+            ttf-google-sans-code-nf
+            music-presence-bin
+            hayase-desktop-bin
+            dimensions-bin
+            passless-bin
+            js-util-bin
+            enumctl-bin
+            moderncsv-bin
+            lx-music-desktop-bin
+            soh-bin
+            steam-cloud-file-manager-bin
+            interspec-bin
+            c-lolcat
+            celt
+            funchook
+            crepe-bin
+            lazymake-bin
+            oxlint-bin
+            python-myvaillant
+            oxfmt-bin
+            mill-global
+            paisa-bin
+            dockcheck
+            bluevein-bin
+            ttf-google-sans-code-vf
+            gnome-shell-extension-wallpaper-slideshow
+            goat-cli
+            fnox-bin
+            ionosctl
+            mangojuice-bin
 ))
