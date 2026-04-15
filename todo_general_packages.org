@@ -77,6 +77,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407k.scm (insomnia-bin v12.5.0, Insomnia .deb binary, Apache-2.0)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: ALREADY_PACKAGED_PRIOR: recipe exists in recipe-resolver-260407k.scm from prior pass (recipe-resolver-260415i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260415i.scm (recipe-resolver-260415q)
    - TODO Status: BLOCKED
 
 ** DONE 10. datagrip
@@ -249,6 +250,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413ac; COMPLEX_DEPS: needs c++utilities/qtutilities/qtforkawesome (3 custom libs by Martchus); A1: package 3 deps — significant scope; A2: bundled build not supported; A3: use syncthing CLI instead
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_DEPS: syncthingtray needs c++utilities/qtutilities/qtforkawesome (3 custom Martchus libs); A1: package all 3 deps — significant scope, each has own dep chains; A2: bundled build — upstream does not support single-repo build; A3: recommend syncthing CLI as alternative (recipe-resolver-260415q)
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: Qt5/6 tray app needs c++utilities/qtutilities/qtforkawesome (3 custom libs); A1: package 3 deps — significant scope; A2: bundled build not supported; A3: use syncthing CLI (recipe-resolver-260414o)
 ** DONE 30. megasync
@@ -444,6 +446,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | Tailscale VPN client — Go build, complex networking + systemd integration; not in AUR cache | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260414ab.scm (tailscale, Go mesh VPN) (recipe-resolver-260415q)
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -496,6 +499,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: medium
    - TODO Status: DONE
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | Android container for Wayland — needs LXC + Android images + binder kernel module; infeasible in Guix sandbox | re-blocked in deptree-resolver-260407
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: INFEASIBLE_SANDBOX: waydroid needs LXC, Android system images, and binder kernel module; A1: LXC packaging possible but binder_linux kernel module needs custom kernel config not available in Guix; A2: pre-built Android images violate Guix FOSS policy; A3: Guix build sandbox prevents container-in-container operation required by waydroid (recipe-resolver-260415q)
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -815,6 +819,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: local cache `data/aur-cache/packages-meta-ext-v1.json` (popularity 3.341, votes 16).
    - Status: Blocked: no `grub-customizer` package in current Guix channels; privileged GRUB config mutation tool requires careful system-integration review not completed in this pass.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408r; incompatible with Guix System declarative boot config model. See blocked-notes.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: INCOMPATIBLE_GUIX: grub-customizer modifies GRUB config files directly; A1: Guix System manages bootloader declaratively via system config — direct GRUB editing conflicts; A2: grub-customizer could run but changes would be overwritten on next system reconfigure; A3: Guix foreign distro use is niche and grub-customizer has better alternatives (grub-mkconfig) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -1519,6 +1524,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in queue-20260402t2015z-blocked-tree-p100-w01.scm (resolved deptree-resolver batch 2026-04-07).
    - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | General purpose datasource/executor — Go build, needs vendored module hashes | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260414q.scm (elephant v2.21.0, Go datasource/executor) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1741,6 +1747,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-w07.scm (resolved deptree-resolver batch 2026-04-07).
    - Status: DONE: Already packaged in gaurix (confirmed in deptree-resolver-260407b pass).
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | Wayland screen recorder — Rust/Cargo with VA-API deps, needs vendored crate hashes | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260413m.scm (wl-screenrec v0.2.0, Wayland screen recorder) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -1905,6 +1912,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in queue-20260402t2015z-blocked-tree-p100-w01.scm (resolved deptree-resolver batch 2026-04-07).
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | HTML to Markdown converter (Go) — needs Go module build with vendored deps | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in queue-20260402t2015z-blocked-tree-p100-w01.scm (html2markdown, Go HTML→Markdown converter) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -2009,6 +2017,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-r8-w02.scm (resolved deptree-resolver batch 2026-04-07).
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | OpenVR→OpenXR translation layer — 9 makedeps, complex Rust/Meson build | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260413m.scm (xrizer-common v0.5, OpenVR→OpenXR config) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -2151,6 +2160,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260413n.scm (elephant-files plugin v2.21.0) (recipe-resolver-260415q)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413u.scm (elephant-files-plugin v2.21.0, Go plugin binary from GitHub, GPL-3.0)
    - TODO Status: DONE
 
@@ -2161,6 +2171,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260413n.scm (elephant-calc plugin v2.21.0) (recipe-resolver-260415q)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413u.scm (elephant-calc-plugin v2.21.0, Go plugin binary from GitHub, GPL-3.0)
    - TODO Status: DONE
 
@@ -2264,6 +2275,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in deptree-resolver-260414q.scm (gtk-sharp-2 v2.12.45, gnu-build-system) (deptree-resolver-260414q)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | GTK2 C# bindings — needs Mono runtime + GTK2 interop; Mono not well-supported in Guix | re-blocked in deptree-resolver-260407
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MONO_UNSUPPORTED: gtk-sharp-2 requires Mono runtime for C#/GTK2 bindings; A1: Mono not packaged in Guix and bootstrapping is complex (needs .NET/Mono bootstrap chain); A2: GTK2 is deprecated upstream; A3: no modern replacement — C# desktop development on Linux uses Avalonia/MAUI now, not GTK# (recipe-resolver-260415q)
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -2782,6 +2794,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in general-compat.scm (deezer-enhanced, Electron app) (recipe-resolver-260415q)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413u.scm (deezer-enhanced-bin v1.5.1, Electron AppImage, MIT)
    - TODO Status: DONE
 
@@ -3631,6 +3644,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe added in deptree-resolver-260414q.scm (wayfire v0.10.1, cmake-build-system) (deptree-resolver-260414q)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | 3D Wayland compositor — needs wlroots + custom Wayland protocols + complex meson build; feasible but not in batch scope | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260414q.scm (wayfire v0.10.1, 3D Wayland compositor) (recipe-resolver-260415q)
    - Difficulty: hard
    - TODO Status: BLOCKED
 
@@ -5889,6 +5903,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: BUILD_SYSTEM_TOO_COMPLEX: Chromium fork with Russian GOST crypto; requires full Chromium build system (~40GB build) (deptree-resolver-260413c)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413h)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FULL_BROWSER_REBUILD: chromium-gost patches GOST crypto into Chromium; A1: full Chromium build from source takes 6+ hours and 50+ GB RAM; A2: Guix has ungoogled-chromium but patching GOST on top requires rebuilding entire browser; A3: binary distribution blocked by Chromium license terms and code signing (recipe-resolver-260415q)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — INFEASIBLE_BUILD: full Chromium fork (~40GB build); all approaches exhausted (recipe-resolver-260413r)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — INFEASIBLE_BUILD: full Chromium fork with GOST crypto (~40GB build, 100+ deps, GN build system); A1: build from source — infeasible; A2: no binary releases; A3: Guix has no native Chromium package (recipe-resolver-260413aa)
@@ -6878,6 +6893,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated in r22-w03b dep-tree pass; see blocked-notes for detailed reasons.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | A1: cargo-build-system requires 100+ crate deps individually packaged; A2: guix import crate produces incomplete results; A3: many transitive crates missing from Guix.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CARGO_100_CRATES: mdcat requires 100+ individually packaged Rust crates; A1: cargo-build-system needs each crate as Guix package — enormous scope; A2: guix import crate produces incomplete results (missing transitive deps); A3: binary releases exist but are glibc-version-specific and not reproducible (recipe-resolver-260415q)
    - Status: BLOCKED: Rust/Cargo with many transitive crate deps. 3 approaches tried: cargo-build-system, guix import crate, no prebuilt binaries.
    - Difficulty: medium
    - TODO Status: BLOCKED
@@ -7062,6 +7078,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
  [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GO_VENDORED_DEPS: Go plugin for elephant launcher; A1: go-b...]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260413u.scm (elephant-niriactions plugin v2.21.0) (recipe-resolver-260415q)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413u.scm (elephant-niriactions-plugin v2.21.0, Go plugin binary from GitHub, GPL-3.0)
    - TODO Status: DONE
 
@@ -7086,6 +7103,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260413u.scm (elephant-bitwarden plugin v2.21.0) (recipe-resolver-260415q)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413u.scm (elephant-bitwarden-plugin v2.21.0, Go plugin binary from GitHub, GPL-3.0)
    - TODO Status: DONE
 
@@ -7149,6 +7167,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260413l.scm (dinit-edit-git, Go dinit service editor) (recipe-resolver-260415q)
 
 ** DONE 924. dae-kix-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -7166,6 +7185,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DOTNET_UNSUPPORTED: .NET SDK/runtime not in Guix; needs .NET ecosystem bootstrapping (recipe-resolver-260413r)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: csharpier requires .NET SDK 10.0; A1: .NET SDK/runtime not bootstrapped in Guix; A2: NuGet package manager needs dotnet runtime creating circular dep; A3: no standalone binary releases — always requires .NET runtime (recipe-resolver-260415q)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — DOTNET_SDK_MISSING: C# formatter requires .NET SDK 10.0 not in Guix; A1: dotnet publish needs dotnet-sdk; A2: NuGet tool needs dotnet runtime; A3: no standalone binaries (recipe-resolver-260413u)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_ECOSYSTEM: C# formatter needs .NET SDK 10.0; A1: dotnet publish — sdk not in Guix; A2: NuGet tool — runtime not in Guix; A3: no standalone binaries on GitHub (recipe-resolver-260413aa)
@@ -7294,6 +7314,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — INFEASIBLE_BUILD: Qt6 full rebuild with high-FPS patches; all approaches exhausted (recipe-resolver-260413r)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — FULL_QT6_REBUILD: single animation FPS patch requires rebuilding entire Qt6 base (50+ deps); impractical (recipe-resolver-260413u)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FULL_QT6_REBUILD: qt6-base-hifps applies single animation FPS patch to Qt6 base; A1: rebuilding entire Qt6 (50+ deps, hours of compile) for one patch is impractical; A2: runtime LD_PRELOAD hook not feasible for animation timing; A3: patch could be applied as Guix package transformation but requires maintaining full Qt6 rebuild infrastructure (recipe-resolver-260415q)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FULL_QT6_REBUILD: single animation FPS patch requires full Qt6 rebuild (50+ deps, hours build); A1: full rebuild — impractical; A2: binary patch — not supported; A3: upstream proposal — out of scope (recipe-resolver-260413aa)
    - TODO Status: BLOCKED
 
@@ -8202,6 +8223,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260413m.scm (dasel v3.4.1, Go CLI data selector) (recipe-resolver-260415q)
 
 ** DONE 1059. hardinfo2-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -8393,9 +8415,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — PYQT6_DEPS: needs pyqtgraph, configobj, complex Qt6 Python integration (recipe-resolver-260415j)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PYQT6_MISSING: procexp needs python-pyqtgraph and python-pyqt6; A1: PyQt6 not packaged in Guix (requires SIP + complex Qt6 Python bindings build); A2: pyqtgraph depends on PyQt6 — same blocker; A3: no alternative GUI framework — procexp is specifically a PyQt6 app (recipe-resolver-260415q)
 ** BLOCKED 1080. obexftp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260414aa; needs openobex (not in Guix); A1: openobex not in Guix; A2: openobex old/unmaintained; A3: no alternative OBEX impl
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEPS: obexftp needs openobex library; A1: openobex not in Guix and upstream (openobex.sourceforge.net) is unmaintained since 2013; A2: no alternative OBEX implementation available in Guix; A3: modern Bluetooth file transfer uses BlueZ OBEX agent directly, making obexftp largely obsolete (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: BLOCKED
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — OPENOBEX_MISSING: needs openobex (unmaintained since 2015, not in Guix); A1: openobex bitrotted build; A2: package openobex would need significant patches; A3: BlueZ obexd provides equivalent functionality (recipe-resolver-260415b)
@@ -8496,6 +8520,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN (deptree-resolver-260413i)
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in recipe-resolver-260413u.scm (dust-git v1.2.4, Rust disk usage tool) (recipe-resolver-260415q)
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413u.scm (dust-git-bin v1.2.4, du replacement binary from GitHub, Apache-2.0)
    - TODO Status: DONE
 
@@ -8522,6 +8547,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in queue-20260402t2015z-blocked-tree-p100-w01.scm (resolved deptree-resolver batch 2026-04-07).
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | Linux Mint XApp thumbnailer common files — needs xapp + nemo/cinnamon ecosystem deps | re-blocked in deptree-resolver-260407
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ECOSYSTEM_DEPS: xapp-thumbnailers-common needs xapp + nemo/cinnamon ecosystem; A1: xapp library not in Guix (Linux Mint specific); A2: nemo file manager dep chain (cinnamon-desktop, muffin, etc.) not in Guix; A3: thumbnailer functionality available via GNOME/Nautilus alternatives in Guix (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -14934,6 +14960,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED 2026-03-19: no confirmed Guix equivalent/package mapping for `safe-rm` in this pass; deferred for dedicated packaging work.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408r; Rust/Cargo requiring full vendored crate enumeration (~15 transitive deps). See blocked-notes.
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in deptree-resolver-260413e.scm (safe-rm v1.1.0, Rust deletion guard) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -15448,6 +15475,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 2013. calculix-ccx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260414aa; needs SPOOLES (not in Guix); A1: spooles not in Guix; A2: niche Fortran lib; A3: alt solvers require upstream patches
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_SPOOLES: calculix-ccx needs SPOOLES sparse solver library; A1: SPOOLES not in Guix — niche Fortran/C sparse matrix lib from NIST, complex build; A2: alternative solvers (PaStiX, MUMPS) require upstream patches to calculix; A3: calculix-ccx also needs ARPACK — another missing dep, compounding scope (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: BLOCKED
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SPOOLES_MISSING: needs SPOOLES sparse matrix library (niche Fortran, not in Guix); A1: SPOOLES has non-standard build; A2: packaging effort disproportionate; A3: solver cannot be substituted without upstream patches (recipe-resolver-260415b)
@@ -20781,6 +20809,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-w07.scm (resolved deptree-resolver batch 2026-04-07).
    - Status: DONE: recipe exists in gaurix channel (prior pass); validated in deptree-resolver-260407.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | UV/Hatch dynamic versioning — 5 Python deps; feasible but depends on uv ecosystem | re-blocked in deptree-resolver-260407
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: SOURCE_UNAVAILABLE: python-hatch-dynamic-versioning; A1: AUR snapshot not available (404); A2: PyPI package not found (404 on pypi.org/pypi/hatch-dynamic-versioning); A3: depends on UV ecosystem (python-dunamai, python-tomlkit) which adds 5+ deps not in Guix (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -21552,6 +21581,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | OpenCensus Python SDK — 3 deps including google-api-core; feasible but dep chain complex | re-blocked in deptree-resolver-260407
+   - Status: DONE: ALREADY_RESOLVED: recipe confirmed in queue-20260407-deptree-resolver.scm (python-opencensus v0.11.4) (recipe-resolver-260415q)
    - Difficulty: medium
    - TODO Status: BLOCKED
 

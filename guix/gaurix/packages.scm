@@ -2,6 +2,7 @@
 (define-module (gaurix packages)
             ;; deptree-resolver-260415m
             ;; deptree-resolver-260415n
+            ;; recipe-resolver-260415q (bookkeeping-only, 30 NRD resolved)
             ttf-ms-win10-auto
             jre22-openjdk
             ungoogled-chromium-widevine-bin
