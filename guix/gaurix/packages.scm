@@ -4229,4 +4229,20 @@
             fnox-bin
             ionosctl
             mangojuice-bin
+
+            ;; recipe-resolver-260415t
+            snes9x-git
+            snes9x-gtk-git
+            snes9x-qt-git
+            alephone-git
+            smokinguns-git
+            pulsemeeter-git
+            winegui
+            xfce4-theme-switcher
+            hidamari
+            radiosonde-auto-rx
+            greetd-regreet-git
+            sway-i3-style-fullscreen-git
+            gimp-nufraw
+            perl-perl-languageserver
 ))
