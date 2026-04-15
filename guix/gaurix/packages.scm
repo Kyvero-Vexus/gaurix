@@ -1,6 +1,7 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
             ;; deptree-resolver-260415m
+            ;; deptree-resolver-260415n
             ttf-ms-win10-auto
             jre22-openjdk
             ungoogled-chromium-widevine-bin
@@ -3959,4 +3960,85 @@
                osdlyrics
                aaaaxy-bin
                linnote
+               joplin
+               komorebi
+               liboqs-git
+               limine-entry-tool-git
+               luminance
+               lyrionmusicserver
+               materia-transparent-gtk-theme-git
+               mesen2-git
+               nut-monitor
+               openclaw-git
+               opendeck-git
+               pantheon-settings-daemon-git
+               perl-gis-distance-git
+               python-qiskit-gym
+               qflipper-git
+               qtarcan-git
+               river-creek
+               scx-tools-git
+               sddm-conf-git
+               serialplot-git
+               shadowsocks-libev-static
+               sysd-manager
+               telegram-tdlib-purple-git
+               tmuzika
+               tomcat8
+               ultimate-doom-builder-git
+               way-displays
+               wayfarer
+               xlibre-video-amdgpu
+               ytdownloader-gui
+               zelda64recomp-bin
+               aeth-git
+               autopilot-rs
+               balena-etcher
+               chawan-git
+               com-163-music-spark
+               continuwuity-git
+               dunelegacy
+               flowtime
+               ghostmirror
+               git-incrypt-git
+               gixy-next
+               gnome-shell-extension-ddterm-git
+               hyprkcs-git
+               hyprland-autoname-workspaces-git
+               hytale-f2p-git
+               i2pd-tools-git
+               intellij-idea-open-eap
+               kapitano
+               kumir2-git
+               libggml
+               libggml-git
+               libvgm-git
+               livebook
+               loliashizuku-git
+               m33mu-git
+               nitrox
+               noctalia-shell-git
+               openmeters-git
+               plasma6-applets-kurve-git
+               plasma6-applets-thermal-monitor-git
+               python-opentelemetry-exporter-prometheus
+               python-pymatgen
+               qt-web-extractor
+               quantum-espresso
+               qvtfpp
+               rofi-gpaste-git
+               roomeqwizard-beta
+               rusty-path-of-building
+               scrcpy-git
+               sitra
+               susops
+               tosu-overlay-git
+               vial-keychron-git
+               vim-youcompleteme-git
+               vk-hdr-layer-kwin6-git
+               vkd3d-proton-git
+               vscoq-language-server-git
+               vtm
+               waydroid-git
+               ww-manager
 ))

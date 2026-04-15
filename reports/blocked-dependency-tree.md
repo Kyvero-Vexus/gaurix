@@ -1,60 +1,60 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260415m  
-**Timestamp:** 2026-04-15T14:08:07.810346+00:00  
-**Total BLOCKED:** 903  
+**Pass:** deptree-resolver-260415n  
+**Timestamp:** 2026-04-15T15:24:34.970699Z  
+**Total BLOCKED:** 889  
 
 ## Priority Queue (Top 50)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | ttf-ms-win10-auto | 11901 | 0 | 15 | 6 |
-| 2 | jre22-openjdk | 4029 | 0 | 10 | 42 |
-| 3 | ungoogled-chromium-widevine-bin | 7356 | 0 | 2 | 29 |
-| 4 | jre22-openjdk-headless | 4028 | 0 | 2 | 39 |
-| 5 | plasma-desktop-povd | 2893 | 0 | 2 | 76 |
-| 6 | nvidia-beta | 562 | 0 | 1 | 5 |
-| 7 | v4l2loopback-dc-dkms | 946 | 0 | 1 | 8 |
-| 8 | python-dlib-cuda | 12911 | 0 | 1 | 18 |
-| 9 | linux-cachyos-cjktty | 19312 | 0 | 1 | 19 |
-| 10 | linux-cachyos | 1070 | 0 | 1 | 25 |
-| 11 | waybar-cava | 8837 | 0 | 1 | 29 |
-| 12 | okular-no-purpose | 9841 | 0 | 1 | 37 |
-| 13 | reboot-arch-btw | 13288 | 0 | 0 | 4 |
-| 14 | oxidizr-arch | 9853 | 0 | 0 | 5 |
-| 15 | portage-manifest | 13162 | 0 | 0 | 5 |
-| 16 | reflector-simple | 996 | 0 | 0 | 6 |
-| 17 | tmpsuse | 13864 | 0 | 0 | 6 |
-| 18 | ttf-ms-win10-auto-japanese | 11902 | 0 | 0 | 6 |
-| 19 | ttf-ms-win10-auto-korean | 11903 | 0 | 0 | 6 |
-| 20 | ttf-ms-win10-auto-other | 11908 | 0 | 0 | 6 |
-| 21 | ttf-ms-win10-auto-sea | 11904 | 0 | 0 | 6 |
-| 22 | ttf-ms-win10-auto-thai | 11905 | 0 | 0 | 6 |
-| 23 | ttf-ms-win10-auto-zh_cn | 11906 | 0 | 0 | 6 |
-| 24 | ttf-ms-win10-auto-zh_tw | 11907 | 0 | 0 | 6 |
-| 25 | untmp | 13863 | 0 | 0 | 6 |
-| 26 | xmcl-launcher | 400 | 0 | 0 | 6 |
-| 27 | android-armv7a-eabi-qt6-multimedia | 13964 | 0 | 0 | 7 |
-| 28 | android-armv7a-eabi-qt6-positioning | 13963 | 0 | 0 | 7 |
-| 29 | ledger-live | 4225 | 0 | 0 | 7 |
-| 30 | lib32-libbluray | 12169 | 0 | 0 | 7 |
-| 31 | masterpdfeditor | 419 | 0 | 0 | 7 |
-| 32 | momw-tools-pack | 3855 | 0 | 0 | 7 |
-| 33 | naps2 | 12016 | 0 | 0 | 7 |
-| 34 | nbtopy | 10109 | 0 | 0 | 7 |
-| 35 | openastro.org | 788 | 0 | 0 | 7 |
-| 36 | openmohaa | 9265 | 0 | 0 | 7 |
-| 37 | openmohaa-git | 9290 | 0 | 0 | 7 |
-| 38 | pacman-gui | 10160 | 0 | 0 | 7 |
-| 39 | pdf.tocgen | 1108 | 0 | 0 | 7 |
-| 40 | pida-hg | 25145 | 0 | 0 | 7 |
-| 41 | python-pyebsdindex | 6842 | 0 | 0 | 7 |
-| 42 | reminduck | 3451 | 0 | 0 | 7 |
-| 43 | rompr | 9797 | 0 | 0 | 7 |
-| 44 | rtt-rstudio-technician | 3264 | 0 | 0 | 7 |
-| 45 | slack-desktop-wayland | 1533 | 0 | 0 | 7 |
-| 46 | sleep-inhibitor | 10564 | 0 | 0 | 7 |
-| 47 | snack | 11033 | 0 | 0 | 7 |
-| 48 | tqsl | 813 | 0 | 0 | 7 |
-| 49 | uptater | 2938 | 0 | 0 | 7 |
-| 50 | ut2004-bin | 11561 | 0 | 0 | 7 |
+| 1 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
+| 2 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
+| 3 | pacboost | 4654 | 0 | 0 | 5 |
+| 4 | parui-git | 19178 | 0 | 0 | 5 |
+| 5 | aurscan-git | 4227 | 0 | 0 | 6 |
+| 6 | aurutils-git | 11962 | 0 | 0 | 6 |
+| 7 | pacman-static | 12893 | 0 | 0 | 6 |
+| 8 | tmpstali | 13865 | 0 | 0 | 6 |
+| 9 | bcachefs-dkms-git | 3125 | 0 | 0 | 7 |
+| 10 | joplin | 11509 | 0 | 0 | 7 |
+| 11 | komorebi | 10701 | 0 | 0 | 7 |
+| 12 | lib32-obs-vkcapture | 11097 | 0 | 0 | 7 |
+| 13 | liboqs-git | 19234 | 0 | 0 | 7 |
+| 14 | limine-entry-tool-git | 8852 | 0 | 0 | 7 |
+| 15 | luminance | 10049 | 0 | 0 | 7 |
+| 16 | lyrionmusicserver | 3645 | 0 | 0 | 7 |
+| 17 | materia-transparent-gtk-theme-git | 10451 | 0 | 0 | 7 |
+| 18 | mesen2-git | 1008 | 0 | 0 | 7 |
+| 19 | nut-monitor | 1004 | 0 | 0 | 7 |
+| 20 | openclaw-git | 3955 | 0 | 0 | 7 |
+| 21 | opendeck-git | 15609 | 0 | 0 | 7 |
+| 22 | pacmanagergui-git | 10356 | 0 | 0 | 7 |
+| 23 | pantheon-settings-daemon-git | 13613 | 0 | 0 | 7 |
+| 24 | perl-gis-distance-git | 9270 | 0 | 0 | 7 |
+| 25 | python-qiskit-gym | 4457 | 0 | 0 | 7 |
+| 26 | qflipper-git | 25156 | 0 | 0 | 7 |
+| 27 | qtarcan-git | 3269 | 0 | 0 | 7 |
+| 28 | river-creek | 4409 | 0 | 0 | 7 |
+| 29 | rua | 7013 | 0 | 0 | 7 |
+| 30 | scx-tools-git | 2699 | 0 | 0 | 7 |
+| 31 | sddm-conf-git | 3432 | 0 | 0 | 7 |
+| 32 | serialplot-git | 1559 | 0 | 0 | 7 |
+| 33 | shadowsocks-libev-static | 990 | 0 | 0 | 7 |
+| 34 | sysd-manager | 11702 | 0 | 0 | 7 |
+| 35 | telegram-tdlib-purple-git | 4454 | 0 | 0 | 7 |
+| 36 | tmuzika | 2975 | 0 | 0 | 7 |
+| 37 | tomcat8 | 3709 | 0 | 0 | 7 |
+| 38 | ultimate-doom-builder-git | 3563 | 0 | 0 | 7 |
+| 39 | vrms-arch-git | 3856 | 0 | 0 | 7 |
+| 40 | way-displays | 10769 | 0 | 0 | 7 |
+| 41 | waybar-module-pacman-updates-git | 8897 | 0 | 0 | 7 |
+| 42 | wayfarer | 10047 | 0 | 0 | 7 |
+| 43 | xlibre-video-amdgpu | 12058 | 0 | 0 | 7 |
+| 44 | ytdownloader-gui | 7465 | 0 | 0 | 7 |
+| 45 | zelda64recomp-bin | 10053 | 0 | 0 | 7 |
+| 46 | aconfmgr-git | 714 | 0 | 0 | 8 |
+| 47 | aeth-git | 3979 | 0 | 0 | 8 |
+| 48 | autopilot-rs | 933 | 0 | 0 | 8 |
+| 49 | balena-etcher | 476 | 0 | 0 | 8 |
+| 50 | chawan-git | 3872 | 0 | 0 | 8 |
