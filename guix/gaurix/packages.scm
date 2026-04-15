@@ -4247,4 +4247,51 @@
             sway-i3-style-fullscreen-git
             gimp-nufraw
             perl-perl-languageserver
+
+            ;; deptree-resolver-260415u
+            stalwart-mail-server
+            yozo-office-fonts
+            yozo-office-templates
+            apache-hudi
+            apache-iceberg
+            apache-paimon
+            apache-flink
+            intel-ipu6ep-camera-hal-git
+            kafbat-kafka-ui
+            python-deltalake
+            python-speechmatics-rt
+            zap-elec
+            zap-rs
+            opencomposite-git
+            simracing-essentials
+            dupeguru-git
+            input-remapper-git
+            invoiceninja-desktop
+            kdelibs4support
+            kime-git
+            kwin-effects-better-blur-dx-git
+            mihomo-party-electron-bin
+            molecule-plugins
+            nih-plug-git
+            open-hexagon-git
+            pandora-launcher
+            powder-toy-git
+            python-exa-py
+            qbittorrent-enhanced-ua-nox
+            ringracers
+            solana
+            solo1
+            sos
+            themix-full-git
+            twig
+            twintaillauncher-bin
+            video2x-git
+            vpkedit
+            wayscriber
+            winegui
+            wordbook
+            xfce4-theme-switcher
+            ytmdesktop
+            yuki-iptv-bin
+            android-tv-remote
 ))
