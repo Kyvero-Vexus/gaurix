@@ -361,6 +361,7 @@
   #:use-module (gaurix packages deptree-resolver-260415b)
   #:use-module (gaurix packages recipe-resolver-260415c)
   #:use-module (gaurix packages recipe-resolver-260415d)
+  #:use-module (gaurix packages recipe-resolver-260415e)
   #:use-module (gaurix packages deptree-resolver-260415c)
 
   #:export (
@@ -2615,6 +2616,17 @@
             ntfsprogs-plus
             btrfs-desktop-notification
             plymouth-theme-mikuboot
+            ;; recipe-resolver-260415e recipes
+            hardinfo2
+            ssh-studio
+            hyprqt6engine
+            haskell-unix-compat
+            crengine-ng
+            crqt-ng
+            git-series
+            wlr-which-key-bin
+            manaverse-sdl2
+            karp
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---

@@ -3267,3 +3267,18 @@
                eprosima-fast-dds-gen
                equicord-hook
                etherpad-lite))
+
+
+;; recipe-resolver-260415e
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260415e)
+  #:re-export (hardinfo2
+               ssh-studio
+               hyprqt6engine
+               haskell-unix-compat
+               crengine-ng
+               crqt-ng
+               git-series
+               wlr-which-key-bin
+               manaverse-sdl2
+               karp))
