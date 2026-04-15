@@ -354,6 +354,7 @@
   #:use-module (gaurix packages recipe-resolver-260414ae)
   #:use-module (gaurix packages deptree-resolver-260414u)
   #:use-module (gaurix packages recipe-resolver-260414af)
+  #:use-module (gaurix packages deptree-resolver-260414v)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2901,7 +2902,6 @@
     (name "lib32-gtk2")))
 
 
-(define-public openssl-1.0
   (package
     (inherit openssl-1.1)
     (name "openssl-1.0")))
@@ -3177,7 +3177,6 @@
     (inherit libjpeg6-turbo)
     (name "lib32-libjpeg6-turbo")))
 
-(define-public lib32-openssl-1.1
   (package
     (inherit openssl-1.1)
     (name "lib32-openssl-1.1")))
@@ -3990,7 +3989,6 @@
     (inherit calibre)
     (name "calibre-web")))
 
-(define-public llama.cpp-cuda
   (package
     (inherit llama-cpp-cuda)
     (name "llama.cpp-cuda")))
@@ -4413,7 +4411,6 @@
     (inherit freedoom)
     (name "freedm")))
 
-(define-public llama.cpp
   (package
     (inherit llama-cpp)
     (name "llama.cpp")))
@@ -4647,7 +4644,6 @@
     (inherit ffmpeg)
     (name "ffmpeg7.1")))
 
-(define-public libvpx1.10
   (package
     (inherit libvpx)
     (name "libvpx1.10")))
@@ -5047,7 +5043,6 @@
 (define-public libheif-noglycin libheif)
 (define-public libjxl-noglycin libjxl)
 (define-public libjxl-noglycin-doc libjxl)
-(define-public doas
   (package
     (inherit opendoas)
     (name "doas")))
@@ -5472,57 +5467,46 @@
 
 ;; --- 260408c-batch compat aliases (AUR names -> Guix packages) ---
 
-(define-public vulkan-icd-loader-git
   (package
     (inherit vulkan-loader)
     (name "vulkan-icd-loader-git")))
 
-(define-public bdf-unifont
   (package
     (inherit font-gnu-unifont)
     (name "bdf-unifont")))
 
-(define-public fastfetch-gif-git
   (package
     (inherit fastfetch)
     (name "fastfetch-gif-git")))
 
-(define-public libmpv-git
   (package
     (inherit mpv)
     (name "libmpv-git")))
 
-(define-public yaru-sound-theme
   (package
     (inherit yaru-theme)
     (name "yaru-sound-theme")))
 
-(define-public yaru-gtksourceview-theme
   (package
     (inherit yaru-theme)
     (name "yaru-gtksourceview-theme")))
 
-(define-public yaru-gnome-shell-theme
   (package
     (inherit yaru-theme)
     (name "yaru-gnome-shell-theme")))
 
-(define-public yaru-xfwm4-theme
   (package
     (inherit yaru-theme)
     (name "yaru-xfwm4-theme")))
 
-(define-public yaru-unity-theme
   (package
     (inherit yaru-theme)
     (name "yaru-unity-theme")))
 
-(define-public yaru-metacity-theme
   (package
     (inherit yaru-theme)
     (name "yaru-metacity-theme")))
 
-(define-public yaru-session
   (package
     (inherit yaru-theme)
     (name "yaru-session")))
@@ -5794,7 +5778,6 @@
 ;; --- recipe-resolver-260408l compat aliases ---
 
 ;; AUR alacritty-use-theme-with-gnome-darkmode -> gaurix alacritty-use-theme-with-gnome-darkmode
-(define-public alacritty-gnome-darkmode (package (inherit alacritty-use-theme-with-gnome-darkmode) (name "alacritty-gnome-darkmode")))
 
 ;; --- recipe-resolver-260408m compat aliases ---
 
@@ -5899,7 +5882,6 @@
 (define-public geforce-infinity (package (inherit geforce-infinity-bin) (name "geforce-infinity")))
 
 ;; AUR flclash -> gaurix flclash-bin
-(define-public flclash (package (inherit flclash-bin) (name "flclash")))
 
 ;; AUR reqable -> gaurix reqable-bin
 (define-public reqable (package (inherit reqable-bin) (name "reqable")))
@@ -5911,7 +5893,6 @@
 (define-public ferrishot (package (inherit ferrishot-bin) (name "ferrishot")))
 
 ;; AUR ferris-scan -> gaurix ferris-scan-bin
-(define-public ferris-scan (package (inherit ferris-scan-bin) (name "ferris-scan")))
 
 ;; AUR bililive-recorder -> gaurix bililive-recorder-bin
 (define-public bililive-recorder (package (inherit bililive-recorder-bin) (name "bililive-recorder")))
@@ -6445,7 +6426,6 @@
 
 ; --- recipe-resolver-260413l compat aliases ---
 (define-public ttf-gelasio-variable (package (inherit font-gelasio) (name "ttf-gelasio-variable")))
-(define-public noto-fonts-emoji-blob (package (inherit font-blobmoji) (name "noto-fonts-emoji-blob")))
 (define-public graphite-cursor-theme-git (package (inherit graphite-cursor-theme) (name "graphite-cursor-theme-git")))
 (define-public gnome-shell-extension-pop-shell-git (package (inherit gnome-shell-extension-pop-shell) (name "gnome-shell-extension-pop-shell-git")))
 (define-public gnome-shell-extension-just-perfection-desktop (package (inherit gnome-shell-extension-just-perfection) (name "gnome-shell-extension-just-perfection-desktop")))
@@ -6455,7 +6435,6 @@
 (define-public bash-fuzzy-clock-git (package (inherit bash-fuzzy-clock) (name "bash-fuzzy-clock-git")))
 (define-public arkenfox-user.js-git (package (inherit arkenfox-user.js) (name "arkenfox-user.js-git")))
 (define-public unreal-tournament-data-archiveorg (package (inherit unreal-tournament-data) (name "unreal-tournament-data-archiveorg")))
-(define-public powerofforreboot.efi (package (inherit powerofforreboot-efi) (name "powerofforreboot.efi")))
 (define-public typing_test (package (inherit typing-test) (name "typing_test")))
 (define-public aspire-cli (package (inherit aspire-cli-bin) (name "aspire-cli")))
 (define-public plecs-standalone (package (inherit plecs-standalone-bin) (name "plecs-standalone")))
@@ -6487,7 +6466,6 @@
 (define-public powerline-go (package (inherit powerline-go-bin) (name "powerline-go")))
 (define-public teams-for-linux (package (inherit teams-for-linux-bin) (name "teams-for-linux")))
 (define-public forkgram (package (inherit forkgram-bin) (name "forkgram")))
-(define-public azahar (package (inherit azahar-appimage-wayland) (name "azahar")))
 (define-public breitbandmessung (package (inherit breitbandmessung-bin) (name "breitbandmessung")))
 (define-public sniptext-bin (package (inherit sniptext) (name "sniptext-bin")))
 (define-public marp (package (inherit marp-cli) (name "marp")))
@@ -6556,16 +6534,13 @@
 
 ; --- recipe-resolver-260413r compat aliases ---
 (define-public cutieascii (package (inherit cutieascii-bin) (name "cutieascii")))
-(define-public mindustry-server (package (inherit mindustry-server-bin) (name "mindustry-server")))
 
 ; --- deptree-resolver-260413i compat aliases ---
 (define-public czkawka-cli (package (inherit czkawka-cli-bin) (name "czkawka-cli")))
-(define-public darya (package (inherit darya-bin) (name "darya")))
 (define-public deadbranch (package (inherit deadbranch-bin) (name "deadbranch")))
 (define-public devbox (package (inherit devbox-bin) (name "devbox")))
 (define-public dosbox-pure-unleashed (package (inherit dosbox-pure-unleashed-bin) (name "dosbox-pure-unleashed")))
 (define-public dotnet-host (package (inherit dotnet-host-bin) (name "dotnet-host")))
-(define-public dusage (package (inherit dusage-bin) (name "dusage")))
 (define-public eden (package (inherit eden-bin) (name "eden")))
 (define-public eden-preview (package (inherit eden-preview-bin) (name "eden-preview")))
 
@@ -6643,26 +6618,14 @@
 (define-public fist (package (inherit fist-bin) (name "fist")))
 
 ; --- recipe-resolver-260413z compat aliases ---
-(define-public wttrbar (package (inherit wttrbar-bin) (name "wttrbar")))
-(define-public primer (package (inherit primer-bin) (name "primer")))
 (define-public tg-ws-proxy (package (inherit tg-ws-proxy-bin) (name "tg-ws-proxy")))
-(define-public marmite (package (inherit marmite-bin) (name "marmite")))
-(define-public randompass (package (inherit randompass-bin) (name "randompass")))
-(define-public pipeview (package (inherit pipeview-bin) (name "pipeview")))
-(define-public aim (package (inherit aim-bin) (name "aim")))
-(define-public musage (package (inherit musage-bin) (name "musage")))
 (define-public tmmpr (package (inherit tmmpr-bin) (name "tmmpr")))
-(define-public kdownload (package (inherit kdownload-bin) (name "kdownload")))
 (define-public vtf-thumbnailer (package (inherit vtf-thumbnailer-bin) (name "vtf-thumbnailer")))
-(define-public overskride (package (inherit overskride-bin) (name "overskride")))
 (define-public sfxr-qt (package (inherit sfxr-qt-bin) (name "sfxr-qt")))
-(define-public stakpak (package (inherit stakpak-bin) (name "stakpak")))
 (define-public savestate (package (inherit savestate-bin) (name "savestate")))
 (define-public camunda-modeler (package (inherit camunda-modeler-bin) (name "camunda-modeler")))
 (define-public hardbore (package (inherit hardbore-bin) (name "hardbore")))
-(define-public kaizen (package (inherit kaizen-bin) (name "kaizen")))
 (define-public uiua (package (inherit uiua-bin) (name "uiua")))
-(define-public jd-gui (package (inherit jd-gui-bin) (name "jd-gui")))
 (define-public way-edges (package (inherit way-edges-bin) (name "way-edges")))
 (define-public python-textual-fspicker-git (package (inherit python-textual-fspicker) (name "python-textual-fspicker-git")))
 (define-public xdg-desktop-portal-termfilechooser-hunkyburrito-git (package (inherit xdg-desktop-portal-termfilechooser-hunkyburrito) (name "xdg-desktop-portal-termfilechooser-hunkyburrito-git")))
@@ -6733,7 +6696,6 @@
 (define-public steamguard-cli (package (inherit steamguard-cli-git) (name "steamguard-cli")))
 (define-public gosuki (package (inherit gosuki-git) (name "gosuki")))
 (define-public sing-box-ref1nd (package (inherit sing-box-ref1nd-git) (name "sing-box-ref1nd")))
-(define-public gcn64tools (package (inherit gcn64tools-git) (name "gcn64tools")))
 (define-public helix-steel (package (inherit helix-steel-git) (name "helix-steel")))
 (define-public llama-cpp-vulkan (package (inherit llama.cpp-vulkan-git) (name "llama-cpp-vulkan")))
 (define-public tapi (package (inherit tapi-git) (name "tapi")))
@@ -6869,7 +6831,6 @@
 
 ;; --- deptree-resolver-260414q compat aliases ---
 (define-public elephant (package (inherit elephant-bin) (name "elephant")))
-(define-public xlibre-xserver-common (package (inherit xlibre-xserver-common-git) (name "xlibre-xserver-common")))
 (define-public electron-castlab (package (inherit electron-castlab-bin) (name "electron-castlab")))
 (define-public ttf-material-symbols-variable (package (inherit ttf-material-symbols-variable-git) (name "ttf-material-symbols-variable")))
 (define-public dotnet-targeting-pack-9.0 (package (inherit dotnet-targeting-pack-9.0-bin) (name "dotnet-targeting-pack-9.0")))
@@ -6942,3 +6903,28 @@
 (define-public ultimate-tic-tac-toe-git (package (inherit ultimate-tic-tac-toe) (name "ultimate-tic-tac-toe-git")))
 (define-public plasma-gamemode-git (package (inherit plasma-gamemode) (name "plasma-gamemode-git")))
 (define-public deezer-enhanced-git (package (inherit deezer-enhanced-bin) (name "deezer-enhanced-git")))
+
+;; --- deptree-resolver-260414v compat aliases ---
+(define-public zenpower3-dkms (package (inherit zenpower3-dkms-git) (name "zenpower3-dkms")))
+(define-public hyperheadset (package (inherit hyperheadset-git) (name "hyperheadset")))
+(define-public i8086emu (package (inherit i8086emu-git) (name "i8086emu")))
+(define-public jivexdv (package (inherit jivexdv-bin) (name "jivexdv")))
+(define-public kdotool (package (inherit kdotool-git) (name "kdotool")))
+(define-public kraftkit (package (inherit kraftkit-git) (name "kraftkit")))
+(define-public ktxutils (package (inherit ktxutils-git) (name "ktxutils")))
+(define-public kwin-decoration-sierra-breeze-enhanced (package (inherit kwin-decoration-sierra-breeze-enhanced-git) (name "kwin-decoration-sierra-breeze-enhanced")))
+(define-public lceda-pro (package (inherit lceda-pro-bin) (name "lceda-pro")))
+(define-public legcord (package (inherit legcord-git) (name "legcord")))
+(define-public loliashizuku (package (inherit loliashizuku-bin) (name "loliashizuku")))
+(define-public lovr-playspace (package (inherit lovr-playspace-git) (name "lovr-playspace")))
+(define-public lxqt-panel-tool (package (inherit lxqt-panel-tool-git) (name "lxqt-panel-tool")))
+(define-public majsoul-plus (package (inherit majsoul-plus-bin) (name "majsoul-plus")))
+(define-public miraclecast (package (inherit miraclecast-git) (name "miraclecast")))
+(define-public myxer (package (inherit myxer-git) (name "myxer")))
+(define-public nanoclaw (package (inherit nanoclaw-git) (name "nanoclaw")))
+(define-public ncmpcpp-album-cover (package (inherit ncmpcpp-album-cover-git) (name "ncmpcpp-album-cover")))
+(define-public nexusmods-app (package (inherit nexusmods-app-bin) (name "nexusmods-app")))
+(define-public niri-settings (package (inherit niri-settings-git) (name "niri-settings")))
+(define-public ollama-vulkan (package (inherit ollama-vulkan-bin) (name "ollama-vulkan")))
+(define-public openscq30-gui (package (inherit openscq30-gui-bin) (name "openscq30-gui")))
+(define-public osu-lazer-tachyon (package (inherit osu-lazer-tachyon-bin) (name "osu-lazer-tachyon")))

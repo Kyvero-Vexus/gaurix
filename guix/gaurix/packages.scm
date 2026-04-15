@@ -215,7 +215,6 @@
             term39
             qui-bin
             shader-slang
-            vdhcoapp-bin
             plasma6-applets-thermal-monitor
             dwproton-bin
             spent-bin
@@ -246,9 +245,7 @@
             tooi-git
             crystal-dock-bin
             still
-            breitbandmessung-bin
             chatterino2-git
-            universal-android-debloater-bin
             luckybackup
             radarr
             shgit-bin
@@ -286,16 +283,12 @@
             ;; recipe-resolver-260413n
             thorium-browser-avx-bin
             devpod-community-bin
-            phiola-bin
-            ionosctl-bin
             melonds-bin
             keystore-explorer-bin
             greenlight-bin
             lore-cli-bin
             tonkeeper-bin
-            termide-bin
             kftui-bin
-            fhc-bin
             qo-bin
             vex-tui-bin
             ghk-bin
@@ -324,12 +317,10 @@
             insomnium-bin
             pomotroid-bin
             pulsar-bin
-            modrinth-app-bin
             pince-bin
             notepadnext-bin
             swt-bin
             qualcoder-bin
-            xdgctl
             ;; recipe-resolver-260413s
             dasel-bin
             jjui-bin
@@ -489,7 +480,6 @@
             beekeeper-qt
             ;; deptree-resolver-260413l
             python-opentelemetry-exporter-otlp-proto-common
-            python-opentelemetry-exporter-zipkin-proto-http
             brother-cups-wrapper-common
             brother-mfc-l2710dw
             ccase
@@ -514,12 +504,10 @@
             gasroot
             ;; deptree-resolver-260413m
             python-scipy-doctest
-            python-opentelemetry-exporter-zipkin-proto-http
             python-opentelemetry-exporter-otlp-proto-grpc
             python-opentelemetry-exporter-otlp-proto-http
             gatus
             ghgrab-bin
-            giff-bin
             git-backdate-git
             git-donkey
             gitv-bin
@@ -962,7 +950,6 @@
             oh-my-pi-git
             piperig-bin
             python-fastfeedparser-git
-            vite-plus-bin
             vkbasalt-redemp-git
             volt-desktop
             voxtype-cuda
@@ -996,7 +983,6 @@
             cemu
             amneziawg-tools
             valent-git
-            xdgctl
             vicinae-bin
             meshtastic-python
             limine-snapper-sync
@@ -1029,8 +1015,6 @@
             elephant-symbols
             elephant-todo
             elephant-websearch
-            elephant-calc
-            elephant-files
             google-breakpad
             helixnotes-appimage-bin
             hmcl-bin
@@ -1151,7 +1135,6 @@
             mehshell-bin
             jasm-bin
             sakura-frp-launcher-bin
-            ghgrab-bin
             gosh-fetch-bin
             tennis-bin
             pencil-bin
@@ -1160,7 +1143,6 @@
             s3man-bin
             fastfind-bin
             hulak-bin
-            yasp-bin
             eask-cli-bin
             note-tui-bin
             snip-tui
@@ -1172,14 +1154,11 @@
             python-py-radix
             python-calgebra-git
             python-pytricia-git
-            python-griffe
-            python-scipy-doctest
             python-samplomatic
             perl-future-io
             unrot
             inq
             tts-helper
-            stacer
             weathery
             lyrics-git
             komodo-periphery-git
@@ -1191,7 +1170,6 @@
             pastevault
             magicpodscore
             indicator-session
-            vex-shell
             s3sync
             totray
             sherlock
@@ -1244,7 +1222,6 @@
             ruby-neovim
             bugwarrior
             ;; deptree-resolver-260413p
-            kvantum-theme-catppuccin-git
             kvantum-theme-libadwaita-git
             larn
             latin-words
@@ -1252,7 +1229,6 @@
             lfe
             libiff-git
             libreelec-dvb-firmware-git
-            libreoffice-extension-languagetool
             libtifiles
             ;; recipe-resolver-260413al
             mod-maxminddb
@@ -1265,7 +1241,6 @@
             sniplias-bin
             diz-bin
             rtk-bin
-            yana-bin
             bluekeys-bin
             escrcpy-bin
             pwsp-bin
@@ -1333,7 +1308,6 @@
             llm-git
             fuck
             kishi-shell
-            bash-fuzzy-clock-git
             radicle-node
             radicle-node-git
             radicle-explorer
@@ -1385,10 +1359,8 @@
             linux-tool-bin
             make-4.3
         ;; deptree-resolver-260414b
-            logana-bin
             lsu-bin
             lunii-qt-bin
-            skillshare
         ;; deptree-resolver-260414c
             sonic-win
             lib32-xrizer
@@ -1418,10 +1390,8 @@
             ttf-ms-win11-thai
             ttf-ms-win11-zh_cn
             ttf-ms-win11-zh_tw
-            ancient-packages
             binder_linux-dkms
             lib32-libtxc_dxtn
-            lib32-zix
             linux-zen-versioned-docs-bin
             linux-zen-versioned-headers-bin
             localepurge-hook
@@ -1451,7 +1421,6 @@
             jdk21-graalvm-ee-bin
             konica-minolta-bizhub-c554e-series
             lact-openrc
-            lib32-a52dec
             lib32-gperftools
             lib32-opencl-legacy-amdgpu-pro
             linux-xanmod-linux-bin-x64v3
@@ -1463,22 +1432,15 @@
             luajit-clang-git
             lunar-client
             lyrebird-proxy
-            lyrics-git
-            lyse
             magewell-pro-capture-dkms
             ;; recipe-resolver-260414c
             ttf-tahoma
-            ttf-profont-iix
             perl-test-refcount
-            perl-datetime-format-dateparse
-            perl-future-io
             python-setuptools-reproducible
             python-yappi
             python-logfire-api
             python-asynctest
             python-dashing
-            python-ldraw-to-scad
-            python-pyborgeous
             princeprocessor
             openseachest
             evenmoreutils
@@ -1499,9 +1461,7 @@
             xapp-aiff-thumbnailer
         ;; deptree-resolver-260414d
             butter
-            bwrap-common
             getnf-git
-            makesure
             mons
             laptop-mode-tools
             mpv-thumbfast-git
@@ -1519,7 +1479,6 @@
             koboldcpp
             mod_maxminddb
             mupen64plus-input-raphnetraw
-            davmail
     ;; recipe-resolver-260414g
             omm-bin
             tinct-bin
@@ -1531,9 +1490,7 @@
             sshconfig-lint-bin
             tuco-bin
             tiki-bin
-            uber-apk-signer-bin
             tuwunel-bin
-            python-logfire-api
             python-uncalled-for
             qtqr
             gonob
@@ -1552,7 +1509,6 @@
             nodejs-markdown-toc
             fish-hydro-git
             xpytile-git
-            epub2pdf
             paruse
             i3bar-river
             mma
@@ -1568,18 +1524,14 @@
             universal-android-debloater
             chkufsd-bin
             arduino-ide
-            deezer-enhanced
             proxmox-backup-client
-            tdarr
             bapctools
             system76-driver
             ntfsplus-udev
-            brother-mfc-l2710dw
             brother-dcpl2640dw
             gimp-plugin-batcher-git
             maliit-framework
             maliit-keyboard
-            powerofforreboot.efi
             xrgears-git
             jay
             jay-git
@@ -1601,7 +1553,6 @@
             sentinelagent
             wakadash-bin
             leshade-git
-            pantum-universal-driver
             crc-bin
 
         ;; deptree-resolver-260414e
@@ -1609,17 +1560,12 @@
             otter-launcher
             oxid-git
             rustfetch-git
-            shellforge
             steamguard-cli-git
             systemd-manager-tui
-            term39
             gossip
             iamb-git
-            konfigkoll
-            konfigkoll-git
             pwsp
             reth
-            helix-steel-git
             gosuki-git
             local-ai
             sing-box-ref1nd-git
@@ -1627,7 +1573,6 @@
             llvm-libunwind
             tapi-git
             plasma6-applets-kara-git
-            gcn64tools-git
             qvickbuild
             superhtml
             liskvork
@@ -1702,27 +1647,7 @@
         ;; deptree-resolver-260414i
             system76-acpi-dkms
             system76-io-dkms
-            qt6-base-hifps
             steam-native-runtime
-            plecs-standalone
-            ttf-ms-win10-japanese
-            ttf-ms-win10-korean
-            ttf-ms-win10-other
-            ttf-ms-win10-sea
-            ttf-ms-win10-thai
-            ttf-ms-win10-zh_cn
-            ttf-ms-win10-zh_tw
-            ttf-ms-win11-japanese
-            ttf-ms-win11-korean
-            ttf-ms-win11-other
-            ttf-ms-win11-sea
-            ttf-ms-win11-thai
-            ttf-ms-win11-zh_cn
-            ttf-ms-win11-zh_tw
-            paccache-hook
-            systemd-boot-pacman-hook
-            it87-dkms-git
-            magewell-pro-capture-dkms
             mandb-ondemand
             microsip
             mingw-w64-zlib-ng
@@ -1734,11 +1659,9 @@
             nct6687d-dkms-git
             neovim-man
             networkd-broker
-            nginx-mainline-mod-headers-more
             nim-gdb-git
             nimbsh
             nodejs-http-server
-            nodejs-markdown-toc
             nohang-openrc
             nullfsvfs-dkms
             nvim-ft-pkgbuild
@@ -1770,11 +1693,9 @@
             plasma6-applets-vutronmusic-lyrics
             playwright-cli
             polyglot-winboard-git
-            pomo-cli
             pqrs-bin
             privatebin
             psn-bin
-            pwsp-bin
             pxz-git
             ;; recipe-resolver-260414j
             github-copilot-cli-bin
@@ -1805,9 +1726,7 @@
             sponge-bin
             jiffy-bin
             git-light-bin
-            sendme-bin
             albert-bin
-            usb-tree-app-bin
             taws-bin
             magiskboot-bin
             slimevr-bin
@@ -1875,8 +1794,6 @@
             ghdl
             hypnotix
             ascii-moon
-            checkupdates-notify
-            adebar
             ;; recipe-resolver-260414i
             jump-bin
             orla-bin
@@ -1903,7 +1820,6 @@
             ;; deptree-resolver-260414k
             adwaita-dark-darose
             agisoft-metashape
-            airwindows-lv2
             alacritty-use-theme-with-redshift-git
             alarm-notify
             algodoo-wine
@@ -1985,14 +1901,11 @@
             oxmgr-bin
             async-profiler-bin
             browsers-bin
-            pqrs-bin
             klein-bin
             aic-bin
             logmonster-bin
-            vimalender-bin
             batctl-tui-bin
             siggy-bin
-            matchmaker-bin
             localias-bin
             lovr-playspace-bin
             logfmt-bin
@@ -2000,9 +1913,7 @@
             llog-bin
             recall-bin
             grabchars-bin
-            wlctl-bin
             squix-bin
-            elysia-bin
             termix-bin
             archipelagomw-bin
             doltgresql-bin
@@ -2014,12 +1925,9 @@
             pear-desktop
             pave
             bwlog
-            zmx
             tuwunel
-            addrwatch
             saveshasum
             lovr-playspace
-            hyprflow
             sonic-tte
             easy-switcher
             gopass-secret-service
@@ -2027,7 +1935,6 @@
             gonzo
             secfetch
             nativmix
-            sing-box-ref1nd
             librepods
             zenmonitor3
             zond
@@ -2044,13 +1951,11 @@
             kf6-servicemenus-reimage
             timeshift-systemd-timer
             sddm-silent-theme
-            mx-samba-config
             passwdqc-utils
             ca0132-tools
             twitch-indicator
             moltbot
             xdg-ninja
-            dingusppc
             ytm-player
             batctl-tui-src
             ;; deptree-resolver-260414l
@@ -2087,7 +1992,6 @@
             gemini-cli
             ginkgocadx
             gitversion
-            go-grip
             ;; deptree-resolver-260414m
             html2ps
             hyprlight
@@ -2106,7 +2010,6 @@
             koboldcpp-cuda
             kopa
             kwin-scripts-krohnkite-git
-            lanxchange
             lattice-diamond
             lazynmap
             lcarsde-application-starter
@@ -2160,8 +2063,6 @@
             niri-sidebar
             nirinit
         ;; recipe-resolver-260414q
-            lsfg-vk-bin
-            elide-bin
             trashy-bin
             aionui-bin
             steamtokendumper-bin
@@ -2183,7 +2084,6 @@
             virtio-win
             alephone-marathon
             steamtinkerlaunch-git
-            btrfs-desktop-notification
             nautilus-scripts-dolphin
             nautilus-scripts
             betterdiscordctl
@@ -2201,7 +2101,6 @@
             epy-ereader-git
             python-bs4
             nixd
-            google-breakpad
             mpc-qt
             chromaprint-fftw
             jellyfin-media-player
@@ -2219,7 +2118,6 @@
             omniorb
             ddccontrol
             gddccontrol
-            neo-matrix
             par-git
             jpeg-quantsmooth
             postsrsd
@@ -2228,7 +2126,6 @@
             otree
             ascii-chat
             mediamtx
-            discordo-git
             velero
             docker-credential-secretservice
             crowdsec-nginx-bouncer
@@ -2243,7 +2140,6 @@
   #:use-module (gaurix packages recipe-resolver-260414r)
   #:use-module (gaurix packages recipe-resolver-260414u)
   #:re-export (ytdlp-gui-bin
-               modrinth-app-bin
                proton-authenticator-bin
                worldpainter-bin
                brickstore-bin
@@ -2391,7 +2287,6 @@
             grx
             gvst-vst
             hardcode-fixer
-            mpv-manager
             openvpn-update-resolv-conf
             pat-aur-client
             pidcat-python3
@@ -2410,7 +2305,6 @@
             python-ratarmount
             yazi-bin
             openlinkhub-bin
-            biscuit-lang-bin
             qownnotes-bin
             waybar-minimal-nosystemd-git
             fprintd-clients-git
@@ -2620,7 +2514,6 @@
                archbuilder
                nanofetch
                cockpit-session-recording
-               mkinitcpio-archlogo
                casa6-pipeline-bin
                fsp-bin
                mkinitcpio-btrfs
@@ -2644,7 +2537,6 @@
                wl-clipboard-rs
                wl-clipboard-rs-git
                wperf
-               x11-emoji-picker
                xapp-jxl-thumbnailer
                xapp-raw-thumbnailer
                xapp-vorbiscomment-thumbnailer
@@ -2753,7 +2645,6 @@
                fwupd-starlabs-docs-git
                openmodelica-bin
                flipperzero-ufbt-bin
-               zephyr-sdk-bin
                r3-cutils2-bin
                xperia-flashtool
                socionext-firmware-bin
@@ -2899,6 +2790,7 @@
 ;; recipe-resolver-260414ad
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260414ad)
+  #:use-module (gaurix packages deptree-resolver-260414v)
   #:re-export (fzffm
                preview-fm
                tvb-recorder
@@ -2947,7 +2839,6 @@
             droidcam-dkms-git
             kernelsu-dkms
             linux-apfs-rw-dkms-git
-            mkinitcpio-wifi
             msi-psu-dkms
             nifskope-git
             r8127-dkms
@@ -2970,7 +2861,6 @@
             xone-dkms-git
             zfs-dkms-staging-compat-git
             ankama-launcher
-            antiafk-rbx-sober
             apifox-appimage
             arch-upgrader-git
             archforge-git
@@ -3022,4 +2912,75 @@
             plasma-gamemode
             plasma-gamemode-git
             deezer-enhanced-git
+
+            ;; deptree-resolver-260414v
+            makepkg-optimize-mold
+            nvidia-sync-terminal-fix
+            nvidia-390xx-dkms
+            nvidia-470xx-dkms
+            nvidia-beta-dkms
+            hyperheadset-git
+            hyprsnow
+            i8086emu-git
+            insomnia
+            isfree
+            jack-mixer-cc
+            jivexdv-bin
+            jxplorer
+            k3sup
+            kde-thumbnailer-apk
+            kdotool-git
+            kraftkit-git
+            ktxutils-git
+            kwin-decoration-sierra-breeze-enhanced-git
+            lcarsde-app-menu
+            lcarsde-logout
+            lceda-pro-bin
+            legcord-git
+            lib32-libfdk-aac
+            lib32-xvidcore
+            lib32-zvbi
+            local-chaos
+            loliashizuku-bin
+            lotus-lang
+            lovr-playspace-git
+            lxqt-panel-tool-git
+            majsoul-plus-bin
+            manga-tui
+            mingw-w64-sqlite
+            minot
+            miraclecast-git
+            mozc-ut
+            mtk-uartboot-rs
+            muon-decoder
+            muzak
+            myxer-git
+            nanoclaw-git
+            nanocoder
+            nautilus-admin-gtk4
+            ncmpcpp-album-cover-git
+            neoleo
+            nerd-fonts-apple
+            netextender
+            nextcloud-app-impersonate
+            nexusmods-app-bin
+            niri-settings-git
+            nitchrevived
+            nodejs-nativefier
+            nodejs-node-red
+            nutstore
+            nvidia-340xx
+            nvidia-535xx-dkms
+            nvidia-open-beta
+            nvidia-open-beta-dkms
+            obs-vnc
+            ocztoolbox
+            ollama-vulkan-bin
+            ollamacode
+            onset
+            openscq30-gui-bin
+            opentubex-git
+            oscgoesbrrr
+            osu-lazer-tachyon-bin
+            p7zip-gui
 ))
