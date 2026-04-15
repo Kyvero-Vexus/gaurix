@@ -3847,3 +3847,14 @@
             zipzap
             zlint
 ))
+
+;; recipe-resolver-260415l
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260415l)
+  #:re-export (python-pkb-client
+               certbot-dns-porkbun
+               protonplus
+               osdlyrics
+               aaaaxy-bin
+               linnote
+))

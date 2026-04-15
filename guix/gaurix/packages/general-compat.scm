@@ -376,6 +376,7 @@
   #:use-module (gaurix packages deptree-resolver-260415i)
   #:use-module (gaurix packages deptree-resolver-260415j)
   #:use-module (gaurix packages recipe-resolver-260415k)
+  #:use-module (gaurix packages recipe-resolver-260415l)
   #:use-module (gaurix packages deptree-resolver-260415k)
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -2665,6 +2666,13 @@
             webkit2gtk
             webkit2gtk-docs
             qt5-sensors
+            ;; recipe-resolver-260415l recipes
+            python-pkb-client
+            certbot-dns-porkbun
+            protonplus
+            osdlyrics
+            aaaaxy-bin
+            linnote
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -7340,3 +7348,6 @@
 (define-public warp-terminal (package (inherit warp-terminal-bin) (name "warp-terminal")))
 (define-public wpscan (package (inherit wpscan-git) (name "wpscan")))
 (define-public xunlei (package (inherit xunlei-bin) (name "xunlei")))
+
+;; --- recipe-resolver-260415l compat aliases ---
+(define-public aaaaxy (package (inherit aaaaxy-bin) (name "aaaaxy")))
