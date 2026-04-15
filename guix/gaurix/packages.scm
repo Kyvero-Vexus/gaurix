@@ -2983,4 +2983,7 @@
             oscgoesbrrr
             osu-lazer-tachyon-bin
             p7zip-gui
+            ;; recipe-resolver-260414ag
+            alacritty-nox-git
+            libpurple-lurch-git
 ))

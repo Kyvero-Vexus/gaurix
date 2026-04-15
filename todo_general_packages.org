@@ -24731,6 +24731,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; custom kernel build requires kernel config infrastructure, patchset integration, and kernel-style build phases not available in batch processing. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KERNEL_CUSTOM: custom kernel requires kernel config infrastructure; A1: inherit from linux-libre — pf patchset conflicts with deblob; A2: gnu-build-system — 30min+ build, interactive config; A3: prebuilt binary — breaks declarative boot model (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -24738,6 +24739,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; depends on linux-xanmod which is blocked (custom kernel infrastructure needed). See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEPENDS_ON_BLOCKED: headers must match kernel; linux-xanmod is blocked; A1: standalone headers — meaningless without matching kernel; A2: linux-libre-headers substitute — ABI mismatch; A3: defer — inherits linux-xanmod blocker (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -24935,6 +24937,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; requires npm build with large dependency tree. No standalone binary releases. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NPM_COMPLEX: npm build with 500+ transitive deps; A1: node-build-system — dep tree too large; A2: binary from npm — no standalone binary; A3: alternatives exist — gmni and other Gemini clients in Guix (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -25116,6 +25119,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; Electron/npm app, Guix lacks electron packaging infrastructure. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: requires Electron/Chromium build (40GB+); A1: npm/electron-builder — Guix lacks Electron infra; A2: prebuilt AppImage — none available; A3: alternatives — Guix has emacs, vim, kakoune, helix (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -25212,6 +25216,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd16-r22-w03; needs PySide6 which is not packaged in Guix. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PYSIDE6_MISSING: needs PySide6 not in Guix; A1: pyproject with PySide6 — not packaged; A2: port to PyQt6 — significant code changes; A3: build PySide6 first — 50+ deps including Qt6 WebEngine (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -25305,6 +25310,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; needs python-taskw and python-dogpile.cache (not in Guix). See blocked-notes.
    - Difficulty: unknown
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PYTHON_DEPS_CHAIN: needs python-taskw + python-dogpile.cache (neither in Guix); A1: pyproject from PyPI — 8+ missing deps; A2: package dep chain — deep chain through stevedore; A3: taskwarrior hooks — equivalent workflow already possible (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 ** DONE 3215. git-koji-bin
@@ -25442,6 +25448,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: DOTNET_UNSUPPORTED | .NET/C# application requiring dotnet-sdk 8.0; Guix lacks .NET build system and runtime infrastructure (re-evaluated in recipe-resolver-260408u, 2026-04-08)
    - Status: BLOCKED: OCAML_COQ_ECOSYSTEM_MISSING | OCaml-based Coq language server; requires full OCaml/Coq ecosystem packaging not available in Guix (re-evaluated in recipe-resolver-260408u, 2026-04-08)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — OCAML_COQ_ECOSYSTEM: needs OCaml/Coq bridge libraries; A1: dune build — missing vscoq OCaml bridge libs; A2: .NET build (vscoq2) — dotnet not in Guix; A3: Proof General — already in Guix for Coq IDE support (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 ** BLOCKED 3233. opentabletdriver-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aa)]
@@ -29453,6 +29460,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package index probe found no direct candidate in variants ['zerobrew-git', 'zerobrew']; next action: draft fresh recipe from upstream source in next pass.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408x; Rust/Cargo, not on crates.io, requires full vendored crate enumeration. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_NOT_ON_CRATES_IO: not on crates.io; A1: cargo-build-system — manual enumeration of 50+ crates needed; A2: guix import crate — fails, not on crates.io; A3: binary release — none published (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -29489,12 +29497,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413ad.scm (tchap-desktop-bin v4.19.3, Tchap messaging client binary, MIT)
    - TODO Status: DONE
-** BLOCKED 3728. alacritty-nox-git
+** DONE 3728. alacritty-nox-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: guix package index probe found no direct candidate in variants ['alacritty-nox-git', 'alacritty-nox']; next action: draft fresh recipe from upstream source in next pass.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408x; Rust/Cargo 200+ crate deps, Guix already has alacritty with Wayland support. See blocked-notes.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — compat alias to Guix alacritty in recipe-resolver-260414ag.scm (Guix alacritty already supports Wayland)
+   - TODO Status: DONE
 
 
 ** BLOCKED 3729. codelldb
@@ -29656,6 +29665,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package index probe found no direct candidate in variants ['oxicord-git', 'oxicord']; next action: draft fresh recipe from upstream source in next pass.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408x; Rust/Cargo + Discord API dependency. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS + DISCORD_TOS: Rust with 80+ crates, not on crates.io; A1: cargo-build-system — manual crate enumeration; A2: no binary releases; A3: Discord ToS restricts third-party clients, account ban risk (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -31319,6 +31329,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — `scripts/fetch-aur-pkgbuild.sh python-llama-cpp-hip` succeeded (AUR rev 9b0ce3a6e447f313ec5480c7556e127acf293c51; source=("https://files.pythonhosted.org/packages/source/${_pkgname:0:1}/$_pkgname/${_pkgname//-/_}-$pkgver.tar.gz")). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — HIP_ROCM_HARDWARE: needs AMD ROCm stack (20+ packages); A1: pyproject with ROCm — ROCm not in Guix; A2: CPU-only variant — defeats purpose of -hip; A3: binary wheel — hardware-specific, non-portable (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -31537,6 +31548,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh aeth-git` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n aeth-git` after adding module/export.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; needs full Haskell/Cabal build infra (GHC, cabal-install); 4+ missing Haskell library deps.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — HASKELL_ECOSYSTEM: needs 4+ missing Haskell libs (wreq, lens-aeson, optparse-generic, brick); A1: ghc-build-system — deep transitive deps; A2: no binary releases; A3: stack builds incompatible with Guix isolation (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -31545,6 +31557,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh skyscraper-simulator` succeeded (hint: 'development'. The just-created branch can be renamed via this command: | hint: | hint: 	git branch -m <name>). Next: draft Guix recipe and validate with `guix build -L guix -n skyscraper-simulator` after adding module/export.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; needs deprecated libpng12 and jxrlib, neither available in Guix.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEPRECATED_DEPS: needs libpng12 (deprecated 2017, CVEs) + jxrlib (not in Guix); A1: cmake with libpng12 — deprecated/insecure; A2: patch for libpng16 — upstream stale since 2018; A3: package libpng12 — conflicts with security policy (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33258,6 +33271,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — GCM extras; depends on git-credential-manager recipe. Next: draft alongside git-credential-manager.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_UNSUPPORTED: prebuilt .so files for GCM; A1: extract binaries — conflicts with source-build philosophy; A2: build from dotnet source — .NET SDK not in Guix; A3: git-credential-oauth — already available in Guix as alternative (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33266,6 +33280,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — pyright fork; Node.js npm tool; not in Guix. Next: draft node-build-system recipe.
    - Difficulty: unknown
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408o; Node.js npm build with UV Python dependency; complex multi-tool build chain.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NPM_COMPLEX: TypeScript/Node.js pyright fork; A1: node-build-system — 200+ transitive npm deps; A2: npm binary — no standalone binary; A3: python-lsp-server+pylsp-mypy — equivalent type checking in Guix (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NPM_ECOSYSTEM: TypeScript/Node.js app with deep npm deps; A1: node-build-system requires full npm dep resolution; A2: PyPI wrapper shells out to Node binary; A3: Guix node packaging immature (recipe-resolver-260414u)
@@ -33367,6 +33382,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NVIDIA proprietary profiler requiring EULA. Next: LICENSE_REVIEW_NEEDED; draft binary recipe with per-user download note.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_EULA: NVIDIA closed-source profiler; A1: binary wrapper — EULA prohibits redistribution; A2: no source code available; A3: renderdoc + apitrace — open-source GPU debugging in Guix (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33406,6 +33422,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408l; requires xviewer (Linux Mint) not in Guix. See blocked-notes.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408l; requires xviewer (Linux Mint) not in Guix. See blocked-notes.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_GUIX_DEPS: needs xviewer (Linux Mint fork of eog); A1: meson build — xviewer not in Guix; A2: package xviewer — needs full X-Apps/Cinnamon ecosystem; A3: eog plugins — Guix has eog with its own plugin system (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33593,6 +33610,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Ledger wallet manager Electron binary; proprietary. Next: draft binary recipe from official release URL.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_PROPRIETARY: Electron wallet manager; A1: source build — 1000+ npm deps, needs Electron; A2: AppImage — 200MB+, proprietary Ledger USB protocols; A3: no Guix alternative for Ledger hardware wallet (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (scopebuddy v1.4.0, Gamescope helper, copy-build-system, Apache-2.0)
 
@@ -33677,6 +33695,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Tidal HiFi Electron client; not in Guix. Next: fetch from GitHub and draft npm recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: Electron wrapper around Tidal web player; A1: npm/electron-builder — needs Electron infra; A2: AppImage binary — 200MB+, complex patchelf; A3: web browser — listen.tidal.com provides equivalent functionality (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33706,6 +33725,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — MSVC under Wine; complex recipe; not in Guix. Next: fetch from GitHub and draft wine-dependent recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — BUILD_SYSTEM_TOO_COMPLEX: MSVC under Wine; A1: source package — needs Wine + proprietary MSVC redistributables; A2: no prebuilt binary; A3: mingw-w64 — Guix has free cross-compilation toolchain for Windows (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33787,6 +33807,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — MTS Link proprietary video conferencing binary. Next: fetch official download and draft binary recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_NO_SOURCE: Russian video conferencing; A1: binary from official download — requires registration/EULA; A2: dynamic download URLs, no stable endpoint; A3: jitsi-meet/jami — open alternatives in Guix (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -33873,6 +33894,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Custom Linux kernel with pf patchset; complex kernel recipe. Next: draft linux-style recipe with pf patchset.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — KERNEL_CUSTOM: custom kernel with pf patchset; A1: inherit linux-libre — pf patches conflict with deblob; A2: source build — 30+ min, .config selection needed; A3: prebuilt — breaks Guix declarative boot model (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
 
@@ -34891,6 +34913,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix jan-git; source https://github.com/janhq/jan; Electron binary; Next: draft Electron binary wrapper recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: Electron/TypeScript AI assistant; A1: npm source build — 500+ deps, Electron infra needed; A2: AppImage — 300MB+, bundles Chromium; A3: ollama/llama.cpp — Guix has local LLM inference tools (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
@@ -35006,6 +35029,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix lib32-python; requires --target=i686-linux cross-compile of Python; arch-specific multilib; Next: assess 32-bit cross-compile approach in Guix.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: 32-bit Python on 64-bit; A1: cross-compile i686 — Guix multilib not supported; A2: i686 native build — needs full i686 bootstrap; A3: containers — users can use i686 Guix containers (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
@@ -35157,6 +35181,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix wheelwizard; source https://github.com/Wheel-Wizard/WheelWizard; C# Avalonia; dotnet-build-system recipe needed; Next: fetch source, draft dotnet recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_UNSUPPORTED: C# Avalonia UI app; A1: dotnet-sdk build — .NET SDK not in Guix; A2: no Linux binary releases; A3: dotnet runtime — not in Guix, Avalonia needs Skia ABI (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
@@ -35345,6 +35370,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix python-qiskit-gym; PyPI https://pypi.org/project/qiskit-gym/; python-build-system recipe with qiskit deps needed; Next: fetch from PyPI, draft python recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: needs Qiskit SDK (50+ deps); A1: pyproject from PyPI — needs qiskit-terra with Rust extensions; A2: package qiskit ecosystem — 50+ packages estimated; A3: minimal qiskit — still needs rustworkx (cargo-build-system) (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
@@ -35370,15 +35396,17 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix tlclient; ThinLinc proprietary client at https://www.cendio.com/thinlinc/download; binary wrapper recipe needed; Next: fetch installer, extract, draft binary recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY: ThinLinc closed-source; A1: binary repack — commercial license prohibits redistribution; A2: no source code; A3: freerdp/remmina/tigervnc — open alternatives in Guix (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
-** BLOCKED 4461. libpurple-lurch-git
+** DONE 4461. libpurple-lurch-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408l; requires libaxc (github.com/gkdr/axc) not in Guix. See blocked-notes.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260408l; requires libaxc (github.com/gkdr/axc) not in Guix. See blocked-notes.
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — compat alias to Guix purple-lurch v0.7.0 in recipe-resolver-260414ag.scm
+   - TODO Status: DONE
 
 
 ** DONE 4462. fastcompmgr-dev
@@ -35465,6 +35493,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix eddie-cli; AirVPN client CLI at https://github.com/AirVPN/Eddie; C# dotnet; dotnet-build-system recipe needed; Next: fetch source, draft dotnet recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_UNSUPPORTED: C#/.NET AirVPN client; A1: dotnet-sdk build — .NET SDK not in Guix; A2: Mono — targets .NET 6+, incompatible; A3: openvpn/wireguard — Guix has VPN tools, AirVPN provides OpenVPN configs (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
@@ -35494,6 +35523,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — No Guix lazylibrarian; source https://gitlab.com/lazylibrarian/LazyLibrarian; Python web app git; python recipe needed; Next: pin commit, draft python recipe.
    - Difficulty: unknown
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NO_RELEASES_MASSIVE_DEPS: Python web app with no packaging; A1: copy-build-system — no setup.py/pyproject.toml; A2: package 66 deps — 40+ niche packages not in Guix; A3: no tagged releases — rolling release, unreliable (recipe-resolver-260414ag)
    - TODO Status: TODO
 
 
