@@ -5,6 +5,7 @@
             ;; recipe-resolver-260415q (bookkeeping-only, 30 NRD resolved)
             ;; recipe-resolver-260415r (30 NRD resolved)
             ;; recipe-resolver-260415s (30 NRD resolved)
+            ;; recipe-resolver-260415v (9 NRD resolved, pool depleted)
             ttf-ms-win10-auto
             jre22-openjdk
             ungoogled-chromium-widevine-bin
@@ -51,6 +52,7 @@
             rtt-rstudio-technician
             slack-desktop-wayland
             sleep-inhibitor
+            solar2d-git
             snack
             tqsl
             uptater

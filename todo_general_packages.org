@@ -59524,6 +59524,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: CROSS_COMPILE_UNSUPPORTED — SuperH embedded newlib (deptree-resolver-260414e)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CROSS_TOOLCHAIN_NEEDED: requires sh-elf-gcc + sh-elf-binutils cross toolchain not in Guix; A1: cross-base.scm supports adding targets but needs binutils+gcc+newlib multi-pkg effort; A2: embedded SH target audience extremely small; A3: beyond batch scope (recipe-resolver-260415v)
+   - TODO Status: BLOCKED
 ** DONE 7618. bab-bin
    - Note: AUR popularity=0.1177, votes=1; Task runner for defining project commands in YAML
    - Status: DONE: Recipe added in deptree-resolver-260407d.scm; dep-tree priority pass 2026-04-07.
@@ -82837,6 +82839,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_BUILD_DEPS — Java OpenJFX documentation (deptree-resolver-260414e)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OPENJFX_STACK_OUTDATED: Guix has OpenJFX 8.202; modern javadoc (v27) needs Gradle + JDK 25; A1: update 100+ module Gradle build; A2: no prebuilt docs; A3: impractical in batch (recipe-resolver-260415v)
+   - TODO Status: BLOCKED
 ** BLOCKED 11087. java-openjfx-src [BLOCKED: COMPLEX_BUILD_DEPS: Java OpenJFX 27 source; requires gradle]
    - AUR votes: 12, popularity: 0.0176
    - Note: Java OpenJFX client application platform (open-source implementation of JavaFX) - latest version
@@ -82845,6 +82849,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: COMPLEX_BUILD_DEPS — Java OpenJFX source (deptree-resolver-260414e)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OPENJFX_STACK_OUTDATED: same as java-openjfx-doc; source jars need Gradle + JDK 25 stack (recipe-resolver-260415v)
    - TODO Status: BLOCKED
 ** DONE 11088. hypridle-git
    - AUR votes: 16, popularity: 0.0176
@@ -88550,6 +88556,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_BUILD_DEPS — Linux mainline kernel docs (deptree-resolver-260414e)
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — ALREADY_IN_GUIX: linux-libre-documentation 6.18.10 in gnu/packages/linux.scm; non-libre mainline docs equivalent (recipe-resolver-260415v)
+   - TODO Status: DONE
 ** DONE 11797. mkinitcpio-numlock
    - AUR votes: 51, popularity: 1.4980
    - Note: Enable numlock in early userspace
@@ -90768,6 +90776,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415v.scm (solar2d-git, cmake-build-system, Solar2D 2D game engine, MIT) (recipe-resolver-260415v)
+   - TODO Status: DONE
 ** DONE 12063. python-opentelemetry-opencensus-shim
    - Source List: AUR
    - Status: DONE: already packaged as python-opentelemetry-opencensus-shim (discovered deptree-resolver-260414m)
@@ -99197,6 +99207,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — documentation package for java11-openjfx (recipe-resolver-260414m)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OPENJFX11_EOL: upstream archived July 2023; A1: Gradle 7 build; A2: end-of-life; A3: low value (recipe-resolver-260415v)
+   - TODO Status: BLOCKED
 ** BLOCKED 13140. java11-openjfx-src [BLOCKED: COMPLEX_BUILD_DEPS: Java 11 OpenJFX source; requires gradle7]
    - AUR votes: 3, popularity: 0.7522
    - Note: Java OpenJFX 11 client application platform (open-source implementation of JavaFX)
@@ -99204,6 +99216,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — source package for java11-openjfx (recipe-resolver-260414m)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OPENJFX11_EOL: same as java11-openjfx-doc; upstream archived (recipe-resolver-260415v)
    - TODO Status: BLOCKED
 ** DONE 13141. python-mprisgovee
    - AUR votes: 1, popularity: 0.7522
@@ -101203,6 +101217,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Arch Linux AUR build helper (host); depends on pacman/makepkg/arch-install-scripts; A1: Arch-specific tooling; A2: not portable; next: not feasible outside Arch (recipe-resolver-260414t)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: requires pacman/makepkg/pacutils; A1: pacman not in Guix; A2: makepkg Arch-only; A3: no use case outside Arch Linux (recipe-resolver-260415v)
    - TODO Status: BLOCKED
 ** DONE 13378. pat-aur-client-git
    - Source List: AUR
@@ -107389,10 +107405,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in recipe-resolver-260415p.scm (bak-bin, RECIPE: Guix recipe created (copy-build-system, AUR snapshot))
-** TODO 14167. stalwart-mail-server
+** BLOCKED 14167. stalwart-mail-server
    - AUR votes: 1, popularity: 0.0160
    - Note: Stalwart mail and collaboration server
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: massive Rust crate dep tree (500+ crates); next: resolve cargo deps incrementally (recipe-resolver-260415u)
 
 
 ** DONE 14168. kotatsu-dl-git
@@ -107633,10 +107650,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in deptree-resolver-260415p.scm (harbor-wave, RECIPE: Guix recipe created (source-generic)) [deptree-resolver-260415p]
-** TODO 14202. raidrivecli
+** BLOCKED 14202. raidrivecli
    - AUR votes: 1, popularity: 0.0139
    - Note: Use cloud storage services as if they were USB drives on your computer
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: proprietary CLI, no public source or stable download URL (recipe-resolver-260415u)
 
 
 ** DONE 14203. losci-git
@@ -107932,148 +107950,172 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in deptree-resolver-260415p.scm (mermaid-ascii-git, RECIPE: Guix recipe created (source-go)) [deptree-resolver-260415p]
-** TODO 14245. alfathsave
+** DONE 14245. alfathsave
    - AUR votes: 1, popularity: 0.0139
    - Note: Alfath Save - PS2 VMC save file reader
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (alfathsave, recipe-resolver-260415u)
 
 
-** TODO 14246. pactime
+** BLOCKED 14246. pactime
    - AUR votes: 1, popularity: 0.0139
    - Note: List pacman packages by install time
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific pacman tool, no portable equivalent (recipe-resolver-260415u)
 
 
-** TODO 14247. fzfmenu
+** DONE 14247. fzfmenu
    - AUR votes: 1, popularity: 0.0139
    - Note: An application launcher based on fzf
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (fzfmenu, recipe-resolver-260415u)
 
 
-** TODO 14248. kshift
+** DONE 14248. kshift
    - AUR votes: 1, popularity: 0.0139
    - Note: KDE Theme Shift
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (kshift, recipe-resolver-260415u)
 
 
-** TODO 14249. delineate
+** DONE 14249. delineate
    - AUR votes: 1, popularity: 0.0139
    - Note: View and edit graphs
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (delineate, recipe-resolver-260415u)
 
 
-** TODO 14250. breathing
+** DONE 14250. breathing
    - AUR votes: 1, popularity: 0.0139
    - Note: Relax and meditate
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (breathing, recipe-resolver-260415u)
 
 
-** TODO 14251. lib32-khronos-ocl-icd-git
+** BLOCKED 14251. lib32-khronos-ocl-icd-git
    - AUR votes: 1, popularity: 0.0139
    - Note: Khronos Group OpenCL installable client driver (ICD) loader. (GIT Version) (32-bits)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: 32-bit library variant; Guix lacks lib32 multilib model (recipe-resolver-260415u)
 
 
-** TODO 14252. khronos-ocl-icd-git
+** DONE 14252. khronos-ocl-icd-git
    - AUR votes: 1, popularity: 0.0139
    - Note: Khronos Group OpenCL installable client driver (ICD) loader. (GIT Version)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (khronos-ocl-icd, recipe-resolver-260415u)
 
 
-** TODO 14253. monika-after-story-cn
+** BLOCKED 14253. monika-after-story-cn
    - AUR votes: 1, popularity: 0.0139
    - Note: A mod for the free game Doki Doki Literature Club from Team Salvato, which builds on Act 3 to create a simulator of your eternal life with Monika, with third-pa
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires DDLC commercial game files, cannot function standalone (recipe-resolver-260415u)
 
 
-** TODO 14254. crackpkcs12
+** DONE 14254. crackpkcs12
    - AUR votes: 3, popularity: 0.0138
    - Note: A tool to audit PKCS12 files passwords
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (crackpkcs12, recipe-resolver-260415u)
 
 
-** TODO 14255. llocal-bin
+** DONE 14255. llocal-bin
    - AUR votes: 1, popularity: 0.0138
    - Note: Aiming to provide a seamless and privacy driven chatting experience with open-sourced technologies(Ollama), particularly open sourced LLM's(eg. Llama3, Phi-3, M
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (llocal-bin, recipe-resolver-260415u)
 
 
-** TODO 14256. gopanel-bin
+** DONE 14256. gopanel-bin
    - AUR votes: 1, popularity: 0.0138
    - Note: A control panel that is written in Golang and is able to manage Caddy 2
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (gopanel-bin, recipe-resolver-260415u)
 
 
-** TODO 14257. yozo-office-templates
+** BLOCKED 14257. yozo-office-templates
    - AUR votes: 13, popularity: 0.0138
    - Note: Built-in document templates of Yozo Office 2024
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: requires yozo-office base which is not yet packaged (recipe-resolver-260415u)
 
 
-** TODO 14258. yozo-office-fonts
+** BLOCKED 14258. yozo-office-fonts
    - AUR votes: 13, popularity: 0.0138
    - Note: Built-in fonts of Yozo Office 2024
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: font files bundled with proprietary Yozo Office (recipe-resolver-260415u)
 
 
-** TODO 14259. yozo-office
+** BLOCKED 14259. yozo-office
    - AUR votes: 13, popularity: 0.0138
    - Note: Yozo Office 2024 - An MS Office compatible office suite
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: complex proprietary Chinese office suite; need .deb structure analysis (recipe-resolver-260415u)
 
 
-** TODO 14260. lsr
+** DONE 14260. lsr
    - AUR votes: 2, popularity: 0.0135
    - Note: ls but with io_uring
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (lsr, recipe-resolver-260415u)
 
 
-** TODO 14261. krita-vision-tools
+** DONE 14261. krita-vision-tools
    - AUR votes: 2, popularity: 0.0133
    - Note: Krita plugin which adds selection tools to mask objects with a single click, or by drawing a bounding box.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (krita-vision-tools, recipe-resolver-260415u)
 
 
-** TODO 14262. anitr-cli
+** DONE 14262. anitr-cli
    - AUR votes: 1, popularity: 0.0133
    - Note: 🚀 Terminalde Türkçe altyazılı anime arama ve izleme aracı
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (anitr-cli, recipe-resolver-260415u)
 
 
-** TODO 14263. cosmic-applet-arch
+** BLOCKED 14263. cosmic-applet-arch
    - AUR votes: 4, popularity: 0.0132
    - Note: COSMIC applet to display Arch Linux package status
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Rust COSMIC applet for Arch; requires COSMIC desktop + pacman (recipe-resolver-260415u)
 
 
-** TODO 14264. duckstation-git
+** DONE 14264. duckstation-git
    - AUR votes: 29, popularity: 0.0131
    - Note: A Sony PlayStation (PSX) emulator, focusing on playability, speed, and long-term maintainability (git version)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (duckstation-git, recipe-resolver-260415u)
 
 
-** TODO 14265. warp-plus-bin
+** DONE 14265. warp-plus-bin
    - AUR votes: 7, popularity: 0.0129
    - Note: An open-source implementation of Cloudflare's Warp, enhanced with Psiphon integration.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (warp-plus-bin, recipe-resolver-260415u)
 
 
-** TODO 14266. cmdd
+** DONE 14266. cmdd
    - AUR votes: 1, popularity: 0.0126
    - Note: ConnMan D-bus network state Dispatcher
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (cmdd, recipe-resolver-260415u)
 
 
-** TODO 14267. mpv-reload-git
+** DONE 14267. mpv-reload-git
    - AUR votes: 3, popularity: 0.0122
    - Note: A userscript for MPV that provides automatic reloading of videos based on buffering progress and allows manual reload with Ctrl+r.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (mpv-reload, recipe-resolver-260415u)
 
 
-** TODO 14268. brother-hl1210w
+** DONE 14268. brother-hl1210w
    - AUR votes: 12, popularity: 0.0122
    - Note: Brother HL-1210W CUPS driver. After installing this, install printer from CUPS web interface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (brother-hl1210w-cups, recipe-resolver-260415u)
 
 
 ** DONE 14269. llvm-mingw-w64-toolchain-msvcrt-bin
@@ -108083,166 +108125,193 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260415i.scm (llvm-mingw-w64-toolchain-msvcrt-bin v20260324, copy-build-system)
    - TODO Status: DONE
 
-** TODO 14270. fan2go-tui-git
+** DONE 14270. fan2go-tui-git
    - AUR votes: 2, popularity: 0.0121
    - Note: Terminal UI for fan2go.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (fan2go-tui, recipe-resolver-260415u)
 
 
-** TODO 14271. zap-rs
+** BLOCKED 14271. zap-rs
    - AUR votes: 1, popularity: 0.0121
    - Note: Simple web wrapper for WhatsApp Web
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Rust WhatsApp wrapper, needs webkit2gtk Rust bindings + cargo deps (recipe-resolver-260415u)
 
 
-** TODO 14272. zap-elec
+** BLOCKED 14272. zap-elec
    - AUR votes: 1, popularity: 0.0121
    - Note: Simple web wrapper for WhatsApp Web
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Electron WhatsApp wrapper, requires electron-builder + npm deps (recipe-resolver-260415u)
 
 
-** TODO 14273. multiblend
+** DONE 14273. multiblend
    - AUR votes: 2, popularity: 0.0121
    - Note: Image blender for the seamless blending of panoramic images similar to enblend
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (multiblend, recipe-resolver-260415u)
 
 
-** TODO 14274. tcptrace
+** DONE 14274. tcptrace
    - AUR votes: 1, popularity: 0.0121
    - Note: A TCP dump file analysis tool
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (tcptrace, recipe-resolver-260415u)
 
 
-** TODO 14275. sling-cli-bin
+** DONE 14275. sling-cli-bin
    - AUR votes: 1, popularity: 0.0121
    - Note: Sling is a CLI tool that extracts data from a source storage/database
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (sling-cli-bin, recipe-resolver-260415u)
 
 
-** TODO 14276. vim-language-server
+** DONE 14276. vim-language-server
    - AUR votes: 15, popularity: 0.0121
    - Note: VimScript language server, LSP for vim script
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (vim-language-server, recipe-resolver-260415u)
 
 
-** TODO 14277. python-pyvmomi
+** DONE 14277. python-pyvmomi
    - AUR votes: 4, popularity: 0.0121
    - Note: VMware vSphere API Python Bindings
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (python-pyvmomi, recipe-resolver-260415u)
 
 
-** TODO 14278. python-xnum
+** DONE 14278. python-xnum
    - AUR votes: 1, popularity: 0.0121
    - Note: Simple and lightweight Python library that helps you convert digits between different numeral systems
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (python-xnum, recipe-resolver-260415u)
 
 
-** TODO 14279. decompose-bin
+** DONE 14279. decompose-bin
    - AUR votes: 1, popularity: 0.0121
    - Note: Reverse-engineering tool for docker environments
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (decompose-bin, recipe-resolver-260415u)
 
 
-** TODO 14280. bzr-player
+** DONE 14280. bzr-player
    - AUR votes: 2, popularity: 0.0121
    - Note: Audio player supporting a wide array of multi-platform exotic file formats
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (bzr-player, recipe-resolver-260415u)
 
 
-** TODO 14281. markcat
+** DONE 14281. markcat
    - AUR votes: 1, popularity: 0.0121
    - Note: Convert a project directory to markdown
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (markcat, recipe-resolver-260415u)
 
 
-** TODO 14282. kyocera-cups
+** DONE 14282. kyocera-cups
    - AUR votes: 26, popularity: 0.0121
    - Note: PPD drivers for Kyocera CS ECOSYS FS KM TASKalfa KPDL printers copiers wide format
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (kyocera-cups-ppd, recipe-resolver-260415u)
 
 
-** TODO 14283. libgda-postgres
+** BLOCKED 14283. libgda-postgres
    - AUR votes: 4, popularity: 0.0121
    - Note: libgda provider for PostgreSQL
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires libgda 6.x base which is not in Guix (recipe-resolver-260415u)
 
 
-** TODO 14284. libgda-mysql
+** BLOCKED 14284. libgda-mysql
    - AUR votes: 4, popularity: 0.0121
    - Note: libgda provider for MySQL
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires libgda base package not in Guix (recipe-resolver-260415u)
 
 
-** TODO 14285. libgda-jdbc
+** BLOCKED 14285. libgda-jdbc
    - AUR votes: 4, popularity: 0.0121
    - Note: libgda provider for JDBC
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires libgda + Java SDK, dual dependency gap (recipe-resolver-260415u)
 
 
-** TODO 14286. libgda-firebird
+** BLOCKED 14286. libgda-firebird
    - AUR votes: 4, popularity: 0.0121
    - Note: libgda provider for Firebird
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires libgda + Firebird client not in Guix (recipe-resolver-260415u)
 
 
-** TODO 14287. arch-store-git
+** BLOCKED 14287. arch-store-git
    - AUR votes: 1, popularity: 0.0121
    - Note: A graphical app for managing your programs with pacman, AUR, flatpak, and appimage
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific graphical package manager, deeply tied to pacman/AUR (recipe-resolver-260415u)
 
 
-** TODO 14288. ultrastar-manager
+** DONE 14288. ultrastar-manager
    - AUR votes: 3, popularity: 0.0121
    - Note: Qt program used to manage USDX songs
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (ultrastar-manager, recipe-resolver-260415u)
 
 
-** TODO 14289. shufflecake
+** DONE 14289. shufflecake
    - AUR votes: 3, popularity: 0.0121
    - Note: Plausible deniability layer for Linux (Userland & DKMS)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (shufflecake, recipe-resolver-260415u)
 
 
-** TODO 14290. termgraph-git
+** DONE 14290. termgraph-git
    - AUR votes: 2, popularity: 0.0121
    - Note: Python command-line tool which draws basic graphs in the terminal (development version)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (python-termgraph, recipe-resolver-260415u)
 
 
-** TODO 14291. python-speechmatics-rt
+** BLOCKED 14291. python-speechmatics-rt
    - AUR votes: 1, popularity: 0.0121
    - Note: Speechmatics Real-Time API Client.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: proprietary API client with websocket deps; verify all Python deps (recipe-resolver-260415u)
 
 
-** TODO 14292. deltatune-linux
+** DONE 14292. deltatune-linux
    - AUR votes: 1, popularity: 0.0121
    - Note: DeltaTune ported to Linux. Show the currently playing song like the 'Field of Hopes and Dreams' pop-up from Deltarune Chapter 1.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (deltatune-linux, recipe-resolver-260415u)
 
 
-** TODO 14293. arch-store
+** BLOCKED 14293. arch-store
    - AUR votes: 1, popularity: 0.0121
    - Note: A graphical app for managing your programs with pacman, AUR, flatpak, and appimage
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific graphical package manager, same as -git variant (recipe-resolver-260415u)
 
 
-** TODO 14294. gog-ftl
+** BLOCKED 14294. gog-ftl
    - AUR votes: 2, popularity: 0.0121
    - Note: Spaceship simulation roguelike-like (GOG version). Take your ship and crew through a randomly generated galaxy filled with glory and bitter defeat.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: LICENSE_REVIEW_NEEDED: GOG game requires purchased installer, cannot redistribute (recipe-resolver-260415u)
 
 
-** TODO 14295. tasklin
+** DONE 14295. tasklin
    - AUR votes: 1, popularity: 0.0121
    - Note: A single CLI to connect with OpenAI, Ollama, and more AI platforms
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (tasklin, recipe-resolver-260415u)
 
 
-** TODO 14296. anilabxmax-bin
+** DONE 14296. anilabxmax-bin
    - AUR votes: 1, popularity: 0.0121
    - Note: AniLabX MAX - PC app for watching anime/dramas/cartoons and reading manga/comics/light novels
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (anilabxmax-bin, recipe-resolver-260415u)
 
 
 ** DONE 14297. src-cli-bin
@@ -108251,34 +108320,39 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `src` (strip-cli); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 14298. asciidoctor-web-pdf
+** DONE 14298. asciidoctor-web-pdf
    - AUR votes: 2, popularity: 0.0121
    - Note: A PDF converter for AsciiDoc based on web technologies. It allows complex layouts to be defined with CSS and JavaScript, while writing the content in AsciiDoc.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (asciidoctor-web-pdf, recipe-resolver-260415u)
 
 
-** TODO 14299. rs-visa
+** BLOCKED 14299. rs-visa
    - AUR votes: 1, popularity: 0.0121
    - Note: Rohde & Schwarz VISA library for Linux.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: R&S proprietary VISA lib, requires vendor account for download (recipe-resolver-260415u)
 
 
-** TODO 14300. ext4magic-patch-extent-free
+** DONE 14300. ext4magic-patch-extent-free
    - AUR votes: 1, popularity: 0.0121
    - Note: Upstream ext4magic-0.3.2 package, patched not to segfault
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (ext4magic, recipe-resolver-260415u)
 
 
-** TODO 14301. brother-hl-l2420dw
+** DONE 14301. brother-hl-l2420dw
    - AUR votes: 1, popularity: 0.0121
    - Note: LPR and CUPS driver for the Brother HL-L2420DW
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (brother-hl-l2420dw-cups, recipe-resolver-260415u)
 
 
-** TODO 14302. apache-paimon
+** BLOCKED 14302. apache-paimon
    - AUR votes: 1, popularity: 0.0121
    - Note: Apache Paimon — Spark runtime JAR (Spark 3.5)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java/Spark runtime JAR with complex Maven dep tree (recipe-resolver-260415u)
 
 
 ** DONE 14303. python-resend
@@ -108288,64 +108362,74 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 14304. apache-iceberg
+** BLOCKED 14304. apache-iceberg
    - AUR votes: 1, popularity: 0.0121
    - Note: Apache Iceberg — Spark runtime bundle (Spark 3.5, Scala 2.13)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java/Spark runtime with Scala 2.13 complex Maven build (recipe-resolver-260415u)
 
 
-** TODO 14305. snowflake-connector-python
+** BLOCKED 14305. snowflake-connector-python
    - AUR votes: 1, popularity: 0.0121
    - Note: Snowflake Connector for Python (DB-API 2.0)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: 40+ transitive Python deps including pyarrow (C++ build) (recipe-resolver-260415u)
 
 
-** TODO 14306. python-genai-prices
+** DONE 14306. python-genai-prices
    - AUR votes: 1, popularity: 0.0121
    - Note: Calculate prices for calling LLM inference APIs.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (python-genai-prices, recipe-resolver-260415u)
 
 
-** TODO 14307. apache-hudi
+** BLOCKED 14307. apache-hudi
    - AUR votes: 1, popularity: 0.0121
    - Note: Apache Hudi (Spark integration) — Spark 3.5 (Scala 2.13) bundle and utilities JARs
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java/Spark integration with Scala 2.13 complex Maven build (recipe-resolver-260415u)
 
 
-** TODO 14308. zigmod-bin
+** DONE 14308. zigmod-bin
    - AUR votes: 3, popularity: 0.0121
    - Note: A package manager for the Zig programming language
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (zigmod-bin, recipe-resolver-260415u)
 
 
-** TODO 14309. persian-hm-xs2-fonts
+** DONE 14309. persian-hm-xs2-fonts
    - AUR votes: 1, popularity: 0.0121
    - Note: A Persian font series derived from X Series 2 fonts with Kashida feature.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (font-persian-hm-xs2, recipe-resolver-260415u)
 
 
-** TODO 14310. persian-hm-ftx-fonts
+** DONE 14310. persian-hm-ftx-fonts
    - AUR votes: 1, popularity: 0.0121
    - Note: A Persian font series derived from X Series 2, Metafont and FarsiTeX fonts with Kashida feature.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (font-persian-hm-ftx, recipe-resolver-260415u)
 
 
-** TODO 14311. expressvpn-gui-nhk
+** BLOCKED 14311. expressvpn-gui-nhk
    - AUR votes: 1, popularity: 0.0121
    - Note: Unofficial linux GUI for expressvpn CLI (Qt)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires proprietary expressvpn CLI to function (recipe-resolver-260415u)
 
 
-** TODO 14312. youzone
+** BLOCKED 14312. youzone
    - AUR votes: 1, popularity: 0.0121
    - Note: 友空间，更懂企业的一体化数智办公平台。Youzone, an integrated digital office platform that better understands enterprises.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: proprietary Chinese enterprise platform, no public source (recipe-resolver-260415u)
 
 
-** TODO 14313. live-photo-conv
+** DONE 14313. live-photo-conv
    - AUR votes: 1, popularity: 0.0121
    - Note: A cross-platform tool to process live photos of Google Android
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (live-photo-conv, recipe-resolver-260415u)
 
 
 ** DONE 14314. python-ddgs
@@ -108355,196 +108439,228 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 14315. minegrub-theme-update-service
+** BLOCKED 14315. minegrub-theme-update-service
    - AUR votes: 2, popularity: 0.0120
    - Note: A systemd service that automatically updates the minegrub theme
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: systemd service for Arch GRUB theme; needs shepherd adaptation (recipe-resolver-260415u)
 
 
-** TODO 14316. weechat-xmpp-git
+** DONE 14316. weechat-xmpp-git
    - AUR votes: 1, popularity: 0.0120
    - Note: A weechat plugin in C/++ for XMPP support, minimal but idealy maximal set of XEPs
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (weechat-xmpp, recipe-resolver-260415u)
 
 
-** TODO 14317. gnucap-modelgen-verilog-git
+** DONE 14317. gnucap-modelgen-verilog-git
    - AUR votes: 1, popularity: 0.0120
    - Note: Verilog model generator for Gnucap
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (gnucap-modelgen-verilog, recipe-resolver-260415u)
 
 
-** TODO 14318. tunarr-bin
+** DONE 14318. tunarr-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: Create a classic TV experience using your own media - IPTV backed by Plex/Jellyfin/Emby
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (tunarr-bin, recipe-resolver-260415u)
 
 
-** TODO 14319. gz-ionic
+** BLOCKED 14319. gz-ionic
    - AUR votes: 1, popularity: 0.0120
    - Note: Gazebo Ionic: toolbox of development libraries and cloud services for robotics simulation.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires 50+ Gazebo libraries not in Guix (recipe-resolver-260415u)
 
 
-** TODO 14320. neovim-nvim-treesitter
+** DONE 14320. neovim-nvim-treesitter
    - AUR votes: 1, popularity: 0.0120
    - Note: Nvim Treesitter configurations and abstraction layer
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (neovim-nvim-treesitter, recipe-resolver-260415u)
 
 
-** TODO 14321. intel-ipu6ep-camera-hal-git
+** BLOCKED 14321. intel-ipu6ep-camera-hal-git
    - AUR votes: 3, popularity: 0.0120
    - Note: Intel IPU6 camera HAL (Alder Lake)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel-specific camera HAL, requires out-of-tree modules (recipe-resolver-260415u)
 
 
-** TODO 14322. ddns-go-bin
+** DONE 14322. ddns-go-bin
    - AUR votes: 3, popularity: 0.0120
    - Note: A simple, easy-to-use ddns service optimized for Chinese Mainland users
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (ddns-go-bin, recipe-resolver-260415u)
 
 
-** TODO 14323. crark
+** BLOCKED 14323. crark
    - AUR votes: 1, popularity: 0.0120
    - Note: A command-line utility for RAR 2.x-3.x password cracking, uses Password Cracking Library 2.0 that supports special password recovery language. Highly optimized 
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: proprietary RAR password cracker, no public stable download URL (recipe-resolver-260415u)
 
 
-** TODO 14324. archlinux-tweak-tool-git
+** BLOCKED 14324. archlinux-tweak-tool-git
    - AUR votes: 5, popularity: 0.0120
    - Note: Arch Linux Tweak Tool or ATT
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific system tweaker, all features target Arch config (recipe-resolver-260415u)
 
 
-** TODO 14325. unicornscan
+** DONE 14325. unicornscan
    - AUR votes: 1, popularity: 0.0120
    - Note: Scalable, accurate, flexible and efficient network probing
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (unicornscan, recipe-resolver-260415u)
 
 
-** TODO 14326. ttf-pending-mono
+** DONE 14326. ttf-pending-mono
    - AUR votes: 1, popularity: 0.0120
    - Note: A composite font of BIZ UD Gothic and Commit Mono
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (font-pending-mono, recipe-resolver-260415u)
 
 
-** TODO 14327. apache-flink
+** BLOCKED 14327. apache-flink
    - AUR votes: 5, popularity: 0.0120
    - Note: A framework and distributed processing engine for stateful computations over unbounded and bounded data streams (with Scala)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: massive Java/Scala framework, hundreds of Maven deps (recipe-resolver-260415u)
 
 
-** TODO 14328. python-deltalake
+** BLOCKED 14328. python-deltalake
    - AUR votes: 1, popularity: 0.0120
    - Note: Native Delta Lake Python binding based on delta-rs with Pandas integration
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Rust+Python hybrid via maturin; requires delta-rs crate (recipe-resolver-260415u)
 
 
-** TODO 14329. openseachest-logparser
+** DONE 14329. openseachest-logparser
    - AUR votes: 1, popularity: 0.0120
    - Note: Open source version of the Log Parser that parses ATA/SCSI/NVMe & Seagate vendor unique logs
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (openseachest-logparser, recipe-resolver-260415u)
 
 
-** TODO 14330. ollama-lab-bin
+** DONE 14330. ollama-lab-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: Yet another (unofficial) Ollama GUI (binary)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (ollama-lab-bin, recipe-resolver-260415u)
 
 
-** TODO 14331. imfit-bin
+** DONE 14331. imfit-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: Fast, Flexible Multi-component Fitting of Galaxy Images
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (imfit-bin, recipe-resolver-260415u)
 
 
-** TODO 14332. git-secret
+** DONE 14332. git-secret
    - AUR votes: 8, popularity: 0.0120
    - Note: A bash-tool to store your private data inside a git repository
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (git-secret, recipe-resolver-260415u)
 
 
-** TODO 14333. tlm-bin
+** DONE 14333. tlm-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: Local CLI Copilot, powered by Ollama.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (tlm-bin, recipe-resolver-260415u)
 
 
-** TODO 14334. tdns-bin
+** DONE 14334. tdns-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: A powerful, lightweight CLI to manage Technitium DNS server via HTTP API endpoint
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (tdns-bin, recipe-resolver-260415u)
 
 
-** TODO 14335. kafbat-kafka-ui
+** BLOCKED 14335. kafbat-kafka-ui
    - AUR votes: 1, popularity: 0.0120
    - Note: Open-source Web UI for managing Apache Kafka clusters (Kafbat UI)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java web app with React frontend, complex Maven+npm build (recipe-resolver-260415u)
 
 
-** TODO 14336. insync-dolphin
+** BLOCKED 14336. insync-dolphin
    - AUR votes: 17, popularity: 0.0120
    - Note: Insync context menus and overlay icons for Dolphin - Plasma 6
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires proprietary Insync base package not packaged (recipe-resolver-260415u)
 
 
-** TODO 14337. zyfun-bin
+** DONE 14337. zyfun-bin
    - AUR votes: 2, popularity: 0.0120
    - Note: Cross-platform desktop video resource player, free high value.(Prebuilt version.Use system-wide electron)跨平台桌面端视频资源播放器,免费高颜值
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (zyfun-bin, recipe-resolver-260415u)
 
 
-** TODO 14338. riprip-bin
+** DONE 14338. riprip-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: A specialized audio CD-ripper optimized for track recovery
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (riprip-bin, recipe-resolver-260415u)
 
 
-** TODO 14339. openmoonray
+** BLOCKED 14339. openmoonray
    - AUR votes: 1, popularity: 0.0120
    - Note: DreamWorks Animation's open-source Monte Carlo ray tracer
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: DreamWorks ray tracer, 100+ CMake deps (ISPC, OpenVDB, USD) (recipe-resolver-260415u)
 
 
-** TODO 14340. falkon-plugin-pdfreader
+** DONE 14340. falkon-plugin-pdfreader
    - AUR votes: 1, popularity: 0.0120
    - Note: PDF reader extension for falkon
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (falkon-pdfreader, recipe-resolver-260415u)
 
 
-** TODO 14341. ttf-mph-2b-damase
+** DONE 14341. ttf-mph-2b-damase
    - AUR votes: 5, popularity: 0.0120
    - Note: Unicode font covering full plane 1, and numerous scripts
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (font-mph-2b-damase, recipe-resolver-260415u)
 
 
-** TODO 14342. steamcommunity302
+** BLOCKED 14342. steamcommunity302
    - AUR votes: 1, popularity: 0.0120
    - Note: 羽翼城制作的Steam、Github等反代加速工具,使用s302命令启动
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: Chinese proxy tool, no stable versioned releases (recipe-resolver-260415u)
 
 
-** TODO 14343. grml-iso
+** BLOCKED 14343. grml-iso
    - AUR votes: 2, popularity: 0.0120
    - Note: provides the grml ISO image for usage by grml-rescueboot
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: ISO image provision for grml-rescueboot, not standard package (recipe-resolver-260415u)
 
 
-** TODO 14344. omarchy-chromium-bin
+** DONE 14344. omarchy-chromium-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: A web browser built for speed, simplicity, and security, with patches for Omarchy (binary package)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (omarchy-chromium-bin, recipe-resolver-260415u)
 
 
-** TODO 14345. devcontainer-cli
+** DONE 14345. devcontainer-cli
    - AUR votes: 6, popularity: 0.0120
    - Note: Dev container CLI, which can take a devcontainer.json and create and configure a dev container from it.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (devcontainer-cli, recipe-resolver-260415u)
 
 
-** TODO 14346. python-dm-streamvalve
+** DONE 14346. python-dm-streamvalve
    - AUR votes: 1, popularity: 0.0120
    - Note: Reconstruct a text string from an Iterable, with optional stopping criteria
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260415u.scm (python-dm-streamvalve, recipe-resolver-260415u)
 
 
 ** TODO 14347. python-dm-ollamalib
@@ -116040,6 +116156,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEPS_CHAIN: needs caelestia-cli (Rust), app2unit, libcava, swappy + custom fonts; A1: 4+ missing packages — significant scope; A2: shell non-functional without CLI; A3: quickshell available but ecosystem incomplete (recipe-resolver-260415v)
+   - TODO Status: BLOCKED
 ** DONE 15584. lisgd-git [gaurix:queue-20260402p100daily3 target=lisgd rule=strip-git]
    - AUR votes: 1, popularity: 0.0147
    - Note: Bind gestures on touchscreens, and unsupported gesture devices via libinput touch events
