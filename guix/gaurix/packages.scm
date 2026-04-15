@@ -2665,3 +2665,32 @@
                tailscale-bin
                mdcat-bin
                fooyin-git))
+
+;; deptree-resolver-260414t
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260414t)
+  #:re-export (zombie
+               4kvideodownloaderplus
+               alacritty-use-theme-with-gnome-darkmode-git
+               alice2-bin
+               antiafk-rbx-sober
+               antigravity-tools-bin
+               apparmor-d
+               apparmor-d-git
+               apparmor-d-enforced
+               asf-plugin-itemsmatcher
+               asf-plugin-mobileauthenticator
+               asf-plugin-monitoring
+               asf-plugin-periodicgc
+               asf-plugin-signinwithsteam
+               asf-plugin-steamtokendumper
+               avbroot
+               banjorecomp-bin
+               battinfo-git
+               boxbuddy
+               breeze-enhanced-git
+               brrtfetch-git
+               bsky-electron-git
+               castblock-git
+               compresso-bin
+               cosmic-ext-applet-logomenu-git))
