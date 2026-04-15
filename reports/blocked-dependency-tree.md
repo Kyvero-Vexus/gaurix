@@ -1,60 +1,60 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260415p  
-**Timestamp:** 2026-04-15T17:56:50.317716Z  
-**Total BLOCKED:** 774  
+**Pass:** deptree-resolver-260415t  
+**Timestamp:** 2026-04-15T19:12:22.175698Z  
+**Total BLOCKED:** 692  
 
 ## Priority Queue (Top 50)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | python-javaobj-py3 | 14219 | 0 | 1 | 5 |
-| 2 | python-cotengra | 14216 | 0 | 1 | 9 |
-| 3 | gh-dash-bin | 14230 | 0 | 0 | 0 |
-| 4 | ktlint-compose-rules | 14186 | 0 | 0 | 0 |
-| 5 | aichat-ng-bin | 14236 | 0 | 0 | 1 |
-| 6 | paracon | 14228 | 0 | 0 | 1 |
-| 7 | redress-bin | 14235 | 0 | 0 | 1 |
-| 8 | tododo-bin | 14217 | 0 | 0 | 1 |
-| 9 | dwatch-bin | 14204 | 0 | 0 | 2 |
-| 10 | element-lk-jwt-service | 14231 | 0 | 0 | 2 |
-| 11 | harbor-wave | 14201 | 0 | 0 | 2 |
-| 12 | limine-booster | 14240 | 0 | 0 | 2 |
-| 13 | architect-git | 14243 | 0 | 0 | 3 |
-| 14 | artificial-rage-git | 14215 | 0 | 0 | 3 |
-| 15 | bdash-bin | 14239 | 0 | 0 | 3 |
-| 16 | disk_usage | 14224 | 0 | 0 | 3 |
-| 17 | livekit | 14229 | 0 | 0 | 3 |
-| 18 | local-llama-bin | 14238 | 0 | 0 | 3 |
-| 19 | luajit-sdl2-git | 14213 | 0 | 0 | 3 |
-| 20 | luajit-sdl3-git | 14210 | 0 | 0 | 3 |
-| 21 | mermaid-ascii-git | 14244 | 0 | 0 | 3 |
-| 22 | pam_exec-ssh-git | 14241 | 0 | 0 | 3 |
-| 23 | protonmail-bridge-free-nokeychain-git | 14189 | 0 | 0 | 3 |
-| 24 | chatd-bin | 14232 | 0 | 0 | 4 |
-| 25 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
-| 26 | python-onkyo-eiscp | 14233 | 0 | 0 | 4 |
-| 27 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
-| 28 | linpac-git | 14234 | 0 | 0 | 5 |
-| 29 | mcsast | 14237 | 0 | 0 | 5 |
-| 30 | pacboost | 4654 | 0 | 0 | 5 |
-| 31 | parui-git | 19178 | 0 | 0 | 5 |
-| 32 | aurscan-git | 4227 | 0 | 0 | 6 |
-| 33 | aurutils-git | 11962 | 0 | 0 | 6 |
-| 34 | pacman-static | 12893 | 0 | 0 | 6 |
-| 35 | tmpstali | 13865 | 0 | 0 | 6 |
-| 36 | vapoursynth-plugin-mlrt-migx-runtime-git | 14183 | 0 | 0 | 6 |
-| 37 | bcachefs-dkms-git | 3125 | 0 | 0 | 7 |
-| 38 | lib32-obs-vkcapture | 11097 | 0 | 0 | 7 |
-| 39 | libastal-lua51-git | 14177 | 0 | 0 | 7 |
-| 40 | libastal-lua53-git | 14176 | 0 | 0 | 7 |
-| 41 | pacmanagergui-git | 10356 | 0 | 0 | 7 |
-| 42 | rua | 7013 | 0 | 0 | 7 |
-| 43 | vrms-arch-git | 3856 | 0 | 0 | 7 |
-| 44 | waybar-module-pacman-updates-git | 8897 | 0 | 0 | 7 |
-| 45 | xlibre-video-amdgpu | 564 | 0 | 0 | 7 |
-| 46 | aconfmgr-git | 714 | 0 | 0 | 8 |
-| 47 | classisland-git | 11220 | 0 | 0 | 8 |
-| 48 | lib32-libass | 12168 | 0 | 0 | 8 |
-| 49 | limine-mkinitcpio-hook-git | 8853 | 0 | 0 | 8 |
-| 50 | octopi-git | 16712 | 0 | 0 | 8 |
+| 1 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
+| 2 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
+| 3 | pacboost | 4654 | 0 | 0 | 5 |
+| 4 | parui-git | 19178 | 0 | 0 | 5 |
+| 5 | aurscan-git | 4227 | 0 | 0 | 6 |
+| 6 | aurutils-git | 11962 | 0 | 0 | 6 |
+| 7 | pacman-static | 12893 | 0 | 0 | 6 |
+| 8 | tmpstali | 13865 | 0 | 0 | 6 |
+| 9 | bcachefs-dkms-git | 3125 | 0 | 0 | 7 |
+| 10 | pacmanagergui-git | 10356 | 0 | 0 | 7 |
+| 11 | rua | 7013 | 0 | 0 | 7 |
+| 12 | waybar-module-pacman-updates-git | 8897 | 0 | 0 | 7 |
+| 13 | aconfmgr-git | 714 | 0 | 0 | 8 |
+| 14 | lib32-libass | 2369 | 0 | 0 | 8 |
+| 15 | limine-mkinitcpio-hook-git | 8853 | 0 | 0 | 8 |
+| 16 | yauri | 3687 | 0 | 0 | 8 |
+| 17 | yup | 6847 | 0 | 0 | 8 |
+| 18 | python-wa-crypt-tools-git | 14218 | 0 | 0 | 9 |
+| 19 | whisper.cpp-hip | 315 | 0 | 0 | 9 |
+| 20 | yay-sys-tray-git | 3259 | 0 | 0 | 9 |
+| 21 | auracle-git | 12116 | 0 | 0 | 10 |
+| 22 | equicord | 390 | 0 | 0 | 10 |
+| 23 | equicord-openasar | 4590 | 0 | 0 | 10 |
+| 24 | esp-idf | 12920 | 0 | 0 | 10 |
+| 25 | fastflowlm-git | 2959 | 0 | 0 | 10 |
+| 26 | firedragon-bin | 2118 | 0 | 0 | 10 |
+| 27 | firefox-extension-credentialsd | 3471 | 0 | 0 | 10 |
+| 28 | forticlient | 4346 | 0 | 0 | 10 |
+| 29 | ghostship | 2934 | 0 | 0 | 10 |
+| 30 | gr-fosphor-git | 11193 | 0 | 0 | 10 |
+| 31 | gradle8-doc | 3796 | 0 | 0 | 10 |
+| 32 | gradle8-src | 3797 | 0 | 0 | 10 |
+| 33 | gyroflow-bin | 10092 | 0 | 0 | 10 |
+| 34 | iloader-bin | 1284 | 0 | 0 | 10 |
+| 35 | karakeep | 8901 | 0 | 0 | 10 |
+| 36 | karp-git | 7521 | 0 | 0 | 10 |
+| 37 | koodo-reader-bin | 1721 | 0 | 0 | 10 |
+| 38 | lectern-git | 13471 | 0 | 0 | 10 |
+| 39 | lieer-git | 15977 | 0 | 0 | 10 |
+| 40 | linux-xanmod-bin | 1348 | 0 | 0 | 10 |
+| 41 | lldb-zig-git | 7462 | 0 | 0 | 10 |
+| 42 | llvm-bolt | 3889 | 0 | 0 | 10 |
+| 43 | mintsysadm | 7400 | 0 | 0 | 10 |
+| 44 | monocoque | 7232 | 0 | 0 | 10 |
+| 45 | msvc-wine-git | 4240 | 0 | 0 | 10 |
+| 46 | mts-link-meetings | 4250 | 0 | 0 | 10 |
+| 47 | networkmanager-fortisslvpn | 655 | 0 | 0 | 10 |
+| 48 | obexftp | 1080 | 0 | 0 | 10 |
+| 49 | olive-git | 11182 | 0 | 0 | 10 |
+| 50 | omniget-git | 2909 | 0 | 0 | 10 |
