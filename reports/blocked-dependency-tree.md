@@ -1,60 +1,60 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260415h  
-**Timestamp:** 2026-04-15T08:59:26.832922Z  
-**Total BLOCKED:** 1323  
+**Pass:** deptree-resolver-260415i  
+**Timestamp:** 2026-04-15T10:14:12.193682Z  
+**Total BLOCKED:** 1280  
 
 ## Priority Queue (Top 50)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | android-armv7a-eabi-qt6-base | 13966 | 0 | 5 | 18 |
-| 2 | jdk23-openjdk | 13946 | 0 | 2 | 35 |
-| 3 | firefox-nightly-i18n-pt-br | 13929 | 0 | 0 | 1 |
-| 4 | php74-apcu | 13957 | 0 | 0 | 1 |
-| 5 | php74-memcache | 13955 | 0 | 0 | 1 |
-| 6 | php74-igbinary | 13956 | 0 | 0 | 2 |
-| 7 | artemis-lang | 13959 | 0 | 0 | 3 |
-| 8 | php74-memcached | 13954 | 0 | 0 | 3 |
-| 9 | muzak | 13456 | 0 | 0 | 4 |
-| 10 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
-| 11 | reboot-arch-btw | 13288 | 0 | 0 | 4 |
-| 12 | sickrage-git | 25171 | 0 | 0 | 4 |
-| 13 | calculix-ccx | 2013 | 0 | 0 | 5 |
-| 14 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
-| 15 | dms-shell-git | 452 | 0 | 0 | 5 |
-| 16 | dnspyex-wine-bin | 2543 | 0 | 0 | 5 |
-| 17 | furmark | 1064 | 0 | 0 | 5 |
-| 18 | gnome-shell-extension-pano-git | 9965 | 0 | 0 | 5 |
-| 19 | goatdkernel | 4064 | 0 | 0 | 5 |
-| 20 | happy-cli | 4412 | 0 | 0 | 5 |
-| 21 | immich-cli | 7215 | 0 | 0 | 5 |
-| 22 | jellyseerr | 8849 | 0 | 0 | 5 |
-| 23 | laborejo | 9282 | 0 | 0 | 5 |
-| 24 | lacuna-webpki | 8912 | 0 | 0 | 5 |
-| 25 | language-toolkit | 11589 | 0 | 0 | 5 |
-| 26 | lib32-libdovi | 12383 | 0 | 0 | 5 |
-| 27 | lib32-libstdc++5 | 1759 | 0 | 0 | 5 |
-| 28 | lib32-opencl-nvidia-beta | 12209 | 0 | 0 | 5 |
-| 29 | lib32-python311-bin | 11654 | 0 | 0 | 5 |
-| 30 | libloot | 7752 | 0 | 0 | 5 |
-| 31 | llama.cpp-clblast | 13467 | 0 | 0 | 5 |
-| 32 | loginized | 7280 | 0 | 0 | 5 |
-| 33 | masterpdfeditor-free | 1006 | 0 | 0 | 5 |
-| 34 | min | 10415 | 0 | 0 | 5 |
-| 35 | mingw-w64-mariadb-connector-c | 25120 | 0 | 0 | 5 |
-| 36 | mipsel-linux-gnu-gcc | 10303 | 0 | 0 | 5 |
-| 37 | nbb | 6999 | 0 | 0 | 5 |
-| 38 | neural-amp-modeler-lv2 | 11070 | 0 | 0 | 5 |
-| 39 | nvidia-340xx-dkms | 7710 | 0 | 0 | 5 |
-| 40 | nvidia-beta | 21328 | 0 | 0 | 5 |
-| 41 | obsidianospm-git | 14005 | 0 | 0 | 5 |
-| 42 | omnissa-horizon-integrated-printing | 7369 | 0 | 0 | 5 |
-| 43 | onedrivegui-git | 11266 | 0 | 0 | 5 |
-| 44 | opencl-amd-dev | 968 | 0 | 0 | 5 |
-| 45 | openrgb-plugin-effects-git | 787 | 0 | 0 | 5 |
-| 46 | osu | 1023 | 0 | 0 | 5 |
-| 47 | osuboot-git | 7249 | 0 | 0 | 5 |
-| 48 | oxidizr-arch | 9853 | 0 | 0 | 5 |
-| 49 | pacboost | 4654 | 0 | 0 | 5 |
-| 50 | parui-git | 19178 | 0 | 0 | 5 |
+| 1 | android-armv7a-eabi-qt6-declarative | 13965 | 0 | 3 | 7 |
+| 2 | lib32-gstreamer | 33315 | 0 | 3 | 60 |
+| 3 | dotnet-targeting-pack-8.0-bin | 15163 | 0 | 2 | 1 |
+| 4 | dotnet-runtime-8.0-bin | 15165 | 0 | 2 | 7 |
+| 5 | vim-classic-runtime-git | 33430 | 0 | 2 | 16 |
+| 6 | android-armv7a-eabi-qt6-serialport | 13962 | 0 | 1 | 4 |
+| 7 | android-armv7a-eabi-qt6-svg | 13961 | 0 | 1 | 4 |
+| 8 | kcgroups-dmemcg | 38278 | 0 | 1 | 8 |
+| 9 | linux-cachyos-cjktty | 19312 | 0 | 1 | 19 |
+| 10 | linux-cachyos | 1070 | 0 | 1 | 25 |
+| 11 | beaver-notes-bin | 30688 | 0 | 0 | 0 |
+| 12 | crunchycleaner-bin | 36118 | 0 | 0 | 0 |
+| 13 | gram-bin | 38505 | 0 | 0 | 0 |
+| 14 | illogical-impulse-bibata-modern-classic-bin | 38495 | 0 | 0 | 0 |
+| 15 | jai | 15430 | 0 | 0 | 0 |
+| 16 | nitro-bin | 19085 | 0 | 0 | 0 |
+| 17 | smap-bin | 38509 | 0 | 0 | 0 |
+| 18 | virtualhere-server-bin | 33443 | 0 | 0 | 0 |
+| 19 | lean-ctx-bin | 17336 | 0 | 0 | 1 |
+| 20 | znote-bin | 21073 | 0 | 0 | 1 |
+| 21 | ddrescueview-bin | 24956 | 0 | 0 | 2 |
+| 22 | mnt-reform-lpc-dkms | 19341 | 0 | 0 | 2 |
+| 23 | systemd-cron | 4138 | 0 | 0 | 2 |
+| 24 | wakatime | 38497 | 0 | 0 | 2 |
+| 25 | arctic-comfyui-helper-bin | 15393 | 0 | 0 | 3 |
+| 26 | electron25-bin | 17244 | 0 | 0 | 3 |
+| 27 | implay-bin | 18267 | 0 | 0 | 3 |
+| 28 | piebald-bin | 19334 | 0 | 0 | 3 |
+| 29 | insomnia-bin | 9 | 0 | 0 | 4 |
+| 30 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
+| 31 | proton-meet-bin | 19331 | 0 | 0 | 4 |
+| 32 | reboot-arch-btw | 13288 | 0 | 0 | 4 |
+| 33 | spflashtool-bin | 3857 | 0 | 0 | 4 |
+| 34 | anytype-electron-bin | 28553 | 0 | 0 | 5 |
+| 35 | brave-origin-nightly-bin | 29311 | 0 | 0 | 5 |
+| 36 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
+| 37 | lib32-libdovi | 2583 | 0 | 0 | 5 |
+| 38 | lib32-opencl-nvidia-beta | 2409 | 0 | 0 | 5 |
+| 39 | lib32-python311-bin | 1580 | 0 | 0 | 5 |
+| 40 | nvidia-beta | 562 | 0 | 0 | 5 |
+| 41 | oxidizr-arch | 9853 | 0 | 0 | 5 |
+| 42 | pacboost | 4654 | 0 | 0 | 5 |
+| 43 | parui-git | 19178 | 0 | 0 | 5 |
+| 44 | poptracker | 17315 | 0 | 0 | 5 |
+| 45 | portage-manifest | 13162 | 0 | 0 | 5 |
+| 46 | scratch3 | 2134 | 0 | 0 | 5 |
+| 47 | slack-electron | 2319 | 0 | 0 | 5 |
+| 48 | todesk-bin | 25670 | 0 | 0 | 5 |
+| 49 | unreal-tournament-bin | 1191 | 0 | 0 | 5 |
+| 50 | wgtunnel-bin | 38500 | 0 | 0 | 5 |

@@ -228,6 +228,7 @@
   #:use-module (gnu packages python-science)
   #:use-module (gnu packages selinux)
   #:use-module (nongnu packages mozilla)
+  #:use-module (nongnu packages video)
   #:use-module (gaurix packages deptree-resolver-260407)
   #:use-module (gaurix packages deptree-resolver-260407b)
   #:use-module (gaurix packages queue-20260407-deptree)
@@ -368,7 +369,9 @@
   #:use-module (gaurix packages deptree-resolver-260415f)
   #:use-module (gaurix packages recipe-resolver-260415g)
   #:use-module (gaurix packages recipe-resolver-260415h)
+  #:use-module (gaurix packages recipe-resolver-260415i)
   #:use-module (gaurix packages deptree-resolver-260415h)
+  #:use-module (gaurix packages deptree-resolver-260415i)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2652,6 +2655,11 @@
             linux-firmware-mellanox
             linux-firmware-nfp
             linux-firmware-qcom
+            ;; recipe-resolver-260415i compat aliases
+            grayjay-bin
+            webkit2gtk
+            webkit2gtk-docs
+            qt5-sensors
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -7147,3 +7155,78 @@
 (define-public qbittorrent-enhanced-nox (package (inherit qbittorrent-enhanced-nox-bin) (name "qbittorrent-enhanced-nox")))
 (define-public yacreader-poppler (package (inherit yacreader) (name "yacreader-poppler")))
 (define-public glaxnimate-git (package (inherit glaxnimate) (name "glaxnimate-git")))
+
+;; --- recipe-resolver-260415i compat aliases ---
+
+(define-public grayjay-bin
+  (package
+    (inherit grayjay)
+    (name "grayjay-bin")))
+
+
+
+
+
+
+(define-public webkit2gtk
+  (package
+    (inherit webkitgtk)
+    (name "webkit2gtk")))
+
+(define-public webkit2gtk-docs
+  (package
+    (inherit webkitgtk)
+    (name "webkit2gtk-docs")))
+
+(define-public qt5-sensors
+  (package
+    (inherit qtsensors)
+    (name "qt5-sensors")))
+
+;; --- deptree-resolver-260415i compat aliases ---
+(define-public dotnet-targeting-pack-8-0 (package (inherit dotnet-targeting-pack-8-0-bin) (name "dotnet-targeting-pack-8-0")))
+(define-public dotnet-runtime-8-0 (package (inherit dotnet-runtime-8-0-bin) (name "dotnet-runtime-8-0")))
+(define-public vim-classic-runtime (package (inherit vim-classic-runtime-git) (name "vim-classic-runtime")))
+(define-public beaver-notes (package (inherit beaver-notes-bin) (name "beaver-notes")))
+(define-public crunchycleaner (package (inherit crunchycleaner-bin) (name "crunchycleaner")))
+(define-public gram (package (inherit gram-bin) (name "gram")))
+(define-public illogical-impulse-bibata-modern-classic (package (inherit illogical-impulse-bibata-modern-classic-bin) (name "illogical-impulse-bibata-modern-classic")))
+(define-public nitro (package (inherit nitro-bin) (name "nitro")))
+(define-public smap (package (inherit smap-bin) (name "smap")))
+(define-public virtualhere-server (package (inherit virtualhere-server-bin) (name "virtualhere-server")))
+(define-public lean-ctx (package (inherit lean-ctx-bin) (name "lean-ctx")))
+(define-public znote (package (inherit znote-bin) (name "znote")))
+(define-public ddrescueview (package (inherit ddrescueview-bin) (name "ddrescueview")))
+(define-public arctic-comfyui-helper (package (inherit arctic-comfyui-helper-bin) (name "arctic-comfyui-helper")))
+(define-public electron25 (package (inherit electron25-bin) (name "electron25")))
+(define-public implay (package (inherit implay-bin) (name "implay")))
+(define-public piebald (package (inherit piebald-bin) (name "piebald")))
+(define-public insomnia (package (inherit insomnia-bin) (name "insomnia")))
+(define-public proton-meet (package (inherit proton-meet-bin) (name "proton-meet")))
+(define-public spflashtool (package (inherit spflashtool-bin) (name "spflashtool")))
+(define-public anytype-electron (package (inherit anytype-electron-bin) (name "anytype-electron")))
+(define-public brave-origin-nightly (package (inherit brave-origin-nightly-bin) (name "brave-origin-nightly")))
+(define-public lib32-python311 (package (inherit lib32-python311-bin) (name "lib32-python311")))
+(define-public todesk (package (inherit todesk-bin) (name "todesk")))
+(define-public unreal-tournament (package (inherit unreal-tournament-bin) (name "unreal-tournament")))
+(define-public wgtunnel (package (inherit wgtunnel-bin) (name "wgtunnel")))
+(define-public aggregate6 (package (inherit aggregate6-git) (name "aggregate6")))
+(define-public astraeditor (package (inherit astraeditor-bin) (name "astraeditor")))
+(define-public astral (package (inherit astral-bin) (name "astral")))
+(define-public buildcache (package (inherit buildcache-git) (name "buildcache")))
+(define-public bzmenu (package (inherit bzmenu-git) (name "bzmenu")))
+(define-public chromium-snapshot (package (inherit chromium-snapshot-bin) (name "chromium-snapshot")))
+(define-public classicube (package (inherit classicube-bin) (name "classicube")))
+(define-public deadbeef-plugin-gui-qt6 (package (inherit deadbeef-plugin-gui-qt6-git) (name "deadbeef-plugin-gui-qt6")))
+(define-public dooble (package (inherit dooble-git) (name "dooble")))
+(define-public fahcontrol-gtk3 (package (inherit fahcontrol-gtk3-git) (name "fahcontrol-gtk3")))
+(define-public firefox-nightly (package (inherit firefox-nightly-bin) (name "firefox-nightly")))
+(define-public gopeed (package (inherit gopeed-bin) (name "gopeed")))
+(define-public grumpy-irc (package (inherit grumpy-irc-git) (name "grumpy-irc")))
+(define-public hyprsysteminfo (package (inherit hyprsysteminfo-git) (name "hyprsysteminfo")))
+(define-public ibus-lotus (package (inherit ibus-lotus-git) (name "ibus-lotus")))
+(define-public ironclad-rivet (package (inherit ironclad-rivet-bin) (name "ironclad-rivet")))
+(define-public java-openjfx (package (inherit java-openjfx-bin) (name "java-openjfx")))
+(define-public jbig2enc (package (inherit jbig2enc-git) (name "jbig2enc")))
+(define-public krunner-spotify-enhanced (package (inherit krunner-spotify-enhanced-git) (name "krunner-spotify-enhanced")))
+(define-public lektra (package (inherit lektra-git) (name "lektra")))
