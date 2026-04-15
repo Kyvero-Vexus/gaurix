@@ -356,6 +356,7 @@
   #:use-module (gaurix packages recipe-resolver-260414af)
   #:use-module (gaurix packages recipe-resolver-260414ag)
   #:use-module (gaurix packages recipe-resolver-260415a)
+  #:use-module (gaurix packages recipe-resolver-260415b)
   #:use-module (gaurix packages deptree-resolver-260414v)
   #:use-module (gaurix packages deptree-resolver-260415b)
 
@@ -6960,3 +6961,14 @@
 (define-public upscayl (package (inherit upscayl-appimage) (name "upscayl")))
 (define-public uptater (package (inherit uptater-bin) (name "uptater")))
 (define-public waveloggate (package (inherit waveloggate-git) (name "waveloggate")))
+
+;; --- recipe-resolver-260415b compat aliases ---
+(define-public rofi-gpaste (package (inherit rofi-gpaste-git) (name "rofi-gpaste")))
+(define-public pwmenu (package (inherit pwmenu-git) (name "pwmenu")))
+(define-public oxicord (package (inherit oxicord-git) (name "oxicord")))
+(define-public aeroshell-smod (package (inherit aeroshell-smod-git) (name "aeroshell-smod")))
+(define-public aeroshell-smodglow-x11 (package (inherit aeroshell-smodglow-x11-git) (name "aeroshell-smodglow-x11")))
+(define-public plasma6-wallpapers-smart-video-wallpaper-reborn (package (inherit plasma6-wallpapers-smart-video-wallpaper-reborn-git) (name "plasma6-wallpapers-smart-video-wallpaper-reborn")))
+(define-public linux-firmware-qlogic (package (inherit linux-firmware-qlogic-git) (name "linux-firmware-qlogic")))
+(define-public linux-firmware-bnx2x (package (inherit linux-firmware-bnx2x-git) (name "linux-firmware-bnx2x")))
+(define-public aeolus-next-vst3 (package (inherit aeolus-next-vst3-bin) (name "aeolus-next-vst3")))

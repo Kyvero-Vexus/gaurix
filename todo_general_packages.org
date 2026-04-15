@@ -1689,6 +1689,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: requires a fresh Guix package recipe and dependency packaging work; not safely completable within this queue-drain run window.
    - Difficulty: medium
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_SDK_REQUIRED: .NET 8 SDK needed for C# multi-system emulator; A1: dotnet-sdk not in Guix; A2: C++ cores tightly coupled to .NET host; A3: retroarch libretro cores cover most systems (recipe-resolver-260415b)
 
 
 ** DONE 217. xdg-terminal-exec
@@ -7191,6 +7192,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: `qt6-xcb-private-headers-hifps` depends on downstream Qt private-header patchset; Guix Qt6 variant layering not completed safely.
    - Difficulty: medium
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FULL_QT6_REBUILD: single animation FPS patch requires rebuilding entire qtbase (50+ reverse deps); A1: XCB QPA plugin compiled into qtbase; A2: cannot overlay independently; A3: QT_QPA_UPDATE_IDLE_TIME env var as partial workaround (recipe-resolver-260415b)
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEPENDS_ON_INFEASIBLE: depends on qt6-base-hifps which requires full Qt6 rebuild (recipe-resolver-260414ab)
    - TODO Status: BLOCKED
@@ -8271,6 +8273,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED after survey+source check: AUR HEAD verified but package absent from current Guix set; requires new Gaurix recipe (source pin/hash/build phases) not completed in this pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PYQT6_MISSING: needs python-pyqt6 + python-pyqtgraph (not in Guix); A1: PyQt6 not available; A2: port to PyQt5 infeasible; A3: htop/btop alternatives available (recipe-resolver-260415b)
 
 
 ** BLOCKED 1080. obexftp
@@ -8278,6 +8281,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260414aa; needs openobex (not in Guix); A1: openobex not in Guix; A2: openobex old/unmaintained; A3: no alternative OBEX impl
    - Difficulty: medium
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — OPENOBEX_MISSING: needs openobex (unmaintained since 2015, not in Guix); A1: openobex bitrotted build; A2: package openobex would need significant patches; A3: BlueZ obexd provides equivalent functionality (recipe-resolver-260415b)
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260414ab.scm (obexftp v0.24.2 + openobex v1.7.2, OBEX file transfer, cmake-build-system, GPL-2.0+)
    - TODO Status: DONE
@@ -11982,6 +11986,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    BLOCKED: MISSING_SOURCE — not in AUR metadata (deptree-resolver-260414s)
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOUD_SERVICE_WRAPPER: auto-updater for OpenAI Codex CLI conflicts with Guix declarative model; A1: Node.js npm deps immature; A2: requires API key at runtime; A3: auto-updater concept incompatible with Guix (recipe-resolver-260415b)
 
    - Status: BLOCKED: MISSING_SOURCE: not found in AUR metadata cache, likely deleted/renamed [deptree-resolver-260414u]
    - Status: BLOCKED: MISSING_SOURCE: not found in AUR metadata cache, likely deleted/renamed [deptree-resolver-260414v]
@@ -15276,6 +15281,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260414aa; needs SPOOLES (not in Guix); A1: spooles not in Guix; A2: niche Fortran lib; A3: alt solvers require upstream patches
    - Difficulty: medium
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SPOOLES_MISSING: needs SPOOLES sparse matrix library (niche Fortran, not in Guix); A1: SPOOLES has non-standard build; A2: packaging effort disproportionate; A3: solver cannot be substituted without upstream patches (recipe-resolver-260415b)
 
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260414ab.scm (calculix-ccx v2.23, CalculiX FEA solver, gnu-build-system, GPL-2.0+)
@@ -25322,6 +25328,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; depends on gpaste clipboard manager which is not in Guix. See blocked-notes.
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413ak.scm (rofi-gpaste v0-git.5a2e8c3, rofi frontend for GPaste, GPL-2.0+) (recipe-resolver-260413ak)
    - Difficulty: unknown
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (rofi-gpaste-git v0.3.1, Rofi clipboard frontend, copy-build-system, GPL-2.0+)
 
    - TODO Status: BLOCKED
 
@@ -25344,6 +25351,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; needs python-taskw and python-dogpile.cache (not in Guix). See blocked-notes.
    - Difficulty: unknown
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_PYTHON_DEPS: needs python-taskw, python-dogpile-cache, python-lockfile + 5 more Python packages not in Guix; A1: python-taskw dep chain too deep; A2: deps not individually useful; A3: taskwarrior CLI available directly (recipe-resolver-260415b)
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PYTHON_DEPS_CHAIN: needs python-taskw + python-dogpile.cache (neither in Guix); A1: pyproject from PyPI — 8+ missing deps; A2: package dep chain — deep chain through stevedore; A3: taskwarrior hooks — equivalent workflow already possible (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
@@ -25718,6 +25726,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — QUICKSHELL_NOT_IN_GUIX: desktop widget deck depends on Quickshell runtime (complex Qt6/QML shell framework); A1: package Quickshell — needs Qt6 WebEngine + custom QML; A2: port to different framework — infeasible (recipe-resolver-260413aa)
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — QUICKSHELL_NOT_IN_GUIX: QML config for Quickshell (Qt Quick shell toolkit) not in Guix; A1: package Quickshell first — complex Qt6/QML framework; A2: standalone — not possible, it's a config; A3: alternative shell — different tool (recipe-resolver-260413al)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (android-tv-remote v0.1.3, Python GTK4 Android TV remote, pyproject-build-system, GPL-3.0+)
 ** BLOCKED 3261. android-tv-remote
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30f; needs python-adb-shell and scrcpy (not in Guix). See blocked-notes.
@@ -26798,6 +26807,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (flowtime v6.2, GNOME Flowtime productivity timer, meson-build-system, GPL-3.0+)
 
 ** BLOCKED 3403. flowtime
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -26949,12 +26959,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (aeroshell-smod-git v0.1.0, KDE AeroShell decoration, cmake-build-system, AGPL-3.0+)
 
 ** BLOCKED 3423. aeroshell-smod-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30e; requires KDE Plasma 6 not in Guix. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (aeroshell-smodglow-x11-git v0.1.0, KDE decoration glow, cmake-build-system, AGPL-3.0+)
 
 
 ** BLOCKED 3424. aeroshell-smodglow-x11-git
@@ -27296,6 +27308,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: mapped to Guix equivalent `protoc-gen-go-grpc` via general-compat alias; validated target availability with `guix package -A` and queue log `reports/queue-20260321p100-validate-targets.log`.
    - Difficulty: unknown
    - TODO Status: DONE
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (flameget v2.0.0, Python GTK4 download manager, copy-build-system, MIT)
 
 
 ** BLOCKED 3469. flameget
@@ -27458,6 +27471,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413h; MISSING_GUIX_DEPS: qt5-connectivity, nemo-qml-plugin-dbus, qtmpris, kirigami2 not in Guix. See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SAILFISH_OS_DEPS: Sailfish OS companion app needs kdb, kcontacts5, qt5-connectivity (Sailfish-specific); A1: Sailfish UI framework not portable; A2: stripping Sailfish deps removes UI; A3: no equivalent desktop Linux client exists (recipe-resolver-260415b)
 
 
 ** DONE 3487. mateengine
@@ -27475,6 +27489,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407g.scm (the-platinum-searcher-bin v2.2.0, pre-built binary from GitHub; code search tool)
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (pwmenu-git v0.6.1, Rust PipeWire audio menu, cargo-build-system, GPL-3.0+)
 
 ** BLOCKED 3489. pwmenu-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -27648,6 +27663,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: fetched AUR PKGBUILD (commit 396bb438aafb); source=("README-${_pkgvername}.md::${_urlraw}/README.md"); next: draft Guix recipe with fixed source hash and inputs.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (neovim-later v0.12.0, Neovim dev branch build, cmake-build-system, custom)
 
    - Status: DONE: Recipe in recipe-resolver-260407h.scm (fitui-bin, pre-built binary from GitHub releases)
    - TODO Status: DONE
@@ -27815,6 +27831,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh aeolus-next-vst3-bin` => `cp: cannot stat '/tmp/tmp.pi2nSQnqyH/aeolus-next-vst3-bin/PKGBUILD': No such file or directory`; next: verify package rename/path and retry fetch.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (aeolus-next-vst3-bin v0.4.2, pipe organ VST3 binary, copy-build-system, GPL-3.0+)
 
 
 ** DONE 3529. nordic-darker-standard-buttons-theme-git
@@ -27844,6 +27861,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407g.scm (openlinkhub-bin v0.8.0, pre-built binary from GitHub; Corsair iCUE LINK controller)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (plasma6-wallpapers-smart-video-wallpaper-reborn-git v5.0.0, KDE video wallpaper, cmake-build-system, GPL-3.0+)
 
 
 ** BLOCKED 3532. plasma6-wallpapers-smart-video-wallpaper-reborn-git
@@ -28056,12 +28074,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (linux-firmware-qlogic-git v20250311, QLogic firmware files, copy-build-system, GPL-2.0+)
 ** BLOCKED 3558. linux-firmware-qlogic-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh linux-firmware-qlogic-git` exit 1; snippet: `Cloning into '/tmp/tmp.5ojtVoHWJh/linux-firmware-qlogic-git'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject t...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (linux-firmware-bnx2x-git v20250311, Broadcom bnx2x firmware, copy-build-system, GPL-2.0+)
 
 ** BLOCKED 3559. linux-firmware-bnx2x-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28100,6 +28120,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh ultimate-doom-builder-git` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: DONE
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MONO_REQUIRED: C# level editor needs Mono runtime + MSBuild (not in Guix); A1: mono-msbuild/nuget unavailable; A2: no Linux binary releases; A3: SLADE/Eureka editors as alternatives (recipe-resolver-260415b)
 
 
 ** DONE 3564. jitsi-meet-desktop-bin
@@ -28164,6 +28185,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260407j.scm (trezor-suite-bin v26.3.3, Trezor Suite hardware wallet AppImage, T-RSL)
    - Difficulty: unknown
    - TODO Status: DONE
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (ripdrag v0.4.11, Rust GTK4 drag-and-drop, cargo-build-system, GPL-3.0)
 
 
 ** BLOCKED 3572. ripdrag
@@ -28544,6 +28566,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: `scripts/fetch-aur-pkgbuild.sh paru-static` succeeded; PKGBUILD fetched. Next: draft Guix recipe/module and run `guix build -L guix -n <pkg>` + `guix lint -L guix <pkg>`.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: AUR helper needs libalpm/pacman (Arch-specific, not in Guix); A1: libalpm deeply tied to Arch; A2: porting has no practical use on Guix; A3: AUR helpers are inherently Arch-only tools (recipe-resolver-260415b)
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; ARCH_SPECIFIC: AUR helper, depends on pacman/libalpm ecosystem, no Guix utility
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: AUR helper depends on pacman/libalpm; A1: port to Guix — no libalpm ecosystem; A2: generic wrapper — no pacman; A3: Guix substitute — different paradigm (recipe-resolver-260413al)
@@ -28725,6 +28748,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
    - Status: BLOCKED: COMPLEX_DEPS re-evaluated in recipe-resolver-260408n; massive AUR-only deps (angle, simdutf-git, cpptrace), no stable release. See blocked-notes.
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_DEP_CHAIN: independent browser needs 30+ new deps (skia, angle, libjxl, simdutf, fast_float, woff2 + Rust crates); A1: no binary releases; A2: dep packaging would require multi-pass campaign; A3: icecat/ungoogled-chromium/nyxt available (recipe-resolver-260415b)
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | detail: re-evaluated in recipe-resolver-260413c; COMPLEX_DEPS: AUR-only deps: angle, simdutf-git, cpptrace; Web engine with heavy dep chain
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: web engine with AUR-only deps (angle, simdutf-git, cpptrace); A1: package dep chain — massive effort; A2: binary — no releases; A3: Chromium fork — divergent codebase (recipe-resolver-260413al)
@@ -28812,6 +28836,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413c.scm (phoenix-arch, Firefox privacy config data, GPL-3.0)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (lyrionmusicserver v9.1.0, Lyrion Music Server for Squeezebox, copy-build-system, GPL-2.0)
 
 ** BLOCKED 3644. lazarus-gtk2 [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_GUIX_DEPS: requires Free Pascal Compiler]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -28840,6 +28865,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: FETCH_FAILED: `scripts/fetch-aur-pkgbuild.sh qwhitesurgtkdecorations-qt5` exit 1; snippet: `Cloning into '/tmp/tmp.plwdwIRdwz/qwhitesurgtkdecorations-qt5'... warning: You appear to have cloned an empty repository. hint: Using 'master' as the name for the initial branch. This default branch name hint: is subject...`; next: verify AUR package name/URL and re-run fetch before recipe drafting.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (qwhitesurgtkdecorations-qt6 v0.2.0, Qt6 WhiteSur decoration, cmake-build-system, LGPL-2.1)
 
 
 ** BLOCKED 3647. qwhitesurgtkdecorations-qt6
@@ -28927,6 +28953,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413h; COMPLEX_DEPS: 20+ deps (qt5-script, freeglut, superlu, libmypaint, opencv). See blocked-notes.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — QT5_SCRIPT_REMOVED: 2D animation tool needs qt5-script (removed from Qt 5.15+, not in Guix); A1: qt5-script critical for expression engine; A2: upstream Qt6 port incomplete; A3: no drop-in replacement for QScript (recipe-resolver-260415b)
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_BUILD: 2D animation with git-lfs + 15+ deps; A1: git-lfs required for asset checkout; A2: large dep tree (Qt5, opencv, superlu); A3: submodule deps (libtiff fork, lzo) (recipe-resolver-260414u)
 
@@ -28963,6 +28990,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NO_RELEASES: no tagged releases or binaries; Rust diagnostics tool (recipe-resolver-260414p)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (bar-daemon v0.2.0, Rust async status bar, cargo-build-system, MIT)
 
 
    - Status: DONE: recipe in deptree-resolver-260415b.scm (rustwhy-git, RECIPE: Guix recipe created (source-rust))
@@ -29696,6 +29724,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260408p.scm (cmake-build-system, C JTAG programmer for FPGA boards)
    - Difficulty: unknown
    - TODO Status: DONE
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (oxicord-git v0.1.0, Rust Discord TUI, cargo-build-system, GPL-3.0)
 
 
 ** BLOCKED 3747. oxicord-git
@@ -52981,6 +53010,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_GUIX_DEPS: requires python-opencv (not in Guix) (deptree-resolver-260407e, 2026-04-07)
    - TODO Status: BLOCKED
    - Status: BLOCKED: Re-evaluated in deptree-resolver-260408c pass; MISSING_DEPS -- depends on python-pyclipper (blocked)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415b.scm (python-foobeef v0.4.1, Python Beefweb controller, pyproject-build-system, MIT)
 
 ** BLOCKED 6826. python-foobeef
    - Source List: data/aur-cache/packages-meta-ext-v1.json

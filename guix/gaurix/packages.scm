@@ -3006,6 +3006,26 @@
             wallchemy-bin
             apriltag
 
+            ;; recipe-resolver-260415b
+            aeolus-next-vst3-bin
+            linux-firmware-qlogic-git
+            linux-firmware-bnx2x-git
+            rofi-gpaste-git
+            android-tv-remote
+            python-foobeef
+            ripdrag
+            pwmenu-git
+            oxicord-git
+            bar-daemon
+            qwhitesurgtkdecorations-qt6
+            aeroshell-smod-git
+            aeroshell-smodglow-x11-git
+            plasma6-wallpapers-smart-video-wallpaper-reborn-git
+            flowtime
+            flameget
+            neovim-later
+            lyrionmusicserver
+
             ;; deptree-resolver-260415b
             nvidia-390xx-dkms
             nvidia-470xx-dkms
