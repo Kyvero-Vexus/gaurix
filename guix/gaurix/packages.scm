@@ -2652,3 +2652,16 @@
                xsos
                yamtrack
                ynote-desktop-bin))
+
+;; recipe-resolver-260414ab
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260414ab)
+  #:re-export (openobex
+               obexftp
+               spooles
+               calculix-ccx
+               qbittorrent-enhanced-ua-nox
+               qbittorrent-enhanced-ua
+               tailscale-bin
+               mdcat-bin
+               fooyin-git))

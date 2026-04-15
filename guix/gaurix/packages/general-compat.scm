@@ -43,6 +43,7 @@
   #:use-module (gaurix packages recipe-resolver-260414v)
   #:use-module (gaurix packages recipe-resolver-260414z)
   #:use-module (gaurix packages recipe-resolver-260414aa)
+  #:use-module (gaurix packages recipe-resolver-260414ab)
   #:use-module (gaurix packages deptree-resolver-260413n)
   #:use-module (gaurix packages deptree-resolver-260413p)
   #:use-module (gaurix packages deptree-resolver-260413q)
@@ -2570,6 +2571,16 @@
             cvs-feature-bin
             psdoom-ng
             cvs-feature
+            ;; recipe-resolver-260414ab recipes
+            openobex
+            obexftp
+            spooles
+            calculix-ccx
+            qbittorrent-enhanced-ua-nox
+            qbittorrent-enhanced-ua
+            tailscale-bin
+            mdcat-bin
+            fooyin-git
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
