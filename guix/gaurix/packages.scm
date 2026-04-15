@@ -2791,6 +2791,7 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260414ad)
   #:use-module (gaurix packages deptree-resolver-260414v)
+  #:use-module (gaurix packages deptree-resolver-260415b)
   #:re-export (fzffm
                preview-fm
                tvb-recorder
@@ -3004,4 +3005,82 @@
             wormhole-rs
             wallchemy-bin
             apriltag
+
+            ;; deptree-resolver-260415b
+            nvidia-390xx-dkms
+            nvidia-470xx-dkms
+            nvidia-beta-dkms
+            lib32-libfdk-aac
+            lib32-zvbi
+            mozc-ut
+            muon-decoder
+            muzak
+            nvidia-535xx-dkms
+            nvidia-open-beta
+            nvidia-open-beta-dkms
+            opentubex-git
+            oscgoesbrrr
+            pacmate
+            pacviz
+            panoply
+            patchy
+            pharo-launcher
+            pmt-git
+            prek
+            procreate-thumbnailer-git
+            psdoom-ng
+            pug
+            python-pyqt5-3d
+            python-pyqt5-datavisualization
+            python-pyqt5-networkauth
+            python-pyqt5-purchasing
+            python2-libxml2
+            python2-wxpython3
+            qb64
+            qqmusic-bin
+            quickshell-greetd
+            quiterss
+            r8168-dkms
+            radarr-bin
+            rankmirrors-systemd
+            rdrview-git
+            reboot-arch-btw
+            recoil-thumbnailer
+            remmina-plugin-url
+            requestly-bin
+            rgx-cli
+            river-bedload-git
+            rotki-bin
+            rtl8821ce-dkms-git
+            rustwhy-git
+            samrewritten-git
+            scala
+            seerr
+            shock-alarm
+            sickrage-git
+            sierra-breeze-enhanced
+            socos
+            sound-themer
+            speech-dispatcher-mimo
+            spflashtool5-bin
+            steamvr-linux-fixes-layer-git
+            stl-thumb-kde
+            subtitles-contact-sheet-qt-gui
+            supergfxctl
+            syncovery-bin
+            systemd-cron-next-git
+            tabaur
+            tixati
+            tlp-rdw-git
+            tribler-bin
+            ums
+            upscayl-appimage
+            uptater-bin
+            vapoursynth-plugin-svpflow
+            viber
+            vimcat
+            vintagestory-unstable
+            vrc-get
+            vsce
+            waveloggate-git
 ))

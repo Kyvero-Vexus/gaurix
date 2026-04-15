@@ -357,6 +357,7 @@
   #:use-module (gaurix packages recipe-resolver-260414ag)
   #:use-module (gaurix packages recipe-resolver-260415a)
   #:use-module (gaurix packages deptree-resolver-260414v)
+  #:use-module (gaurix packages deptree-resolver-260415b)
 
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -6935,3 +6936,27 @@
 (define-public xmousepasteblock (package (inherit xmousepasteblock-git) (name "xmousepasteblock")))
 (define-public wallchemy (package (inherit wallchemy-bin) (name "wallchemy")))
 (define-public jdk25-graalvm (package (inherit jdk25-graalvm-bin) (name "jdk25-graalvm")))
+
+;; --- deptree-resolver-260415b compat aliases ---
+(define-public opentubex (package (inherit opentubex-git) (name "opentubex")))
+(define-public pmt (package (inherit pmt-git) (name "pmt")))
+(define-public procreate-thumbnailer (package (inherit procreate-thumbnailer-git) (name "procreate-thumbnailer")))
+(define-public qqmusic (package (inherit qqmusic-bin) (name "qqmusic")))
+(define-public radarr (package (inherit radarr-bin) (name "radarr")))
+(define-public rdrview (package (inherit rdrview-git) (name "rdrview")))
+(define-public requestly (package (inherit requestly-bin) (name "requestly")))
+(define-public river-bedload (package (inherit river-bedload-git) (name "river-bedload")))
+(define-public rotki (package (inherit rotki-bin) (name "rotki")))
+(define-public rtl8821ce-dkms (package (inherit rtl8821ce-dkms-git) (name "rtl8821ce-dkms")))
+(define-public rustwhy (package (inherit rustwhy-git) (name "rustwhy")))
+(define-public samrewritten (package (inherit samrewritten-git) (name "samrewritten")))
+(define-public sickrage (package (inherit sickrage-git) (name "sickrage")))
+(define-public spflashtool5 (package (inherit spflashtool5-bin) (name "spflashtool5")))
+(define-public steamvr-linux-fixes-layer (package (inherit steamvr-linux-fixes-layer-git) (name "steamvr-linux-fixes-layer")))
+(define-public syncovery (package (inherit syncovery-bin) (name "syncovery")))
+(define-public systemd-cron-next (package (inherit systemd-cron-next-git) (name "systemd-cron-next")))
+(define-public tlp-rdw (package (inherit tlp-rdw-git) (name "tlp-rdw")))
+(define-public tribler (package (inherit tribler-bin) (name "tribler")))
+(define-public upscayl (package (inherit upscayl-appimage) (name "upscayl")))
+(define-public uptater (package (inherit uptater-bin) (name "uptater")))
+(define-public waveloggate (package (inherit waveloggate-git) (name "waveloggate")))

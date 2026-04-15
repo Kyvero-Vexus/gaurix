@@ -1,8 +1,8 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260414v  
-**Timestamp:** 2026-04-15T03:31:10.653673Z  
-**Total BLOCKED:** 1550  
+**Pass:** deptree-resolver-260415b  
+**Timestamp:** 2026-04-15T04:48:39.810740Z  
+**Total BLOCKED:** 1472  
 
 ## Priority Queue (Top 50)
 
@@ -31,30 +31,30 @@
 | 21 | vivaldi-ffmpeg-codecs | 24 | 0 | 0 | 0 |
 | 22 | whatsapp-for-linux | 46 | 0 | 0 | 0 |
 | 23 | zettlr | 38 | 0 | 0 | 0 |
-| 24 | makepkg-optimize-mold | 4150 | 0 | 0 | 1 |
-| 25 | nvidia-sync-terminal-fix | 13584 | 0 | 0 | 1 |
-| 26 | r8125-dkms | 363 | 0 | 0 | 1 |
-| 27 | bcachefs-kernel-dkms-git | 1506 | 0 | 0 | 2 |
-| 28 | zenpower3-dkms-git | 1671 | 0 | 0 | 2 |
-| 29 | zenpower5-dkms-git | 1605 | 0 | 0 | 2 |
-| 30 | kernelsu-dkms | 3358 | 0 | 0 | 3 |
-| 31 | nvidia-390xx-dkms | 12631 | 0 | 0 | 3 |
-| 32 | nvidia-470xx-dkms | 11846 | 0 | 0 | 3 |
-| 33 | nvidia-beta-dkms | 21643 | 0 | 0 | 3 |
-| 34 | r8127-dkms | 2627 | 0 | 0 | 3 |
-| 35 | freesmlauncher-bin | 2110 | 0 | 0 | 4 |
-| 36 | hyperheadset-git | 1469 | 0 | 0 | 4 |
-| 37 | hyprsnow | 1127 | 0 | 0 | 4 |
-| 38 | i8086emu-git | 8966 | 0 | 0 | 4 |
-| 39 | insomnia | 10469 | 0 | 0 | 4 |
-| 40 | isfree | 1118 | 0 | 0 | 4 |
-| 41 | jack_mixer_cc | 970 | 0 | 0 | 4 |
-| 42 | jivexdv-bin | 4568 | 0 | 0 | 4 |
-| 43 | jxplorer | 9005 | 0 | 0 | 4 |
-| 44 | k3sup | 8836 | 0 | 0 | 4 |
-| 45 | kde-thumbnailer-apk | 13370 | 0 | 0 | 4 |
-| 46 | kdotool-git | 15658 | 0 | 0 | 4 |
-| 47 | kraftkit-git | 7635 | 0 | 0 | 4 |
-| 48 | ktxutils-git | 2955 | 0 | 0 | 4 |
-| 49 | kwin-decoration-sierra-breeze-enhanced-git | 11198 | 0 | 0 | 4 |
-| 50 | lcarsde-app-menu | 9304 | 0 | 0 | 4 |
+| 24 | nvidia-390xx-dkms | 2401 | 0 | 0 | 3 |
+| 25 | nvidia-470xx-dkms | 2328 | 0 | 0 | 3 |
+| 26 | nvidia-beta-dkms | 4681 | 0 | 0 | 3 |
+| 27 | lib32-libfdk-aac | 2442 | 0 | 0 | 4 |
+| 28 | lib32-zvbi | 2487 | 0 | 0 | 4 |
+| 29 | mozc-ut | 1510 | 0 | 0 | 4 |
+| 30 | muon_decoder | 2052 | 0 | 0 | 4 |
+| 31 | muzak | 13456 | 0 | 0 | 4 |
+| 32 | nvidia-535xx-dkms | 2790 | 0 | 0 | 4 |
+| 33 | nvidia-open-beta | 2344 | 0 | 0 | 4 |
+| 34 | nvidia-open-beta-dkms | 2345 | 0 | 0 | 4 |
+| 35 | opentubex-git | 2313 | 0 | 0 | 4 |
+| 36 | oscgoesbrrr | 1530 | 0 | 0 | 4 |
+| 37 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
+| 38 | pacmate | 7541 | 0 | 0 | 4 |
+| 39 | pacviz | 3502 | 0 | 0 | 4 |
+| 40 | panoply | 2743 | 0 | 0 | 4 |
+| 41 | patchy | 7402 | 0 | 0 | 4 |
+| 42 | pharo-launcher | 8899 | 0 | 0 | 4 |
+| 43 | pmt-git | 12059 | 0 | 0 | 4 |
+| 44 | prek | 482 | 0 | 0 | 4 |
+| 45 | procreate-thumbnailer-git | 8962 | 0 | 0 | 4 |
+| 46 | psdoom-ng | 10238 | 0 | 0 | 4 |
+| 47 | pug | 7691 | 0 | 0 | 4 |
+| 48 | python-pyqt5-3d | 13435 | 0 | 0 | 4 |
+| 49 | python-pyqt5-datavisualization | 13434 | 0 | 0 | 4 |
+| 50 | python-pyqt5-networkauth | 13433 | 0 | 0 | 4 |
