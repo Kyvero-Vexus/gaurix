@@ -367,6 +367,7 @@
   #:use-module (gaurix packages deptree-resolver-260415g)
   #:use-module (gaurix packages deptree-resolver-260415f)
   #:use-module (gaurix packages recipe-resolver-260415g)
+  #:use-module (gaurix packages recipe-resolver-260415h)
   #:use-module (gaurix packages deptree-resolver-260415h)
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -7140,3 +7141,9 @@
 (define-public wiznoteplus (package (inherit wiznoteplus-bin) (name "wiznoteplus")))
 (define-public xavs2 (package (inherit xavs2-git) (name "xavs2")))
 (define-public youtube-chat-rs (package (inherit youtube-chat-rs-git) (name "youtube-chat-rs")))
+
+;; --- recipe-resolver-260415h compat aliases ---
+(define-public proto (package (inherit proto-bin) (name "proto")))
+(define-public qbittorrent-enhanced-nox (package (inherit qbittorrent-enhanced-nox-bin) (name "qbittorrent-enhanced-nox")))
+(define-public yacreader-poppler (package (inherit yacreader) (name "yacreader-poppler")))
+(define-public glaxnimate-git (package (inherit glaxnimate) (name "glaxnimate-git")))

@@ -3498,4 +3498,10 @@
             xmousepasteblock
             youtube-chat-rs-git
             ytdownloader
+            ;; recipe-resolver-260415h
+            glaxnimate
+            proto-bin
+            qbittorrent-enhanced-bin
+            qbittorrent-enhanced-nox-bin
+            yacreader
 ))
