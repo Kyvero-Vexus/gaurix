@@ -99721,6 +99721,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — BPF_KERNEL_RUST: needs BPF toolchain + 50+ Rust crate deps + Linux 6.12+ with CONFIG_SCHED_CLASS_EXT; A1: BPF toolchain not in Guix; A2: 50+ crates unpackaged; A3: kernel config dependency (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — BPF_KERNEL_SCHED: sched_ext BPF schedulers need libbpf CO-RE + vmlinux.h + bpftool; A1: deep kernel integration; A2: BPF CO-RE headers; A3: kernel version coupling (recipe-resolver-260415k)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- BPF_KERNEL_SCHED: sched_ext needs BPF toolchain + 50+ Rust crates + kernel 6.12+; A1: BPF toolchain not in Guix; A2: 50+ crates; A3: kernel config coupling (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** DONE 13200. eve-ng-integration
    - Source List: AUR
    - Status: DONE: already packaged as eve-ng-integration (discovered deptree-resolver-260414m)
@@ -99845,6 +99847,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_TOOLCHAIN: 2+GB cross-compiler bundle for 12+ architectures; Guix handles cross-compilation natively; A1: redundant with Guix; A2: 2GB bundle impractical; A3: per-arch packages preferred (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_CROSS_SDK: 10+ cross-compilation toolchains (~1.5GB); A1: custom bootstrapping needed; A2: ARM/RISC-V/Xtensa targets; A3: use Guix cross-compilation instead (recipe-resolver-260415k)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- CROSS_COMPILATION_SDK: 12+ target toolchains; Guix cross-base handles targets natively; A1: massive SDK; A2: Guix alternative exists; A3: embedded-only audience (recipe-resolver-260415w)
    - TODO Status: BLOCKED
 ** DONE 13215. rocm-nightly-gfx1151-bin
    - Status: BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — AMD ROCm nightly; same as rocm-gfx110x-bin
@@ -100559,6 +100563,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_DEPS: 100+ C++/Qt native deps with custom Boost extensions; mobile-first; A1: too many unpackaged deps; A2: map data pipeline; A3: no binary releases (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_NATIVE_BUILD: C++/Qt mapping with 100+ deps; A1: custom Boost patches; A2: bundled third-party code; A3: mobile-first design (recipe-resolver-260415k)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- MASSIVE_NATIVE_BUILD: 100+ C++/Qt deps with custom Boost; mobile-first mapping; A1: 100+ unpackaged deps; A2: map data pipeline; A3: mobile-first (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** BLOCKED 13306. penpot-exporter [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: penpot exporter service; A1: depends on penpot backend; A2: Playwright; A3: not standalone]
    - TODO Status: BLOCKED
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: Penpot exporter service; A1: depends on penpot backend; A2: Node.js with Playwright; A3: cannot function standalone (recipe-resolver-260414x)
@@ -100578,6 +100584,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTISERVICE: Clojure/ClojureScript multi-service with leiningen + shadow-cljs + PostgreSQL + Redis; A1: Clojure build not in Guix; A2: 3-service architecture; A3: database infra required (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CLOJURE_MULTI_SERVICE: Clojure+ClojureScript+Java+npm; A1: Clojure build not in Guix; A2: 4+ ecosystems; A3: requires PostgreSQL+Redis+S3 (recipe-resolver-260415k)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- CLOJURE_MULTI_SERVICE: backend+frontend+exporter needs leiningen+shadow-cljs+PostgreSQL+Redis+S3; A1: Clojure not in Guix; A2: 4+ ecosystems; A3: multi-service (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** BLOCKED 13306. penpot-exporter [BLOCKED: NEEDS_RECIPE_DESIGN: Penpot SVG/PDF exporter service]
    - AUR votes: 3, popularity: 0.6721
    - Note: The open-source design tool for design and code collaboration
@@ -100591,6 +100599,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEPENDS_ON_PENPOT: depends on penpot backend (blocked); requires Playwright/Chromium; A1: penpot blocked; A2: Playwright not in Guix; A3: cannot function standalone (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEPENDS_ON_PENPOT: tightly coupled to penpot core; A1: cannot package independently; A2: requires penpot backend; A3: shared Clojure codebase (recipe-resolver-260415k)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- DEPENDS_ON_PENPOT: tightly coupled to penpot core; requires Playwright/Chromium; A1: penpot blocked; A2: Playwright not in Guix; A3: cannot function standalone (recipe-resolver-260415w)
    - TODO Status: BLOCKED
 ** BLOCKED 13307. penpot-frontend [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: design tool frontend; same as #460]
    - AUR votes: 3, popularity: 0.6721
@@ -100660,6 +100670,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_FORK: 10M+ LOC LibreOffice fork + WebSocket server + Qt6 wrapper; A1: hours-long build; A2: LibreOffice already complex; A3: Collabora layers impractical (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MASSIVE_LIBREOFFICE_FORK: 10M+ LOC; A1: hours-long build; A2: massive dep chain; A3: use Guix libreoffice instead (recipe-resolver-260415k)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- MASSIVE_LIBREOFFICE_FORK: 10M+ LOC; hours-long build; WebSocket server + Qt6 wrapper; A1: hours-long build; A2: massive dep chain; A3: use Guix libreoffice (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** BLOCKED 13316. rust-aarch64-musl-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: Guix handles cross-compilation natively; A1: unnecessary; A2: Arch rustup; A3: musl toolchain]
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Massive LibreOffice fork with Collabora Online integration (recipe-resolver-260414q)
@@ -100685,6 +100697,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 29, popularity: 1.2868
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: Guix handles cross-compilation natively via --target; Arch rustup wrapper unnecessary; A1: redundant; A2: rustup incompatible; A3: no use case (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — RUST_CROSS_TARGET: needs custom rustc bootstrap; A1: Guix handles cross natively; A2: use guix build --target; A3: no Arch-style Rust target packaging (recipe-resolver-260415k)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- GUIX_NATIVE_CROSS: Guix handles cross-compilation natively via --target; A1: unnecessary; A2: Arch rustup-specific; A3: musl toolchain out of scope (recipe-resolver-260415w)
    - TODO Status: BLOCKED
 ** BLOCKED 13318. lib32-rust-libs-git [BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: Guix uses separate i686 builds; A1: no lib32; A2: no multilib; A3: Arch pattern]
    - TODO Status: TODO
@@ -100712,6 +100726,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GUIX_NATIVE_CROSS: same as rust-aarch64-musl-git; Guix cross-compilation native; A1: redundant; A2: rustup incompatible; A3: no use case (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — RUST_CROSS_TARGET: same as #13316 for aarch64-gnu; A1: Guix cross natively; A2: use --target; A3: no Arch-style target packaging (recipe-resolver-260415k)
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- GUIX_NATIVE_CROSS: same as rust-aarch64-musl-git; Guix handles cross-compilation natively (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** BLOCKED 13318. lib32-rust-libs-git [BLOCKED: NEEDS_RECIPE_DESIGN: Rust 32-bit multilib libraries]
    - AUR votes: 29, popularity: 1.2868
    - Note: 32-bit target and libraries for Rust (GIT VERSION)
@@ -100725,6 +100741,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: Guix uses separate i686-linux builds; no lib32 infrastructure; A1: different model; A2: use i686 target; A3: Arch-specific (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MULTILIB_UNSUPPORTED: needs lib32-glibc/lib32-gcc-libs; A1: Guix lacks multilib; A2: use i686 system; A3: cross-compile not standardized (recipe-resolver-260415k)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- MULTILIB_UNSUPPORTED: Guix does not use lib32 multilib model; A1: no multilib support; A2: Arch-specific; A3: Guix builds per-target (recipe-resolver-260415w)
    - TODO Status: BLOCKED
 ** DONE 13319. nautilus-scripts-dolphin
    - AUR votes: 2, popularity: 1.0963
@@ -100812,6 +100830,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_MASSIVE: 100+ Rust crate deps + custom OpenGL engine + embedded game assets; A1: crate enumeration infeasible; A2: custom engine deps; A3: no binary releases (recipe-resolver-260415h)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_RUST_GAME: 200+ vendored crate deps; A1: cargo-build-system needs individual crates; A2: no binary releases; A3: Guix network isolation blocks vendoring (recipe-resolver-260415k)
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED -- COMPLEX_RUST_GAME: tactical RPG with custom 2D engine; massive cargo dep tree; A1: 200+ crates; A2: custom engine; A3: niche game (recipe-resolver-260415w)
    - TODO Status: BLOCKED
 ** DONE 13329. optimus-manager-git [BLOCKED: NEEDS_RECIPE_DESIGN: Nvidia Optimus GPU switching manager]
    - AUR votes: 137, popularity: 1.0092
@@ -100963,6 +100983,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- ALREADY_PACKAGED: recipes exist in recipe-resolver-260414ab.scm and recipe-resolver-260415s.scm (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** BLOCKED 13345. invidious [BLOCKED: DEP_RESOLUTION_FAILED: Alternative YouTube frontend written in Crystal]
    - AUR votes: 5, popularity: 1.0013
    - Note: Alternative front-end to YouTube
@@ -108674,42 +108696,56 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (python-dm-ollamalib v0.2.0, pyproject-build-system, MIT) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14348. python-databricks-sql-connector
    - AUR votes: 1, popularity: 0.0120
    - Note: Databricks SQL Connector for Python (DB-API 2.0; optional Arrow APIs)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- HEAVY_PYTHON_DEPS: Poetry build with thrift/pybreaker/pyarrow; 15+ transitive deps with tight version pinning (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14349. proxyguard
    - AUR votes: 1, popularity: 0.0120
    - Note: Proxy WireGuard UDP connections over HTTP(S)
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (proxyguard v2.0.1, go-build-system, MIT) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14350. ollama-cli
    - AUR votes: 1, popularity: 0.0120
    - Note: Simple command line tool that reads a text from stdin and pipes it to Ollama
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (ollama-cli v0.2.0, pyproject-build-system, MIT) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14351. imagot-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: An image viewer made in godot (binary release)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- GODOT_ENGINE_REQUIRED: Godot 4.5+ export toolchain not in Guix; building from source requires full Godot engine (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14352. bptt
    - AUR votes: 1, popularity: 0.0120
    - Note: Display certain information about British public transport in the terminal.
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (bptt v1.0.0, go-build-system, MIT) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14353. linux-git-headers
    - AUR votes: 13, popularity: 0.0120
    - Note: Headers and scripts for building modules for the Linus Torvalds' Mainline Linux kernel
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- KERNEL_HEADERS_VARIANT: mainline kernel headers; Guix provides linux-libre-headers; non-libre variant tracking impractical (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** DONE 14354. linux-git [gaurix:queue-20260402p100daily3 target=linux rule=strip-git]
    - AUR votes: 13, popularity: 0.0120
    - Note: The Linus Torvalds' Mainline Linux kernel and modules
@@ -108722,96 +108758,128 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- NEEDS_PYTHON_DEPS: requires python-tasklib (not in Guix) + Python 3.13+; runtime needs taskwarrior+timewarrior (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14356. juicity-server
    - AUR votes: 1, popularity: 0.0120
    - Note: A quic-based proxy protocol and implementation, inspired by tuic. (server)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- FORKED_GO_DEPS: uses daeuniverse/quic-go custom fork + 30+ indirect Go module deps; each needs separate Guix package (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14357. juicity-client
    - AUR votes: 1, popularity: 0.0120
    - Note: A quic-based proxy protocol and implementation, inspired by tuic. (client)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- FORKED_GO_DEPS: same repo as juicity-server; shares forked QUIC dep tree (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14358. f43-backgrounds
    - AUR votes: 1, popularity: 0.0120
    - Note: Desktop backgrounds of the Fedora 43 default theme for GNOME, KDE, Mate and Xfce desktops
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (f43-backgrounds v43.0.4, gnu-build-system, CC-BY-SA-4.0) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14359. ttf-medievalsharp
    - AUR votes: 4, popularity: 0.0120
    - Note: A font based on gothic letters.
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (ttf-medievalsharp v20200401, copy-build-system, OFL-1.1) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14360. wl_shimeji-plugin-kwinsupport
    - AUR votes: 1, popularity: 0.0120
    - Note: Plugin for wl_shimeji that enables window interaction when running under kwin_wayland
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- MISSING_DEPS: requires wl_shimeji-git (unpackaged); plugin cannot function without host application (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14361. peep-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: A CLI text viewer tool that works interactively like less command on small pane within the terminal window.
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- RUST_CRATE_VENDORING: Rust/Cargo needs crate enumeration; unmaintained since 2022 (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14362. oplpctools
    - AUR votes: 1, popularity: 0.0120
    - Note: Graphical PC tools for Open PS2 Loader (OPL)
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (oplpctools v3.1, cmake-build-system, GPL-3.0) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14363. dnspeep-bin
    - AUR votes: 1, popularity: 0.0120
    - Note: Spy on the DNS queries your computer is making
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- RUST_CRATE_VENDORING: Rust/Cargo with libpcap; unmaintained since 2022 (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14364. ttf-x2
    - AUR votes: 1, popularity: 0.0120
    - Note: Free fonts with support for Persian, Arabic, Urdu, Pashto, Dari, Uzbek, Kurdish, Uighur, old Turkish (Ottoman) and modern Turkish (Roman).
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- COMPLEX_MULTI_SOURCE: 22 separate zip downloads from dl.irmug.com; unreliable host; no single archive (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14365. python-redshift-connector
    - AUR votes: 1, popularity: 0.0120
    - Note: Amazon Redshift connector for Python (DB-API 2.0)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- PROPRIETARY_CLOUD_SDK: Amazon Redshift connector; heavy AWS SDK transitive deps (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14366. gnome-tuner-tweaks
    - AUR votes: 1, popularity: 0.0120
    - Note: Plugin for Tuner that adds more ways to customize GNOME.
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- NEEDS_GNOME_TUNER: plugin for gnome-tuner; package gnome-tuner first (done in this pass) (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14367. gnome-tuner-panel
    - AUR votes: 1, popularity: 0.0120
    - Note: Plugin for Tuner that adds panel mode switcher to Tweaks appearance page.
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- NEEDS_GNOME_TUNER: plugin for gnome-tuner; package gnome-tuner first (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14368. gnome-tuner-gdm
    - AUR votes: 1, popularity: 0.0120
    - Note: Plugin for Tuner that adds GNOME Display Manager settings
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- NEEDS_GNOME_TUNER: plugin for gnome-tuner; requires GDM integration (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14369. gnome-tuner
    - AUR votes: 1, popularity: 0.0120
    - Note: Extensible control center for GNOME
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (gnome-tuner v0.6.6, meson-build-system, GPL-3.0+) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14370. python-dlt
    - AUR votes: 1, popularity: 0.0120
    - Note: dlt: data load tool (Python library/CLI) for loading data into warehouses/lakes
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (python-dlt v1.15.0, pyproject-build-system/hatchling, Apache-2.0) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** DONE 14371. python-blessings
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 2, popularity: 0.0120
@@ -108825,42 +108893,56 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- GOOGLE_CLOUD_DEPS: BigQuery DataFrames; 50+ Google SDK transitive deps (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14373. python-meilisearch-sdk
    - AUR votes: 1, popularity: 0.0120
    - Note: An async and sync Python client for the Meilisearch API
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (python-meilisearch-sdk v7.1.2, pyproject-build-system/hatchling, MIT) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14374. askora
    - AUR votes: 1, popularity: 0.0120
    - Note: A unified CLI for AI providers like OpenAI and Ollama
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- IMMATURE_PROJECT: v0.0.2 with 11 commits; needs openai+anthropic Python SDKs (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14375. pam-parallel
    - AUR votes: 1, popularity: 0.0120
    - Note: A PAM module that runs multiple other PAM modules in parallel, succeeding as long as one of them succeeds
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- UNCLEAR_LICENSE: no LICENSE file in upstream repo; cannot determine license for Guix inclusion (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14376. nodejs-percollate
    - AUR votes: 4, popularity: 0.0120
    - Note: Percollate is a command-line tool that turns web pages into beautifully formatted PDF, EPUB, or HTML files.
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- NODE_ECOSYSTEM: Node.js CLI with heavy npm deps; likely requires Puppeteer/Chromium (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14377. python-sqlmesh
    - AUR votes: 1, popularity: 0.0120
    - Note: Scalable, efficient data transformation framework (dbt-compatible) – SQLMesh CLI
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN -- HEAVY_PYTHON_DEPS: large data framework; 40+ Python deps including SQLGlot and database adapters (recipe-resolver-260415w)
+   - TODO Status: BLOCKED
 ** TODO 14378. python-hyperscript
    - AUR votes: 1, popularity: 0.0120
    - Note: Tiny hyperscript-style HTML builder for Python (provides the hyperscript 'h' helper)
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260415w.scm (python-hyperscript v0.3.0, pyproject-build-system, MIT) (recipe-resolver-260415w)
+   - TODO Status: DONE
 ** TODO 14379. python-pyathena
    - AUR votes: 1, popularity: 0.0120
    - Note: Python DB API 2.0 client for Amazon Athena

@@ -4294,4 +4294,16 @@
             ytmdesktop
             yuki-iptv-bin
             android-tv-remote
+            ;; recipe-resolver-260415w (30 packages processed, 11 recipes)
+            bptt
+            f43-backgrounds
+            gnome-tuner
+            ollama-cli
+            oplpctools
+            proxyguard
+            python-dlt
+            python-dm-ollamalib
+            python-hyperscript
+            python-meilisearch-sdk
+            ttf-medievalsharp
 ))
