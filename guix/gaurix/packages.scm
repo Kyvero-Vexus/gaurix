@@ -3952,6 +3952,14 @@
 ))
 
 ;; recipe-resolver-260415l
+
+            ;; recipe-resolver-260415n
+            rustconn-bin
+            uzdoom-bin
+            polymc-bin
+            slippi-mainline-bin
+            libretro-azahar-core-bin
+            osrm-backend
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260415l)
   #:re-export (python-pkb-client

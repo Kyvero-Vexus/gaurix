@@ -13768,6 +13768,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: Doom engine package requires fresh source/dependency validation and recipe authoring not completed in this queue pass.
    - Difficulty: medium
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (uzdoom-bin v4.14.3, GZDoom fork AppImage, GPL-3.0+)
 
 ** DONE 1792. eden
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -29854,6 +29855,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: guix package index probe found no direct candidate in variants ['wiso-steuer-2026', 'wiso-steuer']; next action: draft fresh recipe from upstream source in next pass.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_SOFTWARE: commercial German tax software by Buhl; A1: proprietary license; A2: no source code; A3: cannot be in free software channel (recipe-resolver-260415n)
 
 
 
@@ -30503,6 +30505,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN]: `scripts/fetch-aur-pkgbuild.sh playdate-sdk` succeeded (AUR rev 75494276cb07fcc15837f2d8d077da70d7503329; source=(). Next: draft Guix recipe from PKGBUILD dependencies/phases in a dedicated pass.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_SDK: Panic Playdate console SDK; A1: LicenseRef-SdkLicense not free; A2: SDK binaries proprietary; A3: hardware-specific tooling (recipe-resolver-260415n)
 
 
 
@@ -36879,6 +36882,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Ollama with ROCm from git; same upstream + rocm toolchain. Next: draft after ollama-git base recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEP_CHAIN_NEEDED: ROCm variant needs base ollama first; A1: ollama requires Go + CGo + llama.cpp build; A2: ROCm toolchain in Guix but integration complex; A3: prebuilt binary needs ollama-bin first (recipe-resolver-260415n)
 
 
 ** BLOCKED 4603. ollama-cuda-git
@@ -37262,6 +37266,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: Class schedule app; primarily Windows/.NET WPF; Linux availability unclear. Next: verify Linux binary exists; if not, mark SOURCE_UNAVAILABLE.
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — WINDOWS_ONLY: .NET WPF Windows-only classroom display app; A1: WPF is Windows-exclusive; A2: no Linux port; A3: .NET SDK not in Guix (recipe-resolver-260415n)
 
 
 ** DONE 4653. gopac-git
@@ -52908,6 +52913,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Next: draft new recipe module for snapborg (source+hash+build-system), then rerun guix build -L guix -n snapborg
    - Difficulty: unknown
    - TODO Status: FAILED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — ALREADY_IN_GUIX: Guix has godot 4.4 for native arch; 32-bit is system-specific, not a separate package (recipe-resolver-260415n)
 
 
 ** BLOCKED 6771. zoneminder-git
@@ -52916,6 +52922,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Next: draft new recipe module for snoop (source+hash+build-system), then rerun guix build -L guix -n snoop
    - Difficulty: unknown
    - TODO Status: FAILED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — COMPLEX_DEPS: ~12 missing Perl modules + PHP stack + gsoap + libvncserver; A1: package 12+ Perl deps — massive scope; A2: PHP-FPM integration not in Guix; A3: Docker deployment recommended (recipe-resolver-260415n)
 
 
 ** DONE 6772. cosmic-ext-applet-logomenu-git [DONE: resolved in deptree-resolver-260414t]
@@ -54815,6 +54822,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n qmc2 | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — BUILD_SYSTEM_CUSTOM: qmake + custom Makefile hybrid; A1: needs Makefile patching for Guix; A2: no Linux binaries; A3: MAME not in Guix (retroarch alternative) (recipe-resolver-260415n)
 
 
 ** DONE 7016. abacusai-bin
@@ -54909,6 +54917,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-tensorrt | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_NVIDIA: TensorRT requires proprietary license; A1: LicenseRef-TensorRT not free; A2: requires CUDA stack; A3: no FOSS alternative (recipe-resolver-260415n)
 
 
 
@@ -55016,6 +55025,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n kretro | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — EARLY_PROJECT: v0.0.1 with no binary releases; A1: API/ABI will change; A2: requires full KDE6/Qt6 framework; A3: too immature for stable packaging (recipe-resolver-260415n)
 
 
 ** DONE 7039. fuzzel-git
@@ -56772,6 +56782,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n libretro-lrps2-git | detail: error: specification->package: unbound variable; hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust recipe, then rerun guix lint/build
    - Difficulty: unknown
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEP_MISSING: needs rapidyaml not in Guix; A1: rapidyaml packaging required first; A2: git-only with no tagged releases; A3: large C++ PS2 emulation codebase (recipe-resolver-260415n)
 
 
 ** DONE 7271. uftpd
@@ -56889,6 +56900,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n artemisrgb-git | detail: (gnu packages golang-web)'? | guix build: error: artemisrgb-git: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
    - Difficulty: unknown
    - TODO Status: FAILED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NON_FREE_LICENSE: PolyForm Noncommercial 1.0.0; A1: prohibits commercial use — violates FSDG; A2: no FOSS alternative with same HW support; A3: OpenRGB (MIT) covers similar use case (recipe-resolver-260415n)
 
 
 ** DONE 7286. spacestation14-launcher-bin
@@ -60290,6 +60302,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n canon-pixma-g6000-complete | error: guix build: error: canon-pixma-g6000-complete: unknown package | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
    - Note: AUR popularity=0.1038, votes=4; Print Scan for Canon PIXMA series E3340 G5040 G5050 G5070 G6040 G6050 GM2050 TS3
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_DRIVER: Canon binary blobs from .deb; A1: license prohibits redistribution; A2: requires lib32 compat; A3: use SANE/gutenprint generic driver (recipe-resolver-260415n)
 
 
 ** DONE 7754. continuwuity-git
@@ -60324,6 +60337,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n audacious-plugins-gtk3 | error: guix build: error: audacious-plugins-gtk3: unknown package | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
    - Note: AUR popularity=0.1033, votes=21; Plugins for Audacious
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — ALREADY_IN_GUIX: Guix audacious 4.4.2 already bundles all plugins with GTK support; compat alias (recipe-resolver-260415n)
 
 
 
@@ -60516,6 +60530,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n misans | error: guix build: error: misans: unknown package | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
    - Note: AUR popularity=0.1022, votes=4; MiSans Global is a global language font customization project led by Xiaomi and 
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NON_FREE_FONT: Xiaomi MiSans custom license; A1: restricts redistribution; A2: font files proprietary; A3: use Noto Sans as free alternative (recipe-resolver-260415n)
 
 
    BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PROPRIETARY_LICENSE: MiSans fonts under Xiaomi proprietary license prohibiting redistribution; original AUR source (niceooen/MiSans) returns 404; A1: font-build-system blocked by license; A2: dsrkafuu subset still uses proprietary fonts; A3: no redistributable source (recipe-resolver-260414ae)
@@ -61981,6 +61996,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: DONE: Recipe added in deptree-resolver-260414q.scm (auth0-bin v1.26.0, copy-build-system) (deptree-resolver-260414q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — WASM_TOOLCHAIN_MISSING: Rust + npm + wasm-pack build; A1: wasm-pack not in Guix; A2: Rust-to-WASM target not supported; A3: no versioned releases (recipe-resolver-260415n)
 
 
 ** DONE 7961. fbthrift
@@ -75473,6 +75489,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Free software and romantic music player for GNUstep
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: GNUstep app build system pattern needed; see queue-20260406p100b-blocked-notes.
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — GNUSTEP_RUNTIME_MISSING: needs gnustep-base/gui/back; A1: only gnustep-make in Guix; A2: project abandoned (orphaned in AUR); A3: libao also missing (recipe-resolver-260415n)
 
 
 ** DONE 10056. fasttext-langid-models
@@ -76688,6 +76705,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: High performance routing engine written in C++14 designed to run on OpenStreetMap data.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: complex CMake + boost + lua + tbb; see queue-20260406p100b-blocked-notes.
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (osrm-backend v6.0.0, CMake source build, BSD-2-Clause)
 
 
 ** DONE 10227. evcxr_jupyter
@@ -80285,6 +80303,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Rust VST3 and CLAP plugin collection by Robbert Van Der Helm
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Rust VST3/CLAP audio plugins with complex audio deps. Next: map CLAP/VST3 SDK deps.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NIGHTLY_RUST_REQUIRED: requires cargo-nightly for abi_thiscall/portable_simd; A1: Guix ships stable Rust only; A2: no stable equivalents for nightly features; A3: no tagged releases (recipe-resolver-260415n)
 
 
 ** DONE 10764. socos
@@ -81743,6 +81762,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: An unofficial port of The Legend of Zelda Ocarina of Time for PC, Wii U, and Switch
    - Status: NEEDS_RECIPE_DESIGN: complex CMake game port requiring asset extraction from original ROM
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NO_LICENSE: Ship of Harkinian has no license file, reverse-engineered Nintendo code; A1: no license = all rights reserved; A2: Nintendo IP concerns; A3: cannot be distributed (recipe-resolver-260415n)
 
 
 ** BLOCKED 10972. soh-otr-exporter
@@ -81750,6 +81770,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: OTR generation tools for SoH. Includes asset XML files needed for generation.
    - Status: NEEDS_RECIPE_DESIGN: requires SoH build tree for asset extraction; blocked on soh
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEP_BLOCKED: depends on soh which has no license; A1: same repo, same legal issues; A2: useless without soh; A3: blocked by soh (recipe-resolver-260415n)
 
 
 ** DONE 10973. fontbase
@@ -81863,6 +81884,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Meowpad v2 配置器
    - Status: NEEDS_RECIPE_DESIGN: Rust GUI app; needs cargo-build-system with crate deps
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — TAURI_UNSUPPORTED: Tauri framework not in Guix; A1: requires cargo-tauri + pnpm + webkit2gtk pipeline; A2: no binary releases; A3: niche HW configurator (2 AUR votes) (recipe-resolver-260415n)
 
 
 ** DONE 10990. bdf-unifont
@@ -81888,6 +81910,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: SDR++Brown (fork), is not the original bloat-free SDR software
    - Status: NEEDS_RECIPE_DESIGN: complex CMake SDR app with RF library deps
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — SDR_LIBS_MISSING: needs airspy/airspyhf/bladerf/hackrf/limesuite/soapysdr; A1: ~6 SDR hardware libraries need packaging; A2: rolling release model; A3: original SDR++ better first candidate (recipe-resolver-260415n)
 
 
 ** DONE 10994. beeref
@@ -82227,6 +82250,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: https://slippi.gg/about
    - Status: NEEDS_RECIPE_DESIGN: complex CMake Dolphin emulator fork with netplay
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (slippi-mainline-bin v4.0.0-mainline-beta.14, Dolphin fork AppImage, GPL-2.0+)
 
 
 ** DONE 11044. jriver-media-center
@@ -82567,6 +82591,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Next-Gen GUI-based WiFi and Bluetooth Analyzer for Linux
    - Status: NEEDS_RECIPE_DESIGN: Python Qt5 app needing wireless scanning libs
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — UNMAINTAINED: out-of-date in AUR, last update 2023; A1: missing python-pyqt5-chart + python-gps3 + python-manuf; A2: no tagged releases; A3: upstream inactive (recipe-resolver-260415n)
 
 
 ** DONE 11091. python-gps3
@@ -85055,6 +85080,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Rust/GTK4 app; requires cargo-inputs enumeration for crate dep tree
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (rustconn-bin v0.10.19, GTK4 connection manager AppImage, GPL-3.0+)
 
 ** DONE 11423. zen-browser
    - AUR votes: 41, popularity: 3.1928
@@ -85595,6 +85621,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 3, popularity: 2.4787
    - Note: A Wayland compositor with smooth animation
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — UNTESTED_BUILD: wlroots 0.19 + scenefx 0.4 now in Guix; A1: meson build feasible but version pinning fragile; A2: low adoption (3 AUR votes); A3: no stable release process (recipe-resolver-260415n)
 
 
 ** DONE 11485. clion
@@ -86440,6 +86467,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Python facial auth; requires dlib, opencv, PAM integration
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PAM_INTEGRATION_COMPLEX: facial auth PAM module; A1: deep PAM/polkit integration incompatible with Guix functional model; A2: python-opencv bindings unverified; A3: IR camera hardware testing infeasible (recipe-resolver-260415n)
 
 ** DONE 11581. nordvpn-bin
    - AUR votes: 175, popularity: 2.0019
@@ -88062,6 +88090,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — depends on azahar-git being packaged first; next: blocked on azahar-git
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (libretro-azahar-core-bin v2125.1, 3DS libretro core prebuilt, GPL-2.0+)
 
 ** DONE 11778. bugwarrior
    - AUR votes: 3, popularity: 1.5308
@@ -115769,6 +115798,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 1, popularity: 0.0104
    - Note: Minecraft launcher with the ability to manage multiple instances.
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (polymc-bin v7.0, Minecraft launcher portable binary, GPL-3.0)
 
 
 ** TODO 15620. nextdns

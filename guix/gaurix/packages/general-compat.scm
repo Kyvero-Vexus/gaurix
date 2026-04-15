@@ -381,6 +381,7 @@
   #:use-module (gaurix packages recipe-resolver-260415l)
   #:use-module (gaurix packages recipe-resolver-260415m)
   #:use-module (gaurix packages deptree-resolver-260415k)
+  #:use-module (gaurix packages recipe-resolver-260415n)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -7359,3 +7360,12 @@
 (define-public vim-classic-git (package (inherit vim-classic) (name "vim-classic-git")))
 (define-public gvim-classic-git (package (inherit gvim-classic) (name "gvim-classic-git")))
 (define-public viu-media-git (package (inherit viu-media) (name "viu-media-git")))
+
+;; --- recipe-resolver-260415n compat aliases ---
+(define-public rustconn (package (inherit rustconn-bin) (name "rustconn")))
+(define-public uzdoom (package (inherit uzdoom-bin) (name "uzdoom")))
+(define-public polymc-qt5-git (package (inherit polymc-bin) (name "polymc-qt5-git")))
+(define-public polymc (package (inherit polymc-bin) (name "polymc")))
+(define-public slippi-mainline (package (inherit slippi-mainline-bin) (name "slippi-mainline")))
+(define-public libretro-azahar-git (package (inherit libretro-azahar-core-bin) (name "libretro-azahar-git")))
+(define-public libretro-azahar (package (inherit libretro-azahar-core-bin) (name "libretro-azahar")))
