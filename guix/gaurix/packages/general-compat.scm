@@ -54,6 +54,7 @@
   #:use-module (gaurix packages deptree-resolver-260415n)
   #:use-module (gaurix packages recipe-resolver-260415o)
   #:use-module (gaurix packages recipe-resolver-260415r)
+  #:use-module (gaurix packages recipe-resolver-260415s)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)

@@ -4,6 +4,7 @@
             ;; deptree-resolver-260415n
             ;; recipe-resolver-260415q (bookkeeping-only, 30 NRD resolved)
             ;; recipe-resolver-260415r (30 NRD resolved)
+            ;; recipe-resolver-260415s (30 NRD resolved)
             ttf-ms-win10-auto
             jre22-openjdk
             ungoogled-chromium-widevine-bin
