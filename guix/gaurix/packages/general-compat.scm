@@ -377,6 +377,7 @@
   #:use-module (gaurix packages deptree-resolver-260415j)
   #:use-module (gaurix packages recipe-resolver-260415k)
   #:use-module (gaurix packages recipe-resolver-260415l)
+  #:use-module (gaurix packages recipe-resolver-260415m)
   #:use-module (gaurix packages deptree-resolver-260415k)
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -7351,3 +7352,8 @@
 
 ;; --- recipe-resolver-260415l compat aliases ---
 (define-public aaaaxy (package (inherit aaaaxy-bin) (name "aaaaxy")))
+
+;; --- recipe-resolver-260415m compat aliases ---
+(define-public vim-classic-git (package (inherit vim-classic) (name "vim-classic-git")))
+(define-public gvim-classic-git (package (inherit gvim-classic) (name "gvim-classic-git")))
+(define-public viu-media-git (package (inherit viu-media) (name "viu-media-git")))
