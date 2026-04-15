@@ -1,60 +1,60 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260415i  
-**Timestamp:** 2026-04-15T10:14:12.193682Z  
-**Total BLOCKED:** 1280  
+**Pass:** deptree-resolver-260415j  
+**Timestamp:** 2026-04-15T11:33:36.692756Z  
+**Total BLOCKED:** 1192  
 
 ## Priority Queue (Top 50)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | android-armv7a-eabi-qt6-declarative | 13965 | 0 | 3 | 7 |
-| 2 | lib32-gstreamer | 33315 | 0 | 3 | 60 |
-| 3 | dotnet-targeting-pack-8.0-bin | 15163 | 0 | 2 | 1 |
-| 4 | dotnet-runtime-8.0-bin | 15165 | 0 | 2 | 7 |
-| 5 | vim-classic-runtime-git | 33430 | 0 | 2 | 16 |
-| 6 | android-armv7a-eabi-qt6-serialport | 13962 | 0 | 1 | 4 |
-| 7 | android-armv7a-eabi-qt6-svg | 13961 | 0 | 1 | 4 |
-| 8 | kcgroups-dmemcg | 38278 | 0 | 1 | 8 |
-| 9 | linux-cachyos-cjktty | 19312 | 0 | 1 | 19 |
-| 10 | linux-cachyos | 1070 | 0 | 1 | 25 |
-| 11 | beaver-notes-bin | 30688 | 0 | 0 | 0 |
-| 12 | crunchycleaner-bin | 36118 | 0 | 0 | 0 |
-| 13 | gram-bin | 38505 | 0 | 0 | 0 |
-| 14 | illogical-impulse-bibata-modern-classic-bin | 38495 | 0 | 0 | 0 |
-| 15 | jai | 15430 | 0 | 0 | 0 |
-| 16 | nitro-bin | 19085 | 0 | 0 | 0 |
-| 17 | smap-bin | 38509 | 0 | 0 | 0 |
-| 18 | virtualhere-server-bin | 33443 | 0 | 0 | 0 |
-| 19 | lean-ctx-bin | 17336 | 0 | 0 | 1 |
-| 20 | znote-bin | 21073 | 0 | 0 | 1 |
-| 21 | ddrescueview-bin | 24956 | 0 | 0 | 2 |
-| 22 | mnt-reform-lpc-dkms | 19341 | 0 | 0 | 2 |
-| 23 | systemd-cron | 4138 | 0 | 0 | 2 |
-| 24 | wakatime | 38497 | 0 | 0 | 2 |
-| 25 | arctic-comfyui-helper-bin | 15393 | 0 | 0 | 3 |
-| 26 | electron25-bin | 17244 | 0 | 0 | 3 |
-| 27 | implay-bin | 18267 | 0 | 0 | 3 |
-| 28 | piebald-bin | 19334 | 0 | 0 | 3 |
-| 29 | insomnia-bin | 9 | 0 | 0 | 4 |
-| 30 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
-| 31 | proton-meet-bin | 19331 | 0 | 0 | 4 |
-| 32 | reboot-arch-btw | 13288 | 0 | 0 | 4 |
-| 33 | spflashtool-bin | 3857 | 0 | 0 | 4 |
-| 34 | anytype-electron-bin | 28553 | 0 | 0 | 5 |
-| 35 | brave-origin-nightly-bin | 29311 | 0 | 0 | 5 |
-| 36 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
-| 37 | lib32-libdovi | 2583 | 0 | 0 | 5 |
-| 38 | lib32-opencl-nvidia-beta | 2409 | 0 | 0 | 5 |
-| 39 | lib32-python311-bin | 1580 | 0 | 0 | 5 |
-| 40 | nvidia-beta | 562 | 0 | 0 | 5 |
-| 41 | oxidizr-arch | 9853 | 0 | 0 | 5 |
-| 42 | pacboost | 4654 | 0 | 0 | 5 |
-| 43 | parui-git | 19178 | 0 | 0 | 5 |
-| 44 | poptracker | 17315 | 0 | 0 | 5 |
-| 45 | portage-manifest | 13162 | 0 | 0 | 5 |
-| 46 | scratch3 | 2134 | 0 | 0 | 5 |
-| 47 | slack-electron | 2319 | 0 | 0 | 5 |
-| 48 | todesk-bin | 25670 | 0 | 0 | 5 |
-| 49 | unreal-tournament-bin | 1191 | 0 | 0 | 5 |
-| 50 | wgtunnel-bin | 38500 | 0 | 0 | 5 |
+| 1 | lib32-gst-plugins-base-libs | 33316 | 0 | 3 | 61 |
+| 2 | linux-cachyos-cjktty | 19312 | 0 | 1 | 19 |
+| 3 | linux-cachyos | 1070 | 0 | 1 | 25 |
+| 4 | aspnet-runtime-8.0-bin | 15167 | 0 | 0 | 1 |
+| 5 | aspnet-targeting-pack-8.0-bin | 15166 | 0 | 0 | 1 |
+| 6 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 |
+| 7 | reboot-arch-btw | 13288 | 0 | 0 | 4 |
+| 8 | clean-chroot-manager | 1583 | 0 | 0 | 5 |
+| 9 | dotnet-sdk-8.0-bin | 15164 | 0 | 0 | 5 |
+| 10 | nvidia-beta | 562 | 0 | 0 | 5 |
+| 11 | oxidizr-arch | 9853 | 0 | 0 | 5 |
+| 12 | pacboost | 4654 | 0 | 0 | 5 |
+| 13 | parui-git | 19178 | 0 | 0 | 5 |
+| 14 | portage-manifest | 13162 | 0 | 0 | 5 |
+| 15 | android-armv7a-eabi-qt6-virtualkeyboard | 13960 | 0 | 0 | 6 |
+| 16 | audirvana-studio | 1595 | 0 | 0 | 6 |
+| 17 | aurscan-git | 4227 | 0 | 0 | 6 |
+| 18 | aurutils-git | 11962 | 0 | 0 | 6 |
+| 19 | lenspect | 9696 | 0 | 0 | 6 |
+| 20 | lib32-srt | 12163 | 0 | 0 | 6 |
+| 21 | lib32-vmaf | 12164 | 0 | 0 | 6 |
+| 22 | lib32-x264 | 12170 | 0 | 0 | 6 |
+| 23 | libipuz | 1052 | 0 | 0 | 6 |
+| 24 | limabean | 891 | 0 | 0 | 6 |
+| 25 | limabean-harvest | 890 | 0 | 0 | 6 |
+| 26 | linux-steam-integration | 10954 | 0 | 0 | 6 |
+| 27 | lsplug | 689 | 0 | 0 | 6 |
+| 28 | ltspice | 8885 | 0 | 0 | 6 |
+| 29 | matlab-gcc | 9977 | 0 | 0 | 6 |
+| 30 | matlab-gcc-fortran | 9978 | 0 | 0 | 6 |
+| 31 | mealie | 7528 | 0 | 0 | 6 |
+| 32 | metar | 1112 | 0 | 0 | 6 |
+| 33 | minecraft-server | 1029 | 0 | 0 | 6 |
+| 34 | motivewave | 9946 | 0 | 0 | 6 |
+| 35 | muon-ssh | 10079 | 0 | 0 | 6 |
+| 36 | ncgopher-git | 1124 | 0 | 0 | 6 |
+| 37 | needrestart | 11532 | 0 | 0 | 6 |
+| 38 | neovim-qt-git | 10654 | 0 | 0 | 6 |
+| 39 | nicol | 4118 | 0 | 0 | 6 |
+| 40 | odin-git | 3920 | 0 | 0 | 6 |
+| 41 | opentabletdriver | 12025 | 0 | 0 | 6 |
+| 42 | opentabletdriver-git | 3233 | 0 | 0 | 6 |
+| 43 | osgxr | 13558 | 0 | 0 | 6 |
+| 44 | osmium | 11696 | 0 | 0 | 6 |
+| 45 | otranscribe | 871 | 0 | 0 | 6 |
+| 46 | oxicord-git | 3747 | 0 | 0 | 6 |
+| 47 | pacman-static | 12893 | 0 | 0 | 6 |
+| 48 | pam-python-git | 776 | 0 | 0 | 6 |
+| 49 | pane-fm-git | 13313 | 0 | 0 | 6 |
+| 50 | peazip | 1674 | 0 | 0 | 6 |
