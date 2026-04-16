@@ -637,6 +637,106 @@
             gochecker
 
   #:use-module (gaurix packages aider-chat)
+            python-databricks-sql-connector
+            imagot-bin
+            linux-git-headers
+            python-scheduler-git
+            juicity-server
+            juicity-client
+            wl-shimeji-plugin-kwinsupport
+            peep-bin
+            dnspeep-bin
+            ttf-x2
+            python-redshift-connector
+            gnome-tuner-tweaks
+            gnome-tuner-panel
+            gnome-tuner-gdm
+            python-bigframes
+            askora
+            pam-parallel
+            nodejs-percollate
+            python-sqlmesh
+            python-pyathena
+            wives-bin
+            python-cloud-sql-python-connector
+            tflint-bin
+            hamclock
+            nipaplay-reload-bin
+            wlprop
+            remindmez
+            tremotesf
+            savvycan
+            plasma6-applets-plasma-drawer-git
+            yass-reloaded
+            plasma-bigscreen
+            gtk3-classic
+            lumi-bin
+            eric
+            goenv
+            koito
+            isle-portable-git
+            azaharplus-appimage
+            lunacy-bin
+            cty
+            quickgui-bin
+            sigma-file-manager-bin
+            vital-synth-vst3-bin
+            vital-synth-vst-bin
+            vital-synth-standalone-bin
+            vital-synth-clap-bin
+            genwipe-sh
+            natron-bin
+            surrealist-bin
+            wootility5-beta
+            tclient-ddnet
+            indi-3rdparty-drivers
+            coreutils-selinux
+            git-quick-stats
+            iipython-feishin-bin
+            mpv-full-build-git
+            bubblejail
+            golangci-lint-bin
+            flemozi-bin
+            librewolf-extension-localcdn-bin
+            stable-diffusion-cpp-git
+            b43-firmware
+            balatro
+            libfprint-tod
+            sweethome3d-furniture-library
+            thunderbird-grammalecte
+            frog-ocr-no-telemetry
+            picocrypt
+            flightcore-bin
+            cqrlogalpha-git
+            steamworks-sdk
+            drawio
+            wikilynx
+            ptyxis-palette-darcula2
+            stable-diffusion-cpp-cublas-git
+            ultimatestunts
+            tailscale-systray-git
+            gnome-app-grid-manager
+            xt-wgobfs-dkms
+            gnome-foundry-git
+            mingw-w64-sdl3
+            power-rules-daemon-git
+            power-rules-daemon
+            refold-git
+            linvam
+            dragonfly-navigator-git
+            splash-logs
+            libfprint-ftexx00
+            gohttpserver-bin
+            focaltech-spi-dkms
+            eb-garamond
+            brother-hll3270cdw
+            kwin-scripts-forceblur
+            storm
+            pocketbase-bin
+            python-pytest-docs
+            dcron
+            electronim-bin
+            ssimulacra2-bin-git
   #:use-module (gaurix packages auto-deptree-260406)
   #:use-module (gaurix packages auto-deptree-260406-blocked-notes)
   #:use-module (gaurix packages comfyui-cuda)
@@ -4047,6 +4147,7 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260415l)
   #:use-module (gaurix packages recipe-resolver-260415o)
+  #:use-module (gaurix packages recipe-resolver-260416b)
   #:re-export (python-pkb-client
                certbot-dns-porkbun
                protonplus
