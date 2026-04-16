@@ -6,6 +6,37 @@
             ;; recipe-resolver-260415r (30 NRD resolved)
             ;; recipe-resolver-260415s (30 NRD resolved)
             ;; recipe-resolver-260415v (9 NRD resolved, pool depleted)
+            ;; recipe-resolver-260416c (30 NRD resolved)
+            auto-cpufreq
+            backintime-git
+            hydrus-network
+            spotify-downloader
+            ledfx
+            linux-show-player
+            cyberdropdownloader
+            mov-watch
+            python-eduvpn-client
+            vapoursynth-preview
+            varia
+            mangowm-git
+            sway-scroll-git
+            waytermirror-git
+            gamescope-git
+            krunner-symbols-git
+            opentoonz-git
+            incplot
+            gpt4all-chat
+            spacefm-thermitegod-git
+            bobcat-terminal
+            neovim-later
+            kretro
+            lamco-rdp-server
+            libretro-lrps2-git
+            scribus-svn
+            brow6el-git
+            cosmic-session-git
+            lazylibrarian-git
+            ids-ips-tool
             ttf-ms-win10-auto
             jre22-openjdk
             ungoogled-chromium-widevine-bin
@@ -4507,4 +4538,104 @@
             rs-visa
             shelly-git
             smokinguns-git
+            ;; deptree-resolver-260416c (99 packages processed, 99 recipes)
+            solar2d-git
+            vrcx
+            lsfg-vk-git
+            uzdoom
+            ytm-player-git
+            plasma6-applets-eventcalendar
+            pulsemeeter-git
+            zephyr-sdk
+            eblande
+            foldingathome
+            glaxnimate-git
+            graphite-editor-git
+            grub-blscfg
+            gz-ionic
+            home-assistant
+            isd-git
+            lib32-amdvlk
+            linux-cjktty
+            linux-lqx-docs
+            linux-lqx-headers
+            linux-xanmod
+            linux-xanmod-edge
+            meshiji
+            mingw-w64-gtk3
+            pat-aur-host-git
+            properdocs
+            runescape-launcher
+            sparrow-wifi-git
+            steamlink
+            yabridge-wine10-git
+            alacritty-graphics
+            alephone-git
+            astraeditor-git
+            fcitx5-lotus-git
+            fotema
+            gimp-nufraw
+            gx52
+            inputactions-kwin
+            lib32-python
+            linux-g14
+            manaverse-git
+            manaverse-sdl2-git
+            mcpelauncher-linux-git
+            meowpad-configurator-v2-git
+            mininet
+            nip4
+            ossia-score
+            polymc-qt5-git
+            python-llama-cpp-hip
+            python-wandb
+            the-honkers-railway-launcher
+            wsjtx-improved
+            wsjtx-improved-al
+            xawtv
+            anydesk-legacy-bin
+            baballonia
+            bareos-bconsole
+            betterwallpaper-git
+            bugwarrior-git
+            c47
+            collabora-office
+            invidious
+            karton
+            linux-cachyos-cjktty-headers
+            linux-cachyos-rc-headers
+            linux-libre-hardened-docs
+            linux-libre-hardened-headers
+            linux-vfio-lts-headers
+            maszyna-git
+            pamac-aur
+            python-urllib3-future-git
+            r47
+            scx-scheds-git
+            sulis-git
+            syncthingtray
+            vicinae-git
+            void-git
+            yandex-browser
+            zeronet-conservancy-git
+            darkly
+            lib32-rust-libs-git
+            lib32-wivrn-server
+            linux-mainline-docs
+            linuxqq-nt-bwrap
+            openvino-git
+            planarally-bin
+            plasmazones
+            python-tensorrt
+            qt6-xcb-private-headers-hifps
+            rog-control-center
+            waydroid-helper
+            waydroid-helper-git
+            yozo-office
+            ags-hyprpanel-git
+            gnome-terminal-transparency
+            high-tide-git
+            jcef-jetbrains-git
+            meshroom
+            mozillavpn-git
 ))
