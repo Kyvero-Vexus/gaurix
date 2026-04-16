@@ -395,6 +395,7 @@
   #:use-module (gaurix packages recipe-resolver-260415u)
   #:use-module (gaurix packages deptree-resolver-260415u)
   #:use-module (gaurix packages deptree-resolver-260416a)
+  #:use-module (gaurix packages deptree-resolver-260416b)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2690,6 +2691,205 @@
             osdlyrics
             aaaaxy-bin
             linnote
+            ;; deptree-resolver-260416b packages
+            expressvpn-gui-nhk
+            pacman-static
+            pamac-classic-fixed
+            lib32-vkbasalt-redemp-git
+            lib32-xrizer-git
+            penpot-frontend
+            snowflake-connector-python
+            soh-otr-exporter
+            solar2d-git
+            stickerpicker-git
+            switchboard-plug-desktop-git
+            throne
+            turtle
+            tuwunel-git
+            vesc-tool
+            vita3k-git
+            vrcx
+            wiiudownloader
+            xrizer-multilib-git
+            2s2h-otr-exporter
+            breezy-desktop-gnome-git
+            czkawka-git
+            eddie-ui
+            faugus-launcher-git
+            flix-cli
+            gpu-viewer
+            grub-improved-luks2-git
+            kate-discord-rpc-git
+            libfprint-goodixtls-55x4
+            libgda-firebird
+            libgda-mysql
+            libgda-postgres
+            linux-g14-headers
+            llvm17-libs
+            lsfg-vk-git
+            maint
+            ollama-docs-git
+            onvif-gui
+            opencloud-desktop
+            openhv
+            osrm-backend
+            pacpush
+            path-of-building-community-git
+            penpot-mcp
+            perl-perl-languageserver
+            pix
+            plasma-gamemode-git
+            python-withoutbg
+            python313-freethreaded
+            remarshal
+            riseup-vpn
+            safe-discover
+            simgear
+            songrec-git
+            spaghettikart
+            tartube
+            trae-cn-desktop-bin
+            uzdoom
+            vbam-sdl
+            visual-studio-code-live-bin
+            wayfire-plugins-extra
+            winboat-electron
+            yacreader-poppler
+            ytm-player-git
+            albert-git
+            arch-wiki-search
+            banjorecomp
+            bilibili
+            chrome-remote-desktop
+            clang-libs-minimal-git
+            code-translucent
+            discover-overlay-git
+            emacs-mozc-with-jp-dict
+            fluffychat
+            git-wd40
+            guiman
+            libgda-jdbc
+            linux-cachyos-lts-headers
+            lution
+            normcap
+            ollama-cuda-git
+            ollama-rocm-git
+            pamac-aur-git
+            pantheon-session-git
+            parallels-client
+            plasma6-applets-eventcalendar
+            processing
+            pulsemeeter-git
+            python-llama-cpp-vulkan
+            python-quimb
+            qrookie-vrp
+            reform-tools
+            vkdoom-git
+            xlibre-video-intel-bin
+            xoreos
+            zephyr-sdk
+            caffeine-ng-git
+            conquest-git
+            deepin-wine10-stable
+            expressvpn-gui-nhk/compat
+            pacman-static/compat
+            pamac-classic-fixed/compat
+            lib32-vkbasalt-redemp-git/compat
+            lib32-xrizer-git/compat
+            penpot-frontend/compat
+            snowflake-connector-python/compat
+            soh-otr-exporter/compat
+            solar2d-git/compat
+            stickerpicker-git/compat
+            switchboard-plug-desktop-git/compat
+            throne/compat
+            turtle/compat
+            tuwunel-git/compat
+            vesc-tool/compat
+            vita3k-git/compat
+            vrcx/compat
+            wiiudownloader/compat
+            xrizer-multilib-git/compat
+            2s2h-otr-exporter/compat
+            breezy-desktop-gnome-git/compat
+            czkawka-git/compat
+            eddie-ui/compat
+            faugus-launcher-git/compat
+            flix-cli/compat
+            gpu-viewer/compat
+            grub-improved-luks2-git/compat
+            kate-discord-rpc-git/compat
+            libfprint-goodixtls-55x4/compat
+            libgda-firebird/compat
+            libgda-mysql/compat
+            libgda-postgres/compat
+            linux-g14-headers/compat
+            llvm17-libs/compat
+            lsfg-vk-git/compat
+            maint/compat
+            ollama-docs-git/compat
+            onvif-gui/compat
+            opencloud-desktop/compat
+            openhv/compat
+            osrm-backend/compat
+            pacpush/compat
+            path-of-building-community-git/compat
+            penpot-mcp/compat
+            perl-perl-languageserver/compat
+            pix/compat
+            plasma-gamemode-git/compat
+            python-withoutbg/compat
+            python313-freethreaded/compat
+            remarshal/compat
+            riseup-vpn/compat
+            safe-discover/compat
+            simgear/compat
+            songrec-git/compat
+            spaghettikart/compat
+            tartube/compat
+            trae-cn-desktop-bin/compat
+            uzdoom/compat
+            vbam-sdl/compat
+            visual-studio-code-live-bin/compat
+            wayfire-plugins-extra/compat
+            winboat-electron/compat
+            yacreader-poppler/compat
+            ytm-player-git/compat
+            albert-git/compat
+            arch-wiki-search/compat
+            banjorecomp/compat
+            bilibili/compat
+            chrome-remote-desktop/compat
+            clang-libs-minimal-git/compat
+            code-translucent/compat
+            discover-overlay-git/compat
+            emacs-mozc-with-jp-dict/compat
+            fluffychat/compat
+            git-wd40/compat
+            guiman/compat
+            libgda-jdbc/compat
+            linux-cachyos-lts-headers/compat
+            lution/compat
+            normcap/compat
+            ollama-cuda-git/compat
+            ollama-rocm-git/compat
+            pamac-aur-git/compat
+            pantheon-session-git/compat
+            parallels-client/compat
+            plasma6-applets-eventcalendar/compat
+            processing/compat
+            pulsemeeter-git/compat
+            python-llama-cpp-vulkan/compat
+            python-quimb/compat
+            qrookie-vrp/compat
+            reform-tools/compat
+            vkdoom-git/compat
+            xlibre-video-intel-bin/compat
+            xoreos/compat
+            zephyr-sdk/compat
+            caffeine-ng-git/compat
+            conquest-git/compat
+            deepin-wine10-stable/compat
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -7697,3 +7897,104 @@
 (define-public rs-visa/compat rs-visa)
 (define-public shelly-git/compat shelly-git)
 (define-public smokinguns-git/compat smokinguns-git)
+
+;; deptree-resolver-260416b
+(define-public expressvpn-gui-nhk/compat expressvpn-gui-nhk)
+(define-public pacman-static/compat pacman-static)
+(define-public pamac-classic-fixed/compat pamac-classic-fixed)
+(define-public lib32-vkbasalt-redemp-git/compat lib32-vkbasalt-redemp-git)
+(define-public lib32-xrizer-git/compat lib32-xrizer-git)
+(define-public penpot-frontend/compat penpot-frontend)
+(define-public snowflake-connector-python/compat snowflake-connector-python)
+(define-public soh-otr-exporter/compat soh-otr-exporter)
+(define-public solar2d-git/compat solar2d-git)
+(define-public stickerpicker-git/compat stickerpicker-git)
+(define-public switchboard-plug-desktop-git/compat switchboard-plug-desktop-git)
+(define-public throne/compat throne)
+(define-public turtle/compat turtle)
+(define-public tuwunel-git/compat tuwunel-git)
+(define-public vesc-tool/compat vesc-tool)
+(define-public vita3k-git/compat vita3k-git)
+(define-public vrcx/compat vrcx)
+(define-public wiiudownloader/compat wiiudownloader)
+(define-public xrizer-multilib-git/compat xrizer-multilib-git)
+(define-public 2s2h-otr-exporter/compat 2s2h-otr-exporter)
+(define-public breezy-desktop-gnome-git/compat breezy-desktop-gnome-git)
+(define-public czkawka-git/compat czkawka-git)
+(define-public eddie-ui/compat eddie-ui)
+(define-public faugus-launcher-git/compat faugus-launcher-git)
+(define-public flix-cli/compat flix-cli)
+(define-public gpu-viewer/compat gpu-viewer)
+(define-public grub-improved-luks2-git/compat grub-improved-luks2-git)
+(define-public kate-discord-rpc-git/compat kate-discord-rpc-git)
+(define-public libfprint-goodixtls-55x4/compat libfprint-goodixtls-55x4)
+(define-public libgda-firebird/compat libgda-firebird)
+(define-public libgda-mysql/compat libgda-mysql)
+(define-public libgda-postgres/compat libgda-postgres)
+(define-public linux-g14-headers/compat linux-g14-headers)
+(define-public llvm17-libs/compat llvm17-libs)
+(define-public lsfg-vk-git/compat lsfg-vk-git)
+(define-public maint/compat maint)
+(define-public ollama-docs-git/compat ollama-docs-git)
+(define-public onvif-gui/compat onvif-gui)
+(define-public opencloud-desktop/compat opencloud-desktop)
+(define-public openhv/compat openhv)
+(define-public osrm-backend/compat osrm-backend)
+(define-public pacpush/compat pacpush)
+(define-public path-of-building-community-git/compat path-of-building-community-git)
+(define-public penpot-mcp/compat penpot-mcp)
+(define-public perl-perl-languageserver/compat perl-perl-languageserver)
+(define-public pix/compat pix)
+(define-public plasma-gamemode-git/compat plasma-gamemode-git)
+(define-public python-withoutbg/compat python-withoutbg)
+(define-public python313-freethreaded/compat python313-freethreaded)
+(define-public remarshal/compat remarshal)
+(define-public riseup-vpn/compat riseup-vpn)
+(define-public safe-discover/compat safe-discover)
+(define-public simgear/compat simgear)
+(define-public songrec-git/compat songrec-git)
+(define-public spaghettikart/compat spaghettikart)
+(define-public tartube/compat tartube)
+(define-public trae-cn-desktop-bin/compat trae-cn-desktop-bin)
+(define-public uzdoom/compat uzdoom)
+(define-public vbam-sdl/compat vbam-sdl)
+(define-public visual-studio-code-live-bin/compat visual-studio-code-live-bin)
+(define-public wayfire-plugins-extra/compat wayfire-plugins-extra)
+(define-public winboat-electron/compat winboat-electron)
+(define-public yacreader-poppler/compat yacreader-poppler)
+(define-public ytm-player-git/compat ytm-player-git)
+(define-public albert-git/compat albert-git)
+(define-public arch-wiki-search/compat arch-wiki-search)
+(define-public banjorecomp/compat banjorecomp)
+(define-public bilibili/compat bilibili)
+(define-public chrome-remote-desktop/compat chrome-remote-desktop)
+(define-public clang-libs-minimal-git/compat clang-libs-minimal-git)
+(define-public code-translucent/compat code-translucent)
+(define-public discover-overlay-git/compat discover-overlay-git)
+(define-public emacs-mozc-with-jp-dict/compat emacs-mozc-with-jp-dict)
+(define-public fluffychat/compat fluffychat)
+(define-public git-wd40/compat git-wd40)
+(define-public guiman/compat guiman)
+(define-public libgda-jdbc/compat libgda-jdbc)
+(define-public linux-cachyos-lts-headers/compat linux-cachyos-lts-headers)
+(define-public lution/compat lution)
+(define-public normcap/compat normcap)
+(define-public ollama-cuda-git/compat ollama-cuda-git)
+(define-public ollama-rocm-git/compat ollama-rocm-git)
+(define-public pamac-aur-git/compat pamac-aur-git)
+(define-public pantheon-session-git/compat pantheon-session-git)
+(define-public parallels-client/compat parallels-client)
+(define-public plasma6-applets-eventcalendar/compat plasma6-applets-eventcalendar)
+(define-public processing/compat processing)
+(define-public pulsemeeter-git/compat pulsemeeter-git)
+(define-public python-llama-cpp-vulkan/compat python-llama-cpp-vulkan)
+(define-public python-quimb/compat python-quimb)
+(define-public qrookie-vrp/compat qrookie-vrp)
+(define-public reform-tools/compat reform-tools)
+(define-public vkdoom-git/compat vkdoom-git)
+(define-public xlibre-video-intel-bin/compat xlibre-video-intel-bin)
+(define-public xoreos/compat xoreos)
+(define-public zephyr-sdk/compat zephyr-sdk)
+(define-public caffeine-ng-git/compat caffeine-ng-git)
+(define-public conquest-git/compat conquest-git)
+(define-public deepin-wine10-stable/compat deepin-wine10-stable)
