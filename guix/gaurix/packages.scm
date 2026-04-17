@@ -5521,4 +5521,31 @@
             psf-unifont
             etterna
             license
+            ;; recipe-resolver-260417y (26 NRD resolved, 4 BLOCKED)
+            perl-cpan-distnameinfo
+            perl-const-fast
+            perl-data-printer
+            perl-object-pad
+            salome-configuration
+            janet
+            pyghmi
+            python-uritools
+            python-pyhanko-certvalidator
+            python-pyhanko
+            python-certomancer-csc-dummy
+            python-pdf2doi
+            python-typedunits
+            python-ompython
+            anyfetch
+            venice-cli-bin
+            plugdata-bin
+            blink-player-bin
+            famistudio-bin
+            dcvviewer-bin
+            pdfmerger
+            nview
+            python-trezor
+            alsaplayer
+            svxlink-sounds-en-us-heather
+            adbmanager-bin
             ))
