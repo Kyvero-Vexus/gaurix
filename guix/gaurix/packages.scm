@@ -5745,4 +5745,32 @@
                python-pypylon
                python-jaxlib
                python-cheap-repr
-               ))
+                           ;; recipe-resolver-260417ag (27 NRD resolved, 3 BLOCKED)
+               tlrc-bin
+               oxker-bin
+               gh-skyline-bin
+               gitopolis-bin
+               tsui-bin
+               runst-bin
+               opencode-bin
+               agesafetch-bin
+               play-timer-bin
+               pterodactyl-wings-bin
+               pass-secret-service-bin
+               todoist-bin
+               icloudpd-bin
+               spicetify-cli-bin
+               cleanuparr-bin
+               terraform-bin
+               skyterm-bin
+               weatherfetch-bin
+               discord-chat-exporter-cli-bin
+               ventoy-bin
+               localsend-bin
+               dietpdf-bin
+               freetube-bin
+               hoppscotch-bin
+               proton-pass-bin
+               zotero-bin
+               defguard-client-bin
+))
