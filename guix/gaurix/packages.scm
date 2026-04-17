@@ -5438,3 +5438,86 @@
             rabbitvcs
             pyspread
             klatexformula
+
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417x)
+  #:re-export (
+            ;; recipe-resolver-260417x (77 recipes)
+            prasmoid
+            sway-overfocus
+            tabulate
+            shm-modbus-signal-gen
+            shm-format
+            cxxshm
+            cxxsemaphore
+            cxxitimer
+            elixir-ls
+            syng-server
+            syng-common
+            syng-client
+            wayland-pipewire-idle-inhibit
+            matplotlib-cpp-git
+            shm-modbus-gui
+            lact-git
+            pkg-8188eu-aircrack-dkms-git
+            dolphin-emu-primehack-git
+            pdf2htmlex
+            treelite
+            python-treelite
+            kvantum-theme-whitesur-git
+            coulr
+            pyobd
+            vimv
+            sublist3r-git
+            wofi-calc
+            bin-bin
+            wprs-git
+            python-sdbus
+            microbin-bin
+            t150-driver-dkms-git
+            hyprbop
+            ghq-gst-bin
+            spwd
+            slider-cli-git
+            slider-cli
+            astro-box
+            python-pyccel
+            pypy3-requests
+            w-scan2
+            toney
+            il2cpp-dumper-bin
+            rustup-git
+            scalafmt
+            python-ag-ui-protocol
+            lovely-injector
+            iconic
+            pithos
+            wofi-vim
+            vulkan-caps-viewer-x11
+            vulkan-caps-viewer-wayland
+            cobra-cli
+            guile1-dot-8
+            ampache
+            kitty-terminfo-git
+            kitty-shell-integration-git
+            python-rocket-fft-git
+            pianobooster
+            textadept-gtk3
+            portainer-bin
+            bloop
+            nagstamon-git
+            mp3gain
+            findent
+            mystmd
+            pacman-contrib-git
+            miniupnpd-nft-git
+            arsenal
+            simgrid
+            libfprint-1
+            ttf-raleway-variable
+            otf-raleway
+            otb-unifont
+            psf-unifont
+            etterna
+            license
+            ))
