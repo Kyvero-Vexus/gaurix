@@ -9,6 +9,7 @@
             ;; recipe-resolver-260416c (30 NRD resolved)
             ;; recipe-resolver-260416e (27 NRD resolved, 3 BLOCKED)
             ;; recipe-resolver-260416f (26 NRD resolved)
+            ;; recipe-resolver-260417n (14 NRD evaluated: 8 resolved, 6 exhausted, pool depleted)
             auto-cpufreq
             backintime-git
             hydrus-network
@@ -5132,3 +5133,7 @@
   atom-ng-bin
   gridmonger
   ccdciel
+  ; recipe-resolver-260417n (3 new NRD recipes + 5 already resolved by deptree + 6 exhausted)
+  lenovolegionlinux-dkms-git
+  leetmouse-driver-dkms
+  omada-controller-bin

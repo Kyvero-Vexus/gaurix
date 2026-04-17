@@ -63,6 +63,7 @@
   #:use-module (gaurix packages recipe-resolver-260416b)
   #:use-module (gaurix packages recipe-resolver-260416c)
   #:use-module (gaurix packages recipe-resolver-260416e)
+  #:use-module (gaurix packages recipe-resolver-260417n)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -8495,6 +8496,11 @@
 (re-export rust-motd-bin)
 (re-export pocket-id-bin)
 (re-export pdf-metadata-editor-bin)
+; recipe-resolver-260417n
+(re-export lenovolegionlinux-dkms-git)
+(re-export leetmouse-driver-dkms)
+(re-export omada-controller-bin)
+
 ; deptree-resolver-260417n
 (re-export cook)
 (re-export capnproto-java)

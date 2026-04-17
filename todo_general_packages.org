@@ -110286,7 +110286,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in recipe-resolver-260416h.scm (recipe-resolver-260416h)
-** DONE 14492. gridmonger-git [RESOLVED: deptree-resolver-260417n]
+** BLOCKED 14492. gridmonger-git [RESOLVED: deptree-resolver-260417n]
    - Status: DONE: recipe in deptree-resolver-260417n.scm (gridmonger-git, RECIPE: gnu-build-system recipe, Nim build from GitHub johnnovak/gridmonger v1.2.0)
    - AUR votes: 1, popularity: 0.0104
    - Note: Your trusty old-school cRPG mapping companion
@@ -110294,6 +110294,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Gridmonger requires Nim compiler (not yet packaged in Guix); next: package nim compiler first (recipe-resolver-260416h)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NIM_UNSUPPORTED: Gridmonger requires Nim 2.0+ not in Guix; A1: Nim not available; A2: no Linux binary releases (Windows/macOS only); A3: packaging Nim itself is a major bootstrap task (recipe-resolver-260417n)
+   - TODO Status: BLOCKED
 ** DONE 14493. nuclei-templates
    - AUR votes: 2, popularity: 0.0104
    - Note: Templates for the nuclei engine to find security vulnerabilities
@@ -110319,6 +110321,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Godot double-precision build requires SCons build system not available in Guix; next: package python-scons then define Godot with float=64 flag (recipe-resolver-260416h)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_UNSUPPORTED: Godot double-precision with C# requires Mono/.NET SDK not in Guix; A1: SCons available but Mono missing; A2: without Mono = different package (godot-double); A3: Mono bootstrap chain too complex (recipe-resolver-260417n)
+   - TODO Status: BLOCKED
 ** DONE 14496. godot-double
    - AUR votes: 1, popularity: 0.0104
    - Note: Advanced cross-platform 2D and 3D game engine (double-precision build)
@@ -110649,6 +110653,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Qt4 is a massive legacy framework requiring extensive patching for modern compilers; next: review Guix upstream qt-4 package status and patches (recipe-resolver-260416h)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ANDROID_APP: Android/Kotlin radio player, not a desktop Linux app; repository archived Feb 2025; A1: Android SDK not in Guix; A2: no desktop version exists; A3: use shortwave/goodvibes (recipe-resolver-260417n)
+   - TODO Status: BLOCKED
 ** DONE 14540. nmcurse-rs-git
    - AUR votes: 2, popularity: 0.0102
    - Note: Curses interface for NetworkManager, rewritten in Rust with additional features
@@ -110812,12 +110818,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 14563. lenovolegionlinux-dkms-git
+** DONE 14563. lenovolegionlinux-dkms-git
    - Status: BLOCKED: MISSING_DEP + DKMS_UNSUPPORTED: depends on lenovolegionlinux-git (not packaged); DKMS kernel module model incompatible with Guix (deptree-resolver-260417n)
    - AUR votes: 10, popularity: 0.0100
    - Note: LenovoLegionLinux (LLL) DKMS module
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: DKMS kernel module requires linux-libre headers; Guix kernel module packaging needs custom phases
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (lenovolegionlinux-dkms-git v0.0.20, kernel module source, GPL-2.0) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14564. rotz
@@ -110847,6 +110855,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Cap'n Proto for Java
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: requires capnproto compiler + Maven/Java build toolchain; next: check if capnproto is in Guix
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (capnproto-java v0.1.16, gnu-build-system+javac, MIT) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14568. aarch64-linux-musl-cross-bin
@@ -110972,6 +110982,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A live wallpaper that shows the dependency graph and status of installed packages.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: shell script relies on pacman-specific commands; needs adaptation for Guix; next: fork/adapt
    - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pacwall supports only pacman as backend; A1: pacman-only, not portable; A2: fork requires rewriting C code for Guix store queries; A3: guix graph provides native dependency visualization (recipe-resolver-260417n)
+   - TODO Status: BLOCKED
 
 
 ** DONE 14585. hellfire-browser-bin
@@ -110993,6 +111005,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 17, popularity: 0.0094
    - Note: Arch Linux build source file management tool
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch-specific tool depending on pacman infrastructure; no use outside Arch
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux build source tool deprecated Nov 2023; A1: depends on pacman/devtools not in Guix; A2: stripping deps removes all functionality; A3: replaced by pkgctl, no Guix equivalent needed (recipe-resolver-260417n)
    - TODO Status: BLOCKED
 
 
@@ -111076,12 +111090,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 14599. omada-controller
+** DONE 14599. omada-controller
    - Status: BLOCKED: MISSING_DEP: needs MongoDB server (not in Guix); complex Java service with systemd integration (deptree-resolver-260417n)
    - AUR votes: 8, popularity: 0.0092
    - Note: Omada Network Application (SDN Controller)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: requires MongoDB + Java runtime; complex service with systemd unit; next: study Java service patterns
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (omada-controller-bin v5.14.32.3, copy-build-system binary, proprietary) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14600. whitesur-gtk-theme
@@ -111104,6 +111120,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Vintage Story 1-click install handler
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: requires .NET runtime; Guix .NET packaging not mature; next: check for self-contained binaries
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (vs1clickmodinstaller v0.2, Python script, GPL-3.0) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14603. mu-editor
@@ -111141,6 +111159,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: JPEG XL image format reference implementation (documentation; git version)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: documentation-only package requires Doxygen + Sphinx; next: define doc-only build phases
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (libjxl-doc-git v0.11.2, CMake doc-only, BSD-3) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14608. xpipe-ptb [RESOLVED: deptree-resolver-260417n]
@@ -111149,6 +111169,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: XPipe Public Test Build releases
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java app distributed as RPM; requires RPM extraction + JRE setup
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (xpipe-ptb v22.9, copy-build-system binary, AGPL-3.0) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14609. sbupdate-git
@@ -111195,11 +111217,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 14615. ccdciel [RESOLVED: deptree-resolver-260417n]
+** BLOCKED 14615. ccdciel [RESOLVED: deptree-resolver-260417n]
    - Status: DONE: recipe in deptree-resolver-260417n.scm (ccdciel, RECIPE: gnu-build-system recipe, Lazarus/FPC build from GitHub pchev/ccdciel v0.9.92)
    - AUR votes: 1, popularity: 0.0091
    - Note: A CCD capture software intended for the amateur astronomer.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: requires Free Pascal compiler (fpc) + Lazarus IDE not in Guix; next: package fpc toolchain
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — FPC_UNSUPPORTED: ccdciel requires Free Pascal + Lazarus IDE not in Guix; A1: FPC not available and has bootstrap chicken-egg problem; A2: no prebuilt Linux binaries; A3: FPC binary bootstrap integration is major infrastructure task (recipe-resolver-260417n)
    - TODO Status: BLOCKED
 
 
@@ -111325,14 +111349,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A gui for setting sway wallpaper, default apps, GTK themes, etc...
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Vala/Meson requiring valac + libadwaita; next: verify valac availability in Guix
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (swaysettings-git v0.5.0, Vala/Meson, GPL-3.0+) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
-** BLOCKED 14633. leetmouse-driver-dkms
+** DONE 14633. leetmouse-driver-dkms
    - Status: BLOCKED: DKMS_UNSUPPORTED: DKMS kernel module model incompatible with Guix declarative kernel management (deptree-resolver-260417n)
    - AUR votes: 2, popularity: 0.0091
    - Note: USB HID Boot Protocol mouse driver with acceleration.
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: DKMS kernel module; requires kernel headers build integration; next: study Guix kernel module patterns
    - TODO Status: BLOCKED
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417n.scm (leetmouse-driver-dkms v0.9.0-0.eb36c3a, kernel module source, GPL-2.0) (recipe-resolver-260417n)
+   - TODO Status: DONE
 
 
 ** DONE 14634. cookc [RESOLVED: deptree-resolver-260417n]
