@@ -439,6 +439,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ae)
   #:use-module (gaurix packages recipe-resolver-260417af)
   #:use-module (gaurix packages recipe-resolver-260417ah)
+  #:use-module (gaurix packages recipe-resolver-260417ai)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -2963,6 +2964,37 @@
             libayatana-appindicator-glib
             python-chromaterm
             python-qbittorrent-api
+
+            ;; recipe-resolver-260417ai recipes
+            apg
+            redsocks
+            digitemp
+            oqsprovider
+            dinit
+            tpm2-totp
+            iwqt
+            rokuecp
+            mameuix
+            kleiner-brauhelfer
+            python-cheap-repr
+            python-pz
+            ssort
+            patator
+            photocollage
+            perl-net-amazon-signature-v4
+            ruby-hiera-eyaml
+            grub-btrfs
+            simple-stateful-firewall
+            twuewand
+            pandoc-eisvogel-template
+            waytune
+            kworkflow
+            libfprint-vfs009x
+            box
+            howl
+            terminal-tetris
+            browsr
+            mfgtools
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -9095,3 +9127,34 @@
 (re-export vdhcoapp-bin)
 (re-export openterface-qt-bin)
 (re-export foliate)
+
+;; recipe-resolver-260417ai re-exports
+(re-export apg)
+(re-export redsocks)
+(re-export digitemp)
+(re-export oqsprovider)
+(re-export dinit)
+(re-export tpm2-totp)
+(re-export iwqt)
+(re-export rokuecp)
+(re-export mameuix)
+(re-export kleiner-brauhelfer)
+(re-export python-cheap-repr)
+(re-export python-pz)
+(re-export ssort)
+(re-export patator)
+(re-export photocollage)
+(re-export perl-net-amazon-signature-v4)
+(re-export ruby-hiera-eyaml)
+(re-export grub-btrfs)
+(re-export simple-stateful-firewall)
+(re-export twuewand)
+(re-export pandoc-eisvogel-template)
+(re-export waytune)
+(re-export kworkflow)
+(re-export libfprint-vfs009x)
+(re-export box)
+(re-export howl)
+(re-export terminal-tetris)
+(re-export browsr)
+(re-export mfgtools)
