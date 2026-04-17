@@ -110766,6 +110766,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_DEPS: Godot engine with Mono/.NET; massive build deps.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: Godot double-precision with C#/Mono requires .NET SDK not in Guix; A1: SCons buildable but Mono/.NET SDK missing; A2: without Mono = different package (godot-double exists); A3: .NET bootstrapping unsolved in Guix (recipe-resolver-260417ak)
 ** DONE 14496. godot-double
    - AUR votes: 1, popularity: 0.0104
    - Note: Advanced cross-platform 2D and 3D game engine (double-precision build)
@@ -111456,6 +111457,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: ARCH_SPECIFIC: Core logic uses pacman database.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: pacwall-git uses pacman database exclusively; A1: pacman API not in Guix; A2: rewrite = fork not package; A3: guix graph provides native alternative (recipe-resolver-260417ak)
 ** DONE 14585. hellfire-browser-bin
    - AUR votes: 2, popularity: 0.0095
    - Note: Optimized Firefox for GNU/Linux
@@ -111487,6 +111489,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: ARCH_SPECIFIC: Requires devtools and Arch SVN.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: asp is deprecated Arch Linux build tool (replaced by pkgctl Nov 2023); A1: depends on pacman/devtools; A2: stripping deps removes functionality; A3: tool is EOL (recipe-resolver-260417ak)
 ** DONE 14588. foxitreader
    - AUR votes: 464, popularity: 0.0094
    - Note: A fast, secure and complete PDF viewer
@@ -112111,6 +112114,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_PACKAGING: 500+ Python deps.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MASSIVE_SCALE: Odoo 18 ERP needs 500+ Python deps and PostgreSQL; A1: dep tree too large; A2: nightly versioning breaks reproducibility; A3: requires complex service design (recipe-resolver-260417ak)
 ** DONE 14670. deno-readability-cli
    - AUR votes: 1, popularity: 0.0091
    - Note: Firefox Reader Mode in your terminal! - CLI tool for Mozilla's Readability library
@@ -112327,6 +112331,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: ARCH_SPECIFIC: Links against libalpm (pacman).  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: dude requires libalpm (pacman library); A1: libalpm not in Guix; A2: guix gc provides native orphan cleanup; A3: no portable alternative (recipe-resolver-260417ak)
 ** DONE 14700. wfrc-git
    - AUR votes: 1, popularity: 0.0091
    - Note: Simple script makes screencast on wlroots compositors with shortcut easily.
@@ -112525,6 +112530,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: ARCH_SPECIFIC: Requires mkarchroot from devtools.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: arch-shell depends on mkarchroot/devtools/pacman; A1: devtools not portable; A2: guix shell provides equivalent; A3: no upstream portability interest (recipe-resolver-260417ak)
 ** DONE 14727. python-genson
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 1, popularity: 0.0091
@@ -113858,6 +113864,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: DKMS_UNSUPPORTED: Out-of-tree DKMS kernel module.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: mt76 DKMS module requires kernel headers + DKMS; A1: Guix kernel module model incompatible with DKMS; A2: mt76 already upstream in kernel; A3: use newer kernel for mt7925 (recipe-resolver-260417ak)
 ** DONE 14915. elan-bin
    - AUR votes: 2, popularity: 0.0079
    - Note: A video and audio annotation tool
@@ -115462,6 +115469,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_DEPS: Requires NVIDIA CUDA toolkit + nvidia-open-dkms, neither available in Guix.  Tried: (1) source build -- needs cuda SDK headers; (2) binary -- no prebuilt .deb/tarball; (3) stub build without CUDA -- not functional (deptree-resolver-260417aj)
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CUDA_KERNEL_MODULE: gdrcopy requires NVIDIA gdrdrv kernel module; A1: userspace lib builds but non-functional without kernel module; A2: NVIDIA driver sources not in Guix; A3: HPC/CUDA incompatible with Guix sandbox (recipe-resolver-260417ak)
 ** DONE 15132. python-pynput [gaurix:queue-20260402p100daily3 target=python-pynput rule=exact]
    - AUR votes: 31, popularity: 0.0066
    - Note: Python library to monitor and control user input devices
@@ -115648,7 +115656,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 15158. iriunwebcam-bin
+** DONE 15158. iriunwebcam-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Needs v4l2loopback kernel module (recipe-resolver-260417aa)
    - AUR votes: 17, popularity: 0.0063
    - Note: Use your phone's camera as a wireless webcam in your PC
@@ -115661,6 +115669,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: DKMS_UNSUPPORTED: Depends on v4l2loopback-dkms (out-of-tree kernel module).  Tried: (1) package without v4l2loopback -- binary crashes without kernel module; (2) check for v4l2loopback in Guix -- not available; (3) static build -- not feasible, needs kernel integration (deptree-resolver-260417aj)
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ak.scm (iriunwebcam-bin v2.9.1, phone webcam binary, copy-build-system, proprietary freeware) (recipe-resolver-260417ak)
 ** DONE 15159. remote-desktop-manager
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Devolutions proprietary .deb (v2026.1.1.1); requires .NET/Avalonia; next: evaluate binary repack (recipe-resolver-260417ai)
    - AUR votes: 13, popularity: 0.0063
@@ -115838,7 +115847,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
    - TODO Status: DONE (recipe-resolver-260417t)
    - Status: DONE: recipe in recipe-resolver-260417t.scm (python-pylatex v1.4.2, LaTeX document generation, pyproject, MIT) (recipe-resolver-260417t)
-** BLOCKED 15182. python-gpustat
+** DONE 15182. python-gpustat
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Requires NVIDIA pynvml (recipe-resolver-260417aa)
    - AUR votes: 6, popularity: 0.0060
    - Note: A simple command-line utility for querying and monitoring GPU status
@@ -115850,6 +115859,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_DEPS: Depends on nvidia-utils and python-nvidia-ml-py (NVIDIA driver stack).  Tried: (1) package without nvidia -- core functionality broken; (2) check for nvidia-ml-py in Guix -- not available; (3) mock nvidia bindings -- defeats purpose (deptree-resolver-260417aj)
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ak.scm (python-gpustat v1.1.1, GPU monitoring utility + python-nvidia-ml-py v13.595.45 dependency, pyproject-build-system, MIT/BSD-3) (recipe-resolver-260417ak)
 ** DONE 15183. grub-btrfs-git
    - Status: DONE: recipe in recipe-resolver-260417ai.scm (grub-btrfs v4.14, copy-build-system, GPL-3.0)
    - AUR votes: 17, popularity: 0.0060

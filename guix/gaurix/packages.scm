@@ -5803,3 +5803,10 @@
                perl-term-shellui
                perl-io-stty
                librepfunc))
+
+;; recipe-resolver-260417ak (3 NRD resolved, 7 BLOCKED — final sweep)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417ak)
+  #:re-export (python-nvidia-ml-py
+               python-gpustat
+               iriunwebcam-bin))

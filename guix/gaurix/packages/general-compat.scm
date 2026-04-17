@@ -442,6 +442,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ai)
   #:use-module (gaurix packages deptree-resolver-260417aj)
   #:use-module (gaurix packages recipe-resolver-260417aj)
+  #:use-module (gaurix packages recipe-resolver-260417ak)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9184,3 +9185,8 @@
 (re-export perl-term-shellui)
 (re-export perl-io-stty)
 (re-export librepfunc)
+
+;; recipe-resolver-260417ak re-exports
+(re-export python-nvidia-ml-py)
+(re-export python-gpustat)
+(re-export iriunwebcam-bin)
