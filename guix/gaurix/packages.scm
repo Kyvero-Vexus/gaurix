@@ -4951,6 +4951,7 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260416f)
   #:use-module (gaurix packages recipe-resolver-260416i)
+  #:use-module (gaurix packages recipe-resolver-260416j)
   #:re-export (
             ;; recipe-resolver-260416f
             postman-bin
