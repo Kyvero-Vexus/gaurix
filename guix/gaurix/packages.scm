@@ -5913,3 +5913,34 @@
                devdocs-desktop
                unciv
                fjordlauncher))
+
+;; recipe-resolver-260417am (27 NRD resolved, 5 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417am)
+  #:re-export (moor-bin
+               steamguard-cli-bin
+               vopono-bin
+               youtubedr-bin
+               pingme-bin
+               overmind-bin
+               sqly-bin
+               reddix-bin
+               gowall-bin
+               tuicr-bin
+               rres-bin
+               folderhost-bin
+               tetrigo-bin
+               tenere-bin
+               taskell-bin
+               gzdoom-bin
+               vkd3d-proton-bin
+               crossdirstat-bin
+               font-ioskeley-mono-unhinted
+               font-chhsich-nerd
+               python-pysmart
+               python-upp
+               perl-data-password-zxcvbn
+               alpine-make-rootfs
+               epub-thumbnailer
+               zenstates
+               rust-docs))
