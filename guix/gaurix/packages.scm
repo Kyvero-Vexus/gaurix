@@ -5179,6 +5179,7 @@
   python-chromaterm
   python-qbittorrent-api
   ;; recipe-resolver-260417r (91 recipes, 9 BLOCKED)
+            ;; recipe-resolver-260417u (100 TODO resolved: 99 recipes, 1 blocked)
   runjs-bin
   bitwarden-menu-git
   organize
@@ -5309,3 +5310,102 @@
             vlc-luajit
             nvidia-patch
             intel-level-zero-raytracing-support-git
+            leftwm-nonsystemd
+            leftwm
+            mpd-discord-rpc
+            power-options-daemon
+            lib32-extest
+            superfan
+            rubyripper
+            rubyripper-git
+            sidplayer
+            cargo-llvm-lines
+            ttf-luciole
+            jailer
+            wpaperd-git
+            pcsx-redux-git
+            cloudemoticon-rs
+            autojump-rs-bin
+            fastnn
+            python-rapids-build-backend
+            gemini-cli-proxy-git
+            mkdocs-material-extensions
+            firefox-extension-plasma-integration
+            rmm
+            python-rmm
+            ltfs-hpe
+            tsqx
+            lnk-bin
+            oolite
+            pg-cron
+            python-nx-cugraph
+            netduke32
+            alden
+            solarized-sddm-theme
+            gsettings-desktop-schemas-nofont
+            nextcloud-app-previewgenerator
+            opencollada-blender-git
+            repak
+            bottom-nightly-autocomplete
+            mandoc-cvs
+            performa
+            pacman-mandoc-update-hook
+            wiso-steuer-2025
+            imagemami
+            pgplot
+            crown
+            ntfydesktop
+            elan-bin
+            swarmfm-player
+            python-raft-dask
+            python-pylibraft
+            gtkpod
+            dngconverter
+            msquic-git
+            rdapcheck
+            fensterchef
+            rocksdb-static
+            randgen-bin
+            keepsecret-git
+            swyh-rs-git
+            lyricify
+            lvgl-editor-bin
+            abcrypt-cli-bin
+            omcp-git
+            raycast-linux-appimage
+            frappe-bench
+            ipcalc-redhat
+            motioneye
+            kingfisher-bin
+            rofi-nerdy
+            zuse-git
+            oreo-cursors-bin
+            libwlembed-git
+            ttml2srt-git
+            frs
+            rofi-process-killer
+            slidev-cli
+            switchtube-downloader-bin
+            refi2nd
+            quickbench
+            bestool-git
+            vulnx-bin
+            python-tl2cgen
+            python-lightgbm-cl
+            lightgbm-cl
+            angie-bin
+            buildnumber-generator
+            deemix-gui-git
+            whoogle
+            parmetis-git
+            pinnacle-comp
+            ms-365-electron-bin
+            hostman-bin
+            openfreebuds
+            brightness
+            sqlitecpp
+            ed-odyssey-materials-helper-bin
+            textadept
+            wastebin-bin
+            discord-canary-electron-bin
+            wago-modbus-coupler-shm
