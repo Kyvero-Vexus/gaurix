@@ -446,6 +446,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ak)
   #:use-module (gaurix packages recipe-resolver-260417al)
   #:use-module (gaurix packages recipe-resolver-260417am)
+  #:use-module (gaurix packages recipe-resolver-260417an)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9323,3 +9324,27 @@
 (re-export epub-thumbnailer)
 (re-export zenstates)
 (re-export rust-docs)
+
+;; recipe-resolver-260417an re-exports
+(re-export fresh-editor-bin)
+(re-export ferris-scan-bin)
+(re-export iwmenu-bin)
+(re-export pwmenu-bin)
+(re-export bzmenu-bin)
+(re-export sabiql-bin)
+(re-export datui-bin)
+(re-export dsw-bin)
+(re-export seamonkey-bin)
+(re-export neovide-bin)
+(re-export paket-bin)
+(re-export marktext-tkaixiang-bin)
+(re-export stremio-service-bin)
+(re-export maretf-bin)
+(re-export vcard-studio-bin)
+(re-export kanri-bin)
+(re-export clash-geoip)
+(re-export qtilitools)
+(re-export osslsigncode)
+(re-export apngasm)
+(re-export libcava)
+(re-export charliecloud)

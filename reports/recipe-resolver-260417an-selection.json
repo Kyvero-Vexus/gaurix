@@ -1,0 +1,43 @@
+{
+  "pass_id": "recipe-resolver-260417an",
+  "date": "2026-04-17",
+  "type": "NEEDS_RECIPE_DESIGN",
+  "total_attempted": 30,
+  "total_resolved": 30,
+  "recipes_created": 22,
+  "total_blocked": 8,
+  "resolved": [
+    {"name": "fresh-editor-bin", "version": "0.2.14", "build_system": "copy", "license": "GPL-2.0", "source_type": "tarball"},
+    {"name": "ferris-scan-bin", "version": "0.25", "build_system": "copy", "license": "MIT", "source_type": "binary"},
+    {"name": "iwmenu-bin", "version": "0.4.0", "build_system": "copy", "license": "GPL-3.0", "source_type": "binary"},
+    {"name": "pwmenu-bin", "version": "0.4.0", "build_system": "copy", "license": "GPL-3.0", "source_type": "binary"},
+    {"name": "bzmenu-bin", "version": "0.4.0", "build_system": "copy", "license": "GPL-3.0", "source_type": "binary"},
+    {"name": "sabiql-bin", "version": "1.9.1", "build_system": "copy", "license": "MIT", "source_type": "tarball"},
+    {"name": "datui-bin", "version": "0.2.52", "build_system": "copy", "license": "MIT", "source_type": "tarball"},
+    {"name": "dsw-bin", "version": "0.0.3", "build_system": "copy", "license": "MIT", "source_type": "tarball"},
+    {"name": "seamonkey-bin", "version": "2.53.23", "build_system": "copy", "license": "MPL-2.0", "source_type": "tarball"},
+    {"name": "neovide-bin", "version": "0.16.1", "build_system": "copy", "license": "MIT", "source_type": "tarball"},
+    {"name": "paket-bin", "version": "0.1.3", "build_system": "copy", "license": "Apache-2.0/MIT", "source_type": "tarball"},
+    {"name": "marktext-tkaixiang-bin", "version": "0.18.2", "build_system": "copy", "license": "MIT", "source_type": "tarball"},
+    {"name": "stremio-service-bin", "version": "0.1.15", "build_system": "copy", "license": "GPL-2.0", "source_type": "deb"},
+    {"name": "maretf-bin", "version": "0.10.2", "build_system": "copy", "license": "MIT", "source_type": "zip"},
+    {"name": "vcard-studio-bin", "version": "1.5.0", "build_system": "copy", "license": "CC0", "source_type": "deb"},
+    {"name": "kanri-bin", "version": "0.8.2", "build_system": "copy", "license": "GPL-3.0+", "source_type": "deb"},
+    {"name": "clash-geoip", "version": "202511270021", "build_system": "copy", "license": "CC-BY-SA-4.0/GPL-3.0+", "source_type": "data"},
+    {"name": "qtilitools", "version": "0.1.2", "build_system": "cmake", "license": "BSD-3", "source_type": "tarball"},
+    {"name": "osslsigncode", "version": "2.12", "build_system": "cmake", "license": "GPL-3.0+", "source_type": "tarball"},
+    {"name": "apngasm", "version": "3.1.10", "build_system": "cmake", "license": "LGPL-2.1+", "source_type": "tarball"},
+    {"name": "libcava", "version": "0.10.7", "build_system": "meson", "license": "MIT", "source_type": "tarball"},
+    {"name": "charliecloud", "version": "0.43", "build_system": "gnu", "license": "Apache-2.0", "source_type": "tarball"}
+  ],
+  "blocked": [
+    {"name": "fortune-mod-calvin", "reason": "LICENSE_UNKNOWN", "detail": "Fortune file collection with no declared FOSS license; cannot determine redistribution rights"},
+    {"name": "fortune-mod-hitchhiker", "reason": "LICENSE_UNKNOWN", "detail": "Hitchhiker's Guide quotes; copyrighted work, no FOSS license for quotation collection"},
+    {"name": "fortune-mod-discworld", "reason": "LICENSE_RESTRICTIVE", "detail": "Discworld quotes with 'Copyright' declared; copyrighted literary work, not FOSS-distributable"},
+    {"name": "breeze-contrast-cursor-theme", "reason": "SOURCE_UNAVAILABLE", "detail": "Upstream URL code.jpope.org returns 404/download failure; no mirror or alternative source found"},
+    {"name": "somewm-git", "reason": "COMPLEX_DEPS", "detail": "Wayland compositor porting AwesomeWM; requires wlroots subproject + luajit + seatd + vulkan + many xcb/wayland libs"},
+    {"name": "input-remapper", "reason": "MISSING_PYTHON_DEPS", "detail": "Python GUI needing 10+ unpackaged deps: python-evdev, python-dasbus, python-pydantic; systemd integration incompatible with Guix"},
+    {"name": "openhue-cli", "reason": "GO_VENDORING", "detail": "Go CLI requiring vendored Go module dependency tree; no pre-built binary; CGO flags suggest native deps"},
+    {"name": "alt-sendme-bin", "reason": "COMPLEX_DEPS", "detail": "Tauri app requiring webkit2gtk-4.1 version mismatch in Guix; heavy library patching needed for .deb repack"}
+  ]
+}
