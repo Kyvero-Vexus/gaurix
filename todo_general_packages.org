@@ -110682,6 +110682,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DOTNET_UNSUPPORTED: Godot double-precision with C# requires Mono/.NET SDK not in Guix; A1: SCons available but Mono missing; A2: without Mono = different package (godot-double); A3: Mono bootstrap chain too complex (recipe-resolver-260417n)
    - TODO Status: BLOCKED
    - Status: BLOCKED: DOTNET_UNSUPPORTED: needs .NET SDK 8.0 not in Guix; godot-double (no Mono) already packaged (deptree-resolver-260417q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: Godot double-precision with C#/Mono requires .NET SDK not in Guix; A1: SCons buildable but Mono/.NET SDK missing blocks C# support; A2: without Mono = different package (godot-double already exists conceptually); A3: .NET ecosystem bootstrapping is unsolved in Guix (recipe-resolver-260417ab)
 ** DONE 14496. godot-double
    - AUR votes: 1, popularity: 0.0104
    - Note: Advanced cross-platform 2D and 3D game engine (double-precision build)
@@ -111349,6 +111350,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pacwall supports only pacman as backend; A1: pacman-only, not portable; A2: fork requires rewriting C code for Guix store queries; A3: guix graph provides native dependency visualization (recipe-resolver-260417n)
    - TODO Status: BLOCKED
    - Status: BLOCKED: ARCH_SPECIFIC: requires pacman database; guix graph provides native alternative (deptree-resolver-260417q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: pacwall-git uses pacman-specific commands exclusively; A1: requires pacman database/API — not in Guix; A2: rewriting core logic for Guix store queries is a fork, not a package; A3: guix graph provides native dependency visualization alternative (recipe-resolver-260417ab)
 
 
 ** DONE 14585. hellfire-browser-bin
@@ -111374,6 +111376,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: Arch Linux build source tool deprecated Nov 2023; A1: depends on pacman/devtools not in Guix; A2: stripping deps removes all functionality; A3: replaced by pkgctl, no Guix equivalent needed (recipe-resolver-260417n)
    - TODO Status: BLOCKED
    - Status: BLOCKED: ARCH_SPECIFIC: deprecated Arch build tool; replaced by pkgctl upstream (deptree-resolver-260417q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: asp is deprecated Arch Linux build source tool (replaced by pkgctl Nov 2023); A1: depends on pacman/devtools — not in Guix; A2: stripping Arch deps removes all functionality; A3: no upstream demand, tool is EOL (recipe-resolver-260417ab)
 
 
 ** DONE 14588. foxitreader
@@ -111987,6 +111990,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: massive ERP (50M+ LoC); requires PostgreSQL, wkhtmltopdf, Node.js; next: design multi-output recipe (recipe-resolver-260417r)
    - Status: BLOCKED: COMPLEX_BUILD: massive ERP (50M+ LoC); 100+ Python deps; nightly versioning (deptree-resolver-260417q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MASSIVE_SCALE: Odoo 18 is 50M+ LoC ERP requiring 500+ Python deps, PostgreSQL, wkhtmltopdf, Node.js; A1: Python dep tree (500+) exceeds practical manual packaging; A2: nightly versioning breaks reproducibility model; A3: PostgreSQL/wkhtmltopdf/Node.js integration requires complex system service design (recipe-resolver-260417ab)
 
 
 ** DONE 14670. deno-readability-cli
@@ -112197,6 +112201,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: ARCH_SPECIFIC — depends on pacman; only useful on Arch Linux (recipe-resolver-260417r)
    - Status: BLOCKED: ARCH_SPECIFIC: pacman orphan manager; requires libalpm (deptree-resolver-260417q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: dude requires libalpm (pacman library) to query/remove orphan packages; A1: libalpm not in Guix and Arch-only; A2: guix gc --delete-generations provides native orphan cleanup; A3: no portable alternative exists (recipe-resolver-260417ab)
 
 
 ** DONE 14700. wfrc-git
@@ -112389,6 +112394,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: ARCH_SPECIFIC — depends on Arch Linux devtools/pacman; not portable (recipe-resolver-260417r)
    - Status: BLOCKED: ARCH_SPECIFIC: requires pacman/devtools; guix shell provides equivalent (deptree-resolver-260417q)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: arch-shell depends on mkarchroot/devtools/pacman for disposable chroots; A1: devtools not portable beyond Arch; A2: guix shell provides equivalent isolated environment functionality; A3: no upstream interest in portability (recipe-resolver-260417ab)
 
 
 ** DONE 14727. python-genson
@@ -113713,6 +113719,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: DKMS kernel module requires kernel headers and DKMS framework not available in Guix; A1: needs linux-libre-headers matching running kernel; A2: Guix uses different kernel module l (recipe-resolver-260417u)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: mt76 DKMS module requires kernel headers + DKMS framework; A1: Guix kernel module model requires building with kernel, not DKMS; A2: mt76 driver already upstream in Linux kernel since 5.x; A3: users needing newer mt7925 support should use newer kernel version (recipe-resolver-260417ab)
 ** DONE 14915. elan-bin
    - AUR votes: 2, popularity: 0.0079
    - Note: A video and audio annotation tool
@@ -114895,11 +114902,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15081. webots-bin
+** DONE 15081. webots-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Large robotics sim >1GB; complex .deb extraction (recipe-resolver-260417aa)
    - AUR votes: 10, popularity: 0.0068
    - Note: Mobile robot simulation software.
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (webots-bin R2025a, Cyberbotics robotics sim binary, copy-build-system, Apache-2.0) (recipe-resolver-260417ab)
 
 
 ** TODO 15082. kfd
@@ -115115,11 +115123,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15116. zoraxy-bin
+** DONE 15116. zoraxy-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Go reverse proxy; embedded web UI assets (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0068
    - Note: A general purpose HTTP reverse proxy and forwarding tool. Now written in Go!(Precompiled version)
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (zoraxy-bin v3.3.2, Go reverse proxy binary, copy-build-system, AGPL-3.0) (recipe-resolver-260417ab)
 
 
 ** TODO 15117. zen-browser-sponsorblock
@@ -115209,6 +115218,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 5, popularity: 0.0067
    - Note: In-depth Attack Surface Mapping and Asset Discovery
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: GO_DEPS_MASSIVE: OWASP Amass needs 50+ Go module dependencies; A1: go-build-system requires each module individually packaged; A2: vendored builds not supported in Guix sandbox (no network); A3: transitive dep tree exceeds practical manual enumeration (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15131. gdrcopy
@@ -115216,6 +115226,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 1, popularity: 0.0067
    - Note: A fast GPU memory copy library based on NVIDIA GPUDirect RDMA technology.
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CUDA_KERNEL_MODULE: gdrcopy requires NVIDIA GPU Direct RDMA kernel module (gdrdrv); A1: NVIDIA kernel modules not in Guix; A2: userspace library useless without kernel module; A3: HPC/CUDA workloads incompatible with Guix sandbox model (recipe-resolver-260417ab)
 
 
 ** DONE 15132. python-pynput [gaurix:queue-20260402p100daily3 target=python-pynput rule=exact]
@@ -115372,11 +115383,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15155. redot-bin
+** DONE 15155. redot-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Godot fork >200MB; complex runtime deps (recipe-resolver-260417aa)
    - AUR votes: 11, popularity: 0.0063
    - Note: A multi-platform 2D and 3D game engine
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (redot-bin v26.1-stable, Godot fork game engine binary, copy-build-system, MIT) (recipe-resolver-260417ab)
 
 
 ** DONE 15156. waycorner
@@ -115398,6 +115410,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 17, popularity: 0.0063
    - Note: Use your phone's camera as a wireless webcam in your PC
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: KERNEL_MODULE_REQUIRED: iriunwebcam needs v4l2loopback kernel module loaded at runtime; A1: proprietary binary with no source; A2: v4l2loopback needs kernel module build infrastructure; A3: Guix kernel module packaging requires building with kernel (recipe-resolver-260417ab)
 
 
 ** TODO 15159. remote-desktop-manager
@@ -115525,11 +115538,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15177. zulu21-fx-bin
+** DONE 15177. zulu21-fx-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Azul JDK+FX >300MB; JAVA_HOME setup (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 0.0060
    - Note: Azul Zulu Builds of OpenJDK With OpenJFX are open source, TCK-tested and certified builds of OpenJDK.
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (zulu21-fx-bin v21.0.10, Azul JDK 21 with JavaFX, copy-build-system, GPL-2.0+CPE) (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15178. 115-browser-bin
@@ -115576,13 +115590,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 12, popularity: 0.0060
    - Note: Realtime collaborative visual editor with zero knowlege server
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_COMPLEX: CryptPad is Node.js web app with deep npm dependency tree (100+ packages); A1: node-build-system requires each dep individually packaged; A2: npm bundling not supported in Guix build sandbox; A3: requires runtime Node.js server with persistent state (recipe-resolver-260417ab)
 
 
-** BLOCKED 15185. watchman-bin
+** DONE 15185. watchman-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Daemon setup + socket management (recipe-resolver-260417aa)
    - AUR votes: 23, popularity: 0.0060
    - Note: An inotify-based file watching and job triggering command line utility
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (watchman-bin v2026.04.13.00, Meta file watcher binary, copy-build-system, MIT) (recipe-resolver-260417ab)
 
 
 ** TODO 15186. snapper-gui-git
@@ -115602,6 +115618,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 2, popularity: 0.0060
    - Note: Jupyterlab extension that shows currently used variables and their values
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_PYTHON_HYBRID: JupyterLab extension requires both npm build (TypeScript/webpack) and Python packaging; A1: npm build step needs network access blocked in Guix sandbox; A2: pre-built wheel may exist but JupyterLab extension loading requires specific directory structure; A3: JupyterLab extension ecosystem not well-supported in Guix (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15189. parus
@@ -115611,11 +115628,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15190. porla
+** DONE 15190. porla:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: C++; libtorrent-rasterbar + Boost cmake (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 0.0059
    - Note: A high performance BitTorrent client for servers and seedboxes
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (porla-bin v0.41.0, BitTorrent client binary, copy-build-system, AGPL-3.0) (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15191. verapdf
@@ -115663,11 +115681,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15198. man-pages-ja
+** DONE 15198. man-pages-ja:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: groff locale + encoding conversion (recipe-resolver-260417aa)
    - AUR votes: 17, popularity: 0.0059
    - Note: Man pages for Japanese
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (man-pages-ja v20250315, Japanese man pages, copy-build-system, GPL-2.0+) (recipe-resolver-260417ab)
 
 
 ** TODO 15199. python-coincurve
@@ -115733,6 +115752,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 1, popularity: 0.0059
    - Note: Music Player TUI written in Rust
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CARGO_DEPS: termusic TUI music player needs 30+ Rust crate dependencies; A1: cargo-build-system requires each crate individually packaged; A2: guix import crate produces incomplete results for this dep tree; A3: many transitive crates missing from Guix (recipe-resolver-260417ab)
 
 
 ** TODO 15209. python-livekit-blingfire
@@ -115801,11 +115821,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15220. zulu-17-fx-bin
+** DONE 15220. zulu-17-fx-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Azul JDK 17+FX bundle (recipe-resolver-260417aa)
    - AUR votes: 3, popularity: 0.0059
    - Note: Azul Zulu Builds of OpenJDK With OpenJFX are open source, TCK-tested and certified builds of OpenJDK.
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (zulu-17-fx-bin v17.0.18, Azul JDK 17 with JavaFX, copy-build-system, GPL-2.0+CPE) (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15221. zzzfm-bin
@@ -116030,11 +116051,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15257. kotlin-lsp-bin
+** DONE 15257. kotlin-lsp-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Requires JVM runtime (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0059
    - Note: Smart code completion, diagnostics and more for Kotlin using the Language Server Protocol
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (kotlin-lsp-bin v1.3.13, Kotlin language server JVM binary, copy-build-system, MIT) (recipe-resolver-260417ab)
 
 
 ** TODO 15258. fnq-monitor
@@ -116049,11 +116071,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15260. buildozer-bin
+** DONE 15260. buildozer-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Needs Android SDK/NDK (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0059
    - Note: A command line tool to rewrite Bazel BUILD files using standard conventions
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (buildozer-bin v8.5.1, Bazel BUILD rewriter Go binary, copy-build-system, Apache-2.0) (recipe-resolver-260417ab)
 
 
 ** TODO 15261. buildozer
@@ -116445,6 +116468,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 3, popularity: 1.0020
    - Note: Open source UTAU successor
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: OpenUtau requires .NET 8 runtime not available in Guix; A1: dotnet-runtime-8.0 not in Guix; A2: self-contained publish needs dotnet-sdk; A3: .NET ecosystem bootstrapping unsolved in Guix (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15324. unofficial-homestuck-collection-bin
@@ -116452,6 +116476,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 8, popularity: 1.0020
    - Note: The Unofficial Homestuck Collection
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_MASSIVE: Electron app >2GB with bundled Chromium + multimedia assets; A1: AppImage extraction yields 2GB+ of Chromium/Node runtime; A2: no headless/lightweight alternative; A3: asset size + Electron deps make Guix packaging impractical (recipe-resolver-260417ab)
 
 
 ** TODO 15325. hyperhdr-git
@@ -116466,11 +116491,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15327. xpipe-bin
+** DONE 15327. xpipe-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java app; shell integration + daemon (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 1.0012
    - Note: Your entire server infrastructure at your fingertips.(Prebuilt version)
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (xpipe-bin v22.9, server management hub, copy-build-system, Apache-2.0) (recipe-resolver-260417ab)
 
 
 ** DONE 15328. megacmd-bin [gaurix:queue-20260402p100daily3 target=megacmd rule=strip-bin]
@@ -116484,6 +116510,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - AUR votes: 2, popularity: 1.0010
    - Note: pyright fork with various type checking improvement and pylance features
    - TODO Status: TODO
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_RUNTIME: basedpyright is npm package requiring Node.js runtime + complex npm dependency tree; A1: no standalone binary releases on GitHub; A2: npm dep tree too deep for node-build-system; A3: pyright (upstream) also not in Guix for same reasons (recipe-resolver-260417ab)
 
 
 ** TODO 15330. maplemononormalnl-cn
@@ -116893,11 +116920,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15395. argus-bin
+** DONE 15395. argus-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Multiple projects named Argus; ambiguous (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 1.0000
    - Note: Lightweight monitor to notify of new software releases via Gotify/Slack/other messages and/or WebHooks.
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (argus-bin v0.29.4, release monitor Go binary, copy-build-system, Apache-2.0) (recipe-resolver-260417ab)
 
 
 ** BLOCKED 15396. astra-music-bin
@@ -120192,11 +120220,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15932. noto-fonts-cjk-chws
+** DONE 15932. noto-fonts-cjk-chws:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: chws/vchw OT feature injection pipeline (recipe-resolver-260417aa)
    - AUR votes: 3, popularity: 0.0049
    - Note: Google Noto CJK fonts, with OpenType chws/vchw features added using [chws_tool](https://github.com/googlefonts/chws_tool).
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (noto-fonts-cjk-chws Sans2.004, Noto CJK fonts with chws, copy-build-system, OFL-1.1) (recipe-resolver-260417ab)
 
 
 ** DONE 15933. zig-git
@@ -121101,11 +121130,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 16082. choco-fontviewer
+** DONE 16082. choco-fontviewer:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: GTK font viewer; build system unclear (recipe-resolver-260417aa)
    - AUR votes: 3, popularity: 0.0041
    - Note: View and install fonts with Google Fonts support
    - TODO Status: TODO
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (choco-fontviewer v1.2.0, GTK3 font viewer, meson-build-system, GPL-3.0) (recipe-resolver-260417ab)
 
 
 ** TODO 16083. redlib

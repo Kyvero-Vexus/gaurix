@@ -13,6 +13,7 @@
             ;; deptree-resolver-260417r (8 BLOCKED resolved)
             ;; deptree-resolver-260417s (96 BLOCKED resolved: 2 new recipes, 94 already-resolved)
             ;; recipe-resolver-260417w (27 NRD resolved, 3 BLOCKED)
+            ;; recipe-resolver-260417ab (14 NRD resolved, 16 BLOCKED)
             auto-cpufreq
             backintime-git
             hydrus-network
@@ -144,6 +145,22 @@
             tmplayer
             tuistory
             unrealtournament
+
+            ;; recipe-resolver-260417ab
+            zoraxy-bin
+            argus-bin
+            buildozer-bin
+            porla-bin
+            watchman-bin
+            kotlin-lsp-bin
+            redot-bin
+            xpipe-bin
+            zulu21-fx-bin
+            zulu-17-fx-bin
+            webots-bin
+            man-pages-ja
+            choco-fontviewer
+            noto-fonts-cjk-chws
 
             ;; recipe-resolver-260415o
             zen-browser-bin
