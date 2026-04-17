@@ -441,6 +441,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ah)
   #:use-module (gaurix packages recipe-resolver-260417ai)
   #:use-module (gaurix packages deptree-resolver-260417aj)
+  #:use-module (gaurix packages recipe-resolver-260417aj)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9173,3 +9174,13 @@
 (re-export magicq)
 (re-export python-tensorstore-bin)
 (re-export unofficial-homestuck-collection-bin)
+
+;; recipe-resolver-260417aj re-exports
+(re-export ms-sys)
+(re-export moodbar)
+(re-export paper-icon-theme)
+(re-export pavumeter)
+(re-export gnome-colors-icon-theme)
+(re-export perl-term-shellui)
+(re-export perl-io-stty)
+(re-export librepfunc)

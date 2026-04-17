@@ -5791,3 +5791,15 @@
                magicq
                python-tensorstore-bin
                unofficial-homestuck-collection-bin))
+
+;; recipe-resolver-260417aj (8 NRD resolved, 9 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417aj)
+  #:re-export (ms-sys
+               moodbar
+               paper-icon-theme
+               pavumeter
+               gnome-colors-icon-theme
+               perl-term-shellui
+               perl-io-stty
+               librepfunc))
