@@ -108462,6 +108462,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: PROPRIETARY: closed-source commercial CLI; no source or redistributable binary (deptree-resolver-260417q)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:MISSING_SOURCE: Not in AUR cache; no upstream source found.  Tried: (1) AUR search -- no PKGBUILD; (2) web search -- no results; (3) GitHub/GitLab search -- no repo
 ** DONE 14203. losci-git
    - AUR votes: 1, popularity: 0.0139
    - Note: Digital oscilloscope for visualizing sound.
@@ -110683,6 +110684,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: DOTNET_UNSUPPORTED: needs .NET SDK 8.0 not in Guix; godot-double (no Mono) already packaged (deptree-resolver-260417q)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: Godot double-precision with C#/Mono requires .NET SDK not in Guix; A1: SCons buildable but Mono/.NET SDK missing blocks C# support; A2: without Mono = different package (godot-double already exists conceptually); A3: .NET ecosystem bootstrapping is unsolved in Guix (recipe-resolver-260417ab)
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Godot engine with double-precision and Mono/.NET support.  Tried: (1) build from source -- needs dotnet-sdk-8.0 + nuget (not in Guix); (2) pre-built binary -- none published with double+mono; (3) strip Mono support -- defeats package purpose
 ** DONE 14496. godot-double
    - AUR votes: 1, popularity: 0.0104
    - Note: Advanced cross-platform 2D and 3D game engine (double-precision build)
@@ -111279,6 +111281,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: SOURCE_UNAVAILABLE: AUR PKGBUILD has no source URL; no upstream repo found (deptree-resolver-260417q)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:MISSING_SOURCE: No upstream repository; source bundled only in AUR git.  Tried: (1) search for upstream repo -- none; (2) AUR PKGBUILD uses inline source; (3) no URL field in AUR metadata
 ** BLOCKED 14576. void-electron-latest-bin  :deptree-resolver-260417z:COMPLEX_DEPS: Void editor (VS Code fork) on latest Electron.  Tried: (1) check GitHub releases -- NO Linux binaries published (macOS/W:
    - Status: BLOCKED: SOURCE_UNAVAILABLE: void-editor project fragmented across forks; no stable Linux binary release found (deptree-resolver-260417n)
    - AUR votes: 3, popularity: 0.0097
@@ -111288,6 +111291,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: SOURCE_UNAVAILABLE: fragmented forks; full Electron packaging needed (deptree-resolver-260417q)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Void editor (VS Code fork) on latest Electron.  Tried: (1) GitHub releases -- NO Linux binaries; (2) build from source -- needs Electron 34 (not in Guix); (3) use system Electron -- version mismatch breaks app
 ** DONE 14577. void-bin
    - AUR votes: 3, popularity: 0.0097
    - Note: Cursor alternative AI code editor
@@ -111341,6 +111345,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_CHAIN_TOO_DEEP: requires PyTorch + ROCm/HIP compiler stack (deptree-resolver-260417q)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: PyTorch audio with ROCm/HIP GPU support.  Tried: (1) ROCm ecosystem not available in Guix; (2) package ROCm stack -- massive effort (100+ packages); (3) CPU-only variant loses purpose
 ** BLOCKED 14584. pacwall-git  :deptree-resolver-260417z:ARCH_SPECIFIC: Bash script that queries pacman database to generate dependency wallpapers.  Tried: (1) check source -- core logic uses :
    - Status: BLOCKED: ARCH_SPECIFIC: shell script fundamentally depends on pacman package manager commands; no Guix analogue (deptree-resolver-260417n)
    - AUR votes: 19, popularity: 0.0096
@@ -111353,6 +111358,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: pacwall-git uses pacman-specific commands exclusively; A1: requires pacman database/API — not in Guix; A2: rewriting core logic for Guix store queries is a fork, not a package; A3: guix graph provides native dependency visualization alternative (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:ARCH_SPECIFIC: Bash script that queries pacman database for dependency wallpapers.  Tried: (1) check source -- core logic uses pacman -Qi; (2) adapt for Guix -- would need complete rewrite; (3) no distro-agnostic mode
 ** DONE 14585. hellfire-browser-bin
    - AUR votes: 2, popularity: 0.0095
    - Note: Optimized Firefox for GNU/Linux
@@ -111379,6 +111385,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: asp is deprecated Arch Linux build source tool (replaced by pkgctl Nov 2023); A1: depends on pacman/devtools — not in Guix; A2: stripping Arch deps removes all functionality; A3: no upstream demand, tool is EOL (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:ARCH_SPECIFIC: Arch Build System tool for managing PKGBUILDs.  Tried: (1) check deps -- requires Arch SVN infrastructure; (2) check alternatives -- Guix has own source management; (3) no cross-distro utility
 ** DONE 14588. foxitreader
    - AUR votes: 464, popularity: 0.0094
    - Note: A fast, secure and complete PDF viewer
@@ -111607,6 +111614,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: PROPRIETARY: registration-walled 6GB+ installer; license prohibits redistribution (deptree-resolver-260417q)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Xilinx proprietary FPGA tools requiring manual download and EULA.  Tried: (1) no direct download URL; (2) requires Xilinx account + EULA acceptance; (3) depends on legacy Qt4 + gcc49
 ** DONE 14617. elmerfem-git
    - Status: BLOCKED: COMPLEX_BUILD: 40+ deps; many MakeDepends not in Guix (cli11, ospray, anari-sdk, adios2, liblas, pdal, openvr) (deptree-resolver-260417n)
    - AUR votes: 7, popularity: 0.0091
@@ -111993,6 +112001,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MASSIVE_SCALE: Odoo 18 is 50M+ LoC ERP requiring 500+ Python deps, PostgreSQL, wkhtmltopdf, Node.js; A1: Python dep tree (500+) exceeds practical manual packaging; A2: nightly versioning breaks reproducibility model; A3: PostgreSQL/wkhtmltopdf/Node.js integration requires complex system service design (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_PACKAGING: Massive Python ERP framework (100k+ LOC) with PostgreSQL.  Tried: (1) pip install -- 500+ Python dependencies; (2) many deps not in Guix; (3) requires PostgreSQL service configuration
 ** DONE 14670. deno-readability-cli
    - AUR votes: 1, popularity: 0.0091
    - Note: Firefox Reader Mode in your terminal! - CLI tool for Mozilla's Readability library
@@ -112204,6 +112213,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: dude requires libalpm (pacman library) to query/remove orphan packages; A1: libalpm not in Guix and Arch-only; A2: guix gc --delete-generations provides native orphan cleanup; A3: no portable alternative exists (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:ARCH_SPECIFIC: Rust binary for managing pacman orphan packages.  Tried: (1) check source -- links against libalpm (pacman library); (2) libalpm not in Guix; (3) no pacman on Guix systems
 ** DONE 14700. wfrc-git
    - AUR votes: 1, popularity: 0.0091
    - Note: Simple script makes screencast on wlroots compositors with shortcut easily.
@@ -112397,6 +112407,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: arch-shell depends on mkarchroot/devtools/pacman for disposable chroots; A1: devtools not portable beyond Arch; A2: guix shell provides equivalent isolated environment functionality; A3: no upstream interest in portability (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:ARCH_SPECIFIC: Tool for disposable Arch chroot environments.  Tried: (1) check deps -- requires mkarchroot from devtools; (2) Arch-specific infrastructure; (3) Guix has own container/profile mechanisms
 ** DONE 14727. python-genson
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 1, popularity: 0.0091
@@ -112632,6 +112643,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: SOURCE_UNAVAILABLE: deemix taken down by Deezer legal; no stable source (deptree-resolver-260417q)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:LEGAL_ISSUES: Deezer music downloading tool that facilitates copyright infringement.  Tried: (1) check license -- GPL3 source but purpose violates DMCA/copyright; (2) project archived by maintainers; (3) legal risk for redistribution
 ** DONE 14760. vban-git
    - AUR votes: 3, popularity: 0.0090
    - Note: An open-source implementation of a VBAN audio protocol receiver
@@ -113720,6 +113732,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: DKMS kernel module requires kernel headers and DKMS framework not available in Guix; A1: needs linux-libre-headers matching running kernel; A2: Guix uses different kernel module l (recipe-resolver-260417u)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: mt76 DKMS module requires kernel headers + DKMS framework; A1: Guix kernel module model requires building with kernel, not DKMS; A2: mt76 driver already upstream in Linux kernel since 5.x; A3: users needing newer mt7925 support should use newer kernel version (recipe-resolver-260417ab)
+   - Status: BLOCKED: deptree-resolver-260417ac:DKMS_UNSUPPORTED: Out-of-tree DKMS kernel module for MediaTek WiFi.  Tried: (1) mt76 driver already upstream in Linux kernel; (2) DKMS not supported in Guix; (3) users should use kernel's built-in mt76
 ** DONE 14915. elan-bin
    - AUR votes: 2, popularity: 0.0079
    - Note: A video and audio annotation tool
@@ -114119,6 +114132,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://developer.apple.com/fonts/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Tried: (1) license terms prohibit redistribution; (2) no free alternative with same glyphs; (3) cannot legally include in channel
 ** DONE 14972. pacman-contrib-git
    - AUR votes: 4, popularity: 0.0075
    - Note: Contributed scripts and tools for pacman systems
@@ -114366,6 +114380,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://git.launchpad.net/~oem-solutions-engineers/libfprint-2-tod1-broadcom/+git/libfprint-2-tod1-broadcom/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Dell/Broadcom proprietary binary fingerprint driver.  Tried: (1) PPA has .so blobs -- available but proprietary; (2) no source code; (3) binary-only with restricted license
 ** DONE 15006. python-backoff  :recipe-resolver-260417t:recipe-generated:
    - AUR votes: 8, popularity: 0.0072
    - Note: Python library providing function decorators for configurable backoff and retry
@@ -114387,6 +114402,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://support.brother.com/g/s/id/linux/en/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Brother proprietary printer driver with i386 binary blobs.  Tried: (1) Brother .deb packages available but contain i386 binaries; (2) requires lib32-glibc; (3) proprietary + arch-specific
 ** DONE 15009. ntsync-header  ::deptree-resolver-260417y:recipe_created:
    - AUR votes: 4, popularity: 0.0072
    - Note: NT synchronization primitive driver - Linux API header file
@@ -114401,6 +114417,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://lore.kernel.org/lkml/20240519202454.1192826-1-zfigura@codeweavers.com/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:DKMS_UNSUPPORTED: Out-of-tree DKMS kernel module for NT sync primitives.  Tried: (1) ntsync upstream in Linux >= 6.14; (2) DKMS not supported in Guix; (3) users with kernel >= 6.14 have it built-in
 ** DONE 15011. ntsync-common  ::deptree-resolver-260417y:recipe_created:
    - AUR votes: 4, popularity: 0.0072
    - Note: NT synchronization primitive driver - common files
@@ -114558,6 +114575,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://marketplace.visualstudio.com/vscode
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_PACKAGING: Python script + JSON patch to enable VS Code marketplace in code-server.  Tried: (1) depends on code-server (not in Guix); (2) code-server itself is complex Node.js app; (3) marketplace patch is version-specific
 ** BLOCKED 15032. redact-bin  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Proprietary Electron app with no source code available.  Tried: (1) check redact.dev for download -- AppImage available :
    - AUR votes: 6, popularity: 0.0069
    - Note: Customize Redact to remove the content you'd like. Remove old tweets, images, discord messages, and much more.
@@ -114565,6 +114583,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://redact.dev/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Proprietary Electron app with no source code.  Tried: (1) redact.dev has AppImage -- proprietary license; (2) no source available; (3) custom commercial license forbids redistribution analysis
 ** DONE 15033. coulr
    - AUR votes: 5, popularity: 0.0069
    - Note: Color box to help developers and designers
@@ -114752,6 +114771,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://devkitty.app/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Developer tool requiring Electron 41.  Tried: (1) GitHub releases -- macOS-only; (2) build from source -- needs npm/pnpm/nvm + Electron 41; (3) Electron 41 not in Guix
 ** DONE 15059. w_scan2
    - AUR votes: 13, popularity: 0.0068
    - Note: w_scan fork (Small channel scan tool for vdr)
@@ -114780,6 +114800,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://iot.mi.com/vela/quickapp/
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Xiaomi proprietary IoT development IDE with no source.  Tried: (1) iot.mi.com requires Chinese account; (2) proprietary custom license; (3) no direct download URL
 ** DONE 15063. b43-firmware-classic  ::deptree-resolver-260417y:recipe_created:
    - AUR votes: 16, popularity: 0.0068
    - Note: Firmware for Broadcom B43 wireless networking chips - trusted release
@@ -114941,11 +114962,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15087. wavey-launcher-bin
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No releases found; project 404 (recipe-resolver-260417aa)
+** DONE 15087. wavey-launcher-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (wavey-launcher-bin v1.0.1, anime game launcher binary, GPL-3.0)
    - AUR votes: 1, popularity: 0.0068
    - Note: A launcher for a specific anime game with auto-patching, discord rpc and time tracking
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 15088. sddm-astronaut-theme
@@ -115005,11 +115026,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15097. elastic-dashboard-bin
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No public binary release found (recipe-resolver-260417aa)
+** DONE 15097. elastic-dashboard-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (elastic-dashboard-bin v2026.1.2, FRC robotics dashboard, MIT)
    - AUR votes: 1, popularity: 0.0068
    - Note: A simple and modern dashboard for FRC
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** TODO 15098. makepkg-meta
@@ -115062,11 +115083,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15106. kh-melonmix-bin
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
+** DONE 15106. kh-melonmix-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (kh-melonmix-bin v0.8.2, MelonDS fork AppImage, GPL-3.0)
    - AUR votes: 1, popularity: 0.0068
    - Note: A fork of MelonDS, focused on remastering Kingdom Hearts: 358/2 Days and Re:coded
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** TODO 15107. rog-control-center-nosystemd
@@ -115155,11 +115176,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15121. openscad-snapshot-appimage
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: AppImage >100MB; OpenGL runtime (recipe-resolver-260417aa)
+** DONE 15121. openscad-snapshot-appimage
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (openscad-snapshot-appimage v2025.06.12, 3D CAD modeller AppImage, GPL-2.0)
    - AUR votes: 1, popularity: 0.0068
    - Note: The Programmers Solid 3D CAD Modeller (Snapshot AppImage version)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** BLOCKED 15122. gizmosql-bin
@@ -115169,6 +115190,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:SOURCE_UNAVAILABLE: No public binary releases available.  Tried: (1) gizmodata.com -- commercial product, no direct download; (2) GitHub search -- no repo; (3) AUR PKGBUILD likely uses private/commercial download
 ** TODO 15123. plasma-bigscreen-git
    - AUR votes: 4, popularity: 0.0068
    - Note: A big launcher giving you easy access to any installed apps and skills
@@ -115221,6 +115243,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: GO_DEPS_MASSIVE: OWASP Amass needs 50+ Go module dependencies; A1: go-build-system requires each module individually packaged; A2: vendored builds not supported in Guix sandbox (no network); A3: transitive dep tree exceeds practical manual enumeration (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: OWASP Amass needs 50+ Go module dependencies.  Tried: (1) go-build-system requires each module individually packaged; (2) vendored builds not supported in Guix sandbox (no network); (3) transitive dep tree exceeds practical manual enumeration
 ** BLOCKED 15131. gdrcopy
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: CUDA kernel module; system-level (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0067
@@ -115229,24 +115252,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CUDA_KERNEL_MODULE: gdrcopy requires NVIDIA GPU Direct RDMA kernel module (gdrdrv); A1: NVIDIA kernel modules not in Guix; A2: userspace library useless without kernel module; A3: HPC/CUDA workloads incompatible with Guix sandbox model (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: NVIDIA GPU Direct RDMA kernel module required.  Tried: (1) NVIDIA kernel modules not in Guix; (2) userspace library useless without kernel module; (3) HPC/CUDA workloads incompatible with Guix sandbox
 ** DONE 15132. python-pynput [gaurix:queue-20260402p100daily3 target=python-pynput rule=exact]
    - AUR votes: 31, popularity: 0.0066
    - Note: Python library to monitor and control user input devices
    - TODO Status: TODO
 
 
-** BLOCKED 15133. refind-btrfs-snapshots-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: EFI partition + rEFInd integration (recipe-resolver-260417aa)
+** DONE 15133. refind-btrfs-snapshots-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (refind-btrfs-snapshots-bin v0.0.9, rEFInd btrfs entries Go binary, GPL-3.0)
    - AUR votes: 2, popularity: 0.0066
    - Note: Generate rEFInd boot entries for btrfs snapshots (prebuilt binaries)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** BLOCKED 15134. ferroxide
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
+** DONE 15134. ferroxide
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (ferroxide-bin v0.5.0, ProtonMail bridge Go binary, MIT)
    - AUR votes: 2, popularity: 0.0066
    - Note: Hard fork of Hydroxide; a third-party, open-source ProtonMail CardDAV, IMAP and SMTP bridge
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 15135. sfwbar
@@ -115284,6 +115308,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Commercial game requiring paid license.  Tried: (1) AUR PKGBUILD expects user-provided installer; (2) no free download available; (3) license prohibits redistribution
 ** TODO 15140. openttd-jgrpp-opensfx
    - AUR votes: 2, popularity: 0.0065
    - Note: Metapackage which symlinks 'openttd-opensfx' such that 'openttd-jgrpp' can find it.
@@ -115398,11 +115423,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15157. bazecor
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Electron; node_modules + udev rules (recipe-resolver-260417aa)
+** DONE 15157. bazecor
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (bazecor-bin v1.8.3, Dygma keyboard configurator AppImage, GPL-3.0)
    - AUR votes: 4, popularity: 0.0063
    - Note: Graphical configurator for Dygma keyboards
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** BLOCKED 15158. iriunwebcam-bin
@@ -115413,6 +115438,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: KERNEL_MODULE_REQUIRED: iriunwebcam needs v4l2loopback kernel module loaded at runtime; A1: proprietary binary with no source; A2: v4l2loopback needs kernel module build infrastructure; A3: Guix kernel module packaging requires building with kernel (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Proprietary binary needing v4l2loopback kernel module.  Tried: (1) proprietary binary with no source; (2) v4l2loopback needs kernel module build infrastructure; (3) Guix kernel module packaging requires building with kernel
 ** TODO 15159. remote-desktop-manager
    - AUR votes: 13, popularity: 0.0063
    - Note: Devolutions Remote Desktop Manager centralizes all remote connections on a single platform that is securely shared between users and across the entire team.
@@ -115553,6 +115579,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Chinese browser with commercial license.  Tried: (1) 115.com requires Chinese region access; (2) LicenseRef-scancode-commercial-license; (3) binary depends on system Chromium libs
 ** TODO 15179. browsr
    - AUR votes: 2, popularity: 0.0060
    - Note: TUI File Browser App
@@ -115579,6 +115606,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Requires NVIDIA pynvml runtime.  Tried: (1) nvidia-ml-py not in Guix; (2) nvidia-utils not in Guix; (3) package useless without NVIDIA GPU driver
 ** TODO 15183. grub-btrfs-git
    - AUR votes: 17, popularity: 0.0060
    - Note: Include btrfs snapshots at boot options (grub menu)
@@ -115593,6 +115621,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_COMPLEX: CryptPad is Node.js web app with deep npm dependency tree (100+ packages); A1: node-build-system requires each dep individually packaged; A2: npm bundling not supported in Guix build sandbox; A3: requires runtime Node.js server with persistent state (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_PACKAGING: Node.js web app with deep npm dependency tree (100+ packages).  Tried: (1) node-build-system requires each dep individually; (2) npm bundling not supported in sandbox; (3) requires runtime Node.js server
 ** DONE 15185. watchman-bin:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Daemon setup + socket management (recipe-resolver-260417aa)
    - AUR votes: 23, popularity: 0.0060
@@ -115621,6 +115650,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_PYTHON_HYBRID: JupyterLab extension requires both npm build (TypeScript/webpack) and Python packaging; A1: npm build step needs network access blocked in Guix sandbox; A2: pre-built wheel may exist but JupyterLab extension loading requires specific directory structure; A3: JupyterLab extension ecosystem not well-supported in Guix (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: JupyterLab extension with npm+Python hybrid build.  Tried: (1) npm build needs network (blocked in sandbox); (2) pre-built wheel needs JupyterLab extension directory structure; (3) JupyterLab extension ecosystem not well-supported in Guix
 ** BLOCKED 15189. parus
    - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
    - AUR votes: 4, popularity: 0.0059
@@ -115628,6 +115658,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:ARCH_SPECIFIC: TUI for Paru (Arch AUR helper).  Tried: (1) depends on paru (AUR helper, Arch-only); (2) depends on skim; (3) no utility outside Arch Linux
 ** DONE 15190. porla:recipe-resolver-260417ab:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: C++; libtorrent-rasterbar + Boost cmake (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 0.0059
@@ -115643,6 +115674,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_PACKAGING: Java/Maven app with complex classpath.  Tried: (1) no GitHub release assets; (2) distributed via Maven Central/website installer; (3) maven-build-system in Guix poorly maintained
 ** TODO 15192. waytune-git
    - AUR votes: 1, popularity: 0.0059
    - Note: A collection of custom waybar module
@@ -115674,11 +115706,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
    - TODO Status: DONE (recipe-resolver-260417t)
    - Status: DONE: recipe in recipe-resolver-260417t.scm (python-midiutil v1.2.1, MIDI file creation library, pyproject, MIT) (recipe-resolver-260417t)
-** BLOCKED 15197. mandarine
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: C++ Game Boy emu; Qt5 + shaders (recipe-resolver-260417aa)
+** DONE 15197. mandarine
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (mandarine-bin v1.3.0, 3DS emulator AppImage, GPL-2.0+)
    - AUR votes: 1, popularity: 0.0059
    - Note: 3ds emulator - citra fork with tweaks/enhancements
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 15198. man-pages-ja:recipe-resolver-260417ab:recipe-generated:
@@ -115702,6 +115734,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: ChamSys proprietary lighting control software.  Tried: (1) free download but custom license; (2) redistribution terms unclear; (3) proprietary binary-only
 ** TODO 15201. mullvad-vpn-dinit
    - AUR votes: 1, popularity: 0.0059
    - Note: Dinit service scripts for Mullvad
@@ -115722,6 +115755,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Microsoft Defender ATP proprietary.  Tried: (1) distributed via MS repos -- requires agreement; (2) custom commercial license; (3) systemd integration tight coupling
 ** DONE 15204. python-imutils  :recipe-resolver-260417t:recipe-generated:
    - AUR votes: 3, popularity: 0.0059
    - Note: A series of convenience functions to make basic image processing asier with OpenCV
@@ -115747,6 +115781,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Flask debugger with many missing Python deps.  Tried: (1) python-flask-humanize not in Guix; (2) python-littleutils not in Guix; (3) python-cheap_repr not in Guix; would need 4+ new packages
 ** BLOCKED 15208. termusic-git
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Rust; 30+ cargo deps needed (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0059
@@ -115755,6 +115790,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CARGO_DEPS: termusic TUI music player needs 30+ Rust crate dependencies; A1: cargo-build-system requires each crate individually packaged; A2: guix import crate produces incomplete results for this dep tree; A3: many transitive crates missing from Guix (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Rust TUI music player needs 30+ crate dependencies.  Tried: (1) cargo-build-system requires each crate individually; (2) guix import crate incomplete; (3) many transitive crates missing from Guix
 ** TODO 15209. python-livekit-blingfire
    - AUR votes: 1, popularity: 0.0059
    - Note: BlingFire bindings for livekit-agents.
@@ -115836,6 +115872,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: GTK2 file manager needing zzzfm-common-bin dependency.  Tried: (1) depends on zzzfm-common-bin (not in Guix); (2) GitLab repo exists but no binary releases; (3) would need to package zzzfm-common first
 ** TODO 15222. urweb-git
    - AUR votes: 1, popularity: 0.0059
    - Note: Full stack web framework based on a functional programming language
@@ -115873,11 +115910,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15228. yomikiru-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Electron manga reader; AppImage extraction (recipe-resolver-260417aa)
+** DONE 15228. yomikiru-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (yomikiru-bin v2.24.0, manga/comic reader Electron, MIT)
    - AUR votes: 1, popularity: 0.0059
    - Note: An offline desktop reader for manga, comics, webtoons, and novels. Offers a customizable reading experience with extensive settings, shortcuts, themes and layou
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** TODO 15229. plastimatch
@@ -115977,11 +116014,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15245. forge-gui-desktop-snapshot-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Java >500MB; complex classpath (recipe-resolver-260417aa)
+** DONE 15245. forge-gui-desktop-snapshot-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (forge-gui-desktop-bin v2.0.11, MTG AI game Java app, GPL-3.0)
    - AUR votes: 1, popularity: 0.0059
    - Note: Implementation of Magic the Gathering that lets you play against a computer AI (daily snapshot)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** TODO 15246. turboprint
@@ -116304,11 +116341,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15298. alman-bin
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
+** DONE 15298. alman-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (alman-bin v0.1.2, shell alias manager binary, MIT)
    - AUR votes: 1, popularity: 0.0059
    - Note: Intelligent alias manager with TUI for managing shell aliases with intelligent suggestions based on command history
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 15299. dict-freedict-fra-deu-bin
@@ -116427,6 +116464,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: TTRPG companion with commercial license.  Tried: (1) custom:commercial license; (2) proprietary binary; (3) redistribution prohibited
 ** TODO 15317. wlr-which-key-git
    - AUR votes: 2, popularity: 1.0033
    - Note: Keymap manager for wlroots-based compositors
@@ -116471,6 +116509,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: OpenUtau requires .NET 8 runtime not available in Guix; A1: dotnet-runtime-8.0 not in Guix; A2: self-contained publish needs dotnet-sdk; A3: .NET ecosystem bootstrapping unsolved in Guix (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: .NET 8 app not buildable in Guix.  Tried: (1) dotnet-runtime-8.0 not in Guix; (2) self-contained publish needs dotnet-sdk; (3) .NET ecosystem bootstrapping unsolved in Guix
 ** BLOCKED 15324. unofficial-homestuck-collection-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Electron >2GB; complex AppImage (recipe-resolver-260417aa)
    - AUR votes: 8, popularity: 1.0020
@@ -116479,6 +116518,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_MASSIVE: Electron app >2GB with bundled Chromium + multimedia assets; A1: AppImage extraction yields 2GB+ of Chromium/Node runtime; A2: no headless/lightweight alternative; A3: asset size + Electron deps make Guix packaging impractical (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: Electron app >2GB with bundled Chromium + multimedia.  Tried: (1) AppImage extraction yields 2GB+ runtime; (2) no lightweight alternative; (3) asset size + Electron deps impractical for Guix
 ** TODO 15325. hyperhdr-git
    - AUR votes: 3, popularity: 1.0018
    - Note: Highly optimized open source ambient lighting implementation based on modern digital video and audio stream analysis
@@ -116513,6 +116553,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_RUNTIME: basedpyright is npm package requiring Node.js runtime + complex npm dependency tree; A1: no standalone binary releases on GitHub; A2: npm dep tree too deep for node-build-system; A3: pyright (upstream) also not in Guix for same reasons (recipe-resolver-260417ab)
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:COMPLEX_DEPS: npm package requiring Node.js + deep dependency tree.  Tried: (1) no standalone binary releases; (2) npm dep tree too deep for node-build-system; (3) upstream pyright also not in Guix
 ** TODO 15330. maplemononormalnl-cn
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
@@ -116625,6 +116666,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Apple PingFang font with restricted redistribution license.  Tried: (1) custom:apple-restricted-font license; (2) no free redistribution; (3) cannot include in channel
 ** BLOCKED 15347. otf-apple-pingfang-relaxed
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Apple proprietary variant (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 1.0002
@@ -116632,6 +116674,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Apple PingFang relaxed variant with restricted license.  Tried: (1) same apple-restricted-font license; (2) no free redistribution; (3) cannot include
 ** BLOCKED 15348. otf-apple-pingfang-ui
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Apple proprietary variant (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 1.0002
@@ -116639,6 +116682,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Apple PingFang UI variant with restricted license.  Tried: (1) same apple-restricted-font license; (2) no free redistribution; (3) cannot include
 ** TODO 15349. lib32-liblrdf
    - AUR votes: 16, popularity: 1.0002
    - Note: A library for the manipulation of RDF file in LADSPA plugins (32-bit)
@@ -116891,11 +116935,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15391. aethertune-bin
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
+** DONE 15391. aethertune-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (aethertune-bin v0.5.1, terminal radio player binary, MIT)
    - AUR votes: 1, popularity: 1.0000
    - Note: A terminal-based internet radio player with real-time audio visualization, built in Rust
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 15392. alt-bin
@@ -116928,11 +116972,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (argus-bin v0.29.4, release monitor Go binary, copy-build-system, Apache-2.0) (recipe-resolver-260417ab)
 
 
-** BLOCKED 15396. astra-music-bin
-   - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
+** DONE 15396. astra-music-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (astra-music-bin v0.5.2-beta, audiophile music player AppImage, GPL-3.0)
    - AUR votes: 1, popularity: 1.0000
    - Note: Audiophile music player with advanced visualization
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** TODO 15397. axiocnc-bin
@@ -116947,11 +116991,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 15399. browservice-bin
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: CEF/Chromium runtime deps (recipe-resolver-260417aa)
+** DONE 15399. browservice-bin
+   - Status: DONE: recipe in deptree-resolver-260417ac.scm (browservice-bin v0.9.12.2, web proxy for legacy browsers AppImage, MIT)
    - AUR votes: 1, popularity: 1.0000
    - Note: Browse the modern web on historical browsers
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** TODO 15400. bste-git
@@ -120748,6 +120792,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: deptree-resolver-260417ac:PROPRIETARY_LICENSE: Microsoft Office 365 fonts with restricted license.  Tried: (1) LicenseRef-ms-office-2024 prohibits redistribution; (2) requires MS Office license; (3) cannot include in channel
 ** TODO 16019. vinyl-papers
    - AUR votes: 1, popularity: 0.0044
    - Note: Paper selection utility for Vinyl

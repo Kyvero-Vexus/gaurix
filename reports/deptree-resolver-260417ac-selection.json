@@ -1,0 +1,292 @@
+{
+  "pass_id": "deptree-resolver-260417ac",
+  "timestamp": "2026-04-17T14:48:07.829113+00:00",
+  "total_blocked_in_tree": 59,
+  "resolved_count": 14,
+  "blocked_count": 45,
+  "resolved": [
+    {
+      "name": "aethertune-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (aethertune-bin v0.5.1, terminal radio player binary, MIT)"
+    },
+    {
+      "name": "alman-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (alman-bin v0.1.2, shell alias manager binary, MIT)"
+    },
+    {
+      "name": "astra-music-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (astra-music-bin v0.5.2-beta, audiophile music player AppImage, GPL-3.0)"
+    },
+    {
+      "name": "bazecor",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (bazecor-bin v1.8.3, Dygma keyboard configurator AppImage, GPL-3.0)"
+    },
+    {
+      "name": "browservice-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (browservice-bin v0.9.12.2, web proxy for legacy browsers AppImage, MIT)"
+    },
+    {
+      "name": "elastic-dashboard-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (elastic-dashboard-bin v2026.1.2, FRC robotics dashboard, MIT)"
+    },
+    {
+      "name": "ferroxide",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (ferroxide-bin v0.5.0, ProtonMail bridge Go binary, MIT)"
+    },
+    {
+      "name": "forge-gui-desktop-snapshot-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (forge-gui-desktop-bin v2.0.11, MTG AI game Java app, GPL-3.0)"
+    },
+    {
+      "name": "kh-melonmix-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (kh-melonmix-bin v0.8.2, MelonDS fork AppImage, GPL-3.0)"
+    },
+    {
+      "name": "mandarine",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (mandarine-bin v1.3.0, 3DS emulator AppImage, GPL-2.0+)"
+    },
+    {
+      "name": "openscad-snapshot-appimage",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (openscad-snapshot-appimage v2025.06.12, 3D CAD modeller AppImage, GPL-2.0)"
+    },
+    {
+      "name": "refind-btrfs-snapshots-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (refind-btrfs-snapshots-bin v0.0.9, rEFInd btrfs entries Go binary, GPL-3.0)"
+    },
+    {
+      "name": "wavey-launcher-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (wavey-launcher-bin v1.0.1, anime game launcher binary, GPL-3.0)"
+    },
+    {
+      "name": "yomikiru-bin",
+      "status": "DONE: recipe in deptree-resolver-260417ac.scm (yomikiru-bin v2.24.0, manga/comic reader Electron, MIT)"
+    }
+  ],
+  "blocked": [
+    {
+      "name": "115-browser-bin",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Chinese browser with commercial license.  Tried: (1) 115.com requires Chinese region access; (2) LicenseRef-scancode-commercial-license; (3) binary depends on system Chromium libs"
+    },
+    {
+      "name": "aiot-ide",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Xiaomi proprietary IoT development IDE with no source.  Tried: (1) iot.mi.com requires Chinese account; (2) proprietary custom license; (3) no direct download URL"
+    },
+    {
+      "name": "amass",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "OWASP Amass needs 50+ Go module dependencies.  Tried: (1) go-build-system requires each module individually packaged; (2) vendored builds not supported in Guix sandbox (no network); (3) transitive dep tree exceeds practical manual enumeration"
+    },
+    {
+      "name": "amsel_suite-bin",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "TTRPG companion with commercial license.  Tried: (1) custom:commercial license; (2) proprietary binary; (3) redistribution prohibited"
+    },
+    {
+      "name": "arch-shell",
+      "reason_code": "ARCH_SPECIFIC",
+      "reason": "Tool for disposable Arch chroot environments.  Tried: (1) check deps -- requires mkarchroot from devtools; (2) Arch-specific infrastructure; (3) Guix has own container/profile mechanisms"
+    },
+    {
+      "name": "asp",
+      "reason_code": "ARCH_SPECIFIC",
+      "reason": "Arch Build System tool for managing PKGBUILDs.  Tried: (1) check deps -- requires Arch SVN infrastructure; (2) check alternatives -- Guix has own source management; (3) no cross-distro utility"
+    },
+    {
+      "name": "basedpyright-bin",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "npm package requiring Node.js + deep dependency tree.  Tried: (1) no standalone binary releases; (2) npm dep tree too deep for node-build-system; (3) upstream pyright also not in Guix"
+    },
+    {
+      "name": "brother-mfc-j5720dw",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Brother proprietary printer driver with i386 binary blobs.  Tried: (1) Brother .deb packages available but contain i386 binaries; (2) requires lib32-glibc; (3) proprietary + arch-specific"
+    },
+    {
+      "name": "chatgqt",
+      "reason_code": "MISSING_SOURCE",
+      "reason": "No upstream repository; source bundled only in AUR git.  Tried: (1) search for upstream repo -- none; (2) AUR PKGBUILD uses inline source; (3) no URL field in AUR metadata"
+    },
+    {
+      "name": "code-server-marketplace",
+      "reason_code": "COMPLEX_PACKAGING",
+      "reason": "Python script + JSON patch to enable VS Code marketplace in code-server.  Tried: (1) depends on code-server (not in Guix); (2) code-server itself is complex Node.js app; (3) marketplace patch is version-specific"
+    },
+    {
+      "name": "cryptpad",
+      "reason_code": "COMPLEX_PACKAGING",
+      "reason": "Node.js web app with deep npm dependency tree (100+ packages).  Tried: (1) node-build-system requires each dep individually; (2) npm bundling not supported in sandbox; (3) requires runtime Node.js server"
+    },
+    {
+      "name": "deemix-gui-appimage",
+      "reason_code": "LEGAL_ISSUES",
+      "reason": "Deezer music downloading tool that facilitates copyright infringement.  Tried: (1) check license -- GPL3 source but purpose violates DMCA/copyright; (2) project archived by maintainers; (3) legal risk for redistribution"
+    },
+    {
+      "name": "devkitty-git",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Developer tool requiring Electron 41.  Tried: (1) GitHub releases -- macOS-only; (2) build from source -- needs npm/pnpm/nvm + Electron 41; (3) Electron 41 not in Guix"
+    },
+    {
+      "name": "dude-bin",
+      "reason_code": "ARCH_SPECIFIC",
+      "reason": "Rust binary for managing pacman orphan packages.  Tried: (1) check source -- links against libalpm (pacman library); (2) libalpm not in Guix; (3) no pacman on Guix systems"
+    },
+    {
+      "name": "fonts-apple",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Apple restricted font license forbids redistribution.  Tried: (1) license terms prohibit redistribution; (2) no free alternative with same glyphs; (3) cannot legally include in channel"
+    },
+    {
+      "name": "gdrcopy",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "NVIDIA GPU Direct RDMA kernel module required.  Tried: (1) NVIDIA kernel modules not in Guix; (2) userspace library useless without kernel module; (3) HPC/CUDA workloads incompatible with Guix sandbox"
+    },
+    {
+      "name": "gizmosql-bin",
+      "reason_code": "SOURCE_UNAVAILABLE",
+      "reason": "No public binary releases available.  Tried: (1) gizmodata.com -- commercial product, no direct download; (2) GitHub search -- no repo; (3) AUR PKGBUILD likely uses private/commercial download"
+    },
+    {
+      "name": "godot-double-mono",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Godot engine with double-precision and Mono/.NET support.  Tried: (1) build from source -- needs dotnet-sdk-8.0 + nuget (not in Guix); (2) pre-built binary -- none published with double+mono; (3) strip Mono support -- defeats package purpose"
+    },
+    {
+      "name": "iriunwebcam-bin",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Proprietary binary needing v4l2loopback kernel module.  Tried: (1) proprietary binary with no source; (2) v4l2loopback needs kernel module build infrastructure; (3) Guix kernel module packaging requires building with kernel"
+    },
+    {
+      "name": "libfprint-2-tod1-broadcom",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Dell/Broadcom proprietary binary fingerprint driver.  Tried: (1) PPA has .so blobs -- available but proprietary; (2) no source code; (3) binary-only with restricted license"
+    },
+    {
+      "name": "magicq",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "ChamSys proprietary lighting control software.  Tried: (1) free download but custom license; (2) redistribution terms unclear; (3) proprietary binary-only"
+    },
+    {
+      "name": "mdatp-bin",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Microsoft Defender ATP proprietary.  Tried: (1) distributed via MS repos -- requires agreement; (2) custom commercial license; (3) systemd integration tight coupling"
+    },
+    {
+      "name": "mt76-dkms-git",
+      "reason_code": "DKMS_UNSUPPORTED",
+      "reason": "Out-of-tree DKMS kernel module for MediaTek WiFi.  Tried: (1) mt76 driver already upstream in Linux kernel; (2) DKMS not supported in Guix; (3) users should use kernel's built-in mt76"
+    },
+    {
+      "name": "ntsync-dkms",
+      "reason_code": "DKMS_UNSUPPORTED",
+      "reason": "Out-of-tree DKMS kernel module for NT sync primitives.  Tried: (1) ntsync upstream in Linux >= 6.14; (2) DKMS not supported in Guix; (3) users with kernel >= 6.14 have it built-in"
+    },
+    {
+      "name": "odoo18-nightly",
+      "reason_code": "COMPLEX_PACKAGING",
+      "reason": "Massive Python ERP framework (100k+ LOC) with PostgreSQL.  Tried: (1) pip install -- 500+ Python dependencies; (2) many deps not in Guix; (3) requires PostgreSQL service configuration"
+    },
+    {
+      "name": "openutau-bin",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": ".NET 8 app not buildable in Guix.  Tried: (1) dotnet-runtime-8.0 not in Guix; (2) self-contained publish needs dotnet-sdk; (3) .NET ecosystem bootstrapping unsolved in Guix"
+    },
+    {
+      "name": "otf-apple-pingfang",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Apple PingFang font with restricted redistribution license.  Tried: (1) custom:apple-restricted-font license; (2) no free redistribution; (3) cannot include in channel"
+    },
+    {
+      "name": "otf-apple-pingfang-relaxed",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Apple PingFang relaxed variant with restricted license.  Tried: (1) same apple-restricted-font license; (2) no free redistribution; (3) cannot include"
+    },
+    {
+      "name": "otf-apple-pingfang-ui",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Apple PingFang UI variant with restricted license.  Tried: (1) same apple-restricted-font license; (2) no free redistribution; (3) cannot include"
+    },
+    {
+      "name": "pacwall-git",
+      "reason_code": "ARCH_SPECIFIC",
+      "reason": "Bash script that queries pacman database for dependency wallpapers.  Tried: (1) check source -- core logic uses pacman -Qi; (2) adapt for Guix -- would need complete rewrite; (3) no distro-agnostic mode"
+    },
+    {
+      "name": "parus",
+      "reason_code": "ARCH_SPECIFIC",
+      "reason": "TUI for Paru (Arch AUR helper).  Tried: (1) depends on paru (AUR helper, Arch-only); (2) depends on skim; (3) no utility outside Arch Linux"
+    },
+    {
+      "name": "python-birdseye",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Flask debugger with many missing Python deps.  Tried: (1) python-flask-humanize not in Guix; (2) python-littleutils not in Guix; (3) python-cheap_repr not in Guix; would need 4+ new packages"
+    },
+    {
+      "name": "python-gpustat",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Requires NVIDIA pynvml runtime.  Tried: (1) nvidia-ml-py not in Guix; (2) nvidia-utils not in Guix; (3) package useless without NVIDIA GPU driver"
+    },
+    {
+      "name": "python-jupyterlab-variableinspector",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "JupyterLab extension with npm+Python hybrid build.  Tried: (1) npm build needs network (blocked in sandbox); (2) pre-built wheel needs JupyterLab extension directory structure; (3) JupyterLab extension ecosystem not well-supported in Guix"
+    },
+    {
+      "name": "python-torchaudio-rocm",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "PyTorch audio with ROCm/HIP GPU support.  Tried: (1) ROCm ecosystem not available in Guix; (2) package ROCm stack -- massive effort (100+ packages); (3) CPU-only variant loses purpose"
+    },
+    {
+      "name": "raidrivecli",
+      "reason_code": "MISSING_SOURCE",
+      "reason": "Not in AUR cache; no upstream source found.  Tried: (1) AUR search -- no PKGBUILD; (2) web search -- no results; (3) GitHub/GitLab search -- no repo"
+    },
+    {
+      "name": "redact-bin",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Proprietary Electron app with no source code.  Tried: (1) redact.dev has AppImage -- proprietary license; (2) no source available; (3) custom commercial license forbids redistribution analysis"
+    },
+    {
+      "name": "starsector",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Commercial game requiring paid license.  Tried: (1) AUR PKGBUILD expects user-provided installer; (2) no free download available; (3) license prohibits redistribution"
+    },
+    {
+      "name": "termusic-git",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Rust TUI music player needs 30+ crate dependencies.  Tried: (1) cargo-build-system requires each crate individually; (2) guix import crate incomplete; (3) many transitive crates missing from Guix"
+    },
+    {
+      "name": "ttf-ms-office365",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Microsoft Office 365 fonts with restricted license.  Tried: (1) LicenseRef-ms-office-2024 prohibits redistribution; (2) requires MS Office license; (3) cannot include in channel"
+    },
+    {
+      "name": "unofficial-homestuck-collection-bin",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Electron app >2GB with bundled Chromium + multimedia.  Tried: (1) AppImage extraction yields 2GB+ runtime; (2) no lightweight alternative; (3) asset size + Electron deps impractical for Guix"
+    },
+    {
+      "name": "verapdf",
+      "reason_code": "COMPLEX_PACKAGING",
+      "reason": "Java/Maven app with complex classpath.  Tried: (1) no GitHub release assets; (2) distributed via Maven Central/website installer; (3) maven-build-system in Guix poorly maintained"
+    },
+    {
+      "name": "void-electron-latest-bin",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "Void editor (VS Code fork) on latest Electron.  Tried: (1) GitHub releases -- NO Linux binaries; (2) build from source -- needs Electron 34 (not in Guix); (3) use system Electron -- version mismatch breaks app"
+    },
+    {
+      "name": "xilinx-ise",
+      "reason_code": "PROPRIETARY_LICENSE",
+      "reason": "Xilinx proprietary FPGA tools requiring manual download and EULA.  Tried: (1) no direct download URL; (2) requires Xilinx account + EULA acceptance; (3) depends on legacy Qt4 + gcc49"
+    },
+    {
+      "name": "zzzfm-bin",
+      "reason_code": "COMPLEX_DEPS",
+      "reason": "GTK2 file manager needing zzzfm-common-bin dependency.  Tried: (1) depends on zzzfm-common-bin (not in Guix); (2) GitLab repo exists but no binary releases; (3) would need to package zzzfm-common first"
+    }
+  ]
+}

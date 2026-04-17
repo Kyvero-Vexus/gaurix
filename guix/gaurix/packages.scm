@@ -2907,6 +2907,21 @@
                ttf-ms-win11-fod-auto-laoo
                ttf-ms-win11-fod-auto-mlym
                ttf-ms-win11-fod-auto-orya
+            ;; deptree-resolver-260417ac (14 BLOCKED resolved)
+            bazecor-bin
+            astra-music-bin
+            openscad-snapshot-appimage
+            browservice-bin
+            kh-melonmix-bin
+            yomikiru-bin
+            mandarine-bin
+            aethertune-bin
+            alman-bin
+            ferroxide-bin
+            wavey-launcher-bin
+            refind-btrfs-snapshots-bin
+            elastic-dashboard-bin
+            forge-gui-desktop-bin
 ))
 
 ;; recipe-resolver-260414z
