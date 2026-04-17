@@ -427,6 +427,7 @@
   #:use-module (gaurix packages recipe-resolver-260417x)
   #:use-module (gaurix packages recipe-resolver-260417y)
   #:use-module (gaurix packages deptree-resolver-260417y)
+  #:use-module (gaurix packages deptree-resolver-260417z)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8865,3 +8866,9 @@
 (re-export alsaplayer)
 (re-export svxlink-sounds-en-us-heather)
 (re-export adbmanager-bin)
+
+(re-export jdk-lts-bin)
+(re-export jdk-lts-doc)
+(re-export jre-lts-bin)
+(re-export resource-hacker)
+(re-export watchman-bin)

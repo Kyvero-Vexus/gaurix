@@ -5442,6 +5442,7 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260417x)
   #:use-module (gaurix packages deptree-resolver-260417y)
+  #:use-module (gaurix packages deptree-resolver-260417z)
   #:re-export (
             ;; recipe-resolver-260417x (77 recipes)
             prasmoid
