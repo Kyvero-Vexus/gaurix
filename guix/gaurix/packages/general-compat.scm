@@ -448,6 +448,9 @@
   #:use-module (gaurix packages recipe-resolver-260417al)
   #:use-module (gaurix packages recipe-resolver-260417am)
   #:use-module (gaurix packages recipe-resolver-260417an)
+  #:use-module (gaurix packages recipe-resolver-260417ao)
+  #:use-module (gaurix packages recipe-resolver-260417ap)
+  #:use-module (gaurix packages recipe-resolver-260417aq)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9358,3 +9361,51 @@
 ;; deptree-resolver-260417ao re-exports
 (re-export opera-gx-bin)
 (re-export raidrivecli)
+
+;; recipe-resolver-260417ao re-exports
+(re-export ttf-paratype)
+(re-export culmus)
+(re-export fortune-mod-montypython)
+(re-export fortune-mod-matrix)
+(re-export mythes-ru)
+(re-export python-django-docs)
+(re-export tiv)
+(re-export deb2targz)
+(re-export auto-auto-complete)
+(re-export crunch)
+(re-export vobcopy)
+(re-export nnn-nerd)
+(re-export pstate-frequency)
+(re-export notify-send.sh)
+(re-export xclicker)
+(re-export python-steamgriddb)
+(re-export perl-file-keepass)
+(re-export systemd-cron)
+(re-export sweep)
+(re-export xbindkeys-config-gtk2)
+
+;; recipe-resolver-260417ap re-exports
+(re-export ngrok)
+(re-export mongodb-tools-bin)
+(re-export kopia-bin)
+(re-export blockbench-bin)
+(re-export nexusmods-app-bin)
+(re-export wootility)
+(re-export kdrive-bin)
+(re-export sparrow-wallet)
+(re-export joplin-appimage)
+(re-export insync)
+(re-export microsoft-edge-beta-bin)
+(re-export local-by-flywheel-bin)
+(re-export exodus)
+(re-export howdy-bin)
+(re-export davmail)
+(re-export brscan4)
+(re-export spflashtool-bin)
+
+;; recipe-resolver-260417aq re-exports
+(re-export wscat)
+(re-export apache-tools)
+(re-export passwordsafe)
+(re-export brother-hl2030)
+(re-export kopia-ui-bin)

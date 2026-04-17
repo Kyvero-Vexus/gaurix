@@ -5952,3 +5952,57 @@
                opera-gx-bin
                raidrivecli
 ))
+
+;; recipe-resolver-260417ao (20 NRD resolved, 5 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417ao)
+  #:re-export (ttf-paratype
+               culmus
+               fortune-mod-montypython
+               fortune-mod-matrix
+               mythes-ru
+               python-django-docs
+               tiv
+               deb2targz
+               auto-auto-complete
+               crunch
+               vobcopy
+               nnn-nerd
+               pstate-frequency
+               notify-send.sh
+               xclicker
+               python-steamgriddb
+               perl-file-keepass
+               systemd-cron
+               sweep
+               xbindkeys-config-gtk2))
+
+;; recipe-resolver-260417ap (17 NRD resolved, 8 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417ap)
+  #:re-export (ngrok
+               mongodb-tools-bin
+               kopia-bin
+               blockbench-bin
+               nexusmods-app-bin
+               wootility
+               kdrive-bin
+               sparrow-wallet
+               joplin-appimage
+               insync
+               microsoft-edge-beta-bin
+               local-by-flywheel-bin
+               exodus
+               howdy-bin
+               davmail
+               brscan4
+               spflashtool-bin))
+
+;; recipe-resolver-260417aq (5 NRD resolved, 18 BLOCKED + 2 deferred from ao)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417aq)
+  #:re-export (wscat
+               apache-tools
+               passwordsafe
+               brother-hl2030
+               kopia-ui-bin))
