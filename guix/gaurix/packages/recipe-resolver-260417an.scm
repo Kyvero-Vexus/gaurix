@@ -69,6 +69,7 @@
   #:use-module (guix build-system meson)
   #:use-module (guix build-system gnu)
   #:use-module ((guix licenses) #:prefix license:)
+  #:use-module (gnu packages algebra)
   #:use-module (gnu packages base)
   #:use-module (gnu packages autotools)
   #:use-module (gnu packages bash)
@@ -769,7 +770,7 @@ animations.")
      (list
       #:configure-flags #~(list "-Dcava_font=false")
       #:tests? #f))
-    (inputs (list fftw ncurses alsa-lib sdl2 libpulse))
+    (inputs (list fftw ncurses alsa-lib sdl2 pulseaudio))
     (native-inputs (list pkg-config))
     (synopsis "shared library version of the Cava audio visualizer")
     (description "Libcava is a shared library fork of Cava, the Console-based
