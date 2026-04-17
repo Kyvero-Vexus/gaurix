@@ -8,6 +8,7 @@
             ;; recipe-resolver-260415v (9 NRD resolved, pool depleted)
             ;; recipe-resolver-260416c (30 NRD resolved)
             ;; recipe-resolver-260416e (27 NRD resolved, 3 BLOCKED)
+            ;; recipe-resolver-260416f (26 NRD resolved)
             auto-cpufreq
             backintime-git
             hydrus-network
@@ -4945,4 +4946,36 @@
             open-webui-no-venv
             all-repository-fonts
             sonic-workspace
+))
+
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260416f)
+  #:re-export (
+            ;; recipe-resolver-260416f
+            postman-bin
+            mimose-bin
+            lutris-live-bin
+            flaresolverr-bin
+            positron-ide-devel-bin
+            wps-office-365-edu-fonts
+            vcvrack
+            orca-slicer
+            maestral
+            oterm
+            backup-warden
+            qmplay2
+            86box-git
+            cdesktopenv
+            bottles-git
+            sway-scroll
+            nautilus-typeahead
+            somewm-git
+            apollo
+            gopher64-git
+            linuxcnc
+            sunshine
+            citron
+            xemu-git
+            syca
+            idescriptor-git
 ))
