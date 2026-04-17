@@ -10,6 +10,7 @@
             ;; recipe-resolver-260416e (27 NRD resolved, 3 BLOCKED)
             ;; recipe-resolver-260416f (26 NRD resolved)
             ;; recipe-resolver-260417n (14 NRD evaluated: 8 resolved, 6 exhausted, pool depleted)
+            ;; deptree-resolver-260417r (8 BLOCKED resolved)
             auto-cpufreq
             backintime-git
             hydrus-network
@@ -5300,3 +5301,11 @@
             prometheus-apcupsd-exporter
             smooth
             corrscope
+            clangd-opt-git
+            texlive-full
+            ffmpeg-obs
+            vlc-plugin-luajit
+            libvlc-luajit
+            vlc-luajit
+            nvidia-patch
+            intel-level-zero-raytracing-support-git

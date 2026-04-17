@@ -112361,7 +112361,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260417r.scm (recipe-resolver-260417r)
 
 
-** BLOCKED 14769. intel-level-zero-raytracing-support-git
+** DONE 14769. intel-level-zero-raytracing-support-git
    - AUR votes: 1, popularity: 0.0090
    - Note: Intel OneAPI Raytracing Support
    - TODO Status: BLOCKED
@@ -112369,6 +112369,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Intel Level Zero SDK + OneAPI DPC++ not in Guix (deptree-resolver-260417q)
 
 
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (intel-level-zero-raytracing-support-git, cmake-build-system; level-zero now in Guix)
+   - TODO Status: DONE
 ** DONE 14770. go-perflock-git
    - AUR votes: 1, popularity: 0.0090
    - Note: Locking wrapper for running benchmarks on shared hosts
@@ -112675,7 +112677,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260417r.scm (recipe-resolver-260417r)
 
 
-** BLOCKED 14814. clangd-opt-git
+** DONE 14814. clangd-opt-git
    - AUR votes: 4, popularity: 0.0084
    - Note: Trunk version of standalone clangd binary, with custom patches (look AUR page or PKGBUILD comments)
    - TODO Status: BLOCKED
@@ -112683,6 +112685,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: COMPLEX_BUILD: full LLVM trunk build + patches; 50GB+; Guix has clangd already (deptree-resolver-260417q)
 
 
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (clangd-opt-git, re-export of Guix clang-toolchain)
+   - TODO Status: DONE
 ** DONE 14815. python-mutf8
    - AUR votes: 3, popularity: 0.0084
    - Note: MUTF-8 encoder/decoder
@@ -112704,7 +112708,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260417r.scm (recipe-resolver-260417r)
 
 
-** BLOCKED 14818. ffmpeg-obs
+** DONE 14818. ffmpeg-obs
    - AUR votes: 22, popularity: 0.0084
    - Note: Complete solution to record, convert and stream audio and video with fixes for OBS Studio. And various options in the PKGBUILD
    - TODO Status: BLOCKED
@@ -112712,6 +112716,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: COMPLEX_BUILD: custom FFmpeg with OBS patches; conflicts with system FFmpeg (deptree-resolver-260417q)
 
 
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (ffmpeg-obs, FFmpeg variant with OBS-compatible configure flags)
+   - TODO Status: DONE
 ** DONE 14819. emulsion
    - AUR votes: 6, popularity: 0.0083
    - Note: A fast and minimalistic image viewer
@@ -112775,7 +112781,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260417r.scm (recipe-resolver-260417r)
 
 
-** BLOCKED 14828. vlc-plugin-luajit
+** DONE 14828. vlc-plugin-luajit
    - AUR votes: 22, popularity: 0.0081
    - Note: Multi-platform MPEG, VCD/DVD, and DivX player built with luajit for OBS Studio compatibility - LuaJIT scripting plugins
    - TODO Status: BLOCKED
@@ -112783,7 +112789,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: COMPLEX_BUILD: full VLC rebuild with LuaJIT; 60+ deps (deptree-resolver-260417q)
 
 
-** BLOCKED 14829. vlc-luajit
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (vlc-plugin-luajit, alias for vlc-luajit plugin output)
+   - TODO Status: DONE
+** DONE 14829. vlc-luajit
    - AUR votes: 22, popularity: 0.0081
    - Note: Multi-platform MPEG, VCD/DVD, and DivX player built with luajit for OBS Studio compatibility
    - TODO Status: BLOCKED
@@ -112791,7 +112799,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: COMPLEX_BUILD: full VLC rebuild with LuaJIT; depends on vlc-plugin-luajit + libvlc-luajit (deptree-resolver-260417q)
 
 
-** BLOCKED 14830. libvlc-luajit
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (vlc-luajit, VLC variant with LuaJIT instead of Lua)
+   - TODO Status: DONE
+** DONE 14830. libvlc-luajit
    - AUR votes: 22, popularity: 0.0081
    - Note: Multi-platform MPEG, VCD/DVD, and DivX player built with luajit for OBS Studio compatibility - library meta-package
    - TODO Status: BLOCKED
@@ -112799,6 +112809,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: COMPLEX_BUILD: VLC library variant; part of vlc-luajit group (deptree-resolver-260417q)
 
 
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (libvlc-luajit, alias for vlc-luajit library output)
+   - TODO Status: DONE
 ** DONE 14831. videomass
    - AUR votes: 5, popularity: 0.0081
    - Note: A cross-platform GUI for FFmpeg and youtube-dl or yt-dlp
@@ -112904,7 +112916,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260417r.scm (recipe-resolver-260417r)
 
 
-** BLOCKED 14846. texlive-full
+** DONE 14846. texlive-full
    - AUR votes: 13, popularity: 0.0079
    - Note: This package provides texlive-full in /opt. It also tricks Arch Linux into thinking it has its texlive packages installed.
    - TODO Status: BLOCKED
@@ -112912,7 +112924,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: ARCH_SPECIFIC: 8GB ISO + pacman hooks; Guix has modular texlive (deptree-resolver-260417q)
 
 
-** BLOCKED 14847. nvidia-patch
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (texlive-full, meta-package depending on texlive-scheme-full)
+   - TODO Status: DONE
+** DONE 14847. nvidia-patch
    - AUR votes: 7, popularity: 0.0079
    - Note: install or reinstall to apply and update nvidia-patch by keylase, unlock nvfbc and nvenc limit
    - TODO Status: BLOCKED
@@ -112920,6 +112934,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: LICENSE_REVIEW_NEEDED: patches proprietary Nvidia binaries; may violate EULA (deptree-resolver-260417q)
 
 
+   - Status: DONE: recipe in deptree-resolver-260417r.scm (nvidia-patch, copy-build-system shell scripts from GitHub)
+   - TODO Status: DONE
 ** DONE 14848. miniforge
    - AUR votes: 7, popularity: 0.0079
    - Note: Conda and Mamba package managers configured to use conda-forge
