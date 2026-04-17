@@ -437,6 +437,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ad)
   #:use-module (gaurix packages recipe-resolver-260417ae)
   #:use-module (gaurix packages recipe-resolver-260417af)
+  #:use-module (gaurix packages recipe-resolver-260417ah)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9085,3 +9086,11 @@
 (re-export python-pypylon)
 (re-export python-jaxlib)
 (re-export python-cheap-repr)
+(re-export ruby-xxhash)
+(re-export matrixbrandy)
+(re-export tsmuxer)
+(re-export firefox-tridactyl-native-bin)
+(re-export overmask-bin)
+(re-export vdhcoapp-bin)
+(re-export openterface-qt-bin)
+(re-export foliate)
