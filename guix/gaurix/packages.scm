@@ -5632,3 +5632,19 @@
             gltron
             sfwbar
             ))
+
+;; deptree-resolver-260417ad (12 BLOCKED resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260417ad)
+  #:re-export (amass
+               openutau-bin
+               tela-icon-theme-bin
+               shopify-themekit-bin
+               restfox-bin
+               enlightenment-eminence-theme-bin
+               termusic-git
+               gitfetch-bin
+               basedpyright-bin
+               pyrefly-bin
+               spacecadetpinball-bin
+               ftop-bin))
