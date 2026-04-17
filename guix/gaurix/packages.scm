@@ -5269,3 +5269,34 @@
   rvx-builder
   simple64-git
   miniforge
+; recipe-resolver-260417s
+            stack-bin
+            kapp
+            ymp-bin
+            ttypr-bin
+            keifu-bin
+            dredge-bin
+            canvas-downloader-bin
+            repeater-bin
+            rip-go-bin
+            dynocsv
+            mpwall
+            ov
+            asciinema-agg
+            seanime
+            subsurface-appimage
+            git-mr
+            arkenfox-user-js
+            byedpi
+            bsdiff
+            yash
+            activate-linux
+            pyupgrade
+            python-pythondialog
+            python-sysv-ipc
+            ttf-b612
+            mint-y-icons
+            mint-x-icons
+            prometheus-apcupsd-exporter
+            smooth
+            corrscope
