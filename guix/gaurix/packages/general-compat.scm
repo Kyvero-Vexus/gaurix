@@ -64,6 +64,7 @@
   #:use-module (gaurix packages recipe-resolver-260416c)
   #:use-module (gaurix packages recipe-resolver-260416e)
   #:use-module (gaurix packages recipe-resolver-260417n)
+  #:use-module (gaurix packages recipe-resolver-260417q)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -2908,6 +2909,36 @@
             caffeine-ng-git/compat
             conquest-git/compat
             deepin-wine10-stable/compat
+            hush-bin
+            k3s-bin
+            localstack-cli-bin
+            vector-bin
+            leaf-bin
+            rdrop-bin
+            random-rs-bin
+            mediaharbor-bin
+            youtube-music-for-desktop-bin
+            devtoys-bin
+            python-quantities
+            python-keyboard
+            python-readchar
+            python-smart-open
+            python-duet
+            python-nanoid
+            python-untokenize
+            python-bsdiff4
+            python-proto-plus
+            python-huey
+            python-uritools
+            python-neo4j
+            python-pae
+            python-opr
+            python-memor
+            xapp-symbolic-icons
+            ansiweather
+            libayatana-appindicator-glib
+            python-chromaterm
+            python-qbittorrent-api
 ))
 
 ;;; --- recipe-resolver-260413f compat aliases ---
@@ -8515,3 +8546,35 @@
 (re-export atom-ng-bin)
 (re-export gridmonger)
 (re-export ccdciel)
+
+; recipe-resolver-260417q
+(re-export hush-bin)
+(re-export k3s-bin)
+(re-export localstack-cli-bin)
+(re-export vector-bin)
+(re-export leaf-bin)
+(re-export rdrop-bin)
+(re-export random-rs-bin)
+(re-export mediaharbor-bin)
+(re-export youtube-music-for-desktop-bin)
+(re-export devtoys-bin)
+(re-export python-quantities)
+(re-export python-keyboard)
+(re-export python-readchar)
+(re-export python-smart-open)
+(re-export python-duet)
+(re-export python-nanoid)
+(re-export python-untokenize)
+(re-export python-bsdiff4)
+(re-export python-proto-plus)
+(re-export python-huey)
+(re-export python-uritools)
+(re-export python-neo4j)
+(re-export python-pae)
+(re-export python-opr)
+(re-export python-memor)
+(re-export xapp-symbolic-icons)
+(re-export ansiweather)
+(re-export libayatana-appindicator-glib)
+(re-export python-chromaterm)
+(re-export python-qbittorrent-api)

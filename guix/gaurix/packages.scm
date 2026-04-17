@@ -5137,3 +5137,34 @@
   lenovolegionlinux-dkms-git
   leetmouse-driver-dkms
   omada-controller-bin
+  ; recipe-resolver-260417q (30 NRD resolved)
+  hush-bin
+  k3s-bin
+  localstack-cli-bin
+  vector-bin
+  leaf-bin
+  rdrop-bin
+  random-rs-bin
+  mediaharbor-bin
+  youtube-music-for-desktop-bin
+  devtoys-bin
+  python-quantities
+  python-keyboard
+  python-readchar
+  python-smart-open
+  python-duet
+  python-nanoid
+  python-untokenize
+  python-bsdiff4
+  python-proto-plus
+  python-huey
+  python-uritools
+  python-neo4j
+  python-pae
+  python-opr
+  python-memor
+  xapp-symbolic-icons
+  ansiweather
+  libayatana-appindicator-glib
+  python-chromaterm
+  python-qbittorrent-api
