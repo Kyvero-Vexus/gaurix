@@ -4952,6 +4952,7 @@
   #:use-module (gaurix packages recipe-resolver-260416f)
   #:use-module (gaurix packages recipe-resolver-260416i)
   #:use-module (gaurix packages recipe-resolver-260416j)
+  #:use-module (gaurix packages recipe-resolver-260417l)
   #:re-export (
             ;; recipe-resolver-260416f
             postman-bin
@@ -5018,3 +5019,76 @@
   sherlock-launcher-unstable-git
   deadbeef-plugin-lyricbar-git
   libminiaudiohelpers
+  ;; recipe-resolver-260417l (72 recipes)
+  packemon-git
+  obs-ptz-controls
+  cxt-bin
+  pythonqt
+  luajit-openresty
+  mubeng-bin
+  clip-editor-bin
+  hyprdock
+  serv-bin
+  fastgron-bin
+  minesweep-rs
+  godot-double
+  saber-bin
+  mkeditor-bin
+  drg-mod-integration-bin
+  maplemononl-woff2
+  maplemononl-variable
+  maplemononl-ttf-autohint
+  maplemononl-ttf
+  maplemononl-otf
+  maplemononl-nf-unhinted
+  maplemononl-nf-cn-unhinted
+  maplemononl-nf-cn
+  maplemononl-nf
+  maplemononl-cn-unhinted
+  maplemononl-cn
+  rotz
+  sdrpp-git
+  ahk-x11-bin
+  aarch64-linux-musl-cross-bin
+  badlion-client
+  ghostty-terminfo-git
+  ghostty-shell-integration-git
+  renoise
+  amf-headers-git
+  void-bin
+  fend
+  icu73
+  zlib-ng-git
+  zlib-ng-compat-git
+  automedia
+  ctrld-bin
+  intel-gmmlib-legacy
+  prjapicula
+  elm-platform-bin
+  h2-database
+  looking-glass-host-git
+  rofi-pass-ydotool-git
+  whitesur-gtk-theme
+  dbeaver-ce-bin
+  mu-editor
+  popeye-bin
+  sbupdate-git
+  plasma6-applets-plasmavantage
+  calculix-cgx
+  river-runetile-git
+  wakeup-triggers
+  gcalendar
+  ds-inhibit
+  depotdownloader-git
+  find-cursor
+  lima-gui
+  donutbrowser-bin
+  diun-bin
+  colima-bin
+  climan-bin
+  adb-sync-git
+  webfs
+  python-pylzma
+  spring-boot-cli
+  slack-term
+  shitpost
