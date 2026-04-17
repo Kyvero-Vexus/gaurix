@@ -5775,3 +5775,19 @@
                zotero-bin
                defguard-client-bin
 ))
+
+;; deptree-resolver-260417aj (12 BLOCKED resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260417aj)
+  #:re-export (gizmosql-bin
+               mdatp-bin
+               plexamp-bin
+               cryptpad
+               amsel-suite-bin
+               python-jupyterlab-variableinspector
+               python-libipld-git
+               115-browser-bin
+               python-optking
+               magicq
+               python-tensorstore-bin
+               unofficial-homestuck-collection-bin))

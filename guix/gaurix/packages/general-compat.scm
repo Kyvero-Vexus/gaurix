@@ -440,6 +440,7 @@
   #:use-module (gaurix packages recipe-resolver-260417af)
   #:use-module (gaurix packages recipe-resolver-260417ah)
   #:use-module (gaurix packages recipe-resolver-260417ai)
+  #:use-module (gaurix packages deptree-resolver-260417aj)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9158,3 +9159,17 @@
 (re-export terminal-tetris)
 (re-export browsr)
 (re-export mfgtools)
+
+; deptree-resolver-260417aj
+(re-export gizmosql-bin)
+(re-export mdatp-bin)
+(re-export plexamp-bin)
+(re-export cryptpad)
+(re-export amsel-suite-bin)
+(re-export python-jupyterlab-variableinspector)
+(re-export python-libipld-git)
+(re-export 115-browser-bin)
+(re-export python-optking)
+(re-export magicq)
+(re-export python-tensorstore-bin)
+(re-export unofficial-homestuck-collection-bin)
