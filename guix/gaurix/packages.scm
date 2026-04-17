@@ -5409,3 +5409,26 @@
             wastebin-bin
             discord-canary-electron-bin
             wago-modbus-coupler-shm
+            fcitx5-pinyin-genshin
+            fcitx5-pinyin-starrail
+            fcitx5-pinyin-honkai3rd
+            fcitx5-pinyin-starrail-rime
+            fcitx5-pinyin-honkai3rd-rime
+            engauge-samples
+            ubuntu-themes
+            zinkrun
+            gnome-shell-extension-no-annoyance
+            python-editdistance
+            python-xsdata
+            python-gerbonara
+            sdkmanager
+            tfupdate-bin
+            podliner-bin
+            gittype-bin
+            gitlogue-bin
+            sgdboop
+            mintstick
+            mintlocale
+            rabbitvcs
+            pyspread
+            klatexformula
