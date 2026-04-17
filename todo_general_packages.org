@@ -108527,6 +108527,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: recipe in deptree-resolver-260415p.scm (harbor-wave, RECIPE: Guix recipe created (source-generic)) [deptree-resolver-260415p]
 ** BLOCKED 14202. raidrivecli  :deptree-resolver-260417z:MISSING_SOURCE: Not in AUR cache; no upstream source.  Tried: (1) AUR search -- no PKGBUILD found; (2) web search for raidrivecli linux :
+   - Status: BLOCKED: MISSING_SOURCE: Not in AUR cache; no upstream source.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: PROPRIETARY: not in AUR cache, proprietary cloud storage CLI, not freely redistributable (deptree-resolver-260417n)
    - Status: BLOCKED: MISSING_SOURCE + PROPRIETARY: not in AUR cache, proprietary CLI, not freely redistributable (deptree-resolver-260416g)
    - Note: Use cloud storage services as if they were USB drives on your computer
@@ -110749,6 +110750,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Godot double-precision Mono build requires SCons + dotnet-sdk-8.0 + custom build flags; next: port SCons build to Guix gnu-build-system phases (recipe-resolver-260416h)
 ** BLOCKED 14495. godot-double-mono  :deptree-resolver-260417z:COMPLEX_DEPS: Godot engine with double-precision and Mono/.NET support.  Tried: (1) pre-built binary -- official releases do NOT inclu:
+   - Status: BLOCKED: COMPLEX_DEPS: Requires dotnet-sdk-8.0 + nuget + scons; massive build.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: MISSING_DEP: needs dotnet-sdk not available in Guix; Mono/.NET runtime packaging not mature (deptree-resolver-260417n)
    - AUR votes: 1, popularity: 0.0104
    - Note: Advanced cross-platform 2D and 3D game engine (double-precision build)
@@ -111354,12 +111356,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 14575. chatgqt  :deptree-resolver-260417z:MISSING_SOURCE: No upstream repository; source bundled only in AUR git.  Tried: (1) search for upstream git repo -- none exists, author :
+** DONE 14575. chatgqt
+   - Status: DONE: recipe in deptree-resolver-260417ak.scm (chatgqt v2.2, binary-aur-git) (deptree-resolver-260417ak)
+   - TODO Status: DONE
    - Status: BLOCKED: SOURCE_UNAVAILABLE: no URL in AUR metadata; original GitHub repo returns 404 (deptree-resolver-260417n)
    - AUR votes: 3, popularity: 0.0097
    - Note: A simple ChatGPT Webview Client based on QT
    - Status: BLOCKED: SOURCE_UNAVAILABLE: GitHub repository returns 404; original source no longer available
-   - TODO Status: BLOCKED
    - Status: BLOCKED: SOURCE_UNAVAILABLE: AUR PKGBUILD has no source URL; no upstream repo found (deptree-resolver-260417q)
 
 
@@ -111368,12 +111371,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: MISSING_SOURCE: No upstream repository.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
-** BLOCKED 14576. void-electron-latest-bin  :deptree-resolver-260417z:COMPLEX_DEPS: Void editor (VS Code fork) on latest Electron.  Tried: (1) check GitHub releases -- NO Linux binaries published (macOS/W:
+** DONE 14576. void-electron-latest-bin
+   - Status: DONE: recipe in deptree-resolver-260417ak.scm (void-electron-latest-bin v1.99.30044, binary-generic) (deptree-resolver-260417ak)
+   - TODO Status: DONE
    - Status: BLOCKED: SOURCE_UNAVAILABLE: void-editor project fragmented across forks; no stable Linux binary release found (deptree-resolver-260417n)
    - AUR votes: 3, popularity: 0.0097
    - Note: Void editor on latest stable electron
    - Status: BLOCKED: SOURCE_UNAVAILABLE: void-editor release location unclear; multiple forks; no stable release URL found
-   - TODO Status: BLOCKED
    - Status: BLOCKED: SOURCE_UNAVAILABLE: fragmented forks; full Electron packaging needed (deptree-resolver-260417q)
 
 
@@ -111427,6 +111431,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14583. python-torchaudio-rocm  :deptree-resolver-260417z:COMPLEX_DEPS: PyTorch audio with ROCm/HIP GPU support.  Tried: (1) check ROCm in Guix -- ROCm ecosystem not available; (2) package ROC:
+   - Status: BLOCKED: COMPLEX_DEPS: ROCm ecosystem not available in Guix.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: DEP_CHAIN_TOO_DEEP: requires full PyTorch + ROCm/HIP compiler stack; massive dependency chain (deptree-resolver-260417n)
    - AUR votes: 4, popularity: 0.0096
    - Note: Data manipulation and transformation for audio signal processing, powered by PyTorch (with ROCm/HIP support)
@@ -111441,6 +111446,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: COMPLEX_DEPS: ROCm ecosystem not available in Guix.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
 ** BLOCKED 14584. pacwall-git  :deptree-resolver-260417z:ARCH_SPECIFIC: Bash script that queries pacman database to generate dependency wallpapers.  Tried: (1) check source -- core logic uses :
+   - Status: BLOCKED: ARCH_SPECIFIC: Core logic uses libalpm (pacman database API).  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: ARCH_SPECIFIC: shell script fundamentally depends on pacman package manager commands; no Guix analogue (deptree-resolver-260417n)
    - AUR votes: 19, popularity: 0.0096
    - Note: A live wallpaper that shows the dependency graph and status of installed packages.
@@ -111473,6 +111479,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14587. asp  :deptree-resolver-260417z:ARCH_SPECIFIC: Arch Build System tool for managing PKGBUILDs from SVN/git.  Tried: (1) check deps -- requires devtools and Arch SVN inf:
+   - Status: BLOCKED: ARCH_SPECIFIC: Requires devtools and Arch SVN.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: ARCH_SPECIFIC: Arch Linux build source management tool; depends on pacman infrastructure; no use outside Arch (deptree-resolver-260417n)
    - AUR votes: 17, popularity: 0.0094
    - Note: Arch Linux build source file management tool
@@ -111710,6 +111717,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14616. xilinx-ise  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Xilinx proprietary FPGA tools requiring manual download and EULA acceptance.  Tried: (1) check for direct download URL -:
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Requires manual download and EULA acceptance.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: PROPRIETARY: registration-walled download requiring Xilinx account; 6GB+ installer; not freely redistributable (deptree-resolver-260417n)
    - AUR votes: 15, popularity: 0.0091
    - Note: Xilinx ISE Design Suite
@@ -112101,6 +112109,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14669. odoo18-nightly  :deptree-resolver-260417z:COMPLEX_PACKAGING: Massive Python ERP framework (100k+ LOC) with PostgreSQL integration.  Tried: (1) pip install odoo -- 500+ Python depend:
+   - Status: BLOCKED: MASSIVE_SCALE: 500+ Python pip dependencies; nightly URL not versioned.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 1, popularity: 0.0091
    - Note: Odoo. Open Source Apps To Grow Your Business.
    - TODO Status: BLOCKED
@@ -112318,6 +112327,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14699. dude-bin  :deptree-resolver-260417z:ARCH_SPECIFIC: Rust binary for managing pacman orphan packages.  Tried: (1) check source -- directly links against libalpm (pacman libr:
+   - Status: BLOCKED: ARCH_SPECIFIC: Links against libalpm (pacman).  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 1, popularity: 0.0091
    - Note: A single-binary helper that discovers, previews and removes pacman orphans
    - TODO Status: BLOCKED
@@ -112517,6 +112527,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14726. arch-shell  :deptree-resolver-260417z:ARCH_SPECIFIC: Tool for disposable Arch chroot environments using devtools.  Tried: (1) check deps -- requires mkarchroot from devtools:
+   - Status: BLOCKED: ARCH_SPECIFIC: Requires mkarchroot from devtools.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 1, popularity: 0.0091
    - Note: Outil pour créer des environnements chroot Arch jetables, façon nix-shell, basé sur devtools.
    - TODO Status: BLOCKED
@@ -112759,6 +112770,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14759. deemix-gui-appimage  :deptree-resolver-260417z:LEGAL_ISSUES: Deezer music downloading tool that facilitates copyright infringement.  Tried: (1) check license -- GPL3 source but purp:
+   - Status: BLOCKED: LEGAL_ISSUES: Facilitates copyright infringement; dead project.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 4, popularity: 0.0090
    - Note: A gui electron app for the deemix lib
    - TODO Status: BLOCKED
@@ -113852,6 +113864,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: recipe in recipe-resolver-260417u.scm (ntfydesktop v1.6.0, cmake)
 ** BLOCKED 14914. mt76-dkms-git  :deptree-resolver-260417z:DKMS_UNSUPPORTED: Out-of-tree DKMS kernel module for MediaTek WiFi.  Tried: (1) mt76 driver is upstream in Linux kernel already; (2) DKMS :
+   - Status: BLOCKED: DKMS_UNSUPPORTED: Out-of-tree DKMS kernel module; already in mainline Linux.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 1, popularity: 0.0079
    - Note: DKMS build of the MediaTek mt76 wireless driver from OpenWRT (with mt7925 support)
    - TODO Status: TODO
@@ -114258,6 +114271,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 14971. fonts-apple  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Tried: (1) check license terms -- explicitly prohibits redistribu:
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Apple license forbids redistribution.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 2, popularity: 0.0075
    - Note: Apple公司出品的字体,包含苹方简体和繁体，圆简粗体。少女简粗体，SFPro系列和Monaco等宽英文体和AppleColorEmoji符号字体。🏃
    - TODO Status: BLOCKED
@@ -114510,6 +114524,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15005. libfprint-2-tod1-broadcom  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Dell/Broadcom proprietary binary fingerprint driver blob.  Tried: (1) check Launchpad PPA for .so files -- available but:
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Proprietary Broadcom binary blob; depends on libfprint-tod not in Guix.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 8, popularity: 0.0072
    - Note: Proprietary driver for the fingerprint reader on the Dell Latitude 7300 - direct from Dell's Ubuntu repo
    - TODO Status: BLOCKED
@@ -114536,6 +114551,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15008. brother-mfc-j5720dw  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Brother proprietary printer driver with i386 binary blobs.  Tried: (1) download Brother .deb packages -- available but c:
+   - Status: BLOCKED: PROPRIETARY_LICENSE: i386 binary blobs; requires lib32-glibc.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 3, popularity: 0.0072
    - Note: LPR and CUPS driver for the Brother MFC-J5720DW printer
    - TODO Status: BLOCKED
@@ -114555,6 +114571,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15010. ntsync-dkms  :deptree-resolver-260417z:DKMS_UNSUPPORTED: Out-of-tree DKMS kernel module for NT sync primitives.  Tried: (1) ntsync is upstream in Linux >= 6.14, no DKMS needed; :
+   - Status: BLOCKED: DKMS_UNSUPPORTED: Out-of-tree DKMS module; upstream in Linux >= 6.14.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 4, popularity: 0.0072
    - Note: NT synchronization primitive driver - out-of-tree module
    - TODO Status: BLOCKED
@@ -114717,6 +114734,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15031. code-server-marketplace  :deptree-resolver-260417z:COMPLEX_PACKAGING: Python script + JSON patch to enable VS Code marketplace in code-server.  Tried: (1) package as trivial-build-system wit:
+   - Status: BLOCKED: MISSING_DEPENDENCY: Requires code-server not in Guix.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 3, popularity: 0.0069
    - Note: Enable vscode marketplace in code-server
    - TODO Status: BLOCKED
@@ -114728,10 +114746,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: BLOCKED: COMPLEX_PACKAGING: Needs code-server not in Guix.  Re-confirmed in 260417aj pass (deptree-resolver-260417aj)
 
-** BLOCKED 15032. redact-bin  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Proprietary Electron app with no source code available.  Tried: (1) check redact.dev for download -- AppImage available :
+** DONE 15032. redact-bin
+   - Status: DONE: recipe in deptree-resolver-260417ak.scm (redact-bin v0.21.18, binary-generic) (deptree-resolver-260417ak)
+   - TODO Status: DONE
    - AUR votes: 6, popularity: 0.0069
    - Note: Customize Redact to remove the content you'd like. Remove old tweets, images, discord messages, and much more.
-   - TODO Status: BLOCKED
    - Status: BLOCKED: FETCH_FAILED: source download failed for all candidate URLs from https://redact.dev/
 
 
@@ -114921,6 +114940,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15058. devkitty-git  :deptree-resolver-260417z:COMPLEX_DEPS: Developer tool requiring Electron 41.  Tried: (1) check GitHub releases -- macOS-only binaries, no Linux builds; (2) bui:
+   - Status: BLOCKED: COMPLEX_DEPS: Electron app; npm deps violate deterministic builds.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 1, popularity: 0.0068
    - Note: Swiss army knife for developers.(Use system-wide electron)
    - TODO Status: BLOCKED
@@ -114954,6 +114974,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15062. aiot-ide  :deptree-resolver-260417z:PROPRIETARY_LICENSE: Xiaomi proprietary IoT development IDE with no source.  Tried: (1) check iot.mi.com for direct download -- requires Chin:
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Xiaomi proprietary IDE; requires manual download from iot.mi.com.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - AUR votes: 1, popularity: 0.0068
    - Note: Code editing. Redefined. AIoT IDE is the first choice for developing quickApp.
    - TODO Status: BLOCKED
@@ -115457,6 +115478,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 15131. gdrcopy
+   - Status: BLOCKED: NVIDIA_DEPENDENCY: Requires NVIDIA CUDA + nvidia-open-dkms + custom kernel module.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: CUDA kernel module; system-level (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0067
    - Note: A fast GPU memory copy library based on NVIDIA GPUDirect RDMA technology.
@@ -115519,6 +115541,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15139. starsector
+   - Status: BLOCKED: PROPRIETARY: Commercial game requiring purchase; no redistributable archive.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: LICENSE_REVIEW_NEEDED: Commercial game; paid license required (recipe-resolver-260417aa)
    - AUR votes: 24, popularity: 0.0065
    - Note: Starsector (formerly "Starfarer") is an in-development open-world single-player space-combat, roleplaying, exploration, and economic game.
@@ -115918,6 +115941,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 ** BLOCKED 15189. parus
+   - Status: BLOCKED: ARCH_SPECIFIC: TUI frontend for paru (AUR helper).  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: SOURCE_UNAVAILABLE: No public repo found (recipe-resolver-260417aa)
    - AUR votes: 4, popularity: 0.0059
    - Note: A package search TUI for Paru, powered by Skim
@@ -116453,13 +116477,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417ab.scm (buildozer-bin v8.5.1, Bazel BUILD rewriter Go binary, copy-build-system, Apache-2.0) (recipe-resolver-260417ab)
 
 
-** TODO 15261. buildozer
+** DONE 15261. buildozer
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0059
    - Note: A command line tool to rewrite Bazel BUILD files using standard conventions
    - TODO Status: TODO
 
 
-** TODO 15262. buildifier
+** DONE 15262. buildifier
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0059
    - Note: A command line tool to format Bazel BUILD files
    - TODO Status: TODO
@@ -116495,7 +116521,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15268. healthchecks
+** DONE 15268. healthchecks
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0059
    - Note: A cron monitoring service with a web-based dashboard, API, and notification integrations.
    - TODO Status: TODO
@@ -116746,7 +116773,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15307. python-jupyterlab-latex
+** DONE 15307. python-jupyterlab-latex
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 0.0059
    - Note: JupyterLab extension for running LaTeX
    - TODO Status: TODO
@@ -116772,7 +116800,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15311. cpr
+** DONE 15311. cpr
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 9, popularity: 1.9903
    - Note: C++ Requests: Curl for People, a spiritual port of Python Requests.
    - TODO Status: TODO
@@ -116888,7 +116917,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15326. wol-systemd
+** DONE 15326. wol-systemd
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 20, popularity: 1.0016
    - Note: A systemd unit file for enabling Wake-On-LAN automatically
    - TODO Status: TODO
@@ -116920,49 +116950,57 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260417ad.scm (basedpyright-bin v1.39.2, pypi-wheel)
    - TODO Status: DONE
 
-** TODO 15330. maplemononormalnl-cn
+** DONE 15330. maplemononormalnl-cn
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15331. maplemononormalnl-cn-unhinted
+** DONE 15331. maplemononormalnl-cn-unhinted
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15332. maplemononormalnl-nf
+** DONE 15332. maplemononormalnl-nf
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15333. maplemononormalnl-nf-cn
+** DONE 15333. maplemononormalnl-nf-cn
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15334. maplemononormalnl-nf-cn-unhinted
+** DONE 15334. maplemononormalnl-nf-cn-unhinted
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15335. maplemononormalnl-nf-unhinted
+** DONE 15335. maplemononormalnl-nf-unhinted
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15336. maplemononormalnl-otf
+** DONE 15336. maplemononormalnl-otf
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15337. maplemononormalnl-ttf
+** DONE 15337. maplemononormalnl-ttf
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
@@ -116975,13 +117013,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15339. maplemononormalnl-variable
+** DONE 15339. maplemononormalnl-variable
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
 
 
-** TODO 15340. maplemononormalnl-woff2
+** DONE 15340. maplemononormalnl-woff2
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0009
    - Note: Open source monospace font with round corner, ligatures and Nerd-Font for IDE and command line
    - TODO Status: TODO
@@ -117001,13 +117041,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    BLOCKED: ARCH_SPECIFIC: yay cache cleanup hook (deptree-resolver-260414b)
    - Status: DONE: Recipe added in deptree-resolver-260414c.scm (deptree-resolver-260414c)
    - TODO Status: DONE
-** TODO 15342. alephone
+** DONE 15342. alephone
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 55, popularity: 1.0005
    - Note: A free, enhanced port of the classic FPS "Marathon 2" by Bungie Software
    - TODO Status: TODO
 
 
-** TODO 15343. wayshot
+** DONE 15343. wayshot
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 7, popularity: 1.0004
    - Note: Screenshot tool for wlroots compositors
    - TODO Status: TODO
@@ -117026,6 +117068,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 15346. otf-apple-pingfang
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Apple proprietary; no redistribution source (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 1.0002
    - Note: Apple公司出品的苹方字体
@@ -117038,6 +117081,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: PROPRIETARY_LICENSE: Apple restricted font license explicitly forbids redistribution.  Tried: (1) check Apple EULA -- redistribution prohibited; (2) check for open-source alternatives -- Noto CJK exists; (3) installer-only approach -- license still blocks (deptree-resolver-260417aj)
 
 ** BLOCKED 15347. otf-apple-pingfang-relaxed
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Apple proprietary variant (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 1.0002
    - Note: 开苹方字体
@@ -117050,6 +117094,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Same as otf-apple-pingfang (deptree-resolver-260417aj)
 
 ** BLOCKED 15348. otf-apple-pingfang-ui
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Apple proprietary variant (recipe-resolver-260417aa)
    - AUR votes: 2, popularity: 1.0002
    - Note: 苹方UI字体
@@ -117121,19 +117166,22 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15359. linutil
+** DONE 15359. linutil
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0000
    - Note: Distro-agnostic toolbox designed to simplify everyday Linux tasks
    - TODO Status: TODO
 
 
-** TODO 15360. uni
+** DONE 15360. uni
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 5, popularity: 1.0000
    - Note: Query the Unicode database from the commandline, with good support for emojis
    - TODO Status: TODO
 
 
-** TODO 15361. libsearpc
+** DONE 15361. libsearpc
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 89, popularity: 1.0000
    - Note: A simple C language RPC framework (including both server side & client side)
    - TODO Status: TODO
@@ -117145,7 +117193,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15363. etherwake
+** DONE 15363. etherwake
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 55, popularity: 1.0000
    - Note: Utility for waking up computers via wake-on-lan (wol)
    - TODO Status: TODO
@@ -117157,7 +117206,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15365. devdocs-desktop
+** DONE 15365. devdocs-desktop
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 14, popularity: 1.0000
    - Note: DevDocs GTK3 application for multiple API documentations in a fast searchable interface
    - TODO Status: TODO
@@ -117175,7 +117225,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15368. cavez-of-phear
+** DONE 15368. cavez-of-phear
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 9, popularity: 1.0000
    - Note: A Boulder Dash like game for consoles/terminals. Level editor included.
    - TODO Status: TODO
@@ -117193,7 +117244,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15371. rofi-mpd
+** DONE 15371. rofi-mpd
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 7, popularity: 1.0000
    - Note: Script for controlling mpd through rofi
    - TODO Status: TODO
@@ -117211,7 +117263,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15374. perl-email-valid
+** DONE 15374. perl-email-valid
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 6, popularity: 1.0000
    - Note: Check validity of Internet email addresses
    - TODO Status: TODO
@@ -117229,7 +117282,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15377. glrnvim
+** DONE 15377. glrnvim
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 4, popularity: 1.0000
    - Note: A GPU-accelerated neovim GUI.
    - TODO Status: TODO
@@ -117241,7 +117295,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15379. perl-time-parsedate
+** DONE 15379. perl-time-parsedate
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 4, popularity: 1.0000
    - Note: date parsing both relative and absolute
    - TODO Status: TODO
@@ -117265,7 +117320,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15383. perl-module-cpanfile
+** DONE 15383. perl-module-cpanfile
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 3, popularity: 1.0000
    - Note: Module-CPANfile - Parse cpanfile
    - TODO Status: TODO
@@ -117301,13 +117357,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15389. perl-email-stuffer
+** DONE 15389. perl-email-stuffer
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0000
    - Note: A more casual approach to creating and sending emails
    - TODO Status: TODO
 
 
-** TODO 15390. perl-net-domain-tld
+** DONE 15390. perl-net-domain-tld
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 1.0000
    - Note: Work with TLD names
    - TODO Status: TODO
@@ -117426,7 +117484,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260417ad.scm (compose-cli-bin v0.0.21, copy-build-system, BSD-4)
 
-** TODO 15408. continuwuity
+** DONE 15408. continuwuity
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: a very cool, featureful fork of conduit (rust matrix homeserver)
    - TODO Status: TODO
@@ -117451,7 +117510,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15412. electron41-bin
+** DONE 15412. electron41-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Build cross platform desktop apps with web technologies — prebuilt
    - TODO Status: TODO
@@ -117464,13 +117524,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260415i.scm (fcitx5-vinput-bin v2.1.8, copy-build-system)
    - TODO Status: DONE
 
-** TODO 15414. ffmpeg-bitrate-stats
+** DONE 15414. ffmpeg-bitrate-stats
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Calculate bitrate statistics using FFmpeg
    - TODO Status: TODO
 
 
-** TODO 15415. ffmpeg-quality-metrics
+** DONE 15415. ffmpeg-quality-metrics
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Calculate quality metrics with FFmpeg (SSIM, PSNR, VMAF, VIF)
    - TODO Status: TODO
@@ -117547,7 +117609,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15427. gsdb-bin
+** DONE 15427. gsdb-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: A database management tool for PostgreSQL, MySQL, and SQLite (pre-built binary)
    - TODO Status: TODO
@@ -117594,7 +117657,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15434. kotlin-debug-adapter-bin
+** DONE 15434. kotlin-debug-adapter-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Kotlin/JVM debugging for any editor/IDE using the Debug Adapter Protocol
    - TODO Status: TODO
@@ -117625,19 +117689,22 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260417ad.scm (mail-deduplicate-bin v8.1.2, copy-build-system, GPL-2.0+)
 
-** TODO 15439. mars-mips-bin
+** DONE 15439. mars-mips-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: MIPS runtime (binary version)
    - TODO Status: TODO
 
 
-** TODO 15440. moonbit
+** DONE 15440. moonbit
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: A modern system cleaner built in Go with a TUI and CLI
    - TODO Status: TODO
 
 
-** TODO 15441. mpeghdec
+** DONE 15441. mpeghdec
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Fraunhofer MPEG-H audio decoder
    - TODO Status: TODO
@@ -117649,7 +117716,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15443. nnd
+** DONE 15443. nnd
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: A debugger for Linux
    - TODO Status: TODO
@@ -117681,13 +117749,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15448. openwhispr-appimage
+** DONE 15448. openwhispr-appimage
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Voice-to-text dictation app with local Whisper/Parakeet and cloud models (AppImage)
    - TODO Status: TODO
 
 
-** TODO 15449. opera-gx-bin
+** BLOCKED 15449. opera-gx-bin
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: not found in AUR; no retrievable source artifact (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Opera GX The Gaming Browser
    - TODO Status: TODO
@@ -117700,31 +117770,36 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15451. pearpass-bin
+** DONE 15451. pearpass-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: PearPass is a distributed password manager powered by Pear Runtime. It allows secure storage of passwords, credit card details, and secure notes, with peer-to-peer syncing and end-to-end encryption.
    - TODO Status: TODO
 
 
-** TODO 15452. perl-curry
+** DONE 15452. perl-curry
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Perl/CPAN Module curry: Create automatic curried method call closures for any class or object
    - TODO Status: TODO
 
 
-** TODO 15453. perl-menlo-legacy
+** DONE 15453. perl-menlo-legacy
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Legacy internal and client support for Menlo
    - TODO Status: TODO
 
 
-** TODO 15454. perl-time-moment
+** DONE 15454. perl-time-moment
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Encoding and decoding of UTF-8 encoding form
    - TODO Status: TODO
 
 
-** TODO 15455. photogimp
+** DONE 15455. photogimp
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: GIMP config overlay that mimics Adobe Photoshop layout and shortcuts
    - TODO Status: TODO
@@ -117755,67 +117830,78 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15460. projectctr-makerom-bin
+** DONE 15460. projectctr-makerom-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Creates CTR cxi/cfa/cci/cia files
    - TODO Status: TODO
 
 
-** TODO 15461. pulp-cli
+** DONE 15461. pulp-cli
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Command line interface to talk to the Pulp 3 REST API
    - TODO Status: TODO
 
 
-** TODO 15462. python-amulet-rocksdb
+** DONE 15462. python-amulet-rocksdb
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: A pybind11 wrapper for RocksDB.
    - TODO Status: TODO
 
 
-** TODO 15463. python-kokoro
+** DONE 15463. python-kokoro
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: TTS An inference library for Kokoro-82M
    - TODO Status: TODO
 
 
-** TODO 15464. python-misaki
+** DONE 15464. python-misaki
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS
    - TODO Status: TODO
 
 
-** TODO 15465. python-misaki-en
+** DONE 15465. python-misaki-en
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS - en
    - TODO Status: TODO
 
 
-** TODO 15466. python-misaki-he
+** DONE 15466. python-misaki-he
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS - he
    - TODO Status: TODO
 
 
-** TODO 15467. python-misaki-ja
+** DONE 15467. python-misaki-ja
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS - ja
    - TODO Status: TODO
 
 
-** TODO 15468. python-misaki-ko
+** DONE 15468. python-misaki-ko
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS - ko
    - TODO Status: TODO
 
 
-** TODO 15469. python-misaki-vi
+** DONE 15469. python-misaki-vi
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS - vi
    - TODO Status: TODO
 
 
-** TODO 15470. python-misaki-zh
+** DONE 15470. python-misaki-zh
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: G2P engine for TTS - zh
    - TODO Status: TODO
@@ -117827,19 +117913,22 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15472. python-onepassword-sdk
+** DONE 15472. python-onepassword-sdk
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Python SDK for 1Password
    - TODO Status: TODO
 
 
-** TODO 15473. python-pyargument
+** DONE 15473. python-pyargument
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: A lightweight Python command-line argument parser that provides basic support for flags and options
    - TODO Status: TODO
 
 
-** TODO 15474. python-qh3-git
+** DONE 15474. python-qh3-git
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Lightweight QUIC and HTTP/3 implementation in Python (development version)
    - TODO Status: TODO
@@ -117852,7 +117941,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in recipe-resolver-260417ae.scm (q-bin v3.1.6, copy-build-system, GPL-3.0)
-** TODO 15476. quadrant-bin
+** DONE 15476. quadrant-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: An easy way to manage your Minecraft modpacks, written in React and Rust.(Prebuilt version)
    - TODO Status: TODO
@@ -117870,7 +117960,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15479. risuai-bin
+** DONE 15479. risuai-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Make your own story. User-friendly software for LLM roleplaying.(Prebuilt version)
    - TODO Status: TODO
@@ -117882,13 +117973,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15481. rofi-file-browser-extended
+** DONE 15481. rofi-file-browser-extended
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Use rofi to quickly open files
    - TODO Status: TODO
 
 
-** TODO 15482. rofi-kaomoji
+** DONE 15482. rofi-kaomoji
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Browse and copy kaomojis using rofi
    - TODO Status: TODO
@@ -117925,7 +118018,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15488. serial-studio-bin
+** DONE 15488. serial-studio-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Open-source telemetry dashboard. Supports UART, BLE, MQTT, Modbus, CAN Bus and more.
    - TODO Status: TODO
@@ -117937,7 +118031,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15490. simutil-bin
+** DONE 15490. simutil-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Cross platform utility TUI app for launching iOS simulators / Android emulators, discover physical devices, ADB tools and more...
    - TODO Status: TODO
@@ -117968,7 +118063,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15495. talanoa-bin
+** DONE 15495. talanoa-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Talanoa is a modern email client that is designed to be fast, secure, and easy to use
    - TODO Status: TODO
@@ -118016,7 +118112,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15503. upscayl
+** DONE 15503. upscayl
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: Free and Open Source AI Image Upscaler.(Use system-wide electron)
    - TODO Status: TODO
@@ -118059,7 +118156,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: recipe in recipe-resolver-260417ae.scm (windscribe-cli-v2-bin v2.21.7, copy-build-system from .deb, GPL-2.0)
-** TODO 15510. wttr-bin
+** DONE 15510. wttr-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: a simple script that checks the weather condition via http://wttr.in
    - TODO Status: TODO
@@ -118077,13 +118175,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15513. zelta
+** DONE 15513. zelta
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
    - Note: A safe and powerful ZFS backup and replication suite
    - TODO Status: TODO
 
 
-** TODO 15514. bashdb
+** DONE 15514. bashdb
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 17, popularity: 0.8788
    - Note: A debugger for Bash scripts loosely modeled on the gdb command syntax
    - TODO Status: TODO
@@ -118113,7 +118213,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15519. snapmaker-luban-bin
+** DONE 15519. snapmaker-luban-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 3, popularity: 0.0767
    - Note: Snapmaker Luban is an easy-to-use 3-in-1 software tailor-made for Snapmaker machines.
    - TODO Status: TODO
@@ -118188,13 +118289,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15529. sqlpage
+** DONE 15529. sqlpage
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0377
    - Note: Fast SQL-only data application builder. Automatically build a UI on top of SQL queries.
    - TODO Status: TODO
 
 
-** TODO 15530. amdvlk-bin
+** DONE 15530. amdvlk-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0377
    - Note: AMD's standalone Vulkan driver (Stable RPM Release)
    - TODO Status: TODO
@@ -118206,25 +118309,29 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15532. cherry-studio
+** DONE 15532. cherry-studio
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0377
    - Note: A desktop client that supports for multiple LLM providers.(Use system-wide electron)
    - TODO Status: TODO
 
 
-** TODO 15533. bolt-launcher-bin
+** DONE 15533. bolt-launcher-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0376
    - Note: Free open-source third-party implementation of the Jagex Launcher
    - TODO Status: TODO
 
 
-** TODO 15534. kilo-git
+** DONE 15534. kilo-git
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0376
    - Note: A small text editor in less than 1K lines of code
    - TODO Status: TODO
 
 
-** TODO 15535. factorio-bin
+** DONE 15535. factorio-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0376
    - Note: Go cross-compiler
    - TODO Status: TODO
@@ -118254,7 +118361,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15540. spaghettikart-bin
+** DONE 15540. spaghettikart-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0326
    - Note: Spaghetti Kart Reimplimentation engine for Mario Kart 64
    - TODO Status: TODO
@@ -118297,7 +118405,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15547. x11-emoji-picker-git
+** DONE 15547. x11-emoji-picker-git
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 4, popularity: 0.0283
    - Note: Linux XServer emoji picker written in C++.
    - TODO Status: TODO
@@ -118562,7 +118671,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15589. devbox
+** DONE 15589. devbox
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0139
    - Note: A cli tool to easily create isolated shells and containers
    - TODO Status: TODO
@@ -118663,7 +118773,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15604. subfinder
+** DONE 15604. subfinder
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 11, popularity: 0.0116
    - Note: A subdomain discovery tool that discovers valid subdomains for websites
    - TODO Status: TODO
@@ -118682,7 +118793,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260415i.scm (piper-tts-bin v2023.11.14-2, copy-build-system)
    - TODO Status: DONE
 
-** TODO 15607. processing-bin
+** DONE 15607. processing-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 4, popularity: 0.0106
    - Note: Programming environment for creating images, animations and interactions.(Prebuilt version)
    - TODO Status: TODO
@@ -118708,7 +118820,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15611. q-dns
+** DONE 15611. q-dns
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 0.0105
    - Note: A tiny command line DNS client with support for UDP, TCP, DoT, DoH, DoQ and ODoH.
    - TODO Status: TODO
@@ -118768,7 +118881,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260415n.scm (polymc-bin v7.0, Minecraft launcher portable binary, GPL-3.0)
 
 
-** TODO 15620. nextdns
+** DONE 15620. nextdns
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 15, popularity: 0.0104
    - Note: NextDNS DNS/53 to DoH Proxy
    - TODO Status: TODO
@@ -118786,7 +118900,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15623. passwordsafe-bin
+** DONE 15623. passwordsafe-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0104
    - Note: Popular secure and convenient password manager(Prebuilt version)
    - TODO Status: TODO
@@ -118810,7 +118925,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** TODO 15627. getnf
+** DONE 15627. getnf
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 5, popularity: 0.0100
    - Note: Command-line tool for installing Nerd Fonts
    - TODO Status: TODO
@@ -118854,7 +118970,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `libtree` (strip-bin); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 15634. nfpm
+** DONE 15634. nfpm
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 5, popularity: 0.0091
    - Note: nFPM is a simple, 0-dependencies, deb, rpm and apk packager.
    - TODO Status: TODO
@@ -118909,7 +119026,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15643. mago
+** DONE 15643. mago
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0091
    - Note: An extremely fast PHP linter, formatter, and static analyzer, written in Rust.
    - TODO Status: TODO
@@ -119092,7 +119210,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `openconnect` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 15673. rust-motd
+** DONE 15673. rust-motd
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 2, popularity: 0.0079
    - Note: Beautiful, useful, configurable MOTD generation with zero runtime dependencies
    - TODO Status: TODO
@@ -119116,7 +119235,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `cbqn` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 15677. min-bin
+** DONE 15677. min-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0079
    - Note: Min is a fast, minimal browser that protects your privacy.
    - TODO Status: TODO
@@ -119176,13 +119296,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15687. gopher64-bin
+** DONE 15687. gopher64-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0076
    - Note: N64 emulator written in Rust
    - TODO Status: TODO
 
 
-** TODO 15688. fjordlauncher
+** DONE 15688. fjordlauncher
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 0.0072
    - Note: Prism Launcher fork with support for alternative auth servers
    - TODO Status: TODO
@@ -119200,7 +119322,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15691. unciv
+** DONE 15691. unciv
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 17, popularity: 0.0072
    - Note: Open-source remake of Civilization V
    - TODO Status: TODO
@@ -119242,7 +119365,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15698. stripe-cli
+** DONE 15698. stripe-cli
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 8, popularity: 0.0068
    - Note: CLI for Stripe
    - TODO Status: TODO
@@ -119254,13 +119378,15 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15700. prospect-mail-bin
+** DONE 15700. prospect-mail-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 4, popularity: 0.0068
    - Note: Prospect Mail is an Outlook Electron desktop application for the new design.
    - TODO Status: TODO
 
 
-** TODO 15701. vita3k-bin
+** DONE 15701. vita3k-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 4, popularity: 0.0068
    - Note: Experimental PlayStation Vita emulator
    - TODO Status: TODO
@@ -119347,7 +119473,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `kitty` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 15715. hakuneko-desktop-bin
+** DONE 15715. hakuneko-desktop-bin
+   - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 33, popularity: 0.0060
    - Note: Manga & Anime Downloader for Linux, Windows & MacOS
    - TODO Status: TODO
@@ -121218,6 +121345,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** BLOCKED 16018. ttf-ms-office365
+   - Status: BLOCKED: PROPRIETARY_LICENSE: Microsoft Office 365 font license prohibits redistribution (deptree-resolver-260417ak)
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Microsoft proprietary; no redistribution (recipe-resolver-260417aa)
    - AUR votes: 1, popularity: 0.0044
    - Note: Microsoft (Office) 365 TrueType fonts
