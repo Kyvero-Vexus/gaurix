@@ -4950,6 +4950,7 @@
 
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260416f)
+  #:use-module (gaurix packages recipe-resolver-260416i)
   #:re-export (
             ;; recipe-resolver-260416f
             postman-bin
@@ -4978,6 +4979,33 @@
             xemu-git
             syca
             idescriptor-git
+            ;;; recipe-resolver-260416i recipes
+            jellyfin-rpc-bin
+            mago-bin
+            dotr-bin
+            quantumlauncher-bin
+            envy-tui-bin
+            surrealdb-bin
+            alt-sendme-bin
+            lrcget-bin
+            flclashx-bin
+            ps3-disc-dumper-bin
+            termora-bin
+            brisk-bin
+            elephant-providerlist-bin
+            elephant-bluetooth-bin
+            dsw-bin
+            wireguard-vanity-keygen
+            git-standup
+            scopebuddy
+            perl-crypt-argon2
+            kas
+            addwater
+            wsdd-native
+            open-in-native-client
+            python-pfzy
+            python-inquirerpy
+            mandelbulber2
 ))
   ;; deptree-resolver-260416g exports
   sonic-x11-session
