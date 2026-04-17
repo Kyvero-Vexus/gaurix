@@ -1,0 +1,36 @@
+{
+  "pass_id": "deptree-resolver-260417ah",
+  "timestamp": "2026-04-17T20:30:00Z",
+  "total_blocked_at_start": 49,
+  "total_selected": 49,
+  "resolved": 7,
+  "new_recipes": 11,
+  "still_blocked": 42,
+  "resolved_packages": [
+    {"name": "python-ipycache-git", "number": 15273, "guix_name": "python-ipycache", "version": "0.1.4", "method": "pypi-sdist", "license": "BSD-3"},
+    {"name": "python-anitopy-git", "number": 18934, "guix_name": "python-anitopy", "version": "2.1.1", "method": "pypi-sdist", "license": "MPL-2.0"},
+    {"name": "python-pyephem-git", "number": 18024, "guix_name": "python-ephem", "version": "4.2", "method": "ALREADY_IN_GUIX", "license": "MIT"},
+    {"name": "python-birdseye", "number": 15207, "guix_name": "python-birdseye", "version": "0.10.0", "method": "pypi-sdist", "license": "MIT"},
+    {"name": "kaggle-api", "number": 15277, "guix_name": "kaggle", "version": "2.0.1", "method": "pypi-sdist", "license": "Apache-2.0"},
+    {"name": "verapdf", "number": 15191, "guix_name": "verapdf", "version": "1.28.2", "method": "pre-built-jar", "license": "GPL-3.0+/MPL-2.0"},
+    {"name": "zzzfm-bin", "number": 15221, "guix_name": "zzzfm-bin", "version": "1.0.7", "method": "binary-deb", "license": "GPL-3.0+"}
+  ],
+  "dependency_recipes": [
+    {"name": "python-cheap-repr", "version": "0.5.2", "for": "python-birdseye"},
+    {"name": "python-flask-humanize", "version": "0.3.0", "for": "python-birdseye"},
+    {"name": "python-outdated", "version": "0.2.2", "for": "python-birdseye"},
+    {"name": "python-kagglesdk", "version": "0.1.18", "for": "kaggle"},
+    {"name": "zzzfm-common-bin", "version": "1.0.7", "for": "zzzfm-bin"}
+  ],
+  "blocked_categories": {
+    "PROPRIETARY_LICENSE": 14,
+    "ARCH_SPECIFIC": 4,
+    "COMPLEX_DEPS": 8,
+    "COMPLEX_PACKAGING": 3,
+    "DKMS_UNSUPPORTED": 2,
+    "SOURCE_UNAVAILABLE": 3,
+    "LEGAL_ISSUES": 1,
+    "MISSING_SOURCE": 2
+  },
+  "notes": "Only 49 BLOCKED packages existed (target was 100). All 49 evaluated. 7 resolved (6 new recipe files + 1 ALREADY_IN_GUIX). 42 remain BLOCKED with legitimate hard blockers (proprietary licenses, arch-specific tools, unsupported build systems, missing sources). All hashes obtained via guix download. All 11 derivations verified."
+}

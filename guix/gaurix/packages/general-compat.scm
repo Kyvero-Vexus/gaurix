@@ -7,6 +7,7 @@
   #:use-module (gaurix packages deptree-resolver-260408d)
   #:use-module (gaurix packages deptree-resolver-260417ac)
   #:use-module (gaurix packages deptree-resolver-260417ad)
+  #:use-module (gaurix packages deptree-resolver-260417ah)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages rdesktop)
   #:use-module (gnu packages i2p)

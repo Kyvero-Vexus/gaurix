@@ -15,6 +15,7 @@
             ;; recipe-resolver-260417w (27 NRD resolved, 3 BLOCKED)
             ;; recipe-resolver-260417ab (14 NRD resolved, 16 BLOCKED)
             ;; recipe-resolver-260417ae (27 NRD resolved, 3 BLOCKED)
+            ;; deptree-resolver-260417ah (7 BLOCKED resolved: 6 new recipes + deps, 1 ALREADY_IN_GUIX)
             auto-cpufreq
             backintime-git
             hydrus-network
