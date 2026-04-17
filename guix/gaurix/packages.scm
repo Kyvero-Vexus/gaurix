@@ -5549,4 +5549,53 @@
             alsaplayer
             svxlink-sounds-en-us-heather
             adbmanager-bin
+            ;; recipe-resolver-260417aa (48 recipes, 52 BLOCKED)
+            gandom-fonts
+            shabnam-fonts
+            samim-fonts
+            parastoo-fonts
+            sahel-fonts
+            nahid-fonts
+            iran-nastaliq-fonts
+            ir-standard-fonts
+            ttf-jost-variable
+            ttf-jost
+            otf-jost
+            otf-vt323
+            ttf-mulish
+            ttf-fixedsys-excelsior-linux
+            otf-nasin-nanpa
+            cherry-font-git
+            nerd-fonts-inter
+            otf-manufacturing-consent
+            maplemononormalnl-ttf-autohint
+            fcitx5-theme-wechat
+            sddm-astronaut-theme
+            whitesur-cursor-theme-git
+            grub-theme-minegrub
+            whitesur-icon-theme-git
+            pegasus-frontend-theme-gameos-git
+            pegasus-frontend-theme-pegasus-boy-git
+            pegasus-frontend-theme-shinretro-git
+            pegasus-frontend-theme-sleipnir-git
+            pegasus-frontend-theme-xboxos-git
+            httprobe-bin
+            gomi-bin
+            krabby-bin
+            chsrc-bin
+            buildifier-bin
+            palettro-bin
+            alt-bin
+            systemd-manager-tui-bin
+            dict-freedict-fra-deu-bin
+            dict-freedict-fra-eng-bin
+            dict-freedict-deu-fra-bin
+            ccze
+            dotdrop
+            lbreakouthd
+            mpremote
+            waycorner
+            shell-color-scripts-git
+            gltron
+            sfwbar
             ))
