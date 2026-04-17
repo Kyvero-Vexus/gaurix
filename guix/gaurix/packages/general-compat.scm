@@ -432,6 +432,7 @@
   #:use-module (gaurix packages deptree-resolver-260417y)
   #:use-module (gaurix packages deptree-resolver-260417z)
   #:use-module (gaurix packages recipe-resolver-260417aa)
+  #:use-module (gaurix packages recipe-resolver-260417ad)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8916,3 +8917,29 @@
 (re-export refind-btrfs-snapshots-bin)
 (re-export elastic-dashboard-bin)
 (re-export forge-gui-desktop-bin)
+
+; recipe-resolver-260417ad
+(re-export typioca-bin)
+(re-export lutgen-bin)
+(re-export gibo-bin)
+(re-export pet-bin)
+(re-export picocrypt-bin)
+(re-export tone-bin)
+(re-export qp-bin)
+(re-export wretch-bin)
+(re-export localsend-go-bin)
+(re-export taskr-bin)
+(re-export mail-deduplicate-bin)
+(re-export reels-bin)
+(re-export ncspot-bin)
+(re-export gphotos-uploader-cli-bin)
+(re-export ktop-bin)
+(re-export volt-bin)
+(re-export mdviewer-bin)
+(re-export clipse-bin)
+(re-export duckling-bin)
+(re-export twlauncher-bin)
+(re-export heimer-bin)
+(re-export tinytotp-bin)
+(re-export compose-cli-bin)
+(re-export gmat-bin)
