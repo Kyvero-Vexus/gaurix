@@ -422,6 +422,7 @@
   #:use-module (gaurix packages recipe-resolver-260417v)
   #:use-module (gaurix packages deptree-resolver-260417q)
   #:use-module (gaurix packages deptree-resolver-260417r)
+  #:use-module (gaurix packages deptree-resolver-260417s)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8737,3 +8738,7 @@
 (re-export pdfcpu-bin)
 (re-export mvnd-bin)
 (re-export ttf-raleway)
+
+; deptree-resolver-260417s
+(re-export gtk2-plus-extra)
+(re-export electron-builder)

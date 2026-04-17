@@ -11,6 +11,7 @@
             ;; recipe-resolver-260416f (26 NRD resolved)
             ;; recipe-resolver-260417n (14 NRD evaluated: 8 resolved, 6 exhausted, pool depleted)
             ;; deptree-resolver-260417r (8 BLOCKED resolved)
+            ;; deptree-resolver-260417s (96 BLOCKED resolved: 2 new recipes, 94 already-resolved)
             auto-cpufreq
             backintime-git
             hydrus-network
@@ -2722,6 +2723,10 @@
             python-groovy
             python-safehttpx
             python-gradio-client
+            ;; deptree-resolver-260417s
+
+            gtk2-plus-extra
+            electron-builder
 )
 
 ;; recipe-resolver-260414v
