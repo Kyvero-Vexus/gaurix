@@ -5943,4 +5943,12 @@
                alpine-make-rootfs
                epub-thumbnailer
                zenstates
-               rust-docs))
+               rust-docs
+               ;; deptree-resolver-260417ak
+               void-electron-latest-bin
+               chatgqt
+               redact-bin
+               ;; deptree-resolver-260417ao
+               opera-gx-bin
+               raidrivecli
+))

@@ -9,6 +9,7 @@
   #:use-module (gaurix packages deptree-resolver-260417ad)
   #:use-module (gaurix packages deptree-resolver-260417ah)
   #:use-module (gaurix packages deptree-resolver-260417ak)
+  #:use-module (gaurix packages deptree-resolver-260417ao)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages rdesktop)
   #:use-module (gnu packages i2p)
@@ -9348,3 +9349,12 @@
 (re-export apngasm)
 (re-export libcava)
 (re-export charliecloud)
+
+;; deptree-resolver-260417ak re-exports
+(re-export void-electron-latest-bin)
+(re-export chatgqt)
+(re-export redact-bin)
+
+;; deptree-resolver-260417ao re-exports
+(re-export opera-gx-bin)
+(re-export raidrivecli)
