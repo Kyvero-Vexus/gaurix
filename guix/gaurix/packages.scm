@@ -4979,3 +4979,13 @@
             syca
             idescriptor-git
 ))
+  ;; deptree-resolver-260416g exports
+  sonic-x11-session
+  sonicde-meta
+  shiboken2
+  python-shiboken2
+  pyside2
+  pyside2-tools
+  sherlock-launcher-unstable-git
+  deadbeef-plugin-lyricbar-git
+  libminiaudiohelpers
