@@ -5092,3 +5092,29 @@
   spring-boot-cli
   slack-term
   shitpost
+  ; recipe-resolver-260417m (25 NRD resolved)
+  woff2-misans-gujarati
+  woff2-misans-gurmukhi
+  woff2-misans-khmer
+  woff2-misans-l3
+  woff2-misans-latin
+  woff2-misans-myanmar
+  woff2-misans-tc
+  woff2-misans-thai
+  woff2-misans-tibetan
+  misans-fontconfig
+  ttf-gentium-basic
+  linuxmint-keyring
+  perl-module-signature
+  perl-sub-delete
+  engauge-digitizer
+  lbforth
+  bin86
+  keyfinder-cli
+  gftp
+  fetchfetch
+  ltunify
+  soupault-bin
+  rust-motd-bin
+  pocket-id-bin
+  pdf-metadata-editor-bin
