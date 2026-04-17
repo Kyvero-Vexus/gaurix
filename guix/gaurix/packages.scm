@@ -5118,3 +5118,17 @@
   rust-motd-bin
   pocket-id-bin
   pdf-metadata-editor-bin
+  ; deptree-resolver-260417n (13 BLOCKED resolved)
+  cook
+  capnproto-java
+  zef
+  vs1clickmodinstaller
+  libjxl-doc
+  arrow-c-glib
+  mayo
+  swaysettings
+  ghostty
+  xpipe-ptb
+  atom-ng-bin
+  gridmonger
+  ccdciel

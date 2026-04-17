@@ -412,6 +412,7 @@
   #:use-module (gaurix packages recipe-resolver-260417k)
   #:use-module (gaurix packages recipe-resolver-260417l)
   #:use-module (gaurix packages recipe-resolver-260417m)
+  #:use-module (gaurix packages deptree-resolver-260417n)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8494,3 +8495,17 @@
 (re-export rust-motd-bin)
 (re-export pocket-id-bin)
 (re-export pdf-metadata-editor-bin)
+; deptree-resolver-260417n
+(re-export cook)
+(re-export capnproto-java)
+(re-export zef)
+(re-export vs1clickmodinstaller)
+(re-export libjxl-doc)
+(re-export arrow-c-glib)
+(re-export mayo)
+(re-export swaysettings)
+(re-export ghostty)
+(re-export xpipe-ptb)
+(re-export atom-ng-bin)
+(re-export gridmonger)
+(re-export ccdciel)
