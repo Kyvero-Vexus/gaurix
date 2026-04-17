@@ -7,6 +7,7 @@
             ;; recipe-resolver-260415s (30 NRD resolved)
             ;; recipe-resolver-260415v (9 NRD resolved, pool depleted)
             ;; recipe-resolver-260416c (30 NRD resolved)
+            ;; recipe-resolver-260416e (27 NRD resolved, 3 BLOCKED)
             auto-cpufreq
             backintime-git
             hydrus-network

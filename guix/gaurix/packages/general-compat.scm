@@ -62,6 +62,7 @@
   #:use-module (gaurix packages recipe-resolver-260416a)
   #:use-module (gaurix packages recipe-resolver-260416b)
   #:use-module (gaurix packages recipe-resolver-260416c)
+  #:use-module (gaurix packages recipe-resolver-260416e)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
