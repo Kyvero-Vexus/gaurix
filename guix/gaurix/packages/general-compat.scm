@@ -407,6 +407,7 @@
   #:use-module (gaurix packages deptree-resolver-260416d)
   #:use-module (gaurix packages deptree-resolver-260416e)
   #:use-module (gaurix packages deptree-resolver-260416g)
+  #:use-module (gaurix packages deptree-resolver-260416j)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8353,3 +8354,8 @@
 (re-export manim)
 (re-export podliner-bin)
 (re-export suil-optgui)
+
+;; deptree-resolver-260416j recipes
+(re-export sh-elf-gcc-bootstrap)
+(re-export sh-elf-newlib)
+(re-export sh-elf-gcc)

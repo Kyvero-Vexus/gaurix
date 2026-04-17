@@ -59596,7 +59596,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — detail: `guix show brickstore` => unknown package; next: draft new Guix recipe module with source URI/hash/build-system/inputs, then run guix lint/build.
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260414p.scm (brickstore-bin v2026.3.2, BrickLink inventory AppImage, copy-build-system, GPL-3.0) (recipe-resolver-260414p)
 
-** BLOCKED 7617. sh-elf-newlib [BLOCKED: CROSS_COMPILE_UNSUPPORTED: SuperH embedded newlib; requires sh-elf cross-compiler]
+** DONE 7617. sh-elf-newlib [BLOCKED: CROSS_COMPILE_UNSUPPORTED: SuperH embedded newlib; requires sh-elf cross-compiler]
    - Status: BLOCKED: CROSS_COMPILE_UNSUPPORTED: SuperH embedded newlib; circular bootstrap with sh-elf-gcc; niche embedded target; recommend Guix native cross-compilation (deptree-resolver-260416g)
    - Note: AUR popularity=0.1177, votes=4; A C standard library implementation intended for use on embedded systems (SuperH
    - TODO Status: BLOCKED
@@ -59606,6 +59606,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CROSS_TOOLCHAIN_NEEDED: requires sh-elf-gcc + sh-elf-binutils cross toolchain not in Guix; A1: cross-base.scm supports adding targets but needs binutils+gcc+newlib multi-pkg effort; A2: embedded SH target audience extremely small; A3: beyond batch scope (recipe-resolver-260415v)
    - TODO Status: BLOCKED
+   - Status: DONE: Recipe added in deptree-resolver-260416j.scm (sh-elf-newlib v4.5.0.20241231, gnu-build-system, cross-compilation bootstrap)
+   - TODO Status: DONE
 ** DONE 7618. bab-bin
    - Note: AUR popularity=0.1177, votes=1; Task runner for defining project commands in YAML
    - Status: DONE: Recipe added in deptree-resolver-260407d.scm; dep-tree priority pass 2026-04-07.
@@ -59807,7 +59809,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 7648. sh-elf-gcc
+** DONE 7648. sh-elf-gcc
    - Status: BLOCKED: CROSS_COMPILE_UNSUPPORTED: GCC cross-compiler for SuperH; circular bootstrap with sh-elf-newlib; niche embedded target; recommend Guix native cross-compilation (deptree-resolver-260416g)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n sh-elf-gcc | error: guix build: error: sh-elf-gcc: unknown package | next: draft new Guix recipe module and validate with guix lint/build
    - Note: AUR popularity=0.1176, votes=4; The GNU Compiler Collection - cross compiler for SuperH (bare-metal) target
@@ -59816,6 +59818,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: Recipe added in deptree-resolver-260416j.scm (sh-elf-gcc v15.1.0, gnu-build-system, cross-compiler with newlib C/C++)
+   - TODO Status: DONE
 ** DONE 7649. lx-bin
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n lx-bin|lx | error: guix build: error: lx: unknown package | next: draft new Guix recipe module and validate with guix lint/build
    - Note: AUR popularity=0.1176, votes=1; A small CLI tool that converts selected files into clean, consistent Markdown-fe
