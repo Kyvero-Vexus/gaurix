@@ -425,6 +425,7 @@
   #:use-module (gaurix packages deptree-resolver-260417r)
   #:use-module (gaurix packages deptree-resolver-260417s)
   #:use-module (gaurix packages recipe-resolver-260417x)
+  #:use-module (gaurix packages deptree-resolver-260417y)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8823,3 +8824,17 @@
 (re-export psf-unifont)
 (re-export etterna)
 (re-export license)
+
+(re-export apache-jena)
+(re-export apache-jena-fuseki)
+(re-export b43-firmware-classic)
+(re-export bombkurdistan-bin)
+(re-export bombkurdistan-git)
+(re-export eclipse-cpp-bin)
+(re-export fcitx5-pinyin-sougou-dict)
+(re-export fingerprint-gui)
+(re-export gtk2-theme-dust)
+(re-export guile1.8)
+(re-export ntsync-common)
+(re-export ntsync-header)
+(re-export steamos-add-to-steam)

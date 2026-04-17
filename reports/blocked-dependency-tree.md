@@ -1,60 +1,77 @@
-# Blocked Dependency Tree
+# Blocked Dependency Tree — deptree-resolver-260417y
 
-**Pass:** deptree-resolver-260417s  
-**Timestamp:** 2026-04-17T10:16:03.952855+00:00  
-**Total BLOCKED:** 4428  
+Generated: 2026-04-17T11:37:28.381489+00:00
 
-## Priority Queue (Top 50)
+Total BLOCKED: 67
 
-| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
-|------|---------|---|-------------|-------------|------------|
-| 1 | nvidia-utils-beta | 2351 | 0 | 7 | 11 |
-| 2 | auto-auto-complete | 7413 | 0 | 5 | 1 |
-| 3 | python-questionary | 8095 | 0 | 5 | 5 |
-| 4 | xlibre-xserver-common-git | 6172 | 0 | 5 | 32 |
-| 5 | yay | 21311 | 0 | 4 | 3 |
-| 6 | qt5-wayland-decorations | 7434 | 0 | 4 | 4 |
-| 7 | qt5-doc | 11679 | 0 | 4 | 15 |
-| 8 | gurobi | 8076 | 0 | 3 | 3 |
-| 9 | libelectron | 5325 | 0 | 3 | 4 |
-| 10 | mozc-ut-full-common | 6042 | 0 | 3 | 13 |
-| 11 | wayfire | 466 | 0 | 3 | 15 |
-| 12 | java-openjfx | 11085 | 0 | 3 | 22 |
-| 13 | lib32-gstreamer | 33315 | 0 | 3 | 60 |
-| 14 | sonic-win | 1915 | 0 | 3 | 61 |
-| 15 | logmein-hamachi | 1958 | 0 | 2 | 0 |
-| 16 | samsung-unified-driver-common | 651 | 0 | 2 | 0 |
-| 17 | deb2targz | 4242 | 0 | 2 | 1 |
-| 18 | dotnet-targeting-pack-8.0-bin | 15163 | 0 | 2 | 1 |
-| 19 | owlry-plugin-converter | 13449 | 0 | 2 | 1 |
-| 20 | xone-dongle-firmware | 12011 | 0 | 2 | 2 |
-| 21 | android-sdk-build-tools | 991 | 0 | 2 | 3 |
-| 22 | mozc | 245 | 0 | 2 | 4 |
-| 23 | smpq | 5147 | 0 | 2 | 4 |
-| 24 | python-opentelemetry-proto | 12075 | 0 | 2 | 6 |
-| 25 | bms-shell | 6310 | 0 | 2 | 7 |
-| 26 | dotnet-runtime-8.0-bin | 15165 | 0 | 2 | 7 |
-| 27 | lcevcdec | 5046 | 0 | 2 | 7 |
-| 28 | python-inquirerpy | 3882 | 0 | 2 | 7 |
-| 29 | qtutilities | 10942 | 0 | 2 | 7 |
-| 30 | aimp | 11562 | 0 | 2 | 8 |
-| 31 | gslapper | 6326 | 0 | 2 | 8 |
-| 32 | gradle8 | 3795 | 0 | 2 | 10 |
-| 33 | asusctl | 11697 | 0 | 2 | 14 |
-| 34 | jdk23-openjdk | 13946 | 0 | 2 | 35 |
-| 35 | ros2-arch-deps | 4822 | 0 | 2 | 44 |
-| 36 | brother-lpr-drivers-common | 8601 | 0 | 1 | 0 |
-| 37 | genders | 7422 | 0 | 1 | 0 |
-| 38 | gst-thumbnailers | 6543 | 0 | 1 | 0 |
-| 39 | hyprshot | 62 | 0 | 1 | 0 |
-| 40 | keychron-link-udev | 4168 | 0 | 1 | 0 |
-| 41 | libfmod | 7233 | 0 | 1 | 0 |
-| 42 | tosu | 6382 | 0 | 1 | 0 |
-| 43 | upd72020x-fw | 178 | 0 | 1 | 0 |
-| 44 | waydroid | 57 | 0 | 1 | 0 |
-| 45 | aspnet-runtime-preview-bin | 10129 | 0 | 1 | 1 |
-| 46 | ledger-udev | 951 | 0 | 1 | 1 |
-| 47 | wd719x-firmware | 1900 | 0 | 1 | 1 |
-| 48 | archlinux-java-run | 12875 | 0 | 1 | 2 |
-| 49 | elephant-archlinuxpkgs-bin | 3586 | 0 | 1 | 2 |
-| 50 | elephant-bluetooth-bin | 3587 | 0 | 1 | 2 |
+## Priority Queue (all 67 packages)
+
+| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps | In AUR | Status |
+|------|---------|---|-------------|-------------|-----------|--------|--------|
+| 1 | ntsync-common | 15011 | 0 | 1 | 0 | Y | NEEDS_RECIPE |
+| 2 | libfprint-1 | 15048 | 0 | 1 | 8 | Y | NEEDS_RECIPE |
+| 3 | otf-raleway | 15001 | 0 | 0 | 0 | Y | NEEDS_RECIPE |
+| 4 | psf-unifont | 15030 | 0 | 0 | 0 | Y | NEEDS_RECIPE |
+| 5 | raidrivecli | 14202 | 0 | 0 | 0 | N | NEEDS_RECIPE |
+| 6 | redact-bin | 15032 | 0 | 0 | 0 | Y | NEEDS_RECIPE |
+| 7 | steamos-add-to-steam | 14975 | 0 | 0 | 0 | Y | NEEDS_RECIPE |
+| 8 | ttf-raleway-variable | 14999 | 0 | 0 | 0 | Y | NEEDS_RECIPE |
+| 9 | apache-jena | 15068 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 10 | apache-jena-fuseki | 15067 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 11 | findent | 15057 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 12 | fonts-apple | 14971 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 13 | gtk2-theme-dust | 15054 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 14 | mp3gain | 14977 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 15 | ntsync-header | 15009 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 16 | otb-unifont | 15065 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 17 | wofi-vim | 15039 | 0 | 0 | 1 | Y | NEEDS_RECIPE |
+| 18 | ampache | 14986 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 19 | b43-firmware-classic | 15063 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 20 | bloop | 15029 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 21 | chatgqt | 14575 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 22 | cobra-cli | 15020 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 23 | code-server-marketplace | 15031 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 24 | fcitx5-pinyin-sougou-dict-git | 14970 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 25 | jdk-lts-doc | 15003 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 26 | libfprint-2-tod1-broadcom | 15005 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 27 | mystmd | 15022 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 28 | odoo18-nightly | 14669 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 29 | portainer-bin | 15015 | 0 | 0 | 2 | Y | NEEDS_RECIPE |
+| 30 | arch-shell | 14726 | 0 | 0 | 3 | Y | NEEDS_RECIPE |
+| 31 | bombkurdistan-bin | 14740 | 0 | 0 | 3 | Y | NEEDS_RECIPE |
+| 32 | dude-bin | 14699 | 0 | 0 | 3 | Y | NEEDS_RECIPE |
+| 33 | eclipse-cpp-bin | 14984 | 0 | 0 | 3 | Y | NEEDS_RECIPE |
+| 34 | mt76-dkms-git | 14914 | 0 | 0 | 3 | Y | NEEDS_RECIPE |
+| 35 | resource-hacker | 14969 | 0 | 0 | 3 | Y | NEEDS_RECIPE |
+| 36 | bombkurdistan-git | 14739 | 0 | 0 | 4 | Y | NEEDS_RECIPE |
+| 37 | pacwall-git | 14584 | 0 | 0 | 4 | Y | NEEDS_RECIPE |
+| 38 | license | 14985 | 0 | 0 | 5 | Y | NEEDS_RECIPE |
+| 39 | pacman-contrib-git | 14972 | 0 | 0 | 5 | Y | NEEDS_RECIPE |
+| 40 | python-rocket-fft-git | 15021 | 0 | 0 | 5 | Y | NEEDS_RECIPE |
+| 41 | textadept-gtk3 | 15028 | 0 | 0 | 5 | Y | NEEDS_RECIPE |
+| 42 | vulkan-caps-viewer-wayland | 14989 | 0 | 0 | 5 | Y | NEEDS_RECIPE |
+| 43 | vulkan-caps-viewer-x11 | 14988 | 0 | 0 | 5 | Y | NEEDS_RECIPE |
+| 44 | asp | 14587 | 0 | 0 | 6 | Y | NEEDS_RECIPE |
+| 45 | deemix-gui-appimage | 14759 | 0 | 0 | 6 | Y | NEEDS_RECIPE |
+| 46 | etterna | 15018 | 0 | 0 | 6 | Y | NEEDS_RECIPE |
+| 47 | pianobooster | 15023 | 0 | 0 | 7 | Y | NEEDS_RECIPE |
+| 48 | brother-mfc-j5720dw | 15008 | 0 | 0 | 8 | Y | NEEDS_RECIPE |
+| 49 | devkitty-git | 15058 | 0 | 0 | 8 | Y | NEEDS_RECIPE |
+| 50 | xilinx-ise | 14616 | 0 | 0 | 8 | Y | NEEDS_RECIPE |
+| 51 | arsenal | 15073 | 0 | 0 | 10 | Y | NEEDS_RECIPE |
+| 52 | miniupnpd-nft-git | 15044 | 0 | 0 | 10 | Y | NEEDS_RECIPE |
+| 53 | guile1.8 | 15016 | 0 | 0 | 11 | Y | NEEDS_RECIPE |
+| 54 | jre-lts | 15002 | 0 | 0 | 12 | Y | NEEDS_RECIPE |
+| 55 | jdk-lts | 15004 | 0 | 0 | 14 | Y | NEEDS_RECIPE |
+| 56 | pithos | 15007 | 0 | 0 | 14 | Y | NEEDS_RECIPE |
+| 57 | simgrid | 15024 | 0 | 0 | 15 | Y | NEEDS_RECIPE |
+| 58 | nagstamon-git | 15049 | 0 | 0 | 17 | Y | NEEDS_RECIPE |
+| 59 | python-torchaudio-rocm | 14583 | 0 | 0 | 18 | Y | NEEDS_RECIPE |
+| 60 | kitty-shell-integration-git | 14995 | 0 | 0 | 20 | Y | NEEDS_RECIPE |
+| 61 | kitty-terminfo-git | 14994 | 0 | 0 | 21 | Y | NEEDS_RECIPE |
+| 62 | watchman | 14593 | 0 | 0 | 21 | Y | NEEDS_RECIPE |
+| 63 | void-electron-latest-bin | 14576 | 0 | 0 | 22 | Y | NEEDS_RECIPE |
+| 64 | godot-double-mono | 14495 | 0 | 0 | 26 | Y | NEEDS_RECIPE |
+| 65 | aiot-ide | 15062 | 0 | 0 | 28 | Y | NEEDS_RECIPE |
+| 66 | ntsync-dkms | 15010 | 1 | 0 | 2 | Y | NEEDS_RECIPE |
+| 67 | fingerprint-gui | 15035 | 1 | 0 | 5 | Y | NEEDS_RECIPE |
