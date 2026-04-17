@@ -2712,6 +2712,15 @@
             gcil
             koyeb-cli
             waifu-generator
+  ;; deptree-resolver-260417q (8 BLOCKED resolved: 6 recipes + 2 confirmed DONE)
+            hyperfluent-grub-theme-endeavouros
+            wayland-boomer-git
+            xorg-xwayland-git
+            transistor-git
+            python-ffmpy
+            python-groovy
+            python-safehttpx
+            python-gradio-client
 )
 
 ;; recipe-resolver-260414v

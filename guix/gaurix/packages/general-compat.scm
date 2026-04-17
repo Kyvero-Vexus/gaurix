@@ -416,6 +416,7 @@
   #:use-module (gaurix packages recipe-resolver-260417m)
   #:use-module (gaurix packages deptree-resolver-260417n)
   #:use-module (gaurix packages recipe-resolver-260417r)
+  #:use-module (gaurix packages deptree-resolver-260417q)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -8672,3 +8673,11 @@
 (re-export rvx-builder)
 (re-export simple64-git)
 (re-export miniforge)
+(re-export hyperfluent-grub-theme-endeavouros)
+(re-export wayland-boomer-git)
+(re-export xorg-xwayland-git)
+(re-export transistor-git)
+(re-export python-ffmpy)
+(re-export python-groovy)
+(re-export python-safehttpx)
+(re-export python-gradio-client)
