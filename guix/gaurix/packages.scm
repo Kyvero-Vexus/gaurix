@@ -6151,3 +6151,39 @@
                opf-fido
                keep-presence
                ))
+
+;; recipe-resolver-260418b: 30 NRD resolved (janet-lang, go-mtpfs, tiptop-cli, seqtui, terminal-typeracer, ...)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418b)
+  #:re-export (
+               janet-lang
+               go-mtpfs
+               tiptop-cli
+               seqtui
+               terminal-typeracer
+               hyprland-workspaces
+               leakdice
+               imapgoose
+               mf-cli
+               bitbake
+               mvw
+               tqftpserv
+               wordlist-generator
+               fts-transfer
+               gomu
+               gonic
+               heirloom-doctools
+               wired-notify
+               ragnarwm
+               polybar
+               telegram-bot-api
+               kst2
+               vtun-ng
+               marble-marcher-ce
+               supersayer
+               project-monalisa
+               catnap
+               greetd-qtgreet
+               virtualbmc
+               fcitx5-configtool
+               ))
