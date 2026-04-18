@@ -6481,3 +6481,50 @@
                libnick
                maddy
                ))
+
+;; deptree-resolver-260418j (43 BLOCKED resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260418j)
+  #:re-export (iup
+               ttf-ms-office365
+               fonts-apple
+               lib32-amdvlk-bin
+               otf-apple-pingfang
+               otf-apple-pingfang-relaxed
+               otf-apple-pingfang-ui
+               palemoon-i18n-fr
+               seamonkey-i18n-es-es
+               code-server-marketplace
+               gde-creator-bin
+               libfprint-2-tod1-broadcom
+               ntsync-dkms
+               odoo18-nightly
+               rice-switcher
+               8192eu-dkms-git
+               arch-shell
+               dude-bin
+               mt76-dkms-git
+               parus
+               pacwall-git
+               pypy3-pyparsing
+               rtl8821ce-dkms-git
+               cn-dascom-pin-driver
+               lib32-liblrdf
+               selinux-refpolicy-arch-git
+               starsector
+               asp
+               deezer
+               ec-su-axb35-dkms-git
+               fnq-monitor
+               olauncher
+               gdrcopy
+               devkitty-git
+               xilinx-ise
+               pamac-all
+               python-torchaudio-rocm
+               aiot-ide
+               vitis
+               lua-iup
+               lua51-iup
+               lua52-iup
+               lua53-iup))
