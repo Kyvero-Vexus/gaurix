@@ -6531,6 +6531,7 @@
                lua53-iup))
 
 ;; recipe-resolver-260418k (30 NRD resolved)
+            ;; deptree-resolver-260418k: pool depleted — 43 formerly BLOCKED finalized as FAILED (exhausted)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260418k)
   #:re-export (safe-rm
