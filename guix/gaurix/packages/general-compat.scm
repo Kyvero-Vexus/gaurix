@@ -79,6 +79,7 @@
   #:use-module (gaurix packages recipe-resolver-260417au)
   #:use-module (gaurix packages recipe-resolver-260418g)
   #:use-module (gaurix packages recipe-resolver-260418h)
+  #:use-module (gaurix packages recipe-resolver-260418o)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -10139,3 +10140,10 @@
 (re-export prefixer)
 (re-export appimagelauncher-bin)
 (re-export millennium-bin)
+
+;; recipe-resolver-260418o
+(re-export errands-c)
+(re-export netcheck)
+(re-export flatpak-builder-tools)
+(re-export shutter-encoder)
+(re-export phonon-mpv)
