@@ -27,26 +27,26 @@
 ;;;      20.  green-recorder-git (python-build-system, v0.0.0-git, gpl3+)
 ;;;
 ;;; BLOCKED EXHAUSTED (10):
-;;;      21.  vibe-audio-visualizer-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: UNKNOWN_UPSTREAM:
-;;;           cannot determine upstream repo; AUR page has no upstream URL
+;;;      21.  vibe-audio-visualizer-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: CARGO_VULKAN_COMPLEX:
+;;;           Rust/Cargo at github.com/TornaxO7/vibe; Vulkan/WGPU + crate deps
 ;;;      22.  autofirma -> NEEDS_RECIPE_DESIGN_EXHAUSTED: JAVA_COMPLEX:
-;;;           Spanish government Java digital signing tool; depends on 20+ Java libs
+;;;           Spanish gov't signing tool (github.com/ctt-gob-es/clienteafirma); 20+ Java deps
 ;;;      23.  wazuh-agent -> NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_BUILD:
-;;;           massive C/C++ security agent with systemd integration and 30+ deps
+;;;           security agent (github.com/wazuh/wazuh-agent); cmake + 30+ deps + systemd
 ;;;      24.  btrustbiss -> NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY:
-;;;           Bulgarian B-Trust BISS proprietary smartcard driver
+;;;           Bulgarian B-Trust BISS proprietary smartcard driver; no source
 ;;;      25.  ollama-for-amd -> NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_BUILD:
-;;;           requires ROCm/HIP GPU compute stack not in Guix
+;;;           unofficial Ollama fork; ROCm/HIP GPU compute stack not in Guix
 ;;;      26.  rollup -> NEEDS_RECIPE_DESIGN_EXHAUSTED: NPM_ECOSYSTEM:
-;;;           JavaScript bundler requiring npm/node.js ecosystem
-;;;      27.  flow-control-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: UNKNOWN_UPSTREAM:
-;;;           cannot determine upstream source repository
-;;;      28.  osaka-simulator -> NEEDS_RECIPE_DESIGN_EXHAUSTED: UNKNOWN_UPSTREAM:
-;;;           cannot determine upstream source; no AUR metadata
-;;;      29.  outfieldr-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: UNKNOWN_UPSTREAM:
-;;;           cannot locate upstream repository; AUR metadata insufficient
-;;;      30.  grimaur-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: UNKNOWN_UPSTREAM:
-;;;           cannot locate upstream repository; no source URL
+;;;           JavaScript bundler (github.com/rollup/rollup); 100+ npm deps
+;;;      27.  flow-control-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: ZIG_NOT_IN_GUIX:
+;;;           text editor (github.com/neurocyte/flow); Zig build system
+;;;      28.  osaka-simulator -> NEEDS_RECIPE_DESIGN_EXHAUSTED: WINE_WRAPPER:
+;;;           Windows-only freeware game; requires Wine, no native build
+;;;      29.  outfieldr-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: ZIG_NOT_IN_GUIX:
+;;;           CSV/TSV viewer (gitlab.com/ve-nt/outfieldr); Zig build system
+;;;      30.  grimaur-git -> NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC:
+;;;           AUR helper (github.com/ryk4rd/grimaur); useless outside Arch
 ;;;
 ;;; NOTE: All sha256 hashes are placeholders (all zeros).
 ;;; Use `guix download` to obtain real hashes.
@@ -603,18 +603,21 @@ measure pixel distances and dimensions of UI elements.")
 
 ;;; -------------------------------------------------------------------
 ;;; 19. goverlay-git --- MangoHud/vkBasalt overlay configurator
-;;; Python/GTK4 graphical overlay manager.
+;;; Free Pascal/Lazarus graphical overlay manager.
+;;; NOTE: Requires Free Pascal Compiler (fpc) and Lazarus IDE for
+;;; building from source.  Recipe uses copy-build-system with
+;;; precompiled binary from GitHub releases as workaround.
 ;;; -------------------------------------------------------------------
 (define-public goverlay-git
   (package
     (name "goverlay-git")
     (version "1.2")
     (source (origin
-              (method git-fetch)
-              (uri (git-reference
-                    (url "https://github.com/benjamimgois/goverlay")
-                    (commit version)))
-              (file-name (git-file-name name version))
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/benjamimgois/goverlay"
+                    "/releases/download/" version
+                    "/goverlay-" version ".tar.xz"))
               (sha256
                (base32
                 "0000000000000000000000000000000000000000000000000000"))))
@@ -628,7 +631,7 @@ measure pixel distances and dimensions of UI elements.")
     (description "GOverlay is a graphical tool to configure gaming
 overlays on Linux.  It provides an interface for configuring MangoHud
 (performance overlay), vkBasalt (post-processing), and ReplaySorcery
-(replay buffer) settings.")
+(replay buffer) settings.  Built with Free Pascal and Lazarus.")
     (license license:gpl3+)))
 
 ;;; -------------------------------------------------------------------
