@@ -144,7 +144,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/anthropics/claudes-c-compiler")
-                    (commit (string-append "v" version))))
+                    (commit "main")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "12lilfa9mcg5jwd37rhvq8gcppfdlihh2hfwzdirkg1v6rrw5vaw"))))
@@ -158,7 +158,7 @@
 (define-public nginx-mod-cgi
   (package
     (name "nginx-mod-cgi")
-    (version "0.14.1")
+    (version "0.15")
     (source (origin
               (method git-fetch)
               (uri (git-reference
@@ -216,7 +216,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/rems-project/sail")
-                    (commit (string-append "v" version))))
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "05z5q5hmvzg0jsvcl988xc8ypdg5p7ifi7h2kjzi4x3ar1gq0mv3"))))
@@ -252,7 +252,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/ozturkkl/framework-control")
-                    (commit (string-append "v" version))))
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0jzq635dnsydjdrgmcz83ykpfwryvr2fbqgixgqjmbxw5mmc0d3r"))))
@@ -288,7 +288,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/ycm-core/YouCompleteMe")
-                    (commit (string-append "v" version))))
+                    (commit "master")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "020mmqczsd05yp0wrzn1dvkrpzj93wyi2amz554rh41acpnhg8mw"))))
@@ -323,15 +323,18 @@
     (name "ocudu")
     (version "26.04.0")
     (source (origin
-              (method url-fetch)
-              (uri "https://aur.archlinux.org/cgit/aur.git/snapshot/ocudu.tar.gz")
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/bpodrygajlo/ocudu")
+                    (commit "release_26_04_rc1")))
+              (file-name (git-file-name name version))
               (sha256
-               (base32 "0dvam4aq79303nljqdpj1ns7hmy4jfsigy0q1lm5rjf0n6j5ldnw"))))
+               (base32 "05g4qh5qqlh8w88rhkack8wq7q3imkd35kx4v6w6cqrcddmi2m9r"))))
     (build-system cmake-build-system)
     (arguments (list #:tests? #f))
     (synopsis "open Centralized Unit Distributed Unit (OCUDU)")
     (description "Open Centralized Unit Distributed Unit (OCUDU).")
-    (home-page "https://ocudu.org")
+    (home-page "https://github.com/bpodrygajlo/ocudu")
     (license license:bsd-3)))
 
 (define-public qtutilities-qt6
@@ -361,7 +364,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/muammar/mkchromecast")
-                    (commit (string-append "v" version))))
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "1clr02zphpkjnnw5l1mgbjsk5ycqryajnlpb8wfdb5ax72ca7066"))))
@@ -456,7 +459,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/Diaoul/subliminal")
-                    (commit (string-append "v" version))))
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "1q64rlfawq4dnsnfrr18p2qci1d6h8j1w4fi2vvin7j9h1knjj5k"))))
@@ -475,7 +478,7 @@
               (method git-fetch)
               (uri (git-reference
                     (url "https://github.com/AZO234/NP2kai")
-                    (commit (string-append "v" version))))
+                    (commit "rev.22")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "1xh9scqg1bnn86rra8d3krlsiz33kwf1mm41jjpd3q50ly5yymmj"))))
