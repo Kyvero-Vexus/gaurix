@@ -7353,4 +7353,26 @@
                dwatch-bin
                element-lk-jwt-service
                elephant-providerlist-bin
+
+            ;; recipe-resolver-260418ac (20 NRD resolved, 10 BLOCKED)
+               ttf-heuristica
+               ttf-google-sans-code-vf
+               ttf-ubuntu-sans-mono
+               ocr-fonts
+               rclonefzf
+               dockcheck
+               fluent-icon-theme-git
+               fluent-cursor-theme-git
+               neovim-remote
+               fw-fanctrl
+               lightdm-settings
+               gnome-monitor-config-git
+               gnome-shell-extension-tiling-assistant
+               system-tools-backends
+               liboobs
+               graphite-cursor-theme-git
+               logviewer-bin
+               hypruler-bin
+               goverlay-git
+               green-recorder-git
                ))

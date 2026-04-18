@@ -93,6 +93,7 @@
   #:use-module (gaurix packages recipe-resolver-260418z)
   #:use-module (gaurix packages recipe-resolver-260418aa)
   #:use-module (gaurix packages recipe-resolver-260418ab)
+  #:use-module (gaurix packages recipe-resolver-260418ac)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -11395,3 +11396,103 @@
   (package
     (inherit elephant-providerlist-bin)
     (name "elephant-providerlist-bin")))
+
+(define-public ttf-heuristica
+  (package
+    (inherit ttf-heuristica)
+    (name "ttf-heuristica")))
+
+(define-public ttf-google-sans-code-vf
+  (package
+    (inherit ttf-google-sans-code-vf)
+    (name "ttf-google-sans-code-vf")))
+
+(define-public ttf-ubuntu-sans-mono
+  (package
+    (inherit ttf-ubuntu-sans-mono)
+    (name "ttf-ubuntu-sans-mono")))
+
+(define-public ocr-fonts
+  (package
+    (inherit ocr-fonts)
+    (name "ocr-fonts")))
+
+(define-public rclonefzf
+  (package
+    (inherit rclonefzf)
+    (name "rclonefzf")))
+
+(define-public dockcheck
+  (package
+    (inherit dockcheck)
+    (name "dockcheck")))
+
+(define-public fluent-icon-theme-git
+  (package
+    (inherit fluent-icon-theme-git)
+    (name "fluent-icon-theme-git")))
+
+(define-public fluent-cursor-theme-git
+  (package
+    (inherit fluent-cursor-theme-git)
+    (name "fluent-cursor-theme-git")))
+
+(define-public neovim-remote
+  (package
+    (inherit neovim-remote)
+    (name "neovim-remote")))
+
+(define-public fw-fanctrl
+  (package
+    (inherit fw-fanctrl)
+    (name "fw-fanctrl")))
+
+(define-public lightdm-settings
+  (package
+    (inherit lightdm-settings)
+    (name "lightdm-settings")))
+
+(define-public gnome-monitor-config-git
+  (package
+    (inherit gnome-monitor-config-git)
+    (name "gnome-monitor-config-git")))
+
+(define-public gnome-shell-extension-tiling-assistant
+  (package
+    (inherit gnome-shell-extension-tiling-assistant)
+    (name "gnome-shell-extension-tiling-assistant")))
+
+(define-public system-tools-backends
+  (package
+    (inherit system-tools-backends)
+    (name "system-tools-backends")))
+
+(define-public liboobs
+  (package
+    (inherit liboobs)
+    (name "liboobs")))
+
+(define-public graphite-cursor-theme-git
+  (package
+    (inherit graphite-cursor-theme-git)
+    (name "graphite-cursor-theme-git")))
+
+(define-public logviewer-bin
+  (package
+    (inherit logviewer-bin)
+    (name "logviewer-bin")))
+
+(define-public hypruler-bin
+  (package
+    (inherit hypruler-bin)
+    (name "hypruler-bin")))
+
+(define-public goverlay-git
+  (package
+    (inherit goverlay-git)
+    (name "goverlay-git")))
+
+(define-public green-recorder-git
+  (package
+    (inherit green-recorder-git)
+    (name "green-recorder-git")))
