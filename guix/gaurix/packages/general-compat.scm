@@ -456,6 +456,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ap)
   #:use-module (gaurix packages recipe-resolver-260417aq)
   #:use-module (gaurix packages recipe-resolver-260417as)
+  #:use-module (gaurix packages recipe-resolver-260417av)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9490,3 +9491,25 @@
 (re-export workz-bin)
 (re-export checkstyle-bin)
 (re-export tmux-plugin-panel-bin)
+
+;;; recipe-resolver-260417av
+(re-export python-virt-lightning)
+(re-export python-pulldocker)
+(re-export python-ffmpegp)
+(re-export python-git-user-manager)
+(re-export python-terminal-widgets)
+(re-export gga)
+(re-export polybarman)
+(re-export rofi-radio)
+(re-export rofi-wifi-menu)
+(re-export wttr)
+(re-export ames)
+(re-export pacleaner)
+(re-export rofi-firefox-profiles)
+(re-export rofi-surfraw)
+(re-export rebar3-zsh-completion)
+(re-export keylight-controller)
+(re-export xkblayout-state)
+(re-export nqptp)
+(re-export procomp)
+(re-export wandoo)

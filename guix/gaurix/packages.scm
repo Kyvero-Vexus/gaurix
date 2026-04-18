@@ -6069,3 +6069,29 @@
                workz-bin
                tmux-plugin-panel-bin
                ))
+
+;; recipe-resolver-260417av (20 recipes, 80 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417av)
+  #:re-export (
+               python-virt-lightning
+               python-pulldocker
+               python-ffmpegp
+               python-git-user-manager
+               python-terminal-widgets
+               gga
+               polybarman
+               rofi-radio
+               rofi-wifi-menu
+               wttr
+               ames
+               pacleaner
+               rofi-firefox-profiles
+               rofi-surfraw
+               rebar3-zsh-completion
+               keylight-controller
+               xkblayout-state
+               nqptp
+               procomp
+               wandoo
+               ))
