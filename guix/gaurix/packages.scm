@@ -7018,6 +7018,7 @@
                ))
 
 ;; recipe-resolver-260418x (93 recipes, 7 BLOCKED)
+  ;; recipe-resolver-260418y (30 NRD resolved, 7 BLOCKED)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260418x)
   #:re-export (
@@ -7114,4 +7115,34 @@
                plowshare
                onlyoffice-documentserver-bin
                wine-tkg-staging-bin
+               atlauncher
+               mindustry
+               mindustry-server
+               polymc
+               sabnzbd
+               arronax
+               audiveris
+               pcbdraw
+               plasma6-applets-resources-monitor
+               plasma6-applets-panel-spacer-extended
+               gnome-shell-extension-top-bar-organizer
+               piper-voices-ru-ru
+               python-fmod-toolkit-git
+               uefi-manager
+               bitbox-wallet-app-rpm
+               alacritty-use-theme-git
+               dare-devil
+               libxnvctrl-340xx
+               icamerasrc-git
+               rescrobbled-git
+               lrclibfetch
+               maki-cli
+               lbn
+               keepassxc-git
+               libmysqlclient
+               goxlr-utility
+               aegisub-arch1t3cht-git
+               hyprland-per-window-layout
+               mysql-clients
+               gr-lora_sdr-git
                ))

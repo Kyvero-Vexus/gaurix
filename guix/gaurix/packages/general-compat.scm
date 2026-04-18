@@ -89,6 +89,7 @@
   #:use-module (gaurix packages recipe-resolver-260418p)
   #:use-module (gaurix packages recipe-resolver-260418r)
   #:use-module (gaurix packages recipe-resolver-260418x)
+  #:use-module (gaurix packages recipe-resolver-260418y)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -10486,3 +10487,155 @@
     (inherit wdisplays-persistent)
     (name "wdisplays-persistent")))
 
+
+;;; --- recipe-resolver-260418y: 30 compat aliases ---
+
+(define-public atlauncher
+  (package
+    (inherit atlauncher)
+    (name "atlauncher")))
+
+(define-public mindustry
+  (package
+    (inherit mindustry)
+    (name "mindustry")))
+
+(define-public mindustry-server
+  (package
+    (inherit mindustry-server)
+    (name "mindustry-server")))
+
+(define-public polymc
+  (package
+    (inherit polymc)
+    (name "polymc")))
+
+(define-public sabnzbd
+  (package
+    (inherit sabnzbd)
+    (name "sabnzbd")))
+
+(define-public arronax
+  (package
+    (inherit arronax)
+    (name "arronax")))
+
+(define-public audiveris
+  (package
+    (inherit audiveris)
+    (name "audiveris")))
+
+(define-public pcbdraw
+  (package
+    (inherit pcbdraw)
+    (name "pcbdraw")))
+
+(define-public plasma6-applets-resources-monitor
+  (package
+    (inherit plasma6-applets-resources-monitor)
+    (name "plasma6-applets-resources-monitor")))
+
+(define-public plasma6-applets-panel-spacer-extended
+  (package
+    (inherit plasma6-applets-panel-spacer-extended)
+    (name "plasma6-applets-panel-spacer-extended")))
+
+(define-public gnome-shell-extension-top-bar-organizer
+  (package
+    (inherit gnome-shell-extension-top-bar-organizer)
+    (name "gnome-shell-extension-top-bar-organizer")))
+
+(define-public piper-voices-ru-ru
+  (package
+    (inherit piper-voices-ru-ru)
+    (name "piper-voices-ru-ru")))
+
+(define-public python-fmod-toolkit-git
+  (package
+    (inherit python-fmod-toolkit-git)
+    (name "python-fmod-toolkit-git")))
+
+(define-public uefi-manager
+  (package
+    (inherit uefi-manager)
+    (name "uefi-manager")))
+
+(define-public bitbox-wallet-app-rpm
+  (package
+    (inherit bitbox-wallet-app-rpm)
+    (name "bitbox-wallet-app-rpm")))
+
+(define-public alacritty-use-theme-git
+  (package
+    (inherit alacritty-use-theme-git)
+    (name "alacritty-use-theme-git")))
+
+(define-public dare-devil
+  (package
+    (inherit dare-devil)
+    (name "dare-devil")))
+
+(define-public libxnvctrl-340xx
+  (package
+    (inherit libxnvctrl-340xx)
+    (name "libxnvctrl-340xx")))
+
+(define-public icamerasrc-git
+  (package
+    (inherit icamerasrc-git)
+    (name "icamerasrc-git")))
+
+(define-public rescrobbled-git
+  (package
+    (inherit rescrobbled-git)
+    (name "rescrobbled-git")))
+
+(define-public lrclibfetch
+  (package
+    (inherit lrclibfetch)
+    (name "lrclibfetch")))
+
+(define-public maki-cli
+  (package
+    (inherit maki-cli)
+    (name "maki-cli")))
+
+(define-public lbn
+  (package
+    (inherit lbn)
+    (name "lbn")))
+
+(define-public keepassxc-git
+  (package
+    (inherit keepassxc-git)
+    (name "keepassxc-git")))
+
+(define-public libmysqlclient
+  (package
+    (inherit libmysqlclient)
+    (name "libmysqlclient")))
+
+(define-public goxlr-utility
+  (package
+    (inherit goxlr-utility)
+    (name "goxlr-utility")))
+
+(define-public aegisub-arch1t3cht-git
+  (package
+    (inherit aegisub-arch1t3cht-git)
+    (name "aegisub-arch1t3cht-git")))
+
+(define-public hyprland-per-window-layout
+  (package
+    (inherit hyprland-per-window-layout)
+    (name "hyprland-per-window-layout")))
+
+(define-public mysql-clients
+  (package
+    (inherit mysql-clients)
+    (name "mysql-clients")))
+
+(define-public gr-lora_sdr-git
+  (package
+    (inherit gr-lora_sdr-git)
+    (name "gr-lora_sdr-git")))
