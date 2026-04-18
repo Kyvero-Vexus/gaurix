@@ -1,100 +1,58 @@
-# Blocked Dependency Tree — deptree-resolver-260418d
+# Blocked Dependency Tree
 
-**Timestamp:** 2026-04-18T06:28:14.321306+00:00
-**Total BLOCKED:** 91
+**Pass:** deptree-resolver-260418g  
+**Timestamp:** 2026-04-18T08:00:53.694263Z  
+**Total BLOCKED:** 48  
 
-## Priority Queue
+## Priority Queue (Top 50)
 
-| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps | In AUR |
-|------|---------|---|-------------|-------------|-----------|--------|
-| 1 | lib32-lv2 | 15370 | 0 | 6 | 11 | Y |
-| 2 | lib32-libbs2b | 15356 | 0 | 5 | 4 | Y |
-| 3 | lib32-libmpeg2 | 15353 | 0 | 4 | 2 | Y |
-| 4 | lib32-wildmidi | 15355 | 0 | 4 | 6 | Y |
-| 5 | lib32-libgme | 15354 | 0 | 4 | 8 | Y |
-| 6 | iup | 15267 | 0 | 4 | 14 | Y |
-| 7 | lib32-rav1e | 15357 | 0 | 1 | 7 | Y |
-| 8 | lib32-raptor | 15350 | 0 | 1 | 8 | Y |
-| 9 | sope | 15367 | 0 | 1 | 8 | Y |
-| 10 | ttf-ms-office365 | 16018 | 0 | 0 | 0 | Y |
-| 11 | datagrip-jre | 21653 | 0 | 0 | 1 | Y |
-| 12 | fonts-apple | 14971 | 0 | 0 | 1 | Y |
-| 13 | lib32-amdvlk-bin | 15531 | 0 | 0 | 1 | Y |
-| 14 | memtest86-efi | 15344 | 0 | 0 | 1 | Y |
-| 15 | otf-apple-pingfang | 15346 | 0 | 0 | 1 | Y |
-| 16 | otf-apple-pingfang-relaxed | 15347 | 0 | 0 | 1 | Y |
-| 17 | otf-apple-pingfang-ui | 15348 | 0 | 0 | 1 | Y |
-| 18 | palemoon-i18n-fr | 15388 | 0 | 0 | 1 | Y |
-| 19 | pdflib-lite | 15271 | 0 | 0 | 1 | Y |
-| 20 | profile-sync-daemon-edge | 15380 | 0 | 0 | 1 | Y |
-| 21 | seamonkey-i18n-es-es | 15384 | 0 | 0 | 1 | Y |
-| 22 | claudes-c-compiler | 15404 | 0 | 0 | 2 | Y |
-| 23 | claudes-c-compiler-doc | 15405 | 0 | 0 | 2 | Y |
-| 24 | claudes-c-compiler-src | 15406 | 0 | 0 | 2 | Y |
-| 25 | code-server-marketplace | 15031 | 0 | 0 | 2 | Y |
-| 26 | libfprint-2-tod1-broadcom | 15005 | 0 | 0 | 2 | Y |
-| 27 | nginx-mod-cgi | 15274 | 0 | 0 | 2 | Y |
-| 28 | ntsync-dkms | 15010 | 0 | 0 | 2 | Y |
-| 29 | odoo18-nightly | 14669 | 0 | 0 | 2 | Y |
-| 30 | 8192eu-dkms-git | 15373 | 0 | 0 | 3 | Y |
-| 31 | arch-shell | 14726 | 0 | 0 | 3 | Y |
-| 32 | dude-bin | 14699 | 0 | 0 | 3 | Y |
-| 33 | mt76-dkms-git | 14914 | 0 | 0 | 3 | Y |
-| 34 | parus | 15189 | 0 | 0 | 3 | Y |
-| 35 | binance-app | 15398 | 0 | 0 | 4 | Y |
-| 36 | gksu | 21534 | 0 | 0 | 4 | Y |
-| 37 | pacwall-git | 14584 | 0 | 0 | 4 | Y |
-| 38 | pypy3-pyparsing | 15310 | 0 | 0 | 4 | Y |
-| 39 | ripple | 15478 | 0 | 0 | 4 | Y |
-| 40 | rtl8821ce-dkms-git | 22214 | 0 | 0 | 4 | Y |
-| 41 | cn-dascom-pin-driver | 15259 | 0 | 0 | 5 | Y |
-| 42 | sail-model | 15256 | 0 | 0 | 5 | Y |
-| 43 | selinux-refpolicy-arch-git | 15487 | 0 | 0 | 5 | Y |
-| 44 | starsector | 15139 | 0 | 0 | 5 | Y |
-| 45 | asp | 14587 | 0 | 0 | 6 | Y |
-| 46 | deemix-gui-appimage | 14759 | 0 | 0 | 6 | Y |
-| 47 | deezer | 21712 | 0 | 0 | 6 | Y |
-| 48 | ec-su_axb35-dkms-git | 15411 | 0 | 0 | 6 | Y |
-| 49 | fnq-monitor | 15258 | 0 | 0 | 6 | Y |
-| 50 | olauncher | 15269 | 0 | 0 | 6 | Y |
-| 51 | framework-control | 15419 | 0 | 0 | 7 | Y |
-| 52 | gdrcopy | 15131 | 0 | 0 | 7 | Y |
-| 53 | brother-mfc-j5720dw | 15008 | 0 | 0 | 8 | Y |
-| 54 | devkitty-git | 15058 | 0 | 0 | 8 | Y |
-| 55 | vim-youcompleteme-git | 21386 | 0 | 0 | 8 | Y |
-| 56 | xilinx-ise | 14616 | 0 | 0 | 8 | Y |
-| 57 | gsdb | 15426 | 0 | 0 | 9 | Y |
-| 58 | ocudu | 15445 | 0 | 0 | 9 | Y |
-| 59 | qtutilities-qt6 | 23303 | 0 | 0 | 9 | Y |
-| 60 | mkchromecast-git | 23180 | 0 | 0 | 10 | Y |
-| 61 | niri-companion | 15442 | 0 | 0 | 10 | Y |
-| 62 | pamac-all | 22052 | 0 | 0 | 10 | Y |
-| 63 | libretro-easyrpg-player | 15291 | 0 | 0 | 11 | Y |
-| 64 | python-mtga-helper-git | 15471 | 0 | 0 | 11 | Y |
-| 65 | gpufetch-nocuda-git | 15425 | 0 | 0 | 12 | Y |
-| 66 | trilinos-git | 15305 | 0 | 0 | 16 | Y |
-| 67 | syncthingtray | 21493 | 0 | 0 | 17 | Y |
-| 68 | python-torchaudio-rocm | 14583 | 0 | 0 | 18 | Y |
-| 69 | hyperhdr-git | 15325 | 0 | 0 | 20 | Y |
-| 70 | subliminal | 22312 | 0 | 0 | 20 | Y |
-| 71 | np2kai-git | 15289 | 0 | 0 | 24 | Y |
-| 72 | godot-double-mono | 14495 | 0 | 0 | 26 | Y |
-| 73 | aiot-ide | 15062 | 0 | 0 | 28 | Y |
-| 74 | vitis | 15278 | 0 | 0 | 32 | Y |
-| 75 | cdesktopenv | 22627 | 0 | 0 | 35 | Y |
-| 76 | nautilus-typeahead | 22050 | 0 | 0 | 38 | Y |
-| 77 | ladybird-git | 22620 | 0 | 0 | 39 | Y |
-| 78 | scribus-svn | 21904 | 0 | 0 | 39 | Y |
-| 79 | lib32-liblrdf | 15349 | 1 | 4 | 5 | Y |
-| 80 | lib32-sratom | 15376 | 1 | 1 | 6 | Y |
-| 81 | sogo | 15366 | 1 | 0 | 14 | Y |
-| 82 | lua-iup | 15266 | 1 | 0 | 15 | Y |
-| 83 | lua51-iup | 15265 | 1 | 0 | 15 | Y |
-| 84 | lua52-iup | 15264 | 1 | 0 | 15 | Y |
-| 85 | lua53-iup | 15263 | 1 | 0 | 15 | Y |
-| 86 | lib32-lilv | 15375 | 2 | 4 | 9 | Y |
-| 87 | lib32-ffmpeg | 15362 | 2 | 4 | 67 | Y |
-| 88 | lib32-gst-plugins-bad-libs | 15320 | 8 | 1 | 72 | Y |
-| 89 | lib32-gst-libav | 15318 | 8 | 0 | 72 | Y |
-| 90 | lib32-gst-plugins-ugly | 15321 | 8 | 0 | 72 | Y |
-| 91 | lib32-gst-plugins-bad | 15319 | 9 | 0 | 73 | Y |
+| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
+|------|---------|---|-------------|-------------|------------|
+| 1 | iup | 15267 | 0 | 4 | 14 |
+| 2 | sope | 15367 | 0 | 1 | 8 |
+| 3 | ttf-ms-office365 | 16018 | 0 | 0 | 0 |
+| 4 | fonts-apple | 14971 | 0 | 0 | 1 |
+| 5 | lib32-amdvlk-bin | 15531 | 0 | 0 | 1 |
+| 6 | otf-apple-pingfang | 15346 | 0 | 0 | 1 |
+| 7 | otf-apple-pingfang-relaxed | 15347 | 0 | 0 | 1 |
+| 8 | otf-apple-pingfang-ui | 15348 | 0 | 0 | 1 |
+| 9 | palemoon-i18n-fr | 15388 | 0 | 0 | 1 |
+| 10 | seamonkey-i18n-es-es | 15384 | 0 | 0 | 1 |
+| 11 | code-server-marketplace | 15031 | 0 | 0 | 2 |
+| 12 | libfprint-2-tod1-broadcom | 15005 | 0 | 0 | 2 |
+| 13 | ntsync-dkms | 15010 | 0 | 0 | 2 |
+| 14 | odoo18-nightly | 14669 | 0 | 0 | 2 |
+| 15 | 8192eu-dkms-git | 15373 | 0 | 0 | 3 |
+| 16 | arch-shell | 14726 | 0 | 0 | 3 |
+| 17 | dude-bin | 14699 | 0 | 0 | 3 |
+| 18 | mt76-dkms-git | 14914 | 0 | 0 | 3 |
+| 19 | parus | 15189 | 0 | 0 | 3 |
+| 20 | gksu | 21534 | 0 | 0 | 4 |
+| 21 | pacwall-git | 14584 | 0 | 0 | 4 |
+| 22 | pypy3-pyparsing | 15310 | 0 | 0 | 4 |
+| 23 | rtl8821ce-dkms-git | 22214 | 0 | 0 | 4 |
+| 24 | cn-dascom-pin-driver | 15259 | 0 | 0 | 5 |
+| 25 | lib32-liblrdf | 15349 | 0 | 0 | 5 |
+| 26 | selinux-refpolicy-arch-git | 15487 | 0 | 0 | 5 |
+| 27 | starsector | 15139 | 0 | 0 | 5 |
+| 28 | asp | 14587 | 0 | 0 | 6 |
+| 29 | deezer | 21712 | 0 | 0 | 6 |
+| 30 | ec-su_axb35-dkms-git | 15411 | 0 | 0 | 6 |
+| 31 | fnq-monitor | 15258 | 0 | 0 | 6 |
+| 32 | olauncher | 15269 | 0 | 0 | 6 |
+| 33 | gdrcopy | 15131 | 0 | 0 | 7 |
+| 34 | devkitty-git | 15058 | 0 | 0 | 8 |
+| 35 | xilinx-ise | 14616 | 0 | 0 | 8 |
+| 36 | pamac-all | 22052 | 0 | 0 | 10 |
+| 37 | gpufetch-nocuda-git | 15425 | 0 | 0 | 12 |
+| 38 | trilinos-git | 15305 | 0 | 0 | 16 |
+| 39 | python-torchaudio-rocm | 14583 | 0 | 0 | 18 |
+| 40 | aiot-ide | 15062 | 0 | 0 | 28 |
+| 41 | vitis | 15278 | 0 | 0 | 32 |
+| 42 | cdesktopenv | 22627 | 0 | 0 | 35 |
+| 43 | ladybird-git | 22620 | 0 | 0 | 39 |
+| 44 | sogo | 15366 | 1 | 0 | 14 |
+| 45 | lua-iup | 15266 | 1 | 0 | 15 |
+| 46 | lua51-iup | 15265 | 1 | 0 | 15 |
+| 47 | lua52-iup | 15264 | 1 | 0 | 15 |
+| 48 | lua53-iup | 15263 | 1 | 0 | 15 |
