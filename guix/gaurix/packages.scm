@@ -6444,3 +6444,40 @@
                itch-setup-bin
                papirus-folders-git
                ))
+
+
+;; recipe-resolver-260418h: 28 NRD resolved (ttf-symbola, otf-symbola, svxlink-sounds-en-us-heather-16k, ...)
+            ;; 2 BLOCKED: gde-creator-bin (NO_LICENSE), rice-switcher (UPSTREAM_DELETED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418h)
+            ;; recipe-resolver-260418i: 100 NRD resolved (pkg2appimage, gollama-bin, adguardhome-bin, c3c-bin, code-server-bin, whisper-cpp, ...)
+  #:re-export (
+               ttf-symbola
+               otf-symbola
+               svxlink-sounds-en-us-heather-16k
+               devkit-env
+               random
+               kak-ansi
+               jelly
+               fladder-bin
+               parm-bin
+               opendeck-bin
+               vkd3d-proton-bin
+               piliplus-bin
+               hyprshell-bin
+               python-pandas-docs
+               desktopius
+               nextcloud-app-user-usage-report
+               kak-bundle-git
+               duperemove-service
+               tlp-rdw-systemd
+               mii-emu
+               sedutil
+               motion-git
+               nikki-editor
+               responder
+               libreoffice-extension-h2orestart
+               pipewire-module-xrdp
+               libnick
+               maddy
+               ))
