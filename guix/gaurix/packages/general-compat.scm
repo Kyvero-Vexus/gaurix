@@ -464,6 +464,7 @@
   #:use-module (gaurix packages recipe-resolver-260418a)
   #:use-module (gaurix packages recipe-resolver-260418b)
   #:use-module (gaurix packages recipe-resolver-260418c)
+  #:use-module (gaurix packages deptree-resolver-260418d)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9719,3 +9720,29 @@
 (re-export virtnbdbackup)
 (re-export brightness-slider)
 (re-export libreoffice-extension-grammalecte-fr)
+
+;;; deptree-resolver-260418d
+(re-export binance-app)
+(re-export brother-mfc-j5720dw)
+(re-export c++utilities)
+(re-export claudes-c-compiler)
+(re-export datagrip-jre)
+(re-export deemix-gui-appimage)
+(re-export framework-control)
+(re-export gsdb)
+(re-export hyperhdr-git)
+(re-export memtest86-efi)
+(re-export mkchromecast-git)
+(re-export nginx-mod-cgi)
+(re-export niri-companion)
+(re-export np2kai-git)
+(re-export ocudu)
+(re-export pdflib-lite)
+(re-export profile-sync-daemon-edge)
+(re-export python-mtga-helper-git)
+(re-export qtutilities-qt6)
+(re-export ripple)
+(re-export sail-model)
+(re-export subliminal)
+(re-export syncthingtray)
+(re-export vim-youcompleteme-git)

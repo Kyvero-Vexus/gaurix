@@ -6223,3 +6223,34 @@
                brightness-slider
                libreoffice-extension-grammalecte-fr
                ))
+
+;;; deptree-resolver-260418d: 23 BLOCKED resolved (18 ALREADY_IN_GUIX, 23 new recipes, 1 deps)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260418d)
+  #:re-export (
+    binance-app
+    brother-mfc-j5720dw
+    c++utilities
+    claudes-c-compiler
+    datagrip-jre
+    deemix-gui-appimage
+    framework-control
+    gsdb
+    hyperhdr-git
+    memtest86-efi
+    mkchromecast-git
+    nginx-mod-cgi
+    niri-companion
+    np2kai-git
+    ocudu
+    pdflib-lite
+    profile-sync-daemon-edge
+    python-mtga-helper-git
+    qtutilities-qt6
+    ripple
+    sail-model
+    subliminal
+    syncthingtray
+    vim-youcompleteme-git
+  )
+)
