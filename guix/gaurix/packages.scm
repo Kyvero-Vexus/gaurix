@@ -6960,3 +6960,35 @@
                python-certomancer
                mii-emu
                ))
+
+;; deptree-resolver-260418w (26 BLOCKED resolved, 29 FAILED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260418w)
+  #:re-export (
+               ubuntu-mate-icon-themes
+               corefreq-client
+               diskm8
+               php-phalcon
+               airshipper
+               contextpilot-git
+               gamescope-session-git
+               omniorbpy
+               gprofng-gui
+               sequoia-octopus-librnp
+               streampager
+               twitter-media-downloader-git
+               codanna
+               hmcl-dev
+               mbtiles
+               falcond
+               hypr-dock
+               ibus-lotus
+               kx-aspe-git
+               musique111-qt5
+               sqlite-dist
+               halloy-git
+               terraform-local
+               galaxy-flasher
+               python-pjproject
+               golden-cheetah-git
+               ))
