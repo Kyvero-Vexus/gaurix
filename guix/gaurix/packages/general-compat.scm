@@ -94,6 +94,7 @@
   #:use-module (gaurix packages recipe-resolver-260418aa)
   #:use-module (gaurix packages recipe-resolver-260418ab)
   #:use-module (gaurix packages recipe-resolver-260418ac)
+  #:use-module (gaurix packages recipe-resolver-260418ad)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -497,6 +498,7 @@
   #:use-module (gaurix packages recipe-resolver-260418w)
   #:use-module (gaurix packages deptree-resolver-260418z)
   #:use-module (gaurix packages deptree-resolver-260418ab)
+  #:use-module (gaurix packages deptree-resolver-260418ad)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -11496,3 +11498,266 @@
   (package
     (inherit green-recorder-git)
     (name "green-recorder-git")))
+
+
+;;; Re-exports from deptree-resolver-260418ad
+
+(define-public php84
+  (package
+    (inherit php84)
+    (name "php84")))
+
+(define-public libpng12
+  (package
+    (inherit libpng12)
+    (name "libpng12")))
+
+(define-public libudev0-shim
+  (package
+    (inherit libudev0-shim)
+    (name "libudev0-shim")))
+
+(define-public python-opentelemetry-exporter-otlp-proto-common
+  (package
+    (inherit python-opentelemetry-exporter-otlp-proto-common)
+    (name "python-opentelemetry-exporter-otlp-proto-common")))
+
+(define-public asusctl
+  (package
+    (inherit asusctl)
+    (name "asusctl")))
+
+(define-public wivrn-server
+  (package
+    (inherit wivrn-server)
+    (name "wivrn-server")))
+
+(define-public claude-code
+  (package
+    (inherit claude-code)
+    (name "claude-code")))
+
+(define-public perl-object-pluggable
+  (package
+    (inherit perl-object-pluggable)
+    (name "perl-object-pluggable")))
+
+(define-public python-transitions
+  (package
+    (inherit python-transitions)
+    (name "python-transitions")))
+
+(define-public makemkv
+  (package
+    (inherit makemkv)
+    (name "makemkv")))
+
+(define-public mullvad-vpn-daemon-bin
+  (package
+    (inherit mullvad-vpn-daemon-bin)
+    (name "mullvad-vpn-daemon-bin")))
+
+(define-public python-inplace
+  (package
+    (inherit python-inplace)
+    (name "python-inplace")))
+
+(define-public qt-sudo
+  (package
+    (inherit qt-sudo)
+    (name "qt-sudo")))
+
+(define-public python-fmod-tookit-git
+  (package
+    (inherit python-fmod-tookit-git)
+    (name "python-fmod-tookit-git")))
+
+(define-public python-opentelemetry-exporter-zipkin-json
+  (package
+    (inherit python-opentelemetry-exporter-zipkin-json)
+    (name "python-opentelemetry-exporter-zipkin-json")))
+
+(define-public netbird
+  (package
+    (inherit netbird)
+    (name "netbird")))
+
+(define-public perl-module-cpants-analyse
+  (package
+    (inherit perl-module-cpants-analyse)
+    (name "perl-module-cpants-analyse")))
+
+(define-public libmysqlclient
+  (package
+    (inherit libmysqlclient)
+    (name "libmysqlclient")))
+
+(define-public act-runner-bin
+  (package
+    (inherit act-runner-bin)
+    (name "act-runner-bin")))
+
+(define-public amneziavpn-bin
+  (package
+    (inherit amneziavpn-bin)
+    (name "amneziavpn-bin")))
+
+(define-public balena-cli-bin
+  (package
+    (inherit balena-cli-bin)
+    (name "balena-cli-bin")))
+
+(define-public beautyline
+  (package
+    (inherit beautyline)
+    (name "beautyline")))
+
+(define-public bumper-bin
+  (package
+    (inherit bumper-bin)
+    (name "bumper-bin")))
+
+(define-public cargo-aur-bin
+  (package
+    (inherit cargo-aur-bin)
+    (name "cargo-aur-bin")))
+
+(define-public catppuccin-gtk-theme-frappe
+  (package
+    (inherit catppuccin-gtk-theme-frappe)
+    (name "catppuccin-gtk-theme-frappe")))
+
+(define-public ddgst-bin
+  (package
+    (inherit ddgst-bin)
+    (name "ddgst-bin")))
+
+(define-public ddhx-bin
+  (package
+    (inherit ddhx-bin)
+    (name "ddhx-bin")))
+
+(define-public dockerydo-bin
+  (package
+    (inherit dockerydo-bin)
+    (name "dockerydo-bin")))
+
+(define-public feishin-bin
+  (package
+    (inherit feishin-bin)
+    (name "feishin-bin")))
+
+(define-public fhc-bin
+  (package
+    (inherit fhc-bin)
+    (name "fhc-bin")))
+
+(define-public firefox-umatrix
+  (package
+    (inherit firefox-umatrix)
+    (name "firefox-umatrix")))
+
+(define-public greenlight-bin
+  (package
+    (inherit greenlight-bin)
+    (name "greenlight-bin")))
+
+(define-public hunspell-sr
+  (package
+    (inherit hunspell-sr)
+    (name "hunspell-sr")))
+
+(define-public interspec-bin
+  (package
+    (inherit interspec-bin)
+    (name "interspec-bin")))
+
+(define-public ithil-bin
+  (package
+    (inherit ithil-bin)
+    (name "ithil-bin")))
+
+(define-public keylightd-bin
+  (package
+    (inherit keylightd-bin)
+    (name "keylightd-bin")))
+
+(define-public kftui-bin
+  (package
+    (inherit kftui-bin)
+    (name "kftui-bin")))
+
+(define-public kind-bin
+  (package
+    (inherit kind-bin)
+    (name "kind-bin")))
+
+(define-public klfc-bin
+  (package
+    (inherit klfc-bin)
+    (name "klfc-bin")))
+
+(define-public komodo-engine
+  (package
+    (inherit komodo-engine)
+    (name "komodo-engine")))
+
+(define-public lazymake-bin
+  (package
+    (inherit lazymake-bin)
+    (name "lazymake-bin")))
+
+(define-public lsp-dsp-lib
+  (package
+    (inherit lsp-dsp-lib)
+    (name "lsp-dsp-lib")))
+
+(define-public mergerfs
+  (package
+    (inherit mergerfs)
+    (name "mergerfs")))
+
+(define-public mill-global
+  (package
+    (inherit mill-global)
+    (name "mill-global")))
+
+(define-public moderncsv-bin
+  (package
+    (inherit moderncsv-bin)
+    (name "moderncsv-bin")))
+
+(define-public openai-codex-bin
+  (package
+    (inherit openai-codex-bin)
+    (name "openai-codex-bin")))
+
+(define-public oxfmt-bin
+  (package
+    (inherit oxfmt-bin)
+    (name "oxfmt-bin")))
+
+(define-public oxlint-bin
+  (package
+    (inherit oxlint-bin)
+    (name "oxlint-bin")))
+
+(define-public scarlett2-firmware
+  (package
+    (inherit scarlett2-firmware)
+    (name "scarlett2-firmware")))
+
+(define-public scarlett4-firmware
+  (package
+    (inherit scarlett4-firmware)
+    (name "scarlett4-firmware")))
+
+(define-public shsh
+  (package
+    (inherit shsh)
+    (name "shsh")))
+
+(define-public simplex-desktop-bin
+  (package
+    (inherit simplex-desktop-bin)
+    (name "simplex-desktop-bin")))

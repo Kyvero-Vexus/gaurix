@@ -7375,4 +7375,75 @@
                hypruler-bin
                goverlay-git
                green-recorder-git
+            ;; deptree-resolver-260418ad (52 FAILED resolved)
+               php84
+               libpng12
+               libudev0-shim
+               python-opentelemetry-exporter-otlp-proto-common
+               asusctl
+               wivrn-server
+               claude-code
+               perl-object-pluggable
+               python-transitions
+               makemkv
+               mullvad-vpn-daemon-bin
+               python-inplace
+               qt-sudo
+               python-fmod-tookit-git
+               python-opentelemetry-exporter-zipkin-json
+               netbird
+               perl-module-cpants-analyse
+               libmysqlclient
+               act-runner-bin
+               amneziavpn-bin
+               balena-cli-bin
+               beautyline
+               bumper-bin
+               cargo-aur-bin
+               catppuccin-gtk-theme-frappe
+               ddgst-bin
+               ddhx-bin
+               dockerydo-bin
+               feishin-bin
+               fhc-bin
+               firefox-umatrix
+               greenlight-bin
+               hunspell-sr
+               interspec-bin
+               ithil-bin
+               keylightd-bin
+               kftui-bin
+               kind-bin
+               klfc-bin
+               komodo-engine
+               lazymake-bin
+               lsp-dsp-lib
+               mergerfs
+               mill-global
+               moderncsv-bin
+               openai-codex-bin
+               oxfmt-bin
+               oxlint-bin
+               scarlett2-firmware
+               scarlett4-firmware
+               shsh
+               simplex-desktop-bin
                ))
+
+;; recipe-resolver-260418ad (14 NRD resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418ad)
+  #:re-export (tsync
+               dupster
+               gnome-shell-extension-wallpaper-slideshow
+               leaflet-js
+               mousse-git
+               wpa-supplicant-gui
+               check-nwc-health
+               rpi-imager
+               fastero
+               pinit
+               openterface-qt
+               mangojuice
+               paisa-bin
+               zeek))
