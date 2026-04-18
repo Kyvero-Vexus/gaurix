@@ -123790,13 +123790,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16112. dict-ozhegov
+** DONE 16112. dict-ozhegov
    - AUR votes: 3, popularity: 0.0039
    - Note: Ozhegov's Russian Dictionary
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_MISSING: needs dictfmt (dictd) not in Guix; build script is Python 2 (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=gnu, version=1.0) (deptree-resolver-260418z)
 ** DONE 16113. alacritty-smooth-cursor-git
    - AUR votes: 2, popularity: 0.0039
    - Note: A cross-platform, GPU-accelerated terminal emulator with a smooth cursor motion patch
@@ -123805,13 +123806,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16114. profile-sync-daemon-git
+** DONE 16114. profile-sync-daemon-git
    - AUR votes: 2, popularity: 0.0039
    - Note: Symlinks and syncs browser profile dirs to RAM
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: SYSTEMD_DEPENDENT: shell scripts hardcoded for systemd; Guix uses Shepherd (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=gnu, version=6.50.r14.gbdea6f0) (deptree-resolver-260418z)
 ** DONE 16115. spacenavd
    - AUR votes: 20, popularity: 0.0039
    - Note: Free user-space driver for 6-dof space-mice (space navigator, space pilot, space traveller, ...)
@@ -123902,13 +123904,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16127. cachy-chroot
+** FAILED 16127. cachy-chroot
    - AUR votes: 1, popularity: 0.0039
    - Note: Chroot helper for CachyOS
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Arch/CachyOS-specific chroot tool; depends on pacman and CachyOS infrastructure not available in Guix (recipe-resolver-260418x)
 
 
+   - Status: FAILED: DISTRO_SPECIFIC: CachyOS chroot helper; depends on arch-install-scripts and Arch pacstrap workflow (deptree-resolver-260418z)
 ** DONE 16128. ninja-noemacs-git
    - AUR votes: 1, popularity: 0.0039
    - Note: Small build system with a focus on speed - now without emacs!! ~ designed specially for overzealous vimmers, FSF expatriates, fanatically frugal sysadmins, and the like.
@@ -123917,13 +123920,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16129. box
+** DONE 16129. box
    - AUR votes: 1, popularity: 0.0039
    - Note: Command-line tool to draw frames around text
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: GO_MODULE_DEPS: Go CLI on Codeberg; no binary releases; module deps need packaging (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=go, version=0.2.1) (deptree-resolver-260418z)
 ** FAILED 16130. gpd-fan-driver-dkms-git
    - AUR votes: 3, popularity: 0.0039
    - Note: Fan hwmon speed report and speed control driver for GPD Win Mini, GPD Win Max2 and GPD Win 4 laptops. Latest git checkout. Includes a command line control utility.
@@ -123964,13 +123968,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `libuv` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** BLOCKED 16135. update-mirrors
+** FAILED 16135. update-mirrors
    - AUR votes: 1, popularity: 0.0039
    - Note: A simple command line (CLI) tool designed to simplify updating mirrors of Arch Linux-based systems.
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Arch Linux-specific mirror management tool; depends on pacman-mirrorlist and pacman infrastructure (recipe-resolver-260418x)
 
 
+   - Status: FAILED: DISTRO_SPECIFIC: Arch Linux mirror updater tool; depends on Arch mirrorlist infrastructure (deptree-resolver-260418z)
 ** DONE 16136. hashes-git
    - AUR votes: 1, popularity: 0.0039
    - Note: Simple hash algorithm identification GUI using GTK4+Adwaita
@@ -124024,13 +124029,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16143. omarchy
+** FAILED 16143. omarchy
    - AUR votes: 1, popularity: 0.0039
    - Note: Opinionated Arch/Hyprland Setup By DHH — Placeholder until official release
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Arch Linux meta-package depending on pacman, yay, and Arch-specific infrastructure; not portable to Guix (recipe-resolver-260418x)
 
 
+   - Status: FAILED: PLACEHOLDER_PACKAGE: version 0.0.0, no source/content, placeholder until DHH's official Hyprland setup release (deptree-resolver-260418z)
 ** DONE 16144. pipemixer-git
    - AUR votes: 1, popularity: 0.0039
    - Note: TUI volume control app for pipewire
@@ -124081,20 +124087,22 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16151. arch-app-center
+** FAILED 16151. arch-app-center
    - AUR votes: 1, popularity: 0.0039
    - Note: A modern graphical package manager for Arch Linux with pacman and AUR support
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Arch Linux-specific GUI package manager; depends on pacman and AUR helper infrastructure (recipe-resolver-260418x)
 
 
-** BLOCKED 16152. backlight-sync-git
+   - Status: FAILED: DISTRO_SPECIFIC: graphical frontend for pacman/yay; depends on Arch package management ecosystem (deptree-resolver-260418z)
+** DONE 16152. backlight-sync-git
    - AUR votes: 1, popularity: 0.0039
    - Note: Automatic backlight sync between a laptop and a monitor
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: RUST_CARGO_DEPS: Rust project; no tagged releases; ~15 crate deps including inotify, clap (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=cargo, version=r23.2067e96) (deptree-resolver-260418z)
 ** DONE 16153. kontactinterface5
    - AUR votes: 1, popularity: 0.0039
    - Note: Kontact Plugin Interface Library
@@ -124319,13 +124327,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16182. hyprcap
+** DONE 16182. hyprcap
    - AUR votes: 1, popularity: 0.0039
    - Note: A utility to easily capture screenshots and recordings in Hyprland
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_MISSING: needs hyprland ecosystem (grim, slurp, wf-recorder); hyprland not in Guix (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=gnu, version=1.5.1) (deptree-resolver-260418z)
 ** DONE 16183. libshairport
    - AUR votes: 1, popularity: 0.0039
    - Note: emulates an AirPort Express
@@ -124411,13 +124420,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16194. freedom
+** FAILED 16194. freedom
    - AUR votes: 6, popularity: 0.0039
    - Note: This package conflicts with all non-free Arch packages, as defined by DFSG.
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Arch-specific meta-package that conflicts with non-free packages using pacman conflicts mechanism; not applicable to Guix (recipe-resolver-260418x)
 
 
+   - Status: FAILED: DISTRO_SPECIFIC: DFSG metapackage that conflicts with non-free Arch packages; Guix is already free-software-only by design (deptree-resolver-260418z)
 ** DONE 16195. gst-plugin-pipewire-full-git
    - AUR votes: 2, popularity: 0.0039
    - Note: Multimedia graph framework - pipewire plugin
@@ -124615,13 +124625,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: NO_RELEASES_GITLAB_403: no tagged releases; GitLab 403 on downloads (recipe-resolver-260417ax)
    - TODO Status: BLOCKED
 - Status: DONE: RECIPE: packaged in deptree-resolver-260418a (2026-04-18T05:11:44.730340+00:00)
-** BLOCKED 16220. niripwmenu
+** DONE 16220. niripwmenu
    - AUR votes: 1, popularity: 0.0038
    - Note: A modern powermenu for Niri Scrollable-Tiling Wayland compositor.
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_MISSING: needs python-confz, gtk4-layer-shell, Niri compositor; none in Guix (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=pyproject, version=0.1.4) (deptree-resolver-260418z)
 ** DONE 16221. python-amulet-compiler-target
    - AUR votes: 1, popularity: 0.0038
    - Note: A token library to pin compile-time requirements
@@ -124775,13 +124786,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16241. brightness-controller-git
+** DONE 16241. brightness-controller-git
    - AUR votes: 13, popularity: 0.0037
    - Note: Control Brightness of your Primary and Secondary Display in Linux
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ORPHANED_ABANDONED: AUR orphaned; PyQt5 complex SIP build; upstream last commit 2023 (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=pyproject, version=2.4.r12.gdab46e3) (deptree-resolver-260418z)
 ** DONE 16242. vot-cli
    - AUR votes: 3, popularity: 0.0037
    - Note: The voice-over translation of the video is now available not only in YandexBrowser.
@@ -124845,13 +124857,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16251. pacdep
+** FAILED 16251. pacdep
    - AUR votes: 35, popularity: 0.0036
    - Note: Package Dependencies listing
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: Arch Linux pacman dependency tool; depends on libalpm/pacman not available in Guix (recipe-resolver-260418x)
 
 
+   - Status: FAILED: DISTRO_SPECIFIC: pacman dependency lister; depends on pacman/libalpm which are Arch-specific (deptree-resolver-260418z)
 ** DONE 16252. opencommit
    - AUR votes: 1, popularity: 0.0036
    - Note: Auto-generate meaningful commits in a second. Killing lame commits with AI
@@ -125132,13 +125145,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16289. 8188eu-dkms-git
+** FAILED 16289. 8188eu-dkms-git
    - AUR votes: 7, popularity: 0.0034
    - Note: Standalone driver for Realtek RTL8188EUS (RTL8188EUS, RTL8188ETV) WLAN
    - TODO Status: TODO
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: DKMS kernel module for Realtek WiFi; requires Linux kernel build infrastructure and headers not available in standard Guix packaging (recipe-resolver-260418x)
 
 
+   - Status: FAILED: DKMS_MODULE: out-of-tree RTL8188EU WiFi kernel driver; Guix handles kernel modules via operating-system config, not DKMS (deptree-resolver-260418z)
 ** DONE 16290. novelwriter-bin
    - AUR votes: 2, popularity: 0.0034
    - Note: A markdown-like document editor for writing novels.(Prebuilt version)
@@ -127984,13 +127998,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 16718. xcursor-openzone
+** DONE 16718. xcursor-openzone
    - AUR votes: 71, popularity: 0.0025
    - Note: OpenZone X11 cursor theme
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_MISSING: needs icon-slicer to build cursors from SVG; icon-slicer not in Guix (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=copy, version=1.2.9) (deptree-resolver-260418z)
 ** DONE 16719. clash-nyanpasu-bin
    - AUR votes: 6, popularity: 0.0025
    - Note: A Clash GUI based on tauri. Clash Nyanpasu! (∠・ω< )⌒☆​
@@ -129507,13 +129522,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 16955. krillinai-bin
+** DONE 16955. krillinai-bin
    - AUR votes: 1, popularity: 0.0022
    - Note: A video translation and dubbing tool powered by LLMs, offering professional-grade translations and one-click full-process deployment.It can generate content optimized for platforms like YouTube，TikTok, and Shorts.(Prebuilt version)
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: RAPIDLY_CHANGING: renamed to KlicStudio; Go binary with AI service deps; releases may vanish (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=copy, version=1.2.1) (deptree-resolver-260418z)
 ** TODO 16956. noto-fonts-cjk-glyph-conf
    - AUR votes: 1, popularity: 0.0022
    - Note: Fix the problem that noto-fonts-cjk's glyph is too high in Pango(GNOME)
@@ -129636,13 +129652,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 16976. python-opcua-asyncio
+** DONE 16976. python-opcua-asyncio
    - AUR votes: 1, popularity: 0.0022
    - Note: An OPC-UA client and server library for Python, also known as asyncua
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEEP_DEPENDENCY_TREE: OPC-UA library; 15+ missing Python deps not in Guix (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=pyproject, version=1.1.6) (deptree-resolver-260418z)
 ** TODO 16977. nchat-git
    - AUR votes: 7, popularity: 0.0022
    - Note: console-based chat client with support for Telegram
@@ -132649,13 +132666,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** BLOCKED 17466. python-system_hotkey
+** DONE 17466. python-system_hotkey
    - AUR votes: 4, popularity: 0.0014
    - Note: Python library for system wide hotkeys
    - TODO Status: TODO
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_MISSING: needs python-xcffib and python-xpybutil; X11-only; last updated 2021 (recipe-resolver-260418w)
 
 
+   - Status: DONE: Recipe in deptree-resolver-260418z.scm (build_system=pyproject, version=1.0.5) (deptree-resolver-260418z)
 ** DONE 17467. python-xpybutil
    - Status: DONE: recipe in recipe-resolver-260417af.scm (python-xpybutil v0.0.6, pyproject-build-system, expat)
    - AUR votes: 2, popularity: 0.0014

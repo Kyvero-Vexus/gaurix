@@ -7146,3 +7146,20 @@
                mysql-clients
                gr-lora_sdr-git
                ))
+
+;; deptree-resolver-260418z (11 BLOCKED resolved, 7 FAILED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260418z)
+  #:re-export (
+               krillinai-bin
+               box
+               xcursor-openzone
+               backlight-sync-git
+               dict-ozhegov
+               profile-sync-daemon-git
+               python-system-hotkey
+               brightness-controller-git
+               hyprcap
+               niripwmenu
+               python-opcua-asyncio
+               ))

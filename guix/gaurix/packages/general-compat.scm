@@ -491,6 +491,7 @@
   #:use-module (gaurix packages recipe-resolver-260418s)
   #:use-module (gaurix packages deptree-resolver-260418w)
   #:use-module (gaurix packages recipe-resolver-260418w)
+  #:use-module (gaurix packages deptree-resolver-260418z)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -10639,3 +10640,15 @@
   (package
     (inherit gr-lora_sdr-git)
     (name "gr-lora_sdr-git")))
+
+(re-export krillinai-bin)
+(re-export box)
+(re-export xcursor-openzone)
+(re-export backlight-sync-git)
+(re-export dict-ozhegov)
+(re-export profile-sync-daemon-git)
+(re-export python-system-hotkey)
+(re-export brightness-controller-git)
+(re-export hyprcap)
+(re-export niripwmenu)
+(re-export python-opcua-asyncio)
