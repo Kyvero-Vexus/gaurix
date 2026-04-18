@@ -88,6 +88,7 @@
   #:use-module (gaurix packages recipe-resolver-260418o)
   #:use-module (gaurix packages recipe-resolver-260418p)
   #:use-module (gaurix packages recipe-resolver-260418r)
+  #:use-module (gaurix packages recipe-resolver-260418x)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -488,6 +489,7 @@
   #:use-module (gaurix packages recipe-resolver-260418q)
   #:use-module (gaurix packages recipe-resolver-260418s)
   #:use-module (gaurix packages deptree-resolver-260418w)
+  #:use-module (gaurix packages recipe-resolver-260418w)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -10391,3 +10393,96 @@
 (re-export galaxy-flasher)
 (re-export python-pjproject)
 (re-export golden-cheetah-git)
+;;; --- recipe-resolver-260418w: 18 compat aliases ---
+;;; python-dashtable already in recipe-resolver-260417af compat
+
+(define-public python-certbot-pkcs12
+  (package
+    (inherit python-certbot-pkcs12)
+    (name "python-certbot-pkcs12")))
+
+(define-public python-spitch
+  (package
+    (inherit python-spitch)
+    (name "python-spitch")))
+
+(define-public python-invocation-tree
+  (package
+    (inherit python-invocation-tree)
+    (name "python-invocation-tree")))
+
+(define-public python-dukpy
+  (package
+    (inherit python-dukpy)
+    (name "python-dukpy")))
+
+(define-public python-pyexcel-ezodf
+  (package
+    (inherit python-pyexcel-ezodf)
+    (name "python-pyexcel-ezodf")))
+
+(define-public wallman
+  (package
+    (inherit wallman)
+    (name "wallman")))
+
+(define-public ttf-piazzolla
+  (package
+    (inherit ttf-piazzolla)
+    (name "ttf-piazzolla")))
+
+(define-public stardict-full-eng-rus
+  (package
+    (inherit stardict-full-eng-rus)
+    (name "stardict-full-eng-rus")))
+
+(define-public xdg-sound
+  (package
+    (inherit xdg-sound)
+    (name "xdg-sound")))
+
+(define-public alttab
+  (package
+    (inherit alttab)
+    (name "alttab")))
+
+(define-public gekkfetch
+  (package
+    (inherit gekkfetch)
+    (name "gekkfetch")))
+
+(define-public jellyfetch
+  (package
+    (inherit jellyfetch)
+    (name "jellyfetch")))
+
+(define-public tombl-bin
+  (package
+    (inherit tombl-bin)
+    (name "tombl-bin")))
+
+(define-public klog-time-tracker-bin
+  (package
+    (inherit klog-time-tracker-bin)
+    (name "klog-time-tracker-bin")))
+
+(define-public opkssh-bin
+  (package
+    (inherit opkssh-bin)
+    (name "opkssh-bin")))
+
+(define-public puma-dev-bin
+  (package
+    (inherit puma-dev-bin)
+    (name "puma-dev-bin")))
+
+(define-public rqlite-bin
+  (package
+    (inherit rqlite-bin)
+    (name "rqlite-bin")))
+
+(define-public wdisplays-persistent
+  (package
+    (inherit wdisplays-persistent)
+    (name "wdisplays-persistent")))
+

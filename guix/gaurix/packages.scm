@@ -6992,3 +6992,126 @@
                python-pjproject
                golden-cheetah-git
                ))
+
+;; recipe-resolver-260418w (18 NRD resolved, 11 EXHAUSTED; python-dashtable already in 260417af)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418w)
+  #:re-export (
+               python-certbot-pkcs12
+               python-spitch
+               python-invocation-tree
+               python-dukpy
+               python-pyexcel-ezodf
+               wallman
+               ttf-piazzolla
+               stardict-full-eng-rus
+               xdg-sound
+               alttab
+               gekkfetch
+               jellyfetch
+               tombl-bin
+               klog-time-tracker-bin
+               opkssh-bin
+               puma-dev-bin
+               rqlite-bin
+               wdisplays-persistent
+               ))
+
+;; recipe-resolver-260418x (93 recipes, 7 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418x)
+  #:re-export (
+               voicevox-appimage
+               koboldcpp-hipblas
+               ammo-git
+               mpv-autosub-git
+               intel-npu-compiler-git
+               python-openvino-git
+               kwin-effects-kinetic
+               zabbix-agent2-plugin-nvidia-gpu
+               python-llama-cpp
+               scenefx-0.3
+               hplip-lite
+               alacritty-smooth-cursor-git
+               firewalld-git
+               firewalld-test-git
+               mkcl-git
+               ninja-noemacs-git
+               hashes-git
+               python-llama-cpp-cuda
+               ripcord
+               proxmark3-iceman-git
+               proxmark3gui-git
+               arm-linux-gnueabi-gcc75-linaro-bin
+               noto-fonts-cjk-chws-patch
+               ue4-docker-git
+               php-msgpack
+               libakonadi5
+               ya-player
+               kftray-appimage
+               intel-real-ucode-git
+               todoist-appimage-integration
+               invader
+               recordurbate
+               libshairport
+               tailsdvd-git
+               jameica-nightly
+               hibiscus-nightly
+               manta
+               phpstorm-eap
+               phpstorm-eap-jre
+               udiskie-dmenu-git
+               gst-plugin-pipewire-full-git
+               libpipewire-full-git
+               pipewire-full-alsa-git
+               pipewire-full-audio-git
+               pipewire-full-docs-git
+               pipewire-full-ffado-git
+               pipewire-full-ffmpeg-git
+               pipewire-full-git
+               pipewire-full-jack-client-git
+               pipewire-full-jack-git
+               pipewire-full-pulse-git
+               pipewire-full-roc-git
+               pipewire-full-v4l2-git
+               pipewire-full-vulkan-git
+               pipewire-full-x11-bell-git
+               pipewire-full-zeroconf-git
+               dealers-choice
+               aarch64-none-linux-gnu-gcc-bin
+               qgpgme1-qt5
+               python-amulet-compiler-target
+               python-amulet-io
+               python-amulet-zlib
+               python-amulet-pybind11-extensions
+               turso-git
+               nodejs-git
+               chika-plymouth-theme-git
+               urw-garamond
+               shit
+               neuralrack-git
+               qtscrcpy
+               hypnotix-wayland
+               vot-cli
+               iwmenu-git
+               opencommit
+               tchmaterial-parser
+               clang-prefixed-release
+               way-secure
+               sockstun
+               s3lightfixes-git
+               whisper-cpp-model-large-v3-turbo-q5-0
+               proton-xiv-bin
+               quarto-cli-bin-pre-release
+               compiz
+               blahaj-rs-git
+               java8-openjfx-doc
+               java8-openjfx-src
+               a2ln
+               niriswitcher
+               nameinator
+               worker
+               plowshare
+               onlyoffice-documentserver-bin
+               wine-tkg-staging-bin
+               ))
