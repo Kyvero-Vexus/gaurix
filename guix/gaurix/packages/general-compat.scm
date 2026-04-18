@@ -91,6 +91,7 @@
   #:use-module (gaurix packages recipe-resolver-260418x)
   #:use-module (gaurix packages recipe-resolver-260418y)
   #:use-module (gaurix packages recipe-resolver-260418z)
+  #:use-module (gaurix packages recipe-resolver-260418aa)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -10806,3 +10807,471 @@
   (package
     (inherit hid-velocityone-multi-shift)
     (name "hid-velocityone-multi-shift")))
+
+
+;;; --- recipe-resolver-260418aa: 93 compat aliases ---
+
+(define-public testssl-sh-git
+  (package
+    (inherit testssl-sh-git)
+    (name "testssl-sh-git")))
+
+(define-public ipfs-desktop-electron
+  (package
+    (inherit ipfs-desktop-electron)
+    (name "ipfs-desktop-electron")))
+
+(define-public minecraft-ttf-git
+  (package
+    (inherit minecraft-ttf-git)
+    (name "minecraft-ttf-git")))
+
+(define-public netmount
+  (package
+    (inherit netmount)
+    (name "netmount")))
+
+(define-public pilot-link-git
+  (package
+    (inherit pilot-link-git)
+    (name "pilot-link-git")))
+
+(define-public sview-git
+  (package
+    (inherit sview-git)
+    (name "sview-git")))
+
+(define-public bellybutton
+  (package
+    (inherit bellybutton)
+    (name "bellybutton")))
+
+(define-public hyprland-toggle-tiling-git
+  (package
+    (inherit hyprland-toggle-tiling-git)
+    (name "hyprland-toggle-tiling-git")))
+
+(define-public ptr89-git
+  (package
+    (inherit ptr89-git)
+    (name "ptr89-git")))
+
+(define-public yd-go-git
+  (package
+    (inherit yd-go-git)
+    (name "yd-go-git")))
+
+(define-public firefox-stylus
+  (package
+    (inherit firefox-stylus)
+    (name "firefox-stylus")))
+
+(define-public websurfx-git
+  (package
+    (inherit websurfx-git)
+    (name "websurfx-git")))
+
+(define-public gridtracker2
+  (package
+    (inherit gridtracker2)
+    (name "gridtracker2")))
+
+(define-public ossutil
+  (package
+    (inherit ossutil)
+    (name "ossutil")))
+
+(define-public qkdisplays
+  (package
+    (inherit qkdisplays)
+    (name "qkdisplays")))
+
+(define-public cht-sh-git
+  (package
+    (inherit cht-sh-git)
+    (name "cht-sh-git")))
+
+(define-public skyemu-git
+  (package
+    (inherit skyemu-git)
+    (name "skyemu-git")))
+
+(define-public ddctoolbox-git
+  (package
+    (inherit ddctoolbox-git)
+    (name "ddctoolbox-git")))
+
+(define-public ssmsh
+  (package
+    (inherit ssmsh)
+    (name "ssmsh")))
+
+(define-public agbplay-git
+  (package
+    (inherit agbplay-git)
+    (name "agbplay-git")))
+
+(define-public dbibackend
+  (package
+    (inherit dbibackend)
+    (name "dbibackend")))
+
+(define-public usenti
+  (package
+    (inherit usenti)
+    (name "usenti")))
+
+(define-public brother-dcp-l2500d
+  (package
+    (inherit brother-dcp-l2500d)
+    (name "brother-dcp-l2500d")))
+
+(define-public gpgme-1
+  (package
+    (inherit gpgme-1)
+    (name "gpgme-1")))
+
+(define-public transmission3-cli-noupnp
+  (package
+    (inherit transmission3-cli-noupnp)
+    (name "transmission3-cli-noupnp")))
+
+(define-public pterodactyl-panel
+  (package
+    (inherit pterodactyl-panel)
+    (name "pterodactyl-panel")))
+
+(define-public velocity-xbox360-git
+  (package
+    (inherit velocity-xbox360-git)
+    (name "velocity-xbox360-git")))
+
+(define-public gnuplot-headless
+  (package
+    (inherit gnuplot-headless)
+    (name "gnuplot-headless")))
+
+(define-public ida-free
+  (package
+    (inherit ida-free)
+    (name "ida-free")))
+
+(define-public ksar-bin
+  (package
+    (inherit ksar-bin)
+    (name "ksar-bin")))
+
+(define-public gwenview-no-purpose
+  (package
+    (inherit gwenview-no-purpose)
+    (name "gwenview-no-purpose")))
+
+(define-public rime-project-trans-bin
+  (package
+    (inherit rime-project-trans-bin)
+    (name "rime-project-trans-bin")))
+
+(define-public java21-openjfx
+  (package
+    (inherit java21-openjfx)
+    (name "java21-openjfx")))
+
+(define-public java21-openjfx-doc
+  (package
+    (inherit java21-openjfx-doc)
+    (name "java21-openjfx-doc")))
+
+(define-public java21-openjfx-src
+  (package
+    (inherit java21-openjfx-src)
+    (name "java21-openjfx-src")))
+
+(define-public moedict
+  (package
+    (inherit moedict)
+    (name "moedict")))
+
+(define-public pomodoro-logger
+  (package
+    (inherit pomodoro-logger)
+    (name "pomodoro-logger")))
+
+(define-public twin
+  (package
+    (inherit twin)
+    (name "twin")))
+
+(define-public otf-beowulfot
+  (package
+    (inherit otf-beowulfot)
+    (name "otf-beowulfot")))
+
+(define-public eot-lalezar
+  (package
+    (inherit eot-lalezar)
+    (name "eot-lalezar")))
+
+(define-public ttf-lalezar
+  (package
+    (inherit ttf-lalezar)
+    (name "ttf-lalezar")))
+
+(define-public woff2-lalezar
+  (package
+    (inherit woff2-lalezar)
+    (name "woff2-lalezar")))
+
+(define-public chalice
+  (package
+    (inherit chalice)
+    (name "chalice")))
+
+(define-public otf-compagnon
+  (package
+    (inherit otf-compagnon)
+    (name "otf-compagnon")))
+
+(define-public otf-drafting
+  (package
+    (inherit otf-drafting)
+    (name "otf-drafting")))
+
+(define-public ttf-drafting-variable
+  (package
+    (inherit ttf-drafting-variable)
+    (name "ttf-drafting-variable")))
+
+(define-public ttf-montagu-slab
+  (package
+    (inherit ttf-montagu-slab)
+    (name "ttf-montagu-slab")))
+
+(define-public ttf-montagu-slab-variable
+  (package
+    (inherit ttf-montagu-slab-variable)
+    (name "ttf-montagu-slab-variable")))
+
+(define-public otf-zilla-slab
+  (package
+    (inherit otf-zilla-slab)
+    (name "otf-zilla-slab")))
+
+(define-public ttf-yanone-kaffeesatz
+  (package
+    (inherit ttf-yanone-kaffeesatz)
+    (name "ttf-yanone-kaffeesatz")))
+
+(define-public ttf-yanone-kaffeesatz-infinality
+  (package
+    (inherit ttf-yanone-kaffeesatz-infinality)
+    (name "ttf-yanone-kaffeesatz-infinality")))
+
+(define-public ltfs-git
+  (package
+    (inherit ltfs-git)
+    (name "ltfs-git")))
+
+(define-public tail-tray
+  (package
+    (inherit tail-tray)
+    (name "tail-tray")))
+
+(define-public extracker-git
+  (package
+    (inherit extracker-git)
+    (name "extracker-git")))
+
+(define-public clickup
+  (package
+    (inherit clickup)
+    (name "clickup")))
+
+(define-public bricscad
+  (package
+    (inherit bricscad)
+    (name "bricscad")))
+
+(define-public whisper-cpp-model-small
+  (package
+    (inherit whisper-cpp-model-small)
+    (name "whisper-cpp-model-small")))
+
+(define-public impro-visor
+  (package
+    (inherit impro-visor)
+    (name "impro-visor")))
+
+(define-public whisper-cpp-model-tiny
+  (package
+    (inherit whisper-cpp-model-tiny)
+    (name "whisper-cpp-model-tiny")))
+
+(define-public kbfs
+  (package
+    (inherit kbfs)
+    (name "kbfs")))
+
+(define-public keybase-gui
+  (package
+    (inherit keybase-gui)
+    (name "keybase-gui")))
+
+(define-public nouveau-fw
+  (package
+    (inherit nouveau-fw)
+    (name "nouveau-fw")))
+
+(define-public firefox-sync
+  (package
+    (inherit firefox-sync)
+    (name "firefox-sync")))
+
+(define-public wayprompt
+  (package
+    (inherit wayprompt)
+    (name "wayprompt")))
+
+(define-public todesk-rpm-bin
+  (package
+    (inherit todesk-rpm-bin)
+    (name "todesk-rpm-bin")))
+
+(define-public forge-gui-desktop
+  (package
+    (inherit forge-gui-desktop)
+    (name "forge-gui-desktop")))
+
+(define-public edu-sync
+  (package
+    (inherit edu-sync)
+    (name "edu-sync")))
+
+(define-public digilent-waveforms
+  (package
+    (inherit digilent-waveforms)
+    (name "digilent-waveforms")))
+
+(define-public axosyslog
+  (package
+    (inherit axosyslog)
+    (name "axosyslog")))
+
+(define-public ttf-times-new-roman
+  (package
+    (inherit ttf-times-new-roman)
+    (name "ttf-times-new-roman")))
+
+(define-public usermin
+  (package
+    (inherit usermin)
+    (name "usermin")))
+
+(define-public tracy-x11
+  (package
+    (inherit tracy-x11)
+    (name "tracy-x11")))
+
+(define-public flightgear-data-git
+  (package
+    (inherit flightgear-data-git)
+    (name "flightgear-data-git")))
+
+(define-public epub-to-audiobook
+  (package
+    (inherit epub-to-audiobook)
+    (name "epub-to-audiobook")))
+
+(define-public mpv-autosubsync-git
+  (package
+    (inherit mpv-autosubsync-git)
+    (name "mpv-autosubsync-git")))
+
+(define-public qp-git
+  (package
+    (inherit qp-git)
+    (name "qp-git")))
+
+(define-public muteled
+  (package
+    (inherit muteled)
+    (name "muteled")))
+
+(define-public whisper-cpp-model-large-v3-q5-0
+  (package
+    (inherit whisper-cpp-model-large-v3-q5-0)
+    (name "whisper-cpp-model-large-v3-q5-0")))
+
+(define-public adwaita-colors-icon-theme
+  (package
+    (inherit adwaita-colors-icon-theme)
+    (name "adwaita-colors-icon-theme")))
+
+(define-public ioninja
+  (package
+    (inherit ioninja)
+    (name "ioninja")))
+
+(define-public libggml-cuda-git
+  (package
+    (inherit libggml-cuda-git)
+    (name "libggml-cuda-git")))
+
+(define-public sherlock-launcher-git
+  (package
+    (inherit sherlock-launcher-git)
+    (name "sherlock-launcher-git")))
+
+(define-public geogebra-6-electron
+  (package
+    (inherit geogebra-6-electron)
+    (name "geogebra-6-electron")))
+
+(define-public ly-git
+  (package
+    (inherit ly-git)
+    (name "ly-git")))
+
+(define-public gnome-shell-extension-quick-settings-audio-panel
+  (package
+    (inherit gnome-shell-extension-quick-settings-audio-panel)
+    (name "gnome-shell-extension-quick-settings-audio-panel")))
+
+(define-public micron-storage-executive-cli
+  (package
+    (inherit micron-storage-executive-cli)
+    (name "micron-storage-executive-cli")))
+
+(define-public text-engine
+  (package
+    (inherit text-engine)
+    (name "text-engine")))
+
+(define-public detect-it-easy-git
+  (package
+    (inherit detect-it-easy-git)
+    (name "detect-it-easy-git")))
+
+(define-public networkd-notify-git
+  (package
+    (inherit networkd-notify-git)
+    (name "networkd-notify-git")))
+
+(define-public gedit-externaltools-plugin
+  (package
+    (inherit gedit-externaltools-plugin)
+    (name "gedit-externaltools-plugin")))
+
+(define-public filius
+  (package
+    (inherit filius)
+    (name "filius")))
+
+(define-public electricsheep
+  (package
+    (inherit electricsheep)
+    (name "electricsheep")))
+
+(define-public languagetool-ngrams-en
+  (package
+    (inherit languagetool-ngrams-en)
+    (name "languagetool-ngrams-en")))
