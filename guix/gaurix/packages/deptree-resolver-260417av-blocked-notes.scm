@@ -1,0 +1,72 @@
+;;; Blocked notes for deptree-resolver-260417av
+;;; 69 packages remain BLOCKED after evaluation
+;;;
+;;; lib32-lv2 (#15370): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib (lib32); Tried: (1) lib32 requires 32-bit toolchain not available in Guix; (2) cross-compilation to i686 possible but would need full dep chain; (3) no upstream demand outside gaming/Wine
+;;; lib32-libbs2b (#15356): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) i686 cross-compile impractical; (3) upstream libbs2b available as 64-bit only
+;;; lib32-libmpeg2 (#15353): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) i686 cross-compile impractical; (3) libmpeg2 available as 64-bit
+;;; lib32-wildmidi (#15355): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) i686 cross-compile impractical; (3) wildmidi available as 64-bit
+;;; lib32-libgme (#15354): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) i686 cross-compile impractical; (3) libgme available as 64-bit
+;;; iup (#15267): COMPLEX_DEPS: depends on libcd and ftgl (neither in Guix); Tried: (1) libcd from Tecgraf requires separate packaging; (2) ftgl (Font-to-GL) not in Guix; (3) openmotif in Guix but libcd chain too deep
+;;; lib32-rav1e (#15357): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) Rust cross-compile to i686 needs full toolchain; (3) rav1e available as 64-bit
+;;; lib32-raptor (#15350): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) raptor available as 64-bit in Guix; (3) i686 cross-compile impractical
+;;; sope (#15367): COMPLEX_BUILD: GNUstep application server; Tried: (1) gnustep-base not in Guix; (2) requires gcc-objc (Objective-C compiler); (3) GNUstep build system not well supported in Guix
+;;; ttf-ms-office365 (#16018): PROPRIETARY_LICENSE: Microsoft Office fonts prohibit redistribution; Tried: (1) LicenseRef-ms-office-2024 prohibits redistribution; (2) requires MS Office license; (3) cannot include in channel
+;;; datagrip-jre (#21653): PROPRIETARY_LICENSE: JetBrains custom JRE with restricted distribution; Tried: (1) custom:jetbrains license; (2) redistribution requires JetBrains agreement; (3) OpenJDK available as free alternative
+;;; fonts-apple (#14971): PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution; Tried: (1) custom:apple-restricted-font; (2) license prohibits redistribution; (3) cannot include in channel
+;;; lib32-amdvlk-bin (#15531): LIB32_UNSUPPORTED: Guix does not support 32-bit multilib; Tried: (1) lib32 toolchain unavailable; (2) also depends on amdvlk-bin; (3) AMD Vulkan available as 64-bit
+;;; memtest86-efi (#15344): PROPRIETARY_LICENSE: PassMark MemTest86 proprietary license; Tried: (1) custom:PassMark license restricts redistribution; (2) GPL2 applies to bootloader only; (3) memtest86+ (free fork) already in Guix as alternative
+;;; otf-apple-pingfang (#15346): PROPRIETARY_LICENSE: Apple PingFang font with restricted redistribution; Tried: (1) apple-restricted-font license; (2) no free redistribution; (3) cannot include in channel
+;;; otf-apple-pingfang-relaxed (#15347): PROPRIETARY_LICENSE: Apple PingFang variant with restricted license; Tried: (1) same apple-restricted-font; (2) no free redistribution; (3) cannot include
+;;; otf-apple-pingfang-ui (#15348): PROPRIETARY_LICENSE: Apple PingFang UI variant with restricted license; Tried: (1) same apple-restricted-font; (2) no free redistribution; (3) cannot include
+;;; palemoon-i18n-fr (#15388): MISSING_RUNTIME: depends on Pale Moon browser (not in Guix); Tried: (1) palemoon-i18n-common not in Guix; (2) Pale Moon itself not in Guix; (3) language pack useless without browser
+;;; pdflib-lite (#15271): CUSTOM_LICENSE: custom:pdflib-lite license with commercial restrictions; Tried: (1) PDFlib commercial product; (2) lite version has use restrictions; (3) license not clearly FOSS-compatible
+;;; profile-sync-daemon-edge (#15380): MISSING_RUNTIME: depends on profile-sync-daemon (not in Guix); Tried: (1) profile-sync-daemon not in Guix; (2) also specific to Microsoft Edge; (3) Edge not in Guix either
+;;; seamonkey-i18n-es-es (#15384): MISSING_RUNTIME: depends on SeaMonkey browser (not in Guix); Tried: (1) seamonkey not in Guix; (2) language pack useless without browser; (3) SeaMonkey build extremely complex
+;;; claudes-c-compiler (#15404): NO_STABLE_RELEASE: GitHub repo has 0 releases; Tried: (1) no tagged releases on GitHub; (2) cargo-build-system needs crate deps listed; (3) project may be experimental/WIP
+;;; claudes-c-compiler-doc (#15405): NO_STABLE_RELEASE: same as claudes-c-compiler; no tagged releases; Tried: (1) same upstream repo; (2) no releases; (3) doc variant of unreleased project
+;;; claudes-c-compiler-src (#15406): NO_STABLE_RELEASE: same as claudes-c-compiler; no tagged releases; Tried: (1) same upstream repo; (2) no releases; (3) src variant of unreleased project
+;;; code-server-marketplace (#15031): COMPLEX_DEPS: requires code-server (complex Node.js app not in Guix); Tried: (1) depends on code-server; (2) code-server needs deep npm tree; (3) marketplace patch is version-specific
+;;; libfprint-2-tod1-broadcom (#15005): PROPRIETARY_LICENSE: Dell/Broadcom proprietary fingerprint driver; Tried: (1) proprietary binary blob; (2) no source code; (3) restricted license
+;;; nginx-mod-cgi (#15274): NGINX_MODULE: requires nginx-src build infrastructure; Tried: (1) nginx modules need to be compiled against nginx source; (2) Guix nginx package doesn't expose module build API; (3) would need nginx custom build variant
+;;; ntsync-dkms (#15010): DKMS_UNSUPPORTED: ntsync upstream in Linux >= 6.14; Tried: (1) DKMS not supported in Guix; (2) kernel >= 6.14 has it built-in; (3) out-of-tree module packaging impossible without DKMS
+;;; odoo18-nightly (#14669): MASSIVE_SCALE: Odoo 18 ERP needs 500+ Python deps; Tried: (1) Python dep tree too deep; (2) nightly versioning breaks reproducibility; (3) PostgreSQL service integration needs system design
+;;; 8192eu-dkms-git (#15373): DKMS_UNSUPPORTED: out-of-tree WiFi driver via DKMS; Tried: (1) DKMS not supported in Guix; (2) requires linux-headers at runtime; (3) would need Guix kernel module build infrastructure
+;;; arch-shell (#14726): ARCH_SPECIFIC: depends on devtools/mkarchroot for Arch chroots; Tried: (1) devtools not portable; (2) Guix has own container mechanisms; (3) no upstream portability interest
+;;; dude-bin (#14699): ARCH_SPECIFIC: Rust binary linking against libalpm (pacman library); Tried: (1) libalpm not in Guix and Arch-only; (2) pre-built binary statically links libalpm; (3) no portable alternative
+;;; mt76-dkms-git (#14914): DKMS_UNSUPPORTED: MediaTek mt76 driver via DKMS; Tried: (1) DKMS not supported in Guix; (2) mt76 already upstream in kernel; (3) users should use built-in mt76
+;;; parus (#15189): ARCH_SPECIFIC: TUI for paru (Arch AUR helper); Tried: (1) depends on paru (Arch-only); (2) depends on skim; (3) no utility outside Arch
+;;; binance-app (#15398): PROPRIETARY_LICENSE: Binance custom commercial license; Tried: (1) custom license, no redistribution; (2) Electron app with no source; (3) web version available as alternative
+;;; gksu (#21534): ABANDONED_UPSTREAM: libgksu deprecated since 2012; Tried: (1) libgksu not in Guix; (2) upstream abandoned; (3) pkexec/polkit provide modern alternatives
+;;; pacwall-git (#14584): ARCH_SPECIFIC: queries pacman database exclusively; Tried: (1) core logic uses pacman -Qi; (2) rewrite for Guix requires complete fork; (3) guix graph provides native alternative
+;;; pypy3-pyparsing (#15310): MISSING_RUNTIME: depends on PyPy3 (not in Guix); Tried: (1) pypy3 not in Guix; (2) pypy3 build extremely complex (bootstrapping); (3) pyparsing available for CPython
+;;; ripple (#15478): SOURCE_UNAVAILABLE: no public Git repository found; Tried: (1) URL zepyx.home.kg/ripple may be offline; (2) no GitHub/GitLab mirror found; (3) cannot verify source availability
+;;; rtl8821ce-dkms-git (#22214): DKMS_UNSUPPORTED: Realtek WiFi driver via DKMS; Tried: (1) DKMS not supported in Guix; (2) requires linux-headers at runtime; (3) rtl8821ce exists upstream in staging
+;;; cn-dascom-pin-driver (#15259): PROPRIETARY_BINARY: Dascom printer driver with binary components; Tried: (1) contains proprietary components from dascom.cn; (2) Chinese-only support documentation; (3) redistribution unclear
+;;; sail-model (#15256): COMPLEX_BUILD: OCaml project requiring opam ecosystem; Tried: (1) opam (OCaml package manager) not well supported in Guix; (2) dune build system needs OCaml >= 4.8.1; (3) z3 SMT solver required; OCaml dep chain impractical
+;;; selinux-refpolicy-arch-git (#15487): ARCH_SPECIFIC: Arch-specific SELinux reference policy; Tried: (1) depends on policycoreutils for Arch; (2) Arch-specific policy modules; (3) SELinux not commonly used with Guix System
+;;; starsector (#15139): PROPRIETARY_LICENSE: commercial game requiring paid license; Tried: (1) custom license, paid only; (2) AUR expects user-provided installer; (3) license prohibits redistribution
+;;; asp (#14587): ARCH_SPECIFIC: Arch Build System tool; Tried: (1) requires Arch SVN infrastructure; (2) Guix has own source management; (3) no cross-distro utility
+;;; deemix-gui-appimage (#14759): LEGAL_ISSUES: Deezer music downloader archived after legal action; Tried: (1) project taken down; (2) no stable source URL; (3) legal risk for redistribution
+;;; deezer (#21712): PROPRIETARY_LICENSE + ELECTRON: proprietary music service needing Electron 39; Tried: (1) custom proprietary license; (2) electron39 not in Guix; (3) web app available as alternative
+;;; ec-su_axb35-dkms-git (#15411): DKMS_UNSUPPORTED: embedded controller DKMS module for specific hardware; Tried: (1) DKMS not supported in Guix; (2) very niche hardware; (3) would need Guix kernel module infrastructure
+;;; fnq-monitor (#15258): DKMS_DEPENDENCY: depends on acpi_call (DKMS kernel module); Tried: (1) acpi_call is DKMS module; (2) DKMS not supported in Guix; (3) also depends on acpid and breeze-icons
+;;; olauncher (#15269): PROPRIETARY_LICENSE: custom Minecraft launcher with custom license; Tried: (1) custom license terms unclear on redistribution; (2) depends on Minecraft (proprietary); (3) MultiMC/PolyMC available as FOSS alternatives
+;;; framework-control (#15419): MISSING_RUNTIME: depends on framework-system (Framework laptop tools not in Guix); Tried: (1) framework-system not in Guix; (2) hardware-specific tool; (3) also needs Node.js + Rust dual build
+;;; gdrcopy (#15131): COMPLEX_DEPS: NVIDIA GPU Direct RDMA requiring proprietary kernel modules; Tried: (1) nvidia-open not in Guix; (2) cuda not in Guix; (3) HPC workloads incompatible with Guix sandbox
+;;; brother-mfc-j5720dw (#15008): PROPRIETARY_LICENSE: Brother proprietary printer driver with i386 blobs; Tried: (1) proprietary i386 binaries; (2) requires lib32-glibc; (3) proprietary license
+;;; devkitty-git (#15058): COMPLEX_DEPS: requires Electron 41 not in Guix; Tried: (1) GitHub releases macOS-only; (2) build needs npm/pnpm/nvm + Electron 41; (3) no Linux binary published
+;;; vim-youcompleteme-git (#21386): COMPLEX_DEPS: multi-engine completion system needing ycmd server; Tried: (1) requires ycmd (Python server with C++ engine); (2) needs clang at specific version; (3) pybind11 + cmake subbuilds
+;;; xilinx-ise (#14616): PROPRIETARY_LICENSE: Xilinx/AMD ISE with registration-walled download; Tried: (1) custom EULA requires account; (2) 6GB+ installer; (3) depends on legacy Qt4 + gcc49 not in Guix
+;;; gsdb (#15426): COMPLEX_BUILD: Rust + Node.js hybrid needing webkit2gtk + npm build; Tried: (1) dual build system (Rust + npm); (2) npm build requires network; (3) webkit2gtk available but Rust crate deps unlisted
+;;; ocudu (#15445): SOURCE_URL_UNKNOWN: no public Git repository found; Tried: (1) ocudu.org main site has no source links; (2) no GitHub/GitLab repo found; (3) AUR PKGBUILD may use private source
+;;; qtutilities-qt6 (#23303): MISSING_DEP: depends on c++utilities (not in Guix); Tried: (1) c++utilities is a prerequisite library by Martchus; (2) would need to package c++utilities first; (3) dep chain includes reflection library
+;;; mkchromecast-git (#23180): COMPLEX_DEPS: depends on python-pychromecast (not in Guix); Tried: (1) python-pychromecast needs packaging; (2) also needs python-netifaces, python-psutil; (3) zeroconf dependency chain
+;;; niri-companion (#15442): MISSING_RUNTIME: depends on niri (not in Guix); Tried: (1) niri compositor not in Guix; (2) companion scripts useless without niri; (3) would need to package niri first (Rust + many deps)
+;;; pamac-all (#22052): ARCH_SPECIFIC: Manjaro package manager GUI; Tried: (1) depends on libpamac-full (Manjaro-only); (2) depends on pamac-cli; (3) Arch/Manjaro specific ecosystem
+;;; libretro-easyrpg-player (#15291): MISSING_DEP: depends on liblcf (not in Guix); Tried: (1) liblcf (RPG Maker library) not in Guix; (2) liblcf itself depends on icu4c at specific version; (3) dep chain too deep for single pass
+;;; python-mtga-helper-git (#15471): COMPLEX_DEPS: missing Python deps; Tried: (1) python-xdg-base-dirs not in Guix; (2) python-scipy available but other deps missing; (3) application-specific Python dep chain
+;;; gpufetch-nocuda-git (#15425): COMPLEX_DEPS: depends on hsa-rocr (AMD ROCm runtime); Tried: (1) hsa-rocr not in Guix; (2) ROCm ecosystem; (3) could strip ROCm support but defeats purpose
+;;; trilinos-git (#15305): MASSIVE_SCALE: large HPC library with 100+ packages; Tried: (1) requires netcdf-openmpi, libmatio, etc.; (2) Fortran + MPI build complexity; (3) build time exceeds practical limits
+;;; syncthingtray (#21493): MISSING_DEP: depends on qtutilities, qtforkawesome, c++utilities (none in Guix); Tried: (1) 3 missing dep packages needed; (2) each has own dep chain; (3) syncthing-gtk available as alternative
+;;; python-torchaudio-rocm (#14583): COMPLEX_DEPS: ROCm ecosystem (100+ pkgs) not in Guix; Tried: (1) rocm-hip-sdk not available; (2) 100+ ROCm packages needed; (3) CPU-only variant loses purpose
+;;; hyperhdr-git (#15325): COMPLEX_DEPS: depends on libayatana-appindicator (not in Guix); Tried: (1) libayatana-appindicator not in Guix; (2) 17+ total deps; (3) some deps available but indicator library blocks build

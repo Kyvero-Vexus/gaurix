@@ -6097,6 +6097,7 @@
                ))
 
 ;; recipe-resolver-260417aw (12 recipes, 18 BLOCKED)
+            ;; deptree-resolver-260417av: 31 BLOCKED resolved (lexido, charm-pop, sccache-git, sunsetr, froggit, ...)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260417aw)
   #:re-export (
