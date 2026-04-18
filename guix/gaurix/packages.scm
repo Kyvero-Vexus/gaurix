@@ -6950,3 +6950,13 @@
                wayneko
                sfwbar
                ))
+
+;; recipe-resolver-260418v (4 NRD resolved, 26 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418v)
+  #:re-export (
+               woodland
+               minutor
+               python-certomancer
+               mii-emu
+               ))

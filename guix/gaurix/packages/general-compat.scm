@@ -2,6 +2,7 @@
   #:use-module (gaurix packages llama-cpp-cuda)
   #:use-module (gaurix packages recipe-resolver-260418t)
   #:use-module (gaurix packages recipe-resolver-260418u)
+  #:use-module (gaurix packages recipe-resolver-260418v)
   #:use-module (gaurix packages deptree-resolver-260407c)
   #:use-module (gaurix packages deptree-resolver-260407d)
   #:use-module (gaurix packages deptree-resolver-260408b)
