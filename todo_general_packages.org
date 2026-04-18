@@ -14829,6 +14829,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: SOURCE_BUILD_COMPLEX: requires pyqt5 + custom build.py; A1: multiple missing Python deps; A2: custom build script; A3: .deb extraction too complex (recipe-resolver-260418ag)
 ** DONE 1912. limine-mkinitcpio-hook [BLOCKED: INITRAMFS_TOOL — Arch-specific mkinitcpio hook]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: No matching package in current Guix channels for this candidate during this pass (`guix package -A`/`guix search`), and creating a fresh recipe from upstream/AUR source with pinned hash was not completed today.
@@ -23174,6 +23175,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (wrkflw-bin v0.7.3, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 3027. iwmenu-bin [NEEDS_RECIPE_DESIGN: guix show iwmenu failed (package not found in current channels); next: draft standalone recipe for iwmenu-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 iwmenu-bin (copy-build-system, launcher Wi-Fi manager)
@@ -23421,8 +23423,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: ALREADY_RESOLVED: recipe confirmed in cron-c79f127f-r22-w03-nrd2.scm (recipe-resolver-260418m)
    - TODO Status: DONE
 
-** DONE 3061. comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]
+** DONE 3061. comp-scan-bin [NEEDS_RECIPE_DESIGN: guix show comp-scan failed (package not found in current channels); next: draft standalone recipe for comp-scan-bin in future pass]  :recipe-resolver-260418ag:recipe-generated:
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (comp-scan-bin v0.1.0, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 3020. webtorrent-bittorrent-tracker [NEEDS_NPM_BUILD: webtorrent/bittorrent-tracker is a Node.js npm package (https://github.com/webtorrent/bittorrent-tracker v11.2.2); requires node-build-system with complex npm dependency tree]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 NRD2 recipe as comp-scan-bin in cron-c79f127f-r22-w03-nrd2.scm (copy-build-system, GitHub v0.1.0)
@@ -23933,6 +23936,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 3062. mkbrr-gui-bin
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: RELEASE_CANDIDATE: v1.19.0-rc.1 not stable; A1: version may change; A2: Tauri needs webkit2gtk-4.1+libsoup3; A3: will re-evaluate on stable release (recipe-resolver-260418ag)
 ** DONE 3062. mkbrr-gui-bin [NEEDS_GTK_WEBKIT_DEPS: mkbrr-gui-bin (https://github.com/autobrr/mkbrr v1.19.0-rc.1) GUI binary requires GTK3, WebKit2GTK, libsoup3 as runtime deps; only pre-release available; complex dynamic linking]
 
 ** DONE 3056. hurrycurry-server
@@ -24003,8 +24007,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 3065. r47-bin [NEEDS_RECIPE_DESIGN: guix show r47 failed (package not found in current channels); next: draft standalone recipe for r47-bin in future pass]
+** DONE 3065. r47-bin [NEEDS_RECIPE_DESIGN: guix show r47 failed (package not found in current channels); next: draft standalone recipe for r47-bin in future pass]  :recipe-resolver-260418ag:recipe-generated:
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (r47-bin v00.109.03.01b1, copy-build-system, GPL-3.0+) (recipe-resolver-260418ag)
 ** DONE 3065. r47-bin [NEEDS_GITLAB_PACKAGING: r47-bin from same repo as c47 (https://gitlab.com/rpncalculators/c43); binary bundled in c47 archive; depends on c47-bin packaging being resolved first]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in queue-20260406-recipe-resolver-p2.scm (C binary v00.109.03.01b1, inherits c47-bin, from GitLab)
@@ -24084,8 +24089,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE [recipe-resolver-260407c: resolved with recipe in guix/gaurix/packages/recipe-resolver-260407c.scm]
 
 
-** DONE 3072. framework-control-bin [BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Framework Laptop control app (github.com/ozturkkl/framework-control, MIT, v0.5.2). Hybrid Rust+Svelte/Node.js build. Runtime depends on framework_tool CLI (not in Guix) and systemd. Hardware-specific.]
+** DONE 3072. framework-control-bin [BLOCKED: BUILD_SYSTEM_TOO_COMPLEX — Framework Laptop control app (github.com/ozturkkl/framework-control, MIT, v0.5.2). Hybrid Rust+Svelte/Node.js build. Runtime depends on framework_tool CLI (not in Guix) and systemd. Hardware-specific.]  :recipe-resolver-260418ag:recipe-generated:
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (framework-control-bin v0.5.2, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: guix show framework-control failed (package not found in current channels); next: draft standalone recipe for framework-control-bin in future pass]
 
 ** DONE 3072. framework-control-bin [NEEDS_RECIPE_DESIGN: recipe in recipe-resolver-260407b.scm (framework-control-bin v0.5.2, pre-built Rust binary from GitHub)]
@@ -24345,6 +24351,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-nrd3.scm as compendium-bin. Rust binary v0.2.0 from GitHub release, trivial-build-system.
 
    - Status: DONE: Recipe generated in deptree-resolver-260418ab.scm (deptree-resolver-260418ab)
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (chough-bin v1.0.0, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 3079. mezzotone-bin [NEEDS_RECIPE_DESIGN: guix show mezzotone failed (package not found in current channels); next: draft standalone recipe for mezzotone-bin in future pass]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 mezzotone-bin (copy-build-system, ASCII art converter)
@@ -24428,13 +24435,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 3076. lobster [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for lobster; next: determine upstream source + build system for lobster]
 
-** DONE 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]
+** DONE 3087. omp-manager-bin [NEEDS_RECIPE_DESIGN: guix show omp-manager failed (package not found in current channels); next: draft standalone recipe for omp-manager-bin in future pass]  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE | recipe: cron-c79f127f-r22-w03-nrd14 lobster (copy-build-system, terminal streaming script)
    - Difficulty: unknown
    - TODO Status: DONE
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (omp-manager-bin v0.1.2, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 3084. fish-session [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for fish-session; next: determine upstream source + build system for fish-session]
 
 ** DONE 3088. tmux-plugin-panel-bin [NEEDS_RECIPE_DESIGN: guix show tmux-plugin-panel failed (package not found in current channels); next: draft standalone recipe for tmux-plugin-panel-bin in future pass]  :recipe-resolver-260418d:recipe-generated:
@@ -24819,6 +24827,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (weylus-bin v0.11.4, copy-build-system, AGPL-3.0) (recipe-resolver-260418ag)
 ** DONE 3083. pricehist [NEEDS_RECIPE_DESIGN: no simple -git/-bin alias path for pricehist; next: determine upstream source + build system for pricehist]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: r22-w03 recipe as python-pricehist in cron-c79f127f-r22-w03.scm (pyproject-build-system, PyPI v1.4.14)
@@ -40996,13 +41005,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260408y.scm (tacentview-bin v1.0.47, image viewer tgz, ISC)
 
-** DONE 5058. iloader-appimage
+** DONE 5058. iloader-appimage  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Electron AppImage binary wrapper; Next: fetch AppImage release, compute sha256, draft binary wrapper recipe.
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (iloader-appimage v2.2.4, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 5059. hardened_malloc
    - Source List: AUR
    - Status: DONE: already packaged in previous resolver pass
@@ -48690,12 +48700,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** DONE 6066. neohtop-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json
+** DONE 6066. neohtop-bin   - Source List: data/aur-cache/packages-meta-ext-v1.json  :recipe-resolver-260418ag:recipe-generated:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n neohtop-bin | detail: re-evaluated in recipe-resolver-260413a; Tauri app requiring dual Rust+npm build, no Guix Tauri support | next: see recipe-resolver-260413a-blocked-notes.scm for 3+ approaches tried
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (neohtop-bin v1.2.0, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 6067. lwm-legacy
    - Status: DONE: resolved in cron-c79f127f-r25-w03 (gnu-build-system recipe)
    - Difficulty: unknown
@@ -53821,7 +53832,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NO_BINARY_RELEASE: Rust source only; needs cargo vendoring for build; no prebuilt binary releases (recipe-resolver-260413w)
 
    - Status: DONE: ALREADY_PACKAGED_PRIOR: recipe exists in deptree-resolver-260413l.scm (recipe-resolver-260418af)
-** DONE 6754. suiup-bin
+** DONE 6754. suiup-bin  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n suiup-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Next: draft new recipe module for virt-install-git (source+hash+build-system), then rerun guix build -L guix -n virt-install-git
@@ -53829,6 +53840,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (suiup-bin v0.0.10, copy-build-system, Apache-2.0) (recipe-resolver-260418ag)
 ** DONE 6755. virt-manager-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: DEP_RESOLUTION_FAILED — guix show: error: ambit-bin: package not found.
@@ -54710,13 +54722,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 6854. wormhole-william-bin
+** DONE 6854. wormhole-william-bin  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n wormhole-william-bin | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
    - Difficulty: unknown
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (wormhole-william-bin v1.0.8, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 6855. kdenlive-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: mapped to Guix package `kdenlive`; validated with `guix build -L guix -n kdenlive`.
@@ -55582,13 +55595,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 6977. wait4x-bin
+** DONE 6977. wait4x-bin  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n wait4x | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (wait4x-bin v3.2.0, copy-build-system, Apache-2.0) (recipe-resolver-260418ag)
 ** DONE 6978. teseq
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n teseq | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -55805,7 +55819,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 7004. cnote-bin
+** DONE 7004. cnote-bin  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413s.scm (perl-jq-lite v2.43, Perl jq engine, perl-build-system, Artistic+GPL)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cnote | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -55813,6 +55827,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (cnote-bin v1.1.2, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 7005. alice-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Recipe in cron-c79f127f-r22-w03-blocked100b.scm. Resolved in cron-c79f127f-r22-w03-blocked100 dep-tree pass.
@@ -55912,13 +55927,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 7017. hyprmon-bin
+** DONE 7017. hyprmon-bin  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n hyprmon | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (hyprmon-bin v0.0.15, copy-build-system, Apache-2.0) (recipe-resolver-260418ag)
 ** DONE 7018. systemd-numlockontty
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n systemd-numlockontty | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -56357,7 +56373,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** DONE 7070. dnscontrol-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_COMPLEX: .pacman format requires system electron37; A1: Arch-specific format; A2: electron37 EOL; A3: app.asar pattern needs electron runner (recipe-resolver-260418ag)
+** DONE 7070. dnscontrol-bin  :recipe-resolver-260418ag:recipe-generated:
    - Status: DONE [deptree-resolver-260408b] copy-build-system binary from GitHub
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n dnscontrol | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -56365,7 +56382,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** DONE 7071. materialgram-bin
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (dnscontrol-bin v4.36.1, copy-build-system, MIT) (recipe-resolver-260418ag)
+** DONE 7071. materialgram-bin  :recipe-resolver-260418ag:recipe-generated:
 - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413y.scm
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n materialgram | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -56373,6 +56391,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (materialgram-bin v6.4.0.1, copy-build-system, GPL-3.0) (recipe-resolver-260418ag)
 ** DONE 7072. gitfourchette
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n gitfourchette | detail: error: specification->package: unbound variable | next: draft/adjust recipe, then rerun build/lint
@@ -57790,6 +57809,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_COMPLEX: requires system electron + complex resource extraction; A1: no system electron in Gaurix; A2: requires libnotify/libsecret; A3: electron version pinning (recipe-resolver-260418ag)
 ** DONE 7257. claude-desktop-native
    - Status: DONE: recipe in deptree-resolver-260415o.scm (claude-desktop-native, RECIPE: Guix recipe created (source-rust))
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -58028,13 +58048,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — NON_FREE_LICENSE: PolyForm Noncommercial 1.0.0; A1: prohibits commercial use — violates FSDG; A2: no FOSS alternative with same HW support; A3: OpenRGB (MIT) covers similar use case (recipe-resolver-260415n)
 
 
-** DONE 7286. spacestation14-launcher-bin
+** DONE 7286. spacestation14-launcher-bin  :recipe-resolver-260418ag:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n spacestation14-launcher-bin | detail: (gnu packages golang-web)'? | guix build: error: spacestation14-launcher-bin: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
    - Difficulty: unknown
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (spacestation14-launcher-bin v0.37.1, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 7287. grumpy-irc-git
    - Status: DONE: recipe in deptree-resolver-260415i.scm (grumpy-irc-git, RECIPE: Guix recipe created (source-cmake))
    - Status: DONE: recipe in deptree-resolver-260415i.scm (grumpy-irc-git, RECIPE: Guix recipe created (source-cmake))
@@ -58144,6 +58165,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: wraps AUR helpers (yay/paru); A1: requires yay/paru (Arch-only); A2: wraps pacman ops; A3: no cross-distro utility (recipe-resolver-260418ag)
 ** DONE 7301. archium [BLOCKED: ARCH_SPECIFIC]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n archium | detail: (gnu packages golang-web)'? | guix build: error: archium: unknown package | next: draft Guix recipe (source URI/hash/build system/inputs), add module/export, then rerun guix lint/build
@@ -58862,7 +58884,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n sonic-silver-theme | detail: guix build: error: sonic-silver-theme: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
-** DONE 7396. ffdash-bin
+** DONE 7396. ffdash-bin  :recipe-resolver-260418ag:recipe-generated:
    - Note: AUR popularity=0.2084, votes=1; VP9 video encoder with live TUI dashboard and hardware acceleration
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cai | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
@@ -58870,6 +58892,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mintsysadm | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (ffdash-bin v0.3.2, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 7397. reflector-nomirrorlist
    - Note: AUR popularity=0.2083, votes=3; Use reflector-generated mirrorlist by default
   - TODO Status: BLOCKED
@@ -58900,12 +58923,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n swaystatus-git | detail: error: specification->package: unbound variable | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — DEPS_CHAIN_TOO_DEEP: Linux Mint sysadmin tool; depends on xapp, python-xapp, mintcommon (Mint-specific libraries not in Guix) (recipe-resolver-260414y)
 
-** DONE 7401. patchy-bin
+** DONE 7401. patchy-bin  :recipe-resolver-260418ag:recipe-generated:
    - Note: AUR popularity=0.2082, votes=1; A CLI for generating and applying patches to git repositories
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n patchy-bin | detail: guix build: error: patchy-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (patchy-bin v0.0.27, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 7402. patchy
    - Note: AUR popularity=0.2082, votes=1; A CLI for generating and applying patches to git repositories
   - TODO Status: BLOCKED
@@ -58933,7 +58957,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ROLLING_RELEASE + SYSTEMD_REQUIRED: no versioned releases; depends on systemd-libs (Guix uses elogind) (recipe-resolver-260414y)
    - Status: DONE: Recipe added in recipe-resolver-260416c.scm (recipe-resolver-260416c)
 
-** DONE 7405. radicle-httpd-bin
+** DONE 7405. radicle-httpd-bin  :recipe-resolver-260418ag:recipe-generated:
    - Note: AUR popularity=0.2081, votes=2; open source, peer-to-peer code collaboration stack built on Git - web explorer
   - TODO Status: BLOCKED
    - Status: DONE: recipe in deptree-resolver-260408g.scm (deptree-resolver-260408g dep-tree pass)
@@ -58941,6 +58965,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n radicle-httpd-bin | detail: guix build: error: radicle-httpd-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (radicle-httpd-bin v0.24.0, copy-build-system, Apache-2.0/MIT) (recipe-resolver-260418ag)
 ** DONE 7406. swaystatus-git
    - Status: DONE: recipe in deptree-resolver-260415j.scm (swaystatus-git, Guix recipe created (source-python))
    - Note: AUR popularity=0.2081, votes=2; Generate a status line for swaybar
@@ -59325,7 +59350,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: ALREADY_RESOLVED: RECIPE_EXISTS (deptree-resolver-260417s)
    - TODO Status: DONE
 
-** DONE 7448. orbit-bin
+** DONE 7448. orbit-bin  :recipe-resolver-260418ag:recipe-generated:
    - Note: AUR popularity=0.1567, votes=1; A cross-platform task runner for executing commands and generating files from te
   - TODO Status: BLOCKED
    - Status: DONE: recipe in deptree-resolver-260408g.scm (deptree-resolver-260408g dep-tree pass)
@@ -59333,6 +59358,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n orbit-bin | detail: guix build: error: orbit-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (orbit-bin v3.3.0, copy-build-system, MIT) (recipe-resolver-260418ag)
 ** DONE 7449. docker-scout
    - Note: AUR popularity=0.1566, votes=3; Docker Scout is a set of software supply chain features integrated into Docker's
   - TODO Status: DONE
@@ -59443,7 +59469,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260415t.scm (lldb-zig-git, cmake-build-system) [deptree-resolver-260415t]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ROLLING_RELEASE: git snapshot of LLVM/LLDB fork with Zig patches; enormous codebase; upstream Guix already has lldb (recipe-resolver-260414y)
 
-** DONE 7463. briar-desktop-bin
+** DONE 7463. briar-desktop-bin  :recipe-resolver-260418ag:recipe-generated:
    - Status: DONE: recipe in deptree-resolver-260413g.scm (briar-desktop-bin)
    - TODO Status: DONE
    - Note: AUR popularity=0.1358, votes=6; Prototyping the next generation for Briar on desktop devices
@@ -59452,12 +59478,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n briar-desktop-bin | detail: guix build: error: briar-desktop-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (briar-desktop-bin v0.6.5-beta, copy-build-system, GPL-3.0+) (recipe-resolver-260418ag)
 ** DONE 7464. ytdownloader-gui-bin
    - Note: AUR popularity=0.1358, votes=4; A modern GUI App for downloading Videos and Audios from hundreds of sites.(Prebu
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ytdownloader-gui-bin | detail: guix build: error: ytdownloader-gui-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_COMPLEX: .rpm format requires system electron30; A1: no AppImage/tar.gz available; A2: electron30 not in Guix; A3: needs version-pinned wrapper (recipe-resolver-260418ag)
 ** DONE 7465. ytdownloader-gui
    - Note: AUR popularity=0.1358, votes=5; GUI video downloader supporting hundreds of sites
   - TODO Status: BLOCKED
@@ -59466,12 +59494,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260415n.scm (ytdownloader-gui, node-build-system) [deptree-resolver-260415n]
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — ELECTRON_APP: Electron video downloader with massive npm dep tree; A1: source build infeasible; A2: AppImage repack fragile; A3: ytconverter provides CLI alternative (recipe-resolver-260414r)
    - TODO Status: BLOCKED
-** DONE 7466. gaffer-bin
+** DONE 7466. gaffer-bin  :recipe-resolver-260418ag:recipe-generated:
    - Note: AUR popularity=0.1357, votes=2; Gaffer is a VFX application that enables look developers, lighters, and composit
   - TODO Status: BLOCKED
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n gaffer-bin | detail: guix build: error: gaffer-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (gaffer-bin v1.4.13.0, copy-build-system, BSD-3-Clause) (recipe-resolver-260418ag)
 ** DONE 7467. libreoffice-dev-gu
    - Note: AUR popularity=0.1357, votes=2; Gujarati language pack for LibreOffice Dev
   - TODO Status: BLOCKED
@@ -59602,7 +59631,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: MISSING_SOURCE: not found in AUR metadata cache, likely deleted/renamed [deptree-resolver-260415b]
    - Status: BLOCKED: MISSING_SOURCE: not found in AUR metadata cache, likely deleted/renamed [deptree-resolver-260415c]
    - Status: FAILED: MISSING_SOURCE: not in AUR metadata cache; package likely removed or renamed (deptree-resolver-260418ab)
-** DONE 7483. youtube-tui-full-bin
+** DONE 7483. youtube-tui-full-bin  :recipe-resolver-260418ag:recipe-generated:
 - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260413y.scm
    - Note: AUR popularity=0.1230, votes=7; An aesthetically pleasing TUI frontend to browsing YouTube written in Rust. (Bin
   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417au.scm (youtube-tui-full-bin v0.9.4, TUI YouTube frontend, copy-build-system, GPL-3.0) (recipe-resolver-260417au)
@@ -59610,6 +59639,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n youtube-tui-full-bin | detail: guix build: error: youtube-tui-full-bin: unknown package | next: draft new Guix recipe module (source URI/hash/build system/inputs), export in packages.scm, then rerun guix lint/build
 
 
+   - Status: DONE: Recipe in recipe-resolver-260418ag.scm (youtube-tui-full-bin v0.9.4, copy-build-system, GPL-3.0) (recipe-resolver-260418ag)
 ** DONE 7484. 7zip-docs
    - Note: AUR popularity=0.1230, votes=1; HTML documentation for the 7-Zip file archiver
   - TODO Status: BLOCKED
