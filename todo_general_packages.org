@@ -119275,6 +119275,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: pacman hook; Arch-specific post-install hook not applicable to Guix; Guix uses service declarations; no portable source to package (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC_HOOK: pacman hook; no Guix equivalent; A1: no hook concept; A2: inline PKGBUILD; A3: use system config (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** BLOCKED 15494. sway-desktop-unsupportedgpu-hook
    - AUR votes: 1, popularity: 1.0000
    - Note: Adds --unsupported-gpu to sway.desktop!
@@ -119282,6 +119284,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: pacman hook; Arch-specific pacman hook for GPU detection; not a standalone package; functionality handled by Guix services (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC_HOOK: pacman hook for GPU detection; A1: no Guix hook; A2: no source; A3: mesa/drm handles it (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15495. talanoa-bin
    - Status: DONE: recipe in recipe-resolver-260417al.scm (recipe-resolver-260417al)
    - AUR votes: 1, popularity: 1.0000
@@ -119362,6 +119366,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: pacman hook; Arch-specific pacman hook for Vesktop; not a standalone package; no equivalent concept in Guix (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC_HOOK: pacman hook for Vesktop; A1: no Guix hook; A2: inline only; A3: Vesktop packaged separately (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15506. volt-bin
    - AUR votes: 1, popularity: 1.0000
    - Note: Terminal Based Binary for API Testing
@@ -119903,6 +119909,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; Guix does not support 32-bit compatibility libraries; would require cross-compilation infrastructure (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: 32-bit Vulkan ICD; A1: cross-compilation needed; A2: no multilib in Guix; A3: use native-arch (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15582. gittyup-appimage
    - Status: DONE: recipe in recipe-resolver-260418i.scm (gittyup-appimage, NEEDS_RECIPE_DESIGN resolved)
    - AUR votes: 1, popularity: 0.0160
@@ -120254,6 +120262,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel modules require kernel build infrastructure; Guix handles kernel modules via operating-system config (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: KVMFR kernel module; A1: DKMS not in Guix; A2: needs OS config; A3: client available separately (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15632. obs-plugin-looking-glass-git
    - Status: DONE: recipe in recipe-resolver-260418i.scm (obs-plugin-looking-glass, NEEDS_RECIPE_DESIGN resolved)
    - AUR votes: 15, popularity: 0.0093
@@ -120373,6 +120383,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; Guix does not support 32-bit compatibility glibc; fundamental architecture mismatch with Guix model (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: 32-bit glibc; A1: arch mismatch; A2: parallel glibc needed; A3: use container (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15650. nats-server-bin
    - AUR votes: 7, popularity: 0.0091
    - Note: Simple, secure and high performance open source messaging system
@@ -121102,6 +121114,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel module for DDC/CI monitor control; requires kernel headers and DKMS infrastructure (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: DDC/CI kernel module; A1: DKMS not supported; A2: needs kernel build; A3: may merge mainline (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15758. brunsli
    - AUR votes: 5, popularity: 0.0054
    - Note: Lossless JPEG repacker
@@ -122255,6 +122269,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Deepin Wine wrapper; requires Deepin Wine compatibility layer not in Guix; proprietary WeChat Work binary (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_ECOSYSTEM: WeChat Work + Deepin Wine; A1: Deepin Wine not in Guix; A2: proprietary; A3: license prohibits (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15920. corepdf
    - AUR votes: 2, popularity: 0.0049
    - Note: A PDF viewer from the C Suite
@@ -122452,6 +122468,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires systemd+Docker; Home Assistant Supervised depends on systemd; Guix System uses Shepherd not systemd (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: INCOMPATIBLE_INIT: requires systemd+Docker; A1: Guix uses Shepherd; A2: Docker complex; A3: use HA Core (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 15947. naabu-bin  :recipe-resolver-260417ae:recipe-generated:
    - AUR votes: 4, popularity: 0.0047
    - Note: Fast port scanner with a focus on reliability and simplicity
@@ -123309,6 +123327,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: custom kernel; custom Linux kernel variant with CJK patches; requires full kernel build infrastructure (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CUSTOM_KERNEL_INFEASIBLE: CJK kernel; A1: needs make-linux-libre; A2: interactive config; A3: batch infeasible (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** BLOCKED 16065. linux-zencjk-headers
    - AUR votes: 6, popularity: 0.0042
    - Note: Headers and scripts for building modules for the Linux ZEN (with cjktty patch) kernel
@@ -123316,6 +123336,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: depends on linux-zencjk; kernel headers coupled to kernel build; blocked on parent kernel package (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_BLOCKED: depends on linux-zencjk; A1: parent not packageable; A2: coupled to build; A3: no path (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16066. pi-hole-core  :recipe-resolver-260418t:recipe-generated:
    - AUR votes: 118, popularity: 0.0042
    - Note: The Pi-hole is an advertising-aware DNS/Web server. Arch adaptation for lan wide DNS server.
@@ -123323,12 +123345,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418t.scm (pi-hole-core v6.4.1, gnu-build-system, eupl1.2)
 
 
-** TODO 16067. sfwbar-git
+** DONE 16067. sfwbar-git  :recipe-resolver-260418u:recipe-generated:
    - AUR votes: 5, popularity: 0.0042
    - Note: S Floating Window taskBar, git version
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418u.scm (sfwbar v1.0_beta17, meson-build-system, gpl3)
+   - TODO Status: DONE
 ** DONE 16068. mp3splt-gtk
    - Status: DONE: recipe in recipe-resolver-260418l.scm (mp3splt-gtk, NEEDS_RECIPE_DESIGN resolved)
    - AUR votes: 4, popularity: 0.0042
@@ -123496,12 +123520,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16093. pycdc-git
+** DONE 16093. pycdc-git  :recipe-resolver-260418u:recipe-generated:
    - AUR votes: 4, popularity: 0.0040
    - Note: C++ python bytecode disassembler and decompiler.
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418u.scm (pycdc v0.0.0-git, cmake-build-system, gpl3)
+   - TODO Status: DONE
 ** TODO 16094. zabbix-agent2-plugin-nvidia-gpu
    - AUR votes: 2, popularity: 0.0040
    - Note: Loadable plugin for Nvidia GPU integration in Zabbix agent2
@@ -123522,12 +123548,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16097. ubuntu-mate-icon-themes
+** BLOCKED 16097. ubuntu-mate-icon-themes
    - AUR votes: 3, popularity: 0.0040
    - Note: The official icon themes for Ubuntu MATE
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_DEPS: Ubuntu MATE icons need yaru-theme-icon; A1: Debian pkg only; A2: yaru not in Guix; A3: use papirus (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16098. micromamba-bin
    - Status: DONE: Recipe in deptree-resolver-260413d.scm.
    - AUR votes: 22, popularity: 0.0040
@@ -123542,12 +123570,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16100. wayneko-git
+** DONE 16100. wayneko-git  :recipe-resolver-260418u:recipe-generated:
    - AUR votes: 4, popularity: 0.0039
    - Note: Display an animated neko cat on the bottom of a Wayland output.
    - TODO Status: TODO
 
 
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418u.scm (wayneko v0.0.0-git, gnu-build-system, gpl3)
+   - TODO Status: DONE
 ** DONE 16101. github-actions-bin
    - AUR votes: 5, popularity: 0.0039
    - Note: GitHub Actions self-hosted runner tools.
@@ -123578,12 +123608,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16105. corefreq-client
+** BLOCKED 16105. corefreq-client
    - AUR votes: 9, popularity: 0.0039
    - Note: CoreFreq client
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: RUNTIME_DEP_BLOCKED: corefreq needs kernel module; A1: DKMS not packageable; A2: useless without module; A3: needs OS config (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** BLOCKED 16106. corefreq-dkms
    - AUR votes: 9, popularity: 0.0039
    - Note: CoreFreq - kernel module sources
@@ -123591,6 +123623,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel module for CPU monitoring; requires kernel headers; Guix handles kernel modules differently (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: CPU monitoring module; A1: DKMS not supported; A2: needs kernel headers; A3: use OS config (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16107. corefreq-server
    - AUR votes: 9, popularity: 0.0039
    - Note: CoreFreq server
@@ -123751,6 +123785,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS driver for GPD device fan control; out-of-tree module not supported in standard Guix packaging (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: GPD fan driver; A1: DKMS not supported; A2: out-of-tree; A3: submit upstream (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16131. goldendict-ng-git
    - AUR votes: 32, popularity: 0.0039
    - Note: The next generation GoldenDict (Supports Qt WebEngine & Qt6).
@@ -123772,6 +123808,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS driver for ASUS mouse HID devices; Guix handles drivers via operating-system config (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: ASUS mouse HID; A1: DKMS not supported; A2: needs kernel build; A3: submit upstream (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16134. libuv-git
    - AUR votes: 1, popularity: 0.0039
    - Note: A multi-platform support library with a focus on asynchronous I/O
@@ -123904,6 +123942,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; 32-bit Wayland library; Guix does not support multilib; use native architecture package (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: 32-bit Wayland; A1: no multilib; A2: cross-compilation; A3: use native-arch (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16155. trios-bin
    - AUR votes: 1, popularity: 0.0039
    - Note: Starsector mod manager & toolkit.
@@ -123965,6 +124005,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Gentoo kernel sources; Gentoo-specific kernel source packaging; not applicable to Guix (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DISTRO_SPECIFIC: Gentoo kernel sources; A1: Guix has linux-libre; A2: USE flags N/A; A3: no cross-distro value (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16164. pmcl-bin
    - AUR votes: 1, popularity: 0.0039
    - Note: Play! Minecraft Launcher: A free Minecraft JE Launcher
@@ -123980,6 +124022,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel module for PC speaker sound; requires kernel headers (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: PC speaker module; A1: DKMS not supported; A2: in mainline; A3: enable via kernel config (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** TODO 16166. libakonadi5
    - AUR votes: 1, popularity: 0.0039
    - Note: Libraries used by applications based on Akonadi
@@ -124802,6 +124846,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: deep Google Cloud deps; 20+ transitive Google dependencies not in Guix; heavy cloud SDK dependency tree (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEEP_DEPENDENCY_TREE: 20+ Google Cloud deps; A1: massive chain; A2: grpc needed; A3: use REST API (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** TODO 16294. testssl.sh-git
    - AUR votes: 6, popularity: 0.0034
    - Note: Testing TLS/SSL encryption (git version)
@@ -124827,6 +124873,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: VMware variant; proprietary VMware Workstation with kernel patches; requires DKMS kernel modules (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_ECOSYSTEM: PHP + Zephir; A1: PHP not in Guix; A2: circular bootstrap; A3: whole ecosystem needed (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16298. cutechess
    - Status: DONE: recipe in recipe-resolver-260418l.scm (cutechess, NEEDS_RECIPE_DESIGN resolved)
    - AUR votes: 13, popularity: 0.0033
@@ -124866,6 +124914,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: custom kernel; Linux kernel with bcachefs filesystem patches; full kernel build infrastructure required (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: OBSOLETE_UPSTREAM: bcachefs merged mainline 6.7; A1: custom kernel infeasible; A2: in mainline; A3: use linux-libre (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** BLOCKED 16304. linux-bcachefs-git-headers
    - AUR votes: 17, popularity: 0.0033
    - Note: Headers and scripts for building modules for the Linux kernel ~ featuring Kent Overstreet's bcachefs filesystem
@@ -124873,6 +124923,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: depends on linux-bcachefs-git; kernel headers blocked on parent kernel package (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_BLOCKED: depends on linux-bcachefs-git; A1: parent not packageable; A2: in mainline; A3: use standard headers (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** TODO 16305. sview-git
    - AUR votes: 3, popularity: 0.0033
    - Note: Stereoscopic 3D video player with OpenGL UI
@@ -126112,6 +126164,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; 32-bit libXpm library; Guix does not support multilib; use native architecture package (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: 32-bit libXpm; A1: no multilib; A2: cross-compilation; A3: use native libxpm (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** TODO 16492. sherlock-launcher-git
    - AUR votes: 1, popularity: 0.0030
    - Note: Application launcher for Wayland.
@@ -126177,6 +126231,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS netfilter extension modules; requires kernel headers and build infrastructure (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_UNSUPPORTED: netfilter extensions; A1: DKMS not supported; A2: needs kernel build; A3: some merged upstream (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** TODO 16502. gnome-shell-extension-quick-settings-audio-panel
    - AUR votes: 2, popularity: 0.0030
    - Note: Quick Settings Audio Panel GNOME Extension
@@ -126259,6 +126315,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: custom kernel; XanMod kernel with BORE scheduler; full kernel build required (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CUSTOM_KERNEL_INFEASIBLE: XanMod+BORE; A1: needs make-linux-libre; A2: interactive config; A3: 30+ min build (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** BLOCKED 16515. linux-xanmod-bore-headers
    - AUR votes: 6, popularity: 0.0029
    - Note: Headers and scripts for building modules for the Linux Xanmod (Stable) with BORE CPU scheduler and tickrate customizations kernel
@@ -126266,6 +126324,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEP_RESOLUTION_FAILED: depends on linux-xanmod-bore; headers blocked on parent kernel; coupled to kernel build (recipe-resolver-260418p)
 
 
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DEP_BLOCKED: depends on linux-xanmod-bore; A1: parent not packageable; A2: coupled to build; A3: no path (recipe-resolver-260418u)
+   - TODO Status: BLOCKED
 ** DONE 16516. flam3
    - AUR votes: 4, popularity: 0.0029
    - Note: Tools to create/display fractal flames: algorithmically generated images and animations

@@ -6940,3 +6940,12 @@
                languagetool-ngrams-de
                pi-hole-core
                ))
+
+;; recipe-resolver-260418u (3 NRD resolved, 27 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418u)
+  #:re-export (
+               pycdc
+               wayneko
+               sfwbar
+               ))
