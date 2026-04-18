@@ -495,6 +495,7 @@
   #:use-module (gaurix packages deptree-resolver-260418w)
   #:use-module (gaurix packages recipe-resolver-260418w)
   #:use-module (gaurix packages deptree-resolver-260418z)
+  #:use-module (gaurix packages deptree-resolver-260418ab)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -11276,3 +11277,121 @@
   (package
     (inherit languagetool-ngrams-en)
     (name "languagetool-ngrams-en")))
+
+
+;;; Re-exports from deptree-resolver-260418ab
+
+(define-public aspnet-runtime-preview-bin
+  (package
+    (inherit aspnet-runtime-preview-bin)
+    (name "aspnet-runtime-preview-bin")))
+
+(define-public kdesignerplugin
+  (package
+    (inherit kdesignerplugin)
+    (name "kdesignerplugin")))
+
+(define-public python-javaobj-py3
+  (package
+    (inherit python-javaobj-py3)
+    (name "python-javaobj-py3")))
+
+(define-public kemoticons
+  (package
+    (inherit kemoticons)
+    (name "kemoticons")))
+
+(define-public coder-bin
+  (package
+    (inherit coder-bin)
+    (name "coder-bin")))
+
+(define-public gh-dash-bin
+  (package
+    (inherit gh-dash-bin)
+    (name "gh-dash-bin")))
+
+(define-public aichat-ng-bin
+  (package
+    (inherit aichat-ng-bin)
+    (name "aichat-ng-bin")))
+
+(define-public chough-bin
+  (package
+    (inherit chough-bin)
+    (name "chough-bin")))
+
+(define-public envy-tui-bin
+  (package
+    (inherit envy-tui-bin)
+    (name "envy-tui-bin")))
+
+(define-public paracon
+  (package
+    (inherit paracon)
+    (name "paracon")))
+
+(define-public plasma6-applets-window-title
+  (package
+    (inherit plasma6-applets-window-title)
+    (name "plasma6-applets-window-title")))
+
+(define-public psiphonlinuxgui
+  (package
+    (inherit psiphonlinuxgui)
+    (name "psiphonlinuxgui")))
+
+(define-public redress-bin
+  (package
+    (inherit redress-bin)
+    (name "redress-bin")))
+
+(define-public safe-rm
+  (package
+    (inherit safe-rm)
+    (name "safe-rm")))
+
+(define-public svnkit
+  (package
+    (inherit svnkit)
+    (name "svnkit")))
+
+(define-public tdarr
+  (package
+    (inherit tdarr)
+    (name "tdarr")))
+
+(define-public technitium-dns-server-bin
+  (package
+    (inherit technitium-dns-server-bin)
+    (name "technitium-dns-server-bin")))
+
+(define-public tododo-bin
+  (package
+    (inherit tododo-bin)
+    (name "tododo-bin")))
+
+(define-public cmdfy
+  (package
+    (inherit cmdfy)
+    (name "cmdfy")))
+
+(define-public dvdisaster-speed47-git
+  (package
+    (inherit dvdisaster-speed47-git)
+    (name "dvdisaster-speed47-git")))
+
+(define-public dwatch-bin
+  (package
+    (inherit dwatch-bin)
+    (name "dwatch-bin")))
+
+(define-public element-lk-jwt-service
+  (package
+    (inherit element-lk-jwt-service)
+    (name "element-lk-jwt-service")))
+
+(define-public elephant-providerlist-bin
+  (package
+    (inherit elephant-providerlist-bin)
+    (name "elephant-providerlist-bin")))

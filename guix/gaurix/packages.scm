@@ -7329,4 +7329,28 @@
                cmdfy-bin
                dela
                streamrip
+            ;; deptree-resolver-260418ab (23 BLOCKED resolved)
+               aspnet-runtime-preview-bin
+               kdesignerplugin
+               python-javaobj-py3
+               kemoticons
+               coder-bin
+               gh-dash-bin
+               aichat-ng-bin
+               chough-bin
+               envy-tui-bin
+               paracon
+               plasma6-applets-window-title
+               psiphonlinuxgui
+               redress-bin
+               safe-rm
+               svnkit
+               tdarr
+               technitium-dns-server-bin
+               tododo-bin
+               cmdfy
+               dvdisaster-speed47-git
+               dwatch-bin
+               element-lk-jwt-service
+               elephant-providerlist-bin
                ))
