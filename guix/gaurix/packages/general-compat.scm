@@ -11,6 +11,7 @@
   #:use-module (gaurix packages deptree-resolver-260417ak)
   #:use-module (gaurix packages deptree-resolver-260417ao)
   #:use-module (gaurix packages deptree-resolver-260417as)
+  #:use-module (gaurix packages deptree-resolver-260418p)
   #:use-module (gnu packages freedesktop)
   #:use-module (gnu packages rdesktop)
   #:use-module (gnu packages i2p)

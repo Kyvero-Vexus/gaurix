@@ -6692,6 +6692,7 @@
                curseforge-appimage))
 
 ;; recipe-resolver-260418n (9 NRD resolved, 1 ALREADY_IN_GUIX, 20 EXHAUSTED)
+;; deptree-resolver-260418p
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260418n)
   #:re-export (               plasmazones-bin
