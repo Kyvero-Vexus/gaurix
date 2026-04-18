@@ -7297,4 +7297,36 @@
                filius
                electricsheep
                languagetool-ngrams-en
+               ;; recipe-resolver-260418ab (30 NRD resolved, 8 BLOCKED)
+            ;; recipe-resolver-260418ab (30 NRD resolved, 8 BLOCKED)
+               python-seapie
+               perl-gtk2
+               diffnav-bin
+               gowatch-bin
+               wasistlos
+               etcd-bin
+               safe-rm-bin
+               kabi-git
+               gnome-meta
+               stasis
+               kmozillahelper
+               libvhdi-git
+               detect-it-easy-bin
+               nbfc-linux
+               zur
+               buf-bin
+               journal-brief
+               yaac-bin
+               beekeeper-studio-bin
+               webos-dev-manager-bin
+               amp-editor
+               domake-bin
+               nextpnr-ice40
+               dooble
+               qmmp-plugin-pack
+               logseq-desktop-bin
+               kchmviewer
+               cmdfy-bin
+               dela
+               streamrip
                ))
