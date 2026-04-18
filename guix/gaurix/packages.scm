@@ -6485,6 +6485,7 @@
 ;; deptree-resolver-260418j (43 BLOCKED resolved)
 (define-module (gaurix packages)
   #:use-module (gaurix packages deptree-resolver-260418j)
+            ;; recipe-resolver-260418j: 30 NRD resolved
   #:re-export (iup
                ttf-ms-office365
                fonts-apple
