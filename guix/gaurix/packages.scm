@@ -6529,3 +6529,37 @@
                lua51-iup
                lua52-iup
                lua53-iup))
+
+;; recipe-resolver-260418k (30 NRD resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418k)
+  #:re-export (safe-rm
+               parui
+               fackr
+               wleave
+               wl-mpris-idle-inhibit
+               mdcat
+               relax-player
+               ollama-proxy
+               firp
+               gotify-tray-cpp
+               mkvextract-gtk
+               faff
+               nvidia-prime-rtd3pm
+               onionspray
+               ani-rss
+               sc
+               mongotimer
+               calculix-ccx
+               dosh-posh
+               dasel
+               findmydeviceserver
+               gtkhash
+               wallpicker
+               sticker-convert
+               playtimed
+               python-opencensus
+               python-uv-dynamic-versioning
+               python-hvplot
+               yt-dlg
+               aria2tui))
