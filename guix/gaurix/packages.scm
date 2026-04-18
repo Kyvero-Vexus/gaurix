@@ -6006,3 +6006,30 @@
                passwordsafe
                brother-hl2030
                kopia-ui-bin))
+
+;; recipe-resolver-260417as (20 NRD resolved, 10 ALREADY_RESOLVED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417as)
+  #:re-export (
+               twitch-cli-bin
+               fast-bin
+               lux-dl-bin
+               cheat-bin
+               spoofdpi-bin
+               circleci-cli-bin
+               reader-bin
+               tvmv-bin
+               python-exifread
+               python-colorzero
+               python-simber
+               python-ratelim
+               python-requirements-detector
+               python-itunespy
+               python-geocoder
+               python-vcstool
+               python-pushbullet.py
+               perl-mp3-tag
+               perl-expect
+               perl-rpc-xml
+               perl-linux-desktopfiles
+               ))

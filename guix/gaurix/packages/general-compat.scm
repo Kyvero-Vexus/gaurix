@@ -452,6 +452,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ao)
   #:use-module (gaurix packages recipe-resolver-260417ap)
   #:use-module (gaurix packages recipe-resolver-260417aq)
+  #:use-module (gaurix packages recipe-resolver-260417as)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9410,3 +9411,26 @@
 (re-export passwordsafe)
 (re-export brother-hl2030)
 (re-export kopia-ui-bin)
+
+;; recipe-resolver-260417as re-exports
+(re-export twitch-cli-bin)
+(re-export fast-bin)
+(re-export lux-dl-bin)
+(re-export cheat-bin)
+(re-export spoofdpi-bin)
+(re-export circleci-cli-bin)
+(re-export reader-bin)
+(re-export tvmv-bin)
+(re-export python-exifread)
+(re-export python-colorzero)
+(re-export python-simber)
+(re-export python-ratelim)
+(re-export python-requirements-detector)
+(re-export python-itunespy)
+(re-export python-geocoder)
+(re-export python-vcstool)
+(re-export python-pushbullet.py)
+(re-export perl-mp3-tag)
+(re-export perl-expect)
+(re-export perl-rpc-xml)
+(re-export perl-linux-desktopfiles)
