@@ -7163,3 +7163,39 @@
                niripwmenu
                python-opcua-asyncio
                ))
+
+;; recipe-resolver-260418z (30 NRD resolved, 8 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418z)
+  #:re-export (
+               jdk21-temurin
+               java17-openjfx-bin
+               bindiff
+               electronwmd-bin
+               clash-verge-rev-autobuild-bin
+               anime-games-launcher-bin
+               plymouth-theme-mikuboot-git
+               fonts-meta-base
+               libtrash
+               ntfsprogs-plus-git
+               scolorpicker-legacy
+               gpgfrontend
+               cervisia
+               hyprqt6engine-git
+               libresplit-git
+               linux-enable-ir-emitter
+               gpu-screen-recorder-git
+               libinput-no-gestures
+               python-aioice
+               taskfile-to-tasks-python-git
+               green-recorder
+               sot
+               marimo
+               srtodo-git
+               btrfs-desktop-notification-git
+               lunarvim-git
+               go-prism
+               gnome-shell-extension-space-bar-git
+               python-zxing-cpp
+               hid-velocityone-multi-shift
+               ))

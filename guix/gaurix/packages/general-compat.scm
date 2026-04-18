@@ -90,6 +90,7 @@
   #:use-module (gaurix packages recipe-resolver-260418r)
   #:use-module (gaurix packages recipe-resolver-260418x)
   #:use-module (gaurix packages recipe-resolver-260418y)
+  #:use-module (gaurix packages recipe-resolver-260418z)
   #:use-module (guix packages)
   #:use-module (guix gexp)
   #:use-module (guix utils)
@@ -10652,3 +10653,156 @@
 (re-export hyprcap)
 (re-export niripwmenu)
 (re-export python-opcua-asyncio)
+
+
+;;; --- recipe-resolver-260418z: 30 compat aliases ---
+
+(define-public jdk21-temurin
+  (package
+    (inherit jdk21-temurin)
+    (name "jdk21-temurin")))
+
+(define-public java17-openjfx-bin
+  (package
+    (inherit java17-openjfx-bin)
+    (name "java17-openjfx-bin")))
+
+(define-public bindiff
+  (package
+    (inherit bindiff)
+    (name "bindiff")))
+
+(define-public electronwmd-bin
+  (package
+    (inherit electronwmd-bin)
+    (name "electronwmd-bin")))
+
+(define-public clash-verge-rev-autobuild-bin
+  (package
+    (inherit clash-verge-rev-autobuild-bin)
+    (name "clash-verge-rev-autobuild-bin")))
+
+(define-public anime-games-launcher-bin
+  (package
+    (inherit anime-games-launcher-bin)
+    (name "anime-games-launcher-bin")))
+
+(define-public plymouth-theme-mikuboot-git
+  (package
+    (inherit plymouth-theme-mikuboot-git)
+    (name "plymouth-theme-mikuboot-git")))
+
+(define-public fonts-meta-base
+  (package
+    (inherit fonts-meta-base)
+    (name "fonts-meta-base")))
+
+(define-public libtrash
+  (package
+    (inherit libtrash)
+    (name "libtrash")))
+
+(define-public ntfsprogs-plus-git
+  (package
+    (inherit ntfsprogs-plus-git)
+    (name "ntfsprogs-plus-git")))
+
+(define-public scolorpicker-legacy
+  (package
+    (inherit scolorpicker-legacy)
+    (name "scolorpicker-legacy")))
+
+(define-public gpgfrontend
+  (package
+    (inherit gpgfrontend)
+    (name "gpgfrontend")))
+
+(define-public cervisia
+  (package
+    (inherit cervisia)
+    (name "cervisia")))
+
+(define-public hyprqt6engine-git
+  (package
+    (inherit hyprqt6engine-git)
+    (name "hyprqt6engine-git")))
+
+(define-public libresplit-git
+  (package
+    (inherit libresplit-git)
+    (name "libresplit-git")))
+
+(define-public linux-enable-ir-emitter
+  (package
+    (inherit linux-enable-ir-emitter)
+    (name "linux-enable-ir-emitter")))
+
+(define-public gpu-screen-recorder-git
+  (package
+    (inherit gpu-screen-recorder-git)
+    (name "gpu-screen-recorder-git")))
+
+(define-public libinput-no-gestures
+  (package
+    (inherit libinput-no-gestures)
+    (name "libinput-no-gestures")))
+
+(define-public python-aioice
+  (package
+    (inherit python-aioice)
+    (name "python-aioice")))
+
+(define-public taskfile-to-tasks-python-git
+  (package
+    (inherit taskfile-to-tasks-python-git)
+    (name "taskfile-to-tasks-python-git")))
+
+(define-public green-recorder
+  (package
+    (inherit green-recorder)
+    (name "green-recorder")))
+
+(define-public sot
+  (package
+    (inherit sot)
+    (name "sot")))
+
+(define-public marimo
+  (package
+    (inherit marimo)
+    (name "marimo")))
+
+(define-public srtodo-git
+  (package
+    (inherit srtodo-git)
+    (name "srtodo-git")))
+
+(define-public btrfs-desktop-notification-git
+  (package
+    (inherit btrfs-desktop-notification-git)
+    (name "btrfs-desktop-notification-git")))
+
+(define-public lunarvim-git
+  (package
+    (inherit lunarvim-git)
+    (name "lunarvim-git")))
+
+(define-public go-prism
+  (package
+    (inherit go-prism)
+    (name "go-prism")))
+
+(define-public gnome-shell-extension-space-bar-git
+  (package
+    (inherit gnome-shell-extension-space-bar-git)
+    (name "gnome-shell-extension-space-bar-git")))
+
+(define-public python-zxing-cpp
+  (package
+    (inherit python-zxing-cpp)
+    (name "python-zxing-cpp")))
+
+(define-public hid-velocityone-multi-shift
+  (package
+    (inherit hid-velocityone-multi-shift)
+    (name "hid-velocityone-multi-shift")))
