@@ -6095,3 +6095,21 @@
                procomp
                wandoo
                ))
+
+;; recipe-resolver-260417aw (12 recipes, 18 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417aw)
+  #:re-export (
+               tmux-plugin-manager
+               pwnat
+               ossp
+               font-kopub
+               shimmer-wallpapers
+               cachyos-ananicy-rules
+               dosh
+               domake
+               nodenv-node-build
+               barify
+               grub2-theme-preview
+               authselect
+               ))

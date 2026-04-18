@@ -4351,6 +4351,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 559. streamcontroller-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: recipe in deptree-resolver-260415t.scm (streamcontroller-git, pyproject-build-system) [deptree-resolver-260415t]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_PYTHON_DEPS: Elgato Stream Deck GTK4 app; A1: meson build — needs 20+ Python deps including HID/USB bindings not in Guix; A2: pip wrapper — plugin system requires dynamic imports; A3: flatpak extract — proprietary runtime components (recipe-resolver-260417aw)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -19456,6 +19457,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 2536. crosspipe-git
    - Source List: AUR
    - Status: DONE: already packaged as crosspipe-git (discovered deptree-resolver-260414m)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (ossp v1.3.3, C cmake-build-system, GPL-2.0)
    - Difficulty: auto
    - TODO Status: DONE
 
@@ -38015,6 +38017,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4714. neoarch-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Arch Linux package manager GUI depending on pacman/flatpak/npm; A1: Python/PyQt6 build — requires pacman for core operations; A2: strip pacman dep — breaks all functionality; A3: no utility on non-Arch systems (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38030,6 +38033,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4716. fish-lsp-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NODE_JS_COMPLEX: TypeScript/yarn LSP server; A1: node-build-system — yarn workspace build not supported; A2: npm2guix import — deep dependency tree unresolvable; A3: pre-built binary — no Linux releases published (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38070,6 +38074,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4721. coolerdash-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: CoolerControl LCD plugin; A1: C/make build — requires coolercontrol (not in Guix, complex Rust app); A2: package coolercontrol first — 100+ cargo deps; A3: standalone build — impossible without coolercontrol API (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38077,6 +38082,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4722. screenpipe-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: binary-only; assess redistribution terms; fetch Linux binary from GitHub releases]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: LICENSE_UNCLEAR: 24/7 screen/audio capture AI tool; A1: binary wrapper — redistribution terms not assessed, MIT but bundled deps unclear; A2: source build — Rust + Tauri + 200+ crate deps; A3: AppImage extract — same license concerns (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38084,6 +38090,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4723. boca
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: fre:ac component library; A1: make build — requires smooth library (not in Guix, same author); A2: package smooth first — complex C++ multimedia lib; A3: static link — smooth API tightly coupled (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38146,6 +38153,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4731. wsdd-native
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: SYSTEMD_SPECIFIC: WS-Discovery daemon; A1: cmake build — requires libsystemd headers for service management; A2: strip systemd dep — loses daemon functionality; A3: use wsdd Python alternative — also needs systemd for service (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38161,6 +38169,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4733. vesta
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_LICENSE: crystallography visualization; A1: binary wrapper — custom academic license, redistribution terms unclear; A2: source build — no source code published; A3: conda package — same license restrictions apply (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38175,6 +38184,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4735. bisq-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: JAVA_COMPLEX: decentralized exchange; A1: JAR wrapper — requires JavaFX 22+ not in Guix; A2: Gradle source build — 200+ Java deps, custom build system; A3: binary repack — bundled JRE creates 500MB+ package (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38196,6 +38206,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4738. hypryou-greeter
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: Hyprland Material You greeter; A1: config file install — trivial but requires hypryou (not in Guix); A2: package hypryou — requires full Hyprland ecosystem (20+ deps); A3: standalone greeter — non-functional without Hyprland (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38203,6 +38214,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4739. snx-rs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CARGO_DEPS_NEEDED: Checkpoint VPN Rust client; A1: cargo-build-system — needs 80+ crate deps enumerated; A2: pre-built binary — none published for Linux; A3: requires webkitgtk-6.0 + libayatana-appindicator not in Guix (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38210,6 +38222,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4740. nodejs-fast-cli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NODE_JS_COMPLEX: Netflix speed test CLI; A1: node-build-system — deep npm dependency tree; A2: npm bundle — puppeteer/chromium runtime dep; A3: standalone binary — not published (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38226,6 +38239,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4742. yay-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: AUR helper; A1: Go build — depends on pacman/libalpm C library; A2: mock pacman — breaks core AUR functionality; A3: no utility on non-Arch systems (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38233,6 +38247,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4743. sysc-greet
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: greetd ASCII greeter; A1: Go build — requires greetd + niri + gslapper (none in Guix); A2: pre-built binary — not published; A3: package greetd first — significant scope (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38256,6 +38271,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4746. quran-companion
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: QT6_COMPLEX: desktop Quran reader; A1: cmake build — requires Qt6 + QuaZIP + custom audio engine; A2: AppImage — 150MB+ bundle; A3: pre-built binary — requires fuse2 runtime (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38301,6 +38317,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4752. monado-vulkan-layers-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: OpenXR Vulkan layers; A1: cmake build — requires monado runtime headers (not fully in Guix); A2: standalone layer — needs monado IPC interface; A3: pre-built — no binary releases (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38448,6 +38465,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4772. gelly
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: CARGO_DEPS_NEEDED: Jellyfin music player; A1: cargo-build-system — needs GTK4/libadwaita + GStreamer crate bindings (50+ crates); A2: pre-built binary — not published; A3: flatpak extract — no flatpak available (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -38455,6 +38473,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4773. tmux-plugin-manager
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: mapped to Guix tmux 3.6a via queue-20260324p100b alias; validated derivation via `guix build -L guix -n tmux-plugin-manager`.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (tmux-plugin-manager v3.1.0, shell scripts copy-build-system, MIT)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -38506,6 +38525,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4780. networkd-dispatcher
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: SYSTEMD_SPECIFIC: systemd-networkd event dispatcher; A1: Python build — functional but dispatches on systemd-networkd D-Bus events only; A2: adapt for NetworkManager — requires significant code changes; A3: no utility on Guix System which uses Shepherd (recipe-resolver-260417aw)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39410,6 +39430,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4896. authselect
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — PAM/SSSD profile config C cmake; https://github.com/authselect/authselect; stub added.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (authselect v1.7.1, C/autotools gnu-build-system, GPL-3.0)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -39530,6 +39551,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4910. nodenv-node-build
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — nodenv node-build shell plugin; https://github.com/nodenv/node-build; stub added.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (nodenv-node-build v5.4.34, shell plugin copy-build-system, MIT)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39765,6 +39787,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4941. pwnat
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — NAT-to-NAT tool; fetch source tarball, compute sha256, draft recipe; Source: https://sa.my/pwnat/. Stub exported in queue-20260324p100d.scm.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (pwnat v0.3.0, C/Make gnu-build-system, GPL-3.0+)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39986,6 +40009,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4972. barify
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Volume/brightness bar via libnotify; fetch source, audit build, draft recipe; Source: https://github.com/arctize/barify. Stub exported in queue-20260324p100d.scm.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (barify v1.2, shell script copy-build-system, GPL-3.0)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -40592,6 +40616,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5049. cachyos-ananicy-rules
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: Data files only; Next: draft trivial-build-system recipe installing rules to /etc/ananicy.d/.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (cachyos-ananicy-rules v1.1.34, data copy-build-system, GPL-3.0)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -41792,6 +41817,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5209. otf-kopub
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: trivial-build-system OTF font install; fetch from kopus.org; Source: https://www.kopus.org/biz-electronic-font2
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (font-kopub v2.0, Korean OTF fonts copy-build-system, KoPub license)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -42404,6 +42430,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: NEEDS_RECIPE_DESIGN: stub in deptree-r21-w01.scm; needs full recipe design (deptree-r21 run, 2026-04-06).
    - Status: Resolved in deptree-resolver-260407.scm with real Guix recipe (2026-04-07)
    - Status: DONE: Recipe in queue-20260325p100c.scm (resolved deptree-resolver batch 2026-04-07).
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (domake v3, shell gnu-build-system, LGPL-2.1+)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -42465,6 +42492,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
    - Status: DONE: Recipe added in deptree-resolver-260414q.scm (dosh v8, gnu-build-system) (deptree-resolver-260414q)
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (dosh v8, shell gnu-build-system, LGPL-2.1+)
 
 
 ** DONE 5299. dosh-docker-shell
@@ -42580,6 +42608,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5314. grub2-theme-preview
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED NEEDS_RECIPE_DESIGN: GRUB2 theme preview; Python script; hartwork/grub2-theme-preview; dep: QEMU.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (grub2-theme-preview v2.9.1, Python pyproject-build-system, GPL-2.0+)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -42842,6 +42871,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5347. shimmer-wallpapers
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: NEEDS_RECIPE_DESIGN: trivial wallpaper install; pin git commit ba134cb; http://shimmerproject.org.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417aw.scm (shimmer-wallpapers git-ba134cb, wallpaper data copy-build-system, CC-BY-SA-3.0)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 

@@ -457,6 +457,7 @@
   #:use-module (gaurix packages recipe-resolver-260417aq)
   #:use-module (gaurix packages recipe-resolver-260417as)
   #:use-module (gaurix packages recipe-resolver-260417av)
+  #:use-module (gaurix packages recipe-resolver-260417aw)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9513,3 +9514,17 @@
 (re-export nqptp)
 (re-export procomp)
 (re-export wandoo)
+
+;;; recipe-resolver-260417aw
+(re-export tmux-plugin-manager)
+(re-export pwnat)
+(re-export ossp)
+(re-export font-kopub)
+(re-export shimmer-wallpapers)
+(re-export cachyos-ananicy-rules)
+(re-export dosh)
+(re-export domake)
+(re-export nodenv-node-build)
+(re-export barify)
+(re-export grub2-theme-preview)
+(re-export authselect)
