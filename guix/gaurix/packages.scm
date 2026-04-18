@@ -16,6 +16,7 @@
             ;; recipe-resolver-260417ab (14 NRD resolved, 16 BLOCKED)
             ;; recipe-resolver-260417ae (27 NRD resolved, 3 BLOCKED)
             ;; deptree-resolver-260417ah (7 BLOCKED resolved: 6 new recipes + deps, 1 ALREADY_IN_GUIX)
+            ;; recipe-resolver-260417au: 30 NRD resolved (dasel-bin, jjui-bin, dust-bin, tre-command-bin, dupe-krill-bin, fstl, neovim-plenary, ...)
             auto-cpufreq
             backintime-git
             hydrus-network
@@ -6048,3 +6049,23 @@
                vscodium-bin-marketplace
                ipfs-desktop
                apparmor-d-git))
+
+;; recipe-resolver-260417au (30 NRD resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417au)
+  #:re-export (deepchat-bin
+               ripes-bin
+               paket-bin
+               freeshow-bin
+               kanri-bin
+               vcard-studio-bin
+               youtube-tui-full-bin
+               clojure-lsp-bin
+               pandoc-crossref-bin
+               console2svg-bin
+               wo-bin
+               funzzy-bin
+               oken-bin
+               workz-bin
+               tmux-plugin-panel-bin
+               ))
