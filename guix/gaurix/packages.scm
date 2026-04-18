@@ -6119,6 +6119,20 @@
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260417ax)
   #:re-export (
+  ;; deptree-resolver-260418a (13 packages)
+  (re-export python-terminaltables3)
+  (re-export python-keep)
+  (re-export arcticons-icon-theme)
+  (re-export chipwhisperer-udev)
+  (re-export openrgb-udev-rules)
+  (re-export catppuccin-mocha-grub-theme)
+  (re-export flandre-grub-theme)
+  (re-export sddm-lain-wired-theme)
+  (re-export multicolor-sddm-theme)
+  (re-export nwg-wrapper)
+  (re-export howdoi)
+  (re-export rsvndump)
+  (re-export ubuntu-wallpapers)
                tcping
                conserver
                sixpair
