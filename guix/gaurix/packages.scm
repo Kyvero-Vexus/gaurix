@@ -6704,3 +6704,83 @@
                prefixer
                appimagelauncher-bin
                millennium-bin))
+
+;; recipe-resolver-260418p (75 NRD resolved, 25 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418p)
+  #:re-export (otf-alegreya
+               ttf-alegreya
+               otf-bebas-neue
+               otf-gnutypewriter
+               otf-chunk
+               otf-chomsky
+               otf-churchslavonic
+               otf-exo
+               otf-lalezar
+               ttf-lalezar
+               otf-compagnon
+               otf-daubenton
+               ttf-daubenton
+               otf-drafting
+               otf-montagu-slab
+               otf-zilla-slab
+               otf-yanone-kaffeesatz
+               otf-shantell-sans
+               otf-fanwood
+               otf-sn-pro
+               otf-kermit
+               ttf-old-timey-mono
+               otf-secuela
+               ttf-geosans-light
+               woff2-intel-one-mono
+               otf-beowulfot
+               otf-lora-cyrillic
+               ttf-lora-cyrillic
+               otf-marta
+               otf-ronduit-capitals
+               otf-srbija-sans
+               ttf-shantell-sans-variable
+               ttf-secuela
+               ttf-secuela-variable
+               afetch
+               amfora
+               clipse
+               pplatex
+               bdsync
+               zram-init
+               opentracker
+               wxhexeditor
+               pnginfo
+               mkcue
+               hashes
+               artha
+               protoscope
+               tor-ctrl
+               dong
+               boatswain
+               lnk
+               memorize
+               ponysay
+               colorsearch
+               newscheck
+               highscore
+               flam3
+               crengine-ng
+               ocesql
+               idsk
+               refind-btrfs
+               gsocket
+               python-obsws
+               python-pywavefront
+               mkdocs-exclude
+               dnstwist
+               python-rtslib-fb
+               aspell-dict-sl
+               aspell-dict-sr
+               fortune-mod-bofh-excuses
+               fortune-mod-vimtips
+               funny-manpages
+               hunspell-ru-aot
+               hyphen-pl
+               words-sv
+               ))

@@ -119163,16 +119163,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Rust/Cargo + wayland; hash=05hklni7ai2j11hvbawljrnr6hcn0zzwvkb2isrd5laqp1v9gz2n (recipe-resolver-260417av)
    - TODO Status: BLOCKED
    - Status: DONE: recipe in deptree-resolver-260417av.scm (sunsetr v0.11.1, binary-tarball)
-** TODO 15493. sway-desktop-env-hook
+** BLOCKED 15493. sway-desktop-env-hook
    - AUR votes: 1, popularity: 1.0000
    - Note: Adds XDG_CURRENT_DESKTOP, XDG_SESSION_DESKTOP and XDG_SESSION_TYPE definitions to sway.desktop!
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: pacman hook; Arch-specific post-install hook not applicable to Guix; Guix uses service declarations; no portable source to package (recipe-resolver-260418p)
 
 
-** TODO 15494. sway-desktop-unsupportedgpu-hook
+** BLOCKED 15494. sway-desktop-unsupportedgpu-hook
    - AUR votes: 1, popularity: 1.0000
    - Note: Adds --unsupported-gpu to sway.desktop!
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: pacman hook; Arch-specific pacman hook for GPU detection; not a standalone package; functionality handled by Guix services (recipe-resolver-260418p)
 
 
 ** DONE 15495. talanoa-bin
@@ -119248,10 +119250,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED — NEEDS_RECIPE_DESIGN — no AUR metadata cached; requires upstream research
    - Status: DONE: recipe in deptree-resolver-260417as.scm (uzdoom-bin, v4.14.3, RECIPE: Guix recipe created (binary-appimage))
    - TODO Status: DONE
-** TODO 15505. vesktop-spoof-pacman-hook
+** BLOCKED 15505. vesktop-spoof-pacman-hook
    - AUR votes: 1, popularity: 1.0000
    - Note: Adds '--user-agent-os windows' to the desktop file after vesktop updates, for those using VPNs being blocked by Discord's recent Linux VPN bans!
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: pacman hook; Arch-specific pacman hook for Vesktop; not a standalone package; no equivalent concept in Guix (recipe-resolver-260418p)
 
 
 ** DONE 15506. volt-bin
@@ -119788,10 +119791,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15581. lib32-vulkan-icd-loader-git
+** BLOCKED 15581. lib32-vulkan-icd-loader-git
    - AUR votes: 1, popularity: 0.0160
    - Note: Vulkan Installable Client Driver (ICD) Loader (32-bit) (git version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; Guix does not support 32-bit compatibility libraries; would require cross-compilation infrastructure (recipe-resolver-260418p)
 
 
 ** DONE 15582. gittyup-appimage
@@ -120138,10 +120142,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15631. looking-glass-module-dkms-git
+** BLOCKED 15631. looking-glass-module-dkms-git
    - AUR votes: 15, popularity: 0.0093
    - Note: A kernel module that implements a basic interface to the IVSHMEM device for when using LookingGlass in VM->VM mode
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel modules require kernel build infrastructure; Guix handles kernel modules via operating-system config (recipe-resolver-260418p)
 
 
 ** DONE 15632. obs-plugin-looking-glass-git
@@ -120256,10 +120261,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `glibc` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 15649. lib32-glibc-git
+** BLOCKED 15649. lib32-glibc-git
    - AUR votes: 6, popularity: 0.0091
    - Note: GNU C Library (32-bit) (git version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; Guix does not support 32-bit compatibility glibc; fundamental architecture mismatch with Guix model (recipe-resolver-260418p)
 
 
 ** DONE 15650. nats-server-bin
@@ -120984,10 +120990,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 15757. ddcci-driver-linux-dkms-git
+** BLOCKED 15757. ddcci-driver-linux-dkms-git
    - AUR votes: 3, popularity: 0.0054
    - Note: A pair of Linux kernel drivers for DDC/CI monitors (DKMS) - git version
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel module for DDC/CI monitor control; requires kernel headers and DKMS infrastructure (recipe-resolver-260418p)
 
 
 ** DONE 15758. brunsli
@@ -122088,10 +122095,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 15919. com.qq.weixin.work.deepin
+** BLOCKED 15919. com.qq.weixin.work.deepin
    - AUR votes: 10, popularity: 0.0049
    - Note: Deepin Wine 版企业微信 | Deepin-wine Wecom
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Deepin Wine wrapper; requires Deepin Wine compatibility layer not in Guix; proprietary WeChat Work binary (recipe-resolver-260418p)
 
 
 ** DONE 15920. corepdf
@@ -122277,10 +122285,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 15946. homeassistant-supervised
+** BLOCKED 15946. homeassistant-supervised
    - AUR votes: 6, popularity: 0.0047
    - Note: Home Assistant Supervised
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires systemd+Docker; Home Assistant Supervised depends on systemd; Guix System uses Shepherd not systemd (recipe-resolver-260418p)
 
 
 ** DONE 15947. naabu-bin  :recipe-resolver-260417ae:recipe-generated:
@@ -122876,10 +122885,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16033. pnginfo-git
+** DONE 16033. pnginfo-git
    - AUR votes: 1, popularity: 0.0044
    - Note: The pnginfo utility explores the content of PNG files.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (pnginfo, go-build-system, v1.0, expat) (recipe-resolver-260418p)
 
 
 ** DONE 16034. icu75
@@ -123087,16 +123097,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16064. linux-zencjk
+** BLOCKED 16064. linux-zencjk
    - AUR votes: 6, popularity: 0.0042
    - Note: The Linux ZEN (with cjktty patch) kernel and modules
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: custom kernel; custom Linux kernel variant with CJK patches; requires full kernel build infrastructure (recipe-resolver-260418p)
 
 
-** TODO 16065. linux-zencjk-headers
+** BLOCKED 16065. linux-zencjk-headers
    - AUR votes: 6, popularity: 0.0042
    - Note: Headers and scripts for building modules for the Linux ZEN (with cjktty patch) kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: depends on linux-zencjk; kernel headers coupled to kernel build; blocked on parent kernel package (recipe-resolver-260418p)
 
 
 ** TODO 16066. pi-hole-core
@@ -123366,10 +123378,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16106. corefreq-dkms
+** BLOCKED 16106. corefreq-dkms
    - AUR votes: 9, popularity: 0.0039
    - Note: CoreFreq - kernel module sources
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel module for CPU monitoring; requires kernel headers; Guix handles kernel modules differently (recipe-resolver-260418p)
 
 
 ** DONE 16107. corefreq-server
@@ -123525,10 +123538,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16130. gpd-fan-driver-dkms-git
+** BLOCKED 16130. gpd-fan-driver-dkms-git
    - AUR votes: 3, popularity: 0.0039
    - Note: Fan hwmon speed report and speed control driver for GPD Win Mini, GPD Win Max2 and GPD Win 4 laptops. Latest git checkout. Includes a command line control utility.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS driver for GPD device fan control; out-of-tree module not supported in standard Guix packaging (recipe-resolver-260418p)
 
 
 ** DONE 16131. goldendict-ng-git
@@ -123545,10 +123559,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16133. hid-asus-mouse-dkms-git
+** BLOCKED 16133. hid-asus-mouse-dkms-git
    - AUR votes: 1, popularity: 0.0039
    - Note: HID driver for ASUS ROG & TUF mice providing generation of keyboard events.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS driver for ASUS mouse HID devices; Guix handles drivers via operating-system config (recipe-resolver-260418p)
 
 
 ** DONE 16134. libuv-git
@@ -123620,10 +123635,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `pipemixer` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 16145. pplatex
+** DONE 16145. pplatex
    - AUR votes: 1, popularity: 0.0039
    - Note: A tool to reformat the output of latex and friends into readable messages.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (pplatex, cmake-build-system, v1.2, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16146. proxmark3gui-git
@@ -123675,10 +123691,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16154. lib32-wayland-git
+** BLOCKED 16154. lib32-wayland-git
    - AUR votes: 1, popularity: 0.0039
    - Note: A computer display server protocol (32-bit, development version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; 32-bit Wayland library; Guix does not support multilib; use native architecture package (recipe-resolver-260418p)
 
 
 ** DONE 16155. trios-bin
@@ -123735,10 +123752,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16163. gentoo-sources
+** BLOCKED 16163. gentoo-sources
    - AUR votes: 1, popularity: 0.0039
    - Note: 🌊 Linux kernel sources with gentoo patches installed to /usr/src/linux-6.15 🌊
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Gentoo kernel sources; Gentoo-specific kernel source packaging; not applicable to Guix (recipe-resolver-260418p)
 
 
 ** DONE 16164. pmcl-bin
@@ -123749,10 +123767,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16165. snd-pcsp-dkms
+** BLOCKED 16165. snd-pcsp-dkms
    - AUR votes: 3, popularity: 0.0039
    - Note: An in-tree driver for the PC speaker which allows it to act like a primitive sound card (DKMS)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS kernel module for PC speaker sound; requires kernel headers (recipe-resolver-260418p)
 
 
 ** TODO 16166. libakonadi5
@@ -124160,10 +124179,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `marco` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 16230. newscheck
+** DONE 16230. newscheck
    - AUR votes: 1, popularity: 0.0038
    - Note: Yet another Arch Linux news reader
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (newscheck, copy-build-system, v1.0.0, gpl2+) (recipe-resolver-260418p)
 
 
 ** DONE 16231. anarch-bin
@@ -124186,16 +124206,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16234. afetch
+** DONE 16234. afetch
    - AUR votes: 2, popularity: 0.0038
    - Note: A fetch program written in C
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (afetch, gnu-build-system, v2.1.0, expat) (recipe-resolver-260418p)
 
 
-** TODO 16235. crengine-ng
+** DONE 16235. crengine-ng
    - AUR votes: 2, popularity: 0.0038
    - Note: crengine-ng is cross-platform library designed to implement text viewers and e-book readers
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (crengine-ng, cmake-build-system, v0.9.8, gpl2+) (recipe-resolver-260418p)
 
 
 ** TODO 16236. shit
@@ -124260,10 +124282,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260417ad.scm (qp-bin v5.108.0, copy-build-system, GPL-3.0)
 
-** TODO 16246. otf-fanwood
+** DONE 16246. otf-fanwood
    - AUR votes: 2, popularity: 0.0037
    - Note: A serif font based on the work of a famous Czech-American type designer of yesteryear.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-fanwood, copy-build-system, v1.1, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16247. gibo-bin
@@ -124566,10 +124589,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16293. python-google-cloud-texttospeech
+** BLOCKED 16293. python-google-cloud-texttospeech
    - AUR votes: 1, popularity: 0.0034
    - Note: Google Cloud Texttospeech API client library.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: deep Google Cloud deps; 20+ transitive Google dependencies not in Guix; heavy cloud SDK dependency tree (recipe-resolver-260418p)
 
 
 ** TODO 16294. testssl.sh-git
@@ -124590,10 +124614,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16297. php-phalcon
+** BLOCKED 16297. php-phalcon
    - AUR votes: 20, popularity: 0.0033
    - Note: Web framework delivered as a C-extension for PHP
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: VMware variant; proprietary VMware Workstation with kernel patches; requires DKMS kernel modules (recipe-resolver-260418p)
 
 
 ** DONE 16298. cutechess
@@ -124628,16 +124653,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16303. linux-bcachefs-git
+** BLOCKED 16303. linux-bcachefs-git
    - AUR votes: 17, popularity: 0.0033
    - Note: The Linux kernel and modules ~ featuring Kent Overstreet's bcachefs filesystem
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: custom kernel; Linux kernel with bcachefs filesystem patches; full kernel build infrastructure required (recipe-resolver-260418p)
 
 
-** TODO 16304. linux-bcachefs-git-headers
+** BLOCKED 16304. linux-bcachefs-git-headers
    - AUR votes: 17, popularity: 0.0033
    - Note: Headers and scripts for building modules for the Linux kernel ~ featuring Kent Overstreet's bcachefs filesystem
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: depends on linux-bcachefs-git; kernel headers blocked on parent kernel package (recipe-resolver-260418p)
 
 
 ** TODO 16305. sview-git
@@ -124666,10 +124693,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16309. protoscope
+** DONE 16309. protoscope
    - AUR votes: 1, popularity: 0.0033
    - Note: A simple language to represent and emit the Protobuf wire format.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (protoscope, go-build-system, v0.3.1, asl2.0) (recipe-resolver-260418p)
 
 
 ** TODO 16310. ptr89-git
@@ -124707,10 +124735,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16315. hyphen-pl
+** DONE 16315. hyphen-pl
    - AUR votes: 4, popularity: 0.0033
    - Note: Polish hyphenation rules
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (hyphen-pl, copy-build-system, v4.0, lgpl2.1+) (recipe-resolver-260418p)
 
 
 ** TODO 16316. firefox-stylus
@@ -124758,10 +124787,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16323. words-sv
+** DONE 16323. words-sv
    - AUR votes: 1, popularity: 0.0033
    - Note: A wordlist of swedish words for /usr/share/dict
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (words-sv, copy-build-system, v2.0, lgpl2.1+) (recipe-resolver-260418p)
 
 
 ** DONE 16324. otf-intel-one-mono
@@ -124782,10 +124812,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `font-intel-one-mono` (woff->font); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 16327. woff2-intel-one-mono
+** DONE 16327. woff2-intel-one-mono
    - AUR votes: 20, popularity: 0.0033
    - Note: Expressive monospaced font family that’s built with clarity, legibility, and the needs of developers in mind
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (woff2-intel-one-mono, copy-build-system, v1.4.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16328. cht.sh-git
@@ -124841,10 +124872,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16336. colorsearch
+** DONE 16336. colorsearch
    - AUR votes: 1, popularity: 0.0033
    - Note: Search files by name and dominant color in images and videos
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (colorsearch, copy-build-system, v0.1.0, expat) (recipe-resolver-260418p)
 
 
 ** TODO 16337. dbibackend
@@ -124884,28 +124916,32 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16343. aspell-sl
+** DONE 16343. aspell-sl
    - AUR votes: 13, popularity: 0.0033
    - Note: Slovene dictionary for aspell
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (aspell-dict-sl, gnu-build-system, v0.60.0, lgpl2.1+) (recipe-resolver-260418p)
 
 
-** TODO 16344. otf-alegreya
+** DONE 16344. otf-alegreya
    - AUR votes: 12, popularity: 0.0033
    - Note: An elegant and versatile type family for comfortable reading (serif sub-family of the Alegreya "super family") (OTF version)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-alegreya, copy-build-system, v2.009, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16345. ttf-alegreya
+** DONE 16345. ttf-alegreya
    - AUR votes: 12, popularity: 0.0033
    - Note: An elegant and versatile type family for comfortable reading (serif sub-family of the Alegreya "super family") (TTF version)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-alegreya, copy-build-system, v2.009, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16346. aspell-sr
+** DONE 16346. aspell-sr
    - AUR votes: 10, popularity: 0.0033
    - Note: Serbian dictionary for aspell
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (aspell-dict-sr, gnu-build-system, v0.02, lgpl2.1+) (recipe-resolver-260418p)
 
 
 ** TODO 16347. pterodactyl-panel
@@ -124914,10 +124950,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16348. otf-bebas-neue-git
+** DONE 16348. otf-bebas-neue-git
    - AUR votes: 6, popularity: 0.0033
    - Note: Sans-serif display font for headline, caption, and titling
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-bebas-neue, copy-build-system, v2.000, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16349. bgpq4
@@ -124939,10 +124976,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16352. hashes
+** DONE 16352. hashes
    - AUR votes: 1, popularity: 0.0033
    - Note: Simple hash algorithm identification GUI using GTK4+Adwaita
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (hashes, meson-build-system, v0.1.0, gpl3+) (recipe-resolver-260418p)
 
 
 ** DONE 16353. hyprmag-git
@@ -125006,16 +125044,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16363. artha
+** DONE 16363. artha
    - AUR votes: 86, popularity: 0.0033
    - Note: A free cross-platform English thesaurus based on WordNet
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (artha, gnu-build-system, v1.0.5, gpl2+) (recipe-resolver-260418p)
 
 
-** TODO 16364. otf-gnutypewriter
+** DONE 16364. otf-gnutypewriter
    - AUR votes: 15, popularity: 0.0033
    - Note: A free font imitating a real typewriter.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-gnutypewriter, copy-build-system, v20120115, gpl3+) (recipe-resolver-260418p)
 
 
 ** DONE 16365. sddm-lain-wired-theme  :deptree-resolver-260418a:RECIPE
@@ -125034,10 +125074,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16367. otf-chunk
+** DONE 16367. otf-chunk
    - AUR votes: 4, popularity: 0.0033
    - Note: An ultra-bold, ultra-awesome slab serif typeface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-chunk, copy-build-system, v1.000, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16368. pomodoro-logger
@@ -125046,16 +125087,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16369. otf-chomsky
+** DONE 16369. otf-chomsky
    - AUR votes: 3, popularity: 0.0033
    - Note: A font in the style of the New York Times masthead
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-chomsky, copy-build-system, v1.2.1, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16370. otf-churchslavonic
+** DONE 16370. otf-churchslavonic
    - AUR votes: 2, popularity: 0.0033
    - Note: Unicode-encoded OpenType fonts for Church Slavonic
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-churchslavonic, copy-build-system, v3.1, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16371. seqdiag
@@ -125077,34 +125120,39 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16374. otf-exo
+** DONE 16374. otf-exo
    - AUR votes: 9, popularity: 0.0033
    - Note: A geometric sans serif font with a technological feel
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-beowulfot, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16375. otf-lora-cyrillic
+** DONE 16375. otf-lora-cyrillic
    - AUR votes: 5, popularity: 0.0033
    - Note: Serif family for text with Cyrillic support
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-exo, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16376. ttf-lora-cyrillic
+** DONE 16376. ttf-lora-cyrillic
    - AUR votes: 5, popularity: 0.0033
    - Note: Serif family for text with Cyrillic support
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-lora-cyrillic, copy-build-system, v3.005, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16377. ttf-lora-cyrillic-variable
+** DONE 16377. ttf-lora-cyrillic-variable
    - AUR votes: 5, popularity: 0.0033
    - Note: Serif family for text with Cyrillic support
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-lora-cyrillic, copy-build-system, v3.005, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16378. zram-init
+** DONE 16378. zram-init
    - AUR votes: 4, popularity: 0.0033
    - Note: Setup zram-based tmpfs and swap (compressed RAM devices)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (zram-init, copy-build-system, v12.2, gpl2+) (recipe-resolver-260418p)
 
 
 ** TODO 16379. eot-lalezar
@@ -125113,16 +125161,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16380. otf-lalezar
+** DONE 16380. otf-lalezar
    - AUR votes: 3, popularity: 0.0033
    - Note: A multi-script display typeface for popular culture.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-lalezar, copy-build-system, v1.000, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16381. otf-marta
+** DONE 16381. otf-marta
    - AUR votes: 3, popularity: 0.0033
    - Note: Eclectic, accidental-text font with wedge serifs.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-marta, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16382. ttf-lalezar
@@ -125131,10 +125181,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16383. woff-lalezar
+** DONE 16383. woff-lalezar
    - AUR votes: 3, popularity: 0.0033
    - Note: A multi-script display typeface for popular culture.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-lalezar, copy-build-system, v1.000, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16384. woff2-lalezar
@@ -125155,22 +125206,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16387. otf-daubenton
+** DONE 16387. otf-daubenton
    - AUR votes: 2, popularity: 0.0033
    - Note: A serif typeface based on engravings on the façade of the Paris Natural History Museum
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-compagnon, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16388. ttf-daubenton
+** DONE 16388. ttf-daubenton
    - AUR votes: 2, popularity: 0.0033
    - Note: A serif typeface based on engravings on the façade of the Paris Natural History Museum
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-daubenton, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16389. cosmos-disks-git
+** DONE 16389. cosmos-disks-git
    - AUR votes: 1, popularity: 0.0033
    - Note: Disk management utility for the COSMIC™ desktop
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-daubenton, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16390. otf-drafting
@@ -125179,16 +125233,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16391. otf-montagu-slab
+** DONE 16391. otf-montagu-slab
    - AUR votes: 1, popularity: 0.0033
    - Note: a slab-serif display typeface by Florian Karsten inspired by from 19th-century classic designs with weight and optical size axis
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-drafting, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16392. ttf-drafting
+** DONE 16392. ttf-drafting
    - AUR votes: 1, popularity: 0.0033
    - Note: A monospace font by indestructible type inspired by typewriters
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-montagu-slab, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16393. ttf-drafting-variable
@@ -125215,16 +125271,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16397. otf-yanone-kaffeesatz
+** DONE 16397. otf-yanone-kaffeesatz
    - AUR votes: 4, popularity: 0.0033
    - Note: Reminiscent of 1920s coffee house typography, bridges the gap to present times (OTF)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-zilla-slab, copy-build-system, v1.002, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16398. otf-yanone-kaffeesatz-infinality
+** DONE 16398. otf-yanone-kaffeesatz-infinality
    - AUR votes: 4, popularity: 0.0033
    - Note: Reminiscent of 1920s coffee house typography, bridges the gap to present times (OTF infinality configuration files)
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-yanone-kaffeesatz, copy-build-system, v2.004, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16399. ttf-yanone-kaffeesatz
@@ -125247,10 +125305,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16402. otf-ronduit-capitals
+** DONE 16402. otf-ronduit-capitals
    - AUR votes: 2, popularity: 0.0033
    - Note: An elegant modular display typeface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-ronduit-capitals, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16403. ltfs-git
@@ -125259,16 +125318,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16404. otf-shantell-sans
+** DONE 16404. otf-shantell-sans
    - AUR votes: 1, popularity: 0.0033
    - Note: a marker-style font built for creative expression, typographic play, and animation
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-shantell-sans, copy-build-system, v1.010, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16405. otf-srbija-sans
+** DONE 16405. otf-srbija-sans
    - AUR votes: 1, popularity: 0.0033
    - Note: Srbija Sans Font - sans serif typeface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-srbija-sans, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16406. rustowl
@@ -125284,10 +125345,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16408. ttf-shantell-sans-variable
+** DONE 16408. ttf-shantell-sans-variable
    - AUR votes: 1, popularity: 0.0033
    - Note: a marker-style font built for creative expression, typographic play, and animation
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-shantell-sans-variable, copy-build-system, v1.010, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16409. wayback_machine_downloader
@@ -125297,10 +125359,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16410. gsocket-git
+** DONE 16410. gsocket-git
    - AUR votes: 2, popularity: 0.0033
    - Note: Allows two users behind NAT/Firewall to establish a TCP connection with each other.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (gsocket, gnu-build-system, v1.4.43, bsd-2) (recipe-resolver-260418p)
 
 
 ** TODO 16411. extracker-git
@@ -125309,10 +125372,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16412. ocesql
+** DONE 16412. ocesql
    - AUR votes: 1, popularity: 0.0033
    - Note: SQL pre-compiler for cobol
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ocesql, gnu-build-system, v1.3.1, lgpl2.1+) (recipe-resolver-260418p)
 
 
 ** DONE 16413. timewall
@@ -125377,10 +125441,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16422. python-obsws
+** DONE 16422. python-obsws
    - AUR votes: 1, popularity: 0.0033
    - Note: A Python SDK for OBS Studio WebSocket v5.0
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (python-obsws, pyproject-build-system, v1.0, expat) (recipe-resolver-260418p)
 
 
 ** DONE 16423. python-mapbox-earcut
@@ -125402,10 +125467,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16426. opentracker
+** DONE 16426. opentracker
    - AUR votes: 9, popularity: 0.0033
    - Note: A free and open torrent tracker
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (opentracker, gnu-build-system, v0.0.1, isc) (recipe-resolver-260418p)
 
 
 ** DONE 16427. python-pyrr
@@ -125429,10 +125495,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16430. python-pywavefront
+** DONE 16430. python-pywavefront
    - AUR votes: 1, popularity: 0.0033
    - Note: Python library for importing Wavefront .obj files
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (python-pywavefront, pyproject-build-system, v1.3.3, bsd-3) (recipe-resolver-260418p)
 
 
 ** DONE 16431. oracle-instantclient-basic
@@ -125468,10 +125535,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `blackbox-terminal` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 16436. refind-btrfs
+** DONE 16436. refind-btrfs
    - AUR votes: 13, popularity: 0.0033
    - Note: Generate rEFInd manual boot stanzas from Btrfs snapshots
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (refind-btrfs, pyproject-build-system, v0.7.0, gpl3+) (recipe-resolver-260418p)
 
 
 ** DONE 16437. quiet-desktop-bin
@@ -125594,10 +125662,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16455. fortune-mod-bofh-excuses
+** DONE 16455. fortune-mod-bofh-excuses
    - AUR votes: 67, popularity: 0.0032
    - Note: BOFH excuses fortune cookie files
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (fortune-mod-bofh-excuses, copy-build-system, v1.2, public-domain) (recipe-resolver-260418p)
 
 
 ** TODO 16456. edu-sync
@@ -125815,10 +125884,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16489. funny-manpages
+** DONE 16489. funny-manpages
    - AUR votes: 54, popularity: 0.0030
    - Note: A set of miscellaneous humorous manpages (don't take them too seriously!).
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (funny-manpages, copy-build-system, v1.3, public-domain) (recipe-resolver-260418p)
 
 
 ** DONE 16490. autobrr-bin
@@ -125829,10 +125899,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16491. lib32-libxpm
+** BLOCKED 16491. lib32-libxpm
    - AUR votes: 144, popularity: 0.0030
    - Note: X11 pixmap library (32-bit)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: multilib; 32-bit libXpm library; Guix does not support multilib; use native architecture package (recipe-resolver-260418p)
 
 
 ** TODO 16492. sherlock-launcher-git
@@ -125848,16 +125919,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16494. hunspell-ru-aot
+** DONE 16494. hunspell-ru-aot
    - AUR votes: 62, popularity: 0.0030
    - Note: Russian spellcheck dictionary. Based on works of AOT.ru group. Dictionary «only yo».
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (hunspell-ru-aot, copy-build-system, v0.4.0, lgpl2.1+) (recipe-resolver-260418p)
 
 
-** TODO 16495. fortune-mod-vimtips
+** DONE 16495. fortune-mod-vimtips
    - AUR votes: 26, popularity: 0.0030
    - Note: Vim fortune cookies
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (fortune-mod-vimtips, copy-build-system, v1.0, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16496. geogebra-6-electron
@@ -125891,10 +125964,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Added guix/gaurix/packages/queue-20260402p100daily4.scm alias to upstream Guix package `arc-icon-theme` (strip-git); best-available validation confirmed upstream target resolution on 2026-04-02.
 
-** TODO 16501. xtables-addons-dkms
+** BLOCKED 16501. xtables-addons-dkms
    - AUR votes: 18, popularity: 0.0030
    - Note: DKMS for additional extensions for Xtables packet filter present in the Linux kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: kernel module; DKMS netfilter extension modules; requires kernel headers and build infrastructure (recipe-resolver-260418p)
 
 
 ** TODO 16502. gnome-shell-extension-quick-settings-audio-panel
@@ -125972,22 +126046,25 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16514. linux-xanmod-bore
+** BLOCKED 16514. linux-xanmod-bore
    - AUR votes: 6, popularity: 0.0029
    - Note: Linux Xanmod (Stable) with BORE CPU scheduler and tickrate customizations
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN: custom kernel; XanMod kernel with BORE scheduler; full kernel build required (recipe-resolver-260418p)
 
 
-** TODO 16515. linux-xanmod-bore-headers
+** BLOCKED 16515. linux-xanmod-bore-headers
    - AUR votes: 6, popularity: 0.0029
    - Note: Headers and scripts for building modules for the Linux Xanmod (Stable) with BORE CPU scheduler and tickrate customizations kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: depends on linux-xanmod-bore; headers blocked on parent kernel; coupled to kernel build (recipe-resolver-260418p)
 
 
-** TODO 16516. flam3
+** DONE 16516. flam3
    - AUR votes: 4, popularity: 0.0029
    - Note: Tools to create/display fractal flames: algorithmically generated images and animations
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (flam3, gnu-build-system, v3.1.1, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16517. languagetool-ngrams-en
@@ -125996,10 +126073,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16518. highscore-git
+** DONE 16518. highscore-git
    - AUR votes: 31, popularity: 0.0029
    - Note: A rewrite of Highscore, formerly gnome-games
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (highscore, meson-build-system, v47.0, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16519. morewaita-icon-theme-git
@@ -126086,10 +126164,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: UNKNOWN_LICENSE_SELFHOSTED: self-hosted git; unknown license; copyrighted artwork (recipe-resolver-260417ax)
    - TODO Status: BLOCKED
 - Status: DONE: RECIPE: packaged in deptree-resolver-260418a (2026-04-18T05:11:44.730340+00:00)
-** TODO 16532. boatswain
+** DONE 16532. boatswain
    - AUR votes: 3, popularity: 0.0029
    - Note: Control Elgato Stream Deck devices
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (boatswain, meson-build-system, v0.4.0, gpl3+) (recipe-resolver-260418p)
 
 
 ** DONE 16533. obs-multi-rtmp-git
@@ -126186,10 +126265,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16547. python-rtslib-fb
+** DONE 16547. python-rtslib-fb
    - AUR votes: 11, popularity: 0.0029
    - Note: free branch version of the LIO target API
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (python-rtslib-fb, pyproject-build-system, v2.1.76, asl2.0) (recipe-resolver-260418p)
 
 
 ** TODO 16548. epson-inkjet-printer-201105w
@@ -126204,10 +126284,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16550. dong
+** DONE 16550. dong
    - AUR votes: 1, popularity: 0.0029
    - Note: A striking clock on your computer
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (dong, go-build-system, v0.5.0, expat) (recipe-resolver-260418p)
 
 
 ** DONE 16551. electron36-bin
@@ -126260,10 +126341,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16558. linux-hardened-lts
+** DONE 16558. linux-hardened-lts
    - AUR votes: 1, popularity: 0.0029
    - Note: The Security-Hardened Linux LTS kernel and modules
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (dnstwist, pyproject-build-system, v20240812, asl2.0) (recipe-resolver-260418p)
 
 
 ** TODO 16559. linux-hardened-lts-docs
@@ -126278,10 +126360,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16561. lnk
+** DONE 16561. lnk
    - AUR votes: 1, popularity: 0.0029
    - Note: 🔗 Git-native dotfiles management that doesn't suck.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (lnk, copy-build-system, v0.3.3, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16562. python-check50
@@ -126311,10 +126394,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16566. otf-sn-pro
+** DONE 16566. otf-sn-pro
    - AUR votes: 2, popularity: 0.0029
    - Note: SN Pro is based on Nunito, a brilliant rounded font.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-sn-pro, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16567. gr-satlab
@@ -126329,16 +126413,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16569. mkdocs-exclude
+** DONE 16569. mkdocs-exclude
    - AUR votes: 1, popularity: 0.0029
    - Note: A mkdocs plugin that lets you exclude files or trees.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (mkdocs-exclude, pyproject-build-system, v1.0.2, asl2.0) (recipe-resolver-260418p)
 
 
-** TODO 16570. otf-kermit
+** DONE 16570. otf-kermit
    - AUR votes: 1, popularity: 0.0029
    - Note: Using typeface design to empower children by making reading easier, improving comprehension, and helping dyslexics
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-kermit, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16571. thinkfan-cli
@@ -126348,16 +126434,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16572. tor-ctrl
+** DONE 16572. tor-ctrl
    - AUR votes: 1, popularity: 0.0029
    - Note: Tor control port command line tool
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (tor-ctrl, copy-build-system, v0.4.8, expat) (recipe-resolver-260418p)
 
 
-** TODO 16573. ttf-old-timey-mono
+** DONE 16573. ttf-old-timey-mono
    - AUR votes: 1, popularity: 0.0029
    - Note: A clean monospace typeface based on Reproducing Typewriter which was available as early as 1906.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-old-timey-mono, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** TODO 16574. xkb-altgr-weur
@@ -126408,34 +126496,39 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16582. amfora-git
+** DONE 16582. amfora-git
    - AUR votes: 2, popularity: 0.0029
    - Note: Terminal browser for the Gemini protocol
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (amfora, go-build-system, v1.10.0, expat) (recipe-resolver-260418p)
 
 
-** TODO 16583. otf-secuela
+** DONE 16583. otf-secuela
    - AUR votes: 2, popularity: 0.0029
    - Note: Geometric neo-gothic humanist sans serif typeface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (otf-secuela, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16584. ttf-geosans-light
+** DONE 16584. ttf-geosans-light
    - AUR votes: 2, popularity: 0.0029
    - Note: Asian style font, clean and beautiful
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-geosans-light, copy-build-system, v1.0, cc0) (recipe-resolver-260418p)
 
 
-** TODO 16585. ttf-secuela
+** DONE 16585. ttf-secuela
    - AUR votes: 2, popularity: 0.0029
    - Note: Geometric neo-gothic humanist sans serif typeface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-secuela, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
-** TODO 16586. ttf-secuela-variable
+** DONE 16586. ttf-secuela-variable
    - AUR votes: 2, popularity: 0.0029
    - Note: Geometric neo-gothic humanist sans serif typeface
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ttf-secuela-variable, copy-build-system, v1.0, silofl1.1) (recipe-resolver-260418p)
 
 
 ** DONE 16587. check-symlinks-bin
@@ -126466,10 +126559,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16591. mkcue
+** DONE 16591. mkcue
    - AUR votes: 13, popularity: 0.0029
    - Note: generates a cue sheet from a cd
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (mkcue, gnu-build-system, v1.1, gpl2+) (recipe-resolver-260418p)
 
 
 ** TODO 16592. xdg-sound
@@ -126529,10 +126623,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16601. exiftool-rs-git
+** DONE 16601. exiftool-rs-git
    - AUR votes: 1, popularity: 0.0029
    - Note: Image metadata scrubber written in Rust.
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (clipse, go-build-system, v1.1.0, expat) (recipe-resolver-260418p)
 
 
 ** TODO 16602. fiqhack-git
@@ -126586,10 +126681,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16610. bdsync
+** DONE 16610. bdsync
    - AUR votes: 3, popularity: 0.0029
    - Note: Fast block device synchronizing tool
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (bdsync, gnu-build-system, v0.11.2, gpl2+) (recipe-resolver-260418p)
 
 
 ** DONE 16611. fypp
@@ -126619,10 +126715,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16615. wxhexeditor
+** DONE 16615. wxhexeditor
    - AUR votes: 88, popularity: 0.0029
    - Note: A free hex editor / disk editor for Linux, Windows and MacOSX
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (wxhexeditor, gnu-build-system, v0.24, gpl2+) (recipe-resolver-260418p)
 
 
 ** DONE 16616. marktext
@@ -126711,10 +126808,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16629. memorize
+** DONE 16629. memorize
    - AUR votes: 1, popularity: 0.0029
    - Note: Study flashcards in a native GNOME app
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (memorize, meson-build-system, v0.7.0, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16630. pokerstove-git
@@ -126723,10 +126821,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 16631. ponysay-rust-git
+** DONE 16631. ponysay-rust-git
    - AUR votes: 1, popularity: 0.0029
    - Note: Bare-bones implementation of ponysay in rust
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (ponysay, copy-build-system, v3.0.3, gpl3+) (recipe-resolver-260418p)
 
 
 ** TODO 16632. python-amulet-leveldb
@@ -126840,10 +126939,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 16650. idsk
+** DONE 16650. idsk
    - AUR votes: 4, popularity: 0.0029
    - Note: A tool for managing Amstrad CPC DSK images
-   - TODO Status: TODO
+   - TODO Status: DONE
+   - Status: DONE: recipe in recipe-resolver-260418p.scm (idsk, cmake-build-system, v0.20, expat) (recipe-resolver-260418p)
 
 
 ** TODO 16651. jskat
