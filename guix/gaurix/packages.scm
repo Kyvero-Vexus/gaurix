@@ -6254,3 +6254,40 @@
     vim-youcompleteme-git
   )
 )
+
+;; recipe-resolver-260418d: 30 NRD resolved (wrkflw-bin, lazytail-bin, tmux-plugin-panel-bin, codexbar, weylus-bin, ...)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418d)
+  #:re-export (
+               wrkflw-bin
+               lazytail-bin
+               tmux-plugin-panel-bin
+               codexbar
+               weylus-bin
+               waves-bin
+               ps3-disc-dumper-bin
+               lobster
+               pixora-icons-git
+               socialstreamninja-bin
+               apprenticevr-bin
+               windterm-bin
+               netrc
+               crier
+               gnix
+               podserv-b
+               netwatch-tui
+               tex-fmt
+               river-bsp-layout
+               subliminal
+               clightd
+               purple-gnome-keyring
+               gittyup
+               fulcrum
+               open-in-native-client
+               libavif-noglycin
+               libheif-noglycin
+               libjxl-noglycin
+               qpdf-zopfli
+               brisk-bin
+               ))
+
