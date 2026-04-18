@@ -479,6 +479,7 @@
   #:use-module (gaurix packages recipe-resolver-260418l)
   #:use-module (gaurix packages recipe-resolver-260418m)
   #:use-module (gaurix packages recipe-resolver-260418n)
+  #:use-module (gaurix packages recipe-resolver-260418q)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -10226,3 +10227,11 @@
 (re-export hunspell-ru-aot)
 (re-export hyphen-pl)
 (re-export words-sv)
+(re-export osspd)
+(re-export termora-bin)
+(re-export fakturama)
+(re-export sonarr-bin)
+(re-export silverbullet-bin)
+(re-export electron30-bin)
+(re-export sourcegit-bin)
+(re-export libcryptui)

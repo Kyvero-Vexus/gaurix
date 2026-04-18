@@ -6784,3 +6784,15 @@
                hyphen-pl
                words-sv
                ))
+
+;; recipe-resolver-260418q (8 NRD resolved, 22 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418q)
+  #:re-export (osspd
+               termora-bin
+               fakturama
+               sonarr-bin
+               silverbullet-bin
+               electron30-bin
+               sourcegit-bin
+               libcryptui))
