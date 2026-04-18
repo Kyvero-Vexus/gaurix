@@ -6816,3 +6816,23 @@
                affine-bin
                jitsi-meet-electron-bin
                wayback-x11))
+;; recipe-resolver-260418s (18 NRD resolved, 12 BLOCKED)
+  #:use-module (gaurix packages recipe-resolver-260418s)
+  #:re-export (woff2-annotation-mono
+               woff2-annotation-mono-variable
+               gnome-shell-extension-ubuntu-dock
+               gnome-shell-extension-top-bar-organizer
+               gpu-screen-recorder-notification
+               gpu-screen-recorder
+               gpu-screen-recorder-gtk
+               gpu-screen-recorder-ui
+               libresplit
+               gimp-plugin-gmic-qt
+               gr-limesdr
+               gr-foo
+               gr-ieee802-11
+               gr-lora-sdr
+               green-recorder
+               taskfile-to-tasks-python
+               gnome-x11-gesture-daemon
+               piper-voices-ru-ru))
