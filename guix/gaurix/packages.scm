@@ -6187,3 +6187,39 @@
                virtualbmc
                fcitx5-configtool
                ))
+
+;; recipe-resolver-260418c: 30 NRD resolved (dmenu-emoji, xattrvi, zgen, zaread, wireguard-vanity-keygen, ...)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418c)
+  #:re-export (
+               dmenu-emoji
+               xattrvi
+               zgen
+               zaread
+               wireguard-vanity-keygen
+               yubikey-agent
+               frpc
+               frps
+               goplaying
+               lazybeads
+               unregistry
+               fan2go
+               bwlog
+               mago
+               dotr
+               portablemc
+               vane
+               rustmission
+               iamb
+               vr-lighthouse
+               ego
+               mandelbulber2
+               pineapple-midi-player
+               suil-optgui
+               addwater
+               embellish
+               recorder
+               virtnbdbackup
+               brightness-slider
+               libreoffice-extension-grammalecte-fr
+               ))
