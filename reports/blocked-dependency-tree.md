@@ -1,60 +1,60 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260418s  
-**Timestamp:** 2026-04-18T15:08:22.575624Z  
-**Total TODO (target pool):** 26107  
+**Pass:** deptree-resolver-260418v  
+**Timestamp:** 2026-04-18T16:23:07.800772Z  
+**Total TODO (target pool):** 25902  
 
 ## Priority Queue (Top 50)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | kcoreaddons-git | 22747 | 0 | 65 | 10 |
-| 2 | ki18n-git | 22582 | 0 | 62 | 11 |
-| 3 | kconfig-git | 22820 | 0 | 60 | 9 |
-| 4 | kwidgetsaddons-git | 23129 | 0 | 46 | 8 |
-| 5 | kwindowsystem-git | 22840 | 0 | 27 | 17 |
-| 6 | kdbusaddons-git | 22839 | 0 | 26 | 8 |
-| 7 | r-vctrs | 38377 | 0 | 16 | 5 |
-| 8 | karchive-git | 22525 | 0 | 16 | 12 |
-| 9 | kguiaddons-git | 23664 | 0 | 15 | 12 |
-| 10 | kcodecs-git | 23219 | 0 | 13 | 6 |
-| 11 | python2-six | 24726 | 0 | 12 | 2 |
-| 12 | kglobalaccel-git | 22964 | 0 | 12 | 8 |
-| 13 | kitemviews-git | 23128 | 0 | 11 | 8 |
-| 14 | liblxqt-git | 21920 | 0 | 11 | 9 |
-| 15 | kitemmodels-git | 24186 | 0 | 10 | 9 |
-| 16 | gnustep-back | 26199 | 0 | 10 | 10 |
-| 17 | mingw-w64-bzip2 | 22541 | 0 | 9 | 2 |
-| 18 | python2-pillow | 27748 | 0 | 9 | 11 |
-| 19 | darling-system-git | 22155 | 0 | 8 | 41 |
-| 20 | libobjfw | 32489 | 0 | 7 | 5 |
-| 21 | sonnet-git | 23809 | 0 | 7 | 13 |
-| 22 | php56-xml | 21938 | 0 | 7 | 52 |
-| 23 | syntax-highlighting-git | 41826 | 0 | 6 | 9 |
-| 24 | php74-xml | 25348 | 0 | 6 | 54 |
-| 25 | php80-xml | 24602 | 0 | 6 | 54 |
-| 26 | php81-xml | 25268 | 0 | 6 | 54 |
-| 27 | php82-xml | 28504 | 0 | 6 | 54 |
-| 28 | mingw-w64-expat | 22596 | 0 | 5 | 2 |
-| 29 | mingw-w64-icu | 24199 | 0 | 5 | 3 |
-| 30 | lua-im | 30764 | 0 | 5 | 7 |
-| 31 | lua51-im | 30765 | 0 | 5 | 7 |
-| 32 | lua52-im | 30766 | 0 | 5 | 7 |
-| 33 | lua53-im | 30767 | 0 | 5 | 7 |
-| 34 | fluid-git | 26675 | 0 | 5 | 10 |
-| 35 | kirigami2-git | 31470 | 0 | 5 | 10 |
-| 36 | ocaml-atd | 20064 | 0 | 5 | 11 |
-| 37 | kidletime-git | 24546 | 0 | 5 | 12 |
-| 38 | php56-pdo | 21945 | 0 | 5 | 52 |
-| 39 | php74-pdo | 25355 | 0 | 5 | 54 |
-| 40 | php80-pdo | 24609 | 0 | 5 | 54 |
-| 41 | php81-pdo | 25275 | 0 | 5 | 54 |
-| 42 | php82-pdo | 28511 | 0 | 5 | 54 |
-| 43 | python2-pbr | 41424 | 0 | 4 | 1 |
-| 44 | umodunpack | 42055 | 0 | 4 | 1 |
-| 45 | zinnia | 38490 | 0 | 4 | 1 |
-| 46 | celestia-addon-tatooine_endor_deathstar | 31050 | 0 | 4 | 2 |
-| 47 | libstroke | 16889 | 0 | 4 | 2 |
-| 48 | m68k-elf-binutils | 27379 | 0 | 4 | 2 |
-| 49 | mingw-w64-gmp | 24839 | 0 | 4 | 2 |
-| 50 | mingw-w64-libiconv | 22597 | 0 | 4 | 2 |
+| 1 | pygtk | 20952 | 0 | 44 | 5 |
+| 2 | kdoctools-git | 23102 | 0 | 36 | 14 |
+| 3 | kconfigwidgets-git | 23663 | 0 | 23 | 14 |
+| 4 | kcrash-git | 23047 | 0 | 16 | 10 |
+| 5 | kcompletion-git | 23662 | 0 | 15 | 11 |
+| 6 | knotifications-git | 23883 | 0 | 14 | 11 |
+| 7 | kauth-git | 23771 | 0 | 10 | 11 |
+| 8 | kdeclarative-git | 23878 | 0 | 10 | 15 |
+| 9 | r-purrr | 38367 | 0 | 9 | 6 |
+| 10 | plasma-activities-git | 24217 | 0 | 9 | 11 |
+| 11 | mingw-w64-libxml2 | 24200 | 0 | 8 | 6 |
+| 12 | r-tidyselect | 38374 | 0 | 7 | 6 |
+| 13 | mingw-w64-libunistring | 23671 | 0 | 4 | 3 |
+| 14 | mingw-w64-sdl | 25863 | 0 | 4 | 3 |
+| 15 | mingw-w64-dbus | 23268 | 0 | 4 | 4 |
+| 16 | vapoursynth-plugin-nnedi3-git | 26990 | 0 | 4 | 4 |
+| 17 | timbl | 35066 | 0 | 4 | 6 |
+| 18 | fvwm | 16237 | 0 | 4 | 9 |
+| 19 | libcd | 27755 | 0 | 4 | 14 |
+| 20 | kfilemetadata-git | 26230 | 0 | 4 | 20 |
+| 21 | libgmp-static | 31525 | 0 | 3 | 1 |
+| 22 | libnatspec | 23779 | 0 | 3 | 1 |
+| 23 | lombok-common | 34034 | 0 | 3 | 1 |
+| 24 | mime-pkgbuild | 20290 | 0 | 3 | 1 |
+| 25 | msp430-elf-binutils | 26292 | 0 | 3 | 1 |
+| 26 | octave-struct | 22700 | 0 | 3 | 1 |
+| 27 | oracle-instantclient-sdk | 23911 | 0 | 3 | 1 |
+| 28 | perl-class-gomor | 29191 | 0 | 3 | 1 |
+| 29 | perl-config-any | 37785 | 0 | 3 | 1 |
+| 30 | perl-data-dumper-concise | 37736 | 0 | 3 | 1 |
+| 31 | perl-devel-caller | 37593 | 0 | 3 | 1 |
+| 32 | perl-heap | 23684 | 0 | 3 | 1 |
+| 33 | perl-http-body | 37531 | 0 | 3 | 1 |
+| 34 | perl-sys-sigaction | 37496 | 0 | 3 | 1 |
+| 35 | perl-tree-simple | 37737 | 0 | 3 | 1 |
+| 36 | php-codesniffer | 21718 | 0 | 3 | 1 |
+| 37 | pod2man | 24985 | 0 | 3 | 1 |
+| 38 | python2-sip-pyqt4 | 22435 | 0 | 3 | 1 |
+| 39 | r-generics | 38356 | 0 | 3 | 1 |
+| 40 | r-sys | 38328 | 0 | 3 | 1 |
+| 41 | sdx | 23846 | 0 | 3 | 1 |
+| 42 | skalibs | 37868 | 0 | 3 | 1 |
+| 43 | slf4j | 22857 | 0 | 3 | 1 |
+| 44 | vim-vim-support | 22990 | 0 | 3 | 1 |
+| 45 | yarn-berry | 17591 | 0 | 3 | 1 |
+| 46 | lib32-cjson | 17570 | 0 | 3 | 2 |
+| 47 | mingw-w64-libffi | 23895 | 0 | 3 | 2 |
+| 48 | mingw-w64-lzo | 25525 | 0 | 3 | 2 |
+| 49 | mingw-w64-opus | 33362 | 0 | 3 | 2 |
+| 50 | moarvm | 37417 | 0 | 3 | 2 |
