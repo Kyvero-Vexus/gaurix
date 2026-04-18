@@ -6668,3 +6668,25 @@
                frog-ocr-bin
                nym-vpn-app-bin
                wayback-machine-downloader))
+
+;; recipe-resolver-260418m (18 NRD resolved, 10 ALREADY_RESOLVED, 2 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418m)
+  #:re-export (nextdns-bin
+               neohtop-bin
+               dissent-bin
+               netcoredbg-bin
+               ytsubconverter-bin
+               naps2-bin
+               speedtest-go
+               glab
+               windows-10-cursor
+               wealthfolio-bin
+               cromite-bin
+               menulibre
+               dmscripts
+               lotion
+               miniconda3
+               freeoffice
+               knime-desktop
+               curseforge-appimage))

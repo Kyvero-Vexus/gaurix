@@ -474,6 +474,7 @@
   #:use-module (gaurix packages recipe-resolver-260418j)
   #:use-module (gaurix packages recipe-resolver-260418k)
   #:use-module (gaurix packages recipe-resolver-260418l)
+  #:use-module (gaurix packages recipe-resolver-260418m)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -10106,3 +10107,23 @@
 (re-export frog-ocr-bin)
 (re-export nym-vpn-app-bin)
 (re-export wayback-machine-downloader)
+
+;; recipe-resolver-260418m
+(re-export nextdns-bin)
+(re-export neohtop-bin)
+(re-export dissent-bin)
+(re-export netcoredbg-bin)
+(re-export ytsubconverter-bin)
+(re-export naps2-bin)
+(re-export speedtest-go)
+(re-export glab)
+(re-export windows-10-cursor)
+(re-export wealthfolio-bin)
+(re-export cromite-bin)
+(re-export menulibre)
+(re-export dmscripts)
+(re-export lotion)
+(re-export miniconda3)
+(re-export freeoffice)
+(re-export knime-desktop)
+(re-export curseforge-appimage)
