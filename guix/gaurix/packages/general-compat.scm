@@ -500,6 +500,7 @@
   #:use-module (gaurix packages deptree-resolver-260418ab)
   #:use-module (gaurix packages deptree-resolver-260418ad)
   #:use-module (gaurix packages recipe-resolver-260418ae)
+  #:use-module (gaurix packages deptree-resolver-260418ag)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
