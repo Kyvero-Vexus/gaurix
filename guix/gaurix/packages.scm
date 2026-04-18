@@ -6798,6 +6798,7 @@
                libcryptui))
 
 ;; recipe-resolver-260418r (15 NRD resolved, 15 BLOCKED)
+;; deptree-resolver-260418s
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260418r)
   #:re-export (positron-ide-devel-bin
