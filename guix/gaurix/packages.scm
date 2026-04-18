@@ -6114,3 +6114,26 @@
                grub2-theme-preview
                authselect
                ))
+
+;; recipe-resolver-260417ax (17 recipes, 13 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260417ax)
+  #:re-export (
+               tcping
+               conserver
+               sixpair
+               libcsptr
+               nx-udev
+               usb-dirty-pages-udev
+               breezex-cursor-theme
+               catppuccin-grub-themes
+               font-vazir-code
+               font-all-the-icons
+               numix-cursor-theme
+               papirus-smplayer-theme
+               whitesur-wallpapers
+               tbsm
+               forgit
+               opf-fido
+               keep-presence
+               ))

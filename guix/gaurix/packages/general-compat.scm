@@ -459,6 +459,7 @@
   #:use-module (gaurix packages recipe-resolver-260417as)
   #:use-module (gaurix packages recipe-resolver-260417av)
   #:use-module (gaurix packages recipe-resolver-260417aw)
+  #:use-module (gaurix packages recipe-resolver-260417ax)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9529,3 +9530,22 @@
 (re-export barify)
 (re-export grub2-theme-preview)
 (re-export authselect)
+
+;;; recipe-resolver-260417ax
+(re-export tcping)
+(re-export conserver)
+(re-export sixpair)
+(re-export libcsptr)
+(re-export nx-udev)
+(re-export usb-dirty-pages-udev)
+(re-export breezex-cursor-theme)
+(re-export catppuccin-grub-themes)
+(re-export font-vazir-code)
+(re-export font-all-the-icons)
+(re-export numix-cursor-theme)
+(re-export papirus-smplayer-theme)
+(re-export whitesur-wallpapers)
+(re-export tbsm)
+(re-export forgit)
+(re-export opf-fido)
+(re-export keep-presence)
