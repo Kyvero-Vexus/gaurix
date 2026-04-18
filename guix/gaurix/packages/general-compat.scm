@@ -445,6 +445,7 @@
   #:use-module (gaurix packages recipe-resolver-260417ah)
   #:use-module (gaurix packages recipe-resolver-260417ai)
   #:use-module (gaurix packages deptree-resolver-260417aj)
+  #:use-module (gaurix packages deptree-resolver-260417au)
   #:use-module (gaurix packages recipe-resolver-260417aj)
   #:use-module (gaurix packages recipe-resolver-260417ak)
   #:use-module (gaurix packages recipe-resolver-260417al)

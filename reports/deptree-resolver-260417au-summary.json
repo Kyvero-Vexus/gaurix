@@ -1,0 +1,265 @@
+{
+  "pass_id": "deptree-resolver-260417au",
+  "total_selected": 51,
+  "resolved": 11,
+  "blocked": 40,
+  "resolved_packages": [
+    {
+      "name": "arch-silence-grub-theme-git",
+      "version": "0.0.0-0.cd4bba1",
+      "method": "git-source"
+    },
+    {
+      "name": "spicetify-themes-git",
+      "version": "0.0.0-0.9af41cf",
+      "method": "git-source"
+    },
+    {
+      "name": "asf",
+      "version": "6.3.4.2",
+      "method": "binary-zip"
+    },
+    {
+      "name": "floorp",
+      "version": "12.12.1",
+      "method": "binary-tarball"
+    },
+    {
+      "name": "selectdefaultapplication-git",
+      "version": "0.0.0-0.73a7579",
+      "method": "git-qmake"
+    },
+    {
+      "name": "puddletag",
+      "version": "2.5.0",
+      "method": "pypi-sdist"
+    },
+    {
+      "name": "chiaki",
+      "version": "2.2.0",
+      "method": "git-cmake"
+    },
+    {
+      "name": "wasistlos",
+      "version": "1.7.0",
+      "method": "git-cmake"
+    },
+    {
+      "name": "vscodium-bin-marketplace",
+      "version": "1.76.0",
+      "method": "trivial-patch"
+    },
+    {
+      "name": "ipfs-desktop",
+      "version": "0.48.0",
+      "method": "binary-appimage"
+    },
+    {
+      "name": "apparmor.d-git",
+      "version": "0.4900",
+      "method": "go-source"
+    }
+  ],
+  "blocked_packages": [
+    {
+      "name": "ttf-ms-office365",
+      "number": 16018,
+      "reason": "PROPRIETARY_LICENSE: Microsoft Office fonts prohibit redistribution.  Tried: (1) LicenseRef-ms-office-2024; (2) requires MS Office license; (3) cannot include in channel"
+    },
+    {
+      "name": "datagrip-jre",
+      "number": 21653,
+      "reason": "PROPRIETARY_LICENSE: JetBrains proprietary bundled JRE tied to DataGrip release cycle.  Tried: (1) JBR custom OpenJDK fork with proprietary patches; (2) DataGrip itself is proprietary; (3) adoptium/temurin available as free alternative"
+    },
+    {
+      "name": "fonts-apple",
+      "number": 14971,
+      "reason": "PROPRIETARY_LICENSE: Apple restricted font license forbids redistribution.  Tried: (1) license terms explicitly prohibit redistribution; (2) no free alternative with same glyphs; (3) cannot legally include in channel"
+    },
+    {
+      "name": "lib32-amdvlk-bin",
+      "number": 15531,
+      "reason": "ARCH_SPECIFIC: 32-bit AMD Vulkan driver requiring i686 multilib support.  Tried: (1) lib32/multilib not available in Guix; (2) package is Arch multilib-specific; (3) Guix has no 32-bit compat layer for x86_64"
+    },
+    {
+      "name": "otf-apple-pingfang",
+      "number": 15346,
+      "reason": "PROPRIETARY_LICENSE: Apple PingFang font with restricted redistribution license.  Tried: (1) apple-restricted-font license; (2) no free redistribution; (3) cannot include in channel"
+    },
+    {
+      "name": "otf-apple-pingfang-relaxed",
+      "number": 15347,
+      "reason": "PROPRIETARY_LICENSE: Apple PingFang relaxed variant with restricted license.  Tried: (1) same apple-restricted-font; (2) no free redistribution; (3) cannot include"
+    },
+    {
+      "name": "otf-apple-pingfang-ui",
+      "number": 15348,
+      "reason": "PROPRIETARY_LICENSE: Apple PingFang UI variant with restricted license.  Tried: (1) same apple-restricted-font; (2) no free redistribution; (3) cannot include"
+    },
+    {
+      "name": "code-server-marketplace",
+      "number": 15031,
+      "reason": "COMPLEX_DEPS: requires code-server (complex Node.js app not in Guix).  Tried: (1) depends on code-server; (2) code-server needs deep npm tree; (3) EXTENSIONS_GALLERY env var provides equivalent"
+    },
+    {
+      "name": "libfprint-2-tod1-broadcom",
+      "number": 15005,
+      "reason": "PROPRIETARY_LICENSE: Dell/Broadcom proprietary binary fingerprint driver blob.  Tried: (1) PPA has .so blobs -- proprietary; (2) no source code available; (3) restricted license"
+    },
+    {
+      "name": "ntsync-dkms",
+      "number": 15010,
+      "reason": "DKMS_UNSUPPORTED: ntsync upstream in Linux >= 6.14.  Tried: (1) DKMS not supported in Guix; (2) kernel >= 6.14 has it built-in; (3) out-of-tree module packaging impossible"
+    },
+    {
+      "name": "odoo18-nightly",
+      "number": 14669,
+      "reason": "MASSIVE_SCALE: Odoo 18 ERP needs 500+ Python deps and PostgreSQL.  Tried: (1) Python dep tree (500+) exceeds practical packaging; (2) nightly versioning breaks reproducibility; (3) PostgreSQL service integration requires system design"
+    },
+    {
+      "name": "arch-shell",
+      "number": 14726,
+      "reason": "ARCH_SPECIFIC: depends on mkarchroot/devtools for Arch chroots.  Tried: (1) devtools not portable; (2) Guix has own container/profile mechanisms; (3) no upstream portability interest"
+    },
+    {
+      "name": "dude-bin",
+      "number": 14699,
+      "reason": "ARCH_SPECIFIC: Rust binary linking against libalpm (pacman library).  Tried: (1) libalpm not in Guix and Arch-only; (2) guix gc --delete-generations provides native equivalent; (3) no portable alternative"
+    },
+    {
+      "name": "mt76-dkms-git",
+      "number": 14914,
+      "reason": "DKMS_UNSUPPORTED: out-of-tree DKMS kernel module.  Tried: (1) mt76 driver already upstream in Linux kernel; (2) DKMS not supported in Guix; (3) users should use kernel built-in mt76"
+    },
+    {
+      "name": "parus",
+      "number": 15189,
+      "reason": "ARCH_SPECIFIC: TUI frontend for paru (Arch AUR helper).  Tried: (1) depends on paru (Arch-only); (2) depends on skim; (3) no utility outside Arch Linux"
+    },
+    {
+      "name": "winscp",
+      "number": 22501,
+      "reason": "WINDOWS_ONLY: Windows file manager requiring Wine runtime.  Tried: (1) not a native Linux application; (2) Wine packaging in Guix doesn't support complex GUI apps; (3) native alternatives exist (FileZilla, Filezilla, etc.)"
+    },
+    {
+      "name": "gksu",
+      "number": 21534,
+      "reason": "COMPLEX_DEPS + OBSOLETE: graphical su frontend needing libgksu.  Tried: (1) libgksu not in Guix; (2) project superseded by pkexec/polkit; (3) original nongnu.org source may be stale; gksu-revived fork exists but libgksu still needed"
+    },
+    {
+      "name": "pacwall-git",
+      "number": 14584,
+      "reason": "ARCH_SPECIFIC: shell script queries pacman database exclusively.  Tried: (1) core logic uses pacman -Qi; (2) rewrite for Guix requires complete fork; (3) guix graph provides native alternative"
+    },
+    {
+      "name": "rtl8821ce-dkms-git",
+      "number": 22214,
+      "reason": "DKMS_UNSUPPORTED: out-of-tree DKMS kernel module.  Tried: (1) Guix kernel module model requires building with kernel; (2) rtl8821ce staging driver available in newer kernels; (3) DKMS incompatible with Guix"
+    },
+    {
+      "name": "starsector",
+      "number": 15139,
+      "reason": "PROPRIETARY_LICENSE: commercial game requiring paid license.  Tried: (1) AUR PKGBUILD expects user-provided installer; (2) no free download; (3) license prohibits redistribution"
+    },
+    {
+      "name": "asp",
+      "number": 14587,
+      "reason": "ARCH_SPECIFIC + DEPRECATED: Arch Build System tool replaced by pkgctl Nov 2023.  Tried: (1) requires Arch SVN infrastructure; (2) Guix has own source management; (3) no cross-distro utility"
+    },
+    {
+      "name": "deemix-gui-appimage",
+      "number": 14759,
+      "reason": "LEGAL_ISSUES + SOURCE_UNAVAILABLE: Deezer music downloader archived after legal action.  Tried: (1) project taken down by maintainers; (2) no stable source URL; (3) legal risk for redistribution"
+    },
+    {
+      "name": "deezer",
+      "number": 21712,
+      "reason": "COMPLEX_DEPS: requires extracting Windows .exe, patching with asar, then Electron wrapping.  Tried: (1) Windows .exe source only; (2) needs electron39 not in Guix; (3) extremely fragile cross-platform repackaging"
+    },
+    {
+      "name": "gdrcopy",
+      "number": 15131,
+      "reason": "COMPLEX_DEPS: NVIDIA GPU Direct RDMA requiring proprietary kernel modules.  Tried: (1) NVIDIA kernel modules not in Guix; (2) userspace library useless without gdrdrv; (3) HPC/CUDA workloads incompatible"
+    },
+    {
+      "name": "brother-mfc-j5720dw",
+      "number": 15008,
+      "reason": "PROPRIETARY_LICENSE + ARCH_SPECIFIC: Brother proprietary printer driver with i386 binary blobs.  Tried: (1) contains i386 binaries; (2) requires lib32-glibc; (3) proprietary license"
+    },
+    {
+      "name": "devkitty-git",
+      "number": 15058,
+      "reason": "COMPLEX_DEPS: requires Electron 41.  Tried: (1) GitHub releases macOS-only -- no Linux builds in 90+ releases; (2) build needs npm/pnpm/nvm + Electron 41; (3) no Linux binary published"
+    },
+    {
+      "name": "vim-youcompleteme-git",
+      "number": 21386,
+      "reason": "COMPLEX_DEPS: code completion engine requiring cmake + clang + git submodules.  Tried: (1) cmake build for ycmd server with clang linkage; (2) git submodules (ycmd) need special handling; (3) clang API version coupling makes builds fragile"
+    },
+    {
+      "name": "xilinx-ise",
+      "number": 14616,
+      "reason": "PROPRIETARY_LICENSE: registration-walled 6GB+ proprietary installer requiring Xilinx EULA.  Tried: (1) no direct download URL; (2) requires account + EULA acceptance; (3) depends on legacy Qt4 + gcc49 not in Guix"
+    },
+    {
+      "name": "qtutilities-qt6",
+      "number": 23303,
+      "reason": "COMPLEX_DEPS: requires cpp-utilities (C++ library) to be packaged first.  Tried: (1) cmake-build-system feasible; (2) needs cpp-utilities + Qt6; (3) 2-package chain needed; will attempt in future pass with syncthingtray"
+    },
+    {
+      "name": "mkchromecast-git",
+      "number": 23180,
+      "reason": "COMPLEX_DEPS: needs python-pychromecast.  Tried: (1) python-pychromecast not in Guix; (2) python-netifaces deprecated; (3) python-pychromecast depends on protobuf + zeroconf (in Guix) but needs packaging; will attempt in future pass"
+    },
+    {
+      "name": "pamac-all",
+      "number": 22052,
+      "reason": "ARCH_SPECIFIC: Manjaro/Arch package manager GUI frontend requiring libalpm/pacman ecosystem.  Tried: (1) libpamac depends on libalpm; (2) pacman library not portable; (3) Guix has own package management GUI potential"
+    },
+    {
+      "name": "syncthingtray",
+      "number": 21493,
+      "reason": "COMPLEX_DEPS: requires packaging 3 C++ libraries first (cpp-utilities, qtutilities, qtforkawesome).  Tried: (1) all deps are CMake+Qt6 libraries by same author; (2) chain of 4 packages needed; (3) feasible but exceeds single-pass scope; will attempt in future pass"
+    },
+    {
+      "name": "python-torchaudio-rocm",
+      "number": 14583,
+      "reason": "COMPLEX_DEPS: ROCm ecosystem (100+ packages) not available in Guix.  Tried: (1) rocm-hip-sdk not available; (2) ROCm bootstrap chain is massive; (3) CPU-only variant defeats ROCm purpose"
+    },
+    {
+      "name": "subliminal",
+      "number": 22312,
+      "reason": "COMPLEX_DEPS: Python subtitle library missing 6+ deps.  Tried: (1) python-babelfish not in Guix; (2) python-guessit not in Guix; (3) python-enzyme, dogpile.cache, python-knowit all missing; chain too long for single pass"
+    },
+    {
+      "name": "godot-double-mono",
+      "number": 14495,
+      "reason": "DOTNET_UNSUPPORTED: Godot double-precision with C#/Mono requires .NET SDK 8.0 not in Guix.  Tried: (1) dotnet-sdk-8.0 + nuget needed; (2) no pre-built binary with double+mono for Linux; (3) stripping Mono defeats package purpose vs godot-double"
+    },
+    {
+      "name": "aiot-ide",
+      "number": 15062,
+      "reason": "PROPRIETARY_LICENSE: Xiaomi proprietary IoT IDE with no source.  Tried: (1) iot.mi.com requires Chinese account; (2) proprietary custom license; (3) no direct download URL"
+    },
+    {
+      "name": "cdesktopenv",
+      "number": 22627,
+      "reason": "COMPLEX_DEPS: CDE desktop requires Motif + ksh + opensp + libutempter.  Tried: (1) Motif not in Guix; (2) ksh packaging needed; (3) heavily patched autotools build with Debian-specific changes; last release 2022"
+    },
+    {
+      "name": "nautilus-typeahead",
+      "number": 22050,
+      "reason": "COMPLEX_DEPS: requires patching and rebuilding entire GNOME Nautilus.  Tried: (1) needs glycin, libadwaita, tinysparql not in Guix; (2) patch tracks upstream version closely; (3) 30+ deps chain for a single feature patch"
+    },
+    {
+      "name": "ladybird-git",
+      "number": 22620,
+      "reason": "COMPLEX_DEPS: experimental browser requiring vcpkg + CMake 3.30+ + gcc-14/clang-21.  Tried: (1) vcpkg dependency model incompatible with Guix; (2) requires ANGLE, simdutf, cpptrace, skia-static; (3) alpha-quality, targeting 2026 release"
+    },
+    {
+      "name": "scribus-svn",
+      "number": 21904,
+      "reason": "COMPLEX_DEPS: development version of Scribus DTP with 30+ dep chain.  Tried: (1) stable scribus in Guix upstream; (2) SVN snapshots version instability; (3) massive dep chain mirrors stable but with additional patches; prefer upstream stable"
+    }
+  ]
+}

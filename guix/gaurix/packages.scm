@@ -6033,3 +6033,18 @@
                perl-rpc-xml
                perl-linux-desktopfiles
                ))
+
+;; deptree-resolver-260417au (11 BLOCKED resolved: 11 new recipes)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260417au)
+  #:re-export (arch-silence-grub-theme-git
+               spicetify-themes-git
+               asf
+               floorp
+               selectdefaultapplication-git
+               puddletag
+               chiaki
+               wasistlos
+               vscodium-bin-marketplace
+               ipfs-desktop
+               apparmor-d-git))
