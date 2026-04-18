@@ -6398,3 +6398,41 @@
                fabric-ai-bin
                drawio-bin
                ))
+
+
+
+;; recipe-resolver-260418f: 30 NRD resolved (c-lolcat, celt, uhubctl, ksh93-git, ...)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418f)
+  #:re-export (
+               c-lolcat
+               celt
+               uhubctl
+               ksh93-git
+               libretro-prboom-git
+               libretro-neocd-git
+               libretro-fuse-git
+               funchook
+               vulkanscenegraph
+               qdia
+               dolphin-memory-engine
+               eternity-engine-git
+               inter-doom
+               inter-heretic
+               inter-hexen
+               blobdrop-git
+               obs-noise
+               wizstr
+               clad
+               swaylock-plugin
+               linux-router
+               faint
+               kraiser
+               pass-ln
+               statecraft
+               git-hash-select
+               passless-boot
+               latynka-kbd
+               itch-setup-bin
+               papirus-folders-git
+               ))
