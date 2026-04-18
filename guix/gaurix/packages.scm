@@ -6796,3 +6796,22 @@
                electron30-bin
                sourcegit-bin
                libcryptui))
+
+;; recipe-resolver-260418r (15 NRD resolved, 15 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418r)
+  #:re-export (positron-ide-devel-bin
+               muffon-bin
+               sshpilot-bin
+               godot-preview-bin
+               stretchly-bin
+               filen-desktop-bin
+               freetube-electron-bin
+               dbgate-bin
+               cs-demo-manager-appimage
+               reticulum-meshchat-bin
+               folo-appimage
+               whatsdesk-bin
+               affine-bin
+               jitsi-meet-electron-bin
+               wayback-x11))
