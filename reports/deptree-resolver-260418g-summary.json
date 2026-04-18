@@ -1,0 +1,260 @@
+{
+  "pass_id": "deptree-resolver-260418g",
+  "total_selected": 48,
+  "resolved": 8,
+  "blocked": 42,
+  "resolved_packages": [
+    {
+      "name": "gpufetch-nocuda-git",
+      "version": "0.25",
+      "method": "git-source"
+    },
+    {
+      "name": "libgksu",
+      "version": "2.0.12",
+      "method": "url-fetch"
+    },
+    {
+      "name": "gksu",
+      "version": "2.0.2",
+      "method": "url-fetch"
+    },
+    {
+      "name": "trilinos",
+      "version": "17.0.0",
+      "method": "url-fetch"
+    },
+    {
+      "name": "cdesktopenv",
+      "version": "2.5.3",
+      "method": "url-fetch"
+    },
+    {
+      "name": "sope",
+      "version": "5.12.7",
+      "method": "git-source"
+    },
+    {
+      "name": "sogo",
+      "version": "5.12.7",
+      "method": "git-source"
+    },
+    {
+      "name": "ladybird-git",
+      "version": "0.1.0",
+      "method": "git-source"
+    }
+  ],
+  "blocked_packages": [
+    {
+      "name": "iup",
+      "number": 15267,
+      "reason": "COMPLEX_DEPS: PUC-Rio GUI toolkit needing libcd (Canvas Draw) + tecmake build system; Tried: (1) libcd not in Guix, needs libim (Image) first; (2) tecmake build system non-standard, needs adaptation; (3) build chain: IM\u2192CD\u2192IUP, each with tecmake quirks"
+    },
+    {
+      "name": "ttf-ms-office365",
+      "number": 16018,
+      "reason": "PROPRIETARY_LICENSE: Microsoft Office 365 fonts under LicenseRef-ms-office-2024 EULA prohibiting redistribution; Tried: (1) license terms explicitly prohibit redistribution; (2) no free alternative fonts with identical metrics; (3) cannot legally include in any channel"
+    },
+    {
+      "name": "fonts-apple",
+      "number": 14971,
+      "reason": "PROPRIETARY_LICENSE: Apple restricted font license (custom:apple-restricted-font) forbids redistribution; Tried: (1) license prohibits redistribution; (2) no free fonts with same glyphs; (3) cannot legally include in channel"
+    },
+    {
+      "name": "lib32-amdvlk-bin",
+      "number": 15531,
+      "reason": "LIB32_UNSUPPORTED: 32-bit AMD Vulkan driver binary; Tried: (1) Guix has no lib32/multilib; (2) binary repackaging of DEB not ideal; (3) 64-bit amdvlk could be built from source separately"
+    },
+    {
+      "name": "otf-apple-pingfang",
+      "number": 15346,
+      "reason": "PROPRIETARY_LICENSE: Apple PingFang font with custom:apple-restricted-font license; Tried: (1) license prohibits redistribution; (2) no free alternative; (3) cannot include in channel"
+    },
+    {
+      "name": "otf-apple-pingfang-relaxed",
+      "number": 15347,
+      "reason": "PROPRIETARY_LICENSE: Apple PingFang relaxed variant, same restricted license; Tried: (1) same license restriction; (2) no free alternative; (3) cannot include"
+    },
+    {
+      "name": "otf-apple-pingfang-ui",
+      "number": 15348,
+      "reason": "PROPRIETARY_LICENSE: Apple PingFang UI variant, same restricted license; Tried: (1) same license restriction; (2) no free alternative; (3) cannot include"
+    },
+    {
+      "name": "palemoon-i18n-fr",
+      "number": 15388,
+      "reason": "COMPLEX_DEPS: French language pack XPI for Pale Moon browser; Tried: (1) browser addon, not standalone package; (2) requires Pale Moon stack; (3) XPI must be installed into browser profile directory"
+    },
+    {
+      "name": "seamonkey-i18n-es-es",
+      "number": 15384,
+      "reason": "COMPLEX_DEPS: Spanish language pack XPI for SeaMonkey; Tried: (1) browser addon, not standalone; (2) requires SeaMonkey stack; (3) XPI install path is browser-specific"
+    },
+    {
+      "name": "code-server-marketplace",
+      "number": 15031,
+      "reason": "COMPLEX_DEPS: requires code-server (massive Node.js/VS Code fork not in Guix); Tried: (1) code-server needs deep npm dependency tree; (2) npm bundling not supported in Guix sandbox; (3) marketplace patch is version-specific overlay"
+    },
+    {
+      "name": "libfprint-2-tod1-broadcom",
+      "number": 15005,
+      "reason": "PROPRIETARY_LICENSE: Dell/Broadcom proprietary binary fingerprint driver (.so blobs from PPA); Tried: (1) binary blob with no source; (2) custom license, no redistribution rights; (3) hardware-specific binary, no portable alternative"
+    },
+    {
+      "name": "ntsync-dkms",
+      "number": 15010,
+      "reason": "DKMS_UNSUPPORTED: out-of-tree kernel module for NT sync primitives (upstream in Linux >= 6.14); Tried: (1) DKMS not supported in Guix functional kernel model; (2) kernel >= 6.14 has it built-in; (3) no linux-module-build-system in Guix"
+    },
+    {
+      "name": "odoo18-nightly",
+      "number": 14669,
+      "reason": "MASSIVE_SCALE: Odoo 18 ERP needs 100+ Python deps and PostgreSQL; Tried: (1) Python dep tree exceeds practical packaging; (2) nightly versioning breaks reproducibility; (3) runtime server requires PostgreSQL service integration"
+    },
+    {
+      "name": "8192eu-dkms-git",
+      "number": 15373,
+      "reason": "DKMS_UNSUPPORTED: Realtek RTL8192EU WiFi DKMS module; Tried: (1) DKMS incompatible with Guix; (2) no linux-module-build-system; (3) rtl8xxxu in mainline kernel may cover this chipset"
+    },
+    {
+      "name": "arch-shell",
+      "number": 14726,
+      "reason": "ARCH_SPECIFIC: depends on mkarchroot/devtools for Arch chroots; Tried: (1) devtools not portable; (2) Guix has own container mechanisms; (3) no upstream portability interest"
+    },
+    {
+      "name": "dude-bin",
+      "number": 14699,
+      "reason": "ARCH_SPECIFIC: Rust binary linking against libalpm (pacman library); Tried: (1) libalpm not in Guix, Arch-only; (2) guix gc provides native equivalent; (3) no portable alternative"
+    },
+    {
+      "name": "mt76-dkms-git",
+      "number": 14914,
+      "reason": "DKMS_UNSUPPORTED: MediaTek mt76 WiFi driver already in upstream Linux kernel; Tried: (1) DKMS not supported; (2) mt76 already in kernel mainline; (3) users should use built-in kernel driver"
+    },
+    {
+      "name": "parus",
+      "number": 15189,
+      "reason": "ARCH_SPECIFIC: TUI for paru (Arch AUR helper); Tried: (1) depends on paru (Arch-only); (2) depends on skim; (3) no utility outside Arch Linux"
+    },
+    {
+      "name": "pacwall-git",
+      "number": 14584,
+      "reason": "ARCH_SPECIFIC: shell script that visualizes pacman package dependency graph; Tried: (1) core logic uses pacman -Qi; (2) rewrite for Guix requires complete fork; (3) guix graph provides native alternative"
+    },
+    {
+      "name": "pypy3-pyparsing",
+      "number": 15310,
+      "reason": "COMPLEX_DEPS: pyparsing variant for PyPy3 (no PyPy3 in Guix); Tried: (1) Guix has no PyPy3 infrastructure; (2) PyPy bootstrap is extremely complex; (3) CPython pyparsing already in Guix"
+    },
+    {
+      "name": "rtl8821ce-dkms-git",
+      "number": 22214,
+      "reason": "DKMS_UNSUPPORTED: Realtek RTL8821CE WiFi DKMS module; Tried: (1) DKMS incompatible; (2) rtw88 driver in kernel >= 5.9 covers RTL8821CE; (3) no linux-module-build-system in Guix"
+    },
+    {
+      "name": "cn-dascom-pin-driver",
+      "number": 15259,
+      "reason": "PROPRIETARY_LICENSE: vendor printer driver from Dascom (cn), MIT label suspect for binary blob; Tried: (1) source from vendor website (dascom.cn) with no public repo; (2) niche hardware (1 AUR vote); (3) likely binary blob despite MIT tag"
+    },
+    {
+      "name": "lib32-liblrdf",
+      "number": 15349,
+      "reason": "LIB32_UNSUPPORTED: 32-bit build of liblrdf; Guix packages are single-architecture; Tried: (1) Guix has no lib32/multilib system; (2) 64-bit liblrdf could be packaged separately; (3) lib32 is an Arch-specific concept"
+    },
+    {
+      "name": "selinux-refpolicy-arch-git",
+      "number": 15487,
+      "reason": "ARCH_SPECIFIC: SELinux reference policy with Arch Linux patches; Tried: (1) policies are distribution-specific; (2) Guix doesn't use SELinux; (3) would need heavy adaptation for Guix filesystem layout"
+    },
+    {
+      "name": "starsector",
+      "number": 15139,
+      "reason": "PROPRIETARY_LICENSE: commercial game from Fractal Softworks requiring paid license; Tried: (1) AUR PKGBUILD expects user-provided installer; (2) no free download; (3) license prohibits redistribution"
+    },
+    {
+      "name": "asp",
+      "number": 14587,
+      "reason": "ARCH_SPECIFIC + DEPRECATED: Arch Build System tool replaced by pkgctl Nov 2023; Tried: (1) requires Arch SVN infrastructure; (2) Guix has own source management; (3) no cross-distro utility"
+    },
+    {
+      "name": "deezer",
+      "number": 21712,
+      "reason": "PROPRIETARY_LICENSE + COMPLEX: proprietary streaming client; source is Windows .exe extracted via 7z/asar; Tried: (1) proprietary commercial service; (2) build repackages Windows exe (fragile); (3) requires electron39 not in Guix"
+    },
+    {
+      "name": "ec-su_axb35-dkms-git",
+      "number": 15411,
+      "reason": "DKMS_UNSUPPORTED: embedded controller driver for Sixunited AXB35-02 board; Tried: (1) DKMS kernel module, incompatible with Guix; (2) very niche hardware; (3) no alternative driver approach"
+    },
+    {
+      "name": "fnq-monitor",
+      "number": 15258,
+      "reason": "DKMS_UNSUPPORTED: depends on acpi_call kernel module for Lenovo perf modes; Tried: (1) acpi_call is DKMS module; (2) direct ACPI interaction needs kernel module; (3) no userspace alternative for Fn+Q toggle"
+    },
+    {
+      "name": "olauncher",
+      "number": 15269,
+      "reason": "PROPRIETARY_LICENSE: Minecraft launcher derivative with custom non-free license; Tried: (1) custom license; (2) Microsoft auth integration; (3) flagged out-of-date in AUR (1 vote)"
+    },
+    {
+      "name": "gdrcopy",
+      "number": 15131,
+      "reason": "COMPLEX_DEPS + PROPRIETARY: NVIDIA GPU Direct RDMA needing proprietary kernel modules; Tried: (1) nvidia-open-dkms + CUDA SDK not in Guix; (2) userspace library useless without gdrdrv kernel module; (3) DKMS unsupported in Guix"
+    },
+    {
+      "name": "devkitty-git",
+      "number": 15058,
+      "reason": "COMPLEX_DEPS: requires Electron 41 (Guix has no Electron packages); Tried: (1) GitHub releases macOS-only; (2) build needs npm/pnpm/nvm + Electron 41; (3) Electron requires Chromium+Node.js build infrastructure"
+    },
+    {
+      "name": "xilinx-ise",
+      "number": 14616,
+      "reason": "PROPRIETARY_LICENSE: Xilinx ISE Design Suite requiring registration and EULA; Tried: (1) no direct download; (2) requires account + EULA acceptance; (3) depends on legacy Qt4 + gcc49 not in Guix"
+    },
+    {
+      "name": "pamac-all",
+      "number": 22052,
+      "reason": "ARCH_SPECIFIC: Manjaro GUI package manager frontend for libalpm/pacman; Tried: (1) depends on libalpm (Arch); (2) manages pacman packages, AUR, snap, flatpak; (3) completely useless on Guix"
+    },
+    {
+      "name": "trilinos-git",
+      "number": 15305,
+      "reason": "NEEDS_REVIEW: not evaluated in this pass (deptree-resolver-260418g)"
+    },
+    {
+      "name": "python-torchaudio-rocm",
+      "number": 14583,
+      "reason": "COMPLEX_DEPS: PyTorch audio with ROCm/HIP GPU support needs 100+ ROCm packages; Tried: (1) ROCm ecosystem not in Guix; (2) rocm-hip-sdk not available; (3) CPU-only variant loses purpose of ROCm package"
+    },
+    {
+      "name": "aiot-ide",
+      "number": 15062,
+      "reason": "PROPRIETARY_LICENSE: Xiaomi AIoT IDE, proprietary binary; Tried: (1) iot.mi.com requires Chinese account; (2) proprietary custom license; (3) no direct download URL or public source"
+    },
+    {
+      "name": "vitis",
+      "number": 15278,
+      "reason": "PROPRIETARY_LICENSE: AMD/Xilinx FPGA design suite (100GB+ installer) requiring license; Tried: (1) proprietary commercial suite; (2) requires account and license agreement; (3) massive proprietary blob, cannot redistribute"
+    },
+    {
+      "name": "lua-iup",
+      "number": 15266,
+      "reason": "COMPLEX_DEPS: Lua 5.4 bindings for iup which is blocked (tecmake/libcd); Tried: (1) iup itself blocked; (2) cannot build bindings without base library; (3) same tecmake build issues"
+    },
+    {
+      "name": "lua51-iup",
+      "number": 15265,
+      "reason": "COMPLEX_DEPS: Lua 5.1 bindings for iup which is blocked; Tried: (1) iup blocked; (2) same dependency chain; (3) tecmake build system"
+    },
+    {
+      "name": "lua52-iup",
+      "number": 15264,
+      "reason": "COMPLEX_DEPS: Lua 5.2 bindings for iup which is blocked; Tried: (1) iup blocked; (2) same dependency chain; (3) tecmake build system"
+    },
+    {
+      "name": "lua53-iup",
+      "number": 15263,
+      "reason": "COMPLEX_DEPS: Lua 5.3 bindings for iup which is blocked; Tried: (1) iup blocked; (2) same dependency chain; (3) tecmake build system"
+    }
+  ]
+}

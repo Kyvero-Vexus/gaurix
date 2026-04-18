@@ -2925,6 +2925,13 @@
             refind-btrfs-snapshots-bin
             elastic-dashboard-bin
             forge-gui-desktop-bin
+               gpufetch-nocuda-git
+               gksu
+               trilinos-git
+               cdesktopenv
+               sope
+               sogo
+               ladybird-git
 ))
 
 ;; recipe-resolver-260414z
@@ -6402,6 +6409,7 @@
 
 
 ;; recipe-resolver-260418f: 30 NRD resolved (c-lolcat, celt, uhubctl, ksh93-git, ...)
+            ;; deptree-resolver-260418g: 8 BLOCKED resolved, 42 remain BLOCKED
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260418f)
   #:re-export (

@@ -467,6 +467,7 @@
   #:use-module (gaurix packages recipe-resolver-260418c)
   #:use-module (gaurix packages deptree-resolver-260418d)
   #:use-module (gaurix packages recipe-resolver-260418f)
+  #:use-module (gaurix packages deptree-resolver-260418g)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -9780,3 +9781,11 @@
 (re-export latynka-kbd)
 (re-export itch-setup-bin)
 (re-export papirus-folders-git)
+(re-export gpufetch-nocuda-git)
+(re-export libgksu)
+(re-export gksu)
+(re-export trilinos-git)
+(re-export cdesktopenv)
+(re-export sope)
+(re-export sogo)
+(re-export ladybird-git)
