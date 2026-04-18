@@ -6690,3 +6690,16 @@
                freeoffice
                knime-desktop
                curseforge-appimage))
+
+;; recipe-resolver-260418n (9 NRD resolved, 1 ALREADY_IN_GUIX, 20 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418n)
+  #:re-export (               plasmazones-bin
+               rustdesk-bin
+               qt-sudo
+               clamav-gui
+               namp
+               samsung-ssd-fwupdate
+               prefixer
+               appimagelauncher-bin
+               millennium-bin))

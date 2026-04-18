@@ -475,6 +475,7 @@
   #:use-module (gaurix packages recipe-resolver-260418k)
   #:use-module (gaurix packages recipe-resolver-260418l)
   #:use-module (gaurix packages recipe-resolver-260418m)
+  #:use-module (gaurix packages recipe-resolver-260418n)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -10127,3 +10128,14 @@
 (re-export freeoffice)
 (re-export knime-desktop)
 (re-export curseforge-appimage)
+
+;; recipe-resolver-260418n
+(re-export plasmazones-bin)
+(re-export rustdesk-bin)
+(re-export qt-sudo)
+(re-export clamav-gui)
+(re-export namp)
+(re-export samsung-ssd-fwupdate)
+(re-export prefixer)
+(re-export appimagelauncher-bin)
+(re-export millennium-bin)
