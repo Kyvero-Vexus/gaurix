@@ -8787,3 +8787,39 @@
                lazytail-bin
                oken-bin
                workz-bin))
+
+;; recipe-resolver-260419i (30 NRD resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260419i)
+  #:re-export (
+               ttf-unifont
+               codeql
+               jitsi-meet-turnserver
+               go-prism-git
+               asus-5606-fan-state
+               amf-amdgpu-pro
+               amdgpu-pro-oglp
+               uuid
+               mqtt-explorer
+               omnissa-horizon-scanner-client
+               omnissa-horizon-html5mmr
+               omnissa-horizon-file-association
+               omnissa-horizon-client-next
+               php84-iconv
+               php84-gettext
+               php84-fileinfo
+               php84-exif
+               php84-dom
+               php84-ctype
+               php84-calendar
+               php84-bcmath
+               nexus-client-git
+               nexus-client
+               ps7-libps4000
+               ps7-libps3000
+               ps7-libps5000a
+               ps7-libps5000
+               ps7-libps6000a
+               samsung-magician-consumer-ssd
+               omnissa-horizon-usb
+               ))
