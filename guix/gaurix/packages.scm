@@ -7943,3 +7943,21 @@
                norisk-client-launcher
                python314-freethreaded
                ))
+
+;; recipe-resolver-260418al (12 NEEDS_RECIPE_DESIGN resolved, 18 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418al)
+  #:re-export (
+               libmodule
+               clightd
+               funzzy-bin
+               wo-bin
+               oken-bin
+               comp-scan-bin
+               c47-bin
+               claude-code-seccomp
+               q5k-usb-udev
+               noto-fonts-cjk-fontconfig
+               qpdf-zopfli
+               tilem-gtk3-git
+               ))

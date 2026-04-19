@@ -509,6 +509,7 @@
   #:use-module (gaurix packages recipe-resolver-260418ai)
   #:use-module (gaurix packages recipe-resolver-260418aj)
   #:use-module (gaurix packages recipe-resolver-260418ak)
+  #:use-module (gaurix packages recipe-resolver-260418al)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -12162,3 +12163,18 @@
 (re-export opendeck)
 (re-export norisk-client-launcher)
 (re-export python314-freethreaded)
+
+
+;;; --- recipe-resolver-260418al: 12 compat aliases ---
+(re-export libmodule)
+(re-export clightd)
+(re-export funzzy-bin)
+(re-export wo-bin)
+(re-export oken-bin)
+(re-export comp-scan-bin)
+(re-export c47-bin)
+(re-export claude-code-seccomp)
+(re-export q5k-usb-udev)
+(re-export noto-fonts-cjk-fontconfig)
+(re-export qpdf-zopfli)
+(re-export tilem-gtk3-git)
