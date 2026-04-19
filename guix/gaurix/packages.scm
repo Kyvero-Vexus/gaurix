@@ -8764,6 +8764,7 @@
                youdao-dict))
 
 ;; recipe-resolver-260419g (20 recipes, 10 blocked)
+            ;; recipe-resolver-260419h (30 NRD resolved: all SUBSUMES_BY_PARENT — PHP84 extensions built into Guix php)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260419g)
   #:re-export (iwmenu-bin

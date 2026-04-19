@@ -520,6 +520,7 @@
   #:use-module (gaurix packages recipe-resolver-260419d)
   #:use-module (gaurix packages recipe-resolver-260419f)
   #:use-module (gaurix packages recipe-resolver-260419g)
+  ;; recipe-resolver-260419h: no exports (30 SUBSUMES_BY_PARENT PHP84 extensions)
   #:use-module (gaurix packages deptree-resolver-260419b)
   #:use-module (gaurix packages deptree-resolver-260419c)
   #:use-module (gaurix packages deptree-resolver-260419d)
