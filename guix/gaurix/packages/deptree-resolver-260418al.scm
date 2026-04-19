@@ -220,7 +220,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/shazow/ssh-chat")))
+                    (url "https://github.com/shazow/ssh-chat")
+                    (commit "v1.10")))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -241,7 +242,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/0xJacky/nginx-ui")))
+                    (url "https://github.com/0xJacky/nginx-ui")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -262,7 +264,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/lyc8503/EasierConnect")))
+                    (url "https://github.com/lyc8503/EasierConnect")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -283,7 +286,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/bepass-org/warp-plus")))
+                    (url "https://github.com/bepass-org/warp-plus")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -304,7 +308,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/goplus/xgo")))
+                    (url "https://github.com/goplus/xgo")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -325,7 +330,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/shadow1ng/fscan")))
+                    (url "https://github.com/shadow1ng/fscan")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -346,7 +352,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/SagerNet/serenity")))
+                    (url "https://github.com/SagerNet/serenity")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -367,7 +374,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/SagerNet/sing-box")))
+                    (url "https://github.com/SagerNet/sing-box")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -388,7 +396,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/wabarc/wayback")))
+                    (url "https://github.com/wabarc/wayback")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -409,7 +418,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/maxmind/mmdbinspect")))
+                    (url "https://github.com/maxmind/mmdbinspect")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -430,7 +440,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/projectdiscovery/nuclei")))
+                    (url "https://github.com/projectdiscovery/nuclei")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -451,7 +462,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/bjesus/pipet")))
+                    (url "https://github.com/bjesus/pipet")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -472,7 +484,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/qjfoidnh/BaiduPCS-Go")))
+                    (url "https://github.com/qjfoidnh/BaiduPCS-Go")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -493,7 +506,8 @@
     (source (origin
               (method git-fetch)
               (uri (git-reference
-                    (url "https://github.com/Unpackerr/unpackerr")))
+                    (url "https://github.com/Unpackerr/unpackerr")
+                    (commit version)))
               (file-name (git-file-name name version))
               (sha256
                (base32 "0000000000000000000000000000000000000000000000000000"))))
@@ -1905,7 +1919,7 @@
     (synopsis "all-in-one workspace (prebuilt Electron app)")
     (description "The everything OS and all-in-one workspace.  Provides a knowledge management tool with note-taking, project management, and database features in an Electron shell.")
     (home-page "https://tana.inc")
-    (license license:proprietary)))
+    (license (license:non-copyleft "https://tana.inc/terms"))))
 ;;; 84. sftpman-python
 (define-public sftpman-python
   (package

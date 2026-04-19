@@ -507,6 +507,7 @@
   #:use-module (gaurix packages deptree-resolver-260418ai)
   #:use-module (gaurix packages deptree-resolver-260418ak)
   #:use-module (gaurix packages deptree-resolver-260418al)
+  #:use-module (gaurix packages deptree-resolver-260418am)
   #:use-module (gaurix packages recipe-resolver-260418ai)
   #:use-module (gaurix packages recipe-resolver-260418aj)
   #:use-module (gaurix packages recipe-resolver-260418ak)
@@ -12265,3 +12266,10 @@
 (re-export cinecred)
 (re-export tana)
 (re-export sftpman-python)
+
+;;; --- deptree-resolver-260418am: 5 compat aliases ---
+(re-export groonga)
+(re-export pgroonga)
+(re-export sftpman-gtk)
+(re-export pcloudcc-lneely)
+(re-export xenia-canary-git)

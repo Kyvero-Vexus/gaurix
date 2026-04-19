@@ -1,24 +1,45 @@
 # Blocked Dependency Tree
 
-**Pass:** deptree-resolver-260418ak  
-**Timestamp:** 2026-04-19T01:52:02.098837Z  
-**Total BLOCKED:** 18  
+**Pass:** deptree-resolver-260418am  
+**Timestamp:** 2026-04-19T03:16:22.864108Z  
+**Total BLOCKED:** 16  
 
-## Priority Queue (All 14)
+## Priority Queue (top 20)
 
 | Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps |
 |------|---------|---|-------------|-------------|------------|
-| 1 | hyprland-workspaces-tui | 7966 | 0 | 0 | 1 |
-| 2 | powershell-editor-services | 8633 | 0 | 0 | 1 |
-| 3 | yt6801-dkms | 8641 | 0 | 0 | 1 |
-| 4 | ananicy-cpp-s6 | 16598 | 0 | 0 | 2 |
-| 5 | keyd-openrc | 8145 | 0 | 0 | 2 |
-| 6 | texlive-installer | 8013 | 0 | 0 | 2 |
-| 7 | wsl-hello-sudo-bin | 8051 | 0 | 0 | 2 |
-| 8 | deadlock-api-ingest-git | 8500 | 0 | 0 | 3 |
-| 9 | transgui-git | 8711 | 0 | 0 | 3 |
-| 10 | fiqhack-git | 16602 | 0 | 0 | 4 |
-| 11 | lib32-libxxf86dga | 5826 | 0 | 0 | 4 |
-| 12 | updpkgsrcs | 8036 | 0 | 0 | 4 |
-| 13 | container2wasm-git | 7992 | 0 | 0 | 5 |
-| 14 | roxybrowser-bin | 5895 | 0 | 0 | 9 |
+| 1 | bbg | 16759 | 0 | 0 | 1 |
+| 2 | garnet | 16724 | 0 | 0 | 1 |
+| 3 | scpdiscord-git | 16818 | 0 | 0 | 1 |
+| 4 | pgroonga | 16741 | 0 | 0 | 4 |
+| 5 | python-gurobipy | 16815 | 0 | 0 | 4 |
+| 6 | tuxedo-keyboard-tools | 16809 | 0 | 0 | 4 |
+| 7 | clipboard-manager-git | 16885 | 0 | 0 | 5 |
+| 8 | sftpman-gtk | 16831 | 0 | 0 | 5 |
+| 9 | tuxedo-backlight-control-git | 16767 | 0 | 0 | 5 |
+| 10 | opencomic | 16827 | 0 | 0 | 6 |
+| 11 | pcloudcc-lneely | 16755 | 0 | 0 | 7 |
+| 12 | yesplaymusic-git | 16835 | 0 | 0 | 7 |
+| 13 | adbmanager | 16706 | 0 | 0 | 8 |
+| 14 | companion | 16720 | 0 | 0 | 9 |
+| 15 | xenia-canary-git | 16910 | 0 | 0 | 11 |
+| 16 | comictagger-beta | 16899 | 0 | 0 | 34 |
+
+## Full Queue
+
+1. **bbg** (#16759) — blocked_deps=0, reverse_deps=0, total_deps=1
+2. **garnet** (#16724) — blocked_deps=0, reverse_deps=0, total_deps=1
+3. **scpdiscord-git** (#16818) — blocked_deps=0, reverse_deps=0, total_deps=1
+4. **pgroonga** (#16741) — blocked_deps=0, reverse_deps=0, total_deps=4
+5. **python-gurobipy** (#16815) — blocked_deps=0, reverse_deps=0, total_deps=4
+6. **tuxedo-keyboard-tools** (#16809) — blocked_deps=0, reverse_deps=0, total_deps=4
+7. **clipboard-manager-git** (#16885) — blocked_deps=0, reverse_deps=0, total_deps=5
+8. **sftpman-gtk** (#16831) — blocked_deps=0, reverse_deps=0, total_deps=5
+9. **tuxedo-backlight-control-git** (#16767) — blocked_deps=0, reverse_deps=0, total_deps=5
+10. **opencomic** (#16827) — blocked_deps=0, reverse_deps=0, total_deps=6
+11. **pcloudcc-lneely** (#16755) — blocked_deps=0, reverse_deps=0, total_deps=7
+12. **yesplaymusic-git** (#16835) — blocked_deps=0, reverse_deps=0, total_deps=7
+13. **adbmanager** (#16706) — blocked_deps=0, reverse_deps=0, total_deps=8
+14. **companion** (#16720) — blocked_deps=0, reverse_deps=0, total_deps=9
+15. **xenia-canary-git** (#16910) — blocked_deps=0, reverse_deps=0, total_deps=11
+16. **comictagger-beta** (#16899) — blocked_deps=0, reverse_deps=0, total_deps=34
