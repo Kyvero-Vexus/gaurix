@@ -508,6 +508,7 @@
   #:use-module (gaurix packages deptree-resolver-260418ak)
   #:use-module (gaurix packages recipe-resolver-260418ai)
   #:use-module (gaurix packages recipe-resolver-260418aj)
+  #:use-module (gaurix packages recipe-resolver-260418ak)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -12156,3 +12157,8 @@
 ;;; deadlock-api-ingest-git — exported from deptree-resolver-260418ak
 ;;; fiqhack-git — exported from deptree-resolver-260418ak
 ;;; container2wasm-git — exported from deptree-resolver-260418ak
+
+;;; --- recipe-resolver-260418ak: 3 compat aliases ---
+(re-export opendeck)
+(re-export norisk-client-launcher)
+(re-export python314-freethreaded)
