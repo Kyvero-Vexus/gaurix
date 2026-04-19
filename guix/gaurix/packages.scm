@@ -7961,3 +7961,93 @@
                qpdf-zopfli
                tilem-gtk3-git
                ))
+
+;; deptree-resolver-260418al (84 resolved, 16 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260418al)
+  #:re-export (
+               ssh-chat-git
+               nginx-ui
+               easierconnect
+               warp-plus
+               xgo
+               fscan
+               serenity
+               sing-box-alpha
+               wayback
+               mmdbinspect
+               nuclei
+               pipet-git
+               baidupcs-go-git
+               unpackerr
+               bandsnatch
+               izucat-git
+               ocd
+               apkeep
+               imagineer
+               shotman
+               wctx
+               ianny
+               auto-epp-rs
+               recordbox
+               walrs
+               ruffle-git
+               swayosd-git
+               abuse
+               dablin
+               canokey-usbip-git
+               anope
+               speedynote-git
+               openswitcher
+               wljoywake
+               wl-gammactl
+               lswt-git
+               proftpd
+               librepfunc
+               trigger
+               p910nd
+               ipad-charge
+               pcc-libs-git
+               openxcom
+               mfoc-hardnested-git
+               libstrangle-git
+               mips-elf-binutils
+               perl-pod-usage
+               perl-re-engine-re2
+               pgbadger
+               faugus-subtitle
+               ansible-dev-environment
+               frida-dexdump
+               python-wallbreaker
+               turbocase
+               python-imblearn
+               sox-noise-git
+               kattis-cli-git
+               meanalyzer
+               dove
+               mpv-modernz-git
+               ideapad-cm
+               fetchmirrors
+               arttime-git
+               wtf
+               fudo-git
+               posy-cursors
+               plymouth-theme-arch-logo
+               yvt
+               wlnfancurve
+               docsify-cli
+               write-good
+               appium
+               iptv-checker
+               freerouting
+               hath
+               grlx-farmer-bin
+               grlx-sprout-bin
+               opencomic-bin
+               linux-assistant-bin
+               pyroscope-bin
+               extraterm-bin
+               cinecred
+               tana
+               sftpman-python
+               ))
