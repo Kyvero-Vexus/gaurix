@@ -8051,3 +8051,14 @@
                tana
                sftpman-python
                ))
+
+;; recipe-resolver-260418am (11 NEEDS_RECIPE_DESIGN resolved, 19 EXHAUSTED)
+(re-export protonup-rs-bin)
+(re-export hyproled)
+(re-export arturo-bin)
+(re-export micromamba-bin)
+(re-export ghdl-mcode-bin)
+(re-export bleur-bin)
+(re-export cosmic-ext-applet-minimon-bin)
+(re-export cosmic-ext-applet-privacy-indicator-bin)
+(re-export plasma-ions-china)

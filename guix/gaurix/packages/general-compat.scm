@@ -512,6 +512,7 @@
   #:use-module (gaurix packages recipe-resolver-260418aj)
   #:use-module (gaurix packages recipe-resolver-260418ak)
   #:use-module (gaurix packages recipe-resolver-260418al)
+  #:use-module (gaurix packages recipe-resolver-260418am)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -12273,3 +12274,14 @@
 (re-export sftpman-gtk)
 (re-export pcloudcc-lneely)
 (re-export xenia-canary-git)
+
+;;; --- recipe-resolver-260418am: 9 new recipes (11 entries resolved) ---
+(re-export protonup-rs-bin)
+(re-export hyproled)
+(re-export arturo-bin)
+(re-export micromamba-bin)
+(re-export ghdl-mcode-bin)
+(re-export bleur-bin)
+(re-export cosmic-ext-applet-minimon-bin)
+(re-export cosmic-ext-applet-privacy-indicator-bin)
+(re-export plasma-ions-china)
