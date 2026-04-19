@@ -8749,3 +8749,16 @@
                chough-bin
                weylus-bin
                mkbrr-gui-bin))
+
+;; deptree-resolver-260419e (8 BLOCKED resolved: 9 recipes incl. oracle-instantclient-basic dep; 1 BLOCKED remains)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260419e)
+  #:re-export (oracle-instantclient-basic
+               oracle-instantclient-sqlplus
+               apple-mac-plymouth-git
+               noto-fonts-cjk-glyph-conf
+               noto-fonts-cjk-locale-conf
+               universal-gcode-sender
+               icu70
+               ibc
+               youdao-dict))
