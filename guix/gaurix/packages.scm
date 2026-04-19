@@ -7787,6 +7787,7 @@
                gnome-icon-theme-extras
                go-rice
                ;; deptree-resolver-260418ai
+            ;; deptree-resolver-260418ak (14 BLOCKED resolved: 4 recipes, 10 FAILED, BLOCKED pool fully drained)
                morewaita-icon-theme-git
                battery-notify
                cpctools
@@ -7928,4 +7929,17 @@
                szsol-rs
                qpdf-zopfli
                gbdk-2020
+            hyprland-workspaces-tui
+            deadlock-api-ingest-git
+            fiqhack-git
+            container2wasm-git
+               ))
+
+;; recipe-resolver-260418ak (3 NEEDS_RECIPE_DESIGN resolved, 27 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418ak)
+  #:re-export (
+               opendeck
+               norisk-client-launcher
+               python314-freethreaded
                ))

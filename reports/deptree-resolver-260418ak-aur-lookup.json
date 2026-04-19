@@ -1,0 +1,76 @@
+[
+  {
+    "name": "hyprland-workspaces-tui",
+    "status": "RESOLVED",
+    "version": "1.2.0",
+    "build_system": "cargo"
+  },
+  {
+    "name": "powershell-editor-services",
+    "status": "FAILED",
+    "reason": "DEP_MISSING: requires PowerShell/.NET ecosystem which is not bootstrapped in Guix"
+  },
+  {
+    "name": "yt6801-dkms",
+    "status": "FAILED",
+    "reason": "KERNEL_MODULE: out-of-tree RTL YT6801 WiFi kernel driver via DKMS; Guix handles kernel modules via operating-system config, not DKMS"
+  },
+  {
+    "name": "ananicy-cpp-s6",
+    "status": "FAILED",
+    "reason": "DISTRO_SPECIFIC: s6-rc service scripts for ananicy-cpp; Guix uses GNU Shepherd, not s6; no upstream URL; AUR-only inline scripts"
+  },
+  {
+    "name": "keyd-openrc",
+    "status": "FAILED",
+    "reason": "DISTRO_SPECIFIC: OpenRC init scripts for keyd; Guix uses GNU Shepherd, not OpenRC; keyd itself is already in Guix upstream"
+  },
+  {
+    "name": "texlive-installer",
+    "status": "FAILED",
+    "reason": "DISTRO_SPECIFIC: Arch pacman compatibility shim that tricks pacman into thinking texlive is installed; Guix has native texlive packages via (gnu packages tex)"
+  },
+  {
+    "name": "wsl-hello-sudo-bin",
+    "status": "FAILED",
+    "reason": "PLATFORM_SPECIFIC: WSL-only PAM module for Windows Hello authentication; requires Windows host with WSL environment and Windows Hello API"
+  },
+  {
+    "name": "deadlock-api-ingest-git",
+    "status": "RESOLVED",
+    "version": "0.2.9",
+    "build_system": "cargo"
+  },
+  {
+    "name": "transgui-git",
+    "status": "FAILED",
+    "reason": "DEP_MISSING: requires Free Pascal compiler and Lazarus IDE component library; neither is available in Guix; upstream repo archived/unmaintained"
+  },
+  {
+    "name": "fiqhack-git",
+    "status": "RESOLVED",
+    "version": "4.3.0",
+    "build_system": "gnu"
+  },
+  {
+    "name": "lib32-libxxf86dga",
+    "status": "FAILED",
+    "reason": "MULTILIB_UNSUPPORTED: 32-bit build of Xorg XF86DGA extension library; Guix does not support multilib (lib32) builds"
+  },
+  {
+    "name": "updpkgsrcs",
+    "status": "FAILED",
+    "reason": "DISTRO_SPECIFIC: bash tool for updating git submodule source arrays in Arch PKGBUILD files; has no purpose outside Arch packaging workflow"
+  },
+  {
+    "name": "container2wasm-git",
+    "status": "RESOLVED",
+    "version": "0.8.2",
+    "build_system": "go"
+  },
+  {
+    "name": "roxybrowser-bin",
+    "status": "FAILED",
+    "reason": "PROPRIETARY: closed-source commercial antidetect browser by Linkv Tech; no source code available; MIT license applies only to AUR PKGBUILD, not the software"
+  }
+]

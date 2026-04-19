@@ -1,0 +1,85 @@
+{
+  "pass_id": "deptree-resolver-260418ak",
+  "total_selected": 14,
+  "resolved": 4,
+  "failed": 10,
+  "still_blocked": 0,
+  "resolved_packages": [
+    {
+      "name": "hyprland-workspaces-tui",
+      "number": 7966,
+      "version": "1.2.0",
+      "build_system": "cargo"
+    },
+    {
+      "name": "deadlock-api-ingest-git",
+      "number": 8500,
+      "version": "0.2.9",
+      "build_system": "cargo"
+    },
+    {
+      "name": "fiqhack-git",
+      "number": 16602,
+      "version": "4.3.0",
+      "build_system": "gnu"
+    },
+    {
+      "name": "container2wasm-git",
+      "number": 7992,
+      "version": "0.8.2",
+      "build_system": "go"
+    }
+  ],
+  "failed_packages": [
+    {
+      "name": "powershell-editor-services",
+      "number": 8633,
+      "reason": "DEP_MISSING: requires PowerShell/.NET ecosystem which is not bootstrapped in Guix"
+    },
+    {
+      "name": "yt6801-dkms",
+      "number": 8641,
+      "reason": "KERNEL_MODULE: out-of-tree RTL YT6801 WiFi kernel driver via DKMS; Guix handles kernel modules via operating-system config, not DKMS"
+    },
+    {
+      "name": "ananicy-cpp-s6",
+      "number": 16598,
+      "reason": "DISTRO_SPECIFIC: s6-rc service scripts for ananicy-cpp; Guix uses GNU Shepherd, not s6; no upstream URL; AUR-only inline scripts"
+    },
+    {
+      "name": "keyd-openrc",
+      "number": 8145,
+      "reason": "DISTRO_SPECIFIC: OpenRC init scripts for keyd; Guix uses GNU Shepherd, not OpenRC; keyd itself is already in Guix upstream"
+    },
+    {
+      "name": "texlive-installer",
+      "number": 8013,
+      "reason": "DISTRO_SPECIFIC: Arch pacman compatibility shim that tricks pacman into thinking texlive is installed; Guix has native texlive packages via (gnu packages tex)"
+    },
+    {
+      "name": "wsl-hello-sudo-bin",
+      "number": 8051,
+      "reason": "PLATFORM_SPECIFIC: WSL-only PAM module for Windows Hello authentication; requires Windows host with WSL environment and Windows Hello API"
+    },
+    {
+      "name": "transgui-git",
+      "number": 8711,
+      "reason": "DEP_MISSING: requires Free Pascal compiler and Lazarus IDE component library; neither is available in Guix; upstream repo archived/unmaintained"
+    },
+    {
+      "name": "lib32-libxxf86dga",
+      "number": 5826,
+      "reason": "MULTILIB_UNSUPPORTED: 32-bit build of Xorg XF86DGA extension library; Guix does not support multilib (lib32) builds"
+    },
+    {
+      "name": "updpkgsrcs",
+      "number": 8036,
+      "reason": "DISTRO_SPECIFIC: bash tool for updating git submodule source arrays in Arch PKGBUILD files; has no purpose outside Arch packaging workflow"
+    },
+    {
+      "name": "roxybrowser-bin",
+      "number": 5895,
+      "reason": "PROPRIETARY: closed-source commercial antidetect browser by Linkv Tech; no source code available; MIT license applies only to AUR PKGBUILD, not the software"
+    }
+  ]
+}

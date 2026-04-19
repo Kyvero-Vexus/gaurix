@@ -505,6 +505,7 @@
   #:use-module (gaurix packages recipe-resolver-260418ah)
   #:use-module (gaurix packages deptree-resolver-260418ai)
   #:use-module (gaurix packages deptree-resolver-260418ai)
+  #:use-module (gaurix packages deptree-resolver-260418ak)
   #:use-module (gaurix packages recipe-resolver-260418ai)
   #:use-module (gaurix packages recipe-resolver-260418aj)
   #:export (
@@ -12148,3 +12149,10 @@
 (re-export szsol-rs)
 (re-export qpdf-zopfli)
 (re-export gbdk-2020)
+
+
+;;; Re-exports from deptree-resolver-260418ak
+;;; hyprland-workspaces-tui — exported from deptree-resolver-260418ak
+;;; deadlock-api-ingest-git — exported from deptree-resolver-260418ak
+;;; fiqhack-git — exported from deptree-resolver-260418ak
+;;; container2wasm-git — exported from deptree-resolver-260418ak
