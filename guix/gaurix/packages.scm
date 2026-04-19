@@ -8732,3 +8732,20 @@
                wazuh-manager
                elisa-rpc-git
                ))
+
+;; recipe-resolver-260419f (13 NRD resolved: 13 recipes; 17 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260419f)
+  #:re-export (grub-theme-tela-color
+               pomo-bin
+               3dstool
+               gruvbox-dark-icons-gtk
+               amdgpu-clocks
+               foxicons-theme
+               plymouth-theme-hexagon-alt-gruvbox
+               r47-bin
+               morewaita-icon-theme
+               notwaita-cursor-theme
+               chough-bin
+               weylus-bin
+               mkbrr-gui-bin))
