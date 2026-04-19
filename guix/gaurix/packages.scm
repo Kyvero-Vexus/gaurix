@@ -7636,4 +7636,49 @@
                poster
                inform7
                toggldesktop-bin
-               ))
+                              wormhole-william-bin
+               wait4x-bin
+               dnscontrol-bin
+               wrkflw-bin
+               patchy-bin
+               orbit-bin
+               cnote-bin
+               hyprmon-bin
+               suiup-bin
+               ffdash-bin
+               omp-manager-bin
+               comp-scan-bin
+               chough-bin
+               radicle-httpd-bin
+               materialgram-bin
+               framework-control-bin
+               weylus-bin
+               gaffer-bin
+               briar-desktop-bin
+               iloader-appimage
+               r47-bin
+               browsh-bin
+               commitlint-go-bin
+               tartrazine-bin
+               wireproxy-awg-bin
+               ascii-image-converter
+               tut
+               vimcdoc
+               lug-helper
+               hyphen-ru
+               teseq
+               rzip
+               gcolor2
+               disktype
+               nsnake
+               zcfan
+               retroforth
+               heirloom-doctools
+               qdia
+               webcamoid
+               remmina-plugin-rdesktop
+               pkgbuild-assistant
+               grub-imageboot
+               libreoffice-extension-apso
+               aacs-keydb
+))
