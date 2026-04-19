@@ -8762,3 +8762,27 @@
                icu70
                ibc
                youdao-dict))
+
+;; recipe-resolver-260419g (20 recipes, 10 blocked)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260419g)
+  #:re-export (iwmenu-bin
+               bzmenu-bin
+               pwmenu-bin
+               sabiql-bin
+               comp-scan-bin
+               omp-manager-bin
+               feedr-bin
+               wrkflw-bin
+               crier-bin
+               ferrishot-bin
+               ferris-scan-bin
+               claude-code-seccomp
+               libmodule
+               wo-bin
+               mezzotone-bin
+               console2svg-bin
+               funzzy-bin
+               lazytail-bin
+               oken-bin
+               workz-bin))
