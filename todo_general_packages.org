@@ -46804,9 +46804,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5786. qqc2-desktop-style-git
+** FAILED 5786. qqc2-desktop-style-git [FAILED: ALREADY_IN_GUIX]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n qqc2-desktop-style-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n qqc2-desktop-style-git && guix lint -L guix qqc2-desktop-style-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ALREADY_IN_GUIX: stable qqc2-desktop-style in Guix; A1: -git needs full KDE Frameworks -git stack; A2: use stable version; A3: backporting defeats purpose (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -46851,9 +46852,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418y.scm (arronax v0.8.1, pyproject-build-system, GPL-3.0) (recipe-resolver-260418y)
 
 
-** FAILED 5792. watt-toolkit-bin
+** FAILED 5792. watt-toolkit-bin [FAILED: DOTNET_RUNTIME_DEP]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n watt-toolkit-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n watt-toolkit-bin && guix lint -L guix watt-toolkit-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_RUNTIME_DEP: requires aspnet-runtime-10.0 + dotnet-runtime-10.0 not in Guix; cannot build from source without dotnet SDK (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -46923,9 +46925,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5801. godot-git
+** FAILED 5801. godot-git [FAILED: ALREADY_IN_GUIX]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n godot-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n godot-git && guix lint -L guix godot-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ALREADY_IN_GUIX: Godot packaged in Guix; -git uses SCons; adds no channel value (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -46969,16 +46972,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5807. xlibre-input-wacom
+** FAILED 5807. xlibre-input-wacom [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n xlibre-input-wacom | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n xlibre-input-wacom && guix lint -L guix xlibre-input-wacom
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs xlibre-xserver>=25; A1: XLibre not in Guix; A2: xf86-input-wacom already in Guix; A3: libinput for Wayland (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
 
-** FAILED 5808. xlibre-input-evdev
+** FAILED 5808. xlibre-input-evdev [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n xlibre-input-evdev | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n xlibre-input-evdev && guix lint -L guix xlibre-input-evdev
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs xlibre-xserver>=25; A1: XLibre not in Guix; A2: xf86-input-evdev already in Guix; A3: libinput for Wayland (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47039,6 +47044,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: FAILED: MISSING_SOURCE: not found in AUR metadata cache; package removed or renamed (deptree-resolver-260418ad)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_SOURCE: AUR package name no longer exists; A1: package removed from AUR; A2: upstream repo exists but AUR variant gone; A3: Guix has other system monitors (recipe-resolver-260419a)
 ** FAILED 5816. airrohr-firmware-flasher-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n airrohr-firmware-flasher-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n airrohr-firmware-flasher-git && guix lint -L guix airrohr-firmware-flasher-git
@@ -47805,9 +47811,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: unknown
    - TODO Status: FAILED
 
-** FAILED 5926. cnijfilter2-g3010
+** FAILED 5926. cnijfilter2-g3010 [FAILED: NONFREE_PROPRIETARY]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cnijfilter2-g3010 | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n cnijfilter2-g3010 && guix lint -L guix cnijfilter2-g3010
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_PROPRIETARY: Canon printer driver; restrictive license; binary blobs; model-specific (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47820,9 +47827,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5928. python-unitypy-git
+** FAILED 5928. python-unitypy-git [FAILED: EXCESSIVE_PYTHON_DEPS]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-unitypy-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n python-unitypy-git && guix lint -L guix python-unitypy-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: EXCESSIVE_PYTHON_DEPS: needs 7 niche Python libs + C++20 native extensions; A1: deep dependency chain; A2: each dep has C++ components; A3: cannot skip texture decoders (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47887,9 +47895,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — EXCESSIVE_BUILD_SCOPE: requires full VLC rebuild with 50+ makedeps; A1: cannot build plugins separately; A2: Qt6/Vulkan/40+ libs needed; A3: VLC in Guix already includes Lua support (recipe-resolver-260418y)
 
 
-** FAILED 5936. vlc-git
+** FAILED 5936. vlc-git [FAILED: ALREADY_IN_GUIX]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vlc-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n vlc-git && guix lint -L guix vlc-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ALREADY_IN_GUIX: VLC already packaged in Guix; -git variant adds no value; 50+ makedeps (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47910,9 +47919,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260416e.scm (crepe-bin v0.2.2, grep-like highlight tool binary, copy-build-system, MIT) (recipe-resolver-260416e)
-** FAILED 5939. proton-cachyos-launcher
+** FAILED 5939. proton-cachyos-launcher [FAILED: DISTRO_SPECIFIC]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n proton-cachyos-launcher | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n proton-cachyos-launcher && guix lint -L guix proton-cachyos-launcher
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DISTRO_SPECIFIC: trivial launcher for CachyOS-specific Proton fork; no standalone value (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47947,9 +47957,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5944. geant4
+** FAILED 5944. geant4 [FAILED: ALREADY_IN_GUIX]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n geant4 | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n geant4 && guix lint -L guix geant4
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ALREADY_IN_GUIX: available in guix-science channel; Geant4 Software License non-standard (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48075,9 +48086,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5960. xtool
+** FAILED 5960. xtool [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n xtool | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n xtool && guix lint -L guix xtool
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs swift-bin (Swift compiler) not in Guix; A1: Swift not bootstrappable; A2: binary needs Swift runtime; A3: Apple ecosystem tool (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48113,9 +48125,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5965. stayfree-desktop
+** FAILED 5965. stayfree-desktop [FAILED: NONFREE_PROPRIETARY]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n stayfree-desktop | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n stayfree-desktop && guix lint -L guix stayfree-desktop
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_PROPRIETARY: closed-source screen time tracker; no source code; Electron/AppImage binary (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48128,9 +48141,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5967. ftnn-desktop
+** FAILED 5967. ftnn-desktop [FAILED: NONFREE_PROPRIETARY]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ftnn-desktop | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n ftnn-desktop && guix lint -L guix ftnn-desktop
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_PROPRIETARY: proprietary Chinese stock trading client (Futu/Futubull); custom license (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48153,9 +48167,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260416e.scm (oxlint-bin v1.60.0, JS/TS linter binary, copy-build-system, MIT) (recipe-resolver-260416e)
 
    - Status: DONE: Recipe generated in deptree-resolver-260418ad.scm (deptree-resolver-260418ad)
-** FAILED 5970. cheminot
+** FAILED 5970. cheminot [FAILED: NONFREE_PROPRIETARY]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n cheminot | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n cheminot && guix lint -L guix cheminot
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_PROPRIETARY: university Java Web Start app; obsolete technology; institution-specific (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48242,9 +48257,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5981. oblivion-desktop-git
+** FAILED 5981. oblivion-desktop-git [FAILED: NONFREE_LICENSE]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n oblivion-desktop-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n oblivion-desktop-git && guix lint -L guix oblivion-desktop-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_LICENSE: Cloudflare WARP VPN GUI; custom license prohibits redistribution; depends on electron38 (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48256,9 +48272,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5983. tauon-music-box-git
+** FAILED 5983. tauon-music-box-git [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n tauon-music-box-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n tauon-music-box-git && guix lint -L guix tauon-music-box-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs SDL3 (not in Guix) + pysdl3 + 15 missing libraries; A1: SDL3 too new; A2: package SDL3 — major undertaking; A3: no binary releases (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48324,9 +48341,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5992. litellm-ollama
+** FAILED 5992. litellm-ollama [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n litellm-ollama | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n litellm-ollama && guix lint -L guix litellm-ollama
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: metapackage needs ollama + litellm + deep Python dep chain; A1: litellm has 20+ missing Python deps; A2: ollama is 80+ Go modules; A3: no standalone solution (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48411,9 +48429,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 6003. fastmail
+** FAILED 6003. fastmail [FAILED: NONFREE_PROPRIETARY]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fastmail | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n fastmail && guix lint -L guix fastmail
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_PROPRIETARY: proprietary Electron wrapper for commercial email service; no source code (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48462,9 +48481,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 6010. gosplugin
+** FAILED 6010. gosplugin [FAILED: NONFREE_PROPRIETARY]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n gosplugin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n gosplugin && guix lint -L guix gosplugin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NONFREE_PROPRIETARY: Russian government crypto plugin; closed-source; 40+ native deps (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48516,9 +48536,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260416e.scm (fnox-bin v1.20.0, secrets manager binary, copy-build-system, MIT) (recipe-resolver-260416e)
-** FAILED 6017. xlibre-video-voodoo
+** FAILED 6017. xlibre-video-voodoo [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n xlibre-video-voodoo | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n xlibre-video-voodoo && guix lint -L guix xlibre-video-voodoo
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs xlibre-xserver>=25 fork not in Guix; A1: XLibre not packaged; A2: X.Org API incompatible; A3: obsolete 3dfx Voodoo hardware (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48539,9 +48560,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 6020. libldap24
+** FAILED 6020. libldap24 [FAILED: COMPLEX_BUILD]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n libldap24 | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n libldap24 && guix lint -L guix libldap24
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_BUILD: OpenLDAP 2.4.x legacy compat library conflicts with Guix openldap; A1: parallel install — flag management; A2: extract client libs — still needs full build; A3: modern openldap mostly compatible (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48568,9 +48590,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 6024. freetype2-qdoled
+** FAILED 6024. freetype2-qdoled [FAILED: COMPLEX_BUILD]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n freetype2-qdoled | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n freetype2-qdoled && guix lint -L guix freetype2-qdoled
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_BUILD: patched freetype2 variant for QD-OLED subpixel rendering; A1: build variant — conflicts with system freetype; A2: parallel install — apps won't find it; A3: patches not upstreamed (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -58423,6 +58446,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: FAILED: DISTRO_SPECIFIC: Extracted systemd shared libraries; Guix uses Shepherd init system, not systemd (deptree-resolver-260418ad)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DISTRO_SPECIFIC: systemd client libs not needed on Guix (uses Shepherd); massive build with 50+ makedeps (recipe-resolver-260419a)
 ** DONE 7313. systemd-liberated-resolvconf-git
    - Note: AUR popularity=2.9631, votes=3; systemd resolvconf replacement — liberated fork (git version)
    - TODO Status: FAILED
@@ -64416,11 +64440,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** FAILED 8089. pm2ml
+** FAILED 8089. pm2ml [FAILED: DISTRO_SPECIFIC]  :recipe-resolver-260419a:
    - Note: AUR popularity=0.0901, votes=173; Generate metalinks for downloading Pacman packages and databases.
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n pm2ml | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix pm2ml && guix build -L guix -n pm2ml | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DISTRO_SPECIFIC: Pacman metalink generator; depends on pyalpm (Arch-only); no Guix utility (recipe-resolver-260419a)
 
 ** FAILED 8090. pacserve
    - Note: AUR popularity=0.0900, votes=113; Easily share Pacman packages between computers. A replacement for PkgD.
@@ -69168,8 +69193,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 8749. quill-editor
+** FAILED 8749. quill-editor [FAILED: MISSING_SOURCE]  :recipe-resolver-260419a:
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n quill-editor | detail: selected for queue-20260403p100daily7 and created queue recipe-draft/blocked-note module entries, but no full source/hash/build-system/input recipe was completed in this pass | next: draft/import a concrete Guix recipe from stable upstream/AUR metadata and run guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_SOURCE: no upstream URL in AUR metadata; A1: cannot locate source repository; A2: multiple projects named quill-editor; A3: 1 AUR vote, likely abandoned (recipe-resolver-260419a)
    - Note: AUR popularity=0.0665, votes=1; A simple CLI Text Editor
    - TODO Status: FAILED
 
