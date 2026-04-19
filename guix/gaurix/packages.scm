@@ -7910,3 +7910,22 @@
                ps7-libps6000
                ps7-libusbtc08
                ))
+
+;; recipe-resolver-260418aj (13 NEEDS_RECIPE_DESIGN resolved, 17 EXHAUSTED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260418aj)
+  #:re-export (
+               lobster
+               q5k-usb-udev
+               wrkflw-bin
+               omp-manager-bin
+               cliamp
+               dpibreak
+               netwatch-tui
+               zignal-git
+               comp-scan-bin
+               deepfilternet-demos-git
+               szsol-rs
+               qpdf-zopfli
+               gbdk-2020
+               ))

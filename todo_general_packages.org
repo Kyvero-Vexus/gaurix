@@ -34569,6 +34569,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260414u.scm (deepfilternet-demos-git, RECIPE: Guix recipe created (source-rust))
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260414aa; complex Rust workspace + ML models; A1: workspace has many crates; A2: 40MB+ model files needed at runtime; A3: requires Cargo.toml patching
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (deepfilternet-demos-git v0.5.6, deep learning noise filter, copy-build-system, MIT+Apache-2.0) (recipe-resolver-260418aj)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39160,6 +39161,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4830. zignal-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Zig terminal signal viewer from git; AUR PKGBUILD audit needed; stub added.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (zignal-git v0.10.0, Zig image processing CLI, copy-build-system, MIT) (recipe-resolver-260418aj)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -39957,6 +39959,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4928. gbdk-2020
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Game Boy Development Kit cmake; https://github.com/gbdk-2020/gbdk-2020; stub added.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (gbdk-2020 v4.5.0, Game Boy Development Kit binary, copy-build-system, GPL-2.0) (recipe-resolver-260418aj)
    - Difficulty: unknown
    - TODO Status: DONE
 
@@ -40350,6 +40353,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 4977. utiliti
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN — LITIENGINE game editor Java; fetch release jar, draft wrapper+JRE; Source: https://github.com/iamllcoolray/utiliti-aur-package. Stub exported in queue-20260324p100d.scm.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: GRADLE_BUILD: LITIENGINE game editor uses Gradle (not in Guix); A1: Gradle build not supported; A2: binary from unofficial fork; A3: no standalone JAR releases (recipe-resolver-260418aj)
    - Difficulty: unknown
    - TODO Status: BLOCKED
 
@@ -43941,6 +43945,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5435. renamemytvseries-gtk-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100d.scm v2.3.12; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: closed-source Lazarus Pascal binary, no source code available; A1: redistribution unclear; A2: no source to build; A3: proprietary software (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -43980,6 +43985,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5440. reqable-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100d.scm v3.0.39; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: closed-source HTTP debugging tool with custom license; A1: license prohibits redistribution; A2: no source code; A3: proprietary software (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44062,6 +44068,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5451. wrkflw-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.7.3; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (wrkflw-bin v0.7.3, GitHub Actions workflow validator, copy-build-system, MIT) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: DONE
 
@@ -44130,6 +44137,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5458. bapctools-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vr1310; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_DEPS: heavy Python dep chain needs checktestdata + python-questionary (not in Guix); A1: 5+ missing Python packages; A2: checktestdata has own C++ dep chain; A3: minimal install breaks core validation (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44153,6 +44161,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** DONE 5461. netwatch-tui [see #3038]
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (netwatch-tui v0.12.3, network diagnostics TUI, copy-build-system, MIT) (recipe-resolver-260418aj)
 
 ** DONE 5461. netwatch-tui [CARGO_DEP_CHAIN]
 
@@ -44164,6 +44173,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** DONE 5462. synergy3-bin [see #3039 - token-gated download]
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: commercial EULA, download requires auth token scraping; A1: license prohibits redistribution; A2: no source (OSS upstream is deskflow); A3: consider deskflow instead (recipe-resolver-260418aj)
 
 ** DONE 5462. synergy3-bin [PROPRIETARY_SOURCE]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -44175,6 +44185,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5463. q5k-usb-udev
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v2026.02.28; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (q5k-usb-udev v2026.02.28, Qudelix-5K udev rules, copy-build-system, BSD-2) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44182,6 +44193,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5464. qpdf-zopfli
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v12.3.2; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (qpdf-zopfli v11.8.0, QPDF with Zopfli compression, cmake-build-system, Apache-2.0) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44198,6 +44210,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5466. libavif-noglycin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.3.0; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: libavif already in Guix upstream; -noglycin is Arch-specific glycin workaround irrelevant to Guix; A1: identical to upstream; A2: no value added; A3: use Guix libavif (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44205,6 +44218,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5467. libheif-noglycin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.21.2; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: libheif already in Guix upstream; -noglycin is Arch-specific workaround; A1: identical to upstream; A2: no value added; A3: use Guix libheif (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44212,6 +44226,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5468. libjxl-noglycin-doc
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.11.2; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: libjxl docs sub-package; base library already in Guix; A1: add docs output to existing libjxl; A2: -noglycin variant irrelevant; A3: skip (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44219,6 +44234,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5469. libjxl-noglycin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.11.2; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: libjxl already in Guix upstream; -noglycin is Arch-specific workaround; A1: identical to upstream; A2: no value added; A3: use Guix libjxl (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44226,6 +44242,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5470. op-cache-git [see #3047 - needs cargo vendoring]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_DEP: requires 1Password CLI (proprietary) as runtime dep; no tagged releases; A1: useless without proprietary op CLI; A2: op CLI not FOSS; A3: skip (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44241,6 +44258,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** DONE 5472. szsol-rs [CARGO_DEP_CHAIN]
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (szsol-rs v1.1.0, SHENZHEN I/O solitaire, copy-build-system, GPL-3.0) (recipe-resolver-260418aj)
 
 ** DONE 5472. szsol-rs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -44276,6 +44294,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5476. comp-scan-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.0; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (comp-scan-bin v0.1.0, local AI system scanner, copy-build-system, MIT) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44283,6 +44302,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5477. tilem-gtk3-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vr7; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs tilibs suite (libticables/libticonv/libtifiles/libticalcs), none in Guix; A1: package 4 deps — significant scope; A2: cannot build without tilibs; A3: no Guix tilem exists (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44304,6 +44324,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5480. c47-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v00.109.03.01b1; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ALREADY_PACKAGED_PRIOR: c47 already packaged from source (meson-build-system) in recipe-resolver-260416a.scm; binary variant unnecessary (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44319,6 +44340,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5482. cliamp
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.27.2; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (cliamp v1.37.0, retro terminal music player, copy-build-system, MIT) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44351,6 +44373,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5486. framework-control-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.5.1; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP: requires framework-system CLI (not in Guix) + systemd service; A1: package framework-system — niche hardware; A2: without daemon loses core functionality; A3: hardware-specific + systemd (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44365,6 +44388,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5488. dpibreak
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.5.1; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (dpibreak v0.6.1, DPI circumvention tool, copy-build-system, GPL-3.0+) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44372,6 +44396,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5489. lobster
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vv4.6.2; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (lobster v4.6.2, terminal movie streaming shell script, copy-build-system, GPL-2.0) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44386,6 +44411,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5491. uac-polkit-agent-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vr30f6179; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_DEPS: massive KDE Frameworks 6/Qt6 dep chain (polkit-qt6, kirigami, etc.); A1: 10+ missing KF6 packages; A2: tightly Qt/KDE integrated; A3: existing polkit agents in Guix (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44400,6 +44426,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5493. ipmctl-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm vv03.00.00.0485.2; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_BUILD: needs edk2 UEFI submodule (not in Guix) + 3 custom patches; A1: edk2 toolchain complex; A2: patches fragile; A3: Intel Optane discontinued (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44422,6 +44449,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5496. fish-session
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.8; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: UNLICENSED: repository uses 'Unlicensed' (LicenseRef-UNLICENSED) not a recognized FOSS license; A1: violates Guix FOSS policy; A2: upstream license change needed; A3: skip until relicensed (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44437,6 +44465,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5498. omp-manager-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.2; recipe drafting not completed this pass.
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260418aj.scm (omp-manager-bin v0.1.2, Oh My Posh theme manager TUI, copy-build-system, MIT) (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 
@@ -44452,6 +44481,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** DONE 5500. spinwheel-pipewire
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v0.1.0; recipe drafting not completed this pass.
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: NO_UPSTREAM: upstream Codeberg repo returns 404; source only in AUR git; A1: no proper origin for Guix; A2: cannot mirror without upstream; A3: skip (recipe-resolver-260418aj)
    - Difficulty: medium
    - TODO Status: BLOCKED
 

@@ -506,6 +506,7 @@
   #:use-module (gaurix packages deptree-resolver-260418ai)
   #:use-module (gaurix packages deptree-resolver-260418ai)
   #:use-module (gaurix packages recipe-resolver-260418ai)
+  #:use-module (gaurix packages recipe-resolver-260418aj)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -12132,3 +12133,18 @@
 (re-export ps7-libps4000a)
 (re-export ps7-libps6000)
 (re-export ps7-libusbtc08)
+
+;;; --- recipe-resolver-260418aj: 13 compat aliases ---
+(re-export lobster)
+(re-export q5k-usb-udev)
+(re-export wrkflw-bin)
+(re-export omp-manager-bin)
+(re-export cliamp)
+(re-export dpibreak)
+(re-export netwatch-tui)
+(re-export zignal-git)
+(re-export comp-scan-bin)
+(re-export deepfilternet-demos-git)
+(re-export szsol-rs)
+(re-export qpdf-zopfli)
+(re-export gbdk-2020)
