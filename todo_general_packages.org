@@ -47006,9 +47006,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5812. alephone-phoenix
+** FAILED 5812. alephone-phoenix [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n alephone-phoenix | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n alephone-phoenix && guix lint -L guix alephone-phoenix
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: Marathon Phoenix game data depends on alephone (Aleph One) engine not in Guix; A1: package alephone first — complex C++ SDL/Boost; A2: standalone packaging — non-functional without engine; A3: no stable source URL (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48119,9 +48120,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5966. libminizinc
+** FAILED 5966. libminizinc [FAILED: MISSING_DEP_CHAIN]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n libminizinc | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n libminizinc && guix lint -L guix libminizinc
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP_CHAIN: needs gecode + 5 coin-or-* solver libraries not in Guix; A1: cmake from source blocked on solver deps; A2: package gecode first — large C++ project; A3: no standalone CLI binary releases (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48261,16 +48263,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5984. termirs
+** DONE 5984. termirs  :recipe-resolver-260419a:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n termirs | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n termirs && guix lint -L guix termirs
+   - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260419a.scm (termirs-bin v0.3.2, async SSH/SFTP terminal client, copy-build-system, MIT) (recipe-resolver-260419a)
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
 
-** FAILED 5985. roleboi
+** FAILED 5985. roleboi [FAILED: DOTNET_UNSUPPORTED]  :recipe-resolver-260419a:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n roleboi | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n roleboi && guix lint -L guix roleboi
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: C#/.NET Discord bot requires dotnet-sdk-9.0 not in Guix; A1: build from source — .NET SDK missing; A2: no binary releases; A3: niche bot with 1 AUR vote (recipe-resolver-260419a)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -132456,7 +132460,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: COMPLEX_DEPS: Electron framework binary requires Chromium runtime patchelf chain (recipe-resolver-260415i)
    - TODO Status: BLOCKED
 
-** TODO 17245. electron13-bin
+** FAILED 17245. electron13-bin
    - AUR votes: 5, popularity: 0.0018
    - Note: Build cross platform desktop apps with web technologies - binary version 13
    - TODO Status: TODO
@@ -137625,7 +137629,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18084. blend2d
+** DONE 18084. blend2d
    - AUR votes: 1, popularity: 0.0008
    - Note: A high-performance 2D vector graphics engine written in C++
    - TODO Status: TODO
@@ -138220,7 +138224,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18181. argparser-c
+** DONE 18181. argparser-c
    - AUR votes: 5, popularity: 0.0008
    - Note: Command line argument parser library, like getopt, except better. C version.
    - TODO Status: TODO
@@ -151859,7 +151863,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 20408. ruby-version_gem
+** DONE 20408. ruby-version_gem
    - AUR votes: 2, popularity: 0.0002
    - Note: Enhance that VERSION! Sugar for boring Version modules.
    - TODO Status: TODO
@@ -153226,7 +153230,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 20634. xerox-spl-driver-common
+** FAILED 20634. xerox-spl-driver-common
    - AUR votes: 1, popularity: 0.0001
    - Note: License Xerox SPL Linux Driver for printers and scanners.
    - TODO Status: TODO
@@ -153665,7 +153669,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 20707. python-raven
+** DONE 20707. python-raven
    - AUR votes: 3, popularity: 0.0001
    - Note: Python client for Sentry
    - TODO Status: TODO
@@ -157753,7 +157757,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: DEAD_PROJECT — hal-info: HAL deprecated since 2011, replaced by udev/udisks2 (recipe-resolver-260417aj)
    - TODO Status: DONE
 
-** TODO 21369. pencil
+** DONE 21369. pencil
    - AUR votes: 189, popularity: 0
    - Note: Sketching and GUI prototyping/wireframing tool
    - TODO Status: TODO
@@ -158505,7 +158509,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 21486. lha
+** DONE 21486. lha
    - AUR votes: 99, popularity: 4e-06
    - Note: A compression and archive utility for LH-7 format archives
    - TODO Status: TODO
@@ -160238,7 +160242,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 21752. peerflix
+** DONE 21752. peerflix
    - AUR votes: 61, popularity: 0.169409
    - Note: Streaming torrent client for node.js
    - TODO Status: TODO
@@ -164280,7 +164284,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22390. eclipse-platform
+** DONE 22390. eclipse-platform
    - AUR votes: 34, popularity: 2.3e-05
    - Note: A minimal installation suitable for complete per-user customization with the built-in Eclipse package manager
    - TODO Status: TODO
@@ -164613,7 +164617,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22444. octave-statistics
+** DONE 22444. octave-statistics
    - AUR votes: 33, popularity: 0
    - Note: Additional statistics functions for Octave.
    - TODO Status: TODO
@@ -164940,7 +164944,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22487. perl-proc-daemon
+** DONE 22487. perl-proc-daemon
    - AUR votes: 32, popularity: 0
    - Note: Run Perl program(s) as a daemon process
    - TODO Status: TODO
@@ -165232,7 +165236,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22534. icon
+** DONE 22534. icon
    - AUR votes: 31, popularity: 0
    - Note: The Icon programming language
    - TODO Status: TODO
@@ -166014,7 +166018,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22656. perl-net-sftp-foreign
+** DONE 22656. perl-net-sftp-foreign
    - AUR votes: 29, popularity: 0
    - Note: SSH File Transfer Protocol client using the native SSH client
    - TODO Status: TODO
@@ -168453,7 +168457,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23052. mingw-w64-termcap
+** FAILED 23052. mingw-w64-termcap
    - AUR votes: 23, popularity: 0
    - Note: Terminal feature database (mingw-w64)
    - TODO Status: TODO
@@ -168775,7 +168779,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23105. adplug
+** DONE 23105. adplug
    - AUR votes: 22, popularity: 0
    - Note: AdLib sound player library
    - TODO Status: TODO
@@ -168847,7 +168851,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23117. discord-chat-exporter-core
+** DONE 23117. discord-chat-exporter-core
    - AUR votes: 22, popularity: 0
    - Note: Exports Discord chat logs to a file - Core
    - TODO Status: TODO
@@ -169808,7 +169812,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23273. perl-net-pcap
+** DONE 23273. perl-net-pcap
    - AUR votes: 21, popularity: 0
    - Note: Perl/CPAN Module Net::Pcap
    - TODO Status: TODO
@@ -170071,7 +170075,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 23315. vuze
+** FAILED 23315. vuze
    - AUR votes: 119, popularity: 0.0
    - Note: A feature-rich Java-based BitTorrent client (previously called 'Azureus')
    - TODO Status: TODO
@@ -172883,7 +172887,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23773. kcmutils-git
+** DONE 23773. kcmutils-git
    - AUR votes: 19, popularity: 0.0
    - Note: Utilities for interacting with KCModules
    - TODO Status: TODO
@@ -175400,7 +175404,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24188. kparts-git
+** DONE 24188. kparts-git
    - AUR votes: 16, popularity: 0.0
    - Note: Document centric plugin system
    - TODO Status: TODO
@@ -175515,7 +175519,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24206. octave-geometry
+** DONE 24206. octave-geometry
    - AUR votes: 16, popularity: 0.0
    - Note: Library for geometric computing extending MatGeom functions. Useful to create, transform, manipulate and display geometric primitives.
    - TODO Status: TODO
@@ -177549,7 +177553,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24543. json-sh
+** DONE 24543. json-sh
    - AUR votes: 14, popularity: 0.0
    - Note: command line json tool written in bash
    - TODO Status: TODO
@@ -179228,7 +179232,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24820. knotifyconfig-git
+** DONE 24820. knotifyconfig-git
    - AUR votes: 13, popularity: 0.0
    - Note: Configuration system for KNotify
    - TODO Status: TODO
@@ -179668,7 +179672,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24893. python2-mutagen
+** FAILED 24893. python2-mutagen
    - AUR votes: 13, popularity: 0.0
    - Note: An audio metadata tag reader and writer (python2 library)
    - TODO Status: TODO
@@ -180316,7 +180320,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25000. baloo-git
+** DONE 25000. baloo-git
    - AUR votes: 12, popularity: 0.0
    - Note: A framework for searching and managing metadata
    - TODO Status: TODO
@@ -181224,7 +181228,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25151. python-pyspf
+** DONE 25151. python-pyspf
    - AUR votes: 12, popularity: 0.0
    - Note: Python implementation of the Sender Policy Framework (SPF) protocol
    - TODO Status: TODO
@@ -181267,7 +181271,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25158. quazip-qt4
+** DONE 25158. quazip-qt4
    - AUR votes: 12, popularity: 0.0
    - Note: C++ wrapper for the Gilles Vollant's ZIP/UNZIP C package, qt4 version
    - TODO Status: TODO
@@ -181285,7 +181289,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25161. rep-gtk
+** DONE 25161. rep-gtk
    - AUR votes: 12, popularity: 0.0
    - Note: Binding of the GTK and GDK libraries for the librep Lisp environment
    - TODO Status: TODO
@@ -184129,7 +184133,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25524. mingw-w64-libtasn1
+** FAILED 25524. mingw-w64-libtasn1
    - AUR votes: 11, popularity: 0
    - Note: The ASN.1 library used in GNUTLS (mingw-w64)
    - TODO Status: TODO
@@ -187061,7 +187065,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26008. xylib
+** DONE 26008. xylib
    - AUR votes: 10, popularity: 0
    - Note: Portable C++ library for reading files that contain x-y data from powder diffrac
    - TODO Status: TODO
@@ -188518,7 +188522,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26250. libparserutils-git
+** DONE 26250. libparserutils-git
    - AUR votes: 9, popularity: 0
    - Note: Library for building efficient parsers
    - TODO Status: TODO
@@ -188710,7 +188714,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26282. mingw-w64-nettle
+** FAILED 26282. mingw-w64-nettle
    - AUR votes: 9, popularity: 0
    - Note: A low-level cryptographic library (mingw-w64)
    - TODO Status: TODO
@@ -189888,7 +189892,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26477. xi-core
+** DONE 26477. xi-core
    - AUR votes: 9, popularity: 0
    - Note: A modern editor with a backend written in Rust
    - TODO Status: TODO
@@ -190010,7 +190014,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 26497. python-async_generator
+** DONE 26497. python-async_generator
    - AUR votes: 8, popularity: 4.8e-05
    - Note: Making it easy to write async iterators
    - TODO Status: TODO
@@ -190256,7 +190260,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26538. libcapi
+** DONE 26538. libcapi
    - AUR votes: 8, popularity: 4e-06
    - Note: Modular libcapi20
    - TODO Status: TODO
@@ -191657,7 +191661,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26770. libumem-git
+** DONE 26770. libumem-git
    - AUR votes: 8, popularity: 0
    - Note: A port of the Solaris libumem memory allocator
    - TODO Status: TODO
@@ -191833,7 +191837,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26799. mingw-w64-extra-cmake-modules
+** FAILED 26799. mingw-w64-extra-cmake-modules
    - AUR votes: 8, popularity: 0
    - Note: Extra modules and scripts for CMake (mingw-w64)
    - TODO Status: TODO
@@ -192396,7 +192400,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26891. pure-ffi
+** DONE 26891. pure-ffi
    - AUR votes: 8, popularity: 0
    - Note: An interface to libffi which enables you to call C functions from Pure and vice 
    - TODO Status: TODO
@@ -192734,7 +192738,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26947. signald
+** DONE 26947. signald
    - AUR votes: 8, popularity: 0
    - Note: An unofficial daemon that facilitates communication with the Signal messaging ap
    - TODO Status: TODO
@@ -193576,7 +193580,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27087. liboping
+** DONE 27087. liboping
    - AUR votes: 7, popularity: 5e-06
    - Note: C library to generate ICMP echo requests, better known as "ping packets"
    - TODO Status: TODO
@@ -193630,7 +193634,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27096. mingw-w64-mpfr
+** FAILED 27096. mingw-w64-mpfr
    - AUR votes: 7, popularity: 3e-06
    - Note: Multiple-precision floating-point library (mingw-w64)
    - TODO Status: TODO
@@ -194932,7 +194936,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27313. icu63
+** DONE 27313. icu63
    - AUR votes: 7, popularity: 0.0
    - Note: International Components for Unicode library
    - TODO Status: TODO
@@ -195166,7 +195170,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27352. liboglappth
+** DONE 27352. liboglappth
    - AUR votes: 7, popularity: 0.0
    - Note: Library containing computational chemistry facility of ghemical
    - TODO Status: TODO
@@ -197252,7 +197256,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27699. pbar
+** DONE 27699. pbar
    - AUR votes: 6, popularity: 7.1e-05
    - Note: Progress bar in pacman style
    - TODO Status: TODO
@@ -200097,7 +200101,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28172. octomap
+** DONE 28172. octomap
    - AUR votes: 6, popularity: 0.0
    - Note: Efficient probabilistic 3D mapping framework based on octrees
    - TODO Status: TODO
@@ -200541,7 +200545,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28246. python-cmp_version
+** DONE 28246. python-cmp_version
    - AUR votes: 6, popularity: 0.0
    - Note: A script and python module to compare version numbers. Use this to compare the version strings of packages, modules, rea
    - TODO Status: TODO
@@ -200668,7 +200672,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28267. qt4pas
+** DONE 28267. qt4pas
    - AUR votes: 6, popularity: 0.0
    - Note: Free Pascal Qt4 Binding Library
    - TODO Status: TODO
@@ -205580,7 +205584,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 29082. mingw-w64-dlfcn
+** FAILED 29082. mingw-w64-dlfcn
    - AUR votes: 5, popularity: 0.0
    - Note: A wrapper for dlfcn to the Win32 API (mingw-w64)
    - TODO Status: TODO
@@ -207335,7 +207339,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 29373. perl-crypt-urandom
+** DONE 29373. perl-crypt-urandom
    - AUR votes: 1, popularity: 1.0
    - Note: Provide non blocking randomness
    - TODO Status: TODO
@@ -213494,7 +213498,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 30397. tclcl
+** DONE 30397. tclcl
    - AUR votes: 5, popularity: 0.0
    - Note: Tcl with classes (TclCl) is a Tcl/C++ interface
    - TODO Status: TODO
@@ -214110,7 +214114,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 30499. vapoursynth-plugin-bilateral-git
+** DONE 30499. vapoursynth-plugin-bilateral-git
    - AUR votes: 5, popularity: 0.0
    - Note: Plugin for Vapoursynth: bilateral (GIT version)
    - TODO Status: TODO
@@ -216241,7 +216245,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 30849. python2-zipp
+** FAILED 30849. python2-zipp
    - AUR votes: 4, popularity: 1e-06
    - Note: Backport of pathlib-compatible object wrapper for zip files
    - TODO Status: TODO
@@ -219573,7 +219577,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 31402. i386-elf-binutils
+** FAILED 31402. i386-elf-binutils
    - AUR votes: 4, popularity: 0.0
    - Note: GNU binutils for the i386- toolchain
    - TODO Status: TODO
@@ -220527,7 +220531,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 31560. libvitamtp
+** DONE 31560. libvitamtp
    - AUR votes: 4, popularity: 0.0
    - Note: Library to interact with Vita's USB MTP protocol
    - TODO Status: TODO
@@ -222109,7 +222113,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 31823. perl-audio-flac-header
+** DONE 31823. perl-audio-flac-header
    - AUR votes: 4, popularity: 0.0
    - Note: Audio::FLAC::Header - Access to FLAC audio metadata
    - TODO Status: TODO
@@ -222598,7 +222602,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 31904. pure-midi
+** DONE 31904. pure-midi
    - AUR votes: 4, popularity: 0.0
    - Note: MIDI interface for pure.
    - TODO Status: TODO
@@ -223367,7 +223371,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 32032. ruby-reverse_markdown
+** DONE 32032. ruby-reverse_markdown
    - AUR votes: 4, popularity: 0.0
    - Note: Ruby gem to convert html into markdown
    - TODO Status: TODO
@@ -223865,7 +223869,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 32115. sssm
+** DONE 32115. sssm
    - AUR votes: 4, popularity: 0.0
    - Note: Simple Steam Skin Manager
    - TODO Status: TODO
@@ -226587,7 +226591,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 32566. python-oldest-supported-numpy
+** DONE 32566. python-oldest-supported-numpy
    - AUR votes: 3, popularity: 1.4e-05
    - Note: Meta-package providing oldest supported Numpy for given Python version
    - TODO Status: TODO
@@ -227974,7 +227978,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 32797. python2-toml
+** FAILED 32797. python2-toml
    - AUR votes: 3, popularity: 1e-06
    - Note: A Python library for parsing and creating TOML
    - TODO Status: TODO
@@ -235289,7 +235293,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34008. libwandio
+** DONE 34008. libwandio
    - AUR votes: 3, popularity: 0
    - Note: software library written in C that provides an API for transparently reading from and writing to files using a variety o
    - TODO Status: TODO
@@ -237626,7 +237630,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34397. pd-pure
+** DONE 34397. pd-pure
    - AUR votes: 3, popularity: 0
    - Note: Loader plugin for the Pure programming language which lets you write external Pd objects in Pure
    - TODO Status: TODO
@@ -237794,7 +237798,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34425. perl-iptables-parse
+** DONE 34425. perl-iptables-parse
    - AUR votes: 3, popularity: 0
    - Note: IPTables::Parse - Perl extension for parsing iptables and ip6tables firewall rulesets
    - TODO Status: TODO
@@ -238683,7 +238687,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34573. pure-faust
+** DONE 34573. pure-faust
    - AUR votes: 3, popularity: 0
    - Note: Run Faust-generated signal processing modules in Pure
    - TODO Status: TODO
@@ -239242,7 +239246,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34666. python2-attrs
+** FAILED 34666. python2-attrs
    - AUR votes: 3, popularity: 0
    - Note: Attributes without boilerplate. (Python 2)
    - TODO Status: TODO
@@ -239254,7 +239258,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34668. python2-funcsigs
+** FAILED 34668. python2-funcsigs
    - AUR votes: 3, popularity: 0
    - Note: Python function signatures from PEP362
    - TODO Status: TODO
@@ -239302,7 +239306,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34676. python2-py
+** FAILED 34676. python2-py
    - AUR votes: 3, popularity: 0
    - Note: I/O facilities including logging, local/SVN paths, INI parsing, API control, lazy importing and Python code generation/i
    - TODO Status: TODO
@@ -245996,7 +246000,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 35788. flif-mime
+** DONE 35788. flif-mime
    - AUR votes: 3, popularity: 0
    - Note: MIME file type for the FLIF image format
    - TODO Status: TODO
@@ -251807,7 +251811,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 36754. python2-opengl
+** FAILED 36754. python2-opengl
    - AUR votes: 2, popularity: 1e-06
    - Note: The most common cross platform Python binding to OpenGL and related APIs (for Python 2.7)
    - TODO Status: TODO
@@ -255609,7 +255613,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Side-scrolling shoot 'em up '80s style arcade game
    - TODO Status: TODO
 
-** TODO 37396. nqp
+** DONE 37396. nqp
    - AUR votes: 37, popularity: 0.006825
    - Note: Lightweight Raku-like environment for virtual machines (MoarVM backend)
    - TODO Status: TODO
@@ -255639,7 +255643,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Wiki compiler
    - TODO Status: TODO
 
-** TODO 37402. perl-extutils-typemaps-default
+** DONE 37402. perl-extutils-typemaps-default
    - AUR votes: 36, popularity: 1e-06
    - Note: ExtUtils::Typemaps::Default - A set of useful typemaps
    - TODO Status: TODO
@@ -256094,7 +256098,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Ruby C bindings to the excellent Yajl JSON stream-based parser library.
    - TODO Status: TODO
 
-** TODO 37489. perl-moosex-types
+** DONE 37489. perl-moosex-types
    - AUR votes: 22, popularity: 0.867752
    - Note: Organise your Moose types in libraries
    - TODO Status: TODO
@@ -256893,7 +256897,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Python library for ISO 639 standard
    - TODO Status: TODO
 
-** TODO 37643. ruby-cabin
+** DONE 37643. ruby-cabin
    - AUR votes: 12, popularity: 4.2e-05
    - Note: Experiments in structured and contextual logging
    - TODO Status: TODO
@@ -257180,7 +257184,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Program for unpacking ms-tnef MIME attachment
    - TODO Status: TODO
 
-** TODO 37699. s6
+** DONE 37699. s6
    - AUR votes: 10, popularity: 0.000803
    - Note: A small suite of programs for UNIX, designed to allow process supervision
    - TODO Status: TODO
@@ -257448,7 +257452,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Performance analysis tools based on Linux perf_events (aka perf) and ftrace
    - TODO Status: TODO
 
-** TODO 37750. websockify
+** DONE 37750. websockify
    - AUR votes: 9, popularity: 0.000222
    - Note: WebSockets support for any application/server
    - TODO Status: TODO
@@ -257503,7 +257507,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The program that lets you create cross stitch patterns and charts.
    - TODO Status: TODO
 
-** TODO 37761. libsoundio
+** DONE 37761. libsoundio
    - AUR votes: 9, popularity: 0
    - Note: A C99 library providing cross-platform audio input and output
    - TODO Status: TODO
@@ -257619,7 +257623,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Persistent lexical variable values for arbitrary calls.
    - TODO Status: TODO
 
-** TODO 37784. perl-class-accessor-grouped
+** DONE 37784. perl-class-accessor-grouped
    - AUR votes: 8, popularity: 0.86696
    - Note: Lets you build groups of accessors
    - TODO Status: TODO
@@ -257695,7 +257699,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Let it snow on your desktop
    - TODO Status: TODO
 
-** TODO 37798. libcotp
+** DONE 37798. libcotp
    - AUR votes: 8, popularity: 6.3e-05
    - Note: C library that generates TOTP and HOTP
    - TODO Status: TODO
@@ -258230,7 +258234,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A development tool to measure, monitor and analyze the memory behavior of Python objects
    - TODO Status: TODO
 
-** TODO 37901. silc-toolkit
+** DONE 37901. silc-toolkit
    - AUR votes: 7, popularity: 0
    - Note: Toolkit for Secure Internet Live Conferencing
    - TODO Status: TODO
@@ -258250,7 +258254,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Formatted C++ stdlib man pages (cppreference).
    - TODO Status: TODO
 
-** TODO 37905. tklib
+** DONE 37905. tklib
    - AUR votes: 7, popularity: 0
    - Note: Tklib specializes in utilities for GUI programming.
    - TODO Status: TODO
@@ -258547,7 +258551,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A cd-player and ripper for the Gnome desktop
    - TODO Status: TODO
 
-** TODO 37962. harminv
+** DONE 37962. harminv
    - AUR votes: 6, popularity: 0
    - Note: A free program to solve the problem of harmonic inversion
    - TODO Status: TODO
@@ -258707,7 +258711,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Python Telegram bot api
    - TODO Status: TODO
 
-** TODO 37994. python-verboselogs
+** DONE 37994. python-verboselogs
    - AUR votes: 6, popularity: 0
    - Note: Verbose logging level for Python's logging module
    - TODO Status: TODO
@@ -258806,7 +258810,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Porters stemming algorithm for swedish.
    - TODO Status: TODO
 
-** TODO 38013. perl-lingua-en-inflect-number
+** DONE 38013. perl-lingua-en-inflect-number
    - AUR votes: 5, popularity: 0.867005
    - Note: Perl/CPAN Module Lingua::EN::Inflect::Number: Force number of words to singular or plural
    - TODO Status: TODO
@@ -259364,7 +259368,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Game Engine meets a Display Server meets a Multimedia Framework
    - TODO Status: TODO
 
-** TODO 38118. perl-mixin-linewise
+** DONE 38118. perl-mixin-linewise
    - AUR votes: 4, popularity: 0.867971
    - Note: Write your linewise code for handles; this does the rest
    - TODO Status: TODO
@@ -259884,7 +259888,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: JWT C Library
    - TODO Status: TODO
 
-** TODO 38214. libpasastro
+** DONE 38214. libpasastro
    - AUR votes: 4, popularity: 0
    - Note: Provide Pascal interface for standard astronomy libraries
    - TODO Status: TODO
@@ -260121,7 +260125,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A library which provides base32 decoding and encoding
    - TODO Status: TODO
 
-** TODO 38261. ruby-stud
+** DONE 38261. ruby-stud
    - AUR votes: 4, popularity: 0
    - Note: small reusable bits of code
    - TODO Status: TODO
@@ -260761,7 +260765,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: S3 Infrastructure for Regular and Irregular Time Series (Z's Ordered Observations)
    - TODO Status: TODO
 
-** TODO 38380. gv
+** DONE 38380. gv
    - AUR votes: 3, popularity: 2e-06
    - Note: A program to view PostScript and PDF documents
    - TODO Status: TODO
@@ -262101,7 +262105,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: An Interface to Google Drive
    - TODO Status: TODO
 
-** TODO 38628. r-gridextra
+** DONE 38628. r-gridextra
    - AUR votes: 2, popularity: 3e-06
    - Note: Provides a number of user-level functions to work with "grid" graphics, notably to arrange multiple grid-based plots ...
    - TODO Status: TODO
@@ -262136,7 +262140,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Syntax Highlighting for R Source Code
    - TODO Status: TODO
 
-** TODO 38635. r-hms
+** DONE 38635. r-hms
    - AUR votes: 2, popularity: 3e-06
    - Note: Pretty Time of Day
    - TODO Status: TODO
@@ -262176,7 +262180,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Utilities for Scheduling Functions to Execute Later with Event Loops
    - TODO Status: DONE
 
-** TODO 38643. r-lazyeval
+** DONE 38643. r-lazyeval
    - AUR votes: 2, popularity: 3e-06
    - Note: Lightweight Well-Known Geometry Parsing
    - TODO Status: TODO
@@ -262349,7 +262353,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Query 'R' Versions, Including 'r-release' and 'r-oldrel'
    - TODO Status: TODO
 
-** TODO 38677. r-sessioninfo
+** DONE 38677. r-sessioninfo
    - AUR votes: 2, popularity: 3e-06
    - Note: R Session Information
    - TODO Status: TODO
@@ -262394,7 +262398,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Interpolate Data for Smooth Animations
    - TODO Status: TODO
 
-** TODO 38686. r-tzdb
+** DONE 38686. r-tzdb
    - AUR votes: 2, popularity: 3e-06
    - Note: Time Zone Database Information
    - TODO Status: TODO
@@ -263929,7 +263933,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: a simple console contact manager
    - TODO Status: TODO
 
-** TODO 38991. ctranslate2-git
+** DONE 38991. ctranslate2-git
    - AUR votes: 2, popularity: 0
    - Note: Fast inference engine for OpenNMT models
    - TODO Status: TODO
@@ -275290,7 +275294,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Free, open source crypto trading bot.
    - TODO Status: TODO
 
-** TODO 41254. python-fuzzyfinder
+** DONE 41254. python-fuzzyfinder
    - AUR votes: 2, popularity: 0
    - Note: Fuzzy Finder implemented in Python. Matches partial string entries from a list o
    - TODO Status: TODO
@@ -276203,7 +276207,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260418v.scm (python2-typing v3.10.0.2, gnu-build-system) (deptree-resolver-260418v)
    - TODO Status: DONE
 
-** TODO 41435. python2-wheel
+** FAILED 41435. python2-wheel
    - AUR votes: 2, popularity: 0.0
    - Note: A built-package format for Python, version for Python 2.7
    - TODO Status: TODO
@@ -283096,7 +283100,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Provides a Python function to get the first element of an iterator.
    - TODO Status: TODO
 
-** TODO 42812. python2-idna
+** FAILED 42812. python2-idna
    - AUR votes: 2, popularity: 0.0
    - Note: Internationalized Domain Names in Applications (IDNA)
    - TODO Status: TODO
@@ -289267,7 +289271,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A microlibrary for the Classic McEliece cryptosystem
    - TODO Status: TODO
 
-** TODO 44046. librandombytes
+** DONE 44046. librandombytes
    - AUR votes: 1, popularity: 1.3e-05
    - Note: A microlibrary for generating randomness
    - TODO Status: TODO
@@ -291709,7 +291713,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A GTK 4 interface for the Mi Smart Band 4
    - TODO Status: TODO
 
-** TODO 44534. mimetic
+** DONE 44534. mimetic
    - AUR votes: 1, popularity: 2e-06
    - Note: A free, MIT licensed, Email library (MIME) written in C++
    - TODO Status: TODO
