@@ -268,6 +268,7 @@
   #:use-module (gaurix packages queue-20260406-nrd30f)
   #:use-module (gnu packages sycl)
   #:use-module (gnu packages chromium)
+  #:use-module (gnu packages cpp)
   #:use-module (gnu packages matrix)
   #:use-module (gnu packages terminals)
   #:use-module (gnu packages monitoring)
@@ -516,6 +517,7 @@
   #:use-module (gaurix packages recipe-resolver-260419a)
   #:use-module (gaurix packages recipe-resolver-260419b)
   #:use-module (gaurix packages recipe-resolver-260419c)
+  #:use-module (gaurix packages recipe-resolver-260419d)
   #:use-module (gaurix packages deptree-resolver-260419b)
   #:use-module (gaurix packages deptree-resolver-260419c)
   #:use-module (gaurix packages deptree-resolver-260419d)
@@ -12833,3 +12835,21 @@
 (re-export ttf-lxgw-wenkai-screen)
 (re-export fontpreview)
 (re-export googledot-cursor-theme)
+
+;; recipe-resolver-260419d
+(re-export dockcheck)
+(re-export hyprland-plugin-borders-plus-plus)
+(re-export hyprland-plugin-csgo-vulkan-fix)
+(re-export hyprland-plugin-hyprbars)
+(re-export hyprland-plugin-hyprexpo)
+(re-export hyprland-plugin-hyprfocus)
+(re-export hyprland-plugin-hyprscrolling)
+(re-export hyprland-plugin-hyprtrails)
+(re-export hyprland-plugin-hyprwinwrap)
+(re-export hyprland-plugin-xtra-dispatchers)
+
+;; recipe-resolver-260419d (ALREADY_IN_GUIX compat alias)
+(define-public hyprland-guiutils-git
+  (package
+    (inherit hyprland-guiutils)
+    (name "hyprland-guiutils-git")))

@@ -5,6 +5,7 @@
             ;; recipe-resolver-260415q (bookkeeping-only, 30 NRD resolved)
             ;; recipe-resolver-260415r (30 NRD resolved)
             ;; recipe-resolver-260415s (30 NRD resolved)
+            ;; recipe-resolver-260419d (11 NRD resolved: 10 recipes, 1 ALREADY_IN_GUIX; 19 EXHAUSTED)
             ;; recipe-resolver-260415v (9 NRD resolved, pool depleted)
             ;; recipe-resolver-260416c (30 NRD resolved)
             ;; recipe-resolver-260416e (27 NRD resolved, 3 BLOCKED)
@@ -8620,3 +8621,16 @@
 (re-export vapoursynth-plugin-eedi3m-git)
 (re-export waifu2x-converter-cpp)
 (re-export angie)
+
+            ;; recipe-resolver-260419d
+            dockcheck
+            hyprland-guiutils-git
+            hyprland-plugin-borders-plus-plus
+            hyprland-plugin-csgo-vulkan-fix
+            hyprland-plugin-hyprbars
+            hyprland-plugin-hyprexpo
+            hyprland-plugin-hyprfocus
+            hyprland-plugin-hyprscrolling
+            hyprland-plugin-hyprtrails
+            hyprland-plugin-hyprwinwrap
+            hyprland-plugin-xtra-dispatchers
