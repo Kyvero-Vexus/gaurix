@@ -1,0 +1,336 @@
+{
+  "pass_id": "recipe-resolver-260423d",
+  "total_evaluated": 39,
+  "recipes_created": 0,
+  "exhausted": 39,
+  "exhausted_by_reason": {
+    "FLUTTER_ECOSYSTEM_COMPLEX": 11,
+    "PROPRIETARY_BUILD_PIPELINE": 4,
+    "ANDROID_SDK_REQUIRED": 2,
+    "DART_SDK_BOOTSTRAP_COMPLEX": 2,
+    "QT6_WEBENGINE_COMPLEX": 2,
+    "MULTILIB_UNSUPPORTED": 2,
+    "PROPRIETARY": 3,
+    "DOTNET_UNSUPPORTED": 1,
+    "PROPRIETARY_BINARY": 2,
+    "ELECTRON_COMPLEX": 2,
+    "ARCH_SPECIFIC": 5,
+    "DKMS_KERNEL_MODULE": 1,
+    "PROPRIETARY_RUNTIME_DEP": 1,
+    "PROPRIETARY_SELF_UPDATING": 1
+  },
+  "packages": [
+    {
+      "name": "flutter-target-android",
+      "pkg_num": 5761,
+      "org_line": 46991,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Android compilation target; depends on Flutter SDK chain + pre-built Android engine binaries + Android SDK/NDK; A1: Dart SDK not in Guix (self-hosting bootstrap); A2: engine requires Google depot_tools/gn build system; A3: Android NDK cross-compilation not available"
+    },
+    {
+      "name": "flutter-intellij-patch",
+      "pkg_num": 5762,
+      "org_line": 46998,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "IDE symlinks for IntelliJ Flutter plugin; depends on Flutter SDK chain + proprietary IntelliJ IDE; A1: Flutter SDK not packageable; A2: IntelliJ is proprietary; A3: no standalone utility"
+    },
+    {
+      "name": "flutter-artifacts-sky-engine-google-bin",
+      "pkg_num": 5766,
+      "org_line": 47032,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Dart platform interface (dart:ui) from Google CI; A1: only useful within Flutter SDK chain; A2: extracted by Flutter CI pipeline, not independently buildable; A3: Dart SDK not in Guix"
+    },
+    {
+      "name": "flutter-artifacts-material-fonts-google-bin",
+      "pkg_num": 5767,
+      "org_line": 47039,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Material icon fonts from Google Storage; A1: only useful within Flutter SDK chain; A2: standalone font packaging pointless without Flutter; A3: Flutter SDK infeasible"
+    },
+    {
+      "name": "flutter-artifacts-gradle-google-bin",
+      "pkg_num": 5768,
+      "org_line": 47046,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Gradle wrapper for Flutter Android builds; A1: Gradle pulls from Maven Central at build time, conflicts with Guix offline model; A2: depends on Flutter SDK chain; A3: Android SDK required"
+    },
+    {
+      "name": "flutter-artifacts-engine-web-google-bin",
+      "pkg_num": 5769,
+      "org_line": 47053,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BUILD_PIPELINE",
+      "detail": "Pre-compiled JS/WASM engine from Google CI via Emscripten; A1: source build requires depot_tools + Chromium-derived engine tree; A2: Emscripten toolchain not in Guix; A3: no distro builds Flutter engine from source"
+    },
+    {
+      "name": "flutter-artifacts-engine-linux-google-bin",
+      "pkg_num": 5770,
+      "org_line": 47060,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BUILD_PIPELINE",
+      "detail": "Pre-compiled libflutter_linux_gtk.so from Google CI; A1: engine is Chromium/Skia-derived C++ needing Google gn build system; A2: depot_tools not in Guix; A3: gen_snapshot (Dart AOT compiler) built from Dart VM source"
+    },
+    {
+      "name": "flutter-artifacts-engine-common-google-bin",
+      "pkg_num": 5771,
+      "org_line": 47067,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Patched Dart SDK .dill files from Google CI; A1: pre-compiled intermediate language files, not buildable outside CI; A2: depends on Dart SDK not in Guix; A3: tightly coupled to specific engine revision"
+    },
+    {
+      "name": "flutter-artifacts-engine-android-google-bin",
+      "pkg_num": 5772,
+      "org_line": 47074,
+      "status": "EXHAUSTED",
+      "reason": "ANDROID_SDK_REQUIRED",
+      "detail": "Pre-compiled Android libflutter.so for arm/arm64/x86/x64; A1: requires Android NDK cross-compilation; A2: Google CI pipeline produces these; A3: no distro builds Flutter Android engine from source"
+    },
+    {
+      "name": "flutter-artifacts-dart-google-bin",
+      "pkg_num": 5773,
+      "org_line": 47081,
+      "status": "EXHAUSTED",
+      "reason": "DART_SDK_BOOTSTRAP_COMPLEX",
+      "detail": "Complete Dart SDK binary; A1: Dart uses self-hosting bootstrap (Dart builds Dart); A2: requires Google depot_tools + gn/ninja; A3: only Arch packages Dart from source via extra/dart"
+    },
+    {
+      "name": "flutter",
+      "pkg_num": 5774,
+      "org_line": 47088,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Flutter SDK meta-package; A1: circular bootstrap \u2014 needs Dart to build Flutter tools, needs Flutter to get Dart; A2: engine requires Chromium-derived build infrastructure; A3: all 20 Flutter ecosystem packages depend on this chain"
+    },
+    {
+      "name": "mcpelauncher-ui",
+      "pkg_num": 5777,
+      "org_line": 47111,
+      "status": "EXHAUSTED",
+      "reason": "QT6_WEBENGINE_COMPLEX",
+      "detail": "Qt6/WebEngine UI for Minecraft PE launcher; A1: qt6-webengine (embedded Chromium) not available in Guix; A2: depends on mcpelauncher chain that reverse-engineers proprietary game binary loading; A3: Google Play API integration for APK downloads"
+    },
+    {
+      "name": "winecx",
+      "pkg_num": 5794,
+      "org_line": 47253,
+      "status": "EXHAUSTED",
+      "reason": "MULTILIB_UNSUPPORTED",
+      "detail": "CodeWeavers CrossOver Wine fork; A1: requires dual 32/64-bit build with extensive lib32-* deps; A2: Guix has no multilib infrastructure; A3: source from commercial CodeWeavers tarball, mixed licensing"
+    },
+    {
+      "name": "nvidia-340xx-settings",
+      "pkg_num": 5795,
+      "org_line": 47260,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY",
+      "detail": "NVIDIA settings GUI for legacy 340xx drivers; A1: GPL-2.0 source but exclusively for proprietary nvidia-340xx driver (EOL); A2: requires nvidia-340xx-utils proprietary kernel module; A3: no free driver counterpart for this legacy hardware"
+    },
+    {
+      "name": "mathematica",
+      "pkg_num": 5804,
+      "org_line": 47336,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY",
+      "detail": "Wolfram Mathematica commercial software; A1: requires paid license; A2: source requires login/purchase to download; A3: license forbids redistribution; 20+ GB proprietary installer"
+    },
+    {
+      "name": "xivlauncher",
+      "pkg_num": 5810,
+      "org_line": 47385,
+      "status": "EXHAUSTED",
+      "reason": "DOTNET_UNSUPPORTED",
+      "detail": "FFXIV custom launcher (C#/.NET 10+); A1: requires .NET SDK 10+ not in Guix; A2: NuGet dependency resolution incompatible with Guix reproducible builds; A3: self-contained dotnet publish with NuGet packages"
+    },
+    {
+      "name": "intel-ipu6-camera-bin",
+      "pkg_num": 5822,
+      "org_line": 47487,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BINARY",
+      "detail": "Intel IPU6 camera firmware/library binaries; A1: GitHub repo contains only pre-compiled proprietary .so/.a blobs, no source; A2: requires intel-ipu6-dkms-git kernel module; A3: closed-source, custom proprietary license"
+    },
+    {
+      "name": "vscodium-insiders-git",
+      "pkg_num": 5942,
+      "org_line": 48354,
+      "status": "EXHAUSTED",
+      "reason": "ELECTRON_COMPLEX",
+      "detail": "VSCode Insiders from source; A1: build requires nvm + specific Node.js + yarn + gulp + Electron; A2: thousands of npm dependencies needing vendoring; A3: Guix cannot build Electron apps from source; existing vscodium in Guix uses pre-built binary"
+    },
+    {
+      "name": "vscodium-all-marketplace",
+      "pkg_num": 5943,
+      "org_line": 48361,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "Pacman/libalpm hook to patch VSCodium marketplace URL; A1: hook file and Python script tied to Arch package management infrastructure; A2: concept could be done differently in Guix but this package is Arch-only tooling; A3: no upstream repo, AUR-only files"
+    },
+    {
+      "name": "steamvr-openhmd-git",
+      "pkg_num": 5952,
+      "org_line": 48436,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY",
+      "detail": "SteamVR driver plugin for OpenHMD headsets; A1: BSL-1.0 source but exclusively loads into proprietary SteamVR runtime; A2: zero utility without SteamVR (proprietary Valve software); A3: SteamVR cannot be packaged in Guix"
+    },
+    {
+      "name": "snd-hda-macbookpro-dkms-git",
+      "pkg_num": 5964,
+      "org_line": 48531,
+      "status": "EXHAUSTED",
+      "reason": "DKMS_KERNEL_MODULE",
+      "detail": "HDA audio kernel module for MacBook Pro; A1: DKMS kernel module, Guix has no DKMS infrastructure; A2: patches internal kernel HDA codec structures, requires specific kernel headers; A3: would need custom linux-module-build-system integration, niche hardware"
+    },
+    {
+      "name": "lib32-freearc-bin",
+      "pkg_num": 5982,
+      "org_line": 48682,
+      "status": "EXHAUSTED",
+      "reason": "MULTILIB_UNSUPPORTED",
+      "detail": "Pre-compiled 32-bit (i386) FreeArc binary; A1: only i386 binaries available, no x86_64; A2: requires lib32-ncurses5, lib32-gmp, lib32-gtk2 \u2014 Guix has no multilib; A3: source (Haskell) unmaintained since 2014"
+    },
+    {
+      "name": "immuarch-verity-git",
+      "pkg_num": 5989,
+      "org_line": 48737,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "ImmuArch verity checker for immutable Arch Linux; A1: relies on mkinitcpio (Arch-specific initramfs); A2: tied to pacman, btrfs subvolume layout specific to Arch; A3: Guix System has its own immutability model (the store)"
+    },
+    {
+      "name": "immuarch-utils-git",
+      "pkg_num": 5990,
+      "org_line": 48744,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "ImmuArch utility scripts; A1: provides initcpio install hooks (sd-immuarch) \u2014 Arch-specific; A2: systemd services for switch-root in Arch boot layout; A3: completely irrelevant to Guix System declarative configuration"
+    },
+    {
+      "name": "rutoken-plugin",
+      "pkg_num": 6001,
+      "org_line": 48836,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BINARY",
+      "detail": "Browser plugin for Rutoken USB crypto tokens; A1: closed-source, extracted from RPM downloaded from Rutoken servers; A2: no source code available; A3: depends on rutoken-connect (also proprietary)"
+    },
+    {
+      "name": "snap-pac-grub",
+      "pkg_num": 6005,
+      "org_line": 48866,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "Pacman hook for btrfs snapshots + GRUB entries; A1: libalpm hook \u2014 tied to Arch pacman infrastructure; A2: depends on snap-pac (another pacman hook); A3: zero applicability outside Arch/pacman ecosystem"
+    },
+    {
+      "name": "tosu-overlay",
+      "pkg_num": 6006,
+      "org_line": 48873,
+      "status": "EXHAUSTED",
+      "reason": "QT6_WEBENGINE_COMPLEX",
+      "detail": "Qt6/WebEngine overlay for osu! game stats; A1: requires qt6-webengine (embedded Chromium) not in Guix; A2: depends on tosu (TypeScript/Node.js memory reader for osu!); A3: osu! itself requires .NET (lazer) or is proprietary (stable)"
+    },
+    {
+      "name": "wemeet-wayland-screenshare-git",
+      "pkg_num": 6009,
+      "org_line": 48896,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_RUNTIME_DEP",
+      "detail": "LD_PRELOAD hook for Tencent Meeting Wayland screenshare; A1: open-source MIT C++ library but exclusively for proprietary wemeet-bin; A2: zero utility without proprietary Tencent Meeting client; A3: workaround for proprietary app's shortcomings"
+    },
+    {
+      "name": "pacserve",
+      "pkg_num": 8090,
+      "org_line": 64936,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "Package server for sharing pacman packages on LAN; A1: Python tool that wraps pacman/libalpm for package serving; A2: only serves/consumes Arch pacman packages; A3: depends on pacman infrastructure, useless on Guix"
+    },
+    {
+      "name": "flutter-engine-common-google-bin",
+      "pkg_num": 8148,
+      "org_line": 65361,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Duplicate of flutter-artifacts-engine-common-google-bin (alternative provider from flutter-artifacts-google-bin pkgbase); A1: same patched Dart .dill files; A2: same Google CI dependency; A3: Flutter SDK chain infeasible"
+    },
+    {
+      "name": "flutter-engine-linux-google-bin",
+      "pkg_num": 8149,
+      "org_line": 65367,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BUILD_PIPELINE",
+      "detail": "Duplicate of flutter-artifacts-engine-linux-google-bin (alternative provider); A1: same pre-compiled engine .so; A2: same Google CI build requirement; A3: no distro builds Flutter engine from source"
+    },
+    {
+      "name": "flutter-engine-web-google-bin",
+      "pkg_num": 8150,
+      "org_line": 65373,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BUILD_PIPELINE",
+      "detail": "Duplicate of flutter-artifacts-engine-web-google-bin (alternative provider); A1: same JS/WASM engine artifacts; A2: same Emscripten CI requirement; A3: depot_tools not in Guix"
+    },
+    {
+      "name": "flutter-engine-android-google-bin",
+      "pkg_num": 8151,
+      "org_line": 65379,
+      "status": "EXHAUSTED",
+      "reason": "ANDROID_SDK_REQUIRED",
+      "detail": "Duplicate of flutter-artifacts-engine-android-google-bin (alternative provider); A1: same Android libflutter.so binaries; A2: same NDK cross-compilation requirement; A3: Android SDK not in Guix"
+    },
+    {
+      "name": "flutter-sky-engine-google-bin",
+      "pkg_num": 8152,
+      "org_line": 65385,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Duplicate of flutter-artifacts-sky-engine-google-bin (alternative provider); A1: same Dart platform interface; A2: same Flutter SDK chain dependency; A3: Dart not in Guix"
+    },
+    {
+      "name": "flutter-material-fonts-google-bin",
+      "pkg_num": 8153,
+      "org_line": 65391,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Duplicate of flutter-artifacts-material-fonts-google-bin (alternative provider); A1: material icon fonts only useful in Flutter; A2: standalone packaging pointless; A3: Flutter SDK infeasible"
+    },
+    {
+      "name": "flutter-gradle-google-bin",
+      "pkg_num": 8154,
+      "org_line": 65397,
+      "status": "EXHAUSTED",
+      "reason": "FLUTTER_ECOSYSTEM_COMPLEX",
+      "detail": "Duplicate of flutter-artifacts-gradle-google-bin (alternative provider); A1: Gradle wrapper for Flutter; A2: Maven Central downloads conflict with Guix; A3: Flutter SDK chain infeasible"
+    },
+    {
+      "name": "flutter-dart-google-bin",
+      "pkg_num": 8155,
+      "org_line": 65403,
+      "status": "EXHAUSTED",
+      "reason": "DART_SDK_BOOTSTRAP_COMPLEX",
+      "detail": "Duplicate of flutter-artifacts-dart-google-bin (alternative provider); A1: same Dart SDK binary; A2: same self-hosting bootstrap problem; A3: depot_tools/gn not in Guix"
+    },
+    {
+      "name": "jetbrains-toolbox",
+      "pkg_num": 11362,
+      "org_line": 87521,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_SELF_UPDATING",
+      "detail": "JetBrains Toolbox proprietary IDE manager; A1: auto-updater writes to install dir conflicting with Guix store immutability; A2: requires JBR bundled JVM; A3: no offline mode; entirely proprietary binary"
+    },
+    {
+      "name": "arduino-ide-bin",
+      "pkg_num": 11383,
+      "org_line": 87689,
+      "status": "EXHAUSTED",
+      "reason": "ELECTRON_COMPLEX",
+      "detail": "Arduino IDE v2 Electron/Theia app; A1: 200+ bundled node_modules with native addons; A2: building from source requires massive Node.js/TypeScript/yarn pipeline; A3: serial port access needs udev rules + wrapping for sandbox/display/dbus"
+    }
+  ]
+}

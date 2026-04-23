@@ -46989,6 +46989,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5761. flutter-target-android
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-target-android | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-target-android && guix lint -L guix flutter-target-android
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Android compilation target; depends on Flutter SDK chain + pre-built Android engine binaries + Android SDK/NDK; A1: Dart SDK not in Guix (self-hosting bootstrap); A2: engine requires Google depot_tools/gn build system; A3: Android NDK cross-compilation not available (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -46996,6 +46997,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5762. flutter-intellij-patch
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-intellij-patch | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-intellij-patch && guix lint -L guix flutter-intellij-patch
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: IDE symlinks for IntelliJ Flutter plugin; depends on Flutter SDK chain + proprietary IntelliJ IDE; A1: Flutter SDK not packageable; A2: IntelliJ is proprietary; A3: no standalone utility (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47030,6 +47032,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5766. flutter-artifacts-sky-engine-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-sky-engine-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-sky-engine-google-bin && guix lint -L guix flutter-artifacts-sky-engine-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Dart platform interface (dart:ui) from Google CI; A1: only useful within Flutter SDK chain; A2: extracted by Flutter CI pipeline, not independently buildable; A3: Dart SDK not in Guix (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47037,6 +47040,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5767. flutter-artifacts-material-fonts-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-material-fonts-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-material-fonts-google-bin && guix lint -L guix flutter-artifacts-material-fonts-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Material icon fonts from Google Storage; A1: only useful within Flutter SDK chain; A2: standalone font packaging pointless without Flutter; A3: Flutter SDK infeasible (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47044,6 +47048,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5768. flutter-artifacts-gradle-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-gradle-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-gradle-google-bin && guix lint -L guix flutter-artifacts-gradle-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Gradle wrapper for Flutter Android builds; A1: Gradle pulls from Maven Central at build time, conflicts with Guix offline model; A2: depends on Flutter SDK chain; A3: Android SDK required (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47051,6 +47056,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5769. flutter-artifacts-engine-web-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-engine-web-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-engine-web-google-bin && guix lint -L guix flutter-artifacts-engine-web-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BUILD_PIPELINE: Pre-compiled JS/WASM engine from Google CI via Emscripten; A1: source build requires depot_tools + Chromium-derived engine tree; A2: Emscripten toolchain not in Guix; A3: no distro builds Flutter engine from source (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47058,6 +47064,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5770. flutter-artifacts-engine-linux-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-engine-linux-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-engine-linux-google-bin && guix lint -L guix flutter-artifacts-engine-linux-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BUILD_PIPELINE: Pre-compiled libflutter_linux_gtk.so from Google CI; A1: engine is Chromium/Skia-derived C++ needing Google gn build system; A2: depot_tools not in Guix; A3: gen_snapshot (Dart AOT compiler) built from Dart VM source (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47065,6 +47072,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5771. flutter-artifacts-engine-common-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-engine-common-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-engine-common-google-bin && guix lint -L guix flutter-artifacts-engine-common-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Patched Dart SDK .dill files from Google CI; A1: pre-compiled intermediate language files, not buildable outside CI; A2: depends on Dart SDK not in Guix; A3: tightly coupled to specific engine revision (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47072,6 +47080,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5772. flutter-artifacts-engine-android-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-engine-android-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-engine-android-google-bin && guix lint -L guix flutter-artifacts-engine-android-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ANDROID_SDK_REQUIRED: Pre-compiled Android libflutter.so for arm/arm64/x86/x64; A1: requires Android NDK cross-compilation; A2: Google CI pipeline produces these; A3: no distro builds Flutter Android engine from source (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47079,6 +47088,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5773. flutter-artifacts-dart-google-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter-artifacts-dart-google-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter-artifacts-dart-google-bin && guix lint -L guix flutter-artifacts-dart-google-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DART_SDK_BOOTSTRAP_COMPLEX: Complete Dart SDK binary; A1: Dart uses self-hosting bootstrap (Dart builds Dart); A2: requires Google depot_tools + gn/ninja; A3: only Arch packages Dart from source via extra/dart (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47086,6 +47096,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5774. flutter
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter && guix lint -L guix flutter
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Flutter SDK meta-package; A1: circular bootstrap — needs Dart to build Flutter tools, needs Flutter to get Dart; A2: engine requires Chromium-derived build infrastructure; A3: all 20 Flutter ecosystem packages depend on this chain (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47109,6 +47120,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5777. mcpelauncher-ui
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mcpelauncher-ui | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n mcpelauncher-ui && guix lint -L guix mcpelauncher-ui
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: QT6_WEBENGINE_COMPLEX: Qt6/WebEngine UI for Minecraft PE launcher; A1: qt6-webengine (embedded Chromium) not available in Guix; A2: depends on mcpelauncher chain that reverse-engineers proprietary game binary loading; A3: Google Play API integration for APK downloads (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47251,6 +47263,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5794. winecx
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n winecx | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n winecx && guix lint -L guix winecx
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: CodeWeavers CrossOver Wine fork; A1: requires dual 32/64-bit build with extensive lib32-* deps; A2: Guix has no multilib infrastructure; A3: source from commercial CodeWeavers tarball, mixed licensing (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47258,6 +47271,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5795. nvidia-340xx-settings
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n nvidia-340xx-settings | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n nvidia-340xx-settings && guix lint -L guix nvidia-340xx-settings
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: NVIDIA settings GUI for legacy 340xx drivers; A1: GPL-2.0 source but exclusively for proprietary nvidia-340xx driver (EOL); A2: requires nvidia-340xx-utils proprietary kernel module; A3: no free driver counterpart for this legacy hardware (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47334,6 +47348,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5804. mathematica
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n mathematica | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n mathematica && guix lint -L guix mathematica
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: Wolfram Mathematica commercial software; A1: requires paid license; A2: source requires login/purchase to download; A3: license forbids redistribution; 20+ GB proprietary installer (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47383,6 +47398,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5810. xivlauncher
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n xivlauncher | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n xivlauncher && guix lint -L guix xivlauncher
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: FFXIV custom launcher (C#/.NET 10+); A1: requires .NET SDK 10+ not in Guix; A2: NuGet dependency resolution incompatible with Guix reproducible builds; A3: self-contained dotnet publish with NuGet packages (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -47485,6 +47501,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5822. intel-ipu6-camera-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n intel-ipu6-camera-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n intel-ipu6-camera-bin && guix lint -L guix intel-ipu6-camera-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BINARY: Intel IPU6 camera firmware/library binaries; A1: GitHub repo contains only pre-compiled proprietary .so/.a blobs, no source; A2: requires intel-ipu6-dkms-git kernel module; A3: closed-source, custom proprietary license (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48352,6 +48369,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5942. vscodium-insiders-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vscodium-insiders-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n vscodium-insiders-git && guix lint -L guix vscodium-insiders-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_COMPLEX: VSCode Insiders from source; A1: build requires nvm + specific Node.js + yarn + gulp + Electron; A2: thousands of npm dependencies needing vendoring; A3: Guix cannot build Electron apps from source; existing vscodium in Guix uses pre-built binary (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48359,6 +48377,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5943. vscodium-all-marketplace
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n vscodium-all-marketplace | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n vscodium-all-marketplace && guix lint -L guix vscodium-all-marketplace
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Pacman/libalpm hook to patch VSCodium marketplace URL; A1: hook file and Python script tied to Arch package management infrastructure; A2: concept could be done differently in Guix but this package is Arch-only tooling; A3: no upstream repo, AUR-only files (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48434,6 +48453,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5952. steamvr-openhmd-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n steamvr-openhmd-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n steamvr-openhmd-git && guix lint -L guix steamvr-openhmd-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: SteamVR driver plugin for OpenHMD headsets; A1: BSL-1.0 source but exclusively loads into proprietary SteamVR runtime; A2: zero utility without SteamVR (proprietary Valve software); A3: SteamVR cannot be packaged in Guix (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48529,6 +48549,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5964. snd-hda-macbookpro-dkms-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n snd-hda-macbookpro-dkms-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n snd-hda-macbookpro-dkms-git && guix lint -L guix snd-hda-macbookpro-dkms-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DKMS_KERNEL_MODULE: HDA audio kernel module for MacBook Pro; A1: DKMS kernel module, Guix has no DKMS infrastructure; A2: patches internal kernel HDA codec structures, requires specific kernel headers; A3: would need custom linux-module-build-system integration, niche hardware (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48680,6 +48701,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5982. lib32-freearc-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n lib32-freearc-bin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n lib32-freearc-bin && guix lint -L guix lib32-freearc-bin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: Pre-compiled 32-bit (i386) FreeArc binary; A1: only i386 binaries available, no x86_64; A2: requires lib32-ncurses5, lib32-gmp, lib32-gtk2 — Guix has no multilib; A3: source (Haskell) unmaintained since 2014 (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48735,6 +48757,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5989. immuarch-verity-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n immuarch-verity-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n immuarch-verity-git && guix lint -L guix immuarch-verity-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: ImmuArch verity checker for immutable Arch Linux; A1: relies on mkinitcpio (Arch-specific initramfs); A2: tied to pacman, btrfs subvolume layout specific to Arch; A3: Guix System has its own immutability model (the store) (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48742,6 +48765,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 5990. immuarch-utils-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n immuarch-utils-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n immuarch-utils-git && guix lint -L guix immuarch-utils-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: ImmuArch utility scripts; A1: provides initcpio install hooks (sd-immuarch) — Arch-specific; A2: systemd services for switch-root in Arch boot layout; A3: completely irrelevant to Guix System declarative configuration (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48834,6 +48858,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 6001. rutoken-plugin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n rutoken-plugin | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n rutoken-plugin && guix lint -L guix rutoken-plugin
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BINARY: Browser plugin for Rutoken USB crypto tokens; A1: closed-source, extracted from RPM downloaded from Rutoken servers; A2: no source code available; A3: depends on rutoken-connect (also proprietary) (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48864,6 +48889,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 6005. snap-pac-grub
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n snap-pac-grub | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n snap-pac-grub && guix lint -L guix snap-pac-grub
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Pacman hook for btrfs snapshots + GRUB entries; A1: libalpm hook — tied to Arch pacman infrastructure; A2: depends on snap-pac (another pacman hook); A3: zero applicability outside Arch/pacman ecosystem (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48871,6 +48897,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 6006. tosu-overlay
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n tosu-overlay | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n tosu-overlay && guix lint -L guix tosu-overlay
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: QT6_WEBENGINE_COMPLEX: Qt6/WebEngine overlay for osu! game stats; A1: requires qt6-webengine (embedded Chromium) not in Guix; A2: depends on tosu (TypeScript/Node.js memory reader for osu!); A3: osu! itself requires .NET (lazer) or is proprietary (stable) (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -48894,6 +48921,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 ** FAILED 6009. wemeet-wayland-screenshare-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n wemeet-wayland-screenshare-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily3.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n wemeet-wayland-screenshare-git && guix lint -L guix wemeet-wayland-screenshare-git
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_RUNTIME_DEP: LD_PRELOAD hook for Tencent Meeting Wayland screenshare; A1: open-source MIT C++ library but exclusively for proprietary wemeet-bin; A2: zero utility without proprietary Tencent Meeting client; A3: workaround for proprietary app's shortcomings (recipe-resolver-260423d)
    - Difficulty: unknown
    - TODO Status: FAILED
 
@@ -64934,6 +64962,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n pacserve | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix pacserve && guix build -L guix -n pacserve | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Package server for sharing pacman packages on LAN; A1: Python tool that wraps pacman/libalpm for package serving; A2: only serves/consumes Arch pacman packages; A3: depends on pacman infrastructure, useless on Guix (recipe-resolver-260423d)
 
 ** DONE 8091. tsmuxer-git  :recipe-resolver-260417ah:recipe-generated:
    - Note: AUR popularity=0.0900, votes=64; Remux/mux elementary streams, EVO/VOB/MPG, MKV/MKA, MP4/MOV, TS, M2TS to TS to M
@@ -65359,48 +65388,56 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-engine-common-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-engine-common-google-bin && guix build -L guix -n flutter-engine-common-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Duplicate of flutter-artifacts-engine-common-google-bin (alternative provider from flutter-artifacts-google-bin pkgbase); A1: same patched Dart .dill files; A2: same Google CI dependency; A3: Flutter SDK chain infeasible (recipe-resolver-260423d)
 
 ** FAILED 8149. flutter-engine-linux-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - linux engine
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-engine-linux-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-engine-linux-google-bin && guix build -L guix -n flutter-engine-linux-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BUILD_PIPELINE: Duplicate of flutter-artifacts-engine-linux-google-bin (alternative provider); A1: same pre-compiled engine .so; A2: same Google CI build requirement; A3: no distro builds Flutter engine from source (recipe-resolver-260423d)
 
 ** FAILED 8150. flutter-engine-web-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - web engine
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-engine-web-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-engine-web-google-bin && guix build -L guix -n flutter-engine-web-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_BUILD_PIPELINE: Duplicate of flutter-artifacts-engine-web-google-bin (alternative provider); A1: same JS/WASM engine artifacts; A2: same Emscripten CI requirement; A3: depot_tools not in Guix (recipe-resolver-260423d)
 
 ** FAILED 8151. flutter-engine-android-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - android engine
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-engine-android-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-engine-android-google-bin && guix build -L guix -n flutter-engine-android-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ANDROID_SDK_REQUIRED: Duplicate of flutter-artifacts-engine-android-google-bin (alternative provider); A1: same Android libflutter.so binaries; A2: same NDK cross-compilation requirement; A3: Android SDK not in Guix (recipe-resolver-260423d)
 
 ** FAILED 8152. flutter-sky-engine-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - sky-engine
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-sky-engine-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-sky-engine-google-bin && guix build -L guix -n flutter-sky-engine-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Duplicate of flutter-artifacts-sky-engine-google-bin (alternative provider); A1: same Dart platform interface; A2: same Flutter SDK chain dependency; A3: Dart not in Guix (recipe-resolver-260423d)
 
 ** FAILED 8153. flutter-material-fonts-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - material fonts
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-material-fonts-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-material-fonts-google-bin && guix build -L guix -n flutter-material-fonts-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Duplicate of flutter-artifacts-material-fonts-google-bin (alternative provider); A1: material icon fonts only useful in Flutter; A2: standalone packaging pointless; A3: Flutter SDK infeasible (recipe-resolver-260423d)
 
 ** FAILED 8154. flutter-gradle-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - gradle wrapper
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-gradle-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-gradle-google-bin && guix build -L guix -n flutter-gradle-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Duplicate of flutter-artifacts-gradle-google-bin (alternative provider); A1: Gradle wrapper for Flutter; A2: Maven Central downloads conflict with Guix; A3: Flutter SDK chain infeasible (recipe-resolver-260423d)
 
 ** FAILED 8155. flutter-dart-google-bin
    - Note: AUR popularity=0.0885, votes=6; Flutter SDK artifacts (binary from Google) - Dart SDK
    - Blocker: NEEDS_RECIPE_DESIGN: cmd: guix build -L guix -n flutter-dart-google-bin | error: package recipe drafting not completed in this pass | next: finalize source URI/hash/inputs and validate
    - TODO Status: BLOCKED
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix flutter-dart-google-bin && guix build -L guix -n flutter-dart-google-bin | detail: placeholder recipe attempt added in guix/gaurix/packages/queue-20260401p100daily4.scm (origin/hash/build-system/inputs pending) | next: draft full Guix recipe and rerun guix lint/build
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DART_SDK_BOOTSTRAP_COMPLEX: Duplicate of flutter-artifacts-dart-google-bin (alternative provider); A1: same Dart SDK binary; A2: same self-hosting bootstrap problem; A3: depot_tools/gn not in Guix (recipe-resolver-260423d)
 
 ** DONE 8156. android-messages-desktop-bin
    - Source List: todo_general_packages.org
@@ -87519,6 +87556,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (jetbrains-toolbox v3.4.1.78303, JetBrains Toolbox App, proprietary free-to-use)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: PROPRIETARY_SELF_UPDATING: proprietary binary with online activation and self-updating; A1: auto-updater writes to install dir conflicting with Guix store immutability; A2: requires JBR bundled JVM; A3: no offline mode (recipe-resolver-260417ag)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY_SELF_UPDATING: JetBrains Toolbox proprietary IDE manager; A1: auto-updater writes to install dir conflicting with Guix store immutability; A2: requires JBR bundled JVM; A3: no offline mode; entirely proprietary binary (recipe-resolver-260423d)
 
 ** DONE 11363. prefixer
    - AUR votes: 11, popularity: 5.0445
@@ -87687,6 +87725,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in recipe-resolver-260407j.scm (arduino-ide-bin v2.3.8, Arduino IDE 2.x binary, AGPL-3.0)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN: ELECTRON_COMPLEX: Electron app with 200+ bundled node_modules and native addons; A1: requires wrapping for sandbox/display/dbus; A2: serial port access needs udev rules; A3: bundled Electron version pinning (recipe-resolver-260417ag)
+   - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: ELECTRON_COMPLEX: Arduino IDE v2 Electron/Theia app; A1: 200+ bundled node_modules with native addons; A2: building from source requires massive Node.js/TypeScript/yarn pipeline; A3: serial port access needs udev rules + wrapping for sandbox/display/dbus (recipe-resolver-260423d)
 
 ** DONE 11384. rustdesk
    - AUR votes: 59, popularity: 4.1550

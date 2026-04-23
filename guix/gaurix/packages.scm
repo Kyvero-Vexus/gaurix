@@ -9057,6 +9057,7 @@
                yarr-bin
                
             ;; deptree-resolver-260423c (100 BLOCKED resolved via dep-tree priority)
+            ;; recipe-resolver-260423d (39 NRD evaluated: 0 recipes, 39 EXHAUSTED — Flutter ecosystem, proprietary, Arch-specific, unsupported runtimes)
                httpdirfs-git
                libcanberra-gtk2
                iup
