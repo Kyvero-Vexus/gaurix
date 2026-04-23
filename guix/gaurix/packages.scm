@@ -9930,3 +9930,70 @@
                networkd-broker
                piper-voices-en-gb
                ))
+
+;;; recipe-resolver-260423k: 30 packages resolved
+;;; - aspnet-targeting-pack-9-0-bin
+;;; - pkgdu
+;;; - pacman-repo-stats
+;;; - msi-ec-dkms-git
+;;; - datagrip-eap-jre
+;;; - datagrip-eap
+;;; - openttd-jgrpp-opensfx
+;;; - openttd-jgrpp-openmsx
+;;; - openttd-jgrpp-opengfx
+;;; - firefox-extension-reddit-enhancement-suite
+;;; - pgmq
+;;; - pacman-command-utils
+;;; - odinls-git
+;;; - mihomo-alpha-git
+;;; - gtk2+extra
+;;; - stormy
+;;; - firefox-sponsorblock-for-youtube-skip-sponsorships-bin
+;;; - doublecmd-gtk2
+;;; - stable-diffusion-cpp-hipblas-git
+;;; - claudes-c-compiler-doc
+;;; - claudes-c-compiler-src
+;;; - qucs
+;;; - brother-hl2270dw
+;;; - php84-mbstring
+;;; - php84-intl
+;;; - php84-gmp
+;;; - php84-gd
+;;; - php84-ftp
+;;; - php84-ffi
+;;; - python-rofi-git
+
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423k)
+  #:re-export (
+               aspnet-targeting-pack-9-0-bin
+               pkgdu
+               pacman-repo-stats
+               msi-ec-dkms-git
+               datagrip-eap-jre
+               datagrip-eap
+               openttd-jgrpp-opensfx
+               openttd-jgrpp-openmsx
+               openttd-jgrpp-opengfx
+               firefox-extension-reddit-enhancement-suite
+               pgmq
+               pacman-command-utils
+               odinls-git
+               mihomo-alpha-git
+               gtk2+extra
+               stormy
+               firefox-sponsorblock-for-youtube-skip-sponsorships-bin
+               doublecmd-gtk2
+               stable-diffusion-cpp-hipblas-git
+               claudes-c-compiler-doc
+               claudes-c-compiler-src
+               qucs
+               brother-hl2270dw
+               php84-mbstring
+               php84-intl
+               php84-gmp
+               php84-gd
+               php84-ftp
+               php84-ffi
+               python-rofi-git
+               ))
