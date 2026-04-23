@@ -9179,4 +9179,29 @@
                ifrextractor-rs
                hyprland-preview-share-picker-git
                elyprismlauncher
+               
+               go-mitmproxy-bin
+               bayesian-ssh-bin
+               wtp-bin
+               dissent-bin
+               mmtui
+               rg-sens-git
+               speedtest-go
+               netpala
+               fotocx
+               wattage
+               shutsentry
+               menulibre
+               jackett-bin
+               dmscripts-git
+               domake
+               dosh
+               hanuchi
+               tty-clock
+               jrnlc
+               kubecolor
+               unimatrix-git
+               mediamtx
+               docker-credential-secretservice
+               compendium
                ))
