@@ -9157,4 +9157,25 @@
                coreos-installer
                data-peek-bin
                easytax-ag-2024
+               tuckr
+               gede
+               ytui-music
+               python-gdbgui
+               themix-icons-numix-git
+               themix-icons-papirus-git
+               themix-icons-archdroid-git
+               plann
+               python-influxdb-client
+               lavacli
+               stax
+               elan-lean
+               ty
+               rbonsai
+               clock-rs
+               passly
+               ytsub
+               runal
+               ifrextractor-rs
+               hyprland-preview-share-picker-git
+               elyprismlauncher
                ))

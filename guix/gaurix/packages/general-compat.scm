@@ -529,6 +529,7 @@
   #:use-module (gaurix packages recipe-resolver-260419j)
   #:use-module (gaurix packages recipe-resolver-260423a)
   #:use-module (gaurix packages deptree-resolver-260423c)
+  #:use-module (gaurix packages recipe-resolver-260423c)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -13352,3 +13353,26 @@
 (re-export coreos-installer)
 (re-export data-peek-bin)
 (re-export easytax-ag-2024)
+
+;;; recipe-resolver-260423c re-exports
+(re-export tuckr)
+(re-export gede)
+(re-export ytui-music)
+(re-export python-gdbgui)
+(re-export themix-icons-numix-git)
+(re-export themix-icons-papirus-git)
+(re-export themix-icons-archdroid-git)
+(re-export plann)
+(re-export python-influxdb-client)
+(re-export lavacli)
+(re-export stax)
+(re-export elan-lean)
+(re-export ty)
+(re-export rbonsai)
+(re-export clock-rs)
+(re-export passly)
+(re-export ytsub)
+(re-export runal)
+(re-export ifrextractor-rs)
+(re-export hyprland-preview-share-picker-git)
+(re-export elyprismlauncher)
