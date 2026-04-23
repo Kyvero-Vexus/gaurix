@@ -535,6 +535,7 @@
   #:use-module (gaurix packages recipe-resolver-260423e)
   #:use-module (gaurix packages recipe-resolver-260423f)
   #:use-module (gaurix packages recipe-resolver-260423g)
+  #:use-module (gaurix packages recipe-resolver-260423h)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -13633,3 +13634,15 @@
 (re-export liboobs)
 (re-export librewolf-vencord-bin)
 (re-export ltex-ls-plus-bin)
+(re-export font-barlow)
+(re-export font-et-book-otf)
+(re-export font-et-book-ttf)
+(re-export font-et-book-type1)
+(re-export python-jsonpath-python)
+(re-export python-pyfzf)
+(re-export python-pdf2image)
+(re-export python-sqlglot)
+(re-export python-decouple)
+(re-export args-cpp)
+(re-export logiops)
+(re-export clipboard-cli)

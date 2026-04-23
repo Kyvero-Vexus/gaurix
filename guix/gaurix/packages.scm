@@ -9262,6 +9262,7 @@
             ;; deptree-resolver-260423c (100 BLOCKED resolved via dep-tree priority)
             ;; recipe-resolver-260423d (39 NRD evaluated: 0 recipes, 39 EXHAUSTED — Flutter ecosystem, proprietary, Arch-specific, unsupported runtimes)
             ;; recipe-resolver-260423f (30 NRD resolved: 12 recipes, 18 EXHAUSTED)
+            ;; recipe-resolver-260423h (30 NRD resolved: 12 recipes, 9 ALREADY_IN_GUIX, 9 EXHAUSTED)
                httpdirfs-git
                libcanberra-gtk2
                iup
