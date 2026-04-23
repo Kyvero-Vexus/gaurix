@@ -533,6 +533,7 @@
   #:use-module (gaurix packages recipe-resolver-260423c)
   #:use-module (gaurix packages recipe-resolver-260423e)
   #:use-module (gaurix packages recipe-resolver-260423f)
+  #:use-module (gaurix packages recipe-resolver-260423g)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -13518,3 +13519,14 @@
 (re-export urbackup2-server)
 (re-export sql-workbench)
 (re-export vacuum)
+
+(re-export sqlite-jdbc)
+(re-export beatoraja-modernchic)
+(re-export themix-icons-suru-plus)
+(re-export themix-icons-suru-plus-aspromauros)
+(re-export amazon-fonts)
+(re-export canvas-downloader)
+(re-export kwin-effect-rounded-corners)
+(re-export kwin-effects-better-blur-dx)
+(re-export plasma6-applets-kurve)
+(re-export khtml)
