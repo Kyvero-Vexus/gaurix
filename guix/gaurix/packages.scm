@@ -9423,3 +9423,210 @@
                vacuum
 
                ))
+
+;;; recipe-resolver-260423i: 100 packages resolved
+;;; - cyrus-imapd-docs
+;;; - otf-gfs
+;;; - ttf-oxygen
+;;; - gtk-arc-flatabulous-theme-git
+;;; - libvterm-bzr
+;;; - underscorejs
+;;; - s
+;;; - ldraw-parts-library
+;;; - hunspell-ca
+;;; - bdf-tamzen-font-git
+;;; - otb-tamzen-font-git
+;;; - pcf-tamzen-font-git
+;;; - psf-tamzen-font-git
+;;; - ttf-tamzen-font-git
+;;; - xlhtml
+;;; - hunspell-pt-pt
+;;; - kicad-library-sparkfun-git
+;;; - daa2iso
+;;; - freefonts
+;;; - flatwoken-icons-git
+;;; - libopenmpt-doc-svn
+;;; - openrc-arch-services-git
+;;; - plata-theme
+;;; - evopop-icon-theme
+;;; - voikko-fi
+;;; - afio
+;;; - ttf-weather-icons
+;;; - libcrossguid-git
+;;; - libxkbcommon-doc-git
+;;; - mythes-pt-br
+;;; - sutils-git
+;;; - ttf-nanumgothic-coding
+;;; - paxctl
+;;; - freeipa-client-common
+;;; - facetimehd-firmware
+;;; - urbanlifestyle-sddm-theme
+;;; - ttf2eot
+;;; - scsiadd
+;;; - keyfuzz
+;;; - blokator
+;;; - caffe-doc-git
+;;; - gnome-shell-extension-coverflow-alt-tab
+;;; - lubuntu-artwork
+;;; - meanwhile-docs
+;;; - otf-inconsolata-powerline-git
+;;; - srb2-data
+;;; - torch7-cwrap-git
+;;; - nordic-theme-git
+;;; - gobi-loader
+;;; - hstr-git
+;;; - obsetlayout
+;;; - stardict-en-cz
+;;; - tcc-git
+;;; - ttf-beteckna
+;;; - ttf-mikachan
+;;; - bbswitch-git
+;;; - rainbarf-git
+;;; - portmaster-legacy-bin
+;;; - nordic-standard-buttons-theme
+;;; - nordic-polar-standard-buttons-theme
+;;; - nordic-darker-theme
+;;; - nordic-bluish-accent-theme
+;;; - nordic-bluish-accent-standard-buttons-theme
+;;; - cppreference-qt
+;;; - arc
+;;; - gstreamer-docs-git
+;;; - gtk-theme-windows10
+;;; - quartus-free-devinfo-arria-lite
+;;; - quartus-free-devinfo-cyclone
+;;; - quartus-free-devinfo-cyclone10lp
+;;; - quartus-free-devinfo-cyclonev
+;;; - quartus-free-devinfo-max
+;;; - quartus-free-devinfo-max10
+;;; - ttf-mononoki-git
+;;; - nordic-theme
+;;; - orchis-theme-git
+;;; - orchis-nord-theme-git
+;;; - orchis-dracula-theme-git
+;;; - open-dyslexic-fonts
+;;; - adapta-backgrounds
+;;; - nvidia-sdk
+;;; - nvidia-sdk-doc
+;;; - ttf-essays
+;;; - ttf-humor-sans
+;;; - numix-gtk-theme
+;;; - lscolors-git
+;;; - nerd-fonts-git
+;;; - amd-zen-ucode-platomav
+;;; - aur-out-of-date
+;;; - dict-freedict-eng-deu
+;;; - xinput-calibrator
+;;; - tmux-mem-cpu-load-git
+;;; - terminus-font-ll2-td1
+;;; - xmlindent
+;;; - kbdlight
+;;; - leiningen-completions
+;;; - numix-themes-darkblue
+;;; - xi-core-git
+;;; - rcm
+;;; - pvs-studio
+
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423i)
+  #:re-export (
+               cyrus-imapd-docs
+               otf-gfs
+               ttf-oxygen
+               gtk-arc-flatabulous-theme-git
+               libvterm-bzr
+               underscorejs
+               s
+               ldraw-parts-library
+               hunspell-ca
+               bdf-tamzen-font-git
+               otb-tamzen-font-git
+               pcf-tamzen-font-git
+               psf-tamzen-font-git
+               ttf-tamzen-font-git
+               xlhtml
+               hunspell-pt-pt
+               kicad-library-sparkfun-git
+               daa2iso
+               freefonts
+               flatwoken-icons-git
+               libopenmpt-doc-svn
+               openrc-arch-services-git
+               plata-theme
+               evopop-icon-theme
+               voikko-fi
+               afio
+               ttf-weather-icons
+               libcrossguid-git
+               libxkbcommon-doc-git
+               mythes-pt-br
+               sutils-git
+               ttf-nanumgothic-coding
+               paxctl
+               freeipa-client-common
+               facetimehd-firmware
+               urbanlifestyle-sddm-theme
+               ttf2eot
+               scsiadd
+               keyfuzz
+               blokator
+               caffe-doc-git
+               gnome-shell-extension-coverflow-alt-tab
+               lubuntu-artwork
+               meanwhile-docs
+               otf-inconsolata-powerline-git
+               srb2-data
+               torch7-cwrap-git
+               nordic-theme-git
+               gobi-loader
+               hstr-git
+               obsetlayout
+               stardict-en-cz
+               tcc-git
+               ttf-beteckna
+               ttf-mikachan
+               bbswitch-git
+               rainbarf-git
+               portmaster-legacy-bin
+               nordic-standard-buttons-theme
+               nordic-polar-standard-buttons-theme
+               nordic-darker-theme
+               nordic-bluish-accent-theme
+               nordic-bluish-accent-standard-buttons-theme
+               cppreference-qt
+               arc
+               gstreamer-docs-git
+               gtk-theme-windows10
+               quartus-free-devinfo-arria-lite
+               quartus-free-devinfo-cyclone
+               quartus-free-devinfo-cyclone10lp
+               quartus-free-devinfo-cyclonev
+               quartus-free-devinfo-max
+               quartus-free-devinfo-max10
+               ttf-mononoki-git
+               nordic-theme
+               orchis-theme-git
+               orchis-nord-theme-git
+               orchis-dracula-theme-git
+               open-dyslexic-fonts
+               adapta-backgrounds
+               nvidia-sdk
+               nvidia-sdk-doc
+               ttf-essays
+               ttf-humor-sans
+               numix-gtk-theme
+               lscolors-git
+               nerd-fonts-git
+               amd-zen-ucode-platomav
+               aur-out-of-date
+               dict-freedict-eng-deu
+               xinput-calibrator
+               tmux-mem-cpu-load-git
+               terminus-font-ll2-td1
+               xmlindent
+               kbdlight
+               leiningen-completions
+               numix-themes-darkblue
+               xi-core-git
+               rcm
+               pvs-studio
+               ))
