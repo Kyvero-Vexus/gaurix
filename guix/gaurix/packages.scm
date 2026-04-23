@@ -3314,82 +3314,6 @@
                ssacli-bin
                stack-wallet-appimage
                storcli
-               ;; recipe-resolver-260423f
-               softplan-websigner
-               eagle
-               binaryninja-free
-               digilent-adept-runtime
-               electron-nightly-bin
-               bytecode-viewer
-               bitmagnet-bin
-               mueller-dict
-               ianny-bin
-               luyten-bin
-               festival-cli-bin
-               festival-gui-bin
-               festival-web-bin
-               festivald-bin
-               festival-tui-bin
-               geode-cli-bin
-               librush-bin
-               d1x-rebirth-bin
-               flog-bin
-               hyperlap2d-bin
-               kanata-tray-bin
-               hashit-bin
-               f2p-evo-bin
-               envm-bin
-               dcd-bin
-               balatro-mod-manager-bin
-               agent-one-bin
-               recaf-bin
-               brother-hl-l3220cw
-               unmined-gui
-               owon-vds-tiny
-               jchempaint
-               keys-vault
-               tldr-plus-plus
-               amneziawg-go
-               echo-ft
-               sbb-tui
-               ihj
-               gomobile
-               titlecase
-               kalc
-               quec
-               mproc
-               makemake
-               kanata-switcher
-               clipr
-               baywatch
-               linutil-git
-               kalc-plot
-               telegram-tdlib
-               gamenetworkingsockets-git
-               ncpamixer
-               idlehack-git
-               nuked-sc55-jcmoyer-git
-               aiwnios
-               hyprfm-git
-               pam-autologin
-               infnoise
-               infnoise-tools
-               libinfnoise
-               pianod
-               cdecrypt-git
-               selectdefaultapplication-fork-git
-               pyinfra
-               guardian
-               colossus
-               mausoleum
-               hg-fast-export
-               cockpit-navigator
-               mainsail-config-git
-               pacfzf
-               atha
-               localcommand
-               fakeit
-               icecat-umatrix
 ))
 
 ;; recipe-resolver-260414z
@@ -9131,6 +9055,7 @@
 ;; recipe-resolver-260423b (100 recipes)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260423b)
+  #:use-module (gaurix packages recipe-resolver-260423f)
   #:re-export (
                pepv-git
                wishlist
@@ -9235,6 +9160,7 @@
                
             ;; deptree-resolver-260423c (100 BLOCKED resolved via dep-tree priority)
             ;; recipe-resolver-260423d (39 NRD evaluated: 0 recipes, 39 EXHAUSTED — Flutter ecosystem, proprietary, Arch-specific, unsupported runtimes)
+            ;; recipe-resolver-260423f (30 NRD resolved: 12 recipes, 18 EXHAUSTED)
                httpdirfs-git
                libcanberra-gtk2
                iup
@@ -9381,4 +9307,17 @@
                mediamtx
                docker-credential-secretservice
                compendium
+               faal
+               atmosim
+               calf-gui
+               pms-git
+               lux-dl-git
+               derper-ipcert
+               axenc-git
+               qtask-git
+               openocd-raspberrypi-git
+               urbackup2-server
+               sql-workbench
+               vacuum
+
                ))

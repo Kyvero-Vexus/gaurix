@@ -1,0 +1,233 @@
+{
+  "pass_id": "recipe-resolver-260423f",
+  "total_evaluated": 30,
+  "recipes_created": 12,
+  "exhausted": 18,
+  "recipes": [
+    {
+      "name": "faal",
+      "pkg_num": 7917,
+      "build_system": "cmake",
+      "version": "1.0.4.3",
+      "license": "MIT"
+    },
+    {
+      "name": "atmosim",
+      "pkg_num": 7928,
+      "build_system": "cmake",
+      "version": "2.4.1",
+      "license": "GPL-3.0+"
+    },
+    {
+      "name": "calf-gui",
+      "pkg_num": 7929,
+      "build_system": "cmake",
+      "version": "0.90.9",
+      "license": "GPL-2.0+/LGPL-2.0+"
+    },
+    {
+      "name": "pms-git",
+      "pkg_num": 7931,
+      "build_system": "go",
+      "version": "0.42",
+      "license": "MIT"
+    },
+    {
+      "name": "lux-dl-git",
+      "pkg_num": 7936,
+      "build_system": "go",
+      "version": "0.24.1",
+      "license": "MIT"
+    },
+    {
+      "name": "derper-ipcert",
+      "pkg_num": 7913,
+      "build_system": "go",
+      "version": "1.96.4",
+      "license": "BSD-3"
+    },
+    {
+      "name": "axenc-git",
+      "pkg_num": 7901,
+      "build_system": "cmake",
+      "version": "0.1.0",
+      "license": "GPL-3.0+"
+    },
+    {
+      "name": "qtask-git",
+      "pkg_num": 7891,
+      "build_system": "cmake",
+      "version": "0.1",
+      "license": "MIT"
+    },
+    {
+      "name": "openocd-raspberrypi-git",
+      "pkg_num": 7848,
+      "build_system": "gnu",
+      "version": "0.12.0",
+      "license": "GPL-2.0+"
+    },
+    {
+      "name": "urbackup2-server",
+      "pkg_num": 7902,
+      "build_system": "gnu",
+      "version": "2.5.36",
+      "license": "GPL-3.0+"
+    },
+    {
+      "name": "sql-workbench",
+      "pkg_num": 7935,
+      "build_system": "copy",
+      "version": "132",
+      "license": "custom"
+    },
+    {
+      "name": "vacuum",
+      "pkg_num": 7907,
+      "build_system": "go",
+      "version": "0.26.1",
+      "license": "MIT"
+    }
+  ],
+  "exhausted_by_reason": {
+    "ARCH_SPECIFIC": 3,
+    "DOTNET_REQUIRED": 1,
+    "NPM_ECOSYSTEM": 1,
+    "HASKELL_DEPS_CHAIN": 1,
+    "COMPLEX_DEPS": 3,
+    "ELECTRON_NPM": 3,
+    "PROPRIETARY_BINARY": 2,
+    "UPSTREAM_DELETED": 1,
+    "CROSS_TOOLCHAIN": 1,
+    "QT_WEBENGINE_COMPLEX": 1,
+    "ALREADY_IN_GUIX": 1
+  },
+  "exhausted_packages": [
+    {
+      "name": "checkpac",
+      "pkg_num": 7843,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "A1: bash script calling pacman/expac (Arch-only); A2: no Guix equivalents for pacman; A3: tool fundamentally Arch-specific"
+    },
+    {
+      "name": "mkinitcpio-ykfde",
+      "pkg_num": 7847,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "A1: mkinitcpio hook (Arch-specific initramfs); A2: Guix has different initrd mechanism; A3: Yubikey logic tightly coupled to mkinitcpio"
+    },
+    {
+      "name": "mkinitcpio-ykfde-git",
+      "pkg_num": 7849,
+      "status": "EXHAUSTED",
+      "reason": "ARCH_SPECIFIC",
+      "detail": "A1: same mkinitcpio dependency as stable; A2: same rewrite required; A3: identical Arch-specific blocker"
+    },
+    {
+      "name": "n-m3u8dl-re-git",
+      "pkg_num": 7850,
+      "status": "EXHAUSTED",
+      "reason": "DOTNET_REQUIRED",
+      "detail": "A1: .NET 9+ SDK required, not in Guix; A2: dotnet publish --self-contained needs SDK; A3: prebuilt binary bundles 100MB .NET runtime"
+    },
+    {
+      "name": "uptimekit",
+      "pkg_num": 7865,
+      "status": "EXHAUSTED",
+      "reason": "NPM_ECOSYSTEM",
+      "detail": "A1: npm install -g distribution only; A2: npm bundling not idiomatic for Guix; A3: platform-specific node_modules not reproducible"
+    },
+    {
+      "name": "adblock2privoxy",
+      "pkg_num": 7866,
+      "status": "EXHAUSTED",
+      "reason": "HASKELL_DEPS_CHAIN",
+      "detail": "A1: guix import pulls 8+ missing Haskell deps; A2: parsec-permutation/missingh chains need sub-deps; A3: all versions need same dep set"
+    },
+    {
+      "name": "nekoray-qt6",
+      "pkg_num": 7876,
+      "status": "EXHAUSTED",
+      "reason": "COMPLEX_DEPS",
+      "detail": "A1: Qt6 + sing-box Go backend with 100+ Go modules; A2: dual C++/Go build; A3: no prebuilt releases"
+    },
+    {
+      "name": "raven-reader",
+      "pkg_num": 7877,
+      "status": "EXHAUSTED",
+      "reason": "ELECTRON_NPM",
+      "detail": "A1: Electron/Vue.js with full npm dep tree; A2: no AppImage release; A3: no .deb release; npm-only"
+    },
+    {
+      "name": "vcpkg-git",
+      "pkg_num": 7890,
+      "status": "EXHAUSTED",
+      "reason": "COMPLEX_DEPS",
+      "detail": "A1: cmake builds tool that downloads at runtime (incompatible with Guix sandbox); A2: no standalone binary; A3: stripping downloads removes core purpose"
+    },
+    {
+      "name": "brother-hll2445dw-lpr-bin",
+      "pkg_num": 7893,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BINARY",
+      "detail": "A1: proprietary i386 binary blobs from .deb; A2: no generic CUPS driver for this model; A3: brlaser doesn't support HL-L2445DW"
+    },
+    {
+      "name": "libisl-git",
+      "pkg_num": 7900,
+      "status": "EXHAUSTED",
+      "reason": "UPSTREAM_DELETED",
+      "detail": "A1: AUR git repo is empty (no commits); A2: upstream isl already in Guix; A3: -git variant adds no value"
+    },
+    {
+      "name": "github-desktop-plus",
+      "pkg_num": 7910,
+      "status": "EXHAUSTED",
+      "reason": "ELECTRON_NPM",
+      "detail": "A1: Electron + yarn + hundreds of npm deps; A2: prebuilt .deb bundles 200MB Electron; A3: no AppImage available"
+    },
+    {
+      "name": "mingw-w64-minizip-ng",
+      "pkg_num": 7912,
+      "status": "EXHAUSTED",
+      "reason": "CROSS_TOOLCHAIN",
+      "detail": "A1: requires MinGW-w64 cross-compilation toolchain; A2: Guix cross model differs; A3: Windows-only target defeats purpose"
+    },
+    {
+      "name": "brother-dcpt300",
+      "pkg_num": 7916,
+      "status": "EXHAUSTED",
+      "reason": "PROPRIETARY_BINARY",
+      "detail": "A1: proprietary Brother CUPS/LPR binaries; A2: no open-source driver for DCP-T300; A3: brlaser doesn't support ink tank models"
+    },
+    {
+      "name": "python-pyqt5-webengine",
+      "pkg_num": 7918,
+      "status": "EXHAUSTED",
+      "reason": "QT_WEBENGINE_COMPLEX",
+      "detail": "A1: requires building QtWebEngine (~2GB Chromium source); A2: SIP-generated wrappers need exact Qt version match; A3: binary wheels not reproducible"
+    },
+    {
+      "name": "borked3ds",
+      "pkg_num": 7925,
+      "status": "EXHAUSTED",
+      "reason": "COMPLEX_DEPS",
+      "detail": "A1: 51 git submodules each needing individual Guix origin; A2: vendored forks incompatible with system versions; A3: no prebuilt Linux binaries"
+    },
+    {
+      "name": "grub-git",
+      "pkg_num": 7926,
+      "status": "EXHAUSTED",
+      "reason": "ALREADY_IN_GUIX",
+      "detail": "A1: grub-git needs gnulib+grub-extras submodules + multi-platform build; A2: maintenance burden for dev snapshot; A3: stable grub already in Guix"
+    },
+    {
+      "name": "twitter",
+      "pkg_num": 7939,
+      "status": "EXHAUSTED",
+      "reason": "ELECTRON_NPM",
+      "detail": "A1: depends on Arch-specific libelectron packages; A2: Electron not packaged in Guix upstream; A3: thin wrapper needs full Electron chain"
+    }
+  ]
+}
