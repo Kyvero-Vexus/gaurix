@@ -9730,4 +9730,35 @@
                xi-core-git
                rcm
                pvs-studio
+            ;; recipe-resolver-260423j
+            feluda-bin
+            wasmrun-bin
+            teleport-client-bin
+            tuios-web-bin
+            scorecard-bin
+            natscli-bin
+            daylight-bin
+            lact-headless-bin
+            clipvault-bin
+            tug-bin
+            garden-bin
+            buttery-bin
+            chandler-bin
+            cargo-visualize-bin
+            jarl-bin
+            proton-drive-sync-bin
+            lean-ctx-bin
+            firebase-tools-bin
+            qbittorrent-cli-bin
+            capacities-appimage
+            dataflare-bin
+            edex-ui-bin
+            sourcegit-bin
+            clash-verge-rev-autobuild-bin
+            piliplus-bin
+            koofr-desktop-bin
+            gmodpatchtool-bin
+            bibata-modern-classic-cursor-theme
+            systemd-cron
+            android-messages-desktop-bin
                ))
