@@ -8823,3 +8823,130 @@
                samsung-magician-consumer-ssd
                omnissa-horizon-usb
                ))
+
+;; recipe-resolver-260419j (95 recipes)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260419j)
+  #:re-export (lncur
+               vertd-git
+               mopidy-spotify
+               mopidy-youtube
+               numix-cursor-theme-git
+               kwakd
+               warpd-git
+               ttf-delugia-code
+               soundfont-sm64
+               gtk-theme-flat-color-git
+               warp-plus-git
+               mopidy-spotify-git
+               olive
+               moonscript
+               ufiformat
+               fcitx5-skin-fluentdark-git
+               mattermost-push-proxy
+               mikhak-fonts
+               ntfs2btrfs-git
+               plutolang
+               bwget
+               julec-bin
+               marble-maps-extra-git
+               marble-maps-tracestrack-git
+               python-haas-proxy
+               shadowenv-bin
+               shit-git
+               words-pt
+               qzdl
+               apng2gif
+               git-pair-bin
+               opencloud-web
+               reddit-tui-bin
+               repomix-git
+               tmux-sessionizer-bin
+               chatgptx-bin
+               dmarc-report-converter
+               wallrust-bin
+               mirage
+               soundfont-titanic
+               material-maker-bin
+               soundfont-arachno
+               soundfont-zelda3sf2
+               soundfont-zeldamcsf2
+               skeuos-gtk
+               soundfont-opl3-fm-128m
+               soundfont-sso-sf2
+               vk-messenger-bin
+               evdev-keepalive
+               libseexpr2
+               proxydev
+               pyprland-git
+               vtm-bin
+               adfinis-rclone-mgr-bin
+               gyroflow-ofx-bin
+               kdbindings
+               libsql-server-bin
+               lilipod
+               soundfont-jeux
+               soundfont-personalcopy
+               soundfont-realfont
+               soundfont-sunshine-perc
+               vvmd-git
+               vvmplayer-git
+               samloader-git
+               sonyheadphonesclient-bin
+               celeste-client-bin
+               gnome-shell-extension-battery-health-charging-git
+               ninjatracing-git
+               mariadb-connector-odbc
+               lighthouse-ethereum-bin
+               olived-git
+               opencloud-bin
+               slcurl-snapshot
+               slsqlite-snapshot
+               twitch-tui-git
+               q
+               mdfextract
+               zsh-autoswitch-virtualenv-git
+               cot
+               leenfetch-bin
+               piper-voices-pt-pt
+               sshp-git
+               hatari-git
+               oniux-git
+               slgsl-snapshot
+               kuro-bin
+               pkg-2k-whitesur-wallpapers-git
+               pkg-4k-whitesur-wallpapers-git
+               chatgtk
+               opentrace
+               intel-lpmd
+               brscan3
+               libadapta
+               api-calls-bin
+               ))
+
+;; recipe-resolver-260423a (21 NRD resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423a)
+  #:re-export (
+               libxml2-git
+               gr-lora-sdr-git
+               php84-imap
+               libre-trainsim-bin
+               wazuh-agent
+               php84-fpm
+               php84-enchant
+               vibe-audio-visualizer-git
+               plezy-git
+               koxtoolchain
+               php84-apache
+               php84-embed
+               python315
+               omnissa-horizon-client
+               listpick
+               playtorrio-bin
+               android-translation-layer
+               kitty-bitmap
+               pyload-ng
+               crossover
+               wine-gaming-dependencies
+               ))
