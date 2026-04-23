@@ -26144,12 +26144,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — PYTHON_DEPS_CHAIN: needs python-taskw + python-dogpile.cache (neither in Guix); A1: pyproject from PyPI — 8+ missing deps; A2: package dep chain — deep chain through stevedore; A3: taskwarrior hooks — equivalent workflow already possible (recipe-resolver-260414ag)
    - TODO Status: BLOCKED
 
-** DONE 3215. git-koji-bin
+** FAILED 3215. git-koji-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in nrd30b; Fedora Koji-specific tooling, requires koji client libraries. See blocked-notes.
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: FEDORA_SPECIFIC: Fedora Koji tooling requires koji client libraries not in Guix; A1: koji clients Fedora-specific; A2: no standalone binary; A3: niche Fedora workflow (recipe-resolver-260423i)
    - Difficulty: unknown
 
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 ** DONE 3216. ttf-octicons [Recipe created as `ttf-octicons` in queue-20260406-nrd30b.scm]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -39082,32 +39082,32 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260413b.scm (deptree-resolver-260413b)
 
 
-** DONE 4784. libgpr
+** FAILED 4784. libgpr
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN: Ada bootstrap recipe; circular dep: gprbuild needs libgpr needs gprbuild; staged build required]
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: circular dependency — gprbuild needs gprbuild to build; A1: bootstrap requires static gprbuild binary; A2: Ada/GNAT toolchain bootstrapping is complex; A3: 4-package chain (libgpr/gprbuild/gprtools/gprname) all blocked (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
-** DONE 4785. gprbuild
+** FAILED 4785. gprbuild
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN: Ada bootstrap recipe; circular dep with libgpr; staged two-phase build required]
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: circular dependency with libgpr; needs bootstrap approach (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
-** DONE 4786. gprtools
+** FAILED 4786. gprtools
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: depends on gprbuild which is blocked (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
-** DONE 4787. gprname
+** FAILED 4787. gprname
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED [NEEDS_RECIPE_DESIGN: recipe drafting not completed in 2026-03-24 pass B; stub added to queue-20260324p100b.scm; see blocked-notes for next actions]
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: depends on gprbuild which is blocked (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
 ** DONE 4788. qgis-git
@@ -40860,11 +40860,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_REQUIRED: A1: requires dotnet-sdk 8.0+ not in Guix; A2: self-contained binary bundles .NET runtime, fragile; A3: same .NET blocker as all *arr apps (recipe-resolver-260423g)
 
 
-** DONE 5001. qoder-bin
+** FAILED 5001. qoder-bin
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN — Agent programming platform binary; fetch Linux release, draft wrapper; Source: https://qoder.com/. Stub exported in queue-20260324p100d.scm.
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: proprietary Electron app with custom license (LicenseRef-custom); A1: non-free license; A2: Electron37 not in Guix; A3: closed-source (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
 ** DONE 5002. hyprland-preview-share-picker-git  :recipe-resolver-260423c:recipe-generated:
@@ -42244,14 +42244,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 5171. emergency-alerts
+** FAILED 5171. emergency-alerts
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: NEEDS_RECIPE_DESIGN: python trivial install; fetch release; Source: https://github.com/JasonLG1979/emergency-alerts
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP: requires granite7 (elementary OS ecosystem library not in Guix); A1: granite7 depends on libhandy/elementary stack; A2: elementary ecosystem not packaged; A3: Vala+Meson build feasible but granite7 blocker (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413e; requires shumate-1.0 + granite-7 (not in Guix). Upstream: leolost2605/emergency-alerts. See blocked-notes.
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 ** DONE 5172. gowatch [BLOCKED: NEEDS_RECIPE_DESIGN]  :recipe-resolver-260418ab:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
@@ -42810,11 +42810,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 5243. arch-check
+** FAILED 5243. arch-check
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Arch health checker; source URL to confirm; bash/Python trivial install.
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ARCH_SPECIFIC: Arch Linux health checker checking disks/kernel/services/pacman; useless on non-Arch systems; A1: hardcoded pacman checks; A2: Arch-specific service names; A3: no value for Guix users (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
 ** DONE 5244. python-hvplot
@@ -43110,19 +43110,19 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** DONE 5281. linux-libre-lts-docs
+** FAILED 5281. linux-libre-lts-docs
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Linux-libre LTS docs; check linux-libre doc output; derive if needed.
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: REDUNDANT: Guix linux-libre kernel packages already support docs via kernel build infrastructure; A1: heavy texlive build deps; A2: kernel versioning doesn't match; A3: Guix kernel model handles this differently (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
-** DONE 5282. python-telegram-send
+** FAILED 5282. python-telegram-send
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED NEEDS_RECIPE_DESIGN: Send Telegram messages; PyPI telegram-send 0.26; dep: python-telegram-bot.
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_DEP: python-telegram-bot not in Guix; needs dedicated dep chain packaging (recipe-resolver-260423i)
    - Difficulty: unknown
    - Status: BLOCKED: MISSING_PYTHON_DEP | requires python-telegram-bot (not in Guix) which depends on httpx with complex async HTTP dep chain (re-evaluated in recipe-resolver-260408u, 2026-04-08)
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
 ** DONE 5283. stax  :recipe-resolver-260423c:recipe-generated:
@@ -44461,9 +44461,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 5450. mas
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v1.42b300; recipe drafting not completed this pass.
+   - Status: ALREADY_IN_GUIX: already packaged as asl v1.42-beta-267 in Guix (recipe-resolver-260423i)
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
 
    - Status: BLOCKED: PLATFORM_INCOMPATIBLE: macOS-only tool requiring Mac App Store framework; cannot run on Linux (deptree-resolver-260413c)
 
@@ -44785,12 +44785,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** DONE 5487. baremetal-compiler-rt
+** FAILED 5487. baremetal-compiler-rt
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN; stub added to guix/gaurix/packages/queue-20260325p100e.scm v22.1.1; recipe drafting not completed this pass.
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: CROSS_TOOLCHAIN: needs arm-none-eabi-newlib not in Guix; A1: bare-metal ARM target requires cross-compilation toolchain; A2: newlib not packaged; A3: niche embedded use case (recipe-resolver-260423i)
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: COMPLEX_BUILD: bare-metal ARM compiler-rt; A1: cross-compilation for armv7m/armv8m not supported; A2: needs specific LLVM version pinning; A3: no portable binary releases (recipe-resolver-260419f)
    - Difficulty: medium
-   - TODO Status: BLOCKED
+   - TODO Status: FAILED
 
 
 ** DONE 5488. dpibreak
@@ -55113,9 +55113,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6792. komga
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n komga | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
 
 ** DONE 6793. doublecmd-admin
@@ -55328,10 +55328,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6817. ttf-selawik
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n ttf-selawik | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm as font-selawik (recipe-resolver-260423i)
    - Next: draft new recipe module for python-easydict (source+hash+build-system), then rerun guix build -L guix -n python-easydict
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
 
 ** DONE 6818. terminalimageviewer
@@ -55390,10 +55390,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6824. python-simsimd
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-simsimd | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: ALREADY_PACKAGED_PRIOR: recipe in cron-c79f127f-r22-w03-nrd4.scm (recipe-resolver-260423i)
    - Next: draft new recipe module for foobar2000-component-openlyrics-bin (source+hash+build-system), then rerun guix build -L guix -n foobar2000-component-openlyrics-bin
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
 
 ** DONE 6825. python-rapidocr [BLOCKED: INFEASIBLE_BUILD: unpackaged Python deps]
@@ -55453,10 +55453,10 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 6830. python-aiohttp-sse-client
    - Source List: data/aur-cache/packages-meta-ext-v1.json
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n python-aiohttp-sse-client | detail: error: specification->package: unbound variable hint: Did you forget `(use-modules (gnu packages))' or `#:use-module (gnu | next: draft/adjust Guix recipe in queue module, then rerun lint+build
+   - Status: ALREADY_PACKAGED_PRIOR: recipe in cron-c79f127f-r22-w03-nrd4.scm (recipe-resolver-260423i)
    - Next: draft new recipe module for python-pyebsdindex (source+hash+build-system), then rerun guix build -L guix -n python-pyebsdindex
    - Difficulty: unknown
-   - TODO Status: FAILED
+   - TODO Status: DONE
 
 
 ** DONE 6831. python-aiocache
@@ -62728,9 +62728,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** DONE 7775. likwid
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n likwid | error: guix build: error: likwid: unknown package | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
    - Note: AUR popularity=0.1023, votes=12; Lightweight performance tools
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 7776. opencollada
@@ -62741,9 +62741,9 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
 ** DONE 7777. fswebcam
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fswebcam | error: guix build: error: fswebcam: unknown package | next: draft initial recipe (source URI/hash/build-system/inputs) and validate with guix lint/build
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
    - Note: AUR popularity=0.1023, votes=19; Neat and simple webcam app
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 7778. dash-static-musl
@@ -65994,20 +65994,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8172. r-tidyjson
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-tidyjson && guix build -L guix -n r-tidyjson | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8173. r-vip
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-vip && guix build -L guix -n r-vip | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8174. r-widyr
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-widyr && guix build -L guix -n r-widyr | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8175. motd
@@ -66087,14 +66087,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8187. r-mcmcse
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-mcmcse && guix build -L guix -n r-mcmcse | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8188. r-inflection
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-inflection && guix build -L guix -n r-inflection | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8189. python-ensurepath
@@ -66105,14 +66105,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8190. r-ggquiver
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-ggquiver && guix build -L guix -n r-ggquiver | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8191. r-finetune
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-finetune && guix build -L guix -n r-finetune | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8192. dbmodel-qt4
@@ -66129,8 +66129,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8194. r-dice
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix r-dice && guix build -L guix -n r-dice | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8195. webull-desktop
@@ -66248,8 +66248,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8213. mkdocs-macros-plugin
    - Source List: todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix lint -L guix mkdocs-macros-plugin && guix build -L guix -n mkdocs-macros-plugin | detail: placeholder recipe attempt in guix/gaurix/packages/queue-20260401p100daily5.scm only (origin/hash/build-system/inputs still incomplete) | next: replace stub with a full Guix recipe, then rerun lint/build
-   - TODO Status: BLOCKED
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm as python-mkdocs-macros-plugin (recipe-resolver-260423i)
+   - TODO Status: DONE
 
 
 ** DONE 8214. ndeftool
@@ -66711,11 +66711,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8277. fsv3
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fsv3 | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily6.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
    - Note: AUR popularity=0.0885, votes=3; A 3D file system explorer (GTK3 port)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 8278. python-zipremove
@@ -66776,11 +66776,11 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 ** DONE 8284. fastchess
    - Source List: /home/slime/projects/gaurix/todo_general_packages.org
-   - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n fastchess | detail: placeholder queue stub added in guix/gaurix/packages/queue-20260401p100daily6.scm; source URI/hash/build-system/inputs not finalized in this pass | next: replace stub with a full Guix recipe, then run guix lint/build
+   - Status: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260423i.scm (recipe-resolver-260423i)
    - Difficulty: unknown
-   - TODO Status: BLOCKED
+   - TODO Status: DONE
    - Note: AUR popularity=0.0884, votes=1; A chess cli tool to run engine vs engine matches
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
 ** DONE 8285. thrive-launcher-bin
@@ -165025,30 +165025,26 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE — recipe-resolver-260417aq; copy-build-system v2.0.1 GPL-2.0
-** TODO 22242. libgpr
+** FAILED 22242. libgpr
    - AUR votes: 38, popularity: 0.241696
    - Note: Ada library to handle Gnat project files.
-   - TODO Status: TODO
-
-
-** TODO 22243. gprbuild
+   - TODO Status: FAILED
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: circular dependency — gprbuild needs gprbuild to build; A1: bootstrap requires static gprbuild binary; A2: Ada/GNAT toolchain bootstrapping is complex; A3: 4-package chain (libgpr/gprbuild/gprtools/gprname) all blocked (recipe-resolver-260423i)
+** FAILED 22243. gprbuild
    - AUR votes: 38, popularity: 0.241696
    - Note: Builder for multi-language systems.
-   - TODO Status: TODO
-
-
-** TODO 22244. gprtools
+   - TODO Status: FAILED
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: circular dependency with libgpr; needs bootstrap approach (recipe-resolver-260423i)
+** FAILED 22244. gprtools
    - AUR votes: 38, popularity: 0.241696
    - Note: Builder for multi-language systems.
-   - TODO Status: TODO
-
-
-** TODO 22245. gprname
+   - TODO Status: FAILED
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: depends on gprbuild which is blocked (recipe-resolver-260423i)
+** FAILED 22245. gprname
    - AUR votes: 38, popularity: 0.241696
    - Note: Builder for multi-language systems.
-   - TODO Status: TODO
-
-
+   - TODO Status: FAILED
+   - Status: NEEDS_RECIPE_DESIGN_EXHAUSTED: ADA_BOOTSTRAP: depends on gprbuild which is blocked (recipe-resolver-260423i)
 ** TODO 22246. stm32cubeide
    - AUR votes: 38, popularity: 0.228058
    - Note: Integrated Development Environment for STM32

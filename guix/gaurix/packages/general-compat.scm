@@ -538,6 +538,7 @@
   #:use-module (gaurix packages recipe-resolver-260423g)
   #:use-module (gaurix packages recipe-resolver-260423h)
   #:use-module (gaurix packages recipe-resolver-260423i)
+  #:use-module (gaurix packages recipe-resolver-260423i)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -13852,3 +13853,20 @@
 (re-export flite1)
 (re-export fluent-icon-theme-git)
 (re-export flutter-dart-google-bin)
+
+(re-export r-tidyjson)
+(re-export r-inflection)
+(re-export r-dice)
+(re-export r-ggquiver)
+(re-export r-vip)
+(re-export r-mcmcse)
+(re-export r-widyr)
+(re-export r-finetune)
+(re-export python-super-collections)
+(re-export python-mkdocs-macros-plugin)
+(re-export fswebcam)
+(re-export fastchess)
+(re-export fsv3)
+(re-export likwid)
+(re-export font-selawik)
+(re-export komga)
