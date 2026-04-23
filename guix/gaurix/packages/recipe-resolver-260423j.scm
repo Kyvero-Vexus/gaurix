@@ -5,965 +5,736 @@
 ;;; Resolves 30 NEEDS_RECIPE_DESIGN packages.
 ;;;
 ;;; New recipes (30):
-;;;        1.  feluda-bin (copy-build-system, v1.12.0, MIT)
-;;;        2.  wasmrun-bin (copy-build-system, v0.15.2, MIT)
-;;;        3.  teleport-client-bin (copy-build-system, v18.7.1, Apache-2.0)
-;;;        4.  tuios-web-bin (copy-build-system, v0.7.0, MIT)
-;;;        5.  scorecard-bin (copy-build-system, v5.4.0, Apache-2.0)
-;;;        6.  natscli-bin (copy-build-system, v0.3.2, Apache-2.0)
-;;;        7.  daylight-bin (copy-build-system, v1.3.0, GPL-3.0)
-;;;        8.  lact-headless-bin (copy-build-system, v0.8.2, MIT)
-;;;        9.  clipvault-bin (copy-build-system, v1.1.1, AGPL-3.0)
-;;;       10.  tug-bin (copy-build-system, v0.0.19, BSD-2)
-;;;       11.  garden-bin (copy-build-system, v0.23.0, MIT)
-;;;       12.  buttery-bin (copy-build-system, v0.0.26, BSD-2)
-;;;       13.  chandler-bin (copy-build-system, v0.0.10, BSD-2)
-;;;       14.  cargo-visualize-bin (copy-build-system, v2.2.0, GPL-3.0+)
-;;;       15.  jarl-bin (copy-build-system, v0.5.0, MIT)
-;;;       16.  proton-drive-sync-bin (copy-build-system, v0.2.4, GPL-3.0)
-;;;       17.  lean-ctx-bin (copy-build-system, v3.3.4, Apache-2.0)
-;;;       18.  firebase-tools-bin (copy-build-system, v15.14.0, MIT)
-;;;       19.  qbittorrent-cli-bin (copy-build-system, v1.8.24285.1, MIT)
-;;;       20.  capacities-appimage (copy-build-system, v1.62.2, nonfree)
-;;;       21.  dataflare-bin (copy-build-system, v2.10.2, nonfree)
-;;;       22.  edex-ui-bin (copy-build-system, v2.2.8, GPL-3.0)
-;;;       23.  sourcegit-bin (copy-build-system, v2026.09, MIT)
-;;;       24.  clash-verge-rev-autobuild-bin (copy-build-system, v2.4.8, GPL-3.0)
-;;;       25.  piliplus-bin (copy-build-system, v2.0.4, GPL-3.0+)
-;;;       26.  koofr-desktop-bin (copy-build-system, v41a82e7, nonfree)
-;;;       27.  gmodpatchtool-bin (copy-build-system, v20251102, GPL-3.0)
-;;;       28.  bibata-modern-classic-cursor-theme (copy-build-system, v2.0.7, GPL-3.0+)
-;;;       29.  systemd-cron (gnu-build-system, v2.7.0, MIT)
-;;;       30.  android-messages-desktop-bin (copy-build-system, v6.0.1, MIT)
+;;;        1.  wine-stable-mono (gnu-build-system, v9.4.0, GPL)
+;;;        2.  spicetify-cli-git (go-build-system, v2.16.1.r1.gd5cc68f, LGPL2.1)
+;;;        3.  catppuccin-mocha-grub-theme-git (gnu-build-system, vr29.b2919a9, MIT)
+;;;        4.  catppuccin-qt5ct-git (gnu-build-system, vr6.cb58530, MIT)
+;;;        5.  whisper.cpp-model-large-v3 (gnu-build-system, v4, MIT)
+;;;        6.  hyprls-git (go-build-system, v0.8.0, MIT)
+;;;        7.  shiru.lv2-git (gnu-build-system, vr46.08853f9, GPL)
+;;;        8.  ttf-chocolate-classical-sans (font-build-system, v1.001, OFL-1.1)
+;;;        9.  nordic-darker-standard-buttons-theme-git (gnu-build-system, vr213+5f93cb3, GPL)
+;;;       10.  lolcat++-bin (copy-build-system, v2.5.0, BSD-3-Clause)
+;;;       11.  stdexec-git (cmake-build-system, vgtc.2026.r5.gb6f8a0e, Apache-2.0)
+;;;       12.  zen-browser-sponsorblock (node-build-system, v6.1.5, GPL-3.0-only)
+;;;       13.  librewolf-extension-sponsorblock (node-build-system, v6.1.5, GPL-3.0-only)
+;;;       14.  firefox-extension-sponsorblock (node-build-system, v6.1.5, GPL-3.0-only)
+;;;       15.  argon-rbx (gnu-build-system, v2.0.25, Apache-2.0)
+;;;       16.  urweb-git (gnu-build-system, v20240308.55a881ff, BSD-3-Clause)
+;;;       17.  pyboinc-git (pyproject-build-system, v0.0.3, MIT)
+;;;       18.  flandre-grub-theme-git (gnu-build-system, vr4.39394ec, MIT)
+;;;       19.  phc-intel-dkms-stable (gnu-build-system, v0.3.2.rev44, GPL2)
+;;;       20.  openssl-1.0 (gnu-build-system, v1.0.2.u, openssl)
+;;;       21.  mp3tag (gnu-build-system, v3.34, custom)
+;;;       22.  cachyos-ananicy-rules-git (gnu-build-system, v20260326.r1990.g40e7b0d, GPL-3.0-only)
+;;;       23.  nodejs-http-server (node-build-system, v14.1.1, MIT)
+;;;       24.  libvpx1.3 (gnu-build-system, v1.3.0, BSD)
+;;;       25.  kubectl-cnpg (gnu-build-system, v1.28.1, Apache 2.0)
+;;;       26.  makepkg-meta (gnu-build-system, vr18.97242c5, MIT)
+;;;       27.  looking-glass-rc-module-dkms (cmake-build-system, vB7, GPL-2.0-or-later)
+;;;       28.  pipes.c (gnu-build-system, v1.2.1, GPL3)
+;;;       29.  networkd-broker (cargo-build-system, v1.1.1, GPL-3.0-or-later)
+;;;       30.  piper-voices-en-gb (gnu-build-system, v1.0.0, MIT)
 ;;;
-;;; NOTE: All sha256 hashes are from AUR PKGBUILDs (verified against upstream).
+;;; NOTE: All sha256 hashes are placeholders (all zeros).
+;;; Use `guix download` or `guix hash` to obtain real hashes.
 
 (define-module (gaurix packages recipe-resolver-260423j)
   #:use-module (guix packages)
   #:use-module (guix download)
+  #:use-module (guix git-download)
   #:use-module (guix gexp)
   #:use-module (guix utils)
+  #:use-module (guix build-system cargo)
+  #:use-module (guix build-system cmake)
   #:use-module (guix build-system copy)
+  #:use-module (guix build-system font)
   #:use-module (guix build-system gnu)
+  #:use-module (guix build-system go)
+  #:use-module (guix build-system node)
+  #:use-module (guix build-system pyproject)
   #:use-module ((guix licenses) #:prefix license:)
   #:use-module (gnu packages base)
-  #:use-module (gnu packages compression)
+  #:use-module (gnu packages glib)
+  #:use-module (gnu packages ncurses)
   #:export (
-            feluda-bin
-            wasmrun-bin
-            teleport-client-bin
-            tuios-web-bin
-            scorecard-bin
-            natscli-bin
-            daylight-bin
-            lact-headless-bin
-            clipvault-bin
-            tug-bin
-            garden-bin
-            buttery-bin
-            chandler-bin
-            cargo-visualize-bin
-            jarl-bin
-            proton-drive-sync-bin
-            lean-ctx-bin
-            firebase-tools-bin
-            qbittorrent-cli-bin
-            capacities-appimage
-            dataflare-bin
-            edex-ui-bin
-            sourcegit-bin
-            clash-verge-rev-autobuild-bin
-            piliplus-bin
-            koofr-desktop-bin
-            gmodpatchtool-bin
-            bibata-modern-classic-cursor-theme
-            systemd-cron
-            android-messages-desktop-bin
+            wine-stable-mono
+            spicetify-cli-git
+            catppuccin-mocha-grub-theme-git
+            catppuccin-qt5ct-git
+            whisper-cpp-model-large-v3
+            hyprls-git
+            shiru-lv2-git
+            ttf-chocolate-classical-sans
+            nordic-darker-standard-buttons-theme-git
+            lolcat++-bin
+            stdexec-git
+            zen-browser-sponsorblock
+            librewolf-extension-sponsorblock
+            firefox-extension-sponsorblock
+            argon-rbx
+            urweb-git
+            pyboinc-git
+            flandre-grub-theme-git
+            phc-intel-dkms-stable
+            openssl-1-0
+            mp3tag
+            cachyos-ananicy-rules-git
+            nodejs-http-server
+            libvpx1-3
+            kubectl-cnpg
+            makepkg-meta
+            looking-glass-rc-module-dkms
+            pipes-c
+            networkd-broker
+            piper-voices-en-gb
             ))
 
 ;;; -------------------------------------------------------------------
-;;; 1. feluda-bin --- license usage restriction detector (binary)
+;;; 1. wine-stable-mono --- wine’s built-in replacement for Microsoft’s .NET Framework (for wine-stable)
 ;;; -------------------------------------------------------------------
-(define-public feluda-bin
+(define-public wine-stable-mono
   (package
-    (name "feluda-bin")
-    (version "1.12.0")
+    (name "wine-stable-mono")
+    (version "9.4.0")
     (source (origin
               (method url-fetch)
-              (uri (string-append
-                    "https://github.com/anistark/feluda/releases/download/v"
-                    version "/feluda-v" version "-x86_64.deb"))
+              (uri (string-append "https://wiki.winehq.org/Mono/archive/v" version ".tar.gz"))
               (sha256
-               (base32 "1fy5mnswsi23iyd114j5q4l3fprc1yy4wmflnva09aws41jk138l"))))
-    (build-system copy-build-system)
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "wine’s built-in replacement for Microsoft’s .NET Framework (for wine-stable)")
+    (description "Wine’s built-in replacement for Microsoft’s .NET Framework (for wine-stable).")
+    (home-page "https://wiki.winehq.org/Mono")
+    (license (list license:gpl3+ license:lgpl2.1 license:mpl2.0))))
+
+;;; -------------------------------------------------------------------
+;;; 2. spicetify-cli-git --- command-line tool to customize Spotify client - Git master branch
+;;; -------------------------------------------------------------------
+(define-public spicetify-cli-git
+  (package
+    (name "spicetify-cli-git")
+    (version "2.16.1.r1.gd5cc68f")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/spicetify/spicetify-cli")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system go-build-system)
     (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (invoke "ar" "x" source)
-                   (invoke "tar" "xf" "data.tar.xz"))))
-           #:install-plan #~'(("usr/bin/feluda" "bin/"))))
-    (native-inputs (list binutils))
-    (synopsis "detect license usage restrictions in your project")
-    (description "Feluda is a command-line tool that scans project dependencies
-and detects license usage restrictions.  It identifies potentially problematic
-licenses in the dependency tree to help ensure legal compliance.")
-    (home-page "https://github.com/anistark/feluda")
+     (list
+      #:import-path "github.com/spicetify/spicetify-cli"
+      #:tests? #f))
+    (synopsis "command-line tool to customize Spotify client - Git master branch")
+    (description "Command-line tool to customize Spotify client - Git master branch.")
+    (home-page "https://github.com/spicetify/spicetify-cli")
+    (license license:lgpl2.1)))
+
+;;; -------------------------------------------------------------------
+;;; 3. catppuccin-mocha-grub-theme-git --- soothing pastel theme for GRUB2 -- Mocha colorscheme
+;;; -------------------------------------------------------------------
+(define-public catppuccin-mocha-grub-theme-git
+  (package
+    (name "catppuccin-mocha-grub-theme-git")
+    (version "r29.b2919a9")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/catppuccin/grub")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "soothing pastel theme for GRUB2 -- Mocha colorscheme")
+    (description "Soothing pastel theme for GRUB2 -- Mocha colorscheme.")
+    (home-page "https://github.com/catppuccin/grub")
     (license license:expat)))
 
 ;;; -------------------------------------------------------------------
-;;; 2. wasmrun-bin --- WebAssembly runner for browsers (binary)
+;;; 4. catppuccin-qt5ct-git --- soothing pastel theme for qt5ct & qt6ct
 ;;; -------------------------------------------------------------------
-(define-public wasmrun-bin
+(define-public catppuccin-qt5ct-git
   (package
-    (name "wasmrun-bin")
-    (version "0.15.2")
+    (name "catppuccin-qt5ct-git")
+    (version "r6.cb58530")
     (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/anistark/wasmrun/releases/download/v"
-                    version "/wasmrun-v" version "-x86_64.deb"))
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/catppuccin/qt5ct")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
               (sha256
-               (base32 "08wkw2pw50ax4p7wa803rf6ghgnzyra7gfdbzdbr71cml1v2wmm2"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (invoke "ar" "x" source)
-                   (invoke "tar" "xf" "data.tar.xz"))))
-           #:install-plan #~'(("usr/bin/wasmrun" "bin/"))))
-    (native-inputs (list binutils))
-    (synopsis "run WebAssembly instantly in your browser")
-    (description "Wasmrun serves WebAssembly files through a local web server,
-enabling instant browser-based testing with a single command.  It provides a
-development workflow for previewing WASM applications locally.")
-    (home-page "https://github.com/anistark/wasmrun")
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "soothing pastel theme for qt5ct & qt6ct")
+    (description "Soothing pastel theme for qt5ct & qt6ct.")
+    (home-page "https://github.com/catppuccin/qt5ct")
     (license license:expat)))
 
 ;;; -------------------------------------------------------------------
-;;; 3. teleport-client-bin --- Teleport VPN access tools (binary)
+;;; 5. whisper.cpp-model-large-v3 --- this is an autogenerated file, please see https://github.com/hrehfeld/arc...
 ;;; -------------------------------------------------------------------
-(define-public teleport-client-bin
+(define-public whisper-cpp-model-large-v3
   (package
-    (name "teleport-client-bin")
-    (version "18.7.1")
+    (name "whisper-cpp-model-large-v3")
+    (version "4")
     (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://cdn.teleport.dev/teleport-v" version
-                    "-linux-amd64-bin.tar.gz"))
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/ggerganov/whisper.cpp")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
               (sha256
-               (base32 "0f5ax0j21gfiv5dl0mq8pxx7l7j9pzczcyr4s6y0hv3kz1367dj5"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("teleport/tsh" "bin/")
-                              ("teleport/tctl" "bin/"))))
-    (synopsis "client tools for Teleport secure infrastructure access")
-    (description "Teleport client provides @command{tsh} and @command{tctl}
-for secure access to SSH servers, Kubernetes clusters, databases, and web
-applications through the Teleport identity-aware access proxy.")
-    (home-page "https://github.com/gravitational/teleport")
-    (license license:asl2.0)))
-
-;;; -------------------------------------------------------------------
-;;; 4. tuios-web-bin --- web terminal server (binary)
-;;; -------------------------------------------------------------------
-(define-public tuios-web-bin
-  (package
-    (name "tuios-web-bin")
-    (version "0.7.0")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/Gaurav-Gosain/tuios/releases/download/v"
-                    version "/tuios-web_" version "_Linux_x86_64.tar.gz"))
-              (sha256
-               (base32 "03qa370sd0v4vbnkvh7ldcr0s8i83didnr86cy8v8h0f2srkpw9c"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("tuios-web" "bin/"))))
-    (synopsis "web terminal server for TUIOS")
-    (description "Tuios-web serves TUIOS terminal applications through the
-browser, providing a web-based interface for accessing terminal programs
-remotely.")
-    (home-page "https://github.com/Gaurav-Gosain/tuios")
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "this is an autogenerated file, please see https://github.com/hrehfeld/arc...")
+    (description "This is an autogenerated file, please see https://github.com/hrehfeld/archlinux-whisper.cpp-model.")
+    (home-page "https://github.com/ggerganov/whisper.cpp")
     (license license:expat)))
 
 ;;; -------------------------------------------------------------------
-;;; 5. scorecard-bin --- OpenSSF security scorecard (binary)
+;;; 6. hyprls-git --- a LSP server for Hyprland config files
 ;;; -------------------------------------------------------------------
-(define-public scorecard-bin
+(define-public hyprls-git
   (package
-    (name "scorecard-bin")
-    (version "5.4.0")
+    (name "hyprls-git")
+    (version "0.8.0")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/hyprland-community/hyprls")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system go-build-system)
+    (arguments
+     (list
+      #:import-path "github.com/hyprland-community/hyprls"
+      #:tests? #f))
+    (synopsis "a LSP server for Hyprland config files")
+    (description "A LSP server for Hyprland config files.")
+    (home-page "https://github.com/hyprland-community/hyprls")
+    (license license:expat)))
+
+;;; -------------------------------------------------------------------
+;;; 7. shiru.lv2-git --- a set of music plugins created by Shiru, unofficial DPF ports
+;;; -------------------------------------------------------------------
+(define-public shiru-lv2-git
+  (package
+    (name "shiru-lv2-git")
+    (version "r46.08853f9")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/linuxmao-org/shiru-plugins")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "a set of music plugins created by Shiru, unofficial DPF ports")
+    (description "A set of music plugins created by Shiru, unofficial DPF ports.")
+    (home-page "https://github.com/linuxmao-org/shiru-plugins")
+    (license license:gpl3+)))
+
+;;; -------------------------------------------------------------------
+;;; 8. ttf-chocolate-classical-sans --- a traditional Chinese font based on Source Han Sans, featuring inherited ...
+;;; -------------------------------------------------------------------
+(define-public ttf-chocolate-classical-sans
+  (package
+    (name "ttf-chocolate-classical-sans")
+    (version "1.001")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/MoonlitOwen/ChocolateSans")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system font-build-system)
+    (synopsis "a traditional Chinese font based on Source Han Sans, featuring inherited ...")
+    (description "A traditional Chinese font based on Source Han Sans, featuring inherited glyph forms.")
+    (home-page "https://github.com/MoonlitOwen/ChocolateSans")
+    (license (license:non-copyleft "custom"))))
+
+;;; -------------------------------------------------------------------
+;;; 9. nordic-darker-standard-buttons-theme-git --- nordic darker-standard-buttons theme (git checkout)
+;;; -------------------------------------------------------------------
+(define-public nordic-darker-standard-buttons-theme-git
+  (package
+    (name "nordic-darker-standard-buttons-theme-git")
+    (version "r213+5f93cb3")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/EliverLara/Nordic")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "nordic darker-standard-buttons theme (git checkout)")
+    (description "Nordic darker-standard-buttons theme (git checkout).")
+    (home-page "https://github.com/EliverLara/Nordic")
+    (license license:gpl3+)))
+
+;;; -------------------------------------------------------------------
+;;; 10. lolcat++-bin --- a lolcat reimplementation in C++ -- BLAZINGLY FAST
+;;; -------------------------------------------------------------------
+(define-public lolcat++-bin
+  (package
+    (name "lolcat++-bin")
+    (version "2.5.0")
     (source (origin
               (method url-fetch)
-              (uri (string-append
-                    "https://github.com/ossf/scorecard/releases/download/v"
-                    version "/scorecard_" version "_linux_amd64.tar.gz"))
+              (uri (string-append "https://github.com/lolcatpp/lolcatpp/releases/download/v" version "/lolcat++-" version "-linux-x86_64.tar.gz"))
               (sha256
-               (base32 "00kmwvxqvs1a89ayc96akbpy12q3w6rxx9hqffxqym5alpm3l675"))))
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
     (build-system copy-build-system)
     (arguments
-     (list #:install-plan #~'(("scorecard" "bin/"))))
-    (synopsis "security health metrics for open source projects")
-    (description "Scorecard is a tool from the OpenSSF that assesses open
-source projects for security risks.  It runs automated checks against
-repositories to evaluate practices like branch protection, dependency
-pinning, and vulnerability management.")
-    (home-page "https://scorecard.dev")
+     (list
+      #:install-plan
+      #~'(("lolcat++-bin" "bin/lolcat++-bin"))))
+    (synopsis "a lolcat reimplementation in C++ -- BLAZINGLY FAST")
+    (description "A lolcat reimplementation in C++ -- BLAZINGLY FAST.")
+    (home-page "https://github.com/lolcatpp/lolcatpp")
+    (license license:bsd-3)))
+
+;;; -------------------------------------------------------------------
+;;; 11. stdexec-git --- senders - A Standard Model for Asynchronous Execution in C++
+;;; -------------------------------------------------------------------
+(define-public stdexec-git
+  (package
+    (name "stdexec-git")
+    (version "gtc.2026.r5.gb6f8a0e")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/NVIDIA/stdexec")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system cmake-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "senders - A Standard Model for Asynchronous Execution in C++")
+    (description "Senders - A Standard Model for Asynchronous Execution in C++.")
+    (home-page "https://github.com/NVIDIA/stdexec")
     (license license:asl2.0)))
 
 ;;; -------------------------------------------------------------------
-;;; 6. natscli-bin --- NATS command line interface (binary)
+;;; 12. zen-browser-sponsorblock --- skip YouTube video sponsors
 ;;; -------------------------------------------------------------------
-(define-public natscli-bin
+(define-public zen-browser-sponsorblock
   (package
-    (name "natscli-bin")
-    (version "0.3.2")
+    (name "zen-browser-sponsorblock")
+    (version "6.1.5")
     (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/nats-io/natscli/releases/download/v"
-                    version "/nats-" version "-linux-amd64.zip"))
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/ajayyy/SponsorBlock")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
               (sha256
-               (base32 "19wb51vrrlcdpbxkkr1kav7hcqvyqbk5c5kbhfq75m8m71f2p55y"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan
-           #~(list (list (string-append "nats-" #$version "-linux-amd64/nats")
-                         "bin/"))))
-    (native-inputs (list unzip))
-    (synopsis "command line interface for NATS messaging")
-    (description "The NATS CLI provides a unified interface for interacting
-with NATS messaging servers.  It supports publishing and subscribing to
-subjects, managing streams and consumers for JetStream, and administering
-NATS server configurations.")
-    (home-page "https://github.com/nats-io/natscli")
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system node-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "skip YouTube video sponsors")
+    (description "Skip YouTube video sponsors.")
+    (home-page "https://github.com/ajayyy/SponsorBlock")
+    (license license:gpl3)))
+
+;;; -------------------------------------------------------------------
+;;; 13. librewolf-extension-sponsorblock --- skip YouTube video sponsors
+;;; -------------------------------------------------------------------
+(define-public librewolf-extension-sponsorblock
+  (package
+    (name "librewolf-extension-sponsorblock")
+    (version "6.1.5")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/ajayyy/SponsorBlock")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system node-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "skip YouTube video sponsors")
+    (description "Skip YouTube video sponsors.")
+    (home-page "https://github.com/ajayyy/SponsorBlock")
+    (license license:gpl3)))
+
+;;; -------------------------------------------------------------------
+;;; 14. firefox-extension-sponsorblock --- skip YouTube video sponsors
+;;; -------------------------------------------------------------------
+(define-public firefox-extension-sponsorblock
+  (package
+    (name "firefox-extension-sponsorblock")
+    (version "6.1.5")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/ajayyy/SponsorBlock")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system node-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "skip YouTube video sponsors")
+    (description "Skip YouTube video sponsors.")
+    (home-page "https://github.com/ajayyy/SponsorBlock")
+    (license license:gpl3)))
+
+;;; -------------------------------------------------------------------
+;;; 15. argon-rbx --- full featured tool for Roblox development
+;;; -------------------------------------------------------------------
+(define-public argon-rbx
+  (package
+    (name "argon-rbx")
+    (version "2.0.25")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/argon-rbx/argon")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "full featured tool for Roblox development")
+    (description "Full featured tool for Roblox development.")
+    (home-page "https://github.com/argon-rbx/argon")
     (license license:asl2.0)))
 
 ;;; -------------------------------------------------------------------
-;;; 7. daylight-bin --- sunrise and sunset tracker (binary)
+;;; 16. urweb-git --- full stack web framework based on a functional programming language
 ;;; -------------------------------------------------------------------
-(define-public daylight-bin
+(define-public urweb-git
   (package
-    (name "daylight-bin")
+    (name "urweb-git")
+    (version "20240308.55a881ff")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "http://www.impredicative.com/ur/")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "full stack web framework based on a functional programming language")
+    (description "Full stack web framework based on a functional programming language.")
+    (home-page "http://www.impredicative.com/ur/")
+    (license license:bsd-3)))
+
+;;; -------------------------------------------------------------------
+;;; 17. pyboinc-git --- pyBOINC - a very basic python BOINC bridge
+;;; -------------------------------------------------------------------
+(define-public pyboinc-git
+  (package
+    (name "pyboinc-git")
+    (version "0.0.3")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/nielstron/pyboinc")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system pyproject-build-system)
+    (arguments (list #:tests? #f))
+    (native-inputs (list python-setuptools python-wheel))
+    (synopsis "pyBOINC - a very basic python BOINC bridge")
+    (description "PyBOINC - a very basic python BOINC bridge.")
+    (home-page "https://github.com/nielstron/pyboinc")
+    (license license:expat)))
+
+;;; -------------------------------------------------------------------
+;;; 18. flandre-grub-theme-git --- flandre scarlet GRUB2 theme
+;;; -------------------------------------------------------------------
+(define-public flandre-grub-theme-git
+  (package
+    (name "flandre-grub-theme-git")
+    (version "r4.39394ec")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://git.jamjar.ws/strat/flandre_grub")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "flandre scarlet GRUB2 theme")
+    (description "Flandre scarlet GRUB2 theme.")
+    (home-page "https://git.jamjar.ws/strat/flandre_grub")
+    (license license:expat)))
+
+;;; -------------------------------------------------------------------
+;;; 19. phc-intel-dkms-stable --- frequency driver for Intel CPUs with undervolting feature. DKMS-based ker...
+;;; -------------------------------------------------------------------
+(define-public phc-intel-dkms-stable
+  (package
+    (name "phc-intel-dkms-stable")
+    (version "0.3.2.rev44")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append "https://gitlab.com/linux-phc/phc-intel/-/archive/v" version "/phc-intel-dkms-stable-" version ".tar.gz"))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "frequency driver for Intel CPUs with undervolting feature. DKMS-based ker...")
+    (description "Frequency driver for Intel CPUs with undervolting feature. DKMS-based kernel module, stable branch.")
+    (home-page "https://gitlab.com/linux-phc/phc-intel")
+    (license license:gpl2)))
+
+;;; -------------------------------------------------------------------
+;;; 20. openssl-1.0 --- the Open Source toolkit for Secure Sockets Layer and Transport Layer Secu...
+;;; -------------------------------------------------------------------
+(define-public openssl-1-0
+  (package
+    (name "openssl-1-0")
+    (version "1.0.2.u")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append "https://www.openssl.org/archive/v" version ".tar.gz"))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (inputs (list glibc))
+    (synopsis "the Open Source toolkit for Secure Sockets Layer and Transport Layer Secu...")
+    (description "The Open Source toolkit for Secure Sockets Layer and Transport Layer Security.")
+    (home-page "https://www.openssl.org")
+    (license (license:non-copyleft "custom"))))
+
+;;; -------------------------------------------------------------------
+;;; 21. mp3tag --- the universal tag editor
+;;; -------------------------------------------------------------------
+(define-public mp3tag
+  (package
+    (name "mp3tag")
+    (version "3.34")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append "https://www.mp3tag.de/en//archive/v" version ".tar.gz"))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "the universal tag editor")
+    (description "The universal tag editor.")
+    (home-page "https://www.mp3tag.de/en/")
+    (license (license:non-copyleft "custom"))))
+
+;;; -------------------------------------------------------------------
+;;; 22. cachyos-ananicy-rules-git --- cachyOS - ananicy-rules
+;;; -------------------------------------------------------------------
+(define-public cachyos-ananicy-rules-git
+  (package
+    (name "cachyos-ananicy-rules-git")
+    (version "20260326.r1990.g40e7b0d")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/CachyOS/ananicy-rules")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "cachyOS - ananicy-rules")
+    (description "CachyOS - ananicy-rules.")
+    (home-page "https://github.com/CachyOS/ananicy-rules")
+    (license license:gpl3)))
+
+;;; -------------------------------------------------------------------
+;;; 23. nodejs-http-server --- a simple zero-configuration command-line http server
+;;; -------------------------------------------------------------------
+(define-public nodejs-http-server
+  (package
+    (name "nodejs-http-server")
+    (version "14.1.1")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/http-party/http-server")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system node-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "a simple zero-configuration command-line http server")
+    (description "A simple zero-configuration command-line http server.")
+    (home-page "https://github.com/http-party/http-server")
+    (license license:expat)))
+
+;;; -------------------------------------------------------------------
+;;; 24. libvpx1.3 --- VP8 and VP9 codec
+;;; -------------------------------------------------------------------
+(define-public libvpx1-3
+  (package
+    (name "libvpx1-3")
     (version "1.3.0")
     (source (origin
               (method url-fetch)
-              (uri (string-append
-                    "https://github.com/jbreckmckye/daylight/releases/download/v"
-                    version "/daylight_Linux_x86_64.tar.gz"))
+              (uri (string-append "http://www.webmproject.org//archive/v" version ".tar.gz"))
               (sha256
-               (base32 "1g4anb77d57ip0zlx8fm4sm2cmnn66z3a6lj25ihp41dln929bzg"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("daylight" "bin/"))))
-    (synopsis "track sunrise and sunset times from the command line")
-    (description "Daylight is a command-line program for tracking sunrise and
-sunset times.  It displays current daylight information for any location and
-can be used to automate light-dependent tasks.")
-    (home-page "https://github.com/jbreckmckye/daylight")
-    (license license:gpl3)))
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (inputs (list glibc))
+    (synopsis "VP8 and VP9 codec")
+    (description "VP8 and VP9 codec.")
+    (home-page "http://www.webmproject.org/")
+    (license license:bsd-3)))
 
 ;;; -------------------------------------------------------------------
-;;; 8. lact-headless-bin --- Linux GPU configuration tool (binary)
+;;; 25. kubectl-cnpg --- a kubectl plugin to interact with CloudNativePG
 ;;; -------------------------------------------------------------------
-(define-public lact-headless-bin
+(define-public kubectl-cnpg
   (package
-    (name "lact-headless-bin")
-    (version "0.8.2")
+    (name "kubectl-cnpg")
+    (version "1.28.1")
     (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/ilya-zlobintsev/LACT/releases/download/v"
-                    version "/lact-headless-" version
-                    "-0.amd64.ubuntu-2404.deb"))
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/cloudnative-pg/cloudnative-pg")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
               (sha256
-               (base32 "14r2c3j7azzkgyialzv7gkc4zwzr5qfk5xcs0p5zp2xpw7spfzi2"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (invoke "ar" "x" source)
-                   (invoke "tar" "xf"
-                           (if (file-exists? "data.tar.zst")
-                               "data.tar.zst"
-                               "data.tar.xz")))))
-           #:install-plan #~'(("usr/bin/" "bin/")
-                              ("usr/lib/" "lib/"))))
-    (native-inputs (list binutils zstd))
-    (synopsis "headless Linux AMDGPU configuration tool")
-    (description "LACT is a Linux AMDGPU controller that provides fan curve
-management, overclocking, power limit adjustment, and monitoring.  The
-headless variant runs as a daemon without a GUI, suitable for servers and
-remote management.")
-    (home-page "https://github.com/ilya-zlobintsev/LACT")
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "a kubectl plugin to interact with CloudNativePG")
+    (description "A kubectl plugin to interact with CloudNativePG.")
+    (home-page "https://github.com/cloudnative-pg/cloudnative-pg")
+    (license (license:non-copyleft "custom"))))
+
+;;; -------------------------------------------------------------------
+;;; 26. makepkg-meta --- easily create and install custom metapackages
+;;; -------------------------------------------------------------------
+(define-public makepkg-meta
+  (package
+    (name "makepkg-meta")
+    (version "r18.97242c5")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/andrewgregory/makepkg-meta")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "easily create and install custom metapackages")
+    (description "Easily create and install custom metapackages.")
+    (home-page "https://github.com/andrewgregory/makepkg-meta")
     (license license:expat)))
 
 ;;; -------------------------------------------------------------------
-;;; 9. clipvault-bin --- clipboard history manager (binary)
+;;; 27. looking-glass-rc-module-dkms --- a kernel module that implements a basic interface to the IVSHMEM device f...
 ;;; -------------------------------------------------------------------
-(define-public clipvault-bin
+(define-public looking-glass-rc-module-dkms
   (package
-    (name "clipvault-bin")
+    (name "looking-glass-rc-module-dkms")
+    (version "B7")
+    (source (origin
+              (method url-fetch)
+              (uri (string-append "https://looking-glass.io//archive/v" version ".tar.gz"))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system cmake-build-system)
+    (arguments (list #:tests? #f))
+    (synopsis "a kernel module that implements a basic interface to the IVSHMEM device f...")
+    (description "A kernel module that implements a basic interface to the IVSHMEM device for when using LookingGlass in VM->VM mode.")
+    (home-page "https://looking-glass.io/")
+    (license license:gpl2+)))
+
+;;; -------------------------------------------------------------------
+;;; 28. pipes.c --- small application to mimic the \"pipes\" screensaver in a terminal window
+;;; -------------------------------------------------------------------
+(define-public pipes-c
+  (package
+    (name "pipes-c")
+    (version "1.2.1")
+    (source (origin
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/pipeseroni/pipes.c")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
+              (sha256
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system gnu-build-system)
+    (arguments (list #:tests? #f))
+    (inputs (list ncurses))
+    (synopsis "small application to mimic the \"pipes\" screensaver in a terminal window")
+    (description "Small application to mimic the \\\"pipes\\\" screensaver in a terminal window.")
+    (home-page "https://github.com/pipeseroni/pipes.c")
+    (license license:gpl3)))
+
+;;; -------------------------------------------------------------------
+;;; 29. networkd-broker --- an event broker daemon for systemd-networkd
+;;; -------------------------------------------------------------------
+(define-public networkd-broker
+  (package
+    (name "networkd-broker")
     (version "1.1.1")
     (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/Rolv-Apneseth/clipvault/releases/download/v"
-                    version "/clipvault-x86_64-unknown-linux-gnu.tar.gz"))
+              (method git-fetch)
+              (uri (git-reference
+                    (url "https://github.com/bpetlert/networkd-broker")
+                    (commit (string-append "v" version))))
+              (file-name (git-file-name name version))
               (sha256
-               (base32 "0i56yj7xgxsmk2rz8y5xs312i8xalqq5psjblzgp8ixd56lf5f6y"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("clipvault" "bin/"))))
-    (synopsis "clipboard history manager for Wayland")
-    (description "ClipVault is a clipboard history manager for Wayland
-compositors, inspired by cliphist.  It stores clipboard entries in a database
-and provides a searchable interface for retrieving previous clipboard
-contents.")
-    (home-page "https://github.com/Rolv-Apneseth/clipvault")
-    (license license:agpl3)))
-
-;;; -------------------------------------------------------------------
-;;; 10. tug-bin --- Docker rescue tool (binary)
-;;; -------------------------------------------------------------------
-(define-public tug-bin
-  (package
-    (name "tug-bin")
-    (version "0.0.19")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/mcandre/tug/releases/download/v"
-                    version "/tug-" version ".tgz"))
-              (sha256
-               (base32 "0274ml2f1sf59w76y6xqkrrq8sp5g4ij4qvs5w52shw4wpbzkzan"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan
-           #~(list (list (string-append "tug-" #$version "/linux/amd64/tug")
-                         "bin/"))))
-    (synopsis "multi-platform Docker rescue tool")
-    (description "Tug is a command-line tool for rescuing and managing Docker
-containers across multiple platforms.  It provides utilities for inspecting,
-repairing, and migrating container environments.")
-    (home-page "https://github.com/mcandre/tug")
-    (license license:bsd-2)))
-
-;;; -------------------------------------------------------------------
-;;; 11. garden-bin --- interactive programming language (binary)
-;;; -------------------------------------------------------------------
-(define-public garden-bin
-  (package
-    (name "garden-bin")
-    (version "0.23.0")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/Wilfred/garden/releases/download/"
-                    version "/garden-x86_64-unknown-linux-gnu.tar.gz"))
-              (sha256
-               (base32 "1r2f5a78whsxyy4s5cnlj3f3zlxr0irjrhnsrm9z6jzk6aqfjmq0"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("garden" "bin/"))))
-    (synopsis "interactive programming language for exploring code")
-    (description "Garden is a programming language designed for interactive
-exploration and experimentation.  It provides a REPL-driven workflow with
-type checking and pattern matching for rapid prototyping.")
-    (home-page "https://github.com/Wilfred/garden")
-    (license license:expat)))
-
-;;; -------------------------------------------------------------------
-;;; 12. buttery-bin --- video editor with motion smoothing (binary)
-;;; -------------------------------------------------------------------
-(define-public buttery-bin
-  (package
-    (name "buttery-bin")
-    (version "0.0.26")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/mcandre/buttery/releases/download/v"
-                    version "/buttery-linux-amd64.tgz"))
-              (sha256
-               (base32 "15wqyzn2c3y9b3sh7j89by1w6zwc51sh511ij98zw9y7nv70qnja"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("buttery" "bin/"))))
-    (synopsis "video editor with manual motion smoothing")
-    (description "Buttery is a video editor focused on manual motion
-smoothing.  It provides tools for stabilizing and smoothing video footage
-through user-guided interpolation.")
-    (home-page "https://github.com/mcandre/buttery")
-    (license license:bsd-2)))
-
-;;; -------------------------------------------------------------------
-;;; 13. chandler-bin --- TAR normalizer (binary)
-;;; -------------------------------------------------------------------
-(define-public chandler-bin
-  (package
-    (name "chandler-bin")
-    (version "0.0.10")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/mcandre/chandler/releases/download/v"
-                    version "/chandler-x86_64-unknown-linux-musl.tgz"))
-              (sha256
-               (base32 "1g6dqg92qi1j8q2b3l5k9k5ciwvr5y2m22h580a2gn2rkfqrq276"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("chandler" "bin/"))))
-    (synopsis "TAR archive normalizer for reproducible builds")
-    (description "Chandler normalizes TAR archives by stripping timestamps,
-user IDs, and other non-deterministic metadata.  This produces identical
-archives from identical file trees, supporting reproducible build
-workflows.")
-    (home-page "https://github.com/mcandre/chandler")
-    (license license:bsd-2)))
-
-;;; -------------------------------------------------------------------
-;;; 14. cargo-visualize-bin --- Cargo dependency graph visualizer (binary)
-;;; -------------------------------------------------------------------
-(define-public cargo-visualize-bin
-  (package
-    (name "cargo-visualize-bin")
-    (version "2.2.0")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/kxxt/cargo-visualize/releases/download/v"
-                    version "/cargo-visualize-x86_64-unknown-linux-gnu.tar.xz"))
-              (sha256
-               (base32 "0naqmrcc8xv8wvlwrxnn6vzq1mbrjxrd9vs2lmrj5ampmzmzfqlm"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan
-           #~'(("cargo-visualize-x86_64-unknown-linux-gnu/cargo-visualize"
-                "bin/"))))
-    (synopsis "interactive cargo dependency graph visualization")
-    (description "Cargo-visualize generates interactive visualizations of Rust
-crate dependency graphs.  It analyzes @file{Cargo.lock} files and produces
-browsable dependency trees to help understand complex dependency chains.")
-    (home-page "https://github.com/kxxt/cargo-visualize")
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
+    (build-system cargo-build-system)
+    (arguments (list #:tests? #f))
+    (inputs (list dbus))
+    (synopsis "an event broker daemon for systemd-networkd")
+    (description "An event broker daemon for systemd-networkd.")
+    (home-page "https://github.com/bpetlert/networkd-broker")
     (license license:gpl3+)))
 
 ;;; -------------------------------------------------------------------
-;;; 15. jarl-bin --- fast linter for R (binary)
+;;; 30. piper-voices-en-gb --- voices for Piper text to speech system (en_GB)
 ;;; -------------------------------------------------------------------
-(define-public jarl-bin
+(define-public piper-voices-en-gb
   (package
-    (name "jarl-bin")
-    (version "0.5.0")
+    (name "piper-voices-en-gb")
+    (version "1.0.0")
     (source (origin
               (method url-fetch)
-              (uri (string-append
-                    "https://github.com/etiennebacher/jarl/releases/download/"
-                    version "/jarl-x86_64-unknown-linux-gnu.tar.gz"))
+              (uri (string-append "https://huggingface.co/rhasspy/piper-voices/archive/v" version ".tar.gz"))
               (sha256
-               (base32 "1ak0f2ql0458cqf9pw4pgl3jzxpl92lyz50d3gdpnckbpdylxhki"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan
-           #~(list (list (string-append "jarl-x86_64-unknown-linux-gnu/jarl")
-                         "bin/"))))
-    (synopsis "fast linter for the R programming language")
-    (description "Jarl is a fast linter for R code, implemented in Rust.  It
-checks R source files for common style issues, syntax problems, and potential
-errors without requiring an R installation.")
-    (home-page "https://github.com/etiennebacher/jarl")
-    (license license:expat)))
-
-;;; -------------------------------------------------------------------
-;;; 16. proton-drive-sync-bin --- Proton Drive sync client (binary)
-;;; -------------------------------------------------------------------
-(define-public proton-drive-sync-bin
-  (package
-    (name "proton-drive-sync-bin")
-    (version "0.2.4")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/DamianB-BitFlipper/proton-drive-sync/"
-                    "releases/download/v" version
-                    "/proton-drive-sync-linux-x64.tar.gz"))
-              (sha256
-               (base32 "150r60l14dpcgg1la4k0mnvxfa4nvzhpg51vx06p3zyn90vf8fn7"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("proton-drive-sync" "bin/"))))
-    (synopsis "sync local directories to Proton Drive cloud storage")
-    (description "Proton Drive Sync synchronizes local directories with Proton
-Drive cloud storage.  It provides bidirectional file synchronization with
-end-to-end encryption through the Proton ecosystem.")
-    (home-page "https://github.com/DamianB-BitFlipper/proton-drive-sync")
-    (license license:gpl3)))
-
-;;; -------------------------------------------------------------------
-;;; 17. lean-ctx-bin --- context engineering for AI coding (binary)
-;;; -------------------------------------------------------------------
-(define-public lean-ctx-bin
-  (package
-    (name "lean-ctx-bin")
-    (version "3.3.4")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/yvgude/lean-ctx/releases/download/v"
-                    version "/lean-ctx-x86_64-unknown-linux-gnu.tar.gz"))
-              (sha256
-               (base32 "1khsapnxqqbbmw1kwniav11dnlwrqi93m8bh5avwig25qdxhj1wy"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("lean-ctx" "bin/"))))
-    (synopsis "context engineering layer for AI coding assistants")
-    (description "Lean-ctx provides intelligent context tools for AI coding
-assistants.  It analyzes codebases and generates focused context windows to
-improve the accuracy and relevance of AI-generated code suggestions.")
-    (home-page "https://github.com/yvgude/lean-ctx")
-    (license license:asl2.0)))
-
-;;; -------------------------------------------------------------------
-;;; 18. firebase-tools-bin --- Firebase CLI (binary)
-;;; -------------------------------------------------------------------
-(define-public firebase-tools-bin
-  (package
-    (name "firebase-tools-bin")
-    (version "15.14.0")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/firebase/firebase-tools/releases/"
-                    "download/v" version "/firebase-tools-linux"))
-              (sha256
-               (base32 "0py4ziwwvkcpy38642zf98kcx04c83rhqwppiwb6k9m5za1gbzr9"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (copy-file source "firebase")
-                   (chmod "firebase" #o755))))
-           #:install-plan #~'(("firebase" "bin/"))))
-    (synopsis "command line tools for Firebase")
-    (description "Firebase Tools provides the official command-line interface
-for Google Firebase services.  It supports deploying web apps, managing
-Cloud Functions, configuring Firestore and Realtime Database rules, and
-running local emulators for development.")
-    (home-page "https://github.com/firebase/firebase-tools")
-    (license license:expat)))
-
-;;; -------------------------------------------------------------------
-;;; 19. qbittorrent-cli-bin --- qBittorrent CLI client (binary)
-;;; -------------------------------------------------------------------
-(define-public qbittorrent-cli-bin
-  (package
-    (name "qbittorrent-cli-bin")
-    (version "1.8.24285.1")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/fedarovich/qbittorrent-cli/releases/"
-                    "download/v" version "/qbt-linux-x64-net6-"
-                    version ".tar.gz"))
-              (sha256
-               (base32 "14hwxqrlm90ahih7v4g5hfj1xmplc5kx09sl9kjndi8zpdsyhqf2"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("." "lib/qbittorrent-cli/"))
-           #:phases
-           #~(modify-phases %standard-phases
-               (add-after 'install 'create-wrapper
-                 (lambda* (#:key outputs #:allow-other-keys)
-                   (let* ((out (assoc-ref outputs "out"))
-                          (bin (string-append out "/bin"))
-                          (lib (string-append out "/lib/qbittorrent-cli")))
-                     (mkdir-p bin)
-                     (symlink (string-append lib "/qbt")
-                              (string-append bin "/qbt"))))))))
-    (synopsis "command-line interface for remote qBittorrent instances")
-    (description "qBittorrent CLI provides a command-line interface for
-managing remote qBittorrent instances.  It supports adding, removing, and
-monitoring torrents, managing categories and tags, and configuring client
-settings remotely.")
-    (home-page "https://github.com/fedarovich/qbittorrent-cli")
-    (license license:expat)))
-
-;;; -------------------------------------------------------------------
-;;; 20. capacities-appimage --- personal knowledge management
-;;; -------------------------------------------------------------------
-(define-public capacities-appimage
-  (package
-    (name "capacities-appimage")
-    (version "1.62.2")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://2vks4.upcloudobjects.com/capacities-desktop-app/"
-                    "Capacities-" version ".AppImage"))
-              (sha256
-               (base32 "081wfp3waziv6d2dwajbbjkk3jbkfxnfm3lm318jvx6rrvgaflyd"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (copy-file source "capacities.AppImage")
-                   (chmod "capacities.AppImage" #o755))))
-           #:install-plan #~'(("capacities.AppImage" "bin/capacities"))))
-    (synopsis "personal knowledge management application")
-    (description "Capacities is a personal knowledge management application
-that provides a studio-like environment for organizing thoughts, notes, and
-ideas.  It supports networked note-taking with rich media and structured
-data objects.")
-    (home-page "https://capacities.io/")
-    (license license:non-copyleft)))
-
-;;; -------------------------------------------------------------------
-;;; 21. dataflare-bin --- database management GUI
-;;; -------------------------------------------------------------------
-(define-public dataflare-bin
-  (package
-    (name "dataflare-bin")
-    (version "2.10.2")
-    (source (origin
-              (method url-fetch)
-              (uri "https://assets.dataflare.app/release/linux/x86_64/Dataflare.AppImage")
-              (sha256
-               (base32 "0sc2grjcizlbgj3vi3515cacpxrw58gsrvj3yg5yyb2xjrifgx5l"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (copy-file source "dataflare.AppImage")
-                   (chmod "dataflare.AppImage" #o755))))
-           #:install-plan #~'(("dataflare.AppImage" "bin/dataflare"))))
-    (synopsis "database management and SQL query tool")
-    (description "Dataflare is a database management application for viewing
-table data, writing SQL queries, and managing database schemas.  It supports
-multiple database engines including PostgreSQL, MySQL, SQLite, and others.")
-    (home-page "https://dataflare.app/")
-    (license license:non-copyleft)))
-
-;;; -------------------------------------------------------------------
-;;; 22. edex-ui-bin --- sci-fi terminal emulator (binary)
-;;; -------------------------------------------------------------------
-(define-public edex-ui-bin
-  (package
-    (name "edex-ui-bin")
-    (version "2.2.8")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/GitSquared/edex-ui/releases/download/v"
-                    version "/eDEX-UI-Linux-x86_64.AppImage"))
-              (sha256
-               (base32 "10fn0as77ikrpfpjxhs3lr0w8kg6ldn7a2wnq6h2q0ya47bqrwn8"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (copy-file source "edex-ui.AppImage")
-                   (chmod "edex-ui.AppImage" #o755))))
-           #:install-plan #~'(("edex-ui.AppImage" "bin/edex-ui"))))
-    (synopsis "cross-platform sci-fi terminal emulator and system monitor")
-    (description "eDEX-UI is a fullscreen, cross-platform terminal emulator and
-system monitor with a science fiction inspired interface.  It displays system
-information, network statistics, and file system data alongside a functional
-terminal.")
-    (home-page "https://github.com/GitSquared/edex-ui")
-    (license license:gpl3)))
-
-;;; -------------------------------------------------------------------
-;;; 23. sourcegit-bin --- Git GUI client (binary)
-;;; -------------------------------------------------------------------
-(define-public sourcegit-bin
-  (package
-    (name "sourcegit-bin")
-    (version "2026.09")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/sourcegit-scm/sourcegit/releases/"
-                    "download/v" version "/sourcegit_" version
-                    "-1_amd64.deb"))
-              (sha256
-               (base32 "0gma19b35xqkrdp604wj77qgffpb3kmqvrw2l3pbp23akm3kjk2w"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("opt/sourcegit/" "lib/sourcegit/"))
-           #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (invoke "ar" "x" source)
-                   (invoke "tar" "xf"
-                           (if (file-exists? "data.tar.zst")
-                               "data.tar.zst"
-                               "data.tar.xz"))))
-               (add-after 'install 'create-wrapper
-                 (lambda* (#:key outputs #:allow-other-keys)
-                   (let* ((out (assoc-ref outputs "out"))
-                          (bin (string-append out "/bin")))
-                     (mkdir-p bin)
-                     (symlink (string-append out "/lib/sourcegit/sourcegit")
-                              (string-append bin "/sourcegit"))))))))
-    (native-inputs (list binutils zstd))
-    (synopsis "GUI client for Git users")
-    (description "SourceGit is a graphical Git client that provides visual
-diff viewing, commit history browsing, branch management, and merge conflict
-resolution.  It supports interactive rebase, cherry-pick, and other advanced
-Git operations through a streamlined interface.")
-    (home-page "https://github.com/sourcegit-scm/sourcegit")
-    (license license:expat)))
-
-;;; -------------------------------------------------------------------
-;;; 24. clash-verge-rev-autobuild-bin --- Clash Meta GUI proxy (binary)
-;;; -------------------------------------------------------------------
-(define-public clash-verge-rev-autobuild-bin
-  (package
-    (name "clash-verge-rev-autobuild-bin")
-    (version "2.4.8")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/clash-verge-rev/clash-verge-rev/"
-                    "releases/download/autobuild/"
-                    "Clash.Verge_" version
-                    "%2Bautobuild.0403.fa45573_amd64.deb"))
-              (sha256
-               (base32 "1l37qsjkswzrgcgnx2w8m4h3ryggd85y2vfgzmbxyvfar1anvj9f"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (invoke "ar" "x" source)
-                   (invoke "tar" "xf" "data.tar.gz"))))
-           #:install-plan #~'(("usr/bin/" "bin/")
-                              ("usr/share/" "share/"))))
-    (native-inputs (list binutils))
-    (synopsis "Clash Meta GUI proxy client based on Tauri")
-    (description "Clash Verge Rev is a graphical proxy client based on
-Clash Meta and the Tauri framework.  It provides rule-based traffic routing,
-multiple proxy protocol support, and a modern user interface for managing
-network proxy configurations.")
-    (home-page "https://github.com/clash-verge-rev/clash-verge-rev")
-    (license license:gpl3)))
-
-;;; -------------------------------------------------------------------
-;;; 25. piliplus-bin --- Bilibili third-party client (binary)
-;;; -------------------------------------------------------------------
-(define-public piliplus-bin
-  (package
-    (name "piliplus-bin")
-    (version "2.0.4")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/"
-                    "download/" version "/PiliPlus_linux_" version
-                    "%2B4848_amd64.tar.gz"))
-              (sha256
-               (base32 "1sdb48m1al4hz2nrm014a5xsh2qnm6masq4bnhvgdfpnqxp6w4vc"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("piliplus" "bin/")
-                              ("lib/" "lib/piliplus/")
-                              ("data/" "share/piliplus/data/"))))
-    (synopsis "third-party Bilibili client built with Flutter")
-    (description "PiliPlus is an open-source third-party client for Bilibili,
-the Chinese video sharing platform.  Built with Flutter, it provides video
-playback, search, and browsing features in a lightweight desktop
-application.")
-    (home-page "https://github.com/bggRGjQaUbCoE/PiliPlus")
-    (license license:gpl3+)))
-
-;;; -------------------------------------------------------------------
-;;; 26. koofr-desktop-bin --- cloud storage client (binary)
-;;; -------------------------------------------------------------------
-(define-public koofr-desktop-bin
-  (package
-    (name "koofr-desktop-bin")
-    (version "41a82e7")
-    (source (origin
-              (method url-fetch)
-              (uri "https://app.koofr.net/dl/apps/linux64")
-              (file-name (string-append "koofr-" version
-                                        "-linux-x86_64.tar.gz"))
-              (sha256
-               (base32 "06mv2si40924yassic2fcf9n5g4j1pflgr80yd2x3dpk657afd7s"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("koofr/" "lib/koofr/"))
-           #:phases
-           #~(modify-phases %standard-phases
-               (add-after 'install 'create-wrapper
-                 (lambda* (#:key outputs #:allow-other-keys)
-                   (let* ((out (assoc-ref outputs "out"))
-                          (bin (string-append out "/bin")))
-                     (mkdir-p bin)
-                     (symlink (string-append out "/lib/koofr/storagegui")
-                              (string-append bin "/koofr"))))))))
-    (synopsis "Koofr cloud storage desktop client")
-    (description "Koofr Desktop provides a native desktop client for Koofr
-cloud storage service.  It enables file synchronization between local
-directories and Koofr cloud storage with automatic conflict resolution.")
-    (home-page "https://koofr.eu/")
-    (license license:non-copyleft)))
-
-;;; -------------------------------------------------------------------
-;;; 27. gmodpatchtool-bin --- Garry's Mod patch tool (binary)
-;;; -------------------------------------------------------------------
-(define-public gmodpatchtool-bin
-  (package
-    (name "gmodpatchtool-bin")
-    (version "20251102")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/solsticegamestudios/gmodpatchtool/"
-                    "releases/download/" version
-                    "/gmodpatchtool-Linux.zip"))
-              (sha256
-               (base32 "0jpknqdawgkmpivxywhl3bi23vdhg45nnm4h2ww14qiz6mv0gw0z"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan #~'(("." "lib/gmodpatchtool/"))
-           #:phases
-           #~(modify-phases %standard-phases
-               (add-after 'install 'create-wrapper
-                 (lambda* (#:key outputs #:allow-other-keys)
-                   (let* ((out (assoc-ref outputs "out"))
-                          (bin (string-append out "/bin")))
-                     (mkdir-p bin)
-                     (call-with-output-file (string-append bin "/gmodpatchtool")
-                       (lambda (port)
-                         (format port "#!~a~%exec ~a/lib/gmodpatchtool/gmodpatchtool \"$@\"~%"
-                                 (which "bash")
-                                 out)))
-                     (chmod (string-append bin "/gmodpatchtool") #o755)))))))
-    (native-inputs (list unzip))
-    (synopsis "patches and updates for Garry's Mod")
-    (description "GModPatchTool applies patches and updates to Garry's Mod,
-including CEF browser updates and bug fixes.  It automates the process of
-keeping the game client up to date with community-maintained patches.")
-    (home-page "https://github.com/solsticegamestudios/gmodpatchtool")
-    (license license:gpl3)))
-
-;;; -------------------------------------------------------------------
-;;; 28. bibata-modern-classic-cursor-theme --- cursor theme
-;;; -------------------------------------------------------------------
-(define-public bibata-modern-classic-cursor-theme
-  (package
-    (name "bibata-modern-classic-cursor-theme")
-    (version "2.0.7")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/ful1e5/Bibata_Cursor/releases/"
-                    "download/v" version "/Bibata-Modern-Classic.tar.xz"))
-              (sha256
-               (base32 "1n2nnniijv9hys7ag58lqxikp405545pdpkpbqpz1gjv9s39ad3x"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan
-           #~'(("Bibata-Modern-Classic" "share/icons/Bibata-Modern-Classic"))))
-    (synopsis "material-based cursor theme")
-    (description "Bibata Modern Classic is a cursor theme with a modern
-material design aesthetic.  It provides cursors in a classic black color
-scheme with smooth animations and clear pointer shapes for desktop Linux
-environments.")
-    (home-page "https://github.com/ful1e5/Bibata_Cursor")
-    (license license:gpl3+)))
-
-;;; -------------------------------------------------------------------
-;;; 29. systemd-cron --- systemd units for cron scripts
-;;; -------------------------------------------------------------------
-(define-public systemd-cron
-  (package
-    (name "systemd-cron")
-    (version "2.7.0")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/systemd-cron/systemd-cron/archive/"
-                    "refs/tags/v" version ".tar.gz"))
-              (sha256
-               (base32 "06dd1n7jmm2l13v4n4iqrggbx2biy83s2fslqjjmi8h2088ig7jl"))))
+               (base32 "0000000000000000000000000000000000000000000000000000"))))
     (build-system gnu-build-system)
-    (arguments
-     (list #:tests? #f
-           #:make-flags #~(list (string-append "DESTDIR=" #$output)
-                                "prefix=")
-           #:phases
-           #~(modify-phases %standard-phases
-               (replace 'configure
-                 (lambda _
-                   (invoke "./configure"
-                           "--prefix="
-                           "--enable-boot"
-                           "--enable-minutely"))))))
-    (synopsis "systemd units to provide cron daemon functionality")
-    (description "Systemd-cron generates systemd timer and service units from
-traditional crontab files.  It translates @file{/etc/cron.d},
-@file{/etc/cron.daily}, and user crontabs into native systemd timers,
-replacing the need for a separate cron daemon.")
-    (home-page "https://github.com/systemd-cron/systemd-cron")
-    (license license:expat)))
-
-;;; -------------------------------------------------------------------
-;;; 30. android-messages-desktop-bin --- Android Messages client (binary)
-;;; -------------------------------------------------------------------
-(define-public android-messages-desktop-bin
-  (package
-    (name "android-messages-desktop-bin")
-    (version "6.0.1")
-    (source (origin
-              (method url-fetch)
-              (uri (string-append
-                    "https://github.com/OrangeDrangon/android-messages-desktop/"
-                    "releases/download/v" version
-                    "/Android-Messages-v" version "-linux-x64.pacman"))
-              (sha256
-               (base32 "13k9v4rj6sh457m6mfajsr09m43l8075gl9ib4qqn0wr0r8vgsbx"))))
-    (build-system copy-build-system)
-    (arguments
-     (list #:install-plan
-           #~'(("opt/Android Messages/" "lib/android-messages/"))
-           #:phases
-           #~(modify-phases %standard-phases
-               (replace 'unpack
-                 (lambda* (#:key source #:allow-other-keys)
-                   (invoke "tar" "xf" source)))
-               (add-after 'install 'create-wrapper
-                 (lambda* (#:key outputs #:allow-other-keys)
-                   (let* ((out (assoc-ref outputs "out"))
-                          (bin (string-append out "/bin")))
-                     (mkdir-p bin)
-                     (symlink (string-append out "/lib/android-messages/"
-                                             "android-messages-desktop")
-                              (string-append bin "/android-messages"))))))))
-    (native-inputs (list zstd))
-    (synopsis "Android Messages desktop client")
-    (description "Android Messages Desktop wraps Google's Android Messages
-for Web in a standalone desktop application.  It provides native desktop
-notifications, system tray integration, and keyboard shortcuts for managing
-SMS and RCS messages from a computer.")
-    (home-page "https://github.com/OrangeDrangon/android-messages-desktop")
+    (arguments (list #:tests? #f))
+    (synopsis "voices for Piper text to speech system (en_GB)")
+    (description "Voices for Piper text to speech system (en_GB).")
+    (home-page "https://huggingface.co/rhasspy/piper-voices")
     (license license:expat)))

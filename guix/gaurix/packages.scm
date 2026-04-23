@@ -9863,3 +9863,70 @@
             systemd-cron
             android-messages-desktop-bin
                ))
+
+;;; recipe-resolver-260423j: 30 packages resolved
+;;; - wine-stable-mono
+;;; - spicetify-cli-git
+;;; - catppuccin-mocha-grub-theme-git
+;;; - catppuccin-qt5ct-git
+;;; - whisper-cpp-model-large-v3
+;;; - hyprls-git
+;;; - shiru-lv2-git
+;;; - ttf-chocolate-classical-sans
+;;; - nordic-darker-standard-buttons-theme-git
+;;; - lolcat++-bin
+;;; - stdexec-git
+;;; - zen-browser-sponsorblock
+;;; - librewolf-extension-sponsorblock
+;;; - firefox-extension-sponsorblock
+;;; - argon-rbx
+;;; - urweb-git
+;;; - pyboinc-git
+;;; - flandre-grub-theme-git
+;;; - phc-intel-dkms-stable
+;;; - openssl-1-0
+;;; - mp3tag
+;;; - cachyos-ananicy-rules-git
+;;; - nodejs-http-server
+;;; - libvpx1-3
+;;; - kubectl-cnpg
+;;; - makepkg-meta
+;;; - looking-glass-rc-module-dkms
+;;; - pipes-c
+;;; - networkd-broker
+;;; - piper-voices-en-gb
+
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423j)
+  #:re-export (
+               wine-stable-mono
+               spicetify-cli-git
+               catppuccin-mocha-grub-theme-git
+               catppuccin-qt5ct-git
+               whisper-cpp-model-large-v3
+               hyprls-git
+               shiru-lv2-git
+               ttf-chocolate-classical-sans
+               nordic-darker-standard-buttons-theme-git
+               lolcat++-bin
+               stdexec-git
+               zen-browser-sponsorblock
+               librewolf-extension-sponsorblock
+               firefox-extension-sponsorblock
+               argon-rbx
+               urweb-git
+               pyboinc-git
+               flandre-grub-theme-git
+               phc-intel-dkms-stable
+               openssl-1-0
+               mp3tag
+               cachyos-ananicy-rules-git
+               nodejs-http-server
+               libvpx1-3
+               kubectl-cnpg
+               makepkg-meta
+               looking-glass-rc-module-dkms
+               pipes-c
+               networkd-broker
+               piper-voices-en-gb
+               ))
