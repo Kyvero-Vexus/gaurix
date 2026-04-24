@@ -529,6 +529,7 @@
   #:use-module (gaurix packages recipe-resolver-260424b)
   #:use-module (gaurix packages recipe-resolver-260424d)
   #:use-module (gaurix packages recipe-resolver-260424d)
+  #:use-module (gaurix packages recipe-resolver-260424e)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -14636,3 +14637,10 @@
 (re-export run-one)
 (re-export classicladder)
 (re-export cleanpkgdir)
+
+;;; recipe-resolver-260424e
+(re-export yay-bin)
+(re-export teleport-client-bin)
+(re-export marmite-bin)
+(re-export rtimelog)
+(re-export 7zip-docs)
