@@ -544,6 +544,7 @@
   #:use-module (gaurix packages recipe-resolver-260424n)
   #:use-module (gaurix packages recipe-resolver-260424o)
   #:use-module (gaurix packages deptree-resolver-260424o)
+  #:use-module (gaurix packages recipe-resolver-260424q)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
