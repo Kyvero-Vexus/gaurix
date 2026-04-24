@@ -552,6 +552,7 @@
   #:use-module (gaurix packages recipe-resolver-260424t)
   #:use-module (gaurix packages deptree-resolver-260424v)
   #:use-module (gaurix packages deptree-resolver-260424w)
+  #:use-module (gaurix packages deptree-resolver-260424x)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15232,3 +15233,10 @@
 (re-export realvnc-rvnc-connect)
 (re-export n8n)
 (re-export heroku-cli)
+
+; deptree-resolver-260424x recipes
+(re-export modrinth-app-appimage)
+(re-export wpa-cute)
+(re-export chomp)
+(re-export folio)
+(re-export kwin-effects-sliding-notifications)
