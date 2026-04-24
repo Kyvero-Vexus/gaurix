@@ -522,6 +522,7 @@
   #:use-module (gaurix packages recipe-resolver-260423q)
   #:use-module (gaurix packages deptree-resolver-260423j)
   #:use-module (gaurix packages deptree-resolver-260424a)
+  #:use-module (gaurix packages deptree-resolver-260424b)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:use-module (gaurix packages recipe-resolver-260423t)

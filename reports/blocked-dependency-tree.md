@@ -1,27 +1,218 @@
 # Blocked Package Dependency Tree
 
-**Generated:** 2026-04-24T04:22:15.573657+00:00
-**Pass:** deptree-resolver-260424a
+**Generated:** 2026-04-24T05:48:08.142606+00:00
+**Pass:** deptree-resolver-260424b
 
 ## Summary
 
-- Total BLOCKED: 11
-- In AUR cache: 11
-- Not in AUR cache: 0
-- Zero blocked deps: 11
+- Total BLOCKED: 3901
+- In AUR cache: 3852
+- Not in AUR cache: 49
+- Zero blocked deps: 2352
 
 ## Priority Queue
 
 | Rank | # | Package | Blocked Deps | Reverse Deps | Total Deps | In AUR |
 |------|---|---------|-------------|-------------|------------|--------|
-| 1 | 17468 | bakkesmod-steam | 0 | 0 | 1 | Y |
-| 2 | 17502 | lib32-opencl-nvidia-390xx | 0 | 0 | 2 | Y |
-| 3 | 17422 | openfortivpn-webview-qt | 0 | 0 | 3 | Y |
-| 4 | 17433 | clash-for-windows-chinese | 0 | 0 | 4 | Y |
-| 5 | 17440 | factorio-space-age-experimental | 0 | 0 | 6 | Y |
-| 6 | 17255 | capt-src | 0 | 0 | 13 | Y |
-| 7 | 17278 | python-jax-rocm | 0 | 0 | 13 | Y |
-| 8 | 17261 | firestorm-next-bin | 0 | 0 | 22 | Y |
-| 9 | 17428 | vscodium-electron | 0 | 0 | 24 | Y |
-| 10 | 17424 | etlegacy32-mod | 0 | 0 | 30 | Y |
-| 11 | 17346 | ffmpeg-cuda-full | 0 | 0 | 89 | Y |
+| 1 | 546 | nvidia-vulkan-utils | 0 | 12 | 4 | Y |
+| 2 | 740 | glfw-wayland-minecraft-cursorfix | 0 | 10 | 14 | Y |
+| 3 | 8013 | texlive-installer | 0 | 9 | 2 | Y |
+| 4 | 1286 | electron37-bin | 0 | 9 | 3 | Y |
+| 5 | 15164 | dotnet-sdk-8.0-bin | 0 | 7 | 5 | Y |
+| 6 | 1270 | dotnet-runtime-bin | 0 | 6 | 7 | Y |
+| 7 | 13966 | android-armv7a-eabi-qt6-base | 0 | 5 | 18 | Y |
+| 8 | 15167 | aspnet-runtime-8.0-bin | 0 | 2 | 1 | Y |
+| 9 | 2478 | lib32-libdav1d | 0 | 2 | 8 | Y |
+| 10 | 140 | docker-desktop | 0 | 2 | 11 | Y |
+| 11 | 1989 | rar | 0 | 1 | 1 | Y |
+| 12 | 3517 | ut2004-data-steam | 0 | 1 | 1 | Y |
+| 13 | 15386 | anttweakbar | 0 | 1 | 2 | Y |
+| 14 | 650 | samsung-unified-driver-printer | 0 | 1 | 3 | Y |
+| 15 | 649 | samsung-unified-driver-scanner | 0 | 1 | 4 | Y |
+| 16 | 2366 | lib32-libvmaf | 0 | 1 | 5 | Y |
+| 17 | 5333 | kemoticons | 0 | 1 | 6 | Y |
+| 18 | 10943 | qtforkawesome | 0 | 1 | 6 | Y |
+| 19 | 2408 | lib32-nvidia-utils-beta | 0 | 1 | 7 | Y |
+| 20 | 5464 | qpdf-zopfli | 0 | 1 | 9 | Y |
+| 21 | 12068 | python-opentelemetry-exporter-otlp-proto-http | 0 | 1 | 11 | Y |
+| 22 | 12067 | python-opentelemetry-exporter-otlp-proto-grpc | 0 | 1 | 12 | Y |
+| 23 | 7961 | fbthrift | 0 | 1 | 20 | Y |
+| 24 | 7068 | expressvpn | 0 | 1 | 27 | Y |
+| 25 | 11554 | alhp-keyring | 0 | 0 | 0 | Y |
+| 26 | 58 | anbox-git | 0 | 0 | 0 | N |
+| 27 | 18539 | arcticons-icon-theme | 0 | 0 | 0 | Y |
+| 28 | 3880 | audiobookshelf | 0 | 0 | 0 | N |
+| 29 | 30688 | beaver-notes-bin | 0 | 0 | 0 | Y |
+| 30 | 6068 | bigpemu-bin | 0 | 0 | 0 | Y |
+| 31 | 5438 | boscaceoil-blue-bin | 0 | 0 | 0 | Y |
+| 32 | 5151 | bulky | 0 | 0 | 0 | N |
+| 33 | 17840 | chipwhisperer-udev | 0 | 0 | 0 | Y |
+| 34 | 1732 | chkufsd-bin | 0 | 0 | 0 | Y |
+| 35 | 757 | chromium-gost | 0 | 0 | 0 | Y |
+| 36 | 1490 | codex-desktop-bin | 0 | 0 | 0 | N |
+| 37 | 17382 | cpptools-debug-bin | 0 | 0 | 0 | Y |
+| 38 | 36118 | crunchycleaner-bin | 0 | 0 | 0 | Y |
+| 39 | 3300 | csvi-bin | 0 | 0 | 0 | Y |
+| 40 | 1228 | cull-bin | 0 | 0 | 0 | Y |
+| 41 | 8220 | cura-resources-materials | 0 | 0 | 0 | Y |
+| 42 | 5426 | cursor-ide | 0 | 0 | 0 | N |
+| 43 | 2537 | cursor-ide-bin | 0 | 0 | 0 | N |
+| 44 | 15 | dbeaver | 0 | 0 | 0 | N |
+| 45 | 5141 | diffnav-bin | 0 | 0 | 0 | N |
+| 46 | 8861 | dinfo | 0 | 0 | 0 | Y |
+| 47 | 7644 | discli | 0 | 0 | 0 | Y |
+| 48 | 2541 | diz-bin | 0 | 0 | 0 | Y |
+| 49 | 1790 | dms-shell | 0 | 0 | 0 | N |
+| 50 | 7070 | dnscontrol-bin | 0 | 0 | 0 | Y |
+| 51 | 6663 | docker-credential-secretservice-bin | 0 | 0 | 0 | Y |
+| 52 | 1268 | dotnet-targeting-pack-bin | 0 | 0 | 0 | Y |
+| 53 | 6677 | dracut-nosystemd-git | 0 | 0 | 0 | N |
+| 54 | 13914 | e2-studio-bin | 0 | 0 | 0 | Y |
+| 55 | 8117 | edk2-ovmf-fedora | 0 | 0 | 0 | Y |
+| 56 | 2354 | epub2txt | 0 | 0 | 0 | Y |
+| 57 | 1412 | etcdotica-bin | 0 | 0 | 0 | Y |
+| 58 | 1143 | exec-as | 0 | 0 | 0 | Y |
+| 59 | 10672 | fahviewer | 0 | 0 | 0 | N |
+| 60 | 10056 | fasttext-langid-models | 0 | 0 | 0 | Y |
+| 61 | 7897 | fcitx5-meta | 0 | 0 | 0 | N |
+| 62 | 7879 | fcitx5-pinyin-genshin | 0 | 0 | 0 | Y |
+| 63 | 7883 | fcitx5-pinyin-honkai3rd | 0 | 0 | 0 | Y |
+| 64 | 7884 | fcitx5-pinyin-honkai3rd-rime | 0 | 0 | 0 | Y |
+| 65 | 7881 | fcitx5-pinyin-starrail | 0 | 0 | 0 | Y |
+| 66 | 7882 | fcitx5-pinyin-starrail-rime | 0 | 0 | 0 | Y |
+| 67 | 2856 | fdformat | 0 | 0 | 0 | Y |
+| 68 | 5124 | featherwallet-bin | 0 | 0 | 0 | Y |
+| 69 | 7940 | feishu | 0 | 0 | 0 | N |
+| 70 | 5442 | ferrishot-bin | 0 | 0 | 0 | Y |
+| 71 | 8046 | ficsit-cli-bin | 0 | 0 | 0 | Y |
+| 72 | 1246 | figma-agent-linux-bin | 0 | 0 | 0 | Y |
+| 73 | 10144 | filen-cli-bin | 0 | 0 | 0 | Y |
+| 74 | 7567 | firedragon-alpha-bin | 0 | 0 | 0 | N |
+| 75 | 10318 | firefox-gnome-theme | 0 | 0 | 0 | Y |
+| 76 | 7933 | firefox-umatrix | 0 | 0 | 0 | Y |
+| 77 | 7674 | flat-remix-gtk | 0 | 0 | 0 | Y |
+| 78 | 6556 | flow-control-bin | 0 | 0 | 0 | Y |
+| 79 | 3420 | fluxdown-bin | 0 | 0 | 0 | N |
+| 80 | 1109 | fmtools | 0 | 0 | 0 | Y |
+| 81 | 8533 | fondu | 0 | 0 | 0 | Y |
+| 82 | 7717 | foundryvtt | 0 | 0 | 0 | Y |
+| 83 | 2556 | frankenphp-bin | 0 | 0 | 0 | Y |
+| 84 | 1508 | futhark-bin | 0 | 0 | 0 | Y |
+| 85 | 8558 | gama-platform-jdk | 0 | 0 | 0 | Y |
+| 86 | 1465 | gdscript-formatter-bin | 0 | 0 | 0 | Y |
+| 87 | 6583 | gdsdecomp-bin | 0 | 0 | 0 | Y |
+| 88 | 7731 | gdu-bin | 0 | 0 | 0 | Y |
+| 89 | 2560 | gh-aw-bin | 0 | 0 | 0 | Y |
+| 90 | 6318 | ghcup-hs-bin | 0 | 0 | 0 | Y |
+| 91 | 8232 | git-who-bin | 0 | 0 | 0 | Y |
+| 92 | 3278 | gitopolis-bin | 0 | 0 | 0 | Y |
+| 93 | 2563 | gittop-tui-bin | 0 | 0 | 0 | Y |
+| 94 | 2564 | glazepkg-bin | 0 | 0 | 0 | N |
+| 95 | 2566 | godshell-bin | 0 | 0 | 0 | Y |
+| 96 | 1408 | gofarsi-live-bin | 0 | 0 | 0 | Y |
+| 97 | 1407 | golem-bin | 0 | 0 | 0 | Y |
+| 98 | 2687 | gonzo-bin | 0 | 0 | 0 | Y |
+| 99 | 5181 | goreleaser-pro-bin | 0 | 0 | 0 | Y |
+| 100 | 8185 | gosimac-bin | 0 | 0 | 0 | Y |
+| 101 | 2916 | grabchars-bin | 0 | 0 | 0 | Y |
+| 102 | 10333 | grafana-bin | 0 | 0 | 0 | Y |
+| 103 | 8911 | grafito-bin | 0 | 0 | 0 | Y |
+| 104 | 38505 | gram-bin | 0 | 0 | 0 | Y |
+| 105 | 5457 | gram-editor-bin | 0 | 0 | 0 | N |
+| 106 | 2986 | gram-editor-git | 0 | 0 | 0 | N |
+| 107 | 4747 | gvisor-bin | 0 | 0 | 0 | Y |
+| 108 | 7665 | happ-desktop | 0 | 0 | 0 | Y |
+| 109 | 2937 | hazkey-zenzai-model | 0 | 0 | 0 | Y |
+| 110 | 7235 | hbuilderx-alpha-bin | 0 | 0 | 0 | Y |
+| 111 | 5142 | hdfview-bin | 0 | 0 | 0 | Y |
+| 112 | 8961 | heptabase-bin | 0 | 0 | 0 | Y |
+| 113 | 4732 | httptoolkit-bin | 0 | 0 | 0 | Y |
+| 114 | 3356 | hubstaff | 0 | 0 | 0 | Y |
+| 115 | 2568 | hulak-bin | 0 | 0 | 0 | Y |
+| 116 | 1263 | hylauncher-bin | 0 | 0 | 0 | N |
+| 117 | 1531 | hyperfluent-grub-theme-arch | 0 | 0 | 0 | Y |
+| 118 | 14721 | hyperfluent-grub-theme-endeavouros | 0 | 0 | 0 | Y |
+| 119 | 10254 | hyphen-el | 0 | 0 | 0 | Y |
+| 120 | 398 | hypnotix | 0 | 0 | 0 | N |
+| 121 | 6105 | intermodal-bin | 0 | 0 | 0 | Y |
+| 122 | 10089 | invoice-bin | 0 | 0 | 0 | Y |
+| 123 | 15430 | jai | 0 | 0 | 0 | Y |
+| 124 | 1255 | joplin-bin | 0 | 0 | 0 | Y |
+| 125 | 6506 | jotit-bin | 0 | 0 | 0 | Y |
+| 126 | 3938 | jsongrep-bin | 0 | 0 | 0 | Y |
+| 127 | 6443 | justevery-code-bin | 0 | 0 | 0 | Y |
+| 128 | 6401 | k0sctl-bin | 0 | 0 | 0 | Y |
+| 129 | 8230 | kalker-bin | 0 | 0 | 0 | Y |
+| 130 | 2810 | komodo-periphery-git | 0 | 0 | 0 | N |
+| 131 | 319 | konform-multi-account-containers-lite | 0 | 0 | 0 | N |
+| 132 | 6696 | krux-installer-bin | 0 | 0 | 0 | Y |
+| 133 | 8244 | kv-bin | 0 | 0 | 0 | Y |
+| 134 | 6612 | ladybug-bin | 0 | 0 | 0 | Y |
+| 135 | 2913 | languagetool-ngrams-es | 0 | 0 | 0 | Y |
+| 136 | 2579 | lattice-bin | 0 | 0 | 0 | Y |
+| 137 | 6490 | lazydocker-ng-bin | 0 | 0 | 0 | Y |
+| 138 | 2580 | lazyjira-bin | 0 | 0 | 0 | Y |
+| 139 | 9061 | lazysql-bin | 0 | 0 | 0 | Y |
+| 140 | 7858 | lbforth | 0 | 0 | 0 | Y |
+| 141 | 7696 | librespeed-cli-bin | 0 | 0 | 0 | Y |
+| 142 | 7510 | linux6.19.8.arch1-1-bin | 0 | 0 | 0 | N |
+| 143 | 7512 | linux6.19.8.arch1-1-docs-bin | 0 | 0 | 0 | N |
+| 144 | 7511 | linux6.19.8.arch1-1-headers-bin | 0 | 0 | 0 | N |
+| 145 | 9672 | linux6.19.9.arch1-1-docs-bin | 0 | 0 | 0 | N |
+| 146 | 9671 | linux6.19.9.arch1-1-headers-bin | 0 | 0 | 0 | N |
+| 147 | 9956 | linux6.19.9.zen1-1-zen-bin | 0 | 0 | 0 | N |
+| 148 | 9957 | linux6.19.9.zen1-1-zen-headers-bin | 0 | 0 | 0 | N |
+| 149 | 2097 | llama.cpp-aio | 0 | 0 | 0 | N |
+| 150 | 6692 | lnko-bin | 0 | 0 | 0 | Y |
+| 151 | 6668 | lzbench-bin | 0 | 0 | 0 | Y |
+| 152 | 6204 | makeenv | 0 | 0 | 0 | Y |
+| 153 | 687 | mangowc-git | 0 | 0 | 0 | N |
+| 154 | 9103 | max-appimage | 0 | 0 | 0 | Y |
+| 155 | 7622 | mchose-a7-v2-pro-udev | 0 | 0 | 0 | Y |
+| 156 | 7934 | mchose-ace68-udev | 0 | 0 | 0 | Y |
+| 157 | 2484 | megit | 0 | 0 | 0 | Y |
+| 158 | 6661 | mercury-browser-sse4-bin | 0 | 0 | 0 | N |
+| 159 | 6113 | miniconda3 | 0 | 0 | 0 | Y |
+| 160 | 5312 | mongotimer | 0 | 0 | 0 | Y |
+| 161 | 8624 | moor-bin | 0 | 0 | 0 | Y |
+| 162 | 9392 | nautilus-megasync | 0 | 0 | 0 | Y |
+| 163 | 7996 | navicat17-premium-en | 0 | 0 | 0 | Y |
+| 164 | 6383 | nextcloud-talk-desktop-bin | 0 | 0 | 0 | Y |
+| 165 | 6097 | nextdns-bin | 0 | 0 | 0 | Y |
+| 166 | 7498 | ninjarmm-ncplayer | 0 | 0 | 0 | Y |
+| 167 | 3934 | ninvaders | 0 | 0 | 0 | Y |
+| 168 | 19085 | nitro-bin | 0 | 0 | 0 | Y |
+| 169 | 5317 | nvidia-prime-rtd3pm | 0 | 0 | 0 | Y |
+| 170 | 548 | nvidia-vulkan-dkms | 0 | 0 | 0 | N |
+| 171 | 8005 | ocr-fonts | 0 | 0 | 0 | Y |
+| 172 | 1578 | openai-codex-autoup-bin | 0 | 0 | 0 | N |
+| 173 | 20409 | openrgb-udev-rules | 0 | 0 | 0 | Y |
+| 174 | 7333 | opensc-p11-kit-module | 0 | 0 | 0 | N |
+| 175 | 1387 | opera-gx-stable-ffmpeg-codecs-bin | 0 | 0 | 0 | N |
+| 176 | 5209 | otf-kopub | 0 | 0 | 0 | Y |
+| 177 | 6599 | otf-myna | 0 | 0 | 0 | Y |
+| 178 | 7886 | parm-bin | 0 | 0 | 0 | Y |
+| 179 | 6522 | pgyvisitor | 0 | 0 | 0 | Y |
+| 180 | 13442 | pinapp | 0 | 0 | 0 | N |
+| 181 | 2780 | plecs-standalone | 0 | 0 | 0 | Y |
+| 182 | 7927 | pocket-id-bin | 0 | 0 | 0 | Y |
+| 183 | 5031 | posy-improved-cursors | 0 | 0 | 0 | Y |
+| 184 | 7941 | pragmatapro-fonts | 0 | 0 | 0 | Y |
+| 185 | 6759 | projtlauncher | 0 | 0 | 0 | N |
+| 186 | 1625 | protonup-rs-bin | 0 | 0 | 0 | Y |
+| 187 | 7863 | publii | 0 | 0 | 0 | Y |
+| 188 | 38100 | python-roman | 0 | 0 | 0 | N |
+| 189 | 14202 | raidrivecli | 0 | 0 | 0 | N |
+| 190 | 8554 | reddix-bin | 0 | 0 | 0 | Y |
+| 191 | 8236 | regina-rexx-doc | 0 | 0 | 0 | Y |
+| 192 | 8626 | rider-eap | 0 | 0 | 0 | Y |
+| 193 | 6441 | rime-wanxiang-gram-zh-hans | 0 | 0 | 0 | Y |
+| 194 | 7977 | rtimelog | 0 | 0 | 0 | Y |
+| 195 | 7978 | rtimelogger | 0 | 0 | 0 | Y |
+| 196 | 8550 | rust-docs | 0 | 0 | 0 | Y |
+| 197 | 8143 | rust-motd-bin | 0 | 0 | 0 | Y |
+| 198 | 6698 | rusticon-bin | 0 | 0 | 0 | Y |
+| 199 | 6700 | sequin-bin | 0 | 0 | 0 | Y |
+| 200 | 6193 | setpgrp | 0 | 0 | 0 | Y |
+
+*... and 3701 more packages in full queue.*
