@@ -10241,3 +10241,39 @@
                duckdns
                numix-icon-theme-pack-git
                ))
+
+;; recipe-resolver-260423q (30 NRD resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423q)
+  #:re-export (
+               iortcw-data
+               intel-mas-cli-tool
+               base91
+               cmdpack-bin2ecm
+               cmdpack-bincomp
+               cmdpack-brrrip
+               cmdpack-byteshuf
+               cmdpack-cdpatch
+               cmdpack-fakecrc
+               cmdpack-hax65816
+               cmdpack-pecompat
+               cmdpack-rels
+               cmdpack-screamf
+               cmdpack-uips
+               cmdpack-vb2rip
+               cmdpack-wordadd
+               gtkman
+               hunspell-bg
+               liri-wallpapers
+               xcursor-dmz
+               yaft
+               gtk-theme-onestepback
+               muscle
+               squirrel
+               mactelnet
+               wordlists
+               otf-sans-forgetica
+               netkit-bsd-finger-ipv6
+               nginx-libunit
+               lexend-fonts-git
+               ))
