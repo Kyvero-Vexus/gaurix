@@ -525,6 +525,7 @@
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:use-module (gaurix packages recipe-resolver-260423t)
+  #:use-module (gaurix packages recipe-resolver-260424b)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -14522,3 +14523,8 @@
 ;;; deptree-resolver-260424a
 (re-export openfortivpn-webview-qt)
 (re-export vscodium-electron)
+
+;;; recipe-resolver-260424b
+(re-export sigi)
+(re-export greetd-tuigreet-fork-git)
+(re-export phpactor)

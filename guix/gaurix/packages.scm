@@ -10484,3 +10484,12 @@
                openfortivpn-webview-qt
                vscodium-electron
                ))
+
+;; recipe-resolver-260424b (3 NEEDS_RECIPE_DESIGN resolved, 0 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260424b)
+  #:re-export (
+               sigi
+               greetd-tuigreet-fork-git
+               phpactor
+               ))
