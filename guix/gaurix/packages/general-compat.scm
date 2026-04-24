@@ -524,6 +524,7 @@
   #:use-module (gaurix packages deptree-resolver-260424a)
   #:use-module (gaurix packages deptree-resolver-260424b)
   #:use-module (gaurix packages deptree-resolver-260424c)
+  #:use-module (gaurix packages deptree-resolver-260424d)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:use-module (gaurix packages recipe-resolver-260423t)
@@ -532,6 +533,7 @@
   #:use-module (gaurix packages recipe-resolver-260424d)
   #:use-module (gaurix packages recipe-resolver-260424e)
   #:use-module (gaurix packages recipe-resolver-260424f)
+  #:use-module (gaurix packages recipe-resolver-260424g)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -3139,6 +3141,37 @@
             simple-http-server-bin
             smap-bin
             smb1r-bin
+            ;; recipe-resolver-260424g recipes
+            wealthfolio-bin
+            jhentai-bin
+            tinygo-bin
+            seekr-bin
+            fladder-bin
+            nanokvm-usb-bin
+            openterfaceqt-bin
+            tonkeeper-wallet-bin
+            netwatch-tui
+            iris-bin
+            presto-bin
+            leap-bin
+            ffhuman-bin
+            whis-bin
+            yoyo-evolve-bin
+            go-mitmproxy-bin
+            kotlin-language-server-bin
+            ktfmt-bin
+            lettuceai-bin
+            anythingllm-bin
+            hyprshell-bin
+            c-lolcat
+            python-luhncheck
+            linux-router
+            pass-ln
+            reboot-to-windows
+            dosh-docker-shell
+            domake
+            sedutil
+            funchook
 ))
             mingw-w64-readline
             mingw-w64-gettext
@@ -14734,3 +14767,76 @@
 (re-export toofan-bin)
 (re-export screenix-bin)
 (re-export lektra-bin)
+
+
+;;; deptree-resolver-260424d
+(re-export ace)
+(re-export aegir-provision)
+(re-export beagle-lib)
+(re-export boost-python2-libs)
+(re-export ca-certificates-cacert)
+(re-export ccrtp)
+(re-export ccsh-git)
+(re-export cling-git)
+(re-export coin-or-ipopt)
+(re-export dawn)
+(re-export fann)
+(re-export fishui-git)
+(re-export flutter)
+(re-export frobby)
+(re-export gcc11)
+(re-export gcc12)
+(re-export glslang-git)
+(re-export gnome-icon-theme-symbolic)
+(re-export i3lock-color)
+(re-export ignition-msgs)
+(re-export jameica)
+(re-export libclut)
+(re-export libcommuni)
+(re-export libcprime-git)
+(re-export libcutefish-git)
+(re-export libcxml)
+(re-export libffi6)
+(re-export libgda)
+(re-export libnetctlgui)
+(re-export libqglviewer-qt5)
+(re-export libsodium-static)
+(re-export llvm19-libs)
+(re-export lua-cd)
+(re-export lua51-cd)
+(re-export lua51-lsqlite3)
+(re-export lua52-cd)
+(re-export lua53-cd)
+(re-export ocamlfuse)
+(re-export oorexx)
+(re-export osl)
+(re-export pam-selinux)
+(re-export perl-uuid)
+(re-export php56-cli)
+(re-export pure-avahi)
+(re-export pure-lilv)
+(re-export python-arabic-reshaper)
+(re-export python-jax)
+(re-export python-matrix-nio)
+(re-export python-mbstrdecoder)
+(re-export python-music-tag)
+(re-export python-posix_ipc)
+(re-export python-rasterio)
+(re-export python-ratelimit)
+(re-export python-rosinstall_generator)
+(re-export python-sphinxcontrib-httpdomain)
+(re-export python-terminaltables3)
+(re-export python-token-bucket)
+(re-export r-r-oo)
+(re-export selinux-python)
+(re-export semodule-utils)
+(re-export sh-elf-gcc-casio)
+(re-export soci)
+(re-export steamcmd)
+(re-export tpm-tools)
+(re-export ttfautohint)
+(re-export vapoursynth-plugin-mvsfunc-git)
+(re-export wxparaver)
+(re-export xbae)
+(re-export xcftools)
+(re-export xlibre-xserver-common-beta)

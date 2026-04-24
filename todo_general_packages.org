@@ -2716,13 +2716,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 339. electron33
+** BLOCKED 339. electron33
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FAILED after AUR fetch (rev b3667d85158b90105d2f0c47f351ec1faf9f9e69): Electron major-version packaging requires extensive Chromium/Electron patch stack management not completed in this pass.
    - Difficulty: medium
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: Electron browser engine, requires Chromium build infrastructure (deptree-resolver-260424d)
 ** DONE 340. openrgb-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: Added Gaurix compat alias to upstream Guix package `openrgb` via `general-compat.scm`; validated with `guix build -L guix -n openrgb-git` and `guix lint -L guix openrgb-git`.
@@ -14448,13 +14449,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: BLOCKED
 
 
-** FAILED 1833. vmware-workstation
+** BLOCKED 1833. vmware-workstation
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NONFREE_PROPRIETARY — proprietary VMware Workstation hypervisor; binary-only from vmware.com/Broadcom, EULA forbids redistribution. A1: proprietary; A2: QEMU/KVM available as FOSS alternative; A3: EULA forbids redistribution.
    - Difficulty: medium
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: PROPRIETARY_CLOSED_SOURCE: VMware proprietary software (deptree-resolver-260424d)
 ** DONE 1834. aurutils [BLOCKED: ARCH_SPECIFIC: AUR helper, depends on pacutils/pacman]
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: Re-evaluated nrd18; Arch-specific AUR repo management.
@@ -17841,13 +17843,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 2254. dropbox
+** BLOCKED 2254. dropbox
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FAILED: Attempted in 2026-03-19 queue drain; no validated Guix package implementation completed safely in this batch window.
    - Difficulty: medium
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: PROPRIETARY_CLOSED_SOURCE: Dropbox is proprietary (deptree-resolver-260424d)
 ** FAILED 2255. auto-cpufreq
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FAILED: Attempted in 2026-03-19 queue drain; no validated Guix package implementation completed safely in this batch window.
@@ -17924,13 +17927,14 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 2264. steamcmd
+** DONE 2264. steamcmd  :deptree-resolver-260424d:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: DONE: packaged in cron-5a2fb251-r3-w03b.scm | prebuilt 32-bit binary from Valve CDN, installs steamcmd.sh
    - Difficulty: medium
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** FAILED 2265. ocrmypdf
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: FAILED: Attempted in 2026-03-19 queue drain; no validated Guix package implementation completed safely in this batch window.
@@ -47735,7 +47739,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
-** FAILED 5774. flutter
+** DONE 5774. flutter  :deptree-resolver-260424d:recipe-generated:
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n flutter | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n flutter && guix lint -L guix flutter
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: FLUTTER_ECOSYSTEM_COMPLEX: Flutter SDK meta-package; A1: circular bootstrap — needs Dart to build Flutter tools, needs Flutter to get Dart; A2: engine requires Chromium-derived build infrastructure; A3: all 20 Flutter ecosystem packages depend on this chain (recipe-resolver-260423d)
@@ -47743,6 +47747,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 5775. outfieldr-git
    - Source List: data/aur-cache/packages-meta-ext-v1.json
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN | cmd: guix build -L guix -n outfieldr-git | detail: recipe-attempt stub added in guix/gaurix/packages/queue-20260329p100daily.scm; source/hash/build-system unresolved this pass | next: replace stub with full Guix recipe and re-run guix build -L guix -n outfieldr-git && guix lint -L guix outfieldr-git
@@ -76099,12 +76104,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE via upstream Guix package `noisetorch` exported through Gaurix compatibility namespace; validated with `guix lint -L guix noisetorch` and `guix build -L guix -n noisetorch`.
 
-** FAILED 9513. python-matrix-nio
+** DONE 9513. python-matrix-nio  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 4, popularity: 0.4176
    - Note: Python Matrix client library, designed according to sans I/O principles
    - TODO Status: DONE
    - Status: DONE via upstream Guix package `python-matrix-nio` exported through Gaurix compatibility namespace; validated with `guix lint -L guix python-matrix-nio` and `guix build -L guix -n python-matrix-nio`.
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 9514. modprobed-db
    - AUR votes: 266, popularity: 0.4164
    - Note: Keeps track of EVERY kernel module ever used - useful for make localmodconfig
@@ -89065,7 +89071,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resolver-260417ag.scm (localsend-bin v1.17.0, cross-platform file sharing, copy-build-system, Apache-2.0)
    - TODO Status: DONE
 
-** FAILED 11354. aurutils [FAILED: DISTRO_SPECIFIC]  :deptree-resolver-260418ab:
+** BLOCKED 11354. aurutils [FAILED: DISTRO_SPECIFIC]  :deptree-resolver-260418ab:
    - AUR votes: 298, popularity: 5.8547
    - Note: helper tools for the arch user repository
    - TODO Status: BLOCKED
@@ -89077,6 +89083,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in deptree-resolver-260413c.scm (deptree-resolver-260413c)
 
    - Status: FAILED: DISTRO_SPECIFIC: AUR helper/automation tool; depends entirely on pacman/makepkg Arch ecosystem (deptree-resolver-260418ab)
+   - Status: BLOCKED: ARCH_SPECIFIC: depends on pacman/libalpm/AUR infrastructure (deptree-resolver-260424d)
 ** DONE 11355. onlyoffice-bin  :recipe-resolver-260424c:recipe-generated:
    - AUR votes: 287, popularity: 5.8469
    - Note: An office suite that combines text, spreadsheet and presentation editors
@@ -89084,7 +89091,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — ALREADY_PACKAGED_PRIOR: recipe exists in recipe-resolver-260407j.scm (as onlyoffice-bin) (recipe-resolver-260424c)
    - Status: DONE: recipe in recipe-resolver-260407j.scm (onlyoffice-bin v9.3.1, ONLYOFFICE Desktop Editors AppImage, AGPL-3.0)
 
-** FAILED 11356. vmware-workstation
+** BLOCKED 11356. vmware-workstation
    - AUR votes: 241, popularity: 5.6401
    - Note: The industry standard for running multiple operating systems as virtual machines on a single Linux PC.
    - TODO Status: FAILED
@@ -89093,6 +89100,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
 
    - Status: FAILED: NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: closed-source with DKMS kernel modules; A1: license prohibits redistribution; A2: DKMS incompatible with Guix; A3: requires systemd services (recipe-resolver-260418n)
+   - Status: BLOCKED: PROPRIETARY_CLOSED_SOURCE: VMware proprietary software (deptree-resolver-260424d)
 ** DONE 11357. zapzap  :recipe-resolver-260424c:recipe-generated:
    - AUR votes: 64, popularity: 5.6270
    - Note: WhatsApp desktop application written in Pyqt6 + PyQt6-WebEngine
@@ -89457,12 +89465,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: FAILED
    - Status: DONE: packaged in cron-5a2fb251-r3-w03b.scm | prebuilt Electron binary from cucumber-sp/yandex-music-linux v5.63.1
 
-** FAILED 11400. steamcmd
+** DONE 11400. steamcmd  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 150, popularity: 3.6253
    - Note: Steam Command Line Tools
    - TODO Status: FAILED
    - Status: DONE: packaged in cron-5a2fb251-r3-w03b.scm | prebuilt 32-bit binary from Valve CDN, installs steamcmd.sh
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 11401. slack-desktop  :recipe-resolver-260424c:recipe-generated:
    - AUR votes: 632, popularity: 3.6217
    - Note: Slack Desktop (Beta) for Linux
@@ -115243,7 +115252,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 14587. asp  :deptree-resolver-260418d:ARCH_SPECIFIC: ARCH_SPECIFIC: Arch Build System tool, depends on pacman infrastructure
+** BLOCKED 14587. asp  :deptree-resolver-260418d:ARCH_SPECIFIC: ARCH_SPECIFIC: Arch Build System tool, depends on pacman infrastructure
    - Status: BLOCKED: ARCH_SPECIFIC + DEPRECATED: Arch Build System tool; no cross-distro utility.  Re-confirmed in 260417ao pass (deptree-resolver-260417ao)
 - Status: [deptree-resolver-260417au] BLOCKED -- ARCH_SPECIFIC: Arch Build System tool, no cross-distro utility
    - Status: BLOCKED: ARCH_SPECIFIC: Requires devtools and Arch SVN.  Re-confirmed in 260417ak pass (deptree-resolver-260417ak)
@@ -115273,6 +115282,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: FAILED: ARCH_SPECIFIC_EXHAUSTED: Deprecated (Nov 2023) Arch Build System tool replaced by pkgctl; depends on pacman/devtools/Arch SVN; exhausted (deptree-resolver-260418k)
    - TODO Status: FAILED
 
+   - Status: BLOCKED: ARCH_SPECIFIC: depends on pacman/libalpm/AUR infrastructure (deptree-resolver-260424d)
 ** DONE 14588. foxitreader
    - AUR votes: 464, popularity: 0.0094
    - Note: A fast, secure and complete PDF viewer
@@ -129850,7 +129860,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** FAILED 16491. lib32-libxpm
+** BLOCKED 16491. lib32-libxpm
    - AUR votes: 144, popularity: 0.0030
    - Note: X11 pixmap library (32-bit)
    - TODO Status: BLOCKED
@@ -129860,6 +129870,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED: MULTILIB_UNSUPPORTED: 32-bit libXpm; A1: no multilib; A2: cross-compilation; A3: use native libxpm (recipe-resolver-260418u)
    - TODO Status: BLOCKED
    - Status: FAILED: MULTILIB_UNSUPPORTED: 32-bit libXpm; Guix does not support multilib (deptree-resolver-260418w)
+   - Status: BLOCKED: MULTILIB: lib32 package requires multilib support not available in Guix (deptree-resolver-260424d)
 ** DONE 16492. sherlock-launcher-git
    - AUR votes: 1, popularity: 0.0030
    - Note: Application launcher for Wayland.
@@ -139185,12 +139196,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 17799. python-jax
+** DONE 17799. python-jax  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 14, popularity: 0.0011
    - Note: Composable transformations of Python+NumPy programs
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 17800. libdng-git
    - AUR votes: 1, popularity: 0.0011
    - Note: Interface library between libtiff and the world to make sure the output is valid DNG
@@ -140057,12 +140069,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 17940. pamac-cli
+** BLOCKED 17940. pamac-cli
    - AUR votes: 16, popularity: 0.0009
    - Note: Pamac cli frontend for libalpm
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: ARCH_SPECIFIC: depends on pacman/libalpm/AUR infrastructure (deptree-resolver-260424d)
 ** TODO 17941. eaglemode-bin
    - AUR votes: 2, popularity: 0.0009
    - Note: Visit almost everything in your PC simply by zooming in
@@ -141286,12 +141299,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18138. xcftools
+** DONE 18138. xcftools  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 0.0008
    - Note: Command line tools for use with the open XCF image format (includes xcf2png)
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 18139. writedoc
    - AUR votes: 1, popularity: 0.0008
    - Note: A fast way of creating and editing notes using neovim without defining a file path
@@ -149355,12 +149369,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 19434. gcc12
+** DONE 19434. gcc12  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 4, popularity: 0.0013
    - Note: The GNU Compiler Collection - C and C++ frontends (12.x.x)
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 19435. go-hass-agent-bin
    - AUR votes: 4, popularity: 0.0012
    - Note: A Home Assistant, native app integration for desktop/laptop devices.Written in Go.(Prebuilt version)
@@ -149547,12 +149562,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 19466. lua51-lsqlite3
+** DONE 19466. lua51-lsqlite3  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 3, popularity: 0.0011
    - Note: A binding for Lua to the SQLite3 database library
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 19467. lua-lsqlite3
    - AUR votes: 3, popularity: 0.0011
    - Note: A binding for Lua to the SQLite3 database library
@@ -155033,12 +155049,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: Recipe added in recipe-resolver-260413q.scm (recipe-resolver-260413q)
    - TODO Status: DONE
 
-** FAILED 20370. electron29  :deptree-resolver-260418ag:failed:
+** BLOCKED 20370. electron29  :deptree-resolver-260418ag:failed:
    - AUR votes: 2, popularity: 0.0002
    - Note: Build cross platform desktop apps with web technologies
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: Electron browser engine, requires Chromium build infrastructure (deptree-resolver-260424d)
 ** TODO 20371. sway-audio-idle-inhibit-git
    - AUR votes: 14, popularity: 0.0002
    - Note: Prevents swayidle from sleeping while any application is outputting or receiving audio
@@ -155577,12 +155594,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 20459. ca-certificates-cacert
+** DONE 20459. ca-certificates-cacert  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 0.0002
    - Note: CAcert.org root certificates
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 20460. bit-bin
    - AUR votes: 1, popularity: 0.0002
    - Note: A modern Git CLI
@@ -157810,12 +157828,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 20827. python-terminaltables3
+** DONE 20827. python-terminaltables3  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0001
    - Note: Easily draw tables in terminal/console applications from a list of lists of strings
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 20828. pop-icon-theme-git
    - AUR votes: 30, popularity: 0.0001
    - Note: System76 Pop icon theme
@@ -162130,12 +162149,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 21514. jameica
+** DONE 21514. jameica  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 91, popularity: 0.08643
    - Note: free runtime environment for java applications
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 21515. goldendict-git
    - AUR votes: 91, popularity: 0.003349
    - Note: Feature-rich dictionary lookup program supporting multiple dictionary formats
@@ -164814,12 +164834,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** FAILED 21929. php56-cli  :deptree-resolver-260418ag:failed:
+** DONE 21929. php56-cli  :deptree-resolver-260418ag:failed:  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 50, popularity: 3.6e-05
    - Note: cli (command-line executable) version for php56
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 21930. php56-cgi
    - AUR votes: 50, popularity: 3.6e-05
    - Note: CGI and FCGI SAPI for php56
@@ -165304,12 +165325,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22009. libnetctlgui
+** DONE 22009. libnetctlgui  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 49, popularity: 0
    - Note: Qt5 library which interacts with netctl. A part of netctl-gui
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 22010. netctlgui-helper
    - AUR votes: 49, popularity: 0
    - Note: Helper daemon for netctl-gui. A part of netctl-gui
@@ -166286,12 +166308,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 22161. darling-cli-devenv-gui-common-git  :deptree-resolver-260418ag:failed:
+** BLOCKED 22161. darling-cli-devenv-gui-common-git  :deptree-resolver-260418ag:failed:
    - AUR votes: 41, popularity: 0
    - Note: Components of Darling that are shared between the developer environment and the GUI components
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: Darling macOS compatibility layer, extremely complex build (deptree-resolver-260424d)
 ** TODO 22162. darling-cli-extra-git
    - AUR votes: 41, popularity: 0
    - Note: Non-standard CLI components of Darling
@@ -166346,12 +166369,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 22171. darling-iosurface-git  :deptree-resolver-260418ag:failed:
+** BLOCKED 22171. darling-iosurface-git  :deptree-resolver-260418ag:failed:
    - AUR votes: 41, popularity: 0
    - Note: IOSurface framework built for use within Darling
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: Darling macOS compatibility layer, extremely complex build (deptree-resolver-260424d)
 ** TODO 22172. darling-cli-devenv-gui-stubs-common-git
    - AUR votes: 41, popularity: 0
    - Note: Components of Darling that are shared between the developer environment and GUI stub components
@@ -166724,12 +166748,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22229. osl
+** DONE 22229. osl  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 39, popularity: 0
    - Note: OpenScop Library
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 22230. qterminal-git
    - AUR votes: 39, popularity: 0
    - Note: Lightweight Qt-based terminal emulator
@@ -168492,12 +168517,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 - Status: [deptree-resolver-260417au] BLOCKED -- WINDOWS_ONLY: requires Wine runtime
    - Status: BLOCKED: COMPLEX_DEPS: Windows application requiring Wine runtime environment (re-evaluated in deptree-resolver-260417as)
    - Status: DONE: recipe in deptree-resolver-260417av.scm (winscp v6.5, binary-zip)
-** TODO 22502. ocamlfuse
+** DONE 22502. ocamlfuse  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 31, popularity: 0.156644
    - Note: An ocaml binding for fuse.
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 22503. unigine-superposition
    - AUR votes: 31, popularity: 0.14639
    - Note: Interactive 3D benchmark: walk through a lab of a lone professor
@@ -170888,12 +170914,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 22878. gnome-icon-theme-symbolic
+** DONE 22878. gnome-icon-theme-symbolic  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 25, popularity: 0.023098
    - Note: GNOME icon theme, symbolic icons
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 22879. neovim-plug
    - AUR votes: 25, popularity: 3.4e-05
    - Note: A Neovim plugin manager
@@ -171831,12 +171858,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23027. tpm-tools
+** DONE 23027. tpm-tools  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 23, popularity: 2e-06
    - Note: Tools to manage and diagnose a TPM
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 23028. vim-gruvbox-git
    - AUR votes: 23, popularity: 2e-06
    - Note: gruvbox color scheme for vim
@@ -172349,12 +172377,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23109. android-platform-21
+** BLOCKED 23109. android-platform-21
    - AUR votes: 22, popularity: 0
    - Note: Android SDK Platform, API-21
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: ANDROID_SDK: Android platform/SDK component (deptree-resolver-260424d)
 ** TODO 23110. arduino-mk-git
    - AUR votes: 22, popularity: 0
    - Note: A Makefile for Arduino Sketches
@@ -172547,12 +172576,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23140. pam-selinux
+** DONE 23140. pam-selinux  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 22, popularity: 0
    - Note: SELinux aware PAM (Pluggable Authentication Modules) library
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 23141. perl-forks
    - AUR votes: 22, popularity: 0
    - Note: drop-in replacement for Perl threads using fork()
@@ -172915,12 +172945,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: Compat alias in general-compat.scm → python-setools (v4.5.0) from upstream Guix.
 
-** FAILED 23198. selinux-python  :deptree-resolver-260418ag:failed:
+** DONE 23198. selinux-python  :deptree-resolver-260418ag:failed:  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 21, popularity: 0.102075
    - Note: SELinux python tools and libraries
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 23199. ttf-juliamono
    - AUR votes: 21, popularity: 0.094105
    - Note: JuliaMono is a monospace typeface designed for programming in Julia.
@@ -172989,12 +173020,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** FAILED 23210. python2-gimp  :deptree-resolver-260418ag:failed:
+** BLOCKED 23210. python2-gimp  :deptree-resolver-260418ag:failed:
    - AUR votes: 21, popularity: 9e-06
    - Note: Python 2 plugins support for GIMP
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: DEPRECATED_PYTHON2: Python 2 package, Python 2 is EOL (deptree-resolver-260424d)
 ** TODO 23211. tela-icon-theme
    - AUR votes: 21, popularity: 8e-06
    - Note: A flat colorful design icon theme.
@@ -173418,12 +173450,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 23279. quartus-free-quartus  :deptree-resolver-260418ag:failed:
+** BLOCKED 23279. quartus-free-quartus  :deptree-resolver-260418ag:failed:
    - AUR votes: 21, popularity: 0
    - Note: Quartus Prime Lite design software for Intel FPGAs
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: PROPRIETARY_CLOSED_SOURCE: Intel Quartus FPGA tools are proprietary (deptree-resolver-260424d)
 ** TODO 23280. quartus-free-questa
    - AUR votes: 21, popularity: 0
    - Note: Quartus Prime Lite - Questa-Intel FPGA Starter Edition
@@ -173970,12 +174003,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23366. ace
+** DONE 23366. ace  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 51, popularity: 0.0
    - Note: Framework that provides many components and patterns for developing high-performance, distributed real-time and embedded systems.
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 23367. i3pystatus-git
    - AUR votes: 51, popularity: 0.0
    - Note: i3status replacement written in python for the i3 window manager
@@ -174101,12 +174135,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23387. cling-git
+** DONE 23387. cling-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 45, popularity: 0.0
    - Note: Interactive C++ interpreter built on the top of LLVM and Clang libraries.
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 23388. cling-jupyter-git
    - AUR votes: 45, popularity: 0.0
    - Note: Interactive C++ interpreter built on the top of LLVM and Clang libraries.
@@ -176571,12 +176606,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23783. mingw-w64-boost
+** BLOCKED 23783. mingw-w64-boost
    - AUR votes: 19, popularity: 0.0
    - Note: Free peer-reviewed portable C++ source libraries (mingw-w64)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 23784. mod_jk
    - AUR votes: 19, popularity: 0.0
    - Note: The Apache Tomcat Connector
@@ -176830,12 +176866,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 23825. coin-or-ipopt
+** DONE 23825. coin-or-ipopt  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 18, popularity: 6.2e-05
    - Note: Interior Point OPTimizer
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 23826. xfdesktop-devel
    - AUR votes: 18, popularity: 4.2e-05
    - Note: A desktop manager for Xfce (development release)
@@ -178961,12 +178998,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24168. gcc5
+** BLOCKED 24168. gcc5
    - AUR votes: 16, popularity: 0.0
    - Note: The GNU Compiler Collection (5.x)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: old GCC version, complex bootstrap build (deptree-resolver-260424d)
 ** TODO 24169. gcc7
    - AUR votes: 16, popularity: 0.0
    - Note: The GNU Compiler Collection - C and C++ frontends (7.x.x)
@@ -181488,12 +181526,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24572. mingw-w64-postgresql
+** BLOCKED 24572. mingw-w64-postgresql
    - AUR votes: 14, popularity: 0.0
    - Note: Sophisticated object-relational DBMS (mingw-w64)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 24573. mkinitcpio-bluetooth
    - AUR votes: 14, popularity: 0.0
    - Note: This is an initcpio hook for bluetooth connectivity during boot / in initramfs.
@@ -183371,12 +183410,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 24873. perl-uuid
+** DONE 24873. perl-uuid  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 13, popularity: 0.0
    - Note: Universally Unique Identifier library for Perl
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 24874. pgcli-git
    - AUR votes: 13, popularity: 0.0
    - Note: a command line interface for Postgres with auto-completion and syntax highlighting
@@ -184917,12 +184957,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25121. mingw-w64-sqlite
+** BLOCKED 25121. mingw-w64-sqlite
    - AUR votes: 12, popularity: 0.0
    - Note: A C library that implements an SQL database engine (mingw-w64)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 25122. mkvtoolnix-git
    - AUR votes: 12, popularity: 0.0
    - Note: Git version of mkvtoolnix (to get the latest mkvtoolnix-gui)
@@ -185109,12 +185150,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 25153. python2-wxpython3
+** BLOCKED 25153. python2-wxpython3
    - AUR votes: 12, popularity: 0.0
    - Note: Classic wxWidgets GUI toolkit for Python
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: DEPRECATED_PYTHON2: Python 2 package, Python 2 is EOL (deptree-resolver-260424d)
 ** TODO 25154. python3-xynexdg
    - AUR votes: 12, popularity: 0.0
    - Note: Implementation of various freedesktop.org standards, for internal use in Xyne's modules.
@@ -192014,12 +192056,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26186. gcc8-libs
+** BLOCKED 26186. gcc8-libs
    - AUR votes: 9, popularity: 0
    - Note: Runtime libraries shipped by GCC (8.x.x)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: old GCC version, complex bootstrap build (deptree-resolver-260424d)
 ** TODO 26187. gcc8-fortran
    - AUR votes: 9, popularity: 0
    - Note: Fortran front-end for GCC (8.x.x)
@@ -192056,12 +192099,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 26193. glslang-git
+** DONE 26193. glslang-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 9, popularity: 0
    - Note: OpenGL and OpenGL ES shader front end and validator, git version
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 26194. gnome-firmware-git
    - AUR votes: 9, popularity: 0
    - Note: GNOME application to update, reinstall and downgrade firmware on devices support
@@ -195761,12 +195805,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 26805. mingw-w64-pcre2
+** BLOCKED 26805. mingw-w64-pcre2
    - AUR votes: 8, popularity: 0
    - Note: A library that implements Perl 5-style regular expressions. 2nd version (mingw-w
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 26806. mingw-w64-poppler
    - AUR votes: 8, popularity: 0
    - Note: PDF rendering library based on xpdf 3.0 (mingw-w64)
@@ -197063,12 +197108,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27020. xbae
+** DONE 27020. xbae  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 8, popularity: 0
    - Note: A Motif widget set containing the XbaeMatrix, XbaeCaption, and XbaeInput extensi
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 27021. xcursor-jaguarx
    - AUR votes: 8, popularity: 0
    - Note: animated OSX-style mouse cursors
@@ -201071,12 +201117,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 27687. gcc11
+** DONE 27687. gcc11  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 1.000013
    - Note: The GNU Compiler Collection - C and C++ frontends (11.x.x)
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 27688. gcc11-libs :deptree-resolver-260419d:recipe-generated:
    - AUR votes: 6, popularity: 1.000013
    - Note: Runtime libraries shipped by GCC (11.x.x)
@@ -201489,30 +201536,34 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 27756. lua-cd
+** DONE 27756. lua-cd  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 3e-06
    - Note: Lua (5.4) bindings for Canvas Draw library
    - TODO Status: TODO
 
 
-** TODO 27757. lua51-cd
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
+** DONE 27757. lua51-cd  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 3e-06
    - Note: Lua (5.1) bindings for Canvas Draw library
    - TODO Status: TODO
 
 
-** TODO 27758. lua52-cd
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
+** DONE 27758. lua52-cd  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 3e-06
    - Note: Lua (5.2) bindings for Canvas Draw library
    - TODO Status: TODO
 
 
-** TODO 27759. lua53-cd
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
+** DONE 27759. lua53-cd  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 3e-06
    - Note: Lua (5.3) bindings for Canvas Draw library
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 27760. vim-plug-git
    - AUR votes: 6, popularity: 3e-06
    - Note: A vim plugin manager
@@ -204787,12 +204838,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28305. semodule-utils
+** DONE 28305. semodule-utils  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 0.0
    - Note: SELinux module tools
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 28306. serve-d
    - AUR votes: 6, popularity: 0.0
    - Note: Microsoft language server protocol implementation for D using workspace-d
@@ -207000,12 +207052,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28671. android-platform-19
+** BLOCKED 28671. android-platform-19
    - AUR votes: 5, popularity: 0.0
    - Note: Android SDK Platform, API-19
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: ANDROID_SDK: Android platform/SDK component (deptree-resolver-260424d)
 ** TODO 28672. android-sdk-build-tools-18.0.1
    - AUR votes: 5, popularity: 0.0
    - Note: Build-Tools for Google Android SDK (aapt, aidl, dexdump, dx, llvm-rs-cc)
@@ -207114,12 +207167,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28690. beagle-lib
+** DONE 28690. beagle-lib  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 5, popularity: 0.0
    - Note: general purpose library for evaluating the likelihood of sequence evolution on trees
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 28691. beamer-theme-torino
    - AUR votes: 5, popularity: 0.0
    - Note: A pretty theme for LaTeX Beamer
@@ -207704,12 +207758,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 28788. dawn
+** DONE 28788. dawn  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 5, popularity: 0.0
    - Note: 3D geometrical postscript renderer
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 28789. deco-archive
    - AUR votes: 5, popularity: 0.0
    - Note: A collection of extractor wrappers for the deco file extraction framework
@@ -210616,12 +210671,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 29272. python-posix_ipc
+** DONE 29272. python-posix_ipc  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 5, popularity: 0.0
    - Note: POSIX IPC primitives (semaphores, shared memory and message queues) for Python
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 29273. python-prompt_toolkit1
    - AUR votes: 5, popularity: 0.0
    - Note: Library for building powerful interactive command lines in Python (1.x branch). Python 3 version from PyPi.
@@ -214146,12 +214202,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 29859. libcommuni
+** DONE 29859. libcommuni  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 6, popularity: 0.0
    - Note: A cross-platform IRC framework written with Qt.
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 29860. libdivecomputer-git
    - AUR votes: 6, popularity: 0.0
    - Note: Library for communication with dive computers
@@ -215971,12 +216028,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 30162. libffi6
+** DONE 30162. libffi6  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 5, popularity: 0.0
    - Note: A portable, high level programming interface to various calling conventions (ABI version 6)
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 30163. libhugetlbfs
    - AUR votes: 5, popularity: 0.0
    - Note: A library which provides easy access to huge pages of memory
@@ -218027,12 +218085,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 30503. vapoursynth-plugin-mvsfunc-git
+** DONE 30503. vapoursynth-plugin-mvsfunc-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 5, popularity: 0.0
    - Note: Plugin for Vapoursynth: mvsfunc (GIT version)
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 30504. vbam-git
    - AUR votes: 5, popularity: 0.0
    - Note: Nintendo Game Boy Advance emulator
@@ -226476,12 +226535,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 31900. pure-avahi
+** DONE 31900. pure-avahi  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 4, popularity: 0.0
    - Note: An Avahi/Zeroconf interface for Pure
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 31901. pure-fastcgi
    - AUR votes: 4, popularity: 0.0
    - Note: Pure FastCGI interface
@@ -231246,12 +231306,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 32692. electron25  :deptree-resolver-260418ag:failed:
+** BLOCKED 32692. electron25  :deptree-resolver-260418ag:failed:
    - AUR votes: 3, popularity: 3e-06
    - Note: Build cross platform desktop apps with web technologies
    - TODO Status: FAILED
 
 
+   - Status: BLOCKED: COMPLEX_DEPS: Electron browser engine, requires Chromium build infrastructure (deptree-resolver-260424d)
 ** TODO 32693. ffuf-bin
    - AUR votes: 3, popularity: 3e-06
    - Note: Fast web fuzzer written in Go
@@ -237761,12 +237822,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 33769. ignition-msgs
+** DONE 33769. ignition-msgs  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 3, popularity: 0
    - Note: Messages for Gazebo robot simulation.
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 33770. image-optimizer-git
    - AUR votes: 3, popularity: 0
    - Note: Simple lossless compression (latest commit)
@@ -238825,12 +238887,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 33946. libcxml
+** DONE 33946. libcxml  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 3, popularity: 0
    - Note: A small C++ library which makes it marginally neater to parse XML using libxml++
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 33947. libdragon-git
    - AUR votes: 3, popularity: 0
    - Note: Open source library for Nintendo 64 game development
@@ -239831,24 +239894,26 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34113. mingw-w64-lapack
+** BLOCKED 34113. mingw-w64-lapack
    - AUR votes: 3, popularity: 0
    - Note: Linear Algebra PACKage (mingw-w64)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** DONE 34114. mingw-w64-blas :deptree-resolver-260419d:recipe-generated:
    - AUR votes: 3, popularity: 0
    - Note: Basic Linear Algebra Subprograms (mingw-w64)
    - TODO Status: TODO
 
 
-** TODO 34115. mingw-w64-cblas
+** BLOCKED 34115. mingw-w64-cblas
    - AUR votes: 3, popularity: 0
    - Note: C interface to BLAS (mingw-w64)
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 34116. mingw-w64-lapacke
    - AUR votes: 3, popularity: 0
    - Note: C interface to LAPACK (mingw-w64)
@@ -242612,12 +242677,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 34576. pure-lilv
+** DONE 34576. pure-lilv  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 3, popularity: 0
    - Note: LV2 plugin host interface for Pure (lilv bindings)
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 34577. pure-lv2
    - AUR votes: 3, popularity: 0
    - Note: LV2 plugin interface for Pure
@@ -246902,12 +246968,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 35287. wxparaver
+** DONE 35287. wxparaver  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 3, popularity: 0
    - Note: Expressive powerful and flexible trace visualizer for post-mortem trace analysis (from BSC).
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 35288. wxtoimg-beta
    - AUR votes: 3, popularity: 0
    - Note: Software to decode APT and WEFAX signals from weather satellites
@@ -247905,12 +247972,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 35454. deepin-wine8-stable
+** BLOCKED 35454. deepin-wine8-stable
    - AUR votes: 3, popularity: 4e-06
    - Note: Deepin wine8 stable
    - TODO Status: TODO
 
 
+   - Status: BLOCKED: PROPRIETARY_CLOSED_SOURCE (deptree-resolver-260424d)
 ** TODO 35455. liteloader-qqnt-telegram-theme-bin
    - AUR votes: 3, popularity: 4e-06
    - Note: LiteLoaderQQNT 插件，高仿 Telegram 风格的 QQNT 主题
@@ -249775,12 +249843,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 35765. python-mbstrdecoder
+** DONE 35765. python-mbstrdecoder  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 3, popularity: 0
    - Note: Multi-byte character string decoder
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 35766. python-nose-timer
    - AUR votes: 3, popularity: 0
    - Note: Timer plugin for nosetests
@@ -253929,12 +253998,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 36456. python-music-tag
+** DONE 36456. python-music-tag  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 7e-06
    - Note: Simple interface to edit audio file metadata
    - TODO Status: TODO
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 36457. rmview
    - AUR votes: 2, popularity: 7e-06
    - Note: a fast live viewer for reMarkable 1 and 2
@@ -258550,12 +258620,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** FAILED 37224. boost-python2-libs  :deptree-resolver-260418ag:failed:
+** DONE 37224. boost-python2-libs  :deptree-resolver-260418ag:failed:  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0
    - Note: Free peer-reviewed portable C++ source libraries - runtime libraries
    - TODO Status: FAILED
 
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 37225. boost-python2
    - AUR votes: 2, popularity: 0
    - Note: Free peer-reviewed portable C++ source libraries - development headers
@@ -259259,11 +259330,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
    - Status: DONE: ALREADY_RESOLVED: already in upstream Guix (gnu/packages/xml.scm) (recipe-resolver-260417as)
 
-** TODO 37345. i3lock-color
+** DONE 37345. i3lock-color  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 64, popularity: 0.001038
    - Note: The world's most popular non-default computer lockscreen.
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 37346. perl-env-path
    - AUR votes: 63, popularity: 0
    - Note: Perl module Env::Path - Advanced operations on path variables
@@ -259363,11 +259435,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A mail filtering utility for processing IMAP mailboxes
    - TODO Status: TODO
 
-** TODO 37364. fann
+** DONE 37364. fann  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 50, popularity: 0
    - Note: Fast Artificial Neural Network Library
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 37365. entangle
    - AUR votes: 49, popularity: 0.001234
    - Note: GTK graphical interface for tethered photography with digital cameras powered by libgphoto2
@@ -259647,11 +259720,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in deptree-resolver-260418v.scm (moarvm v2026.03, gnu-build-system) (deptree-resolver-260418v)
    - TODO Status: DONE
 
-** TODO 37418. ttfautohint
+** DONE 37418. ttfautohint  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 32, popularity: 0.000222
    - Note: Provides automated hinting process for web fonts
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 37419. wsjtx
    - AUR votes: 32, popularity: 8.6e-05
    - Note: Software for Amateur Radio Weak-Signal Communication (JT9 and JT65)
@@ -260788,11 +260862,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Utility module for Test::Builder, to test fork(2)
    - TODO Status: TODO
 
-** TODO 37634. soci
+** DONE 37634. soci  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 13, popularity: 0
    - Note: C++ database access library.
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 37635. udpcast  :recipe-resolver-260423m:recipe-generated:
    - AUR votes: 13, popularity: 0
    - Note: Network multicasting tool
@@ -261936,11 +262011,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Extensible and flexible object <-> relational mapper.
    - TODO Status: TODO
 
-** FAILED 37854. python2-dbus  :deptree-resolver-260418ag:failed:
+** BLOCKED 37854. python2-dbus  :deptree-resolver-260418ag:failed:
    - AUR votes: 7, popularity: 0.866928
    - Note: Python bindings for DBUS (Legacy Python 2 version)
    - TODO Status: FAILED
 
+   - Status: BLOCKED: DEPRECATED_PYTHON2: Python 2 package, Python 2 is EOL (deptree-resolver-260424d)
 ** TODO 37855. python-panflute
    - AUR votes: 7, popularity: 0.007755
    - Note: A Pythonic alternative to John MacFarlane’s pandocfilters
@@ -262033,11 +262109,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Generate mypy stub files from protobuf specs
    - TODO Status: TODO
 
-** TODO 37872. python-rasterio
+** DONE 37872. python-rasterio  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 7, popularity: 1.7e-05
    - Note: Fast and direct raster I/O for use with NumPy
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** DONE 37873. python-cloudscraper
    - AUR votes: 7, popularity: 1.2e-05
    - Note: Python module to bypass Cloudflare's anti-bot page
@@ -262070,11 +262147,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: BLAST tool suite from NCBI (blastn, blastp, blastx, psiblast, etc)
    - TODO Status: TODO
 
-** TODO 37879. ccrtp
+** DONE 37879. ccrtp  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 7, popularity: 0
    - Note: An implementation of RTP, the real-time transport protocol from the IETF
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 37880. checkmake
    - AUR votes: 7, popularity: 0
    - Note: Linter/analyzer for Makefiles
@@ -263223,12 +263301,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A python module to parse ds9 and ciao region files
    - TODO Status: TODO
 
-** TODO 38100. python-roman
+** BLOCKED 38100. python-roman
    - AUR votes: 5, popularity: 0
    - Note: Integer to Roman numerals converter
    - TODO Status: BLOCKED
    - Status: BLOCKED: MISSING_SOURCE: not found in AUR metadata cache (deptree-resolver-260418ai)
 
+   - Status: BLOCKED: MISSING_SOURCE: not in AUR metadata (deptree-resolver-260424d)
 ** TODO 38101. qiv
    - AUR votes: 5, popularity: 0
    - Note: Quick Image Viewer (qiv) is a very small and fast GDK/Imlib image viewer
@@ -263390,11 +263469,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Emacs LSP performance booster
    - TODO Status: TODO
 
-** TODO 38132. libgda
+** DONE 38132. libgda  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 4, popularity: 0.007878
    - Note: Database access library
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 38133. python-stripe
    - AUR votes: 4, popularity: 0.005134
    - Note: Stripe python bindings
@@ -273589,16 +273669,18 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Protein X-ray crystallography toolkit - Libraries
    - TODO Status: TODO
 
-** TODO 40121. libclut
+** DONE 40121. libclut  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0
    - Note: C library for manipulating colour lookup tables
    - TODO Status: TODO
 
-** TODO 40122. libcprime-git
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
+** DONE 40122. libcprime-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0
    - Note: A library for bookmarking, saving recent activites, managing settings of C-Suite
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 40123. libcsptr-git
    - AUR votes: 2, popularity: 0
    - Note: A smart pointers library for the C programming language
@@ -273909,11 +273991,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: SVG rendering library
    - TODO Status: TODO
 
-** TODO 40185. libsodium-static
+** DONE 40185. libsodium-static  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0
    - Note: P(ortable|ackageable) NaCl-based crypto library (static library)
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 40186. libsoundio-git
    - AUR votes: 2, popularity: 0
    - Note: A C99 library providing cross-platform audio input and output
@@ -279812,11 +279895,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: reMarkable Rendering Library
    - TODO Status: TODO
 
-** TODO 41364. python-rosinstall_generator
+** DONE 41364. python-rosinstall_generator  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0
    - Note: A tool for generating rosinstall files
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 41365. python-rpi-gpio
    - AUR votes: 2, popularity: 0.0
    - Note: A Python module to control the GPIO on a Raspberry Pi
@@ -286338,11 +286422,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A small sample cross-platform networking library (mingw-w64)
    - TODO Status: TODO
 
-** FAILED 42666. mingw-w64-spirv-tools  :deptree-resolver-260418ag:failed:
+** BLOCKED 42666. mingw-w64-spirv-tools  :deptree-resolver-260418ag:failed:
    - AUR votes: 2, popularity: 0.0
    - Note: API and commands for processing SPIR-V modules (mingw-w64)
    - TODO Status: FAILED
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 42667. mkbib
    - AUR votes: 2, popularity: 0.0
    - Note: A gtk3-Program to create bibtex-files
@@ -288859,11 +288944,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: LM Studio Python SDK
    - TODO Status: TODO
 
-** TODO 43169. python-sphinxcontrib-httpdomain
+** DONE 43169. python-sphinxcontrib-httpdomain  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 1.0
    - Note: HTTP domain extension for sphinx
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 43170. python-tree-sitter-typescript
    - AUR votes: 1, popularity: 1.0
    - Note: Python Bindings for tree-sitter-typescript
@@ -291291,11 +291377,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Command line tool that checks how much a password is safe
    - TODO Status: TODO
 
-** TODO 43652. python-ratelimit
+** DONE 43652. python-ratelimit  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 4e-05
    - Note: API rate limit decorator
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 43653. q2tools-220-bin
    - AUR votes: 1, popularity: 4e-05
    - Note: Quake II (Quake 2) BSP map compiler tools with v220 map support
@@ -291781,11 +291868,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Serial Graph Partitioning and Fill-reducing Matrix Ordering
    - TODO Status: TODO
 
-** TODO 43750. mingw-w64-cppwinrt
+** BLOCKED 43750. mingw-w64-cppwinrt
    - AUR votes: 1, popularity: 3e-05
    - Note: C++ language projection for Windows Runtime (WinRT) APIs (mingw-w64)
    - TODO Status: TODO
 
+   - Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d)
 ** TODO 43751. minitrust
    - AUR votes: 1, popularity: 3e-05
    - Note: Tool that verifies minisign signatures using public keys from a trusted list
@@ -293896,11 +293984,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Block IP addresses based on Country
    - TODO Status: TODO
 
-** TODO 44173. libqglviewer-qt5
+** DONE 44173. libqglviewer-qt5  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 8e-06
    - Note: C++ library based on Qt that eases the creation of OpenGL 3D viewers, qt5 version
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 44174. libyang2
    - AUR votes: 1, popularity: 8e-06
    - Note: A YANG data modelling language parser and toolkit written (and providing API) in C
@@ -295272,11 +295361,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
    - Status: DONE: recipe in deptree-resolver-260418ai.scm (deptree-resolver-260418ai)
 
-** TODO 44448. r-r.oo
+** DONE 44448. r-r.oo  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 3e-06
    - Note: R Object-Oriented Programming with or without References
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 44449. r-stargazer
    - AUR votes: 1, popularity: 3e-06
    - Note: Well-Formatted Regression and Summary Statistics Tables
@@ -299692,11 +299782,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: MEGA extension for Firefox; enables better support for mega.co.nz downloads
    - TODO Status: TODO
 
-** TODO 45329. fishui-git
+** DONE 45329. fishui-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0
    - Note: GUI library based on QQC2 for Cutefish applications
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45330. flexisip
    - AUR votes: 2, popularity: 0.0
    - Note: A general purpose SIP proxy with media capabilities
@@ -299722,11 +299813,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Freifunk Meet desktop application
    - TODO Status: TODO
 
-** TODO 45335. frobby
+** DONE 45335. frobby  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0
    - Note: Computations With Monomial Ideals
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45336. fvwm-xdg-menu
    - AUR votes: 2, popularity: 0.0
    - Note: XDG application menu with full support for FVWM
@@ -300097,11 +300189,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: The Mozilla LDAP Java SDK
    - TODO Status: TODO
 
-** TODO 45410. lib32-libglade
+** BLOCKED 45410. lib32-libglade
    - AUR votes: 2, popularity: 0.0
    - Note: Allows you to load glade interface files in a program at runtime (32-bit)
    - TODO Status: TODO
 
+   - Status: BLOCKED: MULTILIB: lib32 package requires multilib support not available in Guix (deptree-resolver-260424d)
 ** TODO 45411. libacpi
    - AUR votes: 2, popularity: 0.0
    - Note: general purpose lib to gather ACPI data
@@ -300117,11 +300210,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: C-Implementation of CoAP
    - TODO Status: TODO
 
-** TODO 45414. libcutefish-git
+** DONE 45414. libcutefish-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0
    - Note: System library for Cutefish applications
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45415. libdecodeqr-git
    - AUR votes: 2, popularity: 0.0
    - Note: A C/C++ library for decoding QR code 2D barcodes
@@ -300933,11 +301027,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Python wrappers for manipulating temp directories
    - TODO Status: TODO
 
-** TODO 45577. python-token-bucket
+** DONE 45577. python-token-bucket  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0
    - Note: Very fast implementation of the token bucket algorithm.
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45578. python-twython
    - AUR votes: 2, popularity: 0.0
    - Note: Pure Python wrapper for the Twitter API
@@ -301148,11 +301243,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Microsoft language server protocol implementation for D using workspace-d
    - TODO Status: TODO
 
-** TODO 45620. sh-elf-gcc-casio
+** DONE 45620. sh-elf-gcc-casio  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 2, popularity: 0.0
    - Note: The GNU Compiler Collection for the Casio calculators SuperH processors.
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45621. silentarmy-nvmod-git
    - AUR votes: 2, popularity: 0.0
    - Note: GPU Zcash Equihash solver optimized for Nvidia and CUDA 8
@@ -301759,11 +301855,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Compiler infrastructure (LLVM 19)
    - TODO Status: TODO
 
-** TODO 45740. llvm19-libs
+** DONE 45740. llvm19-libs  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 1.0
    - Note: LLVM 19 runtime libraries
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45741. m68k-amigaos-gcc
    - AUR votes: 1, popularity: 1.0
    - Note: GCC 15.2.0 cross-compiler toolchain for Amiga m68k-amigaos with full C/C++ runtime
@@ -301890,11 +301987,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: XLibre fork of X.Org nested X server that runs as an X application
    - TODO Status: TODO
 
-** TODO 45766. xlibre-xserver-common-beta
+** DONE 45766. xlibre-xserver-common-beta  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 1.0
    - Note: XLibre fork of X.Org Xorg server common files
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45767. xlibre-xserver-devel-beta
    - AUR votes: 1, popularity: 1.0
    - Note: XLibre fork of X.Org development files for the X.Org X server
@@ -302101,11 +302199,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: Experimental fork of Telegram Desktop
    - TODO Status: TODO
 
-** TODO 45808. python-arabic-reshaper
+** DONE 45808. python-arabic-reshaper  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 2.6e-05
    - Note: Reconstruct Arabic sentences to be used in applications that do not support Arabic
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45809. fzpac
    - AUR votes: 1, popularity: 2.3e-05
    - Note: Arch Linux (pacman) package finder with fzf
@@ -302116,11 +302215,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: A window manager for GNOME | Attempts to improve performances with non-upstreamed merge-requests and frequent stable branch resync
    - TODO Status: TODO
 
-** TODO 45811. oorexx
+** DONE 45811. oorexx  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 2.3e-05
    - Note: open source implementation of Object Rexx
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45812. python-pytorch-tensorrt
    - AUR votes: 1, popularity: 2.3e-05
    - Note: PyTorch/TorchScript/FX compiler for NVIDIA GPUs using TensorRT
@@ -302967,11 +303067,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: mass Drupal hosting system - frontend
    - TODO Status: TODO
 
-** TODO 45981. aegir-provision
+** DONE 45981. aegir-provision  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 0.0
    - Note: mass Drupal hosting system - backend
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 45982. aegir-provision-tasks-extra
    - AUR votes: 1, popularity: 0.0
    - Note: Extends Aegir provision backend with additional commands
@@ -306344,11 +306445,12 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Note: C++ project manager and build system
    - TODO Status: TODO
 
-** TODO 46649. ccsh-git
+** DONE 46649. ccsh-git  :deptree-resolver-260424d:recipe-generated:
    - AUR votes: 1, popularity: 0.0
    - Note: C++ shell
    - TODO Status: TODO
 
+   - Status: DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolver-260424d)
 ** TODO 46650. ccsh-compiler-git
    - AUR votes: 1, popularity: 0.0
    - Note: C++ shell
