@@ -547,6 +547,7 @@
   #:use-module (gaurix packages recipe-resolver-260424q)
   #:use-module (gaurix packages deptree-resolver-260424t)
   #:use-module (gaurix packages recipe-resolver-260424r)
+  #:use-module (gaurix packages deptree-resolver-260424u)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15127,3 +15128,15 @@
 (define-public ttf-alibaba-puhuiti (package (inherit font-alibaba-puhuiti) (name "ttf-alibaba-puhuiti")))
 (define-public faba-mono-icons-git (package (inherit faba-mono-icons) (name "faba-mono-icons-git")))
 (define-public illogical-impulse-oneui4-icons-git (package (inherit illogical-impulse-oneui4-icons) (name "illogical-impulse-oneui4-icons-git")))
+
+; deptree-resolver-260424u recipes
+(re-export better-control)
+(re-export d2vsource)
+(re-export erwise)
+(re-export gtk-theme-config)
+(re-export libcanlock-usenet)
+(re-export oqs-provider)
+(re-export pulseeffects-legacy)
+(re-export slrn-canlock)
+(re-export slxfig-snapshot)
+(re-export vinyl-theme)
