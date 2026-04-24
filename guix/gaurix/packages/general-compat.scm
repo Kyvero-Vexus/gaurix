@@ -526,6 +526,7 @@
   #:use-module (gaurix packages deptree-resolver-260424c)
   #:use-module (gaurix packages deptree-resolver-260424d)
   #:use-module (gaurix packages deptree-resolver-260424e)
+  #:use-module (gaurix packages deptree-resolver-260424n)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:use-module (gaurix packages recipe-resolver-260423t)
@@ -15104,3 +15105,14 @@
 (re-export swiftshader-git)
 (re-export verinice-bin)
 (re-export python-pocketsphinx)
+
+;;; deptree-resolver-260424n
+;;; Recipes from (gaurix packages deptree-resolver-260424n)
+(re-export grive)
+(re-export font-alibaba-puhuiti)
+(re-export faba-mono-icons)
+(re-export illogical-impulse-oneui4-icons)
+(define-public otf-alibaba-puhuiti (package (inherit font-alibaba-puhuiti) (name "otf-alibaba-puhuiti")))
+(define-public ttf-alibaba-puhuiti (package (inherit font-alibaba-puhuiti) (name "ttf-alibaba-puhuiti")))
+(define-public faba-mono-icons-git (package (inherit faba-mono-icons) (name "faba-mono-icons-git")))
+(define-public illogical-impulse-oneui4-icons-git (package (inherit illogical-impulse-oneui4-icons) (name "illogical-impulse-oneui4-icons-git")))
