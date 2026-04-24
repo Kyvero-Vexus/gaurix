@@ -516,6 +516,7 @@
   #:use-module (gaurix packages recipe-resolver-260423l)
   #:use-module (gaurix packages recipe-resolver-260423m)
   #:use-module (gaurix packages recipe-resolver-260423n)
+  #:use-module (gaurix packages recipe-resolver-260423o)
   #:use-module (gaurix packages deptree-resolver-260423i)
   #:export (
             ;; recipe-resolver-260413l recipes
@@ -14114,6 +14115,24 @@
 (re-export tes3cmd)
 (re-export pokemon-colorscripts-fork-git)
 (re-export keepassxc-wordlist-eyeware)
+
+;;; recipe-resolver-260423o
+(re-export amalgo-bin)
+(re-export bab-bin)
+(re-export shaka-packager-bin)
+(re-export ssh2incus-bin)
+(re-export zen-adblocker-bin)
+(re-export vermin-bin)
+(re-export binvec-bin)
+(re-export tabular-bin)
+(re-export logisim-ita-bin)
+(re-export ffdec-bin)
+(re-export llama.cpp-vulkan-bin)
+(re-export kerminal-bin)
+(re-export python-proglog)
+(re-export aggregate)
+(re-export ymuse-bin)
+
 
 ;;; deptree-resolver-260423i re-exports
 (re-export elephant-bin)
