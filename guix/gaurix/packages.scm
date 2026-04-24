@@ -10488,6 +10488,7 @@
 ;; recipe-resolver-260424b (3 NEEDS_RECIPE_DESIGN resolved, 0 BLOCKED)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260424b)
+            ;; recipe-resolver-260424d (95 resolved: 70 binary, 10 fonts, 15 tools; 5 FETCH_FAILED)
   #:re-export (
                sigi
                greetd-tuigreet-fork-git
