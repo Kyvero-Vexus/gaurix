@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424e: 8 BLOCKED resolved (3 recipes, 5 ALREADY_IN_GUIX)
 ;;; deptree-resolver-260424c: 50 BLOCKED resolved, dep-tree priority
             ;; deptree-resolver-260415m
             ;; deptree-resolver-260415n
@@ -10783,4 +10784,7 @@
                poser
                tlsc
                ffuf-bin
+            otf-anti
+            otf-avara
+            ttf-amiri-typewriter
                ))

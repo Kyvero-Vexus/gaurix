@@ -525,6 +525,7 @@
   #:use-module (gaurix packages deptree-resolver-260424b)
   #:use-module (gaurix packages deptree-resolver-260424c)
   #:use-module (gaurix packages deptree-resolver-260424d)
+  #:use-module (gaurix packages deptree-resolver-260424e)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:use-module (gaurix packages recipe-resolver-260423t)
@@ -13176,6 +13177,9 @@
 (re-export wine-gaming-dependencies)
 
 ;; recipe-resolver-260423b (100 recipes)
+  (re-export otf-anti)
+  (re-export otf-avara)
+  (re-export ttf-amiri-typewriter)
 (use-modules (gaurix packages recipe-resolver-260423b))
 (re-export pepv-git)
 (re-export wishlist)
