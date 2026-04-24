@@ -10206,6 +10206,7 @@
                ))
 
 ;; recipe-resolver-260423m (30 TODO resolved)
+            ;; deptree-resolver-260423i (100 BLOCKED resolved via dep-tree priority)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260423m)
   #:re-export (
