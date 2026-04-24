@@ -549,6 +549,7 @@
   #:use-module (gaurix packages recipe-resolver-260424r)
   #:use-module (gaurix packages deptree-resolver-260424u)
   #:use-module (gaurix packages recipe-resolver-260424s)
+  #:use-module (gaurix packages deptree-resolver-260424v)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15141,3 +15142,9 @@
 (re-export slrn-canlock)
 (re-export slxfig-snapshot)
 (re-export vinyl-theme)
+
+; deptree-resolver-260424v recipes
+(re-export esp8266-rtos-sdk)
+(re-export perl-math-clipper)
+(re-export plasma6-applets-panon)
+(re-export shadow-selinux)

@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424v: 86 BLOCKED evaluated (4 recipes, 1 ALREADY_IN_GUIX, 81 remain BLOCKED)
             ;; recipe-resolver-260424s: 100 queue entries resolved (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260424u: 98 BLOCKED evaluated (9 recipes, 3 ALREADY_IN_GUIX, 86 remain BLOCKED)
             ;; recipe-resolver-260424r: 100 queue entries resolved (99 recipes, 1 BLOCKED)
@@ -2749,6 +2750,11 @@
             slrn-canlock
             slxfig-snapshot
             vinyl-theme
+            esp8266-rtos-sdk
+            perl-math-clipper
+            plasma6-applets-panon
+            python-soundcard
+            shadow-selinux
 )
 
 ;; recipe-resolver-260414p
