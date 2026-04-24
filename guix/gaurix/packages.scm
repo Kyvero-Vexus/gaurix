@@ -10103,3 +10103,39 @@
                rockyou
                ttf-cheapskate
                ))
+
+;; recipe-resolver-260423m (30 TODO resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423m)
+  #:re-export (
+               dbus-docs-selinux
+               fatattr
+               fnfx
+               fvwm-icons
+               geekcode
+               gfxtablet-git
+               gtk-theme-windows10-dark
+               helm-synth-common-git
+               jotta-cli
+               kmod-roccat
+               libserialport-git
+               memstat
+               mint-themes-git
+               mobile-broadband-provider-info-git
+               num-utils
+               osgearth-docs
+               otf-fira-code-git
+               otf-openbaskerville
+               python-pyexiftool
+               selinux-refpolicy-src
+               smartsim-git
+               xcursor-neutral++
+               xgboost-git
+               can-utils
+               weex
+               udpcast
+               firefox-extension-keepassxc-browser
+               act-bin
+               duckdns
+               numix-icon-theme-pack-git
+               ))
