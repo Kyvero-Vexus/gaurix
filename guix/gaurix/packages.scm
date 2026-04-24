@@ -10588,3 +10588,39 @@
             ;; xbae
             ;; xcftools
             ;; xlibre-xserver-common-beta
+
+;; recipe-resolver-260424g (30 NEEDS_RECIPE_DESIGN resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260424g)
+  #:re-export (
+               wealthfolio-bin
+               jhentai-bin
+               tinygo-bin
+               seekr-bin
+               fladder-bin
+               nanokvm-usb-bin
+               openterfaceqt-bin
+               tonkeeper-wallet-bin
+               netwatch-tui
+               iris-bin
+               presto-bin
+               leap-bin
+               ffhuman-bin
+               whis-bin
+               yoyo-evolve-bin
+               go-mitmproxy-bin
+               kotlin-language-server-bin
+               ktfmt-bin
+               lettuceai-bin
+               anythingllm-bin
+               hyprshell-bin
+               c-lolcat
+               python-luhncheck
+               linux-router
+               pass-ln
+               reboot-to-windows
+               dosh-docker-shell
+               domake
+               sedutil
+               funchook
+               ))
