@@ -27,6 +27,7 @@
   #:use-module (gnu packages i2p)
   #:use-module (gnu packages sync)
   #:use-module (gaurix packages fluxer-bin)
+  #:use-module (gaurix packages recipe-resolver-260424p)
   ;; NOTE: recipe-resolver-260407b has syntax errors; skipped
   ;; #:use-module (gaurix packages recipe-resolver-260407b)
   #:use-module (gaurix packages recipe-resolver-260407d)
