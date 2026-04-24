@@ -539,6 +539,7 @@
   #:use-module (gaurix packages recipe-resolver-260424i)
   #:use-module (gaurix packages recipe-resolver-260424j)
   #:use-module (gaurix packages recipe-resolver-260424l)
+  #:use-module (gaurix packages recipe-resolver-260424n)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15089,3 +15090,17 @@
 (re-export miru-go-bin)
 (re-export jumpy-bin)
 (re-export vnote-bin)
+
+;;; recipe-resolver-260424n (12 new recipes)
+(re-export svxlink-sounds-en-us-heather-16k)
+(re-export mii-emu)
+(re-export ffqueue-git)
+(re-export looking-glass-rc)
+(re-export looking-glass-rc-host)
+(re-export obs-plugin-looking-glass-rc)
+(re-export chromium-material-icons-for-github-bin)
+(re-export freetype2-macos-browsers-binary-patcher)
+(re-export simulide)
+(re-export swiftshader-git)
+(re-export verinice-bin)
+(re-export python-pocketsphinx)
