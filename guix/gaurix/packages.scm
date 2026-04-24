@@ -10348,4 +10348,111 @@
                ebsl
                jbofihe-git
                abuse-git
+               
+))
+
+;; recipe-resolver-260424a (100 TODO resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260424a)
+  #:re-export (
+               rmapi
+               alx-wol-dkms
+               espanso-gui
+               joshuto-git
+               opengamepadui-bin
+               awatcher-git
+               aspia-client
+               zing-8-bin
+               swtchr
+               spyder-terminal
+               sparkle-git
+               serverseekerv2-git
+               seh-utn
+               scrutiny-runit
+               python-modesolverpy
+               postgresql-uint-git
+               postgresql-uint
+               minibridge-git
+               minibridge
+               libpinmame-git
+               libdxvk-gplasync
+               libdof-git
+               leetcode-local-cli
+               komodo-periphery-bin
+               jdk24-graalvm-ee-bin
+               jdk22-graalvm-bin
+               influxdb-runit
+               customasm
+               bangumium-git
+               httraqt
+               camlpdf
+               hg-evolve
+               superpaper
+               libpostal-git
+               stash
+               brother-ql820nwb
+               vidmerger-git
+               qcalcfilehash
+               python-tryton
+               activity-aware-firefox
+               wretch
+               python-goocalendar
+               newrelic-infra-bin
+               libxerces-c-3-2
+               libpupdmd-git
+               libframeutil-git
+               firefox-extension-simplelogin-bin
+               claude-linux-client-bin
+               suricata
+               iscan-plugin-gt-s650
+               standardfile-bin
+               python-aiomax-git
+               libdmdutil-git
+               immich-runit
+               thor-flash-utility
+               gprbuild-bootstrap
+               ada-language-server-bin
+               freeimage-vpinball-git
+               rustowl-git
+               libaltsound-git
+               fingerprintx-bin
+               fingerprintx
+               codelite-bin
+               retrobyte
+               musicpod
+               tor-browser-alpha-bin
+               ianny-git
+               hopper4
+               rubymine
+               libva-intel-driver-hybrid
+               shiroa
+               mullvad-browser-latest-bin
+               aw-watcher-media-player
+               nping
+               sptlrx-bin
+               codegpt-bin
+               dunst-wayland-git
+               lefthook-bin
+               jcal
+               gcc12-libs
+               picotool
+               mycorrhiza
+               plank-reloaded-git
+               linkwarden
+               skippy-xd-git
+               simple-scan-linuxmint
+               qutebrowser-profile-git
+               recyclarr-bin
+               td-tui
+               litra
+               hedgedoc2
+               victoriametrics
+               wlmaker
+               nrfconnect-appimage
+               sacd-extract
+               gnome-system-monitor-linuxmint
+               hypnotix-git
+               vapoursynth-plugin-adjust-git
+               fotokilof
+               mcptools
                ))
