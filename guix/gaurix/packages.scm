@@ -10313,3 +10313,39 @@
                bootchart2
                mkaudiocdrimg
                ))
+
+;; recipe-resolver-260423s (30 NEEDS_RECIPE_DESIGN resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423s)
+  #:re-export (
+               nexttrace-bin
+               picsort-bin
+               nvidia-gpu-exporter-bin
+               clipvault-bin
+               lact-headless-bin
+               feluda-bin
+               dopamine-bin
+               teleport-client-bin
+               nitchrevived-bin
+               nmp-settings-bin
+               clash-verge-rev-autobuild-bin
+               discord-rpc-extension-bin
+               bluebubbles-bin
+               deepchat-bin
+               firedragon-alpha-bin
+               java17-openjfx-bin
+               shstatus
+               caches-manager
+               path-utils
+               ffmpeg-audio-thumbnailer
+               fcitx5-skin-ori-git
+               python-stringzilla
+               python-pdf2doi
+               python-pympress
+               python-audible-cli
+               uhubctl
+               vvdec
+               ebsl
+               jbofihe-git
+               abuse-git
+               ))
