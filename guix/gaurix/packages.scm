@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424t: 100 BLOCKED evaluated (11 recipes, 2 ALREADY_IN_GUIX, 87 remain BLOCKED)
             ;; deptree-resolver-260424p: 100 BLOCKED evaluated (27 recipes, 73 remain BLOCKED)
             ;; deptree-resolver-260424o: 100 evaluated (16 recipes, 18 ALREADY_IN_GUIX, 66 BLOCKED)
             ;; recipe-resolver-260424p: 100 queue entries resolved (51 recipes, 49 BLOCKED)
@@ -2723,6 +2724,17 @@
             darknet-hankai-git
             assaultcube-common
             magics-plus-plus
+            dashpay-bls-signatures
+            fht-compositor
+            fht-share-picker-git
+            ipe-editor
+            minikube-git
+            mycorrhiza-git
+            ocaml-lablgl
+            python-pylibssh
+            redlib-git
+            rsdkv4-bin
+            thanos-monitoring
 )
 
 ;; recipe-resolver-260414p
