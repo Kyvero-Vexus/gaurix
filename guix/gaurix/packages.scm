@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424p: 100 BLOCKED evaluated (27 recipes, 73 remain BLOCKED)
             ;; deptree-resolver-260424o: 100 evaluated (16 recipes, 18 ALREADY_IN_GUIX, 66 BLOCKED)
             ;; recipe-resolver-260424p: 100 queue entries resolved (51 recipes, 49 BLOCKED)
             ;; deptree-resolver-260424n: 12 BLOCKED resolved (4 recipes, 3 ALREADY_IN_GUIX, 1 ALREADY_RESOLVED, 1 DUPLICATE, 2 mapped, 45 remain BLOCKED)
@@ -2694,6 +2695,34 @@
             liblinear
             lua-tl
             betterlockscreen
+            ;; deptree-resolver-260424p exports
+            riverguile-git
+            simplewaita-git
+            dwl-guile-git
+            lisp-wrapper
+            libdng-git
+            ps3netsrv
+            gss-ntlmssp-pkg
+            c-icap
+            ctwm-bzr
+            passmenu-otp-git
+            python-icsv2ledger-git
+            python-pynotify-inotify
+            python-rtmixer
+            python-ivre-git
+            adwaita-color-schemes
+            notmuch-tools-git
+            ha-glue
+            libgaminggear
+            chromeos-flashrom-git
+            qtemu-git
+            the-libs
+            opencoarrays
+            precice-coupling
+            nimdow-git
+            darknet-hankai-git
+            assaultcube-common
+            magics-plus-plus
 )
 
 ;; recipe-resolver-260414p
@@ -10837,4 +10866,37 @@
                clay
                tex-gyre-math-fonts
                gqrx-udev
+               ))
+
+;; deptree-resolver-260424p (100 BLOCKED evaluated: 27 recipes, 73 remain BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260424p)
+  #:re-export (
+               riverguile-git
+               simplewaita-git
+               dwl-guile-git
+               lisp-wrapper
+               libdng-git
+               ps3netsrv
+               gss-ntlmssp-pkg
+               c-icap
+               ctwm-bzr
+               passmenu-otp-git
+               python-icsv2ledger-git
+               python-pynotify-inotify
+               python-rtmixer
+               python-ivre-git
+               adwaita-color-schemes
+               notmuch-tools-git
+               ha-glue
+               libgaminggear
+               chromeos-flashrom-git
+               qtemu-git
+               the-libs
+               opencoarrays
+               precice-coupling
+               nimdow-git
+               darknet-hankai-git
+               assaultcube-common
+               magics-plus-plus
                ))
