@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+;;; deptree-resolver-260424c: 50 BLOCKED resolved, dep-tree priority
             ;; deptree-resolver-260415m
             ;; deptree-resolver-260415n
             ;; recipe-resolver-260415q (bookkeeping-only, 30 NRD resolved)
@@ -10493,4 +10494,32 @@
                sigi
                greetd-tuigreet-fork-git
                phpactor
+            intermodal-bin
+            invoice-bin
+            jotit-bin
+            jsongrep-bin
+            k0sctl-bin
+            kalker-bin
+            kv-bin
+            ladybug-bin
+            languagetool-ngrams-es
+            lazydocker-ng-bin
+            lazyjira-bin
+            lazysql-bin
+            lnko-bin
+            lzbench-bin
+            makeenv
+            mchose-a7-v2-pro-udev
+            nautilus-megasync
+            ninvaders
+            otf-kopub
+            otf-myna
+            posy-improved-cursors
+            regina-rexx-doc
+            rime-wanxiang-gram-zh-hans
+            rusticon-bin
+            sequin-bin
+            setpgrp
+            simple-http-server-bin
+            smb1r-bin
                ))

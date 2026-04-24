@@ -523,6 +523,7 @@
   #:use-module (gaurix packages deptree-resolver-260423j)
   #:use-module (gaurix packages deptree-resolver-260424a)
   #:use-module (gaurix packages deptree-resolver-260424b)
+  #:use-module (gaurix packages deptree-resolver-260424c)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:use-module (gaurix packages recipe-resolver-260423t)
@@ -3085,6 +3086,58 @@
             terminal-tetris
             browsr
             mfgtools
+
+;;; deptree-resolver-260424c
+            intermodal-bin
+            invoice-bin
+            jotit-bin
+            jsongrep-bin
+            k0sctl-bin
+            kalker-bin
+            kv-bin
+            ladybug-bin
+            languagetool-ngrams-es
+            lattice-bin
+            lazydocker-ng-bin
+            lazyjira-bin
+            lazysql-bin
+            lbforth
+            librespeed-cli-bin
+            lnko-bin
+            lzbench-bin
+            makeenv
+            mchose-a7-v2-pro-udev
+            mchose-ace68-udev
+            megit
+            mongotimer
+            moor-bin
+            nautilus-megasync
+            nextdns-bin
+            ninvaders
+            nitro-bin
+            nvidia-prime-rtd3pm
+            ocr-fonts
+            openrgb-udev-rules
+            otf-kopub
+            otf-myna
+            parm-bin
+            pocket-id-bin
+            posy-improved-cursors
+            protonup-rs-bin
+            reddix-bin
+            regina-rexx-doc
+            rime-wanxiang-gram-zh-hans
+            rtimelog
+            rtimelogger
+            rust-docs
+            rust-motd-bin
+            rusticon-bin
+            sequin-bin
+            setpgrp
+            shiru
+            simple-http-server-bin
+            smap-bin
+            smb1r-bin
 ))
             mingw-w64-readline
             mingw-w64-gettext
@@ -14644,3 +14697,8 @@
 (re-export marmite-bin)
 (re-export rtimelog)
 (re-export 7zip-docs)
+
+;;; deptree-resolver-260424c
+;;; 50 packages resolved via dep-tree priority
+;;; All recipes in (gaurix packages deptree-resolver-260424c)
+
