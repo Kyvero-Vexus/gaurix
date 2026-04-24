@@ -546,6 +546,7 @@
   #:use-module (gaurix packages recipe-resolver-260423k)
   #:use-module (gaurix packages recipe-resolver-260423l)
   #:use-module (gaurix packages recipe-resolver-260423m)
+  #:use-module (gaurix packages recipe-resolver-260423n)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -14311,3 +14312,20 @@
 (re-export pm2ml)
 (re-export python-diskcache)
 (re-export python-mock)
+
+;;; recipe-resolver-260423n
+(re-export libgen-cli-bin)
+(re-export otf-joscelyn)
+(re-export kctrl-bin)
+(re-export namespaced-openvpn-git)
+(re-export joshuto-bin)
+(re-export zclipboard)
+(re-export vpinball-bgfx.cmake)
+(re-export vkfetch-git)
+(re-export scie-pants-bin)
+(re-export ontake-copybara-git)
+(re-export gocurl-bin)
+(re-export git-age-bin)
+(re-export tes3cmd)
+(re-export pokemon-colorscripts-fork-git)
+(re-export keepassxc-wordlist-eyeware)
