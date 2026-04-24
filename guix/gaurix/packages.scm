@@ -10476,3 +10476,11 @@
                netcheck
                scalpel-git
                ))
+
+;; deptree-resolver-260424a (2 BLOCKED resolved: 1 new recipe, 1 compat alias; 9 remain BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260424a)
+  #:re-export (
+               openfortivpn-webview-qt
+               vscodium-electron
+               ))

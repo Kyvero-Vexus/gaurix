@@ -134850,6 +134850,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: MULTILIB_UNSUPPORTED: requires 32-bit libraries (lib32-libxml2-legacy, lib32-popt, lib32-gcc-libs); Guix lacks multilib support (deptree-resolver-260423j)
+   - Status: BLOCKED: MULTILIB_UNSUPPORTED: Canon CAPT driver requires 32-bit captfilter binary. 3 approaches exhausted: no 64-bit build possible, no alternative Canon 64-bit driver, Guix lacks multilib (deptree-resolver-260424a)
 ** DONE 17256. digilent.adept.runtime
    - AUR votes: 16, popularity: 0.0017
    - Note: The Adept Runtime consists of the shared libraries, firmware images, and configuration files necessary to communicate with Digilent's devices.
@@ -134889,6 +134890,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: MULTILIB_UNSUPPORTED: requires 32-bit libraries (lib32-libidn, lib32-libsndfile, lib32-util-linux); Guix lacks multilib support (deptree-resolver-260423j)
+   - Status: BLOCKED: MULTILIB_UNSUPPORTED: prebuilt Second Life viewer requiring 32-bit libs. 3 approaches exhausted: no 64-bit binary, source build still needs 32-bit compat, Guix lacks multilib (deptree-resolver-260424a)
 ** DONE 17262. firefox-userchromejs
    - AUR votes: 3, popularity: 0.0017
    - Note: Patching Firefox to enable JS injection (userchrome-js)
@@ -135004,6 +135006,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: ROCM_DEPENDENCY: requires AMD ROCm stack not available in Guix (deptree-resolver-260423j)
+   - Status: BLOCKED: ROCM_DEPENDENCY: requires full AMD ROCm stack (miopen-hip, rccl, rocm-hip-runtime). 3 approaches exhausted: no ROCm in Guix, CPU fallback defeats purpose, partial ROCm too many components (deptree-resolver-260424a)
 ** DONE 17279. apk-mitm
    - AUR votes: 6, popularity: 0.0016
    - Note: A CLI application that automatically prepares Android APK files for HTTPS inspection
@@ -135447,6 +135450,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: CUDA_DEPENDENCY: requires NVIDIA CUDA toolkit/runtime not available in Guix (deptree-resolver-260423j)
+   - Status: BLOCKED: CUDA_DEPENDENCY + NON_FREE: requires NVIDIA CUDA + nonfree codecs (libfdk-aac). 3 approaches exhausted: no CUDA in Guix, non-CUDA build is regular ffmpeg, license is custom:nonfree (deptree-resolver-260424a)
 ** DONE 17347. f2p-evo-bin
    - AUR votes: 1, popularity: 1.0000
    - Note: F2P Evo - unofficial Hytale launcher (Rust + Tauri 2 + Vue 3) with multiplayer, mods, chat, and auto-updates (binary version)
@@ -136021,7 +136025,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 17422. openfortivpn-webview-qt
+** DONE 17422. openfortivpn-webview-qt
    - AUR votes: 3, popularity: 0.0016
    - Note: Application to perform the SAML single sing-on and easily retrieve the SVPNCOOKIE needed by openfortivpn - Qt version
    - TODO Status: TODO
@@ -136030,6 +136034,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: MISSING_DEP: requires Qt WebEngine (Chromium-based) not available in Guix (deptree-resolver-260423j)
+   - Status: RESOLVED: cmake recipe with Qt6 WebEngine (qtwebengine 6.9.3 available in Guix); was incorrectly listed as MISSING_DEP (deptree-resolver-260424a)
+   - TODO Status: DONE
 ** DONE 17423. sasquatch-git  :recipe-resolver-260423p:recipe-generated:
    - AUR votes: 4, popularity: 0.0016
    - Note: Patched unsquashfs utility with support for vendor-specific SquashFS implementations
@@ -136047,6 +136053,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: MULTILIB_UNSUPPORTED: requires 32-bit libraries (lib32-alsa-lib, lib32-curl, lib32-freetype2); Guix lacks multilib support (deptree-resolver-260423j)
+   - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit game mod ("32" in name). 3 approaches exhausted: 64-bit etlegacy is separate package, this variant requires lib32-*, Guix lacks multilib (deptree-resolver-260424a)
 ** DONE 17425. postier-bin  :recipe-resolver-260423p:recipe-generated:
    - AUR votes: 2, popularity: 0.0016
    - Note: API client without bloat
@@ -136071,7 +136078,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** BLOCKED 17428. vscodium-electron
+** DONE 17428. vscodium-electron
    - AUR votes: 10, popularity: 0.0016
    - Note: VS Code without MS branding/telemetry/licensing. - System-wide Electron edition
    - TODO Status: TODO
@@ -136080,6 +136087,8 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: COMPLEX_BUILD: requires building from source with system Electron (electron39); ~1000 node deps (deptree-resolver-260423j)
+   - Status: RESOLVED: compat alias to Guix vscodium (already uses system Electron) (deptree-resolver-260424a)
+   - TODO Status: DONE
 ** DONE 17429. python-flax
    - Status: DONE: recipe in recipe-resolver-260417af.scm (python-flax v0.12.6, pyproject-build-system, expat)
    - AUR votes: 5, popularity: 0.0016
@@ -136120,6 +136129,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: SOURCE_UNAVAILABLE: original Clash for Windows project deleted from GitHub; Chinese fork status uncertain (deptree-resolver-260423j)
+   - Status: BLOCKED: LICENSE_REVIEW_NEEDED: Chinese fork active at github.com/Z-Siqi/Clash-for-Windows_Chinese with Linux x64 builds, but no license declared; original Clash for Windows was proprietary. 3 approaches: source confirmed available, but license unclear, redistribution rights uncertain (deptree-resolver-260424a)
 ** DONE 17434. setserial  :recipe-resolver-260423p:recipe-generated:
    - AUR votes: 15, popularity: 0.0015
    - Note: Allows to change various attributes of a serial device
@@ -136177,6 +136187,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: LICENSE_REVIEW_NEEDED: requires purchased game license from factorio.com; binary distribution restricted by EULA (deptree-resolver-260423j)
+   - Status: BLOCKED: NON_DISTRIBUTABLE: commercial game; EULA prohibits binary redistribution. 3 approaches exhausted: no OSS client, installer needs user credentials, EULA explicitly restricts distribution (deptree-resolver-260424a)
 ** DONE 17441. flycast-bin
    - AUR votes: 1, popularity: 0.0015
    - Note: Sega Dreamcast, NAOMI, NAOMI 2, Atomiswave and System SP Emulator
@@ -136397,6 +136408,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: PLATFORM_UNSUPPORTED: Windows-only mod (Rocket League via Steam/Proton); no native Linux binary or source available (deptree-resolver-260423j)
+   - Status: BLOCKED: PLATFORM_UNSUPPORTED: Windows-only mod; no native Linux binary or source. 3 approaches exhausted: no Linux port, no wine/proton wrapper feasible, no alternative mods (deptree-resolver-260424a)
 ** DONE 17469. sgf-render  :recipe-resolver-260423p:recipe-generated:
    - AUR votes: 2, popularity: 0.0014
    - Note: Sgf Rendering CLI written in Rust
@@ -136669,6 +136681,7 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: BLOCKED: MULTILIB_UNSUPPORTED: requires 32-bit libraries (lib32-zlib, lib32-gcc-libs); Guix lacks multilib support (deptree-resolver-260423j)
+   - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit NVIDIA 390xx legacy driver; Guix lacks multilib. 3 approaches exhausted: no 64-bit equivalent, different driver series, no multilib workaround (deptree-resolver-260424a)
 ** DONE 17503. virtualfish  :recipe-resolver-260423p:recipe-generated:
    - AUR votes: 12, popularity: 0.0014
    - Note: Fish shell tool for managing Python virtual environments
