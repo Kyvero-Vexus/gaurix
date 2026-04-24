@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
             ;; deptree-resolver-260424v: 86 BLOCKED evaluated (4 recipes, 1 ALREADY_IN_GUIX, 81 remain BLOCKED)
             ;; recipe-resolver-260424s: 100 queue entries resolved (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260424u: 98 BLOCKED evaluated (9 recipes, 3 ALREADY_IN_GUIX, 86 remain BLOCKED)
@@ -2759,6 +2760,7 @@
 
 ;; recipe-resolver-260414p
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414p)
   #:use-module (gaurix packages recipe-resolver-260414r)
   #:use-module (gaurix packages recipe-resolver-260414u)
@@ -3031,6 +3033,7 @@
 
 ;; recipe-resolver-260414v
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414v)
   #:re-export (gitfourchette
                wayfarer
@@ -3043,6 +3046,7 @@
 
 ;; recipe-resolver-260414w
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414w)
   #:re-export (emacs-calfw-git
                emacs-deferred
@@ -3804,6 +3808,7 @@
 
 ;; recipe-resolver-260414z
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414z)
   #:re-export (ww-manager
                tg-config
@@ -3814,6 +3819,7 @@
 
 ;; recipe-resolver-260414aa
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414aa)
   #:re-export (gf2-git
                frame-touch
@@ -3838,6 +3844,7 @@
 
 ;; deptree-resolver-260414s
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260414s)
   #:re-export (gtk2-plusextra
                archbuilder
@@ -3876,6 +3883,7 @@
 
 ;; recipe-resolver-260414ab
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414ab)
   #:re-export (openobex
                obexftp
@@ -3889,6 +3897,7 @@
 
 ;; deptree-resolver-260414t
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260414t)
   #:re-export (zombie
                4kvideodownloaderplus
@@ -3918,6 +3927,7 @@
 
 ;; recipe-resolver-260414ac
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414ac)
   #:re-export (linux6-dot-19-dot-10-dot-arch1-1-headers-bin
                linux6-dot-19-dot-10-dot-arch1-1-docs-bin
@@ -4118,6 +4128,7 @@
 
 ;; recipe-resolver-260414ad
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260414ad)
   #:use-module (gaurix packages deptree-resolver-260414v)
   #:use-module (gaurix packages deptree-resolver-260415b)
@@ -4501,6 +4512,7 @@
 
 ;; recipe-resolver-260415d
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260415d)
   #:re-export (libtrash
                scolorpicker-legacy
@@ -4519,6 +4531,7 @@
 
 ;; deptree-resolver-260415c
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260415c)
   #:re-export (haskell-filepath
                firefox-nightly
@@ -4600,6 +4613,7 @@
 
 ;; recipe-resolver-260415e
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260415e)
   #:re-export (hardinfo2
                ssh-studio
@@ -4615,6 +4629,7 @@
 
 ;; deptree-resolver-260415f
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260415f)
   #:re-export (gnu-apl
                opentyrian
@@ -4640,12 +4655,14 @@
 
 ;; recipe-resolver-260415f
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260415f)
   #:re-export (pantheon-dock))
 
 
 ;; recipe-resolver-260415g
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260415g)
   #:re-export (krokiet-bin
                orca-slicer-bin
@@ -5105,6 +5122,7 @@
             libretro-azahar-core-bin
             osrm-backend
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260415l)
   #:use-module (gaurix packages recipe-resolver-260415o)
   #:use-module (gaurix packages recipe-resolver-260416b)
@@ -5570,6 +5588,7 @@
 ))
 
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260416d)
   #:re-export (
             ryelang-git
@@ -5876,6 +5895,7 @@
 ))
 
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260416f)
   #:use-module (gaurix packages recipe-resolver-260416i)
   #:use-module (gaurix packages recipe-resolver-260416j)
@@ -6350,6 +6370,7 @@
             klatexformula
 
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417x)
   #:use-module (gaurix packages deptree-resolver-260417y)
   #:use-module (gaurix packages deptree-resolver-260417z)
@@ -6512,6 +6533,7 @@
 
 ;; deptree-resolver-260417ad (12 BLOCKED resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260417ad)
   #:re-export (amass
                openutau-bin
@@ -6528,6 +6550,7 @@
 
 ;; recipe-resolver-260417af (93 Python recipes, 7 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417af)
   #:re-export (python-hurry-filesize
                python-hyprpy
@@ -6654,6 +6677,7 @@
 
 ;; deptree-resolver-260417aj (12 BLOCKED resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260417aj)
   #:re-export (gizmosql-bin
                mdatp-bin
@@ -6670,6 +6694,7 @@
 
 ;; recipe-resolver-260417aj (8 NRD resolved, 9 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417aj)
   #:re-export (ms-sys
                moodbar
@@ -6682,6 +6707,7 @@
 
 ;; recipe-resolver-260417ak (3 NRD resolved, 7 BLOCKED — final sweep)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417ak)
   #:re-export (python-nvidia-ml-py
                python-gpustat
@@ -6689,6 +6715,7 @@
 
 ;; recipe-resolver-260417al (99 recipes, 1 BLOCKED — 100 TODO queue drain)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417al)
   #:re-export (               maplemononormalnl-cn
                maplemononormalnl-cn-unhinted
@@ -6792,6 +6819,7 @@
 
 ;; recipe-resolver-260417am (27 NRD resolved, 5 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417am)
   #:re-export (moor-bin
                steamguard-cli-bin
@@ -6831,6 +6859,7 @@
 
 ;; recipe-resolver-260417ao (20 NRD resolved, 5 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417ao)
   #:re-export (ttf-paratype
                culmus
@@ -6855,6 +6884,7 @@
 
 ;; recipe-resolver-260417ap (17 NRD resolved, 8 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417ap)
   #:re-export (ngrok
                mongodb-tools-bin
@@ -6876,6 +6906,7 @@
 
 ;; recipe-resolver-260417aq (5 NRD resolved, 18 BLOCKED + 2 deferred from ao)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417aq)
   #:re-export (wscat
                apache-tools
@@ -6885,6 +6916,7 @@
 
 ;; recipe-resolver-260417as (20 NRD resolved, 10 ALREADY_RESOLVED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417as)
   #:re-export (
                twitch-cli-bin
@@ -6912,6 +6944,7 @@
 
 ;; deptree-resolver-260417au (11 BLOCKED resolved: 11 new recipes)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260417au)
   #:re-export (arch-silence-grub-theme-git
                spicetify-themes-git
@@ -6927,6 +6960,7 @@
 
 ;; recipe-resolver-260417au (30 NRD resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417au)
   #:re-export (deepchat-bin
                ripes-bin
@@ -6947,6 +6981,7 @@
 
 ;; recipe-resolver-260417av (20 recipes, 80 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417av)
   #:re-export (
                python-virt-lightning
@@ -6974,6 +7009,7 @@
 ;; recipe-resolver-260417aw (12 recipes, 18 BLOCKED)
             ;; deptree-resolver-260417av: 31 BLOCKED resolved (lexido, charm-pop, sccache-git, sunsetr, froggit, ...)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417aw)
   #:re-export (
                tmux-plugin-manager
@@ -6992,6 +7028,7 @@
 
 ;; recipe-resolver-260417ax (17 recipes, 13 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260417ax)
   #:re-export (
   ;; deptree-resolver-260418a (13 packages)
@@ -7029,6 +7066,7 @@
 
 ;; recipe-resolver-260418b: 30 NRD resolved (janet-lang, go-mtpfs, tiptop-cli, seqtui, terminal-typeracer, ...)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418b)
   #:re-export (
                janet-lang
@@ -7065,6 +7103,7 @@
 
 ;; recipe-resolver-260418c: 30 NRD resolved (dmenu-emoji, xattrvi, zgen, zaread, wireguard-vanity-keygen, ...)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418c)
   #:re-export (
                dmenu-emoji
@@ -7101,6 +7140,7 @@
 
 ;;; deptree-resolver-260418d: 23 BLOCKED resolved (18 ALREADY_IN_GUIX, 23 new recipes, 1 deps)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260418d)
   #:re-export (
     binance-app
@@ -7132,6 +7172,7 @@
 
 ;; recipe-resolver-260418d: 30 NRD resolved (wrkflw-bin, lazytail-bin, tmux-plugin-panel-bin, codexbar, weylus-bin, ...)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418d)
   #:re-export (
                wrkflw-bin
@@ -7170,6 +7211,7 @@
 
 ;; recipe-resolver-260418e: 100 NRD resolved (atlassify-bin, hula-bin, ...)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418e)
   #:re-export (
                atlassify-bin
@@ -7279,6 +7321,7 @@
 ;; recipe-resolver-260418f: 30 NRD resolved (c-lolcat, celt, uhubctl, ksh93-git, ...)
             ;; deptree-resolver-260418g: 8 BLOCKED resolved, 42 remain BLOCKED
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418f)
   #:re-export (
                c-lolcat
@@ -7317,6 +7360,7 @@
 ;; recipe-resolver-260418h: 28 NRD resolved (ttf-symbola, otf-symbola, svxlink-sounds-en-us-heather-16k, ...)
             ;; 2 BLOCKED: gde-creator-bin (NO_LICENSE), rice-switcher (UPSTREAM_DELETED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418h)
             ;; recipe-resolver-260418i: 100 NRD resolved (pkg2appimage, gollama-bin, adguardhome-bin, c3c-bin, code-server-bin, whisper-cpp, ...)
   #:re-export (
@@ -7352,6 +7396,7 @@
 
 ;; deptree-resolver-260418j (43 BLOCKED resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260418j)
             ;; recipe-resolver-260418j: 30 NRD resolved
   #:re-export (iup
@@ -7401,6 +7446,7 @@
 ;; recipe-resolver-260418k (30 NRD resolved)
             ;; deptree-resolver-260418k: pool depleted — 43 formerly BLOCKED finalized as FAILED (exhausted)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418k)
   #:re-export (safe-rm
                parui
@@ -7435,6 +7481,7 @@
 
 ;; recipe-resolver-260418l (100 NRD resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418l)
   #:re-export (meteor
                turso
@@ -7539,6 +7586,7 @@
 
 ;; recipe-resolver-260418m (18 NRD resolved, 10 ALREADY_RESOLVED, 2 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418m)
   #:re-export (nextdns-bin
                neohtop-bin
@@ -7562,6 +7610,7 @@
 ;; recipe-resolver-260418n (9 NRD resolved, 1 ALREADY_IN_GUIX, 20 EXHAUSTED)
 ;; deptree-resolver-260418p
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418n)
   #:re-export (               plasmazones-bin
                rustdesk-bin
@@ -7575,6 +7624,7 @@
 
 ;; recipe-resolver-260418p (75 NRD resolved, 25 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418p)
   #:re-export (otf-alegreya
                ttf-alegreya
@@ -7655,6 +7705,7 @@
 
 ;; recipe-resolver-260418q (8 NRD resolved, 22 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418q)
   #:re-export (osspd
                termora-bin
@@ -7668,6 +7719,7 @@
 ;; recipe-resolver-260418r (15 NRD resolved, 15 BLOCKED)
 ;; deptree-resolver-260418s
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418r)
   #:re-export (positron-ide-devel-bin
                muffon-bin
@@ -7707,6 +7759,7 @@
 
 ;; recipe-resolver-260418t (98 recipes, 100 TODO attempted)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418t)
   #:re-export (
                gstreamer0.10-base-plugins
@@ -7812,6 +7865,7 @@
 ;; recipe-resolver-260418u (3 NRD resolved, 27 EXHAUSTED)
 ;; deptree-resolver-260418v
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418u)
   #:re-export (
                pycdc
@@ -7821,6 +7875,7 @@
 
 ;; recipe-resolver-260418v (4 NRD resolved, 26 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418v)
   #:re-export (
                woodland
@@ -7831,6 +7886,7 @@
 
 ;; deptree-resolver-260418w (26 BLOCKED resolved, 29 FAILED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260418w)
   #:re-export (
                ubuntu-mate-icon-themes
@@ -7863,6 +7919,7 @@
 
 ;; recipe-resolver-260418w (18 NRD resolved, 11 EXHAUSTED; python-dashtable already in 260417af)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418w)
   #:re-export (
                python-certbot-pkcs12
@@ -7888,6 +7945,7 @@
 ;; recipe-resolver-260418x (93 recipes, 7 BLOCKED)
   ;; recipe-resolver-260418y (30 NRD resolved, 7 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418x)
   #:re-export (
                voicevox-appimage
@@ -8017,6 +8075,7 @@
 
 ;; deptree-resolver-260418z (11 BLOCKED resolved, 7 FAILED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260418z)
   #:re-export (
                krillinai-bin
@@ -8034,6 +8093,7 @@
 
 ;; recipe-resolver-260418z (30 NRD resolved, 8 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418z)
   #:re-export (
                jdk21-temurin
@@ -8070,6 +8130,7 @@
 
 ;; recipe-resolver-260418aa (93 NRD resolved, 7 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418aa)
   #:re-export (
                testssl-sh-git
@@ -8300,6 +8361,7 @@
 
 ;; recipe-resolver-260418ad (14 NRD resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418ad)
   #:re-export (tsync
                dupster
@@ -8318,6 +8380,7 @@
 
 ;; recipe-resolver-260418ae (100 TODO resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418ae)
   #:re-export (
                mendeleydesktop-bundled
@@ -8469,6 +8532,7 @@
 
 ;; deptree-resolver-260418ai (99 TODO resolved, 0 FAILED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260418ai)
   #:re-export (
                kio-git
@@ -8674,6 +8738,7 @@
 
 ;; recipe-resolver-260418ai (18 NEEDS_RECIPE_DESIGN resolved, 12 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418ai)
   #:re-export (
                ryujinx-bin
@@ -8698,6 +8763,7 @@
 
 ;; recipe-resolver-260418aj (13 NEEDS_RECIPE_DESIGN resolved, 17 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418aj)
   #:re-export (
                lobster
@@ -8721,6 +8787,7 @@
 
 ;; recipe-resolver-260418ak (3 NEEDS_RECIPE_DESIGN resolved, 27 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418ak)
   #:re-export (
                opendeck
@@ -8730,6 +8797,7 @@
 
 ;; recipe-resolver-260418al (12 NEEDS_RECIPE_DESIGN resolved, 18 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260418al)
   #:re-export (
                libmodule
@@ -8748,6 +8816,7 @@
 
 ;; deptree-resolver-260418al (84 resolved, 16 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260418al)
   #:re-export (
                ssh-chat-git
@@ -9224,6 +9293,7 @@
 
 ;; recipe-resolver-260419e (93 recipes)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260419e)
   #:re-export (cobalt-lang
                fitgirl-ddl-git
@@ -9322,6 +9392,7 @@
 
 ;; recipe-resolver-260419f (13 NRD resolved: 13 recipes; 17 EXHAUSTED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260419f)
   #:re-export (grub-theme-tela-color
                pomo-bin
@@ -9339,6 +9410,7 @@
 
 ;; deptree-resolver-260419e (8 BLOCKED resolved: 9 recipes incl. oracle-instantclient-basic dep; 1 BLOCKED remains)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260419e)
   #:re-export (oracle-instantclient-basic
                oracle-instantclient-sqlplus
@@ -9353,6 +9425,7 @@
 ;; recipe-resolver-260419g (20 recipes, 10 blocked)
             ;; recipe-resolver-260419h (30 NRD resolved: all SUBSUMES_BY_PARENT — PHP84 extensions built into Guix php)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260419g)
   #:re-export (iwmenu-bin
                bzmenu-bin
@@ -9377,6 +9450,7 @@
 
 ;; recipe-resolver-260419i (30 NRD resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260419i)
   #:re-export (
                ttf-unifont
@@ -9413,6 +9487,7 @@
 
 ;; recipe-resolver-260419j (95 recipes)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260419j)
   #:re-export (lncur
                vertd-git
@@ -9513,6 +9588,7 @@
 
 ;; recipe-resolver-260423a (21 NRD resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423a)
   #:re-export (
                libxml2-git
@@ -9540,6 +9616,7 @@
 
 ;; recipe-resolver-260423b (100 recipes)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423b)
   #:use-module (gaurix packages recipe-resolver-260423f)
   #:re-export (
@@ -9912,6 +9989,7 @@
 ;;; - pvs-studio
 
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423i)
   #:re-export (
                cyrus-imapd-docs
@@ -10080,6 +10158,7 @@
 ;;; - piper-voices-en-gb
 
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423j)
   #:re-export (
                wine-stable-mono
@@ -10147,6 +10226,7 @@
 ;;; - python-rofi-git
 
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423k)
   #:re-export (
                aspnet-targeting-pack-9-0-bin
@@ -10183,6 +10263,7 @@
 
 ;; recipe-resolver-260423l (100 TODO resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423l)
   #:re-export (
                stm32flash
@@ -10290,6 +10371,7 @@
 ;; recipe-resolver-260423m (30 TODO resolved)
             ;; deptree-resolver-260423i (100 BLOCKED resolved via dep-tree priority)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423m)
   #:re-export (
                dbus-docs-selinux
@@ -10326,6 +10408,7 @@
 
 ;; recipe-resolver-260423q (30 NRD resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423q)
   #:re-export (
                iortcw-data
@@ -10362,6 +10445,7 @@
 
 ;; recipe-resolver-260423r (30 NEEDS_RECIPE_DESIGN resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423r)
   #:re-export (
                amaranth-font
@@ -10398,6 +10482,7 @@
 
 ;; recipe-resolver-260423s (30 NEEDS_RECIPE_DESIGN resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:re-export (
                nexttrace-bin
@@ -10435,6 +10520,7 @@
 
 ;; recipe-resolver-260424a (100 TODO resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260424a)
   #:re-export (
                rmapi
@@ -10541,6 +10627,7 @@
 
 ;; recipe-resolver-260423t (22 NEEDS_RECIPE_DESIGN resolved, 8 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260423t)
   #:re-export (
                ttf-comfortaa
@@ -10561,6 +10648,7 @@
 
 ;; deptree-resolver-260424a (2 BLOCKED resolved: 1 new recipe, 1 compat alias; 9 remain BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260424a)
   #:re-export (
                openfortivpn-webview-qt
@@ -10569,6 +10657,7 @@
 
 ;; recipe-resolver-260424b (3 NEEDS_RECIPE_DESIGN resolved, 0 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260424b)
             ;; recipe-resolver-260424d (95 resolved: 70 binary, 10 fonts, 15 tools; 5 FETCH_FAILED)
   #:re-export (
@@ -10672,6 +10761,7 @@
 
 ;; recipe-resolver-260424g (30 NEEDS_RECIPE_DESIGN resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260424g)
   #:re-export (
                wealthfolio-bin
@@ -10708,6 +10798,7 @@
 
 ;; recipe-resolver-260424h (100 NEEDS_RECIPE_DESIGN resolved)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages recipe-resolver-260424h)
   #:use-module (gaurix packages recipe-resolver-260424o)
   #:re-export (
@@ -10902,6 +10993,7 @@
 
 ;; deptree-resolver-260424p (100 BLOCKED evaluated: 27 recipes, 73 remain BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
   #:use-module (gaurix packages deptree-resolver-260424p)
   #:re-export (
                riverguile-git

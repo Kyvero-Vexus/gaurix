@@ -551,6 +551,7 @@
   #:use-module (gaurix packages recipe-resolver-260424s)
   #:use-module (gaurix packages recipe-resolver-260424t)
   #:use-module (gaurix packages deptree-resolver-260424v)
+  #:use-module (gaurix packages deptree-resolver-260424w)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15224,3 +15225,10 @@
 (re-export tockler-bin)
 (re-export tess-bin)
 (re-export sglauncher-git)
+
+; deptree-resolver-260424w recipes
+(re-export dropbox)
+(re-export electron23-bin)
+(re-export realvnc-rvnc-connect)
+(re-export n8n)
+(re-export heroku-cli)
