@@ -10729,4 +10729,31 @@
                foamshot-bin
                gnome-shell-extension-unite
                httpie-desktop-bin
+               ;; recipe-resolver-260424i
+               ttf-impallari-cabin-font
+               mkbold-mkitalic
+               ttf-sudo
+               ttf-pacifico
+               ttf-remixicon
+               ttf-roboto-serif
+               fonts-et-book
+               ttf-aref-ruqaa
+               ttf-martian-mono
+               ttf-reem-kufi
+               otf-hanken-grotesk
+               awesome-themes-git
+               flat-remix-gnome
+               vimix-icon-theme
+               vimix-gtk-themes
+               xcursor-simp1e-zenburn
+               zorin-icon-themes
+               adwaita-plus-git
+               gtk-cyberpunk-neon-theme-git
+               traefik-bin
+               dufs-bin
+               git-town-bin
+               sqlfmt-bin
+               docfd-bin
+               python-demjson3
+               daemon
                ))
