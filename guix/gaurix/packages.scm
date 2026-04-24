@@ -10277,3 +10277,39 @@
                nginx-libunit
                lexend-fonts-git
                ))
+
+;; recipe-resolver-260423r (30 NEEDS_RECIPE_DESIGN resolved)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423r)
+  #:re-export (
+               amaranth-font
+               ttf-everson-mono
+               ttf-atarismall
+               ttf-spectralsc
+               otf-spectralsc
+               ttf-impallari-dancing-script
+               ttf-impallari-dosis
+               profont-otb
+               otf-xcharter
+               ttf-gidole
+               python-paginate
+               python-single-version
+               python-deluge-client
+               python-rtf-tokenize
+               python-simplematch
+               python-simplepush
+               python-simple-pid
+               python-nameparser
+               python-ntplib
+               python-xerox
+               termsaver
+               con2fbmap
+               grits-formatter
+               gitnapped
+               gentoo-color-bash
+               galette
+               althttpd
+               gscreenshot
+               bootchart2
+               mkaudiocdrimg
+               ))
