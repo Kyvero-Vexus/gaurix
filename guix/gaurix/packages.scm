@@ -10756,4 +10756,31 @@
                docfd-bin
                python-demjson3
                daemon
+               
+               ;; recipe-resolver-260424j (25 new recipes)
+               figlet-fonts
+               gohufont
+               otf-exljbris
+               toilet-fonts
+               ttf-pizzadude-bullets
+               ttf-mgopen
+               ttf-font-awesome-4
+               otf-font-awesome-4
+               ttf-dejavu-ib
+               ttf-rethink-sans
+               ttf-unifontex-mono
+               otf-aref-ruqaa
+               luv-icon-theme
+               gtk2-theme-dust-extras
+               geany-themes
+               peazip-gtk2-bin
+               pharo-bin
+               gitter-bin
+               python-pyephem
+               python-pywavelets
+               zramswap
+               smcroute
+               poser
+               tlsc
+               ffuf-bin
                ))
