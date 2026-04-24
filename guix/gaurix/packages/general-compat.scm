@@ -523,6 +523,7 @@
   #:use-module (gaurix packages deptree-resolver-260423j)
   #:use-module (gaurix packages recipe-resolver-260423s)
   #:use-module (gaurix packages recipe-resolver-260424a)
+  #:use-module (gaurix packages recipe-resolver-260423t)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -14500,3 +14501,19 @@
 (re-export vapoursynth-plugin-adjust-git)
 (re-export fotokilof)
 (re-export mcptools)
+
+;; recipe-resolver-260423t
+(re-export ttf-comfortaa)
+(re-export python-convertdate)
+(re-export zdbsp)
+(re-export xst)
+(re-export gpp)
+(re-export everforest-gtk-theme-git)
+(re-export python-telegram-send)
+(re-export python-pyvis)
+(re-export python-sioyek)
+(re-export liboqs)
+(re-export openssh-askpass-qt)
+(re-export quickbib)
+(re-export netcheck)
+(re-export scalpel-git)

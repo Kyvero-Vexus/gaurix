@@ -10456,3 +10456,23 @@
                fotokilof
                mcptools
                ))
+
+;; recipe-resolver-260423t (22 NEEDS_RECIPE_DESIGN resolved, 8 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260423t)
+  #:re-export (
+               ttf-comfortaa
+               python-convertdate
+               zdbsp
+               xst
+               gpp
+               everforest-gtk-theme-git
+               python-telegram-send
+               python-pyvis
+               python-sioyek
+               liboqs
+               openssh-askpass-qt
+               quickbib
+               netcheck
+               scalpel-git
+               ))
