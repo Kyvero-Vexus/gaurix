@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260424o: 100 evaluated (16 recipes, 18 ALREADY_IN_GUIX, 66 BLOCKED)
             ;; recipe-resolver-260424p: 100 queue entries resolved (51 recipes, 49 BLOCKED)
             ;; deptree-resolver-260424n: 12 BLOCKED resolved (4 recipes, 3 ALREADY_IN_GUIX, 1 ALREADY_RESOLVED, 1 DUPLICATE, 2 mapped, 45 remain BLOCKED)
             ;; deptree-resolver-260424e: 8 BLOCKED resolved (3 recipes, 5 ALREADY_IN_GUIX)
@@ -2677,6 +2678,22 @@
             equicord
             python-wa-crypt-tools-git
             ;; deptree-resolver-260415t
+            python-typepy
+            python-subprocrunner
+            python-svgpathtools
+            python-macholib
+            python-xvfbwrapper
+            python-daphne
+            python-nptyping
+            python-webargs
+            python-ipyvue
+            python-fal-client
+            python-livekit-protocol
+            python-stlib
+            doi2bib
+            liblinear
+            lua-tl
+            betterlockscreen
 )
 
 ;; recipe-resolver-260414p
