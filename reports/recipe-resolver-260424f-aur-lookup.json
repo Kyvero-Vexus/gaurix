@@ -1,0 +1,606 @@
+{
+  "grayjay-bin": {
+    "version": "17",
+    "pkgrel": "2",
+    "description": "Grayjay Desktop - follow creators, not platforms (privacy- and freedom-respecting client for YouTube, Rumble, Twitch, Spotify etc)",
+    "url": "https://grayjay.app/desktop/",
+    "license": "'Source First License 1.1'",
+    "arch": "'x86_64'",
+    "sources": [
+      "${_filename}.zip::https://updater.grayjay.app/Apps/Grayjay.Desktop/${pkgver}/${_filename}.zip"
+    ],
+    "depends": [
+      "gtk3",
+      "unzip",
+      "libnotify",
+      "nss",
+      "libxss",
+      "libxtst",
+      "xdg-utils",
+      "at-spi2-core",
+      "libsecret",
+      "libappindicator-gtk3"
+    ],
+    "makedepends": []
+  },
+  "brave-origin-beta-bin": {
+    "version": "1.91.87",
+    "pkgrel": "1",
+    "description": "The minimalist browser from the makers of Brave (beta binary release).",
+    "url": "https://brave.com/origin/download-beta",
+    "license": "'MPL2'",
+    "arch": "x86_64 aarch64",
+    "sources": [
+      "$pkgname.sh",
+      "https://github.com/brave/brave-browser/releases/download/v${pkgver}/${pkgname%-bin}_${pkgver}_amd64.deb"
+    ],
+    "depends": [
+      "gtk3",
+      "nss",
+      "alsa-lib",
+      "libxss",
+      "ttf-font"
+    ],
+    "makedepends": []
+  },
+  "weave-merge": {
+    "version": "0.3.2",
+    "pkgrel": "1",
+    "description": "Entity-level semantic merge CLI. Resolves conflicts at the function/class level instead of lines.",
+    "url": "https://github.com/Ataraxy-Labs/weave",
+    "license": "'MIT' 'Apache-2.0'",
+    "arch": "'x86_64' 'aarch64'",
+    "sources": [
+      "$pkgname-$pkgver.tar.gz::$url/archive/refs/tags/v$pkgver.tar.gz"
+    ],
+    "depends": [
+      "glibc",
+      "libgcc"
+    ],
+    "makedepends": [
+      "cargo"
+    ]
+  },
+  "remoteterm-meshcore": {
+    "version": "3.12.2",
+    "pkgrel": "1",
+    "description": "Web interface for MeshCore mesh radio networks",
+    "url": "https://github.com/jkingsman/Remote-Terminal-for-MeshCore",
+    "license": "'MIT'",
+    "arch": "x86_64 aarch64",
+    "sources": [
+      "$pkgname-$pkgver.tar.gz::https://github.com/jkingsman/Remote-Terminal-for-MeshCore/archive/refs/tags/$pkgver.tar.gz",
+      "remoteterm-meshcore.service",
+      "remoteterm.env"
+    ],
+    "depends": [],
+    "makedepends": []
+  },
+  "rsgain": {
+    "version": "3.7",
+    "pkgrel": "1",
+    "description": "ReplayGain 2.0 loudness normalizer",
+    "url": "https://github.com/complexlogic/rsgain",
+    "license": "'BSD-2-Clause'",
+    "arch": "'x86_64'",
+    "sources": [
+      "$pkgname-$pkgver.tar.gz::https://github.com/complexlogic/$pkgname/archive/refs/tags/v$pkgver.tar.gz"
+    ],
+    "depends": [
+      "libebur128",
+      "libavcodec.so",
+      "libavformat.so",
+      "libavutil.so",
+      "libswresample.so",
+      "fmt",
+      "libinih",
+      "taglib"
+    ],
+    "makedepends": []
+  },
+  "powershell-lts-bin": {
+    "version": "${_pkgver/-/.}",
+    "pkgrel": "1",
+    "description": "PowerShell Core is a cross-platform (Windows, Linux, and macOS) automation and configuration tool/framework",
+    "url": "https://github.com/Powershell/Powershell",
+    "license": "",
+    "arch": "'x86_64'",
+    "sources": [
+      "https://github.com/PowerShell/PowerShell/releases/download/v${_pkgver}/${_deb_name}",
+      "${install}"
+    ],
+    "depends": [
+      "krb5",
+      "gcc-libs",
+      "glibc",
+      "lttng-ust",
+      "zlib",
+      "openssl",
+      "icu"
+    ],
+    "makedepends": []
+  },
+  "kosmos-bin": {
+    "version": "0.3.0",
+    "pkgrel": "1",
+    "description": "A highly customizable and versatile tab-based code editor.",
+    "url": "https://github.com/etchebarne/kosmos",
+    "license": "'MIT'",
+    "arch": "'x86_64'",
+    "sources": [
+      "${pkgname}-${pkgver}.deb::https://github.com/etchebarne/kosmos/releases/download/v${pkgver}/kosmos_${pkgver}_amd64.deb",
+      "kosmos.desktop::https://raw.githubusercontent.com/etchebarne/kosmos/v${pkgver}/src-tauri/kosmos.desktop",
+      "LICENSE::https://raw.githubusercontent.com/etchebarne/kosmos/v${pkgver}/LICENSE"
+    ],
+    "depends": [
+      "webkit2gtk-4.1",
+      "libappindicator-gtk3",
+      "librsvg"
+    ],
+    "makedepends": []
+  },
+  "trae-bin": {
+    "version": "2.3.18717",
+    "pkgrel": "1",
+    "description": "AI-powered IDE by ByteDance - The Real AI Engine for code development",
+    "url": "https://trae.ai",
+    "license": "'MIT'",
+    "arch": "'x86_64' 'aarch64'",
+    "sources": [
+      "Trae-linux-x64.deb::https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.18717/linux/Trae-linux-x64.deb",
+      "Trae-linux-x64.deb::https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.18717/linux/Trae-linux-x64.deb"
+    ],
+    "depends": [
+      "gtk3",
+      "libxss",
+      "nss",
+      "alsa-lib",
+      "libxtst",
+      "libdrm",
+      "mesa",
+      "libxkbcommon",
+      "xcb-util-keysyms",
+      "libxcrypt-compat"
+    ],
+    "makedepends": []
+  },
+  "mongosh-bin": {
+    "version": "2.8.2",
+    "pkgrel": "1",
+    "description": "An interactive shell to connect with MongoDB with syntax highlighting, autocomplete, contextual help and error messages.",
+    "url": "https://github.com/mongodb-js/mongosh.git",
+    "license": "'Apache'",
+    "arch": "'x86_64' 'aarch64'",
+    "sources": [
+      "https://github.com/mongodb-js/mongosh/releases/download/v${pkgver}/${_pkgname}-${pkgver}-linux-x64.tgz",
+      "https://github.com/mongodb-js/mongosh/releases/download/v${pkgver}/${_pkgname}-${pkgver}-linux-x64.tgz"
+    ],
+    "depends": [
+      "krb5"
+    ],
+    "makedepends": []
+  },
+  "motrix-next-bin": {
+    "version": "3.8.1",
+    "pkgrel": "1",
+    "description": "A full-featured download manager rebuilt with Tauri 2, Vue 3, and Rust",
+    "url": "https://github.com/AnInsomniacy/motrix-next",
+    "license": "'MIT'",
+    "arch": "'x86_64'",
+    "sources": [
+      "MotrixNext_${pkgver}_amd64.deb::https://github.com/AnInsomniacy/motrix-next/releases/download/v${pkgver}/MotrixNext_${pkgver}_amd64.deb"
+    ],
+    "depends": [],
+    "makedepends": []
+  },
+  "kavita-bin": {
+    "version": "0.8.9.1",
+    "pkgrel": "2",
+    "description": "Self hosted ebook and comic reader",
+    "url": "https://www.kavitareader.com/",
+    "license": "'GPL3'",
+    "arch": "'x86_64' 'aarch64' 'armv7h'",
+    "sources": [],
+    "depends": [],
+    "makedepends": []
+  },
+  "dota2-minify-bin": {
+    "version": "1.13.1",
+    "pkgrel": "2",
+    "description": "Dota 2 Mod Patcher & Toolkit \u2014 prebuilt binary",
+    "url": "https://github.com/Egezenn/dota2-minify",
+    "license": "'GPL-3.0-or-later'",
+    "arch": "'x86_64'",
+    "sources": [
+      "${pkgname}-${pkgver}.zip::https://github.com/Egezenn/dota2-minify/releases/download/${_tag}/Minify-v${pkgver}-linux.zip"
+    ],
+    "depends": [
+      "freetype2",
+      "fontconfig",
+      "hicolor-icon-theme"
+    ],
+    "makedepends": []
+  },
+  "micromamba-bin": {
+    "version": "2.5.0.1",
+    "pkgrel": "1",
+    "description": "Tiny version of mamba, the fast conda package installer",
+    "url": "https://github.com/mamba-org/mamba",
+    "license": "BSD-3-clause",
+    "arch": "x86_64 aarch64 powerpc64le",
+    "sources": [],
+    "depends": [],
+    "makedepends": []
+  },
+  "quien-bin": {
+    "version": "0.7.2",
+    "pkgrel": "1",
+    "description": "A better whois and domain intelligence toolkit (pre-built binary)",
+    "url": "https://github.com/retlehs/quien",
+    "license": "'MIT'",
+    "arch": "'x86_64' 'aarch64'",
+    "sources": [
+      "$_pkgname-$pkgver-amd64.tar.gz::$url/releases/download/v$pkgver/${_pkgname}_linux_amd64.tar.gz",
+      "$_pkgname-$pkgver-amd64.tar.gz::$url/releases/download/v$pkgver/${_pkgname}_linux_amd64.tar.gz"
+    ],
+    "depends": [],
+    "makedepends": []
+  },
+  "jackett-bin": {
+    "version": "0.24.1731",
+    "pkgrel": "1",
+    "description": "Use many torrent trackers with software that supports torznab/potato feeds.",
+    "url": "https://github.com/Jackett/Jackett",
+    "license": "'GPL-2.0-or-later'",
+    "arch": "'x86_64' 'aarch64' 'armv7h'",
+    "sources": [
+      "jackett.service",
+      "jackett.sysusers",
+      "jackett.tmpfiles"
+    ],
+    "depends": [
+      "bash",
+      "zlib",
+      "glibc",
+      "gcc-libs"
+    ],
+    "makedepends": []
+  },
+  "spotube-bin": {
+    "version": "5.1.1",
+    "pkgrel": "1",
+    "description": "Open source Music client that doesn",
+    "url": "https://spotube.krtirtho.dev",
+    "license": "'BSD-4-Clause'",
+    "arch": "x86_64",
+    "sources": [
+      "https://github.com/KRTirtho/spotube/releases/download/v${pkgver}/spotube-linux-${pkgver}-x86_64.tar.xz"
+    ],
+    "depends": [
+      "mpv",
+      "libappindicator-gtk3",
+      "libsecret",
+      "jsoncpp",
+      "libnotify",
+      "xdg-user-dirs",
+      "webkit2gtk-4.1"
+    ],
+    "makedepends": []
+  },
+  "linwood-butterfly-bin": {
+    "version": "2.5.0",
+    "pkgrel": "1",
+    "description": "Powerful, minimalistic, cross-platform, opensource note-taking app.(Prebuilt version)",
+    "url": "https://docs.butterfly.linwood.dev/",
+    "license": "",
+    "arch": "",
+    "sources": [
+      "LICENSE-${pkgver}::https://raw.githubusercontent.com/LinwoodDev/Butterfly/v${pkgver}/LICENSE",
+      "${pkgname%-bin}.sh",
+      "${pkgname%-bin}-${pkgver}-x86_64.rpm::${_ghurl}/releases/download/v${pkgver}/${pkgname%-bin}-linux-x86_64.rpm"
+    ],
+    "depends": [
+      "gtk3",
+      "at-spi2-core",
+      "libsecret"
+    ],
+    "makedepends": []
+  },
+  "pangolin-bin": {
+    "version": "0.6.0",
+    "pkgrel": "1",
+    "description": "Pangolin Client - Secure reverse proxy and tunnel (Binary version)",
+    "url": "https://github.com/fosrl/cli",
+    "license": "'AGPL-3.0-or-later'",
+    "arch": "'x86_64' 'aarch64' 'armv7h' 'armv6h' 'riscv64'",
+    "sources": [
+      "pangolin::https://github.com/fosrl/cli/releases/download/${pkgver}/pangolin-cli_linux_amd64",
+      "pangolin::https://github.com/fosrl/cli/releases/download/${pkgver}/pangolin-cli_linux_amd64"
+    ],
+    "depends": [],
+    "makedepends": []
+  },
+  "thunderbird-bin": {
+    "version": "150.0",
+    "pkgrel": "1",
+    "description": "Standalone Mail/News reader - binary version",
+    "url": "https://www.mozilla.org/thunderbird",
+    "license": "'GPL' 'LGPL' 'MPL'",
+    "arch": "'x86_64'",
+    "sources": [
+      "thunderbird-bin.desktop",
+      "vendor.js"
+    ],
+    "depends": [
+      "dbus-glib",
+      "gtk3",
+      "libxt",
+      "nss"
+    ],
+    "makedepends": []
+  },
+  "minecraft-server": {
+    "version": "26.1.2",
+    "pkgrel": "1",
+    "description": "Minecraft server unit files, script, and jar",
+    "url": "https://minecraft.net/",
+    "license": "'custom'",
+    "arch": "'any'",
+    "sources": [
+      "minecraft_server.${pkgver}n${_nonce:0:8}.jar",
+      "https://launcher.mojang.com/v1/objects/${_nonce}/server.jar",
+      "minecraft-server-${_mng_ver}.tar.gz"
+    ],
+    "depends": [
+      "java-runtime-headless>=16",
+      "tmux",
+      "sudo",
+      "bash",
+      "awk",
+      "sed"
+    ],
+    "makedepends": []
+  },
+  "grubforge": {
+    "version": "0.9.0",
+    "pkgrel": "1",
+    "description": "A terminal UI for managing and customizing the GRUB bootloader \u2014 safely, intuitively, and beautifully",
+    "url": "https://github.com/jetomev/grubforge",
+    "license": "'GPL3'",
+    "arch": "'any'",
+    "sources": [
+      "${pkgname}-${pkgver}.tar.gz::https://github.com/jetomev/${pkgname}/archive/refs/tags/v${pkgver}.tar.gz"
+    ],
+    "depends": [
+      "python",
+      "python-textual",
+      "python-rich"
+    ],
+    "makedepends": []
+  },
+  "miniconda3": {
+    "version": "26.1.1.1",
+    "pkgrel": "1",
+    "description": "Mini version of Anaconda Python distribution",
+    "url": "https://conda.io/en/latest/miniconda",
+    "license": "BSD-3-Clause",
+    "arch": "x86_64 aarch64",
+    "sources": [],
+    "depends": [],
+    "makedepends": []
+  },
+  "dmemcg-booster": {
+    "version": "0.1.2",
+    "pkgrel": "1",
+    "description": "Service for enabling and controlling dmem cgroup limits for boosting foreground games",
+    "url": "https://gitlab.steamos.cloud/holo/dmemcg-booster",
+    "license": "'custom:unknown'",
+    "arch": "'x86_64'",
+    "sources": [
+      "$pkgname::git+https://gitlab.steamos.cloud/holo/dmemcg-booster.git#tag=${pkgver}"
+    ],
+    "depends": [
+      "glibc",
+      "libdrm",
+      "systemd-libs"
+    ],
+    "makedepends": [
+      "cargo",
+      "git"
+    ]
+  },
+  "restic-browser": {
+    "version": "0.3.3",
+    "pkgrel": "2",
+    "description": "A GUI to browse and restore restic backup repositories.",
+    "url": "https://github.com/emuell/${pkgname}",
+    "license": "\"MIT\"",
+    "arch": "'i686' 'pentium4' 'x86_64' 'arm' 'armv7h' 'armv6h' 'aarch64' 'riscv64'",
+    "sources": [
+      "${pkgname}-${pkgver}.tar.gz::${url}/archive/refs/tags/v${pkgver}.tar.gz",
+      "${pkgname}.desktop"
+    ],
+    "depends": [
+      "restic",
+      "webkit2gtk-4.1"
+    ],
+    "makedepends": [
+      "appmenu-gtk-module",
+      "cargo",
+      "gtk3",
+      "jq",
+      "libappindicator-gtk3",
+      "librsvg",
+      "nodejs",
+      "npm",
+      "openssl",
+      "restic",
+      "xdotool",
+      "webkit2gtk-4.1"
+    ]
+  },
+  "normcap": {
+    "version": "0.6.0",
+    "pkgrel": "3",
+    "description": "OCR powered screen-capture tool to capture information instead of images",
+    "url": "https://dynobo.github.io/normcap",
+    "license": "'AGPL-3.0-or-later AND MIT'",
+    "arch": "'any'",
+    "sources": [
+      "$pkgname-$pkgver.tar.gz::https://github.com/dynobo/normcap/archive/refs/tags/v$pkgver.tar.gz"
+    ],
+    "depends": [
+      "hicolor-icon-theme",
+      "leptonica",
+      "libnotify",
+      "pyside6",
+      "python-jeepney",
+      "python-pytesseract",
+      "python-zxing-cpp",
+      "shiboken6"
+    ],
+    "makedepends": [
+      "python-babel",
+      "python-build",
+      "python-hatchling",
+      "python-installer",
+      "python-toml",
+      "python-wheel"
+    ]
+  },
+  "86box": {
+    "version": "5.3",
+    "pkgrel": "2",
+    "description": "An emulator for classic IBM PC clones",
+    "url": "https://86box.net/",
+    "license": "'GPL-2.0-or-later' 'CC-BY-4.0'",
+    "arch": "'x86_64' 'aarch64'",
+    "sources": [
+      "${pkgname}_$pkgver.tgz::https://github.com/${_pkgname}/${_pkgname}/archive/refs/tags/v${pkgver}.tar.gz",
+      "${pkgname}_assets_$pkgver.tgz::https://github.com/${_pkgname}/assets/archive/refs/tags/v${pkgver}.tar.gz"
+    ],
+    "depends": [
+      "fluidsynth",
+      "hicolor-icon-theme",
+      "libserialport",
+      "libslirp",
+      "openal",
+      "qt6-base",
+      "rtmidi",
+      "sdl2",
+      "freetype2",
+      "gcc-libs",
+      "glib2",
+      "glibc",
+      "libevdev",
+      "libglvnd",
+      "libpng",
+      "libsndfile",
+      "libx11",
+      "libxcb",
+      "libxext",
+      "libxi",
+      "libxkbcommon-x11",
+      "libxkbcommon",
+      "wayland",
+      "zlib"
+    ],
+    "makedepends": [
+      "cmake>=3.21",
+      "extra-cmake-modules",
+      "ninja",
+      "qt6-tools",
+      "vde2",
+      "vulkan-headers"
+    ]
+  },
+  "vrcft-avalonia-bin": {
+    "version": "'1.1.1.0'",
+    "pkgrel": "'3'",
+    "description": "Cross-platform VRCFaceTracking made with Avalonia (extracted AppImage version)",
+    "url": "https://github.com/dfgHiatus/VRCFaceTracking.Avalonia",
+    "license": "'Apache-2.0'",
+    "arch": "'x86_64'",
+    "sources": [
+      "https://github.com/dfgHiatus/VRCFaceTracking.Avalonia/releases/download/v$pkgver/VRCFaceTracking.Avalonia.$pkgver.x64.AppImage",
+      "vrcft",
+      "VRCFaceTracking.Avalonia.desktop"
+    ],
+    "depends": [
+      "hicolor-icon-theme",
+      "gtk3",
+      "libnotify",
+      "libxss",
+      "libxtst"
+    ],
+    "makedepends": [
+      "squashfs-tools"
+    ]
+  },
+  "insomnia-bin": {
+    "version": "12.5.0",
+    "pkgrel": "1",
+    "description": "API Client and Design Platform for GraphQL and REST",
+    "url": "https://insomnia.rest",
+    "license": "'Apache'",
+    "arch": "'x86_64'",
+    "sources": [
+      "${_url_source}/releases/download/core@${pkgver}/${_upkgname}.Core-${pkgver}.deb",
+      "${_url_source}/raw/core@${pkgver}/LICENSE"
+    ],
+    "depends": [
+      "libxss",
+      "nss",
+      "gtk3",
+      "alsa-lib"
+    ],
+    "makedepends": []
+  },
+  "parsec-bin": {
+    "version": "150_97c",
+    "pkgrel": "2",
+    "description": "Remotely connect to a gaming pc for a low latency remote computing experience",
+    "url": "http://parsec.app",
+    "license": "'custom'",
+    "arch": "'x86_64'",
+    "sources": [
+      "$pkgname-$pkgver.deb::https://builds.parsec.app/package/parsec-linux.deb"
+    ],
+    "depends": [
+      "gcc-libs",
+      "libglvnd",
+      "libxext",
+      "libxcb",
+      "ffmpeg4.4",
+      "openssl",
+      "libxi",
+      "pipewire-alsa"
+    ],
+    "makedepends": []
+  },
+  "balena-etcher": {
+    "version": "2.1.4",
+    "pkgrel": "1",
+    "description": "Flash OS images to SD cards & USB drives, safely and easily",
+    "url": "https://balena.io/etcher",
+    "license": "Apache-2.0",
+    "arch": "'x86_64' 'i686' 'armv7h' 'aarch64'",
+    "sources": [
+      "${_github_url}/archive/refs/tags/v${pkgver}.tar.gz",
+      "${pkgname}.desktop",
+      "${pkgname}"
+    ],
+    "depends": [
+      "${_electron}",
+      "nodejs-lts-jod"
+    ],
+    "makedepends": [
+      "npm",
+      "python",
+      "jq",
+      "moreutils",
+      "python-setuptools",
+      "git"
+    ]
+  }
+}

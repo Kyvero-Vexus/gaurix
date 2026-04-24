@@ -531,6 +531,7 @@
   #:use-module (gaurix packages recipe-resolver-260424d)
   #:use-module (gaurix packages recipe-resolver-260424d)
   #:use-module (gaurix packages recipe-resolver-260424e)
+  #:use-module (gaurix packages recipe-resolver-260424f)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -14702,3 +14703,34 @@
 ;;; 50 packages resolved via dep-tree priority
 ;;; All recipes in (gaurix packages deptree-resolver-260424c)
 
+;;; recipe-resolver-260424f
+(re-export brave-origin-beta-bin)
+(re-export weave-merge)
+(re-export powershell-lts-bin)
+(re-export kosmos-bin)
+(re-export trae-bin)
+(re-export motrix-next-bin)
+(re-export kavita-bin)
+(re-export dota2-minify-bin)
+(re-export quien-bin)
+(re-export linwood-butterfly-bin)
+(re-export pangolin-bin)
+(re-export thunderbird-bin)
+(re-export vrcft-avalonia-bin)
+(re-export legendary-heroic-bin)
+(re-export spotify-tui-bin)
+(re-export netronome-bin)
+(re-export rdr-bin)
+(re-export concryptor-bin)
+(re-export sniffnet-bin)
+(re-export homebox-bin)
+(re-export llama-panel-bin)
+(re-export marchat-bin)
+(re-export yaskkserv2-bin)
+(re-export typist-bin)
+(re-export tex-fmt-bin)
+(re-export timewall-bin)
+(re-export zrok2-bin)
+(re-export toofan-bin)
+(re-export screenix-bin)
+(re-export lektra-bin)
