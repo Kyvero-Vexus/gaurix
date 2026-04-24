@@ -520,6 +520,7 @@
   #:use-module (gaurix packages recipe-resolver-260423p)
   #:use-module (gaurix packages deptree-resolver-260423i)
   #:use-module (gaurix packages recipe-resolver-260423q)
+  #:use-module (gaurix packages deptree-resolver-260423j)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -14353,3 +14354,14 @@
 (re-export netkit-bsd-finger-ipv6)
 (re-export nginx-libunit)
 (re-export lexend-fonts-git)
+
+;;; deptree-resolver-260423j
+(re-export ghidra-git)
+(re-export ntfs2btrfs-git)
+(re-export python-frida-bin)
+(re-export project-registry)
+(re-export python-frida-tools)
+(re-export dingtalk-wayland-screenshare-git)
+(re-export vrcx-git)
+(re-export tabby)
+(re-export wiliwili-wayland)
