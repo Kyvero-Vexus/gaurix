@@ -10630,6 +10630,7 @@
 ;; recipe-resolver-260424h (100 NEEDS_RECIPE_DESIGN resolved)
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260424h)
+  #:use-module (gaurix packages recipe-resolver-260424o)
   #:re-export (
                ghdl-mcode-git
                digitalwatchdog-client
@@ -10788,4 +10789,34 @@
             otf-anti
             otf-avara
             ttf-amiri-typewriter
+
+               ;; recipe-resolver-260424o (28 new recipes)
+               otel-tui-bin
+               fend-bin
+               chisel-bin
+               teip-bin
+               mailpit-bin
+               dotter-rs-bin
+               frei-bin
+               jd-bin
+               wthrr-bin
+               shclrz-bin
+               tssh-bin
+               stegify-bin
+               cookcli-bin
+               flipt-bin
+               steampipe-bin
+               togo-bin
+               pokego-bin
+               coredns-bin
+               minmon-bin
+               rustdesk-server-bin
+               olivetin-bin
+               ud
+               ivykis
+               obs-gstreamer
+               ramfetch
+               clay
+               tex-gyre-math-fonts
+               gqrx-udev
                ))

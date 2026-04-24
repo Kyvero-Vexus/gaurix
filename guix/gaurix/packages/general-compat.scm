@@ -541,6 +541,7 @@
   #:use-module (gaurix packages recipe-resolver-260424j)
   #:use-module (gaurix packages recipe-resolver-260424l)
   #:use-module (gaurix packages recipe-resolver-260424n)
+  #:use-module (gaurix packages recipe-resolver-260424o)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15093,6 +15094,11 @@
 (re-export vnote-bin)
 
 ;;; recipe-resolver-260424n (12 new recipes)
+;;; recipe-resolver-260424o (28 new recipes)
+;;; otel-tui-bin fend-bin chisel-bin teip-bin mailpit-bin dotter-rs-bin frei-bin
+;;; jd-bin wthrr-bin shclrz-bin tssh-bin stegify-bin cookcli-bin flipt-bin
+;;; steampipe-bin togo-bin pokego-bin coredns-bin minmon-bin rustdesk-server-bin
+;;; olivetin-bin ud ivykis obs-gstreamer ramfetch clay tex-gyre-math-fonts gqrx-udev
 (re-export svxlink-sounds-en-us-heather-16k)
 (re-export mii-emu)
 (re-export ffqueue-git)
