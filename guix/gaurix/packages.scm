@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; recipe-resolver-260424u: 98 queue entries resolved (98 recipes)
             ;; deptree-resolver-260424x: 104 BLOCKED evaluated (5 recipes, 1 ALREADY_IN_GUIX, 2 AUR_REPO_DELETED, 96 remain BLOCKED)
             ;; deptree-resolver-260424w: 81 BLOCKED evaluated (5 recipes, 3 AUR_REPO_DELETED, 73 remain BLOCKED)
             ;; deptree-resolver-260424v: 86 BLOCKED evaluated (4 recipes, 1 ALREADY_IN_GUIX, 81 remain BLOCKED)
@@ -11024,4 +11025,105 @@
                darknet-hankai-git
                assaultcube-common
                magics-plus-plus
+               ))
+  #:use-module (gaurix packages recipe-resolver-260424u)
+  #:re-export (
+               elk-shell-bin
+               parallel-disk-usage-bin
+               opencli-rs-bin
+               clc-bin
+               mconf-bin
+               updatecli-bin
+               spacetimedb-bin
+               firefox-extension-linkding-bin
+               tlsx-bin
+               sui-mainnet-bin
+               sui-testnet-bin
+               trackaudio-bin
+               maplemononormal-variable
+               maplemononormal-ttf-autohint
+               maplemononormal-ttf
+               maplemononormal-otf
+               maplemononormal-nf-unhinted
+               maplemononormal-nf-cn-unhinted
+               maplemononormal-nf-cn
+               maplemononormal-nf
+               maplemononormal-cn-unhinted
+               maplemononormal-cn
+               betafpv-configurator
+               hledger-ui-bin
+               gowin-eda-programmer
+               rpk-bin
+               zsh-manpage-completion-generator-bin
+               nordic-darker-standard-buttons-theme
+               kube-burner-bin
+               payload-dumper-go-bin
+               nvidia-force-comp-pipeline
+               bazelisk-bin
+               hubble-bin
+               traitor-bin
+               torpedo-bin
+               elasticvue-bin
+               swc-js-bin
+               owlplug-bin
+               pimpmystremio-bin
+               gotify-cli-bin
+               kdenlive-appimage
+               chessterm
+               goimports-reviser-bin
+               germanium-bin
+               fuzzynote-bin
+               eol-bin
+               chyle-bin
+               bitrise-bin
+               aoruscontrol-bin
+               tut-bin
+               mouse-actions-cli-bin
+               kitchenowl
+               extempore-bin
+               dsk2nib-git
+               pylyzer-bin
+               dirbuster-wordlists
+               donut.c
+               altserver-bin
+               bisc-bin
+               redpanda-connect-bin
+               mangal-bin
+               wonderdraft
+               lowcharts-bin
+               blisp-bin
+               ain-bin
+               dos33fsprogs-git
+               anime4k-git
+               ente-cli-bin
+               sqlean-bin
+               elles-bin
+               kubewall-bin
+               catppuccin-catwalk-bin
+               vcd
+               kernel-modules-hook-hardlinks
+               nom-bin
+               lazycomplete-bin
+               gitin-bin
+               probe-bin
+               yeet-bin
+               remindme-bin
+               pww-bin
+               piknik-bin
+               oxen-server-bin
+               oxen-bin
+               neuralnote-vst3
+               neuralnote-bin
+               bmv-bin
+               belle-cpu
+               catppuccin-gtk-theme-latte
+               vkteams-bin
+               electerm-bin
+               xfetch-bin
+               mautrix-whatsapp-bin
+               exfetch-bin
+               gsh-bin
+               gotz-bin
+               flood-bin
+               etcd-bin
                ))
