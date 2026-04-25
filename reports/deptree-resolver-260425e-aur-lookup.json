@@ -1,0 +1,2523 @@
+{
+  "gradience": {
+    "name": "gradience",
+    "number": 18644,
+    "in_aur": false,
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Adwaita theme editor; Python + GTK4 + Blueprint compiler; next: package Blueprint (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: GTK4 + Blueprint compiler deps not in Guix (deptree-resolver-260425c)"
+  },
+  "sudo-selinux": {
+    "name": "sudo-selinux",
+    "number": 18513,
+    "in_aur": true,
+    "version": "1.9.17.p2-1",
+    "description": "Give certain users the ability to run some commands as root - SELinux support",
+    "url": "https://www.sudo.ws/sudo/",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "glibc",
+      "openssl",
+      "pam-selinux",
+      "libldap",
+      "zlib",
+      "libselinux",
+      "libcrypto.so",
+      "libssl.so"
+    ],
+    "makedepends": [],
+    "provides": [
+      "sudo=1.9.17.p2-1",
+      "selinux-sudo=1.9.17.p2-1"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/sudo-selinux.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: SELinux support; Guix does not use SELinux (recipe-resolver-260425b); - Status: BLOCKED: TOOLING_FAILURE: SELinux variant of sudo; Guix does not use SELinux (deptree-resolver-260425c)"
+  },
+  "base-selinux": {
+    "name": "base-selinux",
+    "number": 18537,
+    "in_aur": true,
+    "version": "2-1",
+    "description": "Minimal packages for Arch Linux installation with SELinux support",
+    "url": "https://github.com/archlinuxhardened/selinux",
+    "license": [
+      "GPL"
+    ],
+    "depends": [
+      "base",
+      "coreutils-selinux",
+      "findutils-selinux",
+      "psmisc-selinux",
+      "shadow-selinux",
+      "util-linux-selinux",
+      "systemd-selinux",
+      "systemd-sysvcompat-selinux",
+      "selinux-alpm-hook",
+      "iproute2-selinux",
+      "selinux-refpolicy-arch",
+      "secilc",
+      "dbus-selinux",
+      "selinux-dbus-config",
+      "mcstrans",
+      "restorecond",
+      "logrotate-selinux",
+      "checkpolicy"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/base-selinux.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: Arch SELinux meta-package; SELinux not used by Guix System; next: not applicable (recipe-resolver-260425c); - Status: BLOCKED: TOOLING_FAILURE: Arch SELinux meta-package; not applicable to Guix (deptree-resolver-260425c)"
+  },
+  "virtualbox-svn": {
+    "name": "virtualbox-svn",
+    "number": 18799,
+    "in_aur": true,
+    "version": "102693-2",
+    "description": "Powerful x86 virtualization for enterprise as well as home use",
+    "url": "http://virtualbox.org",
+    "license": [
+      "custom:CDDL",
+      "GPL"
+    ],
+    "depends": [
+      "curl",
+      "gcc-libs",
+      "glibc",
+      "liblzf",
+      "libpng",
+      "libtpms",
+      "libvpx",
+      "libx11",
+      "libxcursor",
+      "libxext",
+      "libxinerama",
+      "libxml2",
+      "libxmu",
+      "libxt",
+      "openssl",
+      "procps-ng",
+      "python",
+      "qt6-base",
+      "qt6-tools",
+      "qt6-5compat",
+      "sdl",
+      "shared-mime-info",
+      "zlib",
+      "qt6-scxml",
+      "VIRTUALBOX-HOST-MODULES-SVN"
+    ],
+    "makedepends": [
+      "subversion",
+      "alsa-lib",
+      "cdrkit",
+      "curl",
+      "device-mapper",
+      "git",
+      "glu",
+      "gsoap",
+      "glslang",
+      "iasl",
+      "jdk8-openjdk",
+      "libidl2",
+      "libpulse",
+      "libvncserver",
+      "libvpx",
+      "libxcomposite",
+      "libxcursor",
+      "libxinerama",
+      "libxml2",
+      "libxmu",
+      "libxrandr",
+      "liblzf",
+      "libtpms",
+      "libxslt",
+      "libxtst",
+      "linux-headers",
+      "mesa",
+      "nasm",
+      "opus",
+      "python",
+      "python-packaging",
+      "qt6-base",
+      "qt6-5compat",
+      "qt6-scxml",
+      "qt6-tools",
+      "sdl",
+      "sdl_ttf",
+      "vde2",
+      "xalan-c",
+      "xorgproto",
+      "xorg-server-devel",
+      "yasm"
+    ],
+    "provides": [
+      "virtualbox"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/virtualbox-svn.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: VirtualBox SVN needs massive build infra (Qt5, SDL, XPCOM) (recipe-resolver-260425e)"
+  },
+  "wayfire-git": {
+    "name": "wayfire-git",
+    "number": 18359,
+    "in_aur": true,
+    "version": "0.10.1.r110.g93d22c82-1",
+    "description": "3D wayland compositor",
+    "url": "https://github.com/WayfireWM/wayfire",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "cairo",
+      "pango",
+      "libdrm",
+      "libevdev",
+      "libglvnd",
+      "libjpeg",
+      "libpng",
+      "libxkbcommon",
+      "pixman",
+      "polkit",
+      "seatd",
+      "xorg-xwayland",
+      "wayland",
+      "yyjson",
+      "libinput",
+      "glib2",
+      "systemd-libs",
+      "libxcb",
+      "glm",
+      "pkgconf",
+      "xcb-util-errors",
+      "xcb-util-renderutil",
+      "xcb-util-wm",
+      "wayland-protocols",
+      "libdisplay-info",
+      "wlroots0.20"
+    ],
+    "makedepends": [
+      "git",
+      "meson",
+      "ninja",
+      "cmake",
+      "vulkan-headers",
+      "doctest",
+      "pkgconf",
+      "wayland-protocols",
+      "libxml2"
+    ],
+    "provides": [
+      "wayfire",
+      "wayland-compositor",
+      "wf-config=0.7",
+      "wf-config-git=0.7"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/wayfire-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: wlroots/wf-config deps (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Wayland compositor; wf-config + 33 deps missing (deptree-resolver-260425c)"
+  },
+  "bakkesmod-steam": {
+    "name": "bakkesmod-steam",
+    "number": 17468,
+    "in_aur": true,
+    "version": "2.67-1",
+    "description": "A mod aimed at making you better at Rocket League!",
+    "url": "https://bakkesmod.com/",
+    "license": [
+      "GPL"
+    ],
+    "depends": [],
+    "makedepends": [
+      "python"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/bakkesmod-steam.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Windows-only mod (Rocket League via Steam/Proton); no native Linux binary or source available (recipe-resolver-260423p); - Status: BLOCKED: PLATFORM_UNSUPPORTED: Windows-only mod (Rocket League via Steam/Proton); no native Linux binary or source available (deptree-resolver-260423j); - Status: BLOCKED: PLATFORM_UNSUPPORTED: Windows-only mod; no native Linux binary or source. 3 approaches exhausted: no Linux port, no wine/proton wrapper feasible, no alternative mods (deptree-resolver-260424a); - Status: BLOCKED: PLATFORM_UNSUPPORTED: Windows-only Rocket League mod (deptree-resolver-260424e); - Status: BLOCKED: PLATFORM_UNSUPPORTED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: PLATFORM_UNSUPPORTED: Windows-only Rocket League mod (deptree-resolver-260425c)"
+  },
+  "beammp-launcher-git": {
+    "name": "beammp-launcher-git",
+    "number": 18346,
+    "in_aur": true,
+    "version": "r457.c22ea1e-1",
+    "description": "Multiplayer Launcher/Client for BeamMP, providing multiplayer for BeamNG.drive",
+    "url": "https://github.com/BeamMP/BeamMP-Launcher",
+    "license": [
+      "AGPL-3.0"
+    ],
+    "depends": [],
+    "makedepends": [
+      "vcpkg",
+      "cmake",
+      "git"
+    ],
+    "provides": [
+      "beammp-launcher"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/beammp-launcher-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: complex CMake + game runtime (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: C++ game mod; uses vcpkg (deptree-resolver-260425c)"
+  },
+  "chromium-extension-arch-search": {
+    "name": "chromium-extension-arch-search",
+    "number": 17897,
+    "in_aur": true,
+    "version": "0.0.1-1",
+    "description": "A Chromium-based browser extension that adds ArchLinux as a search engine with an Omnibox keyword.",
+    "url": "https://github.com/noraj/chromium-extension-arch-search",
+    "license": [
+      "MIT"
+    ],
+    "depends": [],
+    "makedepends": [
+      "chromium",
+      "openssl",
+      "jq",
+      "7zip"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/chromium-extension-arch-search.tar.gz",
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: browser extension (not a system package); web extension packaging not applicable to Guix system packages (recipe-resolver-260424p); - Status: BLOCKED: DISTRO_SPECIFIC: Chromium extension for Arch Linux search (deptree-resolver-260424p); - Status: BLOCKED: DISTRO_SPECIFIC: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DISTRO_SPECIFIC: Arch-specific browser extension (deptree-resolver-260425c)"
+  },
+  "edgeimpulse-cli": {
+    "name": "edgeimpulse-cli",
+    "number": 18574,
+    "in_aur": true,
+    "version": "1.30.4-1",
+    "description": "Command-line interface tools for Edge Impulse.",
+    "url": "https://github.com/edgeimpulse/edge-impulse-cli",
+    "license": [
+      "Apache"
+    ],
+    "depends": [],
+    "makedepends": [
+      "npm"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/edgeimpulse-cli.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Edge Impulse Node.js CLI; npm dependency tree with native modules; next: package npm deps (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Node.js CLI; massive npm dependency tree (deptree-resolver-260425c)"
+  },
+  "envoyproxy": {
+    "name": "envoyproxy",
+    "number": 17824,
+    "in_aur": true,
+    "version": "1.36.2-1",
+    "description": "A high performance, open source, general RPC framework that puts mobile and HTTP/2 first.",
+    "url": "https://envoyproxy.io",
+    "license": [
+      "Apache2"
+    ],
+    "depends": [],
+    "makedepends": [
+      "cmake",
+      "git",
+      "lld",
+      "go",
+      "java-environment-openjdk",
+      "ninja",
+      "perl",
+      "python",
+      "libxcrypt-compat",
+      "clang18",
+      "libc++18",
+      "llvm18"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/envoyproxy.tar.gz",
+    "fail_reason": "- Status: BLOCKED: BUILD_FAILED: massive C++ project using Bazel build system; Bazel not in Guix; 1000+ deps; binary is 100MB+ (recipe-resolver-260424p)"
+  },
+  "gstreamermm-docs": {
+    "name": "gstreamermm-docs",
+    "number": 18675,
+    "in_aur": true,
+    "version": "1.10.0-3",
+    "description": "C++ interface for GStreamer (documentation)",
+    "url": "https://gstreamer.freedesktop.org/bindings/cplusplus.html",
+    "license": [
+      "LGPL"
+    ],
+    "depends": [],
+    "makedepends": [
+      "mm-common",
+      "glibmm-docs",
+      "cairomm",
+      "cairomm-docs",
+      "pangomm",
+      "pangomm-docs"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/gstreamermm-docs.tar.gz",
+    "fail_reason": "- Status: BLOCKED: SOURCE_UNAVAILABLE: GStreamermm C++ docs; upstream gstreamermm archived/unmaintained; next: no stable download for documentation package (recipe-resolver-260425c)"
+  },
+  "libarchive-static": {
+    "name": "libarchive-static",
+    "number": 18758,
+    "in_aur": true,
+    "version": "3.8.7-1",
+    "description": "Statically-compiled bsdtar (Multi-format archive and compression library, to fix badly broken systems)",
+    "url": "https://libarchive.org/",
+    "license": [
+      "BSD"
+    ],
+    "depends": [],
+    "makedepends": [
+      "musl",
+      "kernel-headers-musl",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/libarchive-static.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: static libarchive variant; Guix already packages libarchive (recipe-resolver-260425e)"
+  },
+  "neovim-lspconfig-opt-git": {
+    "name": "neovim-lspconfig-opt-git",
+    "number": 18703,
+    "in_aur": false,
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: Neovim LSP config as pacman package; should be managed via neovim plugin system; next: install via plugin manager (recipe-resolver-260425c); - Status: BLOCKED: TOOLING_FAILURE: Neovim LSP config as system package; manage via plugin manager (deptree-resolver-260425c)"
+  },
+  "nftables-geoip-db": {
+    "name": "nftables-geoip-db",
+    "number": 18264,
+    "in_aur": true,
+    "version": "2.2-16",
+    "description": "GeoIP Database for nftables",
+    "url": "https://db-ip.com/db/download/ip-to-country-lite",
+    "license": [
+      "BSD",
+      "GPL"
+    ],
+    "depends": [],
+    "makedepends": [
+      "perl-text-csv-xs",
+      "perl-net-cidr-lite"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/nftables-geoip-db.tar.gz",
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: periodic download infrastructure (recipe-resolver-260424z); - Status: BLOCKED: BUILD_NETWORK_REQUIRED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: BUILD_NETWORK_REQUIRED: Downloads GeoIP DB at build time; no network in Guix builds (deptree-resolver-260425c)"
+  },
+  "python-home-assistant-frontend": {
+    "name": "python-home-assistant-frontend",
+    "number": 18556,
+    "in_aur": true,
+    "version": "20260325.6-1",
+    "description": "The Home Assistant frontend",
+    "url": "https://github.com/home-assistant/frontend",
+    "license": [
+      "Apache-2.0"
+    ],
+    "depends": [],
+    "makedepends": [
+      "python",
+      "python-pip"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/python-home-assistant-frontend.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: HA web frontend; massive Node.js/Webpack build with 500+ npm deps; next: not feasible (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: 500+ npm build dependencies (deptree-resolver-260425c)"
+  },
+  "quartz-utils-git": {
+    "name": "quartz-utils-git",
+    "number": 18430,
+    "in_aur": true,
+    "version": "0.0.2.r0.gad9a773-1",
+    "description": "Everyday CLI utilities that are easily pipable.",
+    "url": "https://noraj.github.io/quartz-utils/",
+    "license": [
+      "MIT"
+    ],
+    "depends": [],
+    "makedepends": [
+      "crystal",
+      "shards",
+      "git"
+    ],
+    "provides": [
+      "quartz-utils"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/quartz-utils-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Rust CLI utils; crate deps need vendoring (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Crystal language; shards deps (deptree-resolver-260425c)"
+  },
+  "sbctl-git": {
+    "name": "sbctl-git",
+    "number": 18638,
+    "in_aur": true,
+    "version": "r201.ga43373c-1",
+    "description": "Secure Boot key manager",
+    "url": "https://github.com/Foxboron/sbctl",
+    "license": [
+      "MIT"
+    ],
+    "depends": [],
+    "makedepends": [
+      "go",
+      "git",
+      "asciidoc"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/sbctl-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Secure Boot key manager in Go; 30+ Go deps; next: requires go module vendoring (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Go Secure Boot tool; 30+ Go deps (deptree-resolver-260425c)"
+  },
+  "shig-git": {
+    "name": "shig-git",
+    "number": 18578,
+    "in_aur": true,
+    "version": "1.1.1.r2.g02f0ad0-1",
+    "description": "CLI utility to sign files and verify signatures in OpenSSH compatible format (alternative to `ssh-keygen -Y`)",
+    "url": "https://github.com/SierraSoftworks/shig",
+    "license": [
+      "MIT"
+    ],
+    "depends": [],
+    "makedepends": [
+      "go",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/shig-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: SSH signing CLI in Go; 30+ Go module deps; next: requires go module vendoring (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Go SSH tool; 30+ Go module deps (deptree-resolver-260425c)"
+  },
+  "sipgate-app-clinq": {
+    "name": "sipgate-app-clinq",
+    "number": 18449,
+    "in_aur": false,
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: proprietary VoIP Electron app; complex phone integration (recipe-resolver-260425b); - Status: BLOCKED: NEEDS_RECIPE_DESIGN: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: NEEDS_RECIPE_DESIGN: Not in AUR cache; no metadata available (deptree-resolver-260425c)"
+  },
+  "squareline-studio": {
+    "name": "squareline-studio",
+    "number": 17812,
+    "in_aur": true,
+    "version": "1.6.0-1",
+    "description": "Visual drag-and-drop UI editor to create beautiful Graphical User Interfaces quickly and easily",
+    "url": "https://squareline.io/",
+    "license": [
+      "custom"
+    ],
+    "depends": [],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/squareline-studio.tar.gz",
+    "fail_reason": "- Status: BLOCKED: SOURCE_UNAVAILABLE: Commercial proprietary GUI tool, no public download URL without account (recipe-resolver-260424l); - Status: BLOCKED: SOURCE_UNAVAILABLE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: SOURCE_UNAVAILABLE: No stable download URL; session-gated (deptree-resolver-260425c)"
+  },
+  "amneziawg-dkms-git": {
+    "name": "amneziawg-dkms-git",
+    "number": 18642,
+    "in_aur": true,
+    "version": "r1338.b2e234b-2",
+    "description": "AmneziaWG is a contemporary version of the popular VPN protocol, WireGuard",
+    "url": "https://github.com/amnezia-vpn/amneziawg-linux-kernel-module",
+    "license": [
+      "GPLv2"
+    ],
+    "depends": [
+      "dkms"
+    ],
+    "makedepends": [
+      "git"
+    ],
+    "provides": [
+      "AMNEZIAWG-MODULE"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/amneziawg-dkms-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: AmneziaWG DKMS kernel module; DKMS incompatible with Guix; next: kernel customization (recipe-resolver-260425c); - Status: BLOCKED: TOOLING_FAILURE: AmneziaWG DKMS kernel module; DKMS incompatible with Guix (deptree-resolver-260425c)"
+  },
+  "amneziawg-linux": {
+    "name": "amneziawg-linux",
+    "number": 18452,
+    "in_aur": true,
+    "version": "1.0.20260329-1",
+    "description": "AmneziaWG is a contemporary version of the popular VPN protocol, WireGuard.",
+    "url": "https://github.com/amnezia-vpn/amneziawg-linux-kernel-module",
+    "license": [
+      "GPLv2"
+    ],
+    "depends": [
+      "linux"
+    ],
+    "makedepends": [
+      "linux",
+      "linux-headers"
+    ],
+    "provides": [
+      "AMNEZIAWG-MODULE=1.0.20260329"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/amneziawg-linux.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: DKMS kernel module; Guix kernel model incompatible with DKMS (recipe-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: AmneziaWG kernel module; requires kernel integration (deptree-resolver-260425c)"
+  },
+  "amneziawg-linux-hardened": {
+    "name": "amneziawg-linux-hardened",
+    "number": 18382,
+    "in_aur": true,
+    "version": "1.0.20260329-1",
+    "description": "AmneziaWG is a contemporary version of the popular VPN protocol, WireGuard.",
+    "url": "https://github.com/amnezia-vpn/amneziawg-linux-kernel-module",
+    "license": [
+      "GPLv2"
+    ],
+    "depends": [
+      "linux-hardened"
+    ],
+    "makedepends": [
+      "linux-hardened",
+      "linux-hardened-headers"
+    ],
+    "provides": [
+      "AMNEZIAWG-MODULE=1.0.20260329"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/amneziawg-linux-hardened.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: DKMS kernel module; Guix kernel model incompatible with DKMS (recipe-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: AmneziaWG hardened kernel module; requires kernel integration (deptree-resolver-260425c)"
+  },
+  "aquacomputer_d5next-hwmon-dkms": {
+    "name": "aquacomputer_d5next-hwmon-dkms",
+    "number": 18606,
+    "in_aur": true,
+    "version": "1-2",
+    "description": "Hwmon Linux kernel driver for monitoring and configuring Aquacomputer PC watercooling devices",
+    "url": "https://github.com/aleksamagicka/aquacomputer_d5next-hwmon",
+    "license": [
+      "GPL2"
+    ],
+    "depends": [
+      "dkms"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/aquacomputer_d5next-hwmon-dkms.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: DKMS hwmon kernel module; Guix kernel model incompatible with DKMS; next: custom kernel module package (recipe-resolver-260425c); - Status: BLOCKED: TOOLING_FAILURE: DKMS hwmon kernel module; Guix kernel model incompatible (deptree-resolver-260425c)"
+  },
+  "archwiki-offline": {
+    "name": "archwiki-offline",
+    "number": 18568,
+    "in_aur": true,
+    "version": "r13.87114e1-1",
+    "description": "A simple script to view ArchWiki offline",
+    "url": "https://github.com/niksingh710/archwiki-offline",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "arch-wiki-docs"
+    ],
+    "makedepends": [
+      "git"
+    ],
+    "provides": [
+      "archwiki-offline"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/archwiki-offline.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: Arch-specific wiki viewer relying on pacman paths; next: not applicable outside Arch (recipe-resolver-260425c); - Status: BLOCKED: TOOLING_FAILURE: Arch-specific wiki viewer; relies on pacman paths (deptree-resolver-260425c)"
+  },
+  "atuin-lily-git": {
+    "name": "atuin-lily-git",
+    "number": 18410,
+    "in_aur": true,
+    "version": "r968.9d91564-1",
+    "description": "Magical shell history ( lilydjwg fork )",
+    "url": "https://github.com/atuinsh/atuin",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "gcc-libs"
+    ],
+    "makedepends": [
+      "cargo",
+      "git",
+      "protobuf"
+    ],
+    "provides": [
+      "atuin"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/atuin-lily-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Rust fork of atuin; 100+ crate deps need vendoring (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Rust shell history; 100+ crate deps (deptree-resolver-260425c)"
+  },
+  "aws-amplify-cli": {
+    "name": "aws-amplify-cli",
+    "number": 18269,
+    "in_aur": true,
+    "version": "13.0.1-1",
+    "description": "The AWS Amplify CLI is a toolchain for simplifying serverless web and mobile development.",
+    "url": "https://docs.amplify.aws/cli/",
+    "license": [
+      "Apache License 2.0"
+    ],
+    "depends": [
+      "nodejs"
+    ],
+    "makedepends": [
+      "npm"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/aws-amplify-cli.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: 1000+ npm deps (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Massive Node.js/npm dependency tree (deptree-resolver-260425c)"
+  },
+  "aws-cdk": {
+    "name": "aws-cdk",
+    "number": 18298,
+    "in_aur": true,
+    "version": "2.1109.0-1",
+    "description": "CDK Toolkit, the command line tool for CDK apps",
+    "url": "https://github.com/aws/aws-cdk-cli#readme",
+    "license": [
+      "Apache"
+    ],
+    "depends": [
+      "nodejs"
+    ],
+    "makedepends": [
+      "npm"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/aws-cdk.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: 2000+ npm deps (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Massive Node.js/npm dependency tree (deptree-resolver-260425c)"
+  },
+  "coreutils-arch": {
+    "name": "coreutils-arch",
+    "number": 18690,
+    "in_aur": true,
+    "version": "9.9-1",
+    "description": "GNU arch command (from coreutils)",
+    "url": "https://www.gnu.org/software/coreutils/coreutils.html",
+    "license": [
+      "GPL-3.0-or-later"
+    ],
+    "depends": [
+      "coreutils"
+    ],
+    "makedepends": [
+      "gettext",
+      "gperf",
+      "gzip",
+      "perl",
+      "rsync",
+      "tar",
+      "texinfo"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/coreutils-arch.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: Arch-specific GNU coreutils arch command; already available in Guix coreutils; next: not needed (recipe-resolver-260425c)"
+  },
+  "darling-cli-devenv-gui-common-git": {
+    "name": "darling-cli-devenv-gui-common-git",
+    "number": 22161,
+    "in_aur": true,
+    "version": "r4302.c431326ef-1",
+    "description": "Components of Darling that are shared between the developer environment and the GUI components",
+    "url": "https://www.darlinghq.org",
+    "license": [
+      "GPL3"
+    ],
+    "depends": [
+      "darling-system-git"
+    ],
+    "makedepends": [
+      "xdg-user-dirs",
+      "fuse",
+      "libfreetype.so",
+      "libjpeg.so",
+      "libpng",
+      "libtiff.so",
+      "libgif.so",
+      "libEGL.so",
+      "libfontconfig.so",
+      "libx11",
+      "libxext",
+      "libxrandr",
+      "libxcursor",
+      "libxkbfile",
+      "libcairo.so",
+      "libdbus-1.so",
+      "libGL.so",
+      "glu",
+      "libswresample.so",
+      "libavcodec.so",
+      "libavformat.so",
+      "libavutil.so",
+      "libpulse.so",
+      "libvulkan.so",
+      "llvm-libs",
+      "cmake",
+      "clang",
+      "flex",
+      "bison",
+      "icu",
+      "pkg-config",
+      "llvm",
+      "libbsd",
+      "git",
+      "git-lfs",
+      "python",
+      "libxml2",
+      "vulkan-headers",
+      "gcc-multilib",
+      "lib32-gcc-libs"
+    ],
+    "provides": [
+      "darling-cli-devenv-gui-common"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/darling-cli-devenv-gui-common-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: COMPLEX_DEPS: Darling macOS compatibility layer, extremely complex build (deptree-resolver-260424d); - Status: BLOCKED: COMPLEX_DEPS: macOS compat layer, needs multilib (deptree-resolver-260424e)"
+  },
+  "darling-iosurface-git": {
+    "name": "darling-iosurface-git",
+    "number": 22171,
+    "in_aur": true,
+    "version": "r4302.c431326ef-1",
+    "description": "IOSurface framework built for use within Darling",
+    "url": "https://www.darlinghq.org",
+    "license": [
+      "GPL3"
+    ],
+    "depends": [
+      "darling-system-git"
+    ],
+    "makedepends": [
+      "xdg-user-dirs",
+      "fuse",
+      "libfreetype.so",
+      "libjpeg.so",
+      "libpng",
+      "libtiff.so",
+      "libgif.so",
+      "libEGL.so",
+      "libfontconfig.so",
+      "libx11",
+      "libxext",
+      "libxrandr",
+      "libxcursor",
+      "libxkbfile",
+      "libcairo.so",
+      "libdbus-1.so",
+      "libGL.so",
+      "glu",
+      "libswresample.so",
+      "libavcodec.so",
+      "libavformat.so",
+      "libavutil.so",
+      "libpulse.so",
+      "libvulkan.so",
+      "llvm-libs",
+      "cmake",
+      "clang",
+      "flex",
+      "bison",
+      "icu",
+      "pkg-config",
+      "llvm",
+      "libbsd",
+      "git",
+      "git-lfs",
+      "python",
+      "libxml2",
+      "vulkan-headers",
+      "gcc-multilib",
+      "lib32-gcc-libs"
+    ],
+    "provides": [
+      "darling-iosurface"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/darling-iosurface-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: COMPLEX_DEPS: Darling macOS compatibility layer, extremely complex build (deptree-resolver-260424d); - Status: BLOCKED: COMPLEX_DEPS: macOS compat layer, needs multilib (deptree-resolver-260424e)"
+  },
+  "decrypto-pro-git": {
+    "name": "decrypto-pro-git",
+    "number": 18291,
+    "in_aur": true,
+    "version": "r4.5db36aa-3",
+    "description": "Utility for converting CryptoPro CSP key containers to PEM keys",
+    "url": "https://github.com/vitalif/decrypto-pro",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "openssl-gost-engine"
+    ],
+    "makedepends": [
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/decrypto-pro-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: CryptoPro CSP proprietary library (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Requires openssl-gost-engine (Russian crypto) (deptree-resolver-260425c)"
+  },
+  "gdx-liftoff": {
+    "name": "gdx-liftoff",
+    "number": 18599,
+    "in_aur": true,
+    "version": "1.13.5.2-1",
+    "description": "LibGDX project setup",
+    "url": "https://libgdx.com",
+    "license": [
+      "Apache"
+    ],
+    "depends": [
+      "java-environment"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/gdx-liftoff.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: LibGDX project generator; Java/Gradle with deep deps; next: package LibGDX stack (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Java/Gradle with LibGDX stack (deptree-resolver-260425c)"
+  },
+  "hyperledger-fabric": {
+    "name": "hyperledger-fabric",
+    "number": 18301,
+    "in_aur": true,
+    "version": "3.1.4-1",
+    "description": "A platform for distributed ledger solutions, underpinned by a modular architecture delivering high degrees of confidentiality, resiliency, flexibility and scalability",
+    "url": "https://github.com/hyperledger/fabric",
+    "license": [
+      "Apache"
+    ],
+    "depends": [
+      "go"
+    ],
+    "makedepends": [
+      "git",
+      "docker"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/hyperledger-fabric.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: 200+ Go modules (recipe-resolver-260424z); - Status: BLOCKED: BUILD_REQUIRES_DOCKER: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: BUILD_REQUIRES_DOCKER: Build requires Docker; not available in Guix sandbox (deptree-resolver-260425c)"
+  },
+  "java-language-server": {
+    "name": "java-language-server",
+    "number": 18379,
+    "in_aur": true,
+    "version": "0.2.39-1",
+    "description": "Java language server using the Java compiler API",
+    "url": "https://github.com/georgewfraser/java-language-server",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "java-runtime>=14"
+    ],
+    "makedepends": [
+      "maven",
+      "java-environment>=14"
+    ],
+    "provides": [
+      "java-language-server"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/java-language-server.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: requires Java compiler API + LSP4J + 50+ Maven deps (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Java/Maven with deep deps (deptree-resolver-260425c)"
+  },
+  "libch343ser-git": {
+    "name": "libch343ser-git",
+    "number": 17880,
+    "in_aur": true,
+    "version": "r56.b705737-2",
+    "description": "USB serial driver for ch342/ch343/ch344/ch347/ch347f/ch9101/ch9102/ch9103/ch9104, etc. (dynamic lib).",
+    "url": "https://github.com/WCHSoftGroup/ch343ser_linux",
+    "license": [
+      "GPL-2.0-or-later"
+    ],
+    "depends": [
+      "glibc"
+    ],
+    "makedepends": [
+      "git"
+    ],
+    "provides": [
+      "libch343ser"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/libch343ser-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: BUILD_FAILED: Linux kernel module for USB serial chips; requires kernel headers matching running kernel; out-of-tree module building (recipe-resolver-260424p); - Status: BLOCKED: KERNEL_MODULE: USB serial kernel driver module, requires kernel build (deptree-resolver-260424p); - Status: BLOCKED: KERNEL_MODULE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: KERNEL_MODULE: USB serial driver; requires kernel source integration (deptree-resolver-260425c)"
+  },
+  "libfprint-2-tod1-broadcom-cv3plus": {
+    "name": "libfprint-2-tod1-broadcom-cv3plus",
+    "number": 17912,
+    "in_aur": true,
+    "version": "6.4.054.0-1",
+    "description": "Proprietary driver for the Dell ControlVault3 Plus (0a5c:586*) fingerprint reader",
+    "url": "https://packages.broadcom.com/artifactory/dell-controlvault-drivers/",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "libfprint-tod"
+    ],
+    "makedepends": [
+      "git"
+    ],
+    "provides": [
+      "libfprint-2-tod1-broadcom-cv3plus=6.4.054.0"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/libfprint-2-tod1-broadcom-cv3plus.tar.gz",
+    "fail_reason": "- Status: BLOCKED: LICENSE_REVIEW_NEEDED: proprietary Broadcom fingerprint driver; binary blob with unclear redistribution terms (recipe-resolver-260424p); - Status: BLOCKED: PROPRIETARY_BINARY: proprietary Broadcom fingerprint driver (deptree-resolver-260424p); - Status: BLOCKED: PROPRIETARY_BINARY: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: PROPRIETARY_BINARY: Broadcom proprietary fingerprint driver (deptree-resolver-260425c)"
+  },
+  "libga68-snapshot": {
+    "name": "libga68-snapshot",
+    "number": 19629,
+    "in_aur": true,
+    "version": "16.0.0.snapshot20260419-1",
+    "description": "GNU Compiler Collection - Algol68 runtime libraries (snapshot)",
+    "url": "https://gcc.gnu.org",
+    "license": [
+      "GFDL-1.3-or-later",
+      "GPL-2.0-or-later",
+      "GPL-3.0-with-GCC-exception",
+      "LGPL-3.0-only",
+      "LGPL-3.0-or-later"
+    ],
+    "depends": [
+      "glibc>=2.40"
+    ],
+    "makedepends": [
+      "binutils",
+      "doxygen",
+      "gcc-ada",
+      "gcc-d",
+      "git",
+      "lib32-glibc",
+      "lib32-gcc-libs",
+      "python",
+      "zstd"
+    ],
+    "provides": [
+      "libga68-snapshot-multilib",
+      "libga68",
+      "libga68.so"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/libga68-snapshot.tar.gz",
+    "fail_reason": "- Status: BLOCKED: AUR_REPO_DELETED: AUR git repository is empty/deleted as of 2026-04-25 (deptree-resolver-260424y); - Status: BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Algol68 runtime; Guix provides stable GCC runtime via gcc-toolchain (deptree-resolver-260424x)"
+  },
+  "libgfortran-snapshot": {
+    "name": "libgfortran-snapshot",
+    "number": 19625,
+    "in_aur": true,
+    "version": "16.0.0.snapshot20260419-1",
+    "description": "GNU Compiler Collection - Fortran runtime libraries (snapshot)",
+    "url": "https://gcc.gnu.org",
+    "license": [
+      "GFDL-1.3-or-later",
+      "GPL-2.0-or-later",
+      "GPL-3.0-with-GCC-exception",
+      "LGPL-3.0-only",
+      "LGPL-3.0-or-later"
+    ],
+    "depends": [
+      "glibc>=2.40"
+    ],
+    "makedepends": [
+      "binutils",
+      "doxygen",
+      "gcc-ada",
+      "gcc-d",
+      "git",
+      "lib32-glibc",
+      "lib32-gcc-libs",
+      "python",
+      "zstd"
+    ],
+    "provides": [
+      "libgfortran-snapshot-multilib",
+      "libgfortran",
+      "libgfortran.so"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/libgfortran-snapshot.tar.gz",
+    "fail_reason": "- Status: BLOCKED: AUR_REPO_DELETED: AUR git repository is empty/deleted as of 2026-04-25 (deptree-resolver-260424y); - Status: BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Fortran runtime; Guix provides stable GCC runtime via gcc-toolchain (deptree-resolver-260424x)"
+  },
+  "libgnat-snapshot": {
+    "name": "libgnat-snapshot",
+    "number": 19623,
+    "in_aur": true,
+    "version": "16.0.0.snapshot20260419-1",
+    "description": "GNU Compiler Collection - Ada runtime libraries (snapshot)",
+    "url": "https://gcc.gnu.org",
+    "license": [
+      "GFDL-1.3-or-later",
+      "GPL-2.0-or-later",
+      "GPL-3.0-with-GCC-exception",
+      "LGPL-3.0-only",
+      "LGPL-3.0-or-later"
+    ],
+    "depends": [
+      "glibc>=2.40"
+    ],
+    "makedepends": [
+      "binutils",
+      "doxygen",
+      "gcc-ada",
+      "gcc-d",
+      "git",
+      "lib32-glibc",
+      "lib32-gcc-libs",
+      "python",
+      "zstd"
+    ],
+    "provides": [
+      "libgnat-snapshot-multilib",
+      "libgnat",
+      "libgnarl-16.so",
+      "libgnat-16.so"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/libgnat-snapshot.tar.gz",
+    "fail_reason": "- Status: BLOCKED: AUR_REPO_DELETED: AUR git repository is empty/deleted as of 2026-04-25 (deptree-resolver-260424y); - Status: BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Ada runtime; Guix provides stable GCC runtime via gcc-toolchain (deptree-resolver-260424x)"
+  },
+  "libgo-snapshot": {
+    "name": "libgo-snapshot",
+    "number": 19622,
+    "in_aur": true,
+    "version": "16.0.0.snapshot20260419-1",
+    "description": "GNU Compiler Collection - Go runtime libraries (snapshot)",
+    "url": "https://gcc.gnu.org",
+    "license": [
+      "GFDL-1.3-or-later",
+      "GPL-2.0-or-later",
+      "GPL-3.0-with-GCC-exception",
+      "LGPL-3.0-only",
+      "LGPL-3.0-or-later"
+    ],
+    "depends": [
+      "glibc>=2.40"
+    ],
+    "makedepends": [
+      "binutils",
+      "doxygen",
+      "gcc-ada",
+      "gcc-d",
+      "git",
+      "lib32-glibc",
+      "lib32-gcc-libs",
+      "python",
+      "zstd"
+    ],
+    "provides": [
+      "libgo-snapshot-multilib",
+      "libgo",
+      "libgo.so"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/libgo-snapshot.tar.gz",
+    "fail_reason": "- Status: BLOCKED: AUR_REPO_DELETED: AUR git repository is empty/deleted as of 2026-04-25 (deptree-resolver-260424y); - Status: BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Go runtime; Guix provides stable GCC runtime via gcc-toolchain (deptree-resolver-260424x)"
+  },
+  "librewolf-extension-ublock-origin-bin": {
+    "name": "librewolf-extension-ublock-origin-bin",
+    "number": 18355,
+    "in_aur": true,
+    "version": "1.69.0-1",
+    "description": "uBlock Origin - An efficient blocker for LibreWolf. Fast and lean.",
+    "url": "https://github.com/gorhill/uBlock",
+    "license": [
+      "GPL-3.0-only"
+    ],
+    "depends": [
+      "librewolf"
+    ],
+    "makedepends": [],
+    "provides": [
+      "librewolf-extension-ublock-origin"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/librewolf-extension-ublock-origin-bin.tar.gz",
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: browser extension XPI path (recipe-resolver-260424z); - Status: BLOCKED: BROWSER_EXTENSION: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: BROWSER_EXTENSION: Install through browser extension mechanism (deptree-resolver-260425c)"
+  },
+  "librewolf-tridactyl-native-bin": {
+    "name": "librewolf-tridactyl-native-bin",
+    "number": 18285,
+    "in_aur": true,
+    "version": "0.5.0-1",
+    "description": "Tridactyl native messaging host application for Librewolf",
+    "url": "https://github.com/tridactyl/tridactyl",
+    "license": [
+      "BSD-2-Clause"
+    ],
+    "depends": [
+      "glibc"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/librewolf-tridactyl-native-bin.tar.gz",
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: browser native messaging paths (recipe-resolver-260424z); - Status: BLOCKED: BROWSER_EXTENSION: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: BROWSER_EXTENSION: Install through browser extension mechanism (deptree-resolver-260425c)"
+  },
+  "linux-covolunablu-gaming-headers": {
+    "name": "linux-covolunablu-gaming-headers",
+    "number": 18547,
+    "in_aur": true,
+    "version": "6.1.12.arch1-1",
+    "description": "Headers and scripts for building modules for the linux-covolunablu-gaming kernel",
+    "url": "https://github.com/archlinux/linux/commits/v6.1.12-arch1",
+    "license": [
+      "GPL2"
+    ],
+    "depends": [
+      "pahole"
+    ],
+    "makedepends": [
+      "bc",
+      "libelf",
+      "pahole",
+      "cpio",
+      "perl",
+      "tar",
+      "xz",
+      "gettext",
+      "xmlto",
+      "python-sphinx",
+      "python-sphinx_rtd_theme",
+      "graphviz",
+      "imagemagick",
+      "texlive-latexextra",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/linux-covolunablu-gaming-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: custom gaming kernel headers; Guix manages kernels separately; next: define custom kernel package (recipe-resolver-260425c)"
+  },
+  "linux-xanmod-lts-headers": {
+    "name": "linux-xanmod-lts-headers",
+    "number": 18447,
+    "in_aur": true,
+    "version": "6.18.24-2",
+    "description": "Headers and scripts for building modules for the Linux Xanmod - Long Term Support [LTS] kernel",
+    "url": "http://www.xanmod.org/",
+    "license": [
+      "GPL-2.0-only"
+    ],
+    "depends": [
+      "pahole"
+    ],
+    "makedepends": [
+      "bc",
+      "cpio",
+      "gettext",
+      "libelf",
+      "pahole",
+      "perl",
+      "python",
+      "rust",
+      "rust-bindgen",
+      "rust-src",
+      "tar",
+      "xz"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/linux-xanmod-lts-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: custom kernel headers; Guix manages kernels separately (recipe-resolver-260425b)"
+  },
+  "locale-mul_zz": {
+    "name": "locale-mul_zz",
+    "number": 18423,
+    "in_aur": true,
+    "version": "2.0-3",
+    "description": "Multiple locales following UTC, UTF-8, and ISO 8601",
+    "url": "https://github.com/0h7z/locale",
+    "license": [
+      "AGPL3"
+    ],
+    "depends": [
+      "glibc"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/locale-mul_zz.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: custom locale generation; system-level in Guix, not a channel package (recipe-resolver-260425b); - Status: BLOCKED: TOOLING_FAILURE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: TOOLING_FAILURE: Custom multilingual locale; requires glibc locale infrastructure changes (deptree-resolver-260425c)"
+  },
+  "luniistore": {
+    "name": "luniistore",
+    "number": 18478,
+    "in_aur": true,
+    "version": "4.1.312-2",
+    "description": "Manage your Lunii's My Fabulous Storyteller content or buy new ones",
+    "url": "https://www.lunii.fr",
+    "license": [
+      "unknown"
+    ],
+    "depends": [
+      "java-runtime>=8"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/luniistore.tar.gz",
+    "fail_reason": "- Status: BLOCKED: SOURCE_UNAVAILABLE: proprietary device manager; no stable public URL (recipe-resolver-260425b); - Status: BLOCKED: SOURCE_UNAVAILABLE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: SOURCE_UNAVAILABLE: No stable download URL; proprietary (deptree-resolver-260425c)"
+  },
+  "mingw-w64-cblas": {
+    "name": "mingw-w64-cblas",
+    "number": 34115,
+    "in_aur": true,
+    "version": "3.12.1-1",
+    "description": "C interface to BLAS (mingw-w64)",
+    "url": "http://www.netlib.org/lapack",
+    "license": [
+      "LGPL"
+    ],
+    "depends": [
+      "mingw-w64-blas"
+    ],
+    "makedepends": [
+      "mingw-w64-cmake"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-cblas.tar.gz",
+    "fail_reason": "- Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d); - Status: BLOCKED: MINGW_CROSS_COMPILATION: requires mingw-w64 toolchain (deptree-resolver-260424e); - Status: BLOCKED: MINGW_CROSS_COMPILATION: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: MINGW_CROSS_COMPILATION: Windows cross-compilation target (deptree-resolver-260425c)"
+  },
+  "mingw-w64-cppwinrt": {
+    "name": "mingw-w64-cppwinrt",
+    "number": 43750,
+    "in_aur": true,
+    "version": "2.0.250303.1-1",
+    "description": "C++ language projection for Windows Runtime (WinRT) APIs (mingw-w64)",
+    "url": "https://aka.ms/cppwinrt",
+    "license": [
+      "spdx:MIT"
+    ],
+    "depends": [
+      "mingw-w64-crt"
+    ],
+    "makedepends": [
+      "mingw-w64-gcc",
+      "mingw-w64-cmake",
+      "mingw-w64-wine",
+      "ninja",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-cppwinrt.tar.gz",
+    "fail_reason": "- Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d); - Status: BLOCKED: MINGW_CROSS_COMPILATION: Windows-only API (deptree-resolver-260424e); - Status: BLOCKED: MINGW_CROSS_COMPILATION: re-evaluated (deptree-resolver-260425b)"
+  },
+  "mingw-w64-lapack": {
+    "name": "mingw-w64-lapack",
+    "number": 34113,
+    "in_aur": true,
+    "version": "3.12.1-1",
+    "description": "Linear Algebra PACKage (mingw-w64)",
+    "url": "http://www.netlib.org/lapack",
+    "license": [
+      "LGPL"
+    ],
+    "depends": [
+      "mingw-w64-blas"
+    ],
+    "makedepends": [
+      "mingw-w64-cmake"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-lapack.tar.gz",
+    "fail_reason": "- Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d); - Status: BLOCKED: MINGW_CROSS_COMPILATION: requires mingw-w64 toolchain (deptree-resolver-260424e); - Status: BLOCKED: MINGW_CROSS_COMPILATION: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: MINGW_CROSS_COMPILATION: Windows cross-compilation target (deptree-resolver-260425c)"
+  },
+  "mingw-w64-pcre2": {
+    "name": "mingw-w64-pcre2",
+    "number": 26805,
+    "in_aur": true,
+    "version": "10.47-1",
+    "description": "A library that implements Perl 5-style regular expressions. 2nd version (mingw-w64)",
+    "url": "https://github.com/PCRE2Project/pcre2",
+    "license": [
+      "BSD-2-Clause",
+      "BSD-3-Clause WITH PCRE2-exception"
+    ],
+    "depends": [
+      "mingw-w64-crt"
+    ],
+    "makedepends": [
+      "mingw-w64-configure",
+      "mingw-w64-readline",
+      "mingw-w64-bzip2",
+      "mingw-w64-zlib",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-pcre2.tar.gz",
+    "fail_reason": "- Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d); - Status: BLOCKED: MINGW_CROSS_COMPILATION: requires mingw-w64 toolchain (deptree-resolver-260424e)"
+  },
+  "mingw-w64-soundtouch": {
+    "name": "mingw-w64-soundtouch",
+    "number": 18330,
+    "in_aur": true,
+    "version": "2.4.1-1",
+    "description": "An audio processing library (mingw-w64)",
+    "url": "https://www.surina.net/soundtouch/",
+    "license": [
+      "LGPL-2.1-or-later"
+    ],
+    "depends": [
+      "mingw-w64-crt"
+    ],
+    "makedepends": [
+      "mingw-w64-cmake"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-soundtouch.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: MinGW cross-compilation not supported (recipe-resolver-260424z); - Status: BLOCKED: MINGW_CROSS_COMPILATION: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: MINGW_CROSS_COMPILATION: Windows cross-compilation target (deptree-resolver-260425c)"
+  },
+  "mingw-w64-spirv-tools": {
+    "name": "mingw-w64-spirv-tools",
+    "number": 42666,
+    "in_aur": true,
+    "version": "1:1.4.309.0-1",
+    "description": "API and commands for processing SPIR-V modules (mingw-w64)",
+    "url": "https://github.com/KhronosGroup/SPIRV-Tools",
+    "license": [
+      "Apache"
+    ],
+    "depends": [
+      "mingw-w64-crt"
+    ],
+    "makedepends": [
+      "mingw-w64-cmake",
+      "mingw-w64-spirv-headers",
+      "git",
+      "make",
+      "python"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-spirv-tools.tar.gz",
+    "fail_reason": "- Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d); - Status: BLOCKED: MINGW_CROSS_COMPILATION: requires mingw-w64 toolchain (deptree-resolver-260424e)"
+  },
+  "mingw-w64-sqlite": {
+    "name": "mingw-w64-sqlite",
+    "number": 25121,
+    "in_aur": true,
+    "version": "3.53.0-1",
+    "description": "A C library that implements an SQL database engine (mingw-w64)",
+    "url": "https://www.sqlite.org/",
+    "license": [
+      "custom:public domain"
+    ],
+    "depends": [
+      "mingw-w64-crt"
+    ],
+    "makedepends": [
+      "mingw-w64-configure",
+      "mingw-w64-pdcurses",
+      "mingw-w64-readline"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mingw-w64-sqlite.tar.gz",
+    "fail_reason": "- Status: BLOCKED: CROSS_COMPILE_WINDOWS: mingw-w64 cross-compilation package for Windows targets (deptree-resolver-260424d); - Status: BLOCKED: MINGW_CROSS_COMPILATION: requires mingw-w64 toolchain (deptree-resolver-260424e); - Status: BLOCKED: MINGW_CROSS_COMPILATION: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: MINGW_CROSS_COMPILATION: Windows cross-compilation target (deptree-resolver-260425c)"
+  },
+  "mkinitcpio-systemd-root-password": {
+    "name": "mkinitcpio-systemd-root-password",
+    "number": 18371,
+    "in_aur": true,
+    "version": "0.1.0-1",
+    "description": "The root user in the initramfs-image have been locked, without a option to unlock it by setting a password \ud83d\ude22 This mkinitcpio module is made to add the option to unlock the root user in the initramfs-image.",
+    "url": "https://aur.archlinux.org/packages/mkinitcpio-systemd-root-password",
+    "license": [
+      "BSD0"
+    ],
+    "depends": [
+      "systemd"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/mkinitcpio-systemd-root-password.tar.gz",
+    "fail_reason": "- Status: BLOCKED: ARCH_SPECIFIC: mkinitcpio hook; not applicable to Guix System (recipe-resolver-260424z); - Status: BLOCKED: DISTRO_SPECIFIC: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DISTRO_SPECIFIC: Arch mkinitcpio hook; not applicable to Guix (deptree-resolver-260425c)"
+  },
+  "nfuspire-git": {
+    "name": "nfuspire-git",
+    "number": 18401,
+    "in_aur": true,
+    "version": "0.r1.g9d5b53e-1",
+    "description": "Nspire FUSE filesystem",
+    "url": "https://github.com/EmilyCSh/nfuspire",
+    "license": [
+      "GPL-3.0"
+    ],
+    "depends": [
+      "libnspire"
+    ],
+    "makedepends": [
+      "git",
+      "pkgconfig",
+      "libnspire"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/nfuspire-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: requires libticalcs/libticables TI calculator libs not in Guix (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Needs libnspire not in Guix (deptree-resolver-260425c)"
+  },
+  "nvidiactl-git": {
+    "name": "nvidiactl-git",
+    "number": 18353,
+    "in_aur": true,
+    "version": "r76.48c076f-1",
+    "description": "A tool providing dynamic fan speed and power limit adjustments for NVIDIA GPUs, balancing performance and noise. It can optionally be run as a systemd service.",
+    "url": "https://codeberg.org/mutker/nvidiactl",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "NVIDIA-MODULE"
+    ],
+    "makedepends": [
+      "git",
+      "go>=1.23",
+      "upx"
+    ],
+    "provides": [
+      "nvidiactl"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/nvidiactl-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: NVIDIA sysfs + Rust crates (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Go tool; hard dep on NVIDIA proprietary driver (deptree-resolver-260425c)"
+  },
+  "openfortivpn-webview-electron": {
+    "name": "openfortivpn-webview-electron",
+    "number": 18167,
+    "in_aur": true,
+    "version": "1.2.3-1",
+    "description": "SAML single sing-on and easily retrieve the SVPNCOOKIE needed by openfortivpn",
+    "url": "https://github.com/gm-vm/openfortivpn-webview",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "electron28"
+    ],
+    "makedepends": [
+      "git",
+      "npm",
+      "asar"
+    ],
+    "provides": [
+      "openfortivpn-webview"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/openfortivpn-webview-electron.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Electron webview + npm deps + openfortivpn integration (recipe-resolver-260424t); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Electron app; massive deps (deptree-resolver-260425c)"
+  },
+  "openpace-git": {
+    "name": "openpace-git",
+    "number": 18502,
+    "in_aur": true,
+    "version": "1.1.3.r12.g16f9947-3",
+    "description": "OpenPACE - Cryptographic library for EAC version 2",
+    "url": "https://frankmorgner.github.io/openpace",
+    "license": [
+      "LGPL3"
+    ],
+    "depends": [
+      "openssl"
+    ],
+    "makedepends": [
+      "autoconf",
+      "make",
+      "git",
+      "libtool",
+      "gengetopt",
+      "help2man"
+    ],
+    "provides": [
+      "openpace"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/openpace-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: OpenPACE crypto; OpenSSL 3.0 EAC extension issues (recipe-resolver-260425b)"
+  },
+  "osmtogeojson": {
+    "name": "osmtogeojson",
+    "number": 18417,
+    "in_aur": true,
+    "version": "3.0.0b5-1",
+    "description": "Convert OSM data to GeoJSON",
+    "url": "https://github.com/tyrasd/osmtogeojson",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "nodejs"
+    ],
+    "makedepends": [
+      "npm"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/osmtogeojson.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Node.js npm package; each dep must be packaged individually (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Node.js GeoJSON converter; npm deps (deptree-resolver-260425c)"
+  },
+  "pacpak-git": {
+    "name": "pacpak-git",
+    "number": 17862,
+    "in_aur": true,
+    "version": "0.1.0.r3.g26d0be7-1",
+    "description": "manage your flatpaks with this pacman wrapper",
+    "url": "https://github.com/egnrse/pacpak",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "flatpak"
+    ],
+    "makedepends": [
+      "git",
+      "cargo"
+    ],
+    "provides": [
+      "pacpak"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/pacpak-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: Arch Linux-specific flatpak wrapper using pacman syntax; depends on pacman infrastructure not in Guix (recipe-resolver-260424p); - Status: BLOCKED: DISTRO_SPECIFIC: pacman wrapper for flatpak, Arch Linux specific (deptree-resolver-260424p); - Status: BLOCKED: DISTRO_SPECIFIC: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DISTRO_SPECIFIC: Pacman/Flatpak wrapper; relies on pacman (deptree-resolver-260425c)"
+  },
+  "pamac-cli": {
+    "name": "pamac-cli",
+    "number": 17940,
+    "in_aur": true,
+    "version": "11.7.4-1",
+    "description": "Pamac cli frontend for libalpm",
+    "url": "https://github.com/manjaro/pamac-cli",
+    "license": [
+      "GPL-3.0-or-later"
+    ],
+    "depends": [
+      "libpamac"
+    ],
+    "makedepends": [
+      "vala",
+      "meson",
+      "asciidoc",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/pamac-cli.tar.gz",
+    "fail_reason": "- Status: BLOCKED: ARCH_SPECIFIC: depends on pacman/libalpm/AUR infrastructure (deptree-resolver-260424d); - Status: BLOCKED: DISTRO_SPECIFIC: Manjaro package manager (deptree-resolver-260424e); - Status: BLOCKED: DISTRO_SPECIFIC: Manjaro package manager CLI; relies on libalpm/pacman (deptree-resolver-260425c)"
+  },
+  "pikaur-static": {
+    "name": "pikaur-static",
+    "number": 18750,
+    "in_aur": true,
+    "version": "1.33.3-1",
+    "description": "AUR helper without dependencies which asks all questions before installing/building. Static build for recovery situations, similar to `pacman-static`",
+    "url": "https://github.com/actionless/pikaur",
+    "license": [
+      "GPL-3.0-or-later"
+    ],
+    "depends": [
+      "git"
+    ],
+    "makedepends": [
+      "nuitka",
+      "python-ordered-set",
+      "ccache",
+      "fish",
+      "python-markdown-it-py",
+      "python-pysocks",
+      "python-defusedxml"
+    ],
+    "provides": [
+      "pikaur-static"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/pikaur-static.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: AUR helper; pacman-specific, not applicable to Guix (recipe-resolver-260425e)"
+  },
+  "pikaur-static-git": {
+    "name": "pikaur-static-git",
+    "number": 18749,
+    "in_aur": true,
+    "version": "1.33.3-1",
+    "description": "AUR helper without dependencies which asks all questions before installing/building. Static build for recovery situations, similar to `pacman-static`",
+    "url": "https://github.com/actionless/pikaur",
+    "license": [
+      "GPL-3.0-or-later"
+    ],
+    "depends": [
+      "git"
+    ],
+    "makedepends": [
+      "nuitka",
+      "python-ordered-set",
+      "ccache",
+      "fish",
+      "python-markdown-it-py",
+      "python-pysocks",
+      "python-defusedxml"
+    ],
+    "provides": [
+      "pikaur-static"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/pikaur-static-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: AUR helper; pacman-specific, not applicable to Guix (recipe-resolver-260425e)"
+  },
+  "plank-reloaded-docklet-picky-git": {
+    "name": "plank-reloaded-docklet-picky-git",
+    "number": 18397,
+    "in_aur": true,
+    "version": "0.1.2-1",
+    "description": "Color Picker docklet for Plank Reloaded",
+    "url": "https://github.com/zquestz/picky",
+    "license": [
+      "GPL3"
+    ],
+    "depends": [
+      "plank"
+    ],
+    "makedepends": [
+      "gnome-common",
+      "git",
+      "intltool",
+      "vala",
+      "meson",
+      "ninja"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/plank-reloaded-docklet-picky-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: requires Plank Reloaded dev libs + Vala (recipe-resolver-260425b)"
+  },
+  "qt5-mqtt": {
+    "name": "qt5-mqtt",
+    "number": 18831,
+    "in_aur": true,
+    "version": "5.15.2-18",
+    "description": "Module to implement MQTT protocol v3.1/3.1.1/5.0",
+    "url": "http://qt-project.org/",
+    "license": [
+      "custom",
+      "GPL3"
+    ],
+    "depends": [
+      "qt5-base"
+    ],
+    "makedepends": [
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/qt5-mqtt.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Qt5 MQTT module needs qmake module build infra + Qt5 headers (recipe-resolver-260425e)"
+  },
+  "qtspim-iconfix": {
+    "name": "qtspim-iconfix",
+    "number": 18421,
+    "in_aur": true,
+    "version": "9.1.21-1",
+    "description": "New user interface for spim, a MIPS simulator.",
+    "url": "http://spimsimulator.sourceforge.net/",
+    "license": [
+      "BSD"
+    ],
+    "depends": [
+      "qt5-base"
+    ],
+    "makedepends": [
+      "qt5-tools",
+      "subversion",
+      "icu"
+    ],
+    "provides": [
+      "qtspim"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/qtspim-iconfix.tar.gz",
+    "fail_reason": "- Status: BLOCKED: BUILD_FAILED: Qt MIPS simulator requiring Qt5 patches; complex build (recipe-resolver-260424l); - Status: BLOCKED: BUILD_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: BUILD_FAILED: Qt5 MIPS sim; deprecated Qt4 APIs; needs upstream porting (deptree-resolver-260425c)"
+  },
+  "repacman": {
+    "name": "repacman",
+    "number": 18707,
+    "in_aur": true,
+    "version": "0.98-4",
+    "description": "A tool for producing a pacman package from software's existing installation",
+    "url": "http://archlinux.fr/repacman",
+    "license": [
+      "GPL"
+    ],
+    "depends": [
+      "bash"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/repacman.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: Arch/pacman-specific tool; not applicable to Guix (recipe-resolver-260425e)"
+  },
+  "simplicity-commander": {
+    "name": "simplicity-commander",
+    "number": 18419,
+    "in_aur": true,
+    "version": "1.17.5-1",
+    "description": "GUI and command line access to the debug features of Silicon Labs devices",
+    "url": "https://www.silabs.com/mcu/programming-options",
+    "license": [
+      "LGPL"
+    ],
+    "depends": [
+      "jlink-software-and-documentation"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/simplicity-commander.tar.gz",
+    "fail_reason": "- Status: BLOCKED: SOURCE_UNAVAILABLE: proprietary Silicon Labs tool; requires SDK access (recipe-resolver-260425b); - Status: BLOCKED: SOURCE_UNAVAILABLE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: SOURCE_UNAVAILABLE: Silicon Labs proprietary; no stable URI (deptree-resolver-260425c)"
+  },
+  "snowflake-pt-server": {
+    "name": "snowflake-pt-server",
+    "number": 18649,
+    "in_aur": true,
+    "version": "2.11.0-1",
+    "description": "Snowflake is a pluggable transport that proxies traffic through temporary proxies using WebRTC",
+    "url": "https://gitlab.torproject.org/tpo/anti-censorship/pluggable-transports/snowflake/-/wikis/home",
+    "license": [
+      "BSD-3-Clause"
+    ],
+    "depends": [
+      "libx11"
+    ],
+    "makedepends": [
+      "git",
+      "go"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/snowflake-pt-server.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Tor pluggable transport in Go; 50+ Go deps; next: requires go module vendoring (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Go Tor transport; 50+ Go deps (deptree-resolver-260425c)"
+  },
+  "sommelier-git": {
+    "name": "sommelier-git",
+    "number": 18396,
+    "in_aur": true,
+    "version": "r60306.ec0f09b-1",
+    "description": "A Nested Wayland compositor with support for X11 forwarding",
+    "url": "https://chromium.googlesource.com/chromiumos/platform2.git/+/HEAD/vm_tools/sommelier",
+    "license": [],
+    "depends": [
+      "xorg-xwayland"
+    ],
+    "makedepends": [
+      "meson",
+      "ninja"
+    ],
+    "provides": [
+      "sommelier"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/sommelier-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: ChromeOS Wayland compositor; complex X11/Wayland bridge (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: ChromiumOS monorepo component; deep deps (deptree-resolver-260425c)"
+  },
+  "system-age": {
+    "name": "system-age",
+    "number": 18453,
+    "in_aur": true,
+    "version": "1.0.2-1",
+    "description": "Check the installation time of your Arch Linux.",
+    "url": "https://github.com/canmi21/age",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "glibc"
+    ],
+    "makedepends": [
+      "cargo"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/system-age.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: Arch-specific tool reading pacman install time; not applicable to Guix (recipe-resolver-260425b); - Status: BLOCKED: DISTRO_SPECIFIC: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DISTRO_SPECIFIC: Arch-specific system age checker (deptree-resolver-260425c)"
+  },
+  "virtualbox-bin-sdk": {
+    "name": "virtualbox-bin-sdk",
+    "number": 18668,
+    "in_aur": true,
+    "version": "7.2.8-1",
+    "description": "VirtualBox software developer kit for use with virtualbox-bin package",
+    "url": "https://www.virtualbox.org/",
+    "license": [
+      "GPL-3.0-only",
+      "LGPL-2.1-only",
+      "LicenseRef-custom"
+    ],
+    "depends": [
+      "python"
+    ],
+    "makedepends": [
+      "at-spi2-core",
+      "cairo",
+      "gdk-pixbuf2",
+      "gtk3",
+      "pango",
+      "python",
+      "python-build",
+      "python-installer",
+      "python-setuptools",
+      "python-wheel"
+    ],
+    "provides": [
+      "virtualbox-sdk"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/virtualbox-bin-sdk.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: VirtualBox SDK; requires matching VirtualBox binary; next: package VirtualBox first (recipe-resolver-260425c)"
+  },
+  "wyc": {
+    "name": "wyc",
+    "number": 18777,
+    "in_aur": true,
+    "version": "7-16",
+    "description": "\u7f51\u4e91\u7a7f\u6700\u4fbf\u6377\u7684\u7aef\u53e3\u6620\u5c04",
+    "url": "https://wangyunchuan.com",
+    "license": [
+      "LicenseRef-scancode-commercial-license"
+    ],
+    "depends": [
+      "sh"
+    ],
+    "makedepends": [
+      "libarchive"
+    ],
+    "provides": [
+      "wyc",
+      "wyc-bin"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/wyc.tar.gz",
+    "fail_reason": "- Status: BLOCKED: SOURCE_UNAVAILABLE: Chinese commercial tool; no stable public source artifact (recipe-resolver-260425e)"
+  },
+  "zfs-linux-git-headers": {
+    "name": "zfs-linux-git-headers",
+    "number": 17919,
+    "in_aur": true,
+    "version": "2.3.99.r212.gfe674998bb-1",
+    "description": "Kernel headers for the Zettabyte File System.",
+    "url": "https://zfsonlinux.org/",
+    "license": [
+      "CDDL-1.0"
+    ],
+    "depends": [
+      "zfs-utils=2.3.99"
+    ],
+    "makedepends": [
+      "perl",
+      "python",
+      "git",
+      "linux-headers"
+    ],
+    "provides": [
+      "zfs-headers=2.3.99",
+      "zfs-linux-headers=2.3.99",
+      "spl-headers=2.3.99"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/zfs-linux-git-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: BUILD_FAILED: ZFS kernel headers for linux-git; requires kernel source tree matching specific git version (recipe-resolver-260424p); - Status: BLOCKED: KERNEL_SPECIFIC: ZFS headers for git kernel version (deptree-resolver-260424p); - Status: BLOCKED: KERNEL_SPECIFIC: re-evaluated (deptree-resolver-260425b)"
+  },
+  "android-platform-19": {
+    "name": "android-platform-19",
+    "number": 28671,
+    "in_aur": true,
+    "version": "4.4.2_r04-1",
+    "description": "Android SDK Platform, API-19",
+    "url": "http://developer.android.com/sdk/index.html",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "android-sdk",
+      "android-sdk-platform-tools"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/android-platform-19.tar.gz",
+    "fail_reason": "- Status: BLOCKED: ANDROID_SDK: Android platform/SDK component (deptree-resolver-260424d); - Status: BLOCKED: ANDROID_SDK_PLATFORM: requires Android SDK ecosystem (deptree-resolver-260424e); - Status: BLOCKED: ANDROID_SDK_PLATFORM: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: ANDROID_SDK_PLATFORM: Proprietary Google SDK platform files (deptree-resolver-260425c)"
+  },
+  "android-platform-21": {
+    "name": "android-platform-21",
+    "number": 23109,
+    "in_aur": true,
+    "version": "5.0.1_r02-1",
+    "description": "Android SDK Platform, API-21",
+    "url": "http://developer.android.com/sdk/index.html",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "android-sdk",
+      "android-sdk-platform-tools"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/android-platform-21.tar.gz",
+    "fail_reason": "- Status: BLOCKED: ANDROID_SDK: Android platform/SDK component (deptree-resolver-260424d); - Status: BLOCKED: ANDROID_SDK_PLATFORM: requires Android SDK ecosystem (deptree-resolver-260424e); - Status: BLOCKED: ANDROID_SDK_PLATFORM: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: ANDROID_SDK_PLATFORM: Proprietary Google SDK platform files (deptree-resolver-260425c)"
+  },
+  "beet-summarize-git": {
+    "name": "beet-summarize-git",
+    "number": 18604,
+    "in_aur": true,
+    "version": "r98.4d9ce21-2",
+    "description": "Summarize your beets library",
+    "url": "https://github.com/steven-murray/beet-summarize",
+    "license": [
+      "LGPL-3.0-only"
+    ],
+    "depends": [
+      "python>=3.14",
+      "python<3.15",
+      "beets>=1.5.0"
+    ],
+    "makedepends": [
+      "git",
+      "python-setuptools-scm",
+      "python-build",
+      "python-installer"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/beet-summarize-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: beets plugin; requires beets + metadata libs; next: ensure beets available (recipe-resolver-260425c)"
+  },
+  "boost-python2": {
+    "name": "boost-python2",
+    "number": 37225,
+    "in_aur": true,
+    "version": "1.83.0-1",
+    "description": "Free peer-reviewed portable C++ source libraries - development headers",
+    "url": "https://www.boost.org/",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "python2",
+      "boost-python2-libs=1.83.0"
+    ],
+    "makedepends": [
+      "icu",
+      "python2",
+      "python2-numpy",
+      "bzip2",
+      "zlib",
+      "openmpi",
+      "zstd",
+      "findutils"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/boost-python2.tar.gz",
+    "fail_reason": "- Status: BLOCKED: LEGACY_PYTHON2: Boost.Python for Python 2, Python 2 is EOL (deptree-resolver-260424p)"
+  },
+  "brother-mfc-l2400dw": {
+    "name": "brother-mfc-l2400dw",
+    "number": 17797,
+    "in_aur": true,
+    "version": "4.1.0-1",
+    "description": "LPR and CUPS driver for the Brother HL-L2400DW",
+    "url": "http://solutions.brother.com/linux/en_us/",
+    "license": [
+      "custom:brother commercial license"
+    ],
+    "depends": [
+      "cups",
+      "lib32-glibc"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/brother-mfc-l2400dw.tar.gz",
+    "fail_reason": "- Status: BLOCKED: LICENSE_REVIEW_NEEDED: Brother printer driver proprietary binary blob with custom license (recipe-resolver-260424l); - Status: BLOCKED: LICENSE_REVIEW_NEEDED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: LICENSE_REVIEW_NEEDED: Proprietary Brother printer driver; restrictive redistribution (deptree-resolver-260425c)"
+  },
+  "clash-for-windows-chinese": {
+    "name": "clash-for-windows-chinese",
+    "number": 17433,
+    "in_aur": true,
+    "version": "0.20.39-1",
+    "description": "Clash for Windows Chinese",
+    "url": "https://github.com/Z-Siqi/Clash-for-Windows_Chinese",
+    "license": [],
+    "depends": [
+      "libxss",
+      "gtk3"
+    ],
+    "makedepends": [
+      "curl",
+      "jq"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/clash-for-windows-chinese.tar.gz",
+    "fail_reason": "- Status: BLOCKED: SOURCE_UNAVAILABLE: original Clash for Windows project deleted from GitHub; Chinese fork status uncertain (recipe-resolver-260423p); - Status: BLOCKED: SOURCE_UNAVAILABLE: original Clash for Windows project deleted from GitHub; Chinese fork status uncertain (deptree-resolver-260423j); - Status: BLOCKED: LICENSE_REVIEW_NEEDED: Chinese fork active at github.com/Z-Siqi/Clash-for-Windows_Chinese with Linux x64 builds, but no license declared; original Clash for Windows was proprietary. 3 approaches: source confirmed available, but license unclear, redistribution rights uncertain (deptree-resolver-260424a); - Status: BLOCKED: ABANDONED_UPSTREAM: no license, original project removed (deptree-resolver-260424e); - Status: BLOCKED: ABANDONED_UPSTREAM: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: ABANDONED_UPSTREAM: Project shut down; repository archived (deptree-resolver-260425c)"
+  },
+  "dxvk-async-git": {
+    "name": "dxvk-async-git",
+    "number": 18820,
+    "in_aur": true,
+    "version": "2.7.1.r231.g3924944-1",
+    "description": "A Vulkan-based compatibility layer for Direct3D 9/10/11 - Windows DLL version",
+    "url": "https://gitlab.com/Ph42oN/dxvk-gplasync/",
+    "license": [
+      "zlib"
+    ],
+    "depends": [
+      "bash",
+      "vulkan-icd-loader"
+    ],
+    "makedepends": [
+      "git",
+      "glslang",
+      "meson",
+      "mingw-w64-gcc",
+      "wine"
+    ],
+    "provides": [
+      "dxvk=2.7.1.r231.g3924944"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/dxvk-async-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: needs Mingw-w64 cross-compilation + Wine DLL infra (recipe-resolver-260425e)"
+  },
+  "eddiscovery": {
+    "name": "eddiscovery",
+    "number": 18320,
+    "in_aur": true,
+    "version": "19.1.3-1",
+    "description": "Captains log and 3d star map for Elite Dangerous",
+    "url": "https://github.com/EDDiscovery/EDDiscovery",
+    "license": [
+      "Apache"
+    ],
+    "depends": [
+      "mono",
+      "hicolor-icon-theme"
+    ],
+    "makedepends": [
+      "git",
+      "msbuild",
+      "nuget",
+      "sed",
+      "icoutils"
+    ],
+    "provides": [
+      "eddiscovery"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/eddiscovery.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: .NET/Mono not available (recipe-resolver-260424z)"
+  },
+  "etlegacy32-mod": {
+    "name": "etlegacy32-mod",
+    "number": 17424,
+    "in_aur": true,
+    "version": "2.83.2-1",
+    "description": "Wolfenstein: Enemy Territory 2.60b compatible client/server (etlegacy mod, 32 bit)",
+    "url": "http://www.etlegacy.com/",
+    "license": [
+      "custom",
+      "GPL3"
+    ],
+    "depends": [
+      "enemy-territory-data",
+      "geoip-database"
+    ],
+    "makedepends": [
+      "cmake",
+      "zip",
+      "alsa-lib",
+      "curl",
+      "freetype2",
+      "gcc-libs",
+      "glew",
+      "libjpeg-turbo",
+      "libvorbis",
+      "sdl2",
+      "minizip",
+      "openal",
+      "libtheora",
+      "sqlite",
+      "cjson",
+      "lib32-alsa-lib",
+      "lib32-curl",
+      "lib32-freetype2",
+      "lib32-gcc-libs",
+      "lib32-glew",
+      "lib32-libjpeg-turbo",
+      "lib32-libvorbis",
+      "lib32-sdl2",
+      "lib32-minizip",
+      "lib32-openal",
+      "lib32-libtheora",
+      "lib32-sqlite",
+      "lib32-cjson"
+    ],
+    "provides": [
+      "etlegacy-mod"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/etlegacy32-mod.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: requires 32-bit ET:Legacy client and Wolfenstein: Enemy Territory data files; multilib not supported (recipe-resolver-260423p); - Status: BLOCKED: MULTILIB_UNSUPPORTED: requires 32-bit libraries (lib32-alsa-lib, lib32-curl, lib32-freetype2); Guix lacks multilib support (deptree-resolver-260423j); - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit game mod (\"32\" in name). 3 approaches exhausted: 64-bit etlegacy is separate package, this variant requires lib32-*, Guix lacks multilib (deptree-resolver-260424a); - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit game mod (deptree-resolver-260424e)"
+  },
+  "fancy-cat": {
+    "name": "fancy-cat",
+    "number": 18648,
+    "in_aur": true,
+    "version": "0.4.0-1",
+    "description": "PDF reader for terminal emulators using the Kitty image protocol",
+    "url": "https://github.com/freref/fancy-cat",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "glibc",
+      "libmupdf"
+    ],
+    "makedepends": [
+      "zig-bin",
+      "freetype2",
+      "harfbuzz",
+      "jbig2dec",
+      "openjpeg2",
+      "libjpeg-turbo",
+      "gumbo-parser",
+      "mujs",
+      "zlib"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/fancy-cat.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: terminal PDF reader in Zig; requires Zig compiler; next: package Zig toolchain (recipe-resolver-260425c)"
+  },
+  "gvfs-smb-git": {
+    "name": "gvfs-smb-git",
+    "number": 18573,
+    "in_aur": true,
+    "version": "1.58.0+3+g04b74878-1",
+    "description": "Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)",
+    "url": "https://wiki.gnome.org/Projects/gvfs",
+    "license": [
+      "LGPL"
+    ],
+    "depends": [
+      "gvfs-git=1.58.0+3+g04b74878",
+      "smbclient>=4.12.0"
+    ],
+    "makedepends": [
+      "dbus",
+      "libgphoto2",
+      "libimobiledevice",
+      "smbclient",
+      "docbook-xsl",
+      "gtk3",
+      "libmtp",
+      "gnome-online-accounts",
+      "libnfs",
+      "libgdata",
+      "git",
+      "gtk-doc",
+      "python",
+      "meson",
+      "openssh",
+      "glib2-devel"
+    ],
+    "provides": [
+      "gvfs-smb"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/gvfs-smb-git.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: GVFS SMB backend; requires full GVFS build + Samba/CIFS; next: complex GNOME infrastructure (recipe-resolver-260425c)"
+  },
+  "hq": {
+    "name": "hq",
+    "number": 18286,
+    "in_aur": true,
+    "version": "3.2-3",
+    "description": "HTML processor inspired by jq",
+    "url": "https://github.com/coderobe/hq",
+    "license": [
+      "AGPL3"
+    ],
+    "depends": [
+      "gcc-libs",
+      "modest"
+    ],
+    "makedepends": [
+      "git",
+      "meson",
+      "fmt"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/hq.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: 40+ Rust crate deps (recipe-resolver-260424z); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Meson build; needs libmodest not in Guix (deptree-resolver-260425c)"
+  },
+  "knossu": {
+    "name": "knossu",
+    "number": 18461,
+    "in_aur": true,
+    "version": "2015_10_14_1113-1",
+    "description": "A Doom-like non-euclidean horror game",
+    "url": "https://jonathanwhiting.com/games/knossu/",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "glew1.10",
+      "libpng12"
+    ],
+    "makedepends": [],
+    "provides": [
+      "knossu"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/knossu.tar.gz",
+    "fail_reason": "- Status: BLOCKED: NEEDS_RECIPE_DESIGN: Doom-like game; custom C++ engine + SDL2 + non-euclidean geometry (recipe-resolver-260425b); - Status: BLOCKED: NEEDS_RECIPE_DESIGN: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: NEEDS_RECIPE_DESIGN: 2015 binary-only game; no source code; unknown license (deptree-resolver-260425c)"
+  },
+  "lib32-opencl-nvidia-390xx": {
+    "name": "lib32-opencl-nvidia-390xx",
+    "number": 17502,
+    "in_aur": true,
+    "version": "390.157-2",
+    "description": "OpenCL implemention for NVIDIA (32-bit), 390xx legacy branch",
+    "url": "http://www.nvidia.com/",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "lib32-zlib",
+      "lib32-gcc-libs"
+    ],
+    "makedepends": [],
+    "provides": [
+      "lib32-opencl-driver"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/lib32-opencl-nvidia-390xx.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: requires 32-bit NVIDIA 390xx legacy driver infrastructure not in Guix; multilib not supported (recipe-resolver-260423p); - Status: BLOCKED: MULTILIB_UNSUPPORTED: requires 32-bit libraries (lib32-zlib, lib32-gcc-libs); Guix lacks multilib support (deptree-resolver-260423j); - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit NVIDIA 390xx legacy driver; Guix lacks multilib. 3 approaches exhausted: no 64-bit equivalent, different driver series, no multilib workaround (deptree-resolver-260424a); - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit NVIDIA 390xx legacy driver (deptree-resolver-260424e); - Status: BLOCKED: MULTILIB_UNSUPPORTED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: MULTILIB_UNSUPPORTED: 32-bit NVIDIA OpenCL; Guix has no multilib (deptree-resolver-260425c)"
+  },
+  "linux-cachyos-hardened-headers": {
+    "name": "linux-cachyos-hardened-headers",
+    "number": 18522,
+    "in_aur": true,
+    "version": "6.19.12-1",
+    "description": "Headers and scripts for building modules for the Linux BORE scheduler and hardened Kernel by CachyOS with other patches and improvements kernel",
+    "url": "https://github.com/CachyOS/linux-cachyos",
+    "license": [
+      "GPL-2.0-only"
+    ],
+    "depends": [
+      "pahole",
+      "linux-cachyos-hardened"
+    ],
+    "makedepends": [
+      "bc",
+      "cpio",
+      "gettext",
+      "libelf",
+      "pahole",
+      "perl",
+      "python",
+      "rust",
+      "rust-bindgen",
+      "rust-src",
+      "tar",
+      "xz",
+      "zstd"
+    ],
+    "provides": [
+      "LINUX-HEADERS"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/linux-cachyos-hardened-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: CachyOS hardened kernel headers; Guix manages kernels through its own infrastructure; next: define custom kernel package (recipe-resolver-260425c)"
+  },
+  "linux-next-git-headers": {
+    "name": "linux-next-git-headers",
+    "number": 18514,
+    "in_aur": true,
+    "version": "20250704.r0.g26ffb3d6f02c-1",
+    "description": "Headers and scripts for building modules for the Linux NEXT kernel",
+    "url": "http://www.kernel.org/",
+    "license": [
+      "GPL-2.0-only"
+    ],
+    "depends": [
+      "linux-next-git",
+      "pahole"
+    ],
+    "makedepends": [
+      "bc",
+      "cpio",
+      "gettext",
+      "libelf",
+      "pahole",
+      "perl",
+      "python",
+      "rust",
+      "rust-bindgen",
+      "rust-src",
+      "tar",
+      "xz",
+      "git"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/linux-next-git-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: bleeding-edge kernel headers; Guix manages kernels separately (recipe-resolver-260425b)"
+  },
+  "linux-sched-ext-git-headers": {
+    "name": "linux-sched-ext-git-headers",
+    "number": 18498,
+    "in_aur": true,
+    "version": "6.11.0.r1295922.g902d67a2d40f-1",
+    "description": "Headers and scripts for building modules for the Linux Kernel based on the sched_ext branch kernel",
+    "url": "http://www.kernel.org/",
+    "license": [
+      "GPL-2.0-only"
+    ],
+    "depends": [
+      "linux-sched-ext-git",
+      "pahole"
+    ],
+    "makedepends": [
+      "bc",
+      "libelf",
+      "git",
+      "pahole",
+      "cpio",
+      "perl",
+      "tar",
+      "xz",
+      "python"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/linux-sched-ext-git-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: custom kernel headers; Guix manages kernels separately (recipe-resolver-260425b)"
+  },
+  "linux-tip-git-headers": {
+    "name": "linux-tip-git-headers",
+    "number": 18533,
+    "in_aur": true,
+    "version": "6.11.0.r1296984.g4c293d0fa315-1",
+    "description": "Headers and scripts for building modules for the Linux Kernel based on the tip branch kernel",
+    "url": "http://www.kernel.org/",
+    "license": [
+      "GPL-2.0-only"
+    ],
+    "depends": [
+      "linux-next-git",
+      "pahole"
+    ],
+    "makedepends": [
+      "bc",
+      "libelf",
+      "git",
+      "pahole",
+      "cpio",
+      "perl",
+      "tar",
+      "xz",
+      "python"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/linux-tip-git-headers.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: linux-next/tip kernel headers; Guix kernel model incompatible; next: define custom kernel package (recipe-resolver-260425c)"
+  },
+  "lto-dump-snapshot": {
+    "name": "lto-dump-snapshot",
+    "number": 18347,
+    "in_aur": true,
+    "version": "16.0.0.snapshot20260419-1",
+    "description": "GNU Compiler Collection - Dump link time optimization object files tool (snapshot)",
+    "url": "https://gcc.gnu.org",
+    "license": [
+      "GFDL-1.3-or-later",
+      "GPL-2.0-or-later",
+      "GPL-3.0-with-GCC-exception",
+      "LGPL-3.0-only",
+      "LGPL-3.0-or-later"
+    ],
+    "depends": [
+      "gcc-snapshot=16.0.0.snapshot20260419-1",
+      "libgcc-snapshot"
+    ],
+    "makedepends": [
+      "binutils",
+      "doxygen",
+      "gcc-ada",
+      "gcc-d",
+      "git",
+      "lib32-glibc",
+      "lib32-gcc-libs",
+      "python",
+      "zstd"
+    ],
+    "provides": [
+      "lto-dump-snapshot-multilib",
+      "lto-dump"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/lto-dump-snapshot.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: GCC snapshot bootstrap infeasible (recipe-resolver-260424z)"
+  },
+  "nemo-engrampa": {
+    "name": "nemo-engrampa",
+    "number": 18640,
+    "in_aur": true,
+    "version": "6.6.0-1",
+    "description": "Archive management plugin for Nemo using engrampa",
+    "url": "https://github.com/linuxmint/nemo-extensions",
+    "license": [
+      "GPL2"
+    ],
+    "depends": [
+      "nemo",
+      "engrampa"
+    ],
+    "makedepends": [
+      "meson",
+      "samurai",
+      "glib2-devel"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/nemo-engrampa.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Nemo plugin for Engrampa; requires Cinnamon/Nemo stack; next: package Nemo extension API (recipe-resolver-260425c); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Needs Cinnamon/Nemo extension API (deptree-resolver-260425c)"
+  },
+  "nginx-mainline-mod-njs": {
+    "name": "nginx-mainline-mod-njs",
+    "number": 18380,
+    "in_aur": true,
+    "version": "0.8.6-1",
+    "description": "nginScript module for mainline nginx",
+    "url": "https://nginx.org/en/docs/njs_about.html",
+    "license": [
+      "custom"
+    ],
+    "depends": [
+      "nginx-mainline",
+      "libxslt"
+    ],
+    "makedepends": [
+      "nginx-mainline-src"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/nginx-mainline-mod-njs.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: must compile against exact nginx source with matching flags (recipe-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Nginx module; needs nginx source build (deptree-resolver-260425c)"
+  },
+  "nodejs-cspell": {
+    "name": "nodejs-cspell",
+    "number": 18215,
+    "in_aur": true,
+    "version": "9.2.0-1",
+    "description": "A Spelling Checker for Code!",
+    "url": "https://streetsidesoftware.github.io/cspell/",
+    "license": [
+      "MIT"
+    ],
+    "depends": [
+      "nodejs",
+      "npm"
+    ],
+    "makedepends": [],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/nodejs-cspell.tar.gz",
+    "fail_reason": "- Status: BLOCKED: DEP_RESOLUTION_FAILED: Node.js app; 200+ npm deps; node-build-system cannot handle (recipe-resolver-260424t); - Status: BLOCKED: DEP_RESOLUTION_FAILED: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DEP_RESOLUTION_FAILED: Node.js spell checker; npm deps (deptree-resolver-260425c)"
+  },
+  "nvidia-bl-dkms": {
+    "name": "nvidia-bl-dkms",
+    "number": 17755,
+    "in_aur": true,
+    "version": "18.11.0-3",
+    "description": "Driver to adjust display backlight on legacy mobile NVidia graphics adapters - DKMS edition.",
+    "url": null,
+    "license": [
+      "GPL"
+    ],
+    "depends": [
+      "linux>=3.8",
+      "dkms"
+    ],
+    "makedepends": [
+      "linux-headers"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/nvidia-bl-dkms.tar.gz",
+    "fail_reason": "- Status: BLOCKED: BUILD_FAILED: DKMS kernel module requires kernel headers and DKMS framework; complex in Guix (recipe-resolver-260424l); - Status: BLOCKED: DKMS_KERNEL_MODULE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: NVIDIA backlight DKMS module; requires kernel integration (deptree-resolver-260425c)"
+  },
+  "pfring-dkms": {
+    "name": "pfring-dkms",
+    "number": 18399,
+    "in_aur": true,
+    "version": "8.6.1.8976-1",
+    "description": "High-speed packet processing framework",
+    "url": "https://github.com/ntop/PF_RING",
+    "license": [],
+    "depends": [
+      "numactl",
+      "dkms"
+    ],
+    "makedepends": [],
+    "provides": [
+      "PFRING-MODULE=8.6.1.8976"
+    ],
+    "urlpath": "/cgit/aur.git/snapshot/pfring-dkms.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: DKMS kernel module; Guix kernel model incompatible with DKMS (recipe-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: DKMS_KERNEL_MODULE: PF_RING packet capture; requires kernel integration (deptree-resolver-260425c)"
+  },
+  "php83-mcrypt": {
+    "name": "php83-mcrypt",
+    "number": 18398,
+    "in_aur": true,
+    "version": "1.0.7-1",
+    "description": "php83 bindings for the unmaintained libmcrypt. For compat purposes",
+    "url": "https://pecl.php.net/package/mcrypt",
+    "license": [
+      "PHP"
+    ],
+    "depends": [
+      "php81",
+      "libmcrypt"
+    ],
+    "makedepends": [
+      "autoconf",
+      "re2c"
+    ],
+    "provides": [],
+    "urlpath": "/cgit/aur.git/snapshot/php83-mcrypt.tar.gz",
+    "fail_reason": "- Status: BLOCKED: TOOLING_FAILURE: deprecated PHP mcrypt extension; PHP binding not supported in Guix channels (recipe-resolver-260425b); - Status: BLOCKED: TOOLING_FAILURE: re-evaluated (deptree-resolver-260425b); - Status: BLOCKED: TOOLING_FAILURE: PHP 8.3-specific PECL extension; Guix PHP version mismatch (deptree-resolver-260425c)"
+  }
+}
