@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; deptree-resolver-260425i: 100 BLOCKED evaluated (2 recipes, 98 remain BLOCKED)
 ;; recipe-resolver-260425h: 100 packages attempted (100 recipes, 0 BLOCKED)
 (define-module (gaurix packages)
             ;; deptree-resolver-260425h: 100 BLOCKED evaluated (6 recipes, 2 ALREADY_RESOLVED, 92 remain BLOCKED)
@@ -11246,4 +11247,110 @@
                php-mcrypt
                sbctl
                snowflake-pt-server
-               ))
+            xidlehook
+            musique
+               
+;;; recipe-resolver-260425i: 99 packages attempted (99 recipes, 1 SOURCE_UNAVAILABLE)
+  #:use-module (gaurix packages recipe-resolver-260425i)
+  #:re-export (
+               brother-dcp7057
+               lemminx
+               drand-http-relay
+               android-sdk-build-tools-35
+               cassandra
+               scriptisto
+               gwe
+               flexget-webui
+               macbook-12-1-linux-fixes
+               alterware-launcher-git
+               symbiyosys-git
+               mkdocs-material-pymdownx-extras
+               gtk3-classic-xfce
+               android-studio-beta
+               openscad-lsp
+               protondb-cli
+               qmp3gain-git
+               nodejs-vls
+               plasma6-wallpapers-blurredwallpaper
+               bananaplus
+               lib32-lzo
+               python-rembg
+               python3-colorsysplus
+               ultrastardx-songs
+               xorgxrdp-glamor
+               cyberghostvpn
+               smoothie-rs-linux-git
+               apfsprogs-git
+               gnome-shell-extension-rounded-window-corners-reborn
+               icinga2
+               vattery
+               mikmod
+               uxplay-git
+               php-oci8
+               notepad---git
+               shader-slang-git
+               rtl8812au-aircrack-ng-dkms-git
+               lan-mouse-git
+               sticky-notes
+               go-ascii-tool-git
+               vatsim-crc
+               snx
+               kicad-nightly
+               mcskinedit
+               xwinwrap-git
+               muc-git
+               gnome-kra-ora-thumbnailer-git
+               cinelerra-gg
+               zaman
+               xborder-git
+               matplotplusplus
+               aget
+               tetris
+               polybar-now-playing-git
+               libfprint-elanmoc2-working-git
+               doxide
+               vufind
+               unshell
+               snmalloc
+               ruby-asciidoctor-diagram-batik
+               qregedit-git
+               python-safehttpx
+               ptt-fix
+               porymap
+               popcornfx-editor
+               petalinux
+               newm-next-git
+               nemo-webp-git
+               mtp
+               metamorphose2-python3-git
+               memsed-git
+               lb-planner-git
+               keyring-cli
+               k8s-ldap-auth
+               hfd-git
+               gosign
+               fluidx3d
+               debounce
+               baibot-git
+               asciiconv
+               yetris
+               nfancurve
+               xontrib-vox-git
+               woz2dsk
+               tile-world2
+               python-pydantic-graph
+               python-groq
+               passport
+               krunner-watch-git
+               hostsd
+               cadius
+               baibot
+               gaiasky
+               python-click-extra
+               py-cidr
+               meep-python
+               browser-on-ram-git
+               pamac-gtk3
+               kri
+               )
+))
