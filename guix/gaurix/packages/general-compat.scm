@@ -554,6 +554,7 @@
   #:use-module (gaurix packages deptree-resolver-260424w)
   #:use-module (gaurix packages deptree-resolver-260424x)
   #:use-module (gaurix packages recipe-resolver-260424u)
+  #:use-module (gaurix packages deptree-resolver-260424y)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15342,3 +15343,10 @@
 ; - gotz-bin
 ; - flood-bin
 ; - etcd-bin
+
+; deptree-resolver-260424y recipes
+(re-export wooting-udev)
+(re-export lamzu-maya-x-udev)
+(re-export udiskie-systemd)
+(re-export neoforge-server)
+(re-export pixelflasher)
