@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260425g)
   #:use-module (gaurix packages deptree-resolver-260425f)
   #:use-module (gaurix packages recipe-resolver-260425g)
   #:use-module (gaurix packages deptree-resolver-260425e)
@@ -15620,3 +15621,7 @@
 (re-export radeon-profile-daemon-git)
 (re-export i3lock-fancy-rapid-git)
 (re-export thunar-extended)
+(re-export gearhead2)
+(re-export nemo-engrampa)
+(re-export playerctld-systemd-unit)
+(re-export locale-mul-zz)
