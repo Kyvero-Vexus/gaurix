@@ -145361,18 +145361,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: recipe in recipe-resolver-260425b.scm (mpv-sponsorblock v1.0, copy-build-system, MPV Lua script, GPL-3.0) (recipe-resolver-260425b)
 
 
-** TODO 18518. pantheon-polkit-agent-git
+** BLOCKED 18518. pantheon-polkit-agent-git
    - AUR votes: 4, popularity: 0.0005
    - Note: Pantheon Polkit Agent
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18519. code-nautilus-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: requires Pantheon desktop stack (granite, wingpanel); next: package Pantheon libraries first (recipe-resolver-260425c)
+** DONE 18519. code-nautilus-git
    - AUR votes: 4, popularity: 0.0005
    - Note: VSCode extension for Nautilus
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (code-nautilus-git v0.1, copy-build-system, GPL-3.0+)
 ** BLOCKED 18520. vivaldi-autoinject-custom-js-ui  :recipe-resolver-260425b:recipe-generated:
    - AUR votes: 3, popularity: 0.0005
    - Note: manage custom js UI mods for the vivaldi web browser
@@ -145382,24 +145384,27 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: TOOLING_FAILURE: Vivaldi browser internals modification; browser-specific, not packageable generically (recipe-resolver-260425b)
 
 
-** TODO 18521. paperde
+** BLOCKED 18521. paperde
    - AUR votes: 3, popularity: 0.0005
    - Note: An awesome Desktop Environment built on top of Qt/Wayland and Wayfire.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18522. linux-cachyos-hardened-headers
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Qt/Wayland DE on Wayfire; requires Wayfire + wf-config not in Guix; next: package Wayfire ecosystem (recipe-resolver-260425c)
+** BLOCKED 18522. linux-cachyos-hardened-headers
    - AUR votes: 2, popularity: 0.0005
    - Note: Headers and scripts for building modules for the Linux BORE scheduler and hardened Kernel by CachyOS with other patches and improvements kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18523. gearhead2
+   - Status: BLOCKED: TOOLING_FAILURE: CachyOS hardened kernel headers; Guix manages kernels through its own infrastructure; next: define custom kernel package (recipe-resolver-260425c)
+** BLOCKED 18523. gearhead2
    - AUR votes: 2, popularity: 0.0005
    - Note: A rougelike mecha role playing game, second game in the GearHead series
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: roguelike in Free Pascal; requires FPC compiler not in Guix; next: package Free Pascal (recipe-resolver-260425c)
 ** DONE 18524. cdargs
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 2, popularity: 0.0005
@@ -145407,24 +145412,26 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18525. wmectrl
+** DONE 18525. wmectrl
    - AUR votes: 1, popularity: 0.0005
    - Note: An enhanced window manager control
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (wmectrl v0.1, gnu-build-system, GPL-2.0+)
 ** TODO 18526. wavey-launcher-git
    - AUR votes: 1, popularity: 0.0005
    - Note: A launcher for a specific anime game with auto-patching, discord rpc and time tracking
    - TODO Status: TODO
 
 
-** TODO 18527. s-screen
+** DONE 18527. s-screen
    - AUR votes: 1, popularity: 0.0005
    - Note: A minimalist wrapper around screen that makes terminal session management dead simple. Documentation: https://kolarski.github.io/s/
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (s-screen v1.0, copy-build-system, MIT)
 ** DONE 18528. python-pytest-pyodide
    - Status: DONE: recipe in recipe-resolver-260417af.scm (python-pytest-pyodide v0.59.0, pyproject-build-system, expat)
    - AUR votes: 1, popularity: 0.0005
@@ -145440,12 +145447,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18530. panda3ds
+** BLOCKED 18530. panda3ds
    - AUR votes: 1, popularity: 0.0005
    - Note: HLE 3DS emulator
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: HLE 3DS emulator; complex C++ with Vulkan/OpenGL + 30+ deps; next: extensive dependency chain (recipe-resolver-260425c)
 ** DONE 18531. otf-futura-renner  :recipe-resolver-260424l:recipe-generated:
    - AUR votes: 1, popularity: 0.0005
    - Note: A digital version of Futura
@@ -145461,18 +145469,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
 
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260417v.scm (mew v1.0, gnu-build-system, MIT) (recipe-resolver-260417v)
-** TODO 18533. linux-tip-git-headers
+** BLOCKED 18533. linux-tip-git-headers
    - AUR votes: 1, popularity: 0.0005
    - Note: Headers and scripts for building modules for the Linux Kernel based on the tip branch kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18534. lightningcss-cli-bin
+   - Status: BLOCKED: TOOLING_FAILURE: linux-next/tip kernel headers; Guix kernel model incompatible; next: define custom kernel package (recipe-resolver-260425c)
+** DONE 18534. lightningcss-cli-bin
    - AUR votes: 1, popularity: 0.0005
    - Note: Extremely fast CSS parser, transformer, and minifier
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (lightningcss-cli-bin v1.28.2, copy-build-system, MPL-2.0)
 ** DONE 18535. fakeroot-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Tool for simulating superuser privileges
@@ -145486,18 +145496,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18537. base-selinux
+** BLOCKED 18537. base-selinux
    - AUR votes: 1, popularity: 0.0005
    - Note: Minimal packages for Arch Linux installation with SELinux support
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18538. base-devel-selinux
+   - Status: BLOCKED: TOOLING_FAILURE: Arch SELinux meta-package; SELinux not used by Guix System; next: not applicable (recipe-resolver-260425c)
+** BLOCKED 18538. base-devel-selinux
    - AUR votes: 1, popularity: 0.0005
    - Note: Meta package that substitutes base-devel group with SELinux support
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: TOOLING_FAILURE: Arch SELinux development meta-package; not applicable to Guix (recipe-resolver-260425c)
 ** DONE 18539. arcticons-icon-theme  :deptree-resolver-260418a:RECIPE  :deptree-resolver-260424b:recipe-generated:
    - AUR votes: 1, popularity: 0.0005
    - Note: A monotone line-based icon pack for android - freedesktop version
@@ -145525,12 +145537,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18542. h5utils
+** DONE 18542. h5utils
    - AUR votes: 26, popularity: 0.0005
    - Note: Software for visualization/conversion of scientific data in the HDF5 format
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (h5utils v1.13.2, gnu-build-system, GPL-2.0+)
 ** DONE 18543. ttf-dejavu-emojiless  :recipe-resolver-260423l:recipe-generated:
    - AUR votes: 17, popularity: 0.0005
    - Note: Derivate of DejaVu without characters listed as emoji, in order not to override color fonts
@@ -145539,12 +145552,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18544. hyx
+** DONE 18544. hyx
    - AUR votes: 17, popularity: 0.0005
    - Note: A minimalistic, but powerful console hex editor
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (hyx v2024.02.29, gnu-build-system, ISC)
 ** DONE 18545. wl-clipboard-git
    - AUR votes: 13, popularity: 0.0005
    - Note: Command-line copy/paste utilities for Wayland
@@ -145552,18 +145566,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18546. archisteamfarm-bin
+** DONE 18546. archisteamfarm-bin
    - AUR votes: 13, popularity: 0.0005
    - Note: C# application that allows you to farm steam cards using multiple steam accounts simultaneously.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18547. linux-covolunablu-gaming-headers
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (archisteamfarm-bin v6.1.3.3, copy-build-system, Apache-2.0)
+** BLOCKED 18547. linux-covolunablu-gaming-headers
    - AUR votes: 12, popularity: 0.0005
    - Note: Headers and scripts for building modules for the linux-covolunablu-gaming kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: TOOLING_FAILURE: custom gaming kernel headers; Guix manages kernels separately; next: define custom kernel package (recipe-resolver-260425c)
 ** DONE 18548. swayidle-git
    - AUR votes: 11, popularity: 0.0005
    - Note: Idle management daemon for Wayland (git development version)
@@ -145610,42 +145626,48 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18554. luxtorpeda-git
+** BLOCKED 18554. luxtorpeda-git
    - AUR votes: 6, popularity: 0.0005
    - Note: Steam Play compatibility tool to run games using native Linux engines
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18555. xseticon
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Steam Play tool in Rust; 100+ crate deps; next: requires vendored crate manifest (recipe-resolver-260425c)
+** DONE 18555. xseticon
    - AUR votes: 4, popularity: 0.0005
    - Note: Set the X11 window icon for any given window to that of a given image file
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18556. python-home-assistant-frontend
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (xseticon v0.1, gnu-build-system, GPL-2.0+)
+** BLOCKED 18556. python-home-assistant-frontend
    - AUR votes: 4, popularity: 0.0005
    - Note: The Home Assistant frontend
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18557. plugin-autenticacao-gov-pt
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: HA web frontend; massive Node.js/Webpack build with 500+ npm deps; next: not feasible (recipe-resolver-260425c)
+** BLOCKED 18557. plugin-autenticacao-gov-pt
    - AUR votes: 4, popularity: 0.0005
    - Note: O plugin Autenticação.Gov (anteriormente designado por aplicação Autenticação.gov.pt) permite realizar o procedimento de autenticação com o Cartão de Cidadão sem necessidade de efetuar a instalação de qualquer componente no navegador
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18558. nm-vpngate-git
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: Portuguese gov auth plugin; download is session-gated at autenticacao.gov.pt; next: no stable URI (recipe-resolver-260425c)
+** DONE 18558. nm-vpngate-git
    - AUR votes: 4, popularity: 0.0005
    - Note: A script that makes it easy to connect Network Manager to a VPN Gate
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18559. jigdo
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (nm-vpngate-git v1.0, copy-build-system, GPL-3.0+)
+** DONE 18559. jigdo
    - AUR votes: 4, popularity: 0.0005
    - Note: Distribute large images by sending and receiving the files that make them up
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (jigdo v0.8.2, gnu-build-system, GPL-2.0+)
 ** DONE 18560. zenity-git
    - AUR votes: 3, popularity: 0.0005
    - Note: Display graphical dialog boxes from shell scripts
@@ -145653,24 +145675,27 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18561. rdt-client
+** BLOCKED 18561. rdt-client
    - AUR votes: 3, popularity: 0.0005
    - Note: Real-Debrid Torrent Client
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18562. pgn-extract
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Real-Debrid client; .NET/C# application; next: package .NET SDK (recipe-resolver-260425c)
+** DONE 18562. pgn-extract
    - AUR votes: 3, popularity: 0.0005
    - Note: A Portable Game Notation (PGN) Manipulator for Chess Games
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18563. ovh-ttyrec-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (pgn-extract v24.11, gnu-build-system, GPL-3.0+)
+** DONE 18563. ovh-ttyrec-git
    - AUR votes: 3, popularity: 0.0005
    - Note: Enhanced (but compatible) version of the classic ttyrec
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (ovh-ttyrec-git v1.1.6.7, gnu-build-system, BSD-3)
 ** DONE 18564. ivykis  :recipe-resolver-260424o:recipe-generated:
    - AUR votes: 3, popularity: 0.0005
    - Note: Asynchronous I/O readiness notification library
@@ -145680,12 +145705,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260424o.scm (ivykis v0.43.2, gnu-build-system, async I/O library, LGPL-2.1) (recipe-resolver-260424o)
    - TODO Status: DONE
 
-** TODO 18565. fanctl
+** DONE 18565. fanctl
    - AUR votes: 3, popularity: 0.0005
    - Note: replacement for fancontrol with more fine-grained control interface in its config file
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (fanctl v1.2, gnu-build-system, GPL-2.0+)
 ** DONE 18566. ecce-gov-pt-certificates
    - AUR votes: 3, popularity: 0.0005
    - Note: CA Certificates from ECCE.gov.pt
@@ -145702,12 +145728,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver-260424q)
    - TODO Status: DONE
-** TODO 18568. archwiki-offline
+** BLOCKED 18568. archwiki-offline
    - AUR votes: 3, popularity: 0.0005
    - Note: A simple script to view ArchWiki offline
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: TOOLING_FAILURE: Arch-specific wiki viewer relying on pacman paths; next: not applicable outside Arch (recipe-resolver-260425c)
 ** DONE 18569. wlr-protocols-git
    - AUR votes: 2, popularity: 0.0005
    - Note: Wayland protocols designed for use in wlroots (and other compositors).
@@ -145736,54 +145763,62 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18573. gvfs-smb-git
+** BLOCKED 18573. gvfs-smb-git
    - AUR votes: 2, popularity: 0.0005
    - Note: Virtual filesystem implementation for GIO (SMB/CIFS backend; Windows client)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18574. edgeimpulse-cli
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: GVFS SMB backend; requires full GVFS build + Samba/CIFS; next: complex GNOME infrastructure (recipe-resolver-260425c)
+** BLOCKED 18574. edgeimpulse-cli
    - AUR votes: 2, popularity: 0.0005
    - Note: Command-line interface tools for Edge Impulse.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18575. btrfs-compress
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Edge Impulse Node.js CLI; npm dependency tree with native modules; next: package npm deps (recipe-resolver-260425c)
+** DONE 18575. btrfs-compress
    - AUR votes: 2, popularity: 0.0005
    - Note: btrfs tool that makes it possible to change +c flags recursively on existing files
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18576. swscreenshot-gui
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (btrfs-compress v1.0, copy-build-system, GPL-3.0+)
+** BLOCKED 18576. swscreenshot-gui
    - AUR votes: 1, popularity: 0.0005
    - Note: Screenshot app GUI for SwayWM
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18577. steamachievementnotifier-bin
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Sway screenshot GUI; requires SwayWM IPC + grim/slurp; next: package sway tooling (recipe-resolver-260425c)
+** DONE 18577. steamachievementnotifier-bin
    - AUR votes: 1, popularity: 0.0005
    - Note: Shows fully customisable notifications when you unlock any achievement on Steam!(Prebuilt version.Use system-wide electron)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18578. shig-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (steamachievementnotifier-bin v1.11.2, copy-build-system, MIT)
+** BLOCKED 18578. shig-git
    - AUR votes: 1, popularity: 0.0005
    - Note: CLI utility to sign files and verify signatures in OpenSSH compatible format (alternative to `ssh-keygen -Y`)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18579. secretpixel
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: SSH signing CLI in Go; 30+ Go module deps; next: requires go module vendoring (recipe-resolver-260425c)
+** DONE 18579. secretpixel
    - AUR votes: 1, popularity: 0.0005
    - Note: cutting-edge steganography tool
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18580. scans2any-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (secretpixel v1.0, copy-build-system, MIT)
+** BLOCKED 18580. scans2any-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Convert and merge infrastructure scans to Typst, Markdown, HTML, ...
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: scan converter in Rust; requires Typst + 40+ crate deps; next: requires vendored crate manifest (recipe-resolver-260425c)
 ** DONE 18581. python-wordllama
    - Status: DONE: recipe in recipe-resolver-260417af.scm (python-wordllama v0.4.0.post1, pyproject-build-system, expat)
    - AUR votes: 1, popularity: 0.0005
@@ -145843,42 +145878,48 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18589. openexr-viewer
+** BLOCKED 18589. openexr-viewer
    - AUR votes: 1, popularity: 0.0005
    - Note: Simple viewer for OpenEXR files with detailed metadata display
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18590. nyarchassistant
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: EXR viewer; Qt6 + OpenEXR + custom GL rendering; next: ensure Qt6 + OpenEXR stack available (recipe-resolver-260425c)
+** BLOCKED 18590. nyarchassistant
    - AUR votes: 1, popularity: 0.0005
    - Note: Nyarch Assistant (Newelle Fork)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18591. nuclear-player
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: AI assistant fork; Python + GTK4 + libadwaita + AI backends; next: complex unstable deps (recipe-resolver-260425c)
+** DONE 18591. nuclear-player
    - AUR votes: 1, popularity: 0.0005
    - Note: Streaming music player that finds free music for you.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18592. mailnaggertray-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (nuclear-player-bin v0.6.30, copy-build-system, AGPL-3.0+)
+** BLOCKED 18592. mailnaggertray-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Tray icon for use with mailnagger
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18593. interstellar-bin
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: tray icon for mailnagger; requires mailnagger + libappindicator; next: package mailnagger first (recipe-resolver-260425c)
+** DONE 18593. interstellar-bin
    - AUR votes: 1, popularity: 0.0005
    - Note: An app for Mbin/Lemmy/PieFed, connecting you to the fediverse.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18594. illogical-impulse-pymyc-aur
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (interstellar-bin v0.8.0, copy-build-system, GPL-3.0+)
+** BLOCKED 18594. illogical-impulse-pymyc-aur
    - AUR votes: 1, popularity: 0.0005
    - Note: Illogical Impulse PyMYC Dependencies
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: PyMYC dependencies meta; requires custom Python modules; next: package PyMYC ecosystem (recipe-resolver-260425c)
 ** DONE 18595. illogical-impulse-oneui4-icons-git [recipe: illogical-impulse-oneui4-icons (copy-build-system, GPL-3.0)]  :deptree-resolver-260424n:
    - AUR votes: 1, popularity: 0.0005
    - Note: A fork of mjkim0727/OneUI4-Icons for illogical-impulse dotfiles.
@@ -145886,12 +145927,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: BLOCKED: SOURCE_UNAVAILABLE: Fork from dotfiles repo; unstable git-only source with no releases (recipe-resolver-260424l)
 
 
-** TODO 18596. illogical-impulse-gtk
+** DONE 18596. illogical-impulse-gtk
    - AUR votes: 1, popularity: 0.0005
    - Note: Illogical Impulse GTK Dependencies
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (illogical-impulse-gtk v1.0, copy-build-system, GPL-3.0+)
 ** DONE 18597. grok-cli
    - AUR votes: 1, popularity: 0.0005
    - Note: Grok in the terminal
@@ -145900,30 +145942,34 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver-260424q)
    - TODO Status: DONE
-** TODO 18598. go2tv
+** BLOCKED 18598. go2tv
    - AUR votes: 1, popularity: 0.0005
    - Note: cast your videos to UPnP/DLNA MediaRenderer
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18599. gdx-liftoff
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Go DLNA tool; 40+ Go module deps; next: requires go module vendoring (recipe-resolver-260425c)
+** BLOCKED 18599. gdx-liftoff
    - AUR votes: 1, popularity: 0.0005
    - Note: LibGDX project setup
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18600. fido2-hid-bridge
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: LibGDX project generator; Java/Gradle with deep deps; next: package LibGDX stack (recipe-resolver-260425c)
+** BLOCKED 18600. fido2-hid-bridge
    - AUR votes: 1, popularity: 0.0005
    - Note: This allows using authenticators over PC/SC from applications that only support USB-HID, such as Firefox; with this program running you can use NFC authenticators or Smartcards.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18601. daylight
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: FIDO2 HID bridge; requires custom HID + FIDO2 libs; next: package FIDO2 stack (recipe-resolver-260425c)
+** DONE 18601. daylight
    - AUR votes: 1, popularity: 0.0005
    - Note: a command-line program for tracking sunrise and sunset times
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (daylight v1.0, gnu-build-system, MIT)
 ** DONE 18602. chromium-material-icons-for-github-bin  :recipe-resolver-260424l:  :recipe-resolver-260424n:recipe-generated:
    - AUR votes: 1, popularity: 0.0005
    - Note: Browser Addon that enhances file browsers of version controls with material icons.
@@ -145933,36 +145979,41 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe in recipe-resolver-260424n.scm (chromium-material-icons-for-github-bin v1.14.0, copy-build-system, MIT)
    - TODO Status: DONE
-** TODO 18603. chromium-dearrow-bin
+** DONE 18603. chromium-dearrow-bin
    - AUR votes: 1, popularity: 0.0005
    - Note: Crowdsourcing better titles and thumbnails on YouTube
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18604. beet-summarize-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (chromium-dearrow-bin v1.0, copy-build-system, GPL-3.0)
+** BLOCKED 18604. beet-summarize-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Summarize your beets library
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18605. ausweiskopie
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: beets plugin; requires beets + metadata libs; next: ensure beets available (recipe-resolver-260425c)
+** BLOCKED 18605. ausweiskopie
    - AUR votes: 1, popularity: 0.0005
    - Note: Create privacy friendly and legal copies of your Ausweisdokument
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18606. aquacomputer_d5next-hwmon-dkms
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: German ID copy tool; no public repository or download URL found; next: locate upstream source (recipe-resolver-260425c)
+** BLOCKED 18606. aquacomputer_d5next-hwmon-dkms
    - AUR votes: 1, popularity: 0.0005
    - Note: Hwmon Linux kernel driver for monitoring and configuring Aquacomputer PC watercooling devices
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18607. aegisub-arch1t3cht-appimage
+   - Status: BLOCKED: TOOLING_FAILURE: DKMS hwmon kernel module; Guix kernel model incompatible with DKMS; next: custom kernel module package (recipe-resolver-260425c)
+** DONE 18607. aegisub-arch1t3cht-appimage
    - AUR votes: 1, popularity: 0.0005
    - Note: A general-purpose subtitle editor with ASS/SSA support (arch1t3cht fork) (AppImage version)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (aegisub-arch1t3cht-appimage v3.4.1, copy-build-system, BSD-3)
 ** DONE 18608. python-dacite
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 15, popularity: 0.0005
@@ -145977,12 +146028,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18610. lincity-ng-git
+** BLOCKED 18610. lincity-ng-git
    - AUR votes: 6, popularity: 0.0005
    - Note: A city simulation game (development version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: city sim game; SDL2_mixer + PhysFS + custom GUI; next: complex game deps (recipe-resolver-260425c)
 ** DONE 18611. arx-libertatis-git
    - AUR votes: 6, popularity: 0.0005
    - Note: Cross-platform port of Arx Fatalis, a first-person role-playing game (executables only) (Git)
@@ -145990,18 +146042,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `arx-libertatis`; validated target with `guix show arx-libertatis` and package object via Guix REPL module import.
 
-** TODO 18612. frame-eth
+** BLOCKED 18612. frame-eth
    - AUR votes: 4, popularity: 0.0005
    - Note: System-wide Web3
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18613. principia-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Web3/Ethereum wallet (Electron); massive npm deps; next: not feasible (recipe-resolver-260425c)
+** BLOCKED 18613. principia-git
    - AUR votes: 3, popularity: 0.0005
    - Note: Physics-based sandbox building game.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: physics sandbox game; Box2D + SDL2 + custom engine; next: complex game deps (recipe-resolver-260425c)
 ** DONE 18614. file-roller-git
    - AUR votes: 2, popularity: 0.0005
    - Note: Create and modify archives
@@ -146009,12 +146063,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `file-roller`; validated target with `guix show file-roller` and package object via Guix REPL module import.
 
-** TODO 18615. python-pygltflib
+** DONE 18615. python-pygltflib
    - AUR votes: 1, popularity: 0.0005
    - Note: Module for reading and writing basic gltf files.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (python-pygltflib v1.16.3, pyproject-build-system, MIT)
 ** DONE 18616. python-laspy
    - Status: DONE: recipe in recipe-resolver-260417af.scm (python-laspy v2.7.0, pyproject-build-system, expat)
    - AUR votes: 1, popularity: 0.0005
@@ -146022,42 +146077,48 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18617. nvidia-open-tinygrad-dkms-git
+** BLOCKED 18617. nvidia-open-tinygrad-dkms-git
    - AUR votes: 1, popularity: 0.0005
    - Note: NVIDIA open GPU kernel modules (tinygrad git version)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18618. madness-interactive-reloaded
+   - Status: BLOCKED: TOOLING_FAILURE: NVIDIA open DKMS kernel modules; DKMS incompatible with Guix; next: use nonguix channel (recipe-resolver-260425c)
+** BLOCKED 18618. madness-interactive-reloaded
    - AUR votes: 1, popularity: 0.0005
    - Note: Moddable action video game based on Madness Combat
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18619. glsmac-git
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: game distributed via itch.io; no direct download URL; next: requires browser purchase (recipe-resolver-260425c)
+** BLOCKED 18619. glsmac-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Unofficial open-source OpenGL/SDL2 reimplementation of Sid Meiers Alpha Centauri ( + Alien Crossfire )
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18620. electrum-personal-server-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: SMAC reimplementation; C++ with SDL2 + custom scripting; next: complex game engine (recipe-resolver-260425c)
+** BLOCKED 18620. electrum-personal-server-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Electrum Personal Server
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18621. certbot-dns-standalone
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Electrum Bitcoin server; requires python-bitcointx etc.; next: package bitcoin Python stack (recipe-resolver-260425c)
+** DONE 18621. certbot-dns-standalone
    - AUR votes: 1, popularity: 0.0005
    - Note: Standalone DNS server plugin for certbot verification
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18622. exif
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (certbot-dns-standalone v1.1, pyproject-build-system, Apache-2.0)
+** DONE 18622. exif
    - AUR votes: 36, popularity: 0.0005
    - Note: A small command-line utility to show EXIF information hidden in JPEG files.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (exif v0.6.24, gnu-build-system, LGPL-2.1+)
 ** DONE 18623. xavs2-git
    - Status: DONE via cron-c79f127f-r22-w03-nrd6 recipe: xavs2 (C, gnu-build-system, git-fetch from github.com/pkuvcl/xavs2 1.4)
    - Status: DONE: recipe-resolver-p3 resolved via primary entry 6090 in queue-20260406-recipe-resolver-p3.scm
@@ -146066,12 +146127,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18624. perimeter81-rpm
+** DONE 18624. perimeter81-rpm
    - AUR votes: 1, popularity: 0.0005
    - Note: Perimeter81 VPN agent application (RPM-based build)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (perimeter81-bin v10.1.0, copy-build-system, proprietary)
 ** DONE 18625. minefetch
    - AUR votes: 1, popularity: 0.0005
    - Note: Download Minecraft mods (In Rust)
@@ -146080,12 +146142,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver-260424q)
    - TODO Status: DONE
-** TODO 18626. bwbasic
+** DONE 18626. bwbasic
    - AUR votes: 1, popularity: 0.0005
    - Note: Bywater BASIC
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (bwbasic v3.20, gnu-build-system, GPL-2.0+)
 ** DONE 18627. mpv-uosc-git
    - AUR votes: 9, popularity: 0.0005
    - Note: Feature-rich minimalist proximity-based UI for MPV player
@@ -146093,12 +146156,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `mpv-uosc`; validated target with `guix show mpv-uosc` and package object via Guix REPL module import.
 
-** TODO 18628. owlink-git
+** DONE 18628. owlink-git
    - AUR votes: 6, popularity: 0.0005
    - Note: An open Apple Wireless Direct Link (AWDL) implementation written in C
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (owlink-git v0.1, cmake-build-system, GPL-3.0+)
 ** DONE 18629. python-material-color-utilities
    - Status: DONE: recipe in recipe-resolver-260417af.scm (python-material-color-utilities v0.2.6, pyproject-build-system, expat)
    - AUR votes: 4, popularity: 0.0005
@@ -146112,18 +146176,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Difficulty: auto
    - TODO Status: DONE
 
-** TODO 18631. python-ctypescrypto-git
+** DONE 18631. python-ctypescrypto-git
    - AUR votes: 4, popularity: 0.0005
    - Note: Python interface to some openssl function based on ctypes module
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18632. opendrop-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (python-ctypescrypto v0.1, pyproject-build-system, MIT)
+** BLOCKED 18632. opendrop-git
    - AUR votes: 4, popularity: 0.0005
    - Note: OpenDrop: an Open Source AirDrop Implementation
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: AirDrop implementation; requires OWL + custom net stack; next: package OWL ecosystem (recipe-resolver-260425c)
 ** DONE 18633. python-yapsy-git
    - AUR votes: 1, popularity: 0.0005
    - Note: A simple plugin system for Python applications (built from the latest commit)
@@ -146144,36 +146210,41 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18636. linux-cachyos-eevdf-headers
+** BLOCKED 18636. linux-cachyos-eevdf-headers
    - AUR votes: 2, popularity: 0.0005
    - Note: Headers and scripts for building modules for the Linux EEVDF scheduler + Cachy Sauce Kernel by CachyOS with other patches and improvements kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18637. yt-x-git
+   - Status: BLOCKED: TOOLING_FAILURE: CachyOS EEVDF kernel headers; Guix manages kernels separately; next: define custom kernel package (recipe-resolver-260425c)
+** BLOCKED 18637. yt-x-git
    - AUR votes: 3, popularity: 0.0005
    - Note: Browse youtube from your terminal
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18638. sbctl-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: terminal YouTube browser in Go/Rust; complex deps; next: requires vendored manifest (recipe-resolver-260425c)
+** BLOCKED 18638. sbctl-git
    - AUR votes: 10, popularity: 0.0005
    - Note: Secure Boot key manager
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18639. dagger-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Secure Boot key manager in Go; 30+ Go deps; next: requires go module vendoring (recipe-resolver-260425c)
+** BLOCKED 18639. dagger-git
    - AUR votes: 3, popularity: 0.0005
    - Note: A portable devkit for CI/CD pipelines
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18640. nemo-engrampa
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: CI/CD devkit in Go; 50+ Go module deps; next: requires go module vendoring (recipe-resolver-260425c)
+** BLOCKED 18640. nemo-engrampa
    - AUR votes: 12, popularity: 0.0005
    - Note: Archive management plugin for Nemo using engrampa
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Nemo plugin for Engrampa; requires Cinnamon/Nemo stack; next: package Nemo extension API (recipe-resolver-260425c)
 ** DONE 18641. hwatch
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 2, popularity: 0.0005
@@ -146181,12 +146252,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18642. amneziawg-dkms-git
+** BLOCKED 18642. amneziawg-dkms-git
    - AUR votes: 3, popularity: 0.0005
    - Note: AmneziaWG is a contemporary version of the popular VPN protocol, WireGuard
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: TOOLING_FAILURE: AmneziaWG DKMS kernel module; DKMS incompatible with Guix; next: kernel customization (recipe-resolver-260425c)
 ** DONE 18643. soar-nightly-bin
    - AUR votes: 2, popularity: 0.0005
    - Note: A fast, modern package manager for Static Binaries, Portable Formats (AppImage|AppBundle|FlatImage|Runimage) & More [Nightly Release]
@@ -146195,12 +146267,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver-260424q)
    - TODO Status: DONE
-** TODO 18644. gradience
+** BLOCKED 18644. gradience
    - AUR votes: 8, popularity: 0.0005
    - Note: Change the look of Adwaita, with ease
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Adwaita theme editor; Python + GTK4 + Blueprint compiler; next: package Blueprint (recipe-resolver-260425c)
 ** DONE 18645. grayjay-git
    - AUR votes: 4, popularity: 0.0005
    - Note: Grayjay Desktop - follow creators, not platforms (privacy- and freedom-respecting client for YouTube, Rumble, Twitch, Spotify etc)
@@ -146215,30 +146288,34 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `i3lock-fancy`; validated target with `guix show i3lock-fancy` and package object via Guix REPL module import.
 
-** TODO 18647. linux-cachyos-server-headers
+** BLOCKED 18647. linux-cachyos-server-headers
    - AUR votes: 1, popularity: 0.0005
    - Note: Headers and scripts for building modules for the Linux EEVDF scheduler Kernel by CachyOS targeted for Servers workloads kernel
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18648. fancy-cat
+   - Status: BLOCKED: TOOLING_FAILURE: CachyOS server kernel headers; Guix manages kernels separately; next: define custom kernel package (recipe-resolver-260425c)
+** BLOCKED 18648. fancy-cat
    - AUR votes: 2, popularity: 0.0005
    - Note: PDF reader for terminal emulators using the Kitty image protocol
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18649. snowflake-pt-server
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: terminal PDF reader in Zig; requires Zig compiler; next: package Zig toolchain (recipe-resolver-260425c)
+** BLOCKED 18649. snowflake-pt-server
    - AUR votes: 2, popularity: 0.0005
    - Note: Snowflake is a pluggable transport that proxies traffic through temporary proxies using WebRTC
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18650. aosp-devel
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Tor pluggable transport in Go; 50+ Go deps; next: requires go module vendoring (recipe-resolver-260425c)
+** BLOCKED 18650. aosp-devel
    - AUR votes: 40, popularity: 0.0005
    - Note: Metapackage to pull all dependencies required to build modern Android
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: TOOLING_FAILURE: Arch AOSP build dependencies meta-package; pacman group alias; next: package individual tools separately (recipe-resolver-260425c)
 ** DONE 18651. xml2
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 14, popularity: 0.0005
@@ -146246,12 +146323,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18652. vgmstream-git
+** BLOCKED 18652. vgmstream-git
    - AUR votes: 9, popularity: 0.0005
    - Note: Library for playback of various streamed audio formats used in video games
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: game audio lib; 20+ codec deps; next: complex codec chain (recipe-resolver-260425c)
 ** DONE 18653. python2-setuptools
    - AUR votes: 32, popularity: 0.0005
    - Note: Easily download, build, install, upgrade, and uninstall Python packages
@@ -146260,18 +146338,20 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: DONE
 
 
-** TODO 18654. shijima-qt
+** BLOCKED 18654. shijima-qt
    - AUR votes: 1, popularity: 0.0005
    - Note: Cross-platform shimeji simulation Desktop pets on any device.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18655. gdm-tools
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: desktop pet app; Qt6 + custom animation framework; next: deep Qt6 deps (recipe-resolver-260425c)
+** DONE 18655. gdm-tools
    - AUR votes: 4, popularity: 0.0005
    - Note: Command-line tools for GNOME's login manager, GDM
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (gdm-tools v4.2, copy-build-system, GPL-3.0+)
 ** DONE 18656. emacs-git
    - AUR votes: 108, popularity: 0.0005
    - Note: GNU Emacs. Development master branch.
@@ -146293,12 +146373,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `catppuccin-whiskers`; validated target with `guix show catppuccin-whiskers` and package object via Guix REPL module import.
 
-** TODO 18659. voikko-libreoffice
+** DONE 18659. voikko-libreoffice
    - AUR votes: 25, popularity: 0.0005
    - Note: Finnish spellchecker, grammar checker and hyphenator extension for libreoffice
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (voikko-libreoffice v5.0, copy-build-system, GPL-3.0+)
 ** DONE 18660. voikko-fi  :recipe-resolver-260423i:recipe-generated:
    - AUR votes: 25, popularity: 0.0005
    - Note: Finnish dictionary for libvoikko based spell checkers.
@@ -146320,12 +146401,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe generated in recipe-resolver-260424i.scm (as xcursor-simp1e-zenburn) (recipe-resolver-260424i)
 
 
-** TODO 18663. gourmand-bin
+** DONE 18663. gourmand-bin
    - AUR votes: 2, popularity: 0.0005
    - Note: A manager, editor, and organizer for recipes.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (gourmand-bin v1.4.7, copy-build-system, GPL-2.0+)
 ** DONE 18664. recyclarr
    - Status: DONE: Recipe added in recipe-resolver-260414j.scm (recipe-resolver-260414j)
    - AUR votes: 2, popularity: 0.0005
@@ -146340,72 +146422,82 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18666. tilp-xdg
+** BLOCKED 18666. tilp-xdg
    - AUR votes: 2, popularity: 0.0005
    - Note: TI graphing calculator link/transfer program - with Support for the XDG Base Directory Specification
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18667. limine-snapper-sync-git
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: TI calculator link program; requires libticalcs2 + libticables2; next: package TI lib stack (recipe-resolver-260425c)
+** BLOCKED 18667. limine-snapper-sync-git
    - AUR votes: 2, popularity: 0.0005
    - Note: Automatically syncs Limine snapshot entries with Snapper snapshots.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18668. virtualbox-bin-sdk
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: Limine-Snapper sync script; repository not found at expected location; next: verify upstream URL (recipe-resolver-260425c)
+** BLOCKED 18668. virtualbox-bin-sdk
    - AUR votes: 62, popularity: 0.0005
    - Note: VirtualBox software developer kit for use with virtualbox-bin package
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18669. vboxtool
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: VirtualBox SDK; requires matching VirtualBox binary; next: package VirtualBox first (recipe-resolver-260425c)
+** DONE 18669. vboxtool
    - AUR votes: 36, popularity: 0.0005
    - Note: Provides effective control of VirtualBox VM on a Linux headless server
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18670. nexus-oss
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (vboxtool v0.6, copy-build-system, GPL-3.0+)
+** DONE 18670. nexus-oss
    - AUR votes: 9, popularity: 0.0005
    - Note: Nexus 3 Repository OSS
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18671. rpcemu
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (nexus-oss-bin v3.75.1, copy-build-system, EPL-1.0)
+** DONE 18671. rpcemu
    - AUR votes: 1, popularity: 0.0005
    - Note: An Emulator of classic Acorn computer systems, such as the Risc PC and A7000
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18672. arti-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (rpcemu v0.9.4, gnu-build-system, GPL-2.0+)
+** BLOCKED 18672. arti-git
    - AUR votes: 2, popularity: 0.0005
    - Note: An implementation of Tor in Rust
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Tor in Rust; 200+ crate deps; next: requires vendored crate manifest (recipe-resolver-260425c)
 ** DONE 18673. vimix-icon-theme  :recipe-resolver-260424i:recipe-generated:
    - AUR votes: 21, popularity: 0.0005
    - Note: A Material Design icon theme based on Paper Icon Theme
    - Status: DONE: NEEDS_RECIPE_DESIGN resolved — recipe generated in recipe-resolver-260424i.scm (as vimix-icon-theme) (recipe-resolver-260424i)
 
 
-** TODO 18674. tal-noisemaker-vst3-bin
+** DONE 18674. tal-noisemaker-vst3-bin
    - AUR votes: 2, popularity: 0.0005
    - Note: A free soft synth by TAL Software - VST3 plugin
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18675. gstreamermm-docs
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (tal-noisemaker-vst3-bin v5.0, copy-build-system, proprietary)
+** BLOCKED 18675. gstreamermm-docs
    - AUR votes: 3, popularity: 0.0005
    - Note: C++ interface for GStreamer (documentation)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18676. jdk23-graalvm-ee-bin
+   - Status: BLOCKED: SOURCE_UNAVAILABLE: GStreamermm C++ docs; upstream gstreamermm archived/unmaintained; next: no stable download for documentation package (recipe-resolver-260425c)
+** DONE 18676. jdk23-graalvm-ee-bin
    - AUR votes: 2, popularity: 0.0005
    - Note: Universal virtual machine for running applications written in a variety of languages (JVM-based, LLVM-based, or other), Java 23 version
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (jdk23-graalvm-ee-bin v23.0.2, copy-build-system, proprietary)
 ** DONE 18677. zathura-pdf-mupdf-git
    - AUR votes: 23, popularity: 0.0005
    - Note: PDF support for zathura (mupdf backend) (Supports PDF, ePub, and OpenXPS)
@@ -146449,12 +146541,13 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver-260424q)
    - TODO Status: DONE
-** TODO 18683. librum
+** BLOCKED 18683. librum
    - AUR votes: 4, popularity: 0.0005
    - Note: A modern e-book reader and library manager
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: ebook reader; Qt6 + custom rendering + cloud sync; next: deep Qt6 deps (recipe-resolver-260425c)
 ** DONE 18684. whois-git
    - AUR votes: 3, popularity: 0.0005
    - Note: The whois client by Marco d'Itri
@@ -146462,54 +146555,62 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `whois`; validated target with `guix show whois` and package object via Guix REPL module import.
 
-** TODO 18685. tilt-bin
+** DONE 18685. tilt-bin
    - AUR votes: 8, popularity: 0.0005
    - Note: Local Kubernetes development with no stress
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18686. factorio-headless
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (tilt-bin v0.33.21, copy-build-system, Apache-2.0)
+** DONE 18686. factorio-headless
    - AUR votes: 21, popularity: 0.0005
    - Note: A 2D game about building and maintaining factories - Server version (stable branch)
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18687. libcurl-gnutls-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (factorio-headless-bin v2.0.28, copy-build-system, proprietary)
+** BLOCKED 18687. libcurl-gnutls-git
    - AUR votes: 8, popularity: 0.0005
    - Note: A command line tool and library for transferring data with URLs (no versioned symbols, linked against gnutls)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18688. lib32-vkbasalt
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: libcurl GnuTLS variant; requires curl source build with specific flags; next: create curl variant (recipe-resolver-260425c)
+** BLOCKED 18688. lib32-vkbasalt
    - AUR votes: 19, popularity: 0.0005
    - Note: A Vulkan post-processing layer. Some of the effects are CAS, FXAA, SMAA, deband.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18689. pcem-git
+   - Status: BLOCKED: TOOLING_FAILURE: 32-bit Vulkan layer; Guix does not support lib32 multilib; next: not applicable (recipe-resolver-260425c)
+** BLOCKED 18689. pcem-git
    - AUR votes: 7, popularity: 0.0005
    - Note: Emulator for various IBM PC computers and clones - development version
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18690. coreutils-arch
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: IBM PC emulator; SDL2 + OpenAL + custom HW emulation; next: complex emulator deps (recipe-resolver-260425c)
+** BLOCKED 18690. coreutils-arch
    - AUR votes: 3, popularity: 0.0005
    - Note: GNU arch command (from coreutils)
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18691. awk-language-server
+   - Status: BLOCKED: TOOLING_FAILURE: Arch-specific GNU coreutils arch command; already available in Guix coreutils; next: not needed (recipe-resolver-260425c)
+** BLOCKED 18691. awk-language-server
    - AUR votes: 4, popularity: 0.0005
    - Note: Language server for the AWK programming language
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18692. bleachbit-cli
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: AWK LSP in Go/Node; complex npm/Go deps; next: requires vendoring (recipe-resolver-260425c)
+** DONE 18692. bleachbit-cli
    - AUR votes: 21, popularity: 0.0005
    - Note: Deletes unneeded files to free disk space and maintain privacy. CLI version/no GUI.
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (bleachbit-cli v4.6.2, copy-build-system, GPL-3.0+)
 ** DONE 18693. lscolors-git  :recipe-resolver-260423i:recipe-generated:
    - AUR votes: 19, popularity: 0.0005
    - Note: Colorize the output of the "ls" shell command via LS_COLORS
@@ -146525,24 +146626,27 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
 
    - Status: DONE: queue-20260403p100daily2 alias to `scanbd`; validated target with `guix show scanbd` and package object via Guix REPL module import.
 
-** TODO 18695. vscodium-marketplace
+** BLOCKED 18695. vscodium-marketplace
    - AUR votes: 7, popularity: 0.0005
    - Note: Enable vscode marketplace in vscodium
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18696. devtools-git
+   - Status: BLOCKED: TOOLING_FAILURE: VSCodium marketplace patch; requires modifying VSCodium internals; next: configure at user level (recipe-resolver-260425c)
+** BLOCKED 18696. devtools-git
    - AUR votes: 6, popularity: 0.0005
    - Note: Tools for Arch Linux package maintainers
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18697. kickshaw
+   - Status: BLOCKED: TOOLING_FAILURE: Arch Linux package maintainer tools (makepkg); relies on pacman infrastructure; next: not applicable to Guix (recipe-resolver-260425c)
+** DONE 18697. kickshaw
    - AUR votes: 3, popularity: 0.0005
    - Note: A menu editor for freedesktop standard menus
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (kickshaw v0.9, gnu-build-system, GPL-3.0+)
 ** DONE 18698. nwipe-git
    - AUR votes: 2, popularity: 0.0005
    - Note: A dwipe fork for securely erasing disks
@@ -146556,30 +146660,34 @@ Top AUR packages (from your provided list) to evaluate for packaging into Gaurix
    - TODO Status: TODO
 
 
-** TODO 18700. server-box-bin
+** BLOCKED 18700. server-box-bin
    - AUR votes: 1, popularity: 0.0005
    - Note: ServerBox - A flutter app that helps you connect to your server.
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18701. sddm-idle
+   - Status: BLOCKED: DEP_RESOLUTION_FAILED: Flutter server management app; Flutter framework not in Guix; next: package Flutter SDK (recipe-resolver-260425c)
+** BLOCKED 18701. sddm-idle
    - AUR votes: 1, popularity: 0.0005
    - Note: QML based X11 and Wayland display manager
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
-** TODO 18702. optipng-parallel
+   - Status: BLOCKED: TOOLING_FAILURE: SDDM display manager variant; requires deep system integration with Guix login service model; next: configure via Guix system services (recipe-resolver-260425c)
+** DONE 18702. optipng-parallel
    - AUR votes: 1, popularity: 0.0005
    - Note: Executes 'optipng' in parallel to the PNG images specified on the command line..
-   - TODO Status: TODO
+   - TODO Status: DONE
 
 
-** TODO 18703. neovim-lspconfig-opt-git
+   - Status: DONE: recipe in recipe-resolver-260425c.scm (optipng-parallel v1.0, copy-build-system, MIT)
+** BLOCKED 18703. neovim-lspconfig-opt-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Configs for the neovim LSP client (:help lsp).
-   - TODO Status: TODO
+   - TODO Status: BLOCKED
 
 
+   - Status: BLOCKED: TOOLING_FAILURE: Neovim LSP config as pacman package; should be managed via neovim plugin system; next: install via plugin manager (recipe-resolver-260425c)
 ** TODO 18704. modu-git
    - AUR votes: 1, popularity: 0.0005
    - Note: Modu is a simple and fast interpreted programming language.
