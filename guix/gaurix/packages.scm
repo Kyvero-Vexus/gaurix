@@ -1,6 +1,7 @@
 ;;; Package namespace convenience module for Gaurix.
 ;; recipe-resolver-260425h: 100 packages attempted (100 recipes, 0 BLOCKED)
 (define-module (gaurix packages)
+            ;; deptree-resolver-260425h: 100 BLOCKED evaluated (6 recipes, 2 ALREADY_RESOLVED, 92 remain BLOCKED)
             ;; deptree-resolver-260425g: 100 BLOCKED evaluated (4 recipes, 96 remain BLOCKED)
             ;; deptree-resolver-260425c: 100 BLOCKED evaluated (6 recipes, 1 ALREADY_RESOLVED, 1 ALREADY_IN_GUIX, 92 remain BLOCKED)
             ;; deptree-resolver-260425b: 100 BLOCKED evaluated (10 recipes, 5 ALREADY_RESOLVED, 2 ALREADY_IN_GUIX, 83 remain BLOCKED)
@@ -11239,4 +11240,10 @@
                openstack-tui-bin
                blahaj-bin
                cosu-trainer-bin
+               neovim-lspconfig
+               qt5-mqtt
+               hq
+               php-mcrypt
+               sbctl
+               snowflake-pt-server
                ))
