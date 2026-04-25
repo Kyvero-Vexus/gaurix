@@ -559,6 +559,7 @@
   #:use-module (gaurix packages deptree-resolver-260425a)
   #:use-module (gaurix packages recipe-resolver-260425b)
   #:use-module (gaurix packages recipe-resolver-260425c)
+  #:use-module (gaurix packages deptree-resolver-260425c)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -15434,3 +15435,9 @@
 (re-export bleachbit-cli)
 (re-export kickshaw)
 (re-export optipng-parallel)
+(re-export ddpolymerase-bin)
+(re-export wl-binclock-bin)
+(re-export hypraway-bin)
+(re-export openexr-viewer)
+(re-export firetools)
+(re-export ruby-ruby-vips)
