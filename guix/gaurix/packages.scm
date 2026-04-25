@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
 (define-module (gaurix packages)
+            ;; deptree-resolver-260425b: 100 BLOCKED evaluated (10 recipes, 5 ALREADY_RESOLVED, 2 ALREADY_IN_GUIX, 83 remain BLOCKED)
             ;; deptree-resolver-260425a: 100 BLOCKED evaluated (6 recipes, 2 ALREADY_RESOLVED, 11 AUR_REPO_DELETED, 81 remain BLOCKED)
             ;; deptree-resolver-260424y: 100 BLOCKED evaluated (5 recipes, 19 AUR_REPO_DELETED, 76 remain BLOCKED)
             ;; recipe-resolver-260424u: 98 queue entries resolved (98 recipes)
