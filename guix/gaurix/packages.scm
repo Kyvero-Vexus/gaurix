@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; recipe-resolver-260425l: 99 packages attempted (99 recipes, 1 BLOCKED)
             ;; deptree-resolver-260425k: 100 BLOCKED evaluated (2 recipes + 1 dep, 1 ALREADY_IN_GUIX, 1 ALREADY_RESOLVED, 97 remain BLOCKED)
             ;; deptree-resolver-260425i: 100 BLOCKED evaluated (2 recipes, 98 remain BLOCKED)
 ;; recipe-resolver-260425h: 100 packages attempted (100 recipes, 0 BLOCKED)
