@@ -11,18 +11,20 @@ TODO_FILE = "todo_general_packages.org"
 AUR_CACHE = "data/aur-cache/packages-meta-ext-v1.json"
 REPORT_JSON = "reports/blocked-dependency-tree.json"
 REPORT_MD = "reports/blocked-dependency-tree.md"
-SELECTED_JSON = "reports/deptree-resolver-260407g-selection.json"
+RUN_ID = sys.argv[1] if len(sys.argv) > 1 else "deptree-resolver-260425j"
+SELECTED_JSON = f"reports/{RUN_ID}-selection.json"
 
 def extract_blocked_packages(todo_file):
-    """Extract all BLOCKED package names and their line numbers from the todo file."""
+    """Extract all BLOCKED package names, numbers, and failure reasons from the todo file."""
     blocked = {}
     with open(todo_file, "r") as f:
         for line in f:
-            m = re.match(r'^\*\* BLOCKED (\d+)\. (.+)', line)
+            m = re.match(r'^\*\* BLOCKED (\d+)\.\s+(\S+)(?:\s+\[FAILED:\s+([^\]]+)\])?', line)
             if m:
                 num = int(m.group(1))
                 name = m.group(2).strip()
-                blocked[name] = num
+                reason = m.group(3).strip() if m.group(3) else "UNKNOWN"
+                blocked[name] = {"number": num, "reason": reason}
     return blocked
 
 def load_aur_cache(cache_file):
@@ -53,7 +55,7 @@ def build_dependency_tree(blocked_pkgs, aur_by_name, provides_map):
     blocked_set = set(blocked_pkgs.keys())
     tree = {}
 
-    for pkg_name in blocked_pkgs:
+    for pkg_name, pkg_info in blocked_pkgs.items():
         aur_info = aur_by_name.get(pkg_name)
         in_aur = aur_info is not None
 
@@ -70,7 +72,8 @@ def build_dependency_tree(blocked_pkgs, aur_by_name, provides_map):
         blocked_deps = [d for d in dep_names if d in blocked_set]
 
         tree[pkg_name] = {
-            "number": blocked_pkgs[pkg_name],
+            "number": pkg_info["number"],
+            "reason": pkg_info["reason"],
             "in_aur": in_aur,
             "all_deps": dep_names,
             "blocked_deps": blocked_deps,
@@ -113,8 +116,14 @@ def generate_reports(tree, sorted_items, timestamp):
     max_blocked = max((v["blocked_dep_count"] for v in tree.values()), default=0)
     max_reverse = max((v["reverse_dep_count"] for v in tree.values()), default=0)
 
+    # Reason distribution
+    reasons = defaultdict(int)
+    for v in tree.values():
+        reasons[v.get("reason", "UNKNOWN")] += 1
+
     # JSON report
     json_report = {
+        "run_id": RUN_ID,
         "timestamp": timestamp,
         "summary": {
             "total_blocked": total,
@@ -129,6 +138,7 @@ def generate_reports(tree, sorted_items, timestamp):
                 "position": i + 1,
                 "number": info["number"],
                 "name": name,
+                "reason": info.get("reason", "UNKNOWN"),
                 "blocked_dep_count": info["blocked_dep_count"],
                 "reverse_dep_count": info["reverse_dep_count"],
                 "total_dep_count": info["total_dep_count"],
@@ -144,34 +154,43 @@ def generate_reports(tree, sorted_items, timestamp):
 
     # Markdown report
     lines = [
-        "# Blocked Package Dependency Tree",
+        f"# Blocked Dependency Tree — {RUN_ID}",
         "",
-        f"**Generated:** {timestamp}",
+        f"Generated: {timestamp}",
         "",
         "## Summary",
         "",
-        f"- Total BLOCKED: {total}",
-        f"- In AUR cache: {in_aur}",
-        f"- Not in AUR cache: {not_in_aur}",
-        f"- Zero blocked deps: {zero_blocked}",
-        f"- Max blocked deps: {max_blocked}",
-        f"- Max reverse deps: {max_reverse}",
+        "| Metric | Count |",
+        "|--------|-------|",
+        f"| Total blocked | {total} |",
+        f"| In AUR cache | {in_aur} |",
+        f"| Zero blocked deps | {zero_blocked} |",
         "",
-        "## Top 100 Priority Queue",
+        "## Blocking Reason Distribution",
         "",
-        "| Pos | # | Package | Blocked Deps | Reverse Deps | Total Deps | In AUR |",
-        "|-----|---|---------|-------------|-------------|------------|--------|",
     ]
 
-    for i, (name, info) in enumerate(sorted_items[:100]):
+    for reason, count in sorted(reasons.items(), key=lambda x: -x[1]):
+        lines.append(f"- **{reason}**: {count}")
+
+    lines.extend([
+        "",
+        "## Priority Queue (top 200)",
+        "",
+        "| Rank | Package | Blocked Deps | Reverse Deps | Total Deps | Reason |",
+        "|------|---------|-------------|-------------- |------------|--------|",
+    ])
+
+    for i, (name, info) in enumerate(sorted_items[:200]):
         lines.append(
-            f"| {i+1} | {info['number']} | {name} | "
-            f"{info['blocked_dep_count']} | {info['reverse_dep_count']} | "
-            f"{info['total_dep_count']} | {'Y' if info['in_aur'] else 'N'} |"
+            f"| {i+1} | {name} | {info['blocked_dep_count']} "
+            f"| {info['reverse_dep_count']} | {info['total_dep_count']} | {info.get('reason', 'UNKNOWN')} |"
         )
 
+    lines.append("")
+
     with open(REPORT_MD, "w") as f:
-        f.write("\n".join(lines) + "\n")
+        f.write("\n".join(lines))
 
     return json_report
 
@@ -183,6 +202,7 @@ def select_top_100(sorted_items):
             "position": i + 1,
             "number": info["number"],
             "name": name,
+            "reason": info.get("reason", "UNKNOWN"),
             "blocked_dep_count": info["blocked_dep_count"],
             "reverse_dep_count": info["reverse_dep_count"],
             "total_dep_count": info["total_dep_count"],

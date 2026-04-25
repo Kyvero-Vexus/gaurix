@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260425j)
   #:use-module (gaurix packages deptree-resolver-260425i)
   #:use-module (gaurix packages deptree-resolver-260425h)
   #:use-module (gaurix packages deptree-resolver-260425g)
@@ -15831,3 +15832,4 @@
 (re-export browser-on-ram-git)
 (re-export pamac-gtk3)
 (re-export kri)
+(re-export nftables-geoip-db)
