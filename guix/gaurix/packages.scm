@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
             ;; recipe-resolver-260426g: 100 packages attempted (100 recipes, 0 BLOCKED)
+            ;; deptree-resolver-260426i: 100 BLOCKED evaluated (11 recipes: yt-x, pikeru, prs, pcem, picom-ftlabs, +6 more; 89 remain BLOCKED)
             ;; deptree-resolver-260426f: 100 BLOCKED evaluated (3 recipes: arti, vegastrike-engine, vegastrike; 97 remain BLOCKED)
             ;; deptree-resolver-260426e: 100 BLOCKED evaluated (3 recipes: python-uhid, fido2-hid-bridge, sommelier; 97 remain BLOCKED)
             ;; deptree-resolver-260426d: 100 BLOCKED evaluated (1 recipe: swscreenshot-gui; 99 remain BLOCKED)
@@ -11888,4 +11889,22 @@
             ssh-audit-git
             syncthingtray-git
             xdg-terminal-exec-mkhl
+))
+
+
+;;; deptree-resolver-260426i
+(define-module (gaurix packages)
+  #:use-module (gaurix packages deptree-resolver-260426i)
+  #:re-export (
+               epub-to-audiobook
+               gvfs-smb
+               lightlyshaders
+               network-manager-applet-nolibappindicator
+               pcem
+               picom-ftlabs
+               pikeru
+               prs
+               smoothpaper
+               ultrastardx
+               yt-x
 ))

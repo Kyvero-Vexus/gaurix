@@ -592,6 +592,7 @@
   #:use-module (gaurix packages recipe-resolver-260425f)
   #:use-module (gaurix packages recipe-resolver-260425h)
   #:use-module (gaurix packages recipe-resolver-260426b)
+  #:use-module (gaurix packages deptree-resolver-260426i)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -16268,3 +16269,17 @@
 (re-export among-sus-git)
 (re-export syncthingtray-git)
 (re-export picocrypt-git)
+
+
+;;; deptree-resolver-260426i
+(re-export epub-to-audiobook)
+(re-export gvfs-smb)
+(re-export lightlyshaders)
+(re-export network-manager-applet-nolibappindicator)
+(re-export pcem)
+(re-export picom-ftlabs)
+(re-export pikeru)
+(re-export prs)
+(re-export smoothpaper)
+(re-export ultrastardx)
+(re-export yt-x)
