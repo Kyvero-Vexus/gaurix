@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; deptree-resolver-260426e: 100 BLOCKED evaluated (3 recipes: python-uhid, fido2-hid-bridge, sommelier; 97 remain BLOCKED)
             ;; deptree-resolver-260426d: 100 BLOCKED evaluated (1 recipe: swscreenshot-gui; 99 remain BLOCKED)
             ;; deptree-resolver-260426c: 100 BLOCKED evaluated (5 recipes: nginx-njs-module, gstreamermm, librewolf-tridactyl-native-bin, lobe-chat-bin, beammp-launcher; 95 remain BLOCKED)
             ;; deptree-resolver-260426b: 100 BLOCKED evaluated (1 recipe: qtspim-bin from .deb, 99 remain BLOCKED)
