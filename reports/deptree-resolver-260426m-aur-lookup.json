@@ -1,0 +1,1624 @@
+{
+  "pass": "deptree-resolver-260426m",
+  "total": 91,
+  "found": 83,
+  "packages": [
+    {
+      "name": "aurutils",
+      "rank": 1,
+      "reason": "ARCH_SPECIFIC: AUR helper, depends on pacutils/pacman",
+      "found": true,
+      "version": "20.5.8-1",
+      "description": "helper tools for the arch user repository",
+      "url": "https://github.com/AladW/aurutils",
+      "license": [
+        "ISC"
+      ],
+      "depends": [
+        "git",
+        "pacutils",
+        "curl",
+        "perl",
+        "perl-json-xs",
+        "bash"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "pamac-aur",
+      "rank": 2,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED \u2014 ARCH_SPECIFIC: depends on pacman/libalpm ecosystem (recipe-resolver-260414p)",
+      "found": true,
+      "version": "11.7.4-3",
+      "description": "A Gtk frontend, Package Manager based on libalpm with AUR and Appstream support",
+      "url": "https://github.com/manjaro/pamac",
+      "license": [
+        "GPL-3.0-or-later"
+      ],
+      "depends": [
+        "libnotify",
+        "libhandy",
+        "libadwaita",
+        "gtk4",
+        "desktop-file-utils",
+        "libpamac-aur>=11.7",
+        "gnutls>=3.4",
+        "git"
+      ],
+      "makedepends": [
+        "gettext",
+        "itstool",
+        "vala",
+        "meson",
+        "ninja",
+        "gobject-introspection",
+        "xorgproto",
+        "asciidoc",
+        "git",
+        "systemd"
+      ]
+    },
+    {
+      "name": "python-urllib3-future-git",
+      "rank": 3,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_PYTHON_DEPS: requires h11+jh2+qh3 HTTP/2/3 libraries not in Guix; A1:...",
+      "found": true,
+      "version": "2.12.915.r0.g60af644f-2",
+      "description": "Powerful HTTP 1.1, 2, and 3 client with both sync and async interfaces (built from latest git commit)",
+      "url": "https://github.com/jawah/urllib3.future",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "python",
+        "python-brotli",
+        "python-h11",
+        "python-idna",
+        "python-jh2",
+        "python-pyopenssl",
+        "python-pysocks",
+        "python-python-socks",
+        "python-qh3",
+        "python-typing_extensions",
+        "python-wsproto",
+        "python-zstandard"
+      ],
+      "makedepends": [
+        "git",
+        "python-build",
+        "python-hatchling",
+        "python-installer",
+        "python-wheel"
+      ]
+    },
+    {
+      "name": "nautilus-typeahead",
+      "rank": 4,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "50.1-1",
+      "description": "Default file manager for GNOME - Patched to bring back the 'typeahead find' feature",
+      "url": "https://apps.gnome.org/Nautilus/",
+      "license": [
+        "GPL-3.0-or-later"
+      ],
+      "depends": [
+        "cairo",
+        "dconf",
+        "gdk-pixbuf2",
+        "gexiv2",
+        "glib2",
+        "glibc",
+        "glycin",
+        "glycin-gtk4",
+        "gnome-autoar",
+        "gnome-desktop-4",
+        "graphene",
+        "gst-plugins-base-libs",
+        "gstreamer",
+        "gtk4",
+        "gvfs",
+        "hicolor-icon-theme",
+        "icu",
+        "libadwaita",
+        "libcloudproviders",
+        "libgcc",
+        "libportal",
+        "libportal-gtk4",
+        "libx11",
+        "localsearch",
+        "pango",
+        "tinysparql",
+        "wayland",
+        "xdg-user-dirs-gtk",
+        "libnautilus-extension.so",
+        "libnautilus-extension-typeahead"
+      ],
+      "makedepends": [
+        "appstream",
+        "blueprint-compiler",
+        "git",
+        "glib2-devel",
+        "gobject-introspection",
+        "meson",
+        "ninja",
+        "pkgconfig"
+      ]
+    },
+    {
+      "name": "audiobookshelf",
+      "rank": 5,
+      "reason": "MISSING_SOURCE: not in AUR metadata",
+      "found": false
+    },
+    {
+      "name": "bulky",
+      "rank": 6,
+      "reason": "MISSING_SOURCE: not in AUR metadata",
+      "found": false
+    },
+    {
+      "name": "dbeaver",
+      "rank": 7,
+      "reason": "MISSING_SOURCE: not in AUR metadata",
+      "found": false
+    },
+    {
+      "name": "diffnav-bin",
+      "rank": 8,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": false
+    },
+    {
+      "name": "fluxdown-bin",
+      "rank": 9,
+      "reason": "MISSING_SOURCE",
+      "found": false
+    },
+    {
+      "name": "gram-editor-bin",
+      "rank": 10,
+      "reason": "MISSING_SOURCE",
+      "found": false
+    },
+    {
+      "name": "hypnotix",
+      "rank": 12,
+      "reason": "MISSING_SOURCE",
+      "found": false
+    },
+    {
+      "name": "pardf",
+      "rank": 13,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED \u2014 UNCLEAR_UPSTREAM: no clear source; A1: no repo found; A2: may be proprietary; A3: unknown license",
+      "found": false
+    },
+    {
+      "name": "apple-fonts",
+      "rank": 14,
+      "reason": "NON_DISTRIBUTABLE",
+      "found": true,
+      "version": "7.0.5-1",
+      "description": "Fonts for Apple platforms, including San Francisco and New York typefaces",
+      "url": "https://developer.apple.com/fonts/",
+      "license": [
+        "custom"
+      ],
+      "depends": [],
+      "makedepends": [
+        "7zip"
+      ]
+    },
+    {
+      "name": "netpad-vnext-bin",
+      "rank": 15,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: A cross-platform C# editor and playground (vNext - Rust-based shell)",
+      "found": true,
+      "version": "0.11.0-1",
+      "description": "A cross-platform C# editor and playground (vNext - Rust-based shell)",
+      "url": "https://github.com/tareqimbasher/NetPad",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "dotnet-runtime>=9.0"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "r8125-dkms",
+      "rank": 16,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "9.017.01-1",
+      "description": "Kernel module for RTL8125",
+      "url": "https://www.realtek.com/en/component/zoo/category/network-interface-controllers-10-100-1000m-gigabit-ethernet-pci-express-software",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "skillshare",
+      "rank": 17,
+      "reason": "PROPRIETARY_SERVICE",
+      "found": true,
+      "version": "0.19.5-1",
+      "description": "Sync skills across all AI CLI tools with one command",
+      "url": "https://github.com/runkids/skillshare",
+      "license": [
+        "MIT"
+      ],
+      "depends": [],
+      "makedepends": [
+        "go"
+      ]
+    },
+    {
+      "name": "bcachefs-kernel-dkms-git",
+      "rank": 18,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "1:20260302131047.6ebab1b41eda-1",
+      "description": "Bcachefs DKMS module from upstream bcachefs kernel sources",
+      "url": "https://github.com/koverstreet/bcachefs",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "etcd",
+      "rank": 19,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "3.6.10-1",
+      "description": "A distributed, reliable key-value store for the most critical data of a distributed system.",
+      "url": "https://github.com/etcd-io/etcd",
+      "license": [
+        "Apache-2.0"
+      ],
+      "depends": [],
+      "makedepends": [
+        "git",
+        "go"
+      ]
+    },
+    {
+      "name": "flclashx-bin",
+      "rank": 20,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "0.3.2-2",
+      "description": "Fork of FlClash | A multi-platform proxy client based on ClashMeta, simple and easy to use, open-source and ad-free.",
+      "url": "https://github.com/pluralplay/FlClashX",
+      "license": [
+        "GPL-3.0"
+      ],
+      "depends": [
+        "libayatana-appindicator",
+        "libkeybinder3"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "gowatch",
+      "rank": 21,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "1.1.2-1",
+      "description": "A simple terminal stopwatch, written in Go",
+      "url": "https://github.com/buxxket/gowatch",
+      "license": [
+        "GPL3"
+      ],
+      "depends": [],
+      "makedepends": [
+        "go",
+        "git"
+      ]
+    },
+    {
+      "name": "harbor-wave",
+      "rank": 22,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "0.6.1-2",
+      "description": "Digital Ocean Ephemeral VM/Droplet tool.",
+      "url": "https://github.com/NetworkJack2/harbor-wave",
+      "license": [
+        "GPLv3"
+      ],
+      "depends": [
+        "python",
+        "python-digitalocean"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "jdk17-graalvm-ee-bin",
+      "rank": 23,
+      "reason": "PROPRIETARY_CLOSED_SOURCE",
+      "found": true,
+      "version": "17.0.18-1",
+      "description": "Universal virtual machine for running applications written in a variety of languages (JVM-based, LLVM-based, or other), Java 17 version",
+      "url": "https://www.graalvm.org/",
+      "license": [
+        "LicenseRef-OTN"
+      ],
+      "depends": [
+        "java-runtime-common",
+        "java-environment-common"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "lib32-openssl-1.1",
+      "rank": 24,
+      "reason": "LIB32_UNSUPPORTED",
+      "found": true,
+      "version": "1.1.1.w-4",
+      "description": "The Open Source toolkit for Secure Sockets Layer and Transport Layer Security",
+      "url": "https://www.openssl.org",
+      "license": [
+        "openssl"
+      ],
+      "depends": [
+        "lib32-glibc",
+        "openssl-1.1"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "limine-booster",
+      "rank": 25,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "3.1.0-1",
+      "description": "Zero-config automation for Limine boot entries with Booster",
+      "url": "https://github.com/abshka/limine-booster",
+      "license": [
+        "GPL3"
+      ],
+      "depends": [
+        "booster",
+        "limine"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "mdbook-epub",
+      "rank": 26,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED \u2014 CARGO_DEPS_NEEDED: 30+ Rust crates; A1: need 30+ crates; A2: depends on mdbook; A3: no binaries",
+      "found": true,
+      "version": "0.5.2-2",
+      "description": "An experimental mdbook backend for creating EPUB documents.",
+      "url": "https://github.com/Michael-F-Bryan/mdbook-epub",
+      "license": [
+        "MPL-2.0"
+      ],
+      "depends": [
+        "gcc-libs"
+      ],
+      "makedepends": [
+        "cargo"
+      ]
+    },
+    {
+      "name": "mingw-w64-zlib-ng",
+      "rank": 27,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aa)",
+      "found": true,
+      "version": "2.3.3-1",
+      "description": "zlib replacement with optimizations for 'next generation' systems (mingw-w64)",
+      "url": "https://github.com/zlib-ng/zlib-ng",
+      "license": [
+        "zlib"
+      ],
+      "depends": [
+        "mingw-w64-crt"
+      ],
+      "makedepends": [
+        "mingw-w64-cmake"
+      ]
+    },
+    {
+      "name": "mkinitcpio-archlogo",
+      "rank": 28,
+      "reason": "ARCH_SPECIFIC",
+      "found": true,
+      "version": "0.3.1-1",
+      "description": "Add colored Arch Linux ASCII art logo to early boot process",
+      "url": "https://github.com/eworm-de/mkinitcpio-archlogo",
+      "license": [
+        "GPL"
+      ],
+      "depends": [
+        "mkinitcpio"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "mkinitcpio-systemd-extras",
+      "rank": 29,
+      "reason": "INITRAMFS_TOOL \u2014 Arch-specific initramfs hook",
+      "found": true,
+      "version": "0.10-1",
+      "description": "Collection of mkinitcpio install hooks for systemd based initramfs",
+      "url": "https://github.com/wolegis/mkinitcpio-systemd-extras",
+      "license": [
+        "GPL"
+      ],
+      "depends": [
+        "mkinitcpio"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "mod_maxminddb",
+      "rank": 30,
+      "reason": "NEEDS_RECIPE_DESIGN: Apache HTTPD module for MaxMind GeoIP",
+      "found": true,
+      "version": "1.2.0-1",
+      "description": "This module allows you to query MaxMind DB files from Apache 2.2+ using the libmaxminddb library.",
+      "url": "https://github.com/maxmind/mod_maxminddb",
+      "license": [
+        "Apache"
+      ],
+      "depends": [
+        "apache",
+        "libmaxminddb"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "nbfc",
+      "rank": 31,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "1.6.3-4",
+      "description": "Cross-platform fan control service for notebooks (STABLE & BETA releases)",
+      "url": "https://github.com/hirschmann/nbfc",
+      "license": [
+        "GPL3"
+      ],
+      "depends": [
+        "mono"
+      ],
+      "makedepends": [
+        "nuget"
+      ]
+    },
+    {
+      "name": "ndi-sdk",
+      "rank": 32,
+      "reason": "PROPRIETARY_SDK",
+      "found": true,
+      "version": "6.3.2.0.20260413.g5396c5f15-1",
+      "description": "NewTek NDI SDK",
+      "url": "https://ndi.video/for-developers/ndi-sdk/",
+      "license": [
+        "LicenseRef-custom"
+      ],
+      "depends": [
+        "avahi",
+        "glibc"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "ntfsplus-dkms-git",
+      "rank": 33,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "2026.02.07+e6e7478-1",
+      "description": "DKMS module for ntfs (with aliases).",
+      "url": "https://github.com/namjaejeon/linux-ntfs",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "podserv-b-git",
+      "rank": 34,
+      "reason": "VERY_LOW_MATURITY \u2014 Rust podcast server (github.com/l5yth/podserv-b, Apache-2.0, v0.1.2). Only 2 GitHub stars, 1 contributor. Too early stage to warrant packaging.",
+      "found": true,
+      "version": "0.1.2.r0.g536e372-1",
+      "description": "a minimalist podcast server (type b) for serving media files on the web",
+      "url": "https://github.com/l5yth/podserv-b",
+      "license": [
+        "Apache-2.0"
+      ],
+      "depends": [],
+      "makedepends": [
+        "cargo",
+        "git"
+      ]
+    },
+    {
+      "name": "portage",
+      "rank": 35,
+      "reason": "FOREIGN_PACKAGE_MANAGER \u2014 Gentoo's Portage; not applicable to Guix",
+      "found": true,
+      "version": "3.0.77-1",
+      "description": "package management and distribution system for Gentoo",
+      "url": "https://wiki.gentoo.org/wiki/Project:Portage",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "python"
+      ],
+      "makedepends": [
+        "python-installer"
+      ]
+    },
+    {
+      "name": "quantumlauncher-bin",
+      "rank": 36,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "0.5.1-1",
+      "description": "A simple, powerful Minecraft launcher",
+      "url": "https://github.com/Mrmayman/quantumlauncher",
+      "license": [
+        "GPL-3.0-or-later"
+      ],
+      "depends": [
+        "glibc",
+        "gcc-libs"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "r8152-dkms",
+      "rank": 37,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "2.21.4-1",
+      "description": "A kernel module for Realtek RTL8152/RTL8153/RTL8154/RTL8156 Based USB Ethernet Adapters",
+      "url": "http://www.realtek.com",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "glibc",
+        "dkms"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "ryzen_smu-dkms-git",
+      "rank": 38,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "181.9f9569f-1",
+      "description": "A Linux kernel driver that exposes access to the SMU (System Management Unit) for certain AMD Ryzen Processors",
+      "url": "https://github.com/amkillam/ryzen_smu",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "spinwheel-pipewire",
+      "rank": 39,
+      "reason": "NO_UPSTREAM_SOURCE \u2014 Terminal wheel spinner (codeberg.org/the-traveler/spinwheel, GPL-3.0+, v0.1.0). Upstream Codeberg repo returns 404. Source only available embedded in AUR package.",
+      "found": true,
+      "version": "0.1.0-1",
+      "description": "A terminal wheel spinner with named wheels and built-in modes",
+      "url": "https://codeberg.org/the-traveler/spinwheel",
+      "license": [
+        "GPL-3.0-or-later"
+      ],
+      "depends": [
+        "luajit",
+        "pipewire"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "system76-acpi-dkms",
+      "rank": 40,
+      "reason": "DKMS_UNSUPPORTED \u2014 DKMS kernel module; Guix manages kernel modules differently",
+      "found": true,
+      "version": "1.0.2+12+g03a5804-2",
+      "description": "This provides the system76_acpi in-tree driver for systems missing it.",
+      "url": "https://github.com/pop-os/system76-acpi-dkms",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "system76-io-dkms",
+      "rank": 41,
+      "reason": "DKMS_UNSUPPORTED \u2014 DKMS kernel module; Guix manages kernel modules differently",
+      "found": true,
+      "version": "1.0.4-1",
+      "description": "DKMS module for controlling System76 Io board",
+      "url": "https://github.com/pop-os/system76-io-dkms",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "webos-dev-manager-bin",
+      "rank": 42,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "1.99.18-1",
+      "description": "Device/DevMode Manager for webOS TV.(Prebuilt version)",
+      "url": "https://github.com/webosbrew/dev-manager-desktop",
+      "license": [
+        "Apache-2.0"
+      ],
+      "depends": [
+        "gtk3",
+        "webkit2gtk-4.1"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "xpad-dkms-git",
+      "rank": 43,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "1:r127.9caad15-1",
+      "description": "Driver for the Xbox/ Xbox 360/ Xbox 360 Wireless/ Xbox One Controllers",
+      "url": "https://github.com/paroj/xpad",
+      "license": [
+        "GPL-2.0-or-later"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "yaac",
+      "rank": 44,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "1.0beta226-3",
+      "description": "Yet Another APRS Client is a (mostly) platform-independent Java application for monitoring and contributing to the Automatic Packet Reporting System (APRS) network.",
+      "url": "https://sourceforge.net/projects/yetanotheraprsc/",
+      "license": [
+        "GPL-3.0"
+      ],
+      "depends": [
+        "java-runtime>=8",
+        "sh"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "zenpower3-dkms",
+      "rank": 45,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "0.2.0-9",
+      "description": "Linux kernel driver for reading sensors for AMD Zen family CPUs",
+      "url": "https://github.com/AliEmreSenel/zenpower3",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "zenpower3-dkms-git",
+      "rank": 46,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "3:r73.dc4f1e2-2",
+      "description": "A Linux kernel driver for reading temperature, voltage(SVI2), current(SVI2) and power(SVI2) for AMD Zen family CPUs, now with Zen 3 support'",
+      "url": "https://github.com/AliEmreSenel/zenpower3",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "zenpower5-dkms-git",
+      "rank": 48,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "5:0.5.0.r3.g66871d8-1",
+      "description": "Linux kernel driver for AMD Zen CPU monitoring (Zen 1-5): temperature, voltage, current, and power via SVI2/RAPL. Multi-file architecture with Zen 5 (Strix Halo) support",
+      "url": "https://github.com/mattkeenan/zenpower5",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "aic8800-dkms",
+      "rank": 50,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "1.0.8-1",
+      "description": "Kernel modules for BrosTrend AX300 WiFi 6",
+      "url": "https://linux.brostrend.com/troubleshooting/source-code/",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "udev",
+        "dkms"
+      ],
+      "makedepends": [
+        "dos2unix"
+      ]
+    },
+    {
+      "name": "ajantv2-dkms",
+      "rank": 51,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "1:17.5.0-1",
+      "description": "Open-source device driver for discovering, interrogating and controlling NTV2 professional video I/O devices from AJA Video Systems, Inc",
+      "url": "https://github.com/aja-video/libajantv2",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "cmake",
+        "git"
+      ]
+    },
+    {
+      "name": "ampcode",
+      "rank": 52,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "0.0.1777234127_g973bfa-1",
+      "description": "Amp CLI (Sourcegraph's agentic coding tool) packaged from npm releases",
+      "url": "https://ampcode.com",
+      "license": [
+        "custom:proprietary"
+      ],
+      "depends": [
+        "nodejs",
+        "ripgrep"
+      ],
+      "makedepends": [
+        "npm"
+      ]
+    },
+    {
+      "name": "architect-git",
+      "rank": 53,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "r25.e924876-1",
+      "description": "Nix-like configuration manager for pacman",
+      "url": "https://github.com/neoapps-dev/Architect",
+      "license": [
+        "GPL-3.0"
+      ],
+      "depends": [
+        "bash"
+      ],
+      "makedepends": [
+        "git",
+        "make"
+      ]
+    },
+    {
+      "name": "artificial-rage-git",
+      "rank": 54,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "r525.7a9f73d-1",
+      "description": "Scifi FPS made with Raylib",
+      "url": "https://codeberg.org/akselmo/artificial-rage",
+      "license": [
+        "GPL-3.0-or-later"
+      ],
+      "depends": [
+        "odin",
+        "raylib"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "autofirma",
+      "rank": 55,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED: JAVA_COMPLEX: Cliente de firma electr\u00f3nica ofrecido por la Administraci\u00f3n P\u00fablica",
+      "found": true,
+      "version": "1.9-3",
+      "description": "Cliente de firma electr\u00f3nica ofrecido por la Administraci\u00f3n P\u00fablica",
+      "url": "https://firmaelectronica.gob.es/",
+      "license": [
+        "GPL-2.0-or-later AND EUPL-1.1"
+      ],
+      "depends": [
+        "java-runtime=17"
+      ],
+      "makedepends": [
+        "java-environment=17",
+        "maven"
+      ]
+    },
+    {
+      "name": "buf-git",
+      "rank": 56,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "1.9.0.r1491.g5401b58ca-1",
+      "description": "A tool for working with Protocol Buffers",
+      "url": "https://buf.build",
+      "license": [
+        "Apache-2.0"
+      ],
+      "depends": [
+        "glibc"
+      ],
+      "makedepends": [
+        "git",
+        "go"
+      ]
+    },
+    {
+      "name": "dela",
+      "rank": 57,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "0.0.6-1",
+      "description": "A task runner that delegates the work to other tools",
+      "url": "https://github.com/aleyan/dela",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "glibc",
+        "gcc-libs"
+      ],
+      "makedepends": [
+        "cargo"
+      ]
+    },
+    {
+      "name": "disk_usage",
+      "rank": 58,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "0.2.0-1",
+      "description": "A tool to monitor disk usage and alert when usage exceeds a threshold",
+      "url": "https://github.com/0xM4LL0C/disk_usage",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "libnotify"
+      ],
+      "makedepends": [
+        "make",
+        "gcc"
+      ]
+    },
+    {
+      "name": "dpibreak",
+      "rank": 59,
+      "reason": "NEEDS_CARGO_VENDORING \u2014 Rust DPI circumvention tool (github.com/dilluti0n/dpibreak, GPL-3.0+, v0.6.0). Requires cargo-build-system with full crate dependency enumeration. Depends on libnetfilter-queue.",
+      "found": true,
+      "version": "0.6.1-1",
+      "description": "fast and easy-to-use DPI circumvention tool in Rust.",
+      "url": "https://github.com/dilluti0n/dpibreak",
+      "license": [
+        "GPL-3.0-or-later"
+      ],
+      "depends": [
+        "nftables"
+      ],
+      "makedepends": [
+        "rust",
+        "cargo"
+      ]
+    },
+    {
+      "name": "droidcam-dkms-git",
+      "rank": 60,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "v2.1.2.r149.add5733-2",
+      "description": "A tool for using your android device as a wireless/usb webcam (DKMS)",
+      "url": "https://www.dev47apps.com/droidcam/linux/",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms",
+        "libappindicator-gtk3"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "fish-session",
+      "rank": 61,
+      "reason": "NO_LICENSE \u2014 Fish shell session manager (github.com/AtefR/fish-session, v0.1.8). No LICENSE file, no license in Cargo.toml or README. Cannot package without a FOSS license.",
+      "found": true,
+      "version": "0.1.8-1",
+      "description": "UI-first session manager for Fish shell with persistent PTY sessions",
+      "url": "https://github.com/AtefR/fish-session",
+      "license": [
+        "LicenseRef-UNLICENSED"
+      ],
+      "depends": [
+        "fish"
+      ],
+      "makedepends": [
+        "cargo",
+        "rust"
+      ]
+    },
+    {
+      "name": "framework-control-bin",
+      "rank": 62,
+      "reason": "BUILD_SYSTEM_TOO_COMPLEX \u2014 Framework Laptop control app (github.com/ozturkkl/framework-control, MIT, v0.5.2). Hybrid Rust+Svelte/Node.js build. Runtime depends on framework_tool CLI (not in Guix) and systemd. Hardware-specific.",
+      "found": true,
+      "version": "0.5.2-1",
+      "description": "Tool for Framework Laptop features (Fan, Battery, LEDs) - Precompiled Binary",
+      "url": "https://github.com/ozturkkl/framework-control",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "framework-system",
+        "xdg-utils",
+        "hicolor-icon-theme"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "jellyfin-rpc-bin",
+      "rank": 63,
+      "reason": "NEEDS_RECIPE_DESIGN",
+      "found": true,
+      "version": "1.3.4-1",
+      "description": "Displays the content you're currently watching on Discord",
+      "url": "https://github.com/Radiicall/jellyfin-rpc",
+      "license": [
+        "GPL3"
+      ],
+      "depends": [
+        "glibc",
+        "gcc-libs"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "kernelsu-dkms",
+      "rank": 64,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "3.1.0+80+g489cb029-1",
+      "description": "A Kernel based root solution for Android. DKMS module for Container-based solutions such as Waydroid.",
+      "url": "https://github.com/supechicken/KernelSU",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "modloader",
+        "dkms"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "lib32-libvpx1.3",
+      "rank": 66,
+      "reason": "LIB32_UNSUPPORTED",
+      "found": true,
+      "version": "1.3.0-4",
+      "description": "VP8 and VP9 codec",
+      "url": "https://www.webmproject.org/",
+      "license": [
+        "BSD"
+      ],
+      "depends": [
+        "lib32-glibc"
+      ],
+      "makedepends": [
+        "git",
+        "nasm"
+      ]
+    },
+    {
+      "name": "linux-apfs-rw-dkms-git",
+      "rank": 67,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "1:0.3.14.r0.g7d8dc88-1",
+      "description": "Experimental APFS kernel module with Write support (DKMS)",
+      "url": "https://github.com/linux-apfs/linux-apfs-rw",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git",
+        "bash"
+      ]
+    },
+    {
+      "name": "livekit",
+      "rank": 68,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "1.10.1-2",
+      "description": "LiveKit: Real-time video, audio and data for developers",
+      "url": "https://livekit.io/",
+      "license": [
+        "Apache"
+      ],
+      "depends": [],
+      "makedepends": [
+        "go",
+        "mage",
+        "git"
+      ]
+    },
+    {
+      "name": "llvm-cbe-git",
+      "rank": 69,
+      "reason": "NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aa)",
+      "found": true,
+      "version": "r428.82fba9c-1",
+      "description": "resurrected LLVM C Backend, with improvements",
+      "url": "https://github.com/JuliaComputing/llvm-cbe",
+      "license": [
+        "LLVM Release License"
+      ],
+      "depends": [
+        "llvm20"
+      ],
+      "makedepends": [
+        "cmake",
+        "git"
+      ]
+    },
+    {
+      "name": "local-llama-bin",
+      "rank": 70,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "1.0.2-2",
+      "description": "Local Llama also known as L\u00b3 is designed to be easy to use, with a user-friendly interface and advanced settings.(Prebuilt version.Use system-wide electron)",
+      "url": "https://folio.tib0.com/",
+      "license": [
+        "cc-by-nc-nd-4.0"
+      ],
+      "depends": [
+        "electron31",
+        "vulkan-icd-loader",
+        "nodejs"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "luajit-sdl2-git",
+      "rank": 71,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "r55.33529d3-1",
+      "description": "Autogenerated LuaJIT bindings for SDL2 with threads and audio",
+      "url": "https://github.com/sonoro1234/luajit-sdl2",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "luajit",
+        "sdl2"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "luajit-sdl3-git",
+      "rank": 72,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "r15.9c0b802-1",
+      "description": "Autogenerated LuaJIT bindings for SDL3 with threads and audio",
+      "url": "https://github.com/sonoro1234/luajit-sdl3",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "luajit",
+        "sdl3"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "mermaid-ascii-git",
+      "rank": 73,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "0.7.0.r0.g14ea0d2-1",
+      "description": "Render Mermaid graphs inside your terminal (development version)",
+      "url": "https://github.com/AlexanderGrooff/mermaid-ascii",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "glibc"
+      ],
+      "makedepends": [
+        "git",
+        "go"
+      ]
+    },
+    {
+      "name": "mkinitcpio-btrfs",
+      "rank": 74,
+      "reason": "ARCH_SPECIFIC",
+      "found": true,
+      "version": "0.4.3-1",
+      "description": "mkinitcpio hook containing advanced features for btrfs-based root devices",
+      "url": "https://github.com/xtfxme/mkinitcpio-btrfs",
+      "license": [
+        "BSD"
+      ],
+      "depends": [
+        "mkinitcpio>=0.9.0",
+        "btrfs-progs",
+        "kexec-tools"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "mkinitcpio-colors-git",
+      "rank": 75,
+      "reason": "ARCH_SPECIFIC",
+      "found": true,
+      "version": "26.f0a18fb-1",
+      "description": "mkinitcpio hook to set VT console colors during early userspace",
+      "url": "https://github.com/evanpurkhiser/mkinitcpio-colors",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "mkinitcpio",
+        "setcolors-git"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "mkinitcpio-wifi",
+      "rank": 76,
+      "reason": "ARCH_SPECIFIC",
+      "found": true,
+      "version": "0.4-1",
+      "description": "mkinitcpio hook to enable wifi remote access",
+      "url": "https://aur.archlinux.org/packages/mkinitcpio-wifi/",
+      "license": [
+        "GPL"
+      ],
+      "depends": [
+        "mkinitcpio",
+        "wpa_supplicant",
+        "iproute2"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "mkinitcpio-zerotier",
+      "rank": 78,
+      "reason": "ARCH_SPECIFIC",
+      "found": true,
+      "version": "1.1-1",
+      "description": "mkinitcpio hook that initialises ZeroTier One to assist in the remote unlocking of encrypted partitions",
+      "url": "https://gitlab.archlinux.org/alphajack/mkinitcpio-zerotier",
+      "license": [
+        "GPL3"
+      ],
+      "depends": [
+        "mkinitcpio",
+        "mkinitcpio-utils",
+        "zerotier-one"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "msi-psu-dkms",
+      "rank": 79,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "1-2",
+      "description": "MSIPSU Kernel Module (DKMS)",
+      "url": "https://github.com/JackDoan/msi-psu",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms",
+        "gcc",
+        "linux-headers"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "nifskope-git",
+      "rank": 80,
+      "reason": "PROPRIETARY_LICENSE",
+      "found": true,
+      "version": "1.1.3.864.g30954e7f-5",
+      "description": "Utility for opening and editing the NetImmerse (NIF) file format.",
+      "url": "http://niftools.org",
+      "license": [
+        "custom"
+      ],
+      "depends": [
+        "qt5-base"
+      ],
+      "makedepends": [
+        "git",
+        "gendesk"
+      ]
+    },
+    {
+      "name": "nvidia-390xx-dkms",
+      "rank": 81,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "390.157-21",
+      "description": "NVIDIA drivers - module sources",
+      "url": "https://www.nvidia.com/",
+      "license": [
+        "custom"
+      ],
+      "depends": [
+        "dkms",
+        "nvidia-390xx-utils=390.157",
+        "libglvnd"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "nvidia-470xx-dkms",
+      "rank": 83,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "470.256.02-8.01",
+      "description": "NVIDIA drivers - module sources",
+      "url": "http://www.nvidia.com/",
+      "license": [
+        "custom"
+      ],
+      "depends": [
+        "dkms",
+        "nvidia-470xx-utils=470.256.02",
+        "libglvnd"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "nvidia-580xx-dkms",
+      "rank": 85,
+      "reason": "DKMS_UNSUPPORTED",
+      "found": true,
+      "version": "580.142-3",
+      "description": "NVIDIA kernel modules - module sources (580xx)",
+      "url": "http://www.nvidia.com/",
+      "license": [
+        "custom"
+      ],
+      "depends": [
+        "dkms",
+        "nvidia-580xx-utils=580.142",
+        "libglvnd"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "nvidia-beta-dkms",
+      "rank": 86,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "595.58.03-1",
+      "description": "NVIDIA kernel modules - module sources (beta version)",
+      "url": "https://www.nvidia.com/",
+      "license": [
+        "LicenseRef-custom"
+      ],
+      "depends": [
+        "dkms",
+        "libglvnd",
+        "nvidia-utils-beta=595.58.03"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "op-cache-git",
+      "rank": 88,
+      "reason": "cargo-build-system requires vendored crate deps; crmne/op-cache has no tags, only git commits; tried: (1) source tarball approach, (2) cargo-build-system \u2014 both infeasible without full crate vendoring",
+      "found": true,
+      "version": "0-1",
+      "description": "A fast caching proxy for 1Password CLI op read commands",
+      "url": "https://github.com/crmne/op-cache",
+      "license": [
+        "MIT"
+      ],
+      "depends": [
+        "gcc-libs"
+      ],
+      "makedepends": [
+        "cargo",
+        "git"
+      ]
+    },
+    {
+      "name": "pam_exec-ssh-git",
+      "rank": 89,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "r22.cc3b533-1",
+      "description": "Unlock SSH keys on login using PAM.",
+      "url": "https://github.com/x70b1/pam_exec-ssh",
+      "license": [
+        "The Unlicense"
+      ],
+      "depends": [
+        "pam",
+        "expect"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "protonmail-bridge-free-nokeychain-git",
+      "rank": 90,
+      "reason": "FETCH_FAILED",
+      "found": true,
+      "version": "3.24.1-1",
+      "description": "Proton Mail Bridge fork (free) without keychain requirement; stores secrets in a file",
+      "url": "https://github.com/mnixry/proton-bridge",
+      "license": [
+        "GPL3"
+      ],
+      "depends": [
+        "libfido2"
+      ],
+      "makedepends": [
+        "git",
+        "go"
+      ]
+    },
+    {
+      "name": "r8127-dkms",
+      "rank": 91,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "11.016.00-1",
+      "description": "Kernel module for Realtek 10GB Ethernet NICs",
+      "url": "https://www.realtek.com/Download/List?cate_id=584",
+      "license": [
+        "GPL-2.0-only"
+      ],
+      "depends": [
+        "dkms",
+        "linux-firmware-realtek"
+      ],
+      "makedepends": [
+        "linux-headers"
+      ]
+    },
+    {
+      "name": "rtw88-dkms-git",
+      "rank": 93,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "r675.52072d8-1",
+      "description": "Drivers for Realtek 802.11n/802.11ac wireless chips",
+      "url": "https://github.com/lwfinger/rtw88",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms",
+        "linux-firmware-realtek"
+      ],
+      "makedepends": [
+        "git"
+      ]
+    },
+    {
+      "name": "rtw89-dkms-git",
+      "rank": 94,
+      "reason": "KERNEL_MODULE",
+      "found": true,
+      "version": "r1766.f93ba28-1",
+      "description": "Drivers for Realtek Wi-Fi 6/6E and Wi-Fi 7 adapters",
+      "url": "https://github.com/morrownr/rtw89",
+      "license": [
+        "GPL2"
+      ],
+      "depends": [
+        "dkms"
+      ],
+      "makedepends": [
+        "git",
+        "linux-firmware-realtek"
+      ]
+    },
+    {
+      "name": "samsung-unified-driver-printer",
+      "rank": 95,
+      "reason": "PROPRIETARY_LICENSE \u2014 Samsung printer driver; custom Samsung license",
+      "found": true,
+      "version": "1.00.39-11",
+      "description": "Samsung Unified Linux Driver for printers.",
+      "url": "http://www.samsung.com",
+      "license": [
+        "custom:samsung"
+      ],
+      "depends": [
+        "samsung-unified-driver-common",
+        "cups",
+        "ghostscript"
+      ],
+      "makedepends": []
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-paneuropean",
+      "rank": 96,
+      "reason": "PROPRIETARY_LICENSE",
+      "found": true,
+      "version": "26100.1.240331_1435-1",
+      "description": "Microsoft Windows 11 TrueType FOD fonts (paneuropean)",
+      "url": "https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list#fonts-included-in-feature-on-demand-fod-packages",
+      "license": [
+        "custom"
+      ],
+      "depends": [],
+      "makedepends": [
+        "udisks2",
+        "p7zip",
+        "httpdirfs"
+      ]
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-sinh",
+      "rank": 97,
+      "reason": "PROPRIETARY_LICENSE",
+      "found": true,
+      "version": "26100.1.240331_1435-1",
+      "description": "Microsoft Windows 11 TrueType FOD fonts (sinh)",
+      "url": "https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list#fonts-included-in-feature-on-demand-fod-packages",
+      "license": [
+        "custom"
+      ],
+      "depends": [],
+      "makedepends": [
+        "udisks2",
+        "p7zip",
+        "httpdirfs"
+      ]
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-syrc",
+      "rank": 98,
+      "reason": "PROPRIETARY_LICENSE",
+      "found": true,
+      "version": "26100.1.240331_1435-1",
+      "description": "Microsoft Windows 11 TrueType FOD fonts (syrc)",
+      "url": "https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list#fonts-included-in-feature-on-demand-fod-packages",
+      "license": [
+        "custom"
+      ],
+      "depends": [],
+      "makedepends": [
+        "udisks2",
+        "p7zip",
+        "httpdirfs"
+      ]
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-taml",
+      "rank": 99,
+      "reason": "PROPRIETARY_LICENSE",
+      "found": true,
+      "version": "26100.1.240331_1435-1",
+      "description": "Microsoft Windows 11 TrueType FOD fonts (taml)",
+      "url": "https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list#fonts-included-in-feature-on-demand-fod-packages",
+      "license": [
+        "custom"
+      ],
+      "depends": [],
+      "makedepends": [
+        "udisks2",
+        "p7zip",
+        "httpdirfs"
+      ]
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-telu",
+      "rank": 100,
+      "reason": "PROPRIETARY_LICENSE",
+      "found": true,
+      "version": "26100.1.240331_1435-1",
+      "description": "Microsoft Windows 11 TrueType FOD fonts (telu)",
+      "url": "https://learn.microsoft.com/en-us/typography/fonts/windows_11_font_list#fonts-included-in-feature-on-demand-fod-packages",
+      "license": [
+        "custom"
+      ],
+      "depends": [],
+      "makedepends": [
+        "udisks2",
+        "p7zip",
+        "httpdirfs"
+      ]
+    }
+  ]
+}

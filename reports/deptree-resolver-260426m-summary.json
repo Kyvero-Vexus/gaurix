@@ -1,0 +1,401 @@
+{
+  "pass": "deptree-resolver-260426m",
+  "date": "2026-04-26",
+  "total_evaluated": 91,
+  "recipes_generated": 21,
+  "blocked": 70,
+  "blocked_details": [
+    {
+      "name": "aurutils",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "pamac-aur",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "python-urllib3-future-git",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_PYTHON_DEPS: requires h11+jh2+qh3 HTTP/2/3 libraries not in Guix; A1:..."
+    },
+    {
+      "name": "nautilus-typeahead",
+      "reason": "BLOCKED_COMPLEX_DEPS",
+      "detail": "GNOME Nautilus fork requiring exact version patches against full GNOME stack"
+    },
+    {
+      "name": "audiobookshelf",
+      "reason": "BLOCKED_MISSING_SOURCE",
+      "detail": "Not found in AUR metadata cache"
+    },
+    {
+      "name": "bulky",
+      "reason": "BLOCKED_MISSING_SOURCE",
+      "detail": "Not found in AUR metadata cache"
+    },
+    {
+      "name": "dbeaver",
+      "reason": "BLOCKED_MISSING_SOURCE",
+      "detail": "Not found in AUR metadata cache"
+    },
+    {
+      "name": "diffnav-bin",
+      "reason": "BLOCKED_OTHER",
+      "detail": "NEEDS_RECIPE_DESIGN"
+    },
+    {
+      "name": "fluxdown-bin",
+      "reason": "BLOCKED_MISSING_SOURCE",
+      "detail": "Not found in AUR metadata cache"
+    },
+    {
+      "name": "gram-editor-bin",
+      "reason": "BLOCKED_MISSING_SOURCE",
+      "detail": "Not found in AUR metadata cache"
+    },
+    {
+      "name": "hypnotix",
+      "reason": "BLOCKED_MISSING_SOURCE",
+      "detail": "Not found in AUR metadata cache"
+    },
+    {
+      "name": "pardf",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED \u2014 UNCLEAR_UPSTREAM: no clear source; A1: no repo found; A2: may be proprietary; A3: unknown license"
+    },
+    {
+      "name": "apple-fonts",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "NON_DISTRIBUTABLE"
+    },
+    {
+      "name": "netpad-vnext-bin",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: A cross-platform C# editor and playground (vNext - Rust-based shell)"
+    },
+    {
+      "name": "r8125-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "skillshare",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_SERVICE"
+    },
+    {
+      "name": "bcachefs-kernel-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "jdk17-graalvm-ee-bin",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_CLOSED_SOURCE"
+    },
+    {
+      "name": "lib32-openssl-1.1",
+      "reason": "BLOCKED_LIB32_UNSUPPORTED",
+      "detail": "32-bit library compat not supported"
+    },
+    {
+      "name": "mdbook-epub",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED \u2014 CARGO_DEPS_NEEDED: 30+ Rust crates; A1: need 30+ crates; A2: depends on mdbook; A3: no binaries"
+    },
+    {
+      "name": "mingw-w64-zlib-ng",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aa)"
+    },
+    {
+      "name": "mkinitcpio-archlogo",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "mkinitcpio-systemd-extras",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "nbfc",
+      "reason": "BLOCKED_DOTNET",
+      "detail": "Depends on mono/.NET runtime not available in Guix"
+    },
+    {
+      "name": "ndi-sdk",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_SDK"
+    },
+    {
+      "name": "ntfsplus-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "podserv-b-git",
+      "reason": "BLOCKED_VERY_LOW_MATURITY",
+      "detail": "VERY_LOW_MATURITY \u2014 Rust podcast server (github.com/l5yth/podserv-b, Apache-2.0, v0.1.2). Only 2 GitHub stars, 1 contributor. Too early stage to warrant packaging."
+    },
+    {
+      "name": "portage",
+      "reason": "BLOCKED_FOREIGN_PACKAGE_MANAGER",
+      "detail": "FOREIGN_PACKAGE_MANAGER \u2014 Gentoo's Portage; not applicable to Guix"
+    },
+    {
+      "name": "r8152-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "ryzen_smu-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "spinwheel-pipewire",
+      "reason": "BLOCKED_NO_UPSTREAM_SOURCE",
+      "detail": "NO_UPSTREAM_SOURCE \u2014 Terminal wheel spinner (codeberg.org/the-traveler/spinwheel, GPL-3.0+, v0.1.0). Upstream Codeberg repo returns 404. Source only available embedded in AUR package."
+    },
+    {
+      "name": "system76-acpi-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "system76-io-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "xpad-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "yaac",
+      "reason": "BLOCKED_JAVA_COMPLEX",
+      "detail": "Java APRS client with complex GUI dependencies"
+    },
+    {
+      "name": "zenpower3-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "zenpower3-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "zenpower5-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "aic8800-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "ajantv2-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "ampcode",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "custom:proprietary license"
+    },
+    {
+      "name": "architect-git",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Nix-like configuration manager for pacman (Arch-specific)"
+    },
+    {
+      "name": "autofirma",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED: JAVA_COMPLEX: Cliente de firma electr\u00f3nica ofrecido por la Administraci\u00f3n P\u00fablica"
+    },
+    {
+      "name": "droidcam-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "fish-session",
+      "reason": "BLOCKED_NO_LICENSE",
+      "detail": "NO_LICENSE \u2014 Fish shell session manager (github.com/AtefR/fish-session, v0.1.8). No LICENSE file, no license in Cargo.toml or README. Cannot package without a FOSS license."
+    },
+    {
+      "name": "kernelsu-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "lib32-libvpx1.3",
+      "reason": "BLOCKED_LIB32_UNSUPPORTED",
+      "detail": "32-bit library compat not supported"
+    },
+    {
+      "name": "linux-apfs-rw-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "llvm-cbe-git",
+      "reason": "BLOCKED_EXHAUSTED",
+      "detail": "NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aa)"
+    },
+    {
+      "name": "local-llama-bin",
+      "reason": "BLOCKED_NON_COMMERCIAL_LICENSE",
+      "detail": "cc-by-nc-nd-4.0 non-commercial license"
+    },
+    {
+      "name": "mkinitcpio-btrfs",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "mkinitcpio-colors-git",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "mkinitcpio-wifi",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "mkinitcpio-zerotier",
+      "reason": "BLOCKED_ARCH_SPECIFIC",
+      "detail": "Depends on Arch Linux specific tools (pacman/mkinitcpio)"
+    },
+    {
+      "name": "msi-psu-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "nifskope-git",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE"
+    },
+    {
+      "name": "nvidia-390xx-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "nvidia-470xx-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "nvidia-580xx-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "nvidia-beta-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "op-cache-git",
+      "reason": "BLOCKED_CARGO_VENDORING",
+      "detail": "Rust cargo-build-system requires vendored crate deps, no tags"
+    },
+    {
+      "name": "r8127-dkms",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "rtw88-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "rtw89-dkms-git",
+      "reason": "BLOCKED_KERNEL_MODULE",
+      "detail": "DKMS/kernel module; Guix manages kernels as complete packages"
+    },
+    {
+      "name": "samsung-unified-driver-printer",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE \u2014 Samsung printer driver; custom Samsung license"
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-paneuropean",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE"
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-sinh",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE"
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-syrc",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE"
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-taml",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE"
+    },
+    {
+      "name": "ttf-ms-win11-fod-auto-telu",
+      "reason": "BLOCKED_PROPRIETARY",
+      "detail": "PROPRIETARY_LICENSE"
+    }
+  ],
+  "category_distribution": {
+    "BLOCKED_ARCH_SPECIFIC": 9,
+    "BLOCKED_EXHAUSTED": 7,
+    "BLOCKED_COMPLEX_DEPS": 1,
+    "BLOCKED_MISSING_SOURCE": 6,
+    "BLOCKED_OTHER": 1,
+    "BLOCKED_PROPRIETARY": 12,
+    "BLOCKED_KERNEL_MODULE": 24,
+    "RECIPE_WRITTEN": 21,
+    "BLOCKED_LIB32_UNSUPPORTED": 2,
+    "BLOCKED_DOTNET": 1,
+    "BLOCKED_VERY_LOW_MATURITY": 1,
+    "BLOCKED_FOREIGN_PACKAGE_MANAGER": 1,
+    "BLOCKED_NO_UPSTREAM_SOURCE": 1,
+    "BLOCKED_JAVA_COMPLEX": 1,
+    "BLOCKED_NO_LICENSE": 1,
+    "BLOCKED_NON_COMMERCIAL_LICENSE": 1,
+    "BLOCKED_CARGO_VENDORING": 1
+  },
+  "recipes": [
+    "etcd",
+    "flclashx-bin",
+    "gowatch",
+    "harbor-wave",
+    "limine-booster",
+    "mod_maxminddb",
+    "quantumlauncher-bin",
+    "webos-dev-manager-bin",
+    "artificial-rage-git",
+    "buf-git",
+    "dela",
+    "disk_usage",
+    "dpibreak",
+    "framework-control-bin",
+    "jellyfin-rpc-bin",
+    "livekit",
+    "luajit-sdl2-git",
+    "luajit-sdl3-git",
+    "mermaid-ascii-git",
+    "pam_exec-ssh-git",
+    "protonmail-bridge-free-nokeychain-git"
+  ]
+}
