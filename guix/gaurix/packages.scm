@@ -1,5 +1,6 @@
 ;;; Package namespace convenience module for Gaurix.
             ;; recipe-resolver-260426g: 100 packages attempted (100 recipes, 0 BLOCKED)
+            ;; recipe-resolver-260426k: 100 packages resolved from queue
             ;; deptree-resolver-260426i: 100 BLOCKED evaluated (11 recipes: yt-x, pikeru, prs, pcem, picom-ftlabs, +6 more; 89 remain BLOCKED)
             ;; deptree-resolver-260426f: 100 BLOCKED evaluated (3 recipes: arti, vegastrike-engine, vegastrike; 97 remain BLOCKED)
             ;; deptree-resolver-260426e: 100 BLOCKED evaluated (3 recipes: python-uhid, fido2-hid-bridge, sommelier; 97 remain BLOCKED)
@@ -12017,3 +12018,109 @@
                zed-preview
 ))
 
+
+;;; recipe-resolver-260426k
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260426k)
+  #:re-export (
+               airdcpp-webclient
+               alabamaencoder-git
+               albion-online-launcher-bin
+               anura
+               bit-bin
+               bitmagnet
+               bsd-games2
+               carafe-bin
+               chapar-bin
+               clickup-desktop
+               cmatrix-neo-git
+               convertall-py
+               cryptographic-id-rs
+               cryptr-bin
+               dano-bin
+               dict-jargon
+               dnsleaktest
+               dprint
+               duck
+               dutree-bin
+               envfetch-bin
+               eruption
+               exabgp
+               ezra-bible-app-bin
+               fakepkg
+               feeddeck-bin
+               firealpaca
+               firehol
+               flexget
+               gdlauncher-bin
+               gmetronome
+               gnome-pass-search-provider-git
+               gnome-shell-extension-alt-tab-scroll-workaround
+               gopass-git
+               gpg-import-bin
+               gpx-animator
+               gsh
+               hamrs-appimage
+               hevi
+               hex-a-hop
+               hidrdd
+               i3-resurrect
+               iir1
+               imunes-git
+               inkscape-applytransforms-git
+               iwdgui
+               jbang
+               jupyterlab-catppuccin
+               jxl-oxide
+               kpcli
+               latex2rtf
+               lazyjournal-bin
+               libjxl-metrics-git
+               libstudxml
+               logstash-bin
+               matrix-sliding-sync
+               mautrix-telegram
+               mbw
+               mihomo-party
+               mkgmap
+               modrinth-app-git
+               mpv-mpris-git
+               munt-smf2wav
+               ncmdump
+               ncview
+               nosqlbooster-mongodb
+               offsetexplorer
+               openrsync-git
+               otf2bdf
+               pbgopy-bin
+               pkgx-bin
+               proxypin-bin
+               python-mozjpeg-lossless-optimization
+               qtchess
+               redpanda-connect
+               relagit-bin
+               rtl-sdr-blog
+               scid
+               sftpman
+               solkit-bin
+               sonobus
+               sqlitestudio-bin
+               stl-thumb-git
+               sunflower-bin
+               supabase
+               syncterm
+               systemdlint
+               tauri-cli
+               telosys-cli
+               tika-server
+               todoist-bin
+               toggl-bin
+               transmission-gtk3
+               typst-languagetool-lsp-git
+               uefi-run
+               umr-git
+               vim-dracula
+               websocat-git
+               youtty
+               zx
+))
