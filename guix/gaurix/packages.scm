@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; deptree-resolver-260425n: 100 BLOCKED evaluated (1 recipe: decrypto-pro-git + 1 dep: openssl-gost-engine, 99 remain BLOCKED)
             ;; deptree-resolver-260425m: 100 BLOCKED evaluated (1 recipe: wayfire-git, 99 remain BLOCKED)
             ;; deptree-resolver-260425l: 100 BLOCKED evaluated (1 recipe: tilp-xdg, 99 remain BLOCKED)
             ;; recipe-resolver-260425l: 99 packages attempted (99 recipes, 1 BLOCKED)
@@ -11467,4 +11468,6 @@
                smemstat
                gnome-shell-extension-freon
                figma-linux
+            openssl-gost-engine
+            decrypto-pro
 ))
