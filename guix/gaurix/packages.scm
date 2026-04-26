@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; recipe-resolver-260426g: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260426f: 100 BLOCKED evaluated (3 recipes: arti, vegastrike-engine, vegastrike; 97 remain BLOCKED)
             ;; deptree-resolver-260426e: 100 BLOCKED evaluated (3 recipes: python-uhid, fido2-hid-bridge, sommelier; 97 remain BLOCKED)
             ;; deptree-resolver-260426d: 100 BLOCKED evaluated (1 recipe: swscreenshot-gui; 99 remain BLOCKED)
@@ -11689,4 +11690,101 @@
             windowlab
             arti
             vegastrike-engine
+            ansible-docs-git
+            antimicrox-git
+            aria2-config-script
+            arkenfox-hook-git
+            avirusnamedtom-hib
+            bittriprunner-hib
+            blheli-configurator-bin
+            blockmap-git
+            boardmix-uos
+            brother-hll2350dw
+            caja-dropbox
+            cchat-gtk-git
+            cinnamon-doc
+            comlink
+            compiler-rt19
+            conmon-git
+            console-tdm-git
+            coolreader3-git
+            dbacl
+            deepin-wine-cntv-cbox
+            devrantron
+            digital-assets
+            discwrapper
+            drumrox
+            eclipse-texlipse
+            element-desktop-blur-me-not
+            elm-format-0-17-bin
+            excite-cli
+            fireurl
+            fityk-git
+            foobar2000-component-uie-typefind-bin
+            fortune-mod-it
+            ftl-sdk
+            git-now-git
+            git-treeflow-bin
+            gpufetch-git
+            gtkmagnetic
+            hideit-sh-git
+            homed-automation
+            inkscape-generate-palette
+            intercal
+            jriver-media-center24
+            keyplusd-git
+            kim-api
+            kodi-addon-stream
+            latex-enumitem
+            lemonbar-clicks-git
+            libewf-git
+            liri-text-git
+            litra-autotoggle
+            lout-dejavu-git
+            lua51-unix
+            mapcrafter-git
+            mbrola-voices-it2
+            multiwinia
+            munt-qt
+            myget
+            nemo-qml-plugin-dbus
+            ontake-himitsu-git
+            openrazer-meta-git
+            otf-manjari
+            pass-sshaskpass-git
+            passed-git
+            perl-filehandle-unget
+            pict-rs
+            prowlarr-develop
+            pyromaths
+            python-distribution
+            qscrabble3d
+            qtvkbd
+            quake3-defrag-maps
+            qytdl
+            r-fpc
+            r-scatterplot3d
+            rhythmbox-tray-icon-git
+            scale2x
+            sentrum-bin
+            sonar-scanner
+            sunvox-1-x
+            sync-worktrees
+            tass64
+            tesseract-data-bos-git
+            thinkpad-p14s
+            torch7-cutorch-git
+            trackballs
+            ueyed
+            vacuum-im
+            vim-everforest-git
+            vim-tabular-git
+            vscode-codicons-git
+            vundle-git
+            world-of-goo-2
+            wwwoffle-svn
+            xininfo-git
+            xoscope
+            yadifa
+            zork3
 ))
