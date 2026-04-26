@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260426g)
   #:use-module (gaurix packages recipe-resolver-260426g)
   #:use-module (gaurix packages deptree-resolver-260426f)
   #:use-module (gaurix packages recipe-resolver-260426f)
@@ -16156,3 +16157,10 @@
 (re-export xoscope)
 (re-export yadifa)
 (re-export zork3)
+
+;; --- deptree-resolver-260426g re-exports ---
+(define-public librewolf-extension-ublock-origin-bin*
+  (@@ (gaurix packages deptree-resolver-260426g) librewolf-extension-ublock-origin-bin))
+(define-public vivaldi-autoinject-custom-js-ui*
+  (@@ (gaurix packages deptree-resolver-260426g) vivaldi-autoinject-custom-js-ui))
+

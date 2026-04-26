@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-04-26T13:50:06Z",
+  "pass_id": "deptree-resolver-260426g",
+  "total_blocked_before": 241,
+  "total_blocked_after": 239,
+  "evaluated": 100,
+  "resolved": 2,
+  "resolved_packages": {
+    "librewolf-extension-ublock-origin-bin": {
+      "version": "1.69.0",
+      "build_system": "copy-build-system",
+      "approach": "Download signed .xpi from GitHub Releases, install to LibreWolf system-wide extensions directory",
+      "license": "GPL-3.0-only"
+    },
+    "vivaldi-autoinject-custom-js-ui": {
+      "version": "2023.09.05.1",
+      "build_system": "gnu-build-system",
+      "approach": "Build from source using bashbud framework (gawk+m4), install script and man page",
+      "license": "BSD-2-Clause"
+    }
+  },
+  "blocked_categories": {
+    "MISSING_SOURCE": 5,
+    "SELINUX_SPECIFIC": 2,
+    "DKMS_KERNEL_MODULE": 9,
+    "KERNEL_MODULE": 5,
+    "DISTRO_SPECIFIC": 11,
+    "PROPRIETARY_BINARY": 6,
+    "PLATFORM_UNSUPPORTED": 4,
+    "NON_DISTRIBUTABLE": 3,
+    "MULTILIB_UNSUPPORTED": 3,
+    "MINGW_CROSS_COMPILATION": 7,
+    "ABANDONED_UPSTREAM": 2,
+    "WINE_WRAPPER": 2,
+    "OBSOLETE_DEPS": 2,
+    "BUILD_SYSTEM_TOO_COMPLEX": 7,
+    "NPM_COMPLEX_DEPS": 10,
+    "MISSING_DEPS": 8,
+    "NON_DISTRIBUTABLE_GAME": 3,
+    "OTHER": 4,
+    "PREVIOUSLY_CATEGORIZED": 5
+  },
+  "tree_artifacts": [
+    "reports/blocked-dependency-tree.json",
+    "reports/blocked-dependency-tree.md"
+  ],
+  "recipe_file": "guix/gaurix/packages/deptree-resolver-260426g.scm",
+  "blocked_notes": "guix/gaurix/packages/deptree-resolver-260426g-blocked-notes.scm"
+}
