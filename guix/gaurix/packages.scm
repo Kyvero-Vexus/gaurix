@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; recipe-resolver-260425n: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260425n: 100 BLOCKED evaluated (1 recipe: decrypto-pro-git + 1 dep: openssl-gost-engine, 99 remain BLOCKED)
             ;; deptree-resolver-260425m: 100 BLOCKED evaluated (1 recipe: wayfire-git, 99 remain BLOCKED)
             ;; deptree-resolver-260425l: 100 BLOCKED evaluated (1 recipe: tilp-xdg, 99 remain BLOCKED)
