@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; deptree-resolver-260426k: 100 BLOCKED evaluated (9 recipes: libatrac9, libunarr, libuiohook, vanilla-wiiu, lcd4linux, librum, vgmstream, yacreader, obs-input-overlay; 6 BLOCKED resolved + 3 new deps; 94 remain BLOCKED)
             ;; recipe-resolver-260426g: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; recipe-resolver-260426k: 100 packages resolved from queue
             ;; deptree-resolver-260426i: 100 BLOCKED evaluated (11 recipes: yt-x, pikeru, prs, pcem, picom-ftlabs, +6 more; 89 remain BLOCKED)
