@@ -11908,3 +11908,112 @@
                ultrastardx
                yt-x
 ))
+
+
+;;; recipe-resolver-260426j: 100 packages attempted (100 recipes, 0 BLOCKED)
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260426j)
+  #:re-export (
+               1password-blur-me-not
+               adjust-pci-latency-git
+               aegisub-japan7-git
+               amdgpu-fan
+               archuseriso
+               armorpaint
+               art-rawconverter
+               ashes-2063
+               astroimagej
+               bandcamp-dl-git
+               bdsup2subpp-git
+               beanquery-git
+               brother-dcp-9020cdw
+               candlelang-git
+               cohesion-git
+               ddgpt-git
+               depthcharge-tools
+               devolo-dlan-cockpit
+               drm-lease-manager-git
+               electron-fiddle-blur-me-not
+               eudic
+               fcitx5-cskk-git
+               ferretdb
+               firejail-pacman-hook
+               fnlock
+               freedroid
+               fritzbox-tools
+               frogatto
+               gamehub-git
+               gnome-shell-extension-legacy-theme-auto-switcher-git
+               gourmand-git
+               gpodder2go-git
+               grml-systemd-boot
+               haveibeenpwned-downloader-git
+               iio-hyprland-git
+               itgmania
+               jabref-git
+               k380-function-keys-conf
+               kf6-servicemenus-pdftools
+               labwc-menu-generator-git
+               lazydocker-git
+               lokinet
+               mandelbulber2-opencl-git
+               masscanned
+               maui-shell-git
+               mlat-client-git
+               nautilus-mediainfo-gtk4
+               nginx-unit-go
+               nginx-unit-nodejs
+               nginx-unit-perl
+               nginx-unit-php
+               niji-git
+               ocrodjvu-python3-git
+               olympus-git
+               ovcs-git
+               phive
+               php83-apache
+               php83-curl
+               php83-fpm
+               php83-gd
+               php83-iconv
+               php83-intl
+               php83-mbstring
+               php83-mysql
+               php83-openssl
+               php83-pgsql
+               php83-sockets
+               php83-sodium
+               php83-sqlite
+               php83-tidy
+               php83-tokenizer
+               php83-xmlreader
+               php83-xmlwriter
+               php83-xsl
+               phpunit
+               pianobooster-qt6-git
+               piaware-git
+               postallow
+               postgresql15-docs
+               postgresql15-libs
+               powertop-to-tmpfile
+               protoc-gen-twirp
+               python-flask-sockets
+               qbpm-git
+               qpxtool-unofficial-git
+               qtile-extras-git
+               rtorrent-ipv6
+               scribus-unstable
+               sfxr-qt-git
+               simple-signer-git
+               smoldyn
+               sncli
+               soundux-git
+               spf-tools
+               sqriptor-git
+               sway-audio-idle-inhibit-git
+               tahoma2d-git
+               tcpping
+               tumbler-stl-thumbnailer
+               uiua-git
+               zed-preview
+))
+
