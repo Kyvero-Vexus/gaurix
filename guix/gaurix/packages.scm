@@ -15,6 +15,7 @@
             ;; deptree-resolver-260425i: 100 BLOCKED evaluated (2 recipes, 98 remain BLOCKED)
 ;; recipe-resolver-260425h: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; recipe-resolver-260426c: 100 packages attempted (100 recipes, 0 BLOCKED)
+            ;; recipe-resolver-260426h: 100 packages attempted (100 recipes, 0 BLOCKED)
 (define-module (gaurix packages)
             ;; deptree-resolver-260425h: 100 BLOCKED evaluated (6 recipes, 2 ALREADY_RESOLVED, 92 remain BLOCKED)
             ;; deptree-resolver-260425g: 100 BLOCKED evaluated (4 recipes, 96 remain BLOCKED)
@@ -11787,4 +11788,104 @@
             xoscope
             yadifa
             zork3
+            4kstogram
+            among-sus-git
+            cmake-lint
+            deepl-linux-electron-git
+            ffmulticonverter
+            geckodriver-git
+            goimports-reviser-git
+            mathicsscript
+            numbat-git
+            ocaml-atdgen
+            ocaml-atdgen-codec-runtime
+            ocaml-atdgen-runtime
+            ocaml-atdj
+            ocaml-atdpy
+            ocaml-atds
+            ocaml-atdts
+            pdfannots-git
+            picocrypt-git
+            python-azure-identity
+            python-bflb-iot-tool
+            python-bflb-mcu-tool
+            python-ble-serial
+            python-ctfcli
+            python-ctrader-openapi
+            python-django-channels
+            python-django-channels-redis
+            python-east-asian-spacing
+            python-electrum-aionostr
+            python-geoalchemy2
+            python-home-assistant-hacs
+            python-json-repair
+            python-livekit-agents
+            python-livekit-api
+            python-livekit-plugins-anam
+            python-livekit-plugins-anthropic
+            python-livekit-plugins-assemblyai
+            python-livekit-plugins-avatartalk
+            python-livekit-plugins-aws
+            python-livekit-plugins-azure
+            python-livekit-plugins-baseten
+            python-livekit-plugins-bey
+            python-livekit-plugins-bithuman
+            python-livekit-plugins-cartesia
+            python-livekit-plugins-clova
+            python-livekit-plugins-deepgram
+            python-livekit-plugins-elevenlabs
+            python-livekit-plugins-fal
+            python-livekit-plugins-fireworksai
+            python-livekit-plugins-fishaudio
+            python-livekit-plugins-gladia
+            python-livekit-plugins-google
+            python-livekit-plugins-gradium
+            python-livekit-plugins-groq
+            python-livekit-plugins-hedra
+            python-livekit-plugins-hume
+            python-livekit-plugins-inworld
+            python-livekit-plugins-langchain
+            python-livekit-plugins-lmnt
+            python-livekit-plugins-minimal
+            python-livekit-plugins-minimax
+            python-livekit-plugins-mistralai
+            python-livekit-plugins-neuphonic
+            python-livekit-plugins-nltk
+            python-livekit-plugins-nvidia
+            python-livekit-plugins-openai
+            python-livekit-plugins-resemble
+            python-livekit-plugins-rime
+            python-livekit-plugins-rtzr
+            python-livekit-plugins-sarvam
+            python-livekit-plugins-silero
+            python-livekit-plugins-simli
+            python-livekit-plugins-smallestai
+            python-livekit-plugins-soniox
+            python-livekit-plugins-speechify
+            python-livekit-plugins-speechmatics
+            python-livekit-plugins-spitch
+            python-livekit-plugins-tavus
+            python-livekit-plugins-turn-detector
+            python-livekit-plugins-ultravox
+            python-livekit-plugins-upliftai
+            python-matplotlib-scalebar
+            python-msal-extensions
+            python-msgraph-core
+            python-opentype-feature-freezer
+            python-pandana
+            python-prometheus-fastapi-instrumentator
+            python-pyht
+            python-pypcap
+            python-pypdfium2
+            python-pyshark
+            python-requests-pkcs12
+            python-segno
+            python-simplification
+            python-togglcli
+            python-topojson
+            python-torf
+            qbittorrent-enhanced-nox
+            ssh-audit-git
+            syncthingtray-git
+            xdg-terminal-exec-mkhl
 ))
