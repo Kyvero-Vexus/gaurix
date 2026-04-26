@@ -11,6 +11,7 @@
             ;; deptree-resolver-260425k: 100 BLOCKED evaluated (2 recipes + 1 dep, 1 ALREADY_IN_GUIX, 1 ALREADY_RESOLVED, 97 remain BLOCKED)
             ;; deptree-resolver-260425i: 100 BLOCKED evaluated (2 recipes, 98 remain BLOCKED)
 ;; recipe-resolver-260425h: 100 packages attempted (100 recipes, 0 BLOCKED)
+            ;; recipe-resolver-260426c: 100 packages attempted (100 recipes, 0 BLOCKED)
 (define-module (gaurix packages)
             ;; deptree-resolver-260425h: 100 BLOCKED evaluated (6 recipes, 2 ALREADY_RESOLVED, 92 remain BLOCKED)
             ;; deptree-resolver-260425g: 100 BLOCKED evaluated (4 recipes, 96 remain BLOCKED)
@@ -11584,4 +11585,104 @@
             librewolf-tridactyl-native-bin
             lobe-chat-bin
             beammp-launcher
+            su-exec
+            suck
+            svfs
+            swaycwd
+            swfmill
+            symboleditor
+            synthclone
+            sysrss
+            systester-cli-bin
+            t-rec
+            t2n
+            taarich
+            tab-rs
+            tailor-hwcaps
+            tailscaledesktop
+            talon-bin
+            tangerine-icon-theme
+            tapecalc
+            taschenrechner
+            task-maker-rust
+            tcping-go-bin
+            teal
+            lua53-tl
+            tecnoballz
+            teg
+            templ-bin
+            tera-cli
+            termpub
+            terraform-lsp
+            terraform11
+            tetronimia
+            tex-match
+            texel
+            therion
+            think
+            threelayout
+            ticemu
+            tightvnc-jviewer
+            timer-rs
+            timerdown
+            timetrace-bin
+            tiny-dnn
+            todd
+            toluol
+            tony
+            topal
+            tpasm
+            treefetch
+            trello-cli
+            trenta-icons
+            try
+            tsnake
+            tty-copy
+            tuc
+            tuimoji
+            tumbler-folder-thumbnailer
+            tut-mastodon
+            tuxtrain
+            tv
+            twitch-dl-bin
+            txdx
+            typioca
+            u3d
+            uarmsolver
+            uclibc-ng
+            udp-over-tcp
+            ultralist
+            umleditor
+            unfs3
+            unifetch
+            uniread
+            univga
+            unsilence
+            urw-classico
+            usbmon
+            uvg266
+            vdmfec
+            vegastrike
+            venom
+            verdaccio
+            verifpal
+            vfu
+            victoriametrics-bin
+            vidmerger-bin
+            vido
+            viper-bin
+            vpkedit-bin
+            wait4x
+            waon
+            war1gus
+            waybackurls
+            wch-isp
+            webchanges
+            weborf
+            webtrees
+            wgsl-analyzer-bin
+            wifi-password
+            wiliwili
+            windowchef
+            windowlab
 ))
