@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260426j)
   #:use-module (gaurix packages recipe-resolver-260426j)
   #:use-module (gaurix packages recipe-resolver-260426h)
   #:use-module (gaurix packages deptree-resolver-260426h)
@@ -16271,6 +16272,18 @@
 (re-export syncthingtray-git)
 (re-export picocrypt-git)
 
+
+;;; deptree-resolver-260426j
+(define-public gaurix-go2tv go2tv)
+(define-public gaurix-principia principia)
+(define-public gaurix-glsmac glsmac)
+(define-public gaurix-lincity-ng lincity-ng)
+(define-public gaurix-cockatrice-server cockatrice-server)
+(define-public gaurix-shijima-qt shijima-qt)
+(define-public gaurix-ausweiskopie ausweiskopie)
+(define-public gaurix-openxcom openxcom)
+(define-public gaurix-whatip whatip)
+(define-public gaurix-panda3ds panda3ds)
 
 ;;; deptree-resolver-260426i
 (re-export epub-to-audiobook)

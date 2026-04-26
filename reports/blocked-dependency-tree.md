@@ -1,381 +1,238 @@
-# Blocked Dependency Tree Report
+# Blocked Dependency Tree
 
-**Timestamp:** 2026-04-26T16:33:10.232726+00:00
-**Run ID:** deptree-resolver-260426i
+**Timestamp:** 2026-04-26T18:21:25.227944+00:00
+**Run ID:** deptree-resolver-260426j
+**Total blocked:** 228
 
-## Summary
+## Priority Queue
 
-- **Total BLOCKED:** 239
-- **Resolvable (no permanent failure):** 203
-- **Permanently failed:** 36
-- **Selected for this run:** 100
-
-## Top 20 Priority Queue
-
-| Rank | Package | Blocked Deps | Reverse Deps | Total Deps | In AUR |
-|------|---------|-------------|-------------|-----------|--------|
-| 1 | glibc-eac | 0 | 45 | 7 | Y |
-| 2 | gradience | 0 | 1 | 0 | N |
-| 3 | base-selinux | 0 | 1 | 18 | Y |
-| 4 | deadbeef-mpris2-plugin | 0 | 0 | 0 | N |
-| 5 | linux6.18.22-1-lts-bin | 0 | 0 | 0 | N |
-| 6 | matlab-jre-bundled | 0 | 0 | 0 | N |
-| 7 | sipgate-app-clinq | 0 | 0 | 0 | N |
-| 8 | squareline-studio | 0 | 0 | 0 | Y |
-| 9 | aquacomputer_d5next-hwmon-dkms | 0 | 0 | 1 | Y |
-| 10 | bakkesmod-steam | 0 | 0 | 1 | Y |
-| 11 | edgeimpulse-cli | 0 | 0 | 1 | Y |
-| 12 | luniistore | 0 | 0 | 1 | Y |
-| 13 | mkinitcpio-systemd-root-password | 0 | 0 | 1 | Y |
-| 14 | repacman | 0 | 0 | 1 | Y |
-| 15 | simplicity-commander | 0 | 0 | 1 | Y |
-| 16 | amneziawg-dkms-git | 0 | 0 | 2 | Y |
-| 17 | amneziawg-linux | 0 | 0 | 2 | Y |
-| 18 | amneziawg-linux-hardened | 0 | 0 | 2 | Y |
-| 19 | android-platform-19 | 0 | 0 | 2 | Y |
-| 20 | android-platform-21 | 0 | 0 | 2 | Y |
-
-## Selected 100 Packages
-
-1. **glibc-eac** — bdeps=0, rdeps=45, tdeps=7
-2. **gradience** — bdeps=0, rdeps=1, tdeps=0
-3. **base-selinux** — bdeps=0, rdeps=1, tdeps=18
-4. **deadbeef-mpris2-plugin** — bdeps=0, rdeps=0, tdeps=0
-5. **linux6.18.22-1-lts-bin** — bdeps=0, rdeps=0, tdeps=0
-6. **matlab-jre-bundled** — bdeps=0, rdeps=0, tdeps=0
-7. **sipgate-app-clinq** — bdeps=0, rdeps=0, tdeps=0
-8. **aquacomputer_d5next-hwmon-dkms** — bdeps=0, rdeps=0, tdeps=1
-9. **edgeimpulse-cli** — bdeps=0, rdeps=0, tdeps=1
-10. **luniistore** — bdeps=0, rdeps=0, tdeps=1
-11. **mkinitcpio-systemd-root-password** — bdeps=0, rdeps=0, tdeps=1
-12. **repacman** — bdeps=0, rdeps=0, tdeps=1
-13. **simplicity-commander** — bdeps=0, rdeps=0, tdeps=1
-14. **amneziawg-dkms-git** — bdeps=0, rdeps=0, tdeps=2
-15. **amneziawg-linux** — bdeps=0, rdeps=0, tdeps=2
-16. **amneziawg-linux-hardened** — bdeps=0, rdeps=0, tdeps=2
-17. **archwiki-offline** — bdeps=0, rdeps=0, tdeps=2
-18. **aws-amplify-cli** — bdeps=0, rdeps=0, tdeps=2
-19. **aws-cdk** — bdeps=0, rdeps=0, tdeps=2
-20. **emmet-language-server** — bdeps=0, rdeps=0, tdeps=2
-21. **faustus-dkms-git** — bdeps=0, rdeps=0, tdeps=2
-22. **findbrokenpkgs** — bdeps=0, rdeps=0, tdeps=2
-23. **ideapad-laptop-tb-dkms** — bdeps=0, rdeps=0, tdeps=2
-24. **ideapad-laptop-tb2024g6plus-dkms** — bdeps=0, rdeps=0, tdeps=2
-25. **knossu** — bdeps=0, rdeps=0, tdeps=2
-26. **libfprint-2-tod1-broadcom-cv3plus** — bdeps=0, rdeps=0, tdeps=2
-27. **mingw-w64-soundtouch** — bdeps=0, rdeps=0, tdeps=2
-28. **nodejs-cspell** — bdeps=0, rdeps=0, tdeps=2
-29. **osmtogeojson** — bdeps=0, rdeps=0, tdeps=2
-30. **pfring-dkms** — bdeps=0, rdeps=0, tdeps=2
-31. **python-home-assistant-frontend** — bdeps=0, rdeps=0, tdeps=2
-32. **r8126-dkms** — bdeps=0, rdeps=0, tdeps=2
-33. **receitanet** — bdeps=0, rdeps=0, tdeps=2
-34. **sbctl-initcpio-post-hook** — bdeps=0, rdeps=0, tdeps=2
-35. **vscodium-marketplace** — bdeps=0, rdeps=0, tdeps=2
-36. **wyc** — bdeps=0, rdeps=0, tdeps=2
-37. **java-language-server** — bdeps=0, rdeps=0, tdeps=3
-38. **libarchive-static** — bdeps=0, rdeps=0, tdeps=3
-39. **linux-keep-modules** — bdeps=0, rdeps=0, tdeps=3
-40. **nfuspire-git** — bdeps=0, rdeps=0, tdeps=3
-41. **nodejs-nestjs-cli** — bdeps=0, rdeps=0, tdeps=3
-42. **pacpak-git** — bdeps=0, rdeps=0, tdeps=3
-43. **phonon-qt4-vlc** — bdeps=0, rdeps=0, tdeps=3
-44. **quartz-utils-git** — bdeps=0, rdeps=0, tdeps=3
-45. **rdt-client** — bdeps=0, rdeps=0, tdeps=3
-46. **texmacs-pure** — bdeps=0, rdeps=0, tdeps=3
-47. **chromium-extension-arch-search** — bdeps=0, rdeps=0, tdeps=4
-48. **eclipse-pydev** — bdeps=0, rdeps=0, tdeps=4
-49. **gbm** — bdeps=0, rdeps=0, tdeps=4
-50. **gephi-git** — bdeps=0, rdeps=0, tdeps=4
-51. **plugin-autenticacao-gov-pt** — bdeps=0, rdeps=0, tdeps=4
-52. **rtl88x2ce-dkms-git** — bdeps=0, rdeps=0, tdeps=4
-53. **urbanterror** — bdeps=0, rdeps=0, tdeps=4
-54. **ut2004-gog** — bdeps=0, rdeps=0, tdeps=4
-55. **zfs-linux-hardened-headers** — bdeps=0, rdeps=0, tdeps=4
-56. **zfs-linux-rt-headers** — bdeps=0, rdeps=0, tdeps=4
-57. **kamilsss655-uv-k5-firmware-custom-git** — bdeps=0, rdeps=0, tdeps=5
-58. **nvidia-open-tinygrad-dkms-git** — bdeps=0, rdeps=0, tdeps=5
-59. **python-gradio-pdf** — bdeps=0, rdeps=0, tdeps=5
-60. **python-jaxlib-bin** — bdeps=0, rdeps=0, tdeps=5
-61. **python-pypi2pkgbuild** — bdeps=0, rdeps=0, tdeps=5
-62. **soapysdrplay3-luarvique-git** — bdeps=0, rdeps=0, tdeps=5
-63. **unrealtournament4** — bdeps=0, rdeps=0, tdeps=5
-64. **zfs-linux-git-headers** — bdeps=0, rdeps=0, tdeps=5
-65. **fileoptimizer-bin** — bdeps=0, rdeps=0, tdeps=6
-66. **dxvk-async-git** — bdeps=0, rdeps=0, tdeps=7
-67. **eddiscovery** — bdeps=0, rdeps=0, tdeps=7
-68. **limine-snapper-sync-git** — bdeps=0, rdeps=0, tdeps=7
-69. **linux-gpib** — bdeps=0, rdeps=0, tdeps=7
-70. **logstash** — bdeps=0, rdeps=0, tdeps=7
-71. **mkinitcpio-clevis-hook** — bdeps=0, rdeps=0, tdeps=7
-72. **obs-plugin-input-overlay-git** — bdeps=0, rdeps=0, tdeps=7
-73. **pikeru** — bdeps=0, rdeps=0, tdeps=7
-74. **plank-reloaded-docklet-picky-git** — bdeps=0, rdeps=0, tdeps=7
-75. **prs** — bdeps=0, rdeps=0, tdeps=7
-76. **wayprompt-git** — bdeps=0, rdeps=0, tdeps=7
-77. **yt-x-git** — bdeps=0, rdeps=0, tdeps=7
-78. **anytxt-bin** — bdeps=0, rdeps=0, tdeps=8
-79. **coreutils-arch** — bdeps=0, rdeps=0, tdeps=8
-80. **emerald** — bdeps=0, rdeps=0, tdeps=8
-81. **lib32-sdl_sound** — bdeps=0, rdeps=0, tdeps=8
-82. **mingw-w64-lame** — bdeps=0, rdeps=0, tdeps=8
-83. **pianoteq-stage** — bdeps=0, rdeps=0, tdeps=8
-84. **pikaur-static** — bdeps=0, rdeps=0, tdeps=8
-85. **pikaur-static-git** — bdeps=0, rdeps=0, tdeps=8
-86. **rocketchat-desktop** — bdeps=0, rdeps=0, tdeps=8
-87. **vmd** — bdeps=0, rdeps=0, tdeps=8
-88. **webcord-vencord-git** — bdeps=0, rdeps=0, tdeps=8
-89. **xeme-hg** — bdeps=0, rdeps=0, tdeps=8
-90. **anyrun-git** — bdeps=0, rdeps=0, tdeps=9
-91. **boost-python2** — bdeps=0, rdeps=0, tdeps=9
-92. **epub_to_audiobook-git** — bdeps=0, rdeps=0, tdeps=9
-93. **frame-eth** — bdeps=0, rdeps=0, tdeps=9
-94. **freetube-electron-git** — bdeps=0, rdeps=0, tdeps=9
-95. **lib32-vkbasalt** — bdeps=0, rdeps=0, tdeps=9
-96. **madness-interactive-reloaded** — bdeps=0, rdeps=0, tdeps=9
-97. **mobirise** — bdeps=0, rdeps=0, tdeps=9
-98. **network-manager-applet-nolibappindicator** — bdeps=0, rdeps=0, tdeps=9
-99. **open-tv** — bdeps=0, rdeps=0, tdeps=9
-100. **pcem-git** — bdeps=0, rdeps=0, tdeps=9
-
-## Full Queue (239 packages)
-
-1. glibc-eac — bdeps=0, rdeps=45, tdeps=7
-2. gradience — bdeps=0, rdeps=1, tdeps=0
-3. base-selinux — bdeps=0, rdeps=1, tdeps=18
-4. deadbeef-mpris2-plugin — bdeps=0, rdeps=0, tdeps=0
-5. linux6.18.22-1-lts-bin — bdeps=0, rdeps=0, tdeps=0
-6. matlab-jre-bundled — bdeps=0, rdeps=0, tdeps=0
-7. sipgate-app-clinq — bdeps=0, rdeps=0, tdeps=0
-8. squareline-studio [FAILED: PROPRIETARY_BINARY] — bdeps=0, rdeps=0, tdeps=0
-9. aquacomputer_d5next-hwmon-dkms — bdeps=0, rdeps=0, tdeps=1
-10. bakkesmod-steam [FAILED: PLATFORM_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=1
-11. edgeimpulse-cli — bdeps=0, rdeps=0, tdeps=1
-12. luniistore — bdeps=0, rdeps=0, tdeps=1
-13. mkinitcpio-systemd-root-password — bdeps=0, rdeps=0, tdeps=1
-14. repacman — bdeps=0, rdeps=0, tdeps=1
-15. simplicity-commander — bdeps=0, rdeps=0, tdeps=1
-16. amneziawg-dkms-git — bdeps=0, rdeps=0, tdeps=2
-17. amneziawg-linux — bdeps=0, rdeps=0, tdeps=2
-18. amneziawg-linux-hardened — bdeps=0, rdeps=0, tdeps=2
-19. android-platform-19 [FAILED: PLATFORM_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=2
-20. android-platform-21 [FAILED: PLATFORM_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=2
-21. archwiki-offline — bdeps=0, rdeps=0, tdeps=2
-22. aws-amplify-cli — bdeps=0, rdeps=0, tdeps=2
-23. aws-cdk — bdeps=0, rdeps=0, tdeps=2
-24. brother-mfc-l2400dw [FAILED: PROPRIETARY_BINARY] — bdeps=0, rdeps=0, tdeps=2
-25. emmet-language-server — bdeps=0, rdeps=0, tdeps=2
-26. faustus-dkms-git — bdeps=0, rdeps=0, tdeps=2
-27. findbrokenpkgs — bdeps=0, rdeps=0, tdeps=2
-28. ideapad-laptop-tb-dkms — bdeps=0, rdeps=0, tdeps=2
-29. ideapad-laptop-tb2024g6plus-dkms — bdeps=0, rdeps=0, tdeps=2
-30. knossu — bdeps=0, rdeps=0, tdeps=2
-31. lib32-opencl-nvidia-390xx [FAILED: MULTILIB_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=2
-32. libfprint-2-tod1-broadcom-cv3plus — bdeps=0, rdeps=0, tdeps=2
-33. mingw-w64-cblas [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=2
-34. mingw-w64-lapack [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=2
-35. mingw-w64-soundtouch — bdeps=0, rdeps=0, tdeps=2
-36. nodejs-cspell — bdeps=0, rdeps=0, tdeps=2
-37. osmtogeojson — bdeps=0, rdeps=0, tdeps=2
-38. pfring-dkms — bdeps=0, rdeps=0, tdeps=2
-39. python-home-assistant-frontend — bdeps=0, rdeps=0, tdeps=2
-40. r8126-dkms — bdeps=0, rdeps=0, tdeps=2
-41. receitanet — bdeps=0, rdeps=0, tdeps=2
-42. sbctl-initcpio-post-hook — bdeps=0, rdeps=0, tdeps=2
-43. ttf-consolas-ligaturized [FAILED: NON_DISTRIBUTABLE] — bdeps=0, rdeps=0, tdeps=2
-44. vscodium-marketplace — bdeps=0, rdeps=0, tdeps=2
-45. wyc — bdeps=0, rdeps=0, tdeps=2
-46. java-language-server — bdeps=0, rdeps=0, tdeps=3
-47. libarchive-static — bdeps=0, rdeps=0, tdeps=3
-48. lightdm-webkit-theme-aether [FAILED: ABANDONED_UPSTREAM] — bdeps=0, rdeps=0, tdeps=3
-49. linux-keep-modules — bdeps=0, rdeps=0, tdeps=3
-50. nfuspire-git — bdeps=0, rdeps=0, tdeps=3
-51. nodejs-nestjs-cli — bdeps=0, rdeps=0, tdeps=3
-52. nvidia-bl-dkms [FAILED: DKMS_KERNEL_MODULE] — bdeps=0, rdeps=0, tdeps=3
-53. pacpak-git — bdeps=0, rdeps=0, tdeps=3
-54. phonon-qt4-vlc — bdeps=0, rdeps=0, tdeps=3
-55. quartz-utils-git — bdeps=0, rdeps=0, tdeps=3
-56. rdt-client — bdeps=0, rdeps=0, tdeps=3
-57. texmacs-pure — bdeps=0, rdeps=0, tdeps=3
-58. chromium-extension-arch-search — bdeps=0, rdeps=0, tdeps=4
-59. clash-for-windows-chinese [FAILED: ABANDONED_UPSTREAM] — bdeps=0, rdeps=0, tdeps=4
-60. eclipse-pydev — bdeps=0, rdeps=0, tdeps=4
-61. euroscope-bin [FAILED: PLATFORM_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=4
-62. gbm — bdeps=0, rdeps=0, tdeps=4
-63. gephi-git — bdeps=0, rdeps=0, tdeps=4
-64. plugin-autenticacao-gov-pt — bdeps=0, rdeps=0, tdeps=4
-65. rtl88x2ce-dkms-git — bdeps=0, rdeps=0, tdeps=4
-66. urbanterror — bdeps=0, rdeps=0, tdeps=4
-67. ut2004-gog — bdeps=0, rdeps=0, tdeps=4
-68. zfs-linux-hardened-headers — bdeps=0, rdeps=0, tdeps=4
-69. zfs-linux-rt-headers — bdeps=0, rdeps=0, tdeps=4
-70. inkdrop [FAILED: PROPRIETARY_BINARY] — bdeps=0, rdeps=0, tdeps=5
-71. kamilsss655-uv-k5-firmware-custom-git — bdeps=0, rdeps=0, tdeps=5
-72. nvidia-open-tinygrad-dkms-git — bdeps=0, rdeps=0, tdeps=5
-73. pamac-cli [FAILED: DISTRO_SPECIFIC] — bdeps=0, rdeps=0, tdeps=5
-74. python-gradio-pdf — bdeps=0, rdeps=0, tdeps=5
-75. python-jaxlib-bin — bdeps=0, rdeps=0, tdeps=5
-76. python-pypi2pkgbuild — bdeps=0, rdeps=0, tdeps=5
-77. soapysdrplay3-luarvique-git — bdeps=0, rdeps=0, tdeps=5
-78. unrealtournament4 — bdeps=0, rdeps=0, tdeps=5
-79. zfs-linux-git-headers — bdeps=0, rdeps=0, tdeps=5
-80. asp [FAILED: DISTRO_SPECIFIC] — bdeps=0, rdeps=0, tdeps=6
-81. aurutils [FAILED: DISTRO_SPECIFIC] — bdeps=0, rdeps=0, tdeps=6
-82. factorio-space-age-experimental [FAILED: NON_DISTRIBUTABLE] — bdeps=0, rdeps=0, tdeps=6
-83. fileoptimizer-bin — bdeps=0, rdeps=0, tdeps=6
-84. lib32-libglade [FAILED: MULTILIB_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=6
-85. mingw-w64-boost [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=6
-86. mingw-w64-cppwinrt [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=6
-87. mingw-w64-pcre2 [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=6
-88. mingw-w64-spirv-tools [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=6
-89. dxvk-async-git — bdeps=0, rdeps=0, tdeps=7
-90. eddiscovery — bdeps=0, rdeps=0, tdeps=7
-91. lib32-libxpm [FAILED: MULTILIB_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=7
-92. limine-snapper-sync-git — bdeps=0, rdeps=0, tdeps=7
-93. linux-gpib — bdeps=0, rdeps=0, tdeps=7
-94. logstash — bdeps=0, rdeps=0, tdeps=7
-95. mingw-w64-postgresql [FAILED: MINGW_CROSS_COMPILATION] — bdeps=0, rdeps=0, tdeps=7
-96. mkinitcpio-clevis-hook — bdeps=0, rdeps=0, tdeps=7
-97. obs-plugin-input-overlay-git — bdeps=0, rdeps=0, tdeps=7
-98. pikeru — bdeps=0, rdeps=0, tdeps=7
-99. plank-reloaded-docklet-picky-git — bdeps=0, rdeps=0, tdeps=7
-100. prs — bdeps=0, rdeps=0, tdeps=7
-101. python2-gimp [FAILED: LEGACY_PYTHON2] — bdeps=0, rdeps=0, tdeps=7
-102. wayprompt-git — bdeps=0, rdeps=0, tdeps=7
-103. yt-x-git — bdeps=0, rdeps=0, tdeps=7
-104. anytxt-bin — bdeps=0, rdeps=0, tdeps=8
-105. coreutils-arch — bdeps=0, rdeps=0, tdeps=8
-106. emerald — bdeps=0, rdeps=0, tdeps=8
-107. lib32-sdl_sound — bdeps=0, rdeps=0, tdeps=8
-108. mingw-w64-lame — bdeps=0, rdeps=0, tdeps=8
-109. pianoteq-stage — bdeps=0, rdeps=0, tdeps=8
-110. pikaur-static — bdeps=0, rdeps=0, tdeps=8
-111. pikaur-static-git — bdeps=0, rdeps=0, tdeps=8
-112. rocketchat-desktop — bdeps=0, rdeps=0, tdeps=8
-113. vmd — bdeps=0, rdeps=0, tdeps=8
-114. webcord-vencord-git — bdeps=0, rdeps=0, tdeps=8
-115. xeme-hg — bdeps=0, rdeps=0, tdeps=8
-116. anyrun-git — bdeps=0, rdeps=0, tdeps=9
-117. boost-python2 — bdeps=0, rdeps=0, tdeps=9
-118. epub_to_audiobook-git — bdeps=0, rdeps=0, tdeps=9
-119. frame-eth — bdeps=0, rdeps=0, tdeps=9
-120. freetube-electron-git — bdeps=0, rdeps=0, tdeps=9
-121. lib32-vkbasalt — bdeps=0, rdeps=0, tdeps=9
-122. madness-interactive-reloaded — bdeps=0, rdeps=0, tdeps=9
-123. mobirise — bdeps=0, rdeps=0, tdeps=9
-124. network-manager-applet-nolibappindicator — bdeps=0, rdeps=0, tdeps=9
-125. open-tv — bdeps=0, rdeps=0, tdeps=9
-126. pcem-git — bdeps=0, rdeps=0, tdeps=9
-127. prey — bdeps=0, rdeps=0, tdeps=9
-128. python-pylink-square — bdeps=0, rdeps=0, tdeps=9
-129. shijima-qt — bdeps=0, rdeps=0, tdeps=9
-130. auracle-git — bdeps=0, rdeps=0, tdeps=10
-131. ausweiskopie — bdeps=0, rdeps=0, tdeps=10
-132. beignet-git — bdeps=0, rdeps=0, tdeps=10
-133. libfive-studio-git — bdeps=0, rdeps=0, tdeps=10
-134. linux-sched-ext-git-headers — bdeps=0, rdeps=0, tdeps=10
-135. linux-tip-git-headers — bdeps=0, rdeps=0, tdeps=10
-136. nvidia-390xx-settings — bdeps=0, rdeps=0, tdeps=10
-137. vanilla-wiiu-git — bdeps=0, rdeps=0, tdeps=10
-138. virtualbox-bin-sdk — bdeps=0, rdeps=0, tdeps=10
-139. cockatrice-server-git — bdeps=0, rdeps=0, tdeps=11
-140. lto-dump-snapshot — bdeps=0, rdeps=0, tdeps=11
-141. luxtorpeda-git — bdeps=0, rdeps=0, tdeps=11
-142. principia-git — bdeps=0, rdeps=0, tdeps=11
-143. python-google-cloud-speech — bdeps=0, rdeps=0, tdeps=11
-144. synfigstudio-dev — bdeps=0, rdeps=0, tdeps=11
-145. vegastrike-engine-git — bdeps=0, rdeps=0, tdeps=11
-146. vgmstream-git — bdeps=0, rdeps=0, tdeps=11
-147. whatip-git — bdeps=0, rdeps=0, tdeps=11
-148. devtools-git — bdeps=0, rdeps=0, tdeps=12
-149. envoyproxy — bdeps=0, rdeps=0, tdeps=12
-150. gst-plugins-rs-git — bdeps=0, rdeps=0, tdeps=12
-151. linux-xanmod-lts-headers — bdeps=0, rdeps=0, tdeps=12
-152. mingw-w64-libopenmpt — bdeps=0, rdeps=0, tdeps=12
-153. opendrop-git — bdeps=0, rdeps=0, tdeps=12
-154. wayfire-plugins-extra-git — bdeps=0, rdeps=0, tdeps=12
-155. betterx-desktop-git — bdeps=0, rdeps=0, tdeps=13
-156. capt-src [FAILED: MULTILIB_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=13
-157. python-jax-rocm [FAILED: HARDWARE_SPECIFIC] — bdeps=0, rdeps=0, tdeps=13
-158. goxlr-utility-ui — bdeps=0, rdeps=0, tdeps=14
-159. linux-cachyos-hardened-headers — bdeps=0, rdeps=0, tdeps=14
-160. linux-next-git-headers — bdeps=0, rdeps=0, tdeps=14
-161. rpfm-git — bdeps=0, rdeps=0, tdeps=14
-162. lightlyshaders-git — bdeps=0, rdeps=0, tdeps=15
-163. linux-covolunablu-gaming-headers — bdeps=0, rdeps=0, tdeps=15
-164. php-legacy-pdlib — bdeps=0, rdeps=0, tdeps=15
-165. qt6-xcb-private-headers-git — bdeps=0, rdeps=0, tdeps=15
-166. scans2any-git — bdeps=0, rdeps=0, tdeps=15
-167. veloren — bdeps=0, rdeps=0, tdeps=15
-168. vmware-workstation [FAILED: PROPRIETARY_BINARY] — bdeps=0, rdeps=0, tdeps=15
-169. gvfs-smb-git — bdeps=0, rdeps=0, tdeps=17
-170. smoothpaper — bdeps=0, rdeps=0, tdeps=17
-171. ultrastardx-git — bdeps=0, rdeps=0, tdeps=18
-172. picom-ftlabs-git — bdeps=0, rdeps=0, tdeps=19
-173. paperde — bdeps=0, rdeps=0, tdeps=20
-174. xivlauncher-rb — bdeps=0, rdeps=0, tdeps=20
-175. firestorm-next-bin [FAILED: MULTILIB_UNSUPPORTED] — bdeps=0, rdeps=0, tdeps=22
-176. openconnect-sso-git — bdeps=0, rdeps=0, tdeps=23
-177. modemmanager-dev — bdeps=0, rdeps=0, tdeps=24
-178. nyarchassistant — bdeps=0, rdeps=0, tdeps=26
-179. aosp-devel — bdeps=0, rdeps=0, tdeps=27
-180. deadbeef-git — bdeps=0, rdeps=0, tdeps=27
-181. quartus-free-quartus [FAILED: PROPRIETARY_PLATFORM] — bdeps=0, rdeps=0, tdeps=27
-182. nheko-scrollfix — bdeps=0, rdeps=0, tdeps=28
-183. etlegacy32-mod [FAILED: HARDWARE_SPECIFIC] — bdeps=0, rdeps=0, tdeps=30
-184. thunderbird-beta — bdeps=0, rdeps=0, tdeps=30
-185. audacious-plugins-git — bdeps=0, rdeps=0, tdeps=32
-186. qgroundcontrol — bdeps=0, rdeps=0, tdeps=40
-187. darling-cli-devenv-gui-common-git [FAILED: COMPLEX_DEPS] — bdeps=0, rdeps=0, tdeps=41
-188. darling-iosurface-git [FAILED: COMPLEX_DEPS] — bdeps=0, rdeps=0, tdeps=41
-189. systemd-ukify-git — bdeps=0, rdeps=0, tdeps=53
-190. waytrogen — bdeps=0, rdeps=0, tdeps=54
-191. wine-osu-spectator-wow64 — bdeps=0, rdeps=0, tdeps=61
-192. sudo-selinux — bdeps=1, rdeps=1, tdeps=8
-193. virtualbox-svn — bdeps=1, rdeps=1, tdeps=53
-194. virtualbox-ext-oracle-dev — bdeps=1, rdeps=0, tdeps=1
-195. libch343ser-git — bdeps=1, rdeps=0, tdeps=2
-196. system-age — bdeps=1, rdeps=0, tdeps=2
-197. illogical-impulse-pymyc-aur — bdeps=1, rdeps=0, tdeps=4
-198. futu-ftnn-wine — bdeps=1, rdeps=0, tdeps=5
-199. mailnaggertray-git — bdeps=1, rdeps=0, tdeps=5
-200. pulumi-git — bdeps=1, rdeps=0, tdeps=5
-201. awk-language-server — bdeps=1, rdeps=0, tdeps=6
-202. wldash — bdeps=1, rdeps=0, tdeps=7
-203. go2tv — bdeps=1, rdeps=0, tdeps=8
-204. borgwarehouse — bdeps=1, rdeps=0, tdeps=10
-205. hnefatafl-copenhagen — bdeps=1, rdeps=0, tdeps=10
-206. libga68-snapshot — bdeps=1, rdeps=0, tdeps=10
-207. libgfortran-snapshot — bdeps=1, rdeps=0, tdeps=10
-208. libgnat-snapshot — bdeps=1, rdeps=0, tdeps=10
-209. libgo-snapshot — bdeps=1, rdeps=0, tdeps=10
-210. mailspring — bdeps=1, rdeps=0, tdeps=10
-211. pantheon-polkit-agent-git — bdeps=1, rdeps=0, tdeps=10
-212. fancy-cat — bdeps=1, rdeps=0, tdeps=11
-213. glsmac-git — bdeps=1, rdeps=0, tdeps=13
-214. illogical-impulse-ags — bdeps=1, rdeps=0, tdeps=13
-215. yacreader-poppler-git — bdeps=1, rdeps=0, tdeps=13
-216. lincity-ng-git — bdeps=1, rdeps=0, tdeps=14
-217. deepin-wine8-stable [FAILED: PROPRIETARY_BINARY] — bdeps=1, rdeps=0, tdeps=15
-218. panda3ds — bdeps=1, rdeps=0, tdeps=15
-219. lcd4linux-git — bdeps=1, rdeps=0, tdeps=16
-220. gjs-nohammer — bdeps=1, rdeps=0, tdeps=17
-221. oclint — bdeps=1, rdeps=0, tdeps=17
-222. openxcom-git — bdeps=1, rdeps=0, tdeps=18
-223. sddm-idle — bdeps=1, rdeps=0, tdeps=19
-224. linux-cachyos-bmq-headers — bdeps=1, rdeps=0, tdeps=20
-225. linux-cachyos-eevdf-headers — bdeps=1, rdeps=0, tdeps=20
-226. linux-cachyos-server-headers — bdeps=1, rdeps=0, tdeps=20
-227. codeblocks-svn — bdeps=1, rdeps=0, tdeps=22
-228. ecal-samples — bdeps=1, rdeps=0, tdeps=24
-229. java-openjfx-nowebkit — bdeps=1, rdeps=0, tdeps=27
-230. texpresso-git — bdeps=1, rdeps=0, tdeps=29
-231. ghostty-git-zen3 — bdeps=1, rdeps=0, tdeps=30
-232. mesa-minimal-git — bdeps=1, rdeps=0, tdeps=46
-233. shadps4-git — bdeps=1, rdeps=0, tdeps=46
-234. librum — bdeps=1, rdeps=0, tdeps=51
-235. teb-obs — bdeps=1, rdeps=0, tdeps=67
-236. thunderbird-globalmenu — bdeps=1, rdeps=0, tdeps=73
-237. ffmpeg-cuda-full [FAILED: HARDWARE_SPECIFIC] — bdeps=1, rdeps=0, tdeps=89
-238. ffmpeg-full-git — bdeps=1, rdeps=0, tdeps=139
-239. base-devel-selinux — bdeps=2, rdeps=0, tdeps=3
+| # | Package | Entry | Blocked Deps | Reverse Deps | Total Deps |
+|---|---------|-------|-------------|-------------|------------|
+| 1 | glibc-eac | 24719 | 0 | 45 | 7 |
+| 2 | gradience | 18644 | 0 | 1 | 0 |
+| 3 | base-selinux | 18537 | 0 | 1 | 18 |
+| 4 | deadbeef-mpris2-plugin | 19282 | 0 | 0 | 0 |
+| 5 | linux6.18.22-1-lts-bin | 37932 | 0 | 0 | 0 |
+| 6 | matlab-jre-bundled | 19363 | 0 | 0 | 0 |
+| 7 | sipgate-app-clinq | 18449 | 0 | 0 | 0 |
+| 8 | squareline-studio | 17812 | 0 | 0 | 0 |
+| 9 | aquacomputer_d5next-hwmon-dkms | 18606 | 0 | 0 | 1 |
+| 10 | bakkesmod-steam | 17468 | 0 | 0 | 1 |
+| 11 | edgeimpulse-cli | 18574 | 0 | 0 | 1 |
+| 12 | luniistore | 18478 | 0 | 0 | 1 |
+| 13 | mkinitcpio-systemd-root-password | 18371 | 0 | 0 | 1 |
+| 14 | repacman | 18707 | 0 | 0 | 1 |
+| 15 | simplicity-commander | 18419 | 0 | 0 | 1 |
+| 16 | amneziawg-dkms-git | 18642 | 0 | 0 | 2 |
+| 17 | amneziawg-linux | 18452 | 0 | 0 | 2 |
+| 18 | amneziawg-linux-hardened | 18382 | 0 | 0 | 2 |
+| 19 | android-platform-19 | 28671 | 0 | 0 | 2 |
+| 20 | android-platform-21 | 23109 | 0 | 0 | 2 |
+| 21 | archwiki-offline | 18568 | 0 | 0 | 2 |
+| 22 | aws-amplify-cli | 18269 | 0 | 0 | 2 |
+| 23 | aws-cdk | 18298 | 0 | 0 | 2 |
+| 24 | brother-mfc-l2400dw | 17797 | 0 | 0 | 2 |
+| 25 | emmet-language-server | 18958 | 0 | 0 | 2 |
+| 26 | faustus-dkms-git | 18859 | 0 | 0 | 2 |
+| 27 | findbrokenpkgs | 18930 | 0 | 0 | 2 |
+| 28 | ideapad-laptop-tb-dkms | 18957 | 0 | 0 | 2 |
+| 29 | ideapad-laptop-tb2024g6plus-dkms | 18895 | 0 | 0 | 2 |
+| 30 | knossu | 18461 | 0 | 0 | 2 |
+| 31 | lib32-opencl-nvidia-390xx | 17502 | 0 | 0 | 2 |
+| 32 | libfprint-2-tod1-broadcom-cv3plus | 17912 | 0 | 0 | 2 |
+| 33 | mingw-w64-cblas | 34115 | 0 | 0 | 2 |
+| 34 | mingw-w64-lapack | 34113 | 0 | 0 | 2 |
+| 35 | mingw-w64-soundtouch | 18330 | 0 | 0 | 2 |
+| 36 | nodejs-cspell | 18215 | 0 | 0 | 2 |
+| 37 | osmtogeojson | 18417 | 0 | 0 | 2 |
+| 38 | pfring-dkms | 18399 | 0 | 0 | 2 |
+| 39 | python-home-assistant-frontend | 18556 | 0 | 0 | 2 |
+| 40 | r8126-dkms | 18487 | 0 | 0 | 2 |
+| 41 | receitanet | 18413 | 0 | 0 | 2 |
+| 42 | sbctl-initcpio-post-hook | 18720 | 0 | 0 | 2 |
+| 43 | ttf-consolas-ligaturized | 20499 | 0 | 0 | 2 |
+| 44 | vscodium-marketplace | 18695 | 0 | 0 | 2 |
+| 45 | wyc | 18777 | 0 | 0 | 2 |
+| 46 | java-language-server | 18379 | 0 | 0 | 3 |
+| 47 | libarchive-static | 18758 | 0 | 0 | 3 |
+| 48 | lightdm-webkit-theme-aether | 19028 | 0 | 0 | 3 |
+| 49 | linux-keep-modules | 18490 | 0 | 0 | 3 |
+| 50 | nfuspire-git | 18401 | 0 | 0 | 3 |
+| 51 | nodejs-nestjs-cli | 18753 | 0 | 0 | 3 |
+| 52 | nvidia-bl-dkms | 17755 | 0 | 0 | 3 |
+| 53 | pacpak-git | 17862 | 0 | 0 | 3 |
+| 54 | phonon-qt4-vlc | 18938 | 0 | 0 | 3 |
+| 55 | quartz-utils-git | 18430 | 0 | 0 | 3 |
+| 56 | rdt-client | 18561 | 0 | 0 | 3 |
+| 57 | texmacs-pure | 17873 | 0 | 0 | 3 |
+| 58 | chromium-extension-arch-search | 17897 | 0 | 0 | 4 |
+| 59 | clash-for-windows-chinese | 17433 | 0 | 0 | 4 |
+| 60 | eclipse-pydev | 17948 | 0 | 0 | 4 |
+| 61 | euroscope-bin | 17945 | 0 | 0 | 4 |
+| 62 | gbm | 19044 | 0 | 0 | 4 |
+| 63 | gephi-git | 18898 | 0 | 0 | 4 |
+| 64 | plugin-autenticacao-gov-pt | 18557 | 0 | 0 | 4 |
+| 65 | rtl88x2ce-dkms-git | 18362 | 0 | 0 | 4 |
+| 66 | ut2004-gog | 18333 | 0 | 0 | 4 |
+| 67 | zfs-linux-hardened-headers | 17921 | 0 | 0 | 4 |
+| 68 | zfs-linux-rt-headers | 17920 | 0 | 0 | 4 |
+| 69 | inkdrop | 17819 | 0 | 0 | 5 |
+| 70 | kamilsss655-uv-k5-firmware-custom-git | 17909 | 0 | 0 | 5 |
+| 71 | nvidia-open-tinygrad-dkms-git | 18617 | 0 | 0 | 5 |
+| 72 | pamac-cli | 17940 | 0 | 0 | 5 |
+| 73 | python-gradio-pdf | 18463 | 0 | 0 | 5 |
+| 74 | python-jaxlib-bin | 18474 | 0 | 0 | 5 |
+| 75 | python-pypi2pkgbuild | 17822 | 0 | 0 | 5 |
+| 76 | soapysdrplay3-luarvique-git | 18141 | 0 | 0 | 5 |
+| 77 | unrealtournament4 | 18319 | 0 | 0 | 5 |
+| 78 | zfs-linux-git-headers | 17919 | 0 | 0 | 5 |
+| 79 | asp | 14587 | 0 | 0 | 6 |
+| 80 | aurutils | 11354 | 0 | 0 | 6 |
+| 81 | fileoptimizer-bin | 18315 | 0 | 0 | 6 |
+| 82 | lib32-libglade | 45410 | 0 | 0 | 6 |
+| 83 | mingw-w64-boost | 23783 | 0 | 0 | 6 |
+| 84 | mingw-w64-cppwinrt | 43750 | 0 | 0 | 6 |
+| 85 | mingw-w64-pcre2 | 26805 | 0 | 0 | 6 |
+| 86 | mingw-w64-spirv-tools | 42666 | 0 | 0 | 6 |
+| 87 | dxvk-async-git | 18820 | 0 | 0 | 7 |
+| 88 | eddiscovery | 18320 | 0 | 0 | 7 |
+| 89 | lib32-libxpm | 16491 | 0 | 0 | 7 |
+| 90 | limine-snapper-sync-git | 18667 | 0 | 0 | 7 |
+| 91 | linux-gpib | 20547 | 0 | 0 | 7 |
+| 92 | logstash | 18911 | 0 | 0 | 7 |
+| 93 | mingw-w64-postgresql | 24572 | 0 | 0 | 7 |
+| 94 | mkinitcpio-clevis-hook | 18342 | 0 | 0 | 7 |
+| 95 | plank-reloaded-docklet-picky-git | 18397 | 0 | 0 | 7 |
+| 96 | python2-gimp | 23210 | 0 | 0 | 7 |
+| 97 | wayprompt-git | 18262 | 0 | 0 | 7 |
+| 98 | anytxt-bin | 18295 | 0 | 0 | 8 |
+| 99 | coreutils-arch | 18690 | 0 | 0 | 8 |
+| 100 | emerald | 22333 | 0 | 0 | 8 |
+| 101 | lib32-sdl_sound | 22729 | 0 | 0 | 8 |
+| 102 | mingw-w64-lame | 34112 | 0 | 0 | 8 |
+| 103 | pianoteq-stage | 18367 | 0 | 0 | 8 |
+| 104 | pikaur-static | 18750 | 0 | 0 | 8 |
+| 105 | pikaur-static-git | 18749 | 0 | 0 | 8 |
+| 106 | rocketchat-desktop | 18807 | 0 | 0 | 8 |
+| 107 | vmd | 18253 | 0 | 0 | 8 |
+| 108 | webcord-vencord-git | 18852 | 0 | 0 | 8 |
+| 109 | xeme-hg | 18426 | 0 | 0 | 8 |
+| 110 | anyrun-git | 17933 | 0 | 0 | 9 |
+| 111 | boost-python2 | 37225 | 0 | 0 | 9 |
+| 112 | frame-eth | 18612 | 0 | 0 | 9 |
+| 113 | freetube-electron-git | 17925 | 0 | 0 | 9 |
+| 114 | lib32-vkbasalt | 18688 | 0 | 0 | 9 |
+| 115 | madness-interactive-reloaded | 18618 | 0 | 0 | 9 |
+| 116 | mobirise | 18357 | 0 | 0 | 9 |
+| 117 | shijima-qt | 18654 | 0 | 0 | 9 |
+| 118 | ausweiskopie | 18605 | 0 | 0 | 10 |
+| 119 | libfive-studio-git | 18351 | 0 | 0 | 10 |
+| 120 | linux-sched-ext-git-headers | 18498 | 0 | 0 | 10 |
+| 121 | linux-tip-git-headers | 18533 | 0 | 0 | 10 |
+| 122 | nvidia-390xx-settings | 18484 | 0 | 0 | 10 |
+| 123 | virtualbox-bin-sdk | 18668 | 0 | 0 | 10 |
+| 124 | lto-dump-snapshot | 18347 | 0 | 0 | 11 |
+| 125 | luxtorpeda-git | 18554 | 0 | 0 | 11 |
+| 126 | principia-git | 18613 | 0 | 0 | 11 |
+| 127 | synfigstudio-dev | 18386 | 0 | 0 | 11 |
+| 128 | vegastrike-engine-git | 18302 | 0 | 0 | 11 |
+| 129 | whatip-git | 18378 | 0 | 0 | 11 |
+| 130 | devtools-git | 18696 | 0 | 0 | 12 |
+| 131 | envoyproxy | 17824 | 0 | 0 | 12 |
+| 132 | gst-plugins-rs-git | 18405 | 0 | 0 | 12 |
+| 133 | linux-xanmod-lts-headers | 18447 | 0 | 0 | 12 |
+| 134 | mingw-w64-libopenmpt | 18388 | 0 | 0 | 12 |
+| 135 | opendrop-git | 18632 | 0 | 0 | 12 |
+| 136 | python-google-cloud-speech | 18804 | 0 | 0 | 12 |
+| 137 | python-pylink-square | 21233 | 0 | 0 | 12 |
+| 138 | wayfire-plugins-extra-git | 18263 | 0 | 0 | 12 |
+| 139 | auracle-git | 2160 | 0 | 0 | 13 |
+| 140 | betterx-desktop-git | 18293 | 0 | 0 | 13 |
+| 141 | capt-src | 17255 | 0 | 0 | 13 |
+| 142 | cockatrice-server-git | 18377 | 0 | 0 | 13 |
+| 143 | python-jax-rocm | 17278 | 0 | 0 | 13 |
+| 144 | goxlr-utility-ui | 18287 | 0 | 0 | 14 |
+| 145 | linux-cachyos-hardened-headers | 18522 | 0 | 0 | 14 |
+| 146 | linux-next-git-headers | 18514 | 0 | 0 | 14 |
+| 147 | rpfm-git | 17833 | 0 | 0 | 14 |
+| 148 | linux-covolunablu-gaming-headers | 18547 | 0 | 0 | 15 |
+| 149 | php-legacy-pdlib | 18303 | 0 | 0 | 15 |
+| 150 | qt6-xcb-private-headers-git | 18837 | 0 | 0 | 15 |
+| 151 | scans2any-git | 18580 | 0 | 0 | 15 |
+| 152 | veloren | 18922 | 0 | 0 | 15 |
+| 153 | vmware-workstation | 1833 | 0 | 0 | 15 |
+| 154 | paperde | 18521 | 0 | 0 | 20 |
+| 155 | xivlauncher-rb | 18343 | 0 | 0 | 20 |
+| 156 | modemmanager-dev | 18802 | 0 | 0 | 26 |
+| 157 | nyarchassistant | 18590 | 0 | 0 | 26 |
+| 158 | aosp-devel | 18650 | 0 | 0 | 27 |
+| 159 | quartus-free-quartus | 23279 | 0 | 0 | 27 |
+| 160 | nheko-scrollfix | 18400 | 0 | 0 | 28 |
+| 161 | etlegacy32-mod | 17424 | 0 | 0 | 30 |
+| 162 | qgroundcontrol | 18375 | 0 | 0 | 40 |
+| 163 | systemd-ukify-git | 18200 | 0 | 0 | 53 |
+| 164 | ffmpeg-full-git | 18189 | 1 | 14 | 139 |
+| 165 | mesa-minimal-git | 18711 | 1 | 11 | 46 |
+| 166 | sudo-selinux | 18513 | 1 | 2 | 8 |
+| 167 | gjs-nohammer | 18706 | 1 | 1 | 20 |
+| 168 | virtualbox-ext-oracle-dev | 18801 | 1 | 0 | 1 |
+| 169 | libch343ser-git | 17880 | 1 | 0 | 2 |
+| 170 | system-age | 18453 | 1 | 0 | 2 |
+| 171 | illogical-impulse-pymyc-aur | 18594 | 1 | 0 | 4 |
+| 172 | urbanterror | 18814 | 1 | 0 | 4 |
+| 173 | futu-ftnn-wine | 18151 | 1 | 0 | 5 |
+| 174 | mailnaggertray-git | 18592 | 1 | 0 | 5 |
+| 175 | pulumi-git | 18748 | 1 | 0 | 5 |
+| 176 | awk-language-server | 18691 | 1 | 0 | 6 |
+| 177 | factorio-space-age-experimental | 17440 | 1 | 0 | 6 |
+| 178 | obs-plugin-input-overlay-git | 18383 | 1 | 0 | 7 |
+| 179 | wldash | 18237 | 1 | 0 | 7 |
+| 180 | go2tv | 18598 | 1 | 0 | 8 |
+| 181 | prey | 18251 | 1 | 0 | 9 |
+| 182 | beignet-git | 18416 | 1 | 0 | 10 |
+| 183 | borgwarehouse | 18840 | 1 | 0 | 10 |
+| 184 | hnefatafl-copenhagen | 18404 | 1 | 0 | 10 |
+| 185 | libga68-snapshot | 19629 | 1 | 0 | 10 |
+| 186 | libgfortran-snapshot | 19625 | 1 | 0 | 10 |
+| 187 | libgnat-snapshot | 19623 | 1 | 0 | 10 |
+| 188 | libgo-snapshot | 19622 | 1 | 0 | 10 |
+| 189 | mailspring | 18921 | 1 | 0 | 10 |
+| 190 | pantheon-polkit-agent-git | 18518 | 1 | 0 | 10 |
+| 191 | fancy-cat | 18648 | 1 | 0 | 11 |
+| 192 | glsmac-git | 18619 | 1 | 0 | 13 |
+| 193 | yacreader-poppler-git | 18336 | 1 | 0 | 13 |
+| 194 | lincity-ng-git | 18610 | 1 | 0 | 14 |
+| 195 | deepin-wine8-stable | 35454 | 1 | 0 | 15 |
+| 196 | panda3ds | 18530 | 1 | 0 | 15 |
+| 197 | lcd4linux-git | 18439 | 1 | 0 | 16 |
+| 198 | oclint | 18255 | 1 | 0 | 17 |
+| 199 | openxcom-git | 18254 | 1 | 0 | 18 |
+| 200 | sddm-idle | 18701 | 1 | 0 | 19 |
+| 201 | linux-cachyos-bmq-headers | 18507 | 1 | 0 | 20 |
+| 202 | linux-cachyos-eevdf-headers | 18636 | 1 | 0 | 20 |
+| 203 | linux-cachyos-server-headers | 18647 | 1 | 0 | 20 |
+| 204 | codeblocks-svn | 18158 | 1 | 0 | 22 |
+| 205 | firestorm-next-bin | 17261 | 1 | 0 | 22 |
+| 206 | openconnect-sso-git | 18168 | 1 | 0 | 23 |
+| 207 | ecal-samples | 18268 | 1 | 0 | 24 |
+| 208 | texpresso-git | 18326 | 1 | 0 | 29 |
+| 209 | ghostty-git-zen3 | 18897 | 1 | 0 | 30 |
+| 210 | librum | 18683 | 1 | 0 | 51 |
+| 211 | ffmpeg-cuda-full | 17346 | 2 | 14 | 89 |
+| 212 | virtualbox-svn | 18799 | 2 | 1 | 53 |
+| 213 | base-devel-selinux | 18538 | 2 | 0 | 3 |
+| 214 | open-tv | 18368 | 2 | 0 | 9 |
+| 215 | vanilla-wiiu-git | 18273 | 2 | 0 | 10 |
+| 216 | vgmstream-git | 18652 | 2 | 0 | 11 |
+| 217 | illogical-impulse-ags | 17937 | 2 | 0 | 13 |
+| 218 | deadbeef-git | 17914 | 2 | 0 | 27 |
+| 219 | audacious-plugins-git | 17814 | 2 | 0 | 32 |
+| 220 | darling-cli-devenv-gui-common-git | 22161 | 2 | 0 | 41 |
+| 221 | darling-iosurface-git | 22171 | 2 | 0 | 41 |
+| 222 | waytrogen | 18348 | 2 | 0 | 54 |
+| 223 | java-openjfx-nowebkit | 18759 | 3 | 0 | 27 |
+| 224 | thunderbird-beta | 18949 | 3 | 0 | 30 |
+| 225 | shadps4-git | 18192 | 3 | 0 | 46 |
+| 226 | wine-osu-spectator-wow64 | 18197 | 3 | 0 | 61 |
+| 227 | teb-obs | 18491 | 4 | 1 | 67 |
+| 228 | thunderbird-globalmenu | 18157 | 4 | 0 | 73 |
