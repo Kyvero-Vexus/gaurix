@@ -1,4 +1,5 @@
 ;;; Package namespace convenience module for Gaurix.
+            ;; deptree-resolver-260425o: 100 BLOCKED evaluated (1 recipe: ls++-git + 2 deps: perl-term-extendedcolor, perl-file-lscolor, 99 remain BLOCKED)
             ;; recipe-resolver-260425n: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260425n: 100 BLOCKED evaluated (1 recipe: decrypto-pro-git + 1 dep: openssl-gost-engine, 99 remain BLOCKED)
             ;; deptree-resolver-260425m: 100 BLOCKED evaluated (1 recipe: wayfire-git, 99 remain BLOCKED)
@@ -11471,4 +11472,7 @@
                figma-linux
             openssl-gost-engine
             decrypto-pro
+            perl-term-extendedcolor
+            perl-file-lscolor
+            ls++
 ))

@@ -1,52 +1,54 @@
-# Blocked Dependency Tree — deptree-resolver-260425n
+# Blocked Dependency Tree — deptree-resolver-260425o
 
-**Generated:** 2026-04-26T02:13:24.470641+00:00
+Generated: 2026-04-26T03:54:54Z
 
-**Total BLOCKED:** 252
+## Summary
 
-**Selected for evaluation:** 100
+| Metric | Count |
+|--------|-------|
+| Total blocked | 252 |
+| In AUR cache | 248 |
+| Zero blocked deps | 249 |
 
 ## Blocking Reason Distribution
 
-| Reason | Count |
-|--------|-------|
-| DEP_RESOLUTION_FAILED | 106 |
-| TOOLING_FAILURE | 24 |
-| SOURCE_UNAVAILABLE | 18 |
-| DISTRO_SPECIFIC | 14 |
-| DKMS_KERNEL_MODULE | 11 |
-| MINGW_CROSS_COMPILATION | 9 |
-| LICENSE_REVIEW_NEEDED | 7 |
-| MULTILIB_UNSUPPORTED | 7 |
-| AUR_REPO_DELETED | 5 |
-| NEEDS_RECIPE_DESIGN | 4 |
-| BUILD_FAILED | 4 |
-| COMPLEX_DEPS | 4 |
-| COMPLEX_BUILD | 4 |
-| GCC_SNAPSHOT_RUNTIME | 4 |
-| PROPRIETARY_BINARY | 3 |
-| NON_DISTRIBUTABLE | 3 |
-| KERNEL_SPECIFIC | 3 |
-| SELINUX_SPECIFIC | 2 |
-| PLATFORM_UNSUPPORTED | 2 |
-| BROWSER_EXTENSION | 2 |
-| ANDROID_SDK_PLATFORM | 2 |
-| KERNEL_MODULE | 2 |
-| PROPRIETARY_DEP | 2 |
-| LEGACY_PYTHON2 | 2 |
-| ABANDONED_UPSTREAM | 1 |
-| CROSS_COMPILATION | 1 |
-| ARCH_SPECIFIC | 1 |
-| MISSING_DEP | 1 |
-| NEEDS_INVESTIGATION | 1 |
-| ROCM_DEPENDENCY | 1 |
-| PROPRIETARY_PLATFORM | 1 |
-| CUDA_DEPENDENCY | 1 |
+- **DEP_RESOLUTION_FAILED**: 105
+- **TOOLING_FAILURE**: 24
+- **SOURCE_UNAVAILABLE**: 19
+- **DISTRO_SPECIFIC**: 14
+- **DKMS_KERNEL_MODULE**: 11
+- **MINGW_CROSS_COMPILATION**: 9
+- **LICENSE_REVIEW_NEEDED**: 7
+- **MULTILIB_UNSUPPORTED**: 7
+- **AUR_REPO_DELETED**: 5
+- **NEEDS_RECIPE_DESIGN**: 4
+- **GCC_SNAPSHOT_RUNTIME**: 4
+- **COMPLEX_BUILD**: 4
+- **COMPLEX_DEPS**: 4
+- **BUILD_FAILED**: 4
+- **KERNEL_SPECIFIC**: 3
+- **PROPRIETARY_BINARY**: 3
+- **NON_DISTRIBUTABLE**: 3
+- **KERNEL_MODULE**: 2
+- **PROPRIETARY_DEP**: 2
+- **BROWSER_EXTENSION**: 2
+- **PLATFORM_UNSUPPORTED**: 2
+- **SELINUX_SPECIFIC**: 2
+- **LEGACY_PYTHON2**: 2
+- **ANDROID_SDK_PLATFORM**: 2
+- **NEEDS_INVESTIGATION**: 1
+- **ROCM_DEPENDENCY**: 1
+- **CUDA_DEPENDENCY**: 1
+- **PROPRIETARY_PLATFORM**: 1
+- **CROSS_COMPILATION**: 1
+- **ABANDONED_UPSTREAM**: 1
+- **MISSING_DEP**: 1
+- **ARCH_SPECIFIC**: 1
 
-## Priority Queue (Top 200)
+## Priority Queue (top 200)
 
 | Rank | Package | Blocked Deps | Reverse Deps | Total Deps | Reason |
-|------|---------|-------------|-------------|-----------|--------|
+|------|---------|-------------|-------------- |------------|--------|
 | 1 | gradience | 0 | 1 | 0 | DEP_RESOLUTION_FAILED |
 | 2 | sudo-selinux | 0 | 1 | 8 | SELINUX_SPECIFIC |
 | 3 | base-selinux | 0 | 1 | 18 | SELINUX_SPECIFIC |
@@ -73,16 +75,16 @@
 | 24 | aws-amplify-cli | 0 | 0 | 2 | DEP_RESOLUTION_FAILED |
 | 25 | aws-cdk | 0 | 0 | 2 | DEP_RESOLUTION_FAILED |
 | 26 | brother-mfc-l2400dw | 0 | 0 | 2 | LICENSE_REVIEW_NEEDED |
-| 27 | decrypto-pro-git | 0 | 0 | 2 | DEP_RESOLUTION_FAILED |
-| 28 | emmet-language-server | 0 | 0 | 2 | DEP_RESOLUTION_FAILED |
-| 29 | faustus-dkms-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
-| 30 | findbrokenpkgs | 0 | 0 | 2 | DISTRO_SPECIFIC |
-| 31 | ideapad-laptop-tb-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
-| 32 | ideapad-laptop-tb2024g6plus-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
-| 33 | knossu | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 34 | lib32-opencl-nvidia-390xx | 0 | 0 | 2 | MULTILIB_UNSUPPORTED |
-| 35 | libch343ser-git | 0 | 0 | 2 | KERNEL_MODULE |
-| 36 | libfprint-2-tod1-broadcom-cv3plus | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 27 | emmet-language-server | 0 | 0 | 2 | DEP_RESOLUTION_FAILED |
+| 28 | faustus-dkms-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 29 | findbrokenpkgs | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 30 | ideapad-laptop-tb-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 31 | ideapad-laptop-tb2024g6plus-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 32 | knossu | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
+| 33 | lib32-opencl-nvidia-390xx | 0 | 0 | 2 | MULTILIB_UNSUPPORTED |
+| 34 | libch343ser-git | 0 | 0 | 2 | KERNEL_MODULE |
+| 35 | libfprint-2-tod1-broadcom-cv3plus | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 36 | ls++-git | 0 | 0 | 2 | SOURCE_UNAVAILABLE |
 | 37 | mingw-w64-cblas | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
 | 38 | mingw-w64-lapack | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
 | 39 | mingw-w64-soundtouch | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
@@ -247,3 +249,106 @@
 | 198 | deepin-wine8-stable | 0 | 0 | 15 | PROPRIETARY_BINARY |
 | 199 | lightlyshaders-git | 0 | 0 | 15 | DEP_RESOLUTION_FAILED |
 | 200 | linux-covolunablu-gaming-headers | 0 | 0 | 15 | TOOLING_FAILURE |
+
+## Selected for This Pass (top 100)
+
+1. **gradience** (blocked_deps=0, reverse_deps=1, total_deps=0) — DEP_RESOLUTION_FAILED
+2. **sudo-selinux** (blocked_deps=0, reverse_deps=1, total_deps=8) — SELINUX_SPECIFIC
+3. **base-selinux** (blocked_deps=0, reverse_deps=1, total_deps=18) — SELINUX_SPECIFIC
+4. **virtualbox-svn** (blocked_deps=0, reverse_deps=1, total_deps=53) — DEP_RESOLUTION_FAILED
+5. **deadbeef-mpris2-plugin** (blocked_deps=0, reverse_deps=0, total_deps=0) — SOURCE_UNAVAILABLE
+6. **matlab-jre-bundled** (blocked_deps=0, reverse_deps=0, total_deps=0) — SOURCE_UNAVAILABLE
+7. **sipgate-app-clinq** (blocked_deps=0, reverse_deps=0, total_deps=0) — NEEDS_RECIPE_DESIGN
+8. **squareline-studio** (blocked_deps=0, reverse_deps=0, total_deps=0) — SOURCE_UNAVAILABLE
+9. **aquacomputer_d5next-hwmon-dkms** (blocked_deps=0, reverse_deps=0, total_deps=1) — DKMS_KERNEL_MODULE
+10. **bakkesmod-steam** (blocked_deps=0, reverse_deps=0, total_deps=1) — PLATFORM_UNSUPPORTED
+11. **edgeimpulse-cli** (blocked_deps=0, reverse_deps=0, total_deps=1) — DEP_RESOLUTION_FAILED
+12. **librewolf-extension-ublock-origin-bin** (blocked_deps=0, reverse_deps=0, total_deps=1) — BROWSER_EXTENSION
+13. **librewolf-tridactyl-native-bin** (blocked_deps=0, reverse_deps=0, total_deps=1) — BROWSER_EXTENSION
+14. **luniistore** (blocked_deps=0, reverse_deps=0, total_deps=1) — SOURCE_UNAVAILABLE
+15. **mkinitcpio-systemd-root-password** (blocked_deps=0, reverse_deps=0, total_deps=1) — DISTRO_SPECIFIC
+16. **repacman** (blocked_deps=0, reverse_deps=0, total_deps=1) — DISTRO_SPECIFIC
+17. **simplicity-commander** (blocked_deps=0, reverse_deps=0, total_deps=1) — SOURCE_UNAVAILABLE
+18. **amneziawg-dkms-git** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+19. **amneziawg-linux** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+20. **amneziawg-linux-hardened** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+21. **android-platform-19** (blocked_deps=0, reverse_deps=0, total_deps=2) — ANDROID_SDK_PLATFORM
+22. **android-platform-21** (blocked_deps=0, reverse_deps=0, total_deps=2) — ANDROID_SDK_PLATFORM
+23. **archwiki-offline** (blocked_deps=0, reverse_deps=0, total_deps=2) — DISTRO_SPECIFIC
+24. **aws-amplify-cli** (blocked_deps=0, reverse_deps=0, total_deps=2) — DEP_RESOLUTION_FAILED
+25. **aws-cdk** (blocked_deps=0, reverse_deps=0, total_deps=2) — DEP_RESOLUTION_FAILED
+26. **brother-mfc-l2400dw** (blocked_deps=0, reverse_deps=0, total_deps=2) — LICENSE_REVIEW_NEEDED
+27. **emmet-language-server** (blocked_deps=0, reverse_deps=0, total_deps=2) — DEP_RESOLUTION_FAILED
+28. **faustus-dkms-git** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+29. **findbrokenpkgs** (blocked_deps=0, reverse_deps=0, total_deps=2) — DISTRO_SPECIFIC
+30. **ideapad-laptop-tb-dkms** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+31. **ideapad-laptop-tb2024g6plus-dkms** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+32. **knossu** (blocked_deps=0, reverse_deps=0, total_deps=2) — NEEDS_RECIPE_DESIGN
+33. **lib32-opencl-nvidia-390xx** (blocked_deps=0, reverse_deps=0, total_deps=2) — MULTILIB_UNSUPPORTED
+34. **libch343ser-git** (blocked_deps=0, reverse_deps=0, total_deps=2) — KERNEL_MODULE
+35. **libfprint-2-tod1-broadcom-cv3plus** (blocked_deps=0, reverse_deps=0, total_deps=2) — PROPRIETARY_BINARY
+36. **ls++-git** (blocked_deps=0, reverse_deps=0, total_deps=2) — SOURCE_UNAVAILABLE
+37. **mingw-w64-cblas** (blocked_deps=0, reverse_deps=0, total_deps=2) — MINGW_CROSS_COMPILATION
+38. **mingw-w64-lapack** (blocked_deps=0, reverse_deps=0, total_deps=2) — MINGW_CROSS_COMPILATION
+39. **mingw-w64-soundtouch** (blocked_deps=0, reverse_deps=0, total_deps=2) — MINGW_CROSS_COMPILATION
+40. **nodejs-cspell** (blocked_deps=0, reverse_deps=0, total_deps=2) — DEP_RESOLUTION_FAILED
+41. **osmtogeojson** (blocked_deps=0, reverse_deps=0, total_deps=2) — DEP_RESOLUTION_FAILED
+42. **pfring-dkms** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+43. **python-home-assistant-frontend** (blocked_deps=0, reverse_deps=0, total_deps=2) — DEP_RESOLUTION_FAILED
+44. **r8126-dkms** (blocked_deps=0, reverse_deps=0, total_deps=2) — DKMS_KERNEL_MODULE
+45. **receitanet** (blocked_deps=0, reverse_deps=0, total_deps=2) — SOURCE_UNAVAILABLE
+46. **sbctl-initcpio-post-hook** (blocked_deps=0, reverse_deps=0, total_deps=2) — DISTRO_SPECIFIC
+47. **system-age** (blocked_deps=0, reverse_deps=0, total_deps=2) — DISTRO_SPECIFIC
+48. **ttf-consolas-ligaturized** (blocked_deps=0, reverse_deps=0, total_deps=2) — LICENSE_REVIEW_NEEDED
+49. **vscodium-marketplace** (blocked_deps=0, reverse_deps=0, total_deps=2) — TOOLING_FAILURE
+50. **wyc** (blocked_deps=0, reverse_deps=0, total_deps=2) — SOURCE_UNAVAILABLE
+51. **beammp-launcher-git** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+52. **java-language-server** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+53. **libarchive-static** (blocked_deps=0, reverse_deps=0, total_deps=3) — TOOLING_FAILURE
+54. **lightdm-webkit-theme-aether** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+55. **linux-keep-modules** (blocked_deps=0, reverse_deps=0, total_deps=3) — DISTRO_SPECIFIC
+56. **nfuspire-git** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+57. **nginx-mainline-mod-njs** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+58. **nodejs-nestjs-cli** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+59. **nvidia-bl-dkms** (blocked_deps=0, reverse_deps=0, total_deps=3) — DKMS_KERNEL_MODULE
+60. **pacpak-git** (blocked_deps=0, reverse_deps=0, total_deps=3) — DISTRO_SPECIFIC
+61. **phonon-qt4-vlc** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+62. **quartz-utils-git** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+63. **rdt-client** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+64. **sommelier-git** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+65. **texmacs-pure** (blocked_deps=0, reverse_deps=0, total_deps=3) — DEP_RESOLUTION_FAILED
+66. **chromium-extension-arch-search** (blocked_deps=0, reverse_deps=0, total_deps=4) — DISTRO_SPECIFIC
+67. **clash-for-windows-chinese** (blocked_deps=0, reverse_deps=0, total_deps=4) — ABANDONED_UPSTREAM
+68. **eclipse-pydev** (blocked_deps=0, reverse_deps=0, total_deps=4) — DEP_RESOLUTION_FAILED
+69. **euroscope-bin** (blocked_deps=0, reverse_deps=0, total_deps=4) — SOURCE_UNAVAILABLE
+70. **gbm** (blocked_deps=0, reverse_deps=0, total_deps=4) — DEP_RESOLUTION_FAILED
+71. **gephi-git** (blocked_deps=0, reverse_deps=0, total_deps=4) — DEP_RESOLUTION_FAILED
+72. **lobe-chat** (blocked_deps=0, reverse_deps=0, total_deps=4) — DEP_RESOLUTION_FAILED
+73. **plugin-autenticacao-gov-pt** (blocked_deps=0, reverse_deps=0, total_deps=4) — SOURCE_UNAVAILABLE
+74. **qtspim-iconfix** (blocked_deps=0, reverse_deps=0, total_deps=4) — BUILD_FAILED
+75. **rtl88x2ce-dkms-git** (blocked_deps=0, reverse_deps=0, total_deps=4) — DKMS_KERNEL_MODULE
+76. **urbanterror** (blocked_deps=0, reverse_deps=0, total_deps=4) — SOURCE_UNAVAILABLE
+77. **ut2004-gog** (blocked_deps=0, reverse_deps=0, total_deps=4) — NON_DISTRIBUTABLE
+78. **zfs-linux-hardened-headers** (blocked_deps=0, reverse_deps=0, total_deps=4) — KERNEL_SPECIFIC
+79. **zfs-linux-rt-headers** (blocked_deps=0, reverse_deps=0, total_deps=4) — KERNEL_SPECIFIC
+80. **futu-ftnn-wine** (blocked_deps=0, reverse_deps=0, total_deps=5) — NEEDS_RECIPE_DESIGN
+81. **inkdrop** (blocked_deps=0, reverse_deps=0, total_deps=5) — SOURCE_UNAVAILABLE
+82. **kamilsss655-uv-k5-firmware-custom-git** (blocked_deps=0, reverse_deps=0, total_deps=5) — CROSS_COMPILATION
+83. **mailnaggertray-git** (blocked_deps=0, reverse_deps=0, total_deps=5) — DEP_RESOLUTION_FAILED
+84. **nvidia-open-tinygrad-dkms-git** (blocked_deps=0, reverse_deps=0, total_deps=5) — TOOLING_FAILURE
+85. **pamac-cli** (blocked_deps=0, reverse_deps=0, total_deps=5) — DISTRO_SPECIFIC
+86. **pulumi-git** (blocked_deps=0, reverse_deps=0, total_deps=5) — DEP_RESOLUTION_FAILED
+87. **python-gradio-pdf** (blocked_deps=0, reverse_deps=0, total_deps=5) — NEEDS_RECIPE_DESIGN
+88. **python-jaxlib-bin** (blocked_deps=0, reverse_deps=0, total_deps=5) — SOURCE_UNAVAILABLE
+89. **python-pypi2pkgbuild** (blocked_deps=0, reverse_deps=0, total_deps=5) — DISTRO_SPECIFIC
+90. **soapysdrplay3-luarvique-git** (blocked_deps=0, reverse_deps=0, total_deps=5) — PROPRIETARY_DEP
+91. **unrealtournament4** (blocked_deps=0, reverse_deps=0, total_deps=5) — NON_DISTRIBUTABLE
+92. **zfs-linux-git-headers** (blocked_deps=0, reverse_deps=0, total_deps=5) — KERNEL_SPECIFIC
+93. **asp** (blocked_deps=0, reverse_deps=0, total_deps=6) — DISTRO_SPECIFIC
+94. **aurutils** (blocked_deps=0, reverse_deps=0, total_deps=6) — DISTRO_SPECIFIC
+95. **awk-language-server** (blocked_deps=0, reverse_deps=0, total_deps=6) — DEP_RESOLUTION_FAILED
+96. **factorio-space-age-experimental** (blocked_deps=0, reverse_deps=0, total_deps=6) — NON_DISTRIBUTABLE
+97. **fileoptimizer-bin** (blocked_deps=0, reverse_deps=0, total_deps=6) — PLATFORM_UNSUPPORTED
+98. **gstreamermm-docs** (blocked_deps=0, reverse_deps=0, total_deps=6) — SOURCE_UNAVAILABLE
+99. **lib32-libglade** (blocked_deps=0, reverse_deps=0, total_deps=6) — MULTILIB_UNSUPPORTED
+100. **mingw-w64-boost** (blocked_deps=0, reverse_deps=0, total_deps=6) — MINGW_CROSS_COMPILATION
