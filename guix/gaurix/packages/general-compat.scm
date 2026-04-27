@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260427f)
   #:use-module (gaurix packages recipe-resolver-260427f)
   #:use-module (gaurix packages recipe-resolver-260427e)
   #:use-module (gaurix packages deptree-resolver-260427d)
@@ -16543,3 +16544,7 @@
 ;;; deptree-resolver-260427c
 (re-export libnspire)
 (re-export nfuspire)
+;;; deptree-resolver-260427f
+(re-export vscodium-marketplace)
+(re-export gjs-nohammer)
+(re-export linux-gpib-user)

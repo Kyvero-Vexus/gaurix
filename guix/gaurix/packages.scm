@@ -1,3 +1,4 @@
+            ;; deptree-resolver-260427f: 100 BLOCKED evaluated (3 recipes: vscodium-marketplace, gjs-nohammer, linux-gpib-user; 97 remain BLOCKED)
             ;; recipe-resolver-260427f: 100 packages attempted (99 recipes, 1 BLOCKED)
             ;; deptree-resolver-260427e: 100 BLOCKED evaluated (0 recipes, 100 remain BLOCKED)
             ;; deptree-resolver-260427d: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_IN_GUIX: coreutils-arch, 99 remain BLOCKED)
@@ -12133,4 +12134,7 @@
                websocat-git
                youtty
                zx
+               gjs-nohammer
+               linux-gpib-user
+               vscodium-marketplace
 ))
