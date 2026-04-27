@@ -1,3 +1,4 @@
+            ;; recipe-resolver-260427f: 100 packages attempted (99 recipes, 1 BLOCKED)
             ;; deptree-resolver-260427e: 100 BLOCKED evaluated (0 recipes, 100 remain BLOCKED)
             ;; deptree-resolver-260427d: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_IN_GUIX: coreutils-arch, 99 remain BLOCKED)
             ;; deptree-resolver-260427b: 100 BLOCKED evaluated (1 recipe: rocketchat-desktop-bin; 3 ALREADY_RESOLVED, 96 remain BLOCKED)
