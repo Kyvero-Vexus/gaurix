@@ -1,3 +1,4 @@
+            ;; deptree-resolver-260427d: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_IN_GUIX: coreutils-arch, 99 remain BLOCKED)
             ;; deptree-resolver-260427b: 100 BLOCKED evaluated (1 recipe: rocketchat-desktop-bin; 3 ALREADY_RESOLVED, 96 remain BLOCKED)
             ;; deptree-resolver-260426p: 100 BLOCKED evaluated (0 recipes, 11 ALREADY_RESOLVED, 89 remain BLOCKED)
             ;; deptree-resolver-260427c: 100 BLOCKED evaluated (2 recipes: libnspire, nfuspire; 1 ALREADY_RESOLVED: logstash; 97 remain BLOCKED)
