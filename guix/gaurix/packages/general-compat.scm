@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260427k)
   #:use-module (gaurix packages recipe-resolver-260427j)
   #:use-module (gaurix packages deptree-resolver-260427j)
   #:use-module (gaurix packages deptree-resolver-260427i)
@@ -16659,3 +16660,10 @@
 ;; deptree-resolver-260427i
 (re-export illogical-impulse-pymyc-aur)
 (re-export system-age)
+;; deptree-resolver-260427k
+(re-export zig-zg)
+(re-export zig-fzwatch)
+(re-export zig-fastb64z)
+(re-export zig-vaxis)
+(re-export fancy-cat)
+(re-export luxtorpeda-git)

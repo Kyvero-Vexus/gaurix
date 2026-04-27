@@ -1,3 +1,5 @@
+            ;; deptree-resolver-260427k: 100 BLOCKED evaluated (2 recipes: fancy-cat, luxtorpeda-git + 5 deps; 98 remain BLOCKED)
+            ;; deptree-resolver-260427j: 100 BLOCKED evaluated (0 recipes, 100 remain BLOCKED)
             ;; deptree-resolver-260427i: 100 BLOCKED evaluated (2 recipes: illogical-impulse-pymyc-aur, system-age; 98 remain BLOCKED)
             ;; deptree-resolver-260427h: 100 BLOCKED evaluated (1 recipe: gradience; 99 remain BLOCKED)
             ;; deptree-resolver-260427g: 100 BLOCKED evaluated (1 recipe: luniistore; 99 remain BLOCKED)
