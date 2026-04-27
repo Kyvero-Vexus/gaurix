@@ -12142,4 +12142,13 @@
                gjs-nohammer
                linux-gpib-user
                vscodium-marketplace
+               zig-wayland-0.2
+               zig-pixman-0.2
+               zig-xkbcommon-0.2
+               zig-fcft
+               zig-ini
+               zig-spoon
+               wayprompt-git
+               wldash
+               anyrun
 ))
