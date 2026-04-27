@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260427c)
   #:use-module (gaurix packages deptree-resolver-260427b)
   #:use-module (gaurix packages recipe-resolver-260427c)
   #:use-module (gaurix packages recipe-resolver-260427a)
@@ -16536,3 +16537,6 @@
 (re-export quantumlauncher-bin)
 (re-export spinwheel-pipewire)
 (re-export webos-dev-manager-bin)
+;;; deptree-resolver-260427c
+(re-export libnspire)
+(re-export nfuspire)
