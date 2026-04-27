@@ -1,7 +1,7 @@
 # Blocked Dependency Tree
 
-**Pass:** `deptree-resolver-260427n`
-**Timestamp:** 2026-04-27T21:44:10Z
+**Pass:** `deptree-resolver-260427o`
+**Timestamp:** 2026-04-27T23:05:58Z
 **Total BLOCKED:** 181
 **In AUR cache:** 175
 **Zero blocked deps:** 179
@@ -102,7 +102,7 @@
 | 90 | pikaur-static-git | 18749 | 0 | 0 | 8 |  |
 | 91 | vmd | 18253 | 0 | 0 | 8 | PROPRIETARY_BINARY |
 | 92 | webcord-vencord-git | 18852 | 0 | 0 | 8 | COMPLEX_DEPS |
-| 93 | xeme-hg | 18426 | 0 | 0 | 8 |  |
+| 93 | xeme-hg | 18426 | 0 | 0 | 8 | SOURCE_UNAVAILABLE |
 | 94 | boost-python2 | 37225 | 0 | 0 | 9 | LEGACY_PYTHON2 |
 | 95 | frame-eth | 18612 | 0 | 0 | 9 | COMPLEX_DEPS |
 | 96 | freetube-electron-git | 17925 | 0 | 0 | 9 | COMPLEX_DEPS |
@@ -110,7 +110,7 @@
 | 98 | madness-interactive-reloaded | 18618 | 0 | 0 | 9 | COMPLEX_DEPS |
 | 99 | mobirise | 18357 | 0 | 0 | 9 | COMPLEX_DEPS |
 | 100 | open-tv | 18368 | 0 | 0 | 9 |  |
-| 101 | prey | 18251 | 0 | 0 | 9 |  |
+| 101 | prey | 18251 | 0 | 0 | 9 | SOURCE_UNAVAILABLE |
 | 102 | python-pylink-square | 21233 | 0 | 0 | 9 |  |
 | 103 | auracle-git | 2160 | 0 | 0 | 10 | DISTRO_SPECIFIC |
 | 104 | beignet-git | 18416 | 0 | 0 | 10 |  |
@@ -161,7 +161,7 @@
 | 149 | linux-cachyos-server-headers | 18647 | 0 | 0 | 20 |  |
 | 150 | paperde | 18521 | 0 | 0 | 20 |  |
 | 151 | xivlauncher-rb | 18343 | 0 | 0 | 20 |  |
-| 152 | codeblocks-svn | 18158 | 0 | 0 | 22 |  |
+| 152 | codeblocks-svn | 18158 | 0 | 0 | 22 | SOURCE_UNAVAILABLE |
 | 153 | firestorm-next-bin | 17261 | 0 | 0 | 22 | MULTILIB_UNSUPPORTED |
 | 154 | openconnect-sso-git | 18168 | 0 | 0 | 23 |  |
 | 155 | ecal-samples | 18268 | 0 | 0 | 24 |  |
