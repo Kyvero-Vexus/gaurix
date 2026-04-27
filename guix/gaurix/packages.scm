@@ -1,3 +1,4 @@
+            ;; deptree-resolver-260426p: 100 BLOCKED evaluated (0 recipes, 11 ALREADY_RESOLVED, 89 remain BLOCKED)
 ;;; Package namespace convenience module for Gaurix.
             ;; deptree-resolver-260426o: 100 BLOCKED evaluated (20 recipes: etcd, gowatch, mermaid-ascii-bin, disk-usage, harbor-wave, mod-maxminddb, limine-booster, pam-exec-ssh, quantumlauncher-bin, flclashx-bin, +10 more; 80 remain BLOCKED)
             ;; deptree-resolver-260426m: 91 BLOCKED evaluated (21 recipes: etcd, flclashx-bin, gowatch, harbor-wave, limine-booster, mod_maxminddb, quantumlauncher-bin, webos-dev-manager-bin, artificial-rage-git, buf-git, +11 more; 70 remain BLOCKED)
