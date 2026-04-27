@@ -1,283 +1,207 @@
-# Blocked Dependency Tree
+# Blocked Dependency Tree — deptree-resolver-260427b
 
-**Generated:** 2026-04-27T02:53:22Z  
-**Pass ID:** deptree-resolver-260426p  
+**Timestamp:** 2026-04-27T04:26:50Z
+**Total BLOCKED:** 194
+**In AUR cache:** 189
+**Zero blocked deps:** 191
 
-## Summary
+## Priority Queue (all 194 packages)
 
-| Metric | Value |
-|---|---|
-| Total BLOCKED | 547 |
-| In AUR cache | 534 |
-| Zero blocked deps | 531 |
+| Rank | Package | # | BD | RD | TD | Reason |
+|------|---------|---|----|----|----|----|
+| 1 | gradience | 18644 | 0 | 1 | 0 | DONE: queue-20260403p100daily2 alias to `i3lock-fancy`; vali |
+| 2 | sudo-selinux | 18513 | 0 | 1 | 8 | BLOCKED: SELINUX_SPECIFIC (deptree-resolver-260426d) |
+| 3 | base-selinux | 18537 | 0 | 1 | 18 | BLOCKED: SELINUX_SPECIFIC (deptree-resolver-260426d) |
+| 4 | virtualbox-svn | 18799 | 0 | 1 | 53 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 5 | deadbeef-mpris2-plugin | 19282 | 0 | 0 | 0 | DONE: recipe in recipe-resolver-260415i.scm (amoxide-bin v0. |
+| 6 | linux6.18.22-1-lts-bin | 37932 | 0 | 0 | 0 | DONE: recipe in recipe-resolver-260426b.scm (recipe-resolver |
+| 7 | matlab-jre-bundled | 19363 | 0 | 0 | 0 | DONE: Recipe generated in recipe-resolver-260424u.scm (recip |
+| 8 | sipgate-app-clinq | 18449 | 0 | 0 | 0 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe generated in rec |
+| 9 | squareline-studio | 17812 | 0 | 0 | 0 | DONE: Recipe in deptree-resolver-260424p.scm (simplewaita-gi |
+| 10 | aquacomputer_d5next-hwmon-dkms | 18606 | 0 | 0 | 1 | DONE: queue-20260403p100daily2 alias to `arx-libertatis`; va |
+| 11 | bakkesmod-steam | 17468 | 0 | 0 | 1 | DONE: Recipe in recipe-resolver-260423p.scm (umlet v15.1, gn |
+| 12 | luniistore | 18478 | 0 | 0 | 1 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe generated in rec |
+| 13 | mkinitcpio-systemd-root-password | 18371 | 0 | 0 | 1 | DONE: recipe in recipe-resolver-260424z.scm (netkit-bsd-fing |
+| 14 | repacman | 18707 | 0 | 0 | 1 | DONE: queue-20260403p100daily2 alias to `telegram-desktop`;  |
+| 15 | simplicity-commander | 18419 | 0 | 0 | 1 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 16 | amneziawg-dkms-git | 18642 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 17 | amneziawg-linux | 18452 | 0 | 0 | 2 | BLOCKED: DKMS_KERNEL_MODULE: AmneziaWG kernel module (deptre |
+| 18 | amneziawg-linux-hardened | 18382 | 0 | 0 | 2 | DONE: recipe in recipe-resolver-260425b.scm (xhidecursor v0. |
+| 19 | android-platform-19 | 28671 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260425k.scm (recipe-resolver |
+| 20 | android-platform-21 | 23109 | 0 | 0 | 2 | DONE: recipe in recipe-resolver-260423i.scm (arc v5.21q, gnu |
+| 21 | archwiki-offline | 18568 | 0 | 0 | 2 | DONE: recipe in recipe-resolver-260425c.scm (secretpixel v1. |
+| 22 | brother-mfc-l2400dw | 17797 | 0 | 0 | 2 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 23 | faustus-dkms-git | 18859 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260425f.scm (recipe-resolver |
+| 24 | findbrokenpkgs | 18930 | 0 | 0 | 2 | DONE: queue-20260403p100daily2 alias to `xdg-desktop-portal- |
+| 25 | ideapad-laptop-tb-dkms | 18957 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260425g.scm (recipe-resolver |
+| 26 | ideapad-laptop-tb2024g6plus-dkms | 18895 | 0 | 0 | 2 | BLOCKED: DKMS_KERNEL_MODULE (deptree-resolver-260426d) (dept |
+| 27 | knossu | 18461 | 0 | 0 | 2 | DONE: recipe in recipe-resolver-260425b.scm (doot-bin v1.2.0 |
+| 28 | lib32-opencl-nvidia-390xx | 17502 | 0 | 0 | 2 | DONE: Recipe generated in recipe-resolver-260424h.scm (recip |
+| 29 | libch343ser-git | 17880 | 0 | 0 | 2 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 30 | libfprint-2-tod1-broadcom-cv3plus | 17912 | 0 | 0 | 2 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 31 | mingw-w64-cblas | 34115 | 0 | 0 | 2 | DONE: recipe in deptree-resolver-260418s.scm (purpose-git vr |
+| 32 | mingw-w64-lapack | 34113 | 0 | 0 | 2 | BLOCKED: MINGW_CROSS_COMPILATION (deptree-resolver-260426d)  |
+| 33 | mingw-w64-soundtouch | 18330 | 0 | 0 | 2 | DONE: Added alias export in guix/gaurix/packages/queue-20260 |
+| 34 | pfring-dkms | 18399 | 0 | 0 | 2 | BLOCKED: DKMS_KERNEL_MODULE (deptree-resolver-260426d) |
+| 35 | python-home-assistant-frontend | 18556 | 0 | 0 | 2 | DONE: Added alias export in guix/gaurix/packages/queue-20260 |
+| 36 | r8126-dkms | 18487 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 37 | sbctl-initcpio-post-hook | 18720 | 0 | 0 | 2 | BLOCKED: DEP_RESOLUTION_FAILED (deptree-resolver-260426d) |
+| 38 | system-age | 18453 | 0 | 0 | 2 | DONE: Added alias export in guix/gaurix/packages/queue-20260 |
+| 39 | ttf-consolas-ligaturized | 20499 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260425n.scm (recipe-resolver |
+| 40 | vscodium-marketplace | 18695 | 0 | 0 | 2 | BLOCKED: TOOLING_FAILURE (deptree-resolver-260426d) |
+| 41 | wyc | 18777 | 0 | 0 | 2 | DONE: Recipe in recipe-resolver-260425e.scm (ferroxide-git)  |
+| 42 | lightdm-webkit-theme-aether | 19028 | 0 | 0 | 3 | DONE: Recipe in recipe-resolver-260425g.scm (recipe-resolver |
+| 43 | linux-keep-modules | 18490 | 0 | 0 | 3 | BLOCKED: DISTRO_SPECIFIC (deptree-resolver-260426d) |
+| 44 | nfuspire-git | 18401 | 0 | 0 | 3 | DONE: recipe in recipe-resolver-260425b.scm (intentrace-bin  |
+| 45 | nvidia-bl-dkms | 17755 | 0 | 0 | 3 | DONE: Recipe in deptree-resolver-260424w.scm (heroku-cli v11 |
+| 46 | pacpak-git | 17862 | 0 | 0 | 3 | DONE: recipe in deptree-resolver-260418ai.scm (deptree-resol |
+| 47 | phonon-qt4-vlc | 18938 | 0 | 0 | 3 | DONE: Recipe in recipe-resolver-260425f.scm (recipe-resolver |
+| 48 | quartz-utils-git | 18430 | 0 | 0 | 3 | DONE: recipe in recipe-resolver-260425b.scm (python-etils v1 |
+| 49 | rdt-client | 18561 | 0 | 0 | 3 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 50 | texmacs-pure | 17873 | 0 | 0 | 3 | BLOCKED: MISSING_DEP: requires slsh (S-Lang shell), not avai |
+| 51 | chromium-extension-arch-search | 17897 | 0 | 0 | 4 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 52 | clash-for-windows-chinese | 17433 | 0 | 0 | 4 | DONE: Recipe in recipe-resolver-260423p.scm (rnr-bin v0.5.1, |
+| 53 | euroscope-bin | 17945 | 0 | 0 | 4 | DONE: Recipe in recipe-resolver-260424t.scm (recipe-resolver |
+| 54 | gbm | 19044 | 0 | 0 | 4 | DONE: Recipe in recipe-resolver-260425i.scm (browser-on-ram- |
+| 55 | rtl88x2ce-dkms-git | 18362 | 0 | 0 | 4 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 56 | ut2004-gog | 18333 | 0 | 0 | 4 | BLOCKED: NEEDS_RECIPE_DESIGN_EXHAUSTED — MISSING_PYTHON_DEPS |
+| 57 | zfs-linux-hardened-headers | 17921 | 0 | 0 | 4 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 58 | zfs-linux-rt-headers | 17920 | 0 | 0 | 4 | BLOCKED: KERNEL_SPECIFIC (deptree-resolver-260426d) |
+| 59 | futu-ftnn-wine | 18151 | 0 | 0 | 5 | DONE: AUR_REPO_DELETED: AUR git repository empty/deleted (de |
+| 60 | inkdrop | 17819 | 0 | 0 | 5 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe generated in rec |
+| 61 | kamilsss655-uv-k5-firmware-custom-git | 17909 | 0 | 0 | 5 | DONE: recipe in deptree-resolver-260418s.scm (pyconcurrent v |
+| 62 | mailnaggertray-git | 18592 | 0 | 0 | 5 | DONE: recipe in recipe-resolver-260425c.scm (interstellar-bi |
+| 63 | nvidia-open-tinygrad-dkms-git | 18617 | 0 | 0 | 5 | BLOCKED: TOOLING_FAILURE (deptree-resolver-260426d) |
+| 64 | pamac-cli | 17940 | 0 | 0 | 5 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 65 | python-gradio-pdf | 18463 | 0 | 0 | 5 | DONE: recipe in recipe-resolver-260425b.scm (keybase-bash-co |
+| 66 | python-pypi2pkgbuild | 17822 | 0 | 0 | 5 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 67 | soapysdrplay3-luarvique-git | 18141 | 0 | 0 | 5 | DONE: Recipe in recipe-resolver-260424t.scm (recipe-resolver |
+| 68 | unrealtournament4 | 18319 | 0 | 0 | 5 | BLOCKED: NON_DISTRIBUTABLE (deptree-resolver-260426d) |
+| 69 | zfs-linux-git-headers | 17919 | 0 | 0 | 5 | BLOCKED: KERNEL_SPECIFIC (deptree-resolver-260426d) |
+| 70 | asp | 14587 | 0 | 0 | 6 | DONE: recipe in recipe-resolver-260418e.scm (autobrr-bin, co |
+| 71 | aurutils | 11354 | 0 | 0 | 6 | DONE: Recipe added in recipe-resolver-260414j.scm (recipe-re |
+| 72 | factorio-space-age-experimental | 17440 | 0 | 0 | 6 | DONE: recipe in recipe-resolver-260417af.scm (python-xpybuti |
+| 73 | fileoptimizer-bin | 18315 | 0 | 0 | 6 | NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260 |
+| 74 | lib32-libglade | 45410 | 0 | 0 | 6 | DONE: Recipe in recipe-resolver-260427a.scm (recipe-resolver |
+| 75 | mingw-w64-boost | 23783 | 0 | 0 | 6 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 76 | mingw-w64-cppwinrt | 43750 | 0 | 0 | 6 | DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolv |
+| 77 | mingw-w64-pcre2 | 26805 | 0 | 0 | 6 | DONE: recipe in deptree-resolver-260418v.scm (aldumb v2.0.3, |
+| 78 | mingw-w64-spirv-tools | 42666 | 0 | 0 | 6 | DONE: recipe in recipe-resolver-260426g.scm (arkenfox-hook-g |
+| 79 | dxvk-async-git | 18820 | 0 | 0 | 7 | DONE: recipe in recipe-resolver-260417af.scm (python-mktxp v |
+| 80 | eddiscovery | 18320 | 0 | 0 | 7 | DONE: recipe in recipe-resolver-260424z.scm (python-textcase |
+| 81 | glibc-eac | 24719 | 0 | 0 | 7 | DONE: recipe in deptree-resolver-260418p.scm (mingw-w64-meso |
+| 82 | lib32-libxpm | 16491 | 0 | 0 | 7 | DONE: recipe in deptree-resolver-260423g.scm |
+| 83 | linux-gpib | 20547 | 0 | 0 | 7 | DONE: Recipe in recipe-resolver-260427a.scm (recipe-resolver |
+| 84 | logstash | 18911 | 0 | 0 | 7 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 85 | mingw-w64-postgresql | 24572 | 0 | 0 | 7 | DONE: Recipe added in recipe-resolver-260414j.scm (recipe-re |
+| 86 | mkinitcpio-clevis-hook | 18342 | 0 | 0 | 7 | BLOCKED: ARCH_SPECIFIC: mkinitcpio hook; not applicable to G |
+| 87 | plank-reloaded-docklet-picky-git | 18397 | 0 | 0 | 7 | DONE: Recipe in deptree-resolver-260425h.scm (php-mcrypt v1. |
+| 88 | python2-gimp | 23210 | 0 | 0 | 7 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 89 | wayprompt-git | 18262 | 0 | 0 | 7 | BLOCKED: DEP_RESOLUTION_FAILED: Zig compiler not in Guix (re |
+| 90 | wldash | 18237 | 0 | 0 | 7 | DONE: recipe in recipe-resolver-260424z.scm (jcal-git v0.5.1 |
+| 91 | anytxt-bin | 18295 | 0 | 0 | 8 | DONE: Recipe in deptree-resolver-260425e.scm (hyperledger-fa |
+| 92 | coreutils-arch | 18690 | 0 | 0 | 8 | DONE: queue-20260403p100daily2 alias to `scanbd`; validated  |
+| 93 | emerald | 22333 | 0 | 0 | 8 | DONE: recipe in recipe-resolver-260423i.scm (ldraw-parts-lib |
+| 94 | lib32-sdl_sound | 22729 | 0 | 0 | 8 | DONE: recipe in deptree-resolver-260418v.scm (kdoctools-git  |
+| 95 | mingw-w64-lame | 34112 | 0 | 0 | 8 | BLOCKED: MINGW_CROSS_COMPILATION: LAME MP3 encoder for MinGW |
+| 96 | pianoteq-stage | 18367 | 0 | 0 | 8 | BLOCKED: LICENSE_REVIEW_NEEDED: proprietary commercial VST ( |
+| 97 | pikaur-static | 18750 | 0 | 0 | 8 | BLOCKED: TOOLING_FAILURE (deptree-resolver-260426d) |
+| 98 | pikaur-static-git | 18749 | 0 | 0 | 8 | BLOCKED: TOOLING_FAILURE: AUR helper; pacman-specific, not a |
+| 99 | rocketchat-desktop | 18807 | 0 | 0 | 8 | DONE: Recipe in recipe-resolver-260425e.scm (zsh-pure-prompt |
+| 100 | vmd | 18253 | 0 | 0 | 8 | DONE: Recipe in deptree-resolver-260426j.scm (C++ X-COM reim |
+| 101 | webcord-vencord-git | 18852 | 0 | 0 | 8 | DONE: Recipe in recipe-resolver-260425f.scm (recipe-resolver |
+| 102 | xeme-hg | 18426 | 0 | 0 | 8 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 103 | anyrun-git | 17933 | 0 | 0 | 9 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 104 | boost-python2 | 37225 | 0 | 0 | 9 | DONE: recipe in deptree-resolver-260418p.scm (python-boltons |
+| 105 | frame-eth | 18612 | 0 | 0 | 9 | DONE: recipe in recipe-resolver-260417af.scm (python-laspy v |
+| 106 | freetube-electron-git | 17925 | 0 | 0 | 9 | BLOCKED: NEEDS_INVESTIGATION: XFCE UI library development ve |
+| 107 | lib32-vkbasalt | 18688 | 0 | 0 | 9 | BLOCKED: DEP_RESOLUTION_FAILED: IBM PC emulator; SDL2 + Open |
+| 108 | madness-interactive-reloaded | 18618 | 0 | 0 | 9 | DONE: recipe in recipe-resolver-260425c.scm (python-ctypescr |
+| 109 | mobirise | 18357 | 0 | 0 | 9 | DONE: Recipe in deptree-resolver-260425b.scm (geekbench-ai-b |
+| 110 | open-tv | 18368 | 0 | 0 | 9 | DONE: recipe in recipe-resolver-260424z.scm (python-osc-plac |
+| 111 | prey | 18251 | 0 | 0 | 9 | DONE: recipe in recipe-resolver-260423i.scm (scsiadd v1.97,  |
+| 112 | python-pylink-square | 21233 | 0 | 0 | 9 | DONE: recipe in deptree-resolver-260418s.scm (darling-system |
+| 113 | auracle-git | 2160 | 0 | 0 | 10 | DONE: NEEDS_RECIPE_DESIGN resolved -- recipe in recipe-resol |
+| 114 | beignet-git | 18416 | 0 | 0 | 10 | DONE: recipe in recipe-resolver-260425b.scm (vlc-materia-ski |
+| 115 | borgwarehouse | 18840 | 0 | 0 | 10 | DONE: Recipe in recipe-resolver-260425f.scm (recipe-resolver |
+| 116 | hnefatafl-copenhagen | 18404 | 0 | 0 | 10 | BLOCKED: DEP_RESOLUTION_FAILED: Rust game client with niche  |
+| 117 | libfive-studio-git | 18351 | 0 | 0 | 10 | DONE: recipe in recipe-resolver-260417af.scm (python-ffmpy v |
+| 118 | libga68-snapshot | 19629 | 0 | 0 | 10 | DONE: Recipe generated in recipe-resolver-260426k.scm (recip |
+| 119 | libgfortran-snapshot | 19625 | 0 | 0 | 10 | BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Fortran runti |
+| 120 | libgnat-snapshot | 19623 | 0 | 0 | 10 | BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Ada runtime;  |
+| 121 | libgo-snapshot | 19622 | 0 | 0 | 10 | BLOCKED: GCC_SNAPSHOT_RUNTIME: GCC pre-release Go runtime; G |
+| 122 | linux-sched-ext-git-headers | 18498 | 0 | 0 | 10 | DONE: recipe in recipe-resolver-260425b.scm (t2sz v1.1.2, cm |
+| 123 | linux-tip-git-headers | 18533 | 0 | 0 | 10 | DONE: Recipe in recipe-resolver-260425e.scm (coredns-wgsd-gi |
+| 124 | mailspring | 18921 | 0 | 0 | 10 | BLOCKED: DEP_RESOLUTION_FAILED: see recipe-resolver-260425f- |
+| 125 | nvidia-390xx-settings | 18484 | 0 | 0 | 10 | DONE: recipe in recipe-resolver-260418ae.scm (qt-installer-f |
+| 126 | pantheon-polkit-agent-git | 18518 | 0 | 0 | 10 | BLOCKED: TOOLING_FAILURE (deptree-resolver-260426d) |
+| 127 | virtualbox-bin-sdk | 18668 | 0 | 0 | 10 | DONE: ALREADY_IN_GUIX: Guix curl already uses GnuTLS by defa |
+| 128 | fancy-cat | 18648 | 0 | 0 | 11 | DONE: Recipe in deptree-resolver-260425h.scm (snowflake-pt-s |
+| 129 | lto-dump-snapshot | 18347 | 0 | 0 | 11 | BLOCKED: DEP_RESOLUTION_FAILED: GCC snapshot bootstrap infea |
+| 130 | luxtorpeda-git | 18554 | 0 | 0 | 11 | DONE: recipe in recipe-resolver-260425c.scm (xseticon v0.1,  |
+| 131 | python-google-cloud-speech | 18804 | 0 | 0 | 11 | DONE: queue-20260403p100daily2 alias to `conky`; validated t |
+| 132 | synfigstudio-dev | 18386 | 0 | 0 | 11 | DONE: ALREADY_IN_GUIX: upstream Guix has synfig package (dep |
+| 133 | vegastrike-engine-git | 18302 | 0 | 0 | 11 | BLOCKED: DEP_RESOLUTION_FAILED: depends on vegastrike ecosys |
+| 134 | devtools-git | 18696 | 0 | 0 | 12 | DONE: Recipe in deptree-resolver-260425d.scm (server-box-bin |
+| 135 | envoyproxy | 17824 | 0 | 0 | 12 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 136 | gst-plugins-rs-git | 18405 | 0 | 0 | 12 | DONE: recipe in deptree-resolver-260425c.scm (firetools v0.9 |
+| 137 | linux-xanmod-lts-headers | 18447 | 0 | 0 | 12 | DONE: Added alias export in guix/gaurix/packages/queue-20260 |
+| 138 | mingw-w64-libopenmpt | 18388 | 0 | 0 | 12 | BLOCKED: DEP_RESOLUTION_FAILED (deptree-resolver-260426d) |
+| 139 | opendrop-git | 18632 | 0 | 0 | 12 | DONE: recipe in recipe-resolver-260417af.scm (python-bandcam |
+| 140 | wayfire-plugins-extra-git | 18263 | 0 | 0 | 12 | BLOCKED: FETCH_FAILED: GitHub release URL returned 404/redir |
+| 141 | betterx-desktop-git | 18293 | 0 | 0 | 13 | DONE: recipe in recipe-resolver-260424z.scm (betterx-desktop |
+| 142 | capt-src | 17255 | 0 | 0 | 13 | DONE: Added alias export in guix/gaurix/packages/queue-20260 |
+| 143 | illogical-impulse-ags | 17937 | 0 | 0 | 13 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 144 | python-jax-rocm | 17278 | 0 | 0 | 13 | DONE: recipe in recipe-resolver-260415i.scm (lc-bin v1.3.1,  |
+| 145 | goxlr-utility-ui | 18287 | 0 | 0 | 14 | DONE: recipe in recipe-resolver-260424z.scm (circumflex-bin  |
+| 146 | linux-cachyos-hardened-headers | 18522 | 0 | 0 | 14 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 147 | linux-next-git-headers | 18514 | 0 | 0 | 14 | DONE: recipe in recipe-resolver-260425b.scm (mpv-sponsorbloc |
+| 148 | rpfm-git | 17833 | 0 | 0 | 14 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 149 | deepin-wine8-stable | 35454 | 0 | 0 | 15 | DONE: Recipe in deptree-resolver-260424d.scm (deptree-resolv |
+| 150 | linux-covolunablu-gaming-headers | 18547 | 0 | 0 | 15 | DONE: Added alias export in guix/gaurix/packages/queue-20260 |
+| 151 | php-legacy-pdlib | 18303 | 0 | 0 | 15 | DONE: Recipe in recipe-resolver-260424q.scm (recipe-resolver |
+| 152 | qt6-xcb-private-headers-git | 18837 | 0 | 0 | 15 | DONE: Recipe in recipe-resolver-260425f.scm (recipe-resolver |
+| 153 | scans2any-git | 18580 | 0 | 0 | 15 | DONE: recipe in deptree-resolver-260425c.scm (openexr-viewer |
+| 154 | veloren | 18922 | 0 | 0 | 15 | DONE: queue-20260403p100daily2 alias to `syncplay`; validate |
+| 155 | vmware-workstation | 1833 | 0 | 0 | 15 | BLOCKED this pass: packages)'?; guix build: error: shader-sl |
+| 156 | gjs-nohammer | 18706 | 0 | 0 | 17 | BLOCKED: DEP_RESOLUTION_FAILED: variant of GJS requiring ful |
+| 157 | oclint | 18255 | 0 | 0 | 17 | DONE: recipe in recipe-resolver-260424z.scm (gradle-bash-com |
+| 158 | sddm-idle | 18701 | 0 | 0 | 19 | DONE: Recipe in recipe-resolver-260425e.scm (kactus2-git) (r |
+| 159 | linux-cachyos-bmq-headers | 18507 | 0 | 0 | 20 | DONE: recipe in recipe-resolver-260417af.scm (python-openai- |
+| 160 | linux-cachyos-eevdf-headers | 18636 | 0 | 0 | 20 | DONE: Recipe added in recipe-resolver-260414j.scm (recipe-re |
+| 161 | linux-cachyos-server-headers | 18647 | 0 | 0 | 20 | BLOCKED: TOOLING_FAILURE: CachyOS server kernel headers; Gui |
+| 162 | paperde | 18521 | 0 | 0 | 20 | BLOCKED: DEP_RESOLUTION_FAILED: Qt/Wayland DE on Wayfire; re |
+| 163 | xivlauncher-rb | 18343 | 0 | 0 | 20 | DONE: Recipe in deptree-resolver-260426c.scm (beammp-launche |
+| 164 | codeblocks-svn | 18158 | 0 | 0 | 22 | DONE: Recipe in deptree-resolver-260425e.scm (openfortivpn-w |
+| 165 | firestorm-next-bin | 17261 | 0 | 0 | 22 | DONE: recipe in deptree-resolver-260423f.scm |
+| 166 | openconnect-sso-git | 18168 | 0 | 0 | 23 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 167 | ecal-samples | 18268 | 0 | 0 | 24 | DONE: Recipe in deptree-resolver-260425h.scm (hq v3.2, meson |
+| 168 | modemmanager-dev | 18802 | 0 | 0 | 24 | DONE: Recipe in recipe-resolver-260425e.scm (goldendict-cc-c |
+| 169 | nyarchassistant | 18590 | 0 | 0 | 26 | DONE: recipe in recipe-resolver-260425c.scm (nuclear-player- |
+| 170 | aosp-devel | 18650 | 0 | 0 | 27 | BLOCKED: SOURCE_UNAVAILABLE: Limine-Snapper sync script; rep |
+| 171 | deadbeef-git | 17914 | 0 | 0 | 27 | DONE: recipe in recipe-resolver-260417af.scm (python-jdateti |
+| 172 | java-openjfx-nowebkit | 18759 | 0 | 0 | 27 | DONE: Recipe in recipe-resolver-260425e.scm (ytt) (recipe-re |
+| 173 | quartus-free-quartus | 23279 | 0 | 0 | 27 | DONE: recipe in deptree-resolver-260418v.scm (libnatspec v0. |
+| 174 | nheko-scrollfix | 18400 | 0 | 0 | 28 | BLOCKED: DEP_RESOLUTION_FAILED: patched Qt6/C++ Matrix clien |
+| 175 | texpresso-git | 18326 | 0 | 0 | 29 | DONE: recipe in recipe-resolver-260424z.scm (renode-bin v1.1 |
+| 176 | etlegacy32-mod | 17424 | 0 | 0 | 30 | DONE: Recipe in recipe-resolver-260423p.scm (cloudflared-bin |
+| 177 | ghostty-git-zen3 | 18897 | 0 | 0 | 30 | DONE: Recipe in recipe-resolver-260425f.scm (recipe-resolver |
+| 178 | thunderbird-beta | 18949 | 0 | 0 | 30 | DONE: queue-20260403p100daily2 alias to `nushell`; validated |
+| 179 | audacious-plugins-git | 17814 | 0 | 0 | 32 | DONE: NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolv |
+| 180 | qgroundcontrol | 18375 | 0 | 0 | 40 | DONE: Recipe in deptree-resolver-260425i.scm (musique v1.12, |
+| 181 | darling-cli-devenv-gui-common-git | 22161 | 0 | 0 | 41 | BLOCKED: COMPLEX_DEPS: macOS compat layer, needs multilib (d |
+| 182 | darling-iosurface-git | 22171 | 0 | 0 | 41 | DONE: recipe in recipe-resolver-260418ae.scm (doom1-wad v1.9 |
+| 183 | mesa-minimal-git | 18711 | 0 | 0 | 46 | NEEDS_RECIPE_DESIGN resolved — recipe in recipe-resolver-260 |
+| 184 | shadps4-git | 18192 | 0 | 0 | 46 | DONE: Recipe in recipe-resolver-260424t.scm (recipe-resolver |
+| 185 | systemd-ukify-git | 18200 | 0 | 0 | 53 | DONE: Recipe in recipe-resolver-260424t.scm (recipe-resolver |
+| 186 | waytrogen | 18348 | 0 | 0 | 54 | DONE: recipe in recipe-resolver-260418ae.scm (rofi-greenclip |
+| 187 | wine-osu-spectator-wow64 | 18197 | 0 | 0 | 61 | DONE: recipe in recipe-resolver-260415i.scm (aonsoku-bin v0. |
+| 188 | teb-obs | 18491 | 0 | 0 | 67 | BLOCKED: DEP_RESOLUTION_FAILED: picom fork with animations;  |
+| 189 | thunderbird-globalmenu | 18157 | 0 | 0 | 73 | BLOCKED: AUR_REPO_DELETED: AUR git repository is empty/delet |
+| 190 | ffmpeg-cuda-full | 17346 | 0 | 0 | 89 | DONE: Recipe in recipe-resolver-260423p.scm (sasquatch-git v |
+| 191 | ffmpeg-full-git | 18189 | 0 | 0 | 139 | DONE: recipe in recipe-resolver-260417af.scm (python-edge-tt |
+| 192 | virtualbox-ext-oracle-dev | 18801 | 1 | 0 | 1 | BLOCKED: LICENSE_REVIEW_NEEDED: Oracle PUEL restricts redist |
+| 193 | illogical-impulse-pymyc-aur | 18594 | 1 | 0 | 4 | DONE: Recipe in deptree-resolver-260426j.scm (Python German  |
+| 194 | base-devel-selinux | 18538 | 2 | 0 | 3 | DONE: recipe in recipe-resolver-260425c.scm (archisteamfarm- |
 
-## Blocking Reason Distribution
-
-| Reason | Count |
-|---|---|
-| NEEDS_RECIPE_DESIGN | 83 |
-| NEEDS_RECIPE_DESIGN_EXHAUSTED | 82 |
-| DEP_RESOLUTION_FAILED | 80 |
-| TOOLING_FAILURE | 36 |
-| KERNEL_MODULE | 29 |
-| FETCH_FAILED | 24 |
-| PROPRIETARY_LICENSE | 21 |
-| ARCH_SPECIFIC | 17 |
-| SOURCE_UNAVAILABLE | 12 |
-| NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aa) | 12 |
-| NON_DISTRIBUTABLE | 11 |
-| INFEASIBLE_BUILD | 10 |
-| BUILD_FAILED | 9 |
-| LIB32_UNSUPPORTED | 8 |
-| MINGW_CROSS_COMPILATION | 8 |
-| LICENSE_REVIEW_NEEDED | 7 |
-| MISSING_SOURCE | 6 |
-| MULTILIB_UNSUPPORTED | 6 |
-| NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413aj) | 6 |
-| NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260413ah) | 6 |
-| PROPRIETARY_BINARY | 5 |
-| PLATFORM_UNSUPPORTED | 4 |
-| PROPRIETARY_CLOSED_SOURCE | 4 |
-| DKMS_UNSUPPORTED | 4 |
-| AUR_REPO_DELETED | 4 |
-| DISTRO_SPECIFIC | 3 |
-| INITRAMFS_TOOL | 3 |
-| COMPLEX_DEPS | 3 |
-| ARCH_PACKAGE_MANAGER | 3 |
-| COMPLEX_BUILD_DEPS | 3 |
-| HARDWARE_SPECIFIC | 3 |
-| PROPRIETARY_SDK | 2 |
-| NEEDS_CARGO_VENDORING | 2 |
-| BUILD_SYSTEM_TOO_COMPLEX | 2 |
-| ABANDONED_UPSTREAM | 2 |
-| LEGACY_PYTHON2 | 2 |
-| DISTRO_SPECIFIC (deptree-resolver-260424v) | 1 |
-| PROPRIETARY_SERVICE | 1 |
-| VERY_LOW_MATURITY | 1 |
-| FOREIGN_PACKAGE_MANAGER | 1 |
-| NO_UPSTREAM_SOURCE | 1 |
-| NO_LICENSE | 1 |
-| DKMS_KERNEL_MODULE | 1 |
-| cargo-build-system requires vendored crate deps; crmne/op-cache has no tags, only git commits; tried | 1 |
-| PLATFORM_SPECIFIC | 1 |
-| SYSTEMD_SPECIFIC | 1 |
-| PROPRIETARY_FONT_LICENSE | 1 |
-| cargo-build-system requires vendored crate deps; NexusXe/fw-ec-utils has no tags, needs cargo-nightly; tried | 1 |
-| MISSING_BUILD_TOOLS | 1 |
-| LIB32_UNSUPPORTED + PROPRIETARY | 1 |
-| MISSING_DEP | 1 |
-| CROSS_TOOLCHAIN_COMPLEX | 1 |
-| MISSING_DEPENDENCY | 1 |
-| COMPLEX_BUILD | 1 |
-| proprietary download requires web-scraping token from symless.com landing page; no static download URL exists; tried | 1 |
-| NONFREE_LICENSE | 1 |
-| PROPRIETARY_SERVER | 1 |
-| NEEDS_RECIPE_DESIGN re-evaluated in recipe-resolver-260413b; heavy KDE6/Qt6/polkit-qt6 dep chain. See blocked-notes. | 1 |
-| KERNEL_HEADERS | 1 |
-| KERNEL_BUILD | 1 |
-| PROPRIETARY_PLATFORM | 1 |
-
-## Priority Queue (Top 200)
-
-| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps | Reason |
-|---|---|---|---|---|---|---|
-| 1 | sudo-selinux | 18513 | 0 | 6 | 8 | TOOLING_FAILURE: SELinux support; Guix does not us |
-| 2 | devtools-git | 18696 | 0 | 2 | 12 | TOOLING_FAILURE: Arch Linux package maintainer too |
-| 3 | gradience | 18644 | 0 | 1 | 0 | DEP_RESOLUTION_FAILED: Adwaita theme editor; Pytho |
-| 4 | pamac-cli | 17940 | 0 | 1 | 5 | DISTRO_SPECIFIC |
-| 5 | aurutils | 11354 | 0 | 1 | 6 | DISTRO_SPECIFIC |
-| 6 | auracle-git | 2160 | 0 | 1 | 10 | DISTRO_SPECIFIC (deptree-resolver-260424v) |
-| 7 | gjs-nohammer | 18706 | 0 | 1 | 17 | DEP_RESOLUTION_FAILED: variant of GJS requiring fu |
-| 8 | python-urllib3-future-git | 18341 | 0 | 1 | 17 | NEEDS_RECIPE_DESIGN_EXHAUSTED: MISSING_PYTHON_DEPS |
-| 9 | base-selinux | 18537 | 0 | 1 | 18 | TOOLING_FAILURE: Arch SELinux meta-package; SELinu |
-| 10 | nautilus-typeahead | 676 | 0 | 1 | 38 | NEEDS_RECIPE_DESIGN |
-| 11 | virtualbox-svn | 18799 | 0 | 1 | 53 | DEP_RESOLUTION_FAILED: VirtualBox SVN needs massiv |
-| 12 | teb-obs | 18491 | 0 | 1 | 67 | DEP_RESOLUTION_FAILED: OBS fork requiring OBS sour |
-| 13 | audiobookshelf | 3880 | 0 | 0 | 0 | MISSING_SOURCE: not in AUR metadata |
-| 14 | bulky | 5151 | 0 | 0 | 0 | MISSING_SOURCE: not in AUR metadata |
-| 15 | dbeaver | 15 | 0 | 0 | 0 | MISSING_SOURCE: not in AUR metadata |
-| 16 | deadbeef-mpris2-plugin | 19282 | 0 | 0 | 0 | SOURCE_UNAVAILABLE: not found in AUR metadata cach |
-| 17 | diffnav-bin | 5141 | 0 | 0 | 0 | NEEDS_RECIPE_DESIGN |
-| 18 | fluxdown-bin | 3420 | 0 | 0 | 0 | MISSING_SOURCE |
-| 19 | gram-editor-bin | 5457 | 0 | 0 | 0 | MISSING_SOURCE |
-| 20 | hypnotix | 398 | 0 | 0 | 0 | MISSING_SOURCE |
-| 21 | linux6.18.22-1-lts-bin | 37932 | 0 | 0 | 0 | SOURCE_UNAVAILABLE: not found in AUR metadata cach |
-| 22 | matlab-jre-bundled | 19363 | 0 | 0 | 0 | SOURCE_UNAVAILABLE: not found in AUR metadata cach |
-| 23 | pardf | 13448 | 0 | 0 | 0 | NEEDS_RECIPE_DESIGN_EXHAUSTED — UNCLEAR_UPSTREAM:  |
-| 24 | sipgate-app-clinq | 18449 | 0 | 0 | 0 | NEEDS_RECIPE_DESIGN: proprietary VoIP Electron app |
-| 25 | squareline-studio | 17812 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 26 | apple-fonts | 141 | 0 | 0 | 1 | NON_DISTRIBUTABLE |
-| 27 | aquacomputer_d5next-hwmon-dkms | 18606 | 0 | 0 | 1 | TOOLING_FAILURE: DKMS hwmon kernel module; Guix ke |
-| 28 | bakkesmod-steam | 17468 | 0 | 0 | 1 | PLATFORM_UNSUPPORTED |
-| 29 | luniistore | 18478 | 0 | 0 | 1 | SOURCE_UNAVAILABLE: proprietary device manager; no |
-| 30 | mkinitcpio-systemd-root-password | 18371 | 0 | 0 | 1 | ARCH_SPECIFIC: mkinitcpio hook; not applicable to  |
-| 31 | netpad-vnext-bin | 5637 | 0 | 0 | 1 | NEEDS_RECIPE_DESIGN_EXHAUSTED: DOTNET_UNSUPPORTED: |
-| 32 | r8125-dkms | 363 | 0 | 0 | 1 | KERNEL_MODULE |
-| 33 | repacman | 18707 | 0 | 0 | 1 | TOOLING_FAILURE: Arch/pacman-specific tool; not ap |
-| 34 | simplicity-commander | 18419 | 0 | 0 | 1 | SOURCE_UNAVAILABLE: proprietary Silicon Labs tool; |
-| 35 | skillshare | 2920 | 0 | 0 | 1 | PROPRIETARY_SERVICE |
-| 36 | amneziawg-dkms-git | 18642 | 0 | 0 | 2 | TOOLING_FAILURE: AmneziaWG DKMS kernel module; DKM |
-| 37 | amneziawg-linux | 18452 | 0 | 0 | 2 | TOOLING_FAILURE: DKMS kernel module; Guix kernel m |
-| 38 | amneziawg-linux-hardened | 18382 | 0 | 0 | 2 | TOOLING_FAILURE: DKMS kernel module; Guix kernel m |
-| 39 | android-platform-19 | 28671 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
-| 40 | android-platform-21 | 23109 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
-| 41 | archwiki-offline | 18568 | 0 | 0 | 2 | TOOLING_FAILURE: Arch-specific wiki viewer relying |
-| 42 | bcachefs-kernel-dkms-git | 1506 | 0 | 0 | 2 | KERNEL_MODULE |
-| 43 | brother-mfc-l2400dw | 17797 | 0 | 0 | 2 | PROPRIETARY_BINARY |
-| 44 | etcd | 5160 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 45 | faustus-dkms-git | 18859 | 0 | 0 | 2 | DEP_RESOLUTION_FAILED: see recipe-resolver-260425f |
-| 46 | findbrokenpkgs | 18930 | 0 | 0 | 2 | TOOLING_FAILURE: see recipe-resolver-260425f-block |
-| 47 | flclashx-bin | 4730 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 48 | gowatch | 5172 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 49 | harbor-wave | 14201 | 0 | 0 | 2 | FETCH_FAILED |
-| 50 | ideapad-laptop-tb-dkms | 18957 | 0 | 0 | 2 | DEP_RESOLUTION_FAILED: see recipe-resolver-260425f |
-| 51 | ideapad-laptop-tb2024g6plus-dkms | 18895 | 0 | 0 | 2 | DEP_RESOLUTION_FAILED: see recipe-resolver-260425f |
-| 52 | jdk17-graalvm-ee-bin | 5178 | 0 | 0 | 2 | PROPRIETARY_CLOSED_SOURCE |
-| 53 | knossu | 18461 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN: Doom-like game; custom C++ en |
-| 54 | lib32-opencl-nvidia-390xx | 17502 | 0 | 0 | 2 | MULTILIB_UNSUPPORTED |
-| 55 | lib32-openssl-1.1 | 11910 | 0 | 0 | 2 | LIB32_UNSUPPORTED |
-| 56 | libch343ser-git | 17880 | 0 | 0 | 2 | BUILD_FAILED: Linux kernel module for USB serial c |
-| 57 | libfprint-2-tod1-broadcom-cv3plus | 17912 | 0 | 0 | 2 | LICENSE_REVIEW_NEEDED: proprietary Broadcom finger |
-| 58 | limine-booster | 14240 | 0 | 0 | 2 | FETCH_FAILED |
-| 59 | mdbook-epub | 13376 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN_EXHAUSTED — CARGO_DEPS_NEEDED: |
-| 60 | mingw-w64-cblas | 34115 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
-| 61 | mingw-w64-lapack | 34113 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
-| 62 | mingw-w64-soundtouch | 18330 | 0 | 0 | 2 | TOOLING_FAILURE: MinGW cross-compilation not suppo |
-| 63 | mingw-w64-zlib-ng | 3363 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260 |
-| 64 | mkinitcpio-archlogo | 13249 | 0 | 0 | 2 | ARCH_SPECIFIC |
-| 65 | mkinitcpio-systemd-extras | 723 | 0 | 0 | 2 | INITRAMFS_TOOL — Arch-specific initramfs hook |
-| 66 | mod_maxminddb | 12757 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN: Apache HTTPD module for MaxMi |
-| 67 | nbfc | 5254 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 68 | ndi-sdk | 9867 | 0 | 0 | 2 | PROPRIETARY_SDK |
-| 69 | ntfsplus-dkms-git | 12912 | 0 | 0 | 2 | KERNEL_MODULE |
-| 70 | pfring-dkms | 18399 | 0 | 0 | 2 | TOOLING_FAILURE: DKMS kernel module; Guix kernel m |
-| 71 | podserv-b-git | 3037 | 0 | 0 | 2 | VERY_LOW_MATURITY — Rust podcast server (github.co |
-| 72 | portage | 7628 | 0 | 0 | 2 | FOREIGN_PACKAGE_MANAGER — Gentoo's Portage; not ap |
-| 73 | python-home-assistant-frontend | 18556 | 0 | 0 | 2 | DEP_RESOLUTION_FAILED: HA web frontend; massive No |
-| 74 | quantumlauncher-bin | 4790 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 75 | r8126-dkms | 18487 | 0 | 0 | 2 | TOOLING_FAILURE: DKMS kernel module; Guix kernel m |
-| 76 | r8152-dkms | 8888 | 0 | 0 | 2 | KERNEL_MODULE |
-| 77 | ryzen_smu-dkms-git | 244 | 0 | 0 | 2 | KERNEL_MODULE |
-| 78 | sbctl-initcpio-post-hook | 18720 | 0 | 0 | 2 | TOOLING_FAILURE: Arch mkinitcpio-specific hook; Gu |
-| 79 | spinwheel-pipewire | 3089 | 0 | 0 | 2 | NO_UPSTREAM_SOURCE — Terminal wheel spinner (codeb |
-| 80 | system-age | 18453 | 0 | 0 | 2 | TOOLING_FAILURE: Arch-specific tool reading pacman |
-| 81 | system76-acpi-dkms | 2787 | 0 | 0 | 2 | DKMS_UNSUPPORTED — DKMS kernel module; Guix manage |
-| 82 | system76-io-dkms | 2786 | 0 | 0 | 2 | DKMS_UNSUPPORTED — DKMS kernel module; Guix manage |
-| 83 | ttf-consolas-ligaturized | 20499 | 0 | 0 | 2 | NON_DISTRIBUTABLE |
-| 84 | vscodium-marketplace | 18695 | 0 | 0 | 2 | TOOLING_FAILURE: VSCodium marketplace patch; requi |
-| 85 | webos-dev-manager-bin | 5245 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 86 | wyc | 18777 | 0 | 0 | 2 | SOURCE_UNAVAILABLE: Chinese commercial tool; no st |
-| 87 | xpad-dkms-git | 7487 | 0 | 0 | 2 | KERNEL_MODULE |
-| 88 | yaac | 5212 | 0 | 0 | 2 | NEEDS_RECIPE_DESIGN |
-| 89 | zenpower3-dkms | 667 | 0 | 0 | 2 | KERNEL_MODULE |
-| 90 | zenpower3-dkms-git | 13242 | 0 | 0 | 2 | KERNEL_MODULE |
-| 91 | zenpower5-dkms-git | 12908 | 0 | 0 | 2 | KERNEL_MODULE |
-| 92 | aic8800-dkms | 10156 | 0 | 0 | 3 | KERNEL_MODULE |
-| 93 | ajantv2-dkms | 10154 | 0 | 0 | 3 | KERNEL_MODULE |
-| 94 | ampcode | 5258 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN |
-| 95 | architect-git | 14243 | 0 | 0 | 3 | FETCH_FAILED |
-| 96 | artificial-rage-git | 14215 | 0 | 0 | 3 | FETCH_FAILED |
-| 97 | autofirma | 5627 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN_EXHAUSTED: JAVA_COMPLEX: Clien |
-| 98 | buf-git | 5241 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN |
-| 99 | dela | 5071 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN |
-| 100 | disk_usage | 14224 | 0 | 0 | 3 | FETCH_FAILED |
-| 101 | dpibreak | 3075 | 0 | 0 | 3 | NEEDS_CARGO_VENDORING — Rust DPI circumvention too |
-| 102 | droidcam-dkms-git | 9915 | 0 | 0 | 3 | KERNEL_MODULE |
-| 103 | fish-session | 3084 | 0 | 0 | 3 | NO_LICENSE — Fish shell session manager (github.co |
-| 104 | framework-control-bin | 3072 | 0 | 0 | 3 | BUILD_SYSTEM_TOO_COMPLEX — Framework Laptop contro |
-| 105 | jellyfin-rpc-bin | 4799 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN |
-| 106 | kernelsu-dkms | 12374 | 0 | 0 | 3 | KERNEL_MODULE |
-| 107 | lib32-libvpx1.3 | 11975 | 0 | 0 | 3 | LIB32_UNSUPPORTED |
-| 108 | lightdm-webkit-theme-aether | 19028 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
-| 109 | linux-apfs-rw-dkms-git | 6973 | 0 | 0 | 3 | KERNEL_MODULE |
-| 110 | linux-keep-modules | 18490 | 0 | 0 | 3 | TOOLING_FAILURE: Arch-specific pacman hook; Guix u |
-| 111 | livekit | 14229 | 0 | 0 | 3 | FETCH_FAILED |
-| 112 | llvm-cbe-git | 3258 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260 |
-| 113 | local-llama-bin | 14238 | 0 | 0 | 3 | FETCH_FAILED |
-| 114 | luajit-sdl2-git | 14213 | 0 | 0 | 3 | FETCH_FAILED |
-| 115 | luajit-sdl3-git | 14210 | 0 | 0 | 3 | FETCH_FAILED |
-| 116 | mermaid-ascii-git | 14244 | 0 | 0 | 3 | FETCH_FAILED |
-| 117 | mkinitcpio-btrfs | 10987 | 0 | 0 | 3 | ARCH_SPECIFIC |
-| 118 | mkinitcpio-colors-git | 10383 | 0 | 0 | 3 | ARCH_SPECIFIC |
-| 119 | mkinitcpio-wifi | 13130 | 0 | 0 | 3 | ARCH_SPECIFIC |
-| 120 | mkinitcpio-zerotier | 794 | 0 | 0 | 3 | ARCH_SPECIFIC |
-| 121 | msi-psu-dkms | 10262 | 0 | 0 | 3 | KERNEL_MODULE |
-| 122 | nfuspire-git | 18401 | 0 | 0 | 3 | DEP_RESOLUTION_FAILED: requires libticalcs/libtica |
-| 123 | nifskope-git | 13610 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 124 | nvidia-390xx-dkms | 12631 | 0 | 0 | 3 | KERNEL_MODULE |
-| 125 | nvidia-470xx-dkms | 11846 | 0 | 0 | 3 | KERNEL_MODULE |
-| 126 | nvidia-580xx-dkms | 2027 | 0 | 0 | 3 | DKMS_UNSUPPORTED |
-| 127 | nvidia-beta-dkms | 21643 | 0 | 0 | 3 | KERNEL_MODULE |
-| 128 | nvidia-bl-dkms | 17755 | 0 | 0 | 3 | DKMS_KERNEL_MODULE |
-| 129 | op-cache-git | 3047 | 0 | 0 | 3 | cargo-build-system requires vendored crate deps; c |
-| 130 | pacpak-git | 17862 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN: Arch Linux-specific flatpak w |
-| 131 | pam_exec-ssh-git | 14241 | 0 | 0 | 3 | FETCH_FAILED |
-| 132 | phonon-qt4-vlc | 18938 | 0 | 0 | 3 | DEP_RESOLUTION_FAILED: see recipe-resolver-260425f |
-| 133 | protonmail-bridge-free-nokeychain-git | 14189 | 0 | 0 | 3 | FETCH_FAILED |
-| 134 | quartz-utils-git | 18430 | 0 | 0 | 3 | DEP_RESOLUTION_FAILED: Rust CLI utils; crate deps  |
-| 135 | r8127-dkms | 12803 | 0 | 0 | 3 | KERNEL_MODULE |
-| 136 | rdt-client | 18561 | 0 | 0 | 3 | DEP_RESOLUTION_FAILED: Real-Debrid client; .NET/C# |
-| 137 | rtw88-dkms-git | 383 | 0 | 0 | 3 | KERNEL_MODULE |
-| 138 | rtw89-dkms-git | 4122 | 0 | 0 | 3 | KERNEL_MODULE |
-| 139 | samsung-unified-driver-printer | 650 | 0 | 0 | 3 | PROPRIETARY_LICENSE — Samsung printer driver; cust |
-| 140 | texmacs-pure | 17873 | 0 | 0 | 3 | DEP_RESOLUTION_FAILED: GNU TeXmacs plugin for Pure |
-| 141 | ttf-ms-win11-fod-auto-paneuropean | 8934 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 142 | ttf-ms-win11-fod-auto-sinh | 8933 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 143 | ttf-ms-win11-fod-auto-syrc | 8932 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 144 | ttf-ms-win11-fod-auto-taml | 8931 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 145 | ttf-ms-win11-fod-auto-telu | 8930 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 146 | ttf-ms-win11-fod-auto-thai | 8929 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 147 | ttf-vista-fonts | 500 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 148 | unifi | 7266 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 149 | v4l2loopback-dkms-git | 10005 | 0 | 0 | 3 | KERNEL_MODULE |
-| 150 | vintagestory-server | 4360 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 151 | vrk-mpollux-digisign-client | 7652 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 152 | vrms-arch | 3994 | 0 | 0 | 3 | PROPRIETARY_LICENSE |
-| 153 | winscp | 4680 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN_EXHAUSTED — WINE_WRAPPER: WinS |
-| 154 | wreckfest2-wine-steam | 9038 | 0 | 0 | 3 | PLATFORM_SPECIFIC |
-| 155 | xone-dkms | 189 | 0 | 0 | 3 | KERNEL_MODULE |
-| 156 | xone-dkms-git | 56 | 0 | 0 | 3 | KERNEL_MODULE |
-| 157 | yaycache | 6633 | 0 | 0 | 3 | ARCH_SPECIFIC: yay cache cleaner, depends on pacma |
-| 158 | zfs-dkms-staging-compat-git | 10354 | 0 | 0 | 3 | KERNEL_MODULE |
-| 159 | zur | 5226 | 0 | 0 | 3 | NEEDS_RECIPE_DESIGN |
-| 160 | ankama-launcher | 4251 | 0 | 0 | 4 | PROPRIETARY_LICENSE |
-| 161 | antiafk-rbx-sober | 12841 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED: FLATPAK_DEPENDENCY: |
-| 162 | apifox-appimage | 4455 | 0 | 0 | 4 | PROPRIETARY_LICENSE |
-| 163 | arch-upgrader-git | 1431 | 0 | 0 | 4 | ARCH_SPECIFIC |
-| 164 | archforge-git | 3696 | 0 | 0 | 4 | ARCH_SPECIFIC |
-| 165 | archium | 7301 | 0 | 0 | 4 | ARCH_SPECIFIC |
-| 166 | aurvote-utils-git | 498 | 0 | 0 | 4 | ARCH_SPECIFIC |
-| 167 | banyanapp | 8380 | 0 | 0 | 4 | PROPRIETARY_LICENSE |
-| 168 | bdash-bin | 14239 | 0 | 0 | 4 | FETCH_FAILED |
-| 169 | brother-lpr-drivers-laser | 10659 | 0 | 0 | 4 | PROPRIETARY_LICENSE |
-| 170 | chatd-bin | 14232 | 0 | 0 | 4 | FETCH_FAILED |
-| 171 | chromium-extension-arch-search | 17897 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN: browser extension (not a syst |
-| 172 | clash-for-windows-chinese | 17433 | 0 | 0 | 4 | ABANDONED_UPSTREAM |
-| 173 | connect-tunnel | 7497 | 0 | 0 | 4 | PROPRIETARY_LICENSE |
-| 174 | detect-it-easy-bin | 5150 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN |
-| 175 | domake-docker-make | 5291 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN |
-| 176 | dpibreak-git | 3077 | 0 | 0 | 4 | NEEDS_CARGO_VENDORING — Same upstream as dpibreak  |
-| 177 | euroscope-bin | 17945 | 0 | 0 | 4 | PLATFORM_UNSUPPORTED |
-| 178 | frame | 13383 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED — ABANDONED_UPSTREAM |
-| 179 | gbm | 19044 | 0 | 0 | 4 | DEP_RESOLUTION_FAILED: .NET/Mono dependency chain; |
-| 180 | gtk2-perl | 5069 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN |
-| 181 | heli-x | 8742 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED: JAVA_COMPLEX: Profe |
-| 182 | insomnia | 10469 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED: HTTP client; Electr |
-| 183 | iscan | 640 | 0 | 0 | 4 | PROPRIETARY_LICENSE — EPSON Image Scan; proprietar |
-| 184 | jivexdv-bin | 4568 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED — WINDOWS_ONLY: down |
-| 185 | kchmviewer | 5074 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN |
-| 186 | lceda-pro-bin | 15922 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED: PROPRIETARY: propri |
-| 187 | lib32-xvidcore | 10752 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED — LIB32_UNSUPPORTED: |
-| 188 | logibar | 3094 | 0 | 0 | 4 | SYSTEMD_SPECIFIC — Waybar Logitech battery widgets |
-| 189 | muzak | 13456 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED — NO_LICENSE: no LIC |
-| 190 | nerd-fonts-apple | 1534 | 0 | 0 | 4 | PROPRIETARY_FONT_LICENSE: Apple fonts patched with |
-| 191 | nextcloud-app-impersonate | 9971 | 0 | 0 | 4 | ARCH_SPECIFIC: Nextcloud PHP app; server config, n |
-| 192 | nodejs-nativefier | 7325 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED (recipe-resolver-260 |
-| 193 | nvidia-535xx-dkms | 13106 | 0 | 0 | 4 | DEP_RESOLUTION_FAILED: DKMS kernel module |
-| 194 | nvidia-open-beta | 11971 | 0 | 0 | 4 | KERNEL_MODULE |
-| 195 | nvidia-open-beta-dkms | 11972 | 0 | 0 | 4 | DKMS_UNSUPPORTED |
-| 196 | nvidia-sync | 13585 | 0 | 0 | 4 | PROPRIETARY_LICENSE |
-| 197 | pacdiff-pacman-hook-git | 11852 | 0 | 0 | 4 | NEEDS_RECIPE_DESIGN_EXHAUSTED — ARCH_SPECIFIC: pac |
-| 198 | package-query | 10483 | 0 | 0 | 4 | ARCH_SPECIFIC: depends on pacman/libalpm |
-| 199 | paru | 11312 | 0 | 0 | 4 | ARCH_SPECIFIC: Pacman/AUR helper, depends on pacma |
-| 200 | paru-git | 21765 | 0 | 0 | 4 | ARCH_SPECIFIC: Pacman/AUR helper, depends on pacma |
+**Legend:** BD = blocked_dep_count, RD = reverse_dep_count, TD = total_dep_count
