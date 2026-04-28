@@ -1,3 +1,4 @@
+            ;; recipe-resolver-260428e: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260428d: 100 BLOCKED evaluated (7 recipes: glfw-wayland-minecraft-cursorfix, electron37-bin, dotnet-runtime-10.0-bin, dotnet-runtime-bin, dotnet-targeting-pack-bin, lib32-libdav1d, cursor-ide-bin; 29 ALREADY_RESOLVED; 64 remain BLOCKED)
             ;; recipe-resolver-260428d: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260428c: 100 BLOCKED evaluated (1 recipe: vdhcoapp; 99 remain BLOCKED)
