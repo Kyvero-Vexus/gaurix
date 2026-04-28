@@ -1,212 +1,361 @@
-# Blocked Dependency Tree
+# Blocked Dependency Tree — deptree-resolver-260428e
 
-- **Pass ID:** deptree-resolver-260428d
-- **Timestamp:** 2026-04-28T09:37:23.584305+00:00
-- **Total BLOCKED:** 3978
-- **In AUR cache:** 3901
-- **Zero blocked deps:** 2287
+- **Pass ID**: deptree-resolver-260428e
+- **Timestamp**: 2026-04-28T11:10:58.984416+00:00
+- **Total BLOCKED packages**: 177
+- **In AUR cache**: 171
+- **Zero blocked deps**: 175
 
-## Priority Queue (top 200)
+## Top 20 Priority Queue
 
-| Rank | Package | # | Blocked Deps | Reverse Deps | Total Deps | Fail Reason |
-|------|---------|---|-------------|-------------|-----------|-------------|
-| 1 | texlive-installer | 8013 | 0 | 10 | 2 | DISTRO_SPECIFIC |
-| 2 | glfw-wayland-minecraft-cursorfix | 740 | 0 | 10 | 14 |  |
-| 3 | electron37-bin | 11863 | 0 | 8 | 3 |  |
-| 4 | dotnet-sdk-8.0-bin | 15164 | 0 | 7 | 5 | COMPLEX_DEPS |
-| 5 | dotnet-runtime-bin | 13034 | 0 | 6 | 7 |  |
-| 6 | electron23-bin | 17970 | 0 | 4 | 3 |  |
-| 7 | aspnet-runtime-8.0-bin | 15167 | 0 | 2 | 1 | COMPLEX_DEPS |
-| 8 | mingw-w64-mpg123 | 13935 | 0 | 2 | 2 | MINGW_CROSS_COMPILATION |
-| 9 | qtforkawesome | 10943 | 0 | 2 | 6 |  |
-| 10 | lib32-libdav1d | 12270 | 0 | 2 | 9 | MULTILIB_UNSUPPORTED |
-| 11 | docker-desktop | 22871 | 0 | 2 | 11 | PROPRIETARY_BINARY |
-| 12 | rar | 12619 | 0 | 1 | 1 | PROPRIETARY_BINARY |
-| 13 | ut2004-data-steam | 3517 | 0 | 1 | 1 | PROPRIETARY_BINARY |
-| 14 | rockchip-mpp | 7518 | 0 | 1 | 3 |  |
-| 15 | samsung-unified-driver-printer | 11785 | 0 | 1 | 3 | PROPRIETARY_BINARY |
-| 16 | samsung-unified-driver-scanner | 11786 | 0 | 1 | 4 | PROPRIETARY_BINARY |
-| 17 | lib32-libvmaf | 12165 | 0 | 1 | 5 | MULTILIB_UNSUPPORTED |
-| 18 | python-jaxlib-bin | 18474 | 0 | 1 | 5 | SOURCE_UNAVAILABLE |
-| 19 | python2-dbus | 37854 | 0 | 1 | 5 | LEGACY_PYTHON2 |
-| 20 | firefox-nightly-bin | 10127 | 0 | 1 | 6 |  |
-| 21 | glew1.10 | 11978 | 0 | 1 | 6 |  |
-| 22 | kemoticons | 5333 | 0 | 1 | 6 | COMPLEX_DEPS |
-| 23 | lib32-nvidia-utils-beta | 12208 | 0 | 1 | 8 | MULTILIB_UNSUPPORTED |
-| 24 | python-pylink-square | 21233 | 0 | 1 | 9 | PROPRIETARY_BINARY |
-| 25 | qpdf-zopfli | 5464 | 0 | 1 | 9 |  |
-| 26 | python-opentelemetry-exporter-otlp-proto-http | 12068 | 0 | 1 | 11 |  |
-| 27 | python-opentelemetry-exporter-otlp-proto-grpc | 12067 | 0 | 1 | 12 |  |
-| 28 | amneziawg-dkms-git:deptree-resolver-260425c | 18642 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 29 | anbox-git | 58 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 30 | anyrun-git:deptree-resolver-260424t: | 17933 | 0 | 0 | 0 | COMPLEX_DEPS |
-| 31 | aquacomputer_d5next-hwmon-dkms:deptree-resolver-260425c | 18606 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 32 | archwiki-offline:deptree-resolver-260425c | 18568 | 0 | 0 | 0 | DISTRO_SPECIFIC |
-| 33 | audiobookshelf | 3880 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 34 | base-selinux:deptree-resolver-260425c | 18537 | 0 | 0 | 0 | SELINUX_SPECIFIC |
-| 35 | boost-python2:deptree-resolver-260424o | 37225 | 0 | 0 | 0 | LEGACY_PYTHON2 |
-| 36 | bulky | 5151 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 37 | chkufsd-bin | 13031 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 38 | chromium-extension-arch-search:deptree-resolver-260424t | 17897 | 0 | 0 | 0 | DISTRO_SPECIFIC |
-| 39 | chromium-gost | 11985 | 0 | 0 | 0 | COMPLEX_DEPS |
-| 40 | codex-desktop-bin | 1490 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 41 | coreutils-arch:deptree-resolver-260426i:deptree-resolver-260426j: | 18690 | 0 | 0 | 0 |  |
-| 42 | cursor-ide | 5426 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 43 | cursor-ide-bin | 2537 | 0 | 0 | 0 |  |
-| 44 | dae-kix-git | 924 | 0 | 0 | 0 |  |
-| 45 | dbeaver | 15 | 0 | 0 | 0 | COMPLEX_DEPS |
-| 46 | deadbeef-mpris2-plugin | 19282 | 0 | 0 | 0 | ABANDONED_UPSTREAM |
-| 47 | dms-shell | 11429 | 0 | 0 | 0 |  |
-| 48 | dotnet-targeting-pack-bin | 13036 | 0 | 0 | 0 |  |
-| 49 | dracut-nosystemd-git | 6677 | 0 | 0 | 0 |  |
-| 50 | e2-studio-bin | 13914 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 51 | edk2-ovmf-fedora | 8117 | 0 | 0 | 0 | DISTRO_SPECIFIC |
-| 52 | elp | 19246 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 53 | epsonscan2-non-free-plugin | 406 | 0 | 0 | 0 |  |
-| 54 | fahviewer | 10672 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 55 | fcitx5-meta | 7897 | 0 | 0 | 0 |  |
-| 56 | feishu | 7940 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 57 | firedragon-alpha-bin | 7567 | 0 | 0 | 0 |  |
-| 58 | fluxdown-bin | 3420 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 59 | foundryvtt | 7717 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 60 | gama-platform-jdk | 8558 | 0 | 0 | 0 | COMPLEX_DEPS |
-| 61 | glazepkg-bin | 2564 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 62 | gradience:deptree-resolver-260425c: | 18644 | 0 | 0 | 0 |  |
-| 63 | grafana-bin | 10333 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 64 | gram | 13482 | 0 | 0 | 0 |  |
-| 65 | gram-editor-bin | 5457 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 66 | gram-editor-git | 2986 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 67 | hbuilderx-alpha-bin | 7235 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 68 | hdfview-bin | 5142 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 69 | heptabase-bin | 8961 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 70 | httptoolkit-bin | 4732 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 71 | hubstaff | 12370 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 72 | hylauncher-bin | 1263 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 73 | hypnotix | 398 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 74 | jai | 15430 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 75 | joplin-bin | 13053 | 0 | 0 | 0 |  |
-| 76 | justevery-code-bin | 6443 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 77 | komodo-periphery-git | 2810 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 78 | konform-multi-account-containers-lite | 319 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 79 | krux-installer-bin | 6696 | 0 | 0 | 0 |  |
-| 80 | lib32-sdl_sound:deptree-resolver-260424o | 22729 | 0 | 0 | 0 | MULTILIB_UNSUPPORTED |
-| 81 | linux-gpib:deptree-resolver-260424o: | 20547 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 82 | linux6.19.8.arch1-1-bin | 7510 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 83 | linux6.19.8.arch1-1-docs-bin | 7512 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 84 | linux6.19.8.arch1-1-headers-bin | 7511 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 85 | linux6.19.9.arch1-1-docs-bin | 9672 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 86 | linux6.19.9.arch1-1-headers-bin | 9671 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 87 | linux6.19.9.zen1-1-zen-bin | 9956 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 88 | linux6.19.9.zen1-1-zen-headers-bin | 9957 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 89 | llama.cpp-aio | 2097 | 0 | 0 | 0 | COMPLEX_DEPS |
-| 90 | luniistore:recipe-resolver-260425b:recipe-generated: | 18478 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 91 | mangowc-git | 687 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 92 | max-appimage | 9103 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 93 | mercury-browser-sse4-bin | 6661 | 0 | 0 | 0 |  |
-| 94 | miniconda3 | 21798 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 95 | navicat17-premium-en | 7996 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 96 | neovim-lspconfig-opt-git | 18703 | 0 | 0 | 0 |  |
-| 97 | nextcloud-talk-desktop-bin | 6383 | 0 | 0 | 0 |  |
-| 98 | ninjarmm-ncplayer | 7498 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 99 | nvidia-open-tinygrad-dkms-git:deptree-resolver-260425c:deptree-resolver-260425g::deptree-resolver-260425h | 18617 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 100 | nvidia-vulkan-dkms | 548 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 101 | openai-codex-autoup-bin | 1578 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 102 | opensc-p11-kit-module | 7333 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 103 | opera-gx-stable-ffmpeg-codecs-bin | 1387 | 0 | 0 | 0 |  |
-| 104 | pacpak-git:deptree-resolver-260424t | 17862 | 0 | 0 | 0 | DISTRO_SPECIFIC |
-| 105 | pfring-dkms:recipe-resolver-260425b:recipe-generated | 18399 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 106 | pgyvisitor | 6522 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 107 | pinapp | 13442 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 108 | plecs-standalone | 13078 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 109 | pragmatapro-fonts | 7941 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 110 | projtlauncher | 6759 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 111 | publii | 7863 | 0 | 0 | 0 |  |
-| 112 | r8126-dkms:recipe-resolver-260425b:recipe-generated | 18487 | 0 | 0 | 0 | DKMS_KERNEL_MODULE |
-| 113 | raidrivecli | 14202 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 114 | rider-eap | 22184 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 115 | shiftfs-lts-dkms | 7943 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 116 | shimmy-bin | 7482 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 117 | shorinclip-git | 1149 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 118 | sipgate-app-clinq | 18449 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 119 | snazy-bin | 2423 | 0 | 0 | 0 |  |
-| 120 | snekstudio-bin | 2698 | 0 | 0 | 0 |  |
-| 121 | sniplias-bin | 2640 | 0 | 0 | 0 |  |
-| 122 | sononym | 3422 | 0 | 0 | 0 |  |
-| 123 | soundfont-fatboy | 7745 | 0 | 0 | 0 |  |
-| 124 | soundfont-sgm | 6395 | 0 | 0 | 0 |  |
-| 125 | sqd-bin | 6685 | 0 | 0 | 0 |  |
-| 126 | sqlbless-bin | 2825 | 0 | 0 | 0 |  |
-| 127 | squareline-studio | 17812 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 128 | srwm-bin | 2645 | 0 | 0 | 0 |  |
-| 129 | stalwart-mail-server | 14167 | 0 | 0 | 0 |  |
-| 130 | stardict-dictd_www.dict.org_gcide | 9287 | 0 | 0 | 0 |  |
-| 131 | steamguard-cli-bin | 8605 | 0 | 0 | 0 |  |
-| 132 | steamos-add-to-steam | 14975 | 0 | 0 | 0 |  |
-| 133 | steamvr-linux-fixes-layer-bin | 1467 | 0 | 0 | 0 |  |
-| 134 | stripe-cli-bin | 1254 | 0 | 0 | 0 |  |
-| 135 | subtitleedit-avalonia | 11884 | 0 | 0 | 0 |  |
-| 136 | sudo-selinux:recipe-resolver-260425b:recipe-generated | 18513 | 0 | 0 | 0 | SELINUX_SPECIFIC |
-| 137 | sudoku-simple | 3926 | 0 | 0 | 0 |  |
-| 138 | sway-easyshot-bin | 2652 | 0 | 0 | 0 |  |
-| 139 | talosctl-bin | 9207 | 0 | 0 | 0 |  |
-| 140 | tartrazine-bin | 7563 | 0 | 0 | 0 |  |
-| 141 | taws-bin | 1238 | 0 | 0 | 0 |  |
-| 142 | teleport-client-bin | 7896 | 0 | 0 | 0 |  |
-| 143 | tennis-bin | 2847 | 0 | 0 | 0 |  |
-| 144 | term39-bin | 6350 | 0 | 0 | 0 |  |
-| 145 | termirs-bin | 6701 | 0 | 0 | 0 |  |
-| 146 | terraform-bin | 8011 | 0 | 0 | 0 |  |
-| 147 | terrascan-bin | 6411 | 0 | 0 | 0 |  |
-| 148 | teseq | 6978 | 0 | 0 | 0 |  |
-| 149 | tetrigo-bin | 7548 | 0 | 0 | 0 |  |
-| 150 | tget-bin | 10334 | 0 | 0 | 0 |  |
-| 151 | tiki-bin | 2985 | 0 | 0 | 0 |  |
-| 152 | timeprefix | 6236 | 0 | 0 | 0 |  |
-| 153 | tmq-bin | 1368 | 0 | 0 | 0 |  |
-| 154 | tocry-bin | 8906 | 0 | 0 | 0 |  |
-| 155 | togo-bin | 3944 | 0 | 0 | 0 |  |
-| 156 | tori-cli-bin | 1184 | 0 | 0 | 0 |  |
-| 157 | try-cli-bin | 6528 | 0 | 0 | 0 |  |
-| 158 | ttf-aptos | 8037 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 159 | ttf-babelstone-runic | 8944 | 0 | 0 | 0 |  |
-| 160 | ttf-bitter | 10746 | 0 | 0 | 0 |  |
-| 161 | ttf-font-awesome-5 | 3234 | 0 | 0 | 0 |  |
-| 162 | ttf-garamontio | 4039 | 0 | 0 | 0 |  |
-| 163 | ttf-garamontio-capo | 4037 | 0 | 0 | 0 |  |
-| 164 | ttf-garamontio-variable | 4040 | 0 | 0 | 0 |  |
-| 165 | ttf-genjyuu-gothic | 9221 | 0 | 0 | 0 |  |
-| 166 | ttf-gentium-basic | 7959 | 0 | 0 | 0 |  |
-| 167 | ttf-hellvetica | 7032 | 0 | 0 | 0 |  |
-| 168 | ttf-iosevka-fixed | 10080 | 0 | 0 | 0 |  |
-| 169 | ttf-iosevka-fixed-ss06 | 10081 | 0 | 0 | 0 |  |
-| 170 | ttf-oxanium | 811 | 0 | 0 | 0 |  |
-| 171 | ttf-qurancomplex-fonts | 10724 | 0 | 0 | 0 |  |
-| 172 | ttf-roboto-flex | 750 | 0 | 0 | 0 |  |
-| 173 | ttf-segoe-ui-variable | 7716 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 174 | ttf-sipa-sarabun | 2660 | 0 | 0 | 0 |  |
-| 175 | ttf-sipa-sarabun-new | 2661 | 0 | 0 | 0 |  |
-| 176 | tuco-bin | 2808 | 0 | 0 | 0 |  |
-| 177 | tuwunel-bin | 2723 | 0 | 0 | 0 |  |
-| 178 | tux | 2664 | 0 | 0 | 0 |  |
-| 179 | typora-free-cn | 14505 | 0 | 0 | 0 |  |
-| 180 | ubuntu-mate-icon-themes | 16097 | 0 | 0 | 0 | COMPLEX_DEPS |
-| 181 | ulaa-browser | 6347 | 0 | 0 | 0 |  |
-| 182 | upnote-appimage | 3306 | 0 | 0 | 0 |  |
-| 183 | upsnap-bin | 10087 | 0 | 0 | 0 |  |
-| 184 | v2rayn-bin | 1207 | 0 | 0 | 0 |  |
-| 185 | vdhcoapp-bin | 1435 | 0 | 0 | 0 |  |
-| 186 | vdhcoapp-git | 8130 | 0 | 0 | 0 |  |
-| 187 | vencord-installer-bin | 6551 | 0 | 0 | 0 |  |
-| 188 | venice-cli-bin | 7869 | 0 | 0 | 0 |  |
-| 189 | virtualhere-client | 2520 | 0 | 0 | 0 |  |
-| 190 | virtualhere-server-bin | 33443 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 191 | vivaldi-ffmpeg-codecs | 24 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
-| 192 | voiden-appimage | 2671 | 0 | 0 | 0 |  |
-| 193 | vopono-bin | 8603 | 0 | 0 | 0 |  |
-| 194 | vscodium-marketplace:deptree-resolver-260425c: | 18695 | 0 | 0 | 0 |  |
-| 195 | vtchs | 6235 | 0 | 0 | 0 |  |
-| 196 | wakadash-bin | 2991 | 0 | 0 | 0 |  |
-| 197 | watchtower-bin | 3002 | 0 | 0 | 0 |  |
-| 198 | waybar-hyprland-git | 61 | 0 | 0 | 0 |  |
-| 199 | waydroid-image | 22621 | 0 | 0 | 0 |  |
-| 200 | weasis-bin | 3316 | 0 | 0 | 0 | COMPLEX_DEPS |
+| # | Package | Blocked Deps | Reverse Deps | Total Deps | Reason |
+|---|---------|-------------|-------------|-----------|--------|
+| 1 | sudo-selinux | 0 | 1 | 8 | SELINUX_SPECIFIC |
+| 2 | base-selinux | 0 | 1 | 18 | SELINUX_SPECIFIC |
+| 3 | virtualbox-svn | 0 | 1 | 53 | COMPLEX_DEPS |
+| 4 | deadbeef-mpris2-plugin | 0 | 0 | 0 | ABANDONED_UPSTREAM |
+| 5 | linux6.18.22-1-lts-bin | 0 | 0 | 0 | KERNEL_HEADERS |
+| 6 | matlab-jre-bundled | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 7 | sipgate-app-clinq | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 8 | squareline-studio | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 9 | upd72020x-fw-ng | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 10 | xairedit | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 11 | aquacomputer_d5next-hwmon-dkms | 0 | 0 | 1 | DKMS_KERNEL_MODULE |
+| 12 | bakkesmod-steam | 0 | 0 | 1 | PLATFORM_UNSUPPORTED |
+| 13 | mkinitcpio-systemd-root-password | 0 | 0 | 1 | ARCH_SPECIFIC |
+| 14 | repacman | 0 | 0 | 1 | DISTRO_SPECIFIC |
+| 15 | simplicity-commander | 0 | 0 | 1 | PROPRIETARY_BINARY |
+| 16 | amneziawg-dkms-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 17 | amneziawg-linux | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 18 | amneziawg-linux-hardened | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 19 | android-platform-19 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
+| 20 | android-platform-21 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
+
+## Selected 100 Packages
+
+### ABANDONED_UPSTREAM (6)
+
+- 4. **deadbeef-mpris2-plugin** (bdeps=0 rdeps=0 tdeps=0)
+- 40. **lightdm-webkit-theme-aether** (bdeps=0 rdeps=0 tdeps=3)
+- 44. **phonon-qt4-vlc** (bdeps=0 rdeps=0 tdeps=3)
+- 47. **texmacs-pure** (bdeps=0 rdeps=0 tdeps=3)
+- 49. **clash-for-windows-chinese** (bdeps=0 rdeps=0 tdeps=4)
+- 98. **beignet-git** (bdeps=0 rdeps=0 tdeps=10)
+
+### ARCH_SPECIFIC (5)
+
+- 13. **mkinitcpio-systemd-root-password** (bdeps=0 rdeps=0 tdeps=1)
+- 41. **linux-keep-modules** (bdeps=0 rdeps=0 tdeps=3)
+- 63. **python-pypi2pkgbuild** (bdeps=0 rdeps=0 tdeps=5)
+- 78. **glibc-eac** (bdeps=0 rdeps=0 tdeps=7)
+- 81. **mkinitcpio-clevis-hook** (bdeps=0 rdeps=0 tdeps=7)
+
+### COMPLEX_DEPS (13)
+
+- 3. **virtualbox-svn** (bdeps=0 rdeps=1 tdeps=53)
+- 35. **python-home-assistant-frontend** (bdeps=0 rdeps=0 tdeps=2)
+- 45. **quartz-utils-git** (bdeps=0 rdeps=0 tdeps=3)
+- 46. **rdt-client** (bdeps=0 rdeps=0 tdeps=3)
+- 51. **gbm** (bdeps=0 rdeps=0 tdeps=4)
+- 59. **mailnaggertray-git** (bdeps=0 rdeps=0 tdeps=5)
+- 62. **python-gradio-pdf** (bdeps=0 rdeps=0 tdeps=5)
+- 90. **webcord-vencord-git** (bdeps=0 rdeps=0 tdeps=8)
+- 92. **frame-eth** (bdeps=0 rdeps=0 tdeps=9)
+- 93. **freetube-electron-git** (bdeps=0 rdeps=0 tdeps=9)
+- 95. **madness-interactive-reloaded** (bdeps=0 rdeps=0 tdeps=9)
+- 96. **mobirise** (bdeps=0 rdeps=0 tdeps=9)
+- 100. **hnefatafl-copenhagen** (bdeps=0 rdeps=0 tdeps=10)
+
+### DISTRO_SPECIFIC (9)
+
+- 14. **repacman** (bdeps=0 rdeps=0 tdeps=1)
+- 21. **archwiki-offline** (bdeps=0 rdeps=0 tdeps=2)
+- 24. **findbrokenpkgs** (bdeps=0 rdeps=0 tdeps=2)
+- 37. **sbctl-initcpio-post-hook** (bdeps=0 rdeps=0 tdeps=2)
+- 43. **pacpak-git** (bdeps=0 rdeps=0 tdeps=3)
+- 48. **chromium-extension-arch-search** (bdeps=0 rdeps=0 tdeps=4)
+- 61. **pamac-cli** (bdeps=0 rdeps=0 tdeps=5)
+- 67. **asp** (bdeps=0 rdeps=0 tdeps=6)
+- 68. **aurutils** (bdeps=0 rdeps=0 tdeps=6)
+
+### DKMS_KERNEL_MODULE (13)
+
+- 11. **aquacomputer_d5next-hwmon-dkms** (bdeps=0 rdeps=0 tdeps=1)
+- 16. **amneziawg-dkms-git** (bdeps=0 rdeps=0 tdeps=2)
+- 17. **amneziawg-linux** (bdeps=0 rdeps=0 tdeps=2)
+- 18. **amneziawg-linux-hardened** (bdeps=0 rdeps=0 tdeps=2)
+- 23. **faustus-dkms-git** (bdeps=0 rdeps=0 tdeps=2)
+- 25. **ideapad-laptop-tb-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 26. **ideapad-laptop-tb2024g6plus-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 29. **libch343ser-git** (bdeps=0 rdeps=0 tdeps=2)
+- 34. **pfring-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 36. **r8126-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 42. **nvidia-bl-dkms** (bdeps=0 rdeps=0 tdeps=3)
+- 52. **rtl88x2ce-dkms-git** (bdeps=0 rdeps=0 tdeps=4)
+- 60. **nvidia-open-tinygrad-dkms-git** (bdeps=0 rdeps=0 tdeps=5)
+
+### HARDWARE_SPECIFIC (1)
+
+- 58. **kamilsss655-uv-k5-firmware-custom-git** (bdeps=0 rdeps=0 tdeps=5)
+
+### KERNEL_HEADERS (4)
+
+- 5. **linux6.18.22-1-lts-bin** (bdeps=0 rdeps=0 tdeps=0)
+- 54. **zfs-linux-hardened-headers** (bdeps=0 rdeps=0 tdeps=4)
+- 55. **zfs-linux-rt-headers** (bdeps=0 rdeps=0 tdeps=4)
+- 66. **zfs-linux-git-headers** (bdeps=0 rdeps=0 tdeps=5)
+
+### LEGACY_PYTHON2 (2)
+
+- 82. **python2-gimp** (bdeps=0 rdeps=0 tdeps=7)
+- 91. **boost-python2** (bdeps=0 rdeps=0 tdeps=9)
+
+### MINGW_CROSS_COMPILATION (10)
+
+- 31. **mingw-w64-cblas** (bdeps=0 rdeps=0 tdeps=2)
+- 32. **mingw-w64-lapack** (bdeps=0 rdeps=0 tdeps=2)
+- 33. **mingw-w64-soundtouch** (bdeps=0 rdeps=0 tdeps=2)
+- 72. **mingw-w64-boost** (bdeps=0 rdeps=0 tdeps=6)
+- 73. **mingw-w64-cppwinrt** (bdeps=0 rdeps=0 tdeps=6)
+- 74. **mingw-w64-pcre2** (bdeps=0 rdeps=0 tdeps=6)
+- 75. **mingw-w64-spirv-tools** (bdeps=0 rdeps=0 tdeps=6)
+- 76. **dxvk-async-git** (bdeps=0 rdeps=0 tdeps=7)
+- 80. **mingw-w64-postgresql** (bdeps=0 rdeps=0 tdeps=7)
+- 85. **mingw-w64-lame** (bdeps=0 rdeps=0 tdeps=8)
+
+### MULTILIB_UNSUPPORTED (5)
+
+- 28. **lib32-opencl-nvidia-390xx** (bdeps=0 rdeps=0 tdeps=2)
+- 71. **lib32-libglade** (bdeps=0 rdeps=0 tdeps=6)
+- 79. **lib32-libxpm** (bdeps=0 rdeps=0 tdeps=7)
+- 84. **lib32-sdl_sound** (bdeps=0 rdeps=0 tdeps=8)
+- 94. **lib32-vkbasalt** (bdeps=0 rdeps=0 tdeps=9)
+
+### NON_DISTRIBUTABLE (4)
+
+- 38. **ttf-consolas-ligaturized** (bdeps=0 rdeps=0 tdeps=2)
+- 53. **ut2004-gog** (bdeps=0 rdeps=0 tdeps=4)
+- 65. **unrealtournament4** (bdeps=0 rdeps=0 tdeps=5)
+- 69. **factorio-space-age-experimental** (bdeps=0 rdeps=0 tdeps=6)
+
+### PLATFORM_UNSUPPORTED (7)
+
+- 12. **bakkesmod-steam** (bdeps=0 rdeps=0 tdeps=1)
+- 19. **android-platform-19** (bdeps=0 rdeps=0 tdeps=2)
+- 20. **android-platform-21** (bdeps=0 rdeps=0 tdeps=2)
+- 50. **euroscope-bin** (bdeps=0 rdeps=0 tdeps=4)
+- 56. **futu-ftnn-wine** (bdeps=0 rdeps=0 tdeps=5)
+- 70. **fileoptimizer-bin** (bdeps=0 rdeps=0 tdeps=6)
+- 77. **eddiscovery** (bdeps=0 rdeps=0 tdeps=7)
+
+### PROPRIETARY_BINARY (15)
+
+- 6. **matlab-jre-bundled** (bdeps=0 rdeps=0 tdeps=0)
+- 7. **sipgate-app-clinq** (bdeps=0 rdeps=0 tdeps=0)
+- 8. **squareline-studio** (bdeps=0 rdeps=0 tdeps=0)
+- 9. **upd72020x-fw-ng** (bdeps=0 rdeps=0 tdeps=0)
+- 10. **xairedit** (bdeps=0 rdeps=0 tdeps=0)
+- 15. **simplicity-commander** (bdeps=0 rdeps=0 tdeps=1)
+- 22. **brother-mfc-l2400dw** (bdeps=0 rdeps=0 tdeps=2)
+- 27. **knossu** (bdeps=0 rdeps=0 tdeps=2)
+- 30. **libfprint-2-tod1-broadcom-cv3plus** (bdeps=0 rdeps=0 tdeps=2)
+- 39. **wyc** (bdeps=0 rdeps=0 tdeps=2)
+- 57. **inkdrop** (bdeps=0 rdeps=0 tdeps=5)
+- 64. **soapysdrplay3-luarvique-git** (bdeps=0 rdeps=0 tdeps=5)
+- 83. **anytxt-bin** (bdeps=0 rdeps=0 tdeps=8)
+- 86. **pianoteq-stage** (bdeps=0 rdeps=0 tdeps=8)
+- 89. **vmd** (bdeps=0 rdeps=0 tdeps=8)
+
+### RESOLVABLE (4)
+
+- 87. **pikaur-static** (bdeps=0 rdeps=0 tdeps=8)
+- 88. **pikaur-static-git** (bdeps=0 rdeps=0 tdeps=8)
+- 97. **prey** (bdeps=0 rdeps=0 tdeps=9)
+- 99. **borgwarehouse** (bdeps=0 rdeps=0 tdeps=10)
+
+### SELINUX_SPECIFIC (2)
+
+- 1. **sudo-selinux** (bdeps=0 rdeps=1 tdeps=8)
+- 2. **base-selinux** (bdeps=0 rdeps=1 tdeps=18)
+
+## Full Queue (177 packages)
+
+| # | Package | Blocked Deps | Reverse Deps | Total Deps | Reason |
+|---|---------|-------------|-------------|-----------|--------|
+| 1 | sudo-selinux | 0 | 1 | 8 | SELINUX_SPECIFIC |
+| 2 | base-selinux | 0 | 1 | 18 | SELINUX_SPECIFIC |
+| 3 | virtualbox-svn | 0 | 1 | 53 | COMPLEX_DEPS |
+| 4 | deadbeef-mpris2-plugin | 0 | 0 | 0 | ABANDONED_UPSTREAM |
+| 5 | linux6.18.22-1-lts-bin | 0 | 0 | 0 | KERNEL_HEADERS |
+| 6 | matlab-jre-bundled | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 7 | sipgate-app-clinq | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 8 | squareline-studio | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 9 | upd72020x-fw-ng | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 10 | xairedit | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 11 | aquacomputer_d5next-hwmon-dkms | 0 | 0 | 1 | DKMS_KERNEL_MODULE |
+| 12 | bakkesmod-steam | 0 | 0 | 1 | PLATFORM_UNSUPPORTED |
+| 13 | mkinitcpio-systemd-root-password | 0 | 0 | 1 | ARCH_SPECIFIC |
+| 14 | repacman | 0 | 0 | 1 | DISTRO_SPECIFIC |
+| 15 | simplicity-commander | 0 | 0 | 1 | PROPRIETARY_BINARY |
+| 16 | amneziawg-dkms-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 17 | amneziawg-linux | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 18 | amneziawg-linux-hardened | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 19 | android-platform-19 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
+| 20 | android-platform-21 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
+| 21 | archwiki-offline | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 22 | brother-mfc-l2400dw | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 23 | faustus-dkms-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 24 | findbrokenpkgs | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 25 | ideapad-laptop-tb-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 26 | ideapad-laptop-tb2024g6plus-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 27 | knossu | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 28 | lib32-opencl-nvidia-390xx | 0 | 0 | 2 | MULTILIB_UNSUPPORTED |
+| 29 | libch343ser-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 30 | libfprint-2-tod1-broadcom-cv3plus | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 31 | mingw-w64-cblas | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
+| 32 | mingw-w64-lapack | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
+| 33 | mingw-w64-soundtouch | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
+| 34 | pfring-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 35 | python-home-assistant-frontend | 0 | 0 | 2 | COMPLEX_DEPS |
+| 36 | r8126-dkms | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 37 | sbctl-initcpio-post-hook | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 38 | ttf-consolas-ligaturized | 0 | 0 | 2 | NON_DISTRIBUTABLE |
+| 39 | wyc | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 40 | lightdm-webkit-theme-aether | 0 | 0 | 3 | ABANDONED_UPSTREAM |
+| 41 | linux-keep-modules | 0 | 0 | 3 | ARCH_SPECIFIC |
+| 42 | nvidia-bl-dkms | 0 | 0 | 3 | DKMS_KERNEL_MODULE |
+| 43 | pacpak-git | 0 | 0 | 3 | DISTRO_SPECIFIC |
+| 44 | phonon-qt4-vlc | 0 | 0 | 3 | ABANDONED_UPSTREAM |
+| 45 | quartz-utils-git | 0 | 0 | 3 | COMPLEX_DEPS |
+| 46 | rdt-client | 0 | 0 | 3 | COMPLEX_DEPS |
+| 47 | texmacs-pure | 0 | 0 | 3 | ABANDONED_UPSTREAM |
+| 48 | chromium-extension-arch-search | 0 | 0 | 4 | DISTRO_SPECIFIC |
+| 49 | clash-for-windows-chinese | 0 | 0 | 4 | ABANDONED_UPSTREAM |
+| 50 | euroscope-bin | 0 | 0 | 4 | PLATFORM_UNSUPPORTED |
+| 51 | gbm | 0 | 0 | 4 | COMPLEX_DEPS |
+| 52 | rtl88x2ce-dkms-git | 0 | 0 | 4 | DKMS_KERNEL_MODULE |
+| 53 | ut2004-gog | 0 | 0 | 4 | NON_DISTRIBUTABLE |
+| 54 | zfs-linux-hardened-headers | 0 | 0 | 4 | KERNEL_HEADERS |
+| 55 | zfs-linux-rt-headers | 0 | 0 | 4 | KERNEL_HEADERS |
+| 56 | futu-ftnn-wine | 0 | 0 | 5 | PLATFORM_UNSUPPORTED |
+| 57 | inkdrop | 0 | 0 | 5 | PROPRIETARY_BINARY |
+| 58 | kamilsss655-uv-k5-firmware-custom-git | 0 | 0 | 5 | HARDWARE_SPECIFIC |
+| 59 | mailnaggertray-git | 0 | 0 | 5 | COMPLEX_DEPS |
+| 60 | nvidia-open-tinygrad-dkms-git | 0 | 0 | 5 | DKMS_KERNEL_MODULE |
+| 61 | pamac-cli | 0 | 0 | 5 | DISTRO_SPECIFIC |
+| 62 | python-gradio-pdf | 0 | 0 | 5 | COMPLEX_DEPS |
+| 63 | python-pypi2pkgbuild | 0 | 0 | 5 | ARCH_SPECIFIC |
+| 64 | soapysdrplay3-luarvique-git | 0 | 0 | 5 | PROPRIETARY_BINARY |
+| 65 | unrealtournament4 | 0 | 0 | 5 | NON_DISTRIBUTABLE |
+| 66 | zfs-linux-git-headers | 0 | 0 | 5 | KERNEL_HEADERS |
+| 67 | asp | 0 | 0 | 6 | DISTRO_SPECIFIC |
+| 68 | aurutils | 0 | 0 | 6 | DISTRO_SPECIFIC |
+| 69 | factorio-space-age-experimental | 0 | 0 | 6 | NON_DISTRIBUTABLE |
+| 70 | fileoptimizer-bin | 0 | 0 | 6 | PLATFORM_UNSUPPORTED |
+| 71 | lib32-libglade | 0 | 0 | 6 | MULTILIB_UNSUPPORTED |
+| 72 | mingw-w64-boost | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 73 | mingw-w64-cppwinrt | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 74 | mingw-w64-pcre2 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 75 | mingw-w64-spirv-tools | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 76 | dxvk-async-git | 0 | 0 | 7 | MINGW_CROSS_COMPILATION |
+| 77 | eddiscovery | 0 | 0 | 7 | PLATFORM_UNSUPPORTED |
+| 78 | glibc-eac | 0 | 0 | 7 | ARCH_SPECIFIC |
+| 79 | lib32-libxpm | 0 | 0 | 7 | MULTILIB_UNSUPPORTED |
+| 80 | mingw-w64-postgresql | 0 | 0 | 7 | MINGW_CROSS_COMPILATION |
+| 81 | mkinitcpio-clevis-hook | 0 | 0 | 7 | ARCH_SPECIFIC |
+| 82 | python2-gimp | 0 | 0 | 7 | LEGACY_PYTHON2 |
+| 83 | anytxt-bin | 0 | 0 | 8 | PROPRIETARY_BINARY |
+| 84 | lib32-sdl_sound | 0 | 0 | 8 | MULTILIB_UNSUPPORTED |
+| 85 | mingw-w64-lame | 0 | 0 | 8 | MINGW_CROSS_COMPILATION |
+| 86 | pianoteq-stage | 0 | 0 | 8 | PROPRIETARY_BINARY |
+| 87 | pikaur-static | 0 | 0 | 8 | RESOLVABLE |
+| 88 | pikaur-static-git | 0 | 0 | 8 | RESOLVABLE |
+| 89 | vmd | 0 | 0 | 8 | PROPRIETARY_BINARY |
+| 90 | webcord-vencord-git | 0 | 0 | 8 | COMPLEX_DEPS |
+| 91 | boost-python2 | 0 | 0 | 9 | LEGACY_PYTHON2 |
+| 92 | frame-eth | 0 | 0 | 9 | COMPLEX_DEPS |
+| 93 | freetube-electron-git | 0 | 0 | 9 | COMPLEX_DEPS |
+| 94 | lib32-vkbasalt | 0 | 0 | 9 | MULTILIB_UNSUPPORTED |
+| 95 | madness-interactive-reloaded | 0 | 0 | 9 | COMPLEX_DEPS |
+| 96 | mobirise | 0 | 0 | 9 | COMPLEX_DEPS |
+| 97 | prey | 0 | 0 | 9 | RESOLVABLE |
+| 98 | beignet-git | 0 | 0 | 10 | ABANDONED_UPSTREAM |
+| 99 | borgwarehouse | 0 | 0 | 10 | RESOLVABLE |
+| 100 | hnefatafl-copenhagen | 0 | 0 | 10 | COMPLEX_DEPS |
+| 101 | libfive-studio-git | 0 | 0 | 10 | SOURCE_UNAVAILABLE |
+| 102 | libga68-snapshot | 0 | 0 | 10 | GCC_SNAPSHOT |
+| 103 | libgfortran-snapshot | 0 | 0 | 10 | GCC_SNAPSHOT |
+| 104 | libgnat-snapshot | 0 | 0 | 10 | GCC_SNAPSHOT |
+| 105 | libgo-snapshot | 0 | 0 | 10 | GCC_SNAPSHOT |
+| 106 | linux-sched-ext-git-headers | 0 | 0 | 10 | RESOLVABLE |
+| 107 | linux-tip-git-headers | 0 | 0 | 10 | RESOLVABLE |
+| 108 | mailspring | 0 | 0 | 10 | RESOLVABLE |
+| 109 | nvidia-390xx-settings | 0 | 0 | 10 | RESOLVABLE |
+| 110 | pantheon-polkit-agent-git | 0 | 0 | 10 | RESOLVABLE |
+| 111 | virtualbox-bin-sdk | 0 | 0 | 10 | RESOLVABLE |
+| 112 | lto-dump-snapshot | 0 | 0 | 11 | RESOLVABLE |
+| 113 | luxtorpeda-git | 0 | 0 | 11 | RESOLVABLE |
+| 114 | synfigstudio-dev | 0 | 0 | 11 | RESOLVABLE |
+| 115 | vegastrike-engine-git | 0 | 0 | 11 | RESOLVABLE |
+| 116 | devtools-git | 0 | 0 | 12 | RESOLVABLE |
+| 117 | envoyproxy | 0 | 0 | 12 | RESOLVABLE |
+| 118 | gst-plugins-rs-git | 0 | 0 | 12 | RESOLVABLE |
+| 119 | linux-xanmod-lts-headers | 0 | 0 | 12 | RESOLVABLE |
+| 120 | mingw-w64-libopenmpt | 0 | 0 | 12 | RESOLVABLE |
+| 121 | opendrop-git | 0 | 0 | 12 | RESOLVABLE |
+| 122 | python-google-cloud-speech | 0 | 0 | 12 | RESOLVABLE |
+| 123 | python-pylink-square | 0 | 0 | 12 | RESOLVABLE |
+| 124 | wayfire-plugins-extra-git | 0 | 0 | 12 | RESOLVABLE |
+| 125 | auracle-git | 0 | 0 | 13 | RESOLVABLE |
+| 126 | betterx-desktop-git | 0 | 0 | 13 | RESOLVABLE |
+| 127 | capt-src | 0 | 0 | 13 | MULTILIB_UNSUPPORTED |
+| 128 | illogical-impulse-ags | 0 | 0 | 13 | RESOLVABLE |
+| 129 | python-jax-rocm | 0 | 0 | 13 | HARDWARE_SPECIFIC |
+| 130 | goxlr-utility-ui | 0 | 0 | 14 | RESOLVABLE |
+| 131 | linux-cachyos-hardened-headers | 0 | 0 | 14 | RESOLVABLE |
+| 132 | linux-next-git-headers | 0 | 0 | 14 | RESOLVABLE |
+| 133 | rpfm-git | 0 | 0 | 14 | RESOLVABLE |
+| 134 | deepin-wine8-stable | 0 | 0 | 15 | PROPRIETARY_BINARY |
+| 135 | linux-covolunablu-gaming-headers | 0 | 0 | 15 | RESOLVABLE |
+| 136 | php-legacy-pdlib | 0 | 0 | 15 | RESOLVABLE |
+| 137 | qt6-xcb-private-headers-git | 0 | 0 | 15 | RESOLVABLE |
+| 138 | scans2any-git | 0 | 0 | 15 | RESOLVABLE |
+| 139 | veloren | 0 | 0 | 15 | RESOLVABLE |
+| 140 | vmware-workstation | 0 | 0 | 15 | PROPRIETARY_BINARY |
+| 141 | oclint | 0 | 0 | 17 | RESOLVABLE |
+| 142 | sddm-idle | 0 | 0 | 19 | RESOLVABLE |
+| 143 | linux-cachyos-bmq-headers | 0 | 0 | 20 | RESOLVABLE |
+| 144 | linux-cachyos-eevdf-headers | 0 | 0 | 20 | RESOLVABLE |
+| 145 | linux-cachyos-server-headers | 0 | 0 | 20 | RESOLVABLE |
+| 146 | paperde | 0 | 0 | 20 | RESOLVABLE |
+| 147 | xivlauncher-rb | 0 | 0 | 20 | RESOLVABLE |
+| 148 | codeblocks-svn | 0 | 0 | 22 | RESOLVABLE |
+| 149 | firestorm-next-bin | 0 | 0 | 22 | MULTILIB_UNSUPPORTED |
+| 150 | openconnect-sso-git | 0 | 0 | 23 | RESOLVABLE |
+| 151 | ecal-samples | 0 | 0 | 24 | RESOLVABLE |
+| 152 | modemmanager-dev | 0 | 0 | 26 | RESOLVABLE |
+| 153 | nyarchassistant | 0 | 0 | 26 | RESOLVABLE |
+| 154 | aosp-devel | 0 | 0 | 27 | RESOLVABLE |
+| 155 | deadbeef-git | 0 | 0 | 27 | RESOLVABLE |
+| 156 | java-openjfx-nowebkit | 0 | 0 | 27 | RESOLVABLE |
+| 157 | quartus-free-quartus | 0 | 0 | 27 | PROPRIETARY_PLATFORM |
+| 158 | nheko-scrollfix | 0 | 0 | 28 | RESOLVABLE |
+| 159 | texpresso-git | 0 | 0 | 29 | RESOLVABLE |
+| 160 | etlegacy32-mod | 0 | 0 | 30 | HARDWARE_SPECIFIC |
+| 161 | ghostty-git-zen3 | 0 | 0 | 30 | RESOLVABLE |
+| 162 | thunderbird-beta | 0 | 0 | 30 | RESOLVABLE |
+| 163 | audacious-plugins-git | 0 | 0 | 32 | RESOLVABLE |
+| 164 | qgroundcontrol | 0 | 0 | 40 | RESOLVABLE |
+| 165 | darling-cli-devenv-gui-common-git | 0 | 0 | 41 | COMPLEX_DEPS |
+| 166 | darling-iosurface-git | 0 | 0 | 41 | COMPLEX_DEPS |
+| 167 | mesa-minimal-git | 0 | 0 | 46 | RESOLVABLE |
+| 168 | shadps4-git | 0 | 0 | 46 | RESOLVABLE |
+| 169 | systemd-ukify-git | 0 | 0 | 53 | RESOLVABLE |
+| 170 | waytrogen | 0 | 0 | 54 | RESOLVABLE |
+| 171 | wine-osu-spectator-wow64 | 0 | 0 | 61 | RESOLVABLE |
+| 172 | teb-obs | 0 | 0 | 67 | RESOLVABLE |
+| 173 | thunderbird-globalmenu | 0 | 0 | 73 | RESOLVABLE |
+| 174 | ffmpeg-cuda-full | 0 | 0 | 89 | HARDWARE_SPECIFIC |
+| 175 | ffmpeg-full-git | 0 | 0 | 139 | RESOLVABLE |
+| 176 | virtualbox-ext-oracle-dev | 1 | 0 | 1 | RESOLVABLE |
+| 177 | base-devel-selinux | 2 | 0 | 3 | RESOLVABLE |
