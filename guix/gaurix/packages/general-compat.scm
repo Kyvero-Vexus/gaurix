@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260428b)
   #:use-module (gaurix packages recipe-resolver-260428b)
   #:use-module (gaurix packages recipe-resolver-260427q)
   #:use-module (gaurix packages deptree-resolver-260428a)
@@ -16888,3 +16889,4 @@
 (re-export r-tinytest)
 (re-export terminaltexteffects-git)
 (re-export nerdfetch)
+(re-export open-tv)
