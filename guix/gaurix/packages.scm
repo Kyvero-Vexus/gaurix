@@ -1,3 +1,4 @@
+            ;; deptree-resolver-260428f: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_RESOLVED, 5 newly categorized, 94 remain BLOCKED)
             ;; deptree-resolver-260428e: 100 BLOCKED evaluated (0 new recipes; 5 ALREADY_RESOLVED; 4 newly categorized; 91 remain BLOCKED)
             ;; recipe-resolver-260428f: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; recipe-resolver-260428e: 100 packages attempted (100 recipes, 0 BLOCKED)
