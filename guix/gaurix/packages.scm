@@ -963,6 +963,7 @@
             waifu2x-converter-cpp
             angie
 
+  #:use-module (gaurix packages recipe-resolver-260428l)
   #:use-module (gaurix packages aider-chat)
             python-databricks-sql-connector
             imagot-bin
@@ -12170,6 +12171,103 @@
                wayprompt-git
                wldash
                anyrun
+            veloren
+            thunderbird-beta
+            opendrop-git
+            pantheon-polkit-agent-git
+            mailspring
+            paperde
+            scratch-everywhere
+            yt-dlp-getpot-wpc-git
+            signal-cli-native
+            sigtop-git
+            timg-git
+            unrarall-git
+            godot-mono-beta-bin
+            adguard-cli-nightly-bin
+            aerothemeplasma-icons-git
+            aerothemeplasma-sounds-git
+            arrpc-bun
+            bynfont
+            catppuccinifier-gui-bin
+            chatterino2-7tv-native-git
+            citron-neo-git
+            deletor
+            desktopimage
+            devilutionx-mpq-tools-git
+            discord-history-tracker-bin
+            download-guardian
+            dwarf2json-git
+            easyeffects-jtrv-presets-git
+            easyeffects-record
+            flow-control-nightly-bin
+            fount-bin
+            ghidra-mcp
+            gnome-shell-extension-xwayland-indicator
+            goat-cli-bin
+            goat-cli-git
+            gotohp-bin
+            gotohp-git
+            gruvbox-wallpaper
+            hfdownloader
+            hn-bin
+            inconsolata-psf-git
+            kick-talk-git
+            memtier-benchmark
+            mic-indicator
+            mise-git
+            moonlight-cli
+            nerdfetch-git
+            niri-autostart
+            niri-autostart-bin
+            ntttcp-for-linux-git
+            obsidianirc-bin
+            openscreen-bin
+            otaripper-bin
+            papirus-paleorange-icon-theme
+            patched-mullvad-vpn-daemon-bin
+            pcf-profont-powerline
+            pcf-spectrum-berry
+            pcf-unifont
+            pcf-unifont-extra
+            peguni-draem-la
+            pgp2ssh-git
+            play-timer-git
+            plezy-bin
+            power-options-gtk
+            psf-envypn
+            python-backports
+            python-events
+            python-mmh3
+            python-oracledb
+            python-peewee-migrate
+            python-pinecone
+            python-sqlcipher3
+            python-wget
+            qsort
+            qt5ct-refresh-git
+            qtcreator-qodeassist-plugin
+            quickemu-rs
+            rainbowfetch
+            sdl-gamecontrollerdb-git
+            slit-git
+            spr-bin
+            starfish
+            streamlink-handoff-host
+            uniextract2
+            vanish
+            waveterm-vis
+            wpets
+            xdg-desktop-portal-rs
+            xsg-fonts-bdf
+            xsg-fonts-otb
+            xsg-fonts-pcf
+            zmusic-git
+            mine-core-bin
+            dotenv-sync-bin
+            libastal-lua54-git
+            nyarchassistant
+            ghostty-git-zen3
 ))
 
 ;; deptree-resolver-260428d
