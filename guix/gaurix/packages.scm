@@ -1,4 +1,5 @@
             ;; recipe-resolver-260428d: 100 packages attempted (100 recipes, 0 BLOCKED)
+            ;; deptree-resolver-260428c: 100 BLOCKED evaluated (1 recipe: vdhcoapp; 99 remain BLOCKED)
             ;; deptree-resolver-260428a: 100 BLOCKED evaluated (0 recipes, 100 remain BLOCKED)
             ;; recipe-resolver-260428b: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260427r: 100 BLOCKED evaluated (1 recipe: xeme-hg + birb dep; 99 remain BLOCKED)
