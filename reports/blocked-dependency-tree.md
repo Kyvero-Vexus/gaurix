@@ -1,9 +1,9 @@
 # Blocked Dependency Tree
 
-**Pass:** `deptree-resolver-260427r`
-**Timestamp:** 2026-04-28T03:05:36.823725Z
+**Pass:** `deptree-resolver-260428a`
+**Timestamp:** 2026-04-28T04:45:16.415003Z
 **Total BLOCKED:** 179
-**In AUR cache:** 173
+**In AUR cache:** 172
 **Zero blocked deps:** 177
 
 ## Priority Queue (all 179 packages)
@@ -19,88 +19,88 @@
 | 7 | sipgate-app-clinq | 18449 | 0 | 0 | 0 | PROPRIETARY_BINARY |
 | 8 | squareline-studio | 17812 | 0 | 0 | 0 | PROPRIETARY_BINARY |
 | 9 | upd72020x-fw-ng | 29404 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 10 | xairedit | 20522 | 0 | 0 | 0 | PROPRIETARY_BINARY |
-| 11 | aquacomputer_d5next-hwmon-dkms | 18606 | 0 | 0 | 1 | KERNEL_MODULE |
-| 12 | bakkesmod-steam | 17468 | 0 | 0 | 1 | PLATFORM_UNSUPPORTED |
-| 13 | mkinitcpio-systemd-root-password | 18371 | 0 | 0 | 1 | ARCH_SPECIFIC |
-| 14 | repacman | 18707 | 0 | 0 | 1 | DISTRO_SPECIFIC |
-| 15 | simplicity-commander | 18419 | 0 | 0 | 1 | PROPRIETARY_BINARY |
-| 16 | amneziawg-dkms-git | 18642 | 0 | 0 | 2 | KERNEL_MODULE |
-| 17 | amneziawg-linux | 18452 | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
-| 18 | amneziawg-linux-hardened | 18382 | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
-| 19 | android-platform-19 | 28671 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
-| 20 | android-platform-21 | 23109 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
-| 21 | archwiki-offline | 18568 | 0 | 0 | 2 | DISTRO_SPECIFIC |
-| 22 | brother-mfc-l2400dw | 17797 | 0 | 0 | 2 | PROPRIETARY_BINARY |
-| 23 | faustus-dkms-git | 18859 | 0 | 0 | 2 | KERNEL_MODULE |
-| 24 | findbrokenpkgs | 18930 | 0 | 0 | 2 | DISTRO_SPECIFIC |
-| 25 | ideapad-laptop-tb-dkms | 18957 | 0 | 0 | 2 | KERNEL_MODULE |
-| 26 | ideapad-laptop-tb2024g6plus-dkms | 18895 | 0 | 0 | 2 | KERNEL_MODULE |
-| 27 | knossu | 18461 | 0 | 0 | 2 | PROPRIETARY_BINARY |
-| 28 | lib32-opencl-nvidia-390xx | 17502 | 0 | 0 | 2 | MULTILIB_UNSUPPORTED |
-| 29 | libch343ser-git | 17880 | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
-| 30 | libfprint-2-tod1-broadcom-cv3plus | 17912 | 0 | 0 | 2 | PROPRIETARY_BINARY |
-| 31 | mingw-w64-cblas | 34115 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
-| 32 | mingw-w64-lapack | 34113 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
-| 33 | mingw-w64-soundtouch | 18330 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
-| 34 | pfring-dkms | 18399 | 0 | 0 | 2 | KERNEL_MODULE |
-| 35 | python-home-assistant-frontend | 18556 | 0 | 0 | 2 | COMPLEX_DEPS |
-| 36 | r8126-dkms | 18487 | 0 | 0 | 2 | KERNEL_MODULE |
-| 37 | sbctl-initcpio-post-hook | 18720 | 0 | 0 | 2 | DISTRO_SPECIFIC |
-| 38 | ttf-consolas-ligaturized | 20499 | 0 | 0 | 2 | NON_DISTRIBUTABLE |
-| 39 | wyc | 18777 | 0 | 0 | 2 | PROPRIETARY_BINARY |
-| 40 | lightdm-webkit-theme-aether | 19028 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
-| 41 | linux-keep-modules | 18490 | 0 | 0 | 3 | ARCH_SPECIFIC |
-| 42 | nvidia-bl-dkms | 17755 | 0 | 0 | 3 | DKMS_KERNEL_MODULE |
-| 43 | pacpak-git | 17862 | 0 | 0 | 3 | DISTRO_SPECIFIC |
-| 44 | phonon-qt4-vlc | 18938 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
-| 45 | quartz-utils-git | 18430 | 0 | 0 | 3 | COMPLEX_DEPS |
-| 46 | rdt-client | 18561 | 0 | 0 | 3 | COMPLEX_DEPS |
-| 47 | texmacs-pure | 17873 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
-| 48 | chromium-extension-arch-search | 17897 | 0 | 0 | 4 | DISTRO_SPECIFIC |
-| 49 | clash-for-windows-chinese | 17433 | 0 | 0 | 4 | ABANDONED_UPSTREAM |
-| 50 | euroscope-bin | 17945 | 0 | 0 | 4 | PLATFORM_UNSUPPORTED |
-| 51 | gbm | 19044 | 0 | 0 | 4 | COMPLEX_DEPS |
-| 52 | rtl88x2ce-dkms-git | 18362 | 0 | 0 | 4 | KERNEL_MODULE |
-| 53 | ut2004-gog | 18333 | 0 | 0 | 4 | NON_DISTRIBUTABLE |
-| 54 | zfs-linux-hardened-headers | 17921 | 0 | 0 | 4 | KERNEL_MODULE |
-| 55 | zfs-linux-rt-headers | 17920 | 0 | 0 | 4 | KERNEL_MODULE |
-| 56 | futu-ftnn-wine | 18151 | 0 | 0 | 5 | PLATFORM_UNSUPPORTED |
-| 57 | inkdrop | 17819 | 0 | 0 | 5 | PROPRIETARY_BINARY |
-| 58 | kamilsss655-uv-k5-firmware-custom-git | 17909 | 0 | 0 | 5 | HARDWARE_SPECIFIC |
-| 59 | mailnaggertray-git | 18592 | 0 | 0 | 5 | COMPLEX_DEPS |
-| 60 | nvidia-open-tinygrad-dkms-git | 18617 | 0 | 0 | 5 | KERNEL_MODULE |
-| 61 | pamac-cli | 17940 | 0 | 0 | 5 | DISTRO_SPECIFIC |
-| 62 | python-gradio-pdf | 18463 | 0 | 0 | 5 | COMPLEX_DEPS |
-| 63 | python-pypi2pkgbuild | 17822 | 0 | 0 | 5 | ARCH_SPECIFIC |
-| 64 | soapysdrplay3-luarvique-git | 18141 | 0 | 0 | 5 | PROPRIETARY_BINARY |
-| 65 | unrealtournament4 | 18319 | 0 | 0 | 5 | NON_DISTRIBUTABLE |
-| 66 | zfs-linux-git-headers | 17919 | 0 | 0 | 5 | KERNEL_MODULE |
-| 67 | asp | 14587 | 0 | 0 | 6 | DISTRO_SPECIFIC |
-| 68 | aurutils | 11354 | 0 | 0 | 6 | DISTRO_SPECIFIC |
-| 69 | factorio-space-age-experimental | 17440 | 0 | 0 | 6 | NON_DISTRIBUTABLE |
-| 70 | fileoptimizer-bin | 18315 | 0 | 0 | 6 | PLATFORM_UNSUPPORTED |
-| 71 | lib32-libglade | 45410 | 0 | 0 | 6 | MULTILIB_UNSUPPORTED |
-| 72 | mingw-w64-boost | 23783 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
-| 73 | mingw-w64-cppwinrt | 43750 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
-| 74 | mingw-w64-pcre2 | 26805 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
-| 75 | mingw-w64-spirv-tools | 42666 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
-| 76 | dxvk-async-git | 18820 | 0 | 0 | 7 | MINGW_CROSS_COMPILATION |
-| 77 | eddiscovery | 18320 | 0 | 0 | 7 | PLATFORM_UNSUPPORTED |
-| 78 | glibc-eac | 24719 | 0 | 0 | 7 | ARCH_SPECIFIC |
-| 79 | lib32-libxpm | 16491 | 0 | 0 | 7 | MULTILIB_UNSUPPORTED |
-| 80 | mingw-w64-postgresql | 24572 | 0 | 0 | 7 | MINGW_CROSS_COMPILATION |
-| 81 | mkinitcpio-clevis-hook | 18342 | 0 | 0 | 7 | ARCH_SPECIFIC |
-| 82 | python2-gimp | 23210 | 0 | 0 | 7 | LEGACY_PYTHON2 |
-| 83 | anytxt-bin | 18295 | 0 | 0 | 8 | PROPRIETARY_BINARY |
-| 84 | lib32-sdl_sound | 22729 | 0 | 0 | 8 | MULTILIB_UNSUPPORTED |
-| 85 | mingw-w64-lame | 34112 | 0 | 0 | 8 | MINGW_CROSS_COMPILATION |
-| 86 | pianoteq-stage | 18367 | 0 | 0 | 8 | PROPRIETARY_BINARY |
-| 87 | pikaur-static | 18750 | 0 | 0 | 8 |  |
-| 88 | pikaur-static-git | 18749 | 0 | 0 | 8 |  |
-| 89 | vmd | 18253 | 0 | 0 | 8 | PROPRIETARY_BINARY |
-| 90 | webcord-vencord-git | 18852 | 0 | 0 | 8 | COMPLEX_DEPS |
-| 91 | xeme-hg | 18426 | 0 | 0 | 8 | SOURCE_UNAVAILABLE |
+| 10 | vdhcoapp | 21614 | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
+| 11 | xairedit | 20522 | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 12 | aquacomputer_d5next-hwmon-dkms | 18606 | 0 | 0 | 1 | KERNEL_MODULE |
+| 13 | bakkesmod-steam | 17468 | 0 | 0 | 1 | PLATFORM_UNSUPPORTED |
+| 14 | mkinitcpio-systemd-root-password | 18371 | 0 | 0 | 1 | ARCH_SPECIFIC |
+| 15 | repacman | 18707 | 0 | 0 | 1 | DISTRO_SPECIFIC |
+| 16 | simplicity-commander | 18419 | 0 | 0 | 1 | PROPRIETARY_BINARY |
+| 17 | amneziawg-dkms-git | 18642 | 0 | 0 | 2 | KERNEL_MODULE |
+| 18 | amneziawg-linux | 18452 | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 19 | amneziawg-linux-hardened | 18382 | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 20 | android-platform-19 | 28671 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
+| 21 | android-platform-21 | 23109 | 0 | 0 | 2 | PLATFORM_UNSUPPORTED |
+| 22 | archwiki-offline | 18568 | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 23 | brother-mfc-l2400dw | 17797 | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 24 | faustus-dkms-git | 18859 | 0 | 0 | 2 | KERNEL_MODULE |
+| 25 | findbrokenpkgs | 18930 | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 26 | ideapad-laptop-tb-dkms | 18957 | 0 | 0 | 2 | KERNEL_MODULE |
+| 27 | ideapad-laptop-tb2024g6plus-dkms | 18895 | 0 | 0 | 2 | KERNEL_MODULE |
+| 28 | knossu | 18461 | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 29 | lib32-opencl-nvidia-390xx | 17502 | 0 | 0 | 2 | MULTILIB_UNSUPPORTED |
+| 30 | libch343ser-git | 17880 | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 31 | libfprint-2-tod1-broadcom-cv3plus | 17912 | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 32 | mingw-w64-cblas | 34115 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
+| 33 | mingw-w64-lapack | 34113 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
+| 34 | mingw-w64-soundtouch | 18330 | 0 | 0 | 2 | MINGW_CROSS_COMPILATION |
+| 35 | pfring-dkms | 18399 | 0 | 0 | 2 | KERNEL_MODULE |
+| 36 | python-home-assistant-frontend | 18556 | 0 | 0 | 2 | COMPLEX_DEPS |
+| 37 | r8126-dkms | 18487 | 0 | 0 | 2 | KERNEL_MODULE |
+| 38 | sbctl-initcpio-post-hook | 18720 | 0 | 0 | 2 | DISTRO_SPECIFIC |
+| 39 | ttf-consolas-ligaturized | 20499 | 0 | 0 | 2 | NON_DISTRIBUTABLE |
+| 40 | wyc | 18777 | 0 | 0 | 2 | PROPRIETARY_BINARY |
+| 41 | lightdm-webkit-theme-aether | 19028 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
+| 42 | linux-keep-modules | 18490 | 0 | 0 | 3 | ARCH_SPECIFIC |
+| 43 | nvidia-bl-dkms | 17755 | 0 | 0 | 3 | DKMS_KERNEL_MODULE |
+| 44 | pacpak-git | 17862 | 0 | 0 | 3 | DISTRO_SPECIFIC |
+| 45 | phonon-qt4-vlc | 18938 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
+| 46 | quartz-utils-git | 18430 | 0 | 0 | 3 | COMPLEX_DEPS |
+| 47 | rdt-client | 18561 | 0 | 0 | 3 | COMPLEX_DEPS |
+| 48 | texmacs-pure | 17873 | 0 | 0 | 3 | ABANDONED_UPSTREAM |
+| 49 | chromium-extension-arch-search | 17897 | 0 | 0 | 4 | DISTRO_SPECIFIC |
+| 50 | clash-for-windows-chinese | 17433 | 0 | 0 | 4 | ABANDONED_UPSTREAM |
+| 51 | euroscope-bin | 17945 | 0 | 0 | 4 | PLATFORM_UNSUPPORTED |
+| 52 | gbm | 19044 | 0 | 0 | 4 | COMPLEX_DEPS |
+| 53 | rtl88x2ce-dkms-git | 18362 | 0 | 0 | 4 | KERNEL_MODULE |
+| 54 | ut2004-gog | 18333 | 0 | 0 | 4 | NON_DISTRIBUTABLE |
+| 55 | zfs-linux-hardened-headers | 17921 | 0 | 0 | 4 | KERNEL_MODULE |
+| 56 | zfs-linux-rt-headers | 17920 | 0 | 0 | 4 | KERNEL_MODULE |
+| 57 | futu-ftnn-wine | 18151 | 0 | 0 | 5 | PLATFORM_UNSUPPORTED |
+| 58 | inkdrop | 17819 | 0 | 0 | 5 | PROPRIETARY_BINARY |
+| 59 | kamilsss655-uv-k5-firmware-custom-git | 17909 | 0 | 0 | 5 | HARDWARE_SPECIFIC |
+| 60 | mailnaggertray-git | 18592 | 0 | 0 | 5 | COMPLEX_DEPS |
+| 61 | nvidia-open-tinygrad-dkms-git | 18617 | 0 | 0 | 5 | KERNEL_MODULE |
+| 62 | pamac-cli | 17940 | 0 | 0 | 5 | DISTRO_SPECIFIC |
+| 63 | python-gradio-pdf | 18463 | 0 | 0 | 5 | COMPLEX_DEPS |
+| 64 | python-pypi2pkgbuild | 17822 | 0 | 0 | 5 | ARCH_SPECIFIC |
+| 65 | soapysdrplay3-luarvique-git | 18141 | 0 | 0 | 5 | PROPRIETARY_BINARY |
+| 66 | unrealtournament4 | 18319 | 0 | 0 | 5 | NON_DISTRIBUTABLE |
+| 67 | zfs-linux-git-headers | 17919 | 0 | 0 | 5 | KERNEL_MODULE |
+| 68 | asp | 14587 | 0 | 0 | 6 | DISTRO_SPECIFIC |
+| 69 | aurutils | 11354 | 0 | 0 | 6 | DISTRO_SPECIFIC |
+| 70 | factorio-space-age-experimental | 17440 | 0 | 0 | 6 | NON_DISTRIBUTABLE |
+| 71 | fileoptimizer-bin | 18315 | 0 | 0 | 6 | PLATFORM_UNSUPPORTED |
+| 72 | lib32-libglade | 45410 | 0 | 0 | 6 | MULTILIB_UNSUPPORTED |
+| 73 | mingw-w64-boost | 23783 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 74 | mingw-w64-cppwinrt | 43750 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 75 | mingw-w64-pcre2 | 26805 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 76 | mingw-w64-spirv-tools | 42666 | 0 | 0 | 6 | MINGW_CROSS_COMPILATION |
+| 77 | dxvk-async-git | 18820 | 0 | 0 | 7 | MINGW_CROSS_COMPILATION |
+| 78 | eddiscovery | 18320 | 0 | 0 | 7 | PLATFORM_UNSUPPORTED |
+| 79 | glibc-eac | 24719 | 0 | 0 | 7 | ARCH_SPECIFIC |
+| 80 | lib32-libxpm | 16491 | 0 | 0 | 7 | MULTILIB_UNSUPPORTED |
+| 81 | mingw-w64-postgresql | 24572 | 0 | 0 | 7 | MINGW_CROSS_COMPILATION |
+| 82 | mkinitcpio-clevis-hook | 18342 | 0 | 0 | 7 | ARCH_SPECIFIC |
+| 83 | python2-gimp | 23210 | 0 | 0 | 7 | LEGACY_PYTHON2 |
+| 84 | anytxt-bin | 18295 | 0 | 0 | 8 | PROPRIETARY_BINARY |
+| 85 | lib32-sdl_sound | 22729 | 0 | 0 | 8 | MULTILIB_UNSUPPORTED |
+| 86 | mingw-w64-lame | 34112 | 0 | 0 | 8 | MINGW_CROSS_COMPILATION |
+| 87 | pianoteq-stage | 18367 | 0 | 0 | 8 | PROPRIETARY_BINARY |
+| 88 | pikaur-static | 18750 | 0 | 0 | 8 |  |
+| 89 | pikaur-static-git | 18749 | 0 | 0 | 8 |  |
+| 90 | vmd | 18253 | 0 | 0 | 8 | PROPRIETARY_BINARY |
+| 91 | webcord-vencord-git | 18852 | 0 | 0 | 8 | COMPLEX_DEPS |
 | 92 | boost-python2 | 37225 | 0 | 0 | 9 | LEGACY_PYTHON2 |
 | 93 | frame-eth | 18612 | 0 | 0 | 9 | COMPLEX_DEPS |
 | 94 | freetube-electron-git | 17925 | 0 | 0 | 9 | COMPLEX_DEPS |
@@ -190,4 +190,4 @@
 | 178 | virtualbox-ext-oracle-dev | 18801 | 1 | 0 | 1 |  |
 | 179 | base-devel-selinux | 18538 | 2 | 0 | 3 |  |
 
-*Generated: 2026-04-28T03:05:36.823725Z*
+*Generated: 2026-04-28T04:45:16.415003Z*
