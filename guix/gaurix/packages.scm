@@ -12285,6 +12285,7 @@
 ;; recipe-resolver-260428f
 (define-module (gaurix packages)
   #:use-module (gaurix packages recipe-resolver-260428f)
+  #:use-module (gaurix packages recipe-resolver-260428m)
   #:re-export (
                rua
                vdr
