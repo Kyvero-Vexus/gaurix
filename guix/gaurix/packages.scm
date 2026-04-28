@@ -1,4 +1,5 @@
             ;; deptree-resolver-260428e: 100 BLOCKED evaluated (0 new recipes; 5 ALREADY_RESOLVED; 4 newly categorized; 91 remain BLOCKED)
+            ;; recipe-resolver-260428f: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; recipe-resolver-260428e: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260428d: 100 BLOCKED evaluated (7 recipes: glfw-wayland-minecraft-cursorfix, electron37-bin, dotnet-runtime-10.0-bin, dotnet-runtime-bin, dotnet-targeting-pack-bin, lib32-libdav1d, cursor-ide-bin; 29 ALREADY_RESOLVED; 64 remain BLOCKED)
             ;; recipe-resolver-260428d: 100 packages attempted (100 recipes, 0 BLOCKED)
@@ -12177,3 +12178,109 @@
                dotnet-targeting-pack-bin
                lib32-libdav1d
                cursor-ide-bin))
+
+
+;; recipe-resolver-260428f
+(define-module (gaurix packages)
+  #:use-module (gaurix packages recipe-resolver-260428f)
+  #:re-export (
+               rua
+               vdr
+               vdr-examples
+               wineasio
+               desktop-privileges
+               djmount
+               sqlmap-git
+               castnow-git
+               octave-image
+               yeahconsole
+               tomb-kdf
+               dunst-git
+               ctags-git
+               dboxfe2
+               fbxkb
+               j4-dmenu-desktop-git
+               muttprint
+               antigen-git
+               browser-vacuum
+               libaal
+               pystopwatch
+               wesnoth-devel
+               cups-bjnp
+               intltool-debian
+               lain-git
+               nicotine-plus-git
+               redshift-minimal
+               grail
+               i3lock-git
+               nodejs-jshint
+               epstool
+               remmina-git
+               split2flac
+               broadcom-bt-firmware
+               vimix-gtk-themes-git
+               postgresql-jdbc
+               noip
+               unclutter-xfixes-git
+               gtk-engine-unico
+               lemonbar-xft-git
+               pencil-git
+               vundle
+               compiz-gtk
+               julia-git
+               ldm
+               openct
+               terminology-git
+               drush-launcher
+               jpdftweak
+               mariadb-jdbc
+               pianobar-git
+               arno-iptables-firewall
+               invada-studio-plugins-lv2
+               libaacplus
+               libreoffice-extension-grammalecte-fr
+               hydrus
+               gns3-converter
+               zork1
+               st-git
+               micropolis-git
+               jetty
+               pcmanfm-qt-git
+               emerald-themes
+               irpf
+               jgit
+               octave-general
+               pithos-git
+               tango-icon-theme-extras
+               zdoom
+               evhz-git
+               nodejs-npm2arch
+               projectx
+               cgoban3
+               python-pysvn
+               rescuetime2
+               ocamlnet
+               gsview
+               dzen2-xft-xpm-xinerama-git
+               slim-git
+               slimlock-git
+               swfdec-gnome
+               pkg-2gis
+               keepass-plugin-rpc
+               pidgin-latex
+               gnome-vfs-nosmb
+               netctlgui-helper
+               plasma5-applet-netctl-gui
+               aacgain-cvs
+               libgnome-data
+               oh-my-zsh-powerline-theme-git
+               urxvt-resize-font-git
+               urxvt-vtwheel
+               pacman2aria2
+               gem2arch
+               goland-jre
+               clion-eap
+               odoo-venv
+               stardict-oald
+               lastpass-pocket
+               quake4))
