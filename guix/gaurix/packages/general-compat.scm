@@ -1,4 +1,5 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages deptree-resolver-260428k)
   #:use-module (gaurix packages recipe-resolver-260428j)
   #:use-module (gaurix packages deptree-resolver-260428j)
   #:use-module (gaurix packages deptree-resolver-260428i)
@@ -17103,3 +17104,5 @@
 (re-export halley)
 (re-export hidapi-hotplug-git)
 (re-export honeymux-bin)
+
+(re-export vegastrike-engine-git)

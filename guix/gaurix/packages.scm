@@ -1,3 +1,4 @@
+            ;; deptree-resolver-260428k: 100 BLOCKED evaluated (1 recipe: vegastrike-engine-git; 99 remain BLOCKED)
             ;; deptree-resolver-260428h: 100 BLOCKED evaluated + 71 remaining categorized (0 new recipes, 6 ALREADY_PACKAGED resolved, 165 remain BLOCKED)
                         ;; deptree-resolver-260428g: 100 BLOCKED evaluated (0 new recipes, 1 ALREADY_PACKAGED: libfive-studio-git, 99 remain BLOCKED)
             ;; deptree-resolver-260428f: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_RESOLVED, 5 newly categorized, 94 remain BLOCKED)
@@ -12388,3 +12389,4 @@
                hidapi-hotplug-git
                honeymux-bin
                quake4))
+               vegastrike-engine-git
