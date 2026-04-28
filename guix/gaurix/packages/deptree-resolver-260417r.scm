@@ -32,6 +32,7 @@
   #:use-module (gnu packages lua)
   #:use-module (gnu packages oneapi)
   #:use-module (gnu packages pkg-config)
+  #:use-module (gnu packages tbb)
   #:use-module (gnu packages tex)
   #:use-module (gnu packages video)
   #:export (intel-level-zero-raytracing-support-git
@@ -43,29 +44,31 @@
             texlive-full
             clangd-opt-git))
 
-;;; ── intel-level-zero-raytracing-support-git (#14769) ───────────────────
+;;; ── intel-level-zero-raytracing-support-git (#14769, #55356) ───────────
 ;;; Intel OneAPI Level Zero raytracing support library.
 ;;; CMake project from https://github.com/intel/level-zero-raytracing-support.
 ;;; level-zero is now available in Guix (v1.27.0).
+;;; Fixed in deptree-resolver-260428l: switched to url-fetch, added tbb input,
+;;; set -DZE_RAYTRACING_TBB=normal to avoid FetchContent TBB download.
 
 (define-public intel-level-zero-raytracing-support-git
   (package
     (name "intel-level-zero-raytracing-support-git")
     (version "1.2.3")
     (source (origin
-              (method git-fetch)
-              (uri (git-reference
-                    (url "https://github.com/intel/level-zero-raytracing-support")
-                    (commit (string-append "v" version))))
-              (file-name (git-file-name name version))
+              (method url-fetch)
+              (uri (string-append
+                    "https://github.com/intel/level-zero-raytracing-support"
+                    "/archive/refs/tags/v" version ".tar.gz"))
+              (file-name (string-append name "-" version ".tar.gz"))
               (sha256
-               (base32 "0pic3ajqxnwfpfwkrmx6r1zv4amixxkmsp983jabpqa2ac8r17ng"))))
+               (base32 "1cxmk0qn1s9jkddk3nk8ndc7ay2pkk03n3ijl3dqq8jl66807yqb"))))
     (build-system cmake-build-system)
     (arguments
      (list #:tests? #f
            #:configure-flags
-           #~(list "-DBUILD_SHARED_LIBS=ON")))
-    (inputs (list level-zero))
+           #~(list "-DZE_RAYTRACING_TBB=normal")))
+    (inputs (list level-zero tbb))
     (native-inputs (list pkg-config))
     (home-page "https://github.com/intel/level-zero-raytracing-support")
     (synopsis "Intel OneAPI Level Zero raytracing support library")

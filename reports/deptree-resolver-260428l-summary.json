@@ -1,0 +1,58 @@
+{
+  "timestamp": "2026-04-28T22:03:27.108375+00:00",
+  "pass_id": "deptree-resolver-260428l",
+  "total_evaluated": 100,
+  "resolved": 1,
+  "newly_classified": 2,
+  "confirmed_blocked": 97,
+  "new_recipes": 0,
+  "recipe_fixes": 1,
+  "new_dependency_packages": 0,
+  "resolved_packages": [
+    {
+      "name": "intel-level-zero-raytracing-support",
+      "number": 55356,
+      "resolution": "ALREADY_RESOLVED: recipe exists as intel-level-zero-raytracing-support-git in deptree-resolver-260417r.scm. Recipe fixed: added tbb dep, TBB=normal flag, switched to url-fetch. Build verified."
+    }
+  ],
+  "newly_classified_packages": [
+    {
+      "name": "fcitx5-lotus-openrc-git",
+      "number": 55324,
+      "fail_reason": "DISTRO_SPECIFIC",
+      "detail": "OpenRC init script for fcitx5-lotus. Guix uses Shepherd, not OpenRC."
+    },
+    {
+      "name": "fcitx5-lotus-runit-git",
+      "number": 55325,
+      "fail_reason": "DISTRO_SPECIFIC",
+      "detail": "Runit service for fcitx5-lotus. Guix uses Shepherd, not runit."
+    }
+  ],
+  "blocked_categories": {
+    "PROPRIETARY_BINARY": 16,
+    "COMPLEX_DEPS": 14,
+    "DKMS_KERNEL_MODULE": 12,
+    "DISTRO_SPECIFIC": 12,
+    "MINGW_CROSS_COMPILATION": 10,
+    "ABANDONED_UPSTREAM": 6,
+    "PLATFORM_UNSUPPORTED": 5,
+    "ARCH_SPECIFIC": 5,
+    "MULTILIB_UNSUPPORTED": 5,
+    "NON_DISTRIBUTABLE": 5,
+    "KERNEL_HEADERS": 4,
+    "SELINUX_SPECIFIC": 2,
+    "LEGACY_PYTHON2": 2,
+    "HARDWARE_SPECIFIC": 1
+  },
+  "key_missing_deps": [
+    "Rust >= 1.94 (Guix has 1.85.1)",
+    ".NET 9.0 (Guix has 8.0)",
+    "Crystal language",
+    "Zig 0.14",
+    "Wayfire compositor",
+    "Granite (Elementary OS toolkit)",
+    "mono-basic",
+    "fcitx5-lotus"
+  ]
+}
