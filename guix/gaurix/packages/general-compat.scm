@@ -1,4 +1,6 @@
 (define-module (gaurix packages general-compat)
+  #:use-module (gaurix packages recipe-resolver-260428j)
+  #:use-module (gaurix packages deptree-resolver-260428j)
   #:use-module (gaurix packages deptree-resolver-260428i)
   #:use-module (gaurix packages recipe-resolver-260428i)
   #:use-module (gaurix packages recipe-resolver-260428g)
