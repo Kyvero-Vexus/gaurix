@@ -1,3 +1,5 @@
+            ;; deptree-resolver-260428m: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_RESOLVED: boost-python2, 99 remain BLOCKED)
+            ;; deptree-resolver-260428l: 100 BLOCKED evaluated (1 recipe fix: intel-level-zero-raytracing-support-git, 99 remain BLOCKED)
             ;; deptree-resolver-260428k: 100 BLOCKED evaluated (1 recipe: vegastrike-engine-git; 99 remain BLOCKED)
             ;; deptree-resolver-260428h: 100 BLOCKED evaluated + 71 remaining categorized (0 new recipes, 6 ALREADY_PACKAGED resolved, 165 remain BLOCKED)
                         ;; deptree-resolver-260428g: 100 BLOCKED evaluated (0 new recipes, 1 ALREADY_PACKAGED: libfive-studio-git, 99 remain BLOCKED)
