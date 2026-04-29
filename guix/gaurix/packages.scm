@@ -1,3 +1,4 @@
+            ;; deptree-resolver-260429v: 100 BLOCKED evaluated (1 recipe: hnefatafl-copenhagen; 99 remain BLOCKED)
             ;; recipe-resolver-260428n: 100 packages attempted (100 recipes, 0 BLOCKED)
             ;; deptree-resolver-260428m: 100 BLOCKED evaluated (0 recipes, 1 ALREADY_RESOLVED: boost-python2, 99 remain BLOCKED)
             ;; deptree-resolver-260428l: 100 BLOCKED evaluated (1 recipe fix: intel-level-zero-raytracing-support-git, 99 remain BLOCKED)
