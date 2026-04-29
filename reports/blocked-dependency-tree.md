@@ -1,198 +1,184 @@
-# Blocked Dependency Tree
+# Blocked Dependency Tree — deptree-resolver-260429w
 
-**Generated:** 2026-04-29T04:22:46.217198+00:00
-**Total BLOCKED packages:** 164
+- **Pass ID**: deptree-resolver-260429w
+- **Timestamp**: 2026-04-29T06:04:27.387162+00:00
+- **Total BLOCKED packages**: 163
+- **In AUR cache**: 154
+- **Zero blocked deps**: 161
 
-## Priority Queue (Top 20)
+## Top 20 Priority Queue
 
-| # | Package | Blocked Deps | Reverse Deps | Total Deps |
-|---|---------|:---:|:---:|:---:|
-| 1 | sudo-selinux | 0 | 1 | 8 |
-| 2 | base-selinux | 0 | 1 | 18 |
-| 3 | virtualbox-svn | 0 | 1 | 53 |
-| 4 | deadbeef-mpris2-plugin | 0 | 0 | 0 |
-| 5 | linux6.18.20-1-lts-bin | 0 | 0 | 0 |
-| 6 | linux6.18.20-1-lts-docs-bin | 0 | 0 | 0 |
-| 7 | linux6.18.20-1-lts-headers-bin | 0 | 0 | 0 |
-| 8 | linux6.18.22-1-lts-bin | 0 | 0 | 0 |
-| 9 | matlab-jre-bundled | 0 | 0 | 0 |
-| 10 | sipgate-app-clinq | 0 | 0 | 0 |
-| 11 | squareline-studio | 0 | 0 | 0 |
-| 12 | upd72020x-fw-ng | 0 | 0 | 0 |
-| 13 | xairedit | 0 | 0 | 0 |
-| 14 | aquacomputer_d5next-hwmon-dkms | 0 | 0 | 1 |
-| 15 | bakkesmod-steam | 0 | 0 | 1 |
-| 16 | mkinitcpio-systemd-root-password | 0 | 0 | 1 |
-| 17 | repacman | 0 | 0 | 1 |
-| 18 | simplicity-commander | 0 | 0 | 1 |
-| 19 | amneziawg-dkms-git | 0 | 0 | 2 |
-| 20 | amneziawg-linux | 0 | 0 | 2 |
+| # | Package | Blocked Deps | Reverse Deps | Total Deps | Reason |
+|---|---------|-------------|-------------|-----------|--------|
+| 1 | sudo-selinux | 0 | 1 | 8 | SELINUX_SPECIFIC |
+| 2 | base-selinux | 0 | 1 | 18 | SELINUX_SPECIFIC |
+| 3 | virtualbox-svn | 0 | 1 | 53 | COMPLEX_DEPS |
+| 4 | deadbeef-mpris2-plugin | 0 | 0 | 0 | ABANDONED_UPSTREAM |
+| 5 | linux6.18.20-1-lts-bin | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
+| 6 | linux6.18.20-1-lts-docs-bin | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
+| 7 | linux6.18.20-1-lts-headers-bin | 0 | 0 | 0 | SOURCE_UNAVAILABLE |
+| 8 | linux6.18.22-1-lts-bin | 0 | 0 | 0 | KERNEL_HEADERS |
+| 9 | matlab-jre-bundled | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 10 | sipgate-app-clinq | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 11 | squareline-studio | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 12 | upd72020x-fw-ng | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 13 | xairedit | 0 | 0 | 0 | PROPRIETARY_BINARY |
+| 14 | aquacomputer_d5next-hwmon-dkms | 0 | 0 | 1 | DKMS_KERNEL_MODULE |
+| 15 | bakkesmod-steam | 0 | 0 | 1 | PLATFORM_UNSUPPORTED |
+| 16 | mkinitcpio-systemd-root-password | 0 | 0 | 1 | ARCH_SPECIFIC |
+| 17 | repacman | 0 | 0 | 1 | DISTRO_SPECIFIC |
+| 18 | simplicity-commander | 0 | 0 | 1 | PROPRIETARY_BINARY |
+| 19 | amneziawg-dkms-git | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
+| 20 | amneziawg-linux | 0 | 0 | 2 | DKMS_KERNEL_MODULE |
 
-## Full Queue
+## Selected 100 Packages
 
-| # | Package | Blocked Deps | Reverse Deps | Total Deps |
-|---|---------|:---:|:---:|:---:|
-| 1 | sudo-selinux | 0 | 1 | 8 |
-| 2 | base-selinux | 0 | 1 | 18 |
-| 3 | virtualbox-svn | 0 | 1 | 53 |
-| 4 | deadbeef-mpris2-plugin | 0 | 0 | 0 |
-| 5 | linux6.18.20-1-lts-bin | 0 | 0 | 0 |
-| 6 | linux6.18.20-1-lts-docs-bin | 0 | 0 | 0 |
-| 7 | linux6.18.20-1-lts-headers-bin | 0 | 0 | 0 |
-| 8 | linux6.18.22-1-lts-bin | 0 | 0 | 0 |
-| 9 | matlab-jre-bundled | 0 | 0 | 0 |
-| 10 | sipgate-app-clinq | 0 | 0 | 0 |
-| 11 | squareline-studio | 0 | 0 | 0 |
-| 12 | upd72020x-fw-ng | 0 | 0 | 0 |
-| 13 | xairedit | 0 | 0 | 0 |
-| 14 | aquacomputer_d5next-hwmon-dkms | 0 | 0 | 1 |
-| 15 | bakkesmod-steam | 0 | 0 | 1 |
-| 16 | mkinitcpio-systemd-root-password | 0 | 0 | 1 |
-| 17 | repacman | 0 | 0 | 1 |
-| 18 | simplicity-commander | 0 | 0 | 1 |
-| 19 | amneziawg-dkms-git | 0 | 0 | 2 |
-| 20 | amneziawg-linux | 0 | 0 | 2 |
-| 21 | amneziawg-linux-hardened | 0 | 0 | 2 |
-| 22 | android-platform-19 | 0 | 0 | 2 |
-| 23 | android-platform-21 | 0 | 0 | 2 |
-| 24 | archwiki-offline | 0 | 0 | 2 |
-| 25 | brother-mfc-l2400dw | 0 | 0 | 2 |
-| 26 | findbrokenpkgs | 0 | 0 | 2 |
-| 27 | ideapad-laptop-tb-dkms | 0 | 0 | 2 |
-| 28 | ideapad-laptop-tb2024g6plus-dkms | 0 | 0 | 2 |
-| 29 | knossu | 0 | 0 | 2 |
-| 30 | lib32-opencl-nvidia-390xx | 0 | 0 | 2 |
-| 31 | libch343ser-git | 0 | 0 | 2 |
-| 32 | libfprint-2-tod1-broadcom-cv3plus | 0 | 0 | 2 |
-| 33 | mingw-w64-cblas | 0 | 0 | 2 |
-| 34 | mingw-w64-lapack | 0 | 0 | 2 |
-| 35 | mingw-w64-soundtouch | 0 | 0 | 2 |
-| 36 | pfring-dkms | 0 | 0 | 2 |
-| 37 | python-home-assistant-frontend | 0 | 0 | 2 |
-| 38 | r8126-dkms | 0 | 0 | 2 |
-| 39 | sbctl-initcpio-post-hook | 0 | 0 | 2 |
-| 40 | ttf-consolas-ligaturized | 0 | 0 | 2 |
-| 41 | wyc | 0 | 0 | 2 |
-| 42 | lightdm-webkit-theme-aether | 0 | 0 | 3 |
-| 43 | linux-keep-modules | 0 | 0 | 3 |
-| 44 | nvidia-bl-dkms | 0 | 0 | 3 |
-| 45 | pacpak-git | 0 | 0 | 3 |
-| 46 | phonon-qt4-vlc | 0 | 0 | 3 |
-| 47 | quartz-utils-git | 0 | 0 | 3 |
-| 48 | rdt-client | 0 | 0 | 3 |
-| 49 | texmacs-pure | 0 | 0 | 3 |
-| 50 | chromium-extension-arch-search | 0 | 0 | 4 |
-| 51 | clash-for-windows-chinese | 0 | 0 | 4 |
-| 52 | rtl88x2ce-dkms-git | 0 | 0 | 4 |
-| 53 | ut2004-gog | 0 | 0 | 4 |
-| 54 | zfs-linux-hardened-headers | 0 | 0 | 4 |
-| 55 | zfs-linux-rt-headers | 0 | 0 | 4 |
-| 56 | futu-ftnn-wine | 0 | 0 | 5 |
-| 57 | inkdrop | 0 | 0 | 5 |
-| 58 | kamilsss655-uv-k5-firmware-custom-git | 0 | 0 | 5 |
-| 59 | mailnaggertray-git | 0 | 0 | 5 |
-| 60 | nvidia-open-tinygrad-dkms-git | 0 | 0 | 5 |
-| 61 | pamac-cli | 0 | 0 | 5 |
-| 62 | python-gradio-pdf | 0 | 0 | 5 |
-| 63 | python-pypi2pkgbuild | 0 | 0 | 5 |
-| 64 | soapysdrplay3-luarvique-git | 0 | 0 | 5 |
-| 65 | unrealtournament4 | 0 | 0 | 5 |
-| 66 | zfs-linux-git-headers | 0 | 0 | 5 |
-| 67 | factorio-space-age-experimental | 0 | 0 | 6 |
-| 68 | lib32-libglade | 0 | 0 | 6 |
-| 69 | mingw-w64-boost | 0 | 0 | 6 |
-| 70 | mingw-w64-cppwinrt | 0 | 0 | 6 |
-| 71 | mingw-w64-pcre2 | 0 | 0 | 6 |
-| 72 | mingw-w64-spirv-tools | 0 | 0 | 6 |
-| 73 | dxvk-async-git | 0 | 0 | 7 |
-| 74 | eddiscovery | 0 | 0 | 7 |
-| 75 | glibc-eac | 0 | 0 | 7 |
-| 76 | lib32-libxpm | 0 | 0 | 7 |
-| 77 | mingw-w64-postgresql | 0 | 0 | 7 |
-| 78 | mkinitcpio-clevis-hook | 0 | 0 | 7 |
-| 79 | python2-gimp | 0 | 0 | 7 |
-| 80 | anytxt-bin | 0 | 0 | 8 |
-| 81 | fcitx5-lotus-openrc-git | 0 | 0 | 8 |
-| 82 | fcitx5-lotus-runit-git | 0 | 0 | 8 |
-| 83 | lib32-sdl_sound | 0 | 0 | 8 |
-| 84 | mingw-w64-lame | 0 | 0 | 8 |
-| 85 | pianoteq-stage | 0 | 0 | 8 |
-| 86 | pikaur-static | 0 | 0 | 8 |
-| 87 | pikaur-static-git | 0 | 0 | 8 |
-| 88 | vmd | 0 | 0 | 8 |
-| 89 | webcord-vencord-git | 0 | 0 | 8 |
-| 90 | frame-eth | 0 | 0 | 9 |
-| 91 | freetube-electron-git | 0 | 0 | 9 |
-| 92 | lib32-vkbasalt | 0 | 0 | 9 |
-| 93 | madness-interactive-reloaded | 0 | 0 | 9 |
-| 94 | mobirise | 0 | 0 | 9 |
-| 95 | prey | 0 | 0 | 9 |
-| 96 | python-pylink-square | 0 | 0 | 9 |
-| 97 | auracle-git | 0 | 0 | 10 |
-| 98 | beignet-git | 0 | 0 | 10 |
-| 99 | borgwarehouse | 0 | 0 | 10 |
-| 100 | hnefatafl-copenhagen | 0 | 0 | 10 |
-| 101 | libga68-snapshot | 0 | 0 | 10 |
-| 102 | libgfortran-snapshot | 0 | 0 | 10 |
-| 103 | libgnat-snapshot | 0 | 0 | 10 |
-| 104 | libgo-snapshot | 0 | 0 | 10 |
-| 105 | linux-sched-ext-git-headers | 0 | 0 | 10 |
-| 106 | linux-tip-git-headers | 0 | 0 | 10 |
-| 107 | mailspring | 0 | 0 | 10 |
-| 108 | nvidia-390xx-settings | 0 | 0 | 10 |
-| 109 | pantheon-polkit-agent-git | 0 | 0 | 10 |
-| 110 | virtualbox-bin-sdk | 0 | 0 | 10 |
-| 111 | lto-dump-snapshot | 0 | 0 | 11 |
-| 112 | luxtorpeda-git | 0 | 0 | 11 |
-| 113 | python-google-cloud-speech | 0 | 0 | 11 |
-| 114 | devtools-git | 0 | 0 | 12 |
-| 115 | envoyproxy | 0 | 0 | 12 |
-| 116 | gst-plugins-rs-git | 0 | 0 | 12 |
-| 117 | linux-xanmod-lts-headers | 0 | 0 | 12 |
-| 118 | mingw-w64-libopenmpt | 0 | 0 | 12 |
-| 119 | opendrop-git | 0 | 0 | 12 |
-| 120 | wayfire-plugins-extra-git | 0 | 0 | 12 |
-| 121 | betterx-desktop-git | 0 | 0 | 13 |
-| 122 | capt-src | 0 | 0 | 13 |
-| 123 | illogical-impulse-ags | 0 | 0 | 13 |
-| 124 | python-jax-rocm | 0 | 0 | 13 |
-| 125 | goxlr-utility-ui | 0 | 0 | 14 |
-| 126 | linux-cachyos-hardened-headers | 0 | 0 | 14 |
-| 127 | linux-next-git-headers | 0 | 0 | 14 |
-| 128 | rpfm-git | 0 | 0 | 14 |
-| 129 | deepin-wine8-stable | 0 | 0 | 15 |
-| 130 | linux-covolunablu-gaming-headers | 0 | 0 | 15 |
-| 131 | php-legacy-pdlib | 0 | 0 | 15 |
-| 132 | qt6-xcb-private-headers-git | 0 | 0 | 15 |
-| 133 | veloren | 0 | 0 | 15 |
-| 134 | vmware-workstation | 0 | 0 | 15 |
-| 135 | linux-cachyos-bmq-headers | 0 | 0 | 20 |
-| 136 | linux-cachyos-eevdf-headers | 0 | 0 | 20 |
-| 137 | linux-cachyos-server-headers | 0 | 0 | 20 |
-| 138 | paperde | 0 | 0 | 20 |
-| 139 | xivlauncher-rb | 0 | 0 | 20 |
-| 140 | codeblocks-svn | 0 | 0 | 22 |
-| 141 | firestorm-next-bin | 0 | 0 | 22 |
-| 142 | openconnect-sso-git | 0 | 0 | 23 |
-| 143 | ecal-samples | 0 | 0 | 24 |
-| 144 | nyarchassistant | 0 | 0 | 26 |
-| 145 | aosp-devel | 0 | 0 | 27 |
-| 146 | java-openjfx-nowebkit | 0 | 0 | 27 |
-| 147 | quartus-free-quartus | 0 | 0 | 27 |
-| 148 | texpresso-git | 0 | 0 | 29 |
-| 149 | etlegacy32-mod | 0 | 0 | 30 |
-| 150 | ghostty-git-zen3 | 0 | 0 | 30 |
-| 151 | thunderbird-beta | 0 | 0 | 30 |
-| 152 | qgroundcontrol | 0 | 0 | 40 |
-| 153 | darling-cli-devenv-gui-common-git | 0 | 0 | 41 |
-| 154 | darling-iosurface-git | 0 | 0 | 41 |
-| 155 | shadps4-git | 0 | 0 | 46 |
-| 156 | systemd-ukify-git | 0 | 0 | 53 |
-| 157 | waytrogen | 0 | 0 | 54 |
-| 158 | wine-osu-spectator-wow64 | 0 | 0 | 61 |
-| 159 | teb-obs | 0 | 0 | 67 |
-| 160 | thunderbird-globalmenu | 0 | 0 | 73 |
-| 161 | ffmpeg-cuda-full | 0 | 0 | 89 |
-| 162 | ffmpeg-full-git | 0 | 0 | 139 |
-| 163 | virtualbox-ext-oracle-dev | 1 | 0 | 1 |
-| 164 | base-devel-selinux | 2 | 0 | 3 |
+### ABANDONED_UPSTREAM (6)
+
+- 4. **deadbeef-mpris2-plugin** (bdeps=0 rdeps=0 tdeps=0)
+- 42. **lightdm-webkit-theme-aether** (bdeps=0 rdeps=0 tdeps=3)
+- 46. **phonon-qt4-vlc** (bdeps=0 rdeps=0 tdeps=3)
+- 49. **texmacs-pure** (bdeps=0 rdeps=0 tdeps=3)
+- 51. **clash-for-windows-chinese** (bdeps=0 rdeps=0 tdeps=4)
+- 98. **beignet-git** (bdeps=0 rdeps=0 tdeps=10)
+
+### ARCH_SPECIFIC (5)
+
+- 16. **mkinitcpio-systemd-root-password** (bdeps=0 rdeps=0 tdeps=1)
+- 43. **linux-keep-modules** (bdeps=0 rdeps=0 tdeps=3)
+- 63. **python-pypi2pkgbuild** (bdeps=0 rdeps=0 tdeps=5)
+- 75. **glibc-eac** (bdeps=0 rdeps=0 tdeps=7)
+- 78. **mkinitcpio-clevis-hook** (bdeps=0 rdeps=0 tdeps=7)
+
+### COMPLEX_DEPS (12)
+
+- 3. **virtualbox-svn** (bdeps=0 rdeps=1 tdeps=53)
+- 37. **python-home-assistant-frontend** (bdeps=0 rdeps=0 tdeps=2)
+- 47. **quartz-utils-git** (bdeps=0 rdeps=0 tdeps=3)
+- 48. **rdt-client** (bdeps=0 rdeps=0 tdeps=3)
+- 59. **mailnaggertray-git** (bdeps=0 rdeps=0 tdeps=5)
+- 62. **python-gradio-pdf** (bdeps=0 rdeps=0 tdeps=5)
+- 89. **webcord-vencord-git** (bdeps=0 rdeps=0 tdeps=8)
+- 90. **frame-eth** (bdeps=0 rdeps=0 tdeps=9)
+- 91. **freetube-electron-git** (bdeps=0 rdeps=0 tdeps=9)
+- 93. **madness-interactive-reloaded** (bdeps=0 rdeps=0 tdeps=9)
+- 94. **mobirise** (bdeps=0 rdeps=0 tdeps=9)
+- 99. **borgwarehouse** (bdeps=0 rdeps=0 tdeps=10)
+
+### DISTRO_SPECIFIC (12)
+
+- 17. **repacman** (bdeps=0 rdeps=0 tdeps=1)
+- 24. **archwiki-offline** (bdeps=0 rdeps=0 tdeps=2)
+- 26. **findbrokenpkgs** (bdeps=0 rdeps=0 tdeps=2)
+- 39. **sbctl-initcpio-post-hook** (bdeps=0 rdeps=0 tdeps=2)
+- 45. **pacpak-git** (bdeps=0 rdeps=0 tdeps=3)
+- 50. **chromium-extension-arch-search** (bdeps=0 rdeps=0 tdeps=4)
+- 61. **pamac-cli** (bdeps=0 rdeps=0 tdeps=5)
+- 81. **fcitx5-lotus-openrc-git** (bdeps=0 rdeps=0 tdeps=8)
+- 82. **fcitx5-lotus-runit-git** (bdeps=0 rdeps=0 tdeps=8)
+- 86. **pikaur-static** (bdeps=0 rdeps=0 tdeps=8)
+- 87. **pikaur-static-git** (bdeps=0 rdeps=0 tdeps=8)
+- 97. **auracle-git** (bdeps=0 rdeps=0 tdeps=10)
+
+### DKMS_KERNEL_MODULE (12)
+
+- 14. **aquacomputer_d5next-hwmon-dkms** (bdeps=0 rdeps=0 tdeps=1)
+- 19. **amneziawg-dkms-git** (bdeps=0 rdeps=0 tdeps=2)
+- 20. **amneziawg-linux** (bdeps=0 rdeps=0 tdeps=2)
+- 21. **amneziawg-linux-hardened** (bdeps=0 rdeps=0 tdeps=2)
+- 27. **ideapad-laptop-tb-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 28. **ideapad-laptop-tb2024g6plus-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 31. **libch343ser-git** (bdeps=0 rdeps=0 tdeps=2)
+- 36. **pfring-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 38. **r8126-dkms** (bdeps=0 rdeps=0 tdeps=2)
+- 44. **nvidia-bl-dkms** (bdeps=0 rdeps=0 tdeps=3)
+- 52. **rtl88x2ce-dkms-git** (bdeps=0 rdeps=0 tdeps=4)
+- 60. **nvidia-open-tinygrad-dkms-git** (bdeps=0 rdeps=0 tdeps=5)
+
+### GCC_SNAPSHOT (1)
+
+- 100. **libga68-snapshot** (bdeps=0 rdeps=0 tdeps=10)
+
+### HARDWARE_SPECIFIC (1)
+
+- 58. **kamilsss655-uv-k5-firmware-custom-git** (bdeps=0 rdeps=0 tdeps=5)
+
+### KERNEL_HEADERS (4)
+
+- 8. **linux6.18.22-1-lts-bin** (bdeps=0 rdeps=0 tdeps=0)
+- 54. **zfs-linux-hardened-headers** (bdeps=0 rdeps=0 tdeps=4)
+- 55. **zfs-linux-rt-headers** (bdeps=0 rdeps=0 tdeps=4)
+- 66. **zfs-linux-git-headers** (bdeps=0 rdeps=0 tdeps=5)
+
+### LEGACY_PYTHON2 (1)
+
+- 79. **python2-gimp** (bdeps=0 rdeps=0 tdeps=7)
+
+### MINGW_CROSS_COMPILATION (10)
+
+- 33. **mingw-w64-cblas** (bdeps=0 rdeps=0 tdeps=2)
+- 34. **mingw-w64-lapack** (bdeps=0 rdeps=0 tdeps=2)
+- 35. **mingw-w64-soundtouch** (bdeps=0 rdeps=0 tdeps=2)
+- 69. **mingw-w64-boost** (bdeps=0 rdeps=0 tdeps=6)
+- 70. **mingw-w64-cppwinrt** (bdeps=0 rdeps=0 tdeps=6)
+- 71. **mingw-w64-pcre2** (bdeps=0 rdeps=0 tdeps=6)
+- 72. **mingw-w64-spirv-tools** (bdeps=0 rdeps=0 tdeps=6)
+- 73. **dxvk-async-git** (bdeps=0 rdeps=0 tdeps=7)
+- 77. **mingw-w64-postgresql** (bdeps=0 rdeps=0 tdeps=7)
+- 84. **mingw-w64-lame** (bdeps=0 rdeps=0 tdeps=8)
+
+### MULTILIB_UNSUPPORTED (5)
+
+- 30. **lib32-opencl-nvidia-390xx** (bdeps=0 rdeps=0 tdeps=2)
+- 68. **lib32-libglade** (bdeps=0 rdeps=0 tdeps=6)
+- 76. **lib32-libxpm** (bdeps=0 rdeps=0 tdeps=7)
+- 83. **lib32-sdl_sound** (bdeps=0 rdeps=0 tdeps=8)
+- 92. **lib32-vkbasalt** (bdeps=0 rdeps=0 tdeps=9)
+
+### NON_DISTRIBUTABLE (5)
+
+- 40. **ttf-consolas-ligaturized** (bdeps=0 rdeps=0 tdeps=2)
+- 53. **ut2004-gog** (bdeps=0 rdeps=0 tdeps=4)
+- 65. **unrealtournament4** (bdeps=0 rdeps=0 tdeps=5)
+- 67. **factorio-space-age-experimental** (bdeps=0 rdeps=0 tdeps=6)
+- 95. **prey** (bdeps=0 rdeps=0 tdeps=9)
+
+### PLATFORM_UNSUPPORTED (5)
+
+- 15. **bakkesmod-steam** (bdeps=0 rdeps=0 tdeps=1)
+- 22. **android-platform-19** (bdeps=0 rdeps=0 tdeps=2)
+- 23. **android-platform-21** (bdeps=0 rdeps=0 tdeps=2)
+- 56. **futu-ftnn-wine** (bdeps=0 rdeps=0 tdeps=5)
+- 74. **eddiscovery** (bdeps=0 rdeps=0 tdeps=7)
+
+### PROPRIETARY_BINARY (16)
+
+- 9. **matlab-jre-bundled** (bdeps=0 rdeps=0 tdeps=0)
+- 10. **sipgate-app-clinq** (bdeps=0 rdeps=0 tdeps=0)
+- 11. **squareline-studio** (bdeps=0 rdeps=0 tdeps=0)
+- 12. **upd72020x-fw-ng** (bdeps=0 rdeps=0 tdeps=0)
+- 13. **xairedit** (bdeps=0 rdeps=0 tdeps=0)
+- 18. **simplicity-commander** (bdeps=0 rdeps=0 tdeps=1)
+- 25. **brother-mfc-l2400dw** (bdeps=0 rdeps=0 tdeps=2)
+- 29. **knossu** (bdeps=0 rdeps=0 tdeps=2)
+- 32. **libfprint-2-tod1-broadcom-cv3plus** (bdeps=0 rdeps=0 tdeps=2)
+- 41. **wyc** (bdeps=0 rdeps=0 tdeps=2)
+- 57. **inkdrop** (bdeps=0 rdeps=0 tdeps=5)
+- 64. **soapysdrplay3-luarvique-git** (bdeps=0 rdeps=0 tdeps=5)
+- 80. **anytxt-bin** (bdeps=0 rdeps=0 tdeps=8)
+- 85. **pianoteq-stage** (bdeps=0 rdeps=0 tdeps=8)
+- 88. **vmd** (bdeps=0 rdeps=0 tdeps=8)
+- 96. **python-pylink-square** (bdeps=0 rdeps=0 tdeps=9)
+
+### SELINUX_SPECIFIC (2)
+
+- 1. **sudo-selinux** (bdeps=0 rdeps=1 tdeps=8)
+- 2. **base-selinux** (bdeps=0 rdeps=1 tdeps=18)
+
+### SOURCE_UNAVAILABLE (3)
+
+- 5. **linux6.18.20-1-lts-bin** (bdeps=0 rdeps=0 tdeps=0)
+- 6. **linux6.18.20-1-lts-docs-bin** (bdeps=0 rdeps=0 tdeps=0)
+- 7. **linux6.18.20-1-lts-headers-bin** (bdeps=0 rdeps=0 tdeps=0)
+
+*Generated: 2026-04-29T06:04:27.387162+00:00*
