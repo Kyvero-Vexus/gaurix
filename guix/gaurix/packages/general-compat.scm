@@ -656,6 +656,7 @@
   #:use-module (gaurix packages deptree-resolver-260426i)
   #:use-module (gaurix packages recipe-resolver-260426k)
   #:use-module (gaurix packages recipe-resolver-260428m)
+  #:use-module (gaurix packages recipe-resolver-260429w)
   #:export (
             ;; recipe-resolver-260413l recipes
             font-heuristica
@@ -3294,6 +3295,106 @@
             domake
             sedutil
             funchook
+            xen-stubdom
+            epsxe-plugin-spu-alsa
+            mkinitcpio-firmware
+            epsxe-plugin-gpu-xgl2
+            epsxe-plugin-gpu-mesagl
+            grub-legacy
+            epsxe-plugin-padjoy
+            bluedevil-git
+            kde-gtk-config-git
+            opencv-git
+            opencv-samples-git
+            python-opencv-git
+            photivo-git
+            jre7
+            aquaria-ose-git
+            freeme2
+            lxqt-config-git
+            mlt-git
+            mopidy-mopify
+            ntorrent
+            qarte
+            solarus-launcher
+            solarus-editor
+            supermeatboy
+            ferdium-bin
+            lxqt-panel-git
+            gnome-shell-extension-appindicator-git
+            krusader-git
+            paper-icon-theme
+            aoi
+            eclipse-vrapper
+            evilvte
+            libbluray-git
+            qtwebkit-bin
+            rtmpdump-git
+            shim-signed
+            subtitleedit
+            rider-eap
+            kmozillahelper
+            freemind-git
+            ultravnc-viewer
+            weather
+            amrenc
+            btscanner
+            dino-git
+            gcc43
+            gnome-video-arcade
+            goocanvas1
+            gtk-bluecurve-engine
+            libevhtp-seafile
+            perl-gtk2-unique
+            screencloud
+            wingpanel-git
+            xampp
+            android-google-repository
+            gnome-shell-extension-caffeine-git
+            lshwd
+            mate-tweak
+            mikutter
+            notepadqq-git
+            qterminal-git
+            qtermwidget-git
+            cnrdrvcups-lb
+            stm32cubeide
+            networkmanager-iwd
+            libnm-iwd
+            nm-iwd-cloud-setup
+            sunvox
+            vala-panel-appmenu-mate-git
+            vala-panel-appmenu-xfce-git
+            vala-panel-appmenu-valapanel-git
+            vala-panel-appmenu-budgie-git
+            arm-linux-gnueabihf-gcc-stage1
+            attica-git
+            cjdns-git
+            geany-plugins-git
+            gtg-git
+            gtk-theme-numix-solarized
+            kakoune-git
+            librecad-git
+            pulseaudio-git
+            libpulse-git
+            pulseaudio-lirc-git
+            pulseaudio-zeroconf-git
+            pulseaudio-jack-git
+            pulseaudio-bluetooth-git
+            pulseaudio-equalizer-git
+            pulseaudio-rtp-git
+            shantz-xwinwrap-bzr
+            qtwebflix-git
+            waybar-git
+            twmn-git
+            ltspice
+            gqrx-git
+            glmark2-git
+            lxqt-notificationd-git
+            mozplugger
+            pavucontrol-gtk2
+            radare2-git
+            tesseract-git
 ))
             mingw-w64-readline
             mingw-w64-gettext
